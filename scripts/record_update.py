@@ -4,12 +4,15 @@ now, writes what changed to its own folder under patches/<version>/, then replac
 items/ with the export and moves state.json on.
 
     record_update.py --repo . --export <dir> --version 1.60.1.70009 --build 70009 \
-        --push 17063770 --hotfixes applied --forever <sha> [--body <file>]
+        --pushes pushes.txt --hotfixes applied --forever <sha> [--body <file>]
+
+pushes.txt is dbcache_info.py's list of the hotfix pushes the export applied (empty when it applied
+none); it replaces hotfix-pushes.txt, and the pushes it adds are the update's hotfixes.
 
 <dir> holds spells/<class>/<spec>.txt (split_spells.py) and items/items.txt (export_items.py).
 
 The folder is patches/<version>/patch for the first update seen on a version, hotfix-<push> for a
-later one with newer hotfixes, and resync-<date> for a run forced without either moving (a change in
+later one with new hotfix pushes (hotfix-<lowest new push>+<n> when there are n more), and resync-<date> for a run forced without either moving (a change in
 the export tools rather than in the game). It holds CHANGES.md, which is also the pull request's
 body, items.txt with the cards of the items added, and a diff or card file for each other kind of
 change there was.
@@ -51,6 +54,14 @@ def read_class(path):
     return cards, specs
 
 
+def read_pushes(path):
+    """dbcache_info.py's push list: entries by push id."""
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return {int(push): int(count) for push, count in (line.split() for line in f if line.strip())}
+
+
 def heading(card):
     return card.split("\n", 1)[0]
 
@@ -79,7 +90,7 @@ def main():
     p.add_argument("--export", required=True)
     p.add_argument("--version", required=True)
     p.add_argument("--build", required=True)
-    p.add_argument("--push", type=int, required=True)
+    p.add_argument("--pushes", required=True, help="dbcache_info.py's push list for the export")
     p.add_argument("--hotfixes", required=True, help="how the hotfixes went in, for CHANGES.md")
     p.add_argument("--forever", required=True, help="the forever commit the export ran from")
     p.add_argument("--body", help="where to also write the pull request body")
@@ -89,10 +100,15 @@ def main():
     state = json.load(open(state_path)) if os.path.exists(state_path) else {}
     today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
 
+    old_pushes = read_pushes(os.path.join(args.repo, "hotfix-pushes.txt"))
+    pushes = read_pushes(args.pushes)
+    # A push whose entry count moved is new too: the push was extended.
+    new_pushes = sorted(p for p in pushes if old_pushes.get(p) != pushes[p])
+
     if state.get("version") != args.version:
         label, kind = "patch", "Patch"
-    elif args.push > state.get("push", 0):
-        label, kind = f"hotfix-{args.push}", "Hotfix"
+    elif new_pushes:
+        label, kind = f"hotfix-{new_pushes[0]}" + (f"+{len(new_pushes) - 1}" if len(new_pushes) > 1 else ""), "Hotfix"
     else:
         label, kind = f"resync-{today}", "Resync"
     folder = os.path.join(args.repo, "patches", args.version, label)
@@ -101,11 +117,12 @@ def main():
         folder = os.path.join(args.repo, "patches", args.version, label)
     first = not state
 
-    lines = [f"# {kind}: {args.version}" + (f", hotfix push {args.push}" if args.push else ""), ""]
+    named = ", ".join(map(str, new_pushes[:5])) + (f" and {len(new_pushes) - 5} more" if len(new_pushes) > 5 else "")
+    lines = [f"# {kind}: {args.version}" + (f", hotfix push{'es' if len(new_pushes) > 1 else ''} {named}" if kind == "Hotfix" else ""), ""]
     lines.append(f"- Build: {args.version} (`wow_classic_beta` on Blizzard's CDN)")
     lines.append(f"- Hotfixes: {args.hotfixes}")
     if state:
-        lines.append(f"- Previous: {state['version']}, hotfix push {state.get('push', 0)} ({state.get('date', '?')})")
+        lines.append(f"- Previous: {state['version']} with {len(old_pushes)} hotfix pushes ({state.get('date', '?')})")
     lines.append(f"- Exported by wowsims/forever@{args.forever[:12]} on {today}")
     if kind == "Resync":
         lines.append("")
@@ -114,6 +131,12 @@ def main():
         lines.append("")
         lines.append("First export: this is the baseline every later update diffs against, so there is nothing to compare yet.")
     lines.append("")
+
+    if new_pushes and not first:
+        lines.append("## Hotfix pushes")
+        lines.append("")
+        lines += [f"- {p}: {pushes[p]} entries" + (f" (was {old_pushes[p]})" if p in old_pushes else "") for p in new_pushes]
+        lines.append("")
 
     # Spells, class by class.
     spell_diffs, summary = [], []
@@ -187,8 +210,9 @@ def main():
     shutil.copytree(new_dir, old_dir)
     os.makedirs(os.path.join(args.repo, "items"), exist_ok=True)
     shutil.copy(os.path.join(args.export, "items", "items.txt"), os.path.join(args.repo, "items", "items.txt"))
+    shutil.copy(args.pushes, os.path.join(args.repo, "hotfix-pushes.txt"))
     with open(state_path, "w") as f:
-        json.dump({"version": args.version, "build": int(args.build), "push": args.push, "date": today,
+        json.dump({"version": args.version, "build": int(args.build), "pushes": len(pushes), "date": today,
                    "forever": args.forever, "folder": os.path.relpath(folder, args.repo)}, f, indent=2)
         f.write("\n")
 
@@ -199,7 +223,7 @@ def main():
         write(args.body, body)
 
     print(f"folder={os.path.relpath(folder, args.repo)}")
-    print(f"title={kind}: {args.version}" + (f" hotfix {args.push}" if kind == "Hotfix" else "") + f" ({today})")
+    print(f"title={kind}: {args.version}" + (f" hotfix {named}" if kind == "Hotfix" else "") + f" ({today})")
 
 
 if __name__ == "__main__":

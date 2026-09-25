@@ -18,14 +18,15 @@ spells/<class>/
 items/items.txt           every item in the client, one card per item (collapsed in pull requests)
 patches/<version>/
     patch/                the first export on this build
-    hotfix-<push>/        a later export with newer hotfixes (<push> is the newest hotfix push id)
+    hotfix-<push>/        a later export with new hotfix pushes (hotfix-<lowest>+<n> for several)
     resync-<date>/        a forced re-export with no game change (the export tools changed)
         CHANGES.md        what was added, removed or changed, and from which build and hotfixes
         spells.diff       each changed spell as a diff of its card
         items.txt         the cards of the items this update added
         items-removed.txt the removed items' cards
         items-changed.diff each changed item as a diff of its card
-state.json                the build and hotfix push of the last export
+state.json                the build of the last export
+hotfix-pushes.txt         every hotfix push the last export applied: `<push id> <entries>` per line
 ```
 
 Git history on `spells/` shows the same changes over time, e.g. `git log -p -- spells/hunter/`.
@@ -39,7 +40,9 @@ placed spell that triggers it. Anything none of those places is in `other.txt`.
 - **Build:** `wow_classic_beta` as `us.version.battle.net` serves it, read off the CDN by
   [wowsims/forever](https://github.com/wowsims/forever)'s `tools/db2tool`.
 - **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`. It lags a build push, so a new build
-  is recorded first without hotfixes (`patch/`), and the hotfixes follow as `hotfix-<push>/`.
+  is recorded first without hotfixes (`patch/`), and the hotfixes follow as `hotfix-<push>/`. Push ids
+  are not in time order, so a run compares the whole push list with `hotfix-pushes.txt`, not the highest
+  id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
 - **Spells:** `tools/spelldata -dump` from forever, after `gen_spelldata -everyClassSpell` has built the
   spell store from every spell whose class family is a player class. Each card shows the row's columns
   in words and as the client's own values.
@@ -63,5 +66,5 @@ python3 ../gamedata/scripts/split_spells.py . tools/database/wowsims.db /tmp/dum
 python3 ../gamedata/scripts/export_items.py tools/database/wowsims.db /tmp/export/items/items.txt
 cd ../gamedata
 python3 scripts/record_update.py --repo . --export /tmp/export --version <version> --build <build> \
-    --push <push> --hotfixes "<how>" --forever <sha>
+    --pushes <pushes.txt from scripts/dbcache_info.py> --hotfixes "<how>" --forever <sha>
 ```

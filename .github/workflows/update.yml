@@ -54,14 +54,16 @@ jobs:
 
                   mkdir -p "$RUNNER_TEMP/caches"
                   curl -fsSL -o "$RUNNER_TEMP/caches/DBCache.bin" "$DBCACHE_URL"
-                  eval "$(python3 gamedata/scripts/dbcache_info.py "$RUNNER_TEMP/caches/DBCache.bin" | sed 's/^/cache_/')"
+                  # Push ids are not in time order, so what is compared is the whole list of pushes.
+                  eval "$(python3 gamedata/scripts/dbcache_info.py "$RUNNER_TEMP/caches/DBCache.bin" "$RUNNER_TEMP/pushes.txt" | sed 's/^/cache_/')"
                   if [ "$cache_build" = "$build" ]; then
-                      push=$cache_push
-                      hotfixes="applied up to push $cache_push ($cache_entries records)"
+                      applied=true
+                      hotfixes="applied, $cache_pushes pushes ($cache_entries entries)"
                   else
                       # The cache is still for another build: the export runs without it, and the
                       # hotfixes land as their own update once raidbots has the new build's cache.
-                      push=0
+                      applied=false
+                      : > "$RUNNER_TEMP/pushes.txt"
                       hotfixes="none yet: the newest DBCache.bin is for build $cache_build"
                   fi
 
@@ -70,7 +72,7 @@ jobs:
                       echo "config=$config"
                       echo "build=$build"
                       echo "version=$version"
-                      echo "push=$push"
+                      echo "applied=$applied"
                       echo "hotfixes=$hotfixes"
                   } >> "$GITHUB_OUTPUT"
 
@@ -78,15 +80,15 @@ jobs:
               id: moved
               env:
                   VERSION: ${{ steps.build.outputs.version }}
-                  PUSH: ${{ steps.build.outputs.push }}
                   FORCE: ${{ inputs.force }}
               run: |
-                  last=$(python3 -c 'import json; s = json.load(open("gamedata/state.json")); print(s["version"], s["push"])' 2>/dev/null || echo none)
-                  if [ "$last" = "$VERSION $PUSH" ] && [ "$FORCE" != "true" ]; then
-                      echo "Still on $VERSION with hotfix push $PUSH, nothing to record."
+                  last=$(python3 -c 'import json; print(json.load(open("gamedata/state.json"))["version"])' 2>/dev/null || echo none)
+                  if [ "$last" = "$VERSION" ] && cmp -s "$RUNNER_TEMP/pushes.txt" gamedata/hotfix-pushes.txt && [ "$FORCE" != "true" ]; then
+                      echo "Still on $VERSION with the same hotfix pushes, nothing to record."
                       echo "run=false" >> "$GITHUB_OUTPUT"
                   else
-                      echo "Last recorded: $last, now: $VERSION $PUSH"
+                      echo "Last recorded: $last, now: $VERSION. New or changed pushes:"
+                      diff gamedata/hotfix-pushes.txt "$RUNNER_TEMP/pushes.txt" | grep '^>' || true
                       echo "run=true" >> "$GITHUB_OUTPUT"
                   fi
 
@@ -134,10 +136,10 @@ jobs:
               if: steps.moved.outputs.run == 'true'
               working-directory: forever
               env:
-                  PUSH: ${{ steps.build.outputs.push }}
+                  APPLIED: ${{ steps.build.outputs.applied }}
               run: |
                   flags="--cdn"
-                  if [ "$PUSH" != "0" ]; then
+                  if [ "$APPLIED" = "true" ]; then
                       flags="$flags --dbcache $RUNNER_TEMP/caches/DBCache.bin"
                   fi
                   make sim/core/proto/api.pb.go binary_dist/dist.go
@@ -162,12 +164,11 @@ jobs:
               env:
                   VERSION: ${{ steps.build.outputs.version }}
                   BUILD: ${{ steps.build.outputs.build }}
-                  PUSH: ${{ steps.build.outputs.push }}
                   HOTFIXES: ${{ steps.build.outputs.hotfixes }}
               run: |
                   sha=$(git -C forever rev-parse HEAD)
                   python3 gamedata/scripts/record_update.py --repo gamedata --export "$RUNNER_TEMP/export" \
-                      --version "$VERSION" --build "$BUILD" --push "$PUSH" --hotfixes "$HOTFIXES" \
+                      --version "$VERSION" --build "$BUILD" --pushes "$RUNNER_TEMP/pushes.txt" --hotfixes "$HOTFIXES" \
                       --forever "$sha" --body "$RUNNER_TEMP/body.md" >> "$GITHUB_OUTPUT"
 
             - name: Create Pull Request 🚀
