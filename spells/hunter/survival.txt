@@ -1,0 +1,1447 @@
+425711 Carve
+school    physical
+defense   melee
+cooldown  6 s
+gcd       1.5 s
+cost      4% of maximum mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 chain=1000 target=[6,0]
+effect 2  65% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=65 chain=1000 target=[6,0]
+effect 3  a dummy effect holding 50 to the enemy
+          E_DUMMY base=50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=425711
+=======
+425754 Carve
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425711 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425754
+=======
+433100 Carve
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 chain=1000 target=[6,0]
+effect 2  65% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=65 chain=1000 target=[6,0]
+
+https://www.wowhead.com/forever/spell=433100
+=======
+19239 Clever Traps
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_DURATION +30% on family 9 mask 0x18
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=1 family=9 mask=0x18 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +30% on family 9 mask 0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=8 family=9 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19239
+=======
+19306 Counterattack (Rank 1)
+school    physical
+defense   melee
+duration  5 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      30 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +26 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=26 sp=1 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 3  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19306
+=======
+20909 Counterattack (Rank 3)
+school    physical
+defense   melee
+duration  5 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      65 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +70 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=70 sp=1 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 3  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20909
+=======
+20910 Counterattack (Rank 4)
+school    physical
+defense   melee
+duration  5 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      85 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +110 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=110 sp=1 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 3  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20910
+=======
+1242634 Counterattack (Rank 2)
+school    physical
+defense   melee
+duration  5 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      45 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +40 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=40 sp=1 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 3  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1242634
+=======
+19263 Deterrence
+school    physical
+duration  10 s
+cooldown  300 s
+labels    23
+
+effect 1  +25% parry chance
+          E_APPLY_AURA A_MOD_PARRY_PERCENT base=25 sp=1 target=[1,0]
+effect 2  +25% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=25 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19263
+=======
+781 Disengage (Rank 1)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      50 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -170 threat to the enemy
+          E_THREAT base=-140 ppl=-3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=781
+=======
+14272 Disengage (Rank 2)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      100 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -310 threat to the enemy
+          E_THREAT base=-280 ppl=-3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14272
+=======
+14273 Disengage (Rank 3)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      150 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -435 threat to the enemy
+          E_THREAT base=-405 ppl=-3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14273
+=======
+19184 Entrapment
+school    physical
+attrs     passive
+labels    23
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 5000 to the enemy
+          E_APPLY_AURA A_DUMMY base=5000 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19184
+=======
+13813 Explosive Trap (Rank 1)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      275 mana
+labels    23
+refs      13812 Explosive Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 target=[47,0]
+
+https://www.wowhead.com/forever/spell=13813
+=======
+14316 Explosive Trap (Rank 2)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      395 mana
+labels    23
+refs      14314 Explosive Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14316
+=======
+14317 Explosive Trap (Rank 3)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      520 mana
+labels    23
+refs      14315 Explosive Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14317
+=======
+13812 Explosive Trap Effect (Rank 1)
+school    fire
+defense   magic
+duration  20 s
+attrs     periodic can crit
+labels    23
+
+effect 1  103.478264–134.52174 fire damage to every enemy around the caster (at level 60)
+          E_SCHOOL_DAMAGE base=115 ppl=0.8 variance=0.26086956 target=[22,15]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=15 period=2000ms radius=10 target=[28,0]
+
+https://www.wowhead.com/forever/spell=13812
+=======
+14314 Explosive Trap Effect (Rank 2)
+school    fire
+defense   magic
+duration  20 s
+attrs     periodic can crit
+labels    23
+
+effect 1  144.11656–193.88344 fire damage to every enemy around the caster (at level 60)
+          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.29447854 target=[22,15]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=24 period=2000ms radius=10 target=[28,0]
+
+https://www.wowhead.com/forever/spell=14314
+=======
+14315 Explosive Trap Effect (Rank 3)
+school    fire
+defense   magic
+duration  20 s
+attrs     periodic can crit, not a proc
+labels    23
+
+effect 1  207.1441–264.8559 fire damage to every enemy around the caster (at level 60)
+          E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 target=[22,15]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
+
+https://www.wowhead.com/forever/spell=14315
+=======
+1310532 Expose Prey
+school    physical
+attrs     passive
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; 10% chance, from effect 1
+refs      5302 Defensive State
+
+effect 1  casts 1310726 Expose Prey on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1310726 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310532
+=======
+5384 Feign Death
+school    physical
+duration  360 s
+cooldown  30 s
+cost      80 mana
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_FEIGN_DEATH base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5384
+=======
+415320 Flanking Strike
+school    physical
+defense   melee
+duration  10 s
+cooldown  30 s
+gcd       1.5 s
+cost      1.5% of maximum mana
+range     5 yd
+equip     needs a melee weapon
+stack     up to 3
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+effect 3  +8% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=8 misc=127 target=[1,0]
+effect 4  a dummy effect holding 50 to the caster
+          E_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415320
+=======
+415326 Flanking Strike
+school    physical
+defense   melee
+range     5 yd
+stack     up to 1
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415326
+=======
+415327 Flanking Strike
+school    physical
+stack     up to 1
+attrs     passive
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415327
+=======
+425757 Flanking Strike
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415320 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425757
+=======
+1499 Freezing Trap (Rank 1)
+school    frost
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      50 mana
+labels    23
+refs      3355 Freezing Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=2561 target=[47,0]
+
+https://www.wowhead.com/forever/spell=1499
+=======
+14310 Freezing Trap (Rank 2)
+school    frost
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      75 mana
+labels    23
+refs      14308 Freezing Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164876 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14310
+=======
+14311 Freezing Trap (Rank 3)
+school    frost
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      100 mana
+labels    23
+refs      14309 Freezing Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164877 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14311
+=======
+27753 Freezing Trap (Rank 3)
+school    frost
+duration  60 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      100 mana
+refs      14309 Freezing Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164877 radius=2 target=[47,0]
+
+https://www.wowhead.com/forever/spell=27753
+=======
+13809 Frost Trap
+school    frost
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      60 mana
+labels    23
+refs      13810 Frost Trap Aura, 14207 OLDFrost Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164639 target=[47,0]
+
+https://www.wowhead.com/forever/spell=13809
+=======
+409580 Heart of the Lion
+school    nature
+duration  permanent
+gcd       1.5 s
+cost      8% of maximum mana
+refs      409583 Heart of the Lion
+
+effect 1  +10% to all stats
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[1,0]
+effect 2  a dummy aura holding 10 every 14 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=10 period=14000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=409580
+=======
+409583 Heart of the Lion
+school    nature
+duration  15 s
+range     100 yd
+refs      409580 Heart of the Lion
+
+effect 1  +10% to all stats to every ally in the target area
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[18,31]
+effect 2  +276 attack power to every ally in the target area (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
+effect 3  +276 ranged attack power to every ally in the target area (at level 60)
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
+
+https://www.wowhead.com/forever/spell=409583
+=======
+13795 Immolation Trap (Rank 1)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      50 mana
+labels    23
+refs      13797 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164638 target=[47,0]
+
+https://www.wowhead.com/forever/spell=13795
+=======
+14302 Immolation Trap (Rank 2)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      90 mana
+labels    23
+refs      14298 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164872 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14302
+=======
+14303 Immolation Trap (Rank 3)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      135 mana
+labels    23
+refs      14299 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164873 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14303
+=======
+14304 Immolation Trap (Rank 4)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      190 mana
+labels    23
+refs      14300 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164874 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14304
+=======
+14305 Immolation Trap (Rank 5)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      245 mana
+labels    23
+refs      14301 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14305
+=======
+22910 Immolation Trap
+school    fire
+duration  60 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      245 mana
+refs      14301 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 radius=2 target=[47,0]
+
+https://www.wowhead.com/forever/spell=22910
+=======
+1213271 Immolation Trap
+school    fire
+duration  60 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      245 mana
+refs      14301 Immolation Trap Effect
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 radius=2 target=[47,0]
+
+https://www.wowhead.com/forever/spell=1213271
+=======
+13797 Immolation Trap Effect (Rank 1)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  21 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=13797
+=======
+14298 Immolation Trap Effect (Rank 2)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  43 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=43 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14298
+=======
+14299 Immolation Trap Effect (Rank 3)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  68 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=68 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14299
+=======
+14300 Immolation Trap Effect (Rank 4)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  102 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=102 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14300
+=======
+14301 Immolation Trap Effect (Rank 5)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  138 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=138 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14301
+=======
+19286 Improved Feign Death (Rank 1)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +2% on family 9 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=16 family=9 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19286
+=======
+19287 Improved Feign Death (Rank 2)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +4% on family 9 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=16 family=9 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19287
+=======
+24432 Improved Feign Death
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 9 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=9 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24432
+=======
+24293 Improved Tracking
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_EFFECT2 +5 on family 9 mask 0x0,0x0,0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=12 family=9 mask=0x0,0x0,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24293
+=======
+19228 Improved Wing Clip (Rank 1)
+school    physical
+attrs     passive
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance, from effect 1; tooltip says one named ability
+refs      19229 Improved Wing Clip
+
+effect 1  casts 19229 Improved Wing Clip on its trigger to the enemy
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=1 trigger=19229 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19228
+=======
+24118 Lacerate (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      40 mana
+range     5 yd
+equip     needs a melee weapon
+attrs     periodic can crit
+
+effect 1  21 physical damage every 3 s to the enemy (7 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=17 ppl=0.5 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24118
+=======
+24119 Lacerate (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      65 mana
+range     5 yd
+equip     needs a melee weapon
+attrs     periodic can crit
+
+effect 1  32 physical damage every 3 s to the enemy (7 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=28 ppl=0.6 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24119
+=======
+24120 Lacerate (Rank 3)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      80 mana
+range     5 yd
+equip     needs a melee weapon
+attrs     periodic can crit
+
+effect 1  45 physical damage every 3 s to the enemy (7 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 ppl=0.7 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24120
+=======
+1299332 Lacerate (Rank 4)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      95 mana
+range     5 yd
+equip     needs a melee weapon
+attrs     periodic can crit
+
+effect 1  58 physical damage every 3 s to the enemy (7 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=58 ppl=0.8 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1299332
+=======
+1310533 Lacerating Strikes
+school    physical
+attrs     passive
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      1310536 Lacerating Strikes
+
+effect 1  a dummy aura holding 40
+          E_APPLY_AURA A_DUMMY base=40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310533
+=======
+1310536 Lacerating Strikes
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+range     100 yd
+attrs     periodic can crit
+
+effect 1  1 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1310536
+=======
+1495 Mongoose Bite (Rank 1)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      30 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +15 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=15 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1495
+=======
+14269 Mongoose Bite (Rank 2)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      40 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +22 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=22 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14269
+=======
+14270 Mongoose Bite (Rank 3)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      50 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage +37 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=37 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14270
+=======
+14271 Mongoose Bite (Rank 4)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      65 mana
+range     5 yd
+labels    23
+
+effect 1  normalised weapon damage +57 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=57 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14271
+=======
+1310627 Predator's Edge
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +30% on family 9 mask 0x42,0x81000,0x40210000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=15 family=9 mask=0x42,0x81000,0x40210000 target=[1,0]
+effect 2  +50% off-hand damage
+          E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310627
+=======
+2973 Raptor Strike (Rank 1)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      10 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +5 to the enemy
+          E_WEAPON_DAMAGE base=5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2973
+=======
+14260 Raptor Strike (Rank 2)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      25 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +11 to the enemy
+          E_WEAPON_DAMAGE base=11 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14260
+=======
+14261 Raptor Strike (Rank 3)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      35 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +21 to the enemy
+          E_WEAPON_DAMAGE base=21 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14261
+=======
+14262 Raptor Strike (Rank 4)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      45 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +30 to the enemy
+          E_WEAPON_DAMAGE base=30 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14262
+=======
+14263 Raptor Strike (Rank 5)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      55 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +35 to the enemy
+          E_WEAPON_DAMAGE base=35 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14263
+=======
+14264 Raptor Strike (Rank 6)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      70 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +40 to the enemy
+          E_WEAPON_DAMAGE base=40 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14264
+=======
+14265 Raptor Strike (Rank 7)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      85 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +55 to the enemy
+          E_WEAPON_DAMAGE base=55 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14265
+=======
+14266 Raptor Strike (Rank 8)
+school    physical
+defense   melee
+cooldown  6 s (category)
+cost      100 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  weapon damage +70 to the enemy
+          E_WEAPON_DAMAGE base=70 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14266
+=======
+409691 Raptor Strike (Rank 1)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +2 to the enemy
+          E_WEAPON_DAMAGE base=2 variance=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409691
+=======
+409693 Raptor Strike (Rank 2)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +5 to the enemy
+          E_WEAPON_DAMAGE base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409693
+=======
+409748 Raptor Strike (Rank 3)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +10 to the enemy
+          E_WEAPON_DAMAGE base=10 variance=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409748
+=======
+409750 Raptor Strike (Rank 4)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +17 to the enemy
+          E_WEAPON_DAMAGE base=17 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409750
+=======
+409751 Raptor Strike (Rank 5)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +25 to the enemy
+          E_WEAPON_DAMAGE base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409751
+=======
+409752 Raptor Strike (Rank 6)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +40 to the enemy
+          E_WEAPON_DAMAGE base=40 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409752
+=======
+409754 Raptor Strike (Rank 7)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +55 to the enemy
+          E_WEAPON_DAMAGE base=55 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409754
+=======
+409755 Raptor Strike (Rank 8)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +70 to the enemy
+          E_WEAPON_DAMAGE base=70 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409755
+=======
+415335 Raptor Strike (Rank 1)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      15 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +5 to the enemy
+          E_WEAPON_DAMAGE base=5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415335
+=======
+415336 Raptor Strike (Rank 2)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      25 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +11 to the enemy
+          E_WEAPON_DAMAGE base=11 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415336
+=======
+415337 Raptor Strike (Rank 3)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      35 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +21 to the enemy
+          E_WEAPON_DAMAGE base=21 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415337
+=======
+415338 Raptor Strike (Rank 4)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      45 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +34 to the enemy
+          E_WEAPON_DAMAGE base=34 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415338
+=======
+415340 Raptor Strike (Rank 5)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      55 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +50 to the enemy
+          E_WEAPON_DAMAGE base=50 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415340
+=======
+415341 Raptor Strike (Rank 6)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      70 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +80 to the enemy
+          E_WEAPON_DAMAGE base=80 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415341
+=======
+415342 Raptor Strike (Rank 7)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      85 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +110 to the enemy
+          E_WEAPON_DAMAGE base=110 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415342
+=======
+415343 Raptor Strike (Rank 8)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      100 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage +140 to the enemy
+          E_WEAPON_DAMAGE base=140 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415343
+=======
+23989 Readiness
+school    physical
+cooldown  300 s
+gcd       1 s
+labels    23
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23989
+=======
+440529 Resourcefulness
+school    physical
+attrs     passive
+labels    23, 3096
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no stated chance, the rate has to come from an override; tooltip says on a crit, one named ability
+refs      1242688 Resourcefulness
+
+effect 1  SPELLMOD_COST -60% on family 9 mask 0xc2,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=14 family=9 mask=0xc2,0x80000 target=[1,0]
+effect 2  casts 1242688 Resourcefulness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=1242688 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440529
+=======
+440558 Resourcefulness
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440529 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440558
+=======
+19159 Savage Strikes
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +20% on family 9 mask 0x42,0x81000,0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=7 family=9 mask=0x42,0x81000,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19159
+=======
+1317257 Strider Kick (Rank 1)
+school    physical
+defense   melee
+duration  3 s
+cooldown  8 s
+gcd       1.5 s
+cost      5.81% of maximum mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+effect 3  +30% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1317257
+=======
+19290 Surefooted
+school    physical
+attrs     passive
+labels    23
+
+effect 1  -30% snare duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-30 sp=1 misc=11 target=[1,0]
+effect 2  -30% root duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-30 sp=1 misc=7 target=[1,0]
+effect 3  +3% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=3 sp=1 target=[1,0]
+effect 4  +3% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19290
+=======
+19376 Survival Tactics
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +17% on family 9 mask 0x11c
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=17 sp=1 misc=16 family=9 mask=0x11c target=[1,0]
+
+https://www.wowhead.com/forever/spell=19376
+=======
+19255 Survivalist
+school    physical
+attrs     passive
+labels    23
+
+effect 1  +10% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19255
+=======
+1310496 Survivalist's Discipline
+school    physical
+attrs     passive
+labels    23, 3096
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COOLDOWN -40% on family 9 mask 0x80,0x0,0x0,0x8000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=11 family=9 mask=0x80,0x0,0x0,0x8000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310496
+=======
+1494 Track Beasts
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=1 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_TRACK_RESOURCES base=0 misc=24 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1494
+=======
+19878 Track Demons
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=3 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19878
+=======
+19879 Track Dragonkin
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=2 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19879
+=======
+19880 Track Elementals
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=4 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19880
+=======
+19882 Track Giants
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=5 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19882
+=======
+19885 Track Hidden
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_STEALTHED base=0 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH_DETECT base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19885
+=======
+19883 Track Humanoids
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=7 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=64 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19883
+=======
+19884 Track Undead
+school    physical
+duration  permanent
+gcd       1.5 s
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRACK_CREATURES base=0 misc=6 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=0 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19884
+=======
+2974 Wing Clip (Rank 1)
+school    physical
+defense   melee
+duration  10 s
+gcd       1.5 s
+cost      40 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  5 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2974
+=======
+14267 Wing Clip (Rank 2)
+school    physical
+defense   melee
+duration  10 s
+gcd       1.5 s
+cost      60 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -55% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-55 mechanic=11 target=[6,0]
+effect 2  25 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14267
+=======
+14268 Wing Clip (Rank 3)
+school    physical
+defense   melee
+duration  10 s
+gcd       1.5 s
+cost      80 mana
+range     5 yd
+equip     needs a melee weapon
+labels    23
+
+effect 1  -60% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 mechanic=11 target=[6,0]
+effect 2  50 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=50 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14268
+=======
+27633 Wing Clip (Rank 3)
+school    physical
+defense   melee
+duration  10 s
+gcd       1.5 s
+cost      80 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  -60% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 mechanic=11 target=[6,0]
+effect 2  50 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=50 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27633
+=======
+1310180 Wing Clip
+school    physical
+defense   melee
+duration  10 s
+gcd       1.5 s
+cost      40 mana
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  5 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1310180

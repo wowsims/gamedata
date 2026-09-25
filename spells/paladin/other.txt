@@ -1,0 +1,2143 @@
+1286253 (DNT) Blessing of Might - TEST RAID SPELL (Rank 6)
+school    holy
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    26
+
+effect 1  +112 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=112 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1286253
+=======
+1300948 1.60.0 - Item - Tier 1 - Paladin - Holy 2P Bonus - Spirit
+school    physical
+attrs     passive
+
+effect 1  +10 spirit
+          E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300948
+=======
+1301014 1.60.0 - Item - Tier 1 - Paladin - Holy 3P Bonus - Blessing of Protection
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -30 s on family 10 mask 0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=10 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301014
+=======
+1301080 1.60.0 - Item - Tier 1 - Paladin - Holy 4P Bonus - Healing/Damage
+school    physical
+attrs     passive
+
+effect 1  +26 healing power
+          E_APPLY_AURA A_MOD_HEALING_DONE base=26 misc=126 target=[1,0]
+effect 2  +9 holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=9 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301080
+=======
+1301694 1.60.0 - Item - Tier 1 - Paladin - Holy 5P Bonus - Holy Shock
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 10 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=10 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301694
+=======
+1300949 1.60.0 - Item - Tier 1 - Paladin - Protection 2P Bonus - Defense
+school    physical
+attrs     passive
+
+effect 1  +7 to skill 95
+          E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300949
+=======
+1301015 1.60.0 - Item - Tier 1 - Paladin - Protection 3P Bonus - Turn Undead
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 10 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=10 family=10 mask=0x0,0x0,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301015
+=======
+1301083 1.60.0 - Item - Tier 1 - Paladin - Protection 4P Bonus - Expertise
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301083
+=======
+1301697 1.60.0 - Item - Tier 1 - Paladin - Protection 5P Bonus - Forbearance
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding -10000
+          E_APPLY_AURA A_DUMMY base=-10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301697
+=======
+1300951 1.60.0 - Item - Tier 1 - Paladin - Retribution 2P Bonus - Haste
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
+effect 2  +1% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300951
+=======
+1301036 1.60.0 - Item - Tier 1 - Paladin - Retribution 3P Bonus - Hammer of Justice
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -5 s on family 10 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 misc=11 family=10 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301036
+=======
+1301702 1.60.0 - Item - Tier 1 - Paladin - Retribution 5P Bonus - Judgement
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -0.5 s on family 10 mask 0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=11 family=10 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301702
+=======
+425615 Aegis
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425589 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425615
+=======
+409324 Ancestral Guidance
+school    nature
+duration  10 s
+cooldown  60 s
+excluded caster aura 25771 Forbearance
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 25
+          E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409324
+=======
+409932 Aura Mastery
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407624 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409932
+=======
+416863 Aura Mastery
+school    holy
+duration  6 s
+labels    3096
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_FRIEND A_REDUCE_PUSHBACK base=1000 misc=126 radius=40 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AREA_AURA_FRIEND A_MECHANIC_IMMUNITY base=1000 misc=26 radius=40 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AREA_AURA_FRIEND A_MECHANIC_IMMUNITY base=1000 misc=9 radius=40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=416863
+=======
+26130 Avenger Judgment Bonus
+school    nature
+defense   magic
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DURATION +20% on family 10 mask 0x20180000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=1 family=10 mask=0x20180000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26130
+=======
+409933 Avenger's Shield
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407669 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409933
+=======
+1233525 Avenging Shield
+school    physical
+duration  35 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BLOCK_VALUE_PCT base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1233525
+=======
+26135 Battlegear of Eternal Justice
+school    nature
+defense   magic
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance; tooltip says cast trigger
+
+effect 1  casts 26975 Battlegear of Eternal Justice on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=1 trigger=26975 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26135
+=======
+409906 Beacon of Light
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407613 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409906
+=======
+1226455 Charity
+school    physical
+
+effect 1  restores 0 mana to the caster
+          E_ENERGIZE base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226455
+=======
+27847 Cleanse Cost Reduced
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -25 (-2.5 on a rage bar) on family 10 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-25 sp=1 misc=14 family=10 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27847
+=======
+25751 Copy of Judgement of Light (Rank 4)
+school    holy
+defense   magic
+duration  30 s
+range     100 yd
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance
+
+effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25751
+=======
+29196 Corrupted Mind
+school    shadow
+duration  120 s
+range     50000 yd
+attrs     cannot crit
+labels    26
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 29197 Corrupted Mind on its trigger to the target
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=29197 target=[25,0]
+
+https://www.wowhead.com/forever/spell=29196
+=======
+29197 Corrupted Mind
+school    shadow
+duration  60 s
+range     50000 yd
+attrs     cannot crit
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4327 family=10 mask=0xc020f000,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29197
+=======
+1311083 Crusade
+school    physical
+attrs     passive
+labels    26
+
+effect 1  +2% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=2 sp=1 misc=127 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_VERSUS base=2 sp=1 misc=36 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311083
+=======
+409914 Crusader Strike
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407676 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409914
+=======
+27498 Crusader's Wrath
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      27499 Crusader's Wrath
+
+effect 1  casts 27499 Crusader's Wrath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=27499 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27498
+=======
+436391 Decoy Totem
+school    nature
+defense   magic
+duration  10 s
+range     30 yd
+
+effect 1  immune to root to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[21,0]
+effect 2  immune to snare to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=11 target=[21,0]
+
+https://www.wowhead.com/forever/spell=436391
+=======
+22270 Divine Intervention (NEWTEST)
+school    holy
+cooldown  3600 s
+gcd       1.5 s
+range     30 yd
+labels    26
+
+effect 1  unrecognised shape
+          E_RESURRECT base=20 sp=1 target=[0,0]
+
+https://www.wowhead.com/forever/spell=22270
+=======
+1224692 Divinity
+school    physical
+attrs     passive
+labels    26
+
+effect 1  +5% healing done
+          E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=5 misc=2 target=[1,0]
+effect 2  +5% healing taken
+          E_APPLY_AURA A_MOD_HEALING_PCT base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1224692
+=======
+435994 Dormant Rune
+school    physical
+duration  permanent
+range     50000 yd
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_TAKE_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 436011 [DNT] Transform Dormant Rune on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=436011 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435994
+=======
+1226451 Emergency
+school    physical
+duration  30 s
+range     100 yd
+charges   5
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  +20% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 sp=1 target=[1,0]
+effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 10 mask 0xc0208000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=10 mask=0xc0208000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226451
+=======
+1214058 Enchanted Prayer Tome
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0xc0000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=10 mask=0xc0000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214058
+=======
+435982 Energize
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_RANGED_ATTACK; 5% chance
+refs      435981 Energize
+
+effect 1  casts 435981 Energize on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=435981 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435982
+=======
+435977 Energized Hyperconductor
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance; tooltip says cast trigger, heals count
+refs      435978 Energized Hyperconductor
+
+effect 1  casts 435978 Energized Hyperconductor on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=435978 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435977
+=======
+426173 Enlightened Judgements
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  SPELLMOD_RANGE +30 on family 10 mask 0x20980400,0x400209,0x58
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=5 family=10 mask=0x20980400,0x400209,0x58 target=[1,0]
+effect 2  +17% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=17 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426173
+=======
+1217927 Excommunication
+school    physical
+defense   magic
+duration  20 s
+stack     up to 3
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +35% on family 10 mask 0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=35 family=10 mask=0x0,0x0,0x2000 target=[1,0]
+effect 2  a dummy aura every 2 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1217927
+=======
+426162 Fanaticism
+school    holy
+defense   magic
+duration  12 s
+range     100 yd
+stack     up to 1
+attrs     cannot crit
+labels    3096
+
+effect 1  16 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=16 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=426162
+=======
+429142 Fanaticism
+school    holy
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count, heals only
+refs      426162 Fanaticism
+
+effect 1  +18% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=18 sp=1 misc=2 target=[1,0]
+effect 2  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429142
+=======
+429250 Fanaticism
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429142 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429250
+=======
+1306687 Greathelm of the Colossus
+school    physical
+stance exclude Battle, Defensive, Berserker
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCALE base=10 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_AUTOATTACK_RANGE base=1 target=[1,0]
+effect 3  SPELLMOD_RANGE +1 on family 10 mask 0x0,0x68000,0x0,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=5 family=10 mask=0x0,0x68000,0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306687
+=======
+415058 Guarded by the Light
+school    holy
+defense   magic
+duration  15 s
+charges   1
+attrs     can proc from procs
+labels    26
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_POWER base=5 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=415058
+=======
+415059 Guarded by the Light
+school    physical
+attrs     passive
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      415058 Guarded by the Light
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415059
+=======
+415755 Guarded by the Light
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415059 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415755
+=======
+425614 Hallowed Ground
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458287 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425614
+=======
+458287 Hallowed Ground
+school    physical
+defense   magic
+attrs     passive
+
+effect 1  a dummy aura holding 200
+          E_APPLY_AURA A_DUMMY base=200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=458287
+=======
+23302 Hammer of Justice Cooldown Reduction
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -10 s on family 10 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=11 family=10 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23302
+=======
+407774 Hand of Reckoning
+school    holy
+attrs     passive
+
+effect 1  replaces an action bar spell with 25780 Righteous Fury
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407627 misc=25780 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407774
+=======
+409911 Hand of Reckoning
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407631 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409911
+=======
+1219206 Hand of Reckoning
+school    holy
+defense   magic
+duration  3 s
+cooldown  10 s (category)
+range     5 yd
+refs      407627 Righteous Fury
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219206
+=======
+409935 Hand of Sacrifice
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=462853 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409935
+=======
+462853 Hand of Sacrifice
+school    holy
+defense   magic
+duration  12 s
+cooldown  120 s
+gcd       1.5 s
+cost      6% of maximum mana
+range     30 yd
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_SPLIT_DAMAGE_PCT base=30 amplitude=1 misc=127 target=[57,0]
+effect 2  a dummy effect holding 100 to the target's raid
+          E_DUMMY base=100 target=[57,0]
+
+https://www.wowhead.com/forever/spell=462853
+=======
+1291089 Holy Light Mana Cost Reduction
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -5% on family 10 mask 0x80000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 misc=14 family=10 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1291089
+=======
+24833 Holy Mightstone
+school    holy
+duration  600 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=300 misc=32 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_FLAT_SPELL_DAMAGE_VERSUS base=400 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24833
+=======
+1306433 Holy Shield Block Value Increase
+school    physical
+attrs     passive
+labels    26
+refs      1306749 Steadfast
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306433
+=======
+459602 Holy Shock Critical Chance Increase
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 10 mask 0x200000,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=10 mask=0x200000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459602
+=======
+1306429 Holy Shock Critical Chance Increase
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 10 mask 0x200000,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=10 mask=0x200000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306429
+=======
+27785 Hunter Armor Energize
+school    physical
+attrs     passive
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK; 4% chance
+
+effect 1  casts 27786 Hunter Armor Energize on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=27786 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27785
+=======
+23415 Improved Blessing of Protection
+school    holy
+duration  5 s
+cost      100 mana
+range     50000 yd
+labels    26
+
+effect 1  immune to physical to target 38
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[38,0]
+
+https://www.wowhead.com/forever/spell=23415
+=======
+20194 Improved Blessing of Salvation (Rank 1)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DURATION +300 s on family 10 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=300000 sp=1 misc=1 family=10 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20194
+=======
+20195 Improved Blessing of Salvation (Rank 2)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DURATION +600 s on family 10 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=600000 sp=1 misc=1 family=10 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20195
+=======
+24460 Improved Blessings
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DURATION +10% on family 10 mask 0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=1 family=10 mask=0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24460
+=======
+1214296 Improved Exorcism/Crusader Strike
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0x0,0x8000,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=10 mask=0x0,0x8000,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214296
+=======
+429152 Improved Hammer of Wrath
+school    holy
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_IGNORE_MELEE_RESET base=10 sp=1 family=10 mask=0x0,0x80 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME -100% on family 10 mask 0x0,0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429152
+=======
+429259 Improved Hammer of Wrath
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429152 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429259
+=======
+1214299 Improved Hammer of the Righteous/Shield of Righteousness
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0x0,0x140000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=10 mask=0x0,0x140000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214299
+=======
+24457 Improved Holy Light
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 10 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=10 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24457
+=======
+1220645 Improved Holy Light/Holy Shock/Sacred Shield
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0x80000000,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=10 mask=0x80000000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1220645
+=======
+446213 Improved Holy Shield
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +2 on family 10 mask 0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=3 family=10 mask=0x0,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=446213
+=======
+436284 Improved Holy Shock
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 10 mask 0x200000,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=10 mask=0x200000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436284
+=======
+1214297 Improved Holy Shock
+school    physical
+attrs     passive
+refs      1214298 Libram of Sanctity
+
+effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0x0,0x0,0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=10 mask=0x0,0x0,0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214297
+=======
+1310902 Improved Holy Strike
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 10 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310902
+=======
+23564 Improved Judgement of Light
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 10 mask 0x80000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=18 family=10 mask=0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23564
+=======
+1293630 Improved Redemption
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_CASTING_TIME -20% on family 10 mask 0x0,0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=10 mask=0x0,0x0,0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1293630
+=======
+429133 Improved Sanctuary
+school    physical
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_EFFECT1 +100% on family 10 mask 0x0,0x0,0x0,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=3 family=10 mask=0x0,0x0,0x0,0x40 target=[1,0]
+effect 2  a dummy aura holding 30 from family 10 mask 0x0,0x0,0x0,0x40
+          E_APPLY_AURA A_DUMMY base=30 sp=1 family=10 mask=0x0,0x0,0x0,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429133
+=======
+429245 Improved Sanctuary
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429133 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429245
+=======
+23565 Increased Aura Radii
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_RADIUS +10 on family 10 mask 0x4020048
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=6 family=10 mask=0x4020048 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23565
+=======
+428491 Increased Aura Radii
+school    physical
+attrs     passive
+
+effect 1  -5 damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-5 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428491
+=======
+1293544 Increased Flash of Light Crit Chance
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 10 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=10 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1293544
+=======
+28851 Increased Flash of Light Healing
+school    physical
+attrs     passive
+labels    26
+
+effect 1  a dummy aura holding 83 from family 10 mask 0x10
+          E_APPLY_AURA A_DUMMY base=83 family=10 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28851
+=======
+1232104 Infusion of Souls
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 10 mask 0x20,0x200000,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=10 mask=0x20,0x200000,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232104
+=======
+450625 Item - Crusader's Wrath Proc - Lightforge Armor
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no stated chance, the rate has to come from an override; tooltip says cast trigger, heals count
+refs      27499 Crusader's Wrath
+
+effect 1  casts 27499 Crusader's Wrath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=27499 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450625
+=======
+450626 Item - The Furious Storm Proc
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no stated chance, the rate has to come from an override; tooltip says cast trigger, heals count
+refs      27499 Crusader's Wrath
+
+effect 1  casts 27775 The Furious Storm on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=27775 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450626
+=======
+459601 Judgement Damage Increase
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +20 on family 10 mask 0x400,0x208,0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 family=10 mask=0x400,0x208,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459601
+=======
+1291086 Judgement Increased Damage
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x400,0x8,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 family=10 mask=0x400,0x8,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1291086
+=======
+28774 Lay Hands
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -720 s on family 10 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-720000 misc=11 family=10 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28774
+=======
+1234299 Leogan
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 10 mask 0x0,0x200000,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=10 mask=0x0,0x200000,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1234299
+=======
+470263 Libram of Avenging
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 sp=1 target=[1,0]
+effect 2  SPELLMOD_JUMP_TARGETS -2 on family 10 mask 0x0,0x0,0x0,0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2 misc=17 family=10 mask=0x0,0x0,0x0,0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470263
+=======
+468913 Libram of Awe
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_RANGE +20 on family 10 mask 0x200000,0x10000,0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=5 family=10 mask=0x200000,0x10000,0x20000000 target=[1,0]
+effect 2  -75% holy damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-75 misc=2 family=10 mask=0x0,0x0,0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468913
+=======
+429578 Libram of Banishment
+school    physical
+stack     up to 200
+attrs     passive
+labels    2600
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 408953 Building Inspiration on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429578
+=======
+421510 Libram of Blessings
+school    physical
+stack     up to 200
+attrs     passive
+labels    2600
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 408953 Building Inspiration on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+
+https://www.wowhead.com/forever/spell=421510
+=======
+435962 Libram of Deliverance
+school    physical
+stack     up to 200
+attrs     passive
+labels    2600
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 408953 Building Inspiration on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435962
+=======
+28853 Libram of Divinity
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1302540 Libram of Divinity
+
+effect 1  casts 1302540 Libram of Divinity on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1302540 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28853
+=======
+1302540 Libram of Divinity
+school    holy
+range     30 yd
+
+effect 1  22.5–27.5 healing to the party around the caster
+          E_HEAL base=25 variance=0.2 radius=30 target=[20,0]
+
+https://www.wowhead.com/forever/spell=1302540
+=======
+449980 Libram of Holy Alacrity
+school    physical
+attrs     passive
+labels    26
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+refs      449982 Libram of Holy Alacrity
+
+effect 1  casts 449982 Libram of Holy Alacrity on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 sp=1 trigger=449982 target=[1,0]
+
+https://www.wowhead.com/forever/spell=449980
+=======
+449982 Libram of Holy Alacrity
+school    physical
+duration  10 s
+charges   1
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 10 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=10 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=449982
+=======
+461294 Libram of Holy Alacrity
+school    physical
+attrs     passive
+
+effect 1  a dummy aura from family 10 mask 0x1
+          E_APPLY_AURA A_DUMMY base=0 sp=1 family=10 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461294
+=======
+409930 Libram of Judgement
+school    physical
+stack     up to 200
+attrs     passive
+labels    2600
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 408953 Building Inspiration on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409930
+=======
+421535 Libram of Justice
+school    physical
+stack     up to 200
+attrs     passive
+labels    2600
+proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
+
+effect 1  casts 408953 Building Inspiration on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+
+https://www.wowhead.com/forever/spell=421535
+=======
+470078 Libram of Plenty
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met; tooltip says one named ability
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470078
+=======
+1214158 Libram of Purification
+school    physical
+attrs     passive
+
+effect 1  casts 1214157 Libram of Purification when the target is hit from family 10 mask 0x1000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=200 trigger=1214157 family=10 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214158
+=======
+1214298 Libram of Sanctity
+school    holy
+defense   magic
+duration  60 s
+
+effect 1  +10% holy damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214298
+=======
+470246 Libram of Wrath
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met; tooltip says one named ability
+refs      470271 Libram of Wrath
+
+effect 1  casts 470271 Libram of Wrath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=1 trigger=470271 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470246
+=======
+470271 Libram of Wrath
+school    physical
+defense   magic
+duration  15 s
+stack     up to 5
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -20% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=10 mask=0x0,0x200000 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_IGNORE_MELEE_RESET base=0 family=10 mask=0x0,0x200000 target=[1,0]
+effect 3  SPELLMOD_COST -20% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=10 mask=0x0,0x200000 target=[1,0]
+effect 4  SPELLMOD_DAMAGE +20% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=10 mask=0x0,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470271
+=======
+461290 Libram of the Consecrated
+school    physical
+duration  10 s
+charges   1
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -70% on family 10 mask 0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-70 sp=1 misc=14 family=10 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461290
+=======
+463146 Libram of the Consecrated
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met; tooltip says one named ability
+
+effect 1  casts 461290 Libram of the Consecrated on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=-70 sp=1 trigger=461290 target=[1,0]
+
+https://www.wowhead.com/forever/spell=463146
+=======
+461292 Libram of the Devoted
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  casts 461309 Libram of the Devoted on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 sp=1 trigger=461309 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461292
+=======
+1306786 Libram of the Wild Sky
+school    physical
+range     100 yd
+attrs     passive
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding -1000
+          E_APPLY_AURA A_DUMMY base=-1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306786
+=======
+1310927 Light's Fury
+school    holy
+defense   magic
+duration  10 s
+equip     needs a shield
+
+effect 1  absorbs 0 every school damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310927
+=======
+428909 Light's Grace
+school    physical
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says one named ability
+refs      428912 Light's Grace
+
+effect 1  casts 428912 Light's Grace on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=428912 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428909
+=======
+428912 Light's Grace
+school    physical
+duration  15 s
+charges   1
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 10 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=10 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428912
+=======
+429243 Light's Grace
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428909 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429243
+=======
+426174 Malleable Protection
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458318 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426174
+=======
+458318 Malleable Protection
+school    physical
+attrs     passive
+labels    3096
+refs      458312 Divine Protection, 460171 Defender's Resolve
+
+effect 1  replaces an action bar spell with 498 Divine Protection
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458312 sp=1 misc=498 target=[1,0]
+effect 2  replaces an action bar spell with 5573 Divine Protection
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458371 sp=1 misc=5573 target=[1,0]
+effect 3  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[0,0]
+effect 4  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[0,0]
+
+https://www.wowhead.com/forever/spell=458318
+=======
+1216482 Noxious Breath
+school    nature
+duration  30 s
+range     50000 yd
+stack     up to 6
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_COOLDOWN +10 s on family 10 mask 0xffffffff,0xffffffff,0xffffffff,0xffffffff to the enemy
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=10 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
+effect 2  a dummy aura holding 400 to the enemy
+          E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1216482
+=======
+27850 Purify and Cleanse Cost Reduced
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -10% on family 10 mask 0x0,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=10 mask=0x0,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27850
+=======
+1262647 Reagent Economy
+school    shadow
+defense   magic
+duration  permanent
+cooldown  300 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=10 mask=0x11010192,0x0,0x410000,0x200040 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262647
+=======
+425616 Rebuke
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425609 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425616
+=======
+1316101 Repentance Duration Increase
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DURATION +1 s on family 10 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=10 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1316101
+=======
+1317271 Righteous Indignation
+school    holy
+defense   melee
+range     50000 yd
+
+effect 1  32 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=32 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1317271
+=======
+1317272 Righteous Indignation
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 1407
+          E_APPLY_AURA A_DUMMY base=1407 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1317272
+=======
+1226466 Righteous Shield
+school    physical
+duration  6 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BLOCK_VALUE_PCT base=100 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226466
+=======
+440794 Righteous Vengeance
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440672 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440794
+=======
+27787 Rogue Armor Energize
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+
+effect 1  casts 27788 Rogue Armor Energize on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=27788 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27787
+=======
+1219010 S03 - Item - Naxxramas - Paladin - Holy 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2100 s on family 10 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2100000 misc=11 family=10 mask=0x8000 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219010
+=======
+1219059 S03 - Item - Naxxramas - Paladin - Holy 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 10% chance
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219059
+=======
+1219098 S03 - Item - Naxxramas - Paladin - Holy 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 10% chance
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219098
+=======
+1219205 S03 - Item - Naxxramas - Paladin - Protection 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=2 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219205
+=======
+1219225 S03 - Item - Naxxramas - Paladin - Protection 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -180 s on family 10 mask 0x0,0x0,0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-180000 misc=11 family=10 mask=0x0,0x0,0x100 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -120 s on family 10 mask 0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=10 mask=0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219225
+=======
+1219226 S03 - Item - Naxxramas - Paladin - Protection 6P Bonus
+school    physical
+attrs     passive
+refs      407627 Righteous Fury
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219226
+=======
+1219189 S03 - Item - Naxxramas - Paladin - Retribution 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 100 from family 10 mask 0x0,0x20000
+          E_APPLY_AURA A_DUMMY base=100 family=10 mask=0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219189
+=======
+1219191 S03 - Item - Naxxramas - Paladin - Retribution 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=10 mask=0x0,0x200000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -25% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=11 family=10 mask=0x0,0x200000 target=[1,0]
+effect 3  SPELLMOD_COST -75% on family 10 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-75 misc=14 family=10 mask=0x0,0x200000 target=[1,0]
+effect 4  unrecognised shape
+          E_APPLY_AURA A_IGNORE_MELEE_RESET base=10 sp=1 family=10 mask=0x0,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219191
+=======
+1219193 S03 - Item - Naxxramas - Paladin - Retribution 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding -100
+          E_APPLY_AURA A_DUMMY base=-100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219193
+=======
+1213467 S03 - Item - RAQ - Paladin - Retribution 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213467
+=======
+1226452 S03 - Item - Scarlet Enclave - Paladin - Holy 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      1226451 Emergency
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226452
+=======
+1226454 S03 - Item - Scarlet Enclave - Paladin - Holy 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226454
+=======
+1226459 S03 - Item - Scarlet Enclave - Paladin - Holy 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  SPELLMOD_EFFECT1 +25 on family 10 mask 0x0,0x1000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=3 family=10 mask=0x0,0x1000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226459
+=======
+1226467 S03 - Item - Scarlet Enclave - Paladin - Protection 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      1226466 Righteous Shield
+
+effect 1  casts 1226466 Righteous Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226466 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226467
+=======
+1226477 S03 - Item - Scarlet Enclave - Paladin - Protection 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226477
+=======
+1226479 S03 - Item - Scarlet Enclave - Paladin - Protection 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      1233525 Avenging Shield
+
+effect 1  SPELLMOD_DURATION +0.05 s on family 10 mask 0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=1 family=10 mask=0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226479
+=======
+1226460 S03 - Item - Scarlet Enclave - Paladin - Retribution 2P Bonus
+school    physical
+icd       0.1 s
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      1226461 Holy Power
+
+effect 1  casts 1226461 Holy Power on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226461 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226460
+=======
+1226462 S03 - Item - Scarlet Enclave - Paladin - Retribution 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226462
+=======
+1226463 S03 - Item - Scarlet Enclave - Paladin - Retribution 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      1226464 Templar
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226463
+=======
+1240571 S03 - Item - Scarlet Enclave - Paladin - Shockadin 2P Bonus
+school    physical
+icd       0.1 s
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      1226461 Holy Power
+
+effect 1  casts 1226461 Holy Power on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1226461 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240571
+=======
+1240573 S03 - Item - Scarlet Enclave - Paladin - Shockadin 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      1240574 Templar
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240573
+=======
+456488 S03 - Item - T1 - Paladin - Holy 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 70 from family 10 mask 0x80000
+          E_APPLY_AURA A_DUMMY base=70 sp=1 family=10 mask=0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456488
+=======
+456492 S03 - Item - T1 - Paladin - Holy 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 200
+          E_APPLY_AURA A_DUMMY base=200 variance=0.11 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456492
+=======
+456536 S03 - Item - T1 - Paladin - Protection 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BLOCK_VALUE_FLAT base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456536
+=======
+456538 S03 - Item - T1 - Paladin - Protection 4P Bonus
+school    physical
+icd       3.5 s
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says heals count, an outcome the mask has no bit for
+refs      456540 Bastion of Light
+
+effect 1  casts 456540 Bastion of Light on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=456540 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456538
+=======
+456541 S03 - Item - T1 - Paladin - Protection 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CHARGES -4 on family 10 mask 0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4 sp=1 misc=4 family=10 mask=0x0,0x40 target=[1,0]
+effect 2  a dummy aura holding 80
+          E_APPLY_AURA A_DUMMY base=80 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456541
+=======
+456494 S03 - Item - T1 - Paladin - Retribution 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456494
+=======
+456533 S03 - Item - T1 - Paladin - Retribution 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 6
+          E_APPLY_AURA A_DUMMY base=6 sp=1 target=[1,0]
+effect 2  a dummy aura holding 35
+          E_APPLY_AURA A_DUMMY base=35 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456533
+=======
+467506 S03 - Item - T2 - Paladin - Holy 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 10 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=10 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467506
+=======
+467507 S03 - Item - T2 - Paladin - Holy 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +50% on family 10 mask 0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=22 family=10 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467507
+=======
+467513 S03 - Item - T2 - Paladin - Holy 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 75 from family 10 mask 0x20
+          E_APPLY_AURA A_DUMMY base=75 sp=1 family=10 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467513
+=======
+467531 S03 - Item - T2 - Paladin - Protection 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT1 +10 on family 10 mask 0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=3 family=10 mask=0x0,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467531
+=======
+467532 S03 - Item - T2 - Paladin - Protection 4P Bonus
+school    physical
+attrs     passive
+refs      467534 Holy Fortitude
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467532
+=======
+467536 S03 - Item - T2 - Paladin - Protection 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 20% chance, from effect 1; tooltip says an outcome the mask has no bit for
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467536
+=======
+467518 S03 - Item - T2 - Paladin - Retribution 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +20% on family 10 mask 0x400,0x200,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=10 mask=0x400,0x200,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467518
+=======
+467526 S03 - Item - T2 - Paladin - Retribution 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -5 s on family 10 mask 0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 sp=1 misc=11 family=10 mask=0x800000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -45% on family 10 mask 0x400,0x200,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-45 sp=1 family=10 mask=0x400,0x200,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467526
+=======
+467529 S03 - Item - T2 - Paladin - Retribution 6P Bonus
+school    physical
+attrs     passive
+refs      467530 Swift Judgement
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467529
+=======
+1213349 S03 - Item - TAQ - Paladin - Holy 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -25% on family 10 mask 0x80000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=11 family=10 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213349
+=======
+1213353 S03 - Item - TAQ - Paladin - Holy 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 90
+          E_APPLY_AURA A_DUMMY base=90 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213353
+=======
+1213410 S03 - Item - TAQ - Paladin - Protection 2P Bonus
+school    physical
+attrs     passive
+refs      1213408 Blessing of Kings
+
+effect 1  a dummy aura holding 10 from family 10 mask 0x0,0x8000
+          E_APPLY_AURA A_DUMMY base=10 family=10 mask=0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213410
+=======
+1213413 S03 - Item - TAQ - Paladin - Protection 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213413
+=======
+1213397 S03 - Item - TAQ - Paladin - Retribution 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +50% on family 10 mask 0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=10 mask=0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213397
+=======
+1213406 S03 - Item - TAQ - Paladin - Retribution 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      1217927 Excommunication
+
+effect 1  casts 1217927 Excommunication on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 trigger=1217927 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213406
+=======
+468401 S03 - Item - ZG - Paladin - Caster 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  +14 holy damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468401
+=======
+468428 S03 - Item - ZG - Paladin - Caster 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468428
+=======
+468431 S03 - Item - ZG - Paladin - Caster 5P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -3 s on family 10 mask 0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=10 mask=0x0,0x0,0x2000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +50% on family 10 mask 0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=10 mask=0x0,0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468431
+=======
+462814 S03 - Tuning and Overrides Passive - Paladin
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT2 +0% on family 10 mask 0x0,0x0,0x0,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=12 family=10 mask=0x0,0x0,0x0,0x400000 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 +0% on family 10 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=12 family=10 mask=0x400000 target=[1,0]
+effect 3  SPELLMOD_EFFECT4 +0% on family 10 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=32 family=10 mask=0x400000 target=[1,0]
+effect 4  SPELLMOD_RESIST_MISS_CHANCE +0% on family 10 mask 0x0,0x0,0x0,0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=16 family=10 mask=0x0,0x0,0x0,0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462814
+=======
+466503 S03 - Tuning and Overrides Passive - Paladin
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT2 +0% on family 10 mask 0x0,0x0,0x0,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=12 family=10 mask=0x0,0x0,0x0,0x400000 target=[1,0]
+effect 2  SPELLMOD_EFFECT4 +0% on family 10 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=32 family=10 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=466503
+=======
+407805 Sacrifice Redeemed
+school    holy
+duration  10 s
+cooldown  180 s
+
+effect 1  +10% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=127 target=[1,0]
+effect 2  +10% healing done
+          E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=10 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407805
+=======
+1224553 Sanctified Light
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 10 mask 0x80204000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=10 mask=0x80204000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1224553
+=======
+20218 Sanctity Aura
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +10% holy damage done
+          E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_DONE base=10 misc=2 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20218
+=======
+437059 Seal Cost Reduced
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 10 mask 0xa000200,0x20000c00
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=10 mask=0xa000200,0x20000c00 target=[1,0]
+
+https://www.wowhead.com/forever/spell=437059
+=======
+1249005 Seal Cost Reduction
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -5% on family 10 mask 0xa000200,0x20000c00
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=10 mask=0xa000200,0x20000c00 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1249005
+=======
+27848 Seal Duration Increase
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DURATION +4 s on family 10 mask 0xa000200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4000 sp=1 misc=1 family=10 mask=0xa000200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27848
+=======
+23300 Seal of the Crusader Judgement Increase
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +20 on family 10 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=8 family=10 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23300
+=======
+25282 Shield of Rajaxx
+school    holy
+duration  6 s
+range     50000 yd
+
+effect 1  immune to every school to the friendly target
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=25282
+=======
+1213415 Shielded in Righteousness
+school    holy
+defense   magic
+duration  10 s
+stack     up to 1
+charges   1
+attrs     can proc from procs
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 10 mask 0x0,0x0,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=10 mask=0x0,0x0,0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213415
+=======
+440791 Shock and Awe
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=462834 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440791
+=======
+462834 Shock and Awe
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      462832 Shock and Awe, 1239543 Sunlight
+
+effect 1  a dummy aura holding 200
+          E_APPLY_AURA A_DUMMY base=200 sp=1 target=[1,0]
+effect 2  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462834
+=======
+21744 Spirit of Blessing
+school    holy
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 10 mask 0x1000192
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=10 mask=0x1000192 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21744
+=======
+1306749 Steadfast
+school    physical
+duration  10 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BLOCK_VALUE_PCT base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306749
+=======
+1239543 Sunlight
+school    physical
+duration  10 s
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  casts 1239548 Sunlight on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1239548 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1239543
+=======
+1291083 Swift Judgement Cooldown Reduction
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COOLDOWN -10 s on family 10 mask 0x0,0x0,0x0,0x8000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=10 mask=0x0,0x0,0x0,0x8000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1291083
+=======
+1226464 Templar
+school    physical
+duration  10 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_ATTACK_POWER_PCT base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226464
+=======
+1240574 Templar
+school    physical
+duration  10 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_POWER_PCT base=13 variance=0.7692308 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240574
+=======
+53489 The Art of War
+school    physical
+duration  15 s
+charges   1
+labels    26
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  SPELLMOD_CASTING_TIME -0.75 s on family 10 mask 0x40000000,0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-750 sp=1 misc=10 family=10 mask=0x40000000,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=53489
+=======
+415706 The Art of War
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426157 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415706
+=======
+426157 The Art of War
+school    physical
+attrs     passive, can proc from procs
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit, one named ability
+
+effect 1  +10% holy damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 sp=1 misc=2 target=[1,0]
+effect 2  a dummy aura holding -2000
+          E_APPLY_AURA A_DUMMY base=-2000 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426157
+=======
+27774 The Furious Storm
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance; tooltip says cast trigger, heals count
+refs      27775 The Furious Storm
+
+effect 1  casts 27775 The Furious Storm on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=27775 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27774
+=======
+449935 The Furious Storm
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance; tooltip says cast trigger, heals count, one named ability
+refs      449934 The Furious Storm
+
+effect 1  casts 449934 The Furious Storm on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=449934 target=[1,0]
+
+https://www.wowhead.com/forever/spell=449935
+=======
+1262310 The Quick and the Dead
+school    shadow
+defense   magic
+duration  120 s
+
+effect 1  SPELLMOD_COST -100% on family 10 mask 0xdf2797d2,0x1000116,0x101,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0xdf2797d2,0x1000116,0x101,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262310
+=======
+429139 Wrath
+school    holy
+attrs     passive
+labels    3096, 3100
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_PERIODIC_CRIT base=100 sp=1 misc=12 family=10 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429139
+=======
+429248 Wrath
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429139 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429248
+=======
+435833 [DNT] Tarnished Prayer Bead II
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 435831 [DNT] Divine Prayer Bead II on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=435831 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435833
+=======
+435844 [DNT] Tarnished Prayer Bead III
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 435839 [DNT] Divine Prayer Bead III on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=435839 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435844

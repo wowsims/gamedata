@@ -1,0 +1,2440 @@
+28843  Increased Spell Hit Chance
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 4 mask 0x88000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=4 mask=0x88000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28843
+=======
+1300968 1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 2P Bonus - Haste
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
+effect 2  +1% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300968
+=======
+1301069 1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 3P Bonus - Intimidating Shout
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301069
+=======
+1301095 1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 4P Bonus - AP vs. Humanoids
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=64 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301095
+=======
+1301721 1.60.0 - Item - Tier 1 - Warrior - Arms/Fury 5P Bonus - Recklessness
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301721
+=======
+1301071 1.60.0 - Item - Tier 1 - Warrior - Protection 3P Bonus - Intervene
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -10 s on family 4 mask 0x0,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=4 mask=0x0,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301071
+=======
+1301096 1.60.0 - Item - Tier 1 - Warrior - Protection 4P Bonus - Expertise
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301096
+=======
+1301722 1.60.0 - Item - Tier 1 - Warrior - Protection 5P Bonus - Shield Wall
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301722
+=======
+409073 Annihilation
+school    physical
+attrs     passive
+
+effect 1  casts 409075 Annihilation on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=409075 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409073
+=======
+23413 Arcane Explosion
+school    arcane
+cost      400 mana
+labels    17
+
+effect 1  245–273 arcane damage to every ally around the caster
+          E_SCHOOL_DAMAGE base=259 variance=0.10810811 sp=1 target=[22,30]
+
+https://www.wowhead.com/forever/spell=23413
+=======
+457816 Battle Forecast
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  +10% physical damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457816
+=======
+26111 Battlegear of Unyielding Strength Intercept Bonus
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 4 mask 0x40000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=4 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26111
+=======
+23397 Berserk
+school    shadow
+duration  30 s
+labels    25
+
+effect 1  shifts into Berserker to every enemy around the caster
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=19 misc2=1 target=[22,15]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3654 radius=100 family=4 mask=0x800000 target=[22,15]
+effect 3  +30% every school damage taken to every enemy around the caster
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=30 sp=1 misc=127 radius=100 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23397
+=======
+16636 Berserker Charge
+school    physical
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=350 sp=1 misc=200 target=[6,0]
+effect 3  weapon damage +300 to the enemy
+          E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16636
+=======
+19471 Berserker Charge
+school    physical
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=175 sp=1 misc=100 target=[6,0]
+effect 3  weapon damage +150 to the enemy
+          E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19471
+=======
+22886 Berserker Charge
+school    physical
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=120 sp=1 misc=175 target=[6,0]
+effect 3  weapon damage +300 to the enemy
+          E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22886
+=======
+26561 Berserker Charge
+school    physical
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=350 sp=1 misc=200 target=[6,0]
+effect 3  weapon damage +300 to the enemy
+          E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26561
+=======
+1270802 Berserker Charge
+school    physical
+range     8-40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=175 sp=1 misc=100 target=[6,0]
+effect 3  weapon damage +150 to the enemy
+          E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1270802
+=======
+457817 Berserker Forecast
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  +10% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457817
+=======
+412507 Blood Frenzy
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0x20 target=[1,0]
+effect 2  SPELLMOD_DOT +100% on family 4 mask 0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=22 family=4 mask=0x20 target=[1,0]
+effect 3  a dummy aura holding 4 from family 4 mask 0x20
+          E_APPLY_AURA A_DUMMY base=4 family=4 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412507
+=======
+413380 Blood Surge
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 30% chance
+refs      413399 Blood Surge
+
+effect 1  casts 413399 Blood Surge on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=413399 target=[1,0]
+
+https://www.wowhead.com/forever/spell=413380
+=======
+413399 Blood Surge
+school    physical
+duration  15 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=4 mask=0x200000 target=[1,0]
+effect 2  SPELLMOD_COST -100% on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=413399
+=======
+415743 Blood Surge
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413380 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415743
+=======
+28342 Breath of Sargeras
+school    shadow
+defense   magic
+duration  90 s
+range     45 yd
+
+effect 1  -1000 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-1000 target=[6,0]
+effect 2  -1000 ranged attack power to the enemy
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-1000 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28342
+=======
+28846 Cheat Death
+school    physical
+defense   magic
+duration  5 s
+range     30 yd
+
+effect 1  +160 healing taken
+          E_APPLY_AURA A_MOD_HEALING base=160 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28846
+=======
+30012 Chess Move (DND)
+school    physical
+range     8-25 yd
+stance    Battle
+
+effect 1  a dummy effect to target 8
+          E_DUMMY base=0 radius=5 target=[8,0]
+
+https://www.wowhead.com/forever/spell=30012
+=======
+26109 Conqueror Shout Bonus
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -35% on family 4 mask 0xf0000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-35 misc=14 family=4 mask=0xf0000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26109
+=======
+26110 Conqueror Thunder Clap Bonus
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=8 family=4 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26110
+=======
+425418 Consumed By Rage
+school    physical
+attrs     passive
+refs      425415 Enrage
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_TRIGGER_SPELL_ON_POWER_PCT base=60 misc=1 trigger=425415 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425418
+=======
+26652 Copy of Mortal Strike (Rank 1)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +85 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=85 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26652
+=======
+23436 Corrupt Weapon
+school    shadow
+labels    23
+
+effect 1  unrecognised shape
+          E_DURABILITY_DAMAGE_PCT base=100 sp=1 misc=17 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23436
+=======
+23424 Corrupted Totems
+school    shadow
+labels    24
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23424
+=======
+23425 Corrupted Totems
+school    shadow
+duration  30 s
+labels    24
+
+effect 1  casts 23424 Corrupted Totems every 4 s to every enemy around the caster (7 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=4000ms trigger=23424 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23425
+=======
+23439 Corruption
+school    shadow
+
+effect 1  a dummy effect to every enemy around the caster
+          E_DUMMY base=0 sp=1 radius=100 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23439
+=======
+468242 Corruption
+school    shadow
+
+effect 1  a dummy effect to every enemy around the caster
+          E_DUMMY base=0 sp=1 radius=100 target=[22,15]
+
+https://www.wowhead.com/forever/spell=468242
+=======
+1231416 Coup
+school    physical
+duration  15 s
+range     100 yd
+stack     up to 20
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 10 from family 4 mask 0x20000000 to the enemy
+          E_APPLY_AURA A_DUMMY base=10 family=4 mask=0x20000000 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1231416
+=======
+1235336 Crimson Crusade
+school    physical
+duration  12 s
+stack     up to 2
+charges   1
+icd       0.1 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235336
+=======
+1235337 Crimson Crusade
+school    physical
+duration  permanent
+attrs     can proc from procs
+
+effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235337
+=======
+18381 Cripple
+school    physical
+defense   magic
+duration  30 s
+range     5 yd
+
+effect 1  -24 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-24 target=[6,0]
+effect 2  -24 ranged attack power to the enemy
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-24 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18381
+=======
+1219110 Death Grip
+school    physical
+defense   melee
+range     50000 yd
+attrs     refund on miss
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,47]
+
+https://www.wowhead.com/forever/spell=1219110
+=======
+412609 Deep Wound
+school    physical
+mechanic  bleed
+duration  12 s
+range     50000 yd
+labels    25
+
+effect 1  a dummy aura holding 1 every 3 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=1 sp=1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=412609
+=======
+412613 Deep Wound
+school    physical
+mechanic  bleed
+range     50000 yd
+attrs     cannot crit
+labels    25
+
+effect 1  1 physical damage to the target
+          E_SCHOOL_DAMAGE base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=412613
+=======
+457814 Defensive Forecast
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  -10% physical damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457814
+=======
+29559 Defensive Tactics (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 misc=831 family=4 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29559
+=======
+29588 Defensive Tactics (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=66 misc=831 family=4 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29588
+=======
+29589 Defensive Tactics (Rank 3)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=100 misc=831 family=4 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29589
+=======
+23262 Demoralize
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  -120 attack power to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-10 ppl=-2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23262
+=======
+457706 Echoes of Battle Stance
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x280008a7,0x100008 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457706
+=======
+457708 Echoes of Berserker Stance
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x7000001a,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457708
+=======
+457699 Echoes of Defensive Stance
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xbe20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457699
+=======
+457819 Echoes of Gladiator Stance
+school    physical
+duration  15 s
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+
+https://www.wowhead.com/forever/spell=457819
+=======
+403218 Endless Rage
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RAGE_FROM_DAMAGE_DEALT base=25 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403218
+=======
+403349 Endless Rage
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403218 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403349
+=======
+427081 Engrave Bracers - Rampage
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the wrists
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7068
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7068 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427081
+=======
+427082 Engrave Bracers - Sword and Board
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the wrists
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7069
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7069 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427082
+=======
+427084 Engrave Bracers - Wrecking Crew
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the wrists
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7070
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7070 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427084
+=======
+427080 Engrave Helm - Shield Mastery
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the head
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7067
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7067 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427080
+=======
+427076 Engrave Helm - Taste for Blood
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the head
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7065
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7065 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427076
+=======
+427078 Engrave Helm - Vigilance
+school    physical
+cast      3 s
+equip     needs cloth, leather, mail or plate in the head
+labels    3071, 3096, 3100
+
+effect 1  applies temporary enchant 7066
+          E_ENCHANT_ITEM_TEMPORARY base=0 misc=7066 target=[0,0]
+
+https://www.wowhead.com/forever/spell=427078
+=======
+23563 Enhanced Battle Shout
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +30 on family 4 mask 0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=8 family=4 mask=0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23563
+=======
+23561 Enhanced Sunder Armor
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_THREAT +15% on family 4 mask 0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=2 family=4 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23561
+=======
+427066 Enrage
+school    physical
+duration  12 s
+labels    3096, 3100
+
+effect 1  SPELLMOD_DAMAGE +10% on family 4 mask 0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=4 mask=0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427066
+=======
+462885 Enrage
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462885
+=======
+1259813 Eureka! (Racial)
+school    nature
+defense   magic
+duration  15 s
+cooldown  120 s
+charges   3
+attrs     can proc from procs
+labels    5710
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -10% on family 4 mask 0x2a6000e6,0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=4 mask=0x2a6000e6,0x4 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 4 mask 0x2a6000e6,0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=4 mask=0x2a6000e6,0x4 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on family 4 mask 0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=4 mask=0x20 target=[1,0]
+effect 4  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1259813
+=======
+1264437 Extremely Loud Bark
+school    physical
+mechanic  mechanic 5
+duration  8 s
+range     10 yd
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264437
+=======
+23411 Fireball
+school    fire
+duration  8 s
+cost      400 mana
+labels    17
+
+effect 1  602–674 fire damage to every ally around the caster
+          E_SCHOOL_DAMAGE base=638 variance=0.11285266 sp=1 target=[22,30]
+effect 2  18 fire damage every 2 s to every ally around the caster (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 sp=1 period=2000ms radius=30 target=[22,30]
+
+https://www.wowhead.com/forever/spell=23411
+=======
+402877 Flagellation
+school    physical
+attrs     passive, can proc from procs, class abilities only
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402877
+=======
+402906 Flagellation
+school    shadow
+defense   melee
+duration  12 s
+
+effect 1  +25% physical damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=25 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402906
+=======
+425412 Frenzied Assault
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 30 every 2 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=30 period=2000ms target=[1,0]
+effect 2  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425412
+=======
+431046 Frenzied Assault
+school    physical
+duration  3 s
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword, staff, bit 0x1000 or spear in the two-handed weapon
+attrs     can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +30% melee haste
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=30 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431046
+=======
+30112 Frenzied Dive
+school    physical
+duration  2 s
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+
+https://www.wowhead.com/forever/spell=30112
+=======
+440484 Fresh Meat
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance, from effect 2
+refs      440483 Enrage
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 2  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440484
+=======
+440493 Fresh Meat
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440484 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440493
+=======
+23412 Frostbolt
+school    frost
+duration  9 s
+cost      300 mana
+labels    17
+
+effect 1  431–483 frost damage to every ally around the caster
+          E_SCHOOL_DAMAGE base=457 variance=0.11378556 sp=1 target=[22,30]
+effect 2  -40% movement speed to every ally around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 sp=1 radius=20 target=[22,30]
+
+https://www.wowhead.com/forever/spell=23412
+=======
+403219 Furious Thunder
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT2 -6 on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6 misc=12 family=4 mask=0x80 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=3000 family=4 mask=0x80 target=[1,0]
+effect 3  SPELLMOD_THREAT +50% on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=2 family=4 mask=0x80 target=[1,0]
+effect 4  SPELLMOD_EFFECT1 +100% on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=4 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403219
+=======
+412513 Gladiator Stance
+school    physical
+duration  permanent
+cooldown  1 s (category)
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      413479 Gladiator Stance Shield Passive, 413476 Gladiator Stance Passive
+
+effect 1  shifts into form 24
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=24 target=[1,0]
+effect 2  a dummy aura holding 50 every 1 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=50 period=1000ms target=[1,0]
+effect 3  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412513
+=======
+413476 Gladiator Stance Passive
+school    physical
+attrs     passive
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-30 misc=1 target=[1,0]
+effect 2  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=413476
+=======
+413479 Gladiator Stance Shield Passive
+school    physical
+duration  permanent
+equip     needs a shield
+labels    25
+
+effect 1  +10% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=127 target=[1,0]
+effect 2  +10% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=10 sp=1 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+
+https://www.wowhead.com/forever/spell=413479
+=======
+1234067 Gladiator's Cunning
+school    physical
+duration  15 s
+range     100 yd
+stack     up to 5
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x20000000,0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=4 mask=0x20000000,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1234067
+=======
+28336 Glory Shot
+school    physical
+range     45 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +6000 to the enemy
+          E_WEAPON_DAMAGE base=6000 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28336
+=======
+1306686 Greathelm of the Colossus
+school    physical
+stance    Battle, Defensive, Berserker
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCALE base=10 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_AUTOATTACK_RANGE base=1 target=[1,0]
+effect 3  SPELLMOD_RANGE +1 on family 4 mask 0x2e604e6e,0x140,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=5 family=4 mask=0x2e604e6e,0x140,0x1 target=[1,0]
+effect 4  SPELLMOD_RADIUS +1 on family 4 mask 0x0,0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=6 family=4 mask=0x0,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306686
+=======
+22778 Hamstring Rage Reduction (Rank 1)
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22778
+=======
+459608 Hamstring Rage Reduction
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459608
+=======
+25788 Head Butt
+school    physical
+defense   melee
+duration  5 s
+range     5 yd
+
+effect 1  weapon damage +250 to the enemy
+          E_WEAPON_DAMAGE base=250 sp=1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25788
+=======
+403332 Heroic Shot
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  6 s
+gcd       1.5 s
+range     8-35 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+effect 2  300% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=300 target=[6,0]
+effect 3  restores 20 rage to the caster
+          E_ENERGIZE base=200 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403332
+=======
+425600 Horn of Lordaeron
+school    physical
+defense   magic
+duration  120 s
+cooldown  20 s
+gcd       1.5 s
+cost      10% of maximum mana
+
+effect 1  +1 strength to the party around the caster
+          E_APPLY_AURA A_MOD_STAT base=1 radius=30 target=[20,0]
+effect 2  +1 agility to the party around the caster
+          E_APPLY_AURA A_MOD_STAT base=1 misc=1 radius=30 target=[20,0]
+effect 3  a dummy aura holding 1 every 2 s to the party around the caster (60 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=1 period=2000ms radius=30 target=[20,0]
+
+https://www.wowhead.com/forever/spell=425600
+=======
+13490 Howling Blade (Rank 1)
+school    physical
+duration  30 s
+cost      100 mana
+range     5 yd
+
+effect 1  -30 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-30 target=[6,0]
+effect 2  -30 ranged attack power to the enemy
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13490
+=======
+12325 Improved Inner Rage (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -40 s on family 4 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-40000 misc=11 family=4 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12325
+=======
+12863 Improved Inner Rage (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -80 s on family 4 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-80000 misc=11 family=4 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12863
+=======
+12864 Improved Inner Rage (Rank 3)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -120 s on family 4 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=4 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12864
+=======
+12865 Improved Inner Rage (Rank 4)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -100 s on family 4 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100000 misc=11 family=4 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12865
+=======
+12866 Improved Inner Rage (Rank 5)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -120 s on family 4 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=4 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12866
+=======
+24431 Improved Whirlwind
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24431
+=======
+18328 Incapacitating Shout
+school    physical
+mechanic  mechanic 11
+duration  60 s
+
+effect 1  -60% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 radius=20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=18328
+=======
+28842 Increased Hit Chance
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 4 mask 0x4440,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=4 mask=0x4440,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28842
+=======
+30440 Increased Spell Hit Chance
+school    physical
+duration  30 s
+range     50000 yd
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +8% on family 4 mask 0x88000 to the target
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=8 misc=16 family=4 mask=0x88000 target=[25,0]
+
+https://www.wowhead.com/forever/spell=30440
+=======
+22738 Intercept Cooldown Reduction (Rank 1)
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -5 s on family 4 mask 0x40000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 sp=1 misc=11 family=4 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22738
+=======
+403437 Intervene
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403338 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403437
+=======
+16508 Intimidating Roar
+school    physical
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+range     10 yd
+
+effect 1  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
+effect 2  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=16508
+=======
+15602 Lord General's Sword
+school    physical
+duration  10 s
+
+effect 1  +84 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=84 target=[1,0]
+effect 2  +84 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=84 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15602
+=======
+1235355 Mercy by Fire
+school    physical
+duration  12 s
+stack     up to 2
+charges   1
+icd       0.1 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235355
+=======
+1235357 Mercy by Fire
+school    physical
+duration  permanent
+attrs     can proc from procs
+
+effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x0,0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x0,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235357
+=======
+1216487 Noxious Breath
+school    nature
+duration  30 s
+range     50000 yd
+stack     up to 6
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_COOLDOWN +10 s on family 4 mask 0xffffffff,0xffffffff,0xffffffff,0xffffffff to the enemy
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
+effect 2  a dummy aura holding 400 to the enemy
+          E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1216487
+=======
+461313 Oath of Protection
+school    physical
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_REDIRECT_THREAT base=10 target=[57,0]
+
+https://www.wowhead.com/forever/spell=461313
+=======
+461314 Oath of Protection
+school    physical
+duration  1800 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  a dummy aura holding -5 every 6 s to the target's raid (300 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=-5 period=6000ms target=[57,0]
+
+https://www.wowhead.com/forever/spell=461314
+=======
+23414 Paralyze
+school    shadow
+duration  30 s
+labels    20
+
+effect 1  roots to every enemy around the caster
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23414
+=======
+26379 Piercing Shriek
+school    physical
+defense   magic
+mechanic  mechanic 11
+duration  6 s
+
+effect 1  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=26379
+=======
+23416 Pillow Fight
+school    physical
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=120 sp=1 misc=175 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23416
+=======
+28431 Poison Charge
+school    nature
+duration  9 s
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  2500 nature damage every 3 s to every enemy in the target area (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=2500 period=3000ms radius=15 target=[53,16]
+
+https://www.wowhead.com/forever/spell=28431
+=======
+402922 Precise Timing
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=4 mask=0x200000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN +6 s on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=11 family=4 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402922
+=======
+415744 Precise Timing
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402922 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415744
+=======
+422621 Preparation
+school    physical
+duration  permanent
+
+effect 1  -100% every school power cost
+          E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-100 misc=127 misc2=127 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MECHANIC_IMMUNITY_MASK base=0 misc=2399 misc2=1 target=[1,0]
+effect 3  SPELLMOD_COST -100% on family 4 mask 0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=422621
+=======
+1232182 Queensfall
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 16
+          E_APPLY_AURA A_DUMMY base=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232182
+=======
+25744 Rampage
+school    physical
+defense   magic
+range     40 yd
+
+effect 1  charges
+          E_CHARGE base=0 target=[53,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
+effect 3  1000 physical damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=1000 sp=1 radius=10 target=[53,16]
+
+https://www.wowhead.com/forever/spell=25744
+=======
+426940 Rampage
+school    physical
+duration  30 s
+cooldown  120 s
+attrs     can proc from procs
+labels    3096, 3100
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_ATTACK_POWER_PCT base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426940
+=======
+427070 Rampage
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426940 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427070
+=======
+458882 Recycle (Rank 4)
+school    physical
+defense   melee
+duration  11 s
+cast      1.3 s
+cooldown  6 s (category)
+gcd       1.5 s
+range     5 yd
+attrs     refund on miss
+
+effect 1  15 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=15 target=[6,0]
+effect 2  -50% health to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=-50 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-80 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=458882
+=======
+468309 Reduced Shield Slam Cost
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COST -50 (-5 on a rage bar) on family 4 mask 0x0,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 misc=14 family=4 mask=0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468309
+=======
+1231436 Regicide
+school    physical
+duration  10 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=-100 family=4 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1231436
+=======
+21869 Repulsive Gaze
+school    physical
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+range     10 yd
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=21869
+=======
+468071 Retaliate
+school    physical
+defense   melee
+duration  30 s
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 target=[6,0]
+effect 3  a dummy aura holding 1 to the enemy
+          E_APPLY_AURA A_DUMMY base=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=468071
+=======
+1219481 S03 - Item - Naxxramas - Warrior - Damage 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x0,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219481
+=======
+1219483 S03 - Item - Naxxramas - Warrior - Damage 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -25% on family 4 mask 0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=11 family=4 mask=0x2000000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -10 s on family 4 mask 0x0,0x0,0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=4 mask=0x0,0x0,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219483
+=======
+1219486 S03 - Item - Naxxramas - Warrior - Damage 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      1219485 Undead Slaying
+
+effect 1  casts 1219485 Undead Slaying on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=1219485 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219486
+=======
+1219540 S03 - Item - Naxxramas - Warrior - Protection 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=2 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219540
+=======
+1219543 S03 - Item - Naxxramas - Warrior - Protection 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -180 s on family 4 mask 0x2000,0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-180000 misc=11 family=4 mask=0x2000,0x0,0x0,0x2000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -180 s on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-180000 misc=11 family=4 mask=0x10 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x10 target=[1,0]
+effect 4  SPELLMOD_EFFECT2 -100% on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=4 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219543
+=======
+1219544 S03 - Item - Naxxramas - Warrior - Protection 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219544
+=======
+1214165 S03 - Item - RAQ - Warrior - Tank 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -50% on family 4 mask 0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=4 mask=0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214165
+=======
+1227231 S03 - Item - Scarlet Enclave - Warrior - Damage 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  SPELLMOD_JUMP_TARGETS +1 on family 4 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=17 family=4 mask=0x400000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +20% on family 4 mask 0x400040,0x0,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x400040,0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227231
+=======
+1227232 S03 - Item - Scarlet Enclave - Warrior - Damage 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      1234005 Slammin'
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227232
+=======
+1227234 S03 - Item - Scarlet Enclave - Warrior - Damage 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227234
+=======
+1227237 S03 - Item - Scarlet Enclave - Warrior - Protection 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +35% on family 4 mask 0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=35 family=4 mask=0x0,0x8000 target=[1,0]
+effect 2  a dummy aura holding 2000
+          E_APPLY_AURA A_DUMMY base=2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227237
+=======
+1227242 S03 - Item - Scarlet Enclave - Warrior - Protection 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  SPELLMOD_DURATION +15 s on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15000 misc=1 family=4 mask=0x10 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227242
+=======
+1227245 S03 - Item - Scarlet Enclave - Warrior - Protection 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      1234067 Gladiator's Cunning
+
+effect 1  casts 1234067 Gladiator's Cunning on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1234067 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227245
+=======
+457652 S03 - Item - T1 - Warrior - Damage 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457652
+=======
+457697 S03 - Item - T1 - Warrior - Damage 4P Bonus
+school    physical
+attrs     passive
+refs      457699 Echoes of Defensive Stance
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457697
+=======
+457820 S03 - Item - T1 - Warrior - Damage 6P Bonus
+school    physical
+attrs     passive
+refs      457816 Battle Forecast, 457817 Berserker Forecast, 457814 Defensive Forecast
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457820
+=======
+457645 S03 - Item - T1 - Warrior - Tank 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BLOCK_VALUE_FLAT base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457645
+=======
+457646 S03 - Item - T1 - Warrior - Tank 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+refs      457648 Inner Fury
+
+effect 1  casts 457648 Inner Fury on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=457648 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457646
+=======
+457651 S03 - Item - T1 - Warrior - Tank 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_EFFECT3 +10 on family 4 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=23 family=4 mask=0x0,0x0,0x100000 target=[1,0]
+effect 2  SPELLMOD_EFFECT3 +4 on family 4 mask 0x0,0x0,0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 misc=23 family=4 mask=0x0,0x0,0x0,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457651
+=======
+468072 S03 - Item - T2 - Warrior - Damage 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468072
+=======
+468235 S03 - Item - T2 - Warrior - Damage 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +25% on family 4 mask 0x200044,0x0,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 perResource=5 family=4 mask=0x200044,0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468235
+=======
+468236 S03 - Item - T2 - Warrior - Damage 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468236
+=======
+468065 S03 - Item - T2 - Warrior - Protection 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says an outcome the mask has no bit for
+refs      468066 Thrill of Battle
+
+effect 1  casts 468066 Thrill of Battle on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=468066 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468065
+=======
+468067 S03 - Item - T2 - Warrior - Protection 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  casts 12970 on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=12970 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468067
+=======
+468069 S03 - Item - T2 - Warrior - Protection 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      468071 Retaliate
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468069
+=======
+1214159 S03 - Item - TAQ - Warrior - Damage 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -50% on family 4 mask 0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=4 mask=0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214159
+=======
+1214163 S03 - Item - TAQ - Warrior - Damage 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214163
+=======
+1214160 S03 - Item - TAQ - Warrior - Tank 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -100% on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=4 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214160
+=======
+1214162 S03 - Item - TAQ - Warrior - Tank 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_THREAT +100% on family 4 mask 0x0,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=2 family=4 mask=0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214162
+=======
+468412 S03 - Item - ZG - Warrior - Gladiator 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  +7 to skill 95
+          E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468412
+=======
+468452 S03 - Item - ZG - Warrior - Gladiator 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 4 mask 0x0,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=4 mask=0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468452
+=======
+468453 S03 - Item - ZG - Warrior - Gladiator 5P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding -30000
+          E_APPLY_AURA A_DUMMY base=-30000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468453
+=======
+468455 S03 - Item - ZG - Warrior - Gladiator 5P Bonus
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 sp=1 misc=11 family=4 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468455
+=======
+446658 S03 - Tuning and Overrides Passive - Warrior
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_THREAT +100% on family 4 mask 0x0,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=2 family=4 mask=0x0,0x1 target=[1,0]
+effect 2  SPELLMOD_EFFECT3 +200% on family 4 mask 0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=200 misc=23 family=4 mask=0x0,0x0,0x2000 target=[1,0]
+effect 3  SPELLMOD_EFFECT5 -100% on family 4 mask 0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=33 family=4 mask=0x0,0x0,0x2000 target=[1,0]
+effect 4  SPELLMOD_DURATION -3 s on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=1 family=4 mask=0x10 target=[0,0]
+effect 5  SPELLMOD_EFFECT1 -50 on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 misc=3 family=4 mask=0x10 target=[0,0]
+effect 6  SPELLMOD_COOLDOWN -1500 s on family 4 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500000 misc=11 family=4 mask=0x10 target=[0,0]
+effect 7  SPELLMOD_COOLDOWN -1500 s on family 4 mask 0x2000,0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500000 misc=11 family=4 mask=0x2000,0x8 target=[0,0]
+effect 8  unrecognised shape
+          E_APPLY_AURA A_603 base=6 family=4 mask=0x80 target=[1,0]
+effect 9  replaces an action bar spell with 11581 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461810 misc=11581 target=[1,0]
+effect 10 replaces an action bar spell with 11580 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461826 misc=11580 target=[1,0]
+effect 11 replaces an action bar spell with 8205 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461827 misc=8205 target=[1,0]
+effect 12 replaces an action bar spell with 8204 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461828 misc=8204 target=[1,0]
+effect 13 replaces an action bar spell with 8198 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461829 misc=8198 target=[1,0]
+effect 14 replaces an action bar spell with 6343 Thunder Clap
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=461830 misc=6343 target=[1,0]
+effect 15 SPELLMOD_COOLDOWN -70% on family 4 mask 0x0,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-70 misc=11 family=4 mask=0x0,0x80000 target=[1,0]
+effect 16 SPELLMOD_EFFECT1 -10 on family 4 mask 0x0,0x80000,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=3 family=4 mask=0x0,0x80000,0x100000 target=[1,0]
+effect 17 SPELLMOD_RESIST_MISS_CHANCE +0% on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=16 family=4 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=446658
+=======
+18826 Savior's Sacrifice
+school    physical
+defense   magic
+duration  10 s
+
+effect 1  +300 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=300 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18826
+=======
+27825 Shadow Mark
+school    physical
+defense   melee
+duration  15 s
+gcd       1.5 s
+equip     needs a melee weapon
+
+effect 1  a dummy aura to every enemy around the caster
+          E_APPLY_AURA A_DUMMY base=0 radius=8 target=[22,15]
+effect 2  normalised weapon damage to every enemy around the caster
+          E_NORMALIZED_WEAPON_DMG base=0 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=27825
+=======
+15749 Shield Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
+effect 3  weapon damage +150 to the enemy
+          E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15749
+=======
+19131 Shield Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
+effect 3  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19131
+=======
+427069 Shield Mastery
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426980 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427069
+=======
+23921 Shield Reflection
+school    physical
+equip     needs a shield
+attrs     passive
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_REFLECT_SPELLS base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23921
+=======
+413404 Single-Minded Fury
+school    physical
+attrs     passive
+refs      430472 Single-Minded Fury, 461470 Single-Minded
+
+effect 1  a dummy aura holding 10 every 2 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=10 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=413404
+=======
+430472 Single-Minded Fury
+school    physical
+duration  3 s
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPEED_ALWAYS base=10 target=[1,0]
+effect 3  a dummy aura holding -10
+          E_APPLY_AURA A_DUMMY base=-10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=430472
+=======
+23418 Siphon Blessing
+school    shadow
+duration  30 s
+labels    26
+
+effect 1  casts 23415 Improved Blessing of Protection every 5 s to every enemy around the caster (6 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms trigger=23415 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23418
+=======
+1234005 Slammin'
+school    physical
+duration  15 s
+range     100 yd
+stack     up to 5
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=4 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1234005
+=======
+460084 Spectral Shout
+school    physical
+defense   magic
+mechanic  mechanic 5
+duration  3 s
+range     10 yd
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  casts 460086 Spectral Shout to the enemy
+          E_TRIGGER_SPELL base=0 trigger=460086 target=[6,0]
+effect 2  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 3  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=460084
+=======
+460086 Spectral Shout
+school    physical
+mechanic  mechanic 5
+duration  8 s
+range     10 yd
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=460086
+=======
+23920 Spell Reflection
+school    physical
+duration  5 s
+cooldown  10 s
+cost      15 rage
+stance    Battle, Defensive
+equip     needs a shield
+charges   1
+attrs     can proc from procs
+labels    25
+proc      hears PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_REFLECT_SPELLS base=100 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23920
+=======
+23605 Spell Vulnerability
+school    physical
+duration  5 s
+range     5 yd
+
+effect 1  +15% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=15 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23605
+=======
+25190 Stinger Charge
+school    nature
+range     20 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +500 to the enemy
+          E_WEAPON_DAMAGE base=500 sp=1 target=[6,0]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25190
+=======
+25191 Stinger Charge
+school    nature
+range     20 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +2500 to the enemy
+          E_WEAPON_DAMAGE base=2500 variance=0.3496 sp=1 target=[6,0]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25191
+=======
+26081 Stinger Charge
+school    nature
+range     20 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +1000 to the enemy
+          E_WEAPON_DAMAGE base=1000 variance=0.2 sp=1 target=[6,0]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26081
+=======
+26082 Stinger Charge
+school    nature
+range     20 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +5500 to the enemy
+          E_WEAPON_DAMAGE base=5500 variance=0.34981817 sp=1 target=[6,0]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26082
+=======
+440113 Sudden Death
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance; tooltip says heals count
+
+effect 1  casts 440114 Sudden Death on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=9 trigger=440114 target=[1,0]
+effect 2  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440113
+=======
+440114 Sudden Death
+school    physical
+duration  10 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=-100 family=4 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440114
+=======
+440495 Sudden Death
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440113 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440495
+=======
+23427 Summon Infernals
+school    shadow
+duration  0.001 s
+labels    19
+
+effect 1  a dummy aura to every enemy around the caster
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23427
+=======
+19196 Surge
+school    physical
+defense   magic
+range     40 yd
+
+effect 1  charges
+          E_CHARGE base=0 target=[53,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
+effect 3  1000 physical damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=1000 sp=1 radius=10 target=[53,16]
+
+https://www.wowhead.com/forever/spell=19196
+=======
+25787 Surge
+school    physical
+defense   magic
+range     40 yd
+
+effect 1  charges
+          E_CHARGE base=0 target=[53,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
+effect 3  600 physical damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=600 sp=1 radius=10 target=[53,16]
+
+https://www.wowhead.com/forever/spell=25787
+=======
+464250 Surge
+school    physical
+defense   magic
+range     40 yd
+
+effect 1  charges
+          E_CHARGE base=0 target=[53,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
+effect 3  360–540 physical damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=464250
+=======
+19223 Surge 2
+school    physical
+defense   magic
+range     40 yd
+
+effect 1  unrecognised shape
+          E_POWER_DRAIN base=1000 sp=1 amplitude=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=19223
+=======
+426978 Sword and Board
+school    physical
+attrs     passive, can proc from procs
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 30% chance; tooltip says one named ability
+refs      426979 Sword and Board
+
+effect 1  casts 426979 Sword and Board on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=426979 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426978
+=======
+426979 Sword and Board
+school    physical
+duration  5 s
+charges   1
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100% on family 4 mask 0x0,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426979
+=======
+427073 Sword and Board
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426978 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427073
+=======
+464241 Tactician
+school    physical
+duration  10 s
+charges   1
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100 (-10 on a rage bar) on family 4 mask 0x6e6e4eee,0x40c264,0x4000001
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=14 family=4 mask=0x6e6e4eee,0x40c264,0x4000001 target=[1,0]
+
+https://www.wowhead.com/forever/spell=464241
+=======
+426953 Taste for Blood
+school    physical
+icd       5.8 s
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says one named ability
+refs      426969 Taste for Blood
+
+effect 1  casts 426969 Taste for Blood on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=6 trigger=426969 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426953
+=======
+426969 Taste for Blood
+school    frost
+defense   magic
+duration  9 s
+charges   1
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=2 family=4 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426969
+=======
+427067 Taste for Blood
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426953 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427067
+=======
+24393 Test Strike
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  276 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=276 sp=1 index=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24393
+=======
+23850 Test Strike W35 (Rank 4)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  weapon damage in the weapon's own school +1130 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=1130 sp=1 target=[6,0]
+effect 3  35% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=35 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23850
+=======
+23848 Test Strike W50 (Rank 4)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  weapon damage in the weapon's own school +682 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=682 sp=1 target=[6,0]
+effect 3  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23848
+=======
+1262317 The Quick and the Dead
+school    shadow
+defense   magic
+duration  120 s
+
+effect 1  SPELLMOD_COST -100% on family 4 mask 0x10000,0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x10000,0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262317
+=======
+444522 Threatening Roar
+school    physical
+defense   magic
+mechanic  mechanic 5
+duration  30 s
+range     10 yd
+
+effect 1  stuns to every enemy in the area
+          E_APPLY_AURA A_MOD_STUN base=0 radius=40 target=[7,0]
+
+https://www.wowhead.com/forever/spell=444522
+=======
+21856 Threatening Strikes
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_THREAT +1500 on family 4 mask 0x2000040
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1500 sp=1 misc=2 family=4 mask=0x2000040 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21856
+=======
+440589 Twin Howl
+school    physical
+defense   magic
+duration  6 s
+cooldown  15 s
+range     5 yd
+
+effect 1  taunts to every ally around the caster
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,30]
+
+https://www.wowhead.com/forever/spell=440589
+=======
+402975 Victorious
+school    physical
+duration  20 s
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402975
+=======
+426972 Vigilance
+school    physical
+duration  1800 s
+gcd       1.5 s
+range     30 yd
+labels    3096, 3100
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 18350 Dummy Trigger on its trigger to the target's raid
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=-3 trigger=18350 target=[57,0]
+effect 2  a dummy aura holding -10 every 6 s to the target's raid (300 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=-10 period=6000ms target=[57,0]
+effect 3  -3% every school damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-3 sp=1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=426972
+=======
+426975 Vigilance
+school    physical
+range     50000 yd
+labels    3096, 3100
+
+effect 1  unrecognised shape
+          E_REDIRECT_THREAT base=10 target=[57,0]
+
+https://www.wowhead.com/forever/spell=426975
+=======
+427068 Vigilance
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426972 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427068
+=======
+463518 Vigilance
+school    physical
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_REDIRECT_THREAT base=5 target=[57,0]
+
+https://www.wowhead.com/forever/spell=463518
+=======
+413301 War Machine
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
+refs      413302 War Machine Rage Effect
+
+effect 1  casts 413302 War Machine Rage Effect on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=413302 target=[1,0]
+
+https://www.wowhead.com/forever/spell=413301
+=======
+425421 Warbringer
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=0 family=4 mask=0x1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0x40000001,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425421
+=======
+21887 Warrior's Wrath
+school    physical
+duration  10 s
+charges   1
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -50 (-5 on a rage bar) on family 4 mask 0xee604eee
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 sp=1 misc=14 family=4 mask=0xee604eee target=[1,0]
+
+https://www.wowhead.com/forever/spell=21887
+=======
+21890 Warrior's Wrath
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance
+refs      21887 Warrior's Wrath
+
+effect 1  casts 21977 Warrior's Wrath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=21977 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21890
+=======
+21977 Warrior's Wrath
+school    physical
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 0% chance
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 sp=1 radius=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21977
+=======
+23410 Wild Magic
+school    shadow
+duration  30 s
+labels    17
+
+effect 1  casts nothing every 5 s to every enemy around the caster (6 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms target=[22,15]
+
+https://www.wowhead.com/forever/spell=23410
+=======
+427065 Wrecking Crew
+school    physical
+attrs     passive
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      427066 Enrage
+
+effect 1  casts 427066 Enrage on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=427066 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427065
+=======
+427074 Wrecking Crew
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427065 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427074
+=======
+436858 [DNT] Combat Dummy I
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  casts 436973 [DNT] Combat Dummy I Powered on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=436973 target=[1,0]
+effect 2  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+effect 3  immune to bleed
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436858
+=======
+436861 [DNT] Combat Dummy II
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 436969 [DNT] Combat Dummy II Powered on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=436969 target=[1,0]
+effect 2  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+effect 3  immune to bleed
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436861
+=======
+436863 [DNT] Combat Dummy III
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 436970 [DNT] Combat Dummy III Powered on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=436970 target=[1,0]
+effect 2  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+effect 3  immune to bleed
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436863

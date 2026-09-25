@@ -1,0 +1,1972 @@
+409333 Ancestral Guidance
+school    nature
+defense   magic
+range     40 yd
+refs      409324 Ancestral Guidance
+
+effect 1  51–57 healing to the party in the target area
+          E_HEAL base=54 variance=0.11111111 target=[18,34]
+
+https://www.wowhead.com/forever/spell=409333
+=======
+409337 Ancestral Guidance
+school    nature
+defense   magic
+range     40 yd
+refs      409324 Ancestral Guidance
+
+effect 1  51–57 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=54 variance=0.11111111 target=[6,0]
+
+https://www.wowhead.com/forever/spell=409337
+=======
+409944 Ancestral Guidance
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409324 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409944
+=======
+16038 Call of Flame
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +15% on family 11 mask 0x50000000,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=11 mask=0x50000000,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +15% on family 11 mask 0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=11 mask=0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16038
+=======
+16120 Call of Thunder
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 11 mask 0x3
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=11 mask=0x3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16120
+=======
+66843 Call of the Ancestors
+school    fire+nature+frost
+defense   magic
+cast      3 s
+gcd       1.5 s
+labels    24
+
+effect 1  unrecognised shape
+          E_CAST_BUTTON base=0 misc=4 misc2=4 target=[0,0]
+
+https://www.wowhead.com/forever/spell=66843
+=======
+66842 Call of the Elements
+school    fire+nature+frost
+defense   magic
+cast      3 s
+gcd       1.5 s
+labels    24
+
+effect 1  unrecognised shape
+          E_CAST_BUTTON base=0 misc2=4 target=[0,0]
+
+https://www.wowhead.com/forever/spell=66842
+=======
+66844 Call of the Spirits
+school    fire+nature+frost
+defense   magic
+cast      3 s
+gcd       1.5 s
+labels    24
+
+effect 1  unrecognised shape
+          E_CAST_BUTTON base=0 misc=8 misc2=4 target=[0,0]
+
+https://www.wowhead.com/forever/spell=66844
+=======
+421 Chain Lightning (Rank 1)
+school    nature
+defense   magic
+cast      2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      225 mana
+range     30 yd
+labels    24
+
+effect 1  85.20098–96.79902 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=88 ppl=0.6 variance=0.12745099 sp=0.571 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=421
+=======
+930 Chain Lightning (Rank 2)
+school    nature
+defense   magic
+cast      2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      305 mana
+range     30 yd
+labels    24
+
+effect 1  97.04422–108.95578 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=100 ppl=0.6 variance=0.11564626 sp=0.571 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=930
+=======
+2860 Chain Lightning (Rank 3)
+school    nature
+defense   magic
+cast      2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      390 mana
+range     30 yd
+labels    24
+
+effect 1  108.40399–121.59601 nature damage to the enemy (at level 60, +0.517 spell power)
+          E_SCHOOL_DAMAGE base=112 ppl=0.7 variance=0.11471321 sp=0.517 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2860
+=======
+10605 Chain Lightning (Rank 4)
+school    nature
+defense   magic
+cast      2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      485 mana
+range     30 yd
+labels    24
+
+effect 1  119–133 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=0.8 variance=0.11111111 sp=0.571 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10605
+=======
+408479 Chain Lightning (Rank 1)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  43.77451–50.22549 nature damage to the enemy (at level 60, +0.2855 spell power)
+          E_SCHOOL_DAMAGE base=44 ppl=0.75 variance=0.13725491 sp=0.2855 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408479
+=======
+408481 Chain Lightning (Rank 2)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  50.69388–57.30612 nature damage to the enemy (at level 60, +0.2855 spell power)
+          E_SCHOOL_DAMAGE base=50 ppl=0.9 variance=0.12244898 sp=0.2855 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408481
+=======
+408482 Chain Lightning (Rank 3)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  57.4925–64.5075 nature damage to the enemy (at level 60, +0.2855 spell power)
+          E_SCHOOL_DAMAGE base=56 ppl=1.05 variance=0.115 sp=0.2855 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408482
+=======
+408484 Chain Lightning (Rank 4)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  62.206898–69.793106 nature damage to the enemy (at level 60, +0.2855 spell power)
+          E_SCHOOL_DAMAGE base=62 ppl=1.2 variance=0.11494253 sp=0.2855 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408484
+=======
+16246 Clearcasting
+school    arcane
+defense   magic
+duration  15 s
+range     100 yd
+charges   1
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100% on family 11 mask 0x90100003,0x41000,0x0,0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=11 mask=0x90100003,0x41000,0x0,0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16246
+=======
+16035 Concussion
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +1% on family 11 mask 0x100003
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 family=11 mask=0x100003 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16035
+=======
+16039 Convection
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COST -2% on family 11 mask 0x90100003,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-2 sp=1 misc=14 family=11 mask=0x90100003,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16039
+=======
+8042 Earth Shock (Rank 1)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 mana
+range     20 yd
+labels    24
+
+effect 1  18.88889–21.11111 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=18 ppl=0.5 variance=0.11111111 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8042
+=======
+8044 Earth Shock (Rank 2)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      50 mana
+range     20 yd
+labels    24
+
+effect 1  34.909092–37.090908 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.060606062 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8044
+=======
+8045 Earth Shock (Rank 3)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      85 mana
+range     20 yd
+labels    24
+
+effect 1  51.29032–54.70968 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=49 ppl=0.9 variance=0.06451613 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8045
+=======
+8046 Earth Shock (Rank 4)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      145 mana
+range     20 yd
+labels    24
+
+effect 1  83.203255–88.796745 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=81 ppl=1.1 variance=0.06504065 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8046
+=======
+10412 Earth Shock (Rank 5)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      240 mana
+range     20 yd
+labels    24
+
+effect 1  133.83621–142.16379 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=132 ppl=1.3 variance=0.060344826 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10412
+=======
+10413 Earth Shock (Rank 6)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      345 mana
+range     20 yd
+labels    24
+
+effect 1  206.66757–219.33243 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=205 ppl=1.6 variance=0.05945946 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10413
+=======
+10414 Earth Shock (Rank 7)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      450 mana
+range     20 yd
+labels    24
+
+effect 1  293.06403–308.93597 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=301 ppl=1.9 variance=0.0527307 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10414
+=======
+408681 Earth Shock (Rank 1)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 mana
+range     5 yd
+
+effect 1  18.88889–21.11111 nature damage to the enemy (at level 60, +0.154 spell power)
+          E_SCHOOL_DAMAGE base=18 ppl=0.5 variance=0.11111111 sp=0.154 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408681
+=======
+408683 Earth Shock (Rank 2)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      50 mana
+range     5 yd
+
+effect 1  34.909092–37.090908 nature damage to the enemy (at level 60, +0.212 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.060606062 sp=0.212 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408683
+=======
+408685 Earth Shock (Rank 3)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      85 mana
+range     5 yd
+
+effect 1  64.83871–69.16129 nature damage to the enemy (at level 60, +0.299 spell power)
+          E_SCHOOL_DAMAGE base=62 ppl=1 variance=0.06451613 sp=0.299 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408685
+=======
+408687 Earth Shock (Rank 4)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      145 mana
+range     5 yd
+
+effect 1  125.772354–134.22765 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=1.4 variance=0.06504065 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408687
+=======
+408688 Earth Shock (Rank 5)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      240 mana
+range     5 yd
+
+effect 1  234.69827–249.30173 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=232 ppl=2 variance=0.060344826 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408688
+=======
+408689 Earth Shock (Rank 6)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      345 mana
+range     5 yd
+
+effect 1  371.61353–394.38647 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=370 ppl=2.6 variance=0.05945946 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408689
+=======
+408690 Earth Shock (Rank 7)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      450 mana
+range     5 yd
+
+effect 1  517–545 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=531 ppl=3.1 variance=0.0527307 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408690
+=======
+408693 Earth Shock
+school    physical
+defense   magic
+duration  3 s
+range     5 yd
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408693
+=======
+1219379 Earth Shock
+school    physical
+defense   magic
+duration  3 s
+range     5 yd
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219379
+=======
+1220744 Earth Shock (Rank 1)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 mana
+range     5 yd
+
+effect 1  18.88889–21.11111 nature damage to the enemy (at level 60, +0.154 spell power)
+          E_SCHOOL_DAMAGE base=18 ppl=0.5 variance=0.11111111 sp=0.154 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220744
+=======
+1220746 Earth Shock (Rank 2)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      50 mana
+range     5 yd
+
+effect 1  34.909092–37.090908 nature damage to the enemy (at level 60, +0.212 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.060606062 sp=0.212 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220746
+=======
+1220747 Earth Shock (Rank 3)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      85 mana
+range     5 yd
+
+effect 1  64.83871–69.16129 nature damage to the enemy (at level 60, +0.299 spell power)
+          E_SCHOOL_DAMAGE base=62 ppl=1 variance=0.06451613 sp=0.299 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220747
+=======
+1220748 Earth Shock (Rank 4)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      145 mana
+range     5 yd
+
+effect 1  125.772354–134.22765 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=1.4 variance=0.06504065 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220748
+=======
+1220749 Earth Shock (Rank 5)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      240 mana
+range     5 yd
+
+effect 1  234.69827–249.30173 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=232 ppl=2 variance=0.060344826 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220749
+=======
+1220750 Earth Shock (Rank 6)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      345 mana
+range     5 yd
+
+effect 1  371.61353–394.38647 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=370 ppl=2.6 variance=0.05945946 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220750
+=======
+1220751 Earth Shock (Rank 7)
+school    nature
+defense   magic
+duration  2 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      450 mana
+range     5 yd
+
+effect 1  517–545 nature damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=531 ppl=3.1 variance=0.0527307 sp=0.386 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 3  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 4  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1220751
+=======
+2484 Earthbind Totem
+school    nature
+defense   magic
+duration  45 s
+cooldown  15 s
+gcd       1 s
+cost      6% of maximum mana
+labels    24
+refs      3600 Earthbind
+
+effect 1  summons creature 2630 to target 41
+          E_SUMMON base=5 misc=2630 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=2484
+=======
+16578 Elemental Alacrity
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 11 mask 0x3,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=11 mask=0x3,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16578
+=======
+30160 Elemental Devastation
+school    physical
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      30165 Elemental Devastation
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30160
+=======
+30165 Elemental Devastation
+school    physical
+duration  10 s
+labels    24
+
+effect 1  +3% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30165
+=======
+16164 Elemental Focus
+school    physical
+attrs     passive, can proc from procs
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance
+refs      16246 Clearcasting
+
+effect 1  casts 16246 Clearcasting on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=16246 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16164
+=======
+16089 Elemental Fury
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 11 mask 0xd1300403,0x1000,0x0,0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=11 mask=0xd1300403,0x1000,0x0,0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16089
+=======
+28999 Elemental Reach
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_RANGE +6 on family 11 mask 0x3,0x41000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=5 family=11 mask=0x3,0x41000 target=[1,0]
+effect 2  SPELLMOD_RANGE +15 on family 11 mask 0x10000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=5 family=11 mask=0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28999
+=======
+29062 Eye of the Storm
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x3,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x3,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29062
+=======
+8349 Fire Nova (Rank 1)
+school    fire
+defense   magic
+labels    24
+
+effect 1  52.615383–61.384617 fire damage to every enemy around the caster (at level 60, +0.1 spell power)
+          E_SCHOOL_DAMAGE base=52 ppl=1.1 variance=0.15384616 sp=0.1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8349
+=======
+8443 Fire Nova (Rank 1)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+
+effect 1  casts 8349 Fire Nova every 4 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=4000ms trigger=8349 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8443
+=======
+8502 Fire Nova (Rank 2)
+school    fire
+defense   magic
+labels    24
+
+effect 1  109.48624–124.51376 fire damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=109 ppl=1.6 variance=0.12844037 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8502
+=======
+8503 Fire Nova (Rank 3)
+school    fire
+defense   magic
+labels    24
+
+effect 1  194.32654–219.67346 fire damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=2.2 variance=0.12244898 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8503
+=======
+8504 Fire Nova (Rank 2)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+
+effect 1  casts 8502 Fire Nova every 4 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=4000ms trigger=8502 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8504
+=======
+8505 Fire Nova (Rank 3)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+
+effect 1  casts 8503 Fire Nova every 4 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=4000ms trigger=8503 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8505
+=======
+11306 Fire Nova (Rank 4)
+school    fire
+defense   magic
+labels    24
+
+effect 1  294.1572–331.8428 fire damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=299 ppl=2.8 variance=0.12040134 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=11306
+=======
+11307 Fire Nova (Rank 5)
+school    fire
+defense   magic
+labels    24
+
+effect 1  412.06683–459.93317 fire damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=419 ppl=3.4 variance=0.1097852 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=11307
+=======
+11310 Fire Nova (Rank 4)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+
+effect 1  casts 11306 Fire Nova every 4 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=4000ms trigger=11306 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11310
+=======
+11311 Fire Nova (Rank 5)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+
+effect 1  casts 11307 Fire Nova every 4 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=4000ms trigger=11307 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11311
+=======
+408339 Fire Nova
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 1535
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408341 misc=1535 target=[1,0]
+effect 2  replaces an action bar spell with 8498
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408342 misc=8498 target=[1,0]
+effect 3  replaces an action bar spell with 8499
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408343 misc=8499 target=[1,0]
+effect 4  replaces an action bar spell with 11314
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408344 misc=11314 target=[1,0]
+effect 5  replaces an action bar spell with 11315
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408345 misc=11315 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408339
+=======
+408341 Fire Nova (Rank 1)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+labels    24
+refs      8349 Fire Nova
+
+effect 1  a dummy effect holding 5 to the caster
+          E_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408341
+=======
+408342 Fire Nova (Rank 2)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      170 mana
+range     30 yd
+labels    24
+refs      8502 Fire Nova
+
+effect 1  a dummy effect holding 5 to the caster
+          E_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408342
+=======
+408343 Fire Nova (Rank 3)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      280 mana
+range     30 yd
+labels    24
+refs      8503 Fire Nova
+
+effect 1  a dummy effect holding 5 to the caster
+          E_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408343
+=======
+408344 Fire Nova (Rank 4)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      395 mana
+range     30 yd
+labels    24
+refs      11306 Fire Nova
+
+effect 1  a dummy effect holding 5 to the caster
+          E_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408344
+=======
+408345 Fire Nova (Rank 5)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      520 mana
+range     30 yd
+labels    24
+refs      11307 Fire Nova
+
+effect 1  a dummy effect holding 5 to the caster
+          E_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408345
+=======
+408423 Fire Nova (Rank 1)
+school    fire
+defense   magic
+range     36 yd
+labels    24
+
+effect 1  50.76923–59.23077 fire damage to target 87 (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=50 ppl=1.1 variance=0.15384616 sp=0.214 target=[87,16]
+
+https://www.wowhead.com/forever/spell=408423
+=======
+408424 Fire Nova (Rank 2)
+school    fire
+defense   magic
+range     36 yd
+labels    24
+
+effect 1  102.93578–117.06422 fire damage to target 87 (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=102 ppl=1.6 variance=0.12844037 sp=0.214 target=[87,16]
+
+https://www.wowhead.com/forever/spell=408424
+=======
+408426 Fire Nova (Rank 3)
+school    fire
+defense   magic
+range     36 yd
+labels    24
+
+effect 1  182.12245–205.87755 fire damage to target 87 (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=183 ppl=2.2 variance=0.12244898 sp=0.214 target=[87,16]
+
+https://www.wowhead.com/forever/spell=408426
+=======
+408427 Fire Nova (Rank 4)
+school    fire
+defense   magic
+range     36 yd
+labels    24
+
+effect 1  280.0602–315.9398 fire damage to target 87 (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=284 ppl=2.8 variance=0.12040134 sp=0.214 target=[87,16]
+
+https://www.wowhead.com/forever/spell=408427
+=======
+408428 Fire Nova (Rank 5)
+school    fire
+defense   magic
+range     36 yd
+labels    24
+
+effect 1  396.9451–443.0549 fire damage to target 87 (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=403 ppl=3.4 variance=0.1097852 sp=0.214 target=[87,16]
+
+https://www.wowhead.com/forever/spell=408428
+=======
+409938 Fire Nova
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408339 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409938
+=======
+8050 Flame Shock (Rank 1)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      55 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  24 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=20 ppl=0.8 sp=0.214 target=[6,0]
+effect 2  7 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8050
+=======
+8052 Flame Shock (Rank 2)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      95 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  38 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=1 sp=0.214 target=[6,0]
+effect 2  8 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8052
+=======
+8053 Flame Shock (Rank 3)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      160 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  49 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=43 ppl=1.2 sp=0.214 target=[6,0]
+effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8053
+=======
+10447 Flame Shock (Rank 4)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      250 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  89 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=82 ppl=1.4 sp=0.214 target=[6,0]
+effect 2  21 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10447
+=======
+10448 Flame Shock (Rank 5)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      345 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  136 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=128 ppl=1.7 sp=0.214 target=[6,0]
+effect 2  34 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10448
+=======
+29228 Flame Shock (Rank 6)
+school    fire
+defense   magic
+duration  12 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      410 mana
+range     20 yd
+attrs     periodic can crit
+labels    24
+
+effect 1  166 fire damage to the enemy (at level 60, +0.214 spell power)
+          E_SCHOOL_DAMAGE base=166 ppl=2.1 sp=0.214 target=[6,0]
+effect 2  44 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=44 sp=0.1 period=3000ms target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=29228
+=======
+1226963 Flame Shock
+school    fire
+defense   magic
+range     100 yd
+attrs     cannot crit
+
+effect 1  80 fire damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=80 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1226963
+=======
+1226972 Flame Shock
+school    fire
+defense   magic
+range     100 yd
+attrs     cannot crit
+
+effect 1  64 fire damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=64 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1226972
+=======
+8056 Frost Shock (Rank 1)
+school    frost
+defense   magic
+duration  8 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      115 mana
+range     20 yd
+labels    24
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  67.71739–72.28261 frost damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.06521739 sp=0.386 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8056
+=======
+8058 Frost Shock (Rank 2)
+school    frost
+defense   magic
+duration  8 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      225 mana
+range     20 yd
+labels    24
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  125.7277–134.2723 frost damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=124 ppl=1.3 variance=0.065727696 sp=0.386 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8058
+=======
+10472 Frost Shock (Rank 3)
+school    frost
+defense   magic
+duration  8 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      325 mana
+range     20 yd
+labels    24
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  189.31487–200.68513 frost damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=188 ppl=1.5 variance=0.058309037 sp=0.386 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10472
+=======
+10473 Frost Shock (Rank 4)
+school    frost
+defense   magic
+duration  8 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      430 mana
+range     20 yd
+labels    24
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  277.992–294.008 frost damage to the enemy (at level 60, +0.386 spell power)
+          E_SCHOOL_DAMAGE base=283 ppl=1.8 variance=0.056 sp=0.386 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10473
+=======
+16086 Improved Fire Nova
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +20% on family 11 mask 0x0,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=11 mask=0x0,0x40000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=11 mask=0x0,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16086
+=======
+408490 Lava Burst (Rank 1)
+school    fire
+defense   magic
+cast      2.5 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      165 mana
+range     30 yd
+labels    24
+
+effect 1  149.34637–192.65363 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=164 ppl=0.9 variance=0.25325885 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 20 to the enemy
+          E_DUMMY base=20 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408490
+=======
+408491 Lava Burst
+school    fire
+defense   magic
+range     30 yd
+labels    24
+refs      408490 Lava Burst
+
+effect 1  57.50373–74.49627 fire damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=57 ppl=0.45 variance=0.25746268 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408491
+=======
+409952 Lava Burst
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408490 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409952
+=======
+1238299 Lava Burst (Rank 2)
+school    fire
+defense   magic
+cast      2.5 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      230 mana
+range     30 yd
+labels    24
+
+effect 1  178.1676–229.8324 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 20 to the enemy
+          E_DUMMY base=20 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238299
+=======
+1238300 Lava Burst (Rank 3)
+school    fire
+defense   magic
+cast      2.5 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+labels    24
+
+effect 1  192.14153–247.85847 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=220 ppl=1.3 variance=0.25325885 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 20 to the enemy (at level 60)
+          E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238300
+=======
+1238373 Lava Burst
+school    fire
+defense   magic
+range     30 yd
+labels    24
+refs      408490 Lava Burst
+
+effect 1  81.899254–106.100746 fire damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=89 ppl=0.55 variance=0.25746268 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238373
+=======
+1238376 Lava Burst
+school    fire
+defense   magic
+range     30 yd
+labels    24
+refs      408490 Lava Burst
+
+effect 1  95.839554–124.160446 fire damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=110 ppl=0.65 variance=0.25746268 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238376
+=======
+403 Lightning Bolt (Rank 1)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      15 mana
+range     30 yd
+labels    24
+
+effect 1  14.857142–17.142857 nature damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=14 ppl=0.4 variance=0.14285715 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=403
+=======
+529 Lightning Bolt (Rank 2)
+school    nature
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      30 mana
+range     30 yd
+labels    24
+
+effect 1  28.785715–33.214287 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=29 ppl=0.5 variance=0.14285715 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=529
+=======
+548 Lightning Bolt (Rank 3)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+labels    24
+
+effect 1  44.081635–51.918365 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=45 ppl=0.6 variance=0.1632653 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=548
+=======
+915 Lightning Bolt (Rank 4)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    24
+
+effect 1  55.022472–62.977528 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=56 ppl=0.6 variance=0.13483146 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=915
+=======
+943 Lightning Bolt (Rank 5)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+labels    24
+
+effect 1  69.962685–80.037315 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=72 ppl=0.7 variance=0.13432837 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=943
+=======
+6041 Lightning Bolt (Rank 6)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+labels    24
+
+effect 1  108.08743–121.91257 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=111 ppl=0.8 variance=0.12021858 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6041
+=======
+10391 Lightning Bolt (Rank 7)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      135 mana
+range     30 yd
+labels    24
+
+effect 1  142.22821–159.77179 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=147 ppl=0.8 variance=0.11618257 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10391
+=======
+10392 Lightning Bolt (Rank 8)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+labels    24
+
+effect 1  157.50502–176.49498 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=162 ppl=1 variance=0.11371238 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10392
+=======
+15207 Lightning Bolt (Rank 9)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      190 mana
+range     30 yd
+labels    24
+
+effect 1  172.55707–193.44293 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=178 ppl=1 variance=0.11413044 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15207
+=======
+15208 Lightning Bolt (Rank 10)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      220 mana
+range     30 yd
+labels    24
+
+effect 1  189.16478–210.83522 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=1.2 variance=0.10835215 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15208
+=======
+408439 Lightning Bolt (Rank 1)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  7.428572–8.571428 nature damage to the enemy (at level 60, +0.2145 spell power)
+          E_SCHOOL_DAMAGE base=7 ppl=0.2 variance=0.142857 sp=0.2145 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408439
+=======
+408440 Lightning Bolt (Rank 2)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  13.928572–16.071428 nature damage to the enemy (at level 60, +0.2855 spell power)
+          E_SCHOOL_DAMAGE base=14.5 ppl=0.25 variance=0.14285715 sp=0.2855 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408440
+=======
+408441 Lightning Bolt (Rank 3)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  22.04082–25.95918 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=22.5 ppl=0.3 variance=0.163265 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408441
+=======
+408442 Lightning Bolt (Rank 4)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  27.04495–30.95505 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=28 ppl=0.3 variance=0.134831 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408442
+=======
+408443 Lightning Bolt (Rank 5)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  34.51493–39.48507 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=36 ppl=0.35 variance=0.134328 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408443
+=======
+408472 Lightning Bolt (Rank 6)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  54.494507–61.505493 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=56 ppl=0.4 variance=0.12087912 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408472
+=======
+408473 Lightning Bolt (Rank 7)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  71.25–80.75 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=74 ppl=0.4 variance=0.125 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408473
+=======
+408474 Lightning Bolt (Rank 8)
+school    nature
+defense   magic
+cast      3 s
+range     30 yd
+labels    24
+
+effect 1  78.2651–87.7349 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=81 ppl=0.5 variance=0.11409396 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408474
+=======
+408475 Lightning Bolt (Rank 9)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  85.559784–96.440216 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=89 ppl=0.5 variance=0.11956522 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408475
+=======
+408477 Lightning Bolt (Rank 10)
+school    nature
+defense   magic
+range     30 yd
+labels    24
+
+effect 1  94.343895–105.656105 nature damage to the enemy (at level 60, +0.357 spell power)
+          E_SCHOOL_DAMAGE base=98 ppl=0.6 variance=0.11312217 sp=0.357 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408477
+=======
+16579 Lightning Mastery (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -0.4 s on family 11 mask 0x3
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-400 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16579
+=======
+16580 Lightning Mastery (Rank 3)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -0.6 s on family 11 mask 0x3
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-600 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16580
+=======
+16581 Lightning Mastery (Rank 4)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -0.8 s on family 11 mask 0x3
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-800 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16581
+=======
+16582 Lightning Mastery (Rank 5)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -1 s on family 11 mask 0x3
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16582
+=======
+408438 Lightning Overload
+school    nature
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 30% chance, from effect 1
+
+effect 1  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408438
+=======
+8187 Magma Totem (Rank 1)
+school    fire
+defense   magic
+labels    24
+
+effect 1  20 fire damage to every enemy around the caster (+0.033 spell power)
+          E_SCHOOL_DAMAGE base=20 sp=0.033 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8187
+=======
+8190 Magma Totem (Rank 1)
+school    fire
+defense   magic
+duration  20 s
+gcd       1 s
+cost      230 mana
+labels    24
+refs      8187 Magma Totem, 8188 Magma Totem Passive
+
+effect 1  summons creature 5929 to target 44
+          E_SUMMON base=5 misc=5929 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=8190
+=======
+10579 Magma Totem (Rank 2)
+school    fire
+defense   magic
+labels    24
+
+effect 1  35 fire damage to every enemy around the caster (+0.033 spell power)
+          E_SCHOOL_DAMAGE base=35 sp=0.033 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10579
+=======
+10580 Magma Totem (Rank 3)
+school    fire
+defense   magic
+labels    24
+
+effect 1  52 fire damage to every enemy around the caster (+0.033 spell power)
+          E_SCHOOL_DAMAGE base=52 sp=0.033 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10580
+=======
+10581 Magma Totem (Rank 4)
+school    fire
+defense   magic
+labels    24
+
+effect 1  73 fire damage to every enemy around the caster (+0.033 spell power)
+          E_SCHOOL_DAMAGE base=73 sp=0.033 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10581
+=======
+10585 Magma Totem (Rank 2)
+school    fire
+defense   magic
+duration  20 s
+gcd       1 s
+cost      360 mana
+labels    24
+refs      10579 Magma Totem, 10582 Magma Totem Passive
+
+effect 1  summons creature 7464 to target 44
+          E_SUMMON base=5 misc=7464 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10585
+=======
+10586 Magma Totem (Rank 3)
+school    fire
+defense   magic
+duration  20 s
+gcd       1 s
+cost      500 mana
+labels    24
+refs      10580 Magma Totem, 10583 Magma Totem Passive
+
+effect 1  summons creature 7465 to target 44
+          E_SUMMON base=5 misc=7465 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10586
+=======
+10587 Magma Totem (Rank 4)
+school    fire
+defense   magic
+duration  20 s
+gcd       1 s
+cost      650 mana
+labels    24
+refs      10581 Magma Totem, 10584 Magma Totem Passive
+
+effect 1  summons creature 7466 to target 44
+          E_SUMMON base=5 misc=7466 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10587
+=======
+425339 Molten Blast
+school    fire
+defense   magic
+cooldown  6 s
+gcd       1.5 s
+cost      18% of maximum mana
+targets   up to 10
+
+effect 1  72–108 fire damage to a cone of enemies in front of the caster (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=90 variance=0.4 sp=0.143 radius=10 target=[24,0]
+effect 2  a dummy effect holding 5 to a cone of enemies in front of the caster
+          E_DUMMY base=5 radius=10 target=[24,0]
+effect 3  a dummy effect holding 10 to a cone of enemies in front of the caster
+          E_DUMMY base=10 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=425339
+=======
+425340 Molten Blast
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425339 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425340
+=======
+370 Purge (Rank 1)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      10% of maximum mana
+range     30 yd
+labels    24
+
+effect 1  dispels 1 magic effect to the enemy
+          E_DISPEL base=1 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=370
+=======
+8012 Purge (Rank 2)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      10% of maximum mana
+range     30 yd
+labels    24
+
+effect 1  dispels 2 magic effect to the enemy
+          E_DISPEL base=2 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8012
+=======
+27626 Purge (Rank 2)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      5% of maximum mana
+range     30 yd
+
+effect 1  dispels 2 magic effect to the enemy
+          E_DISPEL base=2 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27626
+=======
+16040 Reverberation
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COOLDOWN -0.2 s on family 11 mask 0x90100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=11 family=11 mask=0x90100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16040
+=======
+3599 Searing Totem (Rank 1)
+school    fire
+duration  30 s
+gcd       1 s
+cost      25 mana
+labels    24
+refs      3606 Attack
+
+effect 1  summons creature 2523 to target 44
+          E_SUMMON base=5 misc=2523 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=3599
+=======
+6363 Searing Totem (Rank 2)
+school    fire
+duration  35 s
+gcd       1 s
+cost      45 mana
+labels    24
+refs      6350 Attack
+
+effect 1  summons creature 3902 to target 44
+          E_SUMMON base=5 misc=3902 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=6363
+=======
+6364 Searing Totem (Rank 3)
+school    fire
+duration  40 s
+gcd       1 s
+cost      75 mana
+labels    24
+refs      6351 Attack
+
+effect 1  summons creature 3903 to target 44
+          E_SUMMON base=5 misc=3903 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=6364
+=======
+6365 Searing Totem (Rank 4)
+school    fire
+duration  45 s
+gcd       1 s
+cost      110 mana
+labels    24
+refs      6352 Attack
+
+effect 1  summons creature 3904 to target 44
+          E_SUMMON base=5 misc=3904 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=6365
+=======
+10437 Searing Totem (Rank 5)
+school    fire
+duration  50 s
+gcd       1 s
+cost      145 mana
+labels    24
+refs      10435 Attack
+
+effect 1  summons creature 7400 to target 44
+          E_SUMMON base=5 misc=7400 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10437
+=======
+10438 Searing Totem (Rank 6)
+school    fire
+duration  55 s
+gcd       1 s
+cost      170 mana
+labels    24
+refs      10436 Attack
+
+effect 1  summons creature 7402 to target 44
+          E_SUMMON base=5 misc=7402 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10438
+=======
+5730 Stoneclaw Totem (Rank 1)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      15 mana
+labels    24
+refs      5729 Stoneclaw Totem Effect
+
+effect 1  summons creature 3579 to target 41
+          E_SUMMON base=50 ppl=3 misc=3579 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=5730
+=======
+6390 Stoneclaw Totem (Rank 2)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      30 mana
+labels    24
+refs      6393 Stoneclaw Totem Effect
+
+effect 1  summons creature 3911 to target 41
+          E_SUMMON base=150 ppl=3 misc=3911 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=6390
+=======
+6391 Stoneclaw Totem (Rank 3)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      55 mana
+labels    24
+refs      6394 Stoneclaw Totem Effect
+
+effect 1  summons creature 3912 to target 41
+          E_SUMMON base=220 ppl=3 misc=3912 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=6391
+=======
+6392 Stoneclaw Totem (Rank 4)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      75 mana
+labels    24
+refs      6395 Stoneclaw Totem Effect
+
+effect 1  summons creature 3913 to target 41
+          E_SUMMON base=280 ppl=3 misc=3913 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=6392
+=======
+10427 Stoneclaw Totem (Rank 5)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      105 mana
+labels    24
+refs      10423 Stoneclaw Totem Effect
+
+effect 1  summons creature 7398 to target 41
+          E_SUMMON base=390 ppl=3 misc=7398 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10427
+=======
+10428 Stoneclaw Totem (Rank 6)
+school    nature
+defense   magic
+duration  15 s
+cooldown  30 s (category)
+gcd       1 s
+cost      140 mana
+labels    24
+refs      10424 Stoneclaw Totem Effect
+
+effect 1  summons creature 7399 to target 41
+          E_SUMMON base=480 ppl=3 misc=7399 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10428
+=======
+36936 Totemic Recall
+school    nature
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_DESTROY_ALL_TOTEMS base=25 target=[0,0]
+
+https://www.wowhead.com/forever/spell=36936

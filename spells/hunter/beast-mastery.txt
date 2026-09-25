@@ -1,0 +1,898 @@
+13161 Aspect of the Beast (Rank 1)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      50 mana
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_UNTRACKABLE base=0 target=[1,0]
+effect 2  +50 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=50 target=[1,0]
+effect 3  casts 1299448 Quick Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1299448 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13161
+=======
+1299445 Aspect of the Beast (Rank 2)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      70 mana
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_UNTRACKABLE base=0 target=[1,0]
+effect 2  +70 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=70 target=[1,0]
+effect 3  casts 1299448 Quick Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1299448 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1299445
+=======
+1299446 Aspect of the Beast (Rank 3)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      90 mana
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_UNTRACKABLE base=0 target=[1,0]
+effect 2  +90 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=90 target=[1,0]
+effect 3  casts 1299448 Quick Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1299448 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1299446
+=======
+1299447 Aspect of the Beast (Rank 4)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      110 mana
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_UNTRACKABLE base=0 target=[1,0]
+effect 2  +110 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=110 target=[1,0]
+effect 3  casts 1299448 Quick Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1299448 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1299447
+=======
+5118 Aspect of the Cheetah
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      40 mana
+labels    23
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      15571 Dazed
+
+effect 1  +30% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 target=[1,0]
+effect 2  casts 15571 Dazed on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=15571 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5118
+=======
+469145 Aspect of the Falcon
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      120 mana
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 5% chance
+
+effect 1  +0 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=0 target=[1,0]
+effect 2  +0 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=0 target=[1,0]
+effect 3  casts 469144 Quick Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=469144 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469145
+=======
+13165 Aspect of the Hawk (Rank 1)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      20 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +20 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=20 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13165
+=======
+14318 Aspect of the Hawk (Rank 2)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      35 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +35 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=35 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14318
+=======
+14319 Aspect of the Hawk (Rank 3)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      50 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +50 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=50 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14319
+=======
+14320 Aspect of the Hawk (Rank 4)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      70 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +70 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=70 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14320
+=======
+14321 Aspect of the Hawk (Rank 5)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      90 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +90 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=90 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14321
+=======
+14322 Aspect of the Hawk (Rank 6)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      110 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +55 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=55 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14322
+=======
+25296 Aspect of the Hawk (Rank 7)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      120 mana
+labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+
+effect 1  +120 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=120 target=[1,0]
+effect 2  casts 6150 Quick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25296
+=======
+13163 Aspect of the Monkey
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      20 mana
+range     100 yd
+labels    23
+
+effect 1  +8% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13163
+=======
+13159 Aspect of the Pack
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      100 mana
+labels    23
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      15571 Dazed
+
+effect 1  party aura: +30% movement speed
+          E_APPLY_AREA_AURA_PARTY A_MOD_INCREASE_SPEED base=30 radius=30 target=[1,0]
+effect 2  party aura: casts 15571 Dazed on its trigger
+          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=15571 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13159
+=======
+34074 Aspect of the Viper
+school    nature
+defense   magic
+duration  permanent
+cooldown  1 s (category)
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_POWER base=4 period=3000ms target=[1,0]
+effect 2  -50% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=34074
+=======
+415423 Aspect of the Viper
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    3096
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_POWER base=10 period=3000ms target=[1,0]
+effect 2  -10% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-10 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415423
+=======
+20043 Aspect of the Wild (Rank 1)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      90 mana
+labels    23
+
+effect 1  raid aura: +45 nature resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=8 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20043
+=======
+20190 Aspect of the Wild (Rank 2)
+school    nature
+defense   magic
+duration  permanent
+gcd       1.5 s
+cost      115 mana
+labels    23
+
+effect 1  raid aura: +60 nature resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=8 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20190
+=======
+19590 Bestial Discipline
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +100 on family 9 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=8 family=9 mask=0x20000000 target=[1,0]
+effect 2  +50% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19590
+=======
+19596 Bestial Swiftness
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +30 on family 9 mask 0x10000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=8 family=9 mask=0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19596
+=======
+19574 Bestial Wrath
+school    physical
+duration  18 s
+cooldown  120 s
+cost      12% of maximum mana
+range     100 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCALE base=50 sp=1 target=[5,0]
+effect 2  +50% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=50 sp=1 misc=127 target=[5,0]
+effect 3  immune to stun to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=12 target=[5,0]
+effect 4  immune to charm to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=1 target=[5,0]
+effect 5  immune to fear to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=5 target=[5,0]
+effect 6  immune to polymorph to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=17 target=[5,0]
+effect 7  immune to knockout to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=14 target=[5,0]
+effect 8  immune to freeze to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=13 target=[5,0]
+effect 9  immune to horror to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=24 target=[5,0]
+effect 10 immune to root to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=7 target=[5,0]
+effect 11 immune to sleep to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=10 target=[5,0]
+effect 12 immune to snare to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=11 target=[5,0]
+effect 13 immune to disoriented to the caster's pet
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=2 target=[5,0]
+
+https://www.wowhead.com/forever/spell=19574
+=======
+19552 Deadly Aspects
+school    physical
+attrs     passive
+labels    23
+refs      6150 Quick Shots, 1299448 Quick Strikes
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 9 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=9 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 9 mask 0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=9 mask=0x0,0x0,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19552
+=======
+19583 Endurance Training
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +15 on family 9 mask 0xc000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=8 family=9 mask=0xc000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19583
+=======
+1002 Eyes of the Beast
+school    nature
+defense   magic
+duration  120 s
+cast      2 s
+gcd       1.5 s
+cost      20 mana
+range     50000 yd
+attrs     channeled
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POSSESS_PET base=0 radius=100 target=[5,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1002
+=======
+19598 Ferocity
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_EFFECT1 +16 on family 9 mask 0x40000000,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=16 sp=1 misc=3 family=9 mask=0x40000000,0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19598
+=======
+1223755 Focused Fire
+school    physical
+attrs     passive
+labels    23
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223755
+=======
+1242139 Focused Fire
+school    physical
+duration  permanent
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_OWNER A_MOD_DAMAGE_PERCENT_DONE base=4 misc=127 radius=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1242139
+=======
+19621 Frenzy
+school    physical
+attrs     passive
+labels    23
+refs      19615 Frenzy
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +20% on family 9 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=18 family=9 mask=0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19621
+=======
+428728 Frenzy
+school    physical
+duration  10 s
+range     100 yd
+stack     up to 5
+labels    3096, 3100
+
+effect 1  +6% melee haste
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428728
+=======
+431606 Frenzy
+school    physical
+duration  10 s
+range     100 yd
+stack     up to 5
+labels    3096, 3100
+
+effect 1  a dummy aura holding 6
+          E_APPLY_AURA A_DUMMY base=6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431606
+=======
+19549 Improved Aspect of the Monkey
+school    physical
+range     100 yd
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_EFFECT1 +4 on family 9 mask 0x80000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=3 family=9 mask=0x80000 target=[1,0]
+effect 2  a dummy aura holding 6
+          E_APPLY_AURA A_DUMMY base=6 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19549
+=======
+19557 Improved Eyes of the Beast (Rank 1)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_DURATION +30 s on family 9 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30000 sp=1 misc=1 family=9 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19557
+=======
+19558 Improved Eyes of the Beast (Rank 2)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_DURATION +60 s on family 9 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=60000 sp=1 misc=1 family=9 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19558
+=======
+19572 Improved Mend Pet
+school    physical
+attrs     passive
+labels    23
+refs      24406 Improved Mend Pet
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
+effect 2  SPELLMOD_COST -20% on family 9 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=9 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19572
+=======
+23560 Improved Mend Pet
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_RANGE +50% on family 9 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=5 family=9 mask=0x800000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +10% on family 9 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=8 family=9 mask=0x800000 target=[1,0]
+effect 3  SPELLMOD_COST -30% on family 9 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-30 misc=14 family=9 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23560
+=======
+24406 Improved Mend Pet
+school    nature
+range     100 yd
+labels    23
+
+effect 1  dispels 1 dispel type 7 effect to the caster's pet
+          E_DISPEL base=1 sp=1 misc=7 target=[5,0]
+
+https://www.wowhead.com/forever/spell=24406
+=======
+24443 Improved Revive Pet
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_CASTING_TIME -6 s on family 9 mask 0x1000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 sp=1 misc=10 family=9 mask=0x1000000 target=[1,0]
+effect 2  SPELLMOD_COST -40% on family 9 mask 0x1000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=9 mask=0x1000000 target=[1,0]
+effect 3  SPELLMOD_ALL_EFFECTS +30 on family 9 mask 0x1000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=8 family=9 mask=0x1000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24443
+=======
+1293639 Improved Revive Pet
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_CASTING_TIME -20% on family 9 mask 0x1000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=9 mask=0x1000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1293639
+=======
+19577 Intimidation
+school    nature
+defense   magic
+duration  15 s
+cooldown  60 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     100 yd
+charges   1
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      24394 Intimidation
+
+effect 1  casts 24394 Intimidation on its trigger to the caster's pet
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=24394 target=[5,0]
+effect 2  +100% physical and spell crit to the caster's pet
+          E_APPLY_AURA A_MOD_CRIT_PCT base=100 target=[5,0]
+
+https://www.wowhead.com/forever/spell=19577
+=======
+409379 Kill Command
+school    physical
+duration  30 s
+cooldown  60 s
+cost      1.5% of maximum mana
+range     45 yd
+refs      409396 Kill Command
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409379
+=======
+409396 Kill Command
+school    physical
+duration  30 s
+range     45 yd
+stack     up to 3
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x0,0x0,0x0,0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x0,0x0,0x0,0x8 target=[1,0]
+effect 2  a dummy aura holding 20 from family 9 mask 0x0,0x0,0x0,0x8
+          E_APPLY_AURA A_DUMMY base=20 family=9 mask=0x0,0x0,0x0,0x8 target=[1,0]
+effect 3  unrecognised shape
+          E_TRIGGER_SPELL_WITH_VALUE base=0 trigger=409418 target=[5,0]
+
+https://www.wowhead.com/forever/spell=409396
+=======
+409418 Kill Command
+school    physical
+duration  30 s
+cooldown  60 s
+range     50000 yd
+stack     up to 3
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      409396 Kill Command
+
+effect 1  a dummy aura to the caster's pet
+          E_APPLY_AURA A_DUMMY base=0 target=[5,0]
+
+https://www.wowhead.com/forever/spell=409418
+=======
+136 Mend Pet (Rank 1)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      50 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  20 healing every 1 s to the caster's pet (5 ticks, +0.14 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=20 sp=0.14 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=136
+=======
+3111 Mend Pet (Rank 2)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      90 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  38 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=38 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=3111
+=======
+3661 Mend Pet (Rank 3)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      155 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  68 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=68 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=3661
+=======
+3662 Mend Pet (Rank 4)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      225 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  103 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=103 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=3662
+=======
+13542 Mend Pet (Rank 5)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      300 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  142 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=142 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=13542
+=======
+13543 Mend Pet (Rank 6)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      385 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  189 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=189 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=13543
+=======
+13544 Mend Pet (Rank 7)
+school    nature
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      480 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    23
+
+effect 1  245 healing every 1 s to the caster's pet (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=245 sp=0.2 period=1000ms target=[5,0]
+
+https://www.wowhead.com/forever/spell=13544
+=======
+19559 Pathfinding
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_EFFECT1 +6 on family 9 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=3 family=9 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19559
+=======
+982 Revive Pet
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      100% of maximum mana
+labels    23
+
+effect 1  unrecognised shape
+          E_RESURRECT_PET base=15 radius=3 target=[47,0]
+
+https://www.wowhead.com/forever/spell=982
+=======
+23499 Revive Pet
+school    nature
+defense   magic
+labels    23
+
+effect 1  unrecognised shape
+          E_RESURRECT_PET base=100 radius=3 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23499
+=======
+1293241 Summon Hawk (Rank 1)
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      80 mana
+range     35 yd
+labels    23
+refs      1293248 Summon Hawk
+
+effect 1  32 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=32 target=[6,0]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 target=[6,0]
+effect 4  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293241
+=======
+1293525 Summon Hawk (Rank 2)
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      105 mana
+range     35 yd
+labels    23
+refs      1293248 Summon Hawk
+
+effect 1  47 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=47 target=[6,0]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 target=[6,0]
+effect 4  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293525
+=======
+1293526 Summon Hawk (Rank 3)
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      135 mana
+range     35 yd
+labels    23
+refs      1293248 Summon Hawk
+
+effect 1  85 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=85 target=[6,0]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 target=[6,0]
+effect 4  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293526
+=======
+1293527 Summon Hawk (Rank 4)
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      190 mana
+range     35 yd
+labels    23
+refs      1293248 Summon Hawk
+
+effect 1  108 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=108 target=[6,0]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 target=[6,0]
+effect 4  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293527
+=======
+19609 Thick Hide
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +30 on family 9 mask 0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 misc=8 family=9 mask=0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19609
+=======
+19801 Tranquilizing Shot
+school    nature
+defense   ranged
+cast      -1000 s
+cooldown  20 s
+gcd       1.5 s
+cost      270 mana
+range     8-35 yd
+equip     needs a bow, gun or crossbow
+labels    23
+
+effect 1  dispels 1 dispel type 9 effect to the enemy
+          E_DISPEL base=1 sp=1 misc=9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19801
+=======
+1218134 Tranquilizing Shot
+school    nature
+defense   ranged
+cast      -1000 s
+cooldown  20 s
+gcd       1.5 s
+cost      270 mana
+range     35 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  dispels 1 dispel type 9 effect to the enemy
+          E_DISPEL base=1 sp=1 misc=9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1218134
+=======
+19616 Unleashed Fury
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_EFFECT1 +20% on family 9 mask 0x2000000,0x0,0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=3 family=9 mask=0x2000000,0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19616

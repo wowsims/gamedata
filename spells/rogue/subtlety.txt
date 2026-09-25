@@ -1,0 +1,740 @@
+2094 Blind
+school    nature
+defense   ranged
+mechanic  mechanic 2
+duration  10 s
+cooldown  300 s
+gcd       1 s
+cost      30 energy
+range     10 yd
+labels    20
+
+effect 1  -60% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2094
+=======
+21060 Blind
+school    nature
+defense   melee
+duration  10 s
+range     10 yd
+
+effect 1  -60% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21060
+=======
+13975 Camouflage
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_EFFECT3 +15 on family 8 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=23 family=8 mask=0x400000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -6 s on family 8 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=8 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13975
+=======
+424980 Cutthroat
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=462708 misc=399967 target=[1,0]
+effect 2  a dummy effect holding 15
+          E_DUMMY base=15 target=[0,0]
+
+https://www.wowhead.com/forever/spell=424980
+=======
+462707 Cutthroat
+school    physical
+defense   melee
+duration  10 s
+charges   1
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=20 family=8 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462707
+=======
+462708 Cutthroat
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 15% chance, from effect 1; tooltip says one named ability
+refs      462707 Cutthroat
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462708
+=======
+1241810 Cutthroat
+school    physical
+defense   melee
+duration  permanent
+labels    20
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1241810
+=======
+14082 Dirty Deeds
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 8 mask 0x500
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=8 mask=0x500 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14082
+=======
+1224782 Dirty Tricks
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COST -50% on family 8 mask 0x1000080
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=8 mask=0x1000080 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1224782
+=======
+1842 Disarm Trap
+school    physical
+cast      2 s
+range     5 yd
+labels    20
+
+effect 1  unrecognised shape
+          E_OPEN_LOCK base=200 ppl=5 misc=4 target=[23,0]
+
+https://www.wowhead.com/forever/spell=1842
+=======
+1725 Distract
+school    physical
+defense   magic
+mechanic  mechanic 4
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      30 energy
+range     30 yd
+labels    20
+
+effect 1  unrecognised shape
+          E_DISTRACT base=10 radius=10 target=[16,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH_DETECT base=-5 radius=10 target=[16,0]
+
+https://www.wowhead.com/forever/spell=1725
+=======
+13981 Elusiveness
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COOLDOWN -90 s on family 8 mask 0x1000800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-90000 sp=1 misc=11 family=8 mask=0x1000800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13981
+=======
+14278 Ghostly Strike
+school    physical
+defense   melee
+duration  7 s
+cooldown  20 s
+gcd       1 s
+cost      40 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  125% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=125 sp=1 target=[6,0]
+effect 2  +15% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=15 sp=1 target=[1,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 4  a dummy effect holding 180 to the enemy
+          E_DUMMY base=180 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14278
+=======
+16511 Hemorrhage
+school    physical
+defense   melee
+duration  15 s
+gcd       1 s
+cost      35 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=15 family=8 mask=0x100000 target=[6,0]
+effect 4  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+effect 5  a dummy effect holding 145 to the enemy
+          E_DUMMY base=145 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16511
+=======
+14079 Improved Ambush
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +45% on family 8 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=45 sp=1 misc=7 family=8 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14079
+=======
+14084 Improved Distract
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_RADIUS +5 on family 8 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=6 family=8 mask=0x1000 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 -10 on family 8 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=12 family=8 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14084
+=======
+14076 Improved Sap (Rank 1)
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 30% chance, from effect 1; tooltip says one named ability
+
+effect 1  casts 14093 Vanished on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=14093 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14076
+=======
+14094 Improved Sap (Rank 2)
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 60% chance, from effect 1; tooltip says one named ability
+
+effect 1  casts 14093 Vanished on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=60 sp=1 trigger=14093 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14094
+=======
+14095 Improved Sap (Rank 3)
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 90% chance, from effect 1; tooltip says one named ability
+
+effect 1  casts 14093 Vanished on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=90 sp=1 trigger=14093 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14095
+=======
+13976 Initiative
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 100% chance, from effect 1
+
+effect 1  casts 13977 Initiative on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=13977 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13976
+=======
+14057 Opportunity
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DAMAGE +10% on family 8 mask 0x204,0x6
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=8 mask=0x204,0x6 target=[1,0]
+effect 2  SPELLMOD_DOT +10% on family 8 mask 0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=8 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14057
+=======
+921 Pick Pocket
+school    physical
+defense   magic
+range     5 yd
+stance    Stealth
+labels    20
+
+effect 1  unrecognised shape
+          E_PICKPOCKET base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=921
+=======
+14183 Premeditation
+school    physical
+duration  20 s
+cooldown  120 s
+range     20 yd
+labels    20
+
+effect 1  restores 2 combo points to the caster
+          E_ENERGIZE base=2 misc=4 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_RETAIN_COMBO_POINTS base=2 sp=1 target=[1,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14183
+=======
+14185 Preparation
+school    physical
+cooldown  600 s
+gcd       1 s
+labels    20
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14185
+=======
+1310728 Quietus
+school    physical
+attrs     passive
+labels    20
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+effect 2  a dummy aura holding 35
+          E_APPLY_AURA A_DUMMY base=35 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310728
+=======
+438040 Redirect
+school    physical
+duration  15 s
+cooldown  10 s
+range     5 yd
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=438040
+=======
+438045 Redirect
+school    physical
+range     40 yd
+
+effect 1  unrecognised shape
+          E_328 base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=438045
+=======
+2070 Sap (Rank 2)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  35 s
+gcd       1 s
+cost      65 energy
+range     5 yd
+stance    Stealth
+equip     needs a melee weapon
+targets   up to 1
+attrs     refund on miss
+labels    20
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2070
+=======
+6770 Sap (Rank 1)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  25 s
+gcd       1 s
+cost      65 energy
+range     5 yd
+stance    Stealth
+equip     needs a melee weapon
+targets   up to 1
+attrs     refund on miss
+labels    20
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6770
+=======
+11297 Sap (Rank 3)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  45 s
+gcd       1 s
+cost      65 energy
+range     5 yd
+stance    Stealth
+equip     needs a melee weapon
+targets   up to 1
+attrs     refund on miss
+labels    20
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11297
+=======
+14171 Serrated Blades
+school    physical
+attrs     passive
+labels    20
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_SPELL_AURA_MOD_ARMOR_PENETRATION_PCT base=9 target=[1,0]
+effect 2  SPELLMOD_DOT +30% on family 8 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=8 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14171
+=======
+461327 Serrated Blades (Rank 1)
+school    physical
+duration  permanent
+
+effect 1  casts 438062 Warlord every 5 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=438062 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_AUTOATTACK_WITH_MELEE_SPELL base=0 trigger=461328 target=[1,0]
+effect 3  casts 438567 Bruised every 3 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=3000ms trigger=438567 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461327
+=======
+461328 Serrated Blades (Rank 1)
+school    physical
+
+effect 1  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 chain=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=461328
+=======
+399985 Shadowstrike
+school    physical
+defense   melee
+gcd       1 s
+cost      20 energy
+range     25 yd
+stance    Stealth
+excluded caster aura 450811
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 target=[1,65]
+effect 2  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 3  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 4  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=399985
+=======
+400031 Shadowstrike
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=399985 misc=399967 family=8 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400031
+=======
+399986 Shuriken Toss
+school    physical
+defense   ranged
+cooldown  20 s
+gcd       1 s
+cost      30 energy
+range     25 yd
+
+effect 1  50 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=50 chain=5 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=399986
+=======
+400032 Shuriken Toss
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=399986 misc=415449 family=8 mask=0x0,0x0,0x0,0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400032
+=======
+30892 Sleight of Hand
+school    physical
+attrs     passive
+labels    20
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_ATTACKER_SPELL_AND_WEAPON_CRIT_CHANCE base=-2 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +20% on family 8 mask 0x8000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=8 family=8 mask=0x8000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30892
+=======
+1784 Stealth (Rank 1)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+labels    20
+
+effect 1  shifts into Stealth
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=5 ppl=5 target=[1,0]
+effect 3  -50% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1784
+=======
+1785 Stealth (Rank 2)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+labels    20
+
+effect 1  shifts into Stealth
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=100 ppl=5 target=[1,0]
+effect 3  -40% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1785
+=======
+1786 Stealth (Rank 3)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+labels    20
+
+effect 1  shifts into Stealth
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=200 ppl=5 target=[1,0]
+effect 3  -35% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-35 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1786
+=======
+1787 Stealth (Rank 4)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+labels    20
+
+effect 1  shifts into Stealth
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=300 ppl=5 target=[1,0]
+effect 3  -30% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1787
+=======
+450667 Stealth (Rank 1)
+school    physical
+duration  permanent
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450667
+=======
+1256867 Stealth (Rank 1)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+
+effect 1  shifts into Stealth
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=2 ppl=5 target=[1,0]
+effect 3  -20% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1256867
+=======
+1287162 Stealth
+school    physical
+duration  permanent
+attrs     not a proc, suppresses weapon procs
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1287162
+=======
+1290708 Stealth (Rank 1)
+school    physical
+duration  300 s
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1290708
+=======
+1318151 Stealth
+school    physical
+duration  permanent
+attrs     not a proc, suppresses weapon procs
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1318151
+=======
+1310721 Thousand Cuts
+school    physical
+icd       1.9 s
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says one named ability
+refs      1310723 Thousand Cuts
+
+effect 1  casts 1310723 Thousand Cuts on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 sp=1 trigger=1310723 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310721
+=======
+1310723 Thousand Cuts
+school    physical
+duration  10 s
+stack     up to 5
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -3 (-0.3 on a rage bar) on family 8 mask 0x2000004
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3 sp=1 misc=14 family=8 mask=0x2000004 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310723
+=======
+1856 Vanish (Rank 1)
+school    physical
+cooldown  300 s (category)
+labels    20
+refs      11327 Vanish
+
+effect 1  casts 11327 Vanish to the caster
+          E_TRIGGER_SPELL base=0 trigger=11327 target=[1,0]
+effect 2  casts 18461 Vanish Purge to the caster
+          E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
+effect 3  unrecognised shape
+          E_SANCTUARY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1856
+=======
+1857 Vanish (Rank 2)
+school    physical
+cooldown  300 s (category)
+labels    20
+refs      11329 Vanish
+
+effect 1  casts 11329 Vanish to the caster
+          E_TRIGGER_SPELL base=0 trigger=11329 target=[1,0]
+effect 2  casts 18461 Vanish Purge to the caster
+          E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
+effect 3  unrecognised shape
+          E_SANCTUARY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1857
+=======
+11327 Vanish (Rank 1)
+school    physical
+duration  10 s
+stance    Stealth
+labels    20
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=170 ppl=5 index=1 target=[1,0]
+effect 2  +0% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11327
+=======
+11329 Vanish (Rank 2)
+school    physical
+duration  10 s
+stance    Stealth
+labels    20
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=270 ppl=5 index=1 target=[1,0]
+effect 2  +0% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11329
+=======
+27617 Vanish (Rank 2)
+school    physical
+cooldown  300 s (category)
+refs      11329 Vanish
+
+effect 1  casts 11329 Vanish to the caster
+          E_TRIGGER_SPELL base=0 trigger=11329 target=[1,0]
+effect 2  casts 18461 Vanish Purge to the caster
+          E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
+effect 3  unrecognised shape
+          E_SANCTUARY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27617
+=======
+457437 Vanish
+school    physical
+duration  10 s
+cooldown  300 s (category)
+
+effect 1  -50% holy+fire+nature+frost+shadow+arcane damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457437
+=======
+1285372 Vanish (Rank 3)
+school    physical
+duration  6 s
+cooldown  300 s (category)
+labels    20
+refs      11329 Vanish
+
+effect 1  casts 11329 Vanish to the caster
+          E_TRIGGER_SPELL base=0 trigger=11329 target=[1,0]
+effect 2  casts 18461 Vanish Purge to the caster
+          E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
+effect 3  unrecognised shape
+          E_SANCTUARY base=0 target=[1,0]
+effect 4  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=50 misc2=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1285372

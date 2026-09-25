@@ -1,0 +1,2076 @@
+1066 Aquatic Form (Shapeshift)
+school    physical
+duration  permanent
+gcd       1.5 s
+cost      20% of maximum mana
+stance exclude Moonkin
+labels    21
+refs      5421 Aquatic Form (Passive)
+
+effect 1  shifts into form 4
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=4 misc2=6 target=[1,0]
+effect 2  immune to polymorph
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+effect 3  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1066
+=======
+5421 Aquatic Form (Passive) (Passive)
+school    nature
+stance    form 4
+attrs     passive
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INCREASE_SWIM_SPEED base=50 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_WATER_BREATHING base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5421
+=======
+5211 Bash (Rank 1)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  2 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5211
+=======
+6798 Bash (Rank 2)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  3 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6798
+=======
+8983 Bash (Rank 3)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  4 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8983
+=======
+5487 Bear Form (Shapeshift)
+school    physical
+duration  permanent
+gcd       1.5 s
+cost      55% of maximum mana
+labels    21
+refs      1178 Bear Form (Passive)
+
+effect 1  shifts into Bear
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=5 misc2=7 target=[1,0]
+effect 2  immune to polymorph
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+effect 3  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5487
+=======
+1178 Bear Form (Passive) (Passive)
+school    nature
+stance    Bear
+attrs     passive
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BONUS_ARMOR_PCT base=180 target=[1,0]
+effect 2  +180% armor from items
+          E_APPLY_AURA A_MOD_BASE_RESISTANCE_PCT base=180 misc=1 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_MAX_HEALTH base=20 ppl=18 target=[1,0]
+effect 4  +120 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=30 ppl=3 target=[1,0]
+effect 5  SPELLMOD_COST -100% on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0x400 target=[1,0]
+effect 6  SPELLMOD_COOLDOWN +6 s on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=11 family=7 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1178
+=======
+21178 Bear Form (Passive2) (Passive)
+school    nature
+attrs     passive
+labels    21
+
+effect 1  +30% threat
+          E_APPLY_AURA A_MOD_THREAT base=30 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21178
+=======
+417141 Berserk
+school    physical
+duration  15 s
+cooldown  180 s
+labels    3096
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 7 mask 0x39000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 misc=7 family=7 mask=0x39000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -100% on family 7 mask 0x0,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=7 mask=0x0,0x40 target=[1,0]
+effect 3  SPELLMOD_JUMP_TARGETS +3 on family 7 mask 0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 misc=17 family=7 mask=0x0,0x40 target=[1,0]
+effect 4  immune to fear
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417141
+=======
+424759 Berserk
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417141 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424759
+=======
+442211 Berserk
+school    physical
+duration  30 s
+stance    Cat
+labels    3096
+
+effect 1  SPELLMOD_COST -50% on family 7 mask 0x0,0x0,0x0,0x8000040
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=7 mask=0x0,0x0,0x0,0x8000040 target=[1,0]
+
+https://www.wowhead.com/forever/spell=442211
+=======
+16940 Brutal Impact
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_DURATION +0.5 s on family 7 mask 0x22000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=500 sp=1 misc=1 family=7 mask=0x22000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -30 s on family 7 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 sp=1 misc=11 family=7 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16940
+=======
+768 Cat Form (Shapeshift)
+school    physical
+duration  permanent
+gcd       1.5 s
+cost      55% of maximum mana
+stance exclude Moonkin
+labels    21
+refs      3025 Cat Form (Passive)
+
+effect 1  shifts into Cat
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=1 misc2=7 target=[1,0]
+effect 2  immune to polymorph
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+effect 3  casts nothing every 5 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms target=[1,0]
+effect 4  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=768
+=======
+3025 Cat Form (Passive) (Passive)
+school    nature
+stance    Cat
+attrs     passive
+labels    21
+
+effect 1  +120 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=12 ppl=2 target=[1,0]
+effect 2  -29% threat
+          E_APPLY_AURA A_MOD_THREAT base=-29 misc=127 target=[1,0]
+effect 3  SPELLMOD_COST -100% on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0x400 target=[1,0]
+effect 4  SPELLMOD_COOLDOWN +6 s on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=11 family=7 mask=0x400 target=[1,0]
+effect 5  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=7 mask=0x400 target=[1,0]
+effect 6  unrecognised shape
+          E_APPLY_AURA A_598 base=100 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3025
+=======
+5209 Challenging Roar
+school    physical
+defense   magic
+duration  6 s
+cooldown  600 s
+gcd       1.5 s
+cost      15 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  taunts to every enemy around the caster
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,15]
+
+https://www.wowhead.com/forever/spell=5209
+=======
+1082 Claw (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +27 to the enemy
+          E_WEAPON_DAMAGE base=27 sp=1 target=[6,0]
+effect 2  110% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1082
+=======
+3029 Claw (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% chance
+
+effect 1  weapon damage +39 to the enemy
+          E_WEAPON_DAMAGE base=39 sp=1 target=[6,0]
+effect 2  110% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3029
+=======
+5201 Claw (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% chance
+
+effect 1  weapon damage +57 to the enemy
+          E_WEAPON_DAMAGE base=57 sp=1 target=[6,0]
+effect 2  110% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5201
+=======
+9849 Claw (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% chance
+
+effect 1  weapon damage +88 to the enemy
+          E_WEAPON_DAMAGE base=88 sp=1 target=[6,0]
+effect 2  110% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9849
+=======
+9850 Claw (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% chance
+
+effect 1  weapon damage +115 to the enemy
+          E_WEAPON_DAMAGE base=115 sp=1 target=[6,0]
+effect 2  110% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9850
+=======
+24187 Claw
+school    physical
+defense   melee
+gcd       1 s
+range     5 yd
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% chance
+
+effect 1  weapon damage +100 to the enemy
+          E_WEAPON_DAMAGE base=100 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24187
+=======
+8998 Cower (Rank 1)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  -490 threat to the enemy
+          E_THREAT base=-480 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8998
+=======
+9000 Cower (Rank 2)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  -790 threat to the enemy
+          E_THREAT base=-780 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9000
+=======
+9892 Cower (Rank 3)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  -1208 threat to the enemy
+          E_THREAT base=-1200 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9892
+=======
+456333 Cower
+school    nature
+defense   magic
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_MODIFY_THREAT_PERCENT base=-100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=456333
+=======
+99 Demoralizing Roar (Rank 1)
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      10 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  -56 attack power to every enemy around the caster (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-46 ppl=-1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=99
+=======
+1735 Demoralizing Roar (Rank 2)
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      10 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  -88 attack power to every enemy around the caster (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-74 ppl=-1.4 target=[22,15]
+
+https://www.wowhead.com/forever/spell=1735
+=======
+9490 Demoralizing Roar (Rank 3)
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      10 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  -105 attack power to every enemy around the caster (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-95 ppl=-1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=9490
+=======
+9747 Demoralizing Roar (Rank 4)
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      10 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  -158 attack power to every enemy around the caster (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-144 ppl=-1.4 target=[22,15]
+
+https://www.wowhead.com/forever/spell=9747
+=======
+9898 Demoralizing Roar (Rank 5)
+school    physical
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      10 rage
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  -205 attack power to every enemy around the caster (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-193 ppl=-1.4 target=[22,15]
+
+https://www.wowhead.com/forever/spell=9898
+=======
+9634 Dire Bear Form (Shapeshift)
+school    physical
+duration  permanent
+gcd       1.5 s
+cost      55% of maximum mana
+stance exclude Moonkin
+labels    21
+refs      9635 Dire Bear Form (Passive)
+
+effect 1  shifts into Dire Bear
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=8 misc2=7 target=[1,0]
+effect 2  immune to polymorph
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+effect 3  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9634
+=======
+9635 Dire Bear Form (Passive) (Passive)
+school    nature
+stance    Dire Bear
+attrs     passive
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_BONUS_ARMOR_PCT base=360 target=[1,0]
+effect 2  +360% armor from items
+          E_APPLY_AURA A_MOD_BASE_RESISTANCE_PCT base=360 misc=1 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_MAX_HEALTH base=600 ppl=32 target=[1,0]
+effect 4  +180 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=120 ppl=3 target=[1,0]
+effect 5  SPELLMOD_COST -100% on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0x400 target=[1,0]
+effect 6  SPELLMOD_COOLDOWN +6 s on family 7 mask 0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=11 family=7 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9635
+=======
+5229 Enrage
+school    physical
+duration  10 s
+cooldown  60 s
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  restores 2 rage every 1 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=20 period=1000ms misc=1 target=[1,0]
+effect 2  restores 10 rage to the caster
+          E_ENERGIZE base=100 misc=1 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_INTERRUPT_REGEN base=0 target=[1,0]
+effect 4  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5229
+=======
+25503 Enrage
+school    physical
+duration  10 s
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-26 misc=1 index=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25503
+=======
+16858 Feral Aggression (Rank 1)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +8% on family 7 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 7 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16858
+=======
+16859 Feral Aggression (Rank 2)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +16% on family 7 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=16 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +6% on family 7 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=6 sp=1 family=7 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16859
+=======
+16860 Feral Aggression (Rank 3)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +24% on family 7 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=24 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +9% on family 7 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=9 sp=1 family=7 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16860
+=======
+16861 Feral Aggression (Rank 4)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +32% on family 7 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=32 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +12% on family 7 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=12 sp=1 family=7 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16861
+=======
+16862 Feral Aggression (Rank 5)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +40% on family 7 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=40 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +15% on family 7 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=7 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16862
+=======
+19675 Feral Charge
+school    physical
+defense   magic
+duration  4 s
+range     8-25 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 sp=1 mechanic=26 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19675
+=======
+414923 Feral Charge (Cat)
+school    physical
+mechanic  mechanic 11
+duration  3 s
+range     100 yd
+labels    21
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=414923
+=======
+414925 Feral Charge (Cat)
+school    physical
+duration  permanent
+stance    Cat
+labels    21
+
+effect 1  replaces an action bar spell with 1238122 Feral Charge
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414924 misc=1238122 target=[1,0]
+
+https://www.wowhead.com/forever/spell=414925
+=======
+1238122 Feral Charge
+school    physical
+cooldown  15 s
+cooldown  15 s (category)
+cost      5 rage
+range     8-25 yd
+stance    Cat, Bear, Dire Bear
+labels    21
+refs      19675 Feral Charge
+
+effect 1  charges to the enemy
+          E_CHARGE base=30 target=[6,0]
+effect 2  casts 19675 Feral Charge to the enemy
+          E_TRIGGER_SPELL base=5 sp=1 trigger=19675 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238122
+=======
+1238124 Feral Charge (Cat)
+school    physical
+duration  permanent
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  replaces an action bar spell with 1238122 Feral Charge
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=16979 misc=1238122 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1238124
+=======
+16979 Feral Charge (Bear)
+school    physical
+cooldown  15 s
+cooldown  15 s (category)
+cost      5 rage
+range     8-25 yd
+stance    Bear, Dire Bear
+labels    21
+refs      19675 Feral Charge
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  casts 19675 Feral Charge to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=19675 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16979
+=======
+16947 Feral Instinct
+school    physical
+stance    Cat, Bear, Dire Bear
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_EFFECT1 +3 on family 7 mask 0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=3 family=7 mask=0x4000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 7 mask 0x0,0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x0,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16947
+=======
+17002 Feral Swiftness
+school    physical
+attrs     passive
+labels    21
+
+effect 1  +4% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=4 sp=1 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17002
+=======
+24867 Feral Swiftness
+school    physical
+duration  permanent
+stance    Cat
+labels    21
+
+effect 1  +30% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24867
+=======
+22568 Ferocious Bite (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  14–30 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=22 variance=0.72727275 sp=1 perResource=36 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22568
+=======
+22827 Ferocious Bite (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  20–44 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=32 variance=0.75 sp=1 perResource=59 target=[6,0]
+effect 2  a dummy effect holding 150 to the enemy
+          E_DUMMY base=150 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22827
+=======
+22828 Ferocious Bite (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  30–70 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=50 variance=0.8 sp=1 perResource=92 target=[6,0]
+effect 2  a dummy effect holding 200 to the enemy
+          E_DUMMY base=200 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22828
+=======
+22829 Ferocious Bite (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  45–95 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 perResource=128 target=[6,0]
+effect 2  a dummy effect holding 250 to the enemy
+          E_DUMMY base=250 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22829
+=======
+27557 Ferocious Bite
+school    physical
+defense   melee
+gcd       1 s
+range     5 yd
+stance    form 15
+
+effect 1  1750–2250 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=2000 variance=0.25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27557
+=======
+31018 Ferocious Bite (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  52–112 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 perResource=147 target=[6,0]
+effect 2  a dummy effect holding 270 to the enemy
+          E_DUMMY base=270 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=31018
+=======
+16934 Ferocity
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 7 mask 0x800,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0x800,0x40 target=[1,0]
+effect 2  SPELLMOD_COST -1 (-0.1 on a rage bar) on family 7 mask 0x1000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1 sp=1 misc=14 family=7 mask=0x1000,0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16934
+=======
+22842 Frenzied Regeneration
+school    physical
+duration  10 s
+cooldown  180 s (category)
+gcd       1.5 s
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  casts nothing every 1 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=22842
+=======
+22845 Frenzied Regeneration
+school    physical
+attrs     cannot crit
+labels    21
+
+effect 1  0 healing to the caster
+          E_HEAL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22845
+=======
+428708 Frenzied Regeneration
+school    physical
+duration  10 s
+cooldown  180 s (category)
+gcd       1.5 s
+stance exclude Moonkin
+labels    3096, 3100
+
+effect 1  casts nothing every 1 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=10 period=1000ms target=[1,0]
+effect 2  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 3  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 4  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428708
+=======
+6795 Growl
+school    physical
+defense   magic
+duration  3 s
+cooldown  8 s (category)
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6795
+=======
+1218506 Growl
+school    physical
+defense   magic
+duration  3 s
+cooldown  10 s (category)
+range     5 yd
+stance    Bear, Dire Bear
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1218506
+=======
+16968 Improved Shred (Rank 2)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -12 (-1.2 on a rage bar) on family 7 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-12 sp=1 misc=14 family=7 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16968
+=======
+417046 King of the Jungle
+school    physical
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
+effect 2  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417046
+=======
+424762 King of the Jungle
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417046 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424762
+=======
+414644 Lacerate (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+stack     up to 5
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  10 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=3000ms target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=414644
+=======
+414647 Lacerate
+school    physical
+defense   melee
+range     50000 yd
+labels    21
+
+effect 1  20% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=20 target=[6,0]
+
+https://www.wowhead.com/forever/spell=414647
+=======
+1235826 Lacerate (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+stack     up to 5
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  12 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235826
+=======
+1235827 Lacerate (Rank 3)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+stack     up to 5
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  15 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=3000ms target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235827
+=======
+17007 Leader of the Pack
+school    physical
+attrs     passive
+labels    21
+refs      24932 Leader of the Pack
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17007
+=======
+24932 Leader of the Pack
+school    physical
+duration  permanent
+stance    Cat, Bear, Dire Bear
+labels    21
+
+effect 1  party aura: +3% physical and spell crit
+          E_APPLY_AREA_AURA_PARTY A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24932
+=======
+6807 Maul (Rank 1)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +18 to the enemy
+          E_WEAPON_DAMAGE base=18 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6807
+=======
+6808 Maul (Rank 2)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +27 to the enemy
+          E_WEAPON_DAMAGE base=27 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6808
+=======
+6809 Maul (Rank 3)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +37 to the enemy
+          E_WEAPON_DAMAGE base=37 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6809
+=======
+8972 Maul (Rank 4)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +49 to the enemy
+          E_WEAPON_DAMAGE base=49 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8972
+=======
+9745 Maul (Rank 5)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +71 to the enemy
+          E_WEAPON_DAMAGE base=71 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9745
+=======
+9880 Maul (Rank 6)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +101 to the enemy
+          E_WEAPON_DAMAGE base=101 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9880
+=======
+9881 Maul (Rank 7)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +128 to the enemy
+          E_WEAPON_DAMAGE base=128 sp=1 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9881
+=======
+417051 Natural Reaction
+school    physical
+attrs     passive
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; 3% chance, from effect 2; tooltip says an outcome the mask has no bit for
+refs      417053 Natural Reaction
+
+effect 1  +0% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=0 target=[1,0]
+effect 2  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+effect 3  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 4  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417051
+=======
+9005 Pounce (Rank 1)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  2 s
+gcd       1 s
+cost      50 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+refs      9007 Pounce Bleed
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+effect 2  casts 9007 Pounce Bleed to the enemy
+          E_TRIGGER_SPELL base=0 trigger=9007 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9005
+=======
+9823 Pounce (Rank 2)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  2 s
+gcd       1 s
+cost      50 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+refs      9824 Pounce Bleed
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+effect 2  casts 9824 Pounce Bleed to the enemy
+          E_TRIGGER_SPELL base=0 trigger=9824 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9823
+=======
+9827 Pounce (Rank 3)
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  2 s
+gcd       1 s
+cost      50 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+refs      9826 Pounce Bleed
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+effect 2  casts 9826 Pounce Bleed to the enemy
+          E_TRIGGER_SPELL base=0 trigger=9826 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9827
+=======
+1223242 Predatory Instincts
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223242
+=======
+16972 Predatory Strikes
+school    physical
+stance    Cat, Bear, Dire Bear
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
+effect 2  +0 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16972
+=======
+407995 Primal Bite (Rank 1)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +26 to the enemy
+          E_WEAPON_DAMAGE base=26 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=407995
+=======
+1238069 Primal Bite (Rank 2)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +38 to the enemy
+          E_WEAPON_DAMAGE base=38 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238069
+=======
+1238070 Primal Bite (Rank 3)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +59 to the enemy
+          E_WEAPON_DAMAGE base=59 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238070
+=======
+1238073 Primal Bite (Rank 4)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +77 to the enemy
+          E_WEAPON_DAMAGE base=77 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1238073
+=======
+5215 Prowl (Rank 1)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+stance    Cat
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=100 ppl=5 target=[1,0]
+effect 2  -40% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5215
+=======
+6783 Prowl (Rank 2)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+stance    Cat
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=200 ppl=5 target=[1,0]
+effect 2  -35% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-35 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6783
+=======
+9913 Prowl (Rank 3)
+school    physical
+duration  permanent
+cooldown  10 s (category)
+stance    Cat
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_STEALTH base=300 ppl=5 target=[1,0]
+effect 2  -30% movement speed
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9913
+=======
+1822 Rake (Rank 1)
+school    physical
+defense   melee
+duration  9 s
+gcd       1 s
+cost      40 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  23 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=23 target=[6,0]
+effect 2  16 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 period=3000ms mechanic=15 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1822
+=======
+1823 Rake (Rank 2)
+school    physical
+defense   melee
+duration  9 s
+gcd       1 s
+cost      40 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  31 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=31 target=[6,0]
+effect 2  21 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms mechanic=15 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1823
+=======
+1824 Rake (Rank 3)
+school    physical
+defense   melee
+duration  9 s
+gcd       1 s
+cost      40 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  45 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=45 target=[6,0]
+effect 2  26 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 period=3000ms mechanic=15 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1824
+=======
+9904 Rake (Rank 4)
+school    physical
+defense   melee
+duration  9 s
+gcd       1 s
+cost      40 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  61 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=61 target=[6,0]
+effect 2  34 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 period=3000ms mechanic=15 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9904
+=======
+24331 Rake
+school    physical
+defense   melee
+mechanic  bleed
+duration  9 s
+gcd       1 s
+range     5 yd
+stance    Cat
+
+effect 1  16–24 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=20 variance=0.4 target=[6,0]
+effect 2  12 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24331
+=======
+24332 Rake
+school    physical
+defense   melee
+mechanic  bleed
+duration  9 s
+gcd       1 s
+range     5 yd
+
+effect 1  32–48 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=40 variance=0.4 target=[6,0]
+effect 2  24 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=24 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24332
+=======
+27556 Rake
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1 s
+range     5 yd
+stance    form 15
+stack     up to 100
+
+effect 1  200–300 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
+effect 2  100 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=27556
+=======
+27638 Rake
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1 s
+range     5 yd
+stack     up to 100
+
+effect 1  200–300 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
+effect 2  100 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=27638
+=======
+6785 Ravage (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +42 to the enemy
+          E_WEAPON_DAMAGE base=42 sp=1 amplitude=1 target=[6,0]
+effect 2  350% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6785
+=======
+6787 Ravage (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +62 to the enemy
+          E_WEAPON_DAMAGE base=62 sp=1 amplitude=1 target=[6,0]
+effect 2  350% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6787
+=======
+9866 Ravage (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +78 to the enemy
+          E_WEAPON_DAMAGE base=78 sp=1 amplitude=1 target=[6,0]
+effect 2  350% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9866
+=======
+9867 Ravage (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +98 to the enemy
+          E_WEAPON_DAMAGE base=98 sp=1 amplitude=1 target=[6,0]
+effect 2  350% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9867
+=======
+1079 Rip (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  3 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms perResource=4.4 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1079
+=======
+9492 Rip (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  4 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms perResource=7.2 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9492
+=======
+9493 Rip (Rank 3)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  6 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms perResource=8.5 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9493
+=======
+9752 Rip (Rank 4)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  8 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms perResource=12.7 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9752
+=======
+9894 Rip (Rank 5)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  11 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=2000ms perResource=18.2 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9894
+=======
+9896 Rip (Rank 6)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1 s
+cost      30 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  15 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms perResource=25.5 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9896
+=======
+16998 Savage Fury
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_DAMAGE +20% on family 7 mask 0x9800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=7 mask=0x9800 target=[1,0]
+effect 2  SPELLMOD_DOT +20% on family 7 mask 0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=7 mask=0x1000 target=[0,0]
+
+https://www.wowhead.com/forever/spell=16998
+=======
+5221 Shred (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +24 to the enemy
+          E_WEAPON_DAMAGE base=24 sp=1 target=[6,0]
+effect 2  155% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5221
+=======
+6800 Shred (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +32 to the enemy
+          E_WEAPON_DAMAGE base=32 sp=1 target=[6,0]
+effect 2  155% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6800
+=======
+8992 Shred (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +44 to the enemy
+          E_WEAPON_DAMAGE base=44 sp=1 target=[6,0]
+effect 2  155% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8992
+=======
+9829 Shred (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +64 to the enemy
+          E_WEAPON_DAMAGE base=64 sp=1 target=[6,0]
+effect 2  155% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9829
+=======
+9830 Shred (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  weapon damage +80 to the enemy
+          E_WEAPON_DAMAGE base=80 sp=1 target=[6,0]
+effect 2  155% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9830
+=======
+27555 Shred
+school    physical
+defense   melee
+mechanic  bleed
+duration  10 s
+gcd       1 s
+range     5 yd
+stance    form 15
+
+effect 1  600–900 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=750 variance=0.4 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27555
+=======
+16966 Shredding Attacks
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -6 (-0.6 on a rage bar) on family 7 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6 sp=1 misc=14 family=7 mask=0x8000 target=[1,0]
+effect 2  SPELLMOD_COST -60 (-6 on a rage bar) on family 7 mask 0x0,0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60 sp=1 misc=14 family=7 mask=0x0,0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16966
+=======
+410176 Skull Bash
+school    physical
+defense   melee
+cooldown  10 s
+cooldown  10 s (category)
+gcd       1 s
+cost      25 energy
+cost      10 rage
+range     13 yd
+stance    Cat, Bear, Dire Bear
+refs      414621 Skull Bash
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 trigger=414621 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=410176
+=======
+414621 Skull Bash
+school    physical
+defense   melee
+duration  2 s
+range     100 yd
+stance    Cat, Bear, Dire Bear
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=414621
+=======
+408024 Survival Instincts
+school    physical
+duration  20 s
+cooldown  180 s
+stance exclude Moonkin
+labels    3096
+refs      408025 Survival Instincts, 417051 Natural Reaction
+
+effect 1  +20% healing done
+          E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=20 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408024
+=======
+408025 Survival Instincts
+school    physical
+duration  20 s
+labels    3096
+
+effect 1  +30 health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408025
+=======
+409809 Survival Instincts
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408024 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409809
+=======
+769 Swipe (Rank 3)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  36 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=36 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=769
+=======
+779 Swipe (Rank 1)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  18 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=18 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=779
+=======
+780 Swipe (Rank 2)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  25 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=25 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=780
+=======
+9754 Swipe (Rank 4)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  60 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=60 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9754
+=======
+9908 Swipe (Rank 5)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Bear, Dire Bear
+labels    21
+
+effect 1  83 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=83 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9908
+=======
+27554 Swipe
+school    physical
+defense   melee
+gcd       1.5 s
+range     5 yd
+stance    form 14
+
+effect 1  875–1125 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=1000 variance=0.25 sp=1 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27554
+=======
+411128 Swipe (Cat)
+school    physical
+defense   melee
+gcd       1 s
+cost      50 energy
+range     5 yd
+stance    Cat
+labels    3096
+
+effect 1  250% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=250 chain=1000 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=411128
+=======
+439512 Swipe (Cat)
+school    physical
+duration  permanent
+stance    Cat
+
+effect 1  replaces an action bar spell with 0
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411128 family=7 mask=0x0,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=439512
+=======
+16929 Thick Hide
+school    physical
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+effect 2  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16929
+=======
+1306459 Thick Hide
+school    physical
+duration  permanent
+stance    Cat, Bear, Dire Bear, Moonkin
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_665 base=1 misc=1 misc2=95 target=[1,0]
+effect 2  -600 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=-600 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1306459
+=======
+5217 Tiger's Fury
+school    physical
+duration  6 s
+cooldown  30 s
+caster aura 768 Cat Form
+labels    21
+refs      417046 King of the Jungle
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5217
+=======
+417045 Tiger's Fury
+school    physical
+caster aura 768 Cat Form
+labels    21
+
+effect 1  restores 60 energy to the caster
+          E_ENERGIZE base=60 misc=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417045
+=======
+1312152 Tiger's Fury
+school    physical
+duration  permanent
+stance    Cat
+
+effect 1  +15% physical damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1312152
+=======
+783 Travel Form (Shapeshift)
+school    physical
+duration  permanent
+gcd       1.5 s
+cost      20% of maximum mana
+stance exclude Moonkin
+labels    21
+refs      5419 Travel Form (Passive)
+
+effect 1  shifts into Travel
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=3 misc2=6 target=[1,0]
+effect 2  immune to polymorph
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+effect 3  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=783

@@ -1,0 +1,2414 @@
+1008 Amplify Magic (Rank 1)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+labels    17
+
+effect 1  +23 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=23 misc=126 target=[57,0]
+effect 2  +45 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=45 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1008
+=======
+8455 Amplify Magic (Rank 2)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      250 mana
+range     30 yd
+labels    17
+
+effect 1  +45 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=45 misc=126 target=[57,0]
+effect 2  +90 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=90 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=8455
+=======
+10169 Amplify Magic (Rank 3)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      350 mana
+range     30 yd
+labels    17
+
+effect 1  +75 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=75 misc=126 target=[57,0]
+effect 2  +150 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=150 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10169
+=======
+10170 Amplify Magic (Rank 4)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      450 mana
+range     30 yd
+labels    17
+
+effect 1  +113 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=113 misc=126 target=[57,0]
+effect 2  +225 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=225 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10170
+=======
+400610 Arcane Barrage
+school    arcane
+defense   magic
+cooldown  3 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     30 yd
+labels    3096
+refs      400588 Missile Barrage
+
+effect 1  358–438 arcane damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=398 variance=0.20100503 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400610
+=======
+401719 Arcane Barrage
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400610 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401719
+=======
+16067 Arcane Blast
+school    arcane
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+
+effect 1  145 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=120 ppl=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16067
+=======
+18091 Arcane Blast
+school    arcane
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+
+effect 1  110 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=85 ppl=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18091
+=======
+42896 Arcane Blast (Rank 3)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      7% of maximum mana
+range     30 yd
+labels    17
+
+effect 1  1047–1215 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=1131 ppl=6.2 variance=0.14854111 sp=0.714 target=[6,0]
+effect 2  casts 36032 to the caster
+          E_TRIGGER_SPELL base=0 trigger=36032 target=[1,0]
+
+https://www.wowhead.com/forever/spell=42896
+=======
+400573 Arcane Blast
+school    arcane
+duration  8 s
+cooldown  180 s
+stack     up to 4
+charges   1
+attrs     suppresses weapon procs
+labels    17
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says cast trigger
+
+effect 1  SPELLMOD_DAMAGE +10% on family 3 mask 0xc21273,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0xc21273,0x1000 target=[1,0]
+effect 2  SPELLMOD_COST +175% on family 3 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=175 misc=14 family=3 mask=0x20000000 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on family 3 mask 0x1,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=3 mask=0x1,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400573
+=======
+400574 Arcane Blast (Rank 1)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  56.39388–65.606125 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=54 ppl=0.9 variance=0.15102041 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400574
+=======
+400586 Arcane Blast
+school    arcane
+duration  8 s
+cooldown  180 s
+stack     up to 4
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400586
+=======
+401729 Arcane Blast
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400574 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401729
+=======
+1239696 Arcane Blast (Rank 2)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  130.35306–151.64694 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=130 ppl=1.4 variance=0.15102041 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1239696
+=======
+1239697 Arcane Blast (Rank 3)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  167.33266–194.66734 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=169 ppl=1.6 variance=0.15102041 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1239697
+=======
+1239699 Arcane Blast (Rank 4)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  268.10205–311.89795 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=274 ppl=2.1 variance=0.15102041 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1239699
+=======
+1239700 Arcane Blast (Rank 5)
+school    arcane
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  364.249–423.751 arcane damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=394 ppl=2.6 variance=0.15102041 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1239700
+=======
+1300176 Arcane Blast
+school    arcane
+duration  8 s
+cooldown  180 s
+stack     up to 4
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  SPELLMOD_DAMAGE +10% on family 3 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300176
+=======
+1300177 Arcane Blast
+school    arcane
+duration  8 s
+cooldown  180 s
+stack     up to 4
+labels    17
+refs      400573 Arcane Blast
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300177
+=======
+23028 Arcane Brilliance
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      3400 mana
+range     40 yd
+labels    17
+
+effect 1  +31 intellect to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=31 misc=3 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=23028
+=======
+11213 Arcane Concentration
+school    arcane
+icd       1 s
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1
+refs      12536 Clearcasting
+
+effect 1  casts 12536 Clearcasting on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=12536 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11213
+=======
+1449 Arcane Explosion (Rank 1)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      75 mana
+labels    17
+
+effect 1  32–36 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=32 ppl=0.4 variance=0.11764706 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=1449
+=======
+8437 Arcane Explosion (Rank 2)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  55.1–60.9 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.1 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8437
+=======
+8438 Arcane Explosion (Rank 3)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      185 mana
+labels    17
+
+effect 1  94.11881–101.88119 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=94 ppl=0.9 variance=0.07920792 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8438
+=======
+8439 Arcane Explosion (Rank 4)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      250 mana
+labels    17
+
+effect 1  133.24828–144.75172 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=135 ppl=0.9 variance=0.08275862 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8439
+=======
+10201 Arcane Explosion (Rank 5)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      315 mana
+labels    17
+
+effect 1  180.24742–195.75258 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=183 ppl=1.1 variance=0.082474224 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10201
+=======
+10202 Arcane Explosion (Rank 6)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      390 mana
+labels    17
+
+effect 1  238.19763–257.80237 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.07905138 sp=0.143 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10202
+=======
+22460 Arcane Explosion
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      390 mana
+
+effect 1  248.76285–269.23715 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=253 ppl=1.3 variance=0.07905138 sp=0.143 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=22460
+=======
+11222 Arcane Focus
+school    arcane
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +2% on family 3 mask 0x20240000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=16 family=3 mask=0x20240000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11222
+=======
+11247 Arcane Geometry
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_RANGE +6 on family 3 mask 0xa0206c00
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0xa0206c00 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11247
+=======
+11242 Arcane Impact
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20201000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=3 mask=0x20201000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11242
+=======
+15058 Arcane Instability
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +1% on family 3 mask 0x20e212f7,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=3 mask=0x20e212f7,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +1% on family 3 mask 0x400085
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
+effect 3  +1% physical and spell crit
+          E_APPLY_AURA A_MOD_CRIT_PCT base=1 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15058
+=======
+1459 Arcane Intellect (Rank 1)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    17
+
+effect 1  +2 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=2 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1459
+=======
+1460 Arcane Intellect (Rank 2)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      185 mana
+range     30 yd
+labels    17
+
+effect 1  +7 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=7 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1460
+=======
+1461 Arcane Intellect (Rank 3)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      520 mana
+range     30 yd
+labels    17
+
+effect 1  +15 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=15 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1461
+=======
+10156 Arcane Intellect (Rank 4)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      945 mana
+range     30 yd
+labels    17
+
+effect 1  +22 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=22 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10156
+=======
+10157 Arcane Intellect (Rank 5)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1510 mana
+range     30 yd
+labels    17
+
+effect 1  +31 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=31 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10157
+=======
+13326 Arcane Intellect
+school    nature
+defense   magic
+duration  1800 s
+cost      90 mana
+range     30 yd
+
+effect 1  +18 intellect to the friendly target (at level 60)
+          E_APPLY_AURA A_MOD_STAT base=10 ppl=0.2 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=13326
+=======
+16876 Arcane Intellect (Rank 5)
+school    arcane
+defense   magic
+duration  1800 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  +31 intellect to every ally around the caster
+          E_APPLY_AURA A_MOD_STAT base=31 misc=3 radius=100 target=[22,30]
+
+https://www.wowhead.com/forever/spell=16876
+=======
+364161 Arcane Intellect (Rank 2)
+school    arcane
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      185 mana
+range     30 yd
+
+effect 1  +7 intellect to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=7 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=364161
+=======
+11232 Arcane Mind
+school    arcane
+attrs     passive
+labels    17
+
+effect 1  +10% strength
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc2=8 target=[1,0]
+effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x20201000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x20201000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11232
+=======
+7268 Arcane Missile (Rank 1)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  25 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=24 ppl=0.3 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7268
+=======
+5143 Arcane Missiles (Rank 1)
+school    arcane
+duration  3 s
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      7268 Arcane Missile
+
+effect 1  casts 7268 Arcane Missile every 1 s (3 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7268 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5143
+=======
+5144 Arcane Missiles (Rank 2)
+school    arcane
+duration  4 s
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      7269 Arcane Missiles
+
+effect 1  casts 7269 Arcane Missiles every 1 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7269 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5144
+=======
+5145 Arcane Missiles (Rank 3)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      235 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      7270 Arcane Missiles
+
+effect 1  casts 7270 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7270 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5145
+=======
+7269 Arcane Missiles (Rank 2)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  32 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=31 ppl=0.4 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7269
+=======
+7270 Arcane Missiles (Rank 3)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  46 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=44 ppl=0.5 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7270
+=======
+8416 Arcane Missiles (Rank 4)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      320 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      8419 Arcane Missiles
+
+effect 1  casts 8419 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=8419 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8416
+=======
+8417 Arcane Missiles (Rank 5)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      410 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      8418 Arcane Missiles
+
+effect 1  casts 8418 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=8418 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8417
+=======
+8418 Arcane Missiles (Rank 5)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  97 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=95 ppl=0.7 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8418
+=======
+8419 Arcane Missiles (Rank 4)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  68 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=66 ppl=0.6 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8419
+=======
+10211 Arcane Missiles (Rank 6)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      500 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      10273 Arcane Missiles
+
+effect 1  casts 10273 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=10273 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10211
+=======
+10212 Arcane Missiles (Rank 7)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      595 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      10274 Arcane Missiles
+
+effect 1  casts 10274 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=10274 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10212
+=======
+10273 Arcane Missiles (Rank 6)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  133 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=130 ppl=0.8 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10273
+=======
+10274 Arcane Missiles (Rank 7)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  174 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=171 ppl=0.9 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10274
+=======
+15735 Arcane Missiles
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      235 mana
+range     30 yd
+attrs     channeled
+
+effect 1  casts 15736 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=15736 target=[1,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15735
+=======
+15736 Arcane Missiles
+school    arcane
+defense   magic
+range     30 yd
+
+effect 1  327 arcane damage to the enemy (+0.2 spell power)
+          E_SCHOOL_DAMAGE base=327.43057 sp=0.2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15736
+=======
+15790 Arcane Missiles
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      235 mana
+range     30 yd
+attrs     channeled
+
+effect 1  casts 15791 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=15791 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15790
+=======
+15791 Arcane Missiles
+school    arcane
+defense   magic
+range     30 yd
+
+effect 1  654 arcane damage to the enemy (+0.2 spell power)
+          E_SCHOOL_DAMAGE base=654.86115 sp=0.2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15791
+=======
+22272 Arcane Missiles
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      235 mana
+range     30 yd
+attrs     channeled
+
+effect 1  casts 22273 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=22273 target=[1,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22272
+=======
+22273 Arcane Missiles
+school    arcane
+defense   magic
+range     30 yd
+
+effect 1  1309 arcane damage to the enemy (+0.2 spell power)
+          E_SCHOOL_DAMAGE base=1309.7223 sp=0.2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22273
+=======
+25345 Arcane Missiles (Rank 8)
+school    arcane
+duration  5 s
+gcd       1.5 s
+cost      655 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      25346 Arcane Missiles
+
+effect 1  casts 25346 Arcane Missiles every 1 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=25346 target=[1,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25345
+=======
+25346 Arcane Missiles (Rank 8)
+school    arcane
+defense   magic
+range     30 yd
+attrs     not a proc
+labels    17
+
+effect 1  209 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=209 ppl=1 sp=0.286 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25346
+=======
+31751 Arcane Missiles
+school    arcane
+range     50000 yd
+attrs     not a proc
+labels    17
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=31751
+=======
+12042 Arcane Power
+school    arcane
+defense   magic
+duration  15 s
+cooldown  180 s
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +30% on family 3 mask 0x20e212f7,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 family=3 mask=0x20e212f7,0x1000 target=[1,0]
+effect 2  SPELLMOD_COST +30% on family 3 mask 0x20c21af7,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=14 family=3 mask=0x20c21af7,0x1000 target=[1,0]
+effect 3  SPELLMOD_DOT +30% on family 3 mask 0x400085
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12042
+=======
+11252 Arcane Shielding
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_VALUE_MULTIPLIER -33% on family 3 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-33 misc=27 family=3 mask=0x8000 target=[1,0]
+effect 2  SPELLMOD_EFFECT1 +50% on family 3 mask 0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=3 family=3 mask=0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11252
+=======
+11210 Arcane Subtlety
+school    arcane
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_THREAT -30% on family 3 mask 0x20241800,0x0,0x4,0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-30 misc=2 family=3 mask=0x20241800,0x0,0x4,0x80 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_TARGET_RESISTANCE base=-15 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11210
+=======
+425124 Arcane Surge
+school    arcane
+defense   magic
+duration  8 s
+cooldown  120 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  226–264 arcane damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=245 variance=0.15510204 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=300 target=[1,0]
+effect 3  +100% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
+effect 4  a dummy aura holding 300
+          E_APPLY_AURA A_DUMMY base=300 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425124
+=======
+425168 Arcane Surge
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425124 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425168
+=======
+1953 Blink
+school    arcane
+defense   magic
+duration  1 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      35% of maximum mana
+excluded caster aura 450804
+labels    17
+
+effect 1  unrecognised shape
+          E_LEAP base=0 target=[1,55]
+effect 2  immune to stun
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=12 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1953
+=======
+14514 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+cost      75 mana
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,47]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14514
+=======
+21655 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,47]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21655
+=======
+28391 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+cost      75 mana
+
+effect 1  a dummy effect to every enemy around the caster
+          E_DUMMY base=0 radius=30 target=[22,15]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28391
+=======
+28401 Blink
+school    nature
+defense   magic
+gcd       1.5 s
+cost      75 mana
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 target=[1,63]
+
+https://www.wowhead.com/forever/spell=28401
+=======
+29208 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,47]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29208
+=======
+29209 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,48]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29209
+=======
+29210 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,49]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29210
+=======
+29211 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_LEAP base=0 radius=20 target=[1,50]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29211
+=======
+1236175 Blink
+school    nature
+defense   magic
+duration  1 s
+gcd       1.5 s
+cost      75 mana
+
+effect 1  unrecognised shape
+          E_LEAP base=0 target=[1,47]
+effect 2  immune to freeze
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
+effect 3  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1236175
+=======
+12536 Clearcasting
+school    arcane
+defense   magic
+duration  15 s
+range     100 yd
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -1000% on family 3 mask 0x20c21af7,0x29000,0x10040040,0x84000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-1000 misc=14 family=3 mask=0x20c21af7,0x29000,0x10040040,0x84000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12536
+=======
+587 Conjure Food (Rank 1)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      60 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=587
+=======
+597 Conjure Food (Rank 2)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      105 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=597
+=======
+990 Conjure Food (Rank 3)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      180 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=990
+=======
+6129 Conjure Food (Rank 4)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      285 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6129
+=======
+10144 Conjure Food (Rank 5)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      420 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10144
+=======
+10145 Conjure Food (Rank 6)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      585 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2.25 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10145
+=======
+28612 Conjure Food (Rank 7)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      705 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=10 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28612
+=======
+759 Conjure Mana Agate
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      530 mana
+labels    17
+refs      5405 Replenish Mana
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=759
+=======
+10053 Conjure Mana Citrine
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      1130 mana
+labels    17
+refs      10057 Replenish Mana
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10053
+=======
+3552 Conjure Mana Jade
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      800 mana
+labels    17
+refs      10052 Replenish Mana
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3552
+=======
+10054 Conjure Mana Ruby
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      1470 mana
+labels    17
+refs      10058 Replenish Mana
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10054
+=======
+5504 Conjure Water (Rank 1)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      60 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5504
+=======
+5505 Conjure Water (Rank 2)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      105 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5505
+=======
+5506 Conjure Water (Rank 3)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      180 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5506
+=======
+6127 Conjure Water (Rank 4)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      285 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6127
+=======
+10138 Conjure Water (Rank 5)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      420 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10138
+=======
+10139 Conjure Water (Rank 6)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      585 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10139
+=======
+10140 Conjure Water (Rank 7)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      780 mana
+labels    17
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=10 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10140
+=======
+468766 Conjure Water (Rank 8)
+school    arcane
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      845 mana
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=20 ppl=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468766
+=======
+2139 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  10 s
+cooldown  30 s (category)
+cost      100 mana
+range     30 yd
+labels    17
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2139
+=======
+15122 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  15 s
+cost      100 mana
+range     30 yd
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15122
+=======
+19715 Counterspell
+school    arcane
+duration  10 s
+range     30 yd
+
+effect 1  interrupts the cast to every enemy around the caster
+          E_INTERRUPT_CAST base=0 radius=45 target=[22,15]
+
+https://www.wowhead.com/forever/spell=19715
+=======
+20537 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  15 s
+cooldown  30 s (category)
+range     30 yd
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20537
+=======
+20788 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  0.001 s
+range     10 yd
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20788
+=======
+29443 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  10 s
+range     30 yd
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=29443
+=======
+1233255 Counterspell
+school    arcane
+defense   magic
+mechanic  mechanic 26
+duration  6 s
+cost      100 mana
+range     30 yd
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1233255
+=======
+604 Dampen Magic (Rank 1)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    17
+
+effect 1  -15 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-15 misc=126 target=[57,0]
+effect 2  -30 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=-30 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=604
+=======
+8450 Dampen Magic (Rank 2)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+labels    17
+
+effect 1  -30 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-30 misc=126 target=[57,0]
+effect 2  -60 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=-60 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=8450
+=======
+8451 Dampen Magic (Rank 3)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      300 mana
+range     30 yd
+labels    17
+
+effect 1  -60 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-60 misc=126 target=[57,0]
+effect 2  -120 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=-120 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=8451
+=======
+10173 Dampen Magic (Rank 4)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      400 mana
+range     30 yd
+labels    17
+
+effect 1  -90 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-90 misc=126 target=[57,0]
+effect 2  -180 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=-180 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10173
+=======
+10174 Dampen Magic (Rank 5)
+school    arcane
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      500 mana
+range     30 yd
+labels    17
+
+effect 1  -135 holy+fire+nature+frost+shadow+arcane damage taken to the target's raid
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-135 misc=126 target=[57,0]
+effect 2  -270 healing taken to the target's raid
+          E_APPLY_AURA A_MOD_HEALING base=-270 misc=126 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10174
+=======
+12051 Evocation
+school    arcane
+duration  8 s
+cooldown  480 s
+gcd       1.5 s
+attrs     channeled
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=1500 target=[1,0]
+effect 2  +100% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
+effect 3  a dummy aura holding 100 every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=100 sp=1 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=12051
+=======
+28763 Evocation
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -60 s on family 3 mask 0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=3 mask=0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28763
+=======
+456397 Evocation
+school    physical
+duration  8 s
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_DAMAGE_IMMUNITY base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456397
+=======
+436949 Expanded Intellect
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COST -50% on family 3 mask 0x0,0x0,0x0,0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=3 mask=0x0,0x0,0x0,0x2000000 target=[1,0]
+effect 2  SPELLMOD_DURATION +50% on family 3 mask 0x0,0x0,0x0,0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=3 mask=0x0,0x0,0x0,0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436949
+=======
+11237 Improved Channeling
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +20% on family 3 mask 0x800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=9 family=3 mask=0x800 target=[1,0]
+effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 3 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 misc=9 family=3 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11237
+=======
+11255 Improved Counterspell
+school    physical
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 4000
+          E_APPLY_AURA A_DUMMY base=4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11255
+=======
+24429 Improved Counterspell
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x4020
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x4020 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24429
+=======
+6117 Mage Armor (Rank 1)
+school    arcane
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      270 mana
+labels    17
+
+effect 1  +5 holy+fire+nature+frost+shadow+arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=5 misc=126 target=[1,0]
+effect 2  +50% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6117
+=======
+22782 Mage Armor (Rank 2)
+school    arcane
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      380 mana
+labels    17
+
+effect 1  +10 holy+fire+nature+frost+shadow+arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=10 misc=126 target=[1,0]
+effect 2  +50% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22782
+=======
+22783 Mage Armor (Rank 3)
+school    arcane
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      490 mana
+labels    17
+
+effect 1  +15 holy+fire+nature+frost+shadow+arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=126 target=[1,0]
+effect 2  +50% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22783
+=======
+29441 Magic Absorption
+school    arcane
+icd       1 s
+attrs     passive, can proc from procs
+labels    17
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+effect 2  +2 fire+nature+frost+shadow+arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=2 misc=124 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29441
+=======
+12606 Magic Attunement (Rank 2)
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 3 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=8 family=3 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12606
+=======
+1463 Mana Shield (Rank 1)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      40 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=120 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1463
+=======
+8494 Mana Shield (Rank 2)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      60 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=210 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8494
+=======
+8495 Mana Shield (Rank 3)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      80 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=300 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8495
+=======
+10191 Mana Shield (Rank 4)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      100 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=390 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10191
+=======
+10192 Mana Shield (Rank 5)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=480 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10192
+=======
+10193 Mana Shield (Rank 6)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      140 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=570 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10193
+=======
+17740 Mana Shield
+school    arcane
+defense   magic
+duration  60 s
+cost      40 mana
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=120 ppl=6 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17740
+=======
+17741 Mana Shield
+school    arcane
+defense   magic
+duration  60 s
+cost      40 mana
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MANA_SHIELD base=120 ppl=6 amplitude=2 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17741
+=======
+412116 Mana Shield (Rank 1)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      40 mana
+range     40 yd
+
+effect 1  absorbs 240 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=240 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412116
+=======
+412118 Mana Shield (Rank 2)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      60 mana
+range     40 yd
+
+effect 1  absorbs 420 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=420 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412118
+=======
+412120 Mana Shield (Rank 3)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      80 mana
+range     40 yd
+
+effect 1  absorbs 600 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=600 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412120
+=======
+412121 Mana Shield (Rank 4)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      100 mana
+range     40 yd
+
+effect 1  absorbs 780 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=780 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412121
+=======
+412122 Mana Shield (Rank 5)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      120 mana
+range     40 yd
+
+effect 1  absorbs 960 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=960 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412122
+=======
+412123 Mana Shield (Rank 6)
+school    arcane
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      140 mana
+range     40 yd
+
+effect 1  absorbs 1140 physical damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1140 amplitude=2 misc=1 target=[21,0]
+effect 2  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412123
+=======
+412510 Mass Regeneration
+school    arcane
+defense   magic
+duration  3 s
+cooldown  12 s
+gcd       1.5 s
+cost      45% of maximum mana
+range     40 yd
+attrs     channeled
+refs      400735 Temporal Beacon
+
+effect 1  42 healing every 1 s to target 132 (3 ticks, +0.198 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.198 period=1000ms amplitude=1 target=[132,31]
+
+https://www.wowhead.com/forever/spell=412510
+=======
+415467 Mass Regeneration
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412510 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415467
+=======
+400588 Missile Barrage
+school    physical
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 40% chance, from effect 1; tooltip says one named ability
+refs      400589 Missile Barrage
+
+effect 1  casts 400589 Missile Barrage on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=400589 target=[1,0]
+effect 2  a dummy aura holding 5
+          E_APPLY_AURA A_DUMMY base=5 trigger=400589 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400588
+=======
+400589 Missile Barrage
+school    arcane
+defense   magic
+duration  15 s
+labels    17
+refs      400588 Missile Barrage
+
+effect 1  SPELLMOD_DURATION -50% on family 3 mask 0x800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=1 family=3 mask=0x800 target=[1,0]
+effect 2  SPELLMOD_ACTIVATION_TIME -500 on family 3 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=19 family=3 mask=0x800 target=[1,0]
+effect 3  SPELLMOD_COST -100% on family 3 mask 0x800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400589
+=======
+401736 Missile Barrage
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400588 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401736
+=======
+467409 Missile Barrage
+school    arcane
+defense   magic
+duration  15 s
+labels    3096
+
+effect 1  SPELLMOD_DURATION -50% on family 3 mask 0x0,0x0,0x0,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=1 family=3 mask=0x0,0x0,0x0,0x2 target=[1,0]
+effect 2  SPELLMOD_ACTIVATION_TIME -500 on family 3 mask 0x0,0x0,0x0,0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=19 family=3 mask=0x0,0x0,0x0,0x2 target=[1,0]
+effect 3  SPELLMOD_COST -100% on family 3 mask 0x0,0x0,0x0,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x0,0x0,0x0,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467409
+=======
+118 Polymorph (Rank 1)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  20 s
+cast      1.5 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=100 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=118
+=======
+12824 Polymorph (Rank 2)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  30 s
+cast      1.5 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12824
+=======
+12825 Polymorph (Rank 3)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  40 s
+cast      1.5 s
+gcd       1.5 s
+cost      120 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12825
+=======
+12826 Polymorph (Rank 4)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  50 s
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12826
+=======
+28271 Polymorph (Turtle)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  50 s
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16377 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28271
+=======
+28272 Polymorph (Pig)
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  50 s
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+targets   up to 1
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16371 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28272
+=======
+29124 Polymorph
+school    arcane
+duration  20 s
+range     30 yd
+
+effect 1  fears
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16479 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29124
+=======
+28270 Polymorph: Cow
+school    arcane
+defense   magic
+mechanic  mechanic 17
+duration  50 s
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16779 target=[6,0]
+effect 3  dispels mount to the enemy
+          E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28270
+=======
+11419 Portal: Darnassus
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176498 target=[47,0]
+
+https://www.wowhead.com/forever/spell=11419
+=======
+11416 Portal: Ironforge
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176497 target=[47,0]
+
+https://www.wowhead.com/forever/spell=11416
+=======
+11417 Portal: Orgrimmar
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176499 target=[47,0]
+
+https://www.wowhead.com/forever/spell=11417
+=======
+10059 Portal: Stormwind
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176296 target=[47,0]
+
+https://www.wowhead.com/forever/spell=10059
+=======
+11420 Portal: Thunder Bluff
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176500 target=[47,0]
+
+https://www.wowhead.com/forever/spell=11420
+=======
+11418 Portal: Undercity
+school    arcane
+defense   magic
+duration  60 s
+cast      10 s
+cooldown  60 s
+gcd       1.5 s
+cost      850 mana
+range     10 yd
+labels    17
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=176501 target=[47,0]
+
+https://www.wowhead.com/forever/spell=11418
+=======
+12043 Presence of Mind
+school    physical
+defense   magic
+duration  permanent
+cooldown  180 s (category)
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=3 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12043
+=======
+401417 Regeneration
+school    arcane
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      28% of maximum mana
+range     40 yd
+attrs     channeled
+refs      400735 Temporal Beacon
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL_WITH_VALUE base=42 sp=0.594 period=1000ms amplitude=1 trigger=456485 target=[21,0]
+effect 2  +0% movement speed to the friendly target
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 amplitude=1 target=[21,0]
+effect 3  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=401417
+=======
+401743 Regeneration
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401417 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401743
+=======
+456485 Regeneration
+school    arcane
+defense   magic
+gcd       1.5 s
+range     40 yd
+refs      400735 Temporal Beacon
+
+effect 1  42 healing to target 77 (+0.594 spell power)
+          E_HEAL base=42 sp=0.594 amplitude=1 target=[77,0]
+
+https://www.wowhead.com/forever/spell=456485
+=======
+475 Remove Lesser Curse
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      10% of maximum mana
+range     30 yd
+labels    17
+
+effect 1  dispels 1 curse effect to the friendly target
+          E_DISPEL base=1 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=475
+=======
+401462 Rewind Time
+school    arcane
+cooldown  30 s
+range     60 yd
+
+effect 1  unrecognised shape
+          E_SCRIPT_EFFECT base=5 target=[21,0]
+
+https://www.wowhead.com/forever/spell=401462
+=======
+401734 Rewind Time
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401462 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401734
+=======
+130 Slow Fall
+school    arcane
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      40 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_FEATHER_FALL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=130
+=======
+1297659 Teleport: Dalaran
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1297659
+=======
+1308652 Teleport: Dalaran
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1308652
+=======
+3565 Teleport: Darnassus
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3565
+=======
+3562 Teleport: Ironforge
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3562
+=======
+3567 Teleport: Orgrimmar
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3567
+=======
+3561 Teleport: Stormwind
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3561
+=======
+3566 Teleport: Thunder Bluff
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3566
+=======
+3563 Teleport: Undercity
+school    arcane
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      120 mana
+labels    17
+
+effect 1  unrecognised shape
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=3563

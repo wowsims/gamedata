@@ -1,0 +1,1682 @@
+2457 Battle Stance
+school    physical
+defense   melee
+duration  permanent
+cooldown  1 s (category)
+labels    25
+
+effect 1  shifts into Battle
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=17 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2457
+=======
+1289681 Bloodthrill
+school    physical
+duration  6 s
+range     50000 yd
+charges   1
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  restores 0 combo points to the caster
+          E_ENERGIZE base=0 misc=4 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1289681
+=======
+1289682 Bloodthrill
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_2_MAIN_HAND_ONLY; 15% chance, from effect 1; tooltip says one named ability
+refs      1289681 Bloodthrill
+
+effect 1  casts 1282733 Overpower on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=1282733 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1289682
+=======
+100 Charge (Rank 1)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 9 rage to the caster
+          E_ENERGIZE base=90 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=100
+=======
+6178 Charge (Rank 2)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 12 rage to the caster
+          E_ENERGIZE base=120 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6178
+=======
+11578 Charge (Rank 3)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 15 rage to the caster
+          E_ENERGIZE base=150 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11578
+=======
+20508 Charge
+school    physical
+duration  0.001 s
+range     45 yd
+refs      20527 Eruption
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20508
+=======
+22120 Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22120
+=======
+22911 Charge
+school    physical
+duration  2 s
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22911
+=======
+24023 Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  casts 12021 Fixate to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=12021 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24023
+=======
+24193 Charge
+school    physical
+duration  2 s
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24193
+=======
+24315 Charge
+school    physical
+range     100 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  casts 24316 Guillotine to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=24316 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24315
+=======
+24408 Charge
+school    physical
+duration  2 s
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24408
+=======
+25821 Charge
+school    physical
+duration  2 s
+range     40 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +1300 to the enemy
+          E_WEAPON_DAMAGE base=1300 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25821
+=======
+411684 Charge
+school    physical
+duration  0.1 s
+cooldown  15 s (category)
+range     8-25 yd
+refs      7922 Charge Stun
+
+effect 1  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+effect 2  immune to snare
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=11 target=[1,0]
+effect 3  immune to stun
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=12 target=[1,0]
+effect 4  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 5  casts 411688 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=411688 target=[6,0]
+
+https://www.wowhead.com/forever/spell=411684
+=======
+438538 Charge
+school    physical
+duration  1 s
+range     5-30 yd
+
+effect 1  +200% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=200 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_AREA_TRIGGER base=0 misc=32331 target=[1,138]
+effect 3  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 4  casts 438539 Uppercut to the enemy
+          E_TRIGGER_SPELL base=0 misc=700 trigger=438539 target=[6,0]
+
+https://www.wowhead.com/forever/spell=438538
+=======
+438540 Charge
+school    physical
+defense   melee
+range     45 yd
+
+effect 1  675–825 physical damage to the caster
+          E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 target=[87,16]
+
+https://www.wowhead.com/forever/spell=438540
+=======
+438541 Charge
+school    physical
+duration  1 s
+range     5-30 yd
+
+effect 1  +200% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=200 target=[1,0]
+effect 2  casts 438538 Charge to the enemy
+          E_TRIGGER_SPELL base=0 misc=50 trigger=438538 target=[6,0]
+effect 3  casts nothing
+          E_TRIGGER_SPELL base=0 misc=75 target=[0,0]
+
+https://www.wowhead.com/forever/spell=438541
+=======
+462937 Charge
+school    physical
+duration  2 s
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=462937
+=======
+1213463 Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +75 to the enemy
+          E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  casts 12021 Fixate to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=12021 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1213463
+=======
+1235538 Charge
+school    physical
+defense   melee
+duration  2 s
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  weapon damage +5 to the enemy
+          E_WEAPON_DAMAGE base=5 sp=1 target=[6,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235538
+=======
+1240287 Charge (Rank 1)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle, Defensive
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 9 rage to the caster
+          E_ENERGIZE base=90 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1240287
+=======
+1240288 Charge (Rank 2)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle, Defensive
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 12 rage to the caster
+          E_ENERGIZE base=120 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1240288
+=======
+1240289 Charge (Rank 3)
+school    physical
+cooldown  15 s (category)
+range     8-25 yd
+stance    Battle, Defensive
+labels    25
+refs      7922 Charge Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  restores 15 rage to the caster
+          E_ENERGIZE base=150 misc=1 target=[1,0]
+effect 3  casts 7922 Charge Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1240289
+=======
+7922 Charge Stun
+school    physical
+defense   magic
+mechanic  mechanic 12
+duration  1 s
+range     8-25 yd
+stance    Battle
+labels    25
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7922
+=======
+12834 Deep Wounds
+school    physical
+equip     needs a melee weapon
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      412609 Deep Wound
+
+effect 1  casts 12162 Deep Wounds on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=12162 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12834
+=======
+23255 Deep Wounds
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  casts 23256 Deep Wounds on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=23256 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23255
+=======
+20527 Eruption
+school    fire
+
+effect 1  unrecognised shape
+          E_INSTAKILL base=0 sp=1 target=[1,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=200 variance=0.1 sp=1 misc=200 target=[22,15]
+effect 3  1313–1687 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1500 variance=0.24933334 sp=1 target=[22,15]
+
+https://www.wowhead.com/forever/spell=20527
+=======
+1715 Hamstring (Rank 1)
+school    physical
+defense   melee
+duration  15 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Berserker
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  5 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=5 sp=1 target=[6,0]
+effect 2  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1715
+=======
+7372 Hamstring (Rank 2)
+school    physical
+defense   melee
+duration  15 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Berserker
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  18 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=18 sp=1 target=[6,0]
+effect 2  -45% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-45 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7372
+=======
+7373 Hamstring (Rank 3)
+school    physical
+defense   melee
+duration  15 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Berserker
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  45 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7373
+=======
+27584 Hamstring (Rank 3)
+school    physical
+defense   melee
+duration  15 s
+gcd       1.5 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  45 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27584
+=======
+1236177 Hamstring (Rank 3)
+school    physical
+defense   melee
+duration  5 s
+gcd       1.5 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  450 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=450 sp=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236177
+=======
+78 Heroic Strike (Rank 1)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +11 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=11 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=78
+=======
+284 Heroic Strike (Rank 2)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +21 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=21 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=284
+=======
+285 Heroic Strike (Rank 3)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +32 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=285
+=======
+1608 Heroic Strike (Rank 4)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +44 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=44 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1608
+=======
+11564 Heroic Strike (Rank 5)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +58 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=58 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11564
+=======
+11565 Heroic Strike (Rank 6)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +80 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=80 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11565
+=======
+11566 Heroic Strike (Rank 7)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +111 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=111 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11566
+=======
+11567 Heroic Strike (Rank 8)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +138 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=138 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11567
+=======
+25286 Heroic Strike (Rank 9)
+school    physical
+defense   melee
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  weapon damage in the weapon's own school +157 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=157 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25286
+=======
+25710 Heroic Strike
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  weapon damage in the weapon's own school +129 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=11 ppl=2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25710
+=======
+25712 Heroic Strike (Rank 3)
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  weapon damage in the weapon's own school +32 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25712
+=======
+16493 Impale
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +10% on family 4 mask 0xee604cee,0x8140,0x1,0x10000400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=15 family=4 mask=0xee604cee,0x8140,0x1,0x10000400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16493
+=======
+12285 Improved Charge
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_ALL_EFFECTS +30 on family 4 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 misc=8 family=4 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12285
+=======
+12289 Improved Hamstring
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 0% chance, from effect 1; tooltip says one named ability
+refs      23694 Improved Hamstring
+
+effect 1  casts 23694 Improved Hamstring on its trigger to the enemy
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=23694 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12289
+=======
+24428 Improved Hamstring
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 4 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=4 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24428
+=======
+12282 Improved Heroic Strike
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 4 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=14 family=4 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12282
+=======
+12290 Improved Overpower (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +25% on family 4 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=7 family=4 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12290
+=======
+12963 Improved Overpower (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 4 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=4 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12963
+=======
+12288 Improved Pummel (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=25 trigger=12705 family=4 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DURATION +1 s on family 4 mask 0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 misc=1 family=4 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12288
+=======
+12707 Improved Pummel (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=50 trigger=12705 family=4 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_DURATION +2 s on family 4 mask 0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 misc=1 family=4 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12707
+=======
+12708 Improved Pummel (Rank 3)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=40 trigger=12705 family=4 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12708
+=======
+12286 Improved Rend
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_DOT +15% on family 4 mask 0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=22 family=4 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12286
+=======
+21831 Improved Rend (Rank 3)
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +4 on family 4 mask 0x20
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 misc=8 family=4 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21831
+=======
+12862 Improved Slam
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=4 mask=0x200000 target=[1,0]
+effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=4 mask=0x200000 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -3 s on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=4 mask=0x200000 target=[1,0]
+effect 4  replaces an action bar spell with 1240193 Slam
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310196 misc=1240193 target=[1,0]
+effect 5  replaces an action bar spell with 1464 Slam
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310197 misc=1464 target=[1,0]
+effect 6  replaces an action bar spell with 8820 Slam
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310198 misc=8820 target=[1,0]
+effect 7  replaces an action bar spell with 11604 Slam
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310199 misc=11604 target=[1,0]
+effect 8  replaces an action bar spell with 11605 Slam
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310200 misc=11605 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12862
+=======
+12295 Improved Tactical Mastery
+school    physical
+attrs     passive
+labels    25
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12295
+=======
+403228 Meathook
+school    physical
+defense   ranged
+cooldown  35 s
+gcd       1.5 s
+cost      15 rage
+range     30 yd
+labels    3096
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=403228
+=======
+403231 Meathook
+school    physical
+defense   melee
+cooldown  35 s
+gcd       1.5 s
+range     50000 yd
+attrs     refund on miss
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,47]
+
+https://www.wowhead.com/forever/spell=403231
+=======
+403233 Meathook
+school    physical
+defense   melee
+duration  2 s
+range     50000 yd
+labels    3096
+
+effect 1  unrecognised shape
+          E_JUMP_DEST base=0 amplitude=63 misc2=150 target=[87,0]
+effect 2  immune to stun
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=12 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403233
+=======
+694 Mocking Blow (Rank 1)
+school    physical
+defense   melee
+duration  6 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  22 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=22 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=694
+=======
+7400 Mocking Blow (Rank 2)
+school    physical
+defense   melee
+duration  6 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  31 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=31 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7400
+=======
+7402 Mocking Blow (Rank 3)
+school    physical
+defense   melee
+duration  6 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  46 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=46 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7402
+=======
+20559 Mocking Blow (Rank 4)
+school    physical
+defense   melee
+duration  6 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  71 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=71 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20559
+=======
+20560 Mocking Blow (Rank 5)
+school    physical
+defense   melee
+duration  6 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  93 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=93 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20560
+=======
+21008 Mocking Blow
+school    physical
+defense   melee
+duration  6 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  181 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=181.25621 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21008
+=======
+12294 Mortal Strike (Rank 1)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +85 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=85 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12294
+=======
+21551 Mortal Strike (Rank 2)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +110 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=110 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21551
+=======
+21552 Mortal Strike (Rank 3)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +135 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=135 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21552
+=======
+21553 Mortal Strike (Rank 4)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      30 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +160 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21553
+=======
+27580 Mortal Strike (Rank 4)
+school    physical
+defense   melee
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  -50% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  normalised weapon damage +160 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27580
+=======
+7384 Overpower (Rank 1)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+cost      1 combo points
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  normalised weapon damage +5 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7384
+=======
+7887 Overpower (Rank 2)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+cost      1 combo points
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  normalised weapon damage +15 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=15 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7887
+=======
+11584 Overpower (Rank 3)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+cost      1 combo points
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  normalised weapon damage +25 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11584
+=======
+11585 Overpower (Rank 4)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+cost      1 combo points
+range     5 yd
+stance    Battle
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  normalised weapon damage +35 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=35 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11585
+=======
+14895 Overpower
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  weapon damage in the weapon's own school +45 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=15 ppl=0.75 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14895
+=======
+17198 Overpower
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  weapon damage in the weapon's own school +90 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=30 ppl=1.5 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17198
+=======
+24407 Overpower
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+
+effect 1  weapon damage in the weapon's own school +750 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=750 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24407
+=======
+429748 Quick Strike
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 0
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429765 family=4 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429748
+=======
+429765 Quick Strike
+school    physical
+defense   melee
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the two-handed weapon
+attrs     refund on miss
+
+effect 1  30–40 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=35 variance=0.2857143 target=[6,0]
+
+https://www.wowhead.com/forever/spell=429765
+=======
+772 Rend (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  9 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  5 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=772
+=======
+6546 Rend (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  12 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  7 physical damage every 3 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6546
+=======
+6547 Rend (Rank 3)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  9 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6547
+=======
+6548 Rend (Rank 4)
+school    physical
+defense   melee
+mechanic  bleed
+duration  18 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  11 physical damage every 3 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6548
+=======
+11572 Rend (Rank 5)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  14 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11572
+=======
+11573 Rend (Rank 6)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  18 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11573
+=======
+11574 Rend (Rank 7)
+school    physical
+defense   melee
+mechanic  bleed
+duration  21 s
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a melee weapon
+attrs     refund on miss, periodic can crit
+labels    25
+
+effect 1  21 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11574
+=======
+20230 Retaliation
+school    physical
+defense   melee
+duration  15 s
+cooldown  900 s
+gcd       1.5 s
+stance    Battle
+charges   30
+attrs     not a proc
+labels    25
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20230
+=======
+20240 Retaliation
+school    physical
+defense   melee
+cost      0.1 rage
+range     5 yd
+attrs     not a proc
+labels    25
+
+effect 1  weapon damage in the weapon's own school to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20240
+=======
+22858 Retaliation
+school    physical
+defense   melee
+
+effect 1  weapon damage in the weapon's own school to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22858
+=======
+440488 Shockwave
+school    physical
+defense   ranged
+duration  4 s
+cooldown  20 s (category)
+gcd       1.5 s
+cost      15 rage
+stance    Defensive
+equip     needs a shield
+
+effect 1  stuns to target 104
+          E_APPLY_AURA A_MOD_STUN base=0 radius=10 mechanic=12 target=[104,0]
+effect 2  1 physical damage to target 104
+          E_SCHOOL_DAMAGE base=1 radius=10 target=[104,0]
+effect 3  a dummy effect holding 50
+          E_DUMMY base=50 target=[0,0]
+
+https://www.wowhead.com/forever/spell=440488
+=======
+440497 Shockwave
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440488 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440497
+=======
+1232702 Shockwave
+school    physical
+defense   ranged
+duration  2 s
+cooldown  20 s (category)
+gcd       1.5 s
+cost      15 rage
+range     30 yd
+stance    Defensive
+equip     needs a shield
+
+effect 1  stuns to target 104
+          E_APPLY_AURA A_MOD_STUN base=0 radius=10 mechanic=12 target=[104,0]
+effect 2  1462–1538 physical damage to target 104
+          E_SCHOOL_DAMAGE base=1500 variance=0.050666668 radius=10 target=[104,0]
+effect 3  a dummy effect holding 50
+          E_DUMMY base=50 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1232702
+=======
+1310222 Spearing Strike
+school    physical
+defense   melee
+cooldown  20 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+attrs     refund on miss
+labels    25
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  40% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=40 sp=1 target=[6,0]
+effect 3  a dummy effect holding 2 to the enemy
+          E_DUMMY base=2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1310222
+=======
+12292 Sweeping Strikes
+school    physical
+duration  20 s
+cooldown  30 s
+cost      30 rage
+stance    Battle
+charges   5
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12292
+=======
+1310185 Tactical Mastery
+school    physical
+attrs     passive
+labels    25
+refs      12295 Improved Tactical Mastery
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310185
+=======
+6343 Thunder Clap (Rank 1)
+school    physical
+defense   magic
+duration  10 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  10 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=10 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=6343
+=======
+8198 Thunder Clap (Rank 2)
+school    physical
+defense   magic
+duration  14 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  23 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=23 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8198
+=======
+8204 Thunder Clap (Rank 3)
+school    physical
+defense   magic
+duration  18 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  37 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=37 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8204
+=======
+8205 Thunder Clap (Rank 4)
+school    physical
+defense   magic
+duration  22 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  55 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=55 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8205
+=======
+11580 Thunder Clap (Rank 5)
+school    physical
+defense   magic
+duration  26 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  82 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=82 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=11580
+=======
+11581 Thunder Clap (Rank 6)
+school    physical
+defense   magic
+duration  30 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle, Defensive
+targets   up to 4
+labels    25
+
+effect 1  103 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=103 target=[22,15]
+effect 2  -20% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=11581
+=======
+413589 Thunder Clap
+school    physical
+defense   magic
+duration  30 s
+range     40 yd
+targets   up to 4
+
+effect 1  -10% melee haste to target 87
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[87,16]
+
+https://www.wowhead.com/forever/spell=413589
+=======
+461810 Thunder Clap (Rank 6)
+school    physical
+defense   ranged
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  103 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=103 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461810
+=======
+461826 Thunder Clap (Rank 5)
+school    physical
+defense   ranged
+duration  26 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  82 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=82 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461826
+=======
+461827 Thunder Clap (Rank 4)
+school    physical
+defense   ranged
+duration  22 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  55 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=55 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461827
+=======
+461828 Thunder Clap (Rank 3)
+school    physical
+defense   ranged
+duration  18 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  37 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=37 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461828
+=======
+461829 Thunder Clap (Rank 2)
+school    physical
+defense   ranged
+duration  14 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  23 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=23 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461829
+=======
+461830 Thunder Clap (Rank 1)
+school    physical
+defense   ranged
+duration  10 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      20 rage
+stance    Battle
+targets   up to 10
+
+effect 1  10 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=10 target=[22,15]
+effect 2  -10% melee haste to every enemy around the caster
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461830
+=======
+402927 Victory Rush
+school    physical
+defense   melee
+cooldown  30 s
+gcd       1.5 s
+range     5 yd
+labels    25
+refs      402975 Victorious
+
+effect 1  1 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=1 target=[6,0]
+effect 2  unrecognised shape
+          E_HEAL_PCT base=10 target=[1,0]
+effect 3  a dummy effect holding 15 to the enemy
+          E_DUMMY base=15 target=[6,0]
+
+https://www.wowhead.com/forever/spell=402927

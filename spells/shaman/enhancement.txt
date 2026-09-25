@@ -1,0 +1,1661 @@
+425874 Decoy Totem
+school    nature
+defense   magic
+duration  10 s
+cooldown  20 s
+gcd       1.5 s
+cost      11% of maximum mana
+range     30 yd
+refs      436391 Decoy Totem
+
+effect 1  summons creature 212157 to target 132
+          E_SUMMON base=5 misc=212157 misc2=81 target=[132,82]
+effect 2  a dummy effect to the friendly target
+          E_DUMMY base=0 target=[21,0]
+
+https://www.wowhead.com/forever/spell=425874
+=======
+425876 Decoy Totem
+school    nature
+duration  10 s
+range     20 yd
+charges   1
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_INTERCEPT_MELEE_RANGED_ATTACKS base=0 radius=20 target=[21,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425876
+=======
+425881 Decoy Totem
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425874 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425881
+=======
+436390 Decoy Totem
+school    nature
+duration  permanent
+range     20 yd
+attrs     can proc from procs
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436390
+=======
+16043 Earth's Grasp
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_ALL_EFFECTS +25% on family 11 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=8 family=11 mask=0x8 target=[1,0]
+effect 2  SPELLMOD_RADIUS +10% on family 11 mask 0x0,0x1,0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=6 family=11 mask=0x0,0x1,0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16043
+=======
+16266 Elemental Weapons (Rank 1)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_EFFECT1 +7% on family 11 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=7 sp=1 misc=3 family=11 mask=0x400000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +5% on family 11 mask 0x1200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=11 mask=0x1200000 target=[1,0]
+effect 3  SPELLMOD_EFFECT1 +13% on family 11 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=13 misc=3 family=11 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16266
+=======
+16259 Enhancing Totems (Rank 1)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_ALL_EFFECTS +8% on family 11 mask 0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 family=11 mask=0x10000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +8% on family 11 mask 0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 misc=8 family=11 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16259
+=======
+16295 Enhancing Totems (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_ALL_EFFECTS +15% on family 11 mask 0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=8 family=11 mask=0x10000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +15% on family 11 mask 0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=11 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16295
+=======
+8184 Fire Resistance Totem (Rank 1)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      75 mana
+labels    24
+refs      8185 Fire Resistance
+
+effect 1  summons creature 5927 to target 42
+          E_SUMMON base=5 misc=5927 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=8184
+=======
+10537 Fire Resistance Totem (Rank 2)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      120 mana
+labels    24
+refs      10534 Fire Resistance
+
+effect 1  summons creature 7424 to target 42
+          E_SUMMON base=5 misc=7424 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10537
+=======
+10538 Fire Resistance Totem (Rank 3)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      180 mana
+labels    24
+refs      10535 Fire Resistance
+
+effect 1  summons creature 7425 to target 42
+          E_SUMMON base=5 misc=7425 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10538
+=======
+8227 Flametongue Totem (Rank 1)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      90 mana
+labels    24
+refs      8230 Flametongue Totem, 8253 Flametongue Totem Proc
+
+effect 1  summons creature 5950 to target 44
+          E_SUMMON base=5 misc=5950 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=8227
+=======
+8230 Flametongue Totem (Rank 1)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  party aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=8253 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8230
+=======
+8249 Flametongue Totem (Rank 2)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      140 mana
+labels    24
+refs      8250 Flametongue Totem, 8248 Flametongue Totem Proc
+
+effect 1  summons creature 6012 to target 44
+          E_SUMMON base=5 misc=6012 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=8249
+=======
+8250 Flametongue Totem (Rank 2)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  party aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8250
+=======
+10521 Flametongue Totem (Rank 3)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  party aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=10523 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10521
+=======
+10526 Flametongue Totem (Rank 3)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      200 mana
+labels    24
+refs      10521 Flametongue Totem, 10523 Flametongue Totem Proc
+
+effect 1  summons creature 7423 to target 44
+          E_SUMMON base=5 misc=7423 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10526
+=======
+15036 Flametongue Totem (Rank 4)
+school    fire
+defense   magic
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  party aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=16389 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15036
+=======
+16387 Flametongue Totem (Rank 4)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      275 mana
+labels    24
+refs      15036 Flametongue Totem, 16389 Flametongue Totem Proc
+
+effect 1  summons creature 10557 to target 44
+          E_SUMMON base=5 misc=10557 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=16387
+=======
+8181 Frost Resistance Totem (Rank 1)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      75 mana
+labels    24
+refs      8182 Frost Resistance
+
+effect 1  summons creature 5926 to target 44
+          E_SUMMON base=5 misc=5926 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=8181
+=======
+10478 Frost Resistance Totem (Rank 2)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      120 mana
+labels    24
+refs      10476 Frost Resistance
+
+effect 1  summons creature 7412 to target 44
+          E_SUMMON base=5 misc=7412 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10478
+=======
+10479 Frost Resistance Totem (Rank 3)
+school    fire
+defense   magic
+duration  300 s
+gcd       1 s
+cost      180 mana
+labels    24
+refs      10477 Frost Resistance
+
+effect 1  summons creature 7413 to target 44
+          E_SUMMON base=5 misc=7413 misc2=63 target=[44,0]
+
+https://www.wowhead.com/forever/spell=10479
+=======
+2645 Ghost Wolf
+school    nature
+defense   magic
+duration  permanent
+cast      3 s
+gcd       1.5 s
+cost      100 mana
+labels    24, 6511
+
+effect 1  shifts into form 16
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  +40% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2645
+=======
+415233 Ghost Wolf
+school    nature
+defense   magic
+duration  permanent
+cast      3 s
+gcd       1.5 s
+cost      100 mana
+labels    6511
+
+effect 1  shifts into form 16
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  +40% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
+effect 3  -10% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415233
+=======
+1238640 Ghost Wolf
+school    nature
+defense   magic
+duration  permanent
+cast      3 s
+gcd       1.5 s
+cost      100 mana
+labels    24, 6511
+
+effect 1  shifts into form 16
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  +40% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1238640
+=======
+8835 Grace of Air Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      155 mana
+labels    24
+refs      8836 Grace of Air
+
+effect 1  summons creature 7486 to target 43
+          E_SUMMON base=5 misc=7486 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=8835
+=======
+10627 Grace of Air Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      250 mana
+labels    24
+refs      10626 Grace of Air
+
+effect 1  summons creature 7487 to target 43
+          E_SUMMON base=5 misc=7487 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10627
+=======
+25359 Grace of Air Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      310 mana
+labels    24
+refs      25360 Grace of Air
+
+effect 1  summons creature 15463 to target 43
+          E_SUMMON base=5 misc=15463 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=25359
+=======
+8177 Grounding Totem
+school    nature
+defense   magic
+duration  45 s
+cooldown  15 s (category)
+gcd       1 s
+cost      6% of maximum mana
+labels    24
+refs      8179 Grounding Totem Passive
+
+effect 1  summons creature 5925 to target 43
+          E_SUMMON base=5 misc=5925 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=8177
+=======
+16258 Guardian Totems
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_EFFECT1 +10% on family 11 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=3 family=11 mask=0x8000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -1 s on family 11 mask 0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=11 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16258
+=======
+16262 Improved Ghost Wolf
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -3 s on family 11 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 sp=1 misc=10 family=11 mask=0x800 target=[1,0]
+effect 2  replaces an action bar spell with 2645 Ghost Wolf
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1238640 sp=1 misc=2645 target=[1,0]
+effect 3  replaces an action bar spell with 1271481
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1282241 sp=1 misc=1271481 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16262
+=======
+16261 Improved Lightning Shield
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +5% on family 11 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 family=11 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16261
+=======
+1223031 Improved Stormstrike
+school    physical
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 20% chance, from effect 1; tooltip says an outcome the mask has no bit for
+refs      1238931 Improved Stormstrike
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 3  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223031
+=======
+29192 Improved Weapon Totems (Rank 1)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  a dummy aura holding 15 from family 11 mask 0x0,0x2
+          E_APPLY_AURA A_DUMMY base=15 sp=1 family=11 mask=0x0,0x2 target=[1,0]
+effect 2  a dummy aura holding 6 from family 11 mask 0x0,0x4
+          E_APPLY_AURA A_DUMMY base=6 family=11 mask=0x0,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29192
+=======
+29193 Improved Weapon Totems (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  a dummy aura holding 30 from family 11 mask 0x0,0x2
+          E_APPLY_AURA A_DUMMY base=30 sp=1 family=11 mask=0x0,0x2 target=[1,0]
+effect 2  a dummy aura holding 12 from family 11 mask 0x0,0x4
+          E_APPLY_AURA A_DUMMY base=12 family=11 mask=0x0,0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29193
+=======
+408507 Lava Lash
+school    fire
+defense   melee
+cooldown  6 s
+gcd       1.5 s
+cost      1% of maximum mana
+range     5 yd
+equip     needs a melee weapon in the off hand
+attrs     refund on miss
+
+effect 1  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=408507
+=======
+409953 Lava Lash
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408507 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409953
+=======
+324 Lightning Shield (Rank 1)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      45 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26364 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=324
+=======
+325 Lightning Shield (Rank 2)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      80 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26365 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=325
+=======
+905 Lightning Shield (Rank 3)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      125 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26366 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=905
+=======
+945 Lightning Shield (Rank 4)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      180 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26367 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=945
+=======
+8134 Lightning Shield (Rank 5)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      240 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26369 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8134
+=======
+10431 Lightning Shield (Rank 6)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      305 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26370 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10431
+=======
+10432 Lightning Shield (Rank 7)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      370 mana
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      26363 Lightning Shield
+
+effect 1  casts 26545 Lightning Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10432
+=======
+23551 Lightning Shield
+school    nature
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 25% chance; tooltip says cast trigger
+refs      23552 Lightning Shield
+
+effect 1  casts 18350 Dummy Trigger on its trigger from family 11 mask 0xc0
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 sp=1 trigger=18350 family=11 mask=0xc0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23551
+=======
+23552 Lightning Shield
+school    nature
+defense   magic
+duration  600 s
+range     100 yd
+charges   3
+icd       3.5 s
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 26545 Lightning Shield on its trigger to the friendly target
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=50 trigger=26545 target=[21,0]
+
+https://www.wowhead.com/forever/spell=23552
+=======
+26363 Lightning Shield (Rank 7)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  178 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=178 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26363
+=======
+26364 Lightning Shield (Rank 1)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  13 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=13 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26364
+=======
+26365 Lightning Shield (Rank 2)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  24 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=24 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26365
+=======
+26366 Lightning Shield (Rank 3)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  40 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=40 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26366
+=======
+26367 Lightning Shield (Rank 4)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  64 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=64 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26367
+=======
+26369 Lightning Shield (Rank 5)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  96 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=96 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26369
+=======
+26370 Lightning Shield (Rank 6)
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    24
+
+effect 1  134 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=134 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26370
+=======
+26545 Lightning Shield
+school    nature
+defense   magic
+range     100 yd
+labels    24
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26545
+=======
+27635 Lightning Shield
+school    nature
+defense   magic
+range     30 yd
+attrs     cannot crit
+labels    24
+
+effect 1  50 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=50 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27635
+=======
+28820 Lightning Shield
+school    holy
+defense   magic
+duration  permanent
+range     50000 yd
+
+effect 1  +15 mana per 5 s
+          E_APPLY_AURA A_MOD_POWER_REGEN base=15 amplitude=1 target=[1,0]
+effect 2  casts 18350 Dummy Trigger every 5 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=18350 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28820
+=======
+28821 Lightning Shield
+school    physical
+duration  permanent
+attrs     passive
+refs      28820 Lightning Shield
+
+effect 1  casts 28820 Lightning Shield when the target is hit from family 11 mask 0x400
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=28820 family=11 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28821
+=======
+432143 Lightning Shield (Rank 1)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  13 nature damage to every enemy in the target area (+0.147 spell power)
+          E_SCHOOL_DAMAGE base=13 sp=0.147 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432143
+=======
+432144 Lightning Shield (Rank 2)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  29 nature damage to every enemy in the target area (+0.227 spell power)
+          E_SCHOOL_DAMAGE base=29 sp=0.227 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432144
+=======
+432145 Lightning Shield (Rank 3)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  51 nature damage to every enemy in the target area (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=51 sp=0.267 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432145
+=======
+432146 Lightning Shield (Rank 4)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  80 nature damage to every enemy in the target area (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=80 sp=0.267 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432146
+=======
+432147 Lightning Shield (Rank 5)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  114 nature damage to every enemy in the target area (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=114 sp=0.267 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432147
+=======
+432148 Lightning Shield (Rank 6)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  154 nature damage to every enemy in the target area (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=154 sp=0.267 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432148
+=======
+432149 Lightning Shield (Rank 7)
+school    nature
+defense   magic
+duration  3 s
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  198 nature damage to every enemy in the target area (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=198 sp=0.267 target=[18,16]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=432149
+=======
+470743 Lightning Shield (Rank 1)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  13 nature damage to the enemy (+0.147 spell power)
+          E_SCHOOL_DAMAGE base=13 sp=0.147 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470743
+=======
+470744 Lightning Shield (Rank 2)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  29 nature damage to the enemy (+0.227 spell power)
+          E_SCHOOL_DAMAGE base=29 sp=0.227 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470744
+=======
+470745 Lightning Shield (Rank 3)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  51 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=51 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470745
+=======
+470746 Lightning Shield (Rank 4)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  80 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=80 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470746
+=======
+470748 Lightning Shield (Rank 5)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  114 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=114 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470748
+=======
+470749 Lightning Shield (Rank 6)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  154 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=154 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470749
+=======
+470753 Lightning Shield (Rank 7)
+school    nature
+defense   magic
+range     100 yd
+
+effect 1  198 nature damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=198 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=470753
+=======
+408498 Maelstrom Weapon
+school    nature
+attrs     passive, can proc from procs
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      408505 Maelstrom Weapon
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+effect 3  a dummy aura holding 5
+          E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408498
+=======
+408505 Maelstrom Weapon
+school    physical
+defense   magic
+duration  30 s
+stack     up to 5
+charges   1
+labels    24
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -20% on family 11 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=11 mask=0x1 target=[1,0]
+effect 2  SPELLMOD_COST -20% on family 11 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=11 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408505
+=======
+409946 Maelstrom Weapon
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408498 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409946
+=======
+415140 Mental Dexterity
+school    fire
+attrs     passive, can proc from procs
+labels    24
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_598 base=100 misc=3 target=[1,0]
+effect 2  a dummy aura holding 320 (at level 60)
+          E_APPLY_AURA A_DUMMY base=20 ppl=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415140
+=======
+415144 Mental Dexterity
+school    nature
+duration  30 s
+labels    3096, 3100
+
+effect 1  +150 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=150 target=[1,0]
+effect 2  +30 holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=30 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415144
+=======
+30812 Mental Quickness
+school    physical
+attrs     passive
+labels    24
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=30 sp=1 misc=3 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=30 sp=1 misc=126 misc2=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30812
+=======
+10595 Nature Resistance Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      75 mana
+labels    24
+refs      10596 Nature Resistance
+
+effect 1  summons creature 7467 to target 43
+          E_SUMMON base=5 misc=7467 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10595
+=======
+10600 Nature Resistance Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      120 mana
+labels    24
+refs      10598 Nature Resistance
+
+effect 1  summons creature 7468 to target 43
+          E_SUMMON base=5 misc=7468 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10600
+=======
+10601 Nature Resistance Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      180 mana
+labels    24
+refs      10599 Nature Resistance
+
+effect 1  summons creature 7469 to target 43
+          E_SUMMON base=5 misc=7469 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10601
+=======
+425336 Rage of the Farseer
+school    physical
+duration  25 s
+cooldown  180 s
+labels    24
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SCALE base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425336
+=======
+6495 Sentry Totem
+school    nature
+duration  300 s
+gcd       1 s
+cost      65 mana
+labels    24
+
+effect 1  summons creature 3968 to target 43
+          E_SUMMON base=100 misc=3968 misc2=83 radius=100 target=[43,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6495
+=======
+1223030 Shamanistic Focus
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COST -45% on family 11 mask 0x90100400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-45 misc=14 family=11 mask=0x90100400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223030
+=======
+16268 Spirit Weapons
+school    physical
+attrs     passive
+labels    24
+
+effect 1  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 amplitude=1 misc=127 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 +86 on family 11 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=86 amplitude=1 misc=12 family=11 mask=0x400000 target=[1,0]
+effect 3  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16268
+=======
+408696 Spirit of the Alpha
+school    nature
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     30 yd
+targets   up to 1
+refs      443320 Loyal Beta
+
+effect 1  +45% threat to the friendly target
+          E_APPLY_AURA A_MOD_THREAT base=45 misc=127 target=[21,0]
+effect 2  a dummy aura every 15 s to the friendly target (120 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=15000ms target=[21,0]
+effect 3  absorbs 1000000 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1000000 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408696
+=======
+409951 Spirit of the Alpha
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408696 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409951
+=======
+8071 Stoneskin Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      30 mana
+labels    24
+refs      8072 Stoneskin
+
+effect 1  summons creature 5873 to target 41
+          E_SUMMON base=5 misc=5873 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8071
+=======
+8154 Stoneskin Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      60 mana
+labels    24
+refs      8156 Stoneskin
+
+effect 1  summons creature 5919 to target 41
+          E_SUMMON base=5 misc=5919 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8154
+=======
+8155 Stoneskin Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      90 mana
+labels    24
+refs      8157 Stoneskin
+
+effect 1  summons creature 5920 to target 41
+          E_SUMMON base=5 misc=5920 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8155
+=======
+10406 Stoneskin Totem (Rank 4)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      115 mana
+labels    24
+refs      10403 Stoneskin
+
+effect 1  summons creature 7366 to target 41
+          E_SUMMON base=5 misc=7366 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10406
+=======
+10407 Stoneskin Totem (Rank 5)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      160 mana
+labels    24
+refs      10404 Stoneskin
+
+effect 1  summons creature 7367 to target 41
+          E_SUMMON base=5 misc=7367 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10407
+=======
+10408 Stoneskin Totem (Rank 6)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      210 mana
+labels    24
+refs      10405 Stoneskin
+
+effect 1  summons creature 7368 to target 41
+          E_SUMMON base=5 misc=7368 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10408
+=======
+17364 Stormstrike
+school    physical
+defense   melee
+duration  12 s
+cooldown  8 s
+gcd       1.5 s
+cost      125 mana
+range     5 yd
+charges   1
+attrs     can proc from procs
+labels    24
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 family=11 mask=0x100003 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17364
+=======
+410156 Stormstrike (Rank 1)
+school    physical
+defense   melee
+range     50000 yd
+attrs     not a proc, can proc from procs
+refs      17364 Stormstrike
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=410156
+=======
+8075 Strength of Earth Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      25 mana
+labels    24
+refs      8076 Strength of Earth
+
+effect 1  summons creature 5874 to target 41
+          E_SUMMON base=5 misc=5874 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8075
+=======
+8160 Strength of Earth Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      65 mana
+labels    24
+refs      8162 Strength of Earth
+
+effect 1  summons creature 5921 to target 41
+          E_SUMMON base=5 misc=5921 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8160
+=======
+8161 Strength of Earth Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      125 mana
+labels    24
+refs      8163 Strength of Earth
+
+effect 1  summons creature 5922 to target 41
+          E_SUMMON base=5 misc=5922 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8161
+=======
+10442 Strength of Earth Totem (Rank 4)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      225 mana
+labels    24
+refs      10441 Strength of Earth
+
+effect 1  summons creature 7403 to target 41
+          E_SUMMON base=5 misc=7403 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=10442
+=======
+25361 Strength of Earth Totem (Rank 5)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      275 mana
+labels    24
+refs      25362 Strength of Earth
+
+effect 1  summons creature 15464 to target 41
+          E_SUMMON base=5 misc=15464 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=25361
+=======
+437009 Totemic Projection
+school    nature
+duration  1 s
+cooldown  60 s
+gcd       1.5 s
+cost      25% of maximum mana
+range     30 yd
+labels    24
+
+effect 1  summons creature 15214 to target 87
+          E_SUMMON base=0 misc=15214 misc2=5878 target=[87,0]
+
+https://www.wowhead.com/forever/spell=437009
+=======
+8512 Windfury Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      115 mana
+labels    24
+refs      8515 Windfury Totem, 8516 Windfury Totem
+
+effect 1  summons creature 6112 to target 43
+          E_SUMMON base=5 misc=6112 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=8512
+=======
+8516 Windfury Totem (Rank 1)
+school    physical
+defense   melee
+duration  1 s
+range     100 yd
+charges   2
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
+
+effect 1  +95 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=95 target=[1,0]
+effect 2  1 extra attacks
+          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8516
+=======
+10608 Windfury Totem (Rank 2)
+school    physical
+defense   melee
+duration  1 s
+range     100 yd
+charges   2
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
+
+effect 1  +179 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=179 target=[1,0]
+effect 2  1 extra attacks
+          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10608
+=======
+10610 Windfury Totem (Rank 3)
+school    physical
+defense   melee
+duration  1 s
+range     100 yd
+charges   2
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
+
+effect 1  +246 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=246 target=[1,0]
+effect 2  1 extra attacks
+          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10610
+=======
+10613 Windfury Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      175 mana
+labels    24
+refs      10609 Windfury Totem, 10608 Windfury Totem
+
+effect 1  summons creature 7483 to target 43
+          E_SUMMON base=5 misc=7483 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10613
+=======
+10614 Windfury Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      250 mana
+labels    24
+refs      10612 Windfury Totem, 10610 Windfury Totem
+
+effect 1  summons creature 7484 to target 43
+          E_SUMMON base=5 misc=7484 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=10614
+=======
+27621 Windfury Totem (Rank 3)
+school    nature
+defense   magic
+duration  90 s
+gcd       1.5 s
+cost      250 mana
+refs      10610 Windfury Totem
+
+effect 1  summons creature 7484 to target 43
+          E_SUMMON base=5 misc=7484 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=27621
+=======
+8232 Windfury Weapon (Rank 1)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      90 mana
+equip     needs a melee weapon
+labels    24
+refs      8233 Windfury Weapon
+
+effect 1  unrecognised shape
+          E_360 base=1800 misc=283 target=[0,0]
+
+https://www.wowhead.com/forever/spell=8232
+=======
+8233 Windfury Weapon (Rank 1)
+school    nature
+duration  1.5 s
+range     100 yd
+charges   3
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  +103 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=46 ppl=7.2 target=[1,0]
+effect 2  2 extra attacks
+          E_ADD_EXTRA_ATTACKS base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8233
+=======
+8235 Windfury Weapon (Rank 2)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      115 mana
+equip     needs a melee weapon
+labels    24
+refs      8236 Windfury Weapon
+
+effect 1  unrecognised shape
+          E_360 base=1800 misc=284 target=[0,0]
+
+https://www.wowhead.com/forever/spell=8235
+=======
+8236 Windfury Weapon (Rank 2)
+school    nature
+duration  1.5 s
+range     100 yd
+charges   3
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  +221 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=119 ppl=12.8 target=[1,0]
+effect 2  2 extra attacks
+          E_ADD_EXTRA_ATTACKS base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8236
+=======
+10484 Windfury Weapon (Rank 3)
+school    nature
+duration  1.5 s
+range     100 yd
+charges   3
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  +315 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=249 ppl=8.3 target=[1,0]
+effect 2  2 extra attacks
+          E_ADD_EXTRA_ATTACKS base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10484
+=======
+10486 Windfury Weapon (Rank 3)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      140 mana
+equip     needs a melee weapon
+labels    24
+refs      10484 Windfury Weapon
+
+effect 1  unrecognised shape
+          E_360 base=1800 misc=525 target=[0,0]
+
+https://www.wowhead.com/forever/spell=10486
+=======
+16361 Windfury Weapon (Rank 4)
+school    nature
+duration  1.5 s
+range     100 yd
+charges   3
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  +333 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=333 ppl=12.5 target=[1,0]
+effect 2  2 extra attacks
+          E_ADD_EXTRA_ATTACKS base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16361
+=======
+16362 Windfury Weapon (Rank 4)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      165 mana
+equip     needs a melee weapon
+labels    24
+refs      16361 Windfury Weapon
+
+effect 1  unrecognised shape
+          E_360 base=1800 misc=1669 target=[0,0]
+
+https://www.wowhead.com/forever/spell=16362
+=======
+439431 Windfury Weapon (Rank 1)
+school    nature
+defense   magic
+gcd       1.5 s
+equip     needs a melee weapon
+icd       1.5 s
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 20% chance
+refs      8233 Windfury Weapon
+
+effect 1  a dummy aura holding 103 (at level 60)
+          E_APPLY_AURA A_DUMMY base=46 ppl=7.2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=439431
+=======
+439440 Windfury Weapon (Rank 1)
+school    physical
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    24
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=439440
+=======
+439441 Windfury Weapon (Rank 1)
+school    physical
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    24
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=439441
+=======
+461636 Windfury Weapon (Rank 4)
+school    nature
+defense   magic
+gcd       1.5 s
+cost      165 mana
+equip     needs a melee weapon
+refs      16361 Windfury Weapon
+
+effect 1  applies temporary enchant 7569
+          E_ENCHANT_ITEM_TEMPORARY base=1800 misc=7569 target=[0,0]
+
+https://www.wowhead.com/forever/spell=461636
+=======
+15107 Windwall Totem (Rank 1)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      115 mana
+labels    24
+refs      15108 Windwall
+
+effect 1  summons creature 9687 to target 43
+          E_SUMMON base=5 misc=9687 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=15107
+=======
+15111 Windwall Totem (Rank 2)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      170 mana
+labels    24
+refs      15109 Windwall
+
+effect 1  summons creature 9688 to target 43
+          E_SUMMON base=5 misc=9688 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=15111
+=======
+15112 Windwall Totem (Rank 3)
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      225 mana
+labels    24
+refs      15110 Windwall
+
+effect 1  summons creature 9689 to target 43
+          E_SUMMON base=5 misc=9689 misc2=83 target=[43,0]
+
+https://www.wowhead.com/forever/spell=15112

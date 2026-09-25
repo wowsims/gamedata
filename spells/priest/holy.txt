@@ -1,0 +1,2339 @@
+552 Abolish Disease
+school    holy
+defense   magic
+duration  20 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+stance exclude Shadowform
+labels    18
+refs      10872 Abolish Disease Effect
+
+effect 1  casts 10872 Abolish Disease Effect every 5 s to the friendly target (4 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=10872 target=[21,0]
+effect 2  dispels 1 disease effect to the friendly target
+          E_DISPEL base=1 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=552
+=======
+401937 Binding Heal (Rank 1)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      155 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  234.54549–285.45453 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[21,0]
+effect 2  234.54549–285.45453 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401937
+=======
+1240770 Binding Heal (Rank 2)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      185 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  294.30005–353.69995 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=312 ppl=2.5 variance=0.183333 sp=0.429 amplitude=1 target=[21,0]
+effect 2  293.39172–352.60828 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=312 ppl=2.2 variance=0.183333 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240770
+=======
+1240771 Binding Heal (Rank 3)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      215 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  361.7311–432.2689 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[21,0]
+effect 2  361.7311–432.2689 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240771
+=======
+1240772 Binding Heal (Rank 4)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      265 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  477.80234–568.19763 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[21,0]
+effect 2  477.80234–568.19763 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240772
+=======
+1240773 Binding Heal (Rank 5)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      315 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  605.57947–718.42053 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=644.0001 ppl=3.7 variance=0.17045482 sp=0.429 amplitude=1 target=[21,0]
+effect 2  605.5794–718.4206 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=644 ppl=3.7 variance=0.170455 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240773
+=======
+1240774 Binding Heal (Rank 6)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  771.6293–910.3707 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[21,0]
+effect 2  771.6293–910.3707 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240774
+=======
+27811 Blessed Recovery
+school    physical
+attrs     passive
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count
+refs      27813 Blessed Recovery
+
+effect 1  a dummy aura holding 8
+          E_APPLY_AURA A_DUMMY base=8 sp=1 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27811
+=======
+1240755 Blessed Recovery
+school    holy
+range     5 yd
+attrs     cannot crit
+labels    18
+
+effect 1  10 healing to the caster
+          E_HEAL base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240755
+=======
+1277331 Chastise (Rank 1)
+school    holy
+defense   magic
+duration  2 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      50 mana
+range     20 yd
+stance exclude Shadowform
+targets   up to 1
+labels    18
+
+effect 1  43.24–48.76 holy damage to the enemy (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=46 variance=0.12 sp=0.143 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277331
+=======
+1277332 Chastise (Rank 2)
+school    holy
+defense   magic
+duration  2 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      100 mana
+range     20 yd
+stance exclude Shadowform
+targets   up to 1
+labels    18
+
+effect 1  87.42–98.58 holy damage to the enemy (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=93 variance=0.12 sp=0.143 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277332
+=======
+1277333 Chastise (Rank 3)
+school    holy
+defense   magic
+duration  2 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      135 mana
+range     20 yd
+stance exclude Shadowform
+targets   up to 1
+labels    18
+
+effect 1  131.6–148.4 holy damage to the enemy (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=140 variance=0.12 sp=0.143 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277333
+=======
+1277334 Chastise (Rank 4)
+school    holy
+defense   magic
+duration  2 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      180 mana
+range     20 yd
+stance exclude Shadowform
+targets   up to 1
+labels    18
+
+effect 1  201.16–226.84 holy damage to the enemy (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=214 variance=0.12 sp=0.143 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277334
+=======
+1277335 Chastise (Rank 5)
+school    holy
+defense   magic
+duration  2 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      225 mana
+range     20 yd
+stance exclude Shadowform
+targets   up to 1
+labels    18
+
+effect 1  271.66–306.34 holy damage to the enemy (+0.143 spell power)
+          E_SCHOOL_DAMAGE base=289 variance=0.12 sp=0.143 target=[6,0]
+effect 2  roots to the enemy
+          E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277335
+=======
+401946 Circle of Healing
+school    holy
+defense   magic
+cooldown  6 s
+gcd       1.5 s
+cost      56% of maximum mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  130–144 healing to target 132 (+0.214 spell power)
+          E_HEAL base=137 variance=0.10218978 sp=0.214 target=[132,31]
+
+https://www.wowhead.com/forever/spell=401946
+=======
+528 Cure Disease
+school    holy
+defense   magic
+gcd       1.5 s
+cost      15% of maximum mana
+range     30 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  dispels 1 disease effect to the friendly target
+          E_DISPEL base=1 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=528
+=======
+28133 Cure Disease
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+range     30 yd
+stance exclude Shadowform
+
+effect 1  dispels 1 disease effect
+          E_DISPEL base=1 misc=3 target=[0,0]
+
+https://www.wowhead.com/forever/spell=28133
+=======
+13908 Desperate Prayer (Rank 1)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  143.69737–182.30263 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13908
+=======
+19236 Desperate Prayer (Rank 2)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  264.78912–327.21088 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=276 ppl=3.4 variance=0.21088435 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19236
+=======
+19238 Desperate Prayer (Rank 3)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  437.9697–532.0303 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19238
+=======
+19240 Desperate Prayer (Rank 4)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  568.03705–683.96295 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=595 ppl=5.3 variance=0.18518518 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19240
+=======
+19241 Desperate Prayer (Rank 5)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  815.75055–972.24945 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=856 ppl=6.4 variance=0.1750547 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19241
+=======
+19242 Desperate Prayer (Rank 6)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  1086.3566–1287.6434 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=1143 ppl=7.4 variance=0.16957606 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19242
+=======
+19243 Desperate Prayer (Rank 7)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+stance exclude Shadowform
+labels    18
+
+effect 1  1283.6285–1514.3715 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=1383 ppl=8.2 variance=0.16493416 sp=0.429 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19243
+=======
+459702 Desperate Prayer
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19243 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459702
+=======
+18530 Divine Fury
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 6 mask 0x101480
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=6 mask=0x101480 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18530
+=======
+1277370 Divine Grace (Rank 1)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  143.69737–182.30263 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277370
+=======
+1277371 Divine Grace (Rank 2)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  264.78915–327.21085 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=276 ppl=3.4 variance=0.210884 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277371
+=======
+1277372 Divine Grace (Rank 3)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  437.9697–532.0303 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277372
+=======
+1277374 Divine Grace (Rank 4)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  568.0371–683.9629 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=595 ppl=5.3 variance=0.185185 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277374
+=======
+1277376 Divine Grace (Rank 5)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  815.7504–972.2496 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=856 ppl=6.4 variance=0.175055 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277376
+=======
+1277377 Divine Grace (Rank 6)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  1086.3567–1287.6433 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=1143 ppl=7.4 variance=0.169576 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277377
+=======
+1277378 Divine Grace (Rank 7)
+school    holy
+defense   magic
+cooldown  600 s (category)
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+labels    18
+
+effect 1  1283.6287–1514.3713 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=1383 ppl=8.2 variance=0.164934 sp=0.429 target=[21,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=50 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277378
+=======
+6346 Fear Ward
+school    holy
+defense   magic
+duration  180 s
+cooldown  180 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+stance exclude Shadowform
+charges   1
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  immune to fear to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[21,0]
+
+https://www.wowhead.com/forever/spell=6346
+=======
+459699 Fear Ward
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=6346 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459699
+=======
+2061 Flash Heal (Rank 1)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      125 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  182.2279–223.7721 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=194 ppl=1.9 variance=0.20465116 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2061
+=======
+9472 Flash Heal (Rank 2)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      155 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  234.54546–285.45456 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=249 ppl=2.2 variance=0.1958042 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9472
+=======
+9473 Flash Heal (Rank 3)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      185 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  294.3–353.7 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=312 ppl=2.5 variance=0.18333334 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9473
+=======
+9474 Flash Heal (Rank 4)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      215 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  361.7312–432.2688 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=383 ppl=2.8 variance=0.17767654 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9474
+=======
+10915 Flash Heal (Rank 5)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      265 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  477.80246–568.1975 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=507 ppl=3.3 variance=0.17283951 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10915
+=======
+10916 Flash Heal (Rank 6)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      315 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  605.5795–718.4205 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=644 ppl=3.7 variance=0.17045455 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10916
+=======
+10917 Flash Heal (Rank 7)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  771.6294–910.3706 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=825 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10917
+=======
+17137 Flash Heal
+school    holy
+defense   magic
+cast      1.5 s
+cost      125 mana
+range     40 yd
+
+effect 1  1163.4558–1350.5442 healing to the friendly target (+0.429 spell power)
+          E_HEAL base=1257.0995 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=17137
+=======
+17138 Flash Heal
+school    holy
+defense   magic
+cast      1.5 s
+cost      125 mana
+range     40 yd
+
+effect 1  3413.8765–4162.1235 healing to the friendly target (+0.429 spell power)
+          E_HEAL base=3788.8394 variance=0.19753087 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=17138
+=======
+17843 Flash Heal
+school    holy
+defense   magic
+cast      1.5 s
+cost      125 mana
+range     40 yd
+
+effect 1  2326.9116–2701.0884 healing to the friendly target (+0.429 spell power)
+          E_HEAL base=2514.199 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=17843
+=======
+27608 Flash Heal (Rank 7)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+stance exclude Shadowform
+
+effect 1  826.68024–975.31976 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=885 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=27608
+=======
+1232758 Flash Heal
+school    holy
+defense   magic
+cast      1.5 s
+cost      125 mana
+range     40 yd
+
+effect 1  58469 healing to the friendly target (+0.429 spell power)
+          E_HEAL base=58469.74 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1232758
+=======
+1236153 Flash Heal (Rank 7)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+
+effect 1  13183.1–15320.9 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=14000 ppl=4.2 variance=0.15 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1236153
+=======
+2060 Greater Heal (Rank 1)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      370 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  817.18726–920.81274 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=844 ppl=5.1 variance=0.11924686 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2060
+=======
+10963 Greater Heal (Rank 2)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      455 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  1063.2256–1192.7744 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=1099 ppl=5.8 variance=0.11484823 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10963
+=======
+10964 Greater Heal (Rank 3)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      545 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  1354.9127–1517.0873 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=1403 ppl=6.6 variance=0.112935 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10964
+=======
+10965 Greater Heal (Rank 4)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      655 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  1698.7413–1895.2587 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=1782 ppl=7.5 variance=0.10935857 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10965
+=======
+22009 Greater Heal
+school    holy
+defense   magic
+duration  15 s
+range     40 yd
+attrs     periodic can crit
+
+effect 1  63 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=63 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=22009
+=======
+25314 Greater Heal (Rank 5)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      710 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  1852.5769–2067.423 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=1960 ppl=8.1 variance=0.10961539 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=25314
+=======
+28809 Greater Heal
+school    physical
+range     50000 yd
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      28810 Armor of Faith
+
+effect 1  a dummy aura from family 6 mask 0x10
+          E_APPLY_AURA A_DUMMY base=0 family=6 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28809
+=======
+2054 Heal (Rank 1)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      155 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  281.0849–324.9151 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=291 ppl=2.4 variance=0.1446541 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2054
+=======
+2055 Heal (Rank 2)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      205 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  392.62827–449.37173 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=405 ppl=3.2 variance=0.13478261 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2055
+=======
+6063 Heal (Rank 3)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      255 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  508.83774–577.16223 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=523 ppl=4 variance=0.12582782 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=6063
+=======
+6064 Heal (Rank 4)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  632.1583–713.8417 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=651 ppl=4.5 variance=0.12137203 sp=0.857 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=6064
+=======
+14914 Holy Fire (Rank 1)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  55.840908–70.15909 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=58 ppl=1.3 variance=0.22727273 sp=0.75 target=[6,0]
+effect 2  4 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14914
+=======
+15261 Holy Fire (Rank 8)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      255 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  183.6816–232.3184 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=208 ppl=2 variance=0.23383084 sp=0.75 target=[6,0]
+effect 2  15 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15261
+=======
+15262 Holy Fire (Rank 2)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  63.11111–78.888885 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=63 ppl=1.4 variance=0.22222222 sp=0.75 target=[6,0]
+effect 2  5 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15262
+=======
+15263 Holy Fire (Rank 3)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      125 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  78.845634–99.154366 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=80 ppl=1.5 variance=0.22818792 sp=0.75 target=[6,0]
+effect 2  6 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15263
+=======
+15264 Holy Fire (Rank 4)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      145 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  89.117645–112.882355 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=92 ppl=1.5 variance=0.23529412 sp=0.75 target=[6,0]
+effect 2  7 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15264
+=======
+15265 Holy Fire (Rank 5)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      170 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  101.55844–128.44156 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=106 ppl=1.5 variance=0.23376623 sp=0.75 target=[6,0]
+effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15265
+=======
+15266 Holy Fire (Rank 6)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  131.40973–166.59027 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=139 ppl=1.7 variance=0.2361111 sp=0.75 target=[6,0]
+effect 2  10 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15266
+=======
+15267 Holy Fire (Rank 7)
+school    holy
+defense   magic
+duration  10 s
+cast      3.5 s
+gcd       1.5 s
+cost      230 mana
+range     30 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  162.13333–205.86667 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=173 ppl=1.9 variance=0.23768117 sp=0.75 target=[6,0]
+effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15267
+=======
+17140 Holy Fire
+school    fire
+defense   magic
+duration  8 s
+cast      5 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+
+effect 1  596.0348–747.9652 fire damage to the enemy (+0.343 spell power)
+          E_SCHOOL_DAMAGE base=672.40204 variance=0.22608696 sp=0.343 target=[6,0]
+effect 2  40 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=40.92882 sp=0.027 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=17140
+=======
+17141 Holy Fire
+school    fire
+defense   magic
+duration  8 s
+cast      5 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+
+effect 1  1186.2261–1501.7739 fire damage to the enemy (+0.343 spell power)
+          E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
+effect 2  81 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=17141
+=======
+17142 Holy Fire
+school    fire
+defense   magic
+duration  8 s
+cast      5 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+
+effect 1  1777.2986–2256.7014 fire damage to the enemy (+0.343 spell power)
+          E_SCHOOL_DAMAGE base=2017.206 variance=0.23768117 sp=0.343 target=[6,0]
+effect 2  122 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=122.78647 sp=0.027 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=17142
+=======
+18165 Holy Fire
+school    fire
+defense   magic
+duration  8 s
+range     30 yd
+
+effect 1  1186.2261–1501.7739 fire damage to the enemy (+0.343 spell power)
+          E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
+effect 2  81 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18165
+=======
+18167 Holy Fire
+school    fire
+defense   magic
+duration  permanent
+range     30 yd
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance
+
+effect 1  casts 18165 Holy Fire on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=18165 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18167
+=======
+23860 Holy Fire
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+
+effect 1  2203–2797 fire damage to the enemy (+0.343 spell power)
+          E_SCHOOL_DAMAGE base=2500 variance=0.2376 sp=0.343 target=[6,0]
+effect 2  125 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=125 sp=0.027 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=23860
+=======
+15237 Holy Nova (Rank 1)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      185 mana
+stance exclude Shadowform
+labels    18
+refs      23455 Holy Nova
+
+effect 1  26.133333–29.866667 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=27 ppl=0.2 variance=0.13333334 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=15237
+=======
+15430 Holy Nova (Rank 2)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      290 mana
+stance exclude Shadowform
+labels    18
+refs      23458 Holy Nova
+
+effect 1  47.22222–54.77778 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=49 ppl=0.4 variance=0.14814815 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=15430
+=======
+15431 Holy Nova (Rank 3)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      400 mana
+stance exclude Shadowform
+labels    18
+refs      23459 Holy Nova
+
+effect 1  72.29269–83.70731 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=75 ppl=0.6 variance=0.14634146 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=15431
+=======
+20694 Holy Nova
+school    holy
+defense   magic
+cost      315 mana
+
+effect 1  720–880 holy damage to every enemy around the caster (+0.071 spell power)
+          E_SCHOOL_DAMAGE base=800 variance=0.2 sp=0.071 radius=15 target=[22,15]
+
+https://www.wowhead.com/forever/spell=20694
+=======
+23455 Holy Nova (Rank 1)
+school    holy
+defense   magic
+stance exclude Shadowform
+attrs     not a proc
+labels    18
+
+effect 1  49.214287–56.785713 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=51 ppl=0.4 variance=0.14285715 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=23455
+=======
+23458 Holy Nova (Rank 2)
+school    holy
+defense   magic
+stance exclude Shadowform
+labels    18
+
+effect 1  79.45652–90.54348 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=82 ppl=0.5 variance=0.13043478 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=23458
+=======
+23459 Holy Nova (Rank 3)
+school    holy
+defense   magic
+stance exclude Shadowform
+labels    18
+
+effect 1  110.761536–127.238464 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=116 ppl=0.6 variance=0.13846155 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=23459
+=======
+23858 Holy Nova
+school    holy
+defense   magic
+cost      315 mana
+
+effect 1  875–1125 holy damage to every enemy around the caster (+0.071 spell power)
+          E_SCHOOL_DAMAGE base=1000 variance=0.25 sp=0.071 radius=15 target=[22,15]
+effect 2  1750–2250 healing to every ally around the caster
+          E_HEAL base=2000 variance=0.25 sp=1 radius=15 target=[22,30]
+
+https://www.wowhead.com/forever/spell=23858
+=======
+27799 Holy Nova (Rank 4)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      520 mana
+stance exclude Shadowform
+labels    18
+refs      27803 Holy Nova
+
+effect 1  102.2807–117.7193 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=106 ppl=0.8 variance=0.14035088 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=27799
+=======
+27800 Holy Nova (Rank 5)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      635 mana
+stance exclude Shadowform
+labels    18
+refs      27804 Holy Nova
+
+effect 1  138.14569–159.85431 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=143 ppl=1 variance=0.14569536 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=27800
+=======
+27801 Holy Nova (Rank 6)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      750 mana
+stance exclude Shadowform
+labels    18
+refs      27805 Holy Nova
+
+effect 1  173.57436–200.42564 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+          E_SCHOOL_DAMAGE base=187 ppl=1.2 variance=0.14358975 sp=0.107 target=[22,15]
+
+https://www.wowhead.com/forever/spell=27801
+=======
+27803 Holy Nova (Rank 4)
+school    holy
+defense   magic
+stance exclude Shadowform
+labels    18
+
+effect 1  150.82184–175.17816 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=159 ppl=0.7 variance=0.14942528 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=27803
+=======
+27804 Holy Nova (Rank 5)
+school    holy
+defense   magic
+stance exclude Shadowform
+labels    18
+
+effect 1  224.78261–259.21738 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=238 ppl=0.8 variance=0.14229248 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=27804
+=======
+27805 Holy Nova (Rank 6)
+school    holy
+defense   magic
+stance exclude Shadowform
+labels    18
+
+effect 1  288.1043–333.8957 healing to the party around the caster (at level 60, +0.107 spell power)
+          E_HEAL base=311 ppl=0.9 variance=0.14723927 sp=0.107 radius=10 target=[20,0]
+
+https://www.wowhead.com/forever/spell=27805
+=======
+1284536 Holy Purpose
+school    holy
+defense   magic
+duration  10 s
+charges   1
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100% on family 6 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x400000 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=20 misc=26 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1284536
+=======
+27789 Holy Reach
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_RANGE +10% on family 6 mask 0x100080
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=5 family=6 mask=0x100080 target=[1,0]
+effect 2  SPELLMOD_RADIUS +10% on family 6 mask 0x8400200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=6 family=6 mask=0x8400200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27789
+=======
+14889 Holy Specialization
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 6 mask 0x9541ec0,0x18024
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=7 family=6 mask=0x9541ec0,0x18024 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14889
+=======
+14912 Improved Healing
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COST -15% on family 6 mask 0x41400,0x800020
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=6 mask=0x41400,0x800020 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14912
+=======
+14908 Improved Renew
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_DOT +5% on family 6 mask 0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=22 family=6 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14908
+=======
+14892 Inspiration
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count
+refs      14893 Inspiration
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14892
+=======
+2050 Lesser Heal (Rank 1)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      30 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  46.901962–57.098038 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=51 ppl=0.9 variance=0.19607843 sp=0.429 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2050
+=======
+2052 Lesser Heal (Rank 2)
+school    holy
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  75.551285–90.448715 healing to the friendly target (at level 60, +0.571 spell power)
+          E_HEAL base=78 ppl=1.1 variance=0.17948718 sp=0.571 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2052
+=======
+2053 Lesser Heal (Rank 3)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      75 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  137.77397–160.22603 healing to the friendly target (at level 60, +0.714 spell power)
+          E_HEAL base=141 ppl=1.6 variance=0.15068494 sp=0.714 amplitude=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2053
+=======
+724 Lightwell (Rank 1)
+school    holy
+duration  180 s
+cast      1.5 s
+cooldown  600 s (category)
+gcd       1.5 s
+cost      225 mana
+labels    18
+refs      7001 Lightwell Renew
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 sp=1 misc=181102 target=[22,47]
+
+https://www.wowhead.com/forever/spell=724
+=======
+27870 Lightwell (Rank 2)
+school    holy
+duration  180 s
+cast      1.5 s
+cooldown  600 s (category)
+gcd       1.5 s
+cost      295 mana
+labels    18
+refs      27873 Lightwell Renew
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 sp=1 misc=181105 target=[22,47]
+
+https://www.wowhead.com/forever/spell=27870
+=======
+27871 Lightwell (Rank 3)
+school    holy
+duration  180 s
+cast      1.5 s
+cooldown  600 s (category)
+gcd       1.5 s
+cost      365 mana
+labels    18
+refs      27874 Lightwell Renew
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 sp=1 misc=181106 target=[22,47]
+
+https://www.wowhead.com/forever/spell=27871
+=======
+1317006 Litany of Light
+school    physical
+stance exclude Shadowform
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says cast trigger, heals count
+
+effect 1  casts nothing on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1317006
+=======
+596 Prayer of Healing (Rank 1)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      410 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  179.05145–190.94855 healing to target 132 (at level 60, +0.286 spell power)
+          E_HEAL base=178 ppl=0.8 variance=0.06430868 sp=0.286 target=[132,31]
+
+https://www.wowhead.com/forever/spell=596
+=======
+996 Prayer of Healing (Rank 2)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      560 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  265.62445–282.37555 healing to target 132 (at level 60, +0.286 spell power)
+          E_HEAL base=265 ppl=1 variance=0.06113537 sp=0.286 target=[132,31]
+
+https://www.wowhead.com/forever/spell=996
+=======
+10960 Prayer of Healing (Rank 3)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      770 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  400.4201–423.5799 healing to target 132 (at level 60, +0.286 spell power)
+          E_HEAL base=401 ppl=1.3 variance=0.056213018 sp=0.286 target=[132,31]
+
+https://www.wowhead.com/forever/spell=10960
+=======
+10961 Prayer of Healing (Rank 4)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      1030 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  567.29224–598.70776 healing to target 132 (at level 60, +0.286 spell power)
+          E_HEAL base=583 ppl=1.5 variance=0.05388601 sp=0.286 target=[132,31]
+
+https://www.wowhead.com/forever/spell=10961
+=======
+25316 Prayer of Healing (Rank 5)
+school    holy
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      1070 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  631.4103–666.5897 healing to target 132 (at level 60, +0.286 spell power)
+          E_HEAL base=649 ppl=1.6 variance=0.054205608 sp=0.286 target=[132,31]
+
+https://www.wowhead.com/forever/spell=25316
+=======
+401859 Prayer of Mending (Rank 1)
+school    holy
+cooldown  10 s (category)
+gcd       1.5 s
+cost      210 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     can proc from procs
+labels    18
+refs      401880 Prayer of Mending, 401877 Prayer of Mending
+
+effect 1  a dummy effect holding 172 to the target's raid
+          E_DUMMY base=172 sp=0.429 target=[57,0]
+effect 2  a dummy effect holding 5 to the target's raid
+          E_DUMMY base=5 target=[57,0]
+
+https://www.wowhead.com/forever/spell=401859
+=======
+401863 Prayer of Mending
+school    holy
+defense   magic
+range     50000 yd
+labels    18
+
+effect 1  1 healing to the target's raid
+          E_HEAL base=1 amplitude=1 target=[57,0]
+
+https://www.wowhead.com/forever/spell=401863
+=======
+401877 Prayer of Mending (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+range     50000 yd
+targets   up to 1
+stack     up to 5
+attrs     can proc from procs
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura to the target's raid
+          E_APPLY_AURA A_DUMMY base=0 variance=0.10935857 target=[57,0]
+
+https://www.wowhead.com/forever/spell=401877
+=======
+401880 Prayer of Mending (Rank 1)
+school    holy
+range     50000 yd
+labels    18
+
+effect 1  a dummy effect holding 200 to every ally around the caster
+          E_DUMMY base=200 radius=20 target=[22,30]
+
+https://www.wowhead.com/forever/spell=401880
+=======
+1240826 Prayer of Mending (Rank 2)
+school    holy
+cooldown  10 s (category)
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     can proc from procs
+labels    18
+refs      401880 Prayer of Mending, 401877 Prayer of Mending
+
+effect 1  a dummy effect holding 298 to the target's raid
+          E_DUMMY base=298 sp=0.429 target=[57,0]
+effect 2  a dummy effect holding 5 to the target's raid
+          E_DUMMY base=5 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1240826
+=======
+1240827 Prayer of Mending (Rank 3)
+school    holy
+cooldown  10 s (category)
+gcd       1.5 s
+cost      390 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     can proc from procs
+labels    18
+refs      401880 Prayer of Mending, 401877 Prayer of Mending
+
+effect 1  a dummy effect holding 413 to the target's raid
+          E_DUMMY base=413 sp=0.429 target=[57,0]
+effect 2  a dummy effect holding 5 to the target's raid
+          E_DUMMY base=5 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1240827
+=======
+1240848 Prayer of Mending (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+range     50000 yd
+targets   up to 1
+stack     up to 5
+attrs     can proc from procs
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 1902 to the target's raid
+          E_APPLY_AURA A_DUMMY base=1902 variance=0.10935857 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1240848
+=======
+1240849 Prayer of Mending (Rank 3)
+school    holy
+defense   magic
+duration  30 s
+range     50000 yd
+targets   up to 1
+stack     up to 5
+attrs     can proc from procs
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 1902 to the target's raid
+          E_APPLY_AURA A_DUMMY base=1902 variance=0.10935857 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1240849
+=======
+1240918 Prayer of Mending (Rank 2)
+school    holy
+range     50000 yd
+labels    18
+
+effect 1  a dummy effect holding 200 to every ally around the caster
+          E_DUMMY base=200 radius=20 target=[22,30]
+
+https://www.wowhead.com/forever/spell=1240918
+=======
+1240919 Prayer of Mending (Rank 3)
+school    holy
+range     50000 yd
+labels    18
+
+effect 1  a dummy effect holding 200 to every ally around the caster
+          E_DUMMY base=200 radius=20 target=[22,30]
+
+https://www.wowhead.com/forever/spell=1240919
+=======
+1313379 Prayer of Mending
+school    holy
+defense   magic
+range     50000 yd
+labels    18
+
+effect 1  1 healing to the target's raid
+          E_HEAL base=1 amplitude=1 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1313379
+=======
+1313381 Prayer of Mending
+school    holy
+defense   magic
+range     50000 yd
+labels    18
+
+effect 1  1 healing to the target's raid
+          E_HEAL base=1 amplitude=1 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1313381
+=======
+139 Renew (Rank 1)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      30 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  9 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=9 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=139
+=======
+6074 Renew (Rank 2)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      65 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  15 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=15 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=6074
+=======
+6075 Renew (Rank 3)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      105 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  25 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=6075
+=======
+6076 Renew (Rank 4)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      140 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  32 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=6076
+=======
+6077 Renew (Rank 5)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      170 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  41 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=41 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=6077
+=======
+6078 Renew (Rank 6)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      205 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  54 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=54 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=6078
+=======
+10927 Renew (Rank 7)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      250 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  74 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=74 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=10927
+=======
+10928 Renew (Rank 8)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  102 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=102 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=10928
+=======
+10929 Renew (Rank 9)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      365 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  134 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=134 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=10929
+=======
+25315 Renew (Rank 10)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      410 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  166 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=166 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=25315
+=======
+27606 Renew (Rank 9)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      365 mana
+range     40 yd
+stance exclude Shadowform
+
+effect 1  162 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=162 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=27606
+=======
+28807 Renew
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -12% on family 6 mask 0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-12 misc=14 family=6 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28807
+=======
+425268 Renew (Rank 1)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      30 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  9 healing every 3 s to the friendly target (5 ticks, +0.1265 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=9 sp=0.1265 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425268
+=======
+425269 Renew (Rank 2)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      65 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  20 healing every 3 s to the friendly target (5 ticks, +0.17825 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=20 sp=0.17825 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425269
+=======
+425270 Renew (Rank 3)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      105 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  35 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=35 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425270
+=======
+425271 Renew (Rank 4)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      140 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  49 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=49 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425271
+=======
+425272 Renew (Rank 5)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      170 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  63 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=63 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425272
+=======
+425273 Renew (Rank 6)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      205 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  80 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=80 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425273
+=======
+425274 Renew (Rank 7)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      250 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  102 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=102 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425274
+=======
+425275 Renew (Rank 8)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  130 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=130 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425275
+=======
+425276 Renew (Rank 9)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      365 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  162 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=162 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425276
+=======
+425277 Renew (Rank 10)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      410 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+
+effect 1  194 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=194 sp=0.23 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=425277
+=======
+1236151 Renew (Rank 9)
+school    holy
+defense   magic
+duration  15 s
+cast      2.5 s
+gcd       1.5 s
+range     40 yd
+stance exclude Shadowform
+
+effect 1  2500 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=2500 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1236151
+=======
+1289450 Renew (Rank 9)
+school    holy
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      365 mana
+range     40 yd
+
+effect 1  30 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=30 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1289450
+=======
+2006 Resurrection (Rank 1)
+school    holy
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      75% of maximum mana
+range     30 yd
+labels    18, 6316
+
+effect 1  unrecognised shape
+          E_329 base=70 sp=1 misc=135 target=[0,0]
+
+https://www.wowhead.com/forever/spell=2006
+=======
+2010 Resurrection (Rank 2)
+school    holy
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      75% of maximum mana
+range     30 yd
+labels    18, 6316
+
+effect 1  unrecognised shape
+          E_329 base=160 sp=1 misc=300 target=[0,0]
+
+https://www.wowhead.com/forever/spell=2010
+=======
+10880 Resurrection (Rank 3)
+school    holy
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      75% of maximum mana
+range     30 yd
+labels    18, 6316
+
+effect 1  unrecognised shape
+          E_329 base=300 sp=1 misc=520 target=[0,0]
+
+https://www.wowhead.com/forever/spell=10880
+=======
+10881 Resurrection (Rank 4)
+school    holy
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      75% of maximum mana
+range     30 yd
+labels    18, 6316
+
+effect 1  unrecognised shape
+          E_329 base=500 sp=1 misc=750 target=[0,0]
+
+https://www.wowhead.com/forever/spell=10881
+=======
+20770 Resurrection (Rank 5)
+school    holy
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      75% of maximum mana
+range     30 yd
+labels    18, 6316
+
+effect 1  unrecognised shape
+          E_329 base=750 sp=1 misc=1000 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20770
+=======
+14909 Searing Light
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; 10% chance, from effect 2; tooltip says one named ability
+
+effect 1  +10% damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 target=[1,0]
+effect 2  casts 1284536 Holy Purpose on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1284536 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14909
+=======
+585 Smite (Rank 1)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      20 mana
+range     30 yd
+labels    18
+
+effect 1  14.733334–19.266666 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=15 ppl=0.5 variance=0.26666668 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=585
+=======
+591 Smite (Rank 2)
+school    holy
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      30 mana
+range     30 yd
+labels    18
+
+effect 1  27.678572–34.32143 holy damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.21428572 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=591
+=======
+598 Smite (Rank 3)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    18
+
+effect 1  46.551723–53.448277 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=46 ppl=0.8 variance=0.13793103 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=598
+=======
+984 Smite (Rank 4)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+labels    18
+
+effect 1  59.42857–68.57143 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=59 ppl=1 variance=0.14285715 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=984
+=======
+1004 Smite (Rank 5)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+labels    18
+
+effect 1  80.625–91.375 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=81 ppl=1 variance=0.125 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1004
+=======
+6060 Smite (Rank 6)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      185 mana
+range     30 yd
+labels    18
+
+effect 1  92.867256–105.132744 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=94 ppl=1.1 variance=0.1238938 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6060
+=======
+10933 Smite (Rank 7)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      230 mana
+range     30 yd
+labels    18
+
+effect 1  123.26885–138.73114 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=126 ppl=1.1 variance=0.11803278 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10933
+=======
+10934 Smite (Rank 8)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      280 mana
+range     30 yd
+labels    18
+
+effect 1  166.14758–185.85242 holy damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=170 ppl=1.3 variance=0.11195929 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10934
+=======
+27900 Spell Warding
+school    physical
+attrs     passive
+labels    18
+
+effect 1  -10% holy+fire+nature+frost+shadow+arcane damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27900
+=======
+14901 Spiritual Guidance
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=8 misc=126 misc2=4 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=25 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14901
+=======
+14898 Spiritual Healing
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_DAMAGE +2% on family 6 mask 0x9041e20,0x10024
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=6 mask=0x9041e20,0x10024 target=[1,0]
+effect 2  SPELLMOD_DOT +2% on family 6 mask 0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=6 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14898
+=======
+14913 Twilight Focus
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 6 mask 0xb63e90,0x818004,0x80,0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=6 mask=0xb63e90,0x818004,0x80,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14913

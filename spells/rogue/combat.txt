@@ -1,0 +1,1347 @@
+13750 Adrenaline Rush
+school    physical
+duration  15 s
+cooldown  300 s
+gcd       1 s
+labels    20
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=100 sp=1 misc=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13750
+=======
+18427 Aggression
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20006
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20006 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18427
+=======
+53 Backstab (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +10 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=10 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=53
+=======
+2589 Backstab (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +20 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=20 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2589
+=======
+2590 Backstab (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +32 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=32 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2590
+=======
+2591 Backstab (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +46 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=46 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2591
+=======
+8721 Backstab (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +60 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=60 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8721
+=======
+11279 Backstab (Rank 6)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +90 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=90 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11279
+=======
+11280 Backstab (Rank 7)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +110 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=110 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11280
+=======
+11281 Backstab (Rank 8)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +140 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=140 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11281
+=======
+25300 Backstab (Rank 9)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +150 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=150 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25300
+=======
+462709 Backstab (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +10 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=10 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462709
+=======
+462710 Backstab (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +20 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=20 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462710
+=======
+462711 Backstab (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +32 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=32 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462711
+=======
+462712 Backstab (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +46 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=46 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462712
+=======
+462713 Backstab (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +60 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=60 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462713
+=======
+462714 Backstab (Rank 6)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +90 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=90 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462714
+=======
+462715 Backstab (Rank 7)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +110 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=110 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462715
+=======
+462716 Backstab (Rank 8)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +140 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=140 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462716
+=======
+462717 Backstab (Rank 9)
+school    physical
+defense   melee
+gcd       1 s
+cost      60 energy
+range     5 yd
+equip     needs a dagger
+attrs     refund on miss
+
+effect 1  normalised weapon damage +150 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=150 sp=1 target=[6,0]
+effect 2  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462717
+=======
+400009 Between the Eyes
+school    physical
+defense   ranged
+mechanic  mechanic 12
+cast      -1000 s
+cooldown  20 s (category)
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     20 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  53–81 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=67 variance=0.41791046 sp=1 target=[6,0]
+effect 2  a dummy effect to the caster
+          E_DUMMY base=0 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 mechanic=12 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400009
+=======
+400033 Between the Eyes
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400009 misc=399966 family=8 mask=0x0,0x0,0x0,0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400033
+=======
+400012 Blade Dance
+school    physical
+duration  10 s
+gcd       1 s
+cost      25 energy
+cost      1 combo points
+range     100 yd
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+effect 2  +10% parry chance
+          E_APPLY_AURA A_MOD_PARRY_PERCENT base=10 target=[1,0]
+effect 3  +0% physical damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 target=[1,0]
+effect 4  a dummy aura holding 4
+          E_APPLY_AURA A_DUMMY base=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400012
+=======
+400038 Blade Dance
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400012 misc=399966 family=8 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400038
+=======
+457351 Blade Dance
+school    physical
+duration  30 s
+
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 8 mask 0x0,0x40000,0x20000,0x80000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=8 mask=0x0,0x40000,0x20000,0x80000 target=[1,0]
+effect 2  SPELLMOD_THREAT +100% on family 8 mask 0x0,0x40000,0x20000,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=2 family=8 mask=0x0,0x40000,0x20000,0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457351
+=======
+13877 Blade Flurry
+school    physical
+duration  15 s
+cooldown  120 s
+gcd       1 s
+cost      25 energy
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +20% melee haste
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13877
+=======
+13715 Dual Wield Specialization
+school    physical
+attrs     passive
+labels    20
+
+effect 1  +50% off-hand damage
+          E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=50 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13715
+=======
+30816 Dual Wield Specialization (Rank 1)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +2% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=2 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30816
+=======
+30818 Dual Wield Specialization (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +4% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=4 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30818
+=======
+30819 Dual Wield Specialization (Rank 3)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +6% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=6 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30819
+=======
+30820 Dual Wield Specialization (Rank 4)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +8% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=8 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30820
+=======
+30821 Dual Wield Specialization (Rank 5)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +10% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=30821
+=======
+13742 Endurance
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COOLDOWN -60% on family 8 mask 0x60
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 misc=11 family=8 mask=0x60 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13742
+=======
+5277 Evasion
+school    physical
+duration  15 s
+cooldown  300 s (category)
+labels    20
+
+effect 1  +50% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5277
+=======
+15087 Evasion
+school    physical
+duration  15 s
+
+effect 1  +50% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15087
+=======
+1966 Feint (Rank 1)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  -800 threat to the enemy
+          E_THREAT base=-750 ppl=-5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1966
+=======
+6768 Feint (Rank 2)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  -1250 threat to the enemy
+          E_THREAT base=-1200 ppl=-5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6768
+=======
+8637 Feint (Rank 3)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  -2000 threat to the enemy
+          E_THREAT base=-1950 ppl=-5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8637
+=======
+11303 Feint (Rank 4)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  -3040 threat to the enemy
+          E_THREAT base=-3000 ppl=-5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11303
+=======
+25302 Feint (Rank 5)
+school    physical
+defense   melee
+cooldown  10 s (category)
+gcd       1 s
+cost      20 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  -4000 threat to the enemy
+          E_THREAT base=-4000 ppl=-5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25302
+=======
+1310711 Flawless Execution
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310711
+=======
+1776 Gouge (Rank 1)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  4 s
+cooldown  10 s (category)
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  10 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=10 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1776
+=======
+1777 Gouge (Rank 2)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  4 s
+cooldown  10 s (category)
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  20 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=20 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1777
+=======
+8629 Gouge (Rank 3)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  4 s
+cooldown  10 s (category)
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  32 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=32 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8629
+=======
+11285 Gouge (Rank 4)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  4 s
+cooldown  10 s (category)
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  55 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=55 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11285
+=======
+11286 Gouge (Rank 5)
+school    physical
+defense   melee
+mechanic  mechanic 14
+duration  4 s
+cooldown  10 s (category)
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  75 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=75 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 3  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11286
+=======
+14162 Improved Eviscerate
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DAMAGE +20% on family 8 mask 0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14162
+=======
+13754 Improved Kick
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1; tooltip says one named ability
+refs      18425 Silenced - Kick
+
+effect 1  casts 18425 Silenced - Kick on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=18425 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13754
+=======
+24434 Improved Kick
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -0.5 s on family 8 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=11 family=8 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24434
+=======
+13732 Improved Sinister Strike
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13732
+=======
+13743 Improved Sprint
+school    physical
+attrs     passive
+labels    20
+
+effect 1  casts 30918 Improved Sprint when the target is hit from family 8 mask 0x40
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=30918 family=8 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13743
+=======
+1766 Kick (Rank 1)
+school    physical
+defense   melee
+duration  5 s
+cooldown  10 s (category)
+gcd       1 s
+cost      25 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  15 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=15 sp=1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1766
+=======
+1767 Kick (Rank 2)
+school    physical
+defense   melee
+duration  5 s
+cooldown  10 s (category)
+gcd       1 s
+cost      25 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  30 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=30 sp=1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1767
+=======
+1768 Kick (Rank 3)
+school    physical
+defense   melee
+duration  5 s
+cooldown  10 s (category)
+gcd       1 s
+cost      25 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  45 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1768
+=======
+1769 Kick (Rank 4)
+school    physical
+defense   melee
+duration  5 s
+cooldown  10 s (category)
+gcd       1 s
+cost      25 energy
+range     5 yd
+attrs     refund on miss
+labels    20
+
+effect 1  80 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=80 sp=1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1769
+=======
+424919 Main Gauche
+school    physical
+defense   melee
+duration  5 s
+cooldown  15 s
+gcd       1 s
+cost      15 energy
+range     5 yd
+equip     needs a melee weapon
+charges   1
+attrs     refund on miss
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      462752 Main Gauche
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 chain=1 target=[6,0]
+effect 2  +100% parry chance
+          E_APPLY_AURA A_MOD_PARRY_PERCENT base=100 sp=1 target=[1,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 4  SPELLMOD_JUMP_TARGETS +0 on family 8 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=17 family=8 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424919
+=======
+424982 Main Gauche
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=424919 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424982
+=======
+462752 Main Gauche
+school    nature
+defense   magic
+duration  20 s
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 8 mask 0x2,0x1,0x0,0x20
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=8 mask=0x2,0x1,0x0,0x20 target=[1,0]
+effect 2  SPELLMOD_THREAT +50% on family 8 mask 0x2,0x1,0x0,0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=2 family=8 mask=0x2,0x1,0x0,0x20 target=[1,0]
+effect 3  SPELLMOD_DAMAGE +50% on family 8 mask 0x20002,0x1,0x0,0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=8 mask=0x20002,0x1,0x0,0x20 target=[1,0]
+effect 4  casts 1218154 Strikes of the Sinister to the caster
+          E_TRIGGER_SPELL base=0 trigger=1218154 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462752
+=======
+1289695 Main Gauche
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+labels    20
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 chain=1 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1289695
+=======
+1289849 Main Gauche
+school    physical
+attrs     passive
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 trigger=1289695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1289849
+=======
+425012 Poisoned Knife
+school    physical
+defense   melee
+cooldown  6 s
+gcd       1 s
+cost      25 energy
+range     25 yd
+equip     needs a melee weapon
+attrs     refund on miss, suppresses weapon procs
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 2  a dummy effect holding 1 to the enemy
+          E_DUMMY base=1 target=[6,0]
+effect 3  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=425012
+=======
+425013 Poisoned Knife
+school    physical
+defense   melee
+range     100 yd
+equip     needs a melee weapon
+attrs     not a proc
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425013
+=======
+425100 Poisoned Knife
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425012 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425100
+=======
+1224716 Puncturing Wounds
+school    physical
+attrs     passive, can proc from procs
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; 45% chance, from effect 2; tooltip says on a crit
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +30% on family 8 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 misc=7 family=8 mask=0x4 target=[1,0]
+effect 2  casts 1310710 Improved Backstab on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=45 trigger=1310710 target=[1,0]
+effect 3  SPELLMOD_CRITICAL_CHANCE +15% on family 8 mask 0x0,0x6
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=7 family=8 mask=0x0,0x6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1224716
+=======
+398196 Quick Draw
+school    physical
+defense   ranged
+duration  6 s
+cooldown  10 s
+gcd       1 s
+cost      25 energy
+range     20 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=398196
+=======
+398197 Quick Draw
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=398196 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=398197
+=======
+14251 Riposte
+school    physical
+defense   melee
+duration  6 s
+cooldown  6 s
+cooldown  1 s (category)
+cost      10 energy
+range     5 yd
+
+effect 1  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DISARM base=0 sp=1 mechanic=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14251
+=======
+424785 Saber Slash
+school    physical
+defense   melee
+duration  12 s
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+stack     up to 3
+attrs     refund on miss
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+effect 3  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+effect 4  5 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=2000ms mechanic=15 target=[6,0]
+effect 5  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=33 family=8 mask=0x2,0x1,0x0,0x4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=424785
+=======
+424979 Saber Slash
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=424785 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424979
+=======
+5938 Shiv
+school    physical
+defense   melee
+gcd       1 s
+cost      20 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss, cannot crit
+labels    20
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5938
+=======
+424799 Shiv
+school    physical
+defense   melee
+gcd       1 s
+cost      20 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss, suppresses weapon procs
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 2  a dummy effect holding 1 to the enemy
+          E_DUMMY base=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=424799
+=======
+424800 Shiv
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+attrs     not a proc
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424800
+=======
+18425 Silenced - Kick
+school    physical
+mechanic  mechanic 9
+duration  2 s
+range     50000 yd
+stance    Shadowform
+labels    20
+
+effect 1  silences to the enemy
+          E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18425
+=======
+1752 Sinister Strike (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +3 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=3 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1752
+=======
+1757 Sinister Strike (Rank 2)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +6 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=6 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1757
+=======
+1758 Sinister Strike (Rank 3)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +10 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=10 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1758
+=======
+1759 Sinister Strike (Rank 4)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +15 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=15 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1759
+=======
+1760 Sinister Strike (Rank 5)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +22 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=22 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1760
+=======
+8621 Sinister Strike (Rank 6)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +33 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=33 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8621
+=======
+11293 Sinister Strike (Rank 7)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +52 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=52 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11293
+=======
+11294 Sinister Strike (Rank 8)
+school    physical
+defense   melee
+gcd       1 s
+cost      45 energy
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    20
+
+effect 1  normalised weapon damage +68 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=68 sp=1 chain=1 target=[6,0]
+effect 2  restores 1 combo point to the caster
+          E_ENERGIZE base=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11294
+=======
+14873 Sinister Strike
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage in the weapon's own school +49 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14873
+=======
+15581 Sinister Strike
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage in the weapon's own school +147 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=3 ppl=3.6 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15581
+=======
+15667 Sinister Strike
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage in the weapon's own school +98 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=2 ppl=2.4 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15667
+=======
+19472 Sinister Strike
+school    physical
+defense   melee
+range     5 yd
+
+effect 1  weapon damage in the weapon's own school +49 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19472
+=======
+1213441 Sinister Strike
+school    physical
+defense   melee
+range     5 yd
+equip     needs a melee weapon
+
+effect 1  weapon damage in the weapon's own school +49 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1213441
+=======
+2983 Sprint (Rank 1)
+school    physical
+duration  15 s
+cooldown  300 s (category)
+labels    20
+
+effect 1  +50% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2983
+=======
+8696 Sprint (Rank 2)
+school    physical
+duration  15 s
+cooldown  300 s (category)
+labels    20
+
+effect 1  +60% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=60 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8696
+=======
+11305 Sprint (Rank 3)
+school    physical
+duration  15 s
+cooldown  300 s (category)
+labels    20
+
+effect 1  +70% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=70 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11305
+=======
+1218154 Strikes of the Sinister
+school    physical
+defense   magic
+duration  10 s
+
+effect 1  SPELLMOD_JUMP_TARGETS +1 on family 8 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=17 family=8 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218154

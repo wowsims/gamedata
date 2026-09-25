@@ -1,0 +1,2003 @@
+1277455 Confounding Flash
+school    holy
+defense   magic
+mechanic  mechanic 2
+duration  3 s
+cast      0.5 s
+cooldown  120 s
+cost      3% of maximum mana
+stance exclude Shadowform
+targets   up to 5
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CONFUSE base=0 amplitude=1 target=[18,16]
+
+https://www.wowhead.com/forever/spell=1277455
+=======
+1277456 Contingency Plan (Rank 1)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  25 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277456
+=======
+1277457 Contingency Plan (Rank 2)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  40 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=40 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277457
+=======
+1277458 Contingency Plan (Rank 3)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  56 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=56 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277458
+=======
+1277459 Contingency Plan (Rank 4)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  102 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=102 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277459
+=======
+1277460 Contingency Plan (Rank 5)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+attrs     periodic can crit
+labels    18
+
+effect 1  134 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=134 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277460
+=======
+1277462 Contingency Plan (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+cooldown  600 s (category)
+gcd       1.5 s
+range     30 yd
+stance    Spirit of Redemption
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1277463 Contingency Plan, 1277456 Contingency Plan
+
+effect 1  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+effect 2  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277462
+=======
+1277463 Contingency Plan (Rank 1)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+labels    18
+
+effect 1  absorbs 155 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=155 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277463
+=======
+1277464 Contingency Plan (Rank 2)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+labels    18
+
+effect 1  absorbs 290 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=290 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277464
+=======
+1277465 Contingency Plan (Rank 3)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+labels    18
+
+effect 1  absorbs 467 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=467 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277465
+=======
+1277466 Contingency Plan (Rank 5)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+labels    18
+
+effect 1  absorbs 926 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=926 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277466
+=======
+1277467 Contingency Plan (Rank 4)
+school    holy
+defense   magic
+duration  15 s
+range     50000 yd
+labels    18
+
+effect 1  absorbs 596 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=596 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277467
+=======
+1277634 Contingency Plan (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+cooldown  600 s (category)
+gcd       1.5 s
+range     30 yd
+stance    Spirit of Redemption
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1277464 Contingency Plan, 1277457 Contingency Plan
+
+effect 1  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+effect 2  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277634
+=======
+1277638 Contingency Plan (Rank 3)
+school    holy
+defense   magic
+duration  30 s
+cooldown  600 s (category)
+gcd       1.5 s
+range     30 yd
+stance    Spirit of Redemption
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1277465 Contingency Plan, 1277458 Contingency Plan
+
+effect 1  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+effect 2  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277638
+=======
+1277639 Contingency Plan (Rank 4)
+school    holy
+defense   magic
+duration  30 s
+cooldown  600 s (category)
+gcd       1.5 s
+range     30 yd
+stance    Spirit of Redemption
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1277467 Contingency Plan, 1277459 Contingency Plan
+
+effect 1  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+effect 2  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277639
+=======
+1277640 Contingency Plan (Rank 5)
+school    holy
+defense   magic
+duration  30 s
+cooldown  600 s (category)
+gcd       1.5 s
+range     30 yd
+stance    Spirit of Redemption
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1277466 Contingency Plan, 1277460 Contingency Plan
+
+effect 1  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+effect 2  a dummy aura holding 35 to the friendly target
+          E_APPLY_AURA A_DUMMY base=35 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1277640
+=======
+527 Dispel Magic (Rank 1)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      18% of maximum mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=527
+=======
+988 Dispel Magic (Rank 2)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      18% of maximum mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  dispels 2 magic effect to the target
+          E_DISPEL base=2 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=988
+=======
+15090 Dispel Magic
+school    holy
+defense   magic
+gcd       1.5 s
+cost      75 mana
+range     30 yd
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=15090
+=======
+17201 Dispel Magic
+school    holy
+defense   magic
+gcd       1.5 s
+cost      75 mana
+range     30 yd
+
+effect 1  dispels 1 magic effect to the friendly target
+          E_DISPEL base=1 misc=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=17201
+=======
+23859 Dispel Magic
+school    holy
+defense   magic
+gcd       1.5 s
+cost      75 mana
+range     100 yd
+
+effect 1  dispels 1 magic effect to the friendly target
+          E_DISPEL base=1 misc=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=23859
+=======
+27609 Dispel Magic (Rank 2)
+school    holy
+defense   magic
+gcd       1.5 s
+cost      18% of maximum mana
+range     30 yd
+stance    Shadowform
+
+effect 1  dispels 2 magic effect to the target
+          E_DISPEL base=2 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=27609
+=======
+1236156 Dispel Magic (Rank 2)
+school    holy
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+range     30 yd
+stance    Shadowform
+
+effect 1  dispels 2 magic effect to the target
+          E_DISPEL base=2 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=1236156
+=======
+431622 Divine Aegis
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      431624 Divine Aegis
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431622
+=======
+431624 Divine Aegis
+school    holy
+duration  12 s
+range     50000 yd
+attrs     can proc from procs
+labels    18
+
+effect 1  absorbs 2 every school damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=2 misc=127 target=[21,0]
+
+https://www.wowhead.com/forever/spell=431624
+=======
+14752 Divine Spirit (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      285 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +17 spirit to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=17 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=14752
+=======
+14818 Divine Spirit (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      420 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +23 spirit to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=23 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=14818
+=======
+14819 Divine Spirit (Rank 3)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      785 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +33 spirit to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=33 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=14819
+=======
+16875 Divine Spirit (Rank 3)
+school    holy
+defense   magic
+duration  1800 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  +40 spirit to every ally around the caster
+          E_APPLY_AURA A_MOD_STAT base=40 misc=4 target=[22,30]
+
+https://www.wowhead.com/forever/spell=16875
+=======
+27841 Divine Spirit (Rank 4)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      970 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +40 spirit to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=40 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=27841
+=======
+2651 Elune's Grace
+school    holy
+defense   magic
+duration  15 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      3% of maximum mana
+stance    Shadowform
+charges   3
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_ATTACKER_MELEE_HIT_CHANCE base=-50 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_ATTACKER_RANGED_HIT_CHANCE base=-50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2651
+=======
+459706 Elune's Grace
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19293 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459706
+=======
+13896 Feedback (Rank 1)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  180 s (category)
+gcd       1.5 s
+cost      55 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      6347 Feedback
+
+effect 1  casts 6347 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13896
+=======
+19271 Feedback (Rank 2)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  180 s (category)
+gcd       1.5 s
+cost      100 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      19267 Feedback
+
+effect 1  casts 19267 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=19267 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19271
+=======
+19273 Feedback (Rank 3)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  180 s (category)
+gcd       1.5 s
+cost      140 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      19268 Feedback
+
+effect 1  casts 19268 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=19268 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19273
+=======
+19274 Feedback (Rank 4)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  180 s (category)
+gcd       1.5 s
+cost      190 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      19269 Feedback
+
+effect 1  casts 19269 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=19269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19274
+=======
+19275 Feedback (Rank 5)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  180 s (category)
+gcd       1.5 s
+cost      230 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      19270 Feedback
+
+effect 1  casts 19270 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=19270 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19275
+=======
+447549 Feedback (Rank 5)
+school    shadow
+defense   magic
+duration  35 s
+cooldown  180 s (category)
+gcd       1.5 s
+stance    Shadowform
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      19270 Feedback
+
+effect 1  casts 19270 Feedback on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=19270 target=[1,0]
+
+https://www.wowhead.com/forever/spell=447549
+=======
+459703 Feedback
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19275 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459703
+=======
+27828 Focused Casting
+school    holy
+defense   magic
+duration  6 s
+labels    18
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 6 mask 0x44b63e90,0x100400,0x10080,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=6 mask=0x44b63e90,0x100400,0x10080,0x400 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=20 misc=26 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27828
+=======
+18544 Force of Will (Rank 1)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 6 mask 0x8582090,0x88002,0x10000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=7 family=6 mask=0x8582090,0x88002,0x10000,0x400 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +1% on family 6 mask 0x582090,0x8a002,0x10000,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 family=6 mask=0x582090,0x8a002,0x10000,0x400 target=[1,0]
+effect 3  SPELLMOD_DOT +1% on family 6 mask 0xa08000,0x2400,0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=6 mask=0xa08000,0x2400,0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18544
+=======
+18547 Force of Will (Rank 2)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 6 mask 0x8582090,0x88402,0x10000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=7 family=6 mask=0x8582090,0x88402,0x10000,0x400 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +2% on family 6 mask 0x582090,0x8a002,0x10000,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=6 mask=0x582090,0x8a002,0x10000,0x400 target=[1,0]
+effect 3  SPELLMOD_DOT +2% on family 6 mask 0xa08000,0x2000,0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=6 mask=0xa08000,0x2000,0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18547
+=======
+18548 Force of Will (Rank 3)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 6 mask 0x8582090,0x88402,0x10000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=6 mask=0x8582090,0x88402,0x10000,0x400 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 6 mask 0x582090,0x8a002,0x10000,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=6 mask=0x582090,0x8a002,0x10000,0x400 target=[1,0]
+effect 3  SPELLMOD_DOT +3% on family 6 mask 0xa08000,0x2000,0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=6 mask=0xa08000,0x2000,0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18548
+=======
+18549 Force of Will (Rank 4)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +4% on family 6 mask 0x8582090,0x88002,0x10000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=7 family=6 mask=0x8582090,0x88002,0x10000,0x400 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +4% on family 6 mask 0x582090,0x8a002,0x10000,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=6 mask=0x582090,0x8a002,0x10000,0x400 target=[1,0]
+effect 3  SPELLMOD_DOT +4% on family 6 mask 0xa08000,0x2400,0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 misc=22 family=6 mask=0xa08000,0x2400,0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18549
+=======
+18550 Force of Will (Rank 5)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 6 mask 0x8582090,0x88002,0x10000,0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=6 mask=0x8582090,0x88002,0x10000,0x400 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +5% on family 6 mask 0x582090,0x8a002,0x10000,0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 family=6 mask=0x582090,0x8a002,0x10000,0x400 target=[1,0]
+effect 3  SPELLMOD_DOT +5% on family 6 mask 0xa08000,0x2400,0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=6 mask=0xa08000,0x2400,0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18550
+=======
+1309957 Holy Precision
+school    holy
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +18% on family 6 mask 0xc8500080,0x8001
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=18 misc=16 family=6 mask=0xc8500080,0x8001 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1309957
+=======
+14747 Improved Inner Fire
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_ALL_EFFECTS +45% on family 6 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=45 misc=8 family=6 mask=0x2 target=[1,0]
+effect 2  SPELLMOD_CHARGES +12 on family 6 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=12 misc=4 family=6 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14747
+=======
+14750 Improved Mana Burn
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_CASTING_TIME -1 s on family 6 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=10 family=6 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14750
+=======
+14749 Improved Power Word: Fortitude (Rank 1)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_ALL_EFFECTS +15% on family 6 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=6 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14749
+=======
+14767 Improved Power Word: Fortitude (Rank 2)
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_ALL_EFFECTS +30% on family 6 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=8 family=6 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14767
+=======
+14748 Improved Power Word: Shield
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_EFFECT1 +20% on family 6 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=3 family=6 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14748
+=======
+24191 Improved Power Word: Shield
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +35 on family 6 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=35 misc=8 family=6 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24191
+=======
+468278 Improved Power Word: Shield
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +25 on family 6 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=8 family=6 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468278
+=======
+436951 Increased Fortitude
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COST -50% on family 6 mask 0x0,0x0,0x0,0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=6 mask=0x0,0x0,0x0,0x20000000 target=[1,0]
+effect 2  SPELLMOD_DURATION +50% on family 6 mask 0x0,0x0,0x0,0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=6 mask=0x0,0x0,0x0,0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436951
+=======
+588 Inner Fire (Rank 1)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      30 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +315 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=315 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=588
+=======
+602 Inner Fire (Rank 3)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      105 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +720 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=720 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=602
+=======
+1006 Inner Fire (Rank 4)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      165 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +945 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=945 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1006
+=======
+7128 Inner Fire (Rank 2)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      65 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +495 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=495 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7128
+=======
+10951 Inner Fire (Rank 5)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      235 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +1170 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=1170 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10951
+=======
+10952 Inner Fire (Rank 6)
+school    holy
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      315 mana
+stance    Shadowform
+charges   20
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +1395 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=1395 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10952
+=======
+14751 Inner Focus
+school    physical
+defense   magic
+duration  permanent
+cooldown  180 s
+stance    Shadowform
+charges   1
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100% on family 6 mask 0xd4f7fffb,0x10940436,0x5010200,0x10000490
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0xd4f7fffb,0x10940436,0x5010200,0x10000490 target=[1,0]
+effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 6 mask 0xdb54be90,0x98434,0x0,0x10200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=7 family=6 mask=0xdb54be90,0x98434,0x0,0x10200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14751
+=======
+1706 Levitate
+school    holy
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      100 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_FEATHER_FALL base=0 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_HOVER base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_WATER_WALK base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1706
+=======
+461329 Levitate
+school    holy
+duration  permanent
+gcd       1.5 s
+stance    Shadowform
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_FEATHER_FALL base=0 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_HOVER base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_WATER_WALK base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461329
+=======
+8129 Mana Burn (Rank 1)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_POWER_BURN base=197 ppl=1.5 variance=0.060913704 amplitude=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8129
+=======
+8131 Mana Burn (Rank 2)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_POWER_BURN base=319 ppl=1.3 variance=0.06269593 amplitude=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8131
+=======
+10874 Mana Burn (Rank 3)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      185 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_POWER_BURN base=455 ppl=1.6 variance=0.057142857 amplitude=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10874
+=======
+10875 Mana Burn (Rank 4)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      225 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_POWER_BURN base=593 ppl=1.9 variance=0.05733558 amplitude=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10875
+=======
+10876 Mana Burn (Rank 5)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      270 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_POWER_BURN base=759 ppl=2.1 variance=0.05533597 amplitude=0.5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10876
+=======
+14520 Mental Agility
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COST -10% on family 6 mask 0x8251c1eb,0x30,0x0,0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=6 mask=0x8251c1eb,0x30,0x0,0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14520
+=======
+402004 Pain Suppression
+school    holy
+defense   magic
+duration  8 s
+cooldown  180 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     40 yd
+
+effect 1  -40% every school damage taken to the friendly target
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-40 misc=127 target=[21,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_DISPEL_RESIST base=65 target=[21,0]
+
+https://www.wowhead.com/forever/spell=402004
+=======
+402839 Pain Suppression
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402004 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402839
+=======
+402174 Penance (Rank 1)
+school    holy
+cooldown  12 s (category)
+gcd       1.5 s
+cost      100 mana
+range     36 yd
+excluded caster aura 15473 Shadowform
+attrs     channeled
+labels    18
+refs      402284 Penance, 402289 Penance, 402261 Penance
+
+effect 1  a dummy effect to the target
+          E_DUMMY base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=402174
+=======
+402261 Penance (Rank 1)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+effect 2  casts 402284 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=402284 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402261
+=======
+402277 Penance (Rank 1)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+effect 2  casts 402289 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=402289 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402277
+=======
+402284 Penance (Rank 1)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      402261 Penance
+
+effect 1  81 holy damage to target 77 (+0.285 spell power)
+          E_SCHOOL_DAMAGE base=81 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=402284
+=======
+402289 Penance (Rank 1)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      402277 Penance
+
+effect 1  184 healing to target 77 (+0.285 spell power)
+          E_HEAL base=184 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=402289
+=======
+1240720 Penance (Rank 2)
+school    holy
+cooldown  12 s (category)
+gcd       1.5 s
+cost      185 mana
+range     36 yd
+excluded caster aura 15473 Shadowform
+attrs     channeled
+labels    18
+refs      1240727 Penance, 1240723 Penance, 402261 Penance
+
+effect 1  a dummy effect to the target
+          E_DUMMY base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=1240720
+=======
+1240721 Penance (Rank 3)
+school    holy
+cooldown  12 s (category)
+gcd       1.5 s
+cost      270 mana
+range     36 yd
+excluded caster aura 15473 Shadowform
+attrs     channeled
+labels    18
+refs      1240730 Penance, 1240724 Penance, 402261 Penance
+
+effect 1  a dummy effect to the target
+          E_DUMMY base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=1240721
+=======
+1240723 Penance (Rank 2)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1240732 Penance
+
+effect 1  291 healing to target 77 (+0.285 spell power)
+          E_HEAL base=291 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1240723
+=======
+1240724 Penance (Rank 3)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1240733 Penance
+
+effect 1  482 healing to target 77 (+0.285 spell power)
+          E_HEAL base=482 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1240724
+=======
+1240727 Penance (Rank 2)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1240734 Penance
+
+effect 1  113 holy damage to target 77 (+0.285 spell power)
+          E_SCHOOL_DAMAGE base=113 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1240727
+=======
+1240730 Penance (Rank 3)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1240736 Penance
+
+effect 1  180 holy damage to target 77 (+0.285 spell power)
+          E_SCHOOL_DAMAGE base=180 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1240730
+=======
+1240732 Penance (Rank 2)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+effect 2  casts 1240723 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1240723 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240732
+=======
+1240733 Penance (Rank 3)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+effect 2  casts 1240724 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1240724 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240733
+=======
+1240734 Penance (Rank 2)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+effect 2  casts 1240727 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1240727 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240734
+=======
+1240736 Penance (Rank 3)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+effect 2  casts 1240730 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1240730 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1240736
+=======
+1316991 Penance (Rank 4)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1316992 Penance
+
+effect 1  673 healing to target 77 (+0.285 spell power)
+          E_HEAL base=673 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1316991
+=======
+1316992 Penance (Rank 4)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+effect 2  casts 1316991 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1316991 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1316992
+=======
+1316993 Penance (Rank 4)
+school    holy
+defense   magic
+range     40 yd
+attrs     not a proc
+labels    18
+refs      1316994 Penance
+
+effect 1  131 holy damage to target 77 (+0.285 spell power)
+          E_SCHOOL_DAMAGE base=131 sp=0.285 target=[77,0]
+
+https://www.wowhead.com/forever/spell=1316993
+=======
+1316994 Penance (Rank 4)
+school    holy
+duration  2 s
+range     40 yd
+attrs     channeled
+labels    18
+
+effect 1  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+effect 2  casts 1316993 Penance every 1 s (2 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=1316993 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1316994
+=======
+1316995 Penance (Rank 4)
+school    holy
+cooldown  12 s (category)
+gcd       1.5 s
+cost      355 mana
+range     36 yd
+excluded caster aura 15473 Shadowform
+attrs     channeled
+labels    18
+refs      1316993 Penance, 1316991 Penance, 402261 Penance
+
+effect 1  a dummy effect to the target
+          E_DUMMY base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=1316995
+=======
+10060 Power Infusion
+school    holy
+duration  15 s
+cooldown  180 s
+cost      20% of maximum mana
+range     30 yd
+labels    18
+
+effect 1  +20% healing done to the friendly target
+          E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=20 sp=1 misc=126 target=[21,0]
+effect 2  +20% holy+fire+nature+frost+shadow+arcane damage done to the friendly target
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 sp=1 misc=126 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10060
+=======
+425205 Power Word: Barrier
+school    holy
+duration  permanent
+gcd       1.5 s
+
+effect 1  -25% every school damage taken to the target
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-25 misc=127 target=[25,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_REDUCE_PUSHBACK base=100 misc=127 target=[25,0]
+
+https://www.wowhead.com/forever/spell=425205
+=======
+425207 Power Word: Barrier
+school    holy
+defense   magic
+duration  10 s
+cooldown  180 s
+gcd       1.5 s
+cost      4% of maximum mana
+range     30 yd
+excluded caster aura 15473 Shadowform
+refs      425205 Power Word: Barrier
+
+effect 1  unrecognised shape
+          E_CREATE_AREATRIGGER base=5 misc=30829 target=[87,0]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_DUMMY base=0 radius=5 target=[87,0]
+
+https://www.wowhead.com/forever/spell=425207
+=======
+1243 Power Word: Fortitude (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +4 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=4 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1243
+=======
+1244 Power Word: Fortitude (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      155 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +10 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=10 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1244
+=======
+1245 Power Word: Fortitude (Rank 3)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      400 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +26 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=26 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1245
+=======
+2791 Power Word: Fortitude (Rank 4)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      745 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +42 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=42 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2791
+=======
+10937 Power Word: Fortitude (Rank 5)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1170 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +56 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=56 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10937
+=======
+10938 Power Word: Fortitude (Rank 6)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1695 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +70 stamina to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=70 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10938
+=======
+23947 Power Word: Fortitude (Rank 5)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1170 mana
+range     30 yd
+stance    Shadowform
+
+effect 1  +43 stamina to the target
+          E_APPLY_AURA A_MOD_STAT base=43 misc=2 target=[25,0]
+
+https://www.wowhead.com/forever/spell=23947
+=======
+23948 Power Word: Fortitude (Rank 6)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1695 mana
+range     30 yd
+stance    Shadowform
+
+effect 1  +54 stamina to the target
+          E_APPLY_AURA A_MOD_STAT base=54 misc=2 target=[25,0]
+
+https://www.wowhead.com/forever/spell=23948
+=======
+17 Power Word: Shield (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      45 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      14748 Improved Power Word: Shield, 6788 Weakened Soul
+
+effect 1  absorbs 48 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=44 ppl=0.8 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=17
+=======
+592 Power Word: Shield (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      80 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 92 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=86 ppl=1.2 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=592
+=======
+600 Power Word: Shield (Rank 3)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      130 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 162 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=154 ppl=1.6 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=600
+=======
+3747 Power Word: Shield (Rank 4)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      175 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 236 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=226 ppl=2 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=3747
+=======
+6065 Power Word: Shield (Rank 5)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      210 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 302 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=291 ppl=2.3 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=6065
+=======
+6066 Power Word: Shield (Rank 6)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      250 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 381 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=368 ppl=2.6 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=6066
+=======
+10898 Power Word: Shield (Rank 7)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      300 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 485 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=470 ppl=3 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10898
+=======
+10899 Power Word: Shield (Rank 8)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      355 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 608 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=591 ppl=3.4 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10899
+=======
+10900 Power Word: Shield (Rank 9)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      425 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 768 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=749 ppl=3.9 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10900
+=======
+10901 Power Word: Shield (Rank 10)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      500 mana
+range     40 yd
+stance    Shadowform
+labels    18
+refs      6788 Weakened Soul
+
+effect 1  absorbs 928 every school damage to the target's raid (at level 60, +0.1 spell power)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=928 ppl=4.3 sp=0.1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10901
+=======
+27607 Power Word: Shield (Rank 10)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      500 mana
+range     40 yd
+stance    Shadowform
+refs      6788 Weakened Soul
+
+effect 1  absorbs 942 every school damage to the target's raid (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=942 ppl=4.3 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=27607
+=======
+1236154 Power Word: Shield (Rank 10)
+school    holy
+defense   magic
+mechanic  mechanic 19
+duration  30 s
+cooldown  4 s (category)
+gcd       1.5 s
+range     40 yd
+stance    Shadowform
+refs      6788 Weakened Soul
+
+effect 1  absorbs 16888.65–19627.35 every school damage to the target's raid (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=18000 ppl=4.3 variance=0.15 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1236154
+=======
+1309969 Power in Light
+school    physical
+attrs     passive
+labels    18
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1309969
+=======
+21562 Prayer of Fortitude (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      2600 mana
+range     40 yd
+stance    Shadowform
+labels    18
+
+effect 1  +56 stamina to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=56 misc=2 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=21562
+=======
+21564 Prayer of Fortitude (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      3400 mana
+range     40 yd
+stance    Shadowform
+labels    18
+
+effect 1  +70 stamina to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=70 misc=2 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=21564
+=======
+450086 Prayer of Fortitude (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      3400 mana
+range     40 yd
+stance    Shadowform
+
+effect 1  +43 stamina to every ally around the caster
+          E_APPLY_AURA A_MOD_STAT base=43 misc=2 radius=20 target=[30,0]
+
+https://www.wowhead.com/forever/spell=450086
+=======
+27681 Prayer of Spirit (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1940 mana
+range     40 yd
+stance    Shadowform
+labels    18
+
+effect 1  +40 spirit to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=40 misc=4 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=27681
+=======
+425280 Renewed Hope
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 2  a dummy aura holding -5000
+          E_APPLY_AURA A_DUMMY base=-5000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425280
+=======
+425303 Renewed Hope
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425280 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425303
+=======
+9484 Shackle Undead (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 20
+duration  30 s
+cast      1.5 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+stance    Shadowform
+targets   up to 1
+labels    18
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9484
+=======
+9485 Shackle Undead (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 20
+duration  40 s
+cast      1.5 s
+gcd       1.5 s
+cost      120 mana
+range     30 yd
+stance    Shadowform
+targets   up to 1
+labels    18
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9485
+=======
+10955 Shackle Undead (Rank 3)
+school    holy
+defense   magic
+mechanic  mechanic 20
+duration  50 s
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+stance    Shadowform
+targets   up to 1
+labels    18
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10955
+=======
+14523 Silent Resolve
+school    physical
+attrs     passive
+labels    18
+
+effect 1  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=2 target=[1,0]
+effect 2  -15% stun duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-15 misc=12 target=[1,0]
+effect 3  -15% fear duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-15 misc=5 target=[1,0]
+effect 4  -15% silence duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-15 misc=9 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14523
+=======
+402000 Soul Warding
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COOLDOWN -4 s on family 6 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=6 mask=0x1 target=[1,0]
+effect 2  SPELLMOD_COST -15% on family 6 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=6 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402000
+=======
+10797 Starshards (Rank 1)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  27 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=27 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10797
+=======
+19296 Starshards (Rank 2)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  50 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=50 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19296
+=======
+19299 Starshards (Rank 3)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  88 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=88 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19299
+=======
+19302 Starshards (Rank 4)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      190 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  127 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=127 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19302
+=======
+19303 Starshards (Rank 5)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      245 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  178 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=178 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19303
+=======
+19304 Starshards (Rank 6)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      300 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  240 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=240 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19304
+=======
+19305 Starshards (Rank 7)
+school    arcane
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      350 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  300 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=300 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=19305
+=======
+22822 Starshards
+school    arcane
+defense   magic
+duration  6 s
+gcd       1.5 s
+cost      8 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled
+
+effect 1  180 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=3 ppl=3 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=22822
+=======
+22823 Starshards
+school    arcane
+defense   magic
+duration  6 s
+gcd       1.5 s
+cost      8 mana
+range     30 yd
+stance    Shadowform
+attrs     channeled
+
+effect 1  300 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 ppl=5 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=22823
+=======
+27636 Starshards
+school    arcane
+defense   magic
+duration  6 s
+cost      500 mana
+range     100 yd
+stance    Shadowform
+attrs     channeled
+
+effect 1  500 arcane damage every 1 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=500 sp=0.167 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=27636
+=======
+459705 Starshards
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19305 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459705
+=======
+1225132 Twin Disciplines
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_DAMAGE +5% on family 6 mask 0x19480020,0x10,0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=6 mask=0x19480020,0x10,0x0,0x200000 target=[1,0]
+effect 2  SPELLMOD_DOT +5% on family 6 mask 0x8060,0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=22 family=6 mask=0x8060,0x0,0x0,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1225132

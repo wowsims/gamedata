@@ -1,0 +1,1055 @@
+16176 Ancestral Healing
+school    physical
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count, heals only
+refs      16177 Ancestral Fortitude
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 trigger=16177 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16176
+=======
+2008 Ancestral Spirit (Rank 1)
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      90% of maximum mana
+range     30 yd
+labels    24, 6316
+
+effect 1  unrecognised shape
+          E_329 base=65 sp=1 misc=120 target=[0,0]
+
+https://www.wowhead.com/forever/spell=2008
+=======
+20609 Ancestral Spirit (Rank 2)
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      90% of maximum mana
+range     30 yd
+labels    24, 6316
+
+effect 1  unrecognised shape
+          E_329 base=150 sp=1 misc=260 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20609
+=======
+20610 Ancestral Spirit (Rank 3)
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      90% of maximum mana
+range     30 yd
+labels    24, 6316
+
+effect 1  unrecognised shape
+          E_329 base=250 sp=1 misc=420 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20610
+=======
+20776 Ancestral Spirit (Rank 4)
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      90% of maximum mana
+range     30 yd
+labels    24, 6316
+
+effect 1  unrecognised shape
+          E_329 base=400 sp=1 misc=600 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20776
+=======
+20777 Ancestral Spirit (Rank 5)
+school    nature
+defense   magic
+cast      10 s
+gcd       1.5 s
+cost      90% of maximum mana
+range     30 yd
+labels    24, 6316
+
+effect 1  unrecognised shape
+          E_329 base=600 sp=1 misc=800 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20777
+=======
+1064 Chain Heal (Rank 1)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      260 mana
+range     40 yd
+labels    24
+
+effect 1  244.65117–281.34885 healing to the chain-heal target (at level 60, +0.714 spell power)
+          E_HEAL base=251 ppl=2.5 variance=0.13953489 sp=0.714 chain=3 target=[45,0]
+
+https://www.wowhead.com/forever/spell=1064
+=======
+10622 Chain Heal (Rank 2)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      315 mana
+range     40 yd
+labels    24
+
+effect 1  324.93103–373.06897 healing to the chain-heal target (at level 60, +0.714 spell power)
+          E_HEAL base=335 ppl=2.8 variance=0.13793103 sp=0.714 chain=3 target=[45,0]
+
+https://www.wowhead.com/forever/spell=10622
+=======
+10623 Chain Heal (Rank 3)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      405 mana
+range     40 yd
+labels    24
+
+effect 1  472.55255–539.44745 healing to the chain-heal target (at level 60, +0.714 spell power)
+          E_HEAL base=490 ppl=3.3 variance=0.13220339 sp=0.714 chain=3 target=[45,0]
+
+https://www.wowhead.com/forever/spell=10623
+=======
+2870 Cure Disease
+school    nature
+defense   magic
+gcd       1.5 s
+cost      9% of maximum mana
+range     30 yd
+labels    24
+
+effect 1  dispels 1 disease effect to the friendly target
+          E_DISPEL base=1 misc=3 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2870
+=======
+526 Cure Poison
+school    nature
+defense   magic
+gcd       1.5 s
+cost      9% of maximum mana
+range     30 yd
+labels    24
+
+effect 1  dispels 1 poison effect to the friendly target
+          E_DISPEL base=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=526
+=======
+8170 Disease Cleansing Totem
+school    nature
+defense   magic
+duration  120 s
+gcd       1 s
+cost      10% of maximum mana
+labels    24
+refs      8171 Disease Cleansing Totem Effect, 8172 Disease Cleansing Totem Passive
+
+effect 1  summons creature 5924 to target 42
+          E_SUMMON base=5 misc=5924 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=8170
+=======
+379 Earth Shield
+school    nature
+range     50000 yd
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  0 healing to the friendly target
+          E_HEAL base=0 target=[21,0]
+
+https://www.wowhead.com/forever/spell=379
+=======
+974 Earth Shield (Rank 1)
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     40 yd
+charges   6
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 150 to the friendly target
+          E_APPLY_AURA A_DUMMY base=150 sp=1 target=[21,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_REDUCE_PUSHBACK base=30 misc=126 target=[21,0]
+
+https://www.wowhead.com/forever/spell=974
+=======
+408514 Earth Shield
+school    nature
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      5% of maximum mana
+range     40 yd
+charges   9
+icd       3.5 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 28 to the friendly target
+          E_APPLY_AURA A_DUMMY base=28 target=[21,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_REDUCE_PUSHBACK base=30 misc=126 target=[21,0]
+effect 3  a dummy aura holding 1 to the friendly target
+          E_APPLY_AURA A_DUMMY base=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408514
+=======
+408519 Earth Shield
+school    nature
+range     50000 yd
+
+effect 1  1 healing to the friendly target
+          E_HEAL base=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408519
+=======
+409947 Earth Shield
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408514 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409947
+=======
+16181 Healing Focus
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x1c0,0x0,0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x1c0,0x0,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16181
+=======
+29189 Healing Grace (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_THREAT -10% on family 11 mask 0x1c0,0x400,0x900050
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=2 family=11 mask=0x1c0,0x400,0x900050 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29189
+=======
+29191 Healing Grace (Rank 3)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_THREAT -15% on family 11 mask 0x1c0,0x400,0x900050
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=2 family=11 mask=0x1c0,0x400,0x900050 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29191
+=======
+415236 Healing Rain
+school    nature
+duration  10 s
+cast      2 s
+cooldown  10 s
+gcd       1.5 s
+cost      21% of maximum mana
+range     40 yd
+attrs     cannot crit
+refs      415242 Healing Rain
+
+effect 1  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=29398 target=[132,31]
+effect 2  a dummy effect to the friendly target
+          E_DUMMY base=0 target=[21,0]
+effect 3  a dummy aura every 1 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=415236
+=======
+415242 Healing Rain
+school    nature
+defense   magic
+range     100 yd
+attrs     not a proc
+
+effect 1  15 healing to target 87 (+0.063 spell power)
+          E_HEAL base=15 sp=0.063 target=[87,31]
+
+https://www.wowhead.com/forever/spell=415242
+=======
+5394 Healing Stream Totem (Rank 1)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      40 mana
+labels    24
+refs      5672 Healing Stream
+
+effect 1  summons creature 3527 to target 42
+          E_SUMMON base=5 misc=3527 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=5394
+=======
+6375 Healing Stream Totem (Rank 2)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      50 mana
+labels    24
+refs      6371 Healing Stream
+
+effect 1  summons creature 3906 to target 42
+          E_SUMMON base=5 misc=3906 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=6375
+=======
+6377 Healing Stream Totem (Rank 3)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      60 mana
+labels    24
+refs      6372 Healing Stream
+
+effect 1  summons creature 3907 to target 42
+          E_SUMMON base=5 misc=3907 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=6377
+=======
+10462 Healing Stream Totem (Rank 4)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      70 mana
+labels    24
+refs      10460 Healing Stream
+
+effect 1  summons creature 3908 to target 42
+          E_SUMMON base=5 misc=3908 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10462
+=======
+10463 Healing Stream Totem (Rank 5)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      80 mana
+labels    24
+refs      10461 Healing Stream
+
+effect 1  summons creature 3909 to target 42
+          E_SUMMON base=5 misc=3909 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10463
+=======
+331 Healing Wave (Rank 1)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      25 mana
+range     40 yd
+labels    24
+
+effect 1  35.74359–46.25641 healing to the chain-heal target (at level 60, +0.429 spell power)
+          E_HEAL base=39 ppl=0.7 variance=0.25641027 sp=0.429 target=[45,0]
+
+https://www.wowhead.com/forever/spell=331
+=======
+332 Healing Wave (Rank 2)
+school    nature
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     40 yd
+labels    24
+
+effect 1  68.50704–83.49296 healing to the chain-heal target (at level 60, +0.571 spell power)
+          E_HEAL base=71 ppl=1 variance=0.1971831 sp=0.571 target=[45,0]
+
+https://www.wowhead.com/forever/spell=332
+=======
+547 Healing Wave (Rank 3)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      80 mana
+range     40 yd
+labels    24
+
+effect 1  125.366196–150.6338 healing to the chain-heal target (at level 60, +0.714 spell power)
+          E_HEAL base=131 ppl=1.5 variance=0.18309858 sp=0.714 target=[45,0]
+
+https://www.wowhead.com/forever/spell=547
+=======
+913 Healing Wave (Rank 4)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      155 mana
+range     40 yd
+labels    24
+
+effect 1  245.0548–288.9452 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=256 ppl=2.3 variance=0.16438356 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=913
+=======
+939 Healing Wave (Rank 5)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      200 mana
+range     40 yd
+labels    24
+
+effect 1  327.15686–382.84314 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=342 ppl=2.7 variance=0.15686275 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=939
+=======
+959 Healing Wave (Rank 6)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      265 mana
+range     40 yd
+labels    24
+
+effect 1  462.867–537.133 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=484 ppl=3.3 variance=0.14853196 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=959
+=======
+8005 Healing Wave (Rank 7)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      340 mana
+range     40 yd
+labels    24
+
+effect 1  653.6512–754.3488 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=685 ppl=3.9 variance=0.14303638 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=8005
+=======
+10395 Healing Wave (Rank 8)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      440 mana
+range     40 yd
+labels    24
+
+effect 1  926.6621–1063.3379 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=972 ppl=4.7 variance=0.13736264 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=10395
+=======
+10396 Healing Wave (Rank 9)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      560 mana
+range     40 yd
+labels    24
+
+effect 1  1275.4932–1456.5068 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=1344 ppl=5.5 variance=0.13251366 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=10396
+=======
+25357 Healing Wave (Rank 10)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      620 mana
+range     40 yd
+labels    24
+
+effect 1  1507.9539–1722.0461 healing to the chain-heal target (at level 60, +0.857 spell power)
+          E_HEAL base=1615 ppl=5.5 variance=0.13256484 sp=0.857 target=[45,0]
+
+https://www.wowhead.com/forever/spell=25357
+=======
+29206 Healing Way (Rank 1)
+school    physical
+attrs     passive, can proc from procs
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +33% on family 11 mask 0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=33 family=11 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29206
+=======
+16182 Improved Healing Wave
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 11 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=11 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16182
+=======
+16184 Improved Reincarnation
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COOLDOWN -600 s on family 11 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-600000 sp=1 misc=11 family=11 mask=0x200 target=[1,0]
+effect 2  +4% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=4 misc=1 target=[1,0]
+effect 3  SPELLMOD_ALL_EFFECTS +10 on family 11 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=8 family=11 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16184
+=======
+8004 Lesser Healing Wave (Rank 1)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      105 mana
+range     40 yd
+labels    24
+
+effect 1  149.89655–172.10345 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=153 ppl=1.7 variance=0.13793103 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8004
+=======
+8008 Lesser Healing Wave (Rank 2)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      145 mana
+range     40 yd
+labels    24
+
+effect 1  218.93182–249.06818 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=224 ppl=2.1 variance=0.12878788 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8008
+=======
+8010 Lesser Healing Wave (Rank 3)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      185 mana
+range     40 yd
+labels    24
+
+effect 1  296.6351–335.3649 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=304 ppl=2.5 variance=0.12256268 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8010
+=======
+10466 Lesser Healing Wave (Rank 4)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      235 mana
+range     40 yd
+labels    24
+
+effect 1  415.5926–466.4074 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=426 ppl=3 variance=0.11522634 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10466
+=======
+10467 Lesser Healing Wave (Rank 5)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+labels    24
+
+effect 1  591.32635–660.67365 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=608 ppl=3.6 variance=0.11077844 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10467
+=======
+10468 Lesser Healing Wave (Rank 6)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+labels    24
+
+effect 1  775.2727–864.7273 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=820 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10468
+=======
+27624 Lesser Healing Wave (Rank 6)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+
+effect 1  832–928 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=880 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=27624
+=======
+28849 Lesser Healing Wave
+school    physical
+attrs     passive
+labels    24
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says cast trigger
+refs      28850 Lesser Healing Wave
+
+effect 1  a dummy aura from family 11 mask 0x20
+          E_APPLY_AURA A_DUMMY base=0 sp=1 family=11 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28849
+=======
+5675 Mana Spring Totem (Rank 1)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      40 mana
+labels    24
+refs      5677 Mana Spring
+
+effect 1  summons creature 3573 to target 42
+          E_SUMMON base=5 misc=3573 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=5675
+=======
+10495 Mana Spring Totem (Rank 2)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      60 mana
+labels    24
+refs      10491 Mana Spring
+
+effect 1  summons creature 7414 to target 42
+          E_SUMMON base=5 misc=7414 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10495
+=======
+10496 Mana Spring Totem (Rank 3)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      80 mana
+labels    24
+refs      10493 Mana Spring
+
+effect 1  summons creature 7415 to target 42
+          E_SUMMON base=5 misc=7415 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10496
+=======
+10497 Mana Spring Totem (Rank 4)
+school    frost
+defense   magic
+duration  300 s
+gcd       1 s
+cost      100 mana
+labels    24
+refs      10494 Mana Spring
+
+effect 1  summons creature 7416 to target 42
+          E_SUMMON base=5 misc=7416 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=10497
+=======
+24854 Mana Spring Totem
+school    frost
+defense   magic
+duration  24 s
+gcd       1.5 s
+refs      24853 Mana Spring
+
+effect 1  summons creature 15304 to target 42
+          E_SUMMON base=5 misc=15304 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=24854
+=======
+16190 Mana Tide Totem (Rank 1)
+school    frost
+defense   magic
+duration  13 s
+cooldown  300 s (category)
+gcd       1 s
+cost      10 mana
+labels    24
+refs      16191 Mana Tide
+
+effect 1  summons creature 10467 to target 42
+          E_SUMMON base=5 misc=10467 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=16190
+=======
+17354 Mana Tide Totem (Rank 2)
+school    frost
+defense   magic
+duration  13 s
+cooldown  300 s (category)
+gcd       1 s
+cost      30 mana
+labels    24
+refs      17355 Mana Tide
+
+effect 1  summons creature 11100 to target 42
+          E_SUMMON base=5 misc=11100 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=17354
+=======
+17359 Mana Tide Totem (Rank 3)
+school    frost
+defense   magic
+duration  13 s
+cooldown  300 s (category)
+gcd       1 s
+cost      60 mana
+labels    24
+refs      17360 Mana Tide
+
+effect 1  summons creature 11101 to target 42
+          E_SUMMON base=5 misc=11101 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=17359
+=======
+29187 Natural Grace
+school    physical
+attrs     passive
+labels    24
+
+effect 1  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 sp=1 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29187
+=======
+16180 Nature's Guidance (Rank 1)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +1% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=1 sp=1 target=[1,0]
+effect 2  +1% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16180
+=======
+16196 Nature's Guidance (Rank 2)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +2% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=2 sp=1 target=[1,0]
+effect 2  +2% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16196
+=======
+16198 Nature's Guidance (Rank 3)
+school    physical
+attrs     passive
+labels    24
+
+effect 1  +3% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=3 sp=1 target=[1,0]
+effect 2  +3% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16198
+=======
+16188 Nature's Swiftness
+school    physical
+defense   magic
+duration  permanent
+cooldown  180 s
+charges   1
+labels    24
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x9c3,0x0,0x100000,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x9c3,0x0,0x100000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16188
+=======
+8166 Poison Cleansing Totem
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      10% of maximum mana
+labels    24
+refs      8168 Poison Cleansing Totem Effect, 8167 Poison Cleansing Totem Passive
+
+effect 1  summons creature 5923 to target 42
+          E_SUMMON base=5 misc=5923 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=8166
+=======
+16178 Purification
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +10% on family 11 mask 0x1c0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=11 mask=0x1c0,0x0,0x10 target=[1,0]
+effect 2  SPELLMOD_DOT +10% on family 11 mask 0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=11 mask=0x0,0x0,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16178
+=======
+20608 Reincarnation (Passive)
+school    nature
+cooldown  3600 s (category)
+attrs     passive
+labels    24
+refs      21169 Reincarnation
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20608
+=======
+21169 Reincarnation
+school    nature
+cooldown  3600 s (category)
+labels    24
+
+effect 1  unrecognised shape
+          E_SELF_RESURRECT base=20 misc=20 target=[0,0]
+
+https://www.wowhead.com/forever/spell=21169
+=======
+27740 Reincarnation
+school    nature
+cooldown  3600 s
+
+effect 1  unrecognised shape
+          E_SELF_RESURRECT base=50 target=[0,0]
+
+https://www.wowhead.com/forever/spell=27740
+=======
+16187 Restorative Totems
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_ALL_EFFECTS +5% on family 11 mask 0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=11 mask=0x4000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +5% on family 11 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=11 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16187
+=======
+408521 Riptide (Rank 1)
+school    nature
+defense   magic
+duration  15 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      245 mana
+range     40 yd
+stance exclude Moonkin
+attrs     periodic can crit
+labels    24
+
+effect 1  483.55–534.45 healing to the friendly target (at level 60, +0.214 spell power)
+          E_HEAL base=480 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
+effect 2  89 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=89 sp=0.1 period=3000ms target=[21,0]
+effect 3  a dummy aura holding 25 to the friendly target
+          E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408521
+=======
+409954 Riptide
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408521 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409954
+=======
+1239242 Riptide (Rank 2)
+school    nature
+defense   magic
+duration  15 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      300 mana
+range     40 yd
+stance exclude Moonkin
+attrs     periodic can crit
+labels    24
+
+effect 1  612.75–677.25 healing to the friendly target (at level 60, +0.214 spell power)
+          E_HEAL base=612 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
+effect 2  115 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=115 sp=0.1 period=3000ms target=[21,0]
+effect 3  a dummy aura holding 25 to the friendly target
+          E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1239242
+=======
+1239243 Riptide (Rank 3)
+school    nature
+defense   magic
+duration  15 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      385 mana
+range     40 yd
+stance exclude Moonkin
+attrs     periodic can crit
+labels    24
+
+effect 1  798.95–883.05 healing to the friendly target (at level 60, +0.214 spell power)
+          E_HEAL base=841 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
+effect 2  161 healing every 3 s to the friendly target (5 ticks, at level 60, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=161 ppl=3.7 sp=0.1 period=3000ms target=[21,0]
+effect 3  a dummy aura holding 25 to the friendly target
+          E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1239243
+=======
+16179 Tidal Focus
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COST -5% on family 11 mask 0x1c0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=11 mask=0x1c0,0x0,0x10 target=[1,0]
+effect 2  +5% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=5 sp=1 target=[1,0]
+effect 3  +5% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=5 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16179
+=======
+16194 Tidal Mastery
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 11 mask 0x5c0,0x0,0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=7 family=11 mask=0x5c0,0x0,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16194
+=======
+16173 Totemic Focus
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_COST -5% on family 11 mask 0x20081018,0x0,0x0,0x880
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=11 mask=0x20081018,0x0,0x0,0x880 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16173
+=======
+16189 Totemic Mastery
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_RADIUS +10 on family 11 mask 0x407e000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=6 family=11 mask=0x407e000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16189
+=======
+8143 Tremor Totem
+school    nature
+defense   magic
+duration  300 s
+gcd       1 s
+cost      60 mana
+labels    24
+refs      8146 Tremor Totem Effect
+
+effect 1  summons creature 5913 to target 41
+          E_SUMMON base=5 misc=5913 misc2=81 target=[41,0]
+
+https://www.wowhead.com/forever/spell=8143
+=======
+408510 Water Shield
+school    nature
+defense   magic
+duration  600 s
+cooldown  15 s (category)
+gcd       1.5 s
+charges   3
+icd       3.5 s
+labels    24
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count, heals only
+refs      408511 Water Shield
+
+effect 1  casts 408511 Water Shield on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=408511 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408510
+=======
+408511 Water Shield
+school    nature
+attrs     cannot crit
+labels    24
+
+effect 1  restores 2% of maximum mana to the caster
+          E_ENERGIZE_PCT base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408511
+=======
+409941 Water Shield
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408510 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409941

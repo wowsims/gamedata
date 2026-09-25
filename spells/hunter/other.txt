@@ -1,0 +1,4043 @@
+1300945 1.60.0 - Item - Tier 1 - Hunter 2P Bonus - Haste
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
+effect 2  +1% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300945
+=======
+1301012 1.60.0 - Item - Tier 1 - Hunter 3P Bonus - Frost and Freezing Trap
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -3 s on family 9 mask 0x0,0x0,0x4040000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=9 mask=0x0,0x0,0x4040000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301012
+=======
+1301078 1.60.0 - Item - Tier 1 - Hunter 4P Bonus - AP vs. Beasts
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301078
+=======
+1301252 1.60.0 - Item - Tier 1 - Hunter 5P Bonus - Aimed and Multi-Shot
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=9 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301252
+=======
+416861 Adder Pheromone
+school    physical
+duration  600 s
+cooldown  600 s
+
+effect 1  replaces an action bar spell with 1515 Tame Beast
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411624 misc=1515 target=[1,0]
+
+https://www.wowhead.com/forever/spell=416861
+=======
+28752 Adrenaline Rush
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+refs      28753 Adrenaline Rush
+
+effect 1  casts 28753 Adrenaline Rush on its trigger from family 9 mask 0x1000
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28753 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28752
+=======
+23721 Arcane Infused
+school    physical
+defense   magic
+duration  10 s
+charges   1
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      23722 Arcane Detonation
+
+effect 1  casts 23722 Arcane Detonation on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=23722 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23721
+=======
+467446 Arcane Infused
+school    physical
+defense   magic
+duration  15 s
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      467447 Arcane Detonation
+
+effect 1  casts 467447 Arcane Detonation on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=467447 target=[1,0]
+effect 2  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=467446
+=======
+23157 Arcane Shot Mana Reduction
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -15 (-1.5 on a rage bar) on family 9 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15 misc=14 family=9 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23157
+=======
+415431 Avoidance
+school    physical
+duration  permanent
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CREATURE_AOE_DAMAGE_AVOIDANCE base=-50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415431
+=======
+19767 Aynasha's Bow
+school    physical
+defense   ranged
+range     30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19767
+=======
+22996 Battle Standard
+school    physical
+duration  120 s
+refs      22998 Battle Standard
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 misc=179604 misc2=1 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=22996
+=======
+23005 Battle Standard
+school    physical
+duration  120 s
+refs      23006 Battle Standard
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 misc=179624 misc2=1 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23005
+=======
+23034 Battle Standard
+school    physical
+duration  120 s
+refs      23033 Battle Standard
+
+effect 1  summons creature 14465
+          E_SUMMON base=1500 misc=14465 misc2=121 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23034
+=======
+23035 Battle Standard
+school    physical
+duration  120 s
+refs      23033 Battle Standard
+
+effect 1  summons creature 14466
+          E_SUMMON base=1500 misc=14466 misc2=121 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23035
+=======
+23538 Battle Standard
+school    physical
+duration  120 s
+refs      23576 Battle Standard
+
+effect 1  summons creature 14751
+          E_SUMMON base=1500 misc=14751 misc2=121 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23538
+=======
+23539 Battle Standard
+school    physical
+duration  120 s
+refs      23574 Battle Standard
+
+effect 1  summons creature 14752
+          E_SUMMON base=1500 misc=14752 misc2=121 radius=1 target=[47,0]
+
+https://www.wowhead.com/forever/spell=23539
+=======
+409368 Beast Mastery
+school    physical
+attrs     passive
+refs      409372 Growl
+
+effect 1  SPELLMOD_ALL_EFFECTS +15 on family 9 mask 0x8000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=8 family=9 mask=0x8000000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +15 on family 9 mask 0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=8 family=9 mask=0x2000000 target=[1,0]
+effect 3  SPELLMOD_ALL_EFFECTS +50 on family 9 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 sp=1 misc=8 family=9 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409368
+=======
+409962 Beast Mastery
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409368 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409962
+=======
+29233 Beast of the Unseen Path
+school    physical
+duration  4 s
+range     50000 yd
+
+effect 1  +3% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=3 misc=127 family=9 mask=0x2000000 target=[5,0]
+
+https://www.wowhead.com/forever/spell=29233
+=======
+1231590 Bestial Focus
+school    physical
+duration  20 s
+range     100 yd
+
+effect 1  +5% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=5 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=1231590
+=======
+1231591 Bestial Focus
+school    physical
+duration  20 s
+range     100 yd
+
+effect 1  +4% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=4 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1231591
+=======
+19603 Bestial Fury (Rank 1)
+school    physical
+attrs     passive
+labels    23
+refs      19604 Bestial Fury Effect
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +20% on family 9 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=18 family=9 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19603
+=======
+19605 Bestial Fury (Rank 2)
+school    physical
+attrs     passive
+labels    23
+refs      19604 Bestial Fury Effect
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +40% on family 9 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=40 sp=1 misc=18 family=9 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19605
+=======
+19606 Bestial Fury (Rank 3)
+school    physical
+attrs     passive
+labels    23
+refs      19604 Bestial Fury Effect
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +60% on family 9 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 sp=1 misc=18 family=9 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19606
+=======
+19607 Bestial Fury (Rank 4)
+school    physical
+attrs     passive
+labels    23
+refs      19604 Bestial Fury Effect
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +80% on family 9 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=80 sp=1 misc=18 family=9 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19607
+=======
+19608 Bestial Fury (Rank 5)
+school    physical
+attrs     passive
+labels    23
+refs      19604 Bestial Fury Effect
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +100% on family 9 mask 0x40000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=18 family=9 mask=0x40000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19608
+=======
+424553 Call Your Shot
+duration  permanent
+proc      hears PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  immune to every school
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424553
+=======
+415428 Catlike Reflexes
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  +20% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=20 sp=1 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +9 on family 9 mask 0x0,0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9 sp=1 family=9 mask=0x0,0x8 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -50% on family 9 mask 0x0,0x800,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=11 family=9 mask=0x0,0x800,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415428
+=======
+24348 Cheetah Sprint
+school    physical
+duration  4 s
+labels    23
+
+effect 1  SPELLMOD_EFFECT1 +20 on family 9 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=3 family=9 mask=0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24348
+=======
+467331 Clever Strikes
+school    physical
+defense   magic
+duration  5 s
+charges   1
+labels    3096
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x0,0x0,0x200000,0x4020001
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x0,0x0,0x200000,0x4020001 target=[1,0]
+effect 2  SPELLMOD_DOT +20% on family 9 mask 0x0,0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=9 mask=0x0,0x0,0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467331
+=======
+409960 Cobra Slayer
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458393 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409960
+=======
+458393 Cobra Slayer
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance, from effect 3
+
+effect 1  casts 5302 Defensive State on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=200 sp=1 trigger=5302 target=[1,0]
+effect 2  a dummy aura holding 45
+          E_APPLY_AURA A_DUMMY base=45 sp=1 target=[1,0]
+effect 3  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=458393
+=======
+425713 Cobra Strikes
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  casts 425714 Cobra Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 sp=1 trigger=425714 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425713
+=======
+425714 Cobra Strikes
+school    physical
+duration  30 s
+range     45 yd
+stack     up to 2
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +1000% on family 9 mask 0x0,0x10000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 misc=7 family=9 mask=0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425714
+=======
+425718 Cobra Strikes
+school    physical
+duration  30 s
+range     45 yd
+stack     up to 2
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  a dummy aura holding 1000 from family 9 mask 0x0,0x10000000 to the caster's pet
+          E_APPLY_AURA A_DUMMY base=1000 family=9 mask=0x0,0x10000000 target=[5,0]
+
+https://www.wowhead.com/forever/spell=425718
+=======
+425755 Cobra Strikes
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425713 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425755
+=======
+23158 Concussive Shot Cooldown Reduction
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=11 family=9 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23158
+=======
+28317 Copy of Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28317
+=======
+1231765 Coup
+school    physical
+duration  15 s
+range     100 yd
+stack     up to 20
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 5 from family 9 mask 0x0,0x800000 to the enemy
+          E_APPLY_AURA A_DUMMY base=5 family=9 mask=0x0,0x800000 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1231765
+=======
+1235341 Crimson Crusade
+school    physical
+duration  12 s
+stack     up to 2
+charges   1
+icd       0.1 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235341
+=======
+1235344 Crimson Crusade
+school    physical
+duration  permanent
+attrs     can proc from procs
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x0,0x0,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235344
+=======
+435428 Danger!
+school    physical
+duration  permanent
+range     50000 yd
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 1 to the target
+          E_APPLY_AURA A_DUMMY base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=435428
+=======
+435546 Danger!
+school    physical
+duration  permanent
+range     50000 yd
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 1 to the target
+          E_APPLY_AURA A_DUMMY base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=435546
+=======
+435548 Danger!
+school    physical
+duration  permanent
+range     50000 yd
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 1 to the target
+          E_APPLY_AURA A_DUMMY base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=435548
+=======
+421311 Deer Musk
+school    physical
+duration  600 s
+cooldown  600 s
+
+effect 1  replaces an action bar spell with 1515 Tame Beast
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411624 misc=1515 target=[1,0]
+
+https://www.wowhead.com/forever/spell=421311
+=======
+24992 Demonic Transformation
+school    physical
+duration  15 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCALE base=150 sp=1 index=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24992
+=======
+460399 Destructor's Devastation
+school    fire
+defense   ranged
+range     45 yd
+equip     needs a thrown
+
+effect 1  850–1150 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=460399
+=======
+461761 Destructor's Devastation
+school    physical+holy+fire+nature+frost+arcane
+defense   ranged
+duration  0.1 s
+cast      2.5 s
+range     15 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_AREA_TRIGGER base=0 misc=34382 target=[1,0]
+
+https://www.wowhead.com/forever/spell=461761
+=======
+462160 Destructor's Devastation
+school    physical+holy+fire+nature+frost+arcane
+defense   ranged
+duration  0.1 s
+cast      2.5 s
+range     15 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_AREA_TRIGGER base=0 misc=34386 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462160
+=======
+462225 Destructor's Devastation
+school    physical+holy+fire+nature+frost+arcane
+defense   ranged
+duration  3 s
+range     45 yd
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462225
+=======
+462226 Destructor's Devastation
+school    physical+holy+fire+nature+frost+arcane
+defense   ranged
+duration  3 s
+range     15 yd
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462226
+=======
+24353 Devilsaur Tooth
+school    physical
+duration  30 s
+range     100 yd
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -100% on family 9 mask 0x1000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=9 mask=0x1000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24353
+=======
+409687 Dual Wield Specialization
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  +60% off-hand damage
+          E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=60 sp=1 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409687
+=======
+409961 Dual Wield Specialization
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409687 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409961
+=======
+1236819 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236819
+=======
+1236821 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236821
+=======
+1236825 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236825
+=======
+1236828 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236828
+=======
+1236830 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236830
+=======
+1236833 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236833
+=======
+1236834 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236834
+=======
+1236837 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236837
+=======
+1236838 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236838
+=======
+1236839 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236839
+=======
+1236840 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236840
+=======
+1236841 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236841
+=======
+1236842 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236842
+=======
+1236843 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236843
+=======
+1236844 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236844
+=======
+1236845 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236845
+=======
+1236846 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236846
+=======
+1236847 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236847
+=======
+1236848 Experiment-800M
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236848
+=======
+23578 Expose Weakness
+school    arcane
+duration  permanent
+range     50000 yd
+attrs     passive
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
+refs      23577 Expose Weakness
+
+effect 1  casts 23577 Expose Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 sp=1 trigger=23577 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23578
+=======
+409504 Expose Weakness
+school    physical
+attrs     passive, can proc from procs
+labels    3096
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+refs      409507 Expose Weakness
+
+effect 1  casts 409507 Expose Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 sp=1 trigger=409507 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409504
+=======
+409507 Expose Weakness
+school    physical
+duration  7 s
+labels    3096
+
+effect 1  +40 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=40 target=[1,0]
+effect 2  +40 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409507
+=======
+409959 Expose Weakness
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409504 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409959
+=======
+1232186 Fallen Regality
+school    physical
+duration  permanent
+
+effect 1  a dummy aura holding 150
+          E_APPLY_AURA A_DUMMY base=150 target=[1,0]
+effect 2  SPELLMOD_EFFECT3 +2 on family 9 mask 0x0,0x0,0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=23 family=9 mask=0x0,0x0,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232186
+=======
+17331 Fang of the Crystal Spider
+school    nature
+defense   magic
+duration  10 s
+range     100 yd
+
+effect 1  -9% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-9 target=[6,0]
+effect 2  -9% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-9 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE base=-9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17331
+=======
+440631 Feral Spirit
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440580 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440631
+=======
+470789 Fire Specialization
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 9 mask 0x0,0x0,0x24000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=9 mask=0x0,0x0,0x24000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470789
+=======
+19781 Flame Spear
+school    fire
+defense   ranged
+range     45 yd
+equip     needs a thrown
+
+effect 1  850–1150 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=19781
+=======
+461139 Flame Spear
+school    fire
+defense   ranged
+range     45 yd
+equip     needs a thrown
+
+effect 1  850–1150 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=461139
+=======
+461142 Flame Spear
+school    fire
+defense   ranged
+range     45 yd
+equip     needs a thrown
+
+effect 1  2000 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+
+https://www.wowhead.com/forever/spell=461142
+=======
+461189 Flame Spear
+school    fire
+defense   ranged
+range     45 yd
+equip     needs a thrown
+
+effect 1  2000 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 trigger=461143 target=[53,0]
+
+https://www.wowhead.com/forever/spell=461189
+=======
+428726 Focus Fire
+school    physical
+duration  20 s
+range     100 yd
+labels    3096, 3100
+refs      428728 Frenzy
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE base=3 target=[1,0]
+effect 2  restores 4 focus to the caster's pet
+          E_ENERGIZE base=4 misc=2 target=[5,0]
+
+https://www.wowhead.com/forever/spell=428726
+=======
+431600 Focus Fire
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428726 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431600
+=======
+3355 Freezing Trap Effect (Rank 1)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  10 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=3355
+=======
+14308 Freezing Trap Effect (Rank 2)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  15 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14308
+=======
+14309 Freezing Trap Effect (Rank 3)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  20 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14309
+=======
+470788 Frost Specialization
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 9 mask 0x18
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=9 mask=0x18 target=[1,0]
+
+https://www.wowhead.com/forever/spell=470788
+=======
+13810 Frost Trap Aura
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  30 s
+labels    23
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_MOD_DECREASE_SPEED base=-60 sp=1 radius=10 target=[28,0]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=2000ms trigger=18350 radius=10 target=[28,0]
+
+https://www.wowhead.com/forever/spell=13810
+=======
+461165 Hand of Injustice
+school    physical
+defense   ranged
+cast      -1000 s
+range     100 yd
+
+effect 1  0 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=461165
+=======
+1232050 Hand of Reborn Justice
+school    physical
+defense   ranged
+cast      -1000 s
+range     100 yd
+
+effect 1  0 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1232050
+=======
+14824 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14824
+=======
+14825 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=11 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14825
+=======
+14826 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=12 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14826
+=======
+14827 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=13 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14827
+=======
+14828 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=14 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14828
+=======
+14829 Haste
+school    physical
+duration  permanent
+equip     needs a gun
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=14829
+=======
+29413 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=13 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29413
+=======
+29414 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29414
+=======
+29415 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=14 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29415
+=======
+29416 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=12 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29416
+=======
+29417 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=11 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29417
+=======
+29418 Haste
+school    physical
+duration  permanent
+equip     needs a bow or crossbow
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RANGED_HASTE_QUIVER base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29418
+=======
+467146 Heartstrike
+school    physical
+defense   ranged
+cast      -1000 s
+range     100 yd
+
+effect 1  0 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=467146
+=======
+440531 Hit and Run
+school    physical
+duration  15 s
+labels    3096
+
+effect 1  +30% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440531
+=======
+440533 Hit and Run
+school    physical
+attrs     passive
+labels    3096, 3100
+refs      440531 Hit and Run, 1218358 Rabid Frenzy
+
+effect 1  casts 440531 Hit and Run when the target is hit from family 9 mask 0x0,0x0,0x10000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=440531 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+effect 2  a dummy effect holding 90 to the caster (at level 60)
+          E_DUMMY base=14 ppl=1.3 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+effect 3  a dummy effect holding -640 to the caster (at level 60)
+          E_DUMMY base=-50 ppl=-10 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440533
+=======
+440564 Hit and Run
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440533 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440564
+=======
+21942 Hunter Giant Stalker
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +150 on family 9 mask 0x8000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=150 sp=1 misc=8 family=9 mask=0x8000000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +100 on every spell of family 9
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21942
+=======
+1293020 Hydra Shot (Rank 4)
+school    physical
+defense   ranged
+cooldown  6 s (category)
+gcd       1.5 s
+cost      250 mana
+range     8-35 yd
+equip     needs a bow, gun or crossbow
+labels    23
+
+effect 1  normalised weapon damage +260 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=260 sp=1 chain=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293020
+=======
+15860 Impale
+school    physical
+defense   ranged
+duration  9 s
+range     5-30 yd
+equip     needs a thrown
+stack     up to 3
+
+effect 1  116 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15860
+=======
+16001 Impale
+school    physical
+defense   ranged
+duration  9 s
+range     5-30 yd
+equip     needs a thrown
+stack     up to 3
+
+effect 1  233 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=233.87898 sp=1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=16001
+=======
+24049 Impale
+school    physical
+defense   ranged
+duration  10 s
+range     5-30 yd
+equip     needs a thrown
+stack     up to 3
+
+effect 1  438–562 physical damage every 2 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=500 variance=0.248 sp=1 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24049
+=======
+26548 Impale
+school    physical
+defense   melee
+duration  8 s
+range     30 yd
+stack     up to 3
+
+effect 1  875–1125 physical damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=1000 variance=0.25 sp=1 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=26548
+=======
+1299437 Improved Aimed Shot
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_DAMAGE +50% on family 9 mask 0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 family=9 mask=0x20000 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME +2 s on family 9 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 sp=1 misc=10 family=9 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1299437
+=======
+23559 Improved Aspect of the Hawk
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +20% on family 9 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=8 family=9 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23559
+=======
+468310 Improved Bestial Wrath
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DURATION +3 s on family 9 mask 0x0,0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 misc=1 family=9 mask=0x0,0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468310
+=======
+440520 Improved Volley
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  SPELLMOD_COST -50% on family 9 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=9 mask=0x2000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -100% on family 9 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=11 family=9 mask=0x2000 target=[1,0]
+effect 3  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 9 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=9 family=9 mask=0x2000 target=[1,0]
+effect 4  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+effect 5  SPELLMOD_DOT +100% on family 9 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=22 family=9 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440520
+=======
+440561 Improved Volley
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440520 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440561
+=======
+23566 Improved Volley and Multishot
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +15% on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=9 mask=0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +15% on family 9 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=9 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23566
+=======
+22854 Increased Hunter Pet Damage
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +2 on family 9 mask 0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=8 family=9 mask=0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=22854
+=======
+423484 Increased Hunter Pet Damage
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +1 on family 9 mask 0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=8 family=9 mask=0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=423484
+=======
+468271 Increased Pet Damage +1%
+school    physical
+duration  4 s
+range     100 yd
+
+effect 1  +1% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=1 sp=1 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=468271
+=======
+468269 Increased Pet Damage +2%
+school    physical
+duration  4 s
+range     100 yd
+
+effect 1  +2% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=2 sp=1 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=468269
+=======
+27205 Increased Pet Damage +3%
+school    physical
+duration  4 s
+range     100 yd
+
+effect 1  +3% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=3 sp=1 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=27205
+=======
+468267 Increased Pet Damage +3%
+school    physical
+duration  4 s
+range     100 yd
+
+effect 1  +3% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=3 sp=1 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=468267
+=======
+437997 Invigoration
+school    physical
+attrs     passive
+labels    23
+refs      437999 Invigoration
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=437997
+=======
+409593 Kill Shot
+school    physical
+defense   ranged
+cast      -1000 s
+cooldown  12 s
+gcd       1.5 s
+cost      3% of maximum mana
+range     35 yd
+equip     needs a bow, gun or crossbow
+labels    3096
+
+effect 1  weapon damage in the weapon's own school +587 to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=587 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+effect 3  casts 1218240 Kill Shot to the target
+          E_TRIGGER_SPELL base=0 misc=200 trigger=1218240 target=[25,0]
+effect 4  casts 1218240 Kill Shot to the target
+          E_TRIGGER_SPELL base=0 misc=400 trigger=1218240 target=[25,0]
+effect 5  casts 1218240 Kill Shot to the target
+          E_TRIGGER_SPELL base=0 misc=600 trigger=1218240 target=[25,0]
+
+https://www.wowhead.com/forever/spell=409593
+=======
+409974 Kill Shot
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409593 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409974
+=======
+1218178 Kill Shot
+school    physical
+duration  12 s
+range     50000 yd
+labels    3096
+
+effect 1  a dummy aura holding 2 every 2 s (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=2 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218178
+=======
+1218240 Kill Shot
+school    physical
+defense   ranged
+cast      -1000 s
+range     10-200 yd
+labels    3096
+
+effect 1  587 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=587 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1218240
+=======
+462653 Lethal Shots (Rank 5)
+school    physical
+duration  permanent
+
+effect 1  +5% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=5 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462653
+=======
+462654 Lethal Shots (Rank 5)
+school    physical
+duration  permanent
+
+effect 1  +4% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=4 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462654
+=======
+462656 Lethal Shots (Rank 3)
+school    physical
+duration  permanent
+
+effect 1  +3% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462656
+=======
+462657 Lethal Shots (Rank 2)
+school    physical
+duration  permanent
+
+effect 1  +2% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462657
+=======
+462658 Lethal Shots (Rank 1)
+school    physical
+duration  permanent
+
+effect 1  +1% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=1 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462658
+=======
+415413 Lock and Load
+school    physical
+attrs     passive, can proc from procs
+labels    3096, 3100
+refs      415414 Lock and Load
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415413
+=======
+415414 Lock and Load
+school    physical
+duration  20 s
+stack     up to 1
+charges   1
+labels    3096, 3100
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COOLDOWN -100% on family 9 mask 0x21a00,0x80820001,0x101,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=9 mask=0x21a00,0x80820001,0x101,0x80000 target=[1,0]
+effect 2  SPELLMOD_COST -100% on family 9 mask 0x21a00,0x80820001,0xb41,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=9 mask=0x21a00,0x80820001,0xb41,0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415414
+=======
+468689 Lock and Load
+school    physical
+duration  8 s
+range     50000 yd
+labels    3096
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468689
+=======
+468388 Locked In
+school    physical
+duration  20 s
+stack     up to 2
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COOLDOWN -100% on family 9 mask 0x21a02,0x80820000,0x210101,0x4020000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=9 mask=0x21a02,0x80820000,0x210101,0x4020000 target=[1,0]
+effect 2  a dummy effect holding 2
+          E_DUMMY base=2 target=[0,0]
+
+https://www.wowhead.com/forever/spell=468388
+=======
+1218285 Locked and Loading
+school    physical
+duration  60 s
+range     50000 yd
+labels    3096
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218285
+=======
+409428 Master Marksman
+school    physical
+attrs     passive
+
+effect 1  +5% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=5 sp=1 target=[1,0]
+effect 2  SPELLMOD_COST -25% on family 9 mask 0x61a00,0x80820001,0x400101,0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 sp=1 misc=14 family=9 mask=0x61a00,0x80820001,0x400101,0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409428
+=======
+409958 Master Marksman
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409428 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409958
+=======
+415352 Melee Specialist
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+effect 2  a dummy aura holding -100 from family 9 mask 0x0,0x0,0x0,0x1
+          E_APPLY_AURA A_DUMMY base=-100 family=9 mask=0x0,0x0,0x0,0x1 target=[1,0]
+effect 3  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+effect 4  replaces an action bar spell with 2973 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415335 misc=2973 target=[1,0]
+effect 5  replaces an action bar spell with 14260 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415336 misc=14260 target=[1,0]
+effect 6  replaces an action bar spell with 14261 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415337 misc=14261 target=[1,0]
+effect 7  replaces an action bar spell with 14262 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415338 misc=14262 target=[1,0]
+effect 8  replaces an action bar spell with 14263 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415340 misc=14263 target=[1,0]
+effect 9  replaces an action bar spell with 14264 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415341 misc=14264 target=[1,0]
+effect 10 replaces an action bar spell with 14265 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415342 misc=14265 target=[1,0]
+effect 11 replaces an action bar spell with 14266 Raptor Strike
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415343 misc=14266 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415352
+=======
+1235359 Mercy by Fire
+school    physical
+duration  12 s
+range     100 yd
+stack     up to 2
+charges   1
+
+effect 1  a dummy aura holding 20 from family 9 mask 0x0,0x10000000
+          E_APPLY_AURA A_DUMMY base=20 family=9 mask=0x0,0x10000000 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235359
+=======
+1235361 Mercy by Fire
+school    physical
+duration  12 s
+range     100 yd
+attrs     can proc from procs
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x0,0x10000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x0,0x10000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1235361
+=======
+1235390 Mercy by Fire
+school    physical
+duration  12 s
+range     100 yd
+stack     up to 2
+charges   1
+icd       0.1 s
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20 from family 9 mask 0x0,0x10000000 to the caster's pet
+          E_APPLY_AURA A_DUMMY base=20 family=9 mask=0x0,0x10000000 target=[5,0]
+effect 2  a dummy aura holding 1 to the caster's pet
+          E_APPLY_AURA A_DUMMY base=1 target=[5,0]
+
+https://www.wowhead.com/forever/spell=1235390
+=======
+28539 Multi-Shot Damage Increase
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +4% on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28539
+=======
+459593 Multi-Shot Damage Increase
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +4% on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459593
+=======
+28761 Not There
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance
+
+effect 1  casts 28762 Not There on its trigger from family 9 mask 0x1000
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28762 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28761
+=======
+1216480 Noxious Breath
+school    nature
+duration  30 s
+range     50000 yd
+stack     up to 6
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_COOLDOWN +10 s on family 9 mask 0xffffffff,0xffffffff,0xffffdfff,0xffffffff to the enemy
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=9 mask=0xffffffff,0xffffffff,0xffffdfff,0xffffffff target=[6,0]
+effect 2  a dummy aura holding 400 to the enemy
+          E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1216480
+=======
+14207 OLDFrost Trap Effect
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  5 s
+attrs     not a proc
+
+effect 1  -60% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[22,15]
+
+https://www.wowhead.com/forever/spell=14207
+=======
+420543 On the Move
+school    nature
+duration  permanent
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  immune to every school
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+effect 2  a dummy aura every 1 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[0,0]
+
+https://www.wowhead.com/forever/spell=420543
+=======
+1294189 Poison Spear
+school    nature
+defense   ranged
+cast      2 s
+range     45 yd
+equip     needs a thrown
+
+effect 1  2000 nature damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+effect 2  unrecognised shape
+          E_TRIGGER_MISSILE base=0 sp=1 trigger=1294208 radius=5 target=[16,0]
+
+https://www.wowhead.com/forever/spell=1294189
+=======
+1236232 Poultry Precision (Bows) - Aimed Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236232
+=======
+1236222 Poultry Precision (Bows) - Arcane Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236222
+=======
+1236221 Poultry Precision (Bows) - Auto Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236221
+=======
+1236239 Poultry Precision (Bows) - Chimera Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236239
+=======
+1236516 Poultry Precision (Bows) - Concussive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236516
+=======
+1236510 Poultry Precision (Bows) - Distracting Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236510
+=======
+1236233 Poultry Precision (Bows) - Explosive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236233
+=======
+1236234 Poultry Precision (Bows) - Explosive Shot Impact
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236234
+=======
+1236241 Poultry Precision (Bows) - Flare
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236241
+=======
+1236519 Poultry Precision (Bows) - Kill Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236519
+=======
+1236223 Poultry Precision (Bows) - Multi-Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236223
+=======
+1236517 Poultry Precision (Bows) - Scatter Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236517
+=======
+1236224 Poultry Precision (Bows) - Scorpid Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236224
+=======
+1236225 Poultry Precision (Bows) - Serpent Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236225
+=======
+1236518 Poultry Precision (Bows) - Steady Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236518
+=======
+1236511 Poultry Precision (Bows) - Tranquilizing Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236511
+=======
+1236238 Poultry Precision (Bows) - Trap Launcher Explosive
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236238
+=======
+1236236 Poultry Precision (Bows) - Trap Launcher Freezing
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236236
+=======
+1236237 Poultry Precision (Bows) - Trap Launcher Immolation
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236237
+=======
+1236226 Poultry Precision (Bows) - Viper Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236226
+=======
+1236235 Poultry Precision (Bows) - Wyvern Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236235
+=======
+1236532 Poultry Precision (Crossbows) - Aimed Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236532
+=======
+1236522 Poultry Precision (Crossbows) - Arcane Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236522
+=======
+1236521 Poultry Precision (Crossbows) - Auto Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236521
+=======
+1236528 Poultry Precision (Crossbows) - Chimera Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236528
+=======
+1236543 Poultry Precision (Crossbows) - Concussive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236543
+=======
+1236541 Poultry Precision (Crossbows) - Distracting Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236541
+=======
+1236530 Poultry Precision (Crossbows) - Explosive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236530
+=======
+1236531 Poultry Precision (Crossbows) - Explosive Shot Impact
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236531
+=======
+1236539 Poultry Precision (Crossbows) - Flare
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236539
+=======
+1236546 Poultry Precision (Crossbows) - Kill Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236546
+=======
+1236523 Poultry Precision (Crossbows) - Multi-Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236523
+=======
+1236544 Poultry Precision (Crossbows) - Scatter Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236544
+=======
+1236524 Poultry Precision (Crossbows) - Scorpid Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236524
+=======
+1236525 Poultry Precision (Crossbows) - Serpent Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236525
+=======
+1236545 Poultry Precision (Crossbows) - Steady Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236545
+=======
+1236542 Poultry Precision (Crossbows) - Tranquilizing Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236542
+=======
+1236538 Poultry Precision (Crossbows) - Trap Launcher Explosive
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236538
+=======
+1236536 Poultry Precision (Crossbows) - Trap Launcher Freezing
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236536
+=======
+1236537 Poultry Precision (Crossbows) - Trap Launcher Immolation
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236537
+=======
+1236526 Poultry Precision (Crossbows) - Viper Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236526
+=======
+1236534 Poultry Precision (Crossbows) - Wyvern Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236534
+=======
+1234990 Poultry Precision (Guns) - Aimed Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234990
+=======
+1234973 Poultry Precision (Guns) - Arcane Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234973
+=======
+1234972 Poultry Precision (Guns) - Auto Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234972
+=======
+1236246 Poultry Precision (Guns) - Chimera Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236246
+=======
+1235003 Poultry Precision (Guns) - Concussive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235003
+=======
+1234984 Poultry Precision (Guns) - Distracting Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234984
+=======
+1234991 Poultry Precision (Guns) - Explosive Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234991
+=======
+1234992 Poultry Precision (Guns) - Explosive Shot Impact
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234992
+=======
+1235000 Poultry Precision (Guns) - Flare
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235000
+=======
+1234981 Poultry Precision (Guns) - Kill Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234981
+=======
+1234976 Poultry Precision (Guns) - Multi-Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234976
+=======
+1235004 Poultry Precision (Guns) - Scatter Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235004
+=======
+1234977 Poultry Precision (Guns) - Scorpid Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234977
+=======
+1234978 Poultry Precision (Guns) - Serpent Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234978
+=======
+1234980 Poultry Precision (Guns) - Steady Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234980
+=======
+1234987 Poultry Precision (Guns) - Tranquilizing Shot
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234987
+=======
+1234999 Poultry Precision (Guns) - Trap Launcher Explosive
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234999
+=======
+1234994 Poultry Precision (Guns) - Trap Launcher Freezing
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234994
+=======
+1234997 Poultry Precision (Guns) - Trap Launcher Frost
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234997
+=======
+1234998 Poultry Precision (Guns) - Trap Launcher Immolation
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234998
+=======
+1234979 Poultry Precision (Guns) - Viper Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234979
+=======
+1235002 Poultry Precision (Guns) - Volley
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1235002
+=======
+1234993 Poultry Precision (Guns) - Wyvern Sting
+school    physical
+range     8-30 yd
+
+effect 1  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1234993
+=======
+411622 Prairie Dog Musk
+school    physical
+duration  600 s
+cooldown  600 s
+
+effect 1  replaces an action bar spell with 1515 Tame Beast
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411624 misc=1515 target=[1,0]
+
+https://www.wowhead.com/forever/spell=411622
+=======
+456382 Precision
+school    physical
+duration  12 s
+charges   1
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x61a00,0x820001,0x101
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=9 mask=0x61a00,0x820001,0x101 target=[1,0]
+effect 2  SPELLMOD_DOT +20% on family 9 mask 0x61a00,0x820001,0x101
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=9 mask=0x61a00,0x820001,0x101 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456382
+=======
+1232183 Queensfall
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 16
+          E_APPLY_AURA A_DUMMY base=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232183
+=======
+418236 Rabbit Musk
+school    physical
+duration  600 s
+cooldown  600 s
+
+effect 1  replaces an action bar spell with 1515 Tame Beast
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411624 misc=1515 target=[1,0]
+
+https://www.wowhead.com/forever/spell=418236
+=======
+1218358 Rabid Frenzy
+school    nature
+defense   magic
+duration  120 s
+range     30 yd
+
+effect 1  +90 attack power to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=14 ppl=1.3 target=[6,0]
+effect 2  -640 armor to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=-50 ppl=-10 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1218358
+=======
+450083 Rapid Cutting
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+refs      450084 Rapid Cutting
+
+effect 1  casts 450084 Rapid Cutting on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=450084 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450083
+=======
+415358 Raptor Fury
+school    physical
+stack     up to 1
+attrs     passive
+labels    3096, 3100
+refs      415362 Raptor Fury
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415358
+=======
+415362 Raptor Fury
+school    physical
+duration  30 s
+stack     up to 5
+labels    3096, 3100
+
+effect 1  SPELLMOD_DAMAGE +15% on family 9 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=9 mask=0x2 target=[1,0]
+effect 2  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415362
+=======
+459598 Raptor Strike Damage Increase
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +4% on family 9 mask 0x0,0x0,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459598
+=======
+1218582 S03 - Item - Naxxramas - Hunter - Melee 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +30% on family 9 mask 0x0,0x0,0x0,0x20001
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 family=9 mask=0x0,0x0,0x0,0x20001 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218582
+=======
+1218583 S03 - Item - Naxxramas - Hunter - Melee 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 9 mask 0x0,0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=9 mask=0x0,0x0,0x0,0x20000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x0,0x0,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=9 mask=0x0,0x0,0x10000 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -8 s on family 9 mask 0x0,0x0,0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-8000 misc=11 family=9 mask=0x0,0x0,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218583
+=======
+1218589 S03 - Item - Naxxramas - Hunter - Melee 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      1218587 Undead Slaying
+
+effect 1  casts 1218587 Undead Slaying on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1218587 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218589
+=======
+1218515 S03 - Item - Naxxramas - Hunter - Ranged 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -1.5 s on family 9 mask 0x20000,0x80000000,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=9 mask=0x20000,0x80000000,0x1 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -3 s on family 9 mask 0x0,0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=9 mask=0x0,0x800000 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -3 s on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218515
+=======
+1218514 S03 - Item - Naxxramas - Hunter - Ranged 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +20% on family 9 mask 0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=9 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218514
+=======
+1218575 S03 - Item - Naxxramas - Hunter - Ranged 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      1226739 Undead Slaying
+
+effect 1  casts 1226739 Undead Slaying on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226739 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1218575
+=======
+1213310 S03 - Item - RAQ - Hunter - Beastmastery 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +100 on family 9 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=8 family=9 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213310
+=======
+1226340 S03 - Item - Scarlet Enclave - Hunter - Melee 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226340
+=======
+1226359 S03 - Item - Scarlet Enclave - Hunter - Melee 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      1226357 Wicked Fast
+
+effect 1  casts 1226357 Wicked Fast on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226357 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226359
+=======
+1226365 S03 - Item - Scarlet Enclave - Hunter - Melee 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  SPELLMOD_EFFECT2 +10 on family 9 mask 0x0,0x0,0x0,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=12 family=9 mask=0x0,0x0,0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226365
+=======
+1226132 S03 - Item - Scarlet Enclave - Hunter - Ranged 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226132
+=======
+1226137 S03 - Item - Scarlet Enclave - Hunter - Ranged 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      1226136 Wicked Shot
+
+effect 1  casts 1226136 Wicked Shot on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226137
+=======
+1226138 S03 - Item - Scarlet Enclave - Hunter - Ranged 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+refs      1233451 Trick Shots
+
+effect 1  SPELLMOD_JUMP_TARGETS +2 on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=17 family=9 mask=0x1000 target=[1,0]
+effect 2  casts 1233451 Trick Shots on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=75 trigger=1233451 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1226138
+=======
+456389 S03 - Item - T1 - Hunter - Melee 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      456393 Stalked, 458403 Stalker
+
+effect 1  casts 456393 Stalked when the target is hit from family 9 mask 0x0,0x0,0x0,0x1
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=456393 family=9 mask=0x0,0x0,0x0,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456389
+=======
+456341 S03 - Item - T1 - Hunter - Melee 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456341
+=======
+456394 S03 - Item - T1 - Hunter - Melee 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      5302 Defensive State
+
+effect 1  casts 5302 Defensive State on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=200 sp=1 trigger=5302 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456394
+=======
+456337 S03 - Item - T1 - Hunter - Ranged 2P Bonus
+school    physical
+attrs     passive
+refs      456339 Ferocity
+
+effect 1  casts 456339 Ferocity when the target is hit from family 9 mask 0x0,0x20000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=456339 family=9 mask=0x0,0x20000 target=[1,0]
+effect 2  SPELLMOD_DURATION +200% on family 9 mask 0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=200 sp=1 misc=1 family=9 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456337
+=======
+457324 S03 - Item - T1 - Hunter - Ranged 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457324
+=======
+456379 S03 - Item - T1 - Hunter - Ranged 6P Bonus
+school    physical
+attrs     passive
+refs      456382 Precision
+
+effect 1  casts 456382 Precision when the target is hit from family 9 mask 0x20000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=456382 family=9 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456379
+=======
+467329 S03 - Item - T2- Hunter - Melee 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      467331 Clever Strikes
+
+effect 1  casts 467331 Clever Strikes on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=1 trigger=467331 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467329
+=======
+467333 S03 - Item - T2- Hunter - Melee 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467333
+=======
+467334 S03 - Item - T2- Hunter - Melee 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; 5% chance; tooltip says one named ability
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467334
+=======
+467235 S03 - Item - T2- Hunter - Ranged 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467235
+=======
+467312 S03 - Item - T2- Hunter - Ranged 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467312
+=======
+467326 S03 - Item - T2- Hunter - Ranged 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 25
+          E_APPLY_AURA A_DUMMY base=25 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467326
+=======
+1213307 S03 - Item - TAQ - Hunter - Melee 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +50% on family 9 mask 0x0,0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=22 family=9 mask=0x0,0x0,0x0,0x20000 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213307
+=======
+1213309 S03 - Item - TAQ - Hunter - Melee 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x2,0x0,0x200000,0x4020000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x2,0x0,0x200000,0x4020000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213309
+=======
+1213306 S03 - Item - TAQ - Hunter - Ranged 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 30 from family 9 mask 0x0,0x800000
+          E_APPLY_AURA A_DUMMY base=30 family=9 mask=0x0,0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213306
+=======
+1213246 S03 - Item - TAQ - Hunter - Ranged 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura from family 9 mask 0x20
+          E_APPLY_AURA A_DUMMY base=0 family=9 mask=0x20 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -6 s on family 9 mask 0x0,0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=9 mask=0x0,0x800000 target=[1,0]
+effect 3  a dummy aura holding 50 from family 9 mask 0x20
+          E_APPLY_AURA A_DUMMY base=50 family=9 mask=0x20 target=[1,0]
+effect 4  a dummy aura holding 3 from family 9 mask 0x20
+          E_APPLY_AURA A_DUMMY base=3 family=9 mask=0x20 target=[1,0]
+effect 5  a dummy aura holding 30 from family 9 mask 0x20
+          E_APPLY_AURA A_DUMMY base=30 family=9 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213246
+=======
+468407 S03 - Item - ZG - Hunter - Beastmaster 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  +20 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=20 target=[1,0]
+effect 2  +20 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468407
+=======
+468417 S03 - Item - ZG - Hunter - Beastmaster 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468417
+=======
+468418 S03 - Item - ZG - Hunter - Beastmaster 5P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +20 on family 9 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=8 family=9 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468418
+=======
+446374 S03 - Tuning and Overrides Passive - Hunter
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT1 +100% on family 9 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=9 mask=0x0,0x200000 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 -100% on family 9 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=9 mask=0x0,0x200000 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=100 family=9 mask=0x80 target=[1,0]
+effect 4  SPELLMOD_EFFECT1 -100% on family 9 mask 0x0,0x0,0x0,0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=3 family=9 mask=0x0,0x0,0x0,0x80 target=[1,0]
+effect 5  SPELLMOD_EFFECT2 +100% on family 9 mask 0x0,0x0,0x0,0xc000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=12 family=9 mask=0x0,0x0,0x0,0xc000 target=[1,0]
+effect 6  a dummy aura holding -1200
+          E_APPLY_AURA A_DUMMY base=-1200 target=[1,0]
+effect 7  SPELLMOD_DURATION -50% on family 9 mask 0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=1 family=9 mask=0x0,0x0,0x20000 target=[1,0]
+effect 8  SPELLMOD_EFFECT3 +100% on family 9 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=23 family=9 mask=0x0,0x200000 target=[1,0]
+effect 9  replaces an action bar spell with 19801 Tranquilizing Shot
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1218134 misc=19801 target=[1,0]
+
+https://www.wowhead.com/forever/spell=446374
+=======
+462659 S03 - Tuning and Overrides Passive - Hunter
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_EFFECT2 -100% on family 9 mask 0x0,0x0,0x0,0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=9 mask=0x0,0x0,0x0,0x4000 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 -100% on family 9 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=9 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+effect 3  SPELLMOD_EFFECT3 -100% on family 9 mask 0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=23 family=9 mask=0x0,0x200000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=462659
+=======
+1223793 Seal of the Dawn
+school    physical
+duration  10 s
+range     100 yd
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_ALL_EFFECTS +0 on family 9 mask 0x8000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=8 family=9 mask=0x8000000 target=[1,0]
+effect 2  +0% every school damage done to the caster's pet
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[5,0]
+
+https://www.wowhead.com/forever/spell=1223793
+=======
+425738 Serpent Spread
+school    physical
+attrs     passive
+refs      425728 Serpent Sting
+
+effect 1  a dummy aura holding 6
+          E_APPLY_AURA A_DUMMY base=6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425738
+=======
+425756 Serpent Spread
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425738 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425756
+=======
+6660 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6660
+=======
+15547 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  315.42856–420.57144 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15547
+=======
+15620 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  420.85715–561.1429 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15620
+=======
+16100 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  835.869–1128.131 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=982.29175 variance=0.29761904 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16100
+=======
+16496 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  1256.7262–1689.2738 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16496
+=======
+17353 Shoot
+school    physical
+defense   ranged
+range     100 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  104.57143–139.42857 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=122.78647 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17353
+=======
+18561 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18561
+=======
+20463 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  2086.75–2823.25 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=2455.7292 variance=0.3 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20463
+=======
+22121 Shoot
+school    physical
+defense   ranged
+range     80 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  525.4286–700.5714 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22121
+=======
+22411 Shoot
+school    physical
+defense   ranged
+range     80 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22411
+=======
+22907 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  1256.7262–1689.2738 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22907
+=======
+23073 Shoot
+school    physical
+defense   ranged
+range     60 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  174.85715–233.14285 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=204.64412 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23073
+=======
+23337 Shoot
+school    physical
+range     50 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  315.42856–420.57144 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 sp=1 misc=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23337
+=======
+1213272 Shoot
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1213272
+=======
+1230438 Shoot
+school    holy
+defense   ranged
+range     5-30 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  420.85715–561.1429 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1230438
+=======
+1306284 Shoot
+school    physical
+defense   ranged
+range     50 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  257.14285–342.85715 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=300.9323 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1306284
+=======
+2480 Shoot Bow
+school    physical
+defense   ranged
+cast      1 s
+range     8-30 yd
+equip     needs a bow
+labels    20, 25
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2480
+=======
+7919 Shoot Crossbow
+school    physical
+defense   ranged
+cast      1 s
+range     8-30 yd
+equip     needs a crossbow
+labels    20, 25
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7919
+=======
+7918 Shoot Gun
+school    physical
+defense   ranged
+cast      1 s
+range     8-30 yd
+equip     needs a gun
+labels    20, 25
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7918
+=======
+25200 Shoot Silithus Rifleman Long Range
+school    physical
+defense   ranged
+range     40 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25200
+=======
+26282 Shoot Tauren Rifleman
+school    physical
+defense   ranged
+range     60 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  496.4–671.6 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=584.69745 variance=0.3 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26282
+=======
+28318 Slime Shot
+school    nature
+defense   ranged
+range     5-30 yd
+targets   up to 5
+
+effect 1  850–1150 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=500 variance=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28318
+=======
+415399 Sniper Training
+school    physical
+attrs     passive, can proc from procs
+labels    23
+refs      415401 Sniper's Aim
+
+effect 1  a dummy aura holding 20 every 1 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=20 sp=1 period=1000ms target=[1,0]
+effect 2  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415399
+=======
+453165 Sniper Training
+school    physical
+duration  permanent
+stack     up to 5
+labels    23
+
+effect 1  SPELLMOD_CASTING_TIME -3 s on family 9 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=10 family=9 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=453165
+=======
+415401 Sniper's Aim
+school    physical
+duration  permanent
+stack     up to 5
+labels    23
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 9 mask 0x61a00,0x80020000,0xa340
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=9 mask=0x61a00,0x80020000,0xa340 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415401
+=======
+1264478 Sonic Blast (Rank 1)
+school    nature
+defense   magic
+duration  30 s
+cooldown  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      80 focus
+range     5 yd
+labels    23
+
+effect 1  14.666667–17.333334 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=16 variance=0.16666667 target=[6,0]
+effect 2  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264478
+=======
+1264479 Sonic Blast (Rank 2)
+school    nature
+defense   melee
+duration  30 s
+cooldown  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      80 focus
+range     5 yd
+labels    23
+
+effect 1  33–39 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=36 variance=0.16666667 target=[6,0]
+effect 2  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264479
+=======
+1264480 Sonic Blast (Rank 3)
+school    nature
+defense   melee
+duration  30 s
+cooldown  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      80 focus
+range     5 yd
+labels    23
+
+effect 1  44–52 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=48 variance=0.16666667 target=[6,0]
+effect 2  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264480
+=======
+1264481 Sonic Blast (Rank 4)
+school    nature
+defense   melee
+duration  30 s
+cooldown  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      80 focus
+range     5 yd
+labels    23
+
+effect 1  62.333332–73.666664 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=68 variance=0.16666667 target=[6,0]
+effect 2  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264481
+=======
+1264482 Sonic Blast (Rank 5)
+school    nature
+defense   melee
+duration  30 s
+cooldown  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      80 focus
+range     5 yd
+labels    23
+
+effect 1  77–91 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=84 variance=0.16666667 target=[6,0]
+effect 2  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1264482
+=======
+27919 Spit
+school    nature
+range     30 yd
+
+effect 1  836.4–1131.6 nature damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=584.69745 ppl=10 variance=0.3 sp=1 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=100 sp=1 misc=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27919
+=======
+28758 Stalker's Ally
+school    physical
+duration  4 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PET A_MOD_ATTACK_POWER base=50 radius=100 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AREA_AURA_PET A_MOD_RANGED_ATTACK_POWER base=50 radius=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28758
+=======
+409957 Steady Shot
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=437123 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409957
+=======
+437123 Steady Shot
+school    physical
+defense   ranged
+cast      1.5 s
+gcd       1.5 s
+cost      5% of maximum mana
+range     8-35 yd
+equip     needs a bow, gun or crossbow
+
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
+effect 2  100% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=437123
+=======
+440633 Storm, Earth, and Fire
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440569 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440633
+=======
+1231601 Strand of Fate
+school    physical
+duration  20 s
+range     30 yd
+stack     up to 5
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CAST_WHILE_WALKING base=0 family=9 mask=0x23001,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1231601
+=======
+1232959 Strand of Fate
+school    physical
+duration  20 s
+range     30 yd
+stack     up to 4
+
+effect 1  +20 strength
+          E_APPLY_AURA A_MOD_STAT base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232959
+=======
+1232969 Strand of Fate
+school    physical
+duration  20 s
+range     30 yd
+stack     up to 4
+
+effect 1  +40 strength
+          E_APPLY_AURA A_MOD_STAT base=40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232969
+=======
+1232976 Strand of Fate
+school    physical
+duration  20 s
+range     30 yd
+stack     up to 4
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 21
+          E_APPLY_AURA A_DUMMY base=21 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232976
+=======
+26173 Striker's Arcane Shot Bonus
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 20% chance
+
+effect 1  SPELLMOD_COST -10% on family 9 mask 0x800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=9 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26173
+=======
+26174 Striker's Rapid Fire Bonus
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 20% chance; tooltip says one named ability
+
+effect 1  SPELLMOD_COOLDOWN -120 s on family 9 mask 0x20
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=9 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26174
+=======
+24416 Superior Aspects (Rank 1)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +1 on family 9 mask 0x80000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=8 family=9 mask=0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24416
+=======
+428717 T.N.T.
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  SPELLMOD_DOT +10% on family 9 mask 0x0,0x0,0x24000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=9 mask=0x0,0x0,0x24000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 9 mask 0x0,0x80000000,0x4200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=9 mask=0x0,0x80000000,0x4200 target=[1,0]
+effect 3  a dummy aura holding 25
+          E_APPLY_AURA A_DUMMY base=25 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428717
+=======
+431610 T.N.T.
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428717 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431610
+=======
+19678 Tame Adult Plainstrider
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6061 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19678
+=======
+19683 Tame Armored Scorpid
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6082 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19683
+=======
+1278061 Tame Bear
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94864 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1278061
+=======
+1277851 Tame Boar
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94792 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1277851
+=======
+1280004 Tame Crawler
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94978 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1280004
+=======
+19681 Tame Dire Mottled Boar
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6062 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19681
+=======
+1280044 Tame Galestrider
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94979 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1280044
+=======
+19597 Tame Ice Claw Bear
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6085 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19597
+=======
+19677 Tame Large Crag Boar
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6064 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19677
+=======
+19685 Tame Nightsaber Stalker
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6101 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19685
+=======
+19679 Tame Prairie Stalker
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6087 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19679
+=======
+19676 Tame Snow Leopard
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6084 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19676
+=======
+19686 Tame Strigid Screecher
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6102 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19686
+=======
+19682 Tame Surf Crawler
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6083 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19682
+=======
+19680 Tame Swoop
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6088 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19680
+=======
+1271102 Tame Vuldren
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94013 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1271102
+=======
+19684 Tame Webwood Lurker
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=6063 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19684
+=======
+1278060 Tame Wolf
+school    nature
+duration  900 s
+range     30 yd
+labels    23
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CHARM base=12 ppl=1 target=[6,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 sp=1 misc=94863 target=[1,0]
+effect 3  casts 19614 Despawn Caster every 600 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=600000ms trigger=19614 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1278060
+=======
+1223758 The Beast Within
+school    physical
+attrs     passive
+labels    23
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 2  a dummy aura holding -50
+          E_APPLY_AURA A_DUMMY base=-50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223758
+=======
+1262309 The Quick and the Dead
+school    shadow
+defense   magic
+duration  120 s
+
+effect 1  SPELLMOD_COST -100% on family 9 mask 0x1f80000,0x440000,0x30
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=9 mask=0x1f80000,0x440000,0x30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262309
+=======
+10277 Throw
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a thrown
+
+effect 1  210–280 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10277
+=======
+15607 Throw
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a thrown
+
+effect 1  315.42856–420.57144 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15607
+=======
+15795 Throw
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a thrown
+
+effect 1  420.85715–561.1429 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15795
+=======
+16000 Throw
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a thrown
+
+effect 1  525.4286–700.5714 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16000
+=======
+19785 Throw
+school    physical
+defense   ranged
+range     8-40 yd
+equip     needs a thrown
+
+effect 1  2125–2875 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=2500 variance=0.3 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19785
+=======
+22887 Throw
+school    physical
+defense   ranged
+range     5-30 yd
+equip     needs a thrown
+
+effect 1  1045.8715–1408.1285 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=1227.8646 variance=0.2952381 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22887
+=======
+436378 Tigerblood Talisman
+school    physical
+duration  4 s
+range     100 yd
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  casts 436377 Tigerblood Talisman on its trigger to the caster's pet
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=436377 target=[5,0]
+
+https://www.wowhead.com/forever/spell=436378
+=======
+436379 Tigerblood Talisman
+school    physical
+attrs     passive
+refs      436377 Tigerblood Talisman
+
+effect 1  casts 436378 Tigerblood Talisman every 3 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=3000ms trigger=436378 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436379
+=======
+1213393 Timeworn Shot
+school    physical
+defense   ranged
+cast      -1000 s
+range     100 yd
+
+effect 1  0 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1213393
+=======
+1213395 Timeworn Shot
+school    physical
+icd       0.2 s
+attrs     passive
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; 8% chance
+
+effect 1  casts 1213393 Timeworn Shot on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=1213393 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213395
+=======
+409968 Trap Launcher
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409541 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409968
+=======
+1233451 Trick Shots
+school    physical
+duration  12 s
+stack     up to 4
+charges   1
+attrs     can proc from procs
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DAMAGE +50% on family 9 mask 0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=9 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1233451
+=======
+26176 Unseen Path Pet Bonus
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  casts 29233 Beast of the Unseen Path every 3 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=3 period=3000ms trigger=29233 family=9 mask=0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26176
+=======
+416116 Water Elemental Scaling
+school    physical
+attrs     passive
+
+effect 1  +0 stamina
+          E_APPLY_AURA A_MOD_STAT base=0 misc=2 target=[1,0]
+effect 2  +0 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=0 target=[1,0]
+effect 3  +0 holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=0 misc=126 target=[1,0]
+effect 4  +0 fire resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=4 target=[1,0]
+effect 5  +0 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=16 target=[1,0]
+effect 6  +0 nature resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=8 target=[1,0]
+effect 7  +0 shadow resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=32 target=[1,0]
+effect 8  +0 arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
+effect 9  +0 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+effect 10 +0% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
+effect 11 +0% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=0 target=[1,0]
+effect 12 +0% melee haste
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=0 target=[1,0]
+effect 13 +0% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=0 target=[1,0]
+effect 14 +0% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=0 target=[1,0]
+effect 15 +0% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=416116
+=======
+26226 Widow Bite (Rank 1)
+school    nature
+defense   melee
+duration  4 s
+cooldown  4 s (category)
+gcd       1.5 s
+cost      40 focus
+attrs     periodic can crit
+labels    23
+
+effect 1  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 2  15 nature damage every 1 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 sp=1 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=26226
+=======
+459584 Wing Clip Duration
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance
+
+effect 1  SPELLMOD_DURATION +2 s on family 9 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 sp=1 misc=1 family=9 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459584
+=======
+24335 Wyvern Sting
+school    nature
+defense   ranged
+mechanic  mechanic 10
+duration  12 s
+cost      205 mana
+range     8-35 yd
+equip     needs a bow, gun or crossbow
+refs      24336 Wyvern Sting
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24335
+=======
+24336 Wyvern Sting
+school    nature
+duration  12 s
+range     50000 yd
+
+effect 1  219–281 nature damage every 2 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=250 variance=0.248 sp=0.167 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=24336
+=======
+26180 Wyvern Sting
+school    nature
+defense   ranged
+mechanic  mechanic 10
+duration  12 s
+range     100 yd
+targets   up to 10
+
+effect 1  stuns to every enemy around the caster
+          E_APPLY_AURA A_MOD_STUN base=0 radius=100 target=[22,15]
+
+https://www.wowhead.com/forever/spell=26180
+=======
+26233 Wyvern Sting
+school    nature
+range     50000 yd
+
+effect 1  1 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=1 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26233
+=======
+1215753 Wyvern Sting
+school    nature
+defense   ranged
+mechanic  mechanic 10
+duration  12 s
+range     100 yd
+targets   up to 4
+
+effect 1  stuns to every enemy around the caster
+          E_APPLY_AURA A_MOD_STUN base=0 target=[22,15]
+
+https://www.wowhead.com/forever/spell=1215753
+=======
+458436 Wyvern Strike (Rank 1)
+school    physical
+defense   melee
+duration  8 s
+cooldown  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      55 mana
+range     5 yd
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+attrs     refund on miss
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 sp=1 target=[6,0]
+effect 3  6 physical damage every 1 s to the target (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=1000ms mechanic=15 target=[25,0]
+
+https://www.wowhead.com/forever/spell=458436
+=======
+458479 Wyvern Strike (Rank 1)
+school    physical
+attrs     passive
+labels    3096
+refs      458436 Wyvern Strike
+
+effect 1  replaces an action bar spell with 19386
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458436 sp=1 misc=19386 target=[1,0]
+effect 2  replaces an action bar spell with 24132
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458481 sp=1 misc=24132 target=[1,0]
+effect 3  replaces an action bar spell with 24133
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458482 sp=1 misc=24133 target=[1,0]
+
+https://www.wowhead.com/forever/spell=458479
+=======
+458481 Wyvern Strike (Rank 2)
+school    physical
+defense   melee
+duration  8 s
+cooldown  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      75 mana
+range     5 yd
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+attrs     refund on miss
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 sp=1 target=[6,0]
+effect 3  8 physical damage every 1 s to the target (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=1000ms mechanic=15 target=[25,0]
+
+https://www.wowhead.com/forever/spell=458481
+=======
+458482 Wyvern Strike (Rank 3)
+school    physical
+defense   melee
+duration  8 s
+cooldown  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      100 mana
+range     5 yd
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+attrs     refund on miss
+
+effect 1  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 sp=1 target=[6,0]
+effect 3  10 physical damage every 1 s to the target (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=1000ms mechanic=15 target=[25,0]
+
+https://www.wowhead.com/forever/spell=458482
+=======
+447138 [DNT] Head of the Obliterator
+school    physical
+duration  permanent
+range     50000 yd
+
+effect 1  a dummy aura holding 1 to the target
+          E_APPLY_AURA A_DUMMY base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=447138
+=======
+447036 [DNT] Stormcrow Nest
+school    physical
+duration  permanent
+range     50000 yd
+
+effect 1  a dummy aura holding 1 to the target
+          E_APPLY_AURA A_DUMMY base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=447036
+=======
+447899 [DNT]Shrine of the Warden Trigger
+school    physical
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_REMOVE_AURA base=1 trigger=446467 target=[1,0]
+effect 2  unrecognised shape
+          E_SEND_EVENT base=0 misc=91021 target=[0,0]
+
+https://www.wowhead.com/forever/spell=447899

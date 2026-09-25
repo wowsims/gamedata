@@ -1,0 +1,837 @@
+2687 Bloodrage
+school    physical
+cooldown  60 s
+cost      20% of maximum health
+labels    25
+refs      29131 Bloodrage
+
+effect 1  restores 10 rage to the caster
+          E_ENERGIZE base=100 misc=1 target=[1,0]
+effect 2  casts 29131 Bloodrage to the caster
+          E_TRIGGER_SPELL base=0 trigger=29131 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2687
+=======
+29131 Bloodrage
+school    physical
+duration  10 s
+labels    25
+
+effect 1  restores 1 rage every 1 s (10 ticks)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=10 period=1000ms misc=1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_INTERRUPT_REGEN base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29131
+=======
+403215 Commanding Shout
+school    physical
+defense   magic
+duration  300 s
+gcd       1.5 s
+labels    3096
+
+effect 1  +42 stamina to the party around the caster (at level 60)
+          E_APPLY_AURA A_MOD_STAT base=2 ppl=0.68 misc=2 radius=30 target=[20,0]
+
+https://www.wowhead.com/forever/spell=403215
+=======
+403435 Commanding Shout
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403215 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403435
+=======
+12809 Concussion Blow
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  5 s
+cooldown  45 s
+cost      10 rage
+range     5 yd
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12809
+=======
+22427 Concussion Blow
+school    physical
+defense   melee
+mechanic  mechanic 12
+duration  5 s
+range     10 yd
+
+effect 1  weapon damage in the weapon's own school to the enemy
+          E_WEAPON_DAMAGE_NOSCHOOL base=0 sp=1 target=[6,0]
+effect 2  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22427
+=======
+71 Defensive Stance
+school    physical
+duration  permanent
+cooldown  1 s (category)
+labels    25
+refs      7376 Defensive Stance Passive, 12792 Defiance
+
+effect 1  shifts into Defensive
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=18 target=[1,0]
+
+https://www.wowhead.com/forever/spell=71
+=======
+7376 Defensive Stance Passive
+school    physical
+attrs     passive
+labels    25
+refs      12792 Defiance
+
+effect 1  -10% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=127 target=[1,0]
+effect 2  -10% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-10 sp=1 misc=127 target=[1,0]
+effect 3  +30% threat
+          E_APPLY_AURA A_MOD_THREAT base=30 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7376
+=======
+20243 Devastate (Rank 1)
+school    physical
+defense   melee
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a shield
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 2  120% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=120 target=[6,0]
+effect 3  normalised weapon damage +58 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=58 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20243
+=======
+403195 Devastate
+school    physical
+attrs     passive
+refs      403196 Devastate
+
+effect 1  casts 403196 Devastate when the target is hit from family 4 mask 0x4000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=403196 family=4 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403195
+=======
+403196 Devastate
+school    physical
+defense   melee
+range     50000 yd
+equip     needs a melee weapon in the weapon
+attrs     not a proc
+
+effect 1  150 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=150 target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=403196
+=======
+676 Disarm
+school    physical
+defense   melee
+mechanic  mechanic 3
+duration  10 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+stance    Defensive
+attrs     refund on miss
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DISARM base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=676
+=======
+27581 Disarm
+school    physical
+defense   melee
+mechanic  mechanic 3
+duration  10 s
+cooldown  60 s (category)
+gcd       1.5 s
+range     5 yd
+attrs     refund on miss
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DISARM base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=27581
+=======
+1236176 Disarm
+school    physical
+defense   melee
+mechanic  mechanic 3
+duration  10 s
+cooldown  60 s (category)
+gcd       1.5 s
+range     5 yd
+attrs     refund on miss
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DISARM base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236176
+=======
+29787 Focused Rage
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x6e6e4eee,0x102224,0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x6e6e4eee,0x102224,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29787
+=======
+415745 Focused Rage
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=29787 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415745
+=======
+12301 Improved Bloodrage
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 4 mask 0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=8 family=4 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12301
+=======
+12313 Improved Disarm
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -20 s on family 4 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20000 misc=11 family=4 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12313
+=======
+12797 Improved Revenge
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance; tooltip says one named ability
+
+effect 1  SPELLMOD_DAMAGE +60% on family 4 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 family=4 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12797
+=======
+12311 Improved Shield Bash
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1; tooltip says one named ability
+refs      18498 Silenced
+
+effect 1  casts 18498 Silenced on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=18498 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12311
+=======
+12307 Improved Shield Block (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CHARGES +1 on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=4 mask=0x1000 target=[1,0]
+effect 2  SPELLMOD_DURATION +1 s on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 misc=1 family=4 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12307
+=======
+12944 Improved Shield Block (Rank 3)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CHARGES +1 on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=4 mask=0x1000 target=[1,0]
+effect 2  SPELLMOD_DURATION +2 s on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 misc=1 family=4 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12944
+=======
+12945 Improved Shield Block (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_CHARGES +1 on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=4 mask=0x1000 target=[1,0]
+effect 2  SPELLMOD_DURATION +0.5 s on family 4 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=500 misc=1 family=4 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12945
+=======
+12312 Improved Shield Wall
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -660 s on family 4 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-660000 misc=11 family=4 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12312
+=======
+12308 Improved Sunder Armor
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12308
+=======
+12302 Improved Taunt (Rank 1)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 4 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=4 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12302
+=======
+12765 Improved Taunt (Rank 2)
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 4 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=4 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12765
+=======
+12287 Improved Thunder Clap
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -60 (-6 on a rage bar) on family 4 mask 0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60 misc=14 family=4 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12287
+=======
+12975 Last Stand
+school    physical
+cooldown  180 s
+labels    25
+refs      12976 Last Stand
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12975
+=======
+426490 Rallying Cry
+school    physical
+duration  10 s
+cooldown  180 s
+
+effect 1  +15 health to the raid around the caster
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH base=15 radius=40 target=[56,0]
+
+https://www.wowhead.com/forever/spell=426490
+=======
+426492 Rallying Cry
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426490 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426492
+=======
+6572 Revenge (Rank 1)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  20.307692–23.692308 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6572
+=======
+6574 Revenge (Rank 2)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  30.6–37.4 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6574
+=======
+7379 Revenge (Rank 3)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  42.857143–53.142857 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7379
+=======
+11600 Revenge (Rank 4)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  73.458336–90.541664 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11600
+=======
+11601 Revenge (Rank 5)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  109.07042–132.92958 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11601
+=======
+25288 Revenge (Rank 6)
+school    physical
+defense   melee
+cooldown  5 s (category)
+gcd       1.5 s
+cost      5 rage
+range     5 yd
+stance    Defensive
+equip     needs a melee weapon
+attrs     refund on miss
+labels    25
+
+effect 1  137.7–168.3 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25288
+=======
+28844 Revenge
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +75 on family 4 mask 0x400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=75 family=4 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28844
+=======
+72 Shield Bash (Rank 1)
+school    physical
+defense   melee
+duration  6 s
+cooldown  12 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  6 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=6 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=72
+=======
+1671 Shield Bash (Rank 2)
+school    physical
+defense   melee
+duration  6 s
+cooldown  12 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  18 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=18 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1671
+=======
+1672 Shield Bash (Rank 3)
+school    physical
+defense   melee
+duration  6 s
+cooldown  12 s (category)
+gcd       1.5 s
+cost      10 rage
+range     5 yd
+stance    Battle, Defensive
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  45 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=45 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1672
+=======
+2565 Shield Block
+school    physical
+duration  7 s
+cooldown  5 s
+cost      10 rage
+stance    Defensive
+equip     needs a shield
+charges   2
+labels    25
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +75% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=75 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2565
+=======
+23922 Shield Slam (Rank 1)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  dispels 1 magic effect to the enemy
+          E_DISPEL base=1 misc=1 target=[6,0]
+effect 2  420.65216–439.34784 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=430 variance=0.04347826 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23922
+=======
+23923 Shield Slam (Rank 2)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  dispels 1 magic effect to the enemy
+          E_DISPEL base=1 misc=1 target=[6,0]
+effect 2  493.77777–516.2222 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=505 variance=0.044444446 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23923
+=======
+23924 Shield Slam (Rank 3)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  dispels 1 magic effect to the enemy
+          E_DISPEL base=1 misc=1 target=[6,0]
+effect 2  566.9032–593.0968 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=580 variance=0.045161292 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23924
+=======
+23925 Shield Slam (Rank 4)
+school    physical
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      20 rage
+range     5 yd
+equip     needs a shield
+attrs     refund on miss
+labels    25
+
+effect 1  dispels 1 magic effect to the enemy
+          E_DISPEL base=1 misc=1 target=[6,0]
+effect 2  640.02856–669.97144 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=655 variance=0.045714285 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23925
+=======
+871 Shield Wall
+school    physical
+defense   melee
+duration  12 s
+cooldown  900 s
+gcd       1.5 s
+stance    Defensive
+equip     needs a shield
+labels    25
+
+effect 1  -60% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-60 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=871
+=======
+15062 Shield Wall
+school    physical
+defense   melee
+duration  10 s
+equip     needs a shield
+
+effect 1  -75% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-75 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15062
+=======
+29061 Shield Wall
+school    physical
+defense   melee
+duration  20 s
+cooldown  30 s
+
+effect 1  -75% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-75 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29061
+=======
+1277424 Shield Wall
+school    physical
+defense   melee
+duration  10 s
+equip     needs a shield
+
+effect 1  -75% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-75 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277424
+=======
+7386 Sunder Armor (Rank 1)
+school    physical
+defense   melee
+duration  30 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  -90 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-90 misc=1 target=[6,0]
+effect 2  34 threat to the enemy
+          E_THREAT base=34 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7386
+=======
+7405 Sunder Armor (Rank 2)
+school    physical
+defense   melee
+duration  30 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  -180 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-180 misc=1 target=[6,0]
+effect 2  75 threat to the enemy
+          E_THREAT base=75 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7405
+=======
+8380 Sunder Armor (Rank 3)
+school    physical
+defense   melee
+duration  30 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  -270 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-270 misc=1 target=[6,0]
+effect 2  117 threat to the enemy
+          E_THREAT base=117 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8380
+=======
+11596 Sunder Armor (Rank 4)
+school    physical
+defense   melee
+duration  30 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  -360 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-360 misc=1 target=[6,0]
+effect 2  158 threat to the enemy
+          E_THREAT base=158 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11596
+=======
+11597 Sunder Armor (Rank 5)
+school    physical
+defense   melee
+duration  30 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+equip     needs a melee weapon
+stack     up to 5
+attrs     refund on miss
+labels    25
+
+effect 1  -450 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-450 misc=1 target=[6,0]
+effect 2  206 threat to the enemy
+          E_THREAT base=206 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11597
+=======
+355 Taunt
+school    physical
+defense   magic
+duration  3 s
+cooldown  8 s (category)
+range     5 yd
+stance    Defensive
+labels    25
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=355
+=======
+29060 Taunt
+school    physical
+duration  20 s
+cooldown  60 s
+cooldown  10 s (category)
+range     5 yd
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=29060
+=======
+1219541 Taunt
+school    physical
+defense   magic
+duration  3 s
+cooldown  10 s (category)
+range     5 yd
+stance    Defensive
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219541
+=======
+1310317 Vanguard
+school    physical
+attrs     passive
+labels    25
+
+effect 1  replaces an action bar spell with 11578 Charge
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1240289 misc=11578 target=[1,0]
+effect 2  replaces an action bar spell with 6178 Charge
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1240288 misc=6178 target=[1,0]
+effect 3  replaces an action bar spell with 100 Charge
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1240287 misc=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310317

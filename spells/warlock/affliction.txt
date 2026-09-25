@@ -1,0 +1,1536 @@
+18288 Amplify Curse
+school    shadow
+duration  30 s
+cooldown  180 s
+charges   1
+labels    19
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8400 target=[1,0]
+effect 2  SPELLMOD_EFFECT1 -20 on family 5 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18288
+=======
+980 Bane of Agony (Rank 1)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  6 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=980
+=======
+1014 Bane of Agony (Rank 2)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  10 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1014
+=======
+6217 Bane of Agony (Rank 3)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  14 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6217
+=======
+11711 Bane of Agony (Rank 4)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  21 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11711
+=======
+11712 Bane of Agony (Rank 5)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      170 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  33 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=33 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11712
+=======
+11713 Bane of Agony (Rank 6)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      215 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  46 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.133 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11713
+=======
+603 Bane of Doom
+school    shadow
+defense   magic
+duration  60 s
+cooldown  60 s
+gcd       1.5 s
+cost      300 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  1742 shadow damage every 60 s to the enemy (1 ticks, +4 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=1742 sp=4 period=60000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=603
+=======
+172 Corruption (Rank 1)
+school    shadow
+defense   magic
+duration  12 s
+cast      2 s
+gcd       1.5 s
+cost      35 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  10 shadow damage every 3 s to the enemy (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=172
+=======
+6222 Corruption (Rank 2)
+school    shadow
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      55 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  13 shadow damage every 3 s to the enemy (5 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6222
+=======
+6223 Corruption (Rank 3)
+school    shadow
+defense   magic
+duration  18 s
+cast      2 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  22 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=22 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=6223
+=======
+7648 Corruption (Rank 4)
+school    shadow
+defense   magic
+duration  18 s
+cast      2 s
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  28 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=28 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=7648
+=======
+11671 Corruption (Rank 5)
+school    shadow
+defense   magic
+duration  18 s
+cast      2 s
+gcd       1.5 s
+cost      225 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  40 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11671
+=======
+11672 Corruption (Rank 6)
+school    shadow
+defense   magic
+duration  18 s
+cast      2 s
+gcd       1.5 s
+cost      290 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  57 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=57 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11672
+=======
+18376 Corruption
+school    shadow
+defense   magic
+duration  24 s
+cast      2 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+
+effect 1  350 shadow damage every 3 s to every enemy around the caster (8 ticks, +0.125 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.125 period=3000ms radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=18376
+=======
+21068 Corruption
+school    shadow
+defense   magic
+duration  24 s
+cast      2 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  116 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=21068
+=======
+25311 Corruption (Rank 7)
+school    shadow
+defense   magic
+duration  18 s
+cast      2 s
+gcd       1.5 s
+cost      340 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  73 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=73 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=25311
+=======
+28829 Corruption
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +12% on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=12 misc=22 family=5 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28829
+=======
+1213450 Corruption
+school    shadow
+defense   magic
+duration  24 s
+cast      2 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  116 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1213450
+=======
+1219428 Corruption
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219428
+=======
+1223963 Corruption (Rank 7)
+school    shadow
+defense   magic
+duration  12 s
+range     30 yd
+
+effect 1  137 shadow damage every 3 s to the enemy (4 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=137 sp=0.167 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1223963
+=======
+18223 Curse of Exhaustion
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  12 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     30 yd
+labels    19
+
+effect 1  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18223
+=======
+1010 Curse of Idiocy (Rank 1)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+stack     up to 15
+
+effect 1  -6 intellect to the enemy
+          E_APPLY_AURA A_MOD_STAT base=-6 misc=3 target=[6,0]
+effect 2  -6 spirit to the enemy
+          E_APPLY_AURA A_MOD_STAT base=-6 misc=4 target=[6,0]
+effect 3  casts 1010 Curse of Idiocy every 3 s to the enemy (40 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=3000ms trigger=1010 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1010
+=======
+704 Curse of Recklessness (Rank 1)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      35 mana
+range     30 yd
+labels    19
+
+effect 1  a dummy aura holding 20 to the enemy
+          E_APPLY_AURA A_DUMMY base=20 target=[6,0]
+effect 2  -175 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-175 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=704
+=======
+7658 Curse of Recklessness (Rank 2)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    19
+
+effect 1  a dummy aura holding 45 to the enemy
+          E_APPLY_AURA A_DUMMY base=45 target=[6,0]
+effect 2  -285 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-285 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7658
+=======
+7659 Curse of Recklessness (Rank 3)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+labels    19
+
+effect 1  a dummy aura holding 65 to the enemy
+          E_APPLY_AURA A_DUMMY base=65 target=[6,0]
+effect 2  -395 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-395 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7659
+=======
+11717 Curse of Recklessness (Rank 4)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+labels    19
+
+effect 1  a dummy aura holding 90 to the enemy
+          E_APPLY_AURA A_DUMMY base=90 target=[6,0]
+effect 2  -505 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-505 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11717
+=======
+1225841 Curse of Recklessness (Rank 4)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  +90 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=90 target=[6,0]
+effect 2  -640 armor to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-640 misc=1 target=[6,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1225841
+=======
+1714 Curse of Tongues (Rank 1)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+labels    19
+
+effect 1  -50% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-50 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_LANGUAGE base=0 misc=8 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1714
+=======
+11719 Curse of Tongues (Rank 2)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+labels    19
+
+effect 1  -60% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_LANGUAGE base=0 misc=8 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11719
+=======
+702 Curse of Weakness (Rank 1)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      20 mana
+range     30 yd
+labels    19
+
+effect 1  -4 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-4 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=702
+=======
+1108 Curse of Weakness (Rank 2)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      35 mana
+range     30 yd
+labels    19
+
+effect 1  -7 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-7 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1108
+=======
+6205 Curse of Weakness (Rank 3)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      70 mana
+range     30 yd
+labels    19
+
+effect 1  -12 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-12 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6205
+=======
+7646 Curse of Weakness (Rank 4)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+labels    19
+
+effect 1  -18 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-18 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7646
+=======
+11707 Curse of Weakness (Rank 5)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    19
+
+effect 1  -26 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-26 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11707
+=======
+11708 Curse of Weakness (Rank 6)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      175 mana
+range     30 yd
+labels    19
+
+effect 1  -37 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-37 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11708
+=======
+440892 Curse of the Elements (Rank 1)
+school    shadow
+defense   magic
+duration  300 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+labels    19
+
+effect 1  -30 holy+fire+nature+frost+shadow+arcane resistance to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-30 misc=126 target=[6,0]
+effect 2  +4% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=440892
+=======
+1311676 Curse of the Elements (Rank 2)
+school    shadow
+defense   magic
+duration  300 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    19
+
+effect 1  -45 holy+fire+nature+frost+shadow+arcane resistance to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-45 misc=126 target=[6,0]
+effect 2  +6% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=6 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1311676
+=======
+1311677 Curse of the Elements (Rank 3)
+school    shadow
+defense   magic
+duration  300 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+labels    19
+
+effect 1  -60 holy+fire+nature+frost+shadow+arcane resistance to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-60 misc=126 target=[6,0]
+effect 2  +8% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=8 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1311677
+=======
+1311680 Curse of the Elements (Rank 4)
+school    shadow
+defense   magic
+duration  300 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+labels    19
+
+effect 1  -75 holy+fire+nature+frost+shadow+arcane resistance to the enemy
+          E_APPLY_AURA A_MOD_RESISTANCE base=-75 misc=126 target=[6,0]
+effect 2  +10% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=10 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1311680
+=======
+6789 Death Coil (Rank 1)
+school    shadow
+defense   magic
+duration  3 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      435 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_HEALTH_LEECH base=272 ppl=2.2 sp=0.214 amplitude=1 target=[6,0]
+effect 2  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6789
+=======
+17925 Death Coil (Rank 2)
+school    shadow
+defense   magic
+duration  3 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      525 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_HEALTH_LEECH base=359 ppl=2.6 sp=0.214 amplitude=1 target=[6,0]
+effect 2  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17925
+=======
+17926 Death Coil (Rank 3)
+school    shadow
+defense   magic
+duration  3 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      600 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_HEALTH_LEECH base=454 ppl=3 sp=0.214 amplitude=1 target=[6,0]
+effect 2  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17926
+=======
+28412 Death Coil
+school    shadow
+defense   magic
+duration  3 s
+cooldown  120 s (category)
+gcd       1.5 s
+cost      565 mana
+range     30 yd
+
+effect 1  unrecognised shape
+          E_HEALTH_LEECH base=920 ppl=3 sp=0.214 amplitude=1 target=[6,0]
+effect 2  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[0,0]
+
+https://www.wowhead.com/forever/spell=28412
+=======
+689 Drain Life (Rank 1)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      55 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 10 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=10 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=689
+=======
+699 Drain Life (Rank 2)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      85 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 14 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=14 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=699
+=======
+709 Drain Life (Rank 3)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      135 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 22 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=22 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=709
+=======
+7651 Drain Life (Rank 4)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      185 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 28 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=28 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7651
+=======
+11699 Drain Life (Rank 5)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      240 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 39 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=39 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11699
+=======
+11700 Drain Life (Rank 6)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      300 mana
+range     20 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  leeches 51 every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=51 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11700
+=======
+5138 Drain Mana (Rank 1)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      95 mana
+range     20 yd
+attrs     channeled
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PERIODIC_MANA_LEECH base=42 ppl=0.4 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5138
+=======
+6226 Drain Mana (Rank 2)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      155 mana
+range     20 yd
+attrs     channeled
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PERIODIC_MANA_LEECH base=68 ppl=0.5 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6226
+=======
+11703 Drain Mana (Rank 3)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      225 mana
+range     20 yd
+attrs     channeled
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PERIODIC_MANA_LEECH base=99 ppl=0.6 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11703
+=======
+11704 Drain Mana (Rank 4)
+school    shadow
+defense   magic
+duration  5 s
+gcd       1.5 s
+cost      310 mana
+range     20 yd
+attrs     channeled
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PERIODIC_MANA_LEECH base=136 ppl=0.7 period=1000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11704
+=======
+1120 Drain Soul (Rank 1)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      55 mana
+range     30 yd
+charges   1
+attrs     channeled, periodic can crit
+labels    19
+proc      hears PROC_FLAG_KILL; 0% chance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  17 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=17 sp=0.1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1120
+=======
+8288 Drain Soul (Rank 2)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      125 mana
+range     30 yd
+charges   1
+attrs     channeled, periodic can crit
+labels    19
+proc      hears PROC_FLAG_KILL; 0% chance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  34 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=8288
+=======
+8289 Drain Soul (Rank 3)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      210 mana
+range     30 yd
+charges   1
+attrs     channeled, periodic can crit
+labels    19
+proc      hears PROC_FLAG_KILL; 0% chance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  54 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=54 sp=0.1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=8289
+=======
+11675 Drain Soul (Rank 4)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      290 mana
+range     30 yd
+charges   1
+attrs     channeled, periodic can crit
+labels    19
+proc      hears PROC_FLAG_KILL; 0% chance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  84 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=84 sp=0.1 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11675
+=======
+5782 Fear (Rank 1)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  10 s
+cast      1.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     20 yd
+targets   up to 1
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5782
+=======
+6213 Fear (Rank 2)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  15 s
+cast      1.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     20 yd
+targets   up to 1
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6213
+=======
+6215 Fear (Rank 3)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  20 s
+cast      1.5 s
+gcd       1.5 s
+cost      15% of maximum mana
+range     20 yd
+targets   up to 1
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6215
+=======
+17783 Fel Concentration
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 5 mask 0x4018,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 sp=1 misc=9 family=5 mask=0x4018,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17783
+=======
+18218 Grim Reach
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x8048c41a,0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x8048c41a,0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18218
+=======
+5484 Howl of Terror (Rank 1)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  10 s
+cast      2 s
+cooldown  40 s (category)
+gcd       1.5 s
+cost      150 mana
+targets   up to 5
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=5484
+=======
+17928 Howl of Terror (Rank 2)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  15 s
+cast      2 s
+cooldown  40 s (category)
+gcd       1.5 s
+cost      200 mana
+targets   up to 5
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17928
+=======
+18827 Improved Bane of Agony
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DOT +2% on family 5 mask 0x400
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18827
+=======
+17810 Improved Corruption
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CASTING_TIME -2 s on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=10 family=5 mask=0x2 target=[1,0]
+effect 2  SPELLMOD_DOT +10% on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17810
+=======
+24486 Improved Corruption
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DOT +2% on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24486
+=======
+18310 Improved Curse of Exhaustion (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_EFFECT1 -5 on family 5 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18310
+=======
+18311 Improved Curse of Exhaustion (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_EFFECT1 -10 on family 5 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18311
+=======
+18312 Improved Curse of Exhaustion (Rank 3)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_EFFECT1 -15 on family 5 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18312
+=======
+18313 Improved Curse of Exhaustion (Rank 4)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_EFFECT1 -20 on family 5 mask 0x400000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18313
+=======
+18179 Improved Curse of Weakness (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_ALL_EFFECTS +6% on family 5 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=6 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18179
+=======
+18180 Improved Curse of Weakness (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_ALL_EFFECTS +13% on family 5 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=13 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18180
+=======
+18181 Improved Curse of Weakness (Rank 3)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_ALL_EFFECTS +20% on family 5 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18181
+=======
+403511 Improved Drains
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DOT +20% on family 5 mask 0x4008,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=5 mask=0x4008,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403511
+=======
+18182 Improved Life Tap
+school    physical
+attrs     passive
+labels    19
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18182
+=======
+426241 Invocation
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426241
+=======
+426243 Invocation
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 6 from family 5 mask 0x1
+          E_APPLY_AURA A_DUMMY base=6 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426243
+=======
+426245 Invocation
+school    fire
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426245
+=======
+426246 Invocation
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426246
+=======
+426247 Invocation
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426247
+=======
+426331 Invocation
+school    fire+shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 fire+shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426331
+=======
+426442 Invocation
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426243 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426442
+=======
+454197 Invocation
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=454197
+=======
+454427 Invocation
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+
+effect 1  0 healing to the caster
+          E_HEAL base=0 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=454427
+=======
+1454 Life Tap (Rank 1)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 30 to the caster (at level 60)
+          E_DUMMY base=20 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1454
+=======
+1455 Life Tap (Rank 2)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 75 to the caster (at level 60)
+          E_DUMMY base=65 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1455
+=======
+1456 Life Tap (Rank 3)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 140 to the caster (at level 60)
+          E_DUMMY base=130 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1456
+=======
+11687 Life Tap (Rank 4)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 220 to the caster (at level 60)
+          E_DUMMY base=210 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11687
+=======
+11688 Life Tap (Rank 5)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 310 to the caster (at level 60)
+          E_DUMMY base=300 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11688
+=======
+11689 Life Tap (Rank 6)
+school    shadow
+defense   magic
+gcd       1.5 s
+labels    19
+refs      18182 Improved Life Tap
+
+effect 1  a dummy effect holding 424 to the caster (at level 60)
+          E_DUMMY base=420 ppl=1 radius=50000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11689
+=======
+28830 Life Tap
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_COST -12% on family 5 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-12 misc=14 family=5 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28830
+=======
+31818 Life Tap
+school    shadow
+attrs     cannot crit
+labels    19
+
+effect 1  restores 1 mana to the caster
+          E_ENERGIZE base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=31818
+=======
+468029 Life Tap
+school    shadow
+defense   magic
+range     30 yd
+stack     up to 1
+attrs     cannot crit
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=468029
+=======
+1225177 Malediction
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DOT +10% on family 5 mask 0x445e,0x40103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x445e,0x40103 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x0,0x800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x0,0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1225177
+=======
+1310949 Malevolence
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 5 mask 0x8648b,0x40003,0x0,0x420000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=7 family=5 mask=0x8648b,0x40003,0x0,0x420000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310949
+=======
+18094 Nightfall
+school    physical
+attrs     passive
+labels    19
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; 4% chance, from effect 1
+refs      17941 Shadow Trance
+
+effect 1  a dummy aura holding 4
+          E_APPLY_AURA A_DUMMY base=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18094
+=======
+427712 Pandemic
+school    shadow
+attrs     passive
+labels    19, 3096
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 5 mask 0x440a,0x40003
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=5 mask=0x440a,0x40003 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427712
+=======
+429283 Pandemic
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427712 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429283
+=======
+18271 Shadow Mastery
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +2% on family 5 mask 0x80093
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=5 mask=0x80093 target=[1,0]
+effect 2  SPELLMOD_DOT +2% on family 5 mask 0x440a,0x40003
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x440a,0x40003 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18271
+=======
+18265 Siphon Life (Rank 1)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+labels    19
+
+effect 1  leeches 11 every 3 s to the enemy (10 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=11 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18265
+=======
+18879 Siphon Life (Rank 2)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      205 mana
+range     30 yd
+
+effect 1  leeches 19 every 3 s to the enemy (10 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=19 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18879
+=======
+18880 Siphon Life (Rank 3)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      285 mana
+range     30 yd
+
+effect 1  leeches 29 every 3 s to the enemy (10 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=29 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18880
+=======
+18881 Siphon Life (Rank 4)
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      365 mana
+range     30 yd
+
+effect 1  leeches 41 every 3 s to the enemy (10 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=41 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18881
+=======
+1242957 Siphon Life
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+labels    19
+
+effect 1  0 healing to the caster
+          E_HEAL base=0 amplitude=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1242957
+=======
+437032 Soul Harvesting
+school    physical
+attrs     passive
+labels    19
+refs      1242853 Soul Harvest
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=437032
+=======
+17804 Soul Siphon
+school    physical
+attrs     passive
+labels    19
+
+effect 1  a dummy aura holding 12
+          E_APPLY_AURA A_DUMMY base=12 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17804
+=======
+403863 Soul Siphon
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403511 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403863
+=======
+18174 Suppression
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +5% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=5 sp=1 target=[1,0]
+effect 2  +5% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=5 sp=1 target=[1,0]
+effect 3  -20% threat
+          E_APPLY_AURA A_MOD_THREAT base=-20 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18174
+=======
+1316697 Wrack (Rank 1)
+school    shadow
+defense   magic
+duration  6 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  36 shadow damage every 1 s to the enemy (6 ticks, +0.143 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=36 sp=0.143 period=1000ms amplitude=1 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x402 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1316697

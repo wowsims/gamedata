@@ -1,0 +1,1708 @@
+16757 Arctic Reach
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_RANGE +10% on family 3 mask 0xa0
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=5 family=3 mask=0xa0 target=[1,0]
+effect 2  SPELLMOD_RADIUS +10% on family 3 mask 0x240
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=3 mask=0x240 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16757
+=======
+10 Blizzard (Rank 1)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      320 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279976 Blizzard
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41261 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10
+=======
+6141 Blizzard (Rank 2)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      520 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279977 Blizzard
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41262 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=6141
+=======
+8427 Blizzard (Rank 3)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      720 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279978 Blizzard
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41263 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=8427
+=======
+10185 Blizzard (Rank 4)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      935 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279979 Blizzard
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41264 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10185
+=======
+10186 Blizzard (Rank 5)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      1160 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279980 Blizzard
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41265 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10186
+=======
+10187 Blizzard (Rank 6)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      1400 mana
+range     30 yd
+attrs     channeled
+labels    17
+refs      1279949 Blizzard
+
+effect 1  a dummy effect to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41260 target=[87,16]
+effect 3  a dummy aura every 1 s (8 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10187
+=======
+27618 Blizzard (Rank 6)
+school    frost
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      1400 mana
+range     30 yd
+attrs     channeled
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=149 ppl=0.4 sp=0.042 period=1000ms radius=8 target=[28,0]
+
+https://www.wowhead.com/forever/spell=27618
+=======
+1279949 Blizzard (Rank 6)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  146 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=146 ppl=0.4 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279949
+=======
+1279976 Blizzard (Rank 1)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  24 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=24 ppl=0.1 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279976
+=======
+1279977 Blizzard (Rank 2)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  43 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=42 ppl=0.2 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279977
+=======
+1279978 Blizzard (Rank 3)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  63 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=62 ppl=0.2 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279978
+=======
+1279979 Blizzard (Rank 4)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  88 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=87 ppl=0.3 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279979
+=======
+1279980 Blizzard (Rank 5)
+school    frost
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  115 frost damage to target 87 (at level 60, +0.042 spell power)
+          E_SCHOOL_DAMAGE base=114 ppl=0.3 sp=0.042 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279980
+=======
+6136 Chilled (Rank 1)
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  5 s
+range     30 yd
+labels    17
+
+effect 1  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+effect 2  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6136
+=======
+7321 Chilled (Rank 1)
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  5 s
+range     30 yd
+labels    17
+
+effect 1  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+effect 2  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7321
+=======
+12484 Chilled
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  1.5 s
+range     50000 yd
+labels    17
+
+effect 1  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12484
+=======
+15850 Chilled
+school    frost
+defense   magic
+duration  5 s
+range     30 yd
+
+effect 1  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+effect 2  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15850
+=======
+16927 Chilled
+school    frost
+defense   magic
+duration  5 s
+range     30 yd
+
+effect 1  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+effect 2  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16927
+=======
+18101 Chilled (Rank 1)
+school    frost
+defense   magic
+duration  5 s
+range     30 yd
+
+effect 1  -100% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-100 target=[6,0]
+effect 2  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18101
+=======
+12472 Cold Snap
+school    physical
+defense   magic
+cooldown  600 s
+labels    17
+
+effect 1  a dummy effect to the caster
+          E_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12472
+=======
+120 Cone of Cold (Rank 1)
+school    frost
+defense   magic
+duration  6 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      210 mana
+labels    17
+
+effect 1  -40% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
+effect 2  96.097084–105.902916 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=97 ppl=0.8 variance=0.097087376 sp=0.129 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=120
+=======
+8492 Cone of Cold (Rank 2)
+school    frost
+defense   magic
+duration  6 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      290 mana
+labels    17
+
+effect 1  -40% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
+effect 2  142.18301–155.81699 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=144 ppl=1 variance=0.09150327 sp=0.129 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=8492
+=======
+10159 Cone of Cold (Rank 3)
+school    frost
+defense   magic
+duration  6 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      380 mana
+labels    17
+
+effect 1  -40% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
+effect 2  200.14084–219.85916 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=204 ppl=1.2 variance=0.09389672 sp=0.129 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=10159
+=======
+10160 Cone of Cold (Rank 4)
+school    frost
+defense   magic
+duration  6 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      465 mana
+labels    17
+
+effect 1  -40% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
+effect 2  260.1877–285.8123 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=267 ppl=1.3 variance=0.09386282 sp=0.129 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=10160
+=======
+10161 Cone of Cold (Rank 5)
+school    frost
+defense   magic
+duration  6 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      555 mana
+labels    17
+
+effect 1  -40% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
+effect 2  328.3–357.7 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=340 ppl=1.5 variance=0.08571429 sp=0.129 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=10161
+=======
+12557 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+cost      120 mana
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  385.44–490.56 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=438.52307 variance=0.24 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=12557
+=======
+12611 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+cost      120 mana
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  572.25–735.75 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=654.86115 variance=0.25 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=12611
+=======
+15244 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+cost      120 mana
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  771.76–982.24 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=877.04614 variance=0.24 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=15244
+=======
+20828 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+cost      120 mana
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  537.10474–688.89526 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=613.9323 variance=0.24761905 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=20828
+=======
+22746 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  771.76–982.24 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=877.04614 variance=0.24 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=22746
+=======
+30095 Cone of Cold
+school    frost
+defense   magic
+duration  8 s
+cost      120 mana
+
+effect 1  -50% movement speed to a cone of enemies in front of the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
+effect 2  1350–1650 frost damage to a cone of enemies in front of the caster
+          E_SCHOOL_DAMAGE base=1500 variance=0.2 sp=1 radius=10 target=[24,0]
+
+https://www.wowhead.com/forever/spell=30095
+=======
+29438 Elemental Precision
+school    arcane
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 3 mask 0xc202f7,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=3 mask=0xc202f7,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29438
+=======
+400647 Fingers of Frost
+school    frost
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance, from effect 2
+refs      400669 Fingers of Frost
+
+effect 1  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+effect 2  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400647
+=======
+400669 Fingers of Frost
+school    frost
+defense   magic
+duration  15 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=2 family=3 mask=0x0,0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400669
+=======
+400670 Fingers of Frost
+school    frost
+duration  15 s
+stack     up to 2
+
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400670
+=======
+401741 Fingers of Frost
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400647 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401741
+=======
+168 Frost Armor (Rank 1)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      60 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +30 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=30 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=168
+=======
+7300 Frost Armor (Rank 2)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      110 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +110 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=110 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7300
+=======
+7301 Frost Armor (Rank 3)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      170 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +200 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=200 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7301
+=======
+12544 Frost Armor
+school    frost
+defense   magic
+duration  1800 s
+cooldown  10 s
+cost      10 mana
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +720 armor (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=12 ppl=12 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12544
+=======
+12556 Frost Armor
+school    frost
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +720 armor (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=12 ppl=12 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12556
+=======
+15784 Frost Armor
+school    frost
+defense   magic
+duration  60 s
+cost      10 mana
+range     20 yd
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +720 armor to the friendly target (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=12 ppl=12 misc=1 target=[21,0]
+effect 2  casts 6136 Chilled on its trigger to the friendly target
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[21,0]
+
+https://www.wowhead.com/forever/spell=15784
+=======
+18100 Frost Armor
+school    frost
+defense   magic
+duration  1800 s
+cooldown  10 s
+cost      10 mana
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      18101 Chilled
+
+effect 1  +720 armor (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=12 ppl=12 misc=1 target=[1,0]
+effect 2  casts 18101 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=18101 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18100
+=======
+11160 Frost Channeling
+school    frost
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_COST -15% on family 3 mask 0xa0000,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=3 mask=0xa0000,0x1000 target=[1,0]
+effect 2  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11160
+=======
+122 Frost Nova (Rank 1)
+school    frost
+defense   magic
+duration  8 s
+cooldown  25 s (category)
+gcd       1.5 s
+cost      55 mana
+attrs     can proc from procs
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  20.9–23.1 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+          E_SCHOOL_DAMAGE base=20 ppl=0.5 variance=0.1 sp=0.029 target=[22,15]
+effect 2  roots to every enemy around the caster
+          E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+
+https://www.wowhead.com/forever/spell=122
+=======
+865 Frost Nova (Rank 2)
+school    frost
+defense   magic
+duration  8 s
+cooldown  25 s (category)
+gcd       1.5 s
+cost      85 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  33.942856–38.057144 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+          E_SCHOOL_DAMAGE base=34 ppl=0.5 variance=0.11428571 sp=0.029 target=[22,15]
+effect 2  roots to every enemy around the caster
+          E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+
+https://www.wowhead.com/forever/spell=865
+=======
+6131 Frost Nova (Rank 3)
+school    frost
+defense   magic
+duration  8 s
+cooldown  25 s (category)
+gcd       1.5 s
+cost      115 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  52–58 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+          E_SCHOOL_DAMAGE base=53 ppl=0.5 variance=0.10909091 sp=0.029 target=[22,15]
+effect 2  roots to every enemy around the caster
+          E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+
+https://www.wowhead.com/forever/spell=6131
+=======
+10230 Frost Nova (Rank 4)
+school    frost
+defense   magic
+duration  8 s
+cooldown  25 s (category)
+gcd       1.5 s
+cost      145 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  71–79 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+          E_SCHOOL_DAMAGE base=73 ppl=0.5 variance=0.10666667 sp=0.029 target=[22,15]
+effect 2  roots to every enemy around the caster
+          E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10230
+=======
+6143 Frost Ward (Rank 1)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      85 mana
+labels    17
+
+effect 1  absorbs 162 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=16 target=[1,0]
+effect 2  reflects 0% of frost damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6143
+=======
+8461 Frost Ward (Rank 2)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      135 mana
+labels    17
+
+effect 1  absorbs 284 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=284 misc=16 target=[1,0]
+effect 2  reflects 0% of frost damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8461
+=======
+8462 Frost Ward (Rank 3)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      195 mana
+labels    17
+
+effect 1  absorbs 463 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=16 target=[1,0]
+effect 2  reflects 0% of frost damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8462
+=======
+10177 Frost Ward (Rank 4)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      255 mana
+labels    17
+
+effect 1  absorbs 668 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=16 target=[1,0]
+effect 2  reflects 0% of frost damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10177
+=======
+15044 Frost Ward
+school    frost
+defense   magic
+duration  60 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      95 mana
+
+effect 1  absorbs 701 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=701.6369 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15044
+=======
+28609 Frost Ward (Rank 5)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      320 mana
+labels    17
+
+effect 1  absorbs 913 frost damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=16 target=[1,0]
+effect 2  reflects 0% of frost damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28609
+=======
+412202 Frost Ward (Rank 1)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      85 mana
+range     40 yd
+
+effect 1  absorbs 330 frost damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=330 misc=16 target=[21,0]
+effect 2  reflects 0% of frost damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412202
+=======
+412205 Frost Ward (Rank 2)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      135 mana
+range     40 yd
+
+effect 1  absorbs 580 frost damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=580 misc=16 target=[21,0]
+effect 2  reflects 0% of frost damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412205
+=======
+412207 Frost Ward (Rank 3)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      195 mana
+range     40 yd
+
+effect 1  absorbs 940 frost damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=940 misc=16 target=[21,0]
+effect 2  reflects 0% of frost damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412207
+=======
+412209 Frost Ward (Rank 4)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      255 mana
+range     40 yd
+
+effect 1  absorbs 1350 frost damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1350 misc=16 target=[21,0]
+effect 2  reflects 0% of frost damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412209
+=======
+412210 Frost Ward (Rank 5)
+school    frost
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      320 mana
+range     40 yd
+
+effect 1  absorbs 1840 frost damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1840 misc=16 target=[21,0]
+effect 2  reflects 0% of frost damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412210
+=======
+11189 Frost Warding
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_ALL_EFFECTS +15% on family 3 mask 0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=3 mask=0x2000000 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 +10 on family 3 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=12 family=3 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11189
+=======
+11071 Frostbite
+school    frost
+attrs     passive
+labels    17
+refs      12494 Frostbite
+
+effect 1  casts 12494 Frostbite when the target is hit from family 3 mask 0x100000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=15 trigger=12494 family=3 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11071
+=======
+116 Frostbolt (Rank 1)
+school    frost
+defense   magic
+duration  5 s
+cast      1.5 s
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  19.894737–22.105263 frost damage to the enemy (at level 60, +0.407 spell power)
+          E_SCHOOL_DAMAGE base=19 ppl=0.5 variance=0.10526316 sp=0.407 target=[6,0]
+
+https://www.wowhead.com/forever/spell=116
+=======
+205 Frostbolt (Rank 2)
+school    frost
+defense   magic
+duration  6 s
+cast      1.8 s
+gcd       1.5 s
+cost      35 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  32.878788–37.121212 frost damage to the enemy (at level 60, +0.489 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.12121212 sp=0.489 target=[6,0]
+
+https://www.wowhead.com/forever/spell=205
+=======
+837 Frostbolt (Rank 3)
+school    frost
+defense   magic
+duration  6 s
+cast      2.2 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  46.27778–51.72222 frost damage to the enemy (at level 60, +0.597 spell power)
+          E_SCHOOL_DAMAGE base=46 ppl=0.9 variance=0.11111111 sp=0.597 target=[6,0]
+
+https://www.wowhead.com/forever/spell=837
+=======
+7322 Frostbolt (Rank 4)
+school    frost
+defense   magic
+duration  7 s
+cast      2.6 s
+gcd       1.5 s
+cost      65 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  60.71795–67.28205 frost damage to the enemy (at level 60, +0.706 spell power)
+          E_SCHOOL_DAMAGE base=60 ppl=1.1 variance=0.1025641 sp=0.706 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7322
+=======
+8406 Frostbolt (Rank 5)
+school    frost
+defense   magic
+duration  7 s
+cast      3 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  96.40909–105.59091 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=95 ppl=1.5 variance=0.09090909 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8406
+=======
+8407 Frostbolt (Rank 6)
+school    frost
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  133.84616–146.15384 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=134 ppl=1.7 variance=0.08791209 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8407
+=======
+8408 Frostbolt (Rank 7)
+school    frost
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  181.02531–196.97469 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=181 ppl=2 variance=0.08438819 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8408
+=======
+10179 Frostbolt (Rank 8)
+school    frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      195 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  243.01315–262.98685 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=244 ppl=2.3 variance=0.078947365 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10179
+=======
+10180 Frostbolt (Rank 9)
+school    frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      225 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  305.03806–330.96194 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=308 ppl=2.6 variance=0.08152174 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10180
+=======
+10181 Frostbolt (Rank 10)
+school    frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      260 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  381.8677–412.1323 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=386 ppl=2.9 variance=0.076233186 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10181
+=======
+13439 Frostbolt
+school    frost
+defense   magic
+duration  5 s
+range     100 yd
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  40–60 frost damage to the enemy
+          E_SCHOOL_DAMAGE base=50 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13439
+=======
+25304 Frostbolt (Rank 11)
+school    frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      290 mana
+range     30 yd
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  457.24298–492.75702 frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=475 ppl=3.2 variance=0.07476635 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25304
+=======
+350025 Frostbolt
+school    frost
+defense   magic
+duration  6 s
+cast      1.8 s
+cost      35 mana
+range     30 yd
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  32.878788–37.121212 frost damage to the enemy (at level 60, +0.269 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.12121212 sp=0.269 target=[6,0]
+
+https://www.wowhead.com/forever/spell=350025
+=======
+1293790 Frostbolt
+school    frost
+defense   magic
+duration  5 s
+range     100 yd
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  33.6–50.4 frost damage to the enemy
+          E_SCHOOL_DAMAGE base=42 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293790
+=======
+1298416 Frostbolt
+school    frost
+defense   magic
+duration  5 s
+range     100 yd
+
+effect 1  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+effect 2  73.5–136.5 frost damage to the enemy
+          E_SCHOOL_DAMAGE base=105 variance=0.6 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1298416
+=======
+440802 Frozen Orb
+school    frost
+defense   magic
+duration  16 s
+cooldown  60 s
+gcd       1.5 s
+cost      11% of maximum mana
+range     40 yd
+labels    3096, 3100
+refs      440804 Frozen Orb, 440809 Frozen Orb
+
+effect 1  summons creature 220064
+          E_SUMMON base=1 misc=220064 misc2=5891 target=[47,0]
+
+https://www.wowhead.com/forever/spell=440802
+=======
+440804 Frozen Orb
+school    frost
+range     100 yd
+attrs     passive
+labels    3096, 3100
+
+effect 1  a dummy aura holding 100 every 1 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=100 period=1000ms target=[1,0]
+effect 2  +0% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_WATER_WALK base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440804
+=======
+440809 Frozen Orb
+school    frost
+defense   magic
+duration  5 s
+gcd       1.5 s
+range     100 yd
+attrs     not a proc
+labels    3096
+
+effect 1  -30% movement speed to every enemy in the target area
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 radius=8 mechanic=11 target=[16,0]
+effect 2  90 frost damage to every enemy in the target area (+0.129 spell power)
+          E_SCHOOL_DAMAGE base=90 sp=0.129 radius=8 target=[16,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 radius=8 target=[16,0]
+
+https://www.wowhead.com/forever/spell=440809
+=======
+440813 Frozen Orb
+school    frost
+duration  permanent
+range     100 yd
+labels    3096, 3100
+
+effect 1  -90% movement speed to the target
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-90 target=[25,0]
+
+https://www.wowhead.com/forever/spell=440813
+=======
+440859 Frozen Orb
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440802 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440859
+=======
+460651 Frozen Orb
+school    frost
+defense   magic
+gcd       1.5 s
+range     100 yd
+attrs     not a proc
+labels    3096
+
+effect 1  a dummy effect holding -30 to target 8
+          E_DUMMY base=-30 radius=8 mechanic=11 target=[8,0]
+
+https://www.wowhead.com/forever/spell=460651
+=======
+7302 Ice Armor (Rank 1)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      240 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      7321 Chilled
+
+effect 1  +290 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=290 misc=1 target=[1,0]
+effect 2  casts 7321 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
+effect 3  +6 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=6 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7302
+=======
+7320 Ice Armor (Rank 2)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      320 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      7321 Chilled
+
+effect 1  +380 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=380 misc=1 target=[1,0]
+effect 2  casts 7321 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
+effect 3  +9 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=9 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7320
+=======
+10219 Ice Armor (Rank 3)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      410 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      7321 Chilled
+
+effect 1  +470 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=470 misc=1 target=[1,0]
+effect 2  casts 7321 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
+effect 3  +12 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=12 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10219
+=======
+10220 Ice Armor (Rank 4)
+school    frost
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      500 mana
+labels    17
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      7321 Chilled
+
+effect 1  +560 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=560 misc=1 target=[1,0]
+effect 2  casts 7321 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
+effect 3  +15 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10220
+=======
+11426 Ice Barrier (Rank 1)
+school    frost
+defense   magic
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      305 mana
+labels    17
+
+effect 1  absorbs 447 every school damage (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=431 ppl=2.8 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11426
+=======
+13031 Ice Barrier (Rank 2)
+school    frost
+defense   magic
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      360 mana
+labels    17
+
+effect 1  absorbs 561 every school damage (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=542 ppl=3.2 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13031
+=======
+13032 Ice Barrier (Rank 3)
+school    frost
+defense   magic
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      420 mana
+labels    17
+
+effect 1  absorbs 692 every school damage (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=671 ppl=3.6 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13032
+=======
+13033 Ice Barrier (Rank 4)
+school    frost
+defense   magic
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      480 mana
+labels    17
+
+effect 1  absorbs 819 every school damage (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=811 ppl=4 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13033
+=======
+1213278 Ice Barrier (Rank 4)
+school    frost
+defense   magic
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      480 mana
+
+effect 1  absorbs 826 every school damage (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=818 ppl=4 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213278
+=======
+11958 Ice Block
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      15 mana
+excluded caster aura 432069 Tangled Causality
+labels    17
+
+effect 1  stuns
+          E_APPLY_AURA A_MOD_STUN base=0 target=[1,0]
+effect 2  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 3  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11958
+=======
+27619 Ice Block
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      15 mana
+
+effect 1  stuns
+          E_APPLY_AURA A_MOD_STUN base=0 target=[1,0]
+effect 2  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 3  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27619
+=======
+400640 Ice Lance (Rank 2)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      55 mana
+range     30 yd
+labels    17
+
+effect 1  33.916668–40.083332 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=36 ppl=0.4 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=400640
+=======
+401732 Ice Lance
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400640 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401732
+=======
+1240044 Ice Lance (Rank 3)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      70 mana
+range     30 yd
+labels    17
+
+effect 1  44–52 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=45 ppl=0.5 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1240044
+=======
+1240045 Ice Lance (Rank 4)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      105 mana
+range     30 yd
+labels    17
+
+effect 1  76.083336–89.916664 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=79 ppl=0.7 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1240045
+=======
+1240046 Ice Lance (Rank 5)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      120 mana
+range     30 yd
+labels    17
+
+effect 1  94.416664–111.583336 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=98 ppl=0.7 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1240046
+=======
+1240047 Ice Lance (Rank 6)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+labels    17
+
+effect 1  135.66667–160.33333 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1240047
+=======
+1312002 Ice Lance (Rank 1)
+school    frost
+defense   magic
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+labels    17
+
+effect 1  27.5–32.5 frost damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=28 ppl=0.35 variance=0.16666667 target=[6,0]
+effect 2  a dummy effect holding 300
+          E_DUMMY base=300 target=[0,0]
+effect 3  a dummy effect holding 20
+          E_DUMMY base=20 target=[0,0]
+effect 4  a dummy effect holding 5
+          E_DUMMY base=5 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1312002
+=======
+11207 Ice Shards
+school    frost
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x202e0,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11207
+=======
+425121 Icy Veins
+school    frost
+defense   magic
+duration  20 s
+cooldown  180 s
+cost      3% of maximum mana
+
+effect 1  +20% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_REDUCE_PUSHBACK base=100 sp=1 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425121
+=======
+425169 Icy Veins
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425121 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425169
+=======
+429125 Icy Veins
+school    frost
+defense   magic
+duration  20 s
+cooldown  180 s
+cost      3% of maximum mana
+labels    17
+
+effect 1  +20% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
+effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 3 mask 0x654008b5,0x81100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=3 mask=0x654008b5,0x81100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429125
+=======
+11185 Improved Blizzard
+school    physical
+attrs     passive
+labels    17
+refs      12484 Chilled
+
+effect 1  a dummy aura holding -40
+          E_APPLY_AURA A_DUMMY base=-40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11185
+=======
+11190 Improved Cone of Cold
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x200 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11190
+=======
+11165 Improved Frost Nova
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_COOLDOWN -4 s on family 3 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=3 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11165
+=======
+11070 Improved Frostbolt
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 3 mask 0x20
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=3 mask=0x20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11070
+=======
+11175 Permafrost
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_DURATION +33% on family 3 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=33 misc=1 family=3 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_EFFECT1 -10 on family 3 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=3 family=3 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11175
+=======
+11151 Piercing Ice
+school    frost
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +2% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +2% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11151
+=======
+11170 Shatter
+school    physical
+attrs     passive
+labels    17
+
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11170
+=======
+412532 Spellfrost Bolt
+school    frost+arcane
+defense   magic
+duration  9 s
+cast      2.5 s
+gcd       1.5 s
+cost      12% of maximum mana
+range     30 yd
+labels    3096
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  305–355 frost+arcane damage to the enemy (+0.814 spell power)
+          E_SCHOOL_DAMAGE base=330 variance=0.15151516 sp=0.814 target=[6,0]
+
+https://www.wowhead.com/forever/spell=412532
+=======
+415734 Spellfrost Bolt
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412532 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415734
+=======
+11180 Winter's Chill
+school    physical
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 0% chance, from effect 2
+refs      12579 Winter's Chill
+
+effect 1  casts 12579 Winter's Chill on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 trigger=12579 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 trigger=12579 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11180
+=======
+12579 Winter's Chill
+school    frost
+defense   magic
+duration  15 s
+range     100 yd
+stack     up to 5
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CRIT_CHANCE_FOR_CASTER_WITH_ABILITIES base=2 misc=16 family=3 mask=0x20020 target=[6,0]
+
+https://www.wowhead.com/forever/spell=12579

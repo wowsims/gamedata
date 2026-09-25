@@ -1,0 +1,2474 @@
+1300966 1.60.0 - Item - Tier 1 - Warlock 2P Bonus - Hit
+school    physical
+attrs     passive
+
+effect 1  +1% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
+effect 2  +1% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1300966
+=======
+1301068 1.60.0 - Item - Tier 1 - Warlock 3P Bonus - Banish
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 5 mask 0x0,0x8000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=10 family=5 mask=0x0,0x8000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301068
+=======
+1301094 1.60.0 - Item - Tier 1 - Warlock 4P Bonus - SP vs. Demons
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301094
+=======
+1301715 1.60.0 - Item - Tier 1 - Warlock 5P Bonus - Life Tap
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1301715
+=======
+13716 AOD
+school    arcane
+duration  permanent
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 5 Death Touch on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=13716
+=======
+12256 Add Moogly Radius (PT)
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_RADIUS +50 on family 5 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=6 family=5 mask=0x4 target=[1,0]
+effect 2  casts 5 Death Touch when the target is hit from family 5 mask 0x4
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=50 trigger=5 family=5 mask=0x4 target=[0,0]
+
+https://www.wowhead.com/forever/spell=12256
+=======
+420744 Altar of Thorns
+school    physical
+duration  permanent
+
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=420744
+=======
+1264530 Apparition
+school    shadow
+defense   magic
+duration  permanent
+gcd       1.5 s
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INVISIBILITY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1264530
+=======
+1266050 Apparition
+school    shadow
+defense   magic
+duration  permanent
+gcd       1.5 s
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1266050
+=======
+1269135 Apparition
+school    shadow
+defense   magic
+duration  permanent
+gcd       1.5 s
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1269135
+=======
+1268813 Arcane Animation
+school    shadow
+defense   magic
+duration  permanent
+gcd       1.5 s
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1268813
+=======
+265 Area Death (TEST)
+school    arcane
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_INSTAKILL base=1 radius=30 target=[15,0]
+
+https://www.wowhead.com/forever/spell=265
+=======
+427713 Backdraft
+school    shadow
+attrs     passive, can proc from procs
+labels    3096, 3100
+refs      427714 Backdraft
+
+effect 1  casts 427714 Backdraft when the target is hit from family 5 mask 0x0,0x800000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 misc=12 trigger=427714 family=5 mask=0x0,0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427713
+=======
+427714 Backdraft
+school    physical
+duration  15 s
+labels    3096, 3100
+
+effect 1  +30% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427714
+=======
+431742 Backdraft
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427713 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431742
+=======
+24893 Black Sapphire
+school    shadow
+defense   magic
+duration  11 s
+
+effect 1  SPELLMOD_DOT +222 on family 5 mask 0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=222 sp=1 misc=22 family=5 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24893
+=======
+1214166 Bloodthirsty
+school    physical
+duration  6 s
+stack     up to 1
+
+effect 1  +20% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214166
+=======
+435086 Brimstone Carving
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; 5% chance
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=435086
+=======
+1227180 Burn
+school    fire+shadow
+defense   magic
+range     50000 yd
+attrs     cannot crit
+
+effect 1  1 fire+shadow damage to the target
+          E_SCHOOL_DAMAGE base=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=1227180
+=======
+18789 Burning Shadow
+school    fire
+duration  7200 s
+range     100 yd
+labels    19
+
+effect 1  +15% shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=32 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18789
+=======
+20785 Charm Tolerance (DND)
+school    physical
+duration  1800 s
+stack     up to 15
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=10 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20785
+=======
+28845 Cheat Death
+school    physical
+duration  permanent
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count, heals only
+refs      28846 Cheat Death
+
+effect 1  casts 28846 Cheat Death on its trigger from family 5 mask 0x1
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=28846 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28845
+=======
+1231663 Conundrum
+duration  permanent
+
+effect 1  SPELLMOD_RANGE +10 on family 5 mask 0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=5 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1231663
+=======
+23816 Create Healthstone (Greater)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23816
+=======
+23817 Create Healthstone (Greater)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23817
+=======
+23818 Create Healthstone (Greater)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23818
+=======
+23520 Create Healthstone (Lesser)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23520
+=======
+23521 Create Healthstone (Lesser)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23521
+=======
+23522 Create Healthstone (Lesser)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23522
+=======
+20018 Create Healthstone (Major)
+school    shadow
+refs      11732 Major Healthstone
+
+effect 1  creates item 0 to every ally around the caster
+          E_CREATE_ITEM base=1 target=[22,30]
+
+https://www.wowhead.com/forever/spell=20018
+=======
+23819 Create Healthstone (Major)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23819
+=======
+23820 Create Healthstone (Major)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23820
+=======
+23821 Create Healthstone (Major)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23821
+=======
+23517 Create Healthstone (Minor)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23517
+=======
+23518 Create Healthstone (Minor)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23518
+=======
+23519 Create Healthstone (Minor)
+school    shadow
+defense   magic
+labels    19
+
+effect 1  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23519
+=======
+18671 Curse of Agony
+school    shadow
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+
+effect 1  298 shadow damage every 3 s to every enemy around the caster (10 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=298.19568 period=3000ms radius=45 target=[22,15]
+
+https://www.wowhead.com/forever/spell=18671
+=======
+1233077 Curse of Agony
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+
+effect 1  2700.852–3145.148 shadow damage every 1 s to every enemy around the caster (15 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=2923.487 variance=0.152 period=1000ms target=[22,15]
+
+https://www.wowhead.com/forever/spell=1233077
+=======
+449432 Curse of Doom
+school    shadow
+defense   magic
+duration  60 s
+cooldown  60 s
+gcd       1.5 s
+cost      300 mana
+range     30 yd
+
+effect 1  3200 shadow damage every 60 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=3200 sp=1 period=60000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=449432
+=======
+421322 Cursed Discovery
+school    shadow
+duration  permanent
+proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  immune to every school
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=421322
+=======
+1222974 Damage Over Time Increase
+school    physical
+attrs     passive, suppresses weapon procs
+
+effect 1  SPELLMOD_DOT +2% on family 5 mask 0x406,0x103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1222974
+=======
+1222975 Damage Over Time Increase
+school    physical
+attrs     passive, suppresses weapon procs
+
+effect 1  SPELLMOD_DOT +1% on family 5 mask 0x406,0x103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1222975
+=======
+1222976 Damage Over Time Increase
+school    physical
+attrs     passive, suppresses weapon procs
+
+effect 1  SPELLMOD_DOT +3% on family 5 mask 0x406,0x103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1222976
+=======
+1222977 Damage Over Time Increase
+school    physical
+attrs     passive, suppresses weapon procs
+
+effect 1  SPELLMOD_DOT +4% on family 5 mask 0x406,0x103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1222977
+=======
+28541 Death Coil Damage Increase
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +8% on every spell of family 5
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28541
+=======
+23555 Decreased Destruction Threat
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_THREAT -20% on family 5 mask 0x3e5,0x10000,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=2 family=5 mask=0x3e5,0x10000,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23555
+=======
+1243028 Demonic Energies
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+labels    19
+
+effect 1  0 healing to the caster's pet
+          E_HEAL base=0 amplitude=1 target=[5,0]
+
+https://www.wowhead.com/forever/spell=1243028
+=======
+460906 Demonic Frenzy
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      460907 Demonic Frenzy
+
+effect 1  casts 460907 Demonic Frenzy on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=460907 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_CREATURE_AOE_DAMAGE_AVOIDANCE base=-90 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_PERCENT_STAT base=20 misc=2 target=[1,0]
+effect 4  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=460906
+=======
+412727 Demonic Tactics
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_ALL_EFFECTS +10 on family 5 mask 0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=8 family=5 mask=0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412727
+=======
+1243030 Demonic Tactics
+school    physical
+defense   magic
+duration  permanent
+range     100 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_OWNER A_MOD_CRIT_PCT base=10 radius=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1243030
+=======
+19476 Dispel Magic (Rank 1)
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      120 mana
+range     30 yd
+labels    19
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=19476
+=======
+412787 Disrupt
+school    shadow
+defense   melee
+duration  5 s
+cooldown  10 s (category)
+gcd       1 s
+cost      5% of maximum mana
+range     5 yd
+attrs     refund on miss
+
+effect 1  10 shadow damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=10 sp=0.1 target=[6,0]
+effect 2  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+
+https://www.wowhead.com/forever/spell=412787
+=======
+26116 Doomcaller Immolate Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_ALL_EFFECTS +5% on family 5 mask 0x4,0x10000,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=8 family=5 mask=0x4,0x10000,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26116
+=======
+26117 Doomcaller Reduced Shadow Bolt Cost
+school    shadow
+attrs     passive
+
+effect 1  SPELLMOD_COST -15% on family 5 mask 0x1,0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=5 mask=0x1,0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26117
+=======
+1259821 Eureka! (Racial)
+school    nature
+defense   magic
+duration  15 s
+cooldown  120 s
+charges   3
+attrs     can proc from procs
+labels    5710
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -10% on family 5 mask 0x845af,0x800182
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=5 mask=0x845af,0x800182 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x845af,0x800182
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x845af,0x800182 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on family 5 mask 0x440e,0x102
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x440e,0x102 target=[1,0]
+effect 4  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1259821
+=======
+412689 Everlasting Affliction
+school    physical
+attrs     passive
+labels    19
+
+effect 1  casts 412698 Everlasting Affliction when the target is hit from family 5 mask 0x1
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=412698 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412689
+=======
+415076 Exorcist
+school    physical
+attrs     passive
+refs      415068 Exorcism
+
+effect 1  replaces an action bar spell with 879 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415068 misc=879 target=[1,0]
+effect 2  replaces an action bar spell with 5614 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415069 misc=5614 target=[1,0]
+effect 3  replaces an action bar spell with 5615 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415070 misc=5615 target=[1,0]
+effect 4  replaces an action bar spell with 10312 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415071 misc=10312 target=[1,0]
+effect 5  replaces an action bar spell with 10313 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415072 misc=10313 target=[1,0]
+effect 6  replaces an action bar spell with 10314 Exorcism
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415073 misc=10314 target=[1,0]
+
+https://www.wowhead.com/forever/spell=415076
+=======
+18792 Fel Energy
+school    shadow
+duration  7200 s
+range     100 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_POWER base=2 period=4000ms target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18792
+=======
+469230 Fel Invigoration
+school    physical
+duration  15 s
+
+effect 1  -25% physical damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-25 misc=1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=0 family=5 mask=0x0,0x0,0x0,0x80000000 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -90% on family 5 mask 0x0,0x0,0x0,0x80000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-90 misc=11 family=5 mask=0x0,0x0,0x0,0x80000000 target=[1,0]
+effect 4  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469230
+=======
+18790 Fel Stamina
+school    shadow
+defense   magic
+duration  7200 s
+range     100 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_HEALTH base=3 period=4000ms target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18790
+=======
+469227 Felhunted
+school    shadow
+mechanic  mechanic 9
+duration  3 s
+range     100 yd
+
+effect 1  silences to the enemy
+          E_APPLY_AURA A_MOD_SILENCE base=0 sp=1 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=469227
+=======
+469228 Felhunted
+school    shadow
+defense   magic
+duration  6 s
+cost      200 mana
+range     100 yd
+refs      24259 Spell Lock
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  casts 469227 Felhunted to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=469227 mechanic=9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=469228
+=======
+423474 Fetish of Mischief
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +2 on family 5 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 family=5 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=423474
+=======
+1227207 Filthy Lucre
+school    shadow
+attrs     cannot crit, not a proc
+
+effect 1  1 healing to the caster
+          E_HEAL base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227207
+=======
+457558 Fire Trance
+school    fire
+defense   magic
+duration  10 s
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x4,0x10040
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x4,0x10040 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457558
+=======
+17933 Firestone Attack
+school    fire
+defense   magic
+range     100 yd
+labels    19
+
+effect 1  40–60 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=50 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17933
+=======
+17934 Greater Firestone Attack
+school    fire
+defense   magic
+range     100 yd
+labels    19
+
+effect 1  60–90 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=75 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17934
+=======
+5723 Greater Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  960 healing to the caster
+          E_HEAL base=960 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5723
+=======
+23474 Greater Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  880 healing to the caster
+          E_HEAL base=880 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23474
+=======
+23475 Greater Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  960 healing to the caster
+          E_HEAL base=960 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23475
+=======
+17729 Greater Spellstone
+school    shadow
+defense   magic
+duration  60 s
+labels    19
+
+effect 1  dispels 100 magic effect to the caster
+          E_DISPEL base=100 misc=1 target=[1,0]
+effect 2  absorbs 650 holy+fire+nature+frost+shadow+arcane damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=650 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17729
+=======
+403501 Haunt (Rank 1)
+school    shadow
+defense   magic
+duration  12 s
+cast      1.5 s
+cooldown  15 s
+gcd       1.5 s
+cost      170 mana
+range     30 yd
+
+effect 1  114.92674–135.07326 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=125 variance=0.16117217 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
+effect 3  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=403501
+=======
+403858 Haunt
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403501 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403858
+=======
+1293693 Haunt (Rank 2)
+school    shadow
+defense   magic
+duration  12 s
+cast      1.5 s
+cooldown  15 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+
+effect 1  149.86447–176.13553 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=163 variance=0.16117217 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
+effect 3  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293693
+=======
+1293694 Haunt (Rank 3)
+school    shadow
+defense   magic
+duration  12 s
+cast      1.5 s
+cooldown  15 s
+gcd       1.5 s
+cost      240 mana
+range     30 yd
+
+effect 1  194.91576–229.08424 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=212 variance=0.16117217 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
+effect 3  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293694
+=======
+19952 Heal Ragnaros
+school    fire
+defense   magic
+duration  10 s
+range     100 yd
+attrs     channeled
+
+effect 1  1000 healing every 1 s to target 38 (10 ticks)
+          E_APPLY_AURA A_PERIODIC_HEAL base=1000 period=1000ms amplitude=2.5 target=[38,0]
+
+https://www.wowhead.com/forever/spell=19952
+=======
+5720 Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  600 healing to the caster
+          E_HEAL base=600 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5720
+=======
+23472 Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  550 healing to the caster
+          E_HEAL base=550 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23472
+=======
+23473 Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  600 healing to the caster
+          E_HEAL base=600 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23473
+=======
+469229 Hunter of Chaos
+school    shadow
+duration  15 s
+charges   1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says cast trigger
+refs      469227 Felhunted, 469228 Felhunted
+
+effect 1  casts 469228 Felhunted on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=469228 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469229
+=======
+23047 Immolate Cast Time Reduction
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.2 s on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=21 family=5 mask=0x4,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23047
+=======
+427725 Immolation Aura
+school    fire
+defense   magic
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  20 fire damage to every enemy around the caster (+0.045 spell power)
+          E_SCHOOL_DAMAGE base=20 sp=0.045 target=[22,15]
+
+https://www.wowhead.com/forever/spell=427725
+=======
+427726 Immolation Aura
+school    fire
+defense   magic
+duration  permanent
+gcd       1.5 s
+icd       1 s
+labels    3096, 3100
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      427725 Immolation Aura
+
+effect 1  casts 427725 Immolation Aura on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=427725 target=[1,0]
+effect 2  -10% holy+fire+nature+frost+shadow+arcane damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=126 target=[1,0]
+effect 3  +10% fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427726
+=======
+431757 Immolation Aura
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427726 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431757
+=======
+469357 Immolation Aura
+school    fire
+defense   magic
+duration  permanent
+gcd       1.5 s
+icd       1 s
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      427725 Immolation Aura
+
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469357
+=======
+469222 Impish Delight
+school    fire
+duration  15 s
+
+effect 1  +15% fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=4 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469222
+=======
+26118 Implements of Unspoken Names Pet Bonus
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DAMAGE +5% on family 5 mask 0x3000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=5 mask=0x3000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +5 on family 5 mask 0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=8 family=5 mask=0x4000000 target=[0,0]
+
+https://www.wowhead.com/forever/spell=26118
+=======
+24487 Improved Death Coil
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COOLDOWN -15% on family 5 mask 0x80000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=11 family=5 mask=0x80000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24487
+=======
+23554 Improved Drain Life
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_VALUE_MULTIPLIER +15% on family 5 mask 0x18
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=27 family=5 mask=0x18 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23554
+=======
+24430 Improved Rain of Fire/Hellfire
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_RADIUS +1 on family 5 mask 0x60
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=6 family=5 mask=0x60 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24430
+=======
+1293641 Improved Soulstone
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_CASTING_TIME -20% on family 5 mask 0x0,0x4000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=5 mask=0x0,0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1293641
+=======
+23480 Increase Fire Dam (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +10 fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=10 misc=4 target=[1,0]
+effect 2  +1% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23480
+=======
+23481 Increase Fire Dam (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +14 fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=4 target=[1,0]
+effect 2  +1% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23481
+=======
+23482 Increase Fire Dam (Rank 3)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +17 fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=4 target=[1,0]
+effect 2  +2% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23482
+=======
+23483 Increase Fire Dam (Rank 4)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +21 fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=4 target=[1,0]
+effect 2  +2% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23483
+=======
+1237162 Increase Shadow Dam (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +14 fire+shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=36 target=[1,0]
+effect 2  +1% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1237162
+=======
+1237164 Increase Shadow Dam (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +17 fire+shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=36 target=[1,0]
+effect 2  +2% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1237164
+=======
+1237165 Increase Shadow Dam (Rank 3)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +21 fire+shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=36 target=[1,0]
+effect 2  +2% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1237165
+=======
+440882 Infernal Armor
+school    shadow
+defense   magic
+duration  10 s
+cooldown  60 s
+cost      3% of maximum mana
+labels    3096, 3100
+
+effect 1  -20% holy+fire+nature+frost+shadow+arcane damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-20 misc=126 target=[1,0]
+effect 2  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440882
+=======
+24826 Infernal Fire
+school    fire
+defense   magic
+duration  permanent
+cooldown  5 s
+gcd       1.5 s
+
+effect 1  1651–2349 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=2000 variance=0.349 sp=1 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=0 target=[6,27]
+
+https://www.wowhead.com/forever/spell=24826
+=======
+1214088 Infernalist
+school    physical
+duration  20 s
+stack     up to 2
+
+effect 1  +5% fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=5 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214088
+=======
+1233988 Infernalist Armor
+school    physical
+duration  20 s
+
+effect 1  +20% holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1233988
+=======
+1232093 Infusion of Souls
+school    physical
+duration  permanent
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 5 mask 0x855ef,0x870143
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=5 mask=0x855ef,0x870143 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1232093
+=======
+403650 Lake of Fire
+school    fire
+defense   magic
+duration  15 s
+range     100 yd
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=50 radius=8 family=5 mask=0x200164,0x8200c0,0x11000002 target=[87,16]
+
+https://www.wowhead.com/forever/spell=403650
+=======
+403666 Lake of Fire
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 5740 Rain of Fire
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=460692 misc=5740 target=[1,0]
+effect 2  replaces an action bar spell with 6219 Rain of Fire
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=460698 misc=6219 target=[1,0]
+effect 3  replaces an action bar spell with 11677 Rain of Fire
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=460699 misc=11677 target=[1,0]
+effect 4  replaces an action bar spell with 11678 Rain of Fire
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=460700 misc=11678 target=[1,0]
+effect 5  a dummy aura holding 8
+          E_APPLY_AURA A_DUMMY base=8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403666
+=======
+403872 Lake of Fire
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403666 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403872
+=======
+17809 Lesser Firestone Attack
+school    fire
+defense   magic
+range     100 yd
+labels    19
+
+effect 1  25–35 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=30 variance=0.33333334 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17809
+=======
+6263 Lesser Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  300 healing to the caster
+          E_HEAL base=300 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6263
+=======
+23470 Lesser Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  275 healing to the caster
+          E_HEAL base=275 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23470
+=======
+23471 Lesser Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  300 healing to the caster
+          E_HEAL base=300 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23471
+=======
+433672 Loathing
+school    physical
+defense   magic
+duration  3 s
+cooldown  10 s (category)
+range     5 yd
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 sp=1 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=433672
+=======
+17935 Major Firestone Attack
+school    fire
+defense   magic
+range     100 yd
+labels    19
+
+effect 1  80–120 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=100 variance=0.4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17935
+=======
+11732 Major Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  1440 healing to the caster
+          E_HEAL base=1440 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11732
+=======
+23476 Major Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  1320 healing to the caster
+          E_HEAL base=1320 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23476
+=======
+23477 Major Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  1440 healing to the caster
+          E_HEAL base=1440 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23477
+=======
+17730 Major Spellstone
+school    shadow
+defense   magic
+duration  60 s
+labels    19
+
+effect 1  dispels 100 magic effect to the caster
+          E_DISPEL base=100 misc=1 target=[1,0]
+effect 2  absorbs 900 holy+fire+nature+frost+shadow+arcane damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=900 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17730
+=======
+440895 Mark of Chaos
+school    fire
+defense   magic
+duration  10 s
+charges   1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x185,0x8200c0
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x185,0x8200c0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440895
+=======
+461615 Mark of Chaos
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+
+effect 1  -75 fire+frost resistance to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=20 target=[6,0]
+effect 2  +10% fire+frost damage taken to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=20 target=[6,0]
+effect 3  -75 shadow+arcane resistance to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=96 target=[6,0]
+effect 4  -75 nature resistance to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=8 target=[6,0]
+effect 5  +10% shadow+arcane damage taken to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=96 target=[6,0]
+effect 6  +10% nature damage taken to the enemy (at level 60)
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=8 target=[6,0]
+
+https://www.wowhead.com/forever/spell=461615
+=======
+24543 Massive Destruction
+school    fire
+defense   magic
+duration  20 s
+labels    19
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 5 mask 0x3e5,0x10000,0x820002
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=5 mask=0x3e5,0x10000,0x820002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24543
+=======
+468540 Massive Destruction
+school    fire
+defense   magic
+duration  20 s
+range     100 yd
+refs      468543 Demonic Destruction
+
+effect 1  +10% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=10 sp=1 misc=127 target=[1,0]
+effect 2  +10% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=10 sp=1 target=[1,0]
+effect 3  casts 468543 Demonic Destruction to the caster
+          E_TRIGGER_SPELL base=0 trigger=468543 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468540
+=======
+403668 Master Channeler
+school    physical
+attrs     passive
+refs      403677 Drain Life
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+effect 3  replaces an action bar spell with 689 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403677 misc=689 target=[1,0]
+effect 4  replaces an action bar spell with 699 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403685 misc=699 target=[1,0]
+effect 5  replaces an action bar spell with 709 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403686 misc=709 target=[1,0]
+effect 6  replaces an action bar spell with 7651 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403687 misc=7651 target=[1,0]
+effect 7  replaces an action bar spell with 11699 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403688 misc=11699 target=[1,0]
+effect 8  replaces an action bar spell with 11700 Drain Life
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403689 misc=11700 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403668
+=======
+403868 Master Channeler
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403668 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403868
+=======
+18757 Master Conjuror (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COST -20% on family 5 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=14 family=5 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME -20% on family 5 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=10 family=5 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18757
+=======
+18758 Master Conjuror (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COST -40% on family 5 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=5 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME -40% on family 5 mask 0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=10 family=5 mask=0x100000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18758
+=======
+6262 Minor Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  120 healing to the caster
+          E_HEAL base=120 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6262
+=======
+23468 Minor Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  110 healing to the caster
+          E_HEAL base=110 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23468
+=======
+23469 Minor Healthstone
+school    physical
+defense   magic
+labels    19
+
+effect 1  120 healing to the caster
+          E_HEAL base=120 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23469
+=======
+433813 Neverending Soul Vessel
+school    shadow
+defense   magic
+duration  20 s
+cooldown  300 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x201008c0,0x80000080,0xa000000,0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=433813
+=======
+1216486 Noxious Breath
+school    nature
+duration  30 s
+range     50000 yd
+stack     up to 6
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_COOLDOWN +10 s on family 5 mask 0xffffffff,0xffffffff,0xffffffff,0xffffffff to the enemy
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=5 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
+effect 2  a dummy aura holding 400 to the enemy
+          E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1216486
+=======
+426764 Only Pain
+school    shadow
+duration  permanent
+proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  immune to every school
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426764
+=======
+457573 Pain Tap
+school    shadow
+range     100 yd
+attrs     cannot crit
+
+effect 1  restores 100 mana to the friendly target
+          E_ENERGIZE base=100 target=[21,0]
+
+https://www.wowhead.com/forever/spell=457573
+=======
+30879 Permanent Area Damage 50k (QASpell)
+school    physical
+attrs     cannot crit
+
+effect 1  50000 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=50000 radius=20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=30879
+=======
+22855 Pimgib's Collar
+school    physical
+range     100 yd
+attrs     passive
+
+effect 1  casts nothing every 5 s
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=9 period=5000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=22855
+=======
+28746 Plagueheart
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CRITICAL_THREAT base=-25 sp=1 misc=126 target=[1,0]
+effect 2  SPELLMOD_THREAT -25% on family 5 mask 0x406,0x10001,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=2 family=5 mask=0x406,0x10001,0x800002 target=[0,0]
+
+https://www.wowhead.com/forever/spell=28746
+=======
+1262654 Reagent Economy
+school    shadow
+defense   magic
+duration  permanent
+cooldown  300 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=5 mask=0x0,0x0,0x1,0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262654
+=======
+468303 Reduced Cleave Cooldown
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 5 mask 0x2000,0x1000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=5 mask=0x2000,0x1000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468303
+=======
+1219421 S03 - Item - Naxxramas - Warlock - Damage 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +20% on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=5 mask=0x2 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +20% on family 5 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=5 mask=0x2 target=[1,0]
+effect 3  SPELLMOD_DAMAGE +20% on family 5 mask 0x2,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=5 mask=0x2,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219421
+=======
+1219423 S03 - Item - Naxxramas - Warlock - Damage 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20 from family 5 mask 0x2
+          E_APPLY_AURA A_DUMMY base=20 family=5 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219423
+=======
+1219462 S03 - Item - Naxxramas - Warlock - Damage 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219462
+=======
+1219476 S03 - Item - Naxxramas - Warlock - Tank 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -10 s on family 5 mask 0x0,0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -3 s on family 5 mask 0x0,0x0,0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=5 mask=0x0,0x0,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219476
+=======
+1219479 S03 - Item - Naxxramas - Warlock - Tank 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219479
+=======
+1214151 S03 - Item - RAQ - Warlock - Tank 3P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      1214156 Spreading Pain
+
+effect 1  casts 1214156 Spreading Pain on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=50 trigger=1214156 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214151
+=======
+1227175 S03 - Item - Scarlet Enclave - Warlock - Damage 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      1227177 Burn
+
+effect 1  a dummy aura holding 25
+          E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227175
+=======
+1227186 S03 - Item - Scarlet Enclave - Warlock - Damage 4P Bonus
+school    physical
+attrs     passive, can proc from procs
+
+effect 1  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227186
+=======
+1227196 S03 - Item - Scarlet Enclave - Warlock - Damage 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says cast trigger, on a crit
+refs      1227200 Wickedness
+
+effect 1  casts 1227200 Wickedness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1227200 target=[1,0]
+effect 2  a dummy aura holding 12
+          E_APPLY_AURA A_DUMMY base=12 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227196
+=======
+1227214 S03 - Item - Scarlet Enclave - Warlock - Tank 2P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      1223963 Corruption
+
+effect 1  a dummy aura holding 5
+          E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227214
+=======
+1227204 S03 - Item - Scarlet Enclave - Warlock - Tank 4P Bonus
+school    physical
+attrs     passive, cannot crit, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227204
+=======
+1227228 S03 - Item - Scarlet Enclave - Warlock - Tank 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+refs      440882 Infernal Armor
+
+effect 1  SPELLMOD_DURATION +10 s on family 5 mask 0x0,0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 misc=1 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
+effect 2  casts 1233988 Infernalist Armor when the target is hit from family 5 mask 0x0,0x0,0x0,0x2000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=1233988 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227228
+=======
+457548 S03 - Item - T1 - Warlock - Damage 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 trigger=16280 target=[1,0]
+effect 2  SPELLMOD_THREAT -100% on every spell of family 5
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457548
+=======
+457549 S03 - Item - T1 - Warlock - Damage 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  +2% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
+effect 2  +2% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457549
+=======
+457553 S03 - Item - T1 - Warlock - Damage 6P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance; tooltip says heals count, one named ability
+
+effect 1  SPELLMOD_CHANCE_OF_SUCCESS +4% on family 5 mask 0x0,0x0,0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=18 family=5 mask=0x0,0x0,0x4000000 target=[1,0]
+effect 2  casts 440873 Decimation on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=4 sp=1 trigger=440873 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457553
+=======
+457571 S03 - Item - T1 - Warlock - Tank 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      25771 Forbearance
+
+effect 1  replaces an action bar spell with 710 Banish
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=457569 misc=710 target=[1,0]
+effect 2  replaces an action bar spell with 18647 Banish
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=465352 misc=18647 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457571
+=======
+457572 S03 - Item - T1 - Warlock - Tank 4P Bonus
+school    physical
+icd       3.5 s
+attrs     passive
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 420 from family 5 mask 0x0,0x8000000
+          E_APPLY_AURA A_DUMMY base=420 family=5 mask=0x0,0x8000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457572
+=======
+457642 S03 - Item - T1 - Warlock - Tank 6P Bonus
+school    physical
+icd       0.1 s
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance
+refs      457643 Soul Fire!
+
+effect 1  casts 457643 Soul Fire! on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=420 trigger=457643 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457642
+=======
+467917 S03 - Item - T2 - Warlock - Damage 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_DOT +10% on family 5 mask 0x442e,0x10101,0x1000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 perResource=5 family=5 mask=0x442e,0x10101,0x1000000 target=[1,0]
+effect 2  SPELLMOD_EFFECT4 +10 on family 5 mask 0x0,0x0,0x0,0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=32 perResource=5 family=5 mask=0x0,0x0,0x0,0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467917
+=======
+467983 S03 - Item - T2 - Warlock - Damage 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; 4% chance; tooltip says one named ability
+
+effect 1  casts 17941 Shadow Trance on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=17941 perResource=5 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4309 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467983
+=======
+467988 S03 - Item - T2 - Warlock - Damage 6P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 perResource=5 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=467988
+=======
+468028 S03 - Item - T2 - Warlock - Tank 2P Bonus
+school    physical
+attrs     passive
+refs      468029 Life Tap
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468028
+=======
+468046 S03 - Item - T2 - Warlock - Tank 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      468062 Soul Essence
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 sp=1 perResource=5 target=[1,0]
+effect 2  casts 468062 Soul Essence on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 sp=1 trigger=468062 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468046
+=======
+468048 S03 - Item - T2 - Warlock - Tank 4P Bonus
+school    physical
+duration  permanent
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-40 sp=1 family=5 mask=0x20000880,0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468048
+=======
+468061 S03 - Item - T2 - Warlock - Tank 6P Bonus
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 sp=1 perResource=5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468061
+=======
+1214085 S03 - Item - TAQ - Warlock - Damage 2P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COOLDOWN -50% on family 5 mask 0x0,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=5 mask=0x0,0x20000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x1,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x1,0x20000 target=[1,0]
+effect 3  SPELLMOD_CHARGES +26 on family 5 mask 0x0,0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=26 misc=4 family=5 mask=0x0,0x0,0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214085
+=======
+1214087 S03 - Item - TAQ - Warlock - Damage 4P Bonus
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      1214088 Infernalist
+
+effect 1  casts 1214088 Infernalist on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=-50 trigger=1214088 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214087
+=======
+1214091 S03 - Item - TAQ - Warlock - Tank 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COOLDOWN -1.5 s on family 5 mask 0x0,0x0,0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=5 mask=0x0,0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214091
+=======
+1214095 S03 - Item - TAQ - Warlock - Tank 4P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding -1500
+          E_APPLY_AURA A_DUMMY base=-1500 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214095
+=======
+468400 S03 - Item - ZG - Warlock - Demonology 2P Bonus
+school    physical
+attrs     passive
+
+effect 1  +12 healing power
+          E_APPLY_AURA A_MOD_HEALING_DONE base=12 misc=126 target=[1,0]
+effect 2  +12 holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=12 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468400
+=======
+468446 S03 - Item - ZG - Warlock - Demonology 3P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468446
+=======
+468447 S03 - Item - ZG - Warlock - Demonology 5P Bonus
+school    physical
+attrs     passive
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=468447
+=======
+469211 Scythe of Chaos
+school    shadow
+icd       60 s
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance
+refs      469220 Scythe of Chaos
+
+effect 1  casts 469220 Scythe of Chaos on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=469220 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469211
+=======
+469220 Scythe of Chaos
+school    shadow
+defense   magic
+duration  20 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -10 s on family 5 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=10 family=5 mask=0x20000000 target=[1,0]
+effect 2  SPELLMOD_COST -100% on family 5 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=5 mask=0x20000000 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469220
+=======
+1219101 Scythe of Chaos
+school    shadow
+defense   magic
+duration  20 s
+range     100 yd
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -10 s on family 5 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=10 family=5 mask=0x20000000 target=[1,0]
+effect 2  SPELLMOD_COST -100% on family 5 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=5 mask=0x20000000 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219101
+=======
+1223794 Seal of the Dawn
+school    physical
+duration  10 s
+range     100 yd
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_VALUE_MULTIPLIER +0% on family 5 mask 0x8,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=27 family=5 mask=0x8,0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223794
+=======
+1227369 Searing Flames
+school    physical
+defense   magic
+duration  15 s
+cooldown  120 s
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 5 mask 0x100,0x0,0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=5 mask=0x100,0x0,0x20000 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=5 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227369
+=======
+23046 Searing Pain Cast Pushback Reduction
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=5 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23046
+=======
+459607 Searing Pain Cast Pushback Reduction
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=9 family=5 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459607
+=======
+469225 Seduction of the Shadows
+school    shadow
+duration  15 s
+
+effect 1  +15% shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=32 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469225
+=======
+403628 Shadow Bolt Volley
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_JUMP_TARGETS +5 on family 5 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=17 family=5 mask=0x1 target=[1,0]
+effect 2  SPELLMOD_JUMP_DISTANCE +10 on family 5 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=35 family=5 mask=0x1 target=[1,0]
+effect 3  SPELLMOD_DAMAGE -5% on family 5 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403628
+=======
+403871 Shadow Bolt Volley
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403628 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403871
+=======
+28447 Shadow Burst
+school    shadow
+defense   magic
+gcd       1.5 s
+cost      380 mana
+range     5 yd
+
+effect 1  1403.2–2104.8 shadow damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1754.0923 variance=0.4 radius=8 target=[22,15]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=30 misc=150 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=28447
+=======
+469085 Shadow Carving
+school    physical
+duration  permanent
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; 20% chance
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469085
+=======
+23553 Shadow Cost Reduction
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  -15% shadow power cost
+          E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-15 sp=1 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23553
+=======
+450012 Shadow Spark
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      450013 Shadow Spark
+
+effect 1  casts 450013 Shadow Spark on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 sp=1 trigger=450013 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450012
+=======
+450013 Shadow Spark
+school    physical
+duration  12 s
+stack     up to 2
+charges   1
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -50% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=10 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450013
+=======
+17941 Shadow Trance
+school    shadow
+defense   magic
+duration  10 s
+labels    19
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17941
+=======
+17794 Shadow Vulnerability
+school    shadow
+defense   magic
+duration  12 s
+range     100 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=4 sp=1 misc=32 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17794
+=======
+457643 Soul Fire!
+school    fire
+defense   magic
+duration  10 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x0,0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x0,0x80 target=[1,0]
+effect 2  creates item 0 to the caster
+          E_CREATE_ITEM base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=457643
+=======
+20707 Soulstone Resurrection
+school    shadow
+duration  1800 s
+cast      3 s
+range     30 yd
+stance    Spirit of Redemption
+refs      3026 Use Soulstone
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20707
+=======
+20762 Soulstone Resurrection
+school    shadow
+duration  1800 s
+cast      3 s
+range     30 yd
+stance    Spirit of Redemption
+refs      20758 Use Soulstone
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20762
+=======
+20763 Soulstone Resurrection
+school    shadow
+duration  1800 s
+cast      3 s
+range     30 yd
+stance    Spirit of Redemption
+refs      20759 Use Soulstone
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20763
+=======
+20764 Soulstone Resurrection
+school    shadow
+duration  1800 s
+cast      3 s
+range     30 yd
+stance    Spirit of Redemption
+refs      20760 Use Soulstone
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20764
+=======
+20765 Soulstone Resurrection
+school    shadow
+duration  1800 s
+cast      3 s
+range     30 yd
+stance    Spirit of Redemption
+refs      20761 Use Soulstone
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20765
+=======
+128 Spellstone
+school    shadow
+defense   magic
+duration  60 s
+labels    19
+
+effect 1  dispels 100 magic effect to the caster
+          E_DISPEL base=100 misc=1 target=[1,0]
+effect 2  absorbs 400 holy+fire+nature+frost+shadow+arcane damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=400 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=128
+=======
+1214156 Spreading Pain
+school    physical
+duration  6 s
+stack     up to 1
+
+effect 1  SPELLMOD_JUMP_TARGETS +1 on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=17 family=5 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214156
+=======
+427733 Summon Felguard (Summon)
+school    shadow
+defense   magic
+duration  permanent
+cast      10 s
+gcd       1.5 s
+cost      80% of maximum mana
+labels    3096, 3100
+
+effect 1  unrecognised shape
+          E_SUMMON_PET base=1 misc=213450 misc2=1 target=[32,0]
+
+https://www.wowhead.com/forever/spell=427733
+=======
+427748 Summon Felguard
+school    shadow
+defense   magic
+duration  permanent
+labels    19
+
+effect 1  unrecognised shape
+          E_SUMMON_PET base=1 misc=213450 target=[32,0]
+
+https://www.wowhead.com/forever/spell=427748
+=======
+431754 Summon Felguard
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427733 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431754
+=======
+26281 Taunt
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+range     5 yd
+
+effect 1  1000 threat to the enemy
+          E_THREAT base=1000 ppl=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26281
+=======
+28608 Test Curse of Agony (Rank 6)
+school    shadow
+defense   magic
+duration  24 s
+gcd       1.5 s
+cost      215 mana
+range     30 yd
+labels    19
+
+effect 1  87 shadow damage every 2 s to the enemy (12 ticks, +0.083 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=87 sp=0.083 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=28608
+=======
+461230 The Molten Core
+school    fire
+defense   magic
+attrs     cannot crit
+
+effect 1  20 fire damage to every enemy around the caster (+0.045 spell power)
+          E_SCHOOL_DAMAGE base=20 sp=0.045 target=[22,15]
+
+https://www.wowhead.com/forever/spell=461230
+=======
+1262316 The Quick and the Dead
+school    shadow
+defense   magic
+duration  120 s
+
+effect 1  SPELLMOD_COST -100% on family 5 mask 0x21100000,0x20000020,0x30
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=5 mask=0x21100000,0x20000020,0x30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1262316
+=======
+1214245 Timeworn Spell
+school    physical
+duration  10 s
+attrs     suppresses weapon procs
+
+effect 1  SPELLMOD_DOT +2% on family 5 mask 0x406,0x103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1214245
+=======
+18791 Touch of Fire
+school    shadow
+defense   magic
+duration  7200 s
+range     100 yd
+labels    19
+
+effect 1  +15% fire damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=4 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18791
+=======
+427717 Unstable Affliction (Rank 1)
+school    shadow
+defense   magic
+duration  18 s
+cast      1.5 s
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+refs      427719 Unstable Affliction
+
+effect 1  86 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=86 sp=0.2 period=3000ms target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=60 target=[6,0]
+effect 3  a dummy effect holding 200 to the enemy
+          E_DUMMY base=200 target=[6,0]
+
+https://www.wowhead.com/forever/spell=427717
+=======
+427719 Unstable Affliction
+school    shadow
+defense   magic
+duration  5 s
+range     50000 yd
+labels    19
+
+effect 1  1 shadow damage to the target
+          E_SCHOOL_DAMAGE base=1 target=[25,0]
+effect 2  silences to the target
+          E_APPLY_AURA A_MOD_SILENCE base=0 misc=128 mechanic=9 target=[25,0]
+
+https://www.wowhead.com/forever/spell=427719
+=======
+431748 Unstable Affliction
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427717 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431748
+=======
+1219436 Unstable Affliction
+school    shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219436
+=======
+1242971 Unstable Affliction (Rank 2)
+school    shadow
+defense   magic
+duration  18 s
+cast      1.5 s
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+refs      427719 Unstable Affliction
+
+effect 1  123 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=123 sp=0.2 period=3000ms target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=60 target=[6,0]
+effect 3  a dummy effect holding 200 to the enemy
+          E_DUMMY base=200 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1242971
+=======
+1242972 Unstable Affliction (Rank 3)
+school    shadow
+defense   magic
+duration  18 s
+cast      1.5 s
+gcd       1.5 s
+cost      340 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+refs      427719 Unstable Affliction
+
+effect 1  174 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=174 sp=0.2 period=3000ms target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=60 target=[6,0]
+effect 3  a dummy effect holding 200 to the enemy
+          E_DUMMY base=200 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1242972
+=======
+28831 Vampirism
+school    physical
+attrs     passive
+refs      28839 Vampirism
+
+effect 1  casts 28839 Vampirism when the target is hit from family 5 mask 0x1,0x0,0x20000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=28839 family=5 mask=0x1,0x0,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28831
+=======
+469224 Void Walking
+school    shadow
+defense   magic
+duration  15 s
+
+effect 1  immune to every school
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=127 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=469224
+=======
+1227200 Wickedness
+school    physical
+duration  15 s
+labels    3096, 3100
+
+effect 1  +20% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1227200
+=======
+471699 Zila Amanemodas
+school    physical
+duration  permanent
+caster aura 403789 Metamorphosis
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=471699
+=======
+448686 Zila Gular
+school    shadow
+duration  20 s
+charges   1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_DOT +10% on family 5 mask 0x402,0x10901
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x402,0x10901 target=[1,0]
+
+https://www.wowhead.com/forever/spell=448686

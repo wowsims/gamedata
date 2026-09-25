@@ -1,0 +1,1313 @@
+1044 Blessing of Freedom
+school    holy
+defense   magic
+duration  10 s
+cooldown  20 s
+gcd       1.5 s
+cost      10% of maximum mana
+range     30 yd
+labels    26
+
+effect 1  immune to root to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[21,0]
+effect 2  immune to snare to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=11 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1044
+=======
+20217 Blessing of Kings
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     30 yd
+labels    26
+
+effect 1  +10% to all stats to the friendly target
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[21,0]
+
+https://www.wowhead.com/forever/spell=20217
+=======
+1213408 Blessing of Kings
+school    holy
+duration  permanent
+range     30 yd
+
+effect 1  +10% to all stats
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213408
+=======
+1022 Blessing of Protection (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  6 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+labels    26
+refs      25771 Forbearance
+
+effect 1  immune to physical to the target's raid
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1022
+=======
+5599 Blessing of Protection (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  8 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+labels    26
+refs      25771 Forbearance
+
+effect 1  immune to physical to the target's raid
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+
+https://www.wowhead.com/forever/spell=5599
+=======
+10278 Blessing of Protection (Rank 3)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      7% of maximum mana
+range     30 yd
+labels    26
+refs      25771 Forbearance
+
+effect 1  immune to physical to the target's raid
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+
+https://www.wowhead.com/forever/spell=10278
+=======
+442948 Blessing of Protection
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  10 s
+cost      7% of maximum mana
+range     30 yd
+refs      25771 Forbearance
+
+effect 1  immune to physical to target 38
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[38,0]
+effect 2  unrecognised shape
+          E_QUEST_COMPLETE base=0 misc=81573 target=[1,0]
+
+https://www.wowhead.com/forever/spell=442948
+=======
+6940 Blessing of Sacrifice (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_SPLIT_DAMAGE_FLAT base=45 amplitude=1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=6940
+=======
+20729 Blessing of Sacrifice (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_SPLIT_DAMAGE_FLAT base=55 amplitude=1 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=20729
+=======
+1038 Blessing of Salvation
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      8% of maximum mana
+range     30 yd
+labels    26
+
+effect 1  -30% threat to the target's raid
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1038
+=======
+19746 Concentration Aura
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PARTY A_REDUCE_PUSHBACK base=35 misc=127 misc2=15 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+effect 3  party aura: +0% interrupt duration
+          E_APPLY_AREA_AURA_PARTY A_MECHANIC_DURATION_MOD base=0 sp=1 misc=26 radius=30 target=[1,0]
+effect 4  party aura: +0% silence duration
+          E_APPLY_AREA_AURA_PARTY A_MECHANIC_DURATION_MOD base=0 sp=1 misc=9 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19746
+=======
+465 Devotion Aura (Rank 1)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +55 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=55 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=465
+=======
+643 Devotion Aura (Rank 3)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +275 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=275 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=643
+=======
+1032 Devotion Aura (Rank 5)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +505 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=505 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1032
+=======
+10290 Devotion Aura (Rank 2)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +160 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=160 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10290
+=======
+10291 Devotion Aura (Rank 4)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +390 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=390 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10291
+=======
+10292 Devotion Aura (Rank 6)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +620 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=620 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10292
+=======
+10293 Devotion Aura (Rank 7)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: +735 armor
+          E_APPLY_AREA_AURA_PARTY A_MOD_RESISTANCE base=735 misc=1 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10293
+=======
+19752 Divine Intervention
+school    holy
+cooldown  3600 s
+gcd       1.5 s
+range     40 yd
+labels    26
+refs      19753 Divine Intervention
+
+effect 1  unrecognised shape
+          E_SANCTUARY base=0 sp=1 target=[57,0]
+effect 2  casts 19753 Divine Intervention to the target's raid
+          E_TRIGGER_SPELL base=0 sp=1 trigger=19753 target=[57,0]
+effect 3  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19752
+=======
+498 Divine Protection (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  6 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      15 mana
+excluded caster aura 25771 Forbearance
+labels    26
+refs      25771 Forbearance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY base=0 target=[1,0]
+effect 2  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 3  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=498
+=======
+5573 Divine Protection (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  8 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      35 mana
+excluded caster aura 25771 Forbearance
+labels    26
+refs      25771 Forbearance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY base=0 target=[1,0]
+effect 2  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 3  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=5573
+=======
+458312 Divine Protection (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  9 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      15 mana
+refs      25771 Forbearance
+
+effect 1  -50% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=458312
+=======
+458371 Divine Protection (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  12 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      35 mana
+refs      25771 Forbearance
+
+effect 1  -50% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=458371
+=======
+642 Divine Shield (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      75 mana
+excluded caster aura 25771 Forbearance
+labels    26
+refs      25771 Forbearance
+
+effect 1  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 2  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+effect 3  -50% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=642
+=======
+1020 Divine Shield (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 25
+duration  12 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      110 mana
+excluded caster aura 25771 Forbearance
+labels    26
+refs      25771 Forbearance
+
+effect 1  immune to physical
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
+effect 2  immune to holy+fire+nature+frost+shadow+arcane
+          E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+effect 3  -50% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1020
+=======
+19891 Fire Resistance Aura (Rank 1)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +30 fire resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=4 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19891
+=======
+19899 Fire Resistance Aura (Rank 2)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +45 fire resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=4 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19899
+=======
+19900 Fire Resistance Aura (Rank 3)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +60 fire resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=4 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19900
+=======
+19888 Frost Resistance Aura (Rank 1)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +30 frost resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=16 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19888
+=======
+19897 Frost Resistance Aura (Rank 2)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +45 frost resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=16 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19897
+=======
+19898 Frost Resistance Aura (Rank 3)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +60 frost resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=16 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19898
+=======
+25898 Greater Blessing of Kings
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      150 mana
+range     40 yd
+labels    26
+
+effect 1  +10% to all stats to target 153
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 radius=100 target=[153,0]
+
+https://www.wowhead.com/forever/spell=25898
+=======
+25895 Greater Blessing of Salvation
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      16% of maximum mana
+range     40 yd
+labels    26
+
+effect 1  -30% threat to target 153
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 radius=100 target=[153,0]
+
+https://www.wowhead.com/forever/spell=25895
+=======
+20174 Guardian's Favor
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 sp=1 misc=11 family=10 mask=0x80 target=[1,0]
+effect 2  SPELLMOD_DURATION +3 s on family 10 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 sp=1 misc=1 family=10 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20174
+=======
+853 Hammer of Justice (Rank 1)
+school    holy
+defense   magic
+mechanic  mechanic 12
+duration  3 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      30 mana
+range     10 yd
+labels    26
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=853
+=======
+5588 Hammer of Justice (Rank 2)
+school    holy
+defense   magic
+mechanic  mechanic 12
+duration  4 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      50 mana
+range     10 yd
+labels    26
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5588
+=======
+5589 Hammer of Justice (Rank 3)
+school    holy
+defense   magic
+mechanic  mechanic 12
+duration  5 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      75 mana
+range     10 yd
+labels    26
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5589
+=======
+10308 Hammer of Justice (Rank 4)
+school    holy
+defense   magic
+mechanic  mechanic 12
+duration  6 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      100 mana
+range     10 yd
+labels    26
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10308
+=======
+407632 Hammer of the Righteous
+school    holy
+defense   melee
+cooldown  6 s (category)
+gcd       1.5 s
+cost      6% of maximum mana
+range     5 yd
+equip     needs a one-handed axe, one-handed mace or one-handed sword
+labels    26
+
+effect 1  1 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=1 chain=4 target=[6,0]
+effect 2  a dummy effect holding 120 to the enemy
+          E_DUMMY base=120 chain=3 target=[6,0]
+effect 3  a dummy effect holding 3 to the enemy
+          E_DUMMY base=3 chain=4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=407632
+=======
+409922 Hammer of the Righteous
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407632 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409922
+=======
+20925 Holy Shield (Rank 1)
+school    holy
+defense   magic
+duration  10 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      150 mana
+equip     needs a shield
+charges   4
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +20% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
+effect 3  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20925
+=======
+20927 Holy Shield (Rank 2)
+school    holy
+defense   magic
+duration  10 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      195 mana
+equip     needs a shield
+charges   4
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +20% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
+effect 3  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20927
+=======
+20928 Holy Shield (Rank 3)
+school    holy
+defense   magic
+duration  10 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      240 mana
+equip     needs a shield
+charges   4
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  +20% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
+effect 3  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20928
+=======
+456544 Holy Shield
+school    holy
+defense   magic
+range     100 yd
+labels    26
+
+effect 1  1 holy damage to the enemy (+0.05 spell power)
+          E_SCHOOL_DAMAGE base=1 sp=0.05 target=[6,0]
+
+https://www.wowhead.com/forever/spell=456544
+=======
+20254 Improved Concentration Aura
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +15 on family 10 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=3 family=10 mask=0x20000 target=[1,0]
+effect 2  SPELLMOD_EFFECT3 +30 on family 10 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=23 family=10 mask=0x20000 target=[1,0]
+effect 3  SPELLMOD_EFFECT4 +30 on family 10 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=32 family=10 mask=0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20254
+=======
+20138 Improved Devotion Aura
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +5% on family 10 mask 0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=3 family=10 mask=0x40 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 +2 on family 10 mask 0x4020048
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=12 family=10 mask=0x4020048 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20138
+=======
+20487 Improved Hammer of Justice
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COOLDOWN -5 s on family 10 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 sp=1 misc=11 family=10 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20487
+=======
+24188 Improved Hammer of Justice
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  SPELLMOD_DURATION +0.5 s on family 10 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=500 misc=1 family=10 mask=0x800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24188
+=======
+20468 Improved Righteous Fury
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT2 -6 on family 10 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6 sp=1 misc=12 family=10 mask=0x1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20468
+=======
+1311033 Iron Creed
+school    physical
+defense   melee
+duration  6 s
+caster aura 25780 Righteous Fury
+labels    26
+
+effect 1  +0% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311033
+=======
+1311034 Iron Creed
+school    physical
+attrs     passive
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says one named ability
+refs      1311033 Iron Creed
+
+effect 1  SPELLMOD_THREAT +30% on family 10 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=2 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=15 trigger=1311033 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311034
+=======
+20183 Judgement of Fury (Rank 3)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  65.55–72.45 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=54 ppl=2.52 variance=0.1 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 655 (at level 60)
+          E_DUMMY base=487 ppl=28 sp=0.18 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20183
+=======
+20232 Judgement of Fury
+school    holy
+defense   magic
+duration  4 s
+range     100 yd
+labels    26
+
+effect 1  taunts to the enemy
+          E_ATTACK_ME base=0 target=[6,0]
+effect 2  taunts to the enemy
+          E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20232
+=======
+20411 Judgement of Fury (Rank 4)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  85.60976–94.39024 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=74 ppl=2.79 variance=0.09756097 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 929 (at level 60)
+          E_DUMMY base=707 ppl=37 sp=0.2 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20411
+=======
+20412 Judgement of Fury (Rank 5)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  110.34146–121.65854 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=96 ppl=3.42 variance=0.09756097 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 1196 (at level 60)
+          E_DUMMY base=974 ppl=37 sp=0.18 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20412
+=======
+20413 Judgement of Fury (Rank 6)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  138.64966–151.35034 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 1519 (at level 60)
+          E_DUMMY base=1266 ppl=42.3 sp=0.18 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20413
+=======
+20414 Judgement of Fury (Rank 7)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  152.99272–167.00728 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=153 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 1691 (at level 60)
+          E_DUMMY base=1607 ppl=42.3 sp=0.18 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20414
+=======
+1311650 Judgement of Fury (Rank 1)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  31.35–34.65 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=23 ppl=1.71 variance=0.1 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 345 (at level 60)
+          E_DUMMY base=194.4 ppl=25.2 sp=0.1125 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1311650
+=======
+1311655 Judgement of Fury (Rank 2)
+school    holy
+defense   melee
+range     100 yd
+attrs     not a proc
+labels    26
+
+effect 1  46.55–51.45 holy damage to the enemy (at level 60, +0.45 spell power)
+          E_SCHOOL_DAMAGE base=36.9 ppl=2.16 variance=0.1 sp=0.45 target=[6,0]
+effect 2  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+effect 3  a dummy effect holding 468 (at level 60)
+          E_DUMMY base=316.8 ppl=25.2 sp=0.1125 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1311655
+=======
+20184 Judgement of Justice (Rank 1)
+school    holy
+defense   melee
+duration  10 s
+range     100 yd
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20184
+=======
+25944 Judgement of Justice
+school    holy
+range     100 yd
+labels    26
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25944
+=======
+25945 Judgement of Justice
+school    holy
+duration  10 s
+range     100 yd
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  casts 25944 Judgement of Justice on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=25944 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25945
+=======
+25780 Righteous Fury
+school    holy
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      30% of maximum mana
+labels    26
+
+effect 1  +60% threat
+          E_APPLY_AURA A_MOD_THREAT base=60 sp=1 misc=2 target=[1,0]
+effect 2  +0% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 sp=1 misc=127 target=[1,0]
+effect 3  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=10 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25780
+=======
+407627 Righteous Fury
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count, one named ability
+
+effect 1  +123% threat
+          E_APPLY_AURA A_MOD_THREAT base=123 misc=2 target=[1,0]
+effect 2  +50% threat
+          E_APPLY_AURA A_MOD_THREAT base=50 misc=125 target=[1,0]
+effect 3  a dummy aura holding 407631
+          E_APPLY_AURA A_DUMMY base=407631 target=[1,0]
+effect 4  a dummy aura holding 25
+          E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+effect 5  a dummy aura holding 80 every 10 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=80 period=10000ms target=[1,0]
+effect 6  absorbs 35 every school damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=35 misc=127 target=[1,0]
+effect 7  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 8  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=12 family=10 mask=0x0,0x0,0x0,0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407627
+=======
+1224697 Sacred Duty
+school    physical
+attrs     passive
+labels    26
+
+effect 1  +4% strength
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=4 misc2=4 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x400000,0x0,0x200100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=10 mask=0x400000,0x0,0x200100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1224697
+=======
+20163 Seal of Fury (Rank 3)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      90 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      20231 Seal of Fury, 20183 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 654 (at level 60)
+          E_APPLY_AURA A_DUMMY base=486.9 ppl=27.9 sp=0.09 trigger=20231 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 20183
+          E_APPLY_AURA A_DUMMY base=20183 trigger=20231 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20163
+=======
+20231 Seal of Fury (Rank 3)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  14 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=14 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20231
+=======
+20415 Seal of Fury (Rank 4)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  19 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=19 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20415
+=======
+20416 Seal of Fury (Rank 5)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  25 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=25 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20416
+=======
+20417 Seal of Fury (Rank 6)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  32 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=32 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20417
+=======
+20418 Seal of Fury (Rank 7)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  35 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=35 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20418
+=======
+20419 Seal of Fury (Rank 4)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      120 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      20415 Seal of Fury, 20411 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 906 (at level 60)
+          E_APPLY_AURA A_DUMMY base=707 ppl=33.3 sp=0.9 trigger=20415 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 20411
+          E_APPLY_AURA A_DUMMY base=20411 trigger=20411 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20419
+=======
+20421 Seal of Fury (Rank 5)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      140 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      20416 Seal of Fury, 20412 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 1196 (at level 60)
+          E_APPLY_AURA A_DUMMY base=974 ppl=37 sp=0.09 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 20412
+          E_APPLY_AURA A_DUMMY base=20412 trigger=20416 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20421
+=======
+20422 Seal of Fury (Rank 6)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      170 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      20417 Seal of Fury, 20413 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 1518 (at level 60)
+          E_APPLY_AURA A_DUMMY base=1266 ppl=42 sp=0.09 trigger=20417 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 20413
+          E_APPLY_AURA A_DUMMY base=20413 trigger=20417 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20422
+=======
+20423 Seal of Fury (Rank 7)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      200 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      20418 Seal of Fury, 20414 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 1691 (at level 60)
+          E_APPLY_AURA A_DUMMY base=1607 ppl=42 trigger=20418 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 20414
+          E_APPLY_AURA A_DUMMY base=20414 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20423
+=======
+1311647 Seal of Fury (Rank 1)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  6 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=6 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1311647
+=======
+1311649 Seal of Fury (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      40 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      1311647 Seal of Fury, 1311650 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 285 (at level 60)
+          E_APPLY_AURA A_DUMMY base=194 ppl=15.3 sp=0.09 trigger=1311647 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 1311650
+          E_APPLY_AURA A_DUMMY base=1311650 trigger=1311647 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311649
+=======
+1311654 Seal of Fury (Rank 2)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  9 holy damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=9 sp=0.1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1311654
+=======
+1311656 Seal of Fury (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      60 mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      1311654 Seal of Fury, 1311655 Judgement of Fury, 20232 Judgement of Fury
+
+effect 1  a dummy aura holding 441 (at level 60)
+          E_APPLY_AURA A_DUMMY base=317 ppl=20.7 sp=0.09 trigger=1311654 target=[1,0]
+effect 2  unrecognised shape
+          E_NONE base=50 target=[0,0]
+effect 3  a dummy aura holding 1311655
+          E_APPLY_AURA A_DUMMY base=1311655 trigger=1311654 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311656
+=======
+20164 Seal of Justice
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      13% of maximum mana
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
+refs      20170 Stun, 20184 Judgement of Justice
+
+effect 1  casts 20170 Stun on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20170 target=[1,0]
+effect 2  a dummy aura holding 20184
+          E_APPLY_AURA A_DUMMY base=20184 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20164
+=======
+19876 Shadow Resistance Aura (Rank 1)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +30 shadow resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=32 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19876
+=======
+19895 Shadow Resistance Aura (Rank 2)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +45 shadow resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=32 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19895
+=======
+19896 Shadow Resistance Aura (Rank 3)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  raid aura: +60 shadow resistance
+          E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=32 radius=30 target=[1,0]
+effect 2  raid aura: +0% healing taken
+          E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19896
+=======
+440658 Shield of Righteousness
+school    holy
+defense   melee
+cooldown  6 s
+cooldown  6 s (category)
+gcd       1.5 s
+cost      6% of maximum mana
+range     5 yd
+equip     needs a shield
+
+effect 1  179 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=179 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=440658
+=======
+440789 Shield of Righteousness
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 417347
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440658 misc=417347 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440789
+=======
+1310994 Swift Judgement
+school    physical
+defense   magic
+duration  permanent
+cooldown  60 s
+charges   1
+attrs     can proc from procs
+labels    26
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says one named ability
+
+effect 1  SPELLMOD_COST -100% on family 10 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310994
+=======
+1311015 Templar's Bulwark
+school    holy
+duration  8 s
+cooldown  300 s
+cost      110 mana
+excluded caster aura 25771 Forbearance
+labels    26
+refs      25771 Forbearance
+
+effect 1  absorbs 100 every school damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=100 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311015

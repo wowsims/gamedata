@@ -1,0 +1,2079 @@
+2893 Abolish Poison
+school    nature
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      16% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+refs      3137 Abolish Poison Effect
+
+effect 1  casts 3137 Abolish Poison Effect every 2 s to the friendly target (4 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=2000ms trigger=3137 target=[21,0]
+effect 2  dispels 1 poison effect to the friendly target
+          E_DISPEL base=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2893
+=======
+8946 Cure Poison
+school    nature
+defense   magic
+gcd       1.5 s
+cost      16% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  dispels 1 poison effect to the friendly target
+          E_DISPEL base=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8946
+=======
+436956 Deeper Wilds
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_COST -50% on family 7 mask 0x0,0x0,0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=7 mask=0x0,0x0,0x20000000 target=[1,0]
+effect 2  SPELLMOD_DURATION +50% on family 7 mask 0x0,0x0,0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=7 mask=0x0,0x0,0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=436956
+=======
+417148 Efflorescence
+school    nature
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    3096, 3100
+
+effect 1  16 healing to target 87 (+0.06 spell power)
+          E_HEAL base=16 sp=0.06 target=[87,31]
+
+https://www.wowhead.com/forever/spell=417148
+=======
+417149 Efflorescence
+school    physical
+attrs     passive
+labels    3096, 3100
+refs      417148 Efflorescence, 417147 Efflorescence
+
+effect 1  a dummy aura holding 100 from family 7 mask 0x0,0x2
+          E_APPLY_AURA A_DUMMY base=100 family=7 mask=0x0,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417149
+=======
+431466 Efflorescence
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417149 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431466
+=======
+417123 Enhanced Restoration
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 774 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417057 sp=1 misc=774 target=[1,0]
+effect 2  replaces an action bar spell with 1058 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417058 sp=1 misc=1058 target=[1,0]
+effect 3  replaces an action bar spell with 1430 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417059 sp=1 misc=1430 target=[1,0]
+effect 4  replaces an action bar spell with 2090 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417060 sp=1 misc=2090 target=[1,0]
+effect 5  replaces an action bar spell with 2091 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417061 sp=1 misc=2091 target=[1,0]
+effect 6  replaces an action bar spell with 3627 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417062 sp=1 misc=3627 target=[1,0]
+effect 7  replaces an action bar spell with 8910 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417063 sp=1 misc=8910 target=[1,0]
+effect 8  replaces an action bar spell with 9839 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417064 sp=1 misc=9839 target=[1,0]
+effect 9  replaces an action bar spell with 9840 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417065 sp=1 misc=9840 target=[1,0]
+effect 10 replaces an action bar spell with 9841 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417066 sp=1 misc=9841 target=[1,0]
+effect 11 replaces an action bar spell with 25299 Rejuvenation
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417068 sp=1 misc=25299 target=[1,0]
+effect 12 replaces an action bar spell with 8936 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436937 sp=1 misc=8936 target=[1,0]
+effect 13 replaces an action bar spell with 8938 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436938 sp=1 misc=8938 target=[1,0]
+effect 14 replaces an action bar spell with 8939 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436939 sp=1 misc=8939 target=[1,0]
+effect 15 replaces an action bar spell with 8940 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436940 sp=1 misc=8940 target=[1,0]
+effect 16 replaces an action bar spell with 8941 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436942 sp=1 misc=8941 target=[1,0]
+effect 17 replaces an action bar spell with 9750 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436943 sp=1 misc=9750 target=[1,0]
+effect 18 replaces an action bar spell with 9856 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436944 sp=1 misc=9856 target=[1,0]
+effect 19 replaces an action bar spell with 9857 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436945 sp=1 misc=9857 target=[1,0]
+effect 20 replaces an action bar spell with 9858 Regrowth
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436946 sp=1 misc=9858 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417123
+=======
+17056 Furor
+school    physical
+attrs     passive
+labels    21
+refs      17057 Furor
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+effect 2  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17056
+=======
+17104 Gift of Nature
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_DAMAGE +2% on family 7 mask 0xe0,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=7 mask=0xe0,0x2 target=[1,0]
+effect 2  SPELLMOD_DOT +2% on family 7 mask 0x50,0x4000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=7 mask=0x50,0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17104
+=======
+414673 Gift of the Earthmother
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10,0x4000012
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=21 family=7 mask=0x10,0x4000012 target=[1,0]
+
+https://www.wowhead.com/forever/spell=414673
+=======
+21849 Gift of the Wild (Rank 1)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      900 mana
+range     40 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +324 armor to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=324 amplitude=1 misc=1 radius=100 target=[56,0]
+effect 2  +14 to all stats to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=14 misc=-1 radius=100 target=[56,0]
+effect 3  +20 holy resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=2 radius=100 target=[56,0]
+effect 4  +20 fire resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=4 radius=100 target=[56,0]
+effect 5  +20 nature resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=8 radius=100 target=[56,0]
+effect 6  +20 frost resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=16 radius=100 target=[56,0]
+effect 7  +20 shadow resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 radius=100 target=[56,0]
+effect 8  +20 arcane resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=21849
+=======
+21850 Gift of the Wild (Rank 2)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      1200 mana
+range     40 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +385 armor to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=385 amplitude=1 misc=1 radius=100 target=[56,0]
+effect 2  +16 to all stats to the raid around the caster
+          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 radius=100 target=[56,0]
+effect 3  +27 holy resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 radius=100 target=[56,0]
+effect 4  +27 fire resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 radius=100 target=[56,0]
+effect 5  +27 nature resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 radius=100 target=[56,0]
+effect 6  +27 frost resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 radius=100 target=[56,0]
+effect 7  +27 shadow resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 radius=100 target=[56,0]
+effect 8  +27 arcane resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=21850
+=======
+5185 Healing Touch (Rank 1)
+school    nature
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      25 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  39.522728–54.477272 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=44 ppl=0.8 variance=0.3181818 sp=0.429 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5185
+=======
+5186 Healing Touch (Rank 2)
+school    nature
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      55 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  93.28–118.72 healing to the friendly target (at level 60, +0.571 spell power)
+          E_HEAL base=100 ppl=1.3 variance=0.24 sp=0.571 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5186
+=======
+5187 Healing Touch (Rank 3)
+school    nature
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      110 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  186.9863–233.0137 healing to the friendly target (at level 60, +0.714 spell power)
+          E_HEAL base=201 ppl=1.9 variance=0.21917808 sp=0.714 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5187
+=======
+5188 Healing Touch (Rank 4)
+school    nature
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      190 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  336.94308–413.05692 healing to the friendly target (at level 60, +0.857 spell power)
+          E_HEAL base=362 ppl=2.7 variance=0.2029703 sp=0.857 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5188
+=======
+5189 Healing Touch (Rank 5)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      280 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  508.74567–617.25433 healing to the friendly target (at level 60)
+          E_HEAL base=546 ppl=3.5 variance=0.19273302 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5189
+=======
+6778 Healing Touch (Rank 6)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      350 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  659.4548–794.5452 healing to the friendly target (at level 60)
+          E_HEAL base=707 ppl=4 variance=0.18581907 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=6778
+=======
+8903 Healing Touch (Rank 7)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      425 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  837.66534–1002.33466 healing to the friendly target (at level 60)
+          E_HEAL base=898 ppl=4.5 variance=0.17898832 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8903
+=======
+9758 Healing Touch (Rank 8)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      520 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  1094.898–1303.102 healing to the friendly target (at level 60)
+          E_HEAL base=1173 ppl=5.2 variance=0.17364813 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9758
+=======
+9888 Healing Touch (Rank 9)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      630 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  1414.384–1675.616 healing to the friendly target (at level 60)
+          E_HEAL base=1516 ppl=5.9 variance=0.16908212 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9888
+=======
+9889 Healing Touch (Rank 10)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      755 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  1785.4077–2106.5923 healing to the friendly target (at level 60)
+          E_HEAL base=1920 ppl=6.6 variance=0.16504854 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9889
+=======
+25297 Healing Touch (Rank 11)
+school    nature
+defense   magic
+cast      3.5 s
+gcd       1.5 s
+cost      840 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  2138.61–2525.39 healing to the friendly target (at level 60)
+          E_HEAL base=2332 ppl=7.3 variance=0.1658576 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=25297
+=======
+28719 Healing Touch
+school    physical
+range     50000 yd
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  a dummy aura from family 7 mask 0x10
+          E_APPLY_AURA A_DUMMY base=0 family=7 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28719
+=======
+17079 Improved Enrage (Rank 1)
+school    physical
+attrs     passive
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      17080 Improved Enrage
+
+effect 1  casts 17080 Improved Enrage on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=17080 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17079
+=======
+17082 Improved Enrage (Rank 2)
+school    physical
+attrs     passive
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+refs      17081 Improved Enrage
+
+effect 1  casts 17081 Improved Enrage on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=17081 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17082
+=======
+17050 Improved Mark of the Wild (Rank 1)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +7% on family 7 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=7 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17050
+=======
+17051 Improved Mark of the Wild (Rank 2)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +14% on family 7 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17051
+=======
+17053 Improved Mark of the Wild (Rank 3)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +21% on family 7 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=21 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17053
+=======
+17054 Improved Mark of the Wild (Rank 4)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +28% on family 7 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=28 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17054
+=======
+17055 Improved Mark of the Wild (Rank 5)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +35% on family 7 mask 0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=35 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17055
+=======
+17074 Improved Regrowth (Rank 1)
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 7 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=7 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17074
+=======
+17111 Improved Rejuvenation
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_DOT +5% on family 7 mask 0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=7 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17111
+=======
+17123 Improved Tranquility
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_THREAT -100% on family 7 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=2 family=7 mask=0x80 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -60% on family 7 mask 0x80
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=11 family=7 mask=0x80 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17123
+=======
+29166 Innervate
+school    nature
+defense   magic
+duration  20 s
+cooldown  360 s
+gcd       1.5 s
+cost      5% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +100% mana regen while casting to the friendly target
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[21,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=400 sp=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=29166
+=======
+456195 Innervate
+school    nature
+defense   magic
+duration  20 s
+range     30 yd
+
+effect 1  +100% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=400 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=456195
+=======
+408124 Lifebloom
+school    nature
+defense   magic
+duration  7 s
+gcd       1 s
+cost      14% of maximum mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+stack     up to 3
+icd       2 s
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  4 healing every 1 s to the friendly target (7 ticks)
+          E_APPLY_AURA A_PERIODIC_HEAL base=4 period=1000ms target=[21,0]
+effect 2  a dummy aura holding 57 to the friendly target
+          E_APPLY_AURA A_DUMMY base=57 sp=0.274 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408124
+=======
+408245 Lifebloom
+school    nature
+defense   magic
+range     40 yd
+
+effect 1  37–51 healing to the caster
+          E_HEAL base=44 variance=0.3181818 target=[1,0]
+
+https://www.wowhead.com/forever/spell=408245
+=======
+409824 Lifebloom
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408124 misc=399966 target=[1,0]
+effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=7 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409824
+=======
+414677 Living Seed
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      414680 Living Seed
+
+effect 1  a dummy aura holding 50 from family 7 mask 0x10,0x10
+          E_APPLY_AURA A_DUMMY base=50 sp=1 family=7 mask=0x10,0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=414677
+=======
+414680 Living Seed
+school    nature
+defense   magic
+duration  15 s
+range     100 yd
+charges   1
+attrs     cannot crit
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  casts nothing on its trigger to the friendly target
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=414680
+=======
+414683 Living Seed
+school    nature
+defense   magic
+gcd       1.5 s
+range     100 yd
+attrs     cannot crit
+
+effect 1  100 healing to the friendly target
+          E_HEAL base=100 target=[21,0]
+
+https://www.wowhead.com/forever/spell=414683
+=======
+1126 Mark of the Wild (Rank 1)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      20 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +34 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=34 amplitude=1 misc=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=1126
+=======
+5232 Mark of the Wild (Rank 2)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +88 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=88 amplitude=1 misc=1 target=[21,0]
+effect 2  +3 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=3 amplitude=1 misc=-1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5232
+=======
+5234 Mark of the Wild (Rank 4)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +203 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=203 amplitude=1 misc=1 target=[21,0]
+effect 2  +8 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=8 misc=-1 target=[21,0]
+effect 3  +7 holy resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=2 target=[21,0]
+effect 4  +7 fire resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=4 target=[21,0]
+effect 5  +7 nature resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=8 target=[21,0]
+effect 6  +7 frost resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=16 target=[21,0]
+effect 7  +7 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=32 target=[21,0]
+effect 8  +7 arcane resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=64 target=[21,0]
+
+https://www.wowhead.com/forever/spell=5234
+=======
+6756 Mark of the Wild (Rank 3)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +142 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=142 amplitude=1 misc=1 target=[21,0]
+effect 2  +5 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=5 misc=-1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=6756
+=======
+8907 Mark of the Wild (Rank 5)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      240 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +263 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=263 amplitude=1 misc=1 target=[21,0]
+effect 2  +11 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=11 misc=-1 target=[21,0]
+effect 3  +14 holy resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=2 target=[21,0]
+effect 4  +14 fire resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=4 target=[21,0]
+effect 5  +14 nature resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=8 target=[21,0]
+effect 6  +14 frost resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=16 target=[21,0]
+effect 7  +14 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=32 target=[21,0]
+effect 8  +14 arcane resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=64 target=[21,0]
+
+https://www.wowhead.com/forever/spell=8907
+=======
+9884 Mark of the Wild (Rank 6)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      340 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +324 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=324 amplitude=1 misc=1 target=[21,0]
+effect 2  +14 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=14 misc=-1 target=[21,0]
+effect 3  +20 holy resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=2 target=[21,0]
+effect 4  +20 fire resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=4 target=[21,0]
+effect 5  +20 nature resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=8 target=[21,0]
+effect 6  +20 frost resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=16 target=[21,0]
+effect 7  +20 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 target=[21,0]
+effect 8  +20 arcane resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9884
+=======
+9885 Mark of the Wild (Rank 7)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      445 mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  +385 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=385 amplitude=1 misc=1 target=[21,0]
+effect 2  +16 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[21,0]
+effect 3  +27 holy resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[21,0]
+effect 4  +27 fire resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[21,0]
+effect 5  +27 nature resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[21,0]
+effect 6  +27 frost resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[21,0]
+effect 7  +27 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[21,0]
+effect 8  +27 arcane resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[21,0]
+
+https://www.wowhead.com/forever/spell=9885
+=======
+24752 Mark of the Wild (Rank 7)
+school    nature
+defense   magic
+duration  1800 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  +285 armor to the target
+          E_APPLY_AURA A_MOD_RESISTANCE base=285 amplitude=1 misc=1 target=[25,0]
+effect 2  +12 to all stats to the target
+          E_APPLY_AURA A_MOD_STAT base=12 misc=-1 target=[25,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_EXCLUSIVE base=20 misc=126 target=[25,0]
+
+https://www.wowhead.com/forever/spell=24752
+=======
+364163 Mark of the Wild (Rank 6)
+school    nature
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      340 mana
+range     30 yd
+stance exclude Moonkin
+
+effect 1  +240 armor to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=240 amplitude=1 misc=1 target=[21,0]
+effect 2  +10 to all stats to the friendly target
+          E_APPLY_AURA A_MOD_STAT base=10 misc=-1 target=[21,0]
+effect 3  +15 holy resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=2 target=[21,0]
+effect 4  +15 fire resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=4 target=[21,0]
+effect 5  +15 nature resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=8 target=[21,0]
+effect 6  +15 frost resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=16 target=[21,0]
+effect 7  +15 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=32 target=[21,0]
+effect 8  +15 arcane resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=64 target=[21,0]
+
+https://www.wowhead.com/forever/spell=364163
+=======
+1291335 Mark of the Wild (Rank 7)
+school    nature
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      445 mana
+labels    21
+
+effect 1  +385 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=385 amplitude=1 misc=1 target=[1,0]
+effect 2  +16 to all stats
+          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[1,0]
+effect 3  +27 holy resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[1,0]
+effect 4  +27 fire resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[1,0]
+effect 5  +27 nature resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[1,0]
+effect 6  +27 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[1,0]
+effect 7  +27 shadow resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[1,0]
+effect 8  +27 arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1291335
+=======
+1310503 Mark of the Wild (Rank 7)
+school    nature
+defense   magic
+duration  1800 s
+gcd       1.5 s
+cost      445 mana
+labels    21
+
+effect 1  +385 armor to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=385 amplitude=1 misc=1 target=[22,30]
+effect 2  +16 to all stats to every ally around the caster
+          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[22,30]
+effect 3  +27 holy resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[22,30]
+effect 4  +27 fire resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[22,30]
+effect 5  +27 nature resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[22,30]
+effect 6  +27 frost resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[22,30]
+effect 7  +27 shadow resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[22,30]
+effect 8  +27 arcane resistance to every ally around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[22,30]
+
+https://www.wowhead.com/forever/spell=1310503
+=======
+16833 Natural Shapeshifter
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -10% on family 7 mask 0xe0000000,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16833
+=======
+17069 Naturalist
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x2000000 target=[1,0]
+effect 2  +100% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=100 sp=1 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17069
+=======
+17063 Nature's Focus
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 7 mask 0x104002e5,0x2000000,0xa200,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 sp=1 misc=9 family=7 mask=0x104002e5,0x2000000,0xa200,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17063
+=======
+17116 Nature's Swiftness
+school    physical
+defense   magic
+duration  permanent
+cooldown  180 s
+stance    Tree of Life
+stance exclude Moonkin
+charges   1
+labels    21
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x1000261,0x2000000,0x2000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x1000261,0x2000000,0x2000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17116
+=======
+29274 Nature's Swiftness
+school    physical
+duration  1 s
+stance exclude Moonkin
+labels    21
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x1000261
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x1000261 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29274
+=======
+408247 Nourish
+school    nature
+defense   magic
+cast      2 s
+gcd       1.5 s
+cost      26% of maximum mana
+range     40 yd
+stance    Tree of Life
+stance exclude Cat, Travel, form 4, Bear, Dire Bear, Moonkin
+labels    3096
+
+effect 1  161–189 healing to the friendly target (+0.357 spell power)
+          E_HEAL base=175 variance=0.16 sp=0.357 target=[21,0]
+
+https://www.wowhead.com/forever/spell=408247
+=======
+20484 Rebirth (Rank 1)
+school    nature
+defense   magic
+cast      2 s
+cooldown  1800 s (category)
+gcd       1.5 s
+cost      85% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=400 misc=700 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20484
+=======
+20739 Rebirth (Rank 2)
+school    nature
+defense   magic
+cast      2 s
+cooldown  1800 s (category)
+gcd       1.5 s
+cost      85% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=750 misc=1200 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20739
+=======
+20742 Rebirth (Rank 3)
+school    nature
+defense   magic
+cast      2 s
+cooldown  1800 s (category)
+gcd       1.5 s
+cost      85% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=1100 misc=1700 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20742
+=======
+20747 Rebirth (Rank 4)
+school    nature
+defense   magic
+cast      2 s
+cooldown  1800 s (category)
+gcd       1.5 s
+cost      85% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=1600 misc=2200 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20747
+=======
+20748 Rebirth (Rank 5)
+school    nature
+defense   magic
+cast      2 s
+cooldown  1800 s (category)
+gcd       1.5 s
+cost      85% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=2200 misc=2800 target=[0,0]
+
+https://www.wowhead.com/forever/spell=20748
+=======
+8936 Regrowth (Rank 1)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      70 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  88.61539–103.38461 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=87 ppl=1.8 variance=0.15384616 sp=0.286 target=[21,0]
+effect 2  13 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=13 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8936
+=======
+8938 Regrowth (Rank 2)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      125 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  164–188 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=164 ppl=2.5 variance=0.13636364 sp=0.286 target=[21,0]
+effect 2  22 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=22 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8938
+=======
+8939 Regrowth (Rank 3)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      170 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  233.46304–266.53696 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=235 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
+effect 2  32 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8939
+=======
+8940 Regrowth (Rank 4)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      210 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  308.61948–349.38052 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=311 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
+effect 2  42 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8940
+=======
+8941 Regrowth (Rank 5)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      250 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  389.0255–438.9745 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=394 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
+effect 2  52 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=52 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8941
+=======
+9750 Regrowth (Rank 6)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      305 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  495.9429–558.05707 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=504 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
+effect 2  68 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=68 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9750
+=======
+9856 Regrowth (Rank 7)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      370 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  632.79706–709.20294 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=645 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
+effect 2  88 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=88 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9856
+=======
+9857 Regrowth (Rank 8)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      445 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  799.5601–894.4399 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=817 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
+effect 2  113 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=113 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9857
+=======
+9858 Regrowth (Rank 9)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      525 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  965.18665–1076.8134 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=1021 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
+effect 2  142 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=142 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9858
+=======
+28744 Regrowth
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 misc=4537 family=7 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28744
+=======
+436937 Regrowth (Rank 1)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      120 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  92.30769–107.69231 healing to the friendly target (at level 60, +0.2 spell power)
+          E_HEAL base=91 ppl=1.8 variance=0.15384616 sp=0.2 target=[21,0]
+effect 2  14 healing every 3 s to the friendly target (7 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=14 sp=0.05 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436937
+=======
+436938 Regrowth (Rank 2)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      205 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  175.18182–200.81818 healing to the friendly target (at level 60, +0.264 spell power)
+          E_HEAL base=176 ppl=2.5 variance=0.13636364 sp=0.264 target=[21,0]
+effect 2  25 healing every 3 s to the friendly target (7 ticks, +0.066 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.066 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436938
+=======
+436939 Regrowth (Rank 3)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      280 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  254.00778–289.99222 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=257 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
+effect 2  37 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=37 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436939
+=======
+436940 Regrowth (Rank 4)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      350 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  334.88495–379.11505 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=339 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
+effect 2  49 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=49 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436940
+=======
+436942 Regrowth (Rank 5)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      420 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  423.79352–478.20648 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=431 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
+effect 2  61 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=61 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436942
+=======
+436943 Regrowth (Rank 6)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      510 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  532.6446–599.3554 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=543 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
+effect 2  78 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=78 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436943
+=======
+436944 Regrowth (Rank 7)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      615 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  670.5197–751.4803 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=685 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
+effect 2  98 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=98 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436944
+=======
+436945 Regrowth (Rank 8)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      740 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  837.3197–936.6803 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=857 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
+effect 2  123 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=123 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436945
+=======
+436946 Regrowth (Rank 9)
+school    nature
+defense   magic
+duration  21 s
+cast      2 s
+gcd       1.5 s
+cost      880 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  1003–1119 healing to the friendly target (at level 60, +0.286 spell power)
+          E_HEAL base=1061 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
+effect 2  152 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=152 sp=0.071 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=436946
+=======
+774 Rejuvenation (Rank 1)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      25 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  8 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=8 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=774
+=======
+1058 Rejuvenation (Rank 2)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      40 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  12 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=12 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1058
+=======
+1430 Rejuvenation (Rank 3)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      75 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  23 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=23 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=1430
+=======
+2090 Rejuvenation (Rank 4)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      105 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  32 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=2090
+=======
+2091 Rejuvenation (Rank 5)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      135 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  42 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=2091
+=======
+3627 Rejuvenation (Rank 6)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      160 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  51 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=51 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=3627
+=======
+8910 Rejuvenation (Rank 7)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      195 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  71 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=71 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=8910
+=======
+9839 Rejuvenation (Rank 8)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      235 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  94 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=94 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9839
+=======
+9840 Rejuvenation (Rank 9)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      280 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  124 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=124 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9840
+=======
+9841 Rejuvenation (Rank 10)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      335 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit, can proc from procs
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  161 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=161 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=9841
+=======
+25299 Rejuvenation (Rank 11)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      360 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  194 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=194 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=25299
+=======
+28716 Rejuvenation
+school    physical
+duration  permanent
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 misc=4533 family=7 mask=0x10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28716
+=======
+417057 Rejuvenation (Rank 1)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      25 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  8 healing every 3 s to the friendly target (4 ticks, +0.08 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=8 sp=0.08 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417057
+=======
+417058 Rejuvenation (Rank 2)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      40 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  14 healing every 3 s to the friendly target (4 ticks, +0.125 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=14 sp=0.125 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417058
+=======
+417059 Rejuvenation (Rank 3)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      75 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  29 healing every 3 s to the friendly target (4 ticks, +0.17 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=29 sp=0.17 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417059
+=======
+417060 Rejuvenation (Rank 4)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      105 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  45 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=45 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417060
+=======
+417061 Rejuvenation (Rank 5)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      135 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  61 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=61 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417061
+=======
+417062 Rejuvenation (Rank 6)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      160 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  76 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=76 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417062
+=======
+417063 Rejuvenation (Rank 7)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      195 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  97 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=97 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417063
+=======
+417064 Rejuvenation (Rank 8)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      235 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  122 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=122 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417064
+=======
+417065 Rejuvenation (Rank 9)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      280 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  152 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=152 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417065
+=======
+417066 Rejuvenation (Rank 10)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      335 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  189 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=189 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417066
+=======
+417068 Rejuvenation (Rank 11)
+school    nature
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      360 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  222 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=222 sp=0.2 period=3000ms target=[21,0]
+
+https://www.wowhead.com/forever/spell=417068
+=======
+2782 Remove Curse
+school    arcane
+defense   magic
+gcd       1.5 s
+cost      10% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21
+
+effect 1  dispels 1 curse effect to the friendly target
+          E_DISPEL base=1 misc=2 target=[21,0]
+
+https://www.wowhead.com/forever/spell=2782
+=======
+437138 Revive (Rank 1)
+school    physical
+cast      10 s
+cost      75% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=70 misc=135 target=[121,0]
+
+https://www.wowhead.com/forever/spell=437138
+=======
+1237948 Revive (Rank 2)
+school    physical
+cast      10 s
+cost      75% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=160 misc=300 target=[121,0]
+
+https://www.wowhead.com/forever/spell=1237948
+=======
+1237949 Revive (Rank 3)
+school    physical
+cast      10 s
+cost      75% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=300 misc=520 target=[121,0]
+
+https://www.wowhead.com/forever/spell=1237949
+=======
+1237950 Revive (Rank 4)
+school    physical
+cast      10 s
+cost      75% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=500 misc=750 target=[121,0]
+
+https://www.wowhead.com/forever/spell=1237950
+=======
+1237951 Revive (Rank 5)
+school    physical
+cast      10 s
+cost      75% of maximum mana
+range     30 yd
+stance    Tree of Life, Moonkin
+labels    21, 6316
+
+effect 1  unrecognised shape
+          E_329 base=750 misc=1000 target=[121,0]
+
+https://www.wowhead.com/forever/spell=1237951
+=======
+17118 Subtlety
+school    physical
+attrs     passive
+labels    21
+
+effect 1  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 sp=1 misc=72 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17118
+=======
+18562 Swiftmend
+school    nature
+defense   magic
+cooldown  15 s
+gcd       1.5 s
+cost      20% of maximum mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+labels    21
+
+effect 1  1 healing to the friendly target
+          E_HEAL base=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=18562
+=======
+24968 Tranquil Spirit
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -2% on family 7 mask 0xa0
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-2 sp=1 misc=14 family=7 mask=0xa0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24968
+=======
+740 Tranquility (Rank 1)
+school    nature
+defense   magic
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      375 mana
+stance    Tree of Life
+stance exclude Moonkin
+attrs     channeled, periodic can crit
+labels    21
+
+effect 1  party aura: 90 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=87 ppl=0.6 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=740
+=======
+8918 Tranquility (Rank 2)
+school    nature
+defense   magic
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      505 mana
+stance    Tree of Life
+stance exclude Moonkin
+attrs     channeled, periodic can crit
+labels    21
+
+effect 1  party aura: 133 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=129 ppl=0.7 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8918
+=======
+9862 Tranquility (Rank 3)
+school    nature
+defense   magic
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      695 mana
+stance    Tree of Life
+stance exclude Moonkin
+attrs     channeled, periodic can crit
+labels    21
+
+effect 1  party aura: 201 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=196 ppl=0.9 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9862
+=======
+9863 Tranquility (Rank 4)
+school    nature
+defense   magic
+duration  10 s
+cooldown  300 s (category)
+gcd       1.5 s
+cost      925 mana
+stance    Tree of Life
+stance exclude Moonkin
+attrs     channeled, periodic can crit
+labels    21
+
+effect 1  party aura: 285 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=285 ppl=1 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9863
+=======
+21791 Tranquility
+school    nature
+defense   magic
+duration  10 s
+cost      200 mana
+attrs     channeled
+
+effect 1  party aura: 374 healing every 2 s (5 ticks, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=374.20636 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21791
+=======
+25817 Tranquility
+school    nature
+defense   magic
+duration  10 s
+cost      200 mana
+attrs     channeled
+
+effect 1  party aura: 5407.55–6284.45 healing every 2 s (5 ticks, +0.067 spell power)
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=5846.974 variance=0.15 sp=0.067 period=2000ms radius=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25817
+=======
+1253568 Tranquility
+school    nature
+defense   magic
+duration  15 s
+range     100 yd
+attrs     channeled
+
+effect 1  254.375–295.625 healing every 3 s to every ally around the caster (5 ticks, +0.067 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 sp=0.067 period=3000ms target=[22,30]
+effect 2  254.375–295.625 healing every 3 s (5 ticks)
+          E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 period=3000ms target=[1,1]
+
+https://www.wowhead.com/forever/spell=1253568
+=======
+408120 Wild Growth (Rank 1)
+school    nature
+defense   magic
+duration  7 s
+cooldown  6 s
+gcd       1.5 s
+cost      550 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+
+effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms target=[132,31]
+effect 2  a dummy aura holding 5 to target 132
+          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+
+https://www.wowhead.com/forever/spell=408120
+=======
+409810 Wild Growth
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408120 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409810
+=======
+1238214 Wild Growth (Rank 2)
+school    nature
+defense   magic
+duration  7 s
+cooldown  6 s
+gcd       1.5 s
+cost      755 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+
+effect 1  70 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms target=[132,31]
+effect 2  a dummy aura holding 5 to target 132
+          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+
+https://www.wowhead.com/forever/spell=1238214
+=======
+1238215 Wild Growth (Rank 3)
+school    nature
+defense   magic
+duration  7 s
+cooldown  6 s
+gcd       1.5 s
+cost      1050 mana
+range     40 yd
+stance    Tree of Life
+stance exclude Moonkin
+attrs     periodic can crit
+labels    21
+
+effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms target=[132,31]
+effect 2  a dummy aura holding 5 to target 132
+          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+
+https://www.wowhead.com/forever/spell=1238215

@@ -1,0 +1,2267 @@
+428878 Balefire Bolt
+school    fire+frost+arcane
+defense   magic
+duration  30 s
+cast      2.5 s
+gcd       1.5 s
+cost      20% of maximum mana
+range     35 yd
+stack     up to 5
+labels    3096, 3100
+
+effect 1  280–420 fire+frost+arcane damage to the enemy (+0.857 spell power)
+          E_SCHOOL_DAMAGE base=350 variance=0.4 sp=0.857 target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_PERCENT_STAT base=-20 misc=4 target=[1,0]
+effect 3  SPELLMOD_DAMAGE +20% on family 3 mask 0x400000,0x0,0x0,0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=3 mask=0x400000,0x0,0x0,0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428878
+=======
+429310 Balefire Bolt
+school    physical
+attrs     passive
+labels    3096, 3100
+
+effect 1  replaces an action bar spell with 417346
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428878 misc=417346 target=[1,0]
+
+https://www.wowhead.com/forever/spell=429310
+=======
+11113 Blast Wave (Rank 1)
+school    fire
+defense   magic
+duration  6 s
+cooldown  45 s (category)
+gcd       1.5 s
+cost      215 mana
+labels    17
+
+effect 1  153.09412–184.90588 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.1882353 sp=0.129 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[22,15]
+
+https://www.wowhead.com/forever/spell=11113
+=======
+13018 Blast Wave (Rank 2)
+school    fire
+defense   magic
+duration  6 s
+cooldown  45 s (category)
+gcd       1.5 s
+cost      270 mana
+labels    17
+
+effect 1  199.181–238.819 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=212 ppl=1.2 variance=0.18099548 sp=0.129 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+
+https://www.wowhead.com/forever/spell=13018
+=======
+13019 Blast Wave (Rank 3)
+school    fire
+defense   magic
+duration  6 s
+cooldown  45 s (category)
+gcd       1.5 s
+cost      355 mana
+labels    17
+
+effect 1  275.17163–326.82837 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=293 ppl=1.4 variance=0.17161717 sp=0.129 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+
+https://www.wowhead.com/forever/spell=13019
+=======
+13020 Blast Wave (Rank 4)
+school    fire
+defense   magic
+duration  6 s
+cooldown  45 s (category)
+gcd       1.5 s
+cost      450 mana
+labels    17
+
+effect 1  364.0852–431.9148 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=389 ppl=1.6 variance=0.17042607 sp=0.129 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+
+https://www.wowhead.com/forever/spell=13020
+=======
+13021 Blast Wave (Rank 5)
+school    fire
+defense   magic
+duration  6 s
+cooldown  45 s (category)
+gcd       1.5 s
+cost      545 mana
+labels    17
+
+effect 1  452.81512–533.1849 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+          E_SCHOOL_DAMAGE base=493 ppl=1.9 variance=0.16302186 sp=0.129 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+
+https://www.wowhead.com/forever/spell=13021
+=======
+15091 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+cost      120 mana
+
+effect 1  472.9655–543.0345 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=15091
+=======
+15744 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+cost      120 mana
+
+effect 1  712.44275–817.55725 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=15744
+=======
+16046 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+
+effect 1  941.0173–1092.9828 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
+effect 2  -70% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=16046
+=======
+17145 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+cost      120 mana
+
+effect 1  941.0173–1092.9828 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17145
+=======
+17277 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+
+effect 1  472.9655–543.0345 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17277
+=======
+20229 Blast Wave
+school    fire
+defense   magic
+duration  8 s
+
+effect 1  694–806 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=750 variance=0.14933333 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=20229
+=======
+22424 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+
+effect 1  1419.9733–1642.0267 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1531.9073 variance=0.14503817 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=22424
+=======
+23039 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+cost      120 mana
+
+effect 1  654.4132–759.5868 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=707.4839 variance=0.14876033 sp=1 radius=10 target=[22,15]
+effect 2  -30% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23039
+=======
+23113 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+
+effect 1  712.44275–817.55725 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23113
+=======
+23331 Blast Wave
+school    fire
+defense   magic
+duration  8 s
+
+effect 1  2625–3375 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=3000 variance=0.25 sp=1 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=20 target=[22,15]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=175 sp=1 misc=100 target=[22,15]
+
+https://www.wowhead.com/forever/spell=23331
+=======
+25049 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+
+effect 1  1388–1612 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1500 variance=0.14933333 sp=1 radius=45 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=45 target=[22,15]
+effect 3  unrecognised shape
+          E_KNOCK_BACK base=60 sp=1 misc=60 radius=45 target=[22,15]
+
+https://www.wowhead.com/forever/spell=25049
+=======
+30092 Blast Wave
+school    fire
+defense   magic
+duration  8 s
+
+effect 1  1575–2025 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=1800 variance=0.25 sp=1 radius=15 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=20 target=[22,15]
+
+https://www.wowhead.com/forever/spell=30092
+=======
+469161 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+
+effect 1  472.9655–543.0345 fire damage to target 46
+          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 target=[22,46]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+effect 3  472.9655–543.0345 fire damage to every enemy in the target area
+          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 target=[22,16]
+
+https://www.wowhead.com/forever/spell=469161
+=======
+1235318 Blast Wave
+school    fire
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+gcd       1.5 s
+cost      120 mana
+
+effect 1  2847.002–2998.998 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=2923.487 variance=0.052 sp=1 target=[22,15]
+effect 2  -50% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[22,15]
+
+https://www.wowhead.com/forever/spell=1235318
+=======
+11083 Burning Soul
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 3 mask 0x400015,0x21000,0x40100,0x4000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=3 mask=0x400015,0x21000,0x40100,0x4000 target=[1,0]
+effect 2  -30% threat
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11083
+=======
+11129 Combustion
+school    fire
+defense   magic
+duration  permanent
+cooldown  180 s (category)
+charges   4
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      28682 Combustion
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 2  casts 28682 Combustion to the caster
+          E_TRIGGER_SPELL base=0 trigger=28682 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11129
+=======
+28682 Combustion
+school    fire
+defense   magic
+duration  permanent
+stack     up to 10
+labels    17
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 3 mask 0xc00017,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=7 family=3 mask=0xc00017,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=28682
+=======
+11115 Critical Mass
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 3 mask 0xc00017,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=3 mask=0xc00017,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11115
+=======
+24530 Felfire
+school    fire
+defense   magic
+gcd       1.5 s
+cost      100 mana
+range     100 yd
+
+effect 1  500 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=500 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24530
+=======
+2136 Fire Blast (Rank 1)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      40 mana
+range     20 yd
+labels    17
+
+effect 1  26.571428–35.42857 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2136
+=======
+2137 Fire Blast (Rank 2)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      75 mana
+range     20 yd
+labels    17
+
+effect 1  56.109375–69.890625 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=58 ppl=1 variance=0.21875 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2137
+=======
+2138 Fire Blast (Rank 3)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      115 mana
+range     20 yd
+labels    17
+
+effect 1  95.834785–118.165215 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=100 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2138
+=======
+8412 Fire Blast (Rank 4)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      165 mana
+range     20 yd
+labels    17
+
+effect 1  156.1946–187.8054 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=163 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8412
+=======
+8413 Fire Blast (Rank 5)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      220 mana
+range     20 yd
+labels    17
+
+effect 1  224.71428–269.2857 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=236 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8413
+=======
+10197 Fire Blast (Rank 6)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      280 mana
+range     20 yd
+labels    17
+
+effect 1  314.6226–373.3774 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=331 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10197
+=======
+10199 Fire Blast (Rank 7)
+school    fire
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      340 mana
+range     20 yd
+labels    17
+
+effect 1  415.41064–490.58936 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=438 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10199
+=======
+13339 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  642.5833–759.4167 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13339
+=======
+13340 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  642.5833–759.4167 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13340
+=======
+13341 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  964.3333–1139.6666 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13341
+=======
+13342 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  964.3333–1139.6666 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13342
+=======
+13374 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  642.5833–759.4167 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13374
+=======
+14145 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  1286.0834–1519.9166 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14145
+=======
+15574 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  1286.0834–1519.9166 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15574
+=======
+16144 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  2104 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=2104.9106 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16144
+=======
+20623 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  1080–1320 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1200 variance=0.2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20623
+=======
+20679 Fire Blast
+school    fire
+defense   magic
+cost      150 mana
+range     20 yd
+
+effect 1  1260–1540 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1400 variance=0.2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20679
+=======
+20795 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  730.07245–881.92755 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=806.8825 variance=0.1884058 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20795
+=======
+20832 Fire Blast
+school    fire
+defense   magic
+cost      120 mana
+range     20 yd
+
+effect 1  888.4762–1075.5238 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=982.29175 variance=0.1904762 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20832
+=======
+25028 Fire Blast
+school    fire
+defense   magic
+range     20 yd
+
+effect 1  1094–1406 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=1250 variance=0.2496 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25028
+=======
+400616 Fire Blast (Rank 3)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      115 mana
+range     20 yd
+
+effect 1  109.26956–134.73044 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=115 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400616
+=======
+400618 Fire Blast (Rank 1)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      40 mana
+range     20 yd
+
+effect 1  26.571428–35.42857 fire damage to the enemy (at level 60, +0.204 spell power)
+          E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.204 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400618
+=======
+400619 Fire Blast (Rank 2)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      75 mana
+range     20 yd
+
+effect 1  61.453125–76.546875 fire damage to the enemy (at level 60, +0.332 spell power)
+          E_SCHOOL_DAMAGE base=64 ppl=1 variance=0.21875 sp=0.332 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400619
+=======
+400620 Fire Blast (Rank 4)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      165 mana
+range     20 yd
+
+effect 1  176.17297–211.82703 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=185 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400620
+=======
+400621 Fire Blast (Rank 5)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      220 mana
+range     20 yd
+
+effect 1  252.00752–301.9925 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=266 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400621
+=======
+400622 Fire Blast (Rank 6)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      280 mana
+range     20 yd
+
+effect 1  343.8898–408.1102 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=363 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400622
+=======
+400623 Fire Blast (Rank 7)
+school    fire
+defense   magic
+cooldown  15 s (category)
+cost      340 mana
+range     20 yd
+
+effect 1  444.7553–525.2447 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=470 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=400623
+=======
+461896 Fire Blast
+school    fire
+defense   magic
+cost      115 mana
+range     40 yd
+
+effect 1  70 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=70 target=[6,0]
+
+https://www.wowhead.com/forever/spell=461896
+=======
+1213317 Fire Blast
+school    fire
+defense   magic
+duration  10 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0xc00017,0x11000,0x40000,0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=3 mask=0xc00017,0x11000,0x40000,0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1213317
+=======
+1318432 Fire Blast
+school    physical
+cooldown  8 s (category)
+range     20 yd
+
+effect 1  a dummy effect
+          E_DUMMY base=0 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1318432
+=======
+11124 Fire Power
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +2% on family 3 mask 0xc00017,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 family=3 mask=0xc00017,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +2% on family 3 mask 0x400005,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=3 mask=0x400005,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11124
+=======
+22959 Fire Vulnerability
+school    fire
+defense   magic
+duration  30 s
+range     100 yd
+stack     up to 5
+labels    17
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=3 misc=4 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22959
+=======
+543 Fire Ward (Rank 1)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      85 mana
+labels    17
+
+effect 1  absorbs 162 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=4 target=[1,0]
+effect 2  reflects 0% of fire damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=543
+=======
+8457 Fire Ward (Rank 2)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      135 mana
+labels    17
+
+effect 1  absorbs 285 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=285 misc=4 target=[1,0]
+effect 2  reflects 0% of fire damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8457
+=======
+8458 Fire Ward (Rank 3)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      195 mana
+labels    17
+
+effect 1  absorbs 463 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=4 target=[1,0]
+effect 2  reflects 0% of fire damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8458
+=======
+10223 Fire Ward (Rank 4)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      255 mana
+labels    17
+
+effect 1  absorbs 668 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=4 target=[1,0]
+effect 2  reflects 0% of fire damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10223
+=======
+10225 Fire Ward (Rank 5)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      320 mana
+labels    17
+
+effect 1  absorbs 913 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=4 target=[1,0]
+effect 2  reflects 0% of fire damage
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10225
+=======
+15041 Fire Ward
+school    fire
+defense   magic
+duration  60 s
+cooldown  5 s (category)
+gcd       1.5 s
+cost      95 mana
+
+effect 1  absorbs 701 fire damage
+          E_APPLY_AURA A_SCHOOL_ABSORB base=701.6369 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15041
+=======
+412214 Fire Ward (Rank 1)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      85 mana
+range     40 yd
+
+effect 1  absorbs 330 fire damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=330 misc=4 target=[21,0]
+effect 2  reflects 0% of fire damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412214
+=======
+412218 Fire Ward (Rank 2)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      135 mana
+range     40 yd
+
+effect 1  absorbs 580 fire damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=580 misc=4 target=[21,0]
+effect 2  reflects 0% of fire damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412218
+=======
+412230 Fire Ward (Rank 3)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      195 mana
+range     40 yd
+
+effect 1  absorbs 940 fire damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=940 misc=4 target=[21,0]
+effect 2  reflects 0% of fire damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412230
+=======
+412231 Fire Ward (Rank 4)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      255 mana
+range     40 yd
+
+effect 1  absorbs 1350 fire damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1350 misc=4 target=[21,0]
+effect 2  reflects 0% of fire damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412231
+=======
+412232 Fire Ward (Rank 5)
+school    fire
+defense   magic
+duration  30 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      320 mana
+range     40 yd
+
+effect 1  absorbs 1840 fire damage to the friendly target
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1840 misc=4 target=[21,0]
+effect 2  reflects 0% of fire damage to the friendly target
+          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+
+https://www.wowhead.com/forever/spell=412232
+=======
+133 Fireball (Rank 1)
+school    fire
+defense   magic
+duration  4 s
+cast      1.5 s
+gcd       1.5 s
+cost      30 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  15.555555–24.444445 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=18 ppl=0.6 variance=0.44444445 sp=0.429 target=[6,0]
+effect 2  1 fire damage every 2 s to the enemy (2 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=133
+=======
+143 Fireball (Rank 2)
+school    fire
+defense   magic
+duration  6 s
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  31.81579–46.18421 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=37 ppl=0.7 variance=0.36842105 sp=0.571 target=[6,0]
+effect 2  1 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=143
+=======
+145 Fireball (Rank 3)
+school    fire
+defense   magic
+duration  6 s
+cast      2.5 s
+gcd       1.5 s
+cost      65 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  47.11111–64.888885 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=53 ppl=0.9 variance=0.31746033 sp=0.714 target=[6,0]
+effect 2  2 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=145
+=======
+3140 Fireball (Rank 4)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      95 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  65.52–90.48 fire damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=74 ppl=1.1 variance=0.32 sp=0.857 target=[6,0]
+effect 2  3 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=3140
+=======
+8400 Fireball (Rank 5)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      140 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  97.21472–130.78528 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=108 ppl=1.5 variance=0.29447854 sp=1 target=[6,0]
+effect 2  4 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=8400
+=======
+8401 Fireball (Rank 6)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      185 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  137.24138–182.75862 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=153 ppl=1.8 variance=0.28448275 sp=1 target=[6,0]
+effect 2  6 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=8401
+=======
+8402 Fireball (Rank 7)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      220 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  169.42372–222.57628 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.27118644 sp=1 target=[6,0]
+effect 2  6 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=8402
+=======
+10148 Fireball (Rank 8)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      260 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  211.13115–274.86884 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=235 ppl=2.2 variance=0.26229507 sp=1 target=[6,0]
+effect 2  8 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10148
+=======
+10149 Fireball (Rank 9)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      305 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  269.77283–348.22717 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.25389755 sp=1 target=[6,0]
+effect 2  10 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10149
+=======
+10150 Fireball (Rank 10)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      350 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  336.53137–431.46863 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=374 ppl=2.7 variance=0.24723247 sp=1 target=[6,0]
+effect 2  12 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10150
+=======
+10151 Fireball (Rank 11)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      395 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  396.56897–505.43103 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.2413793 sp=1 target=[6,0]
+effect 2  14 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10151
+=======
+15662 Fireball
+school    fire
+defense   magic
+duration  6 s
+range     100 yd
+attrs     periodic can crit
+
+effect 1  171 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=171 target=[6,0]
+effect 2  6 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=15662
+=======
+16412 Fireball
+school    fire
+defense   magic
+duration  6 s
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  135–165 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=150 variance=0.2 target=[6,0]
+effect 2  4 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=16412
+=======
+16413 Fireball
+school    fire
+defense   magic
+duration  7 s
+range     100 yd
+
+effect 1  77 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=77 target=[6,0]
+effect 2  2 fire damage every 1 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=1000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=16413
+=======
+16415 Fireball
+school    fire
+defense   magic
+duration  8 s
+cast      2 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  180–220 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=200 variance=0.2 target=[6,0]
+effect 2  9 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=16415
+=======
+18082 Fireball
+school    fire
+defense   magic
+duration  6 s
+cast      2 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  200–256 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=228 variance=0.24561404 target=[6,0]
+effect 2  12 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18082
+=======
+18105 Fireball
+school    fire
+defense   magic
+duration  8 s
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  180–220 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=200 variance=0.2 target=[6,0]
+effect 2  13 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18105
+=======
+18108 Fireball
+school    fire
+defense   magic
+duration  8 s
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  270–330 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=300 variance=0.2 target=[6,0]
+effect 2  9 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18108
+=======
+18199 Fireball
+school    fire
+defense   magic
+duration  6 s
+cast      2 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  86–110 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=98 variance=0.24489796 target=[6,0]
+effect 2  6 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18199
+=======
+18796 Fireball
+school    fire
+defense   magic
+duration  6 s
+cast      2 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  155–197 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=176 variance=0.23863636 target=[6,0]
+effect 2  8 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18796
+=======
+21159 Fireball
+school    fire
+defense   magic
+duration  8 s
+cast      2 s
+range     35 yd
+attrs     periodic can crit
+
+effect 1  83–101 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=92 variance=0.19565217 target=[6,0]
+effect 2  4 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=21159
+=======
+21162 Fireball
+school    fire
+defense   magic
+duration  10 s
+cast      2 s
+cost      45 mana
+range     35 yd
+attrs     periodic can crit
+
+effect 1  273–333 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=303 variance=0.1980198 target=[6,0]
+effect 2  15 fire damage every 2 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=21162
+=======
+25306 Fireball (Rank 12)
+school    fire
+defense   magic
+duration  8 s
+cast      3.5 s
+gcd       1.5 s
+cost      410 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  424.58408–541.41595 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=483 ppl=3 variance=0.24188791 sp=1 target=[6,0]
+effect 2  15 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=25306
+=======
+1299850 Fireball
+school    fire
+defense   magic
+duration  6 s
+range     100 yd
+attrs     periodic can crit
+
+effect 1  80 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=80 target=[6,0]
+effect 2  6 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1299850
+=======
+11100 Flame Throwing
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_RANGE +6 on family 3 mask 0x400017,0x21000,0x40100,0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0x400017,0x21000,0x40100,0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11100
+=======
+2120 Flamestrike (Rank 1)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      195 mana
+range     30 yd
+labels    17
+refs      1279983 Flamestrike
+
+effect 1  54.6–71.4 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=60 ppl=0.6 variance=0.26666668 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41266 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=2120
+=======
+2121 Flamestrike (Rank 2)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      330 mana
+range     30 yd
+labels    17
+refs      1279985 Flamestrike
+
+effect 1  99.522934–126.477066 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=109 ppl=0.8 variance=0.23853211 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41267 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=2121
+=======
+8422 Flamestrike (Rank 3)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      490 mana
+range     30 yd
+labels    17
+refs      1279987 Flamestrike
+
+effect 1  158.45087–197.54913 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=173 ppl=1 variance=0.21965317 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41268 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=8422
+=======
+8423 Flamestrike (Rank 4)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      650 mana
+range     30 yd
+labels    17
+refs      1279988 Flamestrike
+
+effect 1  225.36586–278.63416 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=246 ppl=1.3 variance=0.21138212 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41269 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=8423
+=======
+10215 Flamestrike (Rank 5)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      815 mana
+range     30 yd
+labels    17
+refs      1279989 Flamestrike
+
+effect 1  297.2677–366.7323 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=325 ppl=1.5 variance=0.20923077 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41270 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10215
+=======
+10216 Flamestrike (Rank 6)
+school    fire
+defense   magic
+duration  8 s
+cast      3 s
+gcd       1.5 s
+cost      990 mana
+range     30 yd
+labels    17
+refs      1279990 Flamestrike
+
+effect 1  380.3957–465.6043 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+          E_SCHOOL_DAMAGE base=417 ppl=1.7 variance=0.20143884 sp=0.157 radius=5 target=[16,0]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41271 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=10216
+=======
+1279983 Flamestrike (Rank 1)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  11 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=11 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279983
+=======
+1279985 Flamestrike (Rank 2)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  21 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=21 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279985
+=======
+1279987 Flamestrike (Rank 3)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  33 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=33 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279987
+=======
+1279988 Flamestrike (Rank 4)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  47 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=47 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279988
+=======
+1279989 Flamestrike (Rank 5)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  64 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=64 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279989
+=======
+1279990 Flamestrike (Rank 6)
+school    fire
+defense   magic
+range     50000 yd
+labels    17
+
+effect 1  83 fire damage to target 87 (+0.032 spell power)
+          E_SCHOOL_DAMAGE base=83 sp=0.032 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1279990
+=======
+401502 Frostfire Bolt (Rank 1)
+school    fire+frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      205 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  101.5625–118.4375 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=100 ppl=1.3 variance=0.1534091 sp=0.814 target=[6,0]
+effect 3  9 fire+frost damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=401502
+=======
+401735 Frostfire Bolt
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401502 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401735
+=======
+1237312 Frostfire Bolt (Rank 2)
+school    fire+frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      285 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  180.04262–209.95738 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=182 ppl=1.7 variance=0.1534091 sp=0.814 target=[6,0]
+effect 3  13 fire+frost damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1237312
+=======
+1237313 Frostfire Bolt (Rank 3)
+school    fire+frost
+defense   magic
+duration  9 s
+cast      3 s
+gcd       1.5 s
+cost      370 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  -40% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+effect 2  269.60226–314.39774 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+          E_SCHOOL_DAMAGE base=292 ppl=2.1 variance=0.1534091 sp=0.814 target=[6,0]
+effect 3  19 fire+frost damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1237313
+=======
+48108 Hot Streak
+school    physical
+duration  10 s
+stack     up to 1
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=3 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=48108
+=======
+400624 Hot Streak
+school    fire
+attrs     passive, can proc from procs
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      400625 Hot Streak
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=400624
+=======
+400625 Hot Streak
+school    fire
+defense   magic
+duration  20 s
+stack     up to 3
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  SPELLMOD_CASTING_TIME -25% on family 3 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=10 misc2=161 family=3 mask=0x400000 target=[1,0]
+effect 2  a dummy aura holding -3
+          E_APPLY_AURA A_DUMMY base=-3 target=[0,0]
+
+https://www.wowhead.com/forever/spell=400625
+=======
+401724 Hot Streak
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400624 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401724
+=======
+11119 Ignite
+school    physical
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      412538 Ignite
+
+effect 1  a dummy aura holding 40
+          E_APPLY_AURA A_DUMMY base=40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11119
+=======
+412538 Ignite
+school    fire
+duration  4 s
+range     50000 yd
+stack     up to 1
+labels    17
+
+effect 1  a dummy aura every 2 s to the enemy (2 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=412538
+=======
+412545 Ignite
+school    fire
+defense   magic
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+labels    17
+
+effect 1  0 fire damage to the target
+          E_SCHOOL_DAMAGE base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=412545
+=======
+11103 Impact
+school    fire
+attrs     passive, can proc from procs
+labels    17
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 1; tooltip says one named ability
+refs      12355 Impact
+
+effect 1  casts 12355 Impact on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=12355 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11103
+=======
+1239832 Impact
+school    fire
+duration  15 s
+range     100 yd
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  casts 12355 Impact on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=12355 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1239832
+=======
+11094 Improved Fire Ward
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_EFFECT2 +20 on family 3 mask 0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=12 family=3 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11094
+=======
+11069 Improved Fireball
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11069
+=======
+11108 Improved Flamestrike
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +15% on family 3 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=7 family=3 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11108
+=======
+24491 Improved Flamestrike
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=3 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=24491
+=======
+11095 Improved Scorch
+school    physical
+attrs     passive
+labels    17
+refs      22959 Fire Vulnerability
+
+effect 1  casts 22959 Fire Vulnerability when the target is hit from family 3 mask 0x10 to the enemy
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=22959 family=3 mask=0x10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11095
+=======
+18459 Incineration
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20020012
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=7 family=3 mask=0x20020012 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18459
+=======
+400613 Living Bomb
+school    fire
+defense   magic
+duration  12 s
+gcd       1.5 s
+cost      22% of maximum mana
+range     35 yd
+refs      400614 Living Bomb
+
+effect 1  85 fire damage every 3 s to the enemy (4 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=85 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=400613
+=======
+400614 Living Bomb
+school    fire
+defense   magic
+range     100 yd
+attrs     not a proc
+refs      400613 Living Bomb
+
+effect 1  171 fire damage to every enemy in the target area (+0.4 spell power)
+          E_SCHOOL_DAMAGE base=171 sp=0.4 target=[53,16]
+effect 2  a dummy effect holding 171 to every enemy in the target area
+          E_DUMMY base=171 sp=0.4 target=[53,16]
+
+https://www.wowhead.com/forever/spell=400614
+=======
+401731 Living Bomb
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400613 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401731
+=======
+401556 Living Flame
+school    fire+arcane
+defense   magic
+duration  10 s
+cooldown  30 s
+gcd       1.5 s
+cost      11% of maximum mana
+range     35 yd
+refs      401558 Living Flame
+
+effect 1  a dummy aura holding 40 every 0.4 s to the enemy (25 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=40 period=400ms target=[6,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401556
+=======
+401558 Living Flame
+school    fire+arcane
+duration  2 s
+range     50000 yd
+attrs     cannot crit
+
+effect 1  100 fire+arcane damage every 1 s to the target (2 ticks, +0.143 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=100 sp=0.143 period=1000ms target=[25,0]
+
+https://www.wowhead.com/forever/spell=401558
+=======
+401744 Living Flame
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399966
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401556 misc=399966 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401744
+=======
+29074 Master of Elements
+school    fire
+icd       0.009 s
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29074
+=======
+11366 Pyroblast (Rank 1)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      125 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  99.731705–132.2683 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=110 ppl=1.5 variance=0.2804878 sp=1 target=[6,0]
+effect 2  11 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=11366
+=======
+12505 Pyroblast (Rank 2)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      150 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  124.61539–163.38461 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=134 ppl=1.7 variance=0.26923078 sp=1 target=[6,0]
+effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12505
+=======
+12522 Pyroblast (Rank 3)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      195 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  177.8866–228.1134 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=191 ppl=2.1 variance=0.24742268 sp=1 target=[6,0]
+effect 2  19 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12522
+=======
+12523 Pyroblast (Rank 4)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      240 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  227.8369–290.16312 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=245 ppl=2.4 variance=0.24064171 sp=1 target=[6,0]
+effect 2  25 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12523
+=======
+12524 Pyroblast (Rank 5)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      285 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  288.69632–365.30368 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=311 ppl=2.7 variance=0.23427331 sp=1 target=[6,0]
+effect 2  31 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=31 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12524
+=======
+12525 Pyroblast (Rank 6)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      335 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  365.4956–458.5044 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=394 ppl=3 variance=0.22574955 sp=1 target=[6,0]
+effect 2  38 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=38 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12525
+=======
+12526 Pyroblast (Rank 7)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      385 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  445.33334–556.6667 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=481 ppl=3.4 variance=0.22222222 sp=1 target=[6,0]
+effect 2  46 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=12526
+=======
+17273 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+cost      130 mana
+range     35 yd
+
+effect 1  934.8837–1075.1163 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
+effect 2  87 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=17273
+=======
+17274 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+cost      130 mana
+range     35 yd
+
+effect 1  3723.8577–4320.1426 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=4022.718 variance=0.14825581 sp=0.75 target=[6,0]
+effect 2  350 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=17274
+=======
+18809 Pyroblast (Rank 8)
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+gcd       1.5 s
+cost      440 mana
+range     35 yd
+attrs     periodic can crit
+labels    17
+
+effect 1  519.83563–646.16437 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=583 ppl=4.6 variance=0.21668743 sp=1 target=[6,0]
+effect 2  53 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=53 sp=0.15 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=18809
+=======
+20228 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+range     40 yd
+
+effect 1  1388–1612 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=1500 variance=0.14933333 sp=0.75 target=[6,0]
+effect 2  200 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=20228
+=======
+434443 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+range     35 yd
+
+effect 1  934.8837–1075.1163 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
+effect 2  87 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=434443
+=======
+460858 Pyroblast
+school    fire
+defense   magic
+duration  8 s
+range     40 yd
+
+effect 1  1388–1612 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=1500 variance=0.14933333 sp=0.75 target=[6,0]
+effect 2  200 fire damage every 2 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=460858
+=======
+460860 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+range     40 yd
+
+effect 1  200 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=460860
+=======
+1236173 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+cast      6 s
+cost      130 mana
+range     35 yd
+
+effect 1  4625–5375 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=5000 variance=0.15 sp=0.75 target=[6,0]
+effect 2  500 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=500 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236173
+=======
+1236291 Pyroblast
+school    fire
+defense   magic
+duration  12 s
+cast      2.5 s
+range     100 yd
+
+effect 1  4625–5375 fire damage to the enemy (+0.75 spell power)
+          E_SCHOOL_DAMAGE base=5000 variance=0.15 sp=0.75 target=[6,0]
+effect 2  500 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=500 sp=0.05 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=1236291
+=======
+2948 Scorch (Rank 1)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+labels    17
+
+effect 1  37.728813–46.271187 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=39 ppl=0.8 variance=0.20338982 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2948
+=======
+8444 Scorch (Rank 2)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      65 mana
+range     30 yd
+labels    17
+
+effect 1  53.44706–64.55294 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=55 ppl=1 variance=0.1882353 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8444
+=======
+8445 Scorch (Rank 3)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+labels    17
+
+effect 1  66.36364–79.63636 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=69 ppl=1 variance=0.18181819 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8445
+=======
+8446 Scorch (Rank 4)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    17
+
+effect 1  88.363014–105.636986 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=93 ppl=1.2 variance=0.1780822 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8446
+=======
+10205 Scorch (Rank 5)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+labels    17
+
+effect 1  110.745766–131.25424 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=116 ppl=1.4 variance=0.16949153 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10205
+=======
+10206 Scorch (Rank 6)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      135 mana
+range     30 yd
+labels    17
+
+effect 1  142.10959–169.89041 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=150 ppl=1.5 variance=0.1780822 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10206
+=======
+10207 Scorch (Rank 7)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+labels    17
+
+effect 1  166.03543–195.96457 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=178 ppl=1.7 variance=0.16535433 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10207
+=======
+13878 Scorch
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+
+effect 1  268.33334–361.66666 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=315.7366 variance=0.2962963 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=13878
+=======
+15241 Scorch
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+
+effect 1  537.5185–724.4815 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=631.4732 variance=0.2962963 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15241
+=======
+17195 Scorch
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+
+effect 1  672.1111–905.8889 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=789.3415 variance=0.2962963 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17195
+=======
+11078 Wake of Fire
+school    physical
+attrs     passive
+labels    17
+proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met; tooltip says on a crit, one named ability
+refs      1312934 Wake of Fire
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x2 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11078
+=======
+1312934 Wake of Fire
+school    physical
+duration  30 s
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 sp=1 misc=7 family=3 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1312934

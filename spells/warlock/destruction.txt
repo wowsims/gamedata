@@ -1,0 +1,1390 @@
+18119 Aftermath
+school    physical
+attrs     passive, can proc from procs
+labels    19
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1; tooltip says one named ability
+refs      18118 Aftermath
+
+effect 1  casts 18118 Aftermath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=18118 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +50% on family 5 mask 0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 family=5 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18119
+=======
+17927 Agonizing Flames
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=5 mask=0x100 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x1a5,0x8000c0
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=5 mask=0x1a5,0x8000c0 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on family 5 mask 0x24
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x24 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17927
+=======
+18096 Apocalypse
+school    fire
+attrs     passive
+labels    19
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, one named ability
+refs      18093 Pyroclasm
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18096
+=======
+17788 Bane
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x5,0x10040
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=5 mask=0x5,0x10040 target=[1,0]
+effect 2  SPELLMOD_CASTING_TIME -2 s on family 5 mask 0x40
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=10 family=5 mask=0x40 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17788
+=======
+1225228 Bane of Havoc
+school    physical
+defense   magic
+duration  300 s
+cost      5% of maximum mana
+range     30 yd
+targets   up to 1
+labels    19
+
+effect 1  a dummy aura holding 15 to the enemy
+          E_APPLY_AURA A_DUMMY base=15 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1225228
+=======
+1243338 Bane of Havoc
+school    physical
+duration  permanent
+attrs     can proc from procs
+labels    19
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1243338
+=======
+1243339 Bane of Havoc
+school    shadow
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+labels    19
+refs      1225228 Bane of Havoc
+
+effect 1  0 shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1243339
+=======
+17778 Cataclysm
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COST -10% on family 5 mask 0x3e5,0x30040,0x20000,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=5 mask=0x3e5,0x30040,0x20000,0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17778
+=======
+403629 Chaos Bolt
+school    fire+nature+frost+shadow+arcane
+defense   magic
+cast      2.5 s
+cooldown  12 s
+gcd       1.5 s
+cost      7% of maximum mana
+range     30 yd
+
+effect 1  522–662 fire+nature+frost+shadow+arcane damage to the enemy (+0.714 spell power)
+          E_SCHOOL_DAMAGE base=592 variance=0.23648648 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=403629
+=======
+403630 Chaos Bolt
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TARGET_ABSORB_SCHOOL base=0 misc=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403630
+=======
+403860 Chaos Bolt
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399967
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403629 misc=399967 target=[1,0]
+
+https://www.wowhead.com/forever/spell=403860
+=======
+17962 Conflagrate (Rank 3)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      165 mana
+range     30 yd
+labels    19
+
+effect 1  133.62637–170.37363 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=146 ppl=1 variance=0.24175824 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17962
+=======
+18930 Conflagrate (Rank 4)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+labels    19
+
+effect 1  177.52809–222.47191 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=194 ppl=1.1 variance=0.2247191 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18930
+=======
+18931 Conflagrate (Rank 5)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      230 mana
+range     30 yd
+labels    19
+
+effect 1  218.60324–273.39676 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=239 ppl=1.2 variance=0.22273782 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18931
+=======
+18932 Conflagrate (Rank 6)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      255 mana
+range     30 yd
+labels    19
+
+effect 1  251.10359–312.89642 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=282 ppl=1.3 variance=0.21912351 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18932
+=======
+1293817 Conflagrate (Rank 1)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    19
+
+effect 1  87.03297–110.96703 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=95 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293817
+=======
+1293818 Conflagrate (Rank 2)
+school    fire
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    19
+
+effect 1  111.64835–142.35165 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=122 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293818
+=======
+17917 Destructive Reach
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x48c7ff,0x50043,0x2,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x48c7ff,0x50043,0x2,0x400000 target=[1,0]
+effect 2  SPELLMOD_RADIUS +10% on family 5 mask 0x0,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=5 mask=0x0,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17917
+=======
+18130 Devastation
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 5 mask 0x3e5,0x30040,0x820002
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=5 mask=0x3e5,0x30040,0x820002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18130
+=======
+17954 Emberstorm
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +10% on family 5 mask 0x364
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=5 mask=0x364 target=[1,0]
+effect 2  SPELLMOD_DOT +10% on family 5 mask 0x64
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x64 target=[1,0]
+effect 3  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=5 mask=0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17954
+=======
+412751 Fire and Brimstone
+school    physical
+attrs     passive
+labels    19
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 5 mask 0x0,0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 sp=1 misc=7 family=5 mask=0x0,0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412751
+=======
+1949 Hellfire (Rank 1)
+school    fire
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      645 mana
+attrs     channeled, periodic can crit
+labels    19
+refs      5857 Hellfire Effect
+
+effect 1  casts 5857 Hellfire Effect every 1 s (15 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=1000ms trigger=5857 target=[1,0]
+effect 2  86 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=82 ppl=0.4 sp=0.022 period=1000ms target=[1,0]
+effect 3  immune to bandage
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1949
+=======
+11683 Hellfire (Rank 2)
+school    fire
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      975 mana
+attrs     channeled, periodic can crit
+labels    19
+refs      11681 Hellfire Effect
+
+effect 1  casts 11681 Hellfire Effect every 1 s (15 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=1000ms trigger=11681 target=[1,0]
+effect 2  142 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=137 ppl=0.5 sp=0.022 period=1000ms target=[1,0]
+effect 3  immune to bandage
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11683
+=======
+11684 Hellfire (Rank 3)
+school    fire
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      1300 mana
+attrs     channeled, periodic can crit
+labels    19
+refs      11682 Hellfire Effect
+
+effect 1  casts 11682 Hellfire Effect every 1 s (15 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=1000ms trigger=11682 target=[1,0]
+effect 2  210 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=206 ppl=0.7 sp=0.022 period=1000ms target=[1,0]
+effect 3  immune to bandage
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11684
+=======
+5857 Hellfire Effect (Rank 1)
+school    fire
+defense   magic
+attrs     cannot crit
+labels    19
+
+effect 1  86 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
+          E_SCHOOL_DAMAGE base=82 ppl=0.4 sp=0.022 target=[18,16]
+
+https://www.wowhead.com/forever/spell=5857
+=======
+11681 Hellfire Effect (Rank 2)
+school    fire
+defense   magic
+attrs     cannot crit
+labels    19
+
+effect 1  142 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
+          E_SCHOOL_DAMAGE base=137 ppl=0.5 sp=0.022 target=[18,16]
+
+https://www.wowhead.com/forever/spell=11681
+=======
+11682 Hellfire Effect (Rank 3)
+school    fire
+defense   magic
+attrs     cannot crit
+labels    19
+
+effect 1  210 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
+          E_SCHOOL_DAMAGE base=206 ppl=0.7 sp=0.022 target=[18,16]
+
+https://www.wowhead.com/forever/spell=11682
+=======
+348 Immolate (Rank 1)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  3 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=3 sp=0.13 period=3000ms target=[6,0]
+effect 2  10 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=8 ppl=0.7 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=348
+=======
+707 Immolate (Rank 2)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  6 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.13 period=3000ms target=[6,0]
+effect 2  21 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=17 ppl=0.8 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=707
+=======
+1094 Immolate (Rank 3)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  12 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 sp=0.13 period=3000ms target=[6,0]
+effect 2  38 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=32 ppl=1.2 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1094
+=======
+2941 Immolate (Rank 4)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      155 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  19 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.13 period=3000ms target=[6,0]
+effect 2  63 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=56 ppl=1.5 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2941
+=======
+11665 Immolate (Rank 5)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      220 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  25 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.13 period=3000ms target=[6,0]
+effect 2  80 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=72 ppl=1.6 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11665
+=======
+11667 Immolate (Rank 6)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      295 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  38 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=38 sp=0.13 period=3000ms target=[6,0]
+effect 2  115 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=106 ppl=1.9 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11667
+=======
+11668 Immolate (Rank 7)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      370 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  52 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=52 sp=0.13 period=3000ms target=[6,0]
+effect 2  146 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=146 ppl=2.3 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11668
+=======
+25309 Immolate (Rank 8)
+school    fire
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      380 mana
+range     30 yd
+attrs     periodic can crit
+labels    19
+
+effect 1  55 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=55 sp=0.13 period=3000ms target=[6,0]
+effect 2  158 fire damage to the enemy (at level 60, +0.2 spell power)
+          E_SCHOOL_DAMAGE base=158 ppl=2.3 sp=0.2 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25309
+=======
+1219425 Immolate
+school    fire
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219425
+=======
+18126 Improved Firebolt (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=5 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18126
+=======
+18127 Improved Firebolt (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CASTING_TIME -1 s on family 5 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=5 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18127
+=======
+17815 Improved Immolate (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +5% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -5% on family 5 mask 0x0,0x0,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17815
+=======
+17833 Improved Immolate (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +10% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -10% on family 5 mask 0x0,0x0,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17833
+=======
+17834 Improved Immolate (Rank 3)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +15% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -15% on family 5 mask 0x0,0x0,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17834
+=======
+17835 Improved Immolate (Rank 4)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +20% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -20% on family 5 mask 0x0,0x0,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17835
+=======
+17836 Improved Immolate (Rank 5)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DAMAGE +25% on family 5 mask 0x4,0x10000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE -25% on family 5 mask 0x0,0x0,0x800002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17836
+=======
+18128 Improved Lash of Pain (Rank 1)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COOLDOWN -3 s on family 5 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 sp=1 misc=11 family=5 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18128
+=======
+18129 Improved Lash of Pain (Rank 2)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_COOLDOWN -6 s on family 5 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 sp=1 misc=11 family=5 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18129
+=======
+17793 Improved Shadow Bolt
+school    physical
+attrs     passive
+labels    19
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      17794 Shadow Vulnerability
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17793
+=======
+412758 Incinerate (Rank 1)
+school    fire
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      205 mana
+range     30 yd
+
+effect 1  98.05–113.95 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=97 ppl=1.1 variance=0.15 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 25 to the enemy
+          E_DUMMY base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=412758
+=======
+1293812 Incinerate (Rank 2)
+school    fire
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+
+effect 1  144.3–167.7 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=145 ppl=1.3 variance=0.15 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 25 to the enemy
+          E_DUMMY base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293812
+=======
+1293813 Incinerate (Rank 3)
+school    fire
+defense   magic
+cast      2.5 s
+gcd       1.5 s
+cost      325 mana
+range     30 yd
+
+effect 1  200.725–233.275 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=217 ppl=1.4 variance=0.15 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 25 to the enemy
+          E_DUMMY base=25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1293813
+=======
+18135 Intensity
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 5 mask 0x3e5
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 sp=1 misc=9 family=5 mask=0x3e5 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18135
+=======
+18073 Pyroclasm
+school    fire
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 26% chance, from effect 1; tooltip says one named ability
+refs      18093 Pyroclasm
+
+effect 1  a dummy aura holding 26
+          E_APPLY_AURA A_DUMMY base=26 sp=1 target=[1,0]
+effect 2  casts 18350 Dummy Trigger on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=18350 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18073
+=======
+5740 Rain of Fire (Rank 1)
+school    fire
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      295 mana
+range     30 yd
+attrs     channeled
+labels    19
+refs      1282380 Rain of Fire
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41450 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=5740
+=======
+6219 Rain of Fire (Rank 2)
+school    fire
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      605 mana
+range     30 yd
+attrs     channeled
+labels    19
+refs      1282383 Rain of Fire
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41452 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=6219
+=======
+11677 Rain of Fire (Rank 3)
+school    fire
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      885 mana
+range     30 yd
+attrs     channeled
+labels    19
+refs      1282384 Rain of Fire
+
+effect 1  a dummy effect holding 1 to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41455 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=11677
+=======
+11678 Rain of Fire (Rank 4)
+school    fire
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      1185 mana
+range     30 yd
+attrs     channeled
+labels    19
+refs      1282385 Rain of Fire
+
+effect 1  a dummy effect to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41456 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=11678
+=======
+19474 Rain of Fire (Rank 1)
+school    fire
+defense   magic
+duration  8 s
+gcd       1.5 s
+cost      850 mana
+range     30 yd
+attrs     channeled
+labels    19
+refs      1282381 Rain of Fire
+
+effect 1  a dummy effect to target 87 (at level 60)
+          E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+effect 2  unrecognised shape
+          E_CREATE_AREATRIGGER base=0 misc=41454 target=[87,16]
+effect 3  a dummy aura every 2 s (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=19474
+=======
+460692 Rain of Fire (Rank 1)
+school    fire
+defense   magic
+duration  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      295 mana
+range     30 yd
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=42 ppl=0.3 sp=0.083 period=2000ms radius=8 target=[28,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=460692
+=======
+460698 Rain of Fire (Rank 2)
+school    fire
+defense   magic
+duration  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      605 mana
+range     30 yd
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=96 ppl=0.4 sp=0.083 period=2000ms radius=8 target=[28,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=460698
+=======
+460699 Rain of Fire (Rank 3)
+school    fire
+defense   magic
+duration  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      885 mana
+range     30 yd
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=155 ppl=0.5 sp=0.083 period=2000ms radius=8 target=[28,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=460699
+=======
+460700 Rain of Fire (Rank 4)
+school    fire
+defense   magic
+duration  8 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      1185 mana
+range     30 yd
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=226 ppl=0.6 sp=0.083 period=2000ms radius=8 target=[28,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=460700
+=======
+1282380 Rain of Fire (Rank 1)
+school    fire
+defense   magic
+range     50000 yd
+labels    19
+
+effect 1  41 fire damage to target 87 (at level 60, +0.083 spell power)
+          E_SCHOOL_DAMAGE base=40 ppl=0.3 sp=0.083 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1282380
+=======
+1282381 Rain of Fire (Rank 1)
+school    fire
+defense   magic
+range     50000 yd
+labels    19
+
+effect 1  196 fire damage to target 87 (at level 60, +0.083 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=0.6 sp=0.083 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1282381
+=======
+1282383 Rain of Fire (Rank 2)
+school    fire
+defense   magic
+range     50000 yd
+labels    19
+
+effect 1  93 fire damage to target 87 (at level 60, +0.083 spell power)
+          E_SCHOOL_DAMAGE base=91 ppl=0.4 sp=0.083 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1282383
+=======
+1282384 Rain of Fire (Rank 3)
+school    fire
+defense   magic
+range     50000 yd
+labels    19
+
+effect 1  151 fire damage to target 87 (at level 60, +0.083 spell power)
+          E_SCHOOL_DAMAGE base=149 ppl=0.5 sp=0.083 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1282384
+=======
+1282385 Rain of Fire (Rank 4)
+school    fire
+defense   magic
+range     50000 yd
+labels    19
+
+effect 1  221 fire damage to target 87 (at level 60, +0.083 spell power)
+          E_SCHOOL_DAMAGE base=220 ppl=0.6 sp=0.083 target=[87,16]
+
+https://www.wowhead.com/forever/spell=1282385
+=======
+17959 Ruin
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 5 mask 0x3e5,0x30040,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=5 mask=0x3e5,0x30040,0x20000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17959
+=======
+5676 Searing Pain (Rank 1)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+labels    19
+
+effect 1  23.263159–28.736841 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=23 ppl=0.6 variance=0.21052632 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5676
+=======
+17919 Searing Pain (Rank 2)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      68 mana
+range     30 yd
+labels    19
+
+effect 1  33.584614–40.415386 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.18461539 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17919
+=======
+17920 Searing Pain (Rank 3)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      91 mana
+range     30 yd
+labels    19
+
+effect 1  43.452633–52.547367 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=44 ppl=0.8 variance=0.18947369 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17920
+=======
+17921 Searing Pain (Rank 4)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      118 mana
+range     30 yd
+labels    19
+
+effect 1  61–73 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=62 ppl=0.9 variance=0.17910448 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17921
+=======
+17922 Searing Pain (Rank 5)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      141 mana
+range     30 yd
+labels    19
+
+effect 1  83.109825–98.890175 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=85 ppl=1 variance=0.1734104 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17922
+=======
+17923 Searing Pain (Rank 6)
+school    fire
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      168 mana
+range     30 yd
+labels    19
+
+effect 1  106.5946–125.4054 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=114 ppl=1.2 variance=0.16216215 sp=0.429 chain=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17923
+=======
+686 Shadow Bolt (Rank 1)
+school    shadow
+defense   magic
+cast      1.7 s
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+labels    19
+
+effect 1  12–16 shadow damage to the enemy (at level 60, +0.486 spell power)
+          E_SCHOOL_DAMAGE base=13 ppl=0.3 variance=0.2857143 sp=0.486 target=[6,0]
+
+https://www.wowhead.com/forever/spell=686
+=======
+695 Shadow Bolt (Rank 2)
+school    shadow
+defense   magic
+cast      2.2 s
+gcd       1.5 s
+cost      40 mana
+range     30 yd
+labels    19
+
+effect 1  24.76923–31.23077 shadow damage to the enemy (at level 60, +0.629 spell power)
+          E_SCHOOL_DAMAGE base=25 ppl=0.6 variance=0.23076923 sp=0.629 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=695
+=======
+705 Shadow Bolt (Rank 3)
+school    shadow
+defense   magic
+cast      2.8 s
+gcd       1.5 s
+cost      70 mana
+range     30 yd
+labels    19
+
+effect 1  40.615383–47.384617 shadow damage to the enemy (at level 60, +0.8 spell power)
+          E_SCHOOL_DAMAGE base=41 ppl=0.7 variance=0.15384616 sp=0.8 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=705
+=======
+1088 Shadow Bolt (Rank 4)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+labels    19
+
+effect 1  56.086956–63.913044 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=56 ppl=0.9 variance=0.13043478 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1088
+=======
+1106 Shadow Bolt (Rank 5)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      160 mana
+range     30 yd
+labels    19
+
+effect 1  78.47369–89.52631 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=78 ppl=1.2 variance=0.13157895 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1106
+=======
+7641 Shadow Bolt (Rank 6)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      210 mana
+range     30 yd
+labels    19
+
+effect 1  100.58986–113.41014 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=101 ppl=1.2 variance=0.11981567 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7641
+=======
+11659 Shadow Bolt (Rank 7)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+labels    19
+
+effect 1  139.55705–156.44295 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=141 ppl=1.4 variance=0.11409396 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11659
+=======
+11660 Shadow Bolt (Rank 8)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      315 mana
+range     30 yd
+labels    19
+
+effect 1  188.0315–209.9685 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=191 ppl=1.6 variance=0.11023622 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11660
+=======
+11661 Shadow Bolt (Rank 9)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      370 mana
+range     30 yd
+labels    19
+
+effect 1  237.43243–264.56757 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=251 ppl=1.8 variance=0.10810811 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11661
+=======
+25307 Shadow Bolt (Rank 10)
+school    shadow
+defense   magic
+cast      3 s
+gcd       1.5 s
+cost      380 mana
+range     30 yd
+labels    19
+
+effect 1  253.28627–282.7137 shadow damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=268 ppl=1.9 variance=0.10980392 sp=0.857 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25307
+=======
+350026 Shadow Bolt
+school    shadow
+defense   magic
+cast      2.8 s
+cost      70 mana
+range     30 yd
+
+effect 1  51.692307–60.307693 shadow damage to the enemy (at level 60, +0.56 spell power)
+          E_SCHOOL_DAMAGE base=52 ppl=0.9 variance=0.15384616 sp=0.56 amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=350026
+=======
+426316 Shadow and Flame
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 2
+refs      1293816 Shadow, 426311 Flame
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+effect 3  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 4  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426316
+=======
+426449 Shadow and Flame
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426316 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426449
+=======
+17877 Shadowburn (Rank 1)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      105 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  64.548386–73.451614 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.12903225 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17877
+=======
+18867 Shadowburn (Rank 2)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  80.4065–91.5935 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=80 ppl=1 variance=0.1300813 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18867
+=======
+18868 Shadowburn (Rank 3)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      190 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  117.42424–132.57576 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=118 ppl=1.3 variance=0.12121212 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18868
+=======
+18869 Shadowburn (Rank 4)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      245 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  146.04694–163.95306 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=148 ppl=1.3 variance=0.11552346 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18869
+=======
+18870 Shadowburn (Rank 5)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      305 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
+effect 2  200–224 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=203 ppl=1.6 variance=0.11320755 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18870
+=======
+18871 Shadowburn (Rank 6)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  15 s (category)
+gcd       1.5 s
+cost      365 mana
+range     30 yd
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 sp=1 target=[6,0]
+effect 2  258.08823–287.91177 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=266 ppl=1.8 variance=0.1092437 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18871
+=======
+426320 Shadowflame
+school    fire+shadow
+defense   magic
+duration  15 s
+cast      2 s
+gcd       1.5 s
+cost      27% of maximum mana
+range     30 yd
+refs      426454 Shadowflame
+
+effect 1  173 fire+shadow damage to the enemy (+0.2 spell power)
+          E_SCHOOL_DAMAGE base=173 sp=0.2 target=[6,0]
+effect 2  64 fire+shadow damage every 3 s to the enemy (5 ticks, +0.13 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=64 sp=0.13 period=3000ms target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=426320
+=======
+426325 Shadowflame
+school    fire
+defense   magic
+duration  8 s
+range     100 yd
+
+effect 1  61 fire damage every 2 s to the enemy (4 ticks, +0.107 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=61 sp=0.107 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=426325
+=======
+426454 Shadowflame
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426320 misc=415450 target=[1,0]
+effect 2  SPELLMOD_CHARGES +26 on family 5 mask 0x0,0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=26 misc=4 family=5 mask=0x0,0x0,0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=426454
+=======
+1219429 Shadowflame
+school    fire+shadow
+defense   magic
+range     50000 yd
+stack     up to 1
+
+effect 1  0 fire+shadow damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1219429
+=======
+1228049 Shadowflame
+school    fire+shadow
+defense   magic
+duration  15 s
+range     100 yd
+refs      426454 Shadowflame
+
+https://www.wowhead.com/forever/spell=1228049
+=======
+6353 Soul Fire (Rank 1)
+school    fire
+defense   magic
+cast      6 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      305 mana
+range     30 yd
+labels    19
+
+effect 1  342.96017–431.03983 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=377 ppl=1.7 variance=0.22759601 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6353
+=======
+17924 Soul Fire (Rank 2)
+school    fire
+defense   magic
+cast      6 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      335 mana
+range     30 yd
+labels    19
+
+effect 1  388.7803–487.2197 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=431 ppl=1.9 variance=0.22474748 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17924

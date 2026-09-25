@@ -1,0 +1,2431 @@
+15268 Blackout (Rank 1)
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 2% chance
+refs      15269 Blackout
+
+effect 1  casts 15269 Blackout on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=15269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15268
+=======
+15323 Blackout (Rank 2)
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance
+refs      15269 Blackout
+
+effect 1  casts 15269 Blackout on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=15269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15323
+=======
+15324 Blackout (Rank 3)
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 6% chance
+refs      15269 Blackout
+
+effect 1  casts 15269 Blackout on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=15269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15324
+=======
+15325 Blackout (Rank 4)
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 8% chance
+refs      15269 Blackout
+
+effect 1  casts 15269 Blackout on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=15269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15325
+=======
+15326 Blackout (Rank 5)
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 1
+refs      15269 Blackout
+
+effect 1  casts 15269 Blackout on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=15269 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15326
+=======
+1277324 Dark Sacrifice (Rank 1)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  600 s (category)
+gcd       1.5 s
+attrs     cannot crit
+labels    18
+
+effect 1  a dummy aura holding 88 every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=80 ppl=1 period=3000ms target=[1,0]
+effect 2  restores 88 mana every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=80 ppl=1 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277324
+=======
+1277325 Dark Sacrifice (Rank 2)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  600 s (category)
+gcd       1.5 s
+attrs     cannot crit
+labels    18
+
+effect 1  a dummy aura holding 144 every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=136 ppl=1 period=3000ms target=[1,0]
+effect 2  restores 144 mana every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=136 ppl=1 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277325
+=======
+1277326 Dark Sacrifice (Rank 3)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  600 s (category)
+gcd       1.5 s
+attrs     cannot crit
+labels    18
+
+effect 1  a dummy aura holding 204 every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=196 ppl=1 period=3000ms target=[1,0]
+effect 2  restores 204 mana every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=196 ppl=1 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277326
+=======
+1277327 Dark Sacrifice (Rank 4)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  600 s (category)
+gcd       1.5 s
+attrs     cannot crit
+labels    18
+
+effect 1  a dummy aura holding 266 every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=258 ppl=1 period=3000ms target=[1,0]
+effect 2  restores 266 mana every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=258 ppl=1 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277327
+=======
+1277328 Dark Sacrifice (Rank 5)
+school    shadow
+defense   magic
+duration  15 s
+cooldown  600 s (category)
+gcd       1.5 s
+attrs     cannot crit
+labels    18
+
+effect 1  a dummy aura holding 320 every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=320 ppl=1 period=3000ms target=[1,0]
+effect 2  restores 320 mana every 3 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=320 ppl=1 period=3000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1277328
+=======
+15259 Darkness
+school    physical
+attrs     passive
+labels    18
+
+effect 1  +10% shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15259
+=======
+1309950 Devouring Contagion
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COST -50% on family 6 mask 0x2000000,0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=6 mask=0x2000000,0x0,0x0,0x10 target=[1,0]
+effect 2  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1309950
+=======
+2944 Devouring Plague (Rank 1)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      215 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 16 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=16 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2944
+=======
+19276 Devouring Plague (Rank 2)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      350 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 29 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=29 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19276
+=======
+19277 Devouring Plague (Rank 3)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      495 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 43 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=43 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19277
+=======
+19278 Devouring Plague (Rank 4)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      645 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 61 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=61 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19278
+=======
+19279 Devouring Plague (Rank 5)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      810 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 82 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=82 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19279
+=======
+19280 Devouring Plague (Rank 6)
+school    shadow
+defense   magic
+duration  24 s
+cooldown  60 s (category)
+gcd       1.5 s
+cost      985 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  leeches 106 every 3 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_LEECH base=106 sp=0.1 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19280
+=======
+459713 Devouring Plague
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19280 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459713
+=======
+1219275 Devouring Plague
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 1219274
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19280 misc=1219274 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1219275
+=======
+425294 Dispersion
+school    physical
+duration  6 s
+cooldown  120 s
+gcd       1.5 s
+
+effect 1  -90% every school damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-90 misc=127 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_POWER base=6 period=1000ms target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_PACIFY_SILENCE base=0 misc=127 target=[1,0]
+effect 4  immune to root
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+effect 5  immune to snare
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=11 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425294
+=======
+425307 Dispersion
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425294 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=425307
+=======
+1310076 Early Demise
+school    physical
+attrs     passive
+labels    18
+
+effect 1  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+effect 2  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310076
+=======
+402789 Eye of the Void
+school    shadow
+duration  30 s
+cooldown  180 s
+gcd       1.5 s
+range     30 yd
+stance    Shadowform
+
+effect 1  summons creature 202387 to target 49
+          E_SUMMON base=5 misc=202387 misc2=5603 target=[49,0]
+
+https://www.wowhead.com/forever/spell=402789
+=======
+586 Fade (Rank 1)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      40 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-275 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=586
+=======
+9578 Fade (Rank 2)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      75 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-775 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9578
+=======
+9579 Fade (Rank 3)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      125 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-1425 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9579
+=======
+9592 Fade (Rank 4)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      175 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-2200 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=9592
+=======
+10941 Fade (Rank 5)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      225 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-3100 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10941
+=======
+10942 Fade (Rank 6)
+school    shadow
+defense   magic
+duration  10 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      275 mana
+stance    Shadowform
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_TOTAL_THREAT base=-4100 ppl=-3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10942
+=======
+9035 Hex of Weakness (Rank 1)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      35 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -43 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-43 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=9035
+=======
+19281 Hex of Weakness (Rank 2)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      55 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -57 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-57 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19281
+=======
+19282 Hex of Weakness (Rank 3)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -85 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-85 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19282
+=======
+19283 Hex of Weakness (Rank 4)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -106 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-106 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19283
+=======
+19284 Hex of Weakness (Rank 5)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      180 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -155 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-155 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19284
+=======
+19285 Hex of Weakness (Rank 6)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      240 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  -204 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-204 target=[6,0]
+effect 2  -20% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-20 sp=1 misc=127 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19285
+=======
+25816 Hex of Weakness (Rank 6)
+school    shadow
+defense   magic
+duration  120 s
+gcd       1.5 s
+cost      320 mana
+range     30 yd
+stance    Shadowform
+
+effect 1  -20 physical damage done to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=-20 misc=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25816
+=======
+459710 Hex of Weakness
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19285 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459710
+=======
+402799 Homunculi
+school    shadow
+duration  120 s
+cooldown  120 s
+gcd       1.5 s
+range     40 yd
+stance    Shadowform
+
+effect 1  summons creature 202390 to target 80
+          E_SUMMON base=3 misc=202390 misc2=5604 target=[53,80]
+
+https://www.wowhead.com/forever/spell=402799
+=======
+402801 Homunculi
+school    shadow
+duration  120 s
+cooldown  120 s
+gcd       1.5 s
+range     40 yd
+stance    Shadowform
+
+effect 1  summons creature 202391 to target 81
+          E_SUMMON base=5 misc=202391 misc2=5604 target=[53,81]
+
+https://www.wowhead.com/forever/spell=402801
+=======
+402802 Homunculi
+school    shadow
+duration  120 s
+cooldown  120 s
+gcd       1.5 s
+range     40 yd
+stance    Shadowform
+
+effect 1  summons creature 202392 to target 79
+          E_SUMMON base=5 misc=202392 misc2=5604 target=[53,79]
+
+https://www.wowhead.com/forever/spell=402802
+=======
+15274 Improved Fade
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COOLDOWN -6 s on family 6 mask 0x4000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=6 mask=0x4000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15274
+=======
+15273 Improved Mind Blast
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COOLDOWN -2.5 s on family 6 mask 0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2500 misc=11 family=6 mask=0x2000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15273
+=======
+1225139 Improved Mind Flay
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_DOT +20% on family 6 mask 0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=6 mask=0x800000 target=[1,0]
+effect 2  SPELLMOD_RANGE +10 on family 6 mask 0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=6 mask=0x800000 target=[1,0]
+effect 3  SPELLMOD_EFFECT2 -30 on family 6 mask 0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=12 family=6 mask=0x800000 target=[1,0]
+effect 4  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1225139
+=======
+15392 Improved Psychic Scream
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_COOLDOWN -4 s on family 6 mask 0x10000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 sp=1 misc=11 family=6 mask=0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15392
+=======
+15275 Improved Shadow Word: Pain
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_DURATION +6 s on family 6 mask 0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=1 family=6 mask=0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15275
+=======
+27839 Improved Vampiric Embrace
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_ALL_EFFECTS +5 on family 6 mask 0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=8 family=6 mask=0x4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=27839
+=======
+8092 Mind Blast (Rank 1)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  39.95122–44.04878 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=39 ppl=0.6 variance=0.09756097 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8092
+=======
+8102 Mind Blast (Rank 2)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      80 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  69.12–74.88 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=68 ppl=0.9 variance=0.08 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8102
+=======
+8103 Mind Blast (Rank 3)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  102.344826–109.655174 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=101 ppl=1.1 variance=0.06896552 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8103
+=======
+8104 Mind Blast (Rank 4)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      150 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  153.40698–162.59302 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=151 ppl=1.4 variance=0.058139537 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8104
+=======
+8105 Mind Blast (Rank 5)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      185 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  197.625–210.375 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=1.6 variance=0.0625 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8105
+=======
+8106 Mind Blast (Rank 6)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      225 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  258.65625–275.34375 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=258 ppl=1.9 variance=0.0625 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8106
+=======
+10945 Mind Blast (Rank 7)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  324.61798–343.38202 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=324 ppl=2.1 variance=0.056179777 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10945
+=======
+10946 Mind Blast (Rank 8)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      310 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  405.5492–428.4508 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=405 ppl=2.4 variance=0.05491991 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10946
+=======
+10947 Mind Blast (Rank 9)
+school    shadow
+defense   magic
+cast      1.5 s
+cooldown  8 s (category)
+gcd       1.5 s
+cost      350 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  476.73114–503.26886 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=485 ppl=2.6 variance=0.054158606 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10947
+=======
+605 Mind Control (Rank 1)
+school    shadow
+defense   magic
+mechanic  mechanic 1
+duration  60 s
+cast      3 s
+gcd       1.5 s
+cost      350 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POSSESS base=32 ppl=1 radius=100 target=[6,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=605
+=======
+10911 Mind Control (Rank 2)
+school    shadow
+defense   magic
+mechanic  mechanic 1
+duration  60 s
+cast      3 s
+gcd       1.5 s
+cost      550 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POSSESS base=47 ppl=1 radius=100 target=[6,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10911
+=======
+10912 Mind Control (Rank 3)
+school    shadow
+defense   magic
+mechanic  mechanic 1
+duration  60 s
+cast      3 s
+gcd       1.5 s
+cost      750 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_POSSESS base=62 ppl=1 radius=100 target=[6,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  -25% melee haste to the enemy
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10912
+=======
+15407 Mind Flay (Rank 1)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      45 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  21 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15407
+=======
+16568 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  3 s
+cost      60 mana
+range     20 yd
+attrs     channeled
+
+effect 1  233 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=233.87898 sp=0.1 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=16568
+=======
+17165 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  3 s
+cost      60 mana
+range     20 yd
+attrs     channeled
+
+effect 1  467 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=467.75797 sp=0.1 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17165
+=======
+17311 Mind Flay (Rank 2)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      70 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  34 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17311
+=======
+17312 Mind Flay (Rank 3)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      100 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  51 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=51 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17312
+=======
+17313 Mind Flay (Rank 4)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      135 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  75 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=75 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17313
+=======
+17314 Mind Flay (Rank 5)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      165 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  98 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=98 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=17314
+=======
+18807 Mind Flay (Rank 6)
+school    shadow
+defense   magic
+duration  3 s
+gcd       1.5 s
+cost      205 mana
+range     20 yd
+stance    Shadowform
+attrs     channeled, periodic can crit
+labels    18
+
+effect 1  130 shadow damage every 1 s to the enemy (3 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=130 sp=0.167 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=18807
+=======
+22919 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  3 s
+cost      60 mana
+range     20 yd
+attrs     channeled
+
+effect 1  240 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=240 sp=0.1 period=1000ms chain=3 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 chain=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=22919
+=======
+23953 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  10 s
+cost      100 mana
+range     100 yd
+attrs     channeled
+
+effect 1  750 shadow damage every 1 s to the enemy (10 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=750 sp=0.1 period=1000ms chain=5 target=[6,0]
+effect 2  -80% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-80 target=[6,0]
+
+https://www.wowhead.com/forever/spell=23953
+=======
+26044 Mind Flay
+school    shadow
+defense   magic
+duration  8 s
+range     100 yd
+attrs     channeled
+
+effect 1  555–645 shadow damage every 1 s to the enemy (8 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=600 variance=0.15 sp=0.1 period=1000ms chain=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 chain=1 mechanic=11 target=[6,0]
+effect 3  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 chain=1 mechanic=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26044
+=======
+26143 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  10 s
+range     50000 yd
+attrs     channeled
+
+effect 1  750 shadow damage every 1 s to the enemy (10 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=750 sp=0.1 period=1000ms chain=1 target=[6,0]
+effect 2  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=26143
+=======
+28310 Mind Flay
+school    shadow
+defense   magic
+duration  8 s
+range     100 yd
+attrs     channeled
+
+effect 1  555–645 shadow damage every 2 s to the enemy (4 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=600 variance=0.15 sp=0.1 period=2000ms chain=5 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 chain=5 mechanic=11 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28310
+=======
+29407 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  10 s
+range     35 yd
+attrs     channeled
+
+effect 1  750 shadow damage every 2 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=750 sp=0.1 period=2000ms chain=1 target=[6,0]
+effect 2  -20% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-20 target=[6,0]
+
+https://www.wowhead.com/forever/spell=29407
+=======
+412526 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  10 s
+range     50000 yd
+attrs     channeled
+
+effect 1  25 shadow damage every 1 s to the enemy (10 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.1 period=1000ms chain=1 target=[6,0]
+effect 2  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=412526
+=======
+474204 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  5 s
+cost      60 mana
+range     20 yd
+attrs     channeled
+
+effect 1  467 shadow damage every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=467.75797 sp=0.1 period=1000ms target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=474204
+=======
+474268 Mind Flay
+school    shadow
+defense   magic
+duration  5 s
+range     100 yd
+attrs     channeled
+
+effect 1  555–645 shadow damage every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=600 variance=0.15 sp=0.1 period=1000ms chain=1 target=[6,0]
+effect 2  -50% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 chain=1 mechanic=11 target=[6,0]
+effect 3  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 sp=1 chain=1 mechanic=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=474268
+=======
+1215740 Mind Flay
+school    shadow
+defense   magic
+mechanic  mechanic 11
+duration  5 s
+range     50000 yd
+attrs     channeled
+
+effect 1  350 shadow damage every 1 s to the enemy (5 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=350 sp=0.1 period=1000ms chain=1 target=[6,0]
+effect 2  -30% movement speed to the enemy
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1215740
+=======
+413259 Mind Sear
+school    shadow
+defense   magic
+duration  6 s
+gcd       1.5 s
+cost      28% of maximum mana
+range     30 yd
+stance    Shadowform
+attrs     channeled
+refs      413260 Mind Sear
+
+effect 1  casts 413260 Mind Sear every 1 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=25 sp=0.15 period=1000ms trigger=413260 target=[6,0]
+
+https://www.wowhead.com/forever/spell=413259
+=======
+413260 Mind Sear
+school    shadow
+defense   magic
+range     100 yd
+attrs     not a proc
+
+effect 1  70–78 shadow damage to target 76 (+0.286 spell power)
+          E_SCHOOL_DAMAGE base=74 variance=0.10810811 sp=0.286 target=[76,16]
+
+https://www.wowhead.com/forever/spell=413260
+=======
+453 Mind Soothe (Rank 1)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      50 mana
+range     40 yd
+stance    Shadowform
+attrs     suppresses weapon procs
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=453
+=======
+8192 Mind Soothe (Rank 2)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      70 mana
+range     40 yd
+stance    Shadowform
+attrs     suppresses weapon procs
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=8192
+=======
+10953 Mind Soothe (Rank 3)
+school    shadow
+defense   magic
+duration  15 s
+gcd       1.5 s
+cost      90 mana
+range     40 yd
+stance    Shadowform
+attrs     suppresses weapon procs
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10953
+=======
+431655 Mind Spike
+school    frost+shadow
+defense   magic
+duration  10 s
+cast      1.5 s
+gcd       1.5 s
+cost      6% of maximum mana
+range     35 yd
+stack     up to 3
+labels    3096
+
+effect 1  122–142 frost+shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=132 variance=0.15151516 sp=0.429 target=[6,0]
+effect 2  a dummy aura holding 30 from family 6 mask 0x2000 to the enemy
+          E_APPLY_AURA A_DUMMY base=30 family=6 mask=0x2000 target=[6,0]
+
+https://www.wowhead.com/forever/spell=431655
+=======
+431662 Mind Spike
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415449
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431655 misc=415449 target=[1,0]
+
+https://www.wowhead.com/forever/spell=431662
+=======
+2096 Mind Vision (Rank 1)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      65 mana
+range     100 yd
+stance    Shadowform
+attrs     channeled
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_BIND_SIGHT base=0 radius=100 target=[25,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_STALKED base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=2096
+=======
+10909 Mind Vision (Rank 2)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      150 mana
+range     50000 yd
+stance    Shadowform
+attrs     channeled
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_BIND_SIGHT base=0 radius=100 target=[25,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 3  unrecognised shape
+          E_APPLY_AURA A_MOD_STALKED base=0 target=[25,0]
+
+https://www.wowhead.com/forever/spell=10909
+=======
+450108 Mind Vision (Rank 2)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+range     50000 yd
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=450108
+=======
+1221421 Mind Vision
+school    shadow
+defense   magic
+duration  7 s
+gcd       1.5 s
+range     50000 yd
+
+effect 1  unrecognised shape
+          E_BIND_SIGHT base=0 target=[38,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_STALKED base=0 target=[38,0]
+
+https://www.wowhead.com/forever/spell=1221421
+=======
+1221422 Mind Vision
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+range     50000 yd
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+effect 2  casts 1221421 Mind Vision every 20 s (3 ticks)
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=20000ms trigger=1221421 target=[1,0]
+effect 3  casts 1221421 Mind Vision to the caster
+          E_TRIGGER_SPELL base=0 trigger=1221421 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1221422
+=======
+27683 Prayer of Shadow Protection
+school    holy
+defense   magic
+duration  1200 s
+gcd       1.5 s
+cost      1300 mana
+range     40 yd
+stance    Shadowform
+labels    18
+
+effect 1  +60 shadow resistance to the raid around the caster
+          E_APPLY_AURA A_MOD_RESISTANCE base=60 misc=32 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=27683
+=======
+8122 Psychic Scream (Rank 1)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      100 mana
+stance    Shadowform
+targets   up to 2
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8122
+=======
+8124 Psychic Scream (Rank 2)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      140 mana
+stance    Shadowform
+targets   up to 3
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=8124
+=======
+10888 Psychic Scream (Rank 3)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      180 mana
+stance    Shadowform
+targets   up to 4
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10888
+=======
+10890 Psychic Scream (Rank 4)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      210 mana
+stance    Shadowform
+targets   up to 5
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=10890
+=======
+15398 Psychic Scream
+school    shadow
+defense   magic
+mechanic  mechanic 12
+duration  8 s
+range     30 yd
+targets   up to 1
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15398
+=======
+27610 Psychic Scream (Rank 4)
+school    shadow
+defense   magic
+mechanic  mechanic 5
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      210 mana
+stance    Shadowform
+targets   up to 5
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to every enemy around the caster
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+effect 2  +25% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+
+https://www.wowhead.com/forever/spell=27610
+=======
+15318 Shadow Affinity
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_THREAT -8% on family 6 mask 0x68be100,0x1c2402,0x4010000,0x10000480
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-8 misc=2 family=6 mask=0x68be100,0x1c2402,0x4010000,0x10000480 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15318
+=======
+15260 Shadow Focus
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 6 mask 0x68ba000,0x180402,0x10000,0x10000400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=6 mask=0x68ba000,0x180402,0x10000,0x10000400 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15260
+=======
+976 Shadow Protection (Rank 1)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      250 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +30 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=30 misc=32 target=[21,0]
+
+https://www.wowhead.com/forever/spell=976
+=======
+10957 Shadow Protection (Rank 2)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      450 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +45 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=45 misc=32 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10957
+=======
+10958 Shadow Protection (Rank 3)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      650 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  +60 shadow resistance to the friendly target
+          E_APPLY_AURA A_MOD_RESISTANCE base=60 misc=32 target=[21,0]
+
+https://www.wowhead.com/forever/spell=10958
+=======
+16874 Shadow Protection (Rank 3)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+range     30 yd
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_RESISTANCE_EXCLUSIVE base=60 misc=32 target=[18,31]
+
+https://www.wowhead.com/forever/spell=16874
+=======
+17322 Shadow Reach
+school    physical
+attrs     passive
+labels    18
+
+effect 1  SPELLMOD_RANGE +20% on family 6 mask 0x280a000,0x180402,0x4010000,0x10000480
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=6 mask=0x280a000,0x180402,0x4010000,0x10000480 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17322
+=======
+15257 Shadow Weaving
+school    physical
+attrs     passive, can proc from procs
+labels    18
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1
+refs      15258 Shadow Weaving
+
+effect 1  casts 15258 Shadow Weaving on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=15258 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15257
+=======
+15258 Shadow Weaving
+school    shadow
+defense   magic
+duration  15 s
+range     100 yd
+stack     up to 5
+labels    18
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=2 misc=32 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15258
+=======
+401955 Shadow Word: Death
+school    shadow
+defense   magic
+cooldown  12 s
+gcd       1.5 s
+cost      12% of maximum mana
+range     30 yd
+stance    Shadowform
+
+effect 1  320–372 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=346 variance=0.15028901 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 50 to the enemy
+          E_DUMMY base=50 target=[6,0]
+
+https://www.wowhead.com/forever/spell=401955
+=======
+401962 Shadow Word: Death
+school    shadow
+duration  1 s
+charges   1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  0 shadow damage every 1 s (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=401962
+=======
+1309595 Shadow Word: Death (Rank 1)
+school    shadow
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      175 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  292.8645–311.1355 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=295 ppl=1.5 variance=0.0605 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=150 target=[6,0]
+effect 3  a dummy effect holding 10
+          E_DUMMY base=10 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1309595
+=======
+1309598 Shadow Word: Death
+school    shadow
+charges   1
+labels    18
+proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
+
+effect 1  0 shadow damage to the caster
+          E_SCHOOL_DAMAGE base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1309598
+=======
+1309633 Shadow Word: Death (Rank 2)
+school    shadow
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      205 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  367.53525–390.46475 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=370 ppl=1.9 variance=0.0605 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=150 target=[6,0]
+effect 3  a dummy effect holding 10
+          E_DUMMY base=10 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1309633
+=======
+1309635 Shadow Word: Death (Rank 3)
+school    shadow
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      250 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  401.4765–426.5235 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=403 ppl=2.2 variance=0.0605 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=150 target=[6,0]
+effect 3  a dummy effect holding 10
+          E_DUMMY base=10 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1309635
+=======
+1309636 Shadow Word: Death (Rank 4)
+school    shadow
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      340 mana
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  444.1455–471.8545 shadow damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=448 ppl=2.5 variance=0.0605 sp=0.429 target=[6,0]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=150 target=[6,0]
+effect 3  a dummy effect holding 10
+          E_DUMMY base=10 target=[0,0]
+
+https://www.wowhead.com/forever/spell=1309636
+=======
+589 Shadow Word: Pain (Rank 1)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      25 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  5 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=589
+=======
+594 Shadow Word: Pain (Rank 2)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      50 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  10 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=594
+=======
+970 Shadow Word: Pain (Rank 3)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      95 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  18 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=970
+=======
+992 Shadow Word: Pain (Rank 4)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      155 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  30 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=30 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=992
+=======
+2767 Shadow Word: Pain (Rank 5)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      230 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  48 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=48 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=2767
+=======
+10892 Shadow Word: Pain (Rank 6)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      305 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  71 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=71 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10892
+=======
+10893 Shadow Word: Pain (Rank 7)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      385 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  97 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=97 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10893
+=======
+10894 Shadow Word: Pain (Rank 8)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      470 mana
+range     30 yd
+stance    Shadowform
+attrs     periodic can crit
+labels    18
+
+effect 1  127 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=127 sp=0.2 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=10894
+=======
+27605 Shadow Word: Pain (Rank 8)
+school    shadow
+defense   magic
+duration  18 s
+gcd       1.5 s
+cost      470 mana
+range     30 yd
+stance    Shadowform
+
+effect 1  142 shadow damage every 3 s to the enemy (6 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=142 sp=0.167 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=27605
+=======
+1226589 Shadow Word: Pain (Rank 8)
+school    shadow
+defense   magic
+range     100 yd
+stance    Shadowform
+
+effect 1  142 shadow damage to the enemy (+0.167 spell power)
+          E_SCHOOL_DAMAGE base=142 sp=0.167 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1226589
+=======
+34433 Shadowfiend
+school    shadow
+duration  15 s
+cooldown  300 s
+gcd       1.5 s
+range     30 yd
+stance    Shadowform
+labels    18
+
+effect 1  summons creature 19668
+          E_SUMMON base=0 misc=19668 misc2=1561 target=[53,0]
+effect 2  casts nothing to the caster
+          E_TRIGGER_SPELL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=34433
+=======
+401977 Shadowfiend
+school    shadow
+duration  15 s
+cooldown  300 s
+gcd       1.5 s
+range     30 yd
+stance    Shadowform
+labels    3096
+refs      401988 Mana Leech
+
+effect 1  summons creature 202079
+          E_SUMMON base=5 misc=202079 misc2=5590 target=[53,0]
+
+https://www.wowhead.com/forever/spell=401977
+=======
+402843 Shadowfiend
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 0
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401977 target=[1,0]
+
+https://www.wowhead.com/forever/spell=402843
+=======
+440054 Shadowfiend
+school    shadow
+duration  15 s
+labels    3096
+refs      401988 Mana Leech
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OBS_MOD_HEALTH base=100 period=1000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=440054
+=======
+15473 Shadowform
+school    shadow
+duration  permanent
+cooldown  1.5 s (category)
+gcd       1.5 s
+cost      40% of maximum mana
+labels    18
+
+effect 1  shifts into Shadowform
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=28 target=[1,0]
+effect 2  +10% shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=32 target=[1,0]
+effect 3  -15% physical damage taken
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-15 misc=1 target=[1,0]
+effect 4  -50% shadow power cost
+          E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-50 misc=32 misc2=1 target=[1,0]
+effect 5  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 6 mask 0x280a010
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=6 mask=0x280a010 target=[1,0]
+
+https://www.wowhead.com/forever/spell=15473
+=======
+18137 Shadowguard (Rank 1)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      50 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28377 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18137
+=======
+19308 Shadowguard (Rank 2)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      85 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28378 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=35 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19308
+=======
+19309 Shadowguard (Rank 3)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      120 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28379 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=51 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19309
+=======
+19310 Shadowguard (Rank 4)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      160 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28380 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=70 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19310
+=======
+19311 Shadowguard (Rank 5)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      200 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28381 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=90 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19311
+=======
+19312 Shadowguard (Rank 6)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      250 mana
+stance    Shadowform
+charges   3
+icd       3.5 s
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28382 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=116 sp=0.267 trigger=28376 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19312
+=======
+28376 Shadowguard
+school    shadow
+defense   magic
+range     100 yd
+labels    18
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28376
+=======
+28377 Shadowguard (Rank 1)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  13 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=13 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28377
+=======
+28378 Shadowguard (Rank 2)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  22 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=22 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28378
+=======
+28379 Shadowguard (Rank 3)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  33 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=33 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28379
+=======
+28380 Shadowguard (Rank 4)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  50 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=50 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28380
+=======
+28381 Shadowguard (Rank 5)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  70 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=70 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28381
+=======
+28382 Shadowguard (Rank 6)
+school    shadow
+defense   magic
+range     100 yd
+attrs     cannot crit
+labels    18
+
+effect 1  96 shadow damage to the enemy (+0.267 spell power)
+          E_SCHOOL_DAMAGE base=96 sp=0.267 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28382
+=======
+421248 Shadowguard (Rank 1)
+school    shadow
+defense   magic
+duration  600 s
+range     50000 yd
+charges   3
+icd       3.5 s
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      28377 Shadowguard
+
+effect 1  casts 28376 Shadowguard on its trigger to the target
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 sp=0.267 trigger=28376 target=[25,0]
+
+https://www.wowhead.com/forever/spell=421248
+=======
+459709 Shadowguard
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19312 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459709
+=======
+15487 Silence
+school    shadow
+defense   magic
+mechanic  mechanic 9
+duration  5 s
+cooldown  45 s
+gcd       1.5 s
+cost      225 mana
+range     20 yd
+stance    Shadowform
+labels    18
+refs      1241057 Interrupted
+
+effect 1  silences to the enemy
+          E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15487
+=======
+2652 Touch of Weakness (Rank 1)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      25 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      2943 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=2652
+=======
+2943 Touch of Weakness (Rank 1)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  8 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=8 sp=0.107 target=[6,0]
+effect 2  -43 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-43 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2943
+=======
+19249 Touch of Weakness (Rank 2)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  12 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=12 sp=0.107 target=[6,0]
+effect 2  -57 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-57 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19249
+=======
+19251 Touch of Weakness (Rank 3)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  18 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=18 sp=0.107 target=[6,0]
+effect 2  -85 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-85 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19251
+=======
+19252 Touch of Weakness (Rank 4)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  28 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=28 sp=0.107 target=[6,0]
+effect 2  -106 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-106 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19252
+=======
+19253 Touch of Weakness (Rank 5)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  40 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=40 sp=0.107 target=[6,0]
+effect 2  -155 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-155 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19253
+=======
+19254 Touch of Weakness (Rank 6)
+school    shadow
+defense   magic
+duration  120 s
+range     100 yd
+labels    18
+
+effect 1  56 shadow damage to the enemy (+0.107 spell power)
+          E_SCHOOL_DAMAGE base=56 sp=0.107 target=[6,0]
+effect 2  -204 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-204 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19254
+=======
+19261 Touch of Weakness (Rank 2)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      45 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19249 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19261
+=======
+19262 Touch of Weakness (Rank 3)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      75 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19251 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19262
+=======
+19264 Touch of Weakness (Rank 4)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      105 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19252 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19264
+=======
+19265 Touch of Weakness (Rank 5)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      145 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19253 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19265
+=======
+19266 Touch of Weakness (Rank 6)
+school    shadow
+defense   magic
+duration  600 s
+gcd       1.5 s
+cost      195 mana
+stance    Shadowform
+labels    18
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19254 Touch of Weakness
+
+effect 1  casts 28598 Touch of Weakness on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28598 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19266
+=======
+28598 Touch of Weakness
+school    shadow
+range     50000 yd
+labels    18
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=28598
+=======
+459714 Touch of Weakness
+school    physical
+duration  permanent
+
+effect 1  replaces an action bar spell with 459695
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19266 misc=459695 target=[1,0]
+
+https://www.wowhead.com/forever/spell=459714
+=======
+15286 Vampiric Embrace
+school    shadow
+defense   magic
+duration  30 s
+cooldown  60 s
+gcd       1.5 s
+cost      40 mana
+range     30 yd
+attrs     can proc from procs
+labels    18
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 20 to the enemy
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=15286
+=======
+15290 Vampiric Embrace
+school    shadow
+range     30 yd
+labels    18
+
+effect 1  0 healing to the party around the caster
+          E_HEAL base=0 radius=30 target=[20,0]
+
+https://www.wowhead.com/forever/spell=15290
+=======
+461966 Vampiric Embrace
+school    shadow
+defense   magic
+duration  60 s
+range     30 yd
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 20 to the enemy
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=461966
+=======
+1237618 Vampiric Embrace
+school    shadow
+range     30 yd
+attrs     cannot crit
+
+effect 1  0 healing to the party around the caster
+          E_HEAL base=0 radius=30 target=[20,0]
+
+https://www.wowhead.com/forever/spell=1237618
+=======
+402668 Vampiric Touch
+school    shadow
+defense   magic
+duration  15 s
+cast      1.5 s
+gcd       1.5 s
+cost      16% of maximum mana
+range     30 yd
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 2 to the enemy
+          E_APPLY_AURA A_DUMMY base=2 target=[6,0]
+effect 2  65 shadow damage every 3 s to the enemy (5 ticks, +0.167 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=65 sp=0.167 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=402668
+=======
+425204 Void Plague
+school    shadow
+defense   magic
+duration  18 s
+cooldown  6 s
+gcd       1.5 s
+cost      13% of maximum mana
+range     30 yd
+stance    Shadowform
+
+effect 1  129 shadow damage every 3 s to the enemy (6 ticks, +0.166 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=129 sp=0.166 period=3000ms amplitude=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=425204

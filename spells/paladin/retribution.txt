@@ -1,0 +1,1352 @@
+407788 Avenging Wrath
+school    holy
+duration  20 s
+cooldown  180 s
+cost      8% of maximum mana
+labels    3096
+
+effect 1  +20% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=127 target=[1,0]
+effect 2  +20% healing done
+          E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=20 misc=127 target=[1,0]
+effect 3  unrecognised shape
+          E_TRIGGER_SPELL_WITH_VALUE base=0 trigger=25771 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407788
+=======
+407957 Avenging Wrath
+school    holy
+duration  30 s
+range     50000 yd
+labels    3096
+
+effect 1  a dummy aura to the friendly target
+          E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+
+https://www.wowhead.com/forever/spell=407957
+=======
+409934 Avenging Wrath
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 0
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407788 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409934
+=======
+20101 Benediction
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -10% on family 10 mask 0x1be11fbf,0x26018242,0x20212100,0x8800
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=10 mask=0x1be11fbf,0x26018242,0x20212100,0x8800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20101
+=======
+19740 Blessing of Might (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      20 mana
+range     30 yd
+labels    26
+
+effect 1  +14 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=14 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19740
+=======
+19834 Blessing of Might (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      30 mana
+range     30 yd
+labels    26
+
+effect 1  +25 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=25 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19834
+=======
+19835 Blessing of Might (Rank 3)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      45 mana
+range     30 yd
+labels    26
+
+effect 1  +40 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=40 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19835
+=======
+19836 Blessing of Might (Rank 4)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    26
+
+effect 1  +61 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=61 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19836
+=======
+19837 Blessing of Might (Rank 5)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+labels    26
+
+effect 1  +83 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=83 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19837
+=======
+19838 Blessing of Might (Rank 6)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      110 mana
+range     30 yd
+labels    26
+
+effect 1  +112 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=112 target=[21,0]
+
+https://www.wowhead.com/forever/spell=19838
+=======
+25291 Blessing of Might (Rank 7)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    26
+
+effect 1  +133 attack power to the friendly target
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=133 target=[21,0]
+
+https://www.wowhead.com/forever/spell=25291
+=======
+1311084 Champion of the Light
+school    physical
+attrs     passive
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=100 sp=1 misc=126 misc2=3 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=100 sp=1 misc=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311084
+=======
+407804 Divine Sacrifice
+school    holy
+duration  10 s
+cooldown  120 s
+gcd       1.5 s
+attrs     can proc from procs
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      407805 Sacrifice Redeemed
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PARTY A_SPLIT_DAMAGE_PCT base=30 amplitude=1 misc=127 radius=30 target=[1,0]
+effect 2  a dummy effect holding 20 to the caster
+          E_DUMMY base=20 family=10 mask=0xc0000000,0x10000 target=[1,0]
+effect 3  a dummy effect holding 40 to the caster
+          E_DUMMY base=40 family=10 mask=0xc0000000,0x10000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407804
+=======
+407778 Divine Storm
+school    physical
+defense   melee
+cooldown  10 s
+gcd       1.5 s
+cost      12% of maximum mana
+equip     needs a melee weapon
+targets   up to 5
+
+effect 1  a dummy effect holding 110 to the caster
+          E_DUMMY base=110 target=[1,0]
+effect 2  a dummy effect holding 25 to the caster
+          E_DUMMY base=25 target=[1,0]
+effect 3  110% weapon damage to every enemy around the caster
+          E_WEAPON_PERCENT_DAMAGE base=110 target=[22,15]
+
+https://www.wowhead.com/forever/spell=407778
+=======
+407782 Divine Storm
+school    holy
+defense   melee
+range     100 yd
+attrs     cannot crit
+
+effect 1  a dummy effect holding 110 to the raid around the caster
+          E_DUMMY base=110 radius=100 target=[56,0]
+
+https://www.wowhead.com/forever/spell=407782
+=======
+407784 Divine Storm
+school    holy
+range     50000 yd
+attrs     cannot crit
+
+effect 1  1 healing to the friendly target
+          E_HEAL base=1 target=[21,0]
+
+https://www.wowhead.com/forever/spell=407784
+=======
+409924 Divine Storm
+school    physical
+attrs     passive
+
+effect 1  replaces an action bar spell with 399954
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407778 misc=399954 target=[1,0]
+
+https://www.wowhead.com/forever/spell=409924
+=======
+415068 Exorcism (Rank 1)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      85 mana
+range     30 yd
+
+effect 1  89.6–102.4 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=90 ppl=1.2 variance=0.13333334 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415068
+=======
+415069 Exorcism (Rank 2)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      135 mana
+range     30 yd
+
+effect 1  159.50618–180.49382 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=162 ppl=1.6 variance=0.12345679 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415069
+=======
+415070 Exorcism (Rank 3)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      180 mana
+range     30 yd
+
+effect 1  226.39394–255.60606 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=231 ppl=2 variance=0.12121212 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415070
+=======
+415071 Exorcism (Rank 4)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      235 mana
+range     30 yd
+
+effect 1  315.29413–354.70587 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=323 ppl=2.4 variance=0.11764706 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415071
+=======
+415072 Exorcism (Rank 5)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      285 mana
+range     30 yd
+
+effect 1  406.22595–453.77405 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=416 ppl=2.8 variance=0.11057692 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415072
+=======
+415073 Exorcism (Rank 6)
+school    holy
+defense   magic
+cooldown  15 s (category)
+gcd       1.5 s
+cost      345 mana
+range     30 yd
+
+effect 1  505–563 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=534 ppl=3.2 variance=0.10861423 sp=0.429 target=[6,0]
+effect 2  a dummy effect holding 100 to the enemy
+          E_DUMMY base=100 target=[6,0]
+
+https://www.wowhead.com/forever/spell=415073
+=======
+25997 Eye for an Eye
+school    holy
+defense   magic
+range     100 yd
+labels    26
+
+effect 1  1 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25997
+=======
+25771 Forbearance
+school    holy
+mechanic  mechanic 25
+duration  60 s
+range     50000 yd
+labels    26
+
+effect 1  immune to invulnerability to the friendly target
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=25 target=[21,0]
+
+https://www.wowhead.com/forever/spell=25771
+=======
+25782 Greater Blessing of Might (Rank 1)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      220 mana
+range     40 yd
+labels    26
+
+effect 1  +112 attack power to target 153
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=112 sp=1 radius=100 target=[153,0]
+
+https://www.wowhead.com/forever/spell=25782
+=======
+25916 Greater Blessing of Might (Rank 2)
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      260 mana
+range     40 yd
+labels    26
+
+effect 1  +133 attack power to target 153
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=133 sp=1 radius=100 target=[153,0]
+
+https://www.wowhead.com/forever/spell=25916
+=======
+1237268 Holy Conduit
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -40% on family 10 mask 0x20,0x200080,0x40002000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=10 mask=0x20,0x200080,0x40002000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1237268
+=======
+678 Holy Strike (Rank 2)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      9 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +17 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=17 ppl=0.1 variance=0.25 sp=0.429 target=[6,0]
+effect 2  29% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=29 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=678
+=======
+679 Holy Strike (Rank 1)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      5 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +12 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=12 ppl=0.1 variance=0.25 sp=0.429 target=[6,0]
+effect 2  25% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=25 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=679
+=======
+680 Holy Strike (Rank 4)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      14 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +25 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=24 ppl=0.3 variance=0.25 sp=0.429 target=[6,0]
+effect 2  36% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=36 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=680
+=======
+1866 Holy Strike (Rank 3)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      12 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +20 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=19 ppl=0.2 variance=0.25 sp=0.429 target=[6,0]
+effect 2  32% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=32 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1866
+=======
+2495 Holy Strike (Rank 5)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      16 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +36 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=31 ppl=1 variance=0.25 sp=0.429 target=[6,0]
+effect 2  39% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=39 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=2495
+=======
+5569 Holy Strike (Rank 6)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      17 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +60 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=53 ppl=1.5 variance=0.25 sp=0.429 target=[6,0]
+effect 2  43% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=43 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=5569
+=======
+10332 Holy Strike (Rank 7)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      19 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +82 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=68 ppl=2.8 variance=0.25 sp=0.429 target=[6,0]
+effect 2  46% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=46 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10332
+=======
+10333 Holy Strike (Rank 8)
+school    holy
+defense   melee
+cooldown  10 s (category)
+gcd       1.5 s
+cost      20 mana
+range     5 yd
+equip     needs a melee weapon
+labels    26
+
+effect 1  normalised weapon damage +93 to the enemy (at level 60)
+          E_NORMALIZED_WEAPON_DMG base=93 ppl=3.2 variance=0.25 sp=0.429 target=[6,0]
+effect 2  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 target=[6,0]
+effect 3  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=10333
+=======
+20042 Improved Blessing of Might (Rank 1)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +4% on family 10 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 misc=8 family=10 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20042
+=======
+20045 Improved Blessing of Might (Rank 2)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +8% on family 10 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 family=10 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20045
+=======
+20046 Improved Blessing of Might (Rank 3)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +12% on family 10 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=12 sp=1 misc=8 family=10 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20046
+=======
+20047 Improved Blessing of Might (Rank 4)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +16% on family 10 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=16 sp=1 misc=8 family=10 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20047
+=======
+20048 Improved Blessing of Might (Rank 5)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +20% on family 10 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=8 family=10 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20048
+=======
+25956 Improved Judgement
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 10 mask 0x800000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=11 family=10 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25956
+=======
+20091 Improved Retribution Aura (Rank 1)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +25% on family 10 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=8 family=10 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20091
+=======
+20092 Improved Retribution Aura (Rank 2)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 10 mask 0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=10 mask=0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20092
+=======
+20335 Improved Seal of the Crusader (Rank 1)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +5% on family 10 mask 0x200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=3 family=10 mask=0x200 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +5% on family 10 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=10 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20335
+=======
+20336 Improved Seal of the Crusader (Rank 2)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +10% on family 10 mask 0x200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=3 family=10 mask=0x200 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +10% on family 10 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=8 family=10 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20336
+=======
+20337 Improved Seal of the Crusader (Rank 3)
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +15% on family 10 mask 0x200
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=3 family=10 mask=0x200 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +15% on family 10 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=8 family=10 mask=0x20000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20337
+=======
+28852 Improved Seal of the Crusader
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_EFFECT1 +48 on family 10 mask 0x200
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=48 sp=1 misc=3 family=10 mask=0x200 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS +33 on family 10 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=33 misc=8 family=10 mask=0x20000000 target=[0,0]
+
+https://www.wowhead.com/forever/spell=28852
+=======
+1311085 Instrument of Law
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x0,0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
+effect 2  -20% threat
+          E_APPLY_AURA A_MOD_THREAT base=-20 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311085
+=======
+20271 Judgement
+school    holy
+cooldown  10 s
+cost      6% of maximum mana
+range     10 yd
+attrs     not a proc
+labels    26
+
+effect 1  unrecognised shape
+          E_SCRIPT_EFFECT base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20271
+=======
+23591 Judgement
+school    holy
+duration  permanent
+attrs     passive
+refs      23590 Judgement
+
+effect 1  casts 23590 Judgement when the target is hit from family 10 mask 0x800000
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=23590 family=10 mask=0x800000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=23591
+=======
+428490 Judgement
+school    holy
+attrs     passive
+
+effect 1  +50% threat
+          E_APPLY_AURA A_MOD_THREAT base=50 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=428490
+=======
+20425 Judgement of Command (Rank 1)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  a dummy effect holding 20467 to the enemy
+          E_DUMMY base=20467 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20425
+=======
+20467 Judgement of Command (Rank 1)
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+labels    26
+
+effect 1  135.18556–146.81444 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=97 ppl=5.6 variance=0.082474224 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20467
+=======
+20961 Judgement of Command (Rank 3)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  a dummy effect holding 20964 to the enemy
+          E_DUMMY base=20964 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20961
+=======
+20962 Judgement of Command (Rank 2)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  a dummy effect holding 20963 to the enemy
+          E_DUMMY base=20963 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20962
+=======
+20963 Judgement of Command (Rank 2)
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+labels    26
+
+effect 1  191.80392–210.19608 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=153 ppl=6.1 variance=0.09150327 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20963
+=======
+20964 Judgement of Command (Rank 3)
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+labels    26
+
+effect 1  245.94392–270.05606 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=214 ppl=5.6 variance=0.093457945 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20964
+=======
+20965 Judgement of Command (Rank 4)
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+labels    26
+
+effect 1  306.72263–337.27737 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=274 ppl=6.1 variance=0.09489051 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20965
+=======
+20966 Judgement of Command (Rank 5)
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+labels    26
+
+effect 1  339–373 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=356 ppl=6.1 variance=0.09550562 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20966
+=======
+20967 Judgement of Command (Rank 4)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  a dummy effect holding 20965 to the enemy
+          E_DUMMY base=20965 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20967
+=======
+20968 Judgement of Command (Rank 5)
+school    holy
+defense   melee
+range     100 yd
+labels    26
+
+effect 1  a dummy effect holding 20966 to the enemy
+          E_DUMMY base=20966 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20968
+=======
+407803 Judgement of Martyrdom
+school    holy
+defense   melee
+range     50000 yd
+attrs     not a proc
+
+effect 1  85% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=85 target=[6,0]
+
+https://www.wowhead.com/forever/spell=407803
+=======
+20188 Judgement of the Crusader (Rank 2)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +35 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=35 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20188
+=======
+20300 Judgement of the Crusader (Rank 3)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +58 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=58 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20300
+=======
+20301 Judgement of the Crusader (Rank 4)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +92 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=92 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20301
+=======
+20302 Judgement of the Crusader (Rank 5)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +127 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=127 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20302
+=======
+20303 Judgement of the Crusader (Rank 6)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +161 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=161 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20303
+=======
+21183 Judgement of the Crusader (Rank 1)
+school    holy
+defense   melee
+duration  40 s
+range     100 yd
+labels    26
+
+effect 1  +23 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=23 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=21183
+=======
+25942 Judgement of the Crusader
+school    holy
+duration  40 s
+range     100 yd
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  casts 25943 Judgement of the Crusader on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=25943 target=[1,0]
+
+https://www.wowhead.com/forever/spell=25942
+=======
+25943 Judgement of the Crusader
+school    holy
+range     100 yd
+labels    26
+
+effect 1  a dummy effect to the enemy
+          E_DUMMY base=0 sp=1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=25943
+=======
+456496 Judgement of the Crusader
+school    holy
+defense   magic
+duration  10 s
+range     100 yd
+
+effect 1  +140 holy damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=140 misc=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=456496
+=======
+20066 Repentance
+school    holy
+defense   magic
+mechanic  mechanic 14
+duration  6 s
+cooldown  60 s
+gcd       1.5 s
+cost      60 mana
+range     20 yd
+labels    26
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20066
+=======
+7294 Retribution Aura (Rank 1)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: 7 holy damage back to melee attackers
+          E_APPLY_AREA_AURA_PARTY A_DAMAGE_SHIELD base=7 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7294
+=======
+10298 Retribution Aura (Rank 2)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: 12 holy damage back to melee attackers
+          E_APPLY_AREA_AURA_PARTY A_DAMAGE_SHIELD base=12 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10298
+=======
+10299 Retribution Aura (Rank 3)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: 18 holy damage back to melee attackers
+          E_APPLY_AREA_AURA_PARTY A_DAMAGE_SHIELD base=18 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10299
+=======
+10300 Retribution Aura (Rank 4)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: 24 holy damage back to melee attackers
+          E_APPLY_AREA_AURA_PARTY A_DAMAGE_SHIELD base=24 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10300
+=======
+10301 Retribution Aura (Rank 5)
+school    holy
+defense   magic
+duration  permanent
+gcd       1.5 s
+labels    26
+
+effect 1  party aura: 30 holy damage back to melee attackers
+          E_APPLY_AREA_AURA_PARTY A_DAMAGE_SHIELD base=30 radius=30 target=[1,0]
+effect 2  party aura: +0% healing taken
+          E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=10301
+=======
+440672 Righteous Judgement
+school    physical
+attrs     passive
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  a dummy aura holding 40
+          E_APPLY_AURA A_DUMMY base=40 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=440672
+=======
+440675 Righteous Judgement
+school    holy
+defense   melee
+duration  8 s
+range     50000 yd
+stack     up to 1
+attrs     suppresses weapon procs
+labels    26
+
+effect 1  a dummy aura every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=440675
+=======
+440677 Righteous Judgement
+school    holy
+defense   melee
+range     50000 yd
+stack     up to 1
+attrs     cannot crit
+labels    26
+
+effect 1  0 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=440677
+=======
+1311087 Sacred Arbiter
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_DAMAGE +20% on family 10 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311087
+=======
+1311074 Sanctified Judgement
+school    physical
+attrs     passive
+labels    26
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+effect 2  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1311074
+=======
+20375 Seal of Command (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      65 mana
+icd       1 s
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+refs      20424 Seal of Command, 20467 Judgement of Command
+
+effect 1  casts 20424 Seal of Command on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20424 target=[1,0]
+effect 2  a dummy aura holding 20425
+          E_APPLY_AURA A_DUMMY base=20425 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20375
+=======
+20424 Seal of Command
+school    holy
+defense   melee
+range     5 yd
+attrs     not a proc
+labels    26
+
+effect 1  70% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=70 sp=0.29 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20424
+=======
+20915 Seal of Command (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      110 mana
+icd       1 s
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+refs      20424 Seal of Command, 20963 Judgement of Command
+
+effect 1  casts 20424 Seal of Command on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20424 target=[1,0]
+effect 2  a dummy aura holding 20962
+          E_APPLY_AURA A_DUMMY base=20962 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20915
+=======
+20918 Seal of Command (Rank 3)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      140 mana
+icd       1 s
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+refs      20424 Seal of Command, 20964 Judgement of Command
+
+effect 1  casts 20424 Seal of Command on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20424 target=[1,0]
+effect 2  a dummy aura holding 20961
+          E_APPLY_AURA A_DUMMY base=20961 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20918
+=======
+20919 Seal of Command (Rank 4)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      180 mana
+icd       1 s
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+refs      20424 Seal of Command, 20965 Judgement of Command
+
+effect 1  casts 20424 Seal of Command on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20424 target=[1,0]
+effect 2  a dummy aura holding 20967
+          E_APPLY_AURA A_DUMMY base=20967 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20919
+=======
+20920 Seal of Command (Rank 5)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      210 mana
+icd       1 s
+labels    26, 1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no stated chance, the rate has to come from an override
+refs      20424 Seal of Command, 20966 Judgement of Command
+
+effect 1  casts 20424 Seal of Command on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20424 target=[1,0]
+effect 2  a dummy aura holding 20968
+          E_APPLY_AURA A_DUMMY base=20968 index=2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20920
+=======
+407798 Seal of Martyrdom
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      4% of maximum mana
+attrs     can proc from procs
+labels    1203
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      407799 Seal of Martyrdom, 407802 Seal of Martyrdom, 407803 Judgement of Martyrdom
+
+effect 1  casts 407799 Seal of Martyrdom on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 trigger=407799 target=[1,0]
+effect 2  a dummy aura holding 65
+          E_APPLY_AURA A_DUMMY base=65 target=[1,0]
+effect 3  a dummy aura holding 407803
+          E_APPLY_AURA A_DUMMY base=407803 target=[1,0]
+effect 4  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407798
+=======
+407799 Seal of Martyrdom
+school    holy
+defense   melee
+range     100 yd
+targets   up to 1
+attrs     not a proc, suppresses weapon procs
+
+effect 1  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 target=[6,0]
+effect 2  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=407799
+=======
+407800 Seal of Martyrdom
+school    holy
+attrs     suppresses weapon procs
+
+effect 1  0 holy damage to the caster
+          E_SCHOOL_DAMAGE base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=407800
+=======
+20162 Seal of the Crusader (Rank 2)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      40 mana
+labels    26, 1203
+refs      20188 Judgement of the Crusader
+
+effect 1  +59 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=51 ppl=1.1 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 20188
+          E_APPLY_AURA A_DUMMY base=20188 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20162
+=======
+20305 Seal of the Crusader (Rank 3)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      65 mana
+labels    26, 1203
+refs      20300 Judgement of the Crusader
+
+effect 1  +107 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=94 ppl=1.7 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 20300
+          E_APPLY_AURA A_DUMMY base=20300 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20305
+=======
+20306 Seal of the Crusader (Rank 4)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      90 mana
+labels    26, 1203
+refs      20301 Judgement of the Crusader
+
+effect 1  +161 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=145 ppl=2 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 20301
+          E_APPLY_AURA A_DUMMY base=20301 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20306
+=======
+20307 Seal of the Crusader (Rank 5)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      125 mana
+labels    26, 1203
+refs      20302 Judgement of the Crusader
+
+effect 1  +238 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=221 ppl=2.2 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 20302
+          E_APPLY_AURA A_DUMMY base=20302 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20307
+=======
+20308 Seal of the Crusader (Rank 6)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      160 mana
+labels    26, 1203
+refs      20303 Judgement of the Crusader
+
+effect 1  +325 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=306 ppl=2.4 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 20303
+          E_APPLY_AURA A_DUMMY base=20303 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20308
+=======
+21082 Seal of the Crusader (Rank 1)
+school    holy
+defense   magic
+duration  30 s
+gcd       1.5 s
+cost      25 mana
+labels    26, 1203
+refs      21183 Judgement of the Crusader
+
+effect 1  +35 attack power (at level 60)
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=31 ppl=0.7 target=[1,0]
+effect 2  +40% attack speed
+          E_APPLY_AURA A_MOD_ATTACKSPEED base=40 target=[1,0]
+effect 3  a dummy aura holding 21183
+          E_APPLY_AURA A_DUMMY base=21183 target=[1,0]
+
+https://www.wowhead.com/forever/spell=21082
+=======
+1310735 Twist of Light
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met; tooltip says one named ability
+
+effect 1  SPELLMOD_COST -20% on family 10 mask 0xa000600,0x26000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1310735
+=======
+20049 Vengeance
+school    physical
+attrs     passive, can proc from procs
+labels    26
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+refs      20050 Vengeance
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=5 sp=1 trigger=20050 target=[1,0]
+
+https://www.wowhead.com/forever/spell=20049

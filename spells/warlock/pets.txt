@@ -1,0 +1,1204 @@
+427742 Anguish
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      10% of maximum mana
+range     5 yd
+labels    3096, 3100
+
+effect 1  320 threat to the enemy
+          E_THREAT base=25 ppl=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=427742
+=======
+427743 Avoidance
+school    physical
+duration  permanent
+stack     up to 1
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_CREATURE_AOE_DAMAGE_AVOIDANCE base=-50 target=[1,0]
+
+https://www.wowhead.com/forever/spell=427743
+=======
+6307 Blood Pact (Rank 1)
+school    shadow
+duration  permanent
+labels    19
+
+effect 1  party aura: +4 stamina (at level 60)
+          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=3 ppl=0.1 misc=2 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=6307
+=======
+7804 Blood Pact (Rank 2)
+school    shadow
+duration  permanent
+range     20 yd
+labels    19
+
+effect 1  party aura: +12 stamina (at level 60)
+          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=9 ppl=0.3 misc=2 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7804
+=======
+7805 Blood Pact (Rank 3)
+school    shadow
+duration  permanent
+range     20 yd
+labels    19
+
+effect 1  party aura: +25 stamina (at level 60)
+          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=21 ppl=0.4 misc=2 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7805
+=======
+11766 Blood Pact (Rank 4)
+school    shadow
+duration  permanent
+range     20 yd
+labels    19
+
+effect 1  party aura: +39 stamina (at level 60)
+          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=35 ppl=0.4 misc=2 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11766
+=======
+11767 Blood Pact (Rank 5)
+school    shadow
+duration  permanent
+range     20 yd
+labels    19
+
+effect 1  party aura: +54 stamina (at level 60)
+          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=49 ppl=0.5 misc=2 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11767
+=======
+427744 Cleave
+school    physical
+defense   melee
+cooldown  6 s
+gcd       1.5 s
+cost      10% of maximum mana
+range     5 yd
+labels    3096, 3100
+
+effect 1  weapon damage in the weapon's own school +37 to the enemy (at level 60)
+          E_WEAPON_DAMAGE_NOSCHOOL base=2 ppl=0.6 sp=1 chain=2 target=[6,0]
+
+https://www.wowhead.com/forever/spell=427744
+=======
+17767 Consume Shadows (Rank 1)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      85 mana
+range     5 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  65 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=62 ppl=0.5 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17767
+=======
+17850 Consume Shadows (Rank 2)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      150 mana
+range     5 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  115 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=111 ppl=0.7 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17850
+=======
+17851 Consume Shadows (Rank 3)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      215 mana
+range     5 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  167 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=163 ppl=0.8 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17851
+=======
+17852 Consume Shadows (Rank 4)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      285 mana
+range     5 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  226 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=220 ppl=1 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17852
+=======
+17853 Consume Shadows (Rank 5)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      380 mana
+range     5 yd
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  305 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=299 ppl=1.1 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17853
+=======
+17854 Consume Shadows (Rank 6)
+school    shadow
+defense   magic
+duration  10 s
+gcd       1.5 s
+cost      480 mana
+attrs     channeled, periodic can crit
+labels    19
+
+effect 1  388 healing every 2 s (5 ticks, at level 60)
+          E_APPLY_AURA A_PERIODIC_HEAL base=386 ppl=1.3 period=2000ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=17854
+=======
+19505 Devour Magic (Rank 1)
+school    shadow
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      100 mana
+range     30 yd
+labels    19
+refs      19658 Devour Magic Effect
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=19505
+=======
+19731 Devour Magic (Rank 2)
+school    shadow
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      130 mana
+range     30 yd
+labels    19
+refs      19732 Devour Magic Effect
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=19731
+=======
+19734 Devour Magic (Rank 3)
+school    shadow
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      170 mana
+range     30 yd
+labels    19
+refs      19733 Devour Magic Effect
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=19734
+=======
+19736 Devour Magic (Rank 4)
+school    shadow
+defense   magic
+cooldown  8 s (category)
+gcd       1.5 s
+cost      215 mana
+range     30 yd
+labels    19
+refs      19735 Devour Magic Effect
+
+effect 1  dispels 1 magic effect to the target
+          E_DISPEL base=1 misc=1 target=[25,0]
+
+https://www.wowhead.com/forever/spell=19736
+=======
+19658 Devour Magic Effect (Rank 1)
+school    shadow
+labels    19
+
+effect 1  258 healing to the caster (at level 60)
+          E_HEAL base=234 ppl=4 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19658
+=======
+19732 Devour Magic Effect (Rank 2)
+school    shadow
+labels    19
+
+effect 1  347 healing to the caster (at level 60)
+          E_HEAL base=319 ppl=4.8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19732
+=======
+19733 Devour Magic Effect (Rank 3)
+school    shadow
+labels    19
+
+effect 1  472 healing to the caster (at level 60)
+          E_HEAL base=438 ppl=5.7 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19733
+=======
+19735 Devour Magic Effect (Rank 4)
+school    shadow
+labels    19
+
+effect 1  618 healing to the caster (at level 60)
+          E_HEAL base=579 ppl=6.6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19735
+=======
+2947 Fire Shield (Rank 1)
+school    fire
+defense   magic
+duration  180 s
+gcd       1.5 s
+cost      60 mana
+range     30 yd
+labels    19
+
+effect 1  5 fire damage back to melee attackers to the target's party
+          E_APPLY_AURA A_DAMAGE_SHIELD base=5 target=[35,0]
+
+https://www.wowhead.com/forever/spell=2947
+=======
+8316 Fire Shield (Rank 2)
+school    fire
+defense   magic
+duration  180 s
+gcd       1.5 s
+cost      90 mana
+range     30 yd
+labels    19
+
+effect 1  7 fire damage back to melee attackers to the target's party
+          E_APPLY_AURA A_DAMAGE_SHIELD base=7 target=[35,0]
+
+https://www.wowhead.com/forever/spell=8316
+=======
+8317 Fire Shield (Rank 3)
+school    fire
+defense   magic
+duration  180 s
+gcd       1.5 s
+cost      115 mana
+range     30 yd
+labels    19
+
+effect 1  9 fire damage back to melee attackers to the target's party
+          E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[35,0]
+
+https://www.wowhead.com/forever/spell=8317
+=======
+11770 Fire Shield (Rank 4)
+school    fire
+defense   magic
+duration  180 s
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+labels    19
+
+effect 1  11 fire damage back to melee attackers to the target's party
+          E_APPLY_AURA A_DAMAGE_SHIELD base=11 target=[35,0]
+
+https://www.wowhead.com/forever/spell=11770
+=======
+11771 Fire Shield (Rank 5)
+school    fire
+defense   magic
+duration  180 s
+gcd       1.5 s
+cost      165 mana
+range     30 yd
+labels    19
+
+effect 1  13 fire damage back to melee attackers to the target's party
+          E_APPLY_AURA A_DAMAGE_SHIELD base=13 target=[35,0]
+
+https://www.wowhead.com/forever/spell=11771
+=======
+3110 Firebolt (Rank 1)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      10 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  3.4285715–4.571429 fire damage to the enemy (at level 60, +0.164 spell power)
+          E_SCHOOL_DAMAGE base=4 ppl=0.1 variance=0.2857143 sp=0.164 target=[6,0]
+
+https://www.wowhead.com/forever/spell=3110
+=======
+7799 Firebolt (Rank 2)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      20 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  7.3846154–8.615385 fire damage to the enemy (at level 60, +0.314 spell power)
+          E_SCHOOL_DAMAGE base=7 ppl=0.2 variance=0.15384616 sp=0.314 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7799
+=======
+7800 Firebolt (Rank 3)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      35 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  11.916667–14.083333 fire damage to the enemy (at level 60, +0.529 spell power)
+          E_SCHOOL_DAMAGE base=12 ppl=0.3 variance=0.16666667 sp=0.529 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7800
+=======
+7801 Firebolt (Rank 4)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      50 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  16.971428–19.028572 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=17 ppl=0.3 variance=0.11428571 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7801
+=======
+7802 Firebolt (Rank 5)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      70 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  25.411764–28.588236 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=25 ppl=0.4 variance=0.11764706 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7802
+=======
+11762 Firebolt (Rank 6)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      95 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  34.915493–39.084507 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=35 ppl=0.5 variance=0.11267605 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11762
+=======
+11763 Firebolt (Rank 7)
+school    fire
+defense   magic
+cast      2 s
+gcd       1 s
+cost      115 mana
+range     30 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  42.44318–47.55682 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
+effect 2  a dummy effect holding 45 to the enemy (at level 60)
+          E_DUMMY base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11763
+=======
+20801 Firebolt
+school    fire
+defense   magic
+cast      2 s
+cost      20 mana
+range     30 yd
+
+effect 1  146.15384–157.84616 fire damage to the enemy (+0.529 spell power)
+          E_SCHOOL_DAMAGE base=152.02133 variance=0.07692308 sp=0.529 target=[6,0]
+
+https://www.wowhead.com/forever/spell=20801
+=======
+427745 Intercept
+school    physical
+cooldown  30 s (category)
+gcd       1.5 s
+cost      10% of maximum mana
+range     8-25 yd
+labels    3096, 3100
+refs      427746 Intercept Stun
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 sp=1 target=[6,0]
+effect 2  casts 427746 Intercept Stun to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=427746 target=[6,0]
+
+https://www.wowhead.com/forever/spell=427745
+=======
+7814 Lash of Pain (Rank 1)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      65 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  16 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=16 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7814
+=======
+7815 Lash of Pain (Rank 2)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      80 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  22 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=22 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7815
+=======
+7816 Lash of Pain (Rank 3)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      105 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  30 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=30 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7816
+=======
+11778 Lash of Pain (Rank 4)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      125 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  36 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=36 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11778
+=======
+11779 Lash of Pain (Rank 5)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      145 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  43 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=43 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11779
+=======
+11780 Lash of Pain (Rank 6)
+school    shadow
+defense   magic
+cooldown  12 s (category)
+gcd       1.5 s
+cost      160 mana
+range     5 yd
+labels    19
+refs      18769 Unholy Power
+
+effect 1  50 shadow damage to the enemy (+0.429 spell power)
+          E_SCHOOL_DAMAGE base=50 sp=0.429 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11780
+=======
+7870 Lesser Invisibility
+school    shadow
+defense   magic
+duration  300 s
+gcd       1.5 s
+cost      100 mana
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INVISIBILITY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7870
+=======
+19480 Paranoia
+school    shadow
+duration  permanent
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PARTY A_MOD_STEALTH_DETECT base=30 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19480
+=======
+7812 Sacrifice (Rank 1)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 318 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=305 ppl=2.3 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=7812
+=======
+19438 Sacrifice (Rank 2)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 528 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=510 ppl=3.1 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19438
+=======
+19440 Sacrifice (Rank 3)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 793 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=770 ppl=3.9 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19440
+=======
+19441 Sacrifice (Rank 4)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 1123 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1095 ppl=4.7 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19441
+=======
+19442 Sacrifice (Rank 5)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 1503 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1470 ppl=5.5 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19442
+=======
+19443 Sacrifice (Rank 6)
+school    shadow
+defense   magic
+duration  30 s
+range     50000 yd
+labels    19
+
+effect 1  absorbs 1930 every school damage to the caster's master (at level 60)
+          E_APPLY_AURA A_SCHOOL_ABSORB base=1905 ppl=6.4 misc=127 target=[27,0]
+effect 2  unrecognised shape
+          E_INSTAKILL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19443
+=======
+6358 Seduction
+school    shadow
+defense   magic
+mechanic  mechanic 1
+duration  15 s
+cast      1.5 s
+gcd       1.5 s
+cost      24% of maximum mana
+range     30 yd
+attrs     channeled
+labels    19
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6358
+=======
+6360 Soothing Kiss (Rank 1)
+school    shadow
+defense   magic
+cooldown  4 s (category)
+gcd       1.5 s
+cost      30 mana
+range     5 yd
+labels    19
+
+effect 1  -55 threat to the enemy
+          E_THREAT base=-45 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=6360
+=======
+7813 Soothing Kiss (Rank 2)
+school    shadow
+defense   magic
+cooldown  4 s (category)
+gcd       1.5 s
+cost      50 mana
+range     10 yd
+labels    19
+
+effect 1  -85 threat to the enemy
+          E_THREAT base=-75 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7813
+=======
+11784 Soothing Kiss (Rank 3)
+school    shadow
+defense   magic
+cooldown  4 s (category)
+gcd       1.5 s
+cost      75 mana
+range     10 yd
+labels    19
+
+effect 1  -141 threat to the enemy
+          E_THREAT base=-127 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11784
+=======
+11785 Soothing Kiss (Rank 4)
+school    shadow
+defense   magic
+cooldown  4 s (category)
+gcd       1.5 s
+cost      100 mana
+range     10 yd
+labels    19
+
+effect 1  -167 threat to the enemy
+          E_THREAT base=-165 ppl=-1 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11785
+=======
+19244 Spell Lock (Rank 1)
+school    shadow
+defense   magic
+duration  6 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      120 mana
+range     30 yd
+labels    19
+refs      24259 Spell Lock
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  casts 24259 Spell Lock to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=24259 mechanic=9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19244
+=======
+19647 Spell Lock (Rank 2)
+school    shadow
+defense   magic
+duration  8 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      200 mana
+range     30 yd
+labels    19
+refs      24259 Spell Lock
+
+effect 1  interrupts the cast to the enemy
+          E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+effect 2  casts 24259 Spell Lock to the enemy
+          E_TRIGGER_SPELL base=0 sp=1 trigger=24259 mechanic=9 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19647
+=======
+24259 Spell Lock
+school    shadow
+mechanic  mechanic 9
+duration  3 s
+range     30 yd
+labels    19
+
+effect 1  silences to the enemy
+          E_APPLY_AURA A_MOD_SILENCE base=0 sp=1 misc=126 target=[6,0]
+
+https://www.wowhead.com/forever/spell=24259
+=======
+17735 Suffering (Rank 1)
+school    shadow
+defense   magic
+cooldown  120 s (category)
+gcd       1.5 s
+cost      150 mana
+labels    19
+
+effect 1  150 threat to every enemy around the caster
+          E_THREAT base=150 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17735
+=======
+17750 Suffering (Rank 2)
+school    shadow
+defense   magic
+cooldown  120 s (category)
+gcd       1.5 s
+cost      300 mana
+labels    19
+
+effect 1  300 threat to every enemy around the caster
+          E_THREAT base=300 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17750
+=======
+17751 Suffering (Rank 3)
+school    shadow
+defense   magic
+cooldown  120 s (category)
+gcd       1.5 s
+cost      450 mana
+labels    19
+
+effect 1  450 threat to every enemy around the caster
+          E_THREAT base=450 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17751
+=======
+17752 Suffering (Rank 4)
+school    shadow
+defense   magic
+cooldown  120 s (category)
+gcd       1.5 s
+cost      600 mana
+labels    19
+
+effect 1  600 threat to every enemy around the caster
+          E_THREAT base=600 target=[22,15]
+
+https://www.wowhead.com/forever/spell=17752
+=======
+19478 Tainted Blood (Rank 1)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      75 mana
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19479 Tainted Blood Effect
+
+effect 1  casts 19479 Tainted Blood Effect on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=17 trigger=19479 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19478
+=======
+19655 Tainted Blood (Rank 2)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      105 mana
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19652 Tainted Blood Effect
+
+effect 1  casts 19652 Tainted Blood Effect on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=23 trigger=19652 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19655
+=======
+19656 Tainted Blood (Rank 3)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      135 mana
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19653 Tainted Blood Effect
+
+effect 1  casts 19653 Tainted Blood Effect on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=32 trigger=19653 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19656
+=======
+19660 Tainted Blood (Rank 4)
+school    shadow
+defense   magic
+duration  60 s
+gcd       1.5 s
+cost      170 mana
+labels    19
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      19654 Tainted Blood Effect
+
+effect 1  casts 19654 Tainted Blood Effect on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=19654 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19660
+=======
+19479 Tainted Blood Effect (Rank 1)
+school    shadow
+defense   magic
+duration  10 s
+stack     up to 5
+labels    19
+
+effect 1  -17 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-17 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19479
+=======
+19652 Tainted Blood Effect (Rank 2)
+school    shadow
+defense   magic
+duration  10 s
+stack     up to 5
+labels    19
+
+effect 1  -23 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-23 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19652
+=======
+19653 Tainted Blood Effect (Rank 3)
+school    shadow
+defense   magic
+duration  10 s
+stack     up to 5
+labels    19
+
+effect 1  -32 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-32 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19653
+=======
+19654 Tainted Blood Effect (Rank 4)
+school    shadow
+defense   magic
+duration  10 s
+stack     up to 5
+labels    19
+
+effect 1  -40 attack power to the enemy
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-40 target=[6,0]
+
+https://www.wowhead.com/forever/spell=19654
+=======
+18727 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18727
+=======
+18728 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18728
+=======
+18729 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18729
+=======
+18730 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% every school damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18730
+=======
+18735 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18735
+=======
+18736 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18736
+=======
+18737 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18737
+=======
+18738 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +0% health
+          E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18738
+=======
+18739 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INCREASE_ENERGY_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18739
+=======
+18740 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INCREASE_ENERGY_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18740
+=======
+18741 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INCREASE_ENERGY_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18741
+=======
+18742 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_INCREASE_ENERGY_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=18742
+=======
+19007 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +120 holy+fire+nature+frost+shadow+arcane resistance (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=60 ppl=2 misc=126 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19007
+=======
+19432 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +75 shadow resistance (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=63 ppl=1.25 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19432
+=======
+19433 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+labels    19
+
+effect 1  +90 fire resistance (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=90 ppl=1.5 misc=4 target=[1,0]
+effect 2  +75 shadow resistance (at level 60)
+          E_APPLY_AURA A_MOD_RESISTANCE base=75 ppl=1.25 misc=32 target=[1,0]
+
+https://www.wowhead.com/forever/spell=19433
+=======
+412729 Tamed Pet Passive (DND)
+school    physical
+attrs     passive
+
+effect 1  +0% physical and spell crit
+          E_APPLY_AURA A_MOD_CRIT_PCT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=412729
+=======
+3716 Torment (Rank 1)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      20 mana
+range     5 yd
+labels    19
+
+effect 1  85 threat to the enemy
+          E_THREAT base=70 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=3716
+=======
+7809 Torment (Rank 2)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      40 mana
+range     5 yd
+labels    19
+
+effect 1  130 threat to the enemy
+          E_THREAT base=115 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7809
+=======
+7810 Torment (Rank 3)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      65 mana
+range     5 yd
+labels    19
+
+effect 1  205 threat to the enemy
+          E_THREAT base=190 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7810
+=======
+7811 Torment (Rank 4)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      90 mana
+range     5 yd
+labels    19
+
+effect 1  335 threat to the enemy
+          E_THREAT base=320 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=7811
+=======
+11774 Torment (Rank 5)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      115 mana
+range     5 yd
+labels    19
+
+effect 1  465 threat to the enemy
+          E_THREAT base=450 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11774
+=======
+11775 Torment (Rank 6)
+school    shadow
+defense   magic
+cooldown  5 s (category)
+gcd       1.5 s
+cost      145 mana
+range     5 yd
+labels    19
+
+effect 1  600 threat to the enemy
+          E_THREAT base=600 ppl=3 target=[6,0]
+
+https://www.wowhead.com/forever/spell=11775
