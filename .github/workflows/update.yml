@@ -1,0 +1,190 @@
+name: Update game data
+
+# Exports the Forever client's class spells and items and records what changed since the last run.
+#
+# Each run reads the build Blizzard's CDN serves for wow_classic_beta and the newest hotfix cache
+# (raidbots' mirror of the client's DBCache.bin). If neither moved since state.json, it stops there.
+# Otherwise it checks out wowsims/forever, extracts the client database with its db2tool, dumps
+# every class spell with tools/spelldata (split per spec by scripts/split_spells.py) and every item
+# with scripts/export_items.py, and writes
+# the difference to patches/<version>/<patch | hotfix-N>/. The pull request carries CHANGES.md as
+# its body and is merged straight away, so the list of merged pull requests is the changelog.
+on:
+    schedule:
+        - cron: '17 */3 * * *'
+    workflow_dispatch:
+        inputs:
+            forever_ref:
+                description: 'wowsims/forever branch, tag or commit to export with'
+                default: master
+            force:
+                description: 'Export and record even if the build and hotfixes have not moved'
+                type: boolean
+                default: false
+
+concurrency:
+    group: update-game-data
+    cancel-in-progress: false
+
+env:
+    PRODUCT: wow_classic_beta
+    DBCACHE_URL: https://storage.googleapis.com/raidbots-static/wow/classic_beta/enUS/DBCache.bin
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        timeout-minutes: 45
+        permissions:
+            contents: write
+            pull-requests: write
+        steps:
+            - name: Checkout gamedata 🛎️
+              uses: actions/checkout@v5
+              with:
+                  path: gamedata
+
+            - name: Resolve the current build and hotfixes 🔎
+              id: build
+              run: |
+                  row=$(curl -fsS "https://us.version.battle.net/$PRODUCT/versions" | awk -F'|' '$1 == "us"')
+                  config=$(echo "$row" | cut -d'|' -f2)
+                  build=$(echo "$row" | cut -d'|' -f5)
+                  version=$(echo "$row" | cut -d'|' -f6)
+                  test -n "$config" && test -n "$build" && test -n "$version"
+
+                  mkdir -p "$RUNNER_TEMP/caches"
+                  curl -fsSL -o "$RUNNER_TEMP/caches/DBCache.bin" "$DBCACHE_URL"
+                  eval "$(python3 gamedata/scripts/dbcache_info.py "$RUNNER_TEMP/caches/DBCache.bin" | sed 's/^/cache_/')"
+                  if [ "$cache_build" = "$build" ]; then
+                      push=$cache_push
+                      hotfixes="applied up to push $cache_push ($cache_entries records)"
+                  else
+                      # The cache is still for another build: the export runs without it, and the
+                      # hotfixes land as their own update once raidbots has the new build's cache.
+                      push=0
+                      hotfixes="none yet: the newest DBCache.bin is for build $cache_build"
+                  fi
+
+                  echo "Current $PRODUCT build: $version, hotfixes: $hotfixes"
+                  {
+                      echo "config=$config"
+                      echo "build=$build"
+                      echo "version=$version"
+                      echo "push=$push"
+                      echo "hotfixes=$hotfixes"
+                  } >> "$GITHUB_OUTPUT"
+
+            - name: Check whether anything moved 🧭
+              id: moved
+              env:
+                  VERSION: ${{ steps.build.outputs.version }}
+                  PUSH: ${{ steps.build.outputs.push }}
+                  FORCE: ${{ inputs.force }}
+              run: |
+                  last=$(python3 -c 'import json; s = json.load(open("gamedata/state.json")); print(s["version"], s["push"])' 2>/dev/null || echo none)
+                  if [ "$last" = "$VERSION $PUSH" ] && [ "$FORCE" != "true" ]; then
+                      echo "Still on $VERSION with hotfix push $PUSH, nothing to record."
+                      echo "run=false" >> "$GITHUB_OUTPUT"
+                  else
+                      echo "Last recorded: $last, now: $VERSION $PUSH"
+                      echo "run=true" >> "$GITHUB_OUTPUT"
+                  fi
+
+            - name: Checkout forever 🛎️
+              if: steps.moved.outputs.run == 'true'
+              uses: actions/checkout@v5
+              with:
+                  repository: wowsims/forever
+                  ref: ${{ inputs.forever_ref || 'master' }}
+                  path: forever
+
+            - name: Install Go
+              if: steps.moved.outputs.run == 'true'
+              uses: actions/setup-go@v6
+              with:
+                  go-version: 1.25.x
+                  cache-dependency-path: forever/go.sum
+
+            - name: Install Protoc
+              if: steps.moved.outputs.run == 'true'
+              uses: arduino/setup-protoc@v3
+              with:
+                  version: 3.x
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Install Protoc Go plugin
+              if: steps.moved.outputs.run == 'true'
+              run: go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+
+            # Keyed on the build config, so a run for new hotfixes alone fetches nothing from the CDN.
+            - name: Cache CDN downloads and definitions 📦
+              if: steps.moved.outputs.run == 'true'
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      forever/tools/db2tool/cdncache
+                      forever/tools/db2tool/DBDCache
+                      forever/tools/db2tool/listfile.csv
+                      forever/tools/db2tool/TACTKeys.txt
+                  key: db2tool-${{ env.PRODUCT }}-${{ steps.build.outputs.config }}
+
+            # db2tool is what `make db` runs first. The rest of `make db` builds the sim's own
+            # database, which the export does not read.
+            - name: Extract the client database 🔧
+              if: steps.moved.outputs.run == 'true'
+              working-directory: forever
+              env:
+                  PUSH: ${{ steps.build.outputs.push }}
+              run: |
+                  flags="--cdn"
+                  if [ "$PUSH" != "0" ]; then
+                      flags="$flags --dbcache $RUNNER_TEMP/caches/DBCache.bin"
+                  fi
+                  make sim/core/proto/api.pb.go binary_dist/dist.go
+                  go run ./tools/db2tool -s "$PWD/tools/database/generator-settings.json" --output "$PWD/tools/database/wowsims.db" $flags
+
+            # -everyClassSpell roots the store at every class spell, not only what the sim reaches,
+            # and -unchecked skips type-checking the class packages against it: the store is thrown
+            # away after the dump, and the dump compiling against it is the check that matters.
+            - name: Export class spells and items 📜
+              if: steps.moved.outputs.run == 'true'
+              run: |
+                  export_dir="$RUNNER_TEMP/export"
+                  mkdir -p "$export_dir/items"
+                  (cd forever && go run ./tools/database/gen_spelldata -everyClassSpell -unchecked)
+                  (cd forever && go run ./tools/spelldata -dump "$RUNNER_TEMP/dump")
+                  python3 gamedata/scripts/split_spells.py forever forever/tools/database/wowsims.db "$RUNNER_TEMP/dump" "$export_dir/spells"
+                  python3 gamedata/scripts/export_items.py forever/tools/database/wowsims.db "$export_dir/items/items.txt"
+
+            - name: Record the update 📝
+              if: steps.moved.outputs.run == 'true'
+              id: record
+              env:
+                  VERSION: ${{ steps.build.outputs.version }}
+                  BUILD: ${{ steps.build.outputs.build }}
+                  PUSH: ${{ steps.build.outputs.push }}
+                  HOTFIXES: ${{ steps.build.outputs.hotfixes }}
+              run: |
+                  sha=$(git -C forever rev-parse HEAD)
+                  python3 gamedata/scripts/record_update.py --repo gamedata --export "$RUNNER_TEMP/export" \
+                      --version "$VERSION" --build "$BUILD" --push "$PUSH" --hotfixes "$HOTFIXES" \
+                      --forever "$sha" --body "$RUNNER_TEMP/body.md" >> "$GITHUB_OUTPUT"
+
+            - name: Create Pull Request 🚀
+              if: steps.moved.outputs.run == 'true'
+              id: pr
+              uses: peter-evans/create-pull-request@v7
+              with:
+                  path: gamedata
+                  branch: update-game-data
+                  delete-branch: true
+                  commit-message: ${{ steps.record.outputs.title }}
+                  title: ${{ steps.record.outputs.title }}
+                  body-path: ${{ runner.temp }}/body.md
+
+            - name: Merge the Pull Request 🔀
+              if: steps.pr.outputs.pull-request-number != ''
+              working-directory: gamedata
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
