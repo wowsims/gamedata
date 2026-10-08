@@ -132,9 +132,10 @@ https://www.wowhead.com/forever/spell=17150
 school    arcane
 defense   magic
 range     30 yd
+attrs     suppresses weapon procs
 labels    17
 
-effect 1  25 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  25.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=24 ppl=0.3 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1308937
@@ -258,7 +259,7 @@ https://www.wowhead.com/forever/spell=24006
 school    frost
 attrs     passive, can proc from procs
 labels    3096
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance; tooltip says damaging spells only
 
 effect 1  casts 400730 Fireball! on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=400730 target=[1,0]
@@ -424,7 +425,7 @@ defense   magic
 duration  20 s
 cast      2 s
 gcd       1.5 s
-cost      24% of maximum mana
+cost      24% of base mana
 range     50000 yd
 refs      436517 Chronostatic Preservation
 
@@ -530,7 +531,7 @@ range     30 yd
 
 effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  19.894737–22.105263 frost damage to the enemy (at level 60, +0.163 spell power)
+effect 2  20–22 frost damage to the enemy (at level 60, +0.163 spell power)
           E_SCHOOL_DAMAGE base=19 ppl=0.5 variance=0.10526316 sp=0.163 target=[6,0]
 
 https://www.wowhead.com/forever/spell=29163
@@ -602,7 +603,7 @@ range     50000 yd
 
 effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  429–463 frost damage to the enemy (at level 60, +0.814 spell power)
+effect 2  603–637 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=446 ppl=2.9 variance=0.076233186 sp=0.814 target=[6,0]
 
 https://www.wowhead.com/forever/spell=29607
@@ -631,7 +632,7 @@ defense   magic
 duration  5 s
 cooldown  30 s (category)
 gcd       1.5 s
-cost      9% of maximum mana
+cost      9% of base mana
 range     30 yd
 labels    3096, 3100
 refs      428917 Deep Freeze
@@ -713,7 +714,7 @@ https://www.wowhead.com/forever/spell=403355
 school    arcane
 defense   magic
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     30 yd
 
 effect 1  dispels 1 enrage effect to the caster
@@ -725,7 +726,7 @@ https://www.wowhead.com/forever/spell=449010
 school    physical
 cooldown  30 s
 gcd       1.5 s
-cost      35% of maximum mana
+cost      35% of base mana
 range     100 yd
 caster aura 428865 Blinked
 excluded caster aura 450804
@@ -883,14 +884,14 @@ cooldown  120 s
 charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
-effect 1  SPELLMOD_COST -10% on family 3 mask 0x20821ab7,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=3 mask=0x20821ab7,0x1000 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +10% on family 3 mask 0x20821ab7,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0x20821ab7,0x1000 target=[1,0]
-effect 3  SPELLMOD_DOT +10% on family 3 mask 0x1,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=3 mask=0x1,0x1000 target=[1,0]
+effect 1  SPELLMOD_COST -10% on family 3 mask 0x20c21af7,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=3 mask=0x20c21af7,0x1000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 3 mask 0x20e21af3,0x1000,0x0,0x8
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0x20e21af3,0x1000,0x0,0x8 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on every spell of family 3
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 
@@ -1065,7 +1066,7 @@ https://www.wowhead.com/forever/spell=12354
 school    fire
 defense   magic
 
-effect 1  1355.808–1566.192 fire damage to every enemy around the caster
+effect 1  1356–1567 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1461.7435 variance=0.144 target=[22,15]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 sp=1 misc=200 radius=10 target=[22,15]
@@ -1324,7 +1325,7 @@ https://www.wowhead.com/forever/spell=1218345
 1218352 Glaciate
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance; tooltip says damaging spells only
 refs      12579 Winter's Chill
 
 effect 1  casts 1218345 Glaciate on its trigger
@@ -1421,7 +1422,7 @@ defense   magic
 duration  5 s
 range     30 yd
 
-effect 1  1403 fire damage to the enemy
+effect 1  1403.2738 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 target=[6,0]
 effect 2  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
@@ -1597,6 +1598,27 @@ effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402799 misc=399966 target=[1,0]
 
 https://www.wowhead.com/forever/spell=402836
+=======
+48108 Hot Streak
+school    physical
+duration  10 s
+stack     up to 1
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=3 mask=0x400000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=48108
+=======
+401724 Hot Streak
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 417345
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400624 misc=417345 target=[1,0]
+
+https://www.wowhead.com/forever/spell=401724
 =======
 1292739 Hydra Strike
 school    frost
@@ -1971,7 +1993,7 @@ school    fire
 defense   magic
 duration  1800 s
 gcd       1.5 s
-cost      28% of maximum mana
+cost      28% of base mana
 labels    3096, 3100
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
 refs      428743 Molten Armor
@@ -2287,7 +2309,7 @@ school    arcane
 defense   magic
 duration  1.5 s
 gcd       1.5 s
-cost      32% of maximum mana
+cost      32% of base mana
 range     40 yd
 attrs     channeled
 refs      400735 Temporal Beacon
@@ -2324,7 +2346,7 @@ https://www.wowhead.com/forever/spell=1262638
 school    arcane
 defense   magic
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     30 yd
 
 effect 1  dispels 1 curse effect to the friendly target
@@ -2343,6 +2365,18 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1223246
+=======
+1248808 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x0,0x0,0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x0,0x0,0x8 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1248808
 =======
 1218592 S03 - Item - Naxxramas - Mage - Arcane 2P Bonus
 school    physical
@@ -2467,7 +2501,7 @@ https://www.wowhead.com/forever/spell=1226432
 1226407 S03 - Item - Scarlet Enclave - Mage - Healer 2P Bonus
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 2; tooltip says cast trigger, one named ability
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 2; tooltip says cast trigger, one named ability, damaging spells only
 
 effect 1  casts 1226406 Arcane Tunneling on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226406 target=[1,0]
@@ -2656,7 +2690,7 @@ mechanic  mechanic 12
 duration  4 s
 range     20 yd
 
-effect 1  584 fire damage to the enemy
+effect 1  584.69745 fire damage to the enemy
           E_SCHOOL_DAMAGE base=584.69745 target=[6,0]
 effect 2  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=1 sp=1 target=[6,0]
@@ -2934,7 +2968,7 @@ defense   magic
 duration  16 s
 cooldown  30 s
 gcd       1.5 s
-cost      11% of maximum mana
+cost      11% of base mana
 range     40 yd
 labels    3096, 3100
 refs      428888 Temporal Anomaly, 428895 Temporal Anomaly
@@ -3131,7 +3165,7 @@ school    frost
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      1% of maximum mana
+cost      1% of base mana
 range     45 yd
 
 effect 1  208–268 frost damage to the enemy (+0.833 spell power)
@@ -3186,7 +3220,7 @@ school    physical
 defense   ranged
 range     100 yd
 
-effect 1  700–900 physical damage to the enemy
+effect 1  600–1000 physical damage to the enemy
           E_SCHOOL_DAMAGE base=800 variance=0.25 target=[6,0]
 
 https://www.wowhead.com/forever/spell=31378

@@ -3,9 +3,9 @@ school    physical
 defense   melee
 cooldown  6 s
 gcd       1.5 s
-cost      4% of maximum mana
+cost      4% of base mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 chain=1000 target=[6,0]
@@ -29,7 +29,7 @@ https://www.wowhead.com/forever/spell=425754
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 chain=1000 target=[6,0]
@@ -153,8 +153,8 @@ range     5 yd
 equip     needs a melee weapon
 labels    23
 
-effect 1  -170 threat to the enemy
-          E_THREAT base=-140 ppl=-3 target=[6,0]
+effect 1  -310 threat to the enemy
+          E_THREAT base=-280 ppl=-3 target=[6,0]
 
 https://www.wowhead.com/forever/spell=781
 =======
@@ -168,8 +168,8 @@ range     5 yd
 equip     needs a melee weapon
 labels    23
 
-effect 1  -310 threat to the enemy
-          E_THREAT base=-280 ppl=-3 target=[6,0]
+effect 1  -590 threat to the enemy
+          E_THREAT base=-560 ppl=-3 target=[6,0]
 
 https://www.wowhead.com/forever/spell=14272
 =======
@@ -183,8 +183,8 @@ range     5 yd
 equip     needs a melee weapon
 labels    23
 
-effect 1  -435 threat to the enemy
-          E_THREAT base=-405 ppl=-3 target=[6,0]
+effect 1  -840 threat to the enemy
+          E_THREAT base=-810 ppl=-3 target=[6,0]
 
 https://www.wowhead.com/forever/spell=14273
 =======
@@ -248,7 +248,7 @@ duration  20 s
 attrs     periodic can crit
 labels    23
 
-effect 1  103.478264–134.52174 fire damage to every enemy around the caster (at level 60)
+effect 1  104–135 fire damage to every enemy around the caster (at level 60)
           E_SCHOOL_DAMAGE base=115 ppl=0.8 variance=0.26086956 target=[22,15]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=15 period=2000ms radius=10 target=[28,0]
@@ -262,7 +262,7 @@ duration  20 s
 attrs     periodic can crit
 labels    23
 
-effect 1  144.11656–193.88344 fire damage to every enemy around the caster (at level 60)
+effect 1  145–193 fire damage to every enemy around the caster (at level 60)
           E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.29447854 target=[22,15]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=24 period=2000ms radius=10 target=[28,0]
@@ -276,7 +276,7 @@ duration  20 s
 attrs     periodic can crit, not a proc
 labels    23
 
-effect 1  207.1441–264.8559 fire damage to every enemy around the caster (at level 60)
+effect 1  208–265 fire damage to every enemy around the caster (at level 60)
           E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 target=[22,15]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
@@ -313,7 +313,7 @@ defense   melee
 duration  10 s
 cooldown  30 s
 gcd       1.5 s
-cost      1.5% of maximum mana
+cost      1.5% of base mana
 range     5 yd
 equip     needs a melee weapon
 stack     up to 3
@@ -322,7 +322,7 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
-effect 3  +8% every school damage done
+effect 3  +8% every school damage done, while a melee weapon is equipped
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=8 misc=127 target=[1,0]
 effect 4  a dummy effect holding 50 to the caster
           E_DUMMY base=50 target=[1,0]
@@ -434,7 +434,7 @@ https://www.wowhead.com/forever/spell=13809
 school    nature
 duration  permanent
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 refs      409583 Heart of the Lion
 
 effect 1  +10% to all stats
@@ -452,9 +452,9 @@ refs      409580 Heart of the Lion
 
 effect 1  +10% to all stats to every ally in the target area
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[18,31]
-effect 2  +276 attack power to every ally in the target area (at level 60)
+effect 2  +280 attack power to every ally in the target area (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
-effect 3  +276 ranged attack power to every ally in the target area (at level 60)
+effect 3  +280 ranged attack power to every ally in the target area (at level 60)
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
 
 https://www.wowhead.com/forever/spell=409583
@@ -699,7 +699,7 @@ range     5 yd
 equip     needs a melee weapon
 attrs     periodic can crit
 
-effect 1  32 physical damage every 3 s to the enemy (7 ticks, at level 60)
+effect 1  32.8 physical damage every 3 s to the enemy (7 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=28 ppl=0.6 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=24119
@@ -715,7 +715,7 @@ range     5 yd
 equip     needs a melee weapon
 attrs     periodic can crit
 
-effect 1  45 physical damage every 3 s to the enemy (7 ticks, at level 60)
+effect 1  45.6 physical damage every 3 s to the enemy (7 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40 ppl=0.7 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=24120
@@ -768,7 +768,7 @@ cooldown  5 s (category)
 gcd       1.5 s
 cost      30 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  normalised weapon damage +15 to the enemy
@@ -783,7 +783,7 @@ cooldown  5 s (category)
 gcd       1.5 s
 cost      40 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  normalised weapon damage +22 to the enemy
@@ -798,7 +798,7 @@ cooldown  5 s (category)
 gcd       1.5 s
 cost      50 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  normalised weapon damage +37 to the enemy
@@ -838,7 +838,7 @@ defense   melee
 cooldown  6 s (category)
 cost      10 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +5 to the enemy
@@ -852,7 +852,7 @@ defense   melee
 cooldown  6 s (category)
 cost      25 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +11 to the enemy
@@ -866,7 +866,7 @@ defense   melee
 cooldown  6 s (category)
 cost      35 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +21 to the enemy
@@ -880,7 +880,7 @@ defense   melee
 cooldown  6 s (category)
 cost      45 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +30 to the enemy
@@ -894,7 +894,7 @@ defense   melee
 cooldown  6 s (category)
 cost      55 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +35 to the enemy
@@ -908,7 +908,7 @@ defense   melee
 cooldown  6 s (category)
 cost      70 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +40 to the enemy
@@ -922,7 +922,7 @@ defense   melee
 cooldown  6 s (category)
 cost      85 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +55 to the enemy
@@ -936,7 +936,7 @@ defense   melee
 cooldown  6 s (category)
 cost      100 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  weapon damage +70 to the enemy
@@ -948,7 +948,7 @@ https://www.wowhead.com/forever/spell=14266
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +2 to the enemy
           E_WEAPON_DAMAGE base=2 variance=0.5 target=[6,0]
@@ -959,7 +959,7 @@ https://www.wowhead.com/forever/spell=409691
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +5 to the enemy
           E_WEAPON_DAMAGE base=5 target=[6,0]
@@ -970,7 +970,7 @@ https://www.wowhead.com/forever/spell=409693
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +10 to the enemy
           E_WEAPON_DAMAGE base=10 variance=0.1 target=[6,0]
@@ -981,7 +981,7 @@ https://www.wowhead.com/forever/spell=409748
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +17 to the enemy
           E_WEAPON_DAMAGE base=17 target=[6,0]
@@ -992,7 +992,7 @@ https://www.wowhead.com/forever/spell=409750
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +25 to the enemy
           E_WEAPON_DAMAGE base=25 target=[6,0]
@@ -1003,7 +1003,7 @@ https://www.wowhead.com/forever/spell=409751
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +40 to the enemy
           E_WEAPON_DAMAGE base=40 target=[6,0]
@@ -1014,7 +1014,7 @@ https://www.wowhead.com/forever/spell=409752
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +55 to the enemy
           E_WEAPON_DAMAGE base=55 target=[6,0]
@@ -1025,7 +1025,7 @@ https://www.wowhead.com/forever/spell=409754
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  weapon damage +70 to the enemy
           E_WEAPON_DAMAGE base=70 target=[6,0]
@@ -1039,7 +1039,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      15 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +5 to the enemy
           E_WEAPON_DAMAGE base=5 sp=1 target=[6,0]
@@ -1053,7 +1053,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      25 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +11 to the enemy
           E_WEAPON_DAMAGE base=11 sp=1 target=[6,0]
@@ -1067,7 +1067,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      35 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +21 to the enemy
           E_WEAPON_DAMAGE base=21 sp=1 target=[6,0]
@@ -1081,7 +1081,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      45 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +34 to the enemy
           E_WEAPON_DAMAGE base=34 sp=1 target=[6,0]
@@ -1095,7 +1095,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      55 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +50 to the enemy
           E_WEAPON_DAMAGE base=50 sp=1 target=[6,0]
@@ -1109,7 +1109,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      70 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +80 to the enemy
           E_WEAPON_DAMAGE base=80 sp=1 target=[6,0]
@@ -1123,7 +1123,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      85 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +110 to the enemy
           E_WEAPON_DAMAGE base=110 sp=1 target=[6,0]
@@ -1137,7 +1137,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      100 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  weapon damage +140 to the enemy
           E_WEAPON_DAMAGE base=140 sp=1 target=[6,0]
@@ -1194,9 +1194,9 @@ defense   melee
 duration  3 s
 cooldown  8 s
 gcd       1.5 s
-cost      5.81% of maximum mana
+cost      5.81% of base mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  normalised weapon damage to the enemy
@@ -1370,7 +1370,7 @@ duration  10 s
 gcd       1.5 s
 cost      40 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  -50% movement speed to the enemy
@@ -1387,7 +1387,7 @@ duration  10 s
 gcd       1.5 s
 cost      60 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  -55% movement speed to the enemy
@@ -1404,7 +1404,7 @@ duration  10 s
 gcd       1.5 s
 cost      80 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  -60% movement speed to the enemy
@@ -1421,7 +1421,7 @@ duration  10 s
 gcd       1.5 s
 cost      80 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  -60% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 mechanic=11 target=[6,0]
@@ -1437,7 +1437,7 @@ duration  10 s
 gcd       1.5 s
 cost      40 mana
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]

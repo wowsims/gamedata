@@ -15,7 +15,7 @@ school    nature
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      90% of maximum mana
+cost      90% of base mana
 range     30 yd
 labels    24, 6316
 
@@ -29,7 +29,7 @@ school    nature
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      90% of maximum mana
+cost      90% of base mana
 range     30 yd
 labels    24, 6316
 
@@ -43,7 +43,7 @@ school    nature
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      90% of maximum mana
+cost      90% of base mana
 range     30 yd
 labels    24, 6316
 
@@ -57,7 +57,7 @@ school    nature
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      90% of maximum mana
+cost      90% of base mana
 range     30 yd
 labels    24, 6316
 
@@ -71,7 +71,7 @@ school    nature
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      90% of maximum mana
+cost      90% of base mana
 range     30 yd
 labels    24, 6316
 
@@ -89,7 +89,7 @@ cost      260 mana
 range     40 yd
 labels    24
 
-effect 1  244.65117–281.34885 healing to the chain-heal target (at level 60, +0.714 spell power)
+effect 1  245–282 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=251 ppl=2.5 variance=0.13953489 sp=0.714 chain=3 target=[45,0]
 
 https://www.wowhead.com/forever/spell=1064
@@ -103,7 +103,7 @@ cost      315 mana
 range     40 yd
 labels    24
 
-effect 1  324.93103–373.06897 healing to the chain-heal target (at level 60, +0.714 spell power)
+effect 1  326–372 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=335 ppl=2.8 variance=0.13793103 sp=0.714 chain=3 target=[45,0]
 
 https://www.wowhead.com/forever/spell=10622
@@ -117,7 +117,7 @@ cost      405 mana
 range     40 yd
 labels    24
 
-effect 1  472.55255–539.44745 healing to the chain-heal target (at level 60, +0.714 spell power)
+effect 1  474–539 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=490 ppl=3.3 variance=0.13220339 sp=0.714 chain=3 target=[45,0]
 
 https://www.wowhead.com/forever/spell=10623
@@ -126,7 +126,7 @@ https://www.wowhead.com/forever/spell=10623
 school    nature
 defense   magic
 gcd       1.5 s
-cost      9% of maximum mana
+cost      9% of base mana
 range     30 yd
 labels    24
 
@@ -139,7 +139,7 @@ https://www.wowhead.com/forever/spell=2870
 school    nature
 defense   magic
 gcd       1.5 s
-cost      9% of maximum mana
+cost      9% of base mana
 range     30 yd
 labels    24
 
@@ -151,9 +151,9 @@ https://www.wowhead.com/forever/spell=526
 8170 Disease Cleansing Totem
 school    nature
 defense   magic
-duration  120 s
+duration  300 s
 gcd       1 s
-cost      10% of maximum mana
+cost      10% of base mana
 labels    24
 refs      8171 Disease Cleansing Totem Effect, 8172 Disease Cleansing Totem Passive
 
@@ -178,7 +178,7 @@ school    nature
 defense   magic
 duration  600 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     40 yd
 charges   6
 icd       3.5 s
@@ -197,7 +197,7 @@ school    nature
 defense   magic
 duration  600 s
 gcd       1.5 s
-cost      5% of maximum mana
+cost      5% of base mana
 range     40 yd
 charges   9
 icd       3.5 s
@@ -267,7 +267,7 @@ duration  10 s
 cast      2 s
 cooldown  10 s
 gcd       1.5 s
-cost      21% of maximum mana
+cost      21% of base mana
 range     40 yd
 attrs     cannot crit
 refs      415242 Healing Rain
@@ -371,7 +371,7 @@ cost      25 mana
 range     40 yd
 labels    24
 
-effect 1  35.74359–46.25641 healing to the chain-heal target (at level 60, +0.429 spell power)
+effect 1  36–47 healing to the chain-heal target (at level 60, +0.429 spell power)
           E_HEAL base=39 ppl=0.7 variance=0.25641027 sp=0.429 target=[45,0]
 
 https://www.wowhead.com/forever/spell=331
@@ -385,7 +385,7 @@ cost      45 mana
 range     40 yd
 labels    24
 
-effect 1  68.50704–83.49296 healing to the chain-heal target (at level 60, +0.571 spell power)
+effect 1  69–83 healing to the chain-heal target (at level 60, +0.571 spell power)
           E_HEAL base=71 ppl=1 variance=0.1971831 sp=0.571 target=[45,0]
 
 https://www.wowhead.com/forever/spell=332
@@ -399,7 +399,7 @@ cost      80 mana
 range     40 yd
 labels    24
 
-effect 1  125.366196–150.6338 healing to the chain-heal target (at level 60, +0.714 spell power)
+effect 1  126–151 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=131 ppl=1.5 variance=0.18309858 sp=0.714 target=[45,0]
 
 https://www.wowhead.com/forever/spell=547
@@ -413,7 +413,7 @@ cost      155 mana
 range     40 yd
 labels    24
 
-effect 1  245.0548–288.9452 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  246–289 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=256 ppl=2.3 variance=0.16438356 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=913
@@ -427,7 +427,7 @@ cost      200 mana
 range     40 yd
 labels    24
 
-effect 1  327.15686–382.84314 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  328–383 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=342 ppl=2.7 variance=0.15686275 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=939
@@ -441,7 +441,7 @@ cost      265 mana
 range     40 yd
 labels    24
 
-effect 1  462.867–537.133 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  464–537 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=484 ppl=3.3 variance=0.14853196 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=959
@@ -455,7 +455,7 @@ cost      340 mana
 range     40 yd
 labels    24
 
-effect 1  653.6512–754.3488 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  655–754 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=685 ppl=3.9 variance=0.14303638 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=8005
@@ -469,7 +469,7 @@ cost      440 mana
 range     40 yd
 labels    24
 
-effect 1  926.6621–1063.3379 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  928–1063 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=972 ppl=4.7 variance=0.13736264 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=10395
@@ -483,7 +483,7 @@ cost      560 mana
 range     40 yd
 labels    24
 
-effect 1  1275.4932–1456.5068 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  1277–1455 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=1344 ppl=5.5 variance=0.13251366 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=10396
@@ -497,7 +497,7 @@ cost      620 mana
 range     40 yd
 labels    24
 
-effect 1  1507.9539–1722.0461 healing to the chain-heal target (at level 60, +0.857 spell power)
+effect 1  1508–1722 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=1615 ppl=5.5 variance=0.13256484 sp=0.857 target=[45,0]
 
 https://www.wowhead.com/forever/spell=25357
@@ -545,7 +545,7 @@ cost      105 mana
 range     40 yd
 labels    24
 
-effect 1  149.89655–172.10345 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  150–173 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=153 ppl=1.7 variance=0.13793103 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=8004
@@ -559,7 +559,7 @@ cost      145 mana
 range     40 yd
 labels    24
 
-effect 1  218.93182–249.06818 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  220–249 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=224 ppl=2.1 variance=0.12878788 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=8008
@@ -573,7 +573,7 @@ cost      185 mana
 range     40 yd
 labels    24
 
-effect 1  296.6351–335.3649 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  297–336 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=304 ppl=2.5 variance=0.12256268 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=8010
@@ -587,7 +587,7 @@ cost      235 mana
 range     40 yd
 labels    24
 
-effect 1  415.5926–466.4074 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  416–466 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=426 ppl=3 variance=0.11522634 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10466
@@ -601,7 +601,7 @@ cost      305 mana
 range     40 yd
 labels    24
 
-effect 1  591.32635–660.67365 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  592–660 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=608 ppl=3.6 variance=0.11077844 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10467
@@ -615,7 +615,7 @@ cost      380 mana
 range     40 yd
 labels    24
 
-effect 1  775.2727–864.7273 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  775–865 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=820 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10468
@@ -628,7 +628,7 @@ gcd       1.5 s
 cost      380 mana
 range     40 yd
 
-effect 1  832–928 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  1084–1180 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=880 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=27624
@@ -823,7 +823,7 @@ school    nature
 defense   magic
 duration  300 s
 gcd       1 s
-cost      10% of maximum mana
+cost      10% of base mana
 labels    24
 refs      8168 Poison Cleansing Totem Effect, 8167 Poison Cleansing Totem Passive
 
@@ -899,7 +899,7 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  483.55–534.45 healing to the friendly target (at level 60, +0.214 spell power)
+effect 1  485–534 healing to the friendly target (at level 60, +0.214 spell power)
           E_HEAL base=480 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
 effect 2  89 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=89 sp=0.1 period=3000ms target=[21,0]
@@ -930,7 +930,7 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  612.75–677.25 healing to the friendly target (at level 60, +0.214 spell power)
+effect 1  614–677 healing to the friendly target (at level 60, +0.214 spell power)
           E_HEAL base=612 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
 effect 2  115 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=115 sp=0.1 period=3000ms target=[21,0]
@@ -951,7 +951,7 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  798.95–883.05 healing to the friendly target (at level 60, +0.214 spell power)
+effect 1  799–883 healing to the friendly target (at level 60, +0.214 spell power)
           E_HEAL base=841 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
 effect 2  161 healing every 3 s to the friendly target (5 ticks, at level 60, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=161 ppl=3.7 sp=0.1 period=3000ms target=[21,0]

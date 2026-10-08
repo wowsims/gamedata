@@ -4,7 +4,7 @@ defense   magic
 duration  10 s
 cooldown  20 s
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     30 yd
 labels    26
 
@@ -20,7 +20,7 @@ school    holy
 defense   magic
 duration  3600 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    26
 
@@ -84,7 +84,7 @@ mechanic  mechanic 25
 duration  10 s
 cooldown  300 s (category)
 gcd       1.5 s
-cost      7% of maximum mana
+cost      7% of base mana
 range     30 yd
 labels    26
 refs      25771 Forbearance
@@ -101,7 +101,7 @@ school    holy
 defense   magic
 mechanic  mechanic 25
 duration  10 s
-cost      7% of maximum mana
+cost      7% of base mana
 range     30 yd
 refs      25771 Forbearance
 
@@ -145,7 +145,7 @@ school    holy
 defense   magic
 duration  3600 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    26
 
@@ -504,7 +504,7 @@ school    holy
 defense   magic
 duration  3600 s
 gcd       1.5 s
-cost      16% of maximum mana
+cost      16% of base mana
 range     40 yd
 labels    26
 
@@ -594,7 +594,7 @@ school    holy
 defense   melee
 cooldown  6 s (category)
 gcd       1.5 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     5 yd
 equip     needs a one-handed axe, one-handed mace or one-handed sword
 labels    26
@@ -630,8 +630,8 @@ charges   4
 labels    26
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
-effect 1  +20% block chance
-          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 1  +30% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
@@ -651,8 +651,8 @@ charges   4
 labels    26
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
-effect 1  +20% block chance
-          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 1  +30% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
@@ -672,8 +672,8 @@ charges   4
 labels    26
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
-effect 1  +20% block chance
-          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=20 target=[1,0]
+effect 1  +30% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
@@ -781,7 +781,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  65.55–72.45 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  66–73 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=54 ppl=2.52 variance=0.1 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -811,7 +811,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  85.60976–94.39024 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  86–95 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=74 ppl=2.79 variance=0.09756097 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -827,7 +827,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  110.34146–121.65854 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  111–122 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=96 ppl=3.42 variance=0.09756097 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -843,7 +843,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  138.64966–151.35034 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  140–151 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=123 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -859,7 +859,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  152.99272–167.00728 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  153–168 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=153 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -875,7 +875,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  31.35–34.65 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  32–35 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=23 ppl=1.71 variance=0.1 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -891,7 +891,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  46.55–51.45 holy damage to the enemy (at level 60, +0.45 spell power)
+effect 1  47–52 holy damage to the enemy (at level 60, +0.45 spell power)
           E_SCHOOL_DAMAGE base=36.9 ppl=2.16 variance=0.1 sp=0.45 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -939,7 +939,7 @@ school    holy
 defense   magic
 duration  1800 s
 gcd       1.5 s
-cost      30% of maximum mana
+cost      30% of base mana
 labels    26
 
 effect 1  +60% threat
@@ -948,6 +948,8 @@ effect 2  +0% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 sp=1 misc=127 target=[1,0]
 effect 3  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=10 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+effect 4  unrecognised shape
+          E_APPLY_AURA A_668 base=0 target=[1,0]
 
 https://www.wowhead.com/forever/spell=25780
 =======
@@ -983,7 +985,7 @@ school    physical
 attrs     passive
 labels    26
 
-effect 1  +4% strength
+effect 1  +4% stamina
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=4 misc2=4 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x400000,0x0,0x200100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=10 mask=0x400000,0x0,0x200100 target=[1,0]
@@ -1205,7 +1207,7 @@ school    holy
 defense   magic
 duration  30 s
 gcd       1.5 s
-cost      13% of maximum mana
+cost      13% of base mana
 labels    26, 1203
 proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
 refs      20170 Stun, 20184 Judgement of Justice
@@ -1265,7 +1267,7 @@ defense   melee
 cooldown  6 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     5 yd
 equip     needs a shield
 

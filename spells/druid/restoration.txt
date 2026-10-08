@@ -3,7 +3,7 @@ school    nature
 defense   magic
 duration  8 s
 gcd       1.5 s
-cost      16% of maximum mana
+cost      16% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
@@ -20,7 +20,7 @@ https://www.wowhead.com/forever/spell=2893
 school    nature
 defense   magic
 gcd       1.5 s
-cost      16% of maximum mana
+cost      16% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
@@ -225,7 +225,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  39.522728–54.477272 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  40–55 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=44 ppl=0.8 variance=0.3181818 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=5185
@@ -241,7 +241,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  93.28–118.72 healing to the friendly target (at level 60, +0.571 spell power)
+effect 1  94–119 healing to the friendly target (at level 60, +0.571 spell power)
           E_HEAL base=100 ppl=1.3 variance=0.24 sp=0.571 target=[21,0]
 
 https://www.wowhead.com/forever/spell=5186
@@ -257,7 +257,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  186.9863–233.0137 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  188–233 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=201 ppl=1.9 variance=0.21917808 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=5187
@@ -273,7 +273,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  336.94308–413.05692 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  338–413 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=362 ppl=2.7 variance=0.2029703 sp=0.857 target=[21,0]
 
 https://www.wowhead.com/forever/spell=5188
@@ -289,7 +289,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  508.74567–617.25433 healing to the friendly target (at level 60)
+effect 1  510–617 healing to the friendly target (at level 60)
           E_HEAL base=546 ppl=3.5 variance=0.19273302 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=5189
@@ -305,7 +305,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  659.4548–794.5452 healing to the friendly target (at level 60)
+effect 1  661–793 healing to the friendly target (at level 60)
           E_HEAL base=707 ppl=4 variance=0.18581907 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=6778
@@ -321,7 +321,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  837.66534–1002.33466 healing to the friendly target (at level 60)
+effect 1  840–1001 healing to the friendly target (at level 60)
           E_HEAL base=898 ppl=4.5 variance=0.17898832 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=8903
@@ -337,7 +337,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  1094.898–1303.102 healing to the friendly target (at level 60)
+effect 1  1097–1301 healing to the friendly target (at level 60)
           E_HEAL base=1173 ppl=5.2 variance=0.17364813 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9758
@@ -353,7 +353,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  1414.384–1675.616 healing to the friendly target (at level 60)
+effect 1  1417–1674 healing to the friendly target (at level 60)
           E_HEAL base=1516 ppl=5.9 variance=0.16908212 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9888
@@ -369,7 +369,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  1785.4077–2106.5923 healing to the friendly target (at level 60)
+effect 1  1788–2105 healing to the friendly target (at level 60)
           E_HEAL base=1920 ppl=6.6 variance=0.16504854 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9889
@@ -385,7 +385,7 @@ stance    Tree of Life
 stance exclude Moonkin
 labels    21
 
-effect 1  2138.61–2525.39 healing to the friendly target (at level 60)
+effect 1  2139–2525 healing to the friendly target (at level 60)
           E_HEAL base=2332 ppl=7.3 variance=0.1658576 sp=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25297
@@ -513,7 +513,7 @@ defense   magic
 duration  20 s
 cooldown  360 s
 gcd       1.5 s
-cost      5% of maximum mana
+cost      5% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
@@ -543,7 +543,7 @@ school    nature
 defense   magic
 duration  7 s
 gcd       1 s
-cost      14% of maximum mana
+cost      14% of base mana
 range     40 yd
 stance    Tree of Life
 stance exclude Moonkin
@@ -943,7 +943,7 @@ school    nature
 defense   magic
 cast      2 s
 gcd       1.5 s
-cost      26% of maximum mana
+cost      26% of base mana
 range     40 yd
 stance    Tree of Life
 stance exclude Cat, Travel, form 4, Bear, Dire Bear, Moonkin
@@ -960,7 +960,7 @@ defense   magic
 cast      2 s
 cooldown  1800 s (category)
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -976,7 +976,7 @@ defense   magic
 cast      2 s
 cooldown  1800 s (category)
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -992,7 +992,7 @@ defense   magic
 cast      2 s
 cooldown  1800 s (category)
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1008,7 +1008,7 @@ defense   magic
 cast      2 s
 cooldown  1800 s (category)
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1024,7 +1024,7 @@ defense   magic
 cast      2 s
 cooldown  1800 s (category)
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1048,7 +1048,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  88.61539–103.38461 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  89–103 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=87 ppl=1.8 variance=0.15384616 sp=0.286 target=[21,0]
 effect 2  13 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=13 sp=0.071 period=3000ms target=[21,0]
@@ -1069,7 +1069,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  164–188 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  165–188 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=164 ppl=2.5 variance=0.13636364 sp=0.286 target=[21,0]
 effect 2  22 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=22 sp=0.071 period=3000ms target=[21,0]
@@ -1090,7 +1090,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  233.46304–266.53696 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  234–267 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=235 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
 effect 2  32 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.071 period=3000ms target=[21,0]
@@ -1111,7 +1111,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  308.61948–349.38052 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  310–348 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=311 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
 effect 2  42 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.071 period=3000ms target=[21,0]
@@ -1132,7 +1132,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  389.0255–438.9745 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  390–439 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=394 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
 effect 2  52 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=52 sp=0.071 period=3000ms target=[21,0]
@@ -1153,7 +1153,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  495.9429–558.05707 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  497–558 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=504 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
 effect 2  68 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=68 sp=0.071 period=3000ms target=[21,0]
@@ -1174,7 +1174,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  632.79706–709.20294 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  634–709 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=645 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
 effect 2  88 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=88 sp=0.071 period=3000ms target=[21,0]
@@ -1195,7 +1195,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  799.5601–894.4399 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  801–893 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=817 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
 effect 2  113 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=113 sp=0.071 period=3000ms target=[21,0]
@@ -1216,7 +1216,7 @@ attrs     periodic can crit
 labels    21
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  965.18665–1076.8134 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  965–1077 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=1021 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
 effect 2  142 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=142 sp=0.071 period=3000ms target=[21,0]
@@ -1245,7 +1245,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  92.30769–107.69231 healing to the friendly target (at level 60, +0.2 spell power)
+effect 1  114–129 healing to the friendly target (at level 60, +0.2 spell power)
           E_HEAL base=91 ppl=1.8 variance=0.15384616 sp=0.2 target=[21,0]
 effect 2  14 healing every 3 s to the friendly target (7 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=14 sp=0.05 period=3000ms target=[21,0]
@@ -1264,7 +1264,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  175.18182–200.81818 healing to the friendly target (at level 60, +0.264 spell power)
+effect 1  221–246 healing to the friendly target (at level 60, +0.264 spell power)
           E_HEAL base=176 ppl=2.5 variance=0.13636364 sp=0.264 target=[21,0]
 effect 2  25 healing every 3 s to the friendly target (7 ticks, +0.066 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.066 period=3000ms target=[21,0]
@@ -1283,7 +1283,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  254.00778–289.99222 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  329–364 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=257 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
 effect 2  37 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=37 sp=0.071 period=3000ms target=[21,0]
@@ -1302,7 +1302,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  334.88495–379.11505 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  444–486 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=339 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
 effect 2  49 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=49 sp=0.071 period=3000ms target=[21,0]
@@ -1321,7 +1321,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  423.79352–478.20648 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  573–626 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=431 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
 effect 2  61 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=61 sp=0.071 period=3000ms target=[21,0]
@@ -1340,7 +1340,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  532.6446–599.3554 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  731–796 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=543 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
 effect 2  78 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=78 sp=0.071 period=3000ms target=[21,0]
@@ -1359,7 +1359,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  670.5197–751.4803 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  926–1005 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=685 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
 effect 2  98 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=98 sp=0.071 period=3000ms target=[21,0]
@@ -1378,7 +1378,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  837.3197–936.6803 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  1163–1259 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=857 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
 effect 2  123 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=123 sp=0.071 period=3000ms target=[21,0]
@@ -1397,7 +1397,7 @@ stance    Tree of Life
 stance exclude Moonkin
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
-effect 1  1003–1119 healing to the friendly target (at level 60, +0.286 spell power)
+effect 1  1411–1527 healing to the friendly target (at level 60, +0.286 spell power)
           E_HEAL base=1061 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
 effect 2  152 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=152 sp=0.071 period=3000ms target=[21,0]
@@ -1792,7 +1792,7 @@ https://www.wowhead.com/forever/spell=417068
 school    arcane
 defense   magic
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
@@ -1805,7 +1805,7 @@ https://www.wowhead.com/forever/spell=2782
 437138 Revive (Rank 1)
 school    physical
 cast      10 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1818,7 +1818,7 @@ https://www.wowhead.com/forever/spell=437138
 1237948 Revive (Rank 2)
 school    physical
 cast      10 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1831,7 +1831,7 @@ https://www.wowhead.com/forever/spell=1237948
 1237949 Revive (Rank 3)
 school    physical
 cast      10 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1844,7 +1844,7 @@ https://www.wowhead.com/forever/spell=1237949
 1237950 Revive (Rank 4)
 school    physical
 cast      10 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1857,7 +1857,7 @@ https://www.wowhead.com/forever/spell=1237950
 1237951 Revive (Rank 5)
 school    physical
 cast      10 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 stance    Tree of Life, Moonkin
 labels    21, 6316
@@ -1882,7 +1882,7 @@ school    nature
 defense   magic
 cooldown  15 s
 gcd       1.5 s
-cost      20% of maximum mana
+cost      20% of base mana
 range     40 yd
 stance    Tree of Life
 stance exclude Moonkin
@@ -1915,7 +1915,7 @@ stance exclude Moonkin
 attrs     channeled, periodic can crit
 labels    21
 
-effect 1  party aura: 90 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+effect 1  party aura: 90.6 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=87 ppl=0.6 sp=0.067 period=2000ms radius=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=740
@@ -1932,7 +1932,7 @@ stance exclude Moonkin
 attrs     channeled, periodic can crit
 labels    21
 
-effect 1  party aura: 133 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+effect 1  party aura: 133.2 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=129 ppl=0.7 sp=0.067 period=2000ms radius=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8918
@@ -1949,7 +1949,7 @@ stance exclude Moonkin
 attrs     channeled, periodic can crit
 labels    21
 
-effect 1  party aura: 201 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
+effect 1  party aura: 201.4 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=196 ppl=0.9 sp=0.067 period=2000ms radius=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=9862
@@ -1978,7 +1978,7 @@ duration  10 s
 cost      200 mana
 attrs     channeled
 
-effect 1  party aura: 374 healing every 2 s (5 ticks, +0.067 spell power)
+effect 1  party aura: 374.20636 healing every 2 s (5 ticks, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=374.20636 sp=0.067 period=2000ms radius=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=21791
@@ -1990,7 +1990,7 @@ duration  10 s
 cost      200 mana
 attrs     channeled
 
-effect 1  party aura: 5407.55–6284.45 healing every 2 s (5 ticks, +0.067 spell power)
+effect 1  party aura: 5408–6285 healing every 2 s (5 ticks, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=5846.974 variance=0.15 sp=0.067 period=2000ms radius=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=25817
@@ -2002,9 +2002,9 @@ duration  15 s
 range     100 yd
 attrs     channeled
 
-effect 1  254.375–295.625 healing every 3 s to every ally around the caster (5 ticks, +0.067 spell power)
+effect 1  254–296 healing every 3 s to every ally around the caster (5 ticks, +0.067 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 sp=0.067 period=3000ms target=[22,30]
-effect 2  254.375–295.625 healing every 3 s (5 ticks)
+effect 2  254–296 healing every 3 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 period=3000ms target=[1,1]
 
 https://www.wowhead.com/forever/spell=1253568
@@ -2051,7 +2051,7 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    21
 
-effect 1  70 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 target=[132,31]

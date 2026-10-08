@@ -3,11 +3,11 @@ school    shadow
 defense   magic
 cooldown  5 s (category)
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     5 yd
 labels    3096, 3100
 
-effect 1  320 threat to the enemy
+effect 1  325 threat to the enemy
           E_THREAT base=25 ppl=5 target=[6,0]
 
 https://www.wowhead.com/forever/spell=427742
@@ -81,11 +81,11 @@ school    physical
 defense   melee
 cooldown  6 s
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     5 yd
 labels    3096, 3100
 
-effect 1  weapon damage in the weapon's own school +37 to the enemy (at level 60)
+effect 1  weapon damage in the weapon's own school +38 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=2 ppl=0.6 sp=1 chain=2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=427744
@@ -115,7 +115,7 @@ range     5 yd
 attrs     channeled, periodic can crit
 labels    19
 
-effect 1  115 healing every 2 s (5 ticks, at level 60)
+effect 1  115.2 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=111 ppl=0.7 period=2000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=17850
@@ -130,7 +130,7 @@ range     5 yd
 attrs     channeled, periodic can crit
 labels    19
 
-effect 1  167 healing every 2 s (5 ticks, at level 60)
+effect 1  167.8 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=163 ppl=0.8 period=2000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=17851
@@ -160,7 +160,7 @@ range     5 yd
 attrs     channeled, periodic can crit
 labels    19
 
-effect 1  305 healing every 2 s (5 ticks, at level 60)
+effect 1  305.6 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=299 ppl=1.1 period=2000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=17853
@@ -174,7 +174,7 @@ cost      480 mana
 attrs     channeled, periodic can crit
 labels    19
 
-effect 1  388 healing every 2 s (5 ticks, at level 60)
+effect 1  388.6 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=386 ppl=1.3 period=2000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=17854
@@ -252,7 +252,7 @@ https://www.wowhead.com/forever/spell=19658
 school    shadow
 labels    19
 
-effect 1  347 healing to the caster (at level 60)
+effect 1  347.8 healing to the caster (at level 60)
           E_HEAL base=319 ppl=4.8 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19732
@@ -261,7 +261,7 @@ https://www.wowhead.com/forever/spell=19732
 school    shadow
 labels    19
 
-effect 1  472 healing to the caster (at level 60)
+effect 1  472.2 healing to the caster (at level 60)
           E_HEAL base=438 ppl=5.7 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19733
@@ -270,7 +270,7 @@ https://www.wowhead.com/forever/spell=19733
 school    shadow
 labels    19
 
-effect 1  618 healing to the caster (at level 60)
+effect 1  618.6 healing to the caster (at level 60)
           E_HEAL base=579 ppl=6.6 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19735
@@ -355,7 +355,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  3.4285715–4.571429 fire damage to the enemy (at level 60, +0.164 spell power)
+effect 1  3–6 fire damage to the enemy (at level 60, +0.164 spell power)
           E_SCHOOL_DAMAGE base=4 ppl=0.1 variance=0.2857143 sp=0.164 target=[6,0]
 
 https://www.wowhead.com/forever/spell=3110
@@ -370,7 +370,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  7.3846154–8.615385 fire damage to the enemy (at level 60, +0.314 spell power)
+effect 1  7–9 fire damage to the enemy (at level 60, +0.314 spell power)
           E_SCHOOL_DAMAGE base=7 ppl=0.2 variance=0.15384616 sp=0.314 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7799
@@ -385,7 +385,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  11.916667–14.083333 fire damage to the enemy (at level 60, +0.529 spell power)
+effect 1  12–15 fire damage to the enemy (at level 60, +0.529 spell power)
           E_SCHOOL_DAMAGE base=12 ppl=0.3 variance=0.16666667 sp=0.529 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7800
@@ -400,7 +400,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  16.971428–19.028572 fire damage to the enemy (at level 60, +0.571 spell power)
+effect 1  17–20 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=17 ppl=0.3 variance=0.11428571 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7801
@@ -415,7 +415,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  25.411764–28.588236 fire damage to the enemy (at level 60, +0.571 spell power)
+effect 1  26–28 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=25 ppl=0.4 variance=0.11764706 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7802
@@ -430,7 +430,7 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  34.915493–39.084507 fire damage to the enemy (at level 60, +0.571 spell power)
+effect 1  35–40 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=35 ppl=0.5 variance=0.11267605 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11762
@@ -445,9 +445,9 @@ range     30 yd
 labels    19
 refs      18769 Unholy Power
 
-effect 1  42.44318–47.55682 fire damage to the enemy (at level 60, +0.571 spell power)
+effect 1  43–48 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
-effect 2  a dummy effect holding 45 to the enemy (at level 60)
+effect 2  a dummy effect holding 45.5 to the enemy (at level 60)
           E_DUMMY base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11763
@@ -459,7 +459,7 @@ cast      2 s
 cost      20 mana
 range     30 yd
 
-effect 1  146.15384–157.84616 fire damage to the enemy (+0.529 spell power)
+effect 1  146–158 fire damage to the enemy (+0.529 spell power)
           E_SCHOOL_DAMAGE base=152.02133 variance=0.07692308 sp=0.529 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20801
@@ -468,7 +468,7 @@ https://www.wowhead.com/forever/spell=20801
 school    physical
 cooldown  30 s (category)
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     8-25 yd
 labels    3096, 3100
 refs      427746 Intercept Stun
@@ -684,7 +684,7 @@ mechanic  mechanic 1
 duration  15 s
 cast      1.5 s
 gcd       1.5 s
-cost      24% of maximum mana
+cost      24% of base mana
 range     30 yd
 attrs     channeled
 labels    19

@@ -1,7 +1,7 @@
 2687 Bloodrage
 school    physical
 cooldown  60 s
-cost      20% of maximum health
+cost      20% of base health
 labels    25
 refs      29131 Bloodrage
 
@@ -54,7 +54,7 @@ duration  5 s
 cooldown  45 s
 cost      10 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -86,6 +86,8 @@ refs      7376 Defensive Stance Passive, 12792 Defiance
 
 effect 1  shifts into Defensive
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=18 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_668 base=0 target=[1,0]
 
 https://www.wowhead.com/forever/spell=71
 =======
@@ -382,12 +384,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  20.307692–23.692308 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 target=[6,0]
+effect 1  19–25 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6572
 =======
@@ -399,12 +401,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  30.6–37.4 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 target=[6,0]
+effect 1  27–41 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6574
 =======
@@ -416,12 +418,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  42.857143–53.142857 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 target=[6,0]
+effect 1  38–58 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7379
 =======
@@ -433,12 +435,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  73.458336–90.541664 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 target=[6,0]
+effect 1  65–99 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11600
 =======
@@ -450,12 +452,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  109.07042–132.92958 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 target=[6,0]
+effect 1  97–145 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11601
 =======
@@ -467,12 +469,12 @@ gcd       1.5 s
 cost      5 rage
 range     5 yd
 stance    Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  137.7–168.3 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 target=[6,0]
+effect 1  122–184 physical damage to the enemy (+0.28 attack power)
+          E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 ap=0.28 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25288
 =======
@@ -575,7 +577,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  420.65216–439.34784 physical damage to the enemy
+effect 2  411–449 physical damage to the enemy
           E_SCHOOL_DAMAGE base=430 variance=0.04347826 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23922
@@ -593,7 +595,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  493.77777–516.2222 physical damage to the enemy
+effect 2  483–527 physical damage to the enemy
           E_SCHOOL_DAMAGE base=505 variance=0.044444446 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23923
@@ -611,7 +613,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  566.9032–593.0968 physical damage to the enemy
+effect 2  554–606 physical damage to the enemy
           E_SCHOOL_DAMAGE base=580 variance=0.045161292 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23924
@@ -629,7 +631,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  640.02856–669.97144 physical damage to the enemy
+effect 2  625–685 physical damage to the enemy
           E_SCHOOL_DAMAGE base=655 variance=0.045714285 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23925
@@ -689,15 +691,15 @@ duration  30 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 stack     up to 5
 attrs     refund on miss
 labels    25
 
 effect 1  -90 armor to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-90 misc=1 target=[6,0]
-effect 2  34 threat to the enemy
-          E_THREAT base=34 target=[6,0]
+effect 2  34 threat to the enemy (+0.05 attack power)
+          E_THREAT base=34 ap=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7386
 =======
@@ -708,15 +710,15 @@ duration  30 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 stack     up to 5
 attrs     refund on miss
 labels    25
 
 effect 1  -180 armor to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-180 misc=1 target=[6,0]
-effect 2  75 threat to the enemy
-          E_THREAT base=75 target=[6,0]
+effect 2  75 threat to the enemy (+0.05 attack power)
+          E_THREAT base=75 ap=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7405
 =======
@@ -727,15 +729,15 @@ duration  30 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 stack     up to 5
 attrs     refund on miss
 labels    25
 
 effect 1  -270 armor to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-270 misc=1 target=[6,0]
-effect 2  117 threat to the enemy
-          E_THREAT base=117 target=[6,0]
+effect 2  117 threat to the enemy (+0.05 attack power)
+          E_THREAT base=117 ap=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8380
 =======
@@ -746,15 +748,15 @@ duration  30 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 stack     up to 5
 attrs     refund on miss
 labels    25
 
 effect 1  -360 armor to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-360 misc=1 target=[6,0]
-effect 2  158 threat to the enemy
-          E_THREAT base=158 target=[6,0]
+effect 2  158 threat to the enemy (+0.05 attack power)
+          E_THREAT base=158 ap=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11596
 =======
@@ -765,15 +767,15 @@ duration  30 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 stack     up to 5
 attrs     refund on miss
 labels    25
 
 effect 1  -450 armor to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-450 misc=1 target=[6,0]
-effect 2  206 threat to the enemy
-          E_THREAT base=206 target=[6,0]
+effect 2  206 threat to the enemy (+0.05 attack power)
+          E_THREAT base=206 ap=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11597
 =======

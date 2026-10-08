@@ -80,13 +80,13 @@ effect 1  unrecognised shape
 
 https://www.wowhead.com/forever/spell=1301075
 =======
-1301247 1.60.0 - Item - Tier 1 - Druid - Feral 5P Bonus - Tiger's Fury
+1301247 1.60.0 - Item - Tier 1 - Druid - Feral 5P Bonus - Shifting Power
 school    physical
 stance    Cat
 attrs     passive
 
-effect 1  SPELLMOD_COOLDOWN -3 s on family 7 mask 0x0,0x0,0x800
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=7 mask=0x0,0x0,0x800 target=[1,0]
+effect 1  SPELLMOD_COOLDOWN -1 s on family 7 mask 0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1301247
 =======
@@ -115,7 +115,7 @@ https://www.wowhead.com/forever/spell=1301005
 school    physical
 attrs     passive
 
-effect 1  unrecognised shape
+effect 1  +12 expertise rating
           E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1301076
@@ -435,7 +435,7 @@ defense   magic
 duration  15 s
 cooldown  60 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 stance    Tree of Life
 
 effect 1  unrecognised shape
@@ -479,7 +479,7 @@ https://www.wowhead.com/forever/spell=26666
 school    arcane
 attrs     passive
 labels    21
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
 refs      408261 Dreamstate
 
 effect 1  a dummy aura holding 50
@@ -748,7 +748,7 @@ https://www.wowhead.com/forever/spell=446314
 414799 Fury of Stormrage
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 12% chance
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 12% chance; tooltip says damaging spells only
 refs      414800 Fury of Stormrage
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0x1
@@ -1387,6 +1387,28 @@ effect 3  a dummy aura
 
 https://www.wowhead.com/forever/spell=23398
 =======
+417046 King of the Jungle
+school    physical
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 60
+          E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
+effect 2  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=417046
+=======
+424762 King of the Jungle
+school    physical
+attrs     passive
+labels    3096
+
+effect 1  replaces an action bar spell with 415450
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417046 misc=415450 target=[1,0]
+
+https://www.wowhead.com/forever/spell=424762
+=======
 1306483 Lacerate Mangle Reset Chance
 school    physical
 attrs     passive
@@ -1408,7 +1430,7 @@ refs      1271100 Lunar Venting, 1270830 Lunar Expulsion
 
 effect 1  casts 1271100 Lunar Venting every 4 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=15 variance=0.05 sp=0.13 period=4000ms trigger=1271100 target=[6,0]
-effect 2  48.75–51.25 arcane damage to the enemy
+effect 2  49–51 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=50 variance=0.05 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1270650
@@ -1573,8 +1595,8 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 7 mask 0x800,0x40
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=7 mask=0x800,0x40 target=[1,0]
+effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 7 mask 0x800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=7 mask=0x800 target=[1,0]
 
 https://www.wowhead.com/forever/spell=28855
 =======
@@ -1623,6 +1645,18 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_HIT_CHANCE base=1 misc=126 target=[6,0]
 
 https://www.wowhead.com/forever/spell=455868
+=======
+1323400 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 7 mask 0x400025,0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=7 mask=0x400025,0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323400
 =======
 1218443 S03 - Item - Naxxramas - Druid - Balance 2P Bonus
 school    physical
@@ -2466,6 +2500,16 @@ effect 2  SPELLMOD_EFFECT1 +100% on family 7 mask 0x0,0x8000800,0x4
 
 https://www.wowhead.com/forever/spell=467467
 =======
+1291059 Shifting Power Cooldown Reduction
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COOLDOWN -1 s on family 7 mask 0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1291059
+=======
 471698 Soul of the Demon
 school    physical
 duration  permanent
@@ -2669,16 +2713,6 @@ effect 1  replaces an action bar spell with 417437
 
 https://www.wowhead.com/forever/spell=417453
 =======
-1291059 Tiger's Fury Cooldown Reduction
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_COOLDOWN -3 s on family 7 mask 0x0,0x0,0x800
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 sp=1 misc=11 family=7 mask=0x0,0x0,0x800 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1291059
-=======
 1214239 Timeworn Spell
 school    physical
 duration  10 s
@@ -2811,7 +2845,7 @@ defense   magic
 duration  8 s
 cooldown  300 s (category)
 gcd       1.5 s
-cost      20% of maximum mana
+cost      20% of base mana
 labels    21
 
 effect 1  shifts into Tree of Life
@@ -2827,7 +2861,7 @@ https://www.wowhead.com/forever/spell=775
 school    physical
 duration  permanent
 gcd       1.5 s
-cost      13% of maximum mana
+cost      13% of base mana
 refs      439745 Tree of Life, 439734 Tree of Life (Passive)
 
 effect 1  shifts into Tree of Life
@@ -2887,7 +2921,7 @@ duration  10 s
 cost      200 mana
 attrs     channeled
 
-effect 1  403 nature damage every 2 s to every enemy in the target area (5 ticks)
+effect 1  403.44125 nature damage every 2 s to every enemy in the target area (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=403.44125 sp=1 period=2000ms target=[18,16]
 effect 2  -70% movement speed to every enemy in the target area
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 sp=1 radius=45 target=[18,16]
@@ -2922,7 +2956,7 @@ refs      1271100 Lunar Venting, 1270830 Lunar Expulsion
 
 effect 1  casts 1271047 Umbral Venting every 4 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=15 variance=0.05 sp=0.13 period=4000ms trigger=1271047 target=[6,0]
-effect 2  48.75–51.25 shadow damage to the enemy (+0.15 spell power)
+effect 2  49–51 shadow damage to the enemy (+0.15 spell power)
           E_SCHOOL_DAMAGE base=50 variance=0.05 sp=0.15 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1270651

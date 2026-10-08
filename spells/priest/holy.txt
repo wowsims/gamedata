@@ -3,7 +3,7 @@ school    holy
 defense   magic
 duration  20 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 stance exclude Shadowform
 labels    18
@@ -27,9 +27,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  234.54549–285.45453 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  236–285 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[21,0]
-effect 2  234.54549–285.45453 healing to the caster (at level 60, +0.429 spell power)
+effect 2  236–285 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=401937
@@ -45,9 +45,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  294.30005–353.69995 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  295–354 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=312 ppl=2.5 variance=0.183333 sp=0.429 amplitude=1 target=[21,0]
-effect 2  293.39172–352.60828 healing to the caster (at level 60, +0.429 spell power)
+effect 2  294–352 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=312 ppl=2.2 variance=0.183333 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1240770
@@ -63,9 +63,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  361.7311–432.2689 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  363–431 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[21,0]
-effect 2  361.7311–432.2689 healing to the caster (at level 60, +0.429 spell power)
+effect 2  363–431 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1240771
@@ -81,9 +81,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  477.80234–568.19763 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  479–568 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[21,0]
-effect 2  477.80234–568.19763 healing to the caster (at level 60, +0.429 spell power)
+effect 2  479–568 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1240772
@@ -99,9 +99,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  605.57947–718.42053 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  607–718 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=644.0001 ppl=3.7 variance=0.17045482 sp=0.429 amplitude=1 target=[21,0]
-effect 2  605.5794–718.4206 healing to the caster (at level 60, +0.429 spell power)
+effect 2  607–718 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=644 ppl=3.7 variance=0.170455 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1240773
@@ -117,9 +117,9 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  771.6293–910.3707 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  773–910 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[21,0]
-effect 2  771.6293–910.3707 healing to the caster (at level 60, +0.429 spell power)
+effect 2  773–910 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1240774
@@ -161,7 +161,7 @@ stance exclude Shadowform
 targets   up to 1
 labels    18
 
-effect 1  43.24–48.76 holy damage to the enemy (+0.143 spell power)
+effect 1  43–49 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=46 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
@@ -180,7 +180,7 @@ stance exclude Shadowform
 targets   up to 1
 labels    18
 
-effect 1  87.42–98.58 holy damage to the enemy (+0.143 spell power)
+effect 1  87–99 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=93 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
@@ -199,7 +199,7 @@ stance exclude Shadowform
 targets   up to 1
 labels    18
 
-effect 1  131.6–148.4 holy damage to the enemy (+0.143 spell power)
+effect 1  132–148 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=140 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
@@ -218,7 +218,7 @@ stance exclude Shadowform
 targets   up to 1
 labels    18
 
-effect 1  201.16–226.84 holy damage to the enemy (+0.143 spell power)
+effect 1  201–227 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=214 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
@@ -237,7 +237,7 @@ stance exclude Shadowform
 targets   up to 1
 labels    18
 
-effect 1  271.66–306.34 holy damage to the enemy (+0.143 spell power)
+effect 1  272–306 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=289 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
@@ -249,7 +249,7 @@ school    holy
 defense   magic
 cooldown  6 s
 gcd       1.5 s
-cost      56% of maximum mana
+cost      56% of base mana
 range     40 yd
 stance    Spirit of Redemption
 stance exclude Shadowform
@@ -263,7 +263,7 @@ https://www.wowhead.com/forever/spell=401946
 school    holy
 defense   magic
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 stance exclude Shadowform
 labels    18
@@ -294,7 +294,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  143.69737–182.30263 healing to the caster (at level 60, +0.429 spell power)
+effect 1  145–182 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=13908
@@ -307,7 +307,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  264.78912–327.21088 healing to the caster (at level 60, +0.429 spell power)
+effect 1  267–326 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=276 ppl=3.4 variance=0.21088435 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19236
@@ -320,7 +320,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  437.9697–532.0303 healing to the caster (at level 60, +0.429 spell power)
+effect 1  441–529 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19238
@@ -333,7 +333,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  568.03705–683.96295 healing to the caster (at level 60, +0.429 spell power)
+effect 1  571–682 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=595 ppl=5.3 variance=0.18518518 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19240
@@ -346,7 +346,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  815.75055–972.24945 healing to the caster (at level 60, +0.429 spell power)
+effect 1  819–970 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=856 ppl=6.4 variance=0.1750547 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19241
@@ -359,7 +359,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  1086.3566–1287.6434 healing to the caster (at level 60, +0.429 spell power)
+effect 1  1090–1285 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=1143 ppl=7.4 variance=0.16957606 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19242
@@ -372,7 +372,7 @@ gcd       1.5 s
 stance exclude Shadowform
 labels    18
 
-effect 1  1283.6285–1514.3715 healing to the caster (at level 60, +0.429 spell power)
+effect 1  1285–1514 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=1383 ppl=8.2 variance=0.16493416 sp=0.429 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19243
@@ -406,7 +406,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  143.69737–182.30263 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  145–182 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -422,7 +422,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  264.78915–327.21085 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  267–326 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=276 ppl=3.4 variance=0.210884 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -438,7 +438,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  437.9697–532.0303 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  441–529 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -454,7 +454,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  568.0371–683.9629 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  571–682 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=595 ppl=5.3 variance=0.185185 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -470,7 +470,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  815.7504–972.2496 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  819–970 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=856 ppl=6.4 variance=0.175055 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -486,7 +486,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  1086.3567–1287.6433 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  1090–1285 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=1143 ppl=7.4 variance=0.169576 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -502,7 +502,7 @@ range     40 yd
 stance exclude Shadowform
 labels    18
 
-effect 1  1283.6287–1514.3713 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  1285–1514 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=1383 ppl=8.2 variance=0.164934 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
@@ -547,7 +547,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  182.2279–223.7721 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  183–224 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=194 ppl=1.9 variance=0.20465116 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2061
@@ -563,7 +563,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  234.54546–285.45456 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  236–284 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=249 ppl=2.2 variance=0.1958042 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9472
@@ -579,7 +579,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  294.3–353.7 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  295–354 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=312 ppl=2.5 variance=0.18333334 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9473
@@ -595,7 +595,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  361.7312–432.2688 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  363–431 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=383 ppl=2.8 variance=0.17767654 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9474
@@ -611,7 +611,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  477.80246–568.1975 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  479–568 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=507 ppl=3.3 variance=0.17283951 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10915
@@ -627,7 +627,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  605.5795–718.4205 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  607–718 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=644 ppl=3.7 variance=0.17045455 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10916
@@ -643,7 +643,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  771.6294–910.3706 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  773–910 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=825 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10917
@@ -655,7 +655,7 @@ cast      1.5 s
 cost      125 mana
 range     40 yd
 
-effect 1  1163.4558–1350.5442 healing to the friendly target (+0.429 spell power)
+effect 1  1164–1351 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1257.0995 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=17137
@@ -667,7 +667,7 @@ cast      1.5 s
 cost      125 mana
 range     40 yd
 
-effect 1  3413.8765–4162.1235 healing to the friendly target (+0.429 spell power)
+effect 1  3415–4163 healing to the friendly target (+0.429 spell power)
           E_HEAL base=3788.8394 variance=0.19753087 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=17138
@@ -679,7 +679,7 @@ cast      1.5 s
 cost      125 mana
 range     40 yd
 
-effect 1  2326.9116–2701.0884 healing to the friendly target (+0.429 spell power)
+effect 1  2327–2701 healing to the friendly target (+0.429 spell power)
           E_HEAL base=2514.199 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=17843
@@ -693,7 +693,7 @@ cost      380 mana
 range     40 yd
 stance exclude Shadowform
 
-effect 1  826.68024–975.31976 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  1064–1210 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=885 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=27608
@@ -705,7 +705,7 @@ cast      1.5 s
 cost      125 mana
 range     40 yd
 
-effect 1  58469 healing to the friendly target (+0.429 spell power)
+effect 1  58469.74 healing to the friendly target (+0.429 spell power)
           E_HEAL base=58469.74 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1232758
@@ -718,7 +718,7 @@ gcd       1.5 s
 range     40 yd
 stance exclude Shadowform
 
-effect 1  13183.1–15320.9 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  13202–15302 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=14000 ppl=4.2 variance=0.15 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1236153
@@ -734,7 +734,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  817.18726–920.81274 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  819–920 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=844 ppl=5.1 variance=0.11924686 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2060
@@ -750,7 +750,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  1063.2256–1192.7744 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  1065–1191 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1099 ppl=5.8 variance=0.11484823 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10963
@@ -766,7 +766,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  1354.9127–1517.0873 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  1357–1515 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1403 ppl=6.6 variance=0.112935 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10964
@@ -782,7 +782,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  1698.7413–1895.2587 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  1700–1894 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1782 ppl=7.5 variance=0.10935857 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10965
@@ -810,7 +810,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  1852.5769–2067.423 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  1853–2067 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1960 ppl=8.1 variance=0.10961539 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25314
@@ -838,7 +838,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  281.0849–324.9151 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  282–324 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=291 ppl=2.4 variance=0.1446541 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2054
@@ -854,7 +854,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  392.62827–449.37173 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  394–448 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=405 ppl=3.2 variance=0.13478261 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2055
@@ -870,7 +870,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  508.83774–577.16223 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  510–576 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=523 ppl=4 variance=0.12582782 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=6063
@@ -886,7 +886,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  632.1583–713.8417 healing to the friendly target (at level 60, +0.857 spell power)
+effect 1  633–714 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=651 ppl=4.5 variance=0.12137203 sp=0.857 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=6064
@@ -902,7 +902,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  55.840908–70.15909 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  56–71 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=58 ppl=1.3 variance=0.22727273 sp=0.75 target=[6,0]
 effect 2  4 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.05 period=2000ms target=[6,0]
@@ -920,7 +920,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  183.6816–232.3184 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  184–232 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=208 ppl=2 variance=0.23383084 sp=0.75 target=[6,0]
 effect 2  15 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 sp=0.05 period=2000ms target=[6,0]
@@ -938,7 +938,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  63.11111–78.888885 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  64–79 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=63 ppl=1.4 variance=0.22222222 sp=0.75 target=[6,0]
 effect 2  5 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.05 period=2000ms target=[6,0]
@@ -956,7 +956,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  78.845634–99.154366 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  80–98 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=80 ppl=1.5 variance=0.22818792 sp=0.75 target=[6,0]
 effect 2  6 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.05 period=2000ms target=[6,0]
@@ -974,7 +974,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  89.117645–112.882355 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  90–112 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=92 ppl=1.5 variance=0.23529412 sp=0.75 target=[6,0]
 effect 2  7 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.05 period=2000ms target=[6,0]
@@ -992,7 +992,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  101.55844–128.44156 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  103–127 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=1.5 variance=0.23376623 sp=0.75 target=[6,0]
 effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
@@ -1010,7 +1010,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  131.40973–166.59027 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  133–166 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=139 ppl=1.7 variance=0.2361111 sp=0.75 target=[6,0]
 effect 2  10 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.05 period=2000ms target=[6,0]
@@ -1028,7 +1028,7 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  162.13333–205.86667 holy damage to the enemy (at level 60, +0.75 spell power)
+effect 1  163–206 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=173 ppl=1.9 variance=0.23768117 sp=0.75 target=[6,0]
 effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
@@ -1044,9 +1044,9 @@ gcd       1.5 s
 cost      115 mana
 range     30 yd
 
-effect 1  596.0348–747.9652 fire damage to the enemy (+0.343 spell power)
+effect 1  596–748 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=672.40204 variance=0.22608696 sp=0.343 target=[6,0]
-effect 2  40 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+effect 2  40.92882 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40.92882 sp=0.027 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=17140
@@ -1060,9 +1060,9 @@ gcd       1.5 s
 cost      115 mana
 range     30 yd
 
-effect 1  1186.2261–1501.7739 fire damage to the enemy (+0.343 spell power)
+effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
-effect 2  81 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=17141
@@ -1076,9 +1076,9 @@ gcd       1.5 s
 cost      115 mana
 range     30 yd
 
-effect 1  1777.2986–2256.7014 fire damage to the enemy (+0.343 spell power)
+effect 1  1777–2257 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=2017.206 variance=0.23768117 sp=0.343 target=[6,0]
-effect 2  122 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+effect 2  122.78647 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=122.78647 sp=0.027 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=17142
@@ -1089,9 +1089,9 @@ defense   magic
 duration  8 s
 range     30 yd
 
-effect 1  1186.2261–1501.7739 fire damage to the enemy (+0.343 spell power)
+effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
-effect 2  81 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=18165
@@ -1134,7 +1134,7 @@ stance exclude Shadowform
 labels    18
 refs      23455 Holy Nova
 
-effect 1  26.133333–29.866667 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  26–31 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=27 ppl=0.2 variance=0.13333334 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15237
@@ -1148,7 +1148,7 @@ stance exclude Shadowform
 labels    18
 refs      23458 Holy Nova
 
-effect 1  47.22222–54.77778 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  47–56 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=49 ppl=0.4 variance=0.14814815 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15430
@@ -1162,7 +1162,7 @@ stance exclude Shadowform
 labels    18
 refs      23459 Holy Nova
 
-effect 1  72.29269–83.70731 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  73–84 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=75 ppl=0.6 variance=0.14634146 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15431
@@ -1184,7 +1184,7 @@ stance exclude Shadowform
 attrs     not a proc
 labels    18
 
-effect 1  49.214287–56.785713 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  49–58 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=51 ppl=0.4 variance=0.14285715 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=23455
@@ -1195,7 +1195,7 @@ defense   magic
 stance exclude Shadowform
 labels    18
 
-effect 1  79.45652–90.54348 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  80–90 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=82 ppl=0.5 variance=0.13043478 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=23458
@@ -1206,7 +1206,7 @@ defense   magic
 stance exclude Shadowform
 labels    18
 
-effect 1  110.761536–127.238464 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  111–128 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=116 ppl=0.6 variance=0.13846155 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=23459
@@ -1232,7 +1232,7 @@ stance exclude Shadowform
 labels    18
 refs      27803 Holy Nova
 
-effect 1  102.2807–117.7193 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  103–118 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=0.8 variance=0.14035088 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27799
@@ -1246,7 +1246,7 @@ stance exclude Shadowform
 labels    18
 refs      27804 Holy Nova
 
-effect 1  138.14569–159.85431 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  139–159 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=143 ppl=1 variance=0.14569536 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27800
@@ -1260,7 +1260,7 @@ stance exclude Shadowform
 labels    18
 refs      27805 Holy Nova
 
-effect 1  173.57436–200.42564 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
+effect 1  174–200 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=187 ppl=1.2 variance=0.14358975 sp=0.107 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27801
@@ -1271,7 +1271,7 @@ defense   magic
 stance exclude Shadowform
 labels    18
 
-effect 1  150.82184–175.17816 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  151–176 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=159 ppl=0.7 variance=0.14942528 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=27803
@@ -1282,7 +1282,7 @@ defense   magic
 stance exclude Shadowform
 labels    18
 
-effect 1  224.78261–259.21738 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  225–260 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=238 ppl=0.8 variance=0.14229248 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=27804
@@ -1293,7 +1293,7 @@ defense   magic
 stance exclude Shadowform
 labels    18
 
-effect 1  288.1043–333.8957 healing to the party around the caster (at level 60, +0.107 spell power)
+effect 1  288–334 healing to the party around the caster (at level 60, +0.107 spell power)
           E_HEAL base=311 ppl=0.9 variance=0.14723927 sp=0.107 radius=10 target=[20,0]
 
 https://www.wowhead.com/forever/spell=27805
@@ -1382,7 +1382,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  46.901962–57.098038 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  47–58 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=51 ppl=0.9 variance=0.19607843 sp=0.429 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2050
@@ -1398,7 +1398,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  75.551285–90.448715 healing to the friendly target (at level 60, +0.571 spell power)
+effect 1  76–91 healing to the friendly target (at level 60, +0.571 spell power)
           E_HEAL base=78 ppl=1.1 variance=0.17948718 sp=0.571 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2052
@@ -1414,7 +1414,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  137.77397–160.22603 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  138–160 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=141 ppl=1.6 variance=0.15068494 sp=0.714 amplitude=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=2053
@@ -1487,7 +1487,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  179.05145–190.94855 healing to target 132 (at level 60, +0.286 spell power)
+effect 1  179–192 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=178 ppl=0.8 variance=0.06430868 sp=0.286 target=[132,31]
 
 https://www.wowhead.com/forever/spell=596
@@ -1503,7 +1503,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  265.62445–282.37555 healing to target 132 (at level 60, +0.286 spell power)
+effect 1  266–282 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=265 ppl=1 variance=0.06113537 sp=0.286 target=[132,31]
 
 https://www.wowhead.com/forever/spell=996
@@ -1519,7 +1519,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  400.4201–423.5799 healing to target 132 (at level 60, +0.286 spell power)
+effect 1  401–424 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=401 ppl=1.3 variance=0.056213018 sp=0.286 target=[132,31]
 
 https://www.wowhead.com/forever/spell=10960
@@ -1535,7 +1535,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  567.29224–598.70776 healing to target 132 (at level 60, +0.286 spell power)
+effect 1  567–599 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=583 ppl=1.5 variance=0.05388601 sp=0.286 target=[132,31]
 
 https://www.wowhead.com/forever/spell=10961
@@ -1551,7 +1551,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 labels    18
 
-effect 1  631.4103–666.5897 healing to target 132 (at level 60, +0.286 spell power)
+effect 1  631–667 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=649 ppl=1.6 variance=0.054205608 sp=0.286 target=[132,31]
 
 https://www.wowhead.com/forever/spell=25316
@@ -2090,8 +2090,8 @@ gcd       1.5 s
 cost      365 mana
 range     40 yd
 
-effect 1  30 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=30 sp=0.2 period=3000ms target=[21,0]
+effect 1  35 healing every 3 s to the friendly target (5 ticks)
+          E_APPLY_AURA A_PERIODIC_HEAL base=35 period=3000ms target=[21,0]
 
 https://www.wowhead.com/forever/spell=1289450
 =======
@@ -2100,7 +2100,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 labels    18, 6316
 
@@ -2114,7 +2114,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 labels    18, 6316
 
@@ -2128,7 +2128,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 labels    18, 6316
 
@@ -2142,7 +2142,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 labels    18, 6316
 
@@ -2156,7 +2156,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      75% of maximum mana
+cost      75% of base mana
 range     30 yd
 labels    18, 6316
 
@@ -2172,8 +2172,8 @@ attrs     passive
 labels    18
 proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; 10% chance, from effect 2; tooltip says one named ability
 
-effect 1  +10% damage done
-          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 target=[1,0]
+effect 1  +10% holy damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=2 target=[1,0]
 effect 2  casts 1284536 Holy Purpose on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1284536 target=[1,0]
 
@@ -2188,7 +2188,7 @@ cost      20 mana
 range     30 yd
 labels    18
 
-effect 1  14.733334–19.266666 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  15–20 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=15 ppl=0.5 variance=0.26666668 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=585
@@ -2202,7 +2202,7 @@ cost      30 mana
 range     30 yd
 labels    18
 
-effect 1  27.678572–34.32143 holy damage to the enemy (at level 60, +0.571 spell power)
+effect 1  28–34 holy damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.21428572 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=591
@@ -2216,7 +2216,7 @@ cost      60 mana
 range     30 yd
 labels    18
 
-effect 1  46.551723–53.448277 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  47–53 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=46 ppl=0.8 variance=0.13793103 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=598
@@ -2230,7 +2230,7 @@ cost      95 mana
 range     30 yd
 labels    18
 
-effect 1  59.42857–68.57143 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  60–68 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=59 ppl=1 variance=0.14285715 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=984
@@ -2244,7 +2244,7 @@ cost      140 mana
 range     30 yd
 labels    18
 
-effect 1  80.625–91.375 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  81–91 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=81 ppl=1 variance=0.125 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1004
@@ -2258,7 +2258,7 @@ cost      185 mana
 range     30 yd
 labels    18
 
-effect 1  92.867256–105.132744 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  93–106 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=94 ppl=1.1 variance=0.1238938 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6060
@@ -2272,7 +2272,7 @@ cost      230 mana
 range     30 yd
 labels    18
 
-effect 1  123.26885–138.73114 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  124–139 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=126 ppl=1.1 variance=0.11803278 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10933
@@ -2286,7 +2286,7 @@ cost      280 mana
 range     30 yd
 labels    18
 
-effect 1  166.14758–185.85242 holy damage to the enemy (at level 60, +0.714 spell power)
+effect 1  166–187 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=170 ppl=1.3 variance=0.11195929 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10934

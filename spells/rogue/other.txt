@@ -111,7 +111,7 @@ gcd       1 s
 cost      20 energy
 targets   up to 4
 
-effect 1  192–288 physical damage to a cone of enemies in front of the caster
+effect 1  144–336 physical damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=240 variance=0.4 radius=10 target=[24,0]
 effect 2  a dummy effect holding 48 to a cone of enemies in front of the caster
           E_DUMMY base=48 radius=10 target=[24,0]
@@ -324,7 +324,7 @@ gcd       1 s
 cost      35 energy
 cost      1 combo points
 range     8 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
@@ -864,14 +864,14 @@ cooldown  120 s
 charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
-effect 1  SPELLMOD_COST -10% on family 8 mask 0x412071e,0x200908
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=8 mask=0x412071e,0x200908 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +10% on family 8 mask 0x412071e,0x90e
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=8 mask=0x412071e,0x90e target=[1,0]
-effect 3  SPELLMOD_DOT +10% on family 8 mask 0x100100
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=8 mask=0x100100 target=[1,0]
+effect 1  SPELLMOD_COST -10% on family 8 mask 0x602021e,0x200100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=8 mask=0x602021e,0x200100 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 8 mask 0x602021e,0x200100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=8 mask=0x602021e,0x200100 target=[1,0]
+effect 3  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 
@@ -901,7 +901,7 @@ https://www.wowhead.com/forever/spell=1231492
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 
 effect 1  50% weapon damage to every enemy in the target area
           E_WEAPON_PERCENT_DAMAGE base=50 target=[18,16]
@@ -913,7 +913,7 @@ school    physical
 defense   melee
 gcd       1 s
 cost      50 energy
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  50% weapon damage to every enemy in the target area
           E_WEAPON_PERCENT_DAMAGE base=50 target=[18,16]
@@ -1163,7 +1163,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  12.954545–17.045454 nature damage to the enemy
+effect 1  13–17 nature damage to the enemy
           E_SCHOOL_DAMAGE base=15 variance=0.27272728 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8680
@@ -1188,7 +1188,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  20.294117–25.705883 nature damage to the enemy
+effect 1  20–26 nature damage to the enemy
           E_SCHOOL_DAMAGE base=23 variance=0.23529412 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8685
@@ -1241,7 +1241,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  29.04–36.96 nature damage to the enemy
+effect 1  29–37 nature damage to the enemy
           E_SCHOOL_DAMAGE base=33 variance=0.24 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8689
@@ -1266,7 +1266,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  44.960526–57.039474 nature damage to the enemy
+effect 1  45–57 nature damage to the enemy
           E_SCHOOL_DAMAGE base=51 variance=0.23684211 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11335
@@ -1305,7 +1305,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  62.209522–79.790474 nature damage to the enemy
+effect 1  62–80 nature damage to the enemy
           E_SCHOOL_DAMAGE base=71 variance=0.24761905 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11336
@@ -1344,7 +1344,7 @@ defense   magic
 range     100 yd
 labels    20
 
-effect 1  75.815384–100.184616 nature damage to the enemy
+effect 1  76–100 nature damage to the enemy
           E_SCHOOL_DAMAGE base=88 variance=0.2769231 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11337
@@ -1762,7 +1762,7 @@ defense   melee
 duration  3 s
 cooldown  15 s
 gcd       1 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     5 yd
 attrs     refund on miss
 
@@ -1807,7 +1807,7 @@ https://www.wowhead.com/forever/spell=457469
 school    physical
 attrs     passive
 labels    20
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 sp=1 target=[1,0]
@@ -2210,7 +2210,7 @@ school    physical
 equip     needs a dagger
 attrs     passive
 
-effect 1  +5% physical crit
+effect 1  +5% physical crit, per weapon: only attacks made with a dagger
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=5 target=[1,0]
 
 https://www.wowhead.com/forever/spell=468436
@@ -2444,7 +2444,7 @@ defense   melee
 gcd       1 s
 cost      60 energy
 range     5 yd
-equip     needs a dagger
+equip     needs a dagger in the main hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +445 to the enemy

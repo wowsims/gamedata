@@ -2,7 +2,7 @@
 school    holy
 duration  20 s
 cooldown  180 s
-cost      8% of maximum mana
+cost      8% of base mana
 labels    3096
 
 effect 1  +20% every school damage done
@@ -150,8 +150,6 @@ labels    26
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=100 sp=1 misc=126 misc2=3 target=[1,0]
-effect 2  unrecognised shape
-          E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=100 sp=1 misc=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1311084
 =======
@@ -178,7 +176,7 @@ school    physical
 defense   melee
 cooldown  10 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 equip     needs a melee weapon
 targets   up to 5
 
@@ -229,7 +227,7 @@ gcd       1.5 s
 cost      85 mana
 range     30 yd
 
-effect 1  89.6–102.4 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  114–126 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=90 ppl=1.2 variance=0.13333334 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -244,7 +242,7 @@ gcd       1.5 s
 cost      135 mana
 range     30 yd
 
-effect 1  159.50618–180.49382 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  204–225 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=162 ppl=1.6 variance=0.12345679 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -259,7 +257,7 @@ gcd       1.5 s
 cost      180 mana
 range     30 yd
 
-effect 1  226.39394–255.60606 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  299–327 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=231 ppl=2 variance=0.12121212 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -274,7 +272,7 @@ gcd       1.5 s
 cost      235 mana
 range     30 yd
 
-effect 1  315.29413–354.70587 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  421–460 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=323 ppl=2.4 variance=0.11764706 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -289,7 +287,7 @@ gcd       1.5 s
 cost      285 mana
 range     30 yd
 
-effect 1  406.22595–453.77405 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  552–599 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=416 ppl=2.8 variance=0.11057692 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -304,7 +302,7 @@ gcd       1.5 s
 cost      345 mana
 range     30 yd
 
-effect 1  505–563 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  697–755 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=534 ppl=3.2 variance=0.10861423 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
@@ -382,7 +380,7 @@ range     5 yd
 equip     needs a melee weapon
 labels    26
 
-effect 1  normalised weapon damage +17 to the enemy (at level 60)
+effect 1  normalised weapon damage +17.5 to the enemy (at level 60)
           E_NORMALIZED_WEAPON_DMG base=17 ppl=0.1 variance=0.25 sp=0.429 target=[6,0]
 effect 2  29% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=29 target=[6,0]
@@ -401,7 +399,7 @@ range     5 yd
 equip     needs a melee weapon
 labels    26
 
-effect 1  normalised weapon damage +12 to the enemy (at level 60)
+effect 1  normalised weapon damage +12.5 to the enemy (at level 60)
           E_NORMALIZED_WEAPON_DMG base=12 ppl=0.1 variance=0.25 sp=0.429 target=[6,0]
 effect 2  25% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=25 target=[6,0]
@@ -420,7 +418,7 @@ range     5 yd
 equip     needs a melee weapon
 labels    26
 
-effect 1  normalised weapon damage +25 to the enemy (at level 60)
+effect 1  normalised weapon damage +25.5 to the enemy (at level 60)
           E_NORMALIZED_WEAPON_DMG base=24 ppl=0.3 variance=0.25 sp=0.429 target=[6,0]
 effect 2  36% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=36 target=[6,0]
@@ -477,7 +475,7 @@ range     5 yd
 equip     needs a melee weapon
 labels    26
 
-effect 1  normalised weapon damage +60 to the enemy (at level 60)
+effect 1  normalised weapon damage +60.5 to the enemy (at level 60)
           E_NORMALIZED_WEAPON_DMG base=53 ppl=1.5 variance=0.25 sp=0.429 target=[6,0]
 effect 2  43% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=43 target=[6,0]
@@ -667,7 +665,7 @@ https://www.wowhead.com/forever/spell=1311085
 20271 Judgement
 school    holy
 cooldown  10 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     10 yd
 attrs     not a proc
 labels    26
@@ -715,7 +713,7 @@ range     50000 yd
 attrs     not a proc
 labels    26
 
-effect 1  135.18556–146.81444 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  137–146 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=97 ppl=5.6 variance=0.082474224 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20467
@@ -749,7 +747,7 @@ range     50000 yd
 attrs     not a proc
 labels    26
 
-effect 1  191.80392–210.19608 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  194–209 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=153 ppl=6.1 variance=0.09150327 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20963
@@ -761,7 +759,7 @@ range     50000 yd
 attrs     not a proc
 labels    26
 
-effect 1  245.94392–270.05606 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  248–269 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=214 ppl=5.6 variance=0.093457945 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20964
@@ -773,7 +771,7 @@ range     50000 yd
 attrs     not a proc
 labels    26
 
-effect 1  306.72263–337.27737 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  309–336 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=274 ppl=6.1 variance=0.09489051 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20965
@@ -1181,7 +1179,7 @@ school    holy
 defense   magic
 duration  30 s
 gcd       1.5 s
-cost      4% of maximum mana
+cost      4% of base mana
 attrs     can proc from procs
 labels    1203
 proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count

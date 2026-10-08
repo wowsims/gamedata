@@ -67,7 +67,7 @@ school    arcane
 defense   magic
 cooldown  3 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    3096
 refs      400588 Missile Barrage
@@ -95,7 +95,7 @@ gcd       1.5 s
 cost      80 mana
 range     30 yd
 
-effect 1  145 arcane damage to the enemy (at level 60)
+effect 1  180 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=120 ppl=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16067
@@ -108,7 +108,7 @@ gcd       1.5 s
 cost      80 mana
 range     30 yd
 
-effect 1  110 arcane damage to the enemy (at level 60)
+effect 1  145 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=85 ppl=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18091
@@ -118,11 +118,11 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      7% of maximum mana
+cost      7% of base mana
 range     30 yd
 labels    17
 
-effect 1  1047–1215 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  1419–1587 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=1131 ppl=6.2 variance=0.14854111 sp=0.714 target=[6,0]
 effect 2  casts 36032 to the caster
           E_TRIGGER_SPELL base=0 trigger=36032 target=[1,0]
@@ -153,12 +153,12 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  56.39388–65.606125 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  57–66 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=54 ppl=0.9 variance=0.15102041 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400574
@@ -190,12 +190,12 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  130.35306–151.64694 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  131–152 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=130 ppl=1.4 variance=0.15102041 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239696
@@ -205,12 +205,12 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  167.33266–194.66734 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  168–195 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=169 ppl=1.6 variance=0.15102041 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239697
@@ -220,12 +220,12 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  268.10205–311.89795 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  269–312 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=274 ppl=2.1 variance=0.15102041 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239699
@@ -235,12 +235,12 @@ school    arcane
 defense   magic
 cast      2.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  364.249–423.751 arcane damage to the enemy (at level 60, +0.714 spell power)
+effect 1  364–424 arcane damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=394 ppl=2.6 variance=0.15102041 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239700
@@ -290,7 +290,7 @@ school    arcane
 icd       1 s
 attrs     passive
 labels    17
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1; tooltip says damaging spells only
 refs      12536 Clearcasting
 
 effect 1  casts 12536 Clearcasting on its trigger
@@ -319,7 +319,7 @@ gcd       1.5 s
 cost      120 mana
 labels    17
 
-effect 1  55.1–60.9 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  55–61 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.1 sp=0.143 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8437
@@ -331,7 +331,7 @@ gcd       1.5 s
 cost      185 mana
 labels    17
 
-effect 1  94.11881–101.88119 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  94–103 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=94 ppl=0.9 variance=0.07920792 sp=0.143 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8438
@@ -343,7 +343,7 @@ gcd       1.5 s
 cost      250 mana
 labels    17
 
-effect 1  133.24828–144.75172 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  133–146 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=135 ppl=0.9 variance=0.08275862 sp=0.143 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8439
@@ -355,7 +355,7 @@ gcd       1.5 s
 cost      315 mana
 labels    17
 
-effect 1  180.24742–195.75258 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  180–197 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=183 ppl=1.1 variance=0.082474224 sp=0.143 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10201
@@ -367,7 +367,7 @@ gcd       1.5 s
 cost      390 mana
 labels    17
 
-effect 1  238.19763–257.80237 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  238–259 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.07905138 sp=0.143 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10202
@@ -378,7 +378,7 @@ defense   magic
 gcd       1.5 s
 cost      390 mana
 
-effect 1  248.76285–269.23715 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
+effect 1  319–340 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=253 ppl=1.3 variance=0.07905138 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=22460
@@ -504,7 +504,7 @@ duration  1800 s
 cost      90 mana
 range     30 yd
 
-effect 1  +18 intellect to the friendly target (at level 60)
+effect 1  +22 intellect to the friendly target (at level 60)
           E_APPLY_AURA A_MOD_STAT base=10 ppl=0.2 misc=3 target=[21,0]
 
 https://www.wowhead.com/forever/spell=13326
@@ -539,7 +539,7 @@ school    arcane
 attrs     passive
 labels    17
 
-effect 1  +10% strength
+effect 1  +10% intellect
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc2=8 target=[1,0]
 effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x20201000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x20201000 target=[1,0]
@@ -553,7 +553,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  25 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  25.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=24 ppl=0.3 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7268
@@ -616,7 +616,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  32 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  32.6 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=31 ppl=0.4 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7269
@@ -674,7 +674,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  97 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  97.8 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=95 ppl=0.7 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8418
@@ -686,7 +686,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  68 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  68.4 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=66 ppl=0.6 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8419
@@ -732,7 +732,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  133 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  133.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=130 ppl=0.8 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10273
@@ -744,7 +744,7 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  174 arcane damage to the enemy (at level 60, +0.286 spell power)
+effect 1  174.6 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=171 ppl=0.9 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10274
@@ -771,7 +771,7 @@ school    arcane
 defense   magic
 range     30 yd
 
-effect 1  327 arcane damage to the enemy (+0.2 spell power)
+effect 1  327.43057 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=327.43057 sp=0.2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15736
@@ -796,7 +796,7 @@ school    arcane
 defense   magic
 range     30 yd
 
-effect 1  654 arcane damage to the enemy (+0.2 spell power)
+effect 1  654.86115 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=654.86115 sp=0.2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15791
@@ -823,7 +823,7 @@ school    arcane
 defense   magic
 range     30 yd
 
-effect 1  1309 arcane damage to the enemy (+0.2 spell power)
+effect 1  1309.7223 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=1309.7223 sp=0.2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=22273
@@ -942,7 +942,7 @@ defense   magic
 duration  1 s
 cooldown  15 s (category)
 gcd       1.5 s
-cost      35% of maximum mana
+cost      35% of base mana
 excluded caster aura 450804
 labels    17
 
@@ -1868,7 +1868,7 @@ defense   magic
 duration  3 s
 cooldown  12 s
 gcd       1.5 s
-cost      45% of maximum mana
+cost      45% of base mana
 range     40 yd
 attrs     channeled
 refs      400735 Temporal Beacon
@@ -2215,7 +2215,7 @@ school    arcane
 defense   magic
 duration  3 s
 gcd       1.5 s
-cost      28% of maximum mana
+cost      28% of base mana
 range     40 yd
 attrs     channeled
 refs      400735 Temporal Beacon
@@ -2254,7 +2254,7 @@ https://www.wowhead.com/forever/spell=456485
 school    arcane
 defense   magic
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 range     30 yd
 labels    17
 

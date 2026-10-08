@@ -155,7 +155,7 @@ cooldown  20 s
 gcd       1 s
 cost      40 energy
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    20
 
@@ -177,7 +177,7 @@ duration  15 s
 gcd       1 s
 cost      35 energy
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    20
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
@@ -445,7 +445,7 @@ cost      20 energy
 range     25 yd
 stance    Stealth
 excluded caster aura 450811
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  unrecognised shape

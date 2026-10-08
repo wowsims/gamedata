@@ -4,7 +4,7 @@ defense   magic
 duration  10 s
 cooldown  20 s
 gcd       1.5 s
-cost      11% of maximum mana
+cost      11% of base mana
 range     30 yd
 refs      436391 Decoy Totem
 
@@ -386,7 +386,7 @@ defense   magic
 duration  45 s
 cooldown  15 s (category)
 gcd       1 s
-cost      6% of maximum mana
+cost      6% of base mana
 labels    24
 refs      8179 Grounding Totem Passive
 
@@ -476,7 +476,7 @@ school    fire
 defense   melee
 cooldown  6 s
 gcd       1.5 s
-cost      1% of maximum mana
+cost      1% of base mana
 range     5 yd
 equip     needs a melee weapon in the off hand
 attrs     refund on miss
@@ -952,7 +952,7 @@ https://www.wowhead.com/forever/spell=470753
 school    nature
 attrs     passive, can proc from procs
 labels    24
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 refs      408505 Maelstrom Weapon
 
 effect 1  a dummy aura holding 20
@@ -995,7 +995,7 @@ attrs     passive, can proc from procs
 labels    24
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_598 base=100 misc=3 target=[1,0]
+          E_APPLY_AURA A_MOD_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
 effect 2  a dummy aura holding 320 (at level 60)
           E_APPLY_AURA A_DUMMY base=20 ppl=5 target=[1,0]
 
@@ -1123,7 +1123,7 @@ school    nature
 defense   magic
 duration  1800 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 targets   up to 1
 refs      443320 Loyal Beta
@@ -1337,7 +1337,7 @@ school    nature
 duration  1 s
 cooldown  60 s
 gcd       1.5 s
-cost      25% of maximum mana
+cost      25% of base mana
 range     30 yd
 labels    24
 

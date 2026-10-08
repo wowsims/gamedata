@@ -145,7 +145,7 @@ https://www.wowhead.com/forever/spell=25290
 school    holy
 defense   magic
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    26
 
@@ -380,7 +380,7 @@ school    holy
 defense   magic
 duration  permanent
 cooldown  120 s
-cost      4% of maximum mana
+cost      4% of base mana
 charges   1
 attrs     can proc from procs
 labels    26
@@ -406,7 +406,7 @@ defense   magic
 cast      2.5 s
 cooldown  8 s
 gcd       1.5 s
-cost      61% of maximum mana
+cost      61% of base mana
 range     40 yd
 refs      458857 Divine Light
 
@@ -468,7 +468,7 @@ cost      85 mana
 range     30 yd
 labels    26
 
-effect 1  79.333336–90.666664 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  80–90 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=79 ppl=1.2 variance=0.13333334 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=879
@@ -482,7 +482,7 @@ cost      135 mana
 range     30 yd
 labels    26
 
-effect 1  139.80247–158.19753 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  140–158 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=141 ppl=1.6 variance=0.12345679 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5614
@@ -496,7 +496,7 @@ cost      180 mana
 range     30 yd
 labels    26
 
-effect 1  199.15152–224.84848 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  200–224 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=202 ppl=2 variance=0.12121212 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5615
@@ -510,7 +510,7 @@ cost      235 mana
 range     30 yd
 labels    26
 
-effect 1  285.17648–320.82352 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  286–320 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=291 ppl=2.4 variance=0.11764706 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10312
@@ -524,7 +524,7 @@ cost      285 mana
 range     30 yd
 labels    26
 
-effect 1  375.99518–420.00482 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  377–419 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=384 ppl=2.8 variance=0.11057692 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10313
@@ -538,7 +538,7 @@ cost      345 mana
 range     30 yd
 labels    26
 
-effect 1  474.73782–529.26215 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  475–529 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=502 ppl=3.2 variance=0.10861423 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10314
@@ -552,7 +552,7 @@ cost      35 mana
 range     40 yd
 labels    26
 
-effect 1  47.19403–54.80597 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  48–54 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=46 ppl=1 variance=0.14925373 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19750
@@ -566,7 +566,7 @@ cost      50 mana
 range     40 yd
 labels    26
 
-effect 1  67.1068–76.8932 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  68–77 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=66 ppl=1.3 variance=0.13592233 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19939
@@ -580,7 +580,7 @@ cost      70 mana
 range     40 yd
 labels    26
 
-effect 1  102.62987–115.37013 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  103–115 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=101 ppl=1.6 variance=0.11688311 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19940
@@ -594,7 +594,7 @@ cost      90 mana
 range     40 yd
 labels    26
 
-effect 1  150.8134–169.1866 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  151–170 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=151 ppl=1.9 variance=0.11483254 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19941
@@ -608,7 +608,7 @@ cost      115 mana
 range     40 yd
 labels    26
 
-effect 1  220.77031–247.22969 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  221–247 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=223 ppl=2.2 variance=0.11307421 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19942
@@ -622,7 +622,7 @@ cost      140 mana
 range     40 yd
 labels    26
 
-effect 1  291.0303–324.9697 healing to the friendly target (at level 60, +0.429 spell power)
+effect 1  291–326 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=303 ppl=2.6 variance=0.11019284 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=19943
@@ -753,7 +753,7 @@ cost      425 mana
 range     30 yd
 labels    26
 
-effect 1  473.56982–522.4302 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  474–522 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=498 ppl=3.1 variance=0.09811321 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=24239
@@ -768,7 +768,7 @@ cost      360 mana
 range     30 yd
 labels    26
 
-effect 1  380.95–421.05 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  382–421 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=388 ppl=2.7 variance=0.1 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=24274
@@ -783,7 +783,7 @@ cost      295 mana
 range     30 yd
 labels    26
 
-effect 1  285–315 holy damage to the enemy (at level 60, +0.429 spell power)
+effect 1  286–314 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=288 ppl=2.4 variance=0.1 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=24275
@@ -791,7 +791,7 @@ https://www.wowhead.com/forever/spell=24275
 429151 Hammer of Wrath
 school    holy
 defense   melee
-cost      12% of maximum mana
+cost      12% of base mana
 range     30 yd
 
 effect 1  300 holy damage to the enemy (+0.15 spell power +0.15 attack power)
@@ -818,7 +818,7 @@ cost      35 mana
 range     40 yd
 labels    26
 
-effect 1  41.720932–50.279068 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  42–51 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=43 ppl=0.8 variance=0.18604651 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=635
@@ -832,7 +832,7 @@ cost      60 mana
 range     40 yd
 labels    26
 
-effect 1  80.578316–95.421684 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  81–96 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=83 ppl=1.1 variance=0.16867469 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=639
@@ -846,7 +846,7 @@ cost      110 mana
 range     40 yd
 labels    26
 
-effect 1  149.80925–176.19075 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  150–177 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=155 ppl=1.7 variance=0.1618497 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=647
@@ -860,7 +860,7 @@ cost      190 mana
 range     40 yd
 labels    26
 
-effect 1  278.34836–319.65164 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  279–319 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=287 ppl=2.4 variance=0.13813815 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1026
@@ -874,7 +874,7 @@ cost      275 mana
 range     40 yd
 labels    26
 
-effect 1  439.2663–494.7337 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  440–495 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=452 ppl=3.1 variance=0.11877394 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1042
@@ -888,7 +888,7 @@ cost      365 mana
 range     40 yd
 labels    26
 
-effect 1  628.1055–701.8945 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  629–701 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=646 ppl=3.8 variance=0.11096076 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=3472
@@ -902,7 +902,7 @@ cost      465 mana
 range     40 yd
 labels    26
 
-effect 1  872.1622–971.8378 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  873–971 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=899 ppl=4.6 variance=0.10810811 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10328
@@ -916,7 +916,7 @@ cost      580 mana
 range     40 yd
 labels    26
 
-effect 1  1175.9894–1310.0106 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  1177–1309 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=1217 ppl=5.2 variance=0.1078208 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=10329
@@ -982,7 +982,7 @@ cost      660 mana
 range     40 yd
 labels    26
 
-effect 1  1495.3572–1664.6428 healing to the friendly target (at level 60, +0.714 spell power)
+effect 1  1495–1665 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=1580 ppl=5.8 variance=0.10714286 sp=0.714 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25292
@@ -1137,7 +1137,7 @@ range     20 yd
 attrs     not a proc
 labels    26
 
-effect 1  334.26315–361.73685 holy damage to the enemy (+0.429 spell power)
+effect 1  334–362 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=348 variance=0.078947365 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25902
@@ -1149,7 +1149,7 @@ range     40 yd
 attrs     not a proc
 labels    26
 
-effect 1  307.3684–332.6316 healing to the friendly target (+0.429 spell power)
+effect 1  307–333 healing to the friendly target (+0.429 spell power)
           E_HEAL base=320 variance=0.078947365 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25903
@@ -1161,7 +1161,7 @@ range     20 yd
 attrs     not a proc
 labels    26
 
-effect 1  248.21379–267.7862 holy damage to the enemy (+0.429 spell power)
+effect 1  248–268 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=258 variance=0.07586207 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25911
@@ -1173,7 +1173,7 @@ range     20 yd
 attrs     not a proc
 labels    26
 
-effect 1  175.13208–188.86792 holy damage to the enemy (+0.429 spell power)
+effect 1  175–189 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=182 variance=0.0754717 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25912
@@ -1185,7 +1185,7 @@ range     40 yd
 attrs     not a proc
 labels    26
 
-effect 1  221.27586–238.72414 healing to the friendly target (+0.429 spell power)
+effect 1  221–239 healing to the friendly target (+0.429 spell power)
           E_HEAL base=230 variance=0.07586207 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25913
@@ -1197,7 +1197,7 @@ range     40 yd
 attrs     not a proc
 labels    26
 
-effect 1  150.1132–161.8868 healing to the friendly target (+0.429 spell power)
+effect 1  150–162 healing to the friendly target (+0.429 spell power)
           E_HEAL base=156 variance=0.0754717 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=25914
@@ -1219,7 +1219,7 @@ range     20 yd
 attrs     not a proc
 labels    26
 
-effect 1  128.94339–139.05661 holy damage to the enemy (+0.429 spell power)
+effect 1  129–139 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=134 variance=0.0754717 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1311604
@@ -1231,7 +1231,7 @@ range     40 yd
 attrs     not a proc
 labels    26
 
-effect 1  109.69811–118.30189 healing to the friendly target (+0.429 spell power)
+effect 1  110–118 healing to the friendly target (+0.429 spell power)
           E_HEAL base=114 variance=0.0754717 sp=0.429 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1311605
@@ -1260,7 +1260,7 @@ cost      645 mana
 labels    26
 refs      429147 Stun
 
-effect 1  367.49872–434.50128 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
+effect 1  368–435 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=395 ppl=1.6 variance=0.16708861 sp=0.19 target=[22,15]
 
 https://www.wowhead.com/forever/spell=2812
@@ -1290,7 +1290,7 @@ cost      645 mana
 labels    3096, 3100
 refs      429147 Stun
 
-effect 1  367.49872–434.50128 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
+effect 1  448–515 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=395 ppl=1.6 variance=0.16708861 sp=0.19 target=[22,15]
 
 https://www.wowhead.com/forever/spell=429145
@@ -1305,7 +1305,7 @@ cost      805 mana
 labels    3096, 3100
 refs      429147 Stun
 
-effect 1  490–576 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
+effect 1  604–690 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=533 ppl=1.9 variance=0.16135085 sp=0.19 target=[22,15]
 
 https://www.wowhead.com/forever/spell=429146
@@ -1441,7 +1441,7 @@ school    shadow
 defense   magic
 duration  120 s
 gcd       1.5 s
-cost      2% of maximum mana
+cost      2% of base mana
 
 effect 1  a dummy aura every 4 s (30 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=4000ms target=[1,0]
@@ -1605,7 +1605,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  24.0375–25.9625 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  24–27 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=15 ppl=1.8 variance=0.077 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 216 (at level 60)
           E_DUMMY base=108 ppl=18 sp=0.058 index=2 target=[0,0]
@@ -1619,7 +1619,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  35.576923–38.423077 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  36–39 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=26 ppl=1.9 variance=0.07692308 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 318 (at level 60)
           E_DUMMY base=216 ppl=17 sp=0.125 index=2 target=[0,0]
@@ -1633,7 +1633,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  52.317074–57.682926 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  53–58 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=41 ppl=2.4 variance=0.09756097 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 490 (at level 60)
           E_DUMMY base=352 ppl=23 sp=0.185 index=2 target=[0,0]
@@ -1647,7 +1647,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  72.2–79.8 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  73–80 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=60 ppl=2.8 variance=0.1 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 727 (at level 60)
           E_DUMMY base=541 ppl=31 sp=0.2 index=2 target=[0,0]
@@ -1661,7 +1661,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  95.12195–104.87805 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  96–105 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=82 ppl=3.1 variance=0.09756097 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 1007 (at level 60)
           E_DUMMY base=785 ppl=37 sp=0.2 index=2 target=[0,0]
@@ -1675,7 +1675,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  122.97196–135.02803 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  124–135 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=107 ppl=3.8 variance=0.093457945 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 1328 (at level 60)
           E_DUMMY base=1082 ppl=41 sp=0.2 index=2 target=[0,0]
@@ -1689,7 +1689,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  153.9489–168.0511 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  155–168 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=137 ppl=4.1 variance=0.08759124 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 1689 (at level 60)
           E_DUMMY base=1407 ppl=47 sp=0.2 index=2 target=[0,0]
@@ -1703,7 +1703,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  169.62354–186.37646 holy damage to the enemy (at level 60, +0.5 spell power)
+effect 1  170–187 holy damage to the enemy (at level 60, +0.5 spell power)
           E_SCHOOL_DAMAGE base=170 ppl=4.1 variance=0.09411765 sp=0.5 target=[6,0]
 effect 2  a dummy effect holding 1880 (at level 60)
           E_DUMMY base=1786 ppl=47 sp=0.2 index=2 target=[0,0]
@@ -1903,7 +1903,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  324.61243–343.38757 healing to target 132 (at level 60, +0.143 spell power)
+effect 1  325–344 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=324 ppl=1.2 variance=0.056213018 sp=0.143 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1310912
@@ -1915,7 +1915,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  175.13208–188.86792 holy damage to the enemy (+0.429 spell power)
+effect 1  175–189 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=182 variance=0.0754717 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1310914
@@ -1945,7 +1945,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  485.94675–514.0533 healing to target 132 (at level 60, +0.143 spell power)
+effect 1  486–515 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=487 ppl=1.5 variance=0.056213018 sp=0.143 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1311591
@@ -1957,7 +1957,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  267.50943–288.49057 holy damage to the enemy (+0.429 spell power)
+effect 1  268–288 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=278 variance=0.0754717 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1311592
@@ -1971,6 +1971,7 @@ charges   1
 attrs     not a proc
 labels    26
 proc      hears PROC_FLAG_TAKE_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+refs      1311591 Light's Vigil
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 target=[21,0]
@@ -2018,7 +2019,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  684.213–723.787 healing to target 132 (at level 60, +0.143 spell power)
+effect 1  684–724 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=704 ppl=1.8 variance=0.056213018 sp=0.143 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1311596
@@ -2046,7 +2047,7 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  380.09433–409.90567 holy damage to the enemy (+0.429 spell power)
+effect 1  380–410 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=395 variance=0.0754717 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1311598
@@ -2081,7 +2082,7 @@ https://www.wowhead.com/forever/spell=1311806
 school    holy
 defense   magic
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    26
 
@@ -2119,7 +2120,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 range     30 yd
 labels    26, 6316
 
@@ -2133,7 +2134,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 range     30 yd
 labels    26, 6316
 
@@ -2147,7 +2148,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 range     30 yd
 labels    26, 6316
 
@@ -2161,7 +2162,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 range     30 yd
 labels    26, 6316
 
@@ -2175,7 +2176,7 @@ school    holy
 defense   magic
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 range     30 yd
 labels    26, 6316
 
@@ -2189,7 +2190,7 @@ school    holy
 defense   magic
 duration  30 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 range     40 yd
 labels    26
 proc      hears PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_ANY_DAMAGE; no roll, it fires whenever its condition is met
@@ -2233,7 +2234,7 @@ school    holy
 defense   magic
 duration  60 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 range     40 yd
 labels    3096
 proc      hears PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_ANY_DAMAGE; no roll, it fires whenever its condition is met; tooltip says heals count

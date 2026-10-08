@@ -245,7 +245,7 @@ school    shadow
 defense   magic
 cast      3 s
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 labels    19
 refs      3026 Use Soulstone
 
@@ -268,7 +268,7 @@ school    shadow
 defense   magic
 cast      3 s
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 labels    19
 refs      20758 Use Soulstone
 
@@ -282,7 +282,7 @@ school    shadow
 defense   magic
 cast      3 s
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 labels    19
 refs      20759 Use Soulstone
 
@@ -296,7 +296,7 @@ school    shadow
 defense   magic
 cast      3 s
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 labels    19
 refs      20760 Use Soulstone
 
@@ -310,7 +310,7 @@ school    shadow
 defense   magic
 cast      3 s
 gcd       1.5 s
-cost      85% of maximum mana
+cost      85% of base mana
 labels    19
 refs      20761 Use Soulstone
 
@@ -515,7 +515,7 @@ https://www.wowhead.com/forever/spell=11735
 412788 Demon Charge
 school    physical
 cooldown  15 s (category)
-cost      5% of maximum mana
+cost      5% of base mana
 range     8-25 yd
 refs      7922 Charge Stun
 
@@ -667,7 +667,7 @@ defense   magic
 duration  6 s
 cooldown  600 s
 gcd       1.5 s
-cost      5% of maximum mana
+cost      5% of base mana
 
 effect 1  taunts to every enemy around the caster
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,15]
@@ -815,18 +815,18 @@ school    shadow
 defense   magic
 duration  1800 s
 gcd       1.5 s
-cost      28% of maximum mana
+cost      28% of base mana
 labels    3096
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=50 misc=126 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OBS_MOD_HEALTH base=2 period=5000ms target=[1,0]
-effect 3  +60 every school damage done (at level 60)
+effect 3  +61 every school damage done (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=1 ppl=1 misc=127 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=50 target=[1,0]
-effect 5  +60 healing power (at level 60)
+effect 5  +61 healing power (at level 60)
           E_APPLY_AURA A_MOD_HEALING_DONE base=1 ppl=1 misc=127 target=[1,0]
 
 https://www.wowhead.com/forever/spell=403619
@@ -908,7 +908,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_PERCENT base=-100 target=[1,0]
 effect 3  +0% threat to the caster's pet
           E_APPLY_AURA A_MOD_THREAT base=0 amplitude=2.2 misc=127 target=[5,0]
-effect 4  5 shadow damage every 1 s (10 ticks)
+effect 4  5.45 shadow damage every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5.45 period=1000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=755
@@ -929,7 +929,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_PERCENT base=-100 target=[1,0]
 effect 3  +0% threat to the caster's pet
           E_APPLY_AURA A_MOD_THREAT base=0 amplitude=2.2 misc=127 target=[5,0]
-effect 4  10 shadow damage every 1 s (10 ticks)
+effect 4  10.49 shadow damage every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10.49 period=1000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=3698
@@ -971,7 +971,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_PERCENT base=-100 target=[1,0]
 effect 3  +0% threat to the caster's pet
           E_APPLY_AURA A_MOD_THREAT base=0 amplitude=2.2 misc=127 target=[5,0]
-effect 4  25 shadow damage every 1 s (10 ticks)
+effect 4  25.4 shadow damage every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=25.4 period=1000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=3700
@@ -1034,7 +1034,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_PERCENT base=-100 target=[1,0]
 effect 3  +0% threat to the caster's pet
           E_APPLY_AURA A_MOD_THREAT base=0 amplitude=2.2 misc=127 target=[5,0]
-effect 4  61 shadow damage every 1 s (10 ticks)
+effect 4  61.2 shadow damage every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=61.2 period=1000ms target=[1,0]
 
 https://www.wowhead.com/forever/spell=11695
@@ -1240,7 +1240,7 @@ duration  15 s
 cast      2 s
 cooldown  3600 s (category)
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 range     30 yd
 refs      22699 Inferno, 20310 Stun, 20882 Subjugate Demon
 
@@ -1321,7 +1321,7 @@ https://www.wowhead.com/forever/spell=1219475
 school    physical
 duration  permanent
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 stance exclude Moonkin
 refs      403816 Metamorphosis, 403835 Shadow Cleave
 
@@ -1359,7 +1359,7 @@ effect 16 replaces an action bar spell with 25307 Shadow Bolt
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403852 misc=25307 target=[1,0]
 effect 17 replaces an action bar spell with 412784
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412789 sp=1 misc=412784 target=[1,0]
-effect 18 replaces an action bar spell with 412783 Metamorphosis : Demon Charge
+effect 18 replaces an action bar spell with 412783
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412788 sp=1 misc=412783 target=[1,0]
 effect 19 replaces an action bar spell with 6213 Fear
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=442226 misc=6213 target=[1,0]
@@ -1402,7 +1402,7 @@ defense   magic
 duration  120 s
 cooldown  120 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 range     30 yd
 attrs     channeled
 labels    19
@@ -1432,7 +1432,7 @@ duration  60 s
 cast      10 s
 cooldown  3600 s
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 range     30 yd
 attrs     channeled
 labels    19
@@ -1467,7 +1467,7 @@ cost      12 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  2.5–5.5 shadow damage to the enemy (at level 60, +0.047 spell power)
+effect 1  2–7 shadow damage to the enemy (at level 60, +0.047 spell power)
           E_SCHOOL_DAMAGE base=4 ppl=0.13 variance=0.75 sp=0.047 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403835
@@ -1481,7 +1481,7 @@ cost      20 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  6.1875–11.8125 shadow damage to the enemy (at level 60, +0.1 spell power)
+effect 1  8–13 shadow damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=8 ppl=0.2 variance=0.625 sp=0.1 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403839
@@ -1495,7 +1495,7 @@ cost      35 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  13.764706–22.235294 shadow damage to the enemy (at level 60, +0.187 spell power)
+effect 1  18–27 shadow damage to the enemy (at level 60, +0.187 spell power)
           E_SCHOOL_DAMAGE base=17 ppl=0.3 variance=0.47058824 sp=0.187 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403840
@@ -1509,7 +1509,7 @@ cost      55 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  25.066666–38.933334 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  34–46 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=30 ppl=0.4 variance=0.43333334 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403841
@@ -1523,7 +1523,7 @@ cost      80 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  41.08–62.92 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  57–78 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=50 ppl=0.53 variance=0.42 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403842
@@ -1537,7 +1537,7 @@ cost      105 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  59.375–90.625 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  82–113 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=72 ppl=0.63 variance=0.41666666 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403843
@@ -1551,7 +1551,7 @@ cost      132 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  80.878784–123.121216 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  115–158 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=99 ppl=0.77 variance=0.41414142 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403844
@@ -1565,7 +1565,7 @@ cost      157 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  104.1811–157.8189 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  150–203 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=127 ppl=0.87 variance=0.40944883 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403848
@@ -1579,7 +1579,7 @@ cost      185 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  127.5–192.5 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  188–252 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=160 ppl=1 variance=0.40625 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403851
@@ -1593,7 +1593,7 @@ cost      190 mana
 range     5 yd
 refs      460200 Defender's Resolve, 460171 Defender's Resolve
 
-effect 1  136–204 shadow damage to the enemy (at level 60, +0.286 spell power)
+effect 1  197–266 shadow damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=170 ppl=1.03 variance=0.4 sp=0.286 chain=10 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403852
@@ -1679,7 +1679,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 labels    19
 
 effect 1  unrecognised shape
@@ -1704,7 +1704,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 labels    19
 
 effect 1  unrecognised shape
@@ -1729,7 +1729,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 labels    19
 
 effect 1  unrecognised shape
@@ -1743,7 +1743,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 labels    19
 
 effect 1  unrecognised shape
@@ -1768,7 +1768,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      100% of maximum mana
+cost      100% of base mana
 labels    19
 
 effect 1  unrecognised shape

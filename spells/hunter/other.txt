@@ -111,7 +111,7 @@ defense   ranged
 range     30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=19767
@@ -415,7 +415,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=28317
@@ -1179,9 +1179,9 @@ refs      440531 Hit and Run, 1218358 Rabid Frenzy
 
 effect 1  casts 440531 Hit and Run when the target is hit from family 9 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=440531 family=9 mask=0x0,0x0,0x10000 target=[1,0]
-effect 2  a dummy effect holding 90 to the caster (at level 60)
+effect 2  a dummy effect holding 92 to the caster (at level 60)
           E_DUMMY base=14 ppl=1.3 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
-effect 3  a dummy effect holding -640 to the caster (at level 60)
+effect 3  a dummy effect holding -650 to the caster (at level 60)
           E_DUMMY base=-50 ppl=-10 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=440533
@@ -1230,7 +1230,7 @@ range     5-30 yd
 equip     needs a thrown
 stack     up to 3
 
-effect 1  116 physical damage every 3 s to the enemy (3 ticks)
+effect 1  116.93949 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=1 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=15860
@@ -1243,7 +1243,7 @@ range     5-30 yd
 equip     needs a thrown
 stack     up to 3
 
-effect 1  233 physical damage every 3 s to the enemy (3 ticks)
+effect 1  233.87898 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=233.87898 sp=1 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=16001
@@ -1419,7 +1419,7 @@ defense   ranged
 cast      -1000 s
 cooldown  12 s
 gcd       1.5 s
-cost      3% of maximum mana
+cost      3% of base mana
 range     35 yd
 equip     needs a bow, gun or crossbow
 labels    3096
@@ -1690,7 +1690,7 @@ https://www.wowhead.com/forever/spell=459593
 school    physical
 duration  permanent
 attrs     passive
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance; tooltip says damaging spells only
 
 effect 1  casts 28762 Not There on its trigger from family 9 mask 0x1000
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=28762 family=9 mask=0x1000 target=[1,0]
@@ -2383,9 +2383,9 @@ defense   magic
 duration  120 s
 range     30 yd
 
-effect 1  +90 attack power to the enemy (at level 60)
+effect 1  +92 attack power to the enemy (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=14 ppl=1.3 target=[6,0]
-effect 2  -640 armor to the enemy (at level 60)
+effect 2  -650 armor to the enemy (at level 60)
           E_APPLY_AURA A_MOD_RESISTANCE base=-50 ppl=-10 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
@@ -2436,6 +2436,18 @@ effect 1  SPELLMOD_DAMAGE +4% on family 9 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=9 mask=0x0,0x0,0x10000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=459598
+=======
+1323410 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 9 mask 0x2800
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=9 mask=0x2800 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323410
 =======
 1218582 S03 - Item - Naxxramas - Hunter - Melee 2P Bonus
 school    physical
@@ -2678,7 +2690,7 @@ https://www.wowhead.com/forever/spell=467235
 467312 S03 - Item - T2- Hunter - Ranged 4P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
@@ -2845,7 +2857,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6660
@@ -2856,7 +2868,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  315.42856–420.57144 physical damage to the enemy
+effect 1  263–474 physical damage to the enemy
           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15547
@@ -2867,7 +2879,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  420.85715–561.1429 physical damage to the enemy
+effect 1  351–631 physical damage to the enemy
           E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15620
@@ -2878,7 +2890,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  835.869–1128.131 physical damage to the enemy
+effect 1  690–1275 physical damage to the enemy
           E_SCHOOL_DAMAGE base=982.29175 variance=0.29761904 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16100
@@ -2889,7 +2901,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  1256.7262–1689.2738 physical damage to the enemy
+effect 1  1041–1906 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16496
@@ -2900,7 +2912,7 @@ defense   ranged
 range     100 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  104.57143–139.42857 physical damage to the enemy
+effect 1  88–158 physical damage to the enemy
           E_SCHOOL_DAMAGE base=122.78647 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17353
@@ -2911,7 +2923,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18561
@@ -2922,7 +2934,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  2086.75–2823.25 physical damage to the enemy
+effect 1  1719–3192 physical damage to the enemy
           E_SCHOOL_DAMAGE base=2455.7292 variance=0.3 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20463
@@ -2933,7 +2945,7 @@ defense   ranged
 range     80 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  525.4286–700.5714 physical damage to the enemy
+effect 1  439–789 physical damage to the enemy
           E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=22121
@@ -2944,7 +2956,7 @@ defense   ranged
 range     80 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=22411
@@ -2955,7 +2967,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  1256.7262–1689.2738 physical damage to the enemy
+effect 1  1041–1906 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=22907
@@ -2966,7 +2978,7 @@ defense   ranged
 range     60 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  174.85715–233.14285 physical damage to the enemy
+effect 1  146–263 physical damage to the enemy
           E_SCHOOL_DAMAGE base=204.64412 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23073
@@ -2976,7 +2988,7 @@ school    physical
 range     50 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  315.42856–420.57144 physical damage to the enemy
+effect 1  263–474 physical damage to the enemy
           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 sp=1 misc=100 target=[6,0]
@@ -2989,7 +3001,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1213272
@@ -3000,7 +3012,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  420.85715–561.1429 holy damage to the enemy
+effect 1  421–561 holy damage to the enemy
           E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1230438
@@ -3011,7 +3023,7 @@ defense   ranged
 range     50 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  257.14285–342.85715 physical damage to the enemy
+effect 1  215–387 physical damage to the enemy
           E_SCHOOL_DAMAGE base=300.9323 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1306284
@@ -3061,7 +3073,7 @@ defense   ranged
 range     40 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25200
@@ -3072,7 +3084,7 @@ defense   ranged
 range     60 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  496.4–671.6 physical damage to the enemy
+effect 1  409–760 physical damage to the enemy
           E_SCHOOL_DAMAGE base=584.69745 variance=0.3 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=26282
@@ -3125,101 +3137,11 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 9 mask 0x61a00,0x80020000,0xa34
 
 https://www.wowhead.com/forever/spell=415401
 =======
-1264478 Sonic Blast (Rank 1)
-school    nature
-defense   magic
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      80 focus
-range     5 yd
-labels    23
-
-effect 1  14.666667–17.333334 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=16 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1264478
-=======
-1264479 Sonic Blast (Rank 2)
-school    nature
-defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      80 focus
-range     5 yd
-labels    23
-
-effect 1  33–39 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=36 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1264479
-=======
-1264480 Sonic Blast (Rank 3)
-school    nature
-defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      80 focus
-range     5 yd
-labels    23
-
-effect 1  44–52 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=48 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1264480
-=======
-1264481 Sonic Blast (Rank 4)
-school    nature
-defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      80 focus
-range     5 yd
-labels    23
-
-effect 1  62.333332–73.666664 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=68 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1264481
-=======
-1264482 Sonic Blast (Rank 5)
-school    nature
-defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      80 focus
-range     5 yd
-labels    23
-
-effect 1  77–91 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=84 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1264482
-=======
 27919 Spit
 school    nature
 range     30 yd
 
-effect 1  836.4–1131.6 nature damage to the enemy (at level 60)
+effect 1  1097–1272 nature damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=584.69745 ppl=10 variance=0.3 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 sp=1 misc=100 target=[6,0]
@@ -3253,7 +3175,7 @@ school    physical
 defense   ranged
 cast      1.5 s
 gcd       1.5 s
-cost      5% of maximum mana
+cost      5% of base mana
 range     8-35 yd
 equip     needs a bow, gun or crossbow
 
@@ -3673,7 +3595,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a thrown
 
-effect 1  210–280 physical damage to the enemy
+effect 1  175–316 physical damage to the enemy
           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10277
@@ -3684,7 +3606,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a thrown
 
-effect 1  315.42856–420.57144 physical damage to the enemy
+effect 1  263–474 physical damage to the enemy
           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15607
@@ -3695,7 +3617,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a thrown
 
-effect 1  420.85715–561.1429 physical damage to the enemy
+effect 1  351–631 physical damage to the enemy
           E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15795
@@ -3706,7 +3628,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a thrown
 
-effect 1  525.4286–700.5714 physical damage to the enemy
+effect 1  439–789 physical damage to the enemy
           E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16000
@@ -3717,7 +3639,7 @@ defense   ranged
 range     8-40 yd
 equip     needs a thrown
 
-effect 1  2125–2875 physical damage to the enemy
+effect 1  1750–3250 physical damage to the enemy
           E_SCHOOL_DAMAGE base=2500 variance=0.3 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=19785
@@ -3728,7 +3650,7 @@ defense   ranged
 range     5-30 yd
 equip     needs a thrown
 
-effect 1  1045.8715–1408.1285 physical damage to the enemy
+effect 1  865–1590 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1227.8646 variance=0.2952381 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=22887
@@ -3942,7 +3864,7 @@ cooldown  8 s (category)
 gcd       1.5 s
 cost      55 mana
 range     5 yd
-equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the main hand
 attrs     refund on miss
 
 effect 1  normalised weapon damage to the enemy
@@ -3978,7 +3900,7 @@ cooldown  8 s (category)
 gcd       1.5 s
 cost      75 mana
 range     5 yd
-equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the main hand
 attrs     refund on miss
 
 effect 1  normalised weapon damage to the enemy
@@ -3999,7 +3921,7 @@ cooldown  8 s (category)
 gcd       1.5 s
 cost      100 mana
 range     5 yd
-equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the main hand
 attrs     refund on miss
 
 effect 1  normalised weapon damage to the enemy
