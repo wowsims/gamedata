@@ -1022,7 +1022,6 @@ https://www.wowhead.com/forever/spell=8143
 school    nature
 defense   magic
 duration  600 s
-cooldown  15 s (category)
 gcd       1.5 s
 charges   3
 icd       3.5 s
@@ -1032,6 +1031,8 @@ refs      408511 Water Shield
 
 effect 1  casts 408511 Water Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=408511 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=408510
 =======

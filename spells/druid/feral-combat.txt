@@ -109,7 +109,6 @@ school    nature
 stance    Bear
 attrs     passive
 labels    21
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_BONUS_ARMOR_PCT base=180 target=[1,0]
@@ -133,8 +132,8 @@ school    nature
 attrs     passive
 labels    21
 
-effect 1  +30% threat
-          E_APPLY_AURA A_MOD_THREAT base=30 misc=127 target=[1,0]
+effect 1  +50% threat
+          E_APPLY_AURA A_MOD_THREAT base=50 misc=127 target=[1,0]
 
 https://www.wowhead.com/forever/spell=21178
 =======
@@ -428,6 +427,8 @@ labels    21
 
 effect 1  -56 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-46 ppl=-1 target=[22,15]
+effect 2  16 threat to every enemy around the caster
+          E_THREAT base=8 ppl=0.8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=99
 =======
@@ -442,6 +443,8 @@ labels    21
 
 effect 1  -88 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-74 ppl=-1.4 target=[22,15]
+effect 2  24 threat to every enemy around the caster
+          E_THREAT base=16 ppl=0.8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1735
 =======
@@ -456,6 +459,8 @@ labels    21
 
 effect 1  -105 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-95 ppl=-1 target=[22,15]
+effect 2  34 threat to every enemy around the caster
+          E_THREAT base=26 ppl=0.8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9490
 =======
@@ -470,6 +475,8 @@ labels    21
 
 effect 1  -158 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-144 ppl=-1.4 target=[22,15]
+effect 2  42 threat to every enemy around the caster
+          E_THREAT base=34 ppl=0.8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9747
 =======
@@ -484,6 +491,8 @@ labels    21
 
 effect 1  -205 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-193 ppl=-1.4 target=[22,15]
+effect 2  48 threat to every enemy around the caster
+          E_THREAT base=42 ppl=0.8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9898
 =======
@@ -512,7 +521,6 @@ school    nature
 stance    Dire Bear
 attrs     passive
 labels    21
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_BONUS_ARMOR_PCT base=360 target=[1,0]
@@ -1137,6 +1145,18 @@ effect 1  weapon damage +128 to the enemy
 
 https://www.wowhead.com/forever/spell=9881
 =======
+1223242 Natural Instinct
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=25 misc=3 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1223242
+=======
 417051 Natural Reaction
 school    physical
 attrs     passive
@@ -1220,16 +1240,6 @@ effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 
 https://www.wowhead.com/forever/spell=9827
-=======
-1223242 Predatory Instincts
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1223242
 =======
 16972 Predatory Strikes
 school    physical
@@ -2024,8 +2034,8 @@ labels    21
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
-effect 2  a dummy aura holding 3
-          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+effect 2  a dummy aura holding 180 (at level 60)
+          E_APPLY_AURA A_DUMMY base=3 ppl=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=16929
 =======
@@ -2036,9 +2046,9 @@ stance    Cat, Bear, Dire Bear, Moonkin
 labels    21
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_665 base=1 misc=1 misc2=95 target=[1,0]
-effect 2  -600 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=-600 misc=1 target=[1,0]
+          E_APPLY_AURA A_673 base=1 misc=1 misc2=95 target=[1,0]
+effect 2  +180 armor
+          E_APPLY_AURA A_MOD_RESISTANCE base=180 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1306459
 =======

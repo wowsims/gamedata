@@ -993,7 +993,7 @@ https://www.wowhead.com/forever/spell=402839
 school    holy
 cooldown  12 s (category)
 gcd       1.5 s
-cost      100 mana
+cost      150 mana
 range     36 yd
 excluded caster aura 15473 Shadowform
 attrs     channeled
@@ -1041,8 +1041,8 @@ attrs     not a proc
 labels    18
 refs      402261 Penance
 
-effect 1  81 holy damage to target 77 (+0.285 spell power)
-          E_SCHOOL_DAMAGE base=81 sp=0.285 target=[77,0]
+effect 1  44.61 holy damage to target 77 (at level 60, +0.19 spell power)
+          E_SCHOOL_DAMAGE base=42 ppl=0.29 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=402284
 =======
@@ -1054,8 +1054,8 @@ attrs     not a proc
 labels    18
 refs      402277 Penance
 
-effect 1  184 healing to target 77 (+0.285 spell power)
-          E_HEAL base=184 sp=0.285 target=[77,0]
+effect 1  133.83 healing to target 77 (at level 60, +0.19 spell power)
+          E_HEAL base=126 ppl=0.87 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=402289
 =======
@@ -1063,7 +1063,7 @@ https://www.wowhead.com/forever/spell=402289
 school    holy
 cooldown  12 s (category)
 gcd       1.5 s
-cost      185 mana
+cost      220 mana
 range     36 yd
 excluded caster aura 15473 Shadowform
 attrs     channeled
@@ -1099,8 +1099,8 @@ attrs     not a proc
 labels    18
 refs      1240732 Penance
 
-effect 1  291 healing to target 77 (+0.285 spell power)
-          E_HEAL base=291 sp=0.285 target=[77,0]
+effect 1  208.82 healing to target 77 (at level 60, +0.19 spell power)
+          E_HEAL base=200 ppl=0.98 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1240723
 =======
@@ -1112,8 +1112,8 @@ attrs     not a proc
 labels    18
 refs      1240733 Penance
 
-effect 1  482 healing to target 77 (+0.285 spell power)
-          E_HEAL base=482 sp=0.285 target=[77,0]
+effect 1  279.43 healing to target 77 (at level 60, +0.19 spell power)
+          E_HEAL base=268 ppl=1.27 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1240724
 =======
@@ -1125,8 +1125,8 @@ attrs     not a proc
 labels    18
 refs      1240734 Penance
 
-effect 1  113 holy damage to target 77 (+0.285 spell power)
-          E_SCHOOL_DAMAGE base=113 sp=0.285 target=[77,0]
+effect 1  52.97 holy damage to target 77 (at level 60, +0.19 spell power)
+          E_SCHOOL_DAMAGE base=50 ppl=0.33 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1240727
 =======
@@ -1138,8 +1138,8 @@ attrs     not a proc
 labels    18
 refs      1240736 Penance
 
-effect 1  180 holy damage to target 77 (+0.285 spell power)
-          E_SCHOOL_DAMAGE base=180 sp=0.285 target=[77,0]
+effect 1  71.87 holy damage to target 77 (at level 60, +0.19 spell power)
+          E_SCHOOL_DAMAGE base=68 ppl=0.43 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1240730
 =======
@@ -1207,8 +1207,8 @@ attrs     not a proc
 labels    18
 refs      1316992 Penance
 
-effect 1  673 healing to target 77 (+0.285 spell power)
-          E_HEAL base=673 sp=0.285 target=[77,0]
+effect 1  425 healing to target 77 (+0.19 spell power)
+          E_HEAL base=425 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1316991
 =======
@@ -1234,8 +1234,8 @@ attrs     not a proc
 labels    18
 refs      1316994 Penance
 
-effect 1  131 holy damage to target 77 (+0.285 spell power)
-          E_SCHOOL_DAMAGE base=131 sp=0.285 target=[77,0]
+effect 1  92 holy damage to target 77 (+0.19 spell power)
+          E_SCHOOL_DAMAGE base=92 sp=0.19 target=[77,0]
 
 https://www.wowhead.com/forever/spell=1316993
 =======
@@ -1257,7 +1257,7 @@ https://www.wowhead.com/forever/spell=1316994
 school    holy
 cooldown  12 s (category)
 gcd       1.5 s
-cost      355 mana
+cost      385 mana
 range     36 yd
 excluded caster aura 15473 Shadowform
 attrs     channeled

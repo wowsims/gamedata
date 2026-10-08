@@ -1,0 +1,5052 @@
+# Patch: 1.60.1.70291
+
+- Build: 1.60.1.70291 (`wow_classic_beta` on Blizzard's CDN)
+- Hotfixes: none yet: the newest DBCache.bin is for build 70245
+- Previous: 1.60.1.70245 with 4697 hotfix pushes (2026-10-08)
+- Exported by wowsims/forever@b5d35ecf9eb0 on 2026-10-08
+
+## Spells
+
+### Druid: 0 added, 2 removed, 40 changed
+- removed 1270650 Lunar Fire · other
+- removed 1270651 Umbral Fire · other
+- changed 770 Faerie Fire (Rank 1) · balance
+- changed 778 Faerie Fire (Rank 2) · balance
+- changed 9749 Faerie Fire (Rank 3) · balance
+- changed 9907 Faerie Fire (Rank 4) · balance
+- changed 467 Thorns (Rank 1) · balance
+- changed 782 Thorns (Rank 2) · balance
+- changed 1075 Thorns (Rank 3) · balance
+- changed 8914 Thorns (Rank 4) · balance
+- changed 9756 Thorns (Rank 5) · balance
+- changed 9910 Thorns (Rank 6) · balance
+- changed 5176 Wrath (Rank 1) · balance
+- changed 5177 Wrath (Rank 2) · balance
+- changed 5178 Wrath (Rank 3) · balance
+- changed 5179 Wrath (Rank 4) · balance
+- changed 5180 Wrath (Rank 5) · balance
+- changed 1178 Bear Form (Passive) (Passive) · feral-combat
+- changed 21178 Bear Form (Passive2) (Passive) · feral-combat
+- changed 99 Demoralizing Roar (Rank 1) · feral-combat
+- changed 1735 Demoralizing Roar (Rank 2) · feral-combat
+- changed 9490 Demoralizing Roar (Rank 3) · feral-combat
+- changed 9747 Demoralizing Roar (Rank 4) · feral-combat
+- changed 9898 Demoralizing Roar (Rank 5) · feral-combat
+- changed 9635 Dire Bear Form (Passive) (Passive) · feral-combat
+- changed 1223242 Natural Instinct · feral-combat
+- changed 16929 Thick Hide · feral-combat
+- changed 1306459 Thick Hide · feral-combat
+- changed 27546 Faerie Dragon Form · other
+- changed 17768 Wolfshead Helm · other
+- changed 1310990 Wolfshead Helm · other
+- changed 21849 Gift of the Wild (Rank 1) · restoration
+- changed 21850 Gift of the Wild (Rank 2) · restoration
+- changed 1126 Mark of the Wild (Rank 1) · restoration
+- changed 5232 Mark of the Wild (Rank 2) · restoration
+- changed 5234 Mark of the Wild (Rank 4) · restoration
+- changed 6756 Mark of the Wild (Rank 3) · restoration
+- changed 8907 Mark of the Wild (Rank 5) · restoration
+- changed 9884 Mark of the Wild (Rank 6) · restoration
+- changed 9885 Mark of the Wild (Rank 7) · restoration
+- changed 1291335 Mark of the Wild (Rank 7) · restoration
+- changed 1310503 Mark of the Wild (Rank 7) · restoration
+
+### Hunter: 0 added, 0 removed, 31 changed
+- changed 19616 Unleashed Fury · beast-mastery
+- changed 1265899 Dust Cloud (Rank 1) · pets
+- changed 1265901 Dust Cloud (Rank 2) · pets
+- changed 1265902 Dust Cloud (Rank 3) · pets
+- changed 1265903 Dust Cloud (Rank 4) · pets
+- changed 1265904 Dust Cloud (Rank 5) · pets
+- changed 415429 Hunter Pet Scaling · pets
+- changed 416189 Warlock Pet Scaling · pets
+- changed 14315 Explosive Trap Effect (Rank 3) · survival
+- changed 1310532 Expose Prey · survival
+- changed 1499 Freezing Trap (Rank 1) · survival
+- changed 3355 Freezing Trap (Rank 1) · survival
+- changed 14308 Freezing Trap (Rank 2) · survival
+- changed 14309 Freezing Trap (Rank 3) · survival
+- changed 14310 Freezing Trap (Rank 2) · survival
+- changed 14311 Freezing Trap (Rank 3) · survival
+- changed 27753 Freezing Trap (Rank 3) · survival
+- changed 13809 Frost Trap · survival
+- changed 13810 Frost Trap · survival
+- changed 13795 Immolation Trap (Rank 1) · survival
+- changed 13797 Immolation Trap (Rank 1) · survival
+- changed 14298 Immolation Trap (Rank 2) · survival
+- changed 14299 Immolation Trap (Rank 3) · survival
+- changed 14300 Immolation Trap (Rank 4) · survival
+- changed 14301 Immolation Trap (Rank 5) · survival
+- changed 14302 Immolation Trap (Rank 2) · survival
+- changed 14303 Immolation Trap (Rank 3) · survival
+- changed 14304 Immolation Trap (Rank 4) · survival
+- changed 14305 Immolation Trap (Rank 5) · survival
+- changed 22910 Immolation Trap · survival
+- changed 1213271 Immolation Trap · survival
+
+### Mage: 0 added, 0 removed, 22 changed
+- changed 7268 Arcane Missile (Rank 1) · arcane
+- changed 7269 Arcane Missiles (Rank 2) · arcane
+- changed 7270 Arcane Missiles (Rank 3) · arcane
+- changed 118 Polymorph (Rank 1) · arcane
+- changed 12824 Polymorph (Rank 2) · arcane
+- changed 12825 Polymorph (Rank 3) · arcane
+- changed 12826 Polymorph (Rank 4) · arcane
+- changed 28271 Polymorph (Turtle) · arcane
+- changed 28272 Polymorph (Pig) · arcane
+- changed 29124 Polymorph · arcane
+- changed 28270 Polymorph: Cow · arcane
+- changed 133 Fireball (Rank 1) · fire
+- changed 143 Fireball (Rank 2) · fire
+- changed 145 Fireball (Rank 3) · fire
+- changed 3140 Fireball (Rank 4) · fire
+- changed 8400 Fireball (Rank 5) · fire
+- changed 116 Frostbolt (Rank 1) · frost
+- changed 205 Frostbolt (Rank 2) · frost
+- changed 837 Frostbolt (Rank 3) · frost
+- changed 7322 Frostbolt (Rank 4) · frost
+- changed 8406 Frostbolt (Rank 5) · frost
+- changed 23603 Wild Polymorph · other
+
+### Paladin: 0 added, 0 removed, 19 changed
+- changed 20185 Judgement of Light (Rank 1) · holy
+- changed 20344 Judgement of Light (Rank 2) · holy
+- changed 20345 Judgement of Light (Rank 3) · holy
+- changed 20346 Judgement of Light (Rank 4) · holy
+- changed 20186 Judgement of Wisdom (Rank 1) · holy
+- changed 20354 Judgement of Wisdom (Rank 2) · holy
+- changed 20355 Judgement of Wisdom (Rank 3) · holy
+- changed 465 Devotion Aura (Rank 1) · protection
+- changed 643 Devotion Aura (Rank 3) · protection
+- changed 1032 Devotion Aura (Rank 5) · protection
+- changed 10290 Devotion Aura (Rank 2) · protection
+- changed 10291 Devotion Aura (Rank 4) · protection
+- changed 10292 Devotion Aura (Rank 6) · protection
+- changed 10293 Devotion Aura (Rank 7) · protection
+- changed 7294 Retribution Aura (Rank 1) · retribution
+- changed 10298 Retribution Aura (Rank 2) · retribution
+- changed 10299 Retribution Aura (Rank 3) · retribution
+- changed 10300 Retribution Aura (Rank 4) · retribution
+- changed 10301 Retribution Aura (Rank 5) · retribution
+
+### Priest: 0 added, 0 removed, 21 changed
+- changed 402174 Penance (Rank 1) · discipline
+- changed 402284 Penance (Rank 1) · discipline
+- changed 402289 Penance (Rank 1) · discipline
+- changed 1240720 Penance (Rank 2) · discipline
+- changed 1240723 Penance (Rank 2) · discipline
+- changed 1240724 Penance (Rank 3) · discipline
+- changed 1240727 Penance (Rank 2) · discipline
+- changed 1240730 Penance (Rank 3) · discipline
+- changed 1316991 Penance (Rank 4) · discipline
+- changed 1316993 Penance (Rank 4) · discipline
+- changed 1316995 Penance (Rank 4) · discipline
+- changed 2054 Heal (Rank 1) · holy
+- changed 2055 Heal (Rank 2) · holy
+- changed 2050 Lesser Heal (Rank 1) · holy
+- changed 2052 Lesser Heal (Rank 2) · holy
+- changed 2053 Lesser Heal (Rank 3) · holy
+- changed 585 Smite (Rank 1) · holy
+- changed 591 Smite (Rank 2) · holy
+- changed 598 Smite (Rank 3) · holy
+- changed 984 Smite (Rank 4) · holy
+- changed 6788 Weakened Soul · other
+
+### Rogue: 0 added, 0 removed, 5 changed
+- changed 8647 Expose Armor (Rank 1) · assassination
+- changed 8649 Expose Armor (Rank 2) · assassination
+- changed 8650 Expose Armor (Rank 3) · assassination
+- changed 11197 Expose Armor (Rank 4) · assassination
+- changed 11198 Expose Armor (Rank 5) · assassination
+
+### Shaman: 0 added, 0 removed, 10 changed
+- changed 16246 Clearcasting · elemental
+- changed 403 Lightning Bolt (Rank 1) · elemental
+- changed 529 Lightning Bolt (Rank 2) · elemental
+- changed 548 Lightning Bolt (Rank 3) · elemental
+- changed 915 Lightning Bolt (Rank 4) · elemental
+- changed 943 Lightning Bolt (Rank 5) · elemental
+- changed 2645 Ghost Wolf · enhancement
+- changed 8178 Grounding Totem (Rank 1) · enhancement
+- changed 8179 Grounding Totem Passive · other
+- changed 408510 Water Shield · restoration
+
+### Warlock: 0 added, 0 removed, 8 changed
+- changed 704 Curse of Recklessness (Rank 1) · affliction
+- changed 7658 Curse of Recklessness (Rank 2) · affliction
+- changed 7659 Curse of Recklessness (Rank 3) · affliction
+- changed 11717 Curse of Recklessness (Rank 4) · affliction
+- changed 686 Shadow Bolt (Rank 1) · destruction
+- changed 695 Shadow Bolt (Rank 2) · destruction
+- changed 705 Shadow Bolt (Rank 3) · destruction
+- changed 1088 Shadow Bolt (Rank 4) · destruction
+
+### Warrior: 0 added, 0 removed, 10 changed
+- changed 1160 Demoralizing Shout (Rank 1) · fury
+- changed 6190 Demoralizing Shout (Rank 2) · fury
+- changed 11554 Demoralizing Shout (Rank 3) · fury
+- changed 11555 Demoralizing Shout (Rank 4) · fury
+- changed 11556 Demoralizing Shout (Rank 5) · fury
+- changed 7386 Sunder Armor (Rank 1) · protection
+- changed 7405 Sunder Armor (Rank 2) · protection
+- changed 8380 Sunder Armor (Rank 3) · protection
+- changed 11596 Sunder Armor (Rank 4) · protection
+- changed 11597 Sunder Armor (Rank 5) · protection
+
+## Items
+
+17 added, 4668 removed, 161 changed.
+
+- added 287963 Roasted Quail
+- added 287964 Morning Glory Dew
+- added 287966 Minor Healing Potion
+- added 287967 Lesser Healing Potion
+- added 287968 Minor Mana Potion
+- added 287969 Lesser Mana Potion
+- added 287971 Woolen Bag
+- added 287972 Rumsey Rum Dark
+- added 287973 Tender Wolf Steak
+- added 287974 Grilled Squid
+- added 287975 Swiftness Potion
+- added 287976 Free Action Potion
+- added 287977 Greater Healing Potion
+- added 287978 Rough Sharpening Stone
+- added 287979 Lesser Wizard Oil
+- added 287980 Elemental Sharpening Stone
+- added 287992 Old Key
+- removed 720 Brawler Gloves
+- removed 727 Notched Shortsword
+- removed 753 Dragonmaw Shortsword
+- removed 754 Shortsword of Vengeance
+- removed 756 Tunnel Pick
+- removed 776 Vendetta
+- removed 789 Stout Battlehammer
+- removed 790 Forester's Axe
+- removed 791 Gnarled Ash Staff
+- removed 812 Glowing Brightwood Staff
+- removed 816 Small Hand Blade
+- removed 820 Slicer Blade
+- removed 821 Riverpaw Leather Vest
+- removed 826 Brutish Riverpaw Axe
+- removed 827 Wicked Blackjack
+- removed 832 Silver Defias Belt
+- removed 863 Gloom Reaper
+- removed 865 Leaden Mace
+- removed 866 Monk's Staff
+- removed 867 Gloves of Holy Might
+- removed 868 Ardent Custodian
+- removed 869 Dazzling Longsword
+- removed 870 Fiery War Axe
+- removed 871 Flurry Axe
+- removed 872 Rockslicer
+- removed 873 Staff of Jordan
+- removed 880 Staff of Horrors
+- removed 885 Black Metal Axe
+- removed 886 Black Metal Shortsword
+- removed 888 Naga Battle Gloves
+- removed 890 Twisted Chanter's Staff
+- removed 892 Gnoll Casting Gloves
+- removed 897 Madwolf Bracers
+- removed 899 Venom Web Fang
+- removed 911 Ironwood Treebranch
+- removed 914 Large Ogre Chain Armor
+- removed 920 Wicked Spiked Mace
+- removed 932 Fel Steed Saddlebags
+- removed 934 Stalvan's Reaper
+- removed 936 Midnight Mace
+- removed 937 Black Duskwood Staff
+- removed 944 Elemental Mage Staff
+- removed 1076 Defias Renegade Ring
+- removed 1121 Feet of the Lynx
+- removed 1155 Rod of the Sleepwalker
+- removed 1156 Lavishly Jeweled Ring
+- removed 1190 Overseer's Cloak
+- removed 1203 Aegis of Stormwind
+- removed 1204 The Green Tower
+- removed 1207 Murphstar
+- removed 1211 Gnoll War Harness
+- removed 1214 Gnoll Punisher
+- removed 1215 Support Girdle
+- removed 1218 Heavy Gnoll War Club
+- removed 1219 Redridge Machete
+- removed 1220 Lupine Axe
+- removed 1264 Headbasher
+- removed 1265 Scorpion Sting
+- removed 1280 Cloaked Hood
+- removed 1287 Giant Tarantula Fang
+- removed 1292 Butcher's Cleaver
+- removed 1296 Blackrock Mace
+- removed 1297 Robes of the Shadowcaster
+- removed 1299 Lesser Belt of the Spire
+- removed 1300 Lesser Staff of the Spire
+- removed 1314 Ghoul Fingers
+- removed 1317 Hardened Root Staff
+- removed 1318 Night Reaver
+- removed 1351 Fingerbone Bracers
+- removed 1355 Buckskin Cape
+- removed 1387 Ghoulfang
+- removed 1391 Riverpaw Mystic Staff
+- removed 1394 Driftwood Club
+- removed 1404 Tidal Charm
+- removed 1405 Foamspittle Staff
+- removed 1406 Pearl-encrusted Spear
+- removed 1440 Gnoll Skull Basher
+- removed 1446 Blackrock Boots
+- removed 1447 Ring of Saviors
+- removed 1448 Blackrock Gauntlets
+- removed 1454 Axe of the Enforcer
+- removed 1455 Blackrock Champion's Axe
+- removed 1457 Shadowhide Mace
+- removed 1458 Shadowhide Maul
+- removed 1459 Shadowhide Scalper
+- removed 1460 Shadowhide Two-handed Sword
+- removed 1461 Slayer's Battle Axe
+- removed 1465 Tigerbane
+- removed 1469 Scimitar of Atun
+- removed 1473 Riverside Staff
+- removed 1481 Grimclaw
+- removed 1482 Shadowfang
+- removed 1483 Face Smasher
+- removed 1484 Witching Stave
+- removed 1486 Tree Bark Jacket
+- removed 1488 Avenger's Armor
+- removed 1489 Gloomshroud Armor
+- removed 1491 Ring of Precision
+- removed 1493 Heavy Marauder Scimitar
+- removed 1522 Headhunting Spear
+- removed 1523 Huge Stone Club
+- removed 1539 Gnarled Hermit's Staff
+- removed 1560 Bluegill Sandals
+- removed 1602 Sickle Axe
+- removed 1607 Soulkeeper
+- removed 1608 Skullcrusher Mace
+- removed 1613 Spiritchaser Staff
+- removed 1624 Skullsplitter Helm
+- removed 1625 Exquisite Flamberge
+- removed 1639 Grinning Axe
+- removed 1640 Monstrous War Axe
+- removed 1678 Black Ogre Kickers
+- removed 1679 Korg Bat
+- removed 1713 Ankh of Life
+- removed 1714 Necklace of Calisea
+- removed 1715 Polished Jazeraint Armor
+- removed 1716 Robe of the Magi
+- removed 1717 Double Link Tunic
+- removed 1718 Basilisk Hide Pants
+- removed 1720 Tanglewood Staff
+- removed 1721 Viking Warhammer
+- removed 1722 Thornstone Sledgehammer
+- removed 1726 Poison-tipped Bone Spear
+- removed 1727 Sword of Decay
+- removed 1728 Teebu's Blazing Longsword
+- removed 1917 Jeweled Dagger
+- removed 1925 Defias Rapier
+- removed 1926 Weighted Sap
+- removed 1927 Deadmines Cleaver
+- removed 1928 Defias Mage Staff
+- removed 1929 Silk-threaded Trousers
+- removed 1930 Stonemason Cloak
+- removed 1933 Staff of Conjuring
+- removed 1934 Stonemason Trousers
+- removed 1935 Assassin's Blade
+- removed 1936 Goblin Screwdriver
+- removed 1937 Buzz Saw
+- removed 1938 Block Mallet
+- removed 1943 Goblin Mail Leggings
+- removed 1944 Metalworking Gloves
+- removed 1945 Woodworking Gloves
+- removed 1951 Blackwater Cutlass
+- removed 1955 Dragonmaw Chain Boots
+- removed 1958 Petrified Shinbone
+- removed 1959 Cold Iron Pick
+- removed 1965 White Wolf Gloves
+- removed 1973 Orb of Deception
+- removed 1974 Mindthrust Bracers
+- removed 1975 Pysan's Old Greatsword
+- removed 1976 Slaghammer
+- removed 1978 Wolfclaw Gloves
+- removed 1980 Underworld Band
+- removed 1981 Icemail Jerkin
+- removed 1982 Nightblade
+- removed 1986 Gutrender
+- removed 1988 Chief Brigadier Gauntlets
+- removed 1990 Ballast Maul
+- removed 1991 Goblin Power Shovel
+- removed 1992 Swampchill Fetish
+- removed 1994 Ebonclaw Reaver
+- removed 1997 Pressed Felt Robe
+- removed 1998 Bloodscalp Channeling Staff
+- removed 2011 Twisted Sabre
+- removed 2013 Cryptbone Staff
+- removed 2014 Black Metal Greatsword
+- removed 2015 Black Metal War Axe
+- removed 2017 Glowing Leather Bracers
+- removed 2018 Skeletal Longsword
+- removed 2020 Hollowfang Blade
+- removed 2021 Green Carapace Shield
+- removed 2033 Ambassador's Boots
+- removed 2034 Scholarly Robes
+- removed 2035 Sword of the Night Sky
+- removed 2039 Plains Ring
+- removed 2041 Tunic of Westfall
+- removed 2042 Staff of Westfall
+- removed 2046 Bluegill Kukri
+- removed 2058 Kazon's Maul
+- removed 2059 Sentry Cloak
+- removed 2069 Black Bear Hide Vest
+- removed 2072 Dwarven Magestaff
+- removed 2073 Dwarven Hatchet
+- removed 2074 Solid Shortblade
+- removed 2075 Priest's Mace
+- removed 2077 Magician Staff
+- removed 2078 Northern Shortsword
+- removed 2079 Sergeant's Warhammer
+- removed 2080 Hillborne Axe
+- removed 2084 Darksteel Bastard Sword
+- removed 2087 Hard Crawler Carapace
+- removed 2088 Long Crawler Limb
+- removed 2089 Scrimshaw Dagger
+- removed 2098 Double-barreled Shotgun
+- removed 2140 Carving Knife
+- removed 2164 Gut Ripper
+- removed 2166 Foreman's Leggings
+- removed 2167 Foreman's Gloves
+- removed 2168 Foreman's Boots
+- removed 2169 Buzzer Blade
+- removed 2175 Shadowhide Battle Axe
+- removed 2203 Brashclaw's Chopper
+- removed 2204 Brashclaw's Skewer
+- removed 2205 Duskbringer
+- removed 2226 Ogremage Staff
+- removed 2227 Heavy Ogre War Axe
+- removed 2232 Dark Runner Boots
+- removed 2233 Shadow Weaver Leggings
+- removed 2234 Nightwalker Armor
+- removed 2235 Brackclaw
+- removed 2241 Desperado Cape
+- removed 2243 Hand of Edward the Odd
+- removed 2245 Helm of Narv
+- removed 2254 Icepane Warhammer
+- removed 2256 Skeletal Club
+- removed 2262 Mark of Kern
+- removed 2264 Mantle of Thieves
+- removed 2265 Stonesplinter Axe
+- removed 2266 Stonesplinter Dagger
+- removed 2267 Stonesplinter Mace
+- removed 2271 Staff of the Blessed Seer
+- removed 2274 Sapper's Gloves
+- removed 2276 Swampwalker Boots
+- removed 2277 Necromancer Leggings
+- removed 2278 Forest Tracker Epaulets
+- removed 2280 Kam's Walking Stick
+- removed 2281 Rodentia Flint Axe
+- removed 2283 Rat Cloth Belt
+- removed 2284 Rat Cloth Cloak
+- removed 2292 Necrology Robes
+- removed 2299 Burning War Axe
+- removed 2549 Staff of the Shade
+- removed 2564 Elven Spirit Claws
+- removed 2565 Rod of Molten Fire
+- removed 2566 Sacrificial Robes
+- removed 2567 Evocator's Blade
+- removed 2621 Cowl of Necromancy
+- removed 2622 Nimar's Tribal Headdress
+- removed 2624 Thinking Cap
+- removed 2632 Curved Dagger
+- removed 2721 Holy Shroud
+- removed 2800 Black Velvet Robes
+- removed 2801 Blade of Hanna
+- removed 2802 Blazing Emblem
+- removed 2807 Guillotine Axe
+- removed 2815 Curve-bladed Ripper
+- removed 2816 Death Speaker Scepter
+- removed 2819 Cross Dagger
+- removed 2821 Mo'grosh Masher
+- removed 2822 Mo'grosh Toothpick
+- removed 2823 Mo'grosh Can Opener
+- removed 2825 Bow of Searing Arrows
+- removed 2877 Combatant Claymore
+- removed 2878 Bearded Boneaxe
+- removed 2879 Antipodean Rod
+- removed 2899 Wendigo Collar
+- removed 2906 Darkshire Mail Leggings
+- removed 2911 Keller's Girdle
+- removed 2912 Claw of the Shadowmancer
+- removed 2941 Prison Shank
+- removed 2942 Iron Knuckles
+- removed 2951 Ring of the Underwood
+- removed 2955 First Mate Hat
+- removed 2957 Journeyman's Vest
+- removed 2958 Journeyman's Pants
+- removed 2961 Burnt Leather Vest
+- removed 2962 Burnt Leather Breeches
+- removed 2965 Warrior's Tunic
+- removed 2966 Warrior's Pants
+- removed 2969 Spellbinder Vest
+- removed 2970 Spellbinder Pants
+- removed 2973 Hunting Tunic
+- removed 2974 Hunting Pants
+- removed 2976 Hunting Gloves
+- removed 2977 Veteran Armor
+- removed 2978 Veteran Leggings
+- removed 2980 Veteran Gloves
+- removed 2981 Seer's Robe
+- removed 2982 Seer's Pants
+- removed 2983 Seer's Boots
+- removed 2984 Seer's Gloves
+- removed 2985 Inscribed Leather Breastplate
+- removed 2986 Inscribed Leather Pants
+- removed 2987 Inscribed Leather Boots
+- removed 2988 Inscribed Leather Gloves
+- removed 2989 Burnished Tunic
+- removed 2990 Burnished Leggings
+- removed 2991 Burnished Boots
+- removed 2992 Burnished Gloves
+- removed 3000 Brood Mother Carapace
+- removed 3011 Feathered Headdress
+- removed 3018 Hide of Lupos
+- removed 3019 Noble's Robe
+- removed 3020 Enduring Cap
+- removed 3021 Ranger Bow
+- removed 3022 Bluegill Breeches
+- removed 3036 Heavy Shortbow
+- removed 3037 Whipwood Recurve Bow
+- removed 3039 Short Ash Bow
+- removed 3040 Hunter's Muzzle Loader
+- removed 3042 BKP "Sparrow" Smallbore
+- removed 3045 Lambent Scale Boots
+- removed 3047 Lambent Scale Gloves
+- removed 3048 Lambent Scale Legguards
+- removed 3049 Lambent Scale Breastplate
+- removed 3053 Humbert's Chestpiece
+- removed 3055 Forest Leather Chestpiece
+- removed 3056 Forest Leather Pants
+- removed 3057 Forest Leather Boots
+- removed 3058 Forest Leather Gloves
+- removed 3065 Bright Boots
+- removed 3066 Bright Gloves
+- removed 3067 Bright Pants
+- removed 3069 Bright Robe
+- removed 3072 Smoldering Robe
+- removed 3073 Smoldering Pants
+- removed 3074 Smoldering Gloves
+- removed 3076 Smoldering Boots
+- removed 3078 Naga Heartpiercer
+- removed 3185 Acrobatic Staff
+- removed 3186 Viking Sword
+- removed 3187 Sacrificial Kris
+- removed 3188 Coral Claymore
+- removed 3191 Arced War Axe
+- removed 3192 Short Bastard Sword
+- removed 3193 Oak Mallet
+- removed 3194 Black Malice
+- removed 3195 Barbaric Battle Axe
+- removed 3196 Edged Bastard Sword
+- removed 3197 Stonecutter Claymore
+- removed 3198 Battering Hammer
+- removed 3199 Battle Slayer
+- removed 3201 Barbarian War Axe
+- removed 3202 Forest Leather Bracers
+- removed 3203 Dense Triangle Mace
+- removed 3204 Deepwood Bracers
+- removed 3205 Inscribed Leather Bracers
+- removed 3206 Cavalier Two-hander
+- removed 3208 Conk Hammer
+- removed 3210 Brutal War Axe
+- removed 3211 Burnished Bracers
+- removed 3212 Lambent Scale Bracers
+- removed 3223 Frostmane Scepter
+- removed 3227 Nightbane Staff
+- removed 3228 Jimmied Handcuffs
+- removed 3229 Tarantula Silk Sash
+- removed 3230 Black Wolf Bracers
+- removed 3231 Cutthroat Pauldrons
+- removed 3282 Battle Chain Pants
+- removed 3283 Battle Chain Tunic
+- removed 3287 Tribal Pants
+- removed 3288 Tribal Vest
+- removed 3291 Ancestral Woollies
+- removed 3292 Ancestral Tunic
+- removed 3302 Brackwater Boots
+- removed 3305 Brackwater Leggings
+- removed 3306 Brackwater Vest
+- removed 3307 Barbaric Cloth Boots
+- removed 3308 Barbaric Cloth Gloves
+- removed 3309 Barbaric Loincloth
+- removed 3310 Barbaric Cloth Vest
+- removed 3313 Ceremonial Leather Harness
+- removed 3314 Ceremonial Leather Gloves
+- removed 3315 Ceremonial Leather Loincloth
+- removed 3324 Ghostly Mantle
+- removed 3330 Dargol's Hauberk
+- removed 3334 Farmer's Shovel
+- removed 3336 Flesh Piercer
+- removed 3341 Gauntlets of Ogre Strength
+- removed 3345 Silk Wizard Hat
+- removed 3392 Ringed Helm
+- removed 3400 Lucine Longsword
+- removed 3413 Doomspike
+- removed 3414 Crested Scepter
+- removed 3415 Staff of the Friar
+- removed 3416 Martyr's Chain
+- removed 3417 Onyx Claymore
+- removed 3429 Guardsman Belt
+- removed 3430 Sniper Rifle
+- removed 3456 Dog Whistle
+- removed 3475 Cloak of Flames
+- removed 3562 Belt of Vindication
+- removed 3563 Seafarer's Pantaloons
+- removed 3569 Vicar's Robe
+- removed 3571 Trogg Beater
+- removed 3645 Seer's Cuffs
+- removed 3647 Bright Bracers
+- removed 3651 Veteran Shield
+- removed 3652 Hunting Buckler
+- removed 3653 Ceremonial Buckler
+- removed 3654 Brackwater Shield
+- removed 3655 Burnished Shield
+- removed 3656 Lambent Scale Shield
+- removed 3740 Decapitating Sword
+- removed 3748 Feline Mantle
+- removed 3902 Staff of Nobles
+- removed 3985 Monogrammed Sash
+- removed 4035 Silver-thread Robe
+- removed 4036 Silver-thread Cuffs
+- removed 4037 Silver-thread Pants
+- removed 4038 Nightsky Robe
+- removed 4039 Nightsky Cowl
+- removed 4040 Nightsky Gloves
+- removed 4041 Aurora Cowl
+- removed 4042 Aurora Gloves
+- removed 4043 Aurora Bracers
+- removed 4044 Aurora Pants
+- removed 4045 Mistscape Bracers
+- removed 4046 Mistscape Pants
+- removed 4047 Mistscape Boots
+- removed 4048 Emblazoned Hat
+- removed 4049 Emblazoned Bracers
+- removed 4050 Emblazoned Leggings
+- removed 4051 Emblazoned Boots
+- removed 4052 Insignia Cap
+- removed 4054 Insignia Leggings
+- removed 4055 Insignia Boots
+- removed 4057 Insignia Chestguard
+- removed 4058 Glyphed Breastplate
+- removed 4059 Glyphed Bracers
+- removed 4060 Glyphed Leggings
+- removed 4061 Imperial Leather Bracers
+- removed 4062 Imperial Leather Pants
+- removed 4063 Imperial Leather Gloves
+- removed 4064 Emblazoned Buckler
+- removed 4065 Combat Shield
+- removed 4066 Insignia Buckler
+- removed 4067 Glyphed Buckler
+- removed 4068 Chief Brigadier Shield
+- removed 4069 Blackforge Buckler
+- removed 4070 Jouster's Crest
+- removed 4071 Glimmering Mail Breastplate
+- removed 4072 Glimmering Mail Gauntlets
+- removed 4073 Glimmering Mail Greaves
+- removed 4074 Mail Combat Armor
+- removed 4075 Mail Combat Gauntlets
+- removed 4076 Mail Combat Boots
+- removed 4077 Mail Combat Headguard
+- removed 4078 Chief Brigadier Coif
+- removed 4079 Chief Brigadier Leggings
+- removed 4080 Blackforge Cowl
+- removed 4082 Blackforge Breastplate
+- removed 4083 Blackforge Gauntlets
+- removed 4084 Blackforge Leggings
+- removed 4087 Trueshot Bow
+- removed 4088 Dreadblade
+- removed 4089 Ricochet Blunderbuss
+- removed 4090 Mug O' Hurt
+- removed 4091 Widowmaker
+- removed 4197 Berylline Pads
+- removed 4290 Dust Bowl
+- removed 4303 Cranial Thumper
+- removed 4434 Scarecrow Trousers
+- removed 4436 Jewel-encrusted Sash
+- removed 4437 Channeler's Staff
+- removed 4438 Pugilist Bracers
+- removed 4439 Bruiser Club
+- removed 4444 Black Husk Shield
+- removed 4445 Flesh Carver
+- removed 4446 Blackvenom Blade
+- removed 4447 Cloak of Night
+- removed 4448 Husk of Naraxis
+- removed 4449 Naraxis' Fang
+- removed 4454 Talon of Vultros
+- removed 4462 Cloak of Rot
+- removed 4463 Beaded Raptor Collar
+- removed 4464 Trouncing Boots
+- removed 4465 Bonefist Gauntlets
+- removed 4474 Ravenwood Bow
+- removed 4476 Beastwalker Robe
+- removed 4477 Nefarious Buckler
+- removed 4534 Steel-clasped Bracers
+- removed 4561 Scalping Tomahawk
+- removed 4562 Severing Axe
+- removed 4564 Spiked Club
+- removed 4566 Sturdy Quarterstaff
+- removed 4567 Merc Sword
+- removed 4569 Staunch Hammer
+- removed 4570 Birchwood Maul
+- removed 4571 War Knife
+- removed 4575 Medicine Staff
+- removed 4576 Light Bow
+- removed 4577 Compact Shotgun
+- removed 4643 Grimsteel Cape
+- removed 4660 Walking Boots
+- removed 4661 Bright Mantle
+- removed 4676 Skeletal Gauntlets
+- removed 4695 Burnished Cloak
+- removed 4696 Lapidis Tankard of Tidesippe
+- removed 4697 Burnished Girdle
+- removed 4699 Seer's Belt
+- removed 4701 Inscribed Cloak
+- removed 4705 Lambent Scale Pauldrons
+- removed 4706 Lambent Scale Cloak
+- removed 4707 Lambent Scale Girdle
+- removed 4708 Bright Belt
+- removed 4709 Forest Leather Mantle
+- removed 4710 Forest Cloak
+- removed 4711 Glimmering Cloak
+- removed 4712 Glimmering Mail Girdle
+- removed 4713 Silver-thread Cloak
+- removed 4714 Silver-thread Sash
+- removed 4715 Emblazoned Cloak
+- removed 4716 Combat Cloak
+- removed 4717 Mail Combat Belt
+- removed 4718 Nightsky Mantle
+- removed 4719 Nightsky Cloak
+- removed 4720 Nightsky Sash
+- removed 4721 Insignia Mantle
+- removed 4722 Insignia Cloak
+- removed 4723 Humbert's Pants
+- removed 4724 Humbert's Helm
+- removed 4725 Chief Brigadier Pauldrons
+- removed 4726 Chief Brigadier Cloak
+- removed 4727 Chief Brigadier Girdle
+- removed 4729 Aurora Mantle
+- removed 4731 Glyphed Epaulets
+- removed 4732 Glyphed Cloak
+- removed 4733 Blackforge Pauldrons
+- removed 4734 Mistscape Mantle
+- removed 4735 Mistscape Cloak
+- removed 4736 Mistscape Sash
+- removed 4737 Imperial Leather Spaulders
+- removed 4738 Imperial Leather Belt
+- removed 4746 Doomsayer's Robe
+- removed 4767 Coppercloth Gloves
+- removed 4768 Adept's Gloves
+- removed 4771 Harvest Cloak
+- removed 4772 Warm Cloak
+- removed 4785 Brimstone Belt
+- removed 4810 Boulder Pads
+- removed 4861 Sleek Feathered Tunic
+- removed 4949 Orcish Cleaver
+- removed 4980 Prospector Gloves
+- removed 4998 Blood Ring
+- removed 4999 Azora's Will
+- removed 5001 Heart Ring
+- removed 5002 Glowing Green Talisman
+- removed 5003 Crystal Starfire Medallion
+- removed 5007 Band of Thorns
+- removed 5009 Mindbender Loop
+- removed 5011 Welken Ring
+- removed 5028 Lord Sakrasis' Scepter
+- removed 5069 Fire Wand
+- removed 5071 Shadow Wand
+- removed 5111 Rathorian's Cape
+- removed 5112 Ritual Blade
+- removed 5180 Necklace of Harmony
+- removed 5181 Vibrant Silk Cape
+- removed 5182 Shiver Blade
+- removed 5183 Pulsating Hydra Heart
+- removed 5187 Rhahk'Zor's Hammer
+- removed 5191 Cruel Barb
+- removed 5192 Thief's Blade
+- removed 5193 Cape of the Brotherhood
+- removed 5194 Taskmaster Axe
+- removed 5195 Gold-flecked Gloves
+- removed 5196 Smite's Reaver
+- removed 5197 Cookie's Tenderizer
+- removed 5198 Cookie's Stirring Rod
+- removed 5199 Smelting Pants
+- removed 5200 Impaling Harpoon
+- removed 5201 Emberstone Staff
+- removed 5202 Corsair's Overshirt
+- removed 5207 Opaque Wand
+- removed 5212 Blazing Wand
+- removed 5213 Scorching Wand
+- removed 5214 Wand of Eventide
+- removed 5215 Ember Wand
+- removed 5216 Umbral Wand
+- removed 5243 Firebelcher
+- removed 5245 Summoner's Wand
+- removed 5254 Rugged Spaulders
+- removed 5256 Kovork's Rattle
+- removed 5257 Dark Hooded Cape
+- removed 5266 Eye of Adaegus
+- removed 5267 Scarlet Kris
+- removed 5387 Enchanted Moonstalker Cloak
+- removed 5404 Serpent's Shoulders
+- removed 5422 Brambleweed Leggings
+- removed 5423 Boahn's Fang
+- removed 5425 Runescale Girdle
+- removed 5426 Serpent's Kiss
+- removed 5443 Gold-plated Buckler
+- removed 5444 Miner's Cape
+- removed 5608 Living Cowl
+- removed 5624 Circlet of the Order
+- removed 5744 Pale Skinner
+- removed 5749 Scythe Axe
+- removed 5750 Warchief's Girdle
+- removed 5751 Webwing Cloak
+- removed 5752 Wyvern Tailspike
+- removed 5753 Ruffled Chaplet
+- removed 5754 Wolfpack Medallion
+- removed 5755 Onyx Shredder Plate
+- removed 5756 Sliverblade
+- removed 5819 Sunblaze Coif
+- removed 5943 Rift Bracers
+- removed 5967 Girdle of Nobility
+- removed 5969 Regent's Cloak
+- removed 5970 Serpent Gloves
+- removed 5971 Feathered Cape
+- removed 5975 Ruffian Belt
+- removed 6087 Chausses of Westfall
+- removed 6094 Piercing Axe
+- removed 6179 Privateer's Cape
+- removed 6180 Slarkskin
+- removed 6195 Wax-polished Armor
+- removed 6197 Loch Croc Hide Vest
+- removed 6198 Jurassic Wristguards
+- removed 6199 Black Widow Band
+- removed 6200 Garneg's War Belt
+- removed 6204 Tribal Worg Helm
+- removed 6205 Burrowing Shovel
+- removed 6220 Meteor Shard
+- removed 6226 Bloody Apron
+- removed 6266 Disciple's Vest
+- removed 6267 Disciple's Pants
+- removed 6268 Pioneer Tunic
+- removed 6269 Pioneer Trousers
+- removed 6314 Wolfmaster Cape
+- removed 6315 Steelarrow Crossbow
+- removed 6318 Odo's Ley Staff
+- removed 6319 Girdle of the Blindwatcher
+- removed 6320 Commander's Crest
+- removed 6321 Silverlaine's Family Seal
+- removed 6323 Baron's Scepter
+- removed 6324 Robes of Arugal
+- removed 6331 Howling Blade
+- removed 6332 Black Pearl Ring
+- removed 6333 Spikelash Dagger
+- removed 6335 Grizzled Boots
+- removed 6336 Infantry Tunic
+- removed 6337 Infantry Leggings
+- removed 6340 Fenrus' Hide
+- removed 6341 Eerie Stable Lantern
+- removed 6378 Seer's Cape
+- removed 6379 Inscribed Leather Belt
+- removed 6380 Inscribed Buckler
+- removed 6381 Bright Cloak
+- removed 6382 Forest Leather Belt
+- removed 6383 Forest Buckler
+- removed 6386 Glimmering Mail Legguards
+- removed 6387 Glimmering Mail Bracers
+- removed 6388 Glimmering Mail Pauldrons
+- removed 6389 Glimmering Mail Coif
+- removed 6392 Belt of Arugal
+- removed 6393 Silver-thread Gloves
+- removed 6394 Silver-thread Boots
+- removed 6395 Silver-thread Amice
+- removed 6396 Emblazoned Chestpiece
+- removed 6397 Emblazoned Gloves
+- removed 6398 Emblazoned Belt
+- removed 6399 Emblazoned Shoulders
+- removed 6400 Glimmering Shield
+- removed 6402 Mail Combat Leggings
+- removed 6403 Mail Combat Armguards
+- removed 6404 Mail Combat Spaulders
+- removed 6405 Nightsky Trousers
+- removed 6406 Nightsky Boots
+- removed 6407 Nightsky Wristbands
+- removed 6408 Insignia Gloves
+- removed 6409 Insignia Belt
+- removed 6410 Insignia Bracers
+- removed 6411 Chief Brigadier Armor
+- removed 6412 Chief Brigadier Boots
+- removed 6413 Chief Brigadier Bracers
+- removed 6414 Seal of Sylvanas
+- removed 6415 Aurora Robe
+- removed 6416 Aurora Boots
+- removed 6417 Aurora Cloak
+- removed 6418 Aurora Sash
+- removed 6419 Glyphed Mitts
+- removed 6420 Glyphed Boots
+- removed 6421 Glyphed Belt
+- removed 6422 Glyphed Helm
+- removed 6423 Blackforge Greaves
+- removed 6424 Blackforge Cape
+- removed 6425 Blackforge Girdle
+- removed 6426 Blackforge Bracers
+- removed 6427 Mistscape Robe
+- removed 6428 Mistscape Gloves
+- removed 6429 Mistscape Wizard Hat
+- removed 6430 Imperial Leather Breastplate
+- removed 6431 Imperial Leather Boots
+- removed 6432 Imperial Cloak
+- removed 6433 Imperial Leather Helm
+- removed 6446 Snakeskin Bag
+- removed 6447 Worn Turtle Shell Shield
+- removed 6448 Tail Spike
+- removed 6449 Glowing Lizardscale Cloak
+- removed 6459 Savage Trodders
+- removed 6460 Cobrahn's Grasp
+- removed 6461 Slime-encrusted Pads
+- removed 6463 Deep Fathom Ring
+- removed 6465 Robe of the Moccasin
+- removed 6469 Venomstrike
+- removed 6472 Stinging Viper
+- removed 6473 Armor of the Fang
+- removed 6480 Slick Deviate Leggings
+- removed 6481 Dagmire Gauntlets
+- removed 6504 Wingblade
+- removed 6505 Crescent Staff
+- removed 6511 Journeyman's Robe
+- removed 6512 Disciple's Robe
+- removed 6527 Ancestral Robe
+- removed 6528 Spellbinder Robe
+- removed 6531 Barbaric Cloth Robe
+- removed 6536 Willow Vest
+- removed 6537 Willow Boots
+- removed 6538 Willow Robe
+- removed 6539 Willow Belt
+- removed 6540 Willow Pants
+- removed 6541 Willow Gloves
+- removed 6542 Willow Cape
+- removed 6543 Willow Bracers
+- removed 6545 Soldier's Armor
+- removed 6546 Soldier's Leggings
+- removed 6547 Soldier's Gauntlets
+- removed 6548 Soldier's Girdle
+- removed 6550 Soldier's Wristguards
+- removed 6551 Soldier's Boots
+- removed 6552 Bard's Tunic
+- removed 6553 Bard's Trousers
+- removed 6554 Bard's Gloves
+- removed 6556 Bard's Bracers
+- removed 6557 Bard's Boots
+- removed 6558 Bard's Belt
+- removed 6559 Bard's Buckler
+- removed 6560 Soldier's Shield
+- removed 6561 Seer's Padded Armor
+- removed 6562 Shimmering Boots
+- removed 6563 Shimmering Bracers
+- removed 6564 Shimmering Cloak
+- removed 6565 Shimmering Gloves
+- removed 6567 Shimmering Armor
+- removed 6568 Shimmering Trousers
+- removed 6569 Shimmering Robe
+- removed 6570 Shimmering Sash
+- removed 6571 Scouting Buckler
+- removed 6572 Defender Shield
+- removed 6573 Defender Boots
+- removed 6574 Defender Bracers
+- removed 6575 Defender Cloak
+- removed 6576 Defender Girdle
+- removed 6577 Defender Gauntlets
+- removed 6578 Defender Leggings
+- removed 6580 Defender Tunic
+- removed 6581 Scouting Belt
+- removed 6582 Scouting Boots
+- removed 6583 Scouting Bracers
+- removed 6584 Scouting Tunic
+- removed 6585 Scouting Cloak
+- removed 6586 Scouting Gloves
+- removed 6587 Scouting Trousers
+- removed 6590 Battleforge Boots
+- removed 6591 Battleforge Wristguards
+- removed 6592 Battleforge Armor
+- removed 6593 Battleforge Cloak
+- removed 6594 Battleforge Girdle
+- removed 6595 Battleforge Gauntlets
+- removed 6596 Battleforge Legguards
+- removed 6597 Battleforge Shoulderguards
+- removed 6598 Dervish Buckler
+- removed 6599 Battleforge Shield
+- removed 6600 Dervish Belt
+- removed 6601 Dervish Boots
+- removed 6602 Dervish Bracers
+- removed 6603 Dervish Tunic
+- removed 6604 Dervish Cape
+- removed 6605 Dervish Gloves
+- removed 6607 Dervish Leggings
+- removed 6608 Bright Armor
+- removed 6609 Sage's Cloth
+- removed 6610 Sage's Robe
+- removed 6611 Sage's Sash
+- removed 6612 Sage's Boots
+- removed 6613 Sage's Bracers
+- removed 6614 Sage's Cloak
+- removed 6615 Sage's Gloves
+- removed 6616 Sage's Pants
+- removed 6617 Sage's Mantle
+- removed 6622 Sword of Zeal
+- removed 6627 Mutant Scale Breastplate
+- removed 6628 Raven's Claws
+- removed 6629 Sporid Cape
+- removed 6630 Seedcloud Buckler
+- removed 6631 Living Root
+- removed 6632 Feyscale Cloak
+- removed 6633 Butcher's Slicer
+- removed 6641 Haunting Blade
+- removed 6642 Phantom Armor
+- removed 6660 Julie's Dagger
+- removed 6679 Armor Piercer
+- removed 6681 Thornspike
+- removed 6682 Death Speaker Robes
+- removed 6685 Death Speaker Mantle
+- removed 6686 Tusken Helm
+- removed 6687 Corpsemaker
+- removed 6688 Whisperwind Headdress
+- removed 6689 Wind Spirit Staff
+- removed 6690 Ferine Leggings
+- removed 6691 Swinetusk Shank
+- removed 6692 Pronged Reaver
+- removed 6693 Agamaggan's Clutch
+- removed 6694 Heart of Agamaggan
+- removed 6695 Stygian Bone Amulet
+- removed 6696 Nightstalker Bow
+- removed 6697 Batwing Mantle
+- removed 6725 Marbled Buckler
+- removed 6742 Stonefist Girdle
+- removed 6743 Sustaining Ring
+- removed 6748 Monkey Ring
+- removed 6749 Tiger Band
+- removed 6750 Snake Hoop
+- removed 6751 Mourning Shawl
+- removed 6752 Lancer Boots
+- removed 6804 Windstorm Hammer
+- removed 6806 Dancing Flame
+- removed 6901 Glowing Thresher Cape
+- removed 6902 Bands of Serra'kis
+- removed 6903 Gaze Dreamer Pants
+- removed 6904 Bite of Serra'kis
+- removed 6905 Reef Axe
+- removed 6906 Algae Fists
+- removed 6907 Tortoise Armor
+- removed 6908 Ghamoo-ra's Bind
+- removed 6909 Strike of the Hydra
+- removed 6910 Leech Pants
+- removed 6911 Moss Cinch
+- removed 6998 Nimbus Boots
+- removed 7000 Heartwood Girdle
+- removed 7001 Gravestone Scepter
+- removed 7002 Arctic Buckler
+- removed 7003 Beetle Clasps
+- removed 7004 Prelacy Cape
+- removed 7108 Infantry Shield
+- removed 7110 Silver-thread Armor
+- removed 7111 Nightsky Armor
+- removed 7112 Aurora Armor
+- removed 7113 Mistscape Armor
+- removed 7230 Smite's Mighty Hammer
+- removed 7330 Infiltrator Buckler
+- removed 7331 Phalanx Shield
+- removed 7332 Regal Armor
+- removed 7353 Elder's Padded Armor
+- removed 7354 Elder's Boots
+- removed 7355 Elder's Bracers
+- removed 7356 Elder's Cloak
+- removed 7357 Elder's Hat
+- removed 7366 Elder's Gloves
+- removed 7367 Elder's Mantle
+- removed 7368 Elder's Pants
+- removed 7369 Elder's Robe
+- removed 7370 Elder's Sash
+- removed 7406 Infiltrator Cord
+- removed 7407 Infiltrator Armor
+- removed 7408 Infiltrator Shoulders
+- removed 7409 Infiltrator Boots
+- removed 7410 Infiltrator Bracers
+- removed 7411 Infiltrator Cloak
+- removed 7412 Infiltrator Gloves
+- removed 7413 Infiltrator Cap
+- removed 7414 Infiltrator Pants
+- removed 7415 Dervish Spaulders
+- removed 7416 Phalanx Bracers
+- removed 7417 Phalanx Boots
+- removed 7418 Phalanx Breastplate
+- removed 7419 Phalanx Cloak
+- removed 7420 Phalanx Headguard
+- removed 7421 Phalanx Gauntlets
+- removed 7422 Phalanx Girdle
+- removed 7423 Phalanx Leggings
+- removed 7424 Phalanx Spaulders
+- removed 7429 Twilight Armor
+- removed 7430 Twilight Robe
+- removed 7431 Twilight Pants
+- removed 7432 Twilight Cowl
+- removed 7433 Twilight Gloves
+- removed 7434 Twilight Boots
+- removed 7435 Twilight Mantle
+- removed 7436 Twilight Cape
+- removed 7437 Twilight Cuffs
+- removed 7438 Twilight Belt
+- removed 7439 Sentinel Breastplate
+- removed 7440 Sentinel Trousers
+- removed 7441 Sentinel Cap
+- removed 7443 Sentinel Gloves
+- removed 7444 Sentinel Boots
+- removed 7445 Sentinel Shoulders
+- removed 7446 Sentinel Cloak
+- removed 7447 Sentinel Bracers
+- removed 7448 Sentinel Girdle
+- removed 7454 Knight's Breastplate
+- removed 7455 Knight's Legguards
+- removed 7456 Knight's Headguard
+- removed 7457 Knight's Gauntlets
+- removed 7458 Knight's Boots
+- removed 7459 Knight's Pauldrons
+- removed 7460 Knight's Cloak
+- removed 7461 Knight's Bracers
+- removed 7462 Knight's Girdle
+- removed 7463 Sentinel Buckler
+- removed 7465 Knight's Crest
+- removed 7468 Regal Robe
+- removed 7469 Regal Leggings
+- removed 7470 Regal Wizard Hat
+- removed 7471 Regal Gloves
+- removed 7472 Regal Boots
+- removed 7473 Regal Mantle
+- removed 7474 Regal Cloak
+- removed 7475 Regal Cuffs
+- removed 7476 Regal Sash
+- removed 7477 Ranger Tunic
+- removed 7478 Ranger Leggings
+- removed 7479 Ranger Helm
+- removed 7480 Ranger Gloves
+- removed 7481 Ranger Boots
+- removed 7482 Ranger Shoulders
+- removed 7483 Ranger Cloak
+- removed 7484 Ranger Wristguards
+- removed 7485 Ranger Cord
+- removed 7486 Captain's Breastplate
+- removed 7487 Captain's Leggings
+- removed 7488 Captain's Circlet
+- removed 7489 Captain's Gauntlets
+- removed 7490 Captain's Boots
+- removed 7491 Captain's Shoulderguards
+- removed 7492 Captain's Cloak
+- removed 7493 Captain's Bracers
+- removed 7494 Captain's Waistguard
+- removed 7495 Captain's Buckler
+- removed 7496 Field Plate Shield
+- removed 7517 Gossamer Tunic
+- removed 7518 Gossamer Robe
+- removed 7519 Gossamer Pants
+- removed 7520 Gossamer Headpiece
+- removed 7521 Gossamer Gloves
+- removed 7522 Gossamer Boots
+- removed 7523 Gossamer Shoulderpads
+- removed 7524 Gossamer Cape
+- removed 7525 Gossamer Bracers
+- removed 7526 Gossamer Belt
+- removed 7527 Cabalist Chestpiece
+- removed 7528 Cabalist Leggings
+- removed 7529 Cabalist Helm
+- removed 7530 Cabalist Gloves
+- removed 7531 Cabalist Boots
+- removed 7532 Cabalist Spaulders
+- removed 7533 Cabalist Cloak
+- removed 7534 Cabalist Bracers
+- removed 7535 Cabalist Belt
+- removed 7536 Champion's Wall Shield
+- removed 7537 Gothic Shield
+- removed 7538 Champion's Armor
+- removed 7539 Champion's Leggings
+- removed 7540 Champion's Helmet
+- removed 7541 Champion's Gauntlets
+- removed 7542 Champion's Greaves
+- removed 7543 Champion's Pauldrons
+- removed 7544 Champion's Cape
+- removed 7545 Champion's Bracers
+- removed 7546 Champion's Girdle
+- removed 7552 Falcon's Hook
+- removed 7553 Band of the Unicorn
+- removed 7557 Gossamer Rod
+- removed 7559 Runic Cane
+- removed 7606 Polar Gauntlets
+- removed 7607 Sable Wand
+- removed 7611 Mistscape Stave
+- removed 7682 Torturing Poker
+- removed 7683 Bloody Brass Knuckles
+- removed 7684 Bloodmage Mantle
+- removed 7685 Orb of the Forgotten Seer
+- removed 7686 Ironspine's Eye
+- removed 7687 Ironspine's Fist
+- removed 7688 Ironspine's Ribcage
+- removed 7689 Morbid Dawn
+- removed 7690 Ebon Vise
+- removed 7691 Embalmed Shroud
+- removed 7708 Necrotic Wand
+- removed 7709 Blighted Leggings
+- removed 7710 Loksey's Training Stick
+- removed 7711 Robe of Doan
+- removed 7712 Mantle of Doan
+- removed 7713 Illusionary Rod
+- removed 7714 Hypnotic Blade
+- removed 7717 Ravager
+- removed 7719 Raging Berserker's Helm
+- removed 7726 Aegis of the Scarlet Commander
+- removed 7727 Watchman Pauldrons
+- removed 7728 Beguiler Robes
+- removed 7729 Chesterfall Musket
+- removed 7730 Cobalt Crusher
+- removed 7731 Ghostshard Talisman
+- removed 7734 Six Demon Bag
+- removed 7736 Fight Club
+- removed 7746 Explorers' League Commendation
+- removed 7747 Vile Protector
+- removed 7749 Omega Orb
+- removed 7750 Mantle of Woe
+- removed 7751 Vorrel's Boots
+- removed 7752 Dreamslayer
+- removed 7753 Bloodspiller
+- removed 7754 Harbinger Boots
+- removed 7755 Flintrock Shoulders
+- removed 7756 Dog Training Gloves
+- removed 7757 Windweaver Staff
+- removed 7759 Archon Chestpiece
+- removed 7761 Steelclaw Reaver
+- removed 7786 Headsplitter
+- removed 7787 Resplendent Guardian
+- removed 8006 The Ziggler
+- removed 8071 Sizzle Stick
+- removed 8106 Hibernal Armor
+- removed 8107 Hibernal Boots
+- removed 8108 Hibernal Bracers
+- removed 8109 Hibernal Cloak
+- removed 8110 Hibernal Gloves
+- removed 8111 Hibernal Mantle
+- removed 8112 Hibernal Pants
+- removed 8113 Hibernal Robe
+- removed 8114 Hibernal Sash
+- removed 8115 Hibernal Cowl
+- removed 8116 Heraldic Belt
+- removed 8117 Heraldic Boots
+- removed 8118 Heraldic Bracers
+- removed 8119 Heraldic Breastplate
+- removed 8120 Heraldic Cloak
+- removed 8121 Heraldic Gloves
+- removed 8122 Heraldic Headpiece
+- removed 8123 Heraldic Leggings
+- removed 8124 Heraldic Spaulders
+- removed 8125 Myrmidon's Bracers
+- removed 8126 Myrmidon's Breastplate
+- removed 8127 Myrmidon's Cape
+- removed 8128 Myrmidon's Gauntlets
+- removed 8129 Myrmidon's Girdle
+- removed 8130 Myrmidon's Greaves
+- removed 8131 Myrmidon's Helm
+- removed 8132 Myrmidon's Leggings
+- removed 8133 Myrmidon's Pauldrons
+- removed 8134 Myrmidon's Defender
+- removed 8135 Chromite Shield
+- removed 8137 Chromite Bracers
+- removed 8138 Chromite Chestplate
+- removed 8139 Chromite Gauntlets
+- removed 8140 Chromite Girdle
+- removed 8141 Chromite Greaves
+- removed 8142 Chromite Barbute
+- removed 8143 Chromite Legplates
+- removed 8144 Chromite Pauldrons
+- removed 8156 Jouster's Wristguards
+- removed 8157 Jouster's Chestplate
+- removed 8158 Jouster's Gauntlets
+- removed 8159 Jouster's Girdle
+- removed 8160 Jouster's Greaves
+- removed 8161 Jouster's Visor
+- removed 8162 Jouster's Legplates
+- removed 8163 Jouster's Pauldrons
+- removed 8178 Training Sword
+- removed 8180 Hunting Bow
+- removed 8183 Precision Bow
+- removed 8184 Firestarter
+- removed 8186 Dire Wand
+- removed 8188 Explosive Shotgun
+- removed 8190 Hanzo Sword
+- removed 8194 Goblin Nutcracker
+- removed 8196 Ebon Scimitar
+- removed 8199 Battlefield Destroyer
+- removed 8223 Blade of the Basilisk
+- removed 8224 Silithid Ripper
+- removed 8225 Tainted Pierce
+- removed 8226 The Butcher
+- removed 8245 Imperial Red Tunic
+- removed 8246 Imperial Red Boots
+- removed 8247 Imperial Red Bracers
+- removed 8248 Imperial Red Cloak
+- removed 8249 Imperial Red Gloves
+- removed 8250 Imperial Red Mantle
+- removed 8251 Imperial Red Pants
+- removed 8252 Imperial Red Robe
+- removed 8253 Imperial Red Sash
+- removed 8254 Imperial Red Circlet
+- removed 8255 Serpentskin Girdle
+- removed 8256 Serpentskin Boots
+- removed 8257 Serpentskin Bracers
+- removed 8258 Serpentskin Armor
+- removed 8259 Serpentskin Cloak
+- removed 8260 Serpentskin Gloves
+- removed 8261 Serpentskin Helm
+- removed 8262 Serpentskin Leggings
+- removed 8263 Serpentskin Spaulders
+- removed 8264 Ebonhold Wristguards
+- removed 8265 Ebonhold Armor
+- removed 8266 Ebonhold Cloak
+- removed 8267 Ebonhold Gauntlets
+- removed 8268 Ebonhold Girdle
+- removed 8269 Ebonhold Boots
+- removed 8270 Ebonhold Helmet
+- removed 8271 Ebonhold Leggings
+- removed 8272 Ebonhold Shoulderpads
+- removed 8273 Valorous Wristguards
+- removed 8274 Valorous Chestguard
+- removed 8275 Ebonhold Buckler
+- removed 8276 Valorous Gauntlets
+- removed 8277 Valorous Girdle
+- removed 8278 Valorous Greaves
+- removed 8279 Valorous Helm
+- removed 8280 Valorous Legguards
+- removed 8281 Valorous Pauldrons
+- removed 8282 Valorous Shield
+- removed 8283 Arcane Armor
+- removed 8284 Arcane Boots
+- removed 8285 Arcane Bands
+- removed 8286 Arcane Cloak
+- removed 8287 Arcane Gloves
+- removed 8288 Arcane Pads
+- removed 8289 Arcane Leggings
+- removed 8290 Arcane Robe
+- removed 8291 Arcane Sash
+- removed 8292 Arcane Cover
+- removed 8293 Traveler's Belt
+- removed 8294 Traveler's Boots
+- removed 8295 Traveler's Bracers
+- removed 8296 Traveler's Jerkin
+- removed 8297 Traveler's Cloak
+- removed 8298 Traveler's Gloves
+- removed 8299 Traveler's Helm
+- removed 8300 Traveler's Leggings
+- removed 8301 Traveler's Spaulders
+- removed 8302 Hero's Bracers
+- removed 8303 Hero's Breastplate
+- removed 8304 Hero's Cape
+- removed 8305 Hero's Gauntlets
+- removed 8306 Hero's Belt
+- removed 8307 Hero's Boots
+- removed 8308 Hero's Band
+- removed 8309 Hero's Leggings
+- removed 8310 Hero's Pauldrons
+- removed 8311 Alabaster Plate Vambraces
+- removed 8312 Alabaster Breastplate
+- removed 8313 Hero's Buckler
+- removed 8314 Alabaster Plate Gauntlets
+- removed 8315 Alabaster Plate Girdle
+- removed 8316 Alabaster Plate Greaves
+- removed 8317 Alabaster Plate Helmet
+- removed 8318 Alabaster Plate Leggings
+- removed 8319 Alabaster Plate Pauldrons
+- removed 8320 Alabaster Shield
+- removed 8350 The 1 Ring
+- removed 9285 Field Plate Vambraces
+- removed 9286 Field Plate Armor
+- removed 9287 Field Plate Gauntlets
+- removed 9288 Field Plate Girdle
+- removed 9289 Field Plate Boots
+- removed 9290 Field Plate Helmet
+- removed 9291 Field Plate Leggings
+- removed 9292 Field Plate Pauldrons
+- removed 9359 Southsea Lamp
+- removed 9378 Shovelphlange's Mining Axe
+- removed 9382 Tromping Miner's Boots
+- removed 9384 Stonevault Shiv
+- removed 9385 Archaic Defender
+- removed 9386 Excavator's Brand
+- removed 9387 Revelosh's Boots
+- removed 9388 Revelosh's Armguards
+- removed 9389 Revelosh's Spaulders
+- removed 9390 Revelosh's Gloves
+- removed 9391 The Shoveler
+- removed 9393 Beacon of Hope
+- removed 9395 Gloves of Old
+- removed 9396 Legguards of the Vault
+- removed 9397 Energy Cloak
+- removed 9402 Earthborn Kilt
+- removed 9405 Girdle of Golem Strength
+- removed 9406 Spirewind Fetter
+- removed 9407 Stoneweaver Leggings
+- removed 9409 Ironaya's Bracers
+- removed 9420 Adventurer's Pith Helmet
+- removed 9426 Monolithic Bow
+- removed 9428 Unearthed Bands
+- removed 9433 Forgotten Wraps
+- removed 9434 Elemental Raiment
+- removed 9435 Reticulated Bone Gauntlets
+- removed 9445 Grubbis Paws
+- removed 9446 Electrocutioner Leg
+- removed 9447 Electrocutioner Lagnut
+- removed 9448 Spidertank Oilrag
+- removed 9449 Manual Crowd Pummeler
+- removed 9450 Gnomebot Operating Boots
+- removed 9452 Hydrocane
+- removed 9453 Toxic Revenger
+- removed 9454 Acidic Walkers
+- removed 9455 Emissary Cuffs
+- removed 9456 Glass Shooter
+- removed 9457 Royal Diplomatic Scepter
+- removed 9458 Thermaplugg's Central Core
+- removed 9459 Thermaplugg's Left Arm
+- removed 9461 Charged Gear
+- removed 9485 Vibroblade
+- removed 9486 Supercharger Battle Axe
+- removed 9487 Hi-Tech Supergun
+- removed 9488 Oscillating Power Hammer
+- removed 9489 Gyromatic Icemaker
+- removed 9490 Gizmotron Megachopper
+- removed 9491 Hotshot Pilot's Gloves
+- removed 9492 Electromagnetic Gigaflux Reactivator
+- removed 9508 Mechbuilder's Overalls
+- removed 9509 Petrolspill Leggings
+- removed 9510 Caverndeep Trudgers
+- removed 9522 Energized Stone Circle
+- removed 9535 Fire-welded Bracers
+- removed 9536 Fairywing Mantle
+- removed 9538 Talvash's Gold Ring
+- removed 9588 Nogg's Gold Ring
+- removed 9604 Mechanic's Pipehammer
+- removed 9605 Repairman's Cape
+- removed 9608 Shoni's Disarming Tool
+- removed 9609 Shilly Mitts
+- removed 9623 Civinad Robes
+- removed 9624 Triprunner Dungarees
+- removed 9625 Dual Reinforced Leggings
+- removed 9747 Simple Britches
+- removed 9748 Simple Robe
+- removed 9749 Simple Blouse
+- removed 9753 Nomad Buckler
+- removed 9756 Nomad Trousers
+- removed 9757 Nomad Tunic
+- removed 9763 Cadet Leggings
+- removed 9764 Cadet Shield
+- removed 9765 Cadet Vest
+- removed 9766 Greenweave Sash
+- removed 9767 Greenweave Sandals
+- removed 9768 Greenweave Bracers
+- removed 9770 Greenweave Cloak
+- removed 9771 Greenweave Gloves
+- removed 9772 Greenweave Leggings
+- removed 9773 Greenweave Robe
+- removed 9774 Greenweave Vest
+- removed 9775 Bandit Cinch
+- removed 9776 Bandit Boots
+- removed 9777 Bandit Bracers
+- removed 9778 Bandit Buckler
+- removed 9779 Bandit Cloak
+- removed 9780 Bandit Gloves
+- removed 9781 Bandit Pants
+- removed 9782 Bandit Jerkin
+- removed 9783 Raider's Chestpiece
+- removed 9784 Raider's Boots
+- removed 9785 Raider's Bracers
+- removed 9786 Raider's Cloak
+- removed 9787 Raider's Gauntlets
+- removed 9788 Raider's Belt
+- removed 9789 Raider's Legguards
+- removed 9790 Raider's Shield
+- removed 9791 Ivycloth Tunic
+- removed 9792 Ivycloth Boots
+- removed 9793 Ivycloth Bracelets
+- removed 9794 Ivycloth Cloak
+- removed 9795 Ivycloth Gloves
+- removed 9796 Ivycloth Mantle
+- removed 9797 Ivycloth Pants
+- removed 9798 Ivycloth Robe
+- removed 9799 Ivycloth Sash
+- removed 9801 Superior Belt
+- removed 9802 Superior Boots
+- removed 9803 Superior Bracers
+- removed 9804 Superior Buckler
+- removed 9805 Superior Cloak
+- removed 9806 Superior Gloves
+- removed 9807 Superior Shoulders
+- removed 9808 Superior Leggings
+- removed 9809 Superior Tunic
+- removed 9810 Fortified Boots
+- removed 9811 Fortified Bracers
+- removed 9812 Fortified Cloak
+- removed 9813 Fortified Gauntlets
+- removed 9814 Fortified Belt
+- removed 9815 Fortified Leggings
+- removed 9816 Fortified Shield
+- removed 9817 Fortified Spaulders
+- removed 9818 Fortified Chain
+- removed 9819 Durable Tunic
+- removed 9820 Durable Boots
+- removed 9821 Durable Bracers
+- removed 9822 Durable Cape
+- removed 9823 Durable Gloves
+- removed 9824 Durable Shoulders
+- removed 9825 Durable Pants
+- removed 9826 Durable Robe
+- removed 9827 Scaled Leather Belt
+- removed 9828 Scaled Leather Boots
+- removed 9829 Scaled Leather Bracers
+- removed 9830 Scaled Shield
+- removed 9831 Scaled Cloak
+- removed 9832 Scaled Leather Gloves
+- removed 9833 Scaled Leather Leggings
+- removed 9834 Scaled Leather Shoulders
+- removed 9835 Scaled Leather Tunic
+- removed 9836 Banded Armor
+- removed 9837 Banded Bracers
+- removed 9838 Banded Cloak
+- removed 9839 Banded Gauntlets
+- removed 9840 Banded Girdle
+- removed 9841 Banded Leggings
+- removed 9842 Banded Pauldrons
+- removed 9843 Banded Shield
+- removed 9844 Conjurer's Vest
+- removed 9845 Conjurer's Shoes
+- removed 9846 Conjurer's Bracers
+- removed 9847 Conjurer's Cloak
+- removed 9848 Conjurer's Gloves
+- removed 9849 Conjurer's Hood
+- removed 9850 Conjurer's Mantle
+- removed 9851 Conjurer's Breeches
+- removed 9852 Conjurer's Robe
+- removed 9853 Conjurer's Cinch
+- removed 9854 Archer's Jerkin
+- removed 9855 Archer's Belt
+- removed 9856 Archer's Boots
+- removed 9857 Archer's Bracers
+- removed 9858 Archer's Buckler
+- removed 9859 Archer's Cap
+- removed 9860 Archer's Cloak
+- removed 9861 Archer's Gloves
+- removed 9862 Archer's Trousers
+- removed 9863 Archer's Shoulderpads
+- removed 9864 Renegade Boots
+- removed 9865 Renegade Bracers
+- removed 9866 Renegade Chestguard
+- removed 9867 Renegade Cloak
+- removed 9868 Renegade Gauntlets
+- removed 9869 Renegade Belt
+- removed 9870 Renegade Circlet
+- removed 9871 Renegade Leggings
+- removed 9872 Renegade Pauldrons
+- removed 9873 Renegade Shield
+- removed 9874 Sorcerer Drape
+- removed 9875 Sorcerer Sash
+- removed 9876 Sorcerer Slippers
+- removed 9877 Sorcerer Cloak
+- removed 9878 Sorcerer Hat
+- removed 9879 Sorcerer Bracelets
+- removed 9880 Sorcerer Gloves
+- removed 9881 Sorcerer Mantle
+- removed 9883 Sorcerer Pants
+- removed 9884 Sorcerer Robe
+- removed 9885 Huntsman's Boots
+- removed 9886 Huntsman's Bands
+- removed 9887 Huntsman's Armor
+- removed 9889 Huntsman's Cap
+- removed 9890 Huntsman's Cape
+- removed 9891 Huntsman's Belt
+- removed 9892 Huntsman's Gloves
+- removed 9893 Huntsman's Leggings
+- removed 9894 Huntsman's Shoulders
+- removed 9895 Jazeraint Boots
+- removed 9896 Jazeraint Bracers
+- removed 9897 Jazeraint Chestguard
+- removed 9898 Jazeraint Cloak
+- removed 9899 Jazeraint Shield
+- removed 9900 Jazeraint Gauntlets
+- removed 9901 Jazeraint Belt
+- removed 9902 Jazeraint Helm
+- removed 9903 Jazeraint Leggings
+- removed 9904 Jazeraint Pauldrons
+- removed 9905 Royal Blouse
+- removed 9906 Royal Sash
+- removed 9907 Royal Boots
+- removed 9908 Royal Cape
+- removed 9909 Royal Bands
+- removed 9910 Royal Gloves
+- removed 9911 Royal Trousers
+- removed 9912 Royal Amice
+- removed 9913 Royal Gown
+- removed 9915 Royal Headband
+- removed 9916 Tracker's Belt
+- removed 9917 Tracker's Boots
+- removed 9918 Brigade Defender
+- removed 9919 Tracker's Cloak
+- removed 9920 Tracker's Gloves
+- removed 9921 Tracker's Headband
+- removed 9922 Tracker's Leggings
+- removed 9923 Tracker's Shoulderpads
+- removed 9924 Tracker's Tunic
+- removed 9925 Tracker's Wristguards
+- removed 9926 Brigade Boots
+- removed 9927 Brigade Bracers
+- removed 9928 Brigade Breastplate
+- removed 9929 Brigade Cloak
+- removed 9930 Brigade Gauntlets
+- removed 9931 Brigade Girdle
+- removed 9932 Brigade Circlet
+- removed 9933 Brigade Leggings
+- removed 9934 Brigade Pauldrons
+- removed 9935 Embossed Plate Shield
+- removed 9936 Abjurer's Boots
+- removed 9937 Abjurer's Bands
+- removed 9938 Abjurer's Cloak
+- removed 9939 Abjurer's Gloves
+- removed 9940 Abjurer's Hood
+- removed 9941 Abjurer's Mantle
+- removed 9942 Abjurer's Pants
+- removed 9943 Abjurer's Robe
+- removed 9944 Abjurer's Crystal
+- removed 9945 Abjurer's Sash
+- removed 9946 Abjurer's Tunic
+- removed 9947 Chieftain's Belt
+- removed 9948 Chieftain's Boots
+- removed 9949 Chieftain's Bracers
+- removed 9950 Chieftain's Breastplate
+- removed 9951 Chieftain's Cloak
+- removed 9952 Chieftain's Gloves
+- removed 9953 Chieftain's Headdress
+- removed 9954 Chieftain's Leggings
+- removed 9955 Chieftain's Shoulders
+- removed 9956 Warmonger's Bracers
+- removed 9957 Warmonger's Chestpiece
+- removed 9958 Warmonger's Buckler
+- removed 9959 Warmonger's Cloak
+- removed 9960 Warmonger's Gauntlets
+- removed 9961 Warmonger's Belt
+- removed 9962 Warmonger's Greaves
+- removed 9963 Warmonger's Circlet
+- removed 9964 Warmonger's Leggings
+- removed 9965 Warmonger's Pauldrons
+- removed 9966 Embossed Plate Armor
+- removed 9967 Embossed Plate Gauntlets
+- removed 9968 Embossed Plate Girdle
+- removed 9969 Embossed Plate Helmet
+- removed 9970 Embossed Plate Leggings
+- removed 9971 Embossed Plate Pauldrons
+- removed 9972 Embossed Plate Bracers
+- removed 9973 Embossed Plate Boots
+- removed 9974 Overlord's Shield
+- removed 10057 Duskwoven Tunic
+- removed 10058 Duskwoven Sandals
+- removed 10059 Duskwoven Bracers
+- removed 10060 Duskwoven Cape
+- removed 10061 Duskwoven Turban
+- removed 10062 Duskwoven Gloves
+- removed 10063 Duskwoven Amice
+- removed 10064 Duskwoven Pants
+- removed 10065 Duskwoven Robe
+- removed 10066 Duskwoven Sash
+- removed 10067 Righteous Waistguard
+- removed 10068 Righteous Boots
+- removed 10069 Righteous Bracers
+- removed 10070 Righteous Armor
+- removed 10071 Righteous Cloak
+- removed 10072 Righteous Gloves
+- removed 10073 Righteous Helmet
+- removed 10074 Righteous Leggings
+- removed 10075 Righteous Spaulders
+- removed 10076 Lord's Armguards
+- removed 10077 Lord's Breastplate
+- removed 10078 Lord's Crest
+- removed 10079 Lord's Cape
+- removed 10080 Lord's Gauntlets
+- removed 10081 Lord's Girdle
+- removed 10082 Lord's Boots
+- removed 10083 Lord's Crown
+- removed 10084 Lord's Legguards
+- removed 10085 Lord's Pauldrons
+- removed 10086 Gothic Plate Armor
+- removed 10087 Gothic Plate Gauntlets
+- removed 10088 Gothic Plate Girdle
+- removed 10089 Gothic Sabatons
+- removed 10090 Gothic Plate Helmet
+- removed 10091 Gothic Plate Leggings
+- removed 10092 Gothic Plate Spaulders
+- removed 10093 Revenant Deflector
+- removed 10094 Gothic Plate Vambraces
+- removed 10095 Councillor's Boots
+- removed 10096 Councillor's Cuffs
+- removed 10097 Councillor's Circlet
+- removed 10098 Councillor's Cloak
+- removed 10099 Councillor's Gloves
+- removed 10100 Councillor's Shoulders
+- removed 10101 Councillor's Pants
+- removed 10102 Councillor's Robes
+- removed 10103 Councillor's Sash
+- removed 10104 Councillor's Tunic
+- removed 10105 Wanderer's Armor
+- removed 10106 Wanderer's Boots
+- removed 10107 Wanderer's Bracers
+- removed 10108 Wanderer's Cloak
+- removed 10109 Wanderer's Belt
+- removed 10110 Wanderer's Gloves
+- removed 10111 Wanderer's Hat
+- removed 10112 Wanderer's Leggings
+- removed 10113 Wanderer's Shoulders
+- removed 10118 Ornate Breastplate
+- removed 10119 Ornate Greaves
+- removed 10120 Ornate Cloak
+- removed 10121 Ornate Gauntlets
+- removed 10122 Ornate Girdle
+- removed 10123 Ornate Circlet
+- removed 10124 Ornate Legguards
+- removed 10125 Ornate Pauldrons
+- removed 10126 Ornate Bracers
+- removed 10127 Revenant Bracers
+- removed 10128 Revenant Chestplate
+- removed 10129 Revenant Gauntlets
+- removed 10130 Revenant Girdle
+- removed 10131 Revenant Boots
+- removed 10132 Revenant Helmet
+- removed 10133 Revenant Leggings
+- removed 10134 Revenant Shoulders
+- removed 10135 High Councillor's Tunic
+- removed 10136 High Councillor's Bracers
+- removed 10137 High Councillor's Boots
+- removed 10138 High Councillor's Cloak
+- removed 10139 High Councillor's Circlet
+- removed 10140 High Councillor's Gloves
+- removed 10141 High Councillor's Pants
+- removed 10142 High Councillor's Mantle
+- removed 10144 High Councillor's Sash
+- removed 10145 Mighty Girdle
+- removed 10146 Mighty Boots
+- removed 10147 Mighty Armsplints
+- removed 10148 Mighty Cloak
+- removed 10149 Mighty Gauntlets
+- removed 10150 Mighty Helmet
+- removed 10151 Mighty Tunic
+- removed 10152 Mighty Leggings
+- removed 10153 Mighty Spaulders
+- removed 10154 Mercurial Girdle
+- removed 10155 Mercurial Greaves
+- removed 10156 Mercurial Bracers
+- removed 10157 Mercurial Breastplate
+- removed 10158 Mercurial Guard
+- removed 10159 Mercurial Cloak
+- removed 10160 Mercurial Circlet
+- removed 10161 Mercurial Gauntlets
+- removed 10162 Mercurial Legguards
+- removed 10163 Mercurial Pauldrons
+- removed 10164 Templar Chestplate
+- removed 10165 Templar Gauntlets
+- removed 10166 Templar Girdle
+- removed 10167 Templar Boots
+- removed 10168 Templar Crown
+- removed 10169 Templar Legplates
+- removed 10170 Templar Pauldrons
+- removed 10171 Templar Bracers
+- removed 10172 Mystical Mantle
+- removed 10173 Mystical Bracers
+- removed 10174 Mystical Cape
+- removed 10175 Mystical Headwrap
+- removed 10176 Mystical Gloves
+- removed 10177 Mystical Leggings
+- removed 10178 Mystical Robe
+- removed 10179 Mystical Boots
+- removed 10180 Mystical Belt
+- removed 10181 Mystical Armor
+- removed 10182 Swashbuckler's Breastplate
+- removed 10183 Swashbuckler's Boots
+- removed 10184 Swashbuckler's Bracers
+- removed 10185 Swashbuckler's Cape
+- removed 10186 Swashbuckler's Gloves
+- removed 10187 Swashbuckler's Eyepatch
+- removed 10188 Swashbuckler's Leggings
+- removed 10189 Swashbuckler's Shoulderpads
+- removed 10190 Swashbuckler's Belt
+- removed 10191 Crusader's Armguards
+- removed 10192 Crusader's Boots
+- removed 10193 Crusader's Armor
+- removed 10194 Crusader's Cloak
+- removed 10195 Crusader's Shield
+- removed 10196 Crusader's Gauntlets
+- removed 10197 Crusader's Belt
+- removed 10198 Crusader's Helm
+- removed 10199 Crusader's Leggings
+- removed 10200 Crusader's Pauldrons
+- removed 10201 Overlord's Greaves
+- removed 10202 Overlord's Vambraces
+- removed 10203 Overlord's Chestplate
+- removed 10204 Heavy Lamellar Shield
+- removed 10205 Overlord's Gauntlets
+- removed 10206 Overlord's Girdle
+- removed 10207 Overlord's Crown
+- removed 10208 Overlord's Legplates
+- removed 10209 Overlord's Spaulders
+- removed 10210 Elegant Mantle
+- removed 10211 Elegant Boots
+- removed 10212 Elegant Cloak
+- removed 10213 Elegant Bracers
+- removed 10214 Elegant Gloves
+- removed 10215 Elegant Robes
+- removed 10216 Elegant Belt
+- removed 10217 Elegant Leggings
+- removed 10218 Elegant Tunic
+- removed 10219 Elegant Circlet
+- removed 10220 Nightshade Tunic
+- removed 10221 Nightshade Girdle
+- removed 10222 Nightshade Boots
+- removed 10223 Nightshade Armguards
+- removed 10224 Nightshade Cloak
+- removed 10225 Nightshade Gloves
+- removed 10226 Nightshade Helmet
+- removed 10227 Nightshade Leggings
+- removed 10228 Nightshade Spaulders
+- removed 10229 Engraved Bracers
+- removed 10230 Engraved Breastplate
+- removed 10231 Engraved Cape
+- removed 10232 Engraved Gauntlets
+- removed 10233 Engraved Girdle
+- removed 10234 Engraved Boots
+- removed 10235 Engraved Helm
+- removed 10236 Engraved Leggings
+- removed 10237 Engraved Pauldrons
+- removed 10238 Heavy Lamellar Boots
+- removed 10239 Heavy Lamellar Vambraces
+- removed 10240 Heavy Lamellar Chestpiece
+- removed 10241 Heavy Lamellar Helm
+- removed 10242 Heavy Lamellar Gauntlets
+- removed 10243 Heavy Lamellar Girdle
+- removed 10244 Heavy Lamellar Leggings
+- removed 10245 Heavy Lamellar Pauldrons
+- removed 10246 Master's Vest
+- removed 10247 Master's Boots
+- removed 10248 Master's Bracers
+- removed 10250 Master's Hat
+- removed 10251 Master's Gloves
+- removed 10252 Master's Leggings
+- removed 10253 Master's Mantle
+- removed 10254 Master's Robe
+- removed 10255 Master's Belt
+- removed 10256 Adventurer's Bracers
+- removed 10257 Adventurer's Boots
+- removed 10258 Adventurer's Cape
+- removed 10259 Adventurer's Belt
+- removed 10260 Adventurer's Gloves
+- removed 10261 Adventurer's Bandana
+- removed 10262 Adventurer's Legguards
+- removed 10263 Adventurer's Shoulders
+- removed 10265 Masterwork Bracers
+- removed 10266 Masterwork Breastplate
+- removed 10267 Masterwork Cape
+- removed 10268 Masterwork Gauntlets
+- removed 10269 Masterwork Girdle
+- removed 10270 Masterwork Boots
+- removed 10271 Masterwork Shield
+- removed 10272 Masterwork Circlet
+- removed 10273 Masterwork Legplates
+- removed 10274 Masterwork Pauldrons
+- removed 10275 Emerald Breastplate
+- removed 10276 Emerald Sabatons
+- removed 10277 Emerald Gauntlets
+- removed 10278 Emerald Girdle
+- removed 10279 Emerald Helm
+- removed 10280 Emerald Legplates
+- removed 10281 Emerald Pauldrons
+- removed 10282 Emerald Vambraces
+- removed 10287 Greenweave Mantle
+- removed 10288 Sage's Circlet
+- removed 10289 Durable Hat
+- removed 10328 Scarlet Chestpiece
+- removed 10329 Scarlet Belt
+- removed 10330 Scarlet Leggings
+- removed 10331 Scarlet Gauntlets
+- removed 10332 Scarlet Boots
+- removed 10333 Scarlet Wristguards
+- removed 10358 Duracin Bracers
+- removed 10359 Everlast Boots
+- removed 10362 Ornate Shield
+- removed 10363 Engraved Wall
+- removed 10364 Templar Shield
+- removed 10365 Emerald Shield
+- removed 10366 Demon Guard
+- removed 10367 Hyperion Shield
+- removed 10368 Imbued Plate Armor
+- removed 10369 Imbued Plate Gauntlets
+- removed 10370 Imbued Plate Girdle
+- removed 10371 Imbued Plate Greaves
+- removed 10372 Imbued Plate Helmet
+- removed 10373 Imbued Plate Leggings
+- removed 10374 Imbued Plate Pauldrons
+- removed 10375 Imbued Plate Vambraces
+- removed 10376 Commander's Boots
+- removed 10377 Commander's Vambraces
+- removed 10378 Commander's Armor
+- removed 10379 Commander's Helm
+- removed 10380 Commander's Gauntlets
+- removed 10381 Commander's Girdle
+- removed 10382 Commander's Leggings
+- removed 10383 Commander's Pauldrons
+- removed 10385 Hyperion Greaves
+- removed 10386 Hyperion Gauntlets
+- removed 10387 Hyperion Girdle
+- removed 10388 Hyperion Helm
+- removed 10389 Hyperion Legplates
+- removed 10390 Hyperion Pauldrons
+- removed 10391 Hyperion Vambraces
+- removed 10399 Blackened Defias Armor
+- removed 10400 Blackened Defias Leggings
+- removed 10401 Blackened Defias Gloves
+- removed 10402 Blackened Defias Boots
+- removed 10403 Blackened Defias Belt
+- removed 10404 Durable Belt
+- removed 10406 Scaled Leather Headband
+- removed 10408 Banded Helm
+- removed 10409 Banded Boots
+- removed 10410 Leggings of the Fang
+- removed 10411 Footpads of the Fang
+- removed 10412 Belt of the Fang
+- removed 10413 Gloves of the Fang
+- removed 10553 Foreman Vest
+- removed 10554 Foreman Pants
+- removed 10571 Ebony Boneclub
+- removed 10573 Boneslasher
+- removed 10578 Thoughtcast Boots
+- removed 10582 Briar Tredders
+- removed 10584 Stormgale Fists
+- removed 10657 Talbar Mantle
+- removed 10658 Quagmire Galoshes
+- removed 10769 Glowing Eye of Mordresh
+- removed 10770 Mordresh's Lifeless Skull
+- removed 10772 Glutton's Cleaver
+- removed 10775 Carapace of Tuten'kash
+- removed 10776 Silky Spider Cape
+- removed 10777 Arachnid Gloves
+- removed 10919 Apothecary Gloves
+- removed 11121 Darkwater Talwar
+- removed 11122 Carrot on a Stick
+- removed 11302 Uther's Strength
+- removed 11811 Smoking Heart of the Mountain
+- removed 11902 Linken's Sword of Mastery
+- removed 11904 Spirit of Aquementas
+- removed 11965 Quartz Ring
+- removed 11967 Zircon Band
+- removed 11968 Amber Hoop
+- removed 11969 Jacinth Circle
+- removed 11970 Spinel Ring
+- removed 11971 Amethyst Band
+- removed 11972 Carnelian Loop
+- removed 11973 Hematite Link
+- removed 11974 Aquamarine Ring
+- removed 11975 Topaz Ring
+- removed 11976 Sardonyx Knuckle
+- removed 11977 Serpentine Loop
+- removed 11978 Jasper Link
+- removed 11979 Peridot Circle
+- removed 11980 Opal Ring
+- removed 11981 Lead Band
+- removed 11982 Viridian Band
+- removed 11983 Chrome Ring
+- removed 11984 Cobalt Ring
+- removed 11985 Cerulean Ring
+- removed 11986 Thallium Hoop
+- removed 11987 Iridium Circle
+- removed 11988 Tellurium Band
+- removed 11989 Vanadium Loop
+- removed 11990 Selenium Loop
+- removed 11991 Quicksilver Ring
+- removed 11992 Vermilion Band
+- removed 11993 Clay Ring
+- removed 11994 Coral Band
+- removed 11995 Ivory Band
+- removed 11996 Basalt Ring
+- removed 11997 Greenstone Circle
+- removed 11998 Jet Loop
+- removed 11999 Lodestone Hoop
+- removed 12001 Onyx Ring
+- removed 12002 Marble Circle
+- removed 12004 Obsidian Band
+- removed 12005 Granite Ring
+- removed 12006 Meadow Ring
+- removed 12007 Prairie Ring
+- removed 12008 Savannah Ring
+- removed 12009 Tundra Ring
+- removed 12010 Fen Ring
+- removed 12011 Forest Hoop
+- removed 12012 Marsh Ring
+- removed 12013 Desert Ring
+- removed 12014 Arctic Ring
+- removed 12015 Swamp Ring
+- removed 12016 Jungle Ring
+- removed 12017 Prismatic Band
+- removed 12019 Cerulean Talisman
+- removed 12020 Thallium Choker
+- removed 12022 Iridium Chain
+- removed 12023 Tellurium Necklace
+- removed 12024 Vanadium Talisman
+- removed 12025 Selenium Chain
+- removed 12026 Quicksilver Pendant
+- removed 12027 Vermilion Necklace
+- removed 12028 Basalt Necklace
+- removed 12029 Greenstone Talisman
+- removed 12030 Jet Chain
+- removed 12031 Lodestone Necklace
+- removed 12032 Onyx Choker
+- removed 12034 Marble Necklace
+- removed 12035 Obsidian Pendant
+- removed 12036 Granite Necklace
+- removed 12039 Tundra Necklace
+- removed 12040 Forest Pendant
+- removed 12042 Marsh Chain
+- removed 12043 Desert Choker
+- removed 12044 Arctic Pendant
+- removed 12045 Swamp Pendant
+- removed 12046 Jungle Necklace
+- removed 12047 Spectral Necklace
+- removed 12048 Prismatic Pendant
+- removed 12052 Ring of the Moon
+- removed 12053 Volcanic Rock Ring
+- removed 12054 Demon Band
+- removed 12055 Stardust Band
+- removed 12056 Ring of the Heavens
+- removed 12057 Dragonscale Band
+- removed 12058 Demonic Bone Ring
+- removed 12628 Demon Forged Breastplate
+- removed 12974 The Black Knight
+- removed 12975 Prospector Axe
+- removed 12977 Magefist Gloves
+- removed 12978 Stormbringer Belt
+- removed 12979 Firebane Cloak
+- removed 12982 Silver-linked Footguards
+- removed 12983 Rakzur Club
+- removed 12984 Skycaller
+- removed 12985 Ring of Defense
+- removed 12987 Darkweave Breeches
+- removed 12988 Starsight Tunic
+- removed 12989 Gargoyle's Bite
+- removed 12992 Searing Blade
+- removed 12994 Thorbia's Gauntlets
+- removed 12996 Band of Purification
+- removed 12997 Redbeard Crest
+- removed 12998 Magician's Mantle
+- removed 12999 Drakewing Bands
+- removed 13000 Staff of Hale Magefire
+- removed 13002 Lady Alizabeth's Pendant
+- removed 13003 Lord Alexander's Battle Axe
+- removed 13004 Torch of Austen
+- removed 13005 Amy's Blanket
+- removed 13006 Mass of McGowan
+- removed 13007 Mageflame Cloak
+- removed 13008 Dalewind Trousers
+- removed 13009 Cow King's Hide
+- removed 13010 Dreamsinger Legguards
+- removed 13011 Silver-lined Belt
+- removed 13012 Yorgen Bracers
+- removed 13013 Elder Wizard's Mantle
+- removed 13014 Axe of Rin'ji
+- removed 13015 Serathil
+- removed 13016 Killmaim
+- removed 13017 Hellslayer Battle Axe
+- removed 13018 Executioner's Cleaver
+- removed 13019 Harpyclaw Short Bow
+- removed 13020 Skystriker Bow
+- removed 13021 Needle Threader
+- removed 13022 Gryphonwing Long Bow
+- removed 13023 Eaglehorn Long Bow
+- removed 13024 Beazel's Basher
+- removed 13025 Deadwood Sledge
+- removed 13026 Heaven's Light
+- removed 13027 Bonesnapper
+- removed 13028 Bludstone Hammer
+- removed 13029 Umbral Crystal
+- removed 13030 Basilisk Bone
+- removed 13031 Orb of Mistmantle
+- removed 13032 Sword of Corruption
+- removed 13033 Zealot Blade
+- removed 13034 Speedsteel Rapier
+- removed 13035 Serpent Slicer
+- removed 13036 Assassination Blade
+- removed 13037 Crystalpine Stinger
+- removed 13038 Swiftwind
+- removed 13039 Skull Splitting Crossbow
+- removed 13040 Heartseeking Crossbow
+- removed 13041 Guardian Blade
+- removed 13042 Sword of the Magistrate
+- removed 13043 Blade of the Titans
+- removed 13044 Demonslayer
+- removed 13045 Viscous Hammer
+- removed 13046 Blanchard's Stout
+- removed 13047 Twig of the World Tree
+- removed 13048 Looming Gavel
+- removed 13049 Deanship Claymore
+- removed 13051 Witchfury
+- removed 13052 Warmonger
+- removed 13053 Doombringer
+- removed 13054 Grim Reaper
+- removed 13055 Bonechewer
+- removed 13056 Frenzied Striker
+- removed 13057 Bloodpike
+- removed 13058 Khoo's Point
+- removed 13059 Stoneraven
+- removed 13060 The Needler
+- removed 13062 Thunderwood
+- removed 13063 Starfaller
+- removed 13064 Jaina's Firestarter
+- removed 13065 Wand of Allistarj
+- removed 13066 Wyrmslayer Spaulders
+- removed 13067 Hydralick Armor
+- removed 13068 Obsidian Greaves
+- removed 13070 Sapphiron's Scale Boots
+- removed 13071 Plated Fist of Hakoo
+- removed 13072 Stonegrip Gauntlets
+- removed 13073 Mugthol's Helm
+- removed 13074 Golem Shard Leggings
+- removed 13075 Direwing Legguards
+- removed 13076 Giantslayer Bracers
+- removed 13077 Girdle of Uther
+- removed 13079 Shield of Thorsen
+- removed 13081 Skullance Shield
+- removed 13082 Mountainside Buckler
+- removed 13083 Garrett Family Crest
+- removed 13084 Kaleidoscope Chain
+- removed 13085 Horizon Choker
+- removed 13087 River Pride Choker
+- removed 13088 Gazlowe's Charm
+- removed 13089 Skibi's Pendant
+- removed 13091 Medallion of Grand Marshal Morris
+- removed 13093 Blush Ember Ring
+- removed 13094 The Queen's Jewel
+- removed 13095 Assault Band
+- removed 13096 Band of the Hierophant
+- removed 13097 Thunderbrow Ring
+- removed 13099 Moccasins of the White Hare
+- removed 13100 Furen's Boots
+- removed 13101 Wolfrunner Shoes
+- removed 13102 Cassandra's Grace
+- removed 13103 Pads of the Venom Spider
+- removed 13105 Sutarn's Ring
+- removed 13106 Glowing Magical Bracelets
+- removed 13107 Magiskull Cuffs
+- removed 13108 Tigerstrike Mantle
+- removed 13109 Blackflame Cape
+- removed 13110 Wolffear Harness
+- removed 13111 Sandals of the Insurgent
+- removed 13112 Winged Helm
+- removed 13113 Feathermoon Headdress
+- removed 13114 Troll's Bane Leggings
+- removed 13115 Sheepshear Mantle
+- removed 13116 Spaulders of the Unseen
+- removed 13117 Ogron's Sash
+- removed 13118 Serpentine Sash
+- removed 13119 Enchanted Kodo Bracers
+- removed 13120 Deepfury Bracers
+- removed 13121 Wing of the Whelpling
+- removed 13122 Dark Phantom Cape
+- removed 13123 Dreamwalker Armor
+- removed 13124 Ravasaur Scale Boots
+- removed 13125 Elven Chain Boots
+- removed 13126 Battlecaller Gauntlets
+- removed 13127 Frostreaver Crown
+- removed 13128 High Bergg Helm
+- removed 13129 Firemane Leggings
+- removed 13130 Windrunner Legguards
+- removed 13131 Sparkleshell Mantle
+- removed 13132 Skeletal Shoulders
+- removed 13133 Drakesfire Epaulets
+- removed 13134 Belt of the Gladiator
+- removed 13135 Lordly Armguards
+- removed 13136 Lil Timmy's Peashooter
+- removed 13137 Ironweaver
+- removed 13138 The Silencer
+- removed 13139 Guttbuster
+- removed 13144 Serenity Belt
+- removed 13145 Enormous Ogre Belt
+- removed 13146 Shell Launcher Shotgun
+- removed 13199 Crushridge Bindings
+- removed 13245 Kresh's Back
+- removed 14025 Mystic's Belt
+- removed 14090 Beaded Britches
+- removed 14091 Beaded Robe
+- removed 14094 Beaded Wraps
+- removed 14096 Native Vest
+- removed 14097 Native Pants
+- removed 14109 Native Robe
+- removed 14113 Aboriginal Sash
+- removed 14114 Aboriginal Footwraps
+- removed 14117 Aboriginal Gloves
+- removed 14119 Aboriginal Loincloth
+- removed 14120 Aboriginal Robe
+- removed 14121 Aboriginal Vest
+- removed 14122 Ritual Bands
+- removed 14123 Ritual Cape
+- removed 14124 Ritual Gloves
+- removed 14125 Ritual Leggings
+- removed 14127 Ritual Shroud
+- removed 14129 Ritual Sandals
+- removed 14131 Ritual Belt
+- removed 14133 Ritual Tunic
+- removed 14145 Cursed Felblade
+- removed 14147 Cavedweller Bracers
+- removed 14148 Crystalline Cuffs
+- removed 14149 Subterranean Cape
+- removed 14150 Robe of Evocation
+- removed 14151 Chanting Blade
+- removed 14159 Pagan Shoes
+- removed 14160 Pagan Bands
+- removed 14161 Pagan Cape
+- removed 14162 Pagan Mitts
+- removed 14163 Pagan Wraps
+- removed 14164 Pagan Belt
+- removed 14165 Pagan Britches
+- removed 14166 Buccaneer's Bracers
+- removed 14167 Buccaneer's Cape
+- removed 14168 Buccaneer's Gloves
+- removed 14171 Buccaneer's Pants
+- removed 14172 Buccaneer's Robes
+- removed 14173 Buccaneer's Cord
+- removed 14174 Buccaneer's Boots
+- removed 14175 Buccaneer's Vest
+- removed 14176 Watcher's Boots
+- removed 14177 Watcher's Cuffs
+- removed 14178 Watcher's Cap
+- removed 14179 Watcher's Cape
+- removed 14180 Watcher's Jerkin
+- removed 14181 Watcher's Handwraps
+- removed 14182 Watcher's Mantle
+- removed 14183 Watcher's Leggings
+- removed 14184 Watcher's Robes
+- removed 14185 Watcher's Cinch
+- removed 14186 Raincaller Mantle
+- removed 14187 Raincaller Cuffs
+- removed 14188 Raincaller Cloak
+- removed 14189 Raincaller Cap
+- removed 14190 Raincaller Vest
+- removed 14191 Raincaller Mitts
+- removed 14192 Raincaller Robes
+- removed 14193 Raincaller Pants
+- removed 14194 Raincaller Cord
+- removed 14195 Raincaller Boots
+- removed 14196 Thistlefur Sandals
+- removed 14197 Thistlefur Bands
+- removed 14198 Thistlefur Cloak
+- removed 14199 Thistlefur Gloves
+- removed 14200 Thistlefur Cap
+- removed 14201 Thistlefur Mantle
+- removed 14202 Thistlefur Jerkin
+- removed 14203 Thistlefur Pants
+- removed 14204 Thistlefur Robe
+- removed 14205 Thistlefur Belt
+- removed 14206 Vital Bracelets
+- removed 14207 Vital Leggings
+- removed 14208 Vital Headband
+- removed 14209 Vital Sash
+- removed 14210 Vital Cape
+- removed 14211 Vital Handwraps
+- removed 14212 Vital Shoulders
+- removed 14213 Vital Raiment
+- removed 14214 Vital Boots
+- removed 14215 Vital Tunic
+- removed 14216 Geomancer's Jerkin
+- removed 14217 Geomancer's Cord
+- removed 14218 Geomancer's Boots
+- removed 14219 Geomancer's Cloak
+- removed 14220 Geomancer's Cap
+- removed 14221 Geomancer's Bracers
+- removed 14222 Geomancer's Gloves
+- removed 14223 Geomancer's Spaulders
+- removed 14224 Geomancer's Trousers
+- removed 14225 Geomancer's Wraps
+- removed 14226 Embersilk Bracelets
+- removed 14228 Embersilk Coronet
+- removed 14229 Embersilk Cloak
+- removed 14230 Embersilk Tunic
+- removed 14231 Embersilk Mitts
+- removed 14232 Embersilk Mantle
+- removed 14233 Embersilk Leggings
+- removed 14234 Embersilk Robes
+- removed 14235 Embersilk Cord
+- removed 14236 Embersilk Boots
+- removed 14237 Darkmist Armor
+- removed 14238 Darkmist Boots
+- removed 14239 Darkmist Cape
+- removed 14240 Darkmist Bands
+- removed 14241 Darkmist Handguards
+- removed 14242 Darkmist Pants
+- removed 14243 Darkmist Mantle
+- removed 14244 Darkmist Wraps
+- removed 14245 Darkmist Girdle
+- removed 14246 Darkmist Wizard Hat
+- removed 14247 Lunar Mantle
+- removed 14248 Lunar Bindings
+- removed 14249 Lunar Vest
+- removed 14250 Lunar Slippers
+- removed 14251 Lunar Cloak
+- removed 14252 Lunar Coronet
+- removed 14253 Lunar Handwraps
+- removed 14254 Lunar Raiment
+- removed 14255 Lunar Belt
+- removed 14257 Lunar Leggings
+- removed 14258 Bloodwoven Cord
+- removed 14259 Bloodwoven Boots
+- removed 14260 Bloodwoven Bracers
+- removed 14261 Bloodwoven Cloak
+- removed 14262 Bloodwoven Mitts
+- removed 14263 Bloodwoven Mask
+- removed 14264 Bloodwoven Pants
+- removed 14265 Bloodwoven Wraps
+- removed 14266 Bloodwoven Pads
+- removed 14267 Bloodwoven Jerkin
+- removed 14268 Gaea's Cuffs
+- removed 14269 Gaea's Slippers
+- removed 14270 Gaea's Cloak
+- removed 14271 Gaea's Circlet
+- removed 14272 Gaea's Handwraps
+- removed 14273 Gaea's Amice
+- removed 14274 Gaea's Leggings
+- removed 14275 Gaea's Raiment
+- removed 14276 Gaea's Belt
+- removed 14277 Gaea's Tunic
+- removed 14278 Opulent Mantle
+- removed 14279 Opulent Bracers
+- removed 14280 Opulent Cape
+- removed 14281 Opulent Crown
+- removed 14282 Opulent Gloves
+- removed 14283 Opulent Leggings
+- removed 14284 Opulent Robes
+- removed 14285 Opulent Boots
+- removed 14286 Opulent Belt
+- removed 14287 Opulent Tunic
+- removed 14288 Arachnidian Armor
+- removed 14289 Arachnidian Girdle
+- removed 14290 Arachnidian Footpads
+- removed 14291 Arachnidian Bracelets
+- removed 14292 Arachnidian Cape
+- removed 14293 Arachnidian Circlet
+- removed 14294 Arachnidian Gloves
+- removed 14295 Arachnidian Legguards
+- removed 14296 Arachnidian Pauldrons
+- removed 14297 Arachnidian Robes
+- removed 14298 Bonecaster's Spaulders
+- removed 14299 Bonecaster's Boots
+- removed 14300 Bonecaster's Cape
+- removed 14301 Bonecaster's Bindings
+- removed 14302 Bonecaster's Gloves
+- removed 14303 Bonecaster's Shroud
+- removed 14304 Bonecaster's Belt
+- removed 14305 Bonecaster's Sarong
+- removed 14306 Bonecaster's Vest
+- removed 14307 Bonecaster's Crown
+- removed 14308 Celestial Tunic
+- removed 14309 Celestial Belt
+- removed 14310 Celestial Slippers
+- removed 14311 Celestial Bindings
+- removed 14312 Celestial Crown
+- removed 14313 Celestial Cape
+- removed 14314 Celestial Handwraps
+- removed 14315 Celestial Kilt
+- removed 14316 Celestial Pauldrons
+- removed 14317 Celestial Silk Robes
+- removed 14318 Resplendent Tunic
+- removed 14319 Resplendent Boots
+- removed 14320 Resplendent Bracelets
+- removed 14321 Resplendent Cloak
+- removed 14322 Resplendent Circlet
+- removed 14323 Resplendent Gauntlets
+- removed 14324 Resplendent Sarong
+- removed 14325 Resplendent Epaulets
+- removed 14326 Resplendent Robes
+- removed 14327 Resplendent Belt
+- removed 14328 Eternal Chestguard
+- removed 14329 Eternal Boots
+- removed 14330 Eternal Bindings
+- removed 14331 Eternal Cloak
+- removed 14332 Eternal Crown
+- removed 14333 Eternal Gloves
+- removed 14334 Eternal Sarong
+- removed 14335 Eternal Spaulders
+- removed 14336 Eternal Wraps
+- removed 14337 Eternal Cord
+- removed 14364 Mystic's Slippers
+- removed 14365 Mystic's Cape
+- removed 14366 Mystic's Bracelets
+- removed 14367 Mystic's Gloves
+- removed 14369 Mystic's Wrap
+- removed 14370 Mystic's Woolies
+- removed 14371 Mystic's Robe
+- removed 14372 Sanguine Armor
+- removed 14373 Sanguine Belt
+- removed 14374 Sanguine Sandals
+- removed 14375 Sanguine Cuffs
+- removed 14376 Sanguine Cape
+- removed 14377 Sanguine Handwraps
+- removed 14378 Sanguine Mantle
+- removed 14379 Sanguine Trousers
+- removed 14380 Sanguine Robe
+- removed 14397 Resilient Mantle
+- removed 14398 Resilient Tunic
+- removed 14399 Resilient Boots
+- removed 14400 Resilient Cape
+- removed 14401 Resilient Cap
+- removed 14402 Resilient Bands
+- removed 14403 Resilient Handgrips
+- removed 14404 Resilient Leggings
+- removed 14405 Resilient Robe
+- removed 14406 Resilient Cord
+- removed 14407 Stonecloth Vest
+- removed 14408 Stonecloth Boots
+- removed 14409 Stonecloth Cape
+- removed 14410 Stonecloth Circlet
+- removed 14411 Stonecloth Gloves
+- removed 14412 Stonecloth Epaulets
+- removed 14413 Stonecloth Robe
+- removed 14414 Stonecloth Belt
+- removed 14415 Stonecloth Britches
+- removed 14416 Stonecloth Bindings
+- removed 14417 Silksand Tunic
+- removed 14418 Silksand Boots
+- removed 14419 Silksand Bracers
+- removed 14420 Silksand Cape
+- removed 14421 Silksand Circlet
+- removed 14422 Silksand Gloves
+- removed 14423 Silksand Shoulder Pads
+- removed 14424 Silksand Legwraps
+- removed 14425 Silksand Wraps
+- removed 14426 Silksand Girdle
+- removed 14427 Windchaser Wraps
+- removed 14428 Windchaser Footpads
+- removed 14429 Windchaser Cuffs
+- removed 14430 Windchaser Cloak
+- removed 14431 Windchaser Handguards
+- removed 14432 Windchaser Amice
+- removed 14433 Windchaser Woolies
+- removed 14434 Windchaser Robes
+- removed 14435 Windchaser Cinch
+- removed 14436 Windchaser Coronet
+- removed 14437 Venomshroud Vest
+- removed 14438 Venomshroud Boots
+- removed 14439 Venomshroud Armguards
+- removed 14440 Venomshroud Cape
+- removed 14441 Venomshroud Mask
+- removed 14442 Venomshroud Mitts
+- removed 14443 Venomshroud Mantle
+- removed 14444 Venomshroud Leggings
+- removed 14445 Venomshroud Silk Robes
+- removed 14446 Venomshroud Belt
+- removed 14447 Highborne Footpads
+- removed 14448 Highborne Bracelets
+- removed 14449 Highborne Crown
+- removed 14450 Highborne Cloak
+- removed 14451 Highborne Gloves
+- removed 14452 Highborne Pauldrons
+- removed 14453 Highborne Robes
+- removed 14454 Highborne Cord
+- removed 14455 Highborne Padded Armor
+- removed 14456 Elunarian Vest
+- removed 14457 Elunarian Cuffs
+- removed 14458 Elunarian Boots
+- removed 14459 Elunarian Cloak
+- removed 14460 Elunarian Diadem
+- removed 14461 Elunarian Handgrips
+- removed 14462 Elunarian Sarong
+- removed 14463 Elunarian Spaulders
+- removed 14464 Elunarian Silk Robes
+- removed 14465 Elunarian Belt
+- removed 14549 Boots of Avoidance
+- removed 14559 Prospector's Sash
+- removed 14560 Prospector's Boots
+- removed 14561 Prospector's Cuffs
+- removed 14562 Prospector's Chestpiece
+- removed 14563 Prospector's Cloak
+- removed 14564 Prospector's Mitts
+- removed 14565 Prospector's Woolies
+- removed 14566 Prospector's Pads
+- removed 14567 Bristlebark Belt
+- removed 14568 Bristlebark Boots
+- removed 14569 Bristlebark Bindings
+- removed 14570 Bristlebark Blouse
+- removed 14571 Bristlebark Cape
+- removed 14572 Bristlebark Gloves
+- removed 14573 Bristlebark Amice
+- removed 14574 Bristlebark Britches
+- removed 14578 Dokebi Cord
+- removed 14579 Dokebi Boots
+- removed 14580 Dokebi Bracers
+- removed 14581 Dokebi Chestguard
+- removed 14582 Dokebi Cape
+- removed 14583 Dokebi Gloves
+- removed 14584 Dokebi Hat
+- removed 14585 Dokebi Leggings
+- removed 14587 Dokebi Mantle
+- removed 14588 Hawkeye's Cord
+- removed 14589 Hawkeye's Shoes
+- removed 14590 Hawkeye's Bracers
+- removed 14591 Hawkeye's Helm
+- removed 14592 Hawkeye's Tunic
+- removed 14593 Hawkeye's Cloak
+- removed 14594 Hawkeye's Gloves
+- removed 14595 Hawkeye's Breeches
+- removed 14596 Hawkeye's Epaulets
+- removed 14598 Warden's Waistband
+- removed 14599 Warden's Footpads
+- removed 14600 Warden's Wristbands
+- removed 14601 Warden's Wraps
+- removed 14602 Warden's Cloak
+- removed 14603 Warden's Mantle
+- removed 14604 Warden's Wizard Hat
+- removed 14605 Warden's Woolies
+- removed 14606 Warden's Gloves
+- removed 14607 Hawkeye's Buckler
+- removed 14608 Dokebi Buckler
+- removed 14653 Scorpashi Slippers
+- removed 14654 Scorpashi Wristbands
+- removed 14655 Scorpashi Breastplate
+- removed 14656 Scorpashi Cape
+- removed 14657 Scorpashi Gloves
+- removed 14658 Scorpashi Skullcap
+- removed 14659 Scorpashi Leggings
+- removed 14660 Scorpashi Shoulder Pads
+- removed 14662 Keeper's Hooves
+- removed 14663 Keeper's Bindings
+- removed 14664 Keeper's Armor
+- removed 14665 Keeper's Cloak
+- removed 14666 Keeper's Gloves
+- removed 14667 Keeper's Wreath
+- removed 14668 Keeper's Woolies
+- removed 14669 Keeper's Mantle
+- removed 14670 Pridelord Armor
+- removed 14671 Pridelord Boots
+- removed 14672 Pridelord Bands
+- removed 14673 Pridelord Cape
+- removed 14675 Pridelord Gloves
+- removed 14676 Pridelord Halo
+- removed 14677 Pridelord Pants
+- removed 14678 Pridelord Pauldrons
+- removed 14680 Indomitable Vest
+- removed 14681 Indomitable Boots
+- removed 14682 Indomitable Armguards
+- removed 14683 Indomitable Cloak
+- removed 14684 Indomitable Belt
+- removed 14685 Indomitable Gauntlets
+- removed 14686 Indomitable Headdress
+- removed 14687 Indomitable Leggings
+- removed 14688 Indomitable Epaulets
+- removed 14722 War Paint Anklewraps
+- removed 14723 War Paint Bindings
+- removed 14724 War Paint Cloak
+- removed 14725 War Paint Waistband
+- removed 14726 War Paint Gloves
+- removed 14729 War Paint Shield
+- removed 14730 War Paint Chestpiece
+- removed 14742 Hulking Boots
+- removed 14743 Hulking Bands
+- removed 14744 Hulking Chestguard
+- removed 14745 Hulking Cloak
+- removed 14746 Hulking Belt
+- removed 14747 Hulking Gauntlets
+- removed 14748 Hulking Leggings
+- removed 14749 Hulking Spaulders
+- removed 14750 Slayer's Cuffs
+- removed 14751 Slayer's Surcoat
+- removed 14752 Slayer's Cape
+- removed 14753 Slayer's Skullcap
+- removed 14754 Slayer's Gloves
+- removed 14755 Slayer's Sash
+- removed 14756 Slayer's Slippers
+- removed 14757 Slayer's Pants
+- removed 14758 Slayer's Shoulder Pads
+- removed 14759 Enduring Bracers
+- removed 14760 Enduring Breastplate
+- removed 14761 Enduring Belt
+- removed 14762 Enduring Boots
+- removed 14763 Enduring Cape
+- removed 14764 Enduring Gauntlets
+- removed 14765 Enduring Circlet
+- removed 14766 Enduring Breeches
+- removed 14767 Enduring Pauldrons
+- removed 14768 Ravager's Armor
+- removed 14769 Ravager's Sandals
+- removed 14770 Ravager's Armguards
+- removed 14771 Ravager's Cloak
+- removed 14772 Ravager's Handwraps
+- removed 14773 Ravager's Cord
+- removed 14774 Ravager's Crown
+- removed 14775 Ravager's Woolies
+- removed 14776 Ravager's Mantle
+- removed 14777 Ravager's Shield
+- removed 14778 Khan's Bindings
+- removed 14779 Khan's Chestpiece
+- removed 14780 Khan's Buckler
+- removed 14781 Khan's Cloak
+- removed 14782 Khan's Gloves
+- removed 14783 Khan's Belt
+- removed 14784 Khan's Greaves
+- removed 14785 Khan's Helmet
+- removed 14786 Khan's Legguards
+- removed 14787 Khan's Mantle
+- removed 14788 Protector Armguards
+- removed 14789 Protector Breastplate
+- removed 14790 Protector Buckler
+- removed 14791 Protector Cape
+- removed 14792 Protector Gauntlets
+- removed 14793 Protector Waistband
+- removed 14794 Protector Ankleguards
+- removed 14795 Protector Helm
+- removed 14796 Protector Legguards
+- removed 14797 Protector Pads
+- removed 14798 Bloodlust Breastplate
+- removed 14799 Bloodlust Boots
+- removed 14800 Bloodlust Buckler
+- removed 14801 Bloodlust Cape
+- removed 14802 Bloodlust Gauntlets
+- removed 14803 Bloodlust Belt
+- removed 14804 Bloodlust Helm
+- removed 14805 Bloodlust Britches
+- removed 14806 Bloodlust Epaulets
+- removed 14807 Bloodlust Bracelets
+- removed 14808 Warstrike Belt
+- removed 14809 Warstrike Sabatons
+- removed 14810 Warstrike Armsplints
+- removed 14811 Warstrike Chestguard
+- removed 14812 Warstrike Buckler
+- removed 14813 Warstrike Cape
+- removed 14814 Warstrike Helmet
+- removed 14815 Warstrike Gauntlets
+- removed 14816 Warstrike Legguards
+- removed 14817 Warstrike Shoulder Pads
+- removed 14821 Symbolic Breastplate
+- removed 14825 Symbolic Crest
+- removed 14826 Symbolic Gauntlets
+- removed 14827 Symbolic Belt
+- removed 14828 Symbolic Greaves
+- removed 14829 Symbolic Legplates
+- removed 14830 Symbolic Pauldrons
+- removed 14831 Symbolic Crown
+- removed 14832 Symbolic Vambraces
+- removed 14833 Tyrant's Gauntlets
+- removed 14834 Tyrant's Armguards
+- removed 14835 Tyrant's Chestpiece
+- removed 14838 Tyrant's Belt
+- removed 14839 Tyrant's Greaves
+- removed 14840 Tyrant's Legplates
+- removed 14841 Tyrant's Epaulets
+- removed 14842 Tyrant's Shield
+- removed 14843 Tyrant's Helm
+- removed 14844 Sunscale Chestguard
+- removed 14846 Sunscale Gauntlets
+- removed 14847 Sunscale Belt
+- removed 14848 Sunscale Sabatons
+- removed 14849 Sunscale Helmet
+- removed 14850 Sunscale Legplates
+- removed 14851 Sunscale Spaulders
+- removed 14852 Sunscale Shield
+- removed 14853 Sunscale Wristguards
+- removed 14854 Vanguard Breastplate
+- removed 14855 Vanguard Gauntlets
+- removed 14856 Vanguard Girdle
+- removed 14857 Vanguard Sabatons
+- removed 14858 Vanguard Headdress
+- removed 14859 Vanguard Legplates
+- removed 14860 Vanguard Pauldrons
+- removed 14861 Vanguard Vambraces
+- removed 14862 Warleader's Breastplate
+- removed 14863 Warleader's Gauntlets
+- removed 14865 Warleader's Greaves
+- removed 14866 Warleader's Crown
+- removed 14868 Warleader's Shoulders
+- removed 14869 Warleader's Bracers
+- removed 14895 Saltstone Surcoat
+- removed 14896 Saltstone Sabatons
+- removed 14897 Saltstone Gauntlets
+- removed 14898 Saltstone Girdle
+- removed 14899 Saltstone Helm
+- removed 14900 Saltstone Legplates
+- removed 14901 Saltstone Shoulder Pads
+- removed 14902 Saltstone Shield
+- removed 14903 Saltstone Armsplints
+- removed 14904 Brutish Breastplate
+- removed 14905 Brutish Gauntlets
+- removed 14906 Brutish Belt
+- removed 14907 Brutish Helmet
+- removed 14908 Brutish Legguards
+- removed 14909 Brutish Shoulders
+- removed 14910 Brutish Armguards
+- removed 14911 Brutish Boots
+- removed 14912 Brutish Shield
+- removed 14913 Jade Greaves
+- removed 14914 Jade Bracers
+- removed 14915 Jade Breastplate
+- removed 14916 Jade Deflector
+- removed 14917 Jade Gauntlets
+- removed 14918 Jade Belt
+- removed 14919 Jade Circlet
+- removed 14920 Jade Legplates
+- removed 14921 Jade Epaulets
+- removed 14922 Lofty Sabatons
+- removed 14923 Lofty Armguards
+- removed 14924 Lofty Breastplate
+- removed 14925 Lofty Helm
+- removed 14926 Lofty Gauntlets
+- removed 14927 Lofty Belt
+- removed 14928 Lofty Legguards
+- removed 14929 Lofty Shoulder Pads
+- removed 14930 Lofty Shield
+- removed 14931 Heroic Armor
+- removed 14932 Heroic Greaves
+- removed 14933 Heroic Gauntlets
+- removed 14934 Heroic Girdle
+- removed 14935 Heroic Skullcap
+- removed 14936 Heroic Legplates
+- removed 14937 Heroic Pauldrons
+- removed 14938 Heroic Bracers
+- removed 14939 Warbringer's Chestguard
+- removed 14940 Warbringer's Sabatons
+- removed 14941 Warbringer's Armsplints
+- removed 14942 Warbringer's Gauntlets
+- removed 14943 Warbringer's Belt
+- removed 14944 Warbringer's Crown
+- removed 14945 Warbringer's Legguards
+- removed 14946 Warbringer's Spaulders
+- removed 14947 Warbringer's Shield
+- removed 14948 Bloodforged Chestpiece
+- removed 14949 Bloodforged Gauntlets
+- removed 14950 Bloodforged Belt
+- removed 14951 Bloodforged Sabatons
+- removed 14952 Bloodforged Helmet
+- removed 14953 Bloodforged Legplates
+- removed 14954 Bloodforged Shield
+- removed 14955 Bloodforged Shoulder Pads
+- removed 14956 Bloodforged Bindings
+- removed 14957 High Chief's Sabatons
+- removed 14958 High Chief's Armor
+- removed 14959 High Chief's Gauntlets
+- removed 14960 High Chief's Belt
+- removed 14961 High Chief's Crown
+- removed 14962 High Chief's Legguards
+- removed 14963 High Chief's Pauldrons
+- removed 14964 High Chief's Shield
+- removed 14965 High Chief's Bindings
+- removed 14966 Glorious Breastplate
+- removed 14967 Glorious Gauntlets
+- removed 14968 Glorious Belt
+- removed 14969 Glorious Headdress
+- removed 14970 Glorious Legplates
+- removed 14971 Glorious Shoulder Pads
+- removed 14972 Glorious Sabatons
+- removed 14973 Glorious Shield
+- removed 14974 Glorious Bindings
+- removed 14975 Exalted Harness
+- removed 14976 Exalted Gauntlets
+- removed 14977 Exalted Girdle
+- removed 14978 Exalted Sabatons
+- removed 14979 Exalted Helmet
+- removed 14980 Exalted Legplates
+- removed 14981 Exalted Epaulets
+- removed 14982 Exalted Shield
+- removed 14983 Exalted Armsplints
+- removed 15009 Primal Leggings
+- removed 15010 Primal Wraps
+- removed 15011 Lupine Cord
+- removed 15012 Lupine Slippers
+- removed 15014 Lupine Buckler
+- removed 15016 Lupine Handwraps
+- removed 15017 Lupine Leggings
+- removed 15018 Lupine Vest
+- removed 15110 Rigid Belt
+- removed 15111 Rigid Moccasins
+- removed 15112 Rigid Bracelets
+- removed 15113 Rigid Buckler
+- removed 15114 Rigid Cape
+- removed 15115 Rigid Gloves
+- removed 15116 Rigid Shoulders
+- removed 15117 Rigid Leggings
+- removed 15118 Rigid Tunic
+- removed 15119 Highborne Pants
+- removed 15120 Robust Girdle
+- removed 15121 Robust Boots
+- removed 15122 Robust Bracers
+- removed 15123 Robust Buckler
+- removed 15124 Robust Cloak
+- removed 15125 Robust Gloves
+- removed 15126 Robust Leggings
+- removed 15127 Robust Shoulders
+- removed 15128 Robust Tunic
+- removed 15129 Robust Helm
+- removed 15130 Cutthroat's Vest
+- removed 15131 Cutthroat's Boots
+- removed 15132 Cutthroat's Armguards
+- removed 15133 Cutthroat's Buckler
+- removed 15134 Cutthroat's Hat
+- removed 15135 Cutthroat's Cape
+- removed 15136 Cutthroat's Belt
+- removed 15137 Cutthroat's Mitts
+- removed 15139 Cutthroat's Pants
+- removed 15140 Cutthroat's Mantle
+- removed 15142 Ghostwalker Boots
+- removed 15143 Ghostwalker Bindings
+- removed 15144 Ghostwalker Rags
+- removed 15145 Ghostwalker Buckler
+- removed 15146 Ghostwalker Crown
+- removed 15147 Ghostwalker Cloak
+- removed 15148 Ghostwalker Belt
+- removed 15149 Ghostwalker Gloves
+- removed 15150 Ghostwalker Pads
+- removed 15151 Ghostwalker Legguards
+- removed 15152 Nocturnal Shoes
+- removed 15153 Nocturnal Cloak
+- removed 15154 Nocturnal Sash
+- removed 15155 Nocturnal Gloves
+- removed 15156 Nocturnal Cap
+- removed 15157 Nocturnal Leggings
+- removed 15158 Nocturnal Shoulder Pads
+- removed 15159 Nocturnal Tunic
+- removed 15160 Nocturnal Wristbands
+- removed 15161 Imposing Belt
+- removed 15162 Imposing Boots
+- removed 15163 Imposing Bracers
+- removed 15164 Imposing Vest
+- removed 15165 Imposing Cape
+- removed 15166 Imposing Gloves
+- removed 15167 Imposing Bandana
+- removed 15168 Imposing Pants
+- removed 15169 Imposing Shoulders
+- removed 15170 Potent Armor
+- removed 15171 Potent Boots
+- removed 15172 Potent Bands
+- removed 15173 Potent Cape
+- removed 15174 Potent Gloves
+- removed 15175 Potent Helmet
+- removed 15176 Potent Pants
+- removed 15177 Potent Shoulders
+- removed 15178 Potent Belt
+- removed 15179 Praetorian Padded Armor
+- removed 15181 Praetorian Boots
+- removed 15182 Praetorian Wristbands
+- removed 15183 Praetorian Cloak
+- removed 15184 Praetorian Gloves
+- removed 15185 Praetorian Coif
+- removed 15186 Praetorian Leggings
+- removed 15187 Praetorian Pauldrons
+- removed 15188 Grand Armguards
+- removed 15189 Grand Boots
+- removed 15190 Grand Cloak
+- removed 15191 Grand Belt
+- removed 15192 Grand Gauntlets
+- removed 15193 Grand Crown
+- removed 15194 Grand Legguards
+- removed 15195 Grand Breastplate
+- removed 15210 Raider Shortsword
+- removed 15212 Fighter Broadsword
+- removed 15213 Mercenary Blade
+- removed 15214 Nobles Brand
+- removed 15215 Furious Falchion
+- removed 15216 Rune Sword
+- removed 15217 Widow Blade
+- removed 15218 Crystal Sword
+- removed 15219 Dimensional Blade
+- removed 15220 Battlefell Sabre
+- removed 15221 Holy War Sword
+- removed 15222 Barbed Club
+- removed 15223 Jagged Star
+- removed 15225 Sequoia Hammer
+- removed 15226 Giant Club
+- removed 15227 Diamond-Tip Bludgeon
+- removed 15228 Smashing Star
+- removed 15229 Blesswind Hammer
+- removed 15230 Ridge Cleaver
+- removed 15231 Splitting Hatchet
+- removed 15232 Hacking Cleaver
+- removed 15233 Savage Axe
+- removed 15234 Greater Scythe
+- removed 15235 Crescent Edge
+- removed 15236 Moon Cleaver
+- removed 15237 Corpse Harvester
+- removed 15238 Warlord's Axe
+- removed 15239 Felstone Reaver
+- removed 15240 Demon's Claw
+- removed 15241 Battle Knife
+- removed 15242 Honed Stiletto
+- removed 15243 Deadly Kris
+- removed 15244 Razor Blade
+- removed 15245 Vorpal Dagger
+- removed 15246 Demon Blade
+- removed 15247 Bloodstrike Dagger
+- removed 15248 Gleaming Claymore
+- removed 15249 Polished Zweihander
+- removed 15250 Glimmering Flamberge
+- removed 15251 Headstriker Sword
+- removed 15252 Tusker Sword
+- removed 15253 Beheading Blade
+- removed 15254 Dark Espadon
+- removed 15255 Gallant Flamberge
+- removed 15256 Massacre Sword
+- removed 15257 Shin Blade
+- removed 15258 Divine Warblade
+- removed 15259 Hefty Battlehammer
+- removed 15260 Stone Hammer
+- removed 15261 Sequoia Branch
+- removed 15262 Greater Maul
+- removed 15263 Royal Mallet
+- removed 15264 Backbreaker
+- removed 15265 Painbringer
+- removed 15266 Fierce Mauler
+- removed 15267 Brutehammer
+- removed 15268 Twin-bladed Axe
+- removed 15269 Massive Battle Axe
+- removed 15270 Gigantic War Axe
+- removed 15271 Colossal Great Axe
+- removed 15272 Razor Axe
+- removed 15273 Death Striker
+- removed 15274 Diviner Long Staff
+- removed 15275 Thaumaturgist Staff
+- removed 15276 Magus Long Staff
+- removed 15278 Solstice Staff
+- removed 15279 Ivory Wand
+- removed 15280 Wizard's Hand
+- removed 15281 Glowstar Rod
+- removed 15282 Dragon Finger
+- removed 15283 Lunar Wand
+- removed 15284 Long Battle Bow
+- removed 15285 Archer's Longbow
+- removed 15286 Long Redwood Bow
+- removed 15287 Crusader Bow
+- removed 15288 Blasthorn Bow
+- removed 15289 Archstrike Bow
+- removed 15291 Harpy Needler
+- removed 15294 Siege Bow
+- removed 15295 Quillfire Bow
+- removed 15296 Hawkeye Bow
+- removed 15298 Grizzly Buckler
+- removed 15303 Grizzly Pants
+- removed 15304 Grizzly Jerkin
+- removed 15305 Feral Shoes
+- removed 15306 Feral Bindings
+- removed 15307 Feral Buckler
+- removed 15308 Feral Cord
+- removed 15309 Feral Cloak
+- removed 15310 Feral Gloves
+- removed 15311 Feral Harness
+- removed 15312 Feral Leggings
+- removed 15322 Smoothbore Gun
+- removed 15323 Percussion Shotgun
+- removed 15325 Sharpshooter Harquebus
+- removed 15329 Wrangler's Belt
+- removed 15330 Wrangler's Boots
+- removed 15331 Wrangler's Wristbands
+- removed 15332 Wrangler's Buckler
+- removed 15333 Wrangler's Cloak
+- removed 15334 Wrangler's Gloves
+- removed 15336 Wrangler's Leggings
+- removed 15337 Wrangler's Wraps
+- removed 15338 Wrangler's Mantle
+- removed 15339 Pathfinder Hat
+- removed 15340 Pathfinder Cloak
+- removed 15341 Pathfinder Footpads
+- removed 15342 Pathfinder Guard
+- removed 15343 Pathfinder Gloves
+- removed 15344 Pathfinder Pants
+- removed 15345 Pathfinder Shoulder Pads
+- removed 15346 Pathfinder Vest
+- removed 15347 Pathfinder Belt
+- removed 15348 Pathfinder Bracers
+- removed 15349 Headhunter's Belt
+- removed 15350 Headhunter's Slippers
+- removed 15351 Headhunter's Bands
+- removed 15352 Headhunter's Buckler
+- removed 15353 Headhunter's Headdress
+- removed 15354 Headhunter's Cloak
+- removed 15355 Headhunter's Mitts
+- removed 15356 Headhunter's Armor
+- removed 15357 Headhunter's Spaulders
+- removed 15358 Headhunter's Woolies
+- removed 15359 Trickster's Vest
+- removed 15360 Trickster's Bindings
+- removed 15361 Trickster's Sash
+- removed 15362 Trickster's Boots
+- removed 15363 Trickster's Headdress
+- removed 15364 Trickster's Cloak
+- removed 15365 Trickster's Handwraps
+- removed 15366 Trickster's Leggings
+- removed 15367 Trickster's Protector
+- removed 15368 Trickster's Pauldrons
+- removed 15369 Wolf Rider's Belt
+- removed 15370 Wolf Rider's Boots
+- removed 15371 Wolf Rider's Cloak
+- removed 15372 Wolf Rider's Gloves
+- removed 15373 Wolf Rider's Headgear
+- removed 15374 Wolf Rider's Leggings
+- removed 15375 Wolf Rider's Shoulder Pads
+- removed 15376 Wolf Rider's Padded Armor
+- removed 15377 Wolf Rider's Wristbands
+- removed 15378 Rageclaw Belt
+- removed 15379 Rageclaw Boots
+- removed 15380 Rageclaw Bracers
+- removed 15381 Rageclaw Chestguard
+- removed 15382 Rageclaw Cloak
+- removed 15383 Rageclaw Gloves
+- removed 15384 Rageclaw Helm
+- removed 15385 Rageclaw Leggings
+- removed 15386 Rageclaw Shoulder Pads
+- removed 15387 Jadefire Bracelets
+- removed 15389 Jadefire Sabatons
+- removed 15390 Jadefire Chestguard
+- removed 15391 Jadefire Cap
+- removed 15392 Jadefire Cloak
+- removed 15393 Jadefire Gloves
+- removed 15394 Jadefire Pants
+- removed 15395 Jadefire Epaulets
+- removed 15424 Axe of Orgrimmar
+- removed 15425 Peerless Bracers
+- removed 15426 Peerless Boots
+- removed 15427 Peerless Cloak
+- removed 15428 Peerless Belt
+- removed 15429 Peerless Gloves
+- removed 15430 Peerless Headband
+- removed 15431 Peerless Leggings
+- removed 15432 Peerless Shoulders
+- removed 15433 Peerless Armor
+- removed 15434 Supreme Sash
+- removed 15435 Supreme Shoes
+- removed 15436 Supreme Bracers
+- removed 15437 Supreme Cape
+- removed 15438 Supreme Gloves
+- removed 15439 Supreme Crown
+- removed 15440 Supreme Leggings
+- removed 15441 Supreme Shoulders
+- removed 15442 Supreme Breastplate
+- removed 15443 Kris of Orgrimmar
+- removed 15444 Staff of Orgrimmar
+- removed 15445 Hammer of Orgrimmar
+- removed 15449 Ghastly Trousers
+- removed 15450 Dredgemire Leggings
+- removed 15451 Gargoyle Leggings
+- removed 15452 Featherbead Bracers
+- removed 15453 Savannah Bracers
+- removed 15477 Charger's Pants
+- removed 15479 Charger's Armor
+- removed 15485 War Torn Pants
+- removed 15486 War Torn Shield
+- removed 15487 War Torn Tunic
+- removed 15488 Bloodspattered Surcoat
+- removed 15489 Bloodspattered Sabatons
+- removed 15491 Bloodspattered Gloves
+- removed 15492 Bloodspattered Sash
+- removed 15493 Bloodspattered Loincloth
+- removed 15494 Bloodspattered Shield
+- removed 15495 Bloodspattered Wristbands
+- removed 15497 Outrunner's Cord
+- removed 15498 Outrunner's Slippers
+- removed 15499 Outrunner's Cuffs
+- removed 15500 Outrunner's Chestguard
+- removed 15501 Outrunner's Cloak
+- removed 15502 Outrunner's Gloves
+- removed 15503 Outrunner's Legguards
+- removed 15504 Outrunner's Shield
+- removed 15506 Grunt's AnkleWraps
+- removed 15507 Grunt's Bracers
+- removed 15508 Grunt's Cape
+- removed 15509 Grunt's Handwraps
+- removed 15510 Grunt's Belt
+- removed 15511 Grunt's Legguards
+- removed 15512 Grunt's Shield
+- removed 15513 Grunt's Pauldrons
+- removed 15514 Grunt's Chestpiece
+- removed 15515 Spiked Chain Belt
+- removed 15516 Spiked Chain Slippers
+- removed 15517 Spiked Chain Wristbands
+- removed 15518 Spiked Chain Breastplate
+- removed 15519 Spiked Chain Cloak
+- removed 15520 Spiked Chain Gauntlets
+- removed 15521 Spiked Chain Leggings
+- removed 15522 Spiked Chain Shield
+- removed 15523 Spiked Chain Shoulder Pads
+- removed 15524 Sentry's Surcoat
+- removed 15525 Sentry's Slippers
+- removed 15526 Sentry's Cape
+- removed 15527 Sentry's Gloves
+- removed 15528 Sentry's Sash
+- removed 15529 Sentry's Leggings
+- removed 15530 Sentry's Shield
+- removed 15531 Sentry's Shoulderguards
+- removed 15532 Sentry's Armsplints
+- removed 15533 Sentry's Headdress
+- removed 15534 Wicked Chain Boots
+- removed 15535 Wicked Chain Bracers
+- removed 15536 Wicked Chain Chestpiece
+- removed 15537 Wicked Chain Cloak
+- removed 15538 Wicked Chain Gauntlets
+- removed 15539 Wicked Chain Waistband
+- removed 15540 Wicked Chain Helmet
+- removed 15541 Wicked Chain Legguards
+- removed 15542 Wicked Chain Shoulder Pads
+- removed 15543 Wicked Chain Shield
+- removed 15544 Thick Scale Sabatons
+- removed 15545 Thick Scale Bracelets
+- removed 15546 Thick Scale Breastplate
+- removed 15547 Thick Scale Cloak
+- removed 15548 Thick Scale Gauntlets
+- removed 15549 Thick Scale Belt
+- removed 15550 Thick Scale Crown
+- removed 15551 Thick Scale Legguards
+- removed 15552 Thick Scale Shield
+- removed 15553 Thick Scale Shoulder Pads
+- removed 15554 Pillager's Girdle
+- removed 15555 Pillager's Boots
+- removed 15556 Pillager's Bracers
+- removed 15557 Pillager's Chestguard
+- removed 15558 Pillager's Crown
+- removed 15559 Pillager's Cloak
+- removed 15560 Pillager's Gloves
+- removed 15561 Pillager's Leggings
+- removed 15562 Pillager's Pauldrons
+- removed 15563 Pillager's Shield
+- removed 15565 Marauder's Boots
+- removed 15566 Marauder's Bracers
+- removed 15567 Marauder's Tunic
+- removed 15568 Marauder's Cloak
+- removed 15569 Marauder's Crest
+- removed 15570 Marauder's Gauntlets
+- removed 15571 Marauder's Belt
+- removed 15572 Marauder's Circlet
+- removed 15573 Marauder's Leggings
+- removed 15574 Marauder's Shoulder Pads
+- removed 15575 Sparkleshell Belt
+- removed 15576 Sparkleshell Sabatons
+- removed 15577 Sparkleshell Bracers
+- removed 15578 Sparkleshell Breastplate
+- removed 15579 Sparkleshell Cloak
+- removed 15580 Sparkleshell Headwrap
+- removed 15581 Sparkleshell Gauntlets
+- removed 15582 Sparkleshell Legguards
+- removed 15583 Sparkleshell Shoulder Pads
+- removed 15584 Sparkleshell Shield
+- removed 15589 Steadfast Stompers
+- removed 15590 Steadfast Bracelets
+- removed 15591 Steadfast Breastplate
+- removed 15592 Steadfast Buckler
+- removed 15593 Steadfast Coronet
+- removed 15594 Steadfast Cloak
+- removed 15595 Steadfast Gloves
+- removed 15596 Steadfast Legplates
+- removed 15597 Steadfast Shoulders
+- removed 15598 Steadfast Girdle
+- removed 15599 Ancient Greaves
+- removed 15600 Ancient Vambraces
+- removed 15601 Ancient Chestpiece
+- removed 15602 Ancient Crown
+- removed 15603 Ancient Cloak
+- removed 15604 Ancient Defender
+- removed 15605 Ancient Gauntlets
+- removed 15606 Ancient Belt
+- removed 15607 Ancient Legguards
+- removed 15608 Ancient Pauldrons
+- removed 15609 Bonelink Armor
+- removed 15610 Bonelink Bracers
+- removed 15611 Bonelink Cape
+- removed 15612 Bonelink Gauntlets
+- removed 15613 Bonelink Belt
+- removed 15614 Bonelink Sabatons
+- removed 15615 Bonelink Helmet
+- removed 15616 Bonelink Legplates
+- removed 15617 Bonelink Epaulets
+- removed 15618 Bonelink Wall Shield
+- removed 15619 Gryphon Mail Belt
+- removed 15620 Gryphon Mail Bracelets
+- removed 15621 Gryphon Mail Buckler
+- removed 15622 Gryphon Mail Breastplate
+- removed 15623 Gryphon Mail Crown
+- removed 15624 Gryphon Cloak
+- removed 15625 Gryphon Mail Gauntlets
+- removed 15626 Gryphon Mail Greaves
+- removed 15627 Gryphon Mail Legguards
+- removed 15628 Gryphon Mail Pauldrons
+- removed 15629 Formidable Bracers
+- removed 15630 Formidable Sabatons
+- removed 15631 Formidable Chestpiece
+- removed 15632 Formidable Cape
+- removed 15633 Formidable Crest
+- removed 15634 Formidable Circlet
+- removed 15635 Formidable Gauntlets
+- removed 15636 Formidable Belt
+- removed 15637 Formidable Legguards
+- removed 15638 Formidable Shoulder Pads
+- removed 15639 Ironhide Bracers
+- removed 15640 Ironhide Breastplate
+- removed 15641 Ironhide Belt
+- removed 15642 Ironhide Greaves
+- removed 15643 Ironhide Cloak
+- removed 15644 Ironhide Gauntlets
+- removed 15645 Ironhide Helmet
+- removed 15646 Ironhide Legguards
+- removed 15647 Ironhide Pauldrons
+- removed 15648 Ironhide Shield
+- removed 15649 Merciless Bracers
+- removed 15650 Merciless Surcoat
+- removed 15651 Merciless Crown
+- removed 15652 Merciless Cloak
+- removed 15653 Merciless Gauntlets
+- removed 15654 Merciless Belt
+- removed 15655 Merciless Legguards
+- removed 15656 Merciless Epaulets
+- removed 15657 Merciless Shield
+- removed 15658 Impenetrable Sabatons
+- removed 15659 Impenetrable Bindings
+- removed 15660 Impenetrable Breastplate
+- removed 15661 Impenetrable Cloak
+- removed 15662 Impenetrable Gauntlets
+- removed 15663 Impenetrable Belt
+- removed 15664 Impenetrable Helmet
+- removed 15665 Impenetrable Legguards
+- removed 15666 Impenetrable Pauldrons
+- removed 15667 Impenetrable Wall
+- removed 15668 Magnificent Bracers
+- removed 15669 Magnificent Breastplate
+- removed 15670 Magnificent Helmet
+- removed 15671 Magnificent Cloak
+- removed 15672 Magnificent Gauntlets
+- removed 15673 Magnificent Belt
+- removed 15674 Magnificent Greaves
+- removed 15675 Magnificent Guard
+- removed 15676 Magnificent Leggings
+- removed 15677 Magnificent Shoulders
+- removed 15678 Triumphant Sabatons
+- removed 15679 Triumphant Bracers
+- removed 15680 Triumphant Chestpiece
+- removed 15681 Triumphant Cloak
+- removed 15682 Triumphant Gauntlets
+- removed 15683 Triumphant Girdle
+- removed 15684 Triumphant Skullcap
+- removed 15685 Triumphant Legplates
+- removed 15686 Triumphant Shoulder Pads
+- removed 15687 Triumphant Shield
+- removed 15693 Grand Shoulders
+- removed 15694 Merciless Greaves
+- removed 15887 Heroic Guard
+- removed 15890 Vanguard Shield
+- removed 15891 Hulking Shield
+- removed 15892 Slayer's Shield
+- removed 15893 Prospector's Buckler
+- removed 15894 Bristlebark Buckler
+- removed 15895 Burnt Buckler
+- removed 15943 Imbued Shield
+- removed 15965 Windchaser Orb
+- removed 15990 Enduring Shield
+- removed 15991 Warleader's Shield
+- removed 16666 Vest of Elements
+- removed 16667 Coif of Elements
+- removed 16668 Kilt of Elements
+- removed 16669 Pauldrons of Elements
+- removed 16670 Boots of Elements
+- removed 16671 Bindings of Elements
+- removed 16672 Gauntlets of Elements
+- removed 16673 Cord of Elements
+- removed 16674 Beaststalker's Tunic
+- removed 16675 Beaststalker's Boots
+- removed 16676 Beaststalker's Gloves
+- removed 16677 Beaststalker's Cap
+- removed 16678 Beaststalker's Pants
+- removed 16679 Beaststalker's Mantle
+- removed 16680 Beaststalker's Belt
+- removed 16681 Beaststalker's Bindings
+- removed 16682 Magister's Boots
+- removed 16683 Magister's Bindings
+- removed 16684 Magister's Gloves
+- removed 16685 Magister's Belt
+- removed 16686 Magister's Crown
+- removed 16687 Magister's Leggings
+- removed 16688 Magister's Robes
+- removed 16689 Magister's Mantle
+- removed 16690 Devout Robe
+- removed 16691 Devout Sandals
+- removed 16692 Devout Gloves
+- removed 16693 Devout Crown
+- removed 16694 Devout Skirt
+- removed 16695 Devout Mantle
+- removed 16696 Devout Belt
+- removed 16697 Devout Bracers
+- removed 16698 Dreadmist Mask
+- removed 16699 Dreadmist Leggings
+- removed 16700 Dreadmist Robe
+- removed 16701 Dreadmist Mantle
+- removed 16702 Dreadmist Belt
+- removed 16703 Dreadmist Bracers
+- removed 16704 Dreadmist Sandals
+- removed 16705 Dreadmist Wraps
+- removed 16706 Wildheart Vest
+- removed 16707 Shadowcraft Cap
+- removed 16708 Shadowcraft Spaulders
+- removed 16709 Shadowcraft Pants
+- removed 16710 Shadowcraft Bracers
+- removed 16711 Shadowcraft Boots
+- removed 16712 Shadowcraft Gloves
+- removed 16713 Shadowcraft Belt
+- removed 16714 Wildheart Bracers
+- removed 16715 Wildheart Boots
+- removed 16716 Wildheart Belt
+- removed 16717 Wildheart Gloves
+- removed 16718 Wildheart Spaulders
+- removed 16719 Wildheart Kilt
+- removed 16720 Wildheart Cowl
+- removed 16721 Shadowcraft Tunic
+- removed 16722 Lightforge Bracers
+- removed 16723 Lightforge Belt
+- removed 16724 Lightforge Gauntlets
+- removed 16725 Lightforge Boots
+- removed 16726 Lightforge Breastplate
+- removed 16727 Lightforge Helm
+- removed 16728 Lightforge Legplates
+- removed 16729 Lightforge Spaulders
+- removed 16730 Breastplate of Valor
+- removed 16731 Helm of Valor
+- removed 16732 Legplates of Valor
+- removed 16733 Spaulders of Valor
+- removed 16734 Boots of Valor
+- removed 16735 Bracers of Valor
+- removed 16736 Belt of Valor
+- removed 16737 Gauntlets of Valor
+- removed 16886 Outlaw Sabre
+- removed 16887 Witch's Finger
+- removed 17039 Skullbreaker
+- removed 17042 Nail Spitter
+- removed 17043 Zealot's Robe
+- removed 17508 Forcestone Buckler
+- removed 17694 Band of the Fist
+- removed 17695 Chestnut Mantle
+- removed 17705 Thrash Blade
+- removed 17743 Resurgence Rod
+- removed 17753 Verdant Keeper's Aim
+- removed 17922 Lionfur Armor
+- removed 18610 Keen Machete
+- removed 18611 Gnarlpine Leggings
+- removed 18612 Bloody Chain Boots
+- removed 18678 Tempestria's Frozen Necklace
+- removed 18679 Frigid Ring
+- removed 18709 Arena Wristguards
+- removed 18710 Arena Bracers
+- removed 18711 Arena Bands
+- removed 18712 Arena Vambraces
+- removed 19392 Girdle of the Fallen Crusader
+- removed 19808 Rockhide Strongfish
+- removed 21524 Red Winter Hat
+- removed 21525 Green Winter Hat
+- removed 23192 Tabard of the Scarlet Crusade
+- removed 23705 Tabard of Flame
+- removed 23709 Tabard of Frost
+- removed 23710 Upperdeck Tabard #3
+- removed 24222 The Shadowfoot Stabber
+- removed 208424 Sun Shades
+- removed 211272 Empty Bait Cage
+- removed 211273 Trapped Critter
+- removed 211293 Crimson Trophy Quill
+- removed 211500 Resilient Cloth Headband
+- removed 211856 Resilient Mail Coif
+- removed 211857 Resilient Leather Mask
+- removed 212347 Illari's Key
+- removed 212580 Lorekeeper's Staff
+- removed 212581 Outrunner's Bow
+- removed 212582 Protector's Sword
+- removed 212583 Sentinel's Blade
+- removed 212584 Advisor's Gnarled Staff
+- removed 212585 Outrider's Bow
+- removed 212586 Legionnaire's Sword
+- removed 212587 Scout's Blade
+- removed 212723 Rumbling Essence
+- removed 212724 Whirling Essence
+- removed 212726 Rushing Essence
+- removed 212982 Squall-breakers Potion
+- removed 213422 Illegible Recipe
+- removed 213444 Tarnished Prayer Bead I
+- removed 213445 Tarnished Prayer Bead II
+- removed 213446 Tarnished Prayer Bead III
+- removed 213562 Bug Catching Net
+- removed 213566 Arbor Tarantula Specimen
+- removed 213567 Flesh Picker Specimen
+- removed 213568 Hay Weevil Specimen
+- removed 215127 High-Yield Radiation Bomb
+- removed 215168 Ez-Thro Radiation Bomb
+- removed 215373 Silver Hand Training Hammer
+- removed 215374 Ancestral Sword
+- removed 215375 Tactician's Staff
+- removed 215376 Crusader's Mace
+- removed 216483 Witherbark Mallet
+- removed 217497 Narpas Sword
+- removed 220794 Knight's Plate Hauberk
+- removed 220795 Knight-Lieutenant's Plate Pauldrons
+- removed 220796 Blood Guard's Plate Pauldrons
+- removed 220797 Knight's Plate Leggings
+- removed 220798 Stone Guard's Plate Leggings
+- removed 220799 Sergeant Major's Plate Greaves
+- removed 220800 First Sergeant's Plate Greaves
+- removed 220801 Stone Guard's Plate Armor
+- removed 220803 Blood Guard's Plate Helm
+- removed 220804 Knight-Lieutenant's Plate Helm
+- removed 220806 Sergeant Major's Plate Gauntlets
+- removed 220807 First Sergeant's Plate Gauntlets
+- removed 220808 Knight-Lieutenant's Imbued Pauldrons
+- removed 220809 Knight's Imbued Leggings
+- removed 220810 Knight-Lieutenant's Imbued Helmet
+- removed 220811 Sergeant Major's Imbued Greaves
+- removed 220812 Sergeant Major's Imbued Gauntlets
+- removed 220813 Knight's Imbued Armor
+- removed 220814 Sergeant Major's Lamellar Boots
+- removed 220815 Knight's Lamellar Chestplate
+- removed 220816 Knight's Lamellar Legplates
+- removed 220817 Sergeant Major's Lamellar Gauntlets
+- removed 220818 Knight-Lieutenant's Lamellar Pauldrons
+- removed 220819 Knight-Lieutenant's Lamellar Helm
+- removed 220820 Blood Guard's Mail Helmet
+- removed 220821 Blood Guard's Chain Helmet
+- removed 220822 Knight-Lieutenant's Chain Helmet
+- removed 220823 Blood Guard's Mail Epaulets
+- removed 220824 Blood Guard's Chain Epaulets
+- removed 220825 Knight-Lieutenant's Chain Epaulets
+- removed 220826 Stone Guard's Mail Armor
+- removed 220827 Stone Guard's Chain Armor
+- removed 220828 Knight's Chain Armor
+- removed 220829 Sergeant Major's Chain Gauntlets
+- removed 220830 First Sergeant's Chain Gauntlets
+- removed 220831 First Sergeant's Mail Gauntlets
+- removed 220832 Knight's Chain Legplates
+- removed 220833 Stone Guard's Chain Legplates
+- removed 220834 Stone Guard's Mail Legplates
+- removed 220835 First Sergeant's Mail Sabatons
+- removed 220836 First Sergeant's Chain Sabatons
+- removed 220837 Sergeant Major's Chain Sabatons
+- removed 220838 Stone Guard's Inscribed Chestpiece
+- removed 220839 Stone Guard's Inscribed Legplates
+- removed 220840 First Sergeant's Inscribed Sabatons
+- removed 220841 Blood Guard's Inscribed Shoulder Pads
+- removed 220842 Blood Guard's Inscribed Skullcap
+- removed 220843 First Sergeant's Inscribed Gauntlets
+- removed 220844 Stone Guard's Pulsing Breastplate
+- removed 220845 First Sergeant's Pulsing Gauntlets
+- removed 220846 First Sergeant's Pulsing Greaves
+- removed 220847 Stone Guard's Pulsing Legplates
+- removed 220848 Blood Guard's Pulsing Helmet
+- removed 220849 Blood Guard's Pulsing Shoulders
+- removed 220850 Knight-Lieutenant's Leather Headband
+- removed 220851 Blood Guard's Leather Headband
+- removed 220852 Knight-Lieutenant's Leather Shoulders
+- removed 220853 Blood Guard's Leather Shoulders
+- removed 220854 Knight's Leather Armor
+- removed 220855 Stone Guard's Leather Armor
+- removed 220856 Sergeant Major's Leather Gauntlets
+- removed 220857 First Sergeant's Leather Gauntlets
+- removed 220858 Knight's Leather Pants
+- removed 220859 Stone Guard's Leather Pants
+- removed 220860 Sergeant Major's Leather Boots
+- removed 220861 First Sergeant's Leather Boots
+- removed 220862 Sergeant Major's Crackling Leather Boots
+- removed 220863 First Sergeant's Crackling Leather Boots
+- removed 220864 Knight's Crackling Leather Leggings
+- removed 220865 Stone Guard's Crackling Leather Leggings
+- removed 220866 Sergeant Major's Crackling Leather Gauntlets
+- removed 220867 First Sergeant's Crackling Leather Gauntlets
+- removed 220868 Knight's Crackling Leather Tunic
+- removed 220869 Stone Guard's Crackling Leather Tunic
+- removed 220870 Knight-Lieutenant's Crackling Leather Spaulders
+- removed 220871 Blood Guard's Crackling Leather Spaulders
+- removed 220872 Knight-Lieutenant's Crackling Leather Helmet
+- removed 220873 Blood Guard's Crackling Leather Helmet
+- removed 220874 Knight-Lieutenant's Restored Leather Helm
+- removed 220875 Blood Guard's Restored Leather Helm
+- removed 220876 Knight-Lieutenant's Restored Leather Spaulders
+- removed 220877 Blood Guard's Restored Leather Spaulders
+- removed 220878 Knight's Restored Leather Jerkin
+- removed 220879 Stone Guard's Restored Leather Jerkin
+- removed 220880 Sergeant Major's Restored Leather Gloves
+- removed 220881 First Sergeant's Restored Leather Gloves
+- removed 220882 Knight's Restored Leather Leggings
+- removed 220883 Stone Guard's Restored Leather Leggings
+- removed 220884 Sergeant Major's Restored Leather Boots
+- removed 220885 First Sergeant's Restored Leather Boots
+- removed 220886 Knight's Dreadweave Vest
+- removed 220887 Knight-Lieutenant's Dreadweave Mantle
+- removed 220888 Knight's Dreadweave Leggings
+- removed 220889 Knight-Lieutenant's Dreadweave Hat
+- removed 220890 Sergeant Major's Dreadweave Gloves
+- removed 220891 Sergeant Major's Dreadweave Boots
+- removed 220892 Knight's Satin Armor
+- removed 220893 Knight's Satin Leggings
+- removed 220894 Knight-Lieutenant's Satin Pads
+- removed 220895 Sergeant Major's Satin Boots
+- removed 220896 Knight-Lieutenant's Satin Cover
+- removed 220897 Sergeant Major's Satin Gloves
+- removed 220898 First Sergeant's Satin Gloves
+- removed 220899 Blood Guard's Satin Cover
+- removed 220900 First Sergeant's Satin Boots
+- removed 220901 Blood Guard's Satin Pads
+- removed 220902 Stone Guard's Satin Leggings
+- removed 220903 Stone Guard's Satin Armor
+- removed 220904 Stone Guard's Dreadweave Vest
+- removed 220905 Blood Guard's Dreadweave Mantle
+- removed 220906 Stone Guard's Dreadweave Leggings
+- removed 220907 Blood Guard's Dreadweave Hat
+- removed 220908 First Sergeant's Dreadweave Gloves
+- removed 220909 First Sergeant's Dreadweave Boots
+- removed 223073 Knight-Lieutenant's Mail Epaulets
+- removed 223074 Knight's Mail Legplates
+- removed 223075 Knight-Lieutenant's Mail Helmet
+- removed 223076 Sergeant Major's Mail Gauntlets
+- removed 223077 Sergeant Major's Mail Sabatons
+- removed 223078 Knight's Mail Armor
+- removed 226772 Feralheart Sash
+- removed 226773 Feralheart Cowl
+- removed 226774 Feralheart Galoshes
+- removed 226775 Feralheart Wraps
+- removed 226776 Feralheart Vest
+- removed 226777 Feralheart Hands
+- removed 226778 Feralheart Spaulders
+- removed 226779 Feralheart Kilt
+- removed 226780 Feralheart Cord
+- removed 226781 Feralheart Sandals
+- removed 226782 Feralheart Bindings
+- removed 226783 Feralheart Embrace
+- removed 226784 Feralheart Gauntlets
+- removed 226785 Feralheart Mantle
+- removed 226786 Feralheart Headdress
+- removed 226787 Feralheart Pants
+- removed 226788 Feralheart Bands
+- removed 226789 Feralheart Girdle
+- removed 226790 Feralheart Epaulets
+- removed 226791 Feralheart Trousers
+- removed 226792 Feralheart Cap
+- removed 226793 Feralheart Fists
+- removed 226794 Feralheart Walkers
+- removed 226795 Feralheart Tunic
+- removed 226796 Feralheart Wristguards
+- removed 226797 Feralheart Waistguard
+- removed 226798 Feralheart Pauldrons
+- removed 226799 Feralheart Legguards
+- removed 226801 Feralheart Faceguard
+- removed 226802 Feralheart Grips
+- removed 226803 Feralheart Treads
+- removed 226804 Feralheart Armor
+- removed 226825 Darkmantle Tunic
+- removed 226826 Darkmantle Spaulders
+- removed 226827 Darkmantle Pants
+- removed 226828 Darkmantle Grips
+- removed 226829 Darkmantle Cap
+- removed 226830 Darkmantle Bracers
+- removed 226831 Darkmantle Footpads
+- removed 226832 Darkmantle Belt
+- removed 226857 Battleboots of Heroism
+- removed 226858 Spaulders of Heroism
+- removed 226859 Legplates of Heroism
+- removed 226860 Crown of Heroism
+- removed 226861 Gauntlets of Heroism
+- removed 226862 Breastplate of Heroism
+- removed 226863 Bracers of Heroism
+- removed 226864 Belt of Heroism
+- removed 226865 Wristguards of Heroism
+- removed 226866 Waistguard of Heroism
+- removed 226867 Pauldrons of Heroism
+- removed 226868 Legguards of Heroism
+- removed 226869 Faceguard of Heroism
+- removed 226870 Handguards of Heroism
+- removed 226871 Sabatons of Heroism
+- removed 226872 Chestguard of Heroism
+- removed 226881 Beastmaster's Treads
+- removed 226882 Beastmaster's Pants
+- removed 226883 Beastmaster's Gauntlets
+- removed 226884 Beastmaster's Mantle
+- removed 226885 Beastmaster's Bindings
+- removed 226886 Beastmaster's Tunic
+- removed 226887 Beastmaster's Cap
+- removed 226888 Beastmaster's Belt
+- removed 226905 Deathmist Belt
+- removed 226906 Deathmist Robe
+- removed 226907 Deathmist Bracers
+- removed 226908 Deathmist Sandals
+- removed 226909 Deathmist Mask
+- removed 226910 Deathmist Leggings
+- removed 226911 Deathmist Wraps
+- removed 226912 Deathmist Mantle
+- removed 226929 Sorcerer's Bindings
+- removed 226930 Sorcerer's Gauntlets
+- removed 226931 Sorcerer's Sandals
+- removed 226932 Sorcerer's Robes
+- removed 226933 Sorcerer's Leggings
+- removed 226934 Sorcerer's Belt
+- removed 226935 Sorcerer's Crown
+- removed 226936 Sorcerer's Mantle
+- removed 226945 Virtuous Robe
+- removed 226946 Virtuous Skirt
+- removed 226947 Virtuous Crown
+- removed 226948 Virtuous Belt
+- removed 226949 Virtuous Bracers
+- removed 226950 Virtuous Mitts
+- removed 226951 Virtuous Mantle
+- removed 226952 Virtuous Sandals
+- removed 226953 Virtuous Wraps
+- removed 226954 Virtuous Cord
+- removed 226955 Virtuous Epaulets
+- removed 226956 Virtuous Leggings
+- removed 226957 Virtuous Cowl
+- removed 226958 Virtuous Hands
+- removed 226959 Virtuous Slippers
+- removed 226960 Virtuous Gown
+- removed 226969 Soulforge Spaulders
+- removed 226970 Soulforge Bracers
+- removed 226971 Soulforge Belt
+- removed 226972 Soulforge Legplates
+- removed 226973 Soulforge Breastplate
+- removed 226974 Soulforge Warboots
+- removed 226975 Soulforge Gauntlets
+- removed 226976 Soulforge Greathelm
+- removed 226977 Soulforge Bindings
+- removed 226978 Soulforge Cord
+- removed 226979 Soulforge Epaulets
+- removed 226980 Soulforge Leggings
+- removed 226981 Soulforge Crown
+- removed 226982 Soulforge Fists
+- removed 226983 Soulforge Treads
+- removed 226984 Soulforge Embrace
+- removed 226985 Soulforge Wristguards
+- removed 226986 Soulforge Waistguard
+- removed 226987 Soulforge Pauldrons
+- removed 226988 Soulforge Legguards
+- removed 226989 Soulforge Faceguard
+- removed 226990 Soulforge Handguards
+- removed 226991 Soulforge Sabatons
+- removed 226992 Soulforge Chestguards
+- removed 227001 Bindings of The Five Thunders
+- removed 227002 Coif of The Five Thunders
+- removed 227003 Pauldrons of The Five Thunders
+- removed 227004 Vest of The Five Thunders
+- removed 227005 Kilt of The Five Thunders
+- removed 227006 Gauntlets of The Five Thunders
+- removed 227007 Slippers of The Five Thunders
+- removed 227008 Cord of The Five Thunders
+- removed 227009 Bracers of The Five Thunders
+- removed 227010 Sash of The Five Thunders
+- removed 227011 Mantle of The Five Thunders
+- removed 227012 Leggings of The Five Thunders
+- removed 227013 Crown of The Five Thunders
+- removed 227014 Grasp of The Five Thunders
+- removed 227015 Greaves of The Five Thunders
+- removed 227016 Tunic of The Five Thunders
+- removed 227017 Bands of The Five Thunders
+- removed 227018 Girdle of The Five Thunders
+- removed 227019 Spaulders of The Five Thunders
+- removed 227020 Legplates of The Five Thunders
+- removed 227021 Face of The Five Thunders
+- removed 227022 Fists of The Five Thunders
+- removed 227023 Treads of The Five Thunders
+- removed 227024 Chain of The Five Thunders
+- removed 227042 Champion's Plate Shoulders
+- removed 227043 Champion's Plate Helm
+- removed 227044 Lieutenant Commander's Plate Helm
+- removed 227045 Lieutenant Commander's Plate Shoulders
+- removed 227046 Knight-Captain's Plate Hauberk
+- removed 227047 Knight-Captain's Plate Leggings
+- removed 227048 Legionnaire's Plate Leggings
+- removed 227049 Legionnaire's Plate Hauberk
+- removed 227050 Blood Guard's Plate Gauntlets
+- removed 227051 Blood Guard's Plate Greaves
+- removed 227052 Knight-Lieutenant's Plate Greaves
+- removed 227053 Knight-Lieutenant's Plate Gauntlets
+- removed 227054 Lieutenant Commander's Leather Shoulders
+- removed 227055 Lieutenant Commander's Leather Helm
+- removed 227056 Champion's Leather Shoulders
+- removed 227057 Champion's Leather Helm
+- removed 227058 Knight-Captain's Leather Chestpiece
+- removed 227059 Legionnaire's Leather Legguards
+- removed 227060 Legionnaire's Leather Chestpiece
+- removed 227061 Knight-Captain's Leather Legguards
+- removed 227062 Blood Guard's Leather Walkers
+- removed 227063 Blood Guard's Leather Grips
+- removed 227064 Knight-Lieutenant's Leather Walkers
+- removed 227065 Knight-Lieutenant's Leather Grips
+- removed 227066 Lieutenant Commander's Chain Helm
+- removed 227067 Champion's Chain Helm
+- removed 227068 Lieutenant Commander's Chain Shoulders
+- removed 227069 Champion's Chain Shoulders
+- removed 227070 Knight-Captain's Chain Hauberk
+- removed 227071 Legionnaire's Chain Hauberk
+- removed 227072 Knight-Captain's Chain Legguards
+- removed 227073 Legionnaire's Chain Legguards
+- removed 227074 Blood Guard's Chain Greaves
+- removed 227075 Blood Guard's Chain Vices
+- removed 227076 Knight-Lieutenant's Chain Greaves
+- removed 227077 Knight-Lieutenant's Chain Vices
+- removed 227078 Champion's Chain Pauldrons
+- removed 227079 Legionnaire's Chain Legplates
+- removed 227080 Champion's Chain Greathelm
+- removed 227081 Blood Guard's Chain Grips
+- removed 227082 Blood Guard's Chain Sabatons
+- removed 227083 Legionnaire's Chain Armor
+- removed 227084 Lieutenant Commander's Chain Pauldrons
+- removed 227085 Knight-Captain's Chain Legplates
+- removed 227086 Lieutenant Commander's Chain Greathelm
+- removed 227087 Knight-Lieutenant's Chain Grips
+- removed 227088 Knight-Lieutenant's Chain Sabatons
+- removed 227089 Knight-Captain's Chain Armor
+- removed 227090 Champion's Dreadweave Cowl
+- removed 227091 Lieutenant Commander's Dreadweave Spaulders
+- removed 227092 Champion's Dreadweave Spaulders
+- removed 227093 Lieutenant Commander's Dreadweave Cowl
+- removed 227094 Legionnaire's Dreadweave Tunic
+- removed 227095 Knight-Captain's Dreadweave Legguards
+- removed 227096 Knight-Captain's Dreadweave Tunic
+- removed 227097 Legionnaire's Dreadweave Legguards
+- removed 227098 Blood Guard's Dreadweave Walkers
+- removed 227099 Blood Guard's Dreadweave Handwraps
+- removed 227100 Knight-Lieutenant's Dreadweave Handwraps
+- removed 227101 Knight-Lieutenant's Dreadweave Walkers
+- removed 227102 Lieutenant Commander's Silk Mantle
+- removed 227103 Lieutenant Commander's Silk Cowl
+- removed 227104 Champion's Silk Mantle
+- removed 227105 Champion's Silk Cowl
+- removed 227106 Legionnaire's Silk Tunic
+- removed 227107 Legionnaire's Silk Legguards
+- removed 227108 Knight-Captain's Silk Tunic
+- removed 227109 Knight-Captain's Silk Legguards
+- removed 227110 Blood Guard's Silk Walkers
+- removed 227111 Blood Guard's Silk Handwraps
+- removed 227112 Knight-Lieutenant's Silk Walkers
+- removed 227113 Knight-Lieutenant's Silk Handwraps
+- removed 227114 Knight-Lieutenant's Silk Gauntlets
+- removed 227115 Blood Guard's Silk Gauntlets
+- removed 227118 Champion's Satin Hood
+- removed 227119 Lieutenant Commander's Satin Mantle
+- removed 227120 Champion's Satin Mantle
+- removed 227121 Lieutenant Commander's Satin Hood
+- removed 227122 Knight-Captain's Satin Tunic
+- removed 227123 Legionnaire's Satin Legguards
+- removed 227124 Legionnaire's Satin Tunic
+- removed 227125 Knight-Captain's Satin Legguards
+- removed 227126 Blood Guard's Satin Handwraps
+- removed 227127 Blood Guard's Satin Walkers
+- removed 227128 Knight-Lieutenant's Satin Handwraps
+- removed 227129 Knight-Lieutenant's Satin Walkers
+- removed 227130 Champion's Satin Epaulets
+- removed 227131 Legionnaire's Satin Leggings
+- removed 227132 Champion's Satin Crown
+- removed 227133 Blood Guard's Satin Grips
+- removed 227134 Blood Guard's Satin Treads
+- removed 227135 Legionnaire's Satin Robe
+- removed 227136 Lieutenant Commander's Satin Epaulets
+- removed 227137 Knight-Captain's Satin Leggings
+- removed 227138 Lieutenant Commander's Satin Crown
+- removed 227139 Knight-Lieutenant's Satin Grips
+- removed 227140 Knight-Lieutenant's Satin Treads
+- removed 227141 Knight-Captain's Satin Robe
+- removed 227142 Knight-Captain's Lamellar Breastplate
+- removed 227143 Knight-Captain's Lamellar Leggings
+- removed 227144 Lieutenant Commander's Lamellar Headguard
+- removed 227145 Lieutenant Commander's Lamellar Shoulders
+- removed 227146 Knight-Lieutenant's Lamellar Sabatons
+- removed 227147 Knight-Lieutenant's Lamellar Gauntlets
+- removed 227148 Lieutenant Commander's Lamellar Pauldrons
+- removed 227149 Lieutenant Commander's Lamellar Helmet
+- removed 227150 Knight-Captain's Lamellar Legguards
+- removed 227151 Knight-Captain's Lamellar Chestplate
+- removed 227152 Knight-Lieutenant's Lamellar Gloves
+- removed 227153 Knight-Lieutenant's Lamellar Greaves
+- removed 227154 Champion's Mail Pauldrons
+- removed 227155 Champion's Mail Headguard
+- removed 227156 Legionnaire's Mail Legguards
+- removed 227157 Legionnaire's Mail Hauberk
+- removed 227158 Blood Guard's Mail Greaves
+- removed 227159 Blood Guard's Mail Vices
+- removed 227160 Champion's Mail Spaulders
+- removed 227161 Legionnaire's Mail Leggings
+- removed 227162 Champion's Mail Helm
+- removed 227163 Blood Guard's Mail Gauntlets
+- removed 227164 Blood Guard's Mail Sabatons
+- removed 227165 Legionnaire's Mail Breastplate
+- removed 227166 Champion's Mail Epaulets
+- removed 227167 Legionnaire's Mail Pants
+- removed 227168 Champion's Mail Skullcap
+- removed 227169 Blood Guard's Mail Gloves
+- removed 227170 Blood Guard's Mail Boots
+- removed 227171 Legionnaire's Mail Chestguard
+- removed 227172 Lieutenant Commander's Dragonhide Shoulders
+- removed 227173 Lieutenant Commander's Dragonhide Headguard
+- removed 227174 Champion's Dragonhide Headguard
+- removed 227175 Champion's Dragonhide Shoulders
+- removed 227176 Knight-Captain's Dragonhide Chestpiece
+- removed 227177 Legionnaire's Dragonhide Leggings
+- removed 227178 Knight-Captain's Dragonhide Leggings
+- removed 227179 Legionnaire's Dragonhide Chestpiece
+- removed 227180 Blood Guard's Dragonhide Grips
+- removed 227181 Blood Guard's Dragonhide Treads
+- removed 227182 Knight-Lieutenant's Dragonhide Treads
+- removed 227183 Knight-Lieutenant's Dragonhide Grips
+- removed 227184 Champion's Dragonhide Spaulders
+- removed 227185 Legionnaire's Dragonhide Pants
+- removed 227186 Champion's Dragonhide Helm
+- removed 227187 Blood Guard's Dragonhide Gloves
+- removed 227188 Blood Guard's Dragonhide Boots
+- removed 227189 Legionnaire's Dragonhide Armor
+- removed 227190 Lieutenant Commander's Dragonhide Spaulders
+- removed 227191 Knight-Captain's Dragonhide Pants
+- removed 227192 Lieutenant Commander's Dragonhide Helm
+- removed 227193 Knight-Lieutenant's Dragonhide Gloves
+- removed 227194 Knight-Lieutenant's Dragonhide Boots
+- removed 227195 Knight-Captain's Dragonhide Armor
+- removed 227196 Knight-Captain's Dragonhide Tunic
+- removed 227197 Knight-Lieutenant's Dragonhide Greaves
+- removed 227198 Knight-Lieutenant's Dragonhide Gauntlets
+- removed 227199 Lieutenant Commander's Dragonhide Headdress
+- removed 227200 Knight-Captain's Dragonhide Legguards
+- removed 227201 Lieutenant Commander's Dragonhide Pauldrons
+- removed 227202 Legionnaire's Dragonhide Tunic
+- removed 227203 Blood Guard's Dragonhide Greaves
+- removed 227204 Blood Guard's Dragonhide Gauntlets
+- removed 227205 Champion's Dragonhide Headdress
+- removed 227206 Legionnaire's Dragonhide Legguards
+- removed 227207 Champion's Dragonhide Pauldrons
+- removed 227803 Dire Warbear Harness
+- removed 227804 Dire Warbear Woolies
+- removed 227805 Ferocity of the Timbermaw
+- removed 227807 Dense Timbermaw Belt
+- removed 227808 Rugged Mantle of the Timbermaw
+- removed 227809 Studded Timbermaw Brawlers
+- removed 227810 Dense Timbermaw Boots
+- removed 227813 Drinkable Stratholme Holy Water
+- removed 227814 Radiant Girdle of the Dawn
+- removed 227815 Fine Dawn Treaders
+- removed 227816 Argent Elite Boots
+- removed 227817 Radiant Gloves of the Dawn
+- removed 227818 Glowing Mantle of the Dawn
+- removed 227819 Blessed Flame Mantle of the Dawn
+- removed 227859 Shimmering Dawnbringer Shoulders
+- removed 227862 Incandescent Mooncloth Boots
+- removed 227888 Argent Elite Shoulders
+- removed 228190 Knowledge of the Timbermaw
+- removed 231530 Warlord's Plate Armor
+- removed 231531 General's Plate Boots
+- removed 231532 General's Plate Gauntlets
+- removed 231533 General's Plate Leggings
+- removed 231534 Warlord's Plate Shoulders
+- removed 231535 Warlord's Plate Headpiece
+- removed 231536 Field Marshal's Plate Armor
+- removed 231537 Field Marshal's Plate Shoulderguards
+- removed 231538 Field Marshal's Plate Helm
+- removed 231539 Marshal's Plate Boots
+- removed 231540 Marshal's Plate Legguards
+- removed 231541 Marshal's Plate Gauntlets
+- removed 231543 Field Marshal's Leather Chestpiece
+- removed 231544 Marshal's Leather Handgrips
+- removed 231545 Field Marshal's Leather Mask
+- removed 231546 Marshal's Leather Footguards
+- removed 231547 Field Marshal's Leather Epaulets
+- removed 231548 Marshal's Leather Leggings
+- removed 231549 Warlord's Leather Breastplate
+- removed 231551 Warlord's Leather Spaulders
+- removed 231552 General's Leather Treads
+- removed 231553 Warlord's Leather Helm
+- removed 231554 General's Leather Legguards
+- removed 231555 General's Leather Mitts
+- removed 231557 Field Marshal's Chain Pauldrons
+- removed 231558 Marshal's Chain Legplates
+- removed 231560 Marshal's Chain Grips
+- removed 231561 Marshal's Chain Sabatons
+- removed 231562 Field Marshal's Chain Greathelm
+- removed 231563 Field Marshal's Chain Armor
+- removed 231564 General's Chain Sabatons
+- removed 231565 Warlord's Chain Pauldrons
+- removed 231566 Warlord's Chain Armor
+- removed 231567 General's Chain Legplates
+- removed 231568 Warlord's Chain Greathelm
+- removed 231569 General's Chain Grips
+- removed 231570 General's Chain Greaves
+- removed 231571 Warlord's Chain Helm
+- removed 231572 Warlord's Chain Shoulders
+- removed 231573 Warlord's Chain Hauberk
+- removed 231574 General's Chain Legguards
+- removed 231575 General's Chain Vices
+- removed 231576 Field Marshal's Chain Shoulders
+- removed 231577 Marshal's Chain Legguards
+- removed 231578 Marshal's Chain Vices
+- removed 231579 Marshal's Chain Greaves
+- removed 231580 Field Marshal's Chain Helm
+- removed 231581 Field Marshal's Chain Hauberk
+- removed 231582 Field Marshal's Dreadweave Robe
+- removed 231583 Field Marshal's Dreadweave Shoulders
+- removed 231584 Field Marshal's Coronal
+- removed 231585 Marshal's Dreadweave Boots
+- removed 231586 Marshal's Dreadweave Gloves
+- removed 231587 Marshal's Dreadweave Leggings
+- removed 231588 General's Dreadweave Pants
+- removed 231589 General's Dreadweave Gloves
+- removed 231590 Warlord's Dreadweave Hood
+- removed 231591 Warlord's Dreadweave Robe
+- removed 231592 Warlord's Dreadweave Mantle
+- removed 231593 General's Dreadweave Boots
+- removed 231594 Warlord's Silk Amice
+- removed 231595 General's Silk Trousers
+- removed 231596 Warlord's Silk Raiment
+- removed 231597 General's Silk Boots
+- removed 231599 General's Silk Gauntlets
+- removed 231600 General's Silk Handwraps
+- removed 231601 Warlord's Silk Cowl
+- removed 231602 Field Marshal's Silk Spaulders
+- removed 231603 Field Marshal's Silk Vestments
+- removed 231604 Field Marshal's Coronet
+- removed 231605 Marshal's Silk Leggings
+- removed 231606 Marshal's Silk Footwraps
+- removed 231608 Marshal's Silk Gauntlets
+- removed 231609 Marshal's Silk Handwraps
+- removed 231610 General's Satin Treads
+- removed 231611 Warlord's Satin Epaulets
+- removed 231612 Warlord's Satin Robes
+- removed 231613 General's Satin Grips
+- removed 231614 General's Satin Leggings
+- removed 231615 Warlord's Satin Crown
+- removed 231616 Field Marshal's Satin Crown
+- removed 231617 Marshal's Satin Grips
+- removed 231618 Field Marshal's Satin Robe
+- removed 231619 Marshal's Satin Leggings
+- removed 231620 Marshal's Satin Treads
+- removed 231621 Field Marshal's Satin Epaulets
+- removed 231622 Field Marshal's Satin Hood
+- removed 231623 Marshal's Satin Handwraps
+- removed 231624 Field Marshal's Satin Tunic
+- removed 231626 Marshal's Satin Legguards
+- removed 231627 Marshal's Satin Walkers
+- removed 231628 Field Marshal's Satin Mantle
+- removed 231630 General's Satin Walkers
+- removed 231631 Warlord's Satin Mantle
+- removed 231632 Warlord's Satin Tunic
+- removed 231633 General's Satin Handwraps
+- removed 231634 General's Satin Legguards
+- removed 231635 Warlord's Satin Hood
+- removed 231639 Marshal's Lamellar Legguards
+- removed 231640 Field Marshal's Lamellar Helmet
+- removed 231641 Field Marshal's Lamellar Chestplate
+- removed 231643 Marshal's Lamellar Gloves
+- removed 231645 Field Marshal's Lamellar Pauldrons
+- removed 231646 Marshal's Lamellar Greaves
+- removed 231647 Marshal's Lamellar Leggings
+- removed 231648 Field Marshal's Lamellar Headguard
+- removed 231649 Field Marshal's Lamellar Breastplate
+- removed 231650 Marshal's Lamellar Gauntlets
+- removed 231651 Field Marshal's Lamellar Shoulders
+- removed 231652 Marshal's Lamellar Sabatons
+- removed 231653 Warlord's Mail Hauberk
+- removed 231654 Warlord's Mail Pauldrons
+- removed 231655 General's Mail Vices
+- removed 231656 General's Mail Greaves
+- removed 231657 Warlord's Mail Headguard
+- removed 231658 General's Mail Legguards
+- removed 231659 Warlord's Mail Spaulders
+- removed 231660 General's Mail Gauntlets
+- removed 231661 General's Mail Sabatons
+- removed 231662 Warlord's Mail Breastplate
+- removed 231663 Warlord's Mail Helm
+- removed 231664 General's Mail Leggings
+- removed 231665 Warlord's Mail Epaulets
+- removed 231666 General's Mail Gloves
+- removed 231667 General's Mail Boots
+- removed 231668 Warlord's Mail Chestguard
+- removed 231669 Warlord's Mail Skullcap
+- removed 231670 General's Mail Pants
+- removed 231671 General's Dragonhide Greaves
+- removed 231672 Warlord's Dragonhide Pauldrons
+- removed 231673 General's Dragonhide Legguards
+- removed 231674 Warlord's Dragonhide Tunic
+- removed 231675 Warlord's Dragonhide Headdress
+- removed 231676 General's Dragonhide Gauntlets
+- removed 231677 General's Dragonhide Gloves
+- removed 231678 Warlord's Dragonhide Helm
+- removed 231679 Warlord's Dragonhide Armor
+- removed 231680 General's Dragonhide Pants
+- removed 231681 Warlord's Dragonhide Spaulders
+- removed 231682 General's Dragonhide Boots
+- removed 231683 General's Dragonhide Treads
+- removed 231684 Warlord's Dragonhide Shoulders
+- removed 231685 General's Dragonhide Leggings
+- removed 231686 Warlord's Dragonhide Chestpiece
+- removed 231687 Warlord's Dragonhide Headguard
+- removed 231688 General's Dragonhide Grips
+- removed 231689 Field Marshal's Dragonhide Headguard
+- removed 231690 Field Marshal's Dragonhide Chestpiece
+- removed 231691 Marshal's Dragonhide Leggings
+- removed 231692 Marshal's Dragonhide Treads
+- removed 231693 Field Marshal's Dragonhide Shoulders
+- removed 231694 Marshal's Dragonhide Grips
+- removed 231695 Field Marshal's Dragonhide Helm
+- removed 231696 Field Marshal's Dragonhide Armor
+- removed 231697 Marshal's Dragonhide Pants
+- removed 231698 Marshal's Dragonhide Boots
+- removed 231699 Field Marshal's Dragonhide Spaulders
+- removed 231700 Marshal's Dragonhide Gloves
+- removed 231701 Field Marshal's Dragonhide Headdress
+- removed 231702 Field Marshal's Dragonhide Tunic
+- removed 231703 Marshal's Dragonhide Legguards
+- removed 231704 Marshal's Dragonhide Greaves
+- removed 231705 Field Marshal's Dragonhide Pauldrons
+- removed 231706 Marshal's Dragonhide Gauntlets
+- removed 233197 Argent Training Manual
+- removed 233198 Horn of the Dawn
+- removed 233200 Songflower Seed
+- removed 233209 Firewater Cauldron
+- removed 233217 Tunneler's Incense
+- removed 233250 Ancient Branch
+- removed 234016 Signet Ring of the Bronze Dragonflight
+- removed 234017 Signet Ring of the Bronze Dragonflight
+- removed 234018 Signet Ring of the Bronze Dragonflight
+- removed 234019 Signet Ring of the Bronze Dragonflight
+- removed 234020 Signet Ring of the Bronze Dragonflight
+- removed 234021 Signet Ring of the Bronze Dragonflight
+- removed 234022 Signet Ring of the Bronze Dragonflight
+- removed 234023 Signet Ring of the Bronze Dragonflight
+- removed 234024 Signet Ring of the Bronze Dragonflight
+- removed 234025 Signet Ring of the Bronze Dragonflight
+- removed 234026 Signet Ring of the Bronze Dragonflight
+- removed 234027 Signet Ring of the Bronze Dragonflight
+- removed 234028 Signet Ring of the Bronze Dragonflight
+- removed 234029 Signet Ring of the Bronze Dragonflight
+- removed 234030 Signet Ring of the Bronze Dragonflight
+- removed 234031 Signet Ring of the Bronze Dragonflight
+- removed 234032 Signet Ring of the Bronze Dragonflight
+- removed 234033 Signet Ring of the Bronze Dragonflight
+- removed 234034 Signet Ring of the Bronze Dragonflight
+- removed 234035 Signet Ring of the Bronze Dragonflight
+- removed 234198 Signet Ring of the Bronze Dragonflight
+- removed 234199 Signet Ring of the Bronze Dragonflight
+- removed 234200 Signet Ring of the Bronze Dragonflight
+- removed 234201 Signet Ring of the Bronze Dragonflight
+- removed 234202 Signet Ring of the Bronze Dragonflight
+- removed 234271 Formula: Scroll: Wrath of the Swarm
+- removed 234272 Formula: Enchanted Repellent
+- removed 234436 Signet Ring of the Bronze Dragonflight
+- removed 234437 Signet Ring of the Bronze Dragonflight
+- removed 234438 Signet Ring of the Bronze Dragonflight
+- removed 234439 Signet Ring of the Bronze Dragonflight
+- removed 234440 Signet Ring of the Bronze Dragonflight
+- removed 234542 High Warlord's Greatsword
+- removed 234543 High Warlord's Battle Axe
+- removed 234545 High Warlord's Pulverizer
+- removed 234546 High Warlord's Destroyer
+- removed 234547 High Warlord's Pig Sticker
+- removed 234548 High Warlord's Pig Poker
+- removed 234549 High Warlord's War Staff
+- removed 234550 High Warlord's Spellblade
+- removed 234551 High Warlord's Battle Mace
+- removed 234552 High Warlord's Blade
+- removed 234553 High Warlord's Quickblade
+- removed 234554 High Warlord's Cleaver
+- removed 234555 High Warlord's Bludgeon
+- removed 234556 High Warlord's Razor
+- removed 234557 High Warlord's Right Claw
+- removed 234558 High Warlord's Left Claw
+- removed 234559 High Warlord's Recurve
+- removed 234560 High Warlord's Crossbow
+- removed 234561 High Warlord's Street Sweeper
+- removed 234562 High Warlord's Shield Wall
+- removed 234563 High Warlord's Tome of Destruction
+- removed 234564 High Warlord's Tome of Mending
+- removed 234565 Grand Marshal's Claymore
+- removed 234566 Grand Marshal's Sunderer
+- removed 234567 Grand Marshal's Battle Hammer
+- removed 234568 Grand Marshal's Demolisher
+- removed 234569 Grand Marshal's Glaive
+- removed 234570 Grand Marshal's Polearm
+- removed 234571 Grand Marshal's Stave
+- removed 234574 Grand Marshal's Mageblade
+- removed 234576 Grand Marshal's Warhammer
+- removed 234578 Grand Marshal's Longsword
+- removed 234579 Grand Marshal's Swiftblade
+- removed 234580 Grand Marshal's Handaxe
+- removed 234581 Grand Marshal's Punisher
+- removed 234582 Grand Marshal's Dirk
+- removed 234583 Grand Marshal's Right Hand Blade
+- removed 234584 Grand Marshal's Left Hand Blade
+- removed 234585 Grand Marshal's Bullseye
+- removed 234586 Grand Marshal's Repeater
+- removed 234587 Grand Marshal's Hand Cannon
+- removed 234588 Grand Marshal's Aegis
+- removed 234589 Grand Marshal's Tome of Power
+- removed 234590 Grand Marshal's Tome of Restoration
+- removed 234964 Signet Ring of the Bronze Dragonflight
+- removed 234965 Signet Ring of the Bronze Dragonflight
+- removed 234966 Signet Ring of the Bronze Dragonflight
+- removed 234967 Signet Ring of the Bronze Dragonflight
+- removed 234968 Signet Ring of the Bronze Dragonflight
+- removed 235473 Grand Marshal's Barricade
+- removed 235474 High Warlord's Barricade
+- removed 235476 High Warlord's Hacker
+- removed 235477 High Warlord's Bonecracker
+- removed 235478 High Warlord's Shiv
+- removed 235479 Grand Marshal's Shiv
+- removed 235480 Grand Marshal's Bonecracker
+- removed 235481 Grand Marshal's Hacker
+- removed 237814 Sentinel's Lamellar Legguards
+- removed 237815 Sentinel's Silk Leggings
+- removed 237817 Sentinel's Lizardhide Pants
+- removed 237818 Sentinel's Leather Pants
+- removed 237819 Sentinel's Chain Leggings
+- removed 237820 Outrider's Silk Leggings
+- removed 237821 Outrider's Lizardhide Pants
+- removed 237822 Outrider's Leather Pants
+- removed 237823 Outrider's Mail Leggings
+- removed 237824 Outrider's Chain Leggings
+- removed 237825 Sentinel's Plate Legguards
+- removed 237826 Outrider's Plate Legguards
+- removed 239512 Lightbreaker Wrists
+- removed 239513 Lightbreaker Belt
+- removed 239514 Lightbreaker Grips
+- removed 239515 Lightbreaker Greaves
+- removed 239516 Lightbreaker Shoulders
+- removed 239517 Lightbreaker Greathelm
+- removed 239518 Lightbreaker Tassets
+- removed 239519 Lightbreaker Cuirass
+- removed 239520 Lightbreaker Bracers
+- removed 239521 Lightbreaker Waistguard
+- removed 239522 Lightbreaker Gauntlets
+- removed 239523 Lightbreaker Sabatons
+- removed 239524 Lightbreaker Pauldrons
+- removed 239525 Lightbreaker Helmet
+- removed 239526 Lightbreaker Legplates
+- removed 239527 Lightbreaker Breastplate
+- removed 239529 Dawnstalker Breastplate
+- removed 239530 Dawnstalker Greaves
+- removed 239531 Dawnstalker Gauntlets
+- removed 239532 Dawnstalker Visor
+- removed 239533 Dawnstalker Leggings
+- removed 239534 Dawnstalker Pauldrons
+- removed 239535 Dawnstalker Belt
+- removed 239536 Dawnstalker Vambraces
+- removed 239537 Dawnstalker Boots
+- removed 239538 Dawnstalker Girdle
+- removed 239539 Dawnstalker Handguards
+- removed 239540 Dawnstalker Headpiece
+- removed 239541 Dawnstalker Legguards
+- removed 239542 Dawnstalker Spaulders
+- removed 239543 Dawnstalker Tunic
+- removed 239544 Dawnstalker Wristguards
+- removed 239547 Duskwraith Wristguards
+- removed 239548 Duskwraith Chestguard
+- removed 239549 Duskwraith Grips
+- removed 239550 Duskwraith Mask
+- removed 239551 Duskwraith Leggings
+- removed 239552 Duskwraith Mantle
+- removed 239553 Duskwraith Treads
+- removed 239554 Duskwraith Belt
+- removed 239555 Duskwraith Bracers
+- removed 239556 Duskwraith Waistguard
+- removed 239557 Duskwraith Gauntlets
+- removed 239558 Duskwraith Sabatons
+- removed 239559 Duskwraith Pauldrons
+- removed 239560 Duskwraith Helmet
+- removed 239561 Duskwraith Legplates
+- removed 239562 Duskwraith Breastplate
+- removed 239565 Garb of Revelation
+- removed 239572 Boots of Revelation
+- removed 239574 Hands of Revelation
+- removed 239575 Crown of Revelation
+- removed 239577 Pants of Revelation
+- removed 239581 Mantle of Revelation
+- removed 239582 Girdle of Revelation
+- removed 239583 Wrists of Revelation
+- removed 239584 Gloves of Revelation
+- removed 239585 Circlet of Revelation
+- removed 239586 Shoulderpads of Revelation
+- removed 239587 Leggings of Revelation
+- removed 239588 Bindings of Revelation
+- removed 239589 Sandals of Revelation
+- removed 239590 Belt of Revelation
+- removed 239591 Robe of Revelation
+- removed 240020 Inquisition Legguards
+- removed 240021 Inquisition Spaulders
+- removed 240022 Inquisition Boots
+- removed 240023 Inquisition Vambraces
+- removed 240024 Inquisition Belt
+- removed 240025 Inquisition Shoulderplates
+- removed 240026 Inquisition Leggings
+- removed 240027 Inquisition Helmet
+- removed 240028 Inquisition Gloves
+- removed 240029 Inquisition Greaves
+- removed 240030 Inquisition Breastplate
+- removed 240031 Inquisition Bracers
+- removed 240032 Inquisition Waistguard
+- removed 240033 Inquisition Pauldrons
+- removed 240034 Inquisition Legplates
+- removed 240035 Inquisition Crown
+- removed 240036 Inquisition Gauntlets
+- removed 240037 Inquisition Sabatons
+- removed 240038 Inquisition Chestguard
+- removed 240039 Inquisition Tunic
+- removed 240040 Inquisition Headpiece
+- removed 240041 Inquisition Handguards
+- removed 240042 Inquisition Wristguards
+- removed 240043 Inquisition Girdle
+- removed 240044 Fireleaf Wristwraps
+- removed 240045 Fireleaf Waistguard
+- removed 240046 Fireleaf Mantle
+- removed 240047 Fireleaf Pants
+- removed 240048 Fireleaf Hood
+- removed 240049 Fireleaf Mitts
+- removed 240050 Fireleaf Boots
+- removed 240051 Fireleaf Garb
+- removed 240052 Fireleaf Bindings
+- removed 240053 Fireleaf Belt
+- removed 240054 Fireleaf Shoulderpads
+- removed 240055 Fireleaf Leggings
+- removed 240056 Fireleaf Circlet
+- removed 240057 Fireleaf Gloves
+- removed 240058 Fireleaf Sandals
+- removed 240059 Fireleaf Robe
+- removed 240060 Waywatcher Wraps
+- removed 240061 Waywatcher Sash
+- removed 240062 Waywatcher Shoulderpads
+- removed 240063 Waywatcher Trousers
+- removed 240064 Waywatcher Cowl
+- removed 240065 Waywatcher Grips
+- removed 240066 Waywatcher Stompers
+- removed 240067 Waywatcher Vest
+- removed 240068 Waywatcher Bindings
+- removed 240069 Waywatcher Cord
+- removed 240070 Waywatcher Mantle
+- removed 240071 Waywatcher Kilt
+- removed 240072 Waywatcher Hood
+- removed 240073 Waywatcher Mitts
+- removed 240074 Waywatcher Sandals
+- removed 240075 Waywatcher Leathers
+- removed 240076 Waywatcher Bracers
+- removed 240077 Waywatcher Waistguard
+- removed 240078 Waywatcher Pauldrons
+- removed 240079 Waywatcher Leggings
+- removed 240080 Waywatcher Headdress
+- removed 240081 Waywatcher Gauntlets
+- removed 240082 Waywatcher Sabatons
+- removed 240083 Waywatcher Armor
+- removed 240084 Waywatcher Wristguards
+- removed 240085 Waywatcher Girdle
+- removed 240086 Waywatcher Spaulders
+- removed 240087 Waywatcher Legguards
+- removed 240088 Waywatcher Headpiece
+- removed 240089 Waywatcher Handguards
+- removed 240090 Waywatcher Boots
+- removed 240091 Waywatcher Tunic
+- removed 240092 Soulcrusher Tunic
+- removed 240093 Soulcrusher Boots
+- removed 240095 Soulcrusher Handguards
+- removed 240096 Soulcrusher Headpiece
+- removed 240097 Soulcrusher Legguards
+- removed 240098 Soulcrusher Spaulders
+- removed 240099 Soulcrusher Girdle
+- removed 240100 Soulcrusher Wristguards
+- removed 240101 Soulcrusher Chestguard
+- removed 240102 Soulcrusher Sabatons
+- removed 240103 Soulcrusher Gloves
+- removed 240104 Soulcrusher Faceguard
+- removed 240105 Soulcrusher Legplates
+- removed 240106 Soulcrusher Pauldrons
+- removed 240107 Soulcrusher Waistguard
+- removed 240108 Soulcrusher Bracers
+- removed 240109 Soulcrusher Embrace
+- removed 240110 Soulcrusher Greaves
+- removed 240122 Soulcrusher Mitts
+- removed 240123 Soulcrusher Crown
+- removed 240124 Soulcrusher Kilt
+- removed 240125 Soulcrusher Mantle
+- removed 240126 Soulcrusher Cord
+- removed 240127 Soulcrusher Bindings
+- removed 240128 Soulcrusher Armor
+- removed 240129 Soulcrusher Treads
+- removed 240130 Soulcrusher Grips
+- removed 240131 Soulcrusher Helmet
+- removed 240134 Soulcrusher Leggings
+- removed 240135 Soulcrusher Epaulets
+- removed 240136 Soulcrusher Belt
+- removed 240137 Soulcrusher Vambraces
+- removed 240138 Heretic Robe
+- removed 240139 Heretic Sandals
+- removed 240140 Heretic Gloves
+- removed 240141 Heretic Cowl
+- removed 240142 Heretic Leggings
+- removed 240143 Heretic Shoulderpads
+- removed 240144 Heretic Belt
+- removed 240145 Heretic Bindings
+- removed 240146 Heretic Garb
+- removed 240147 Heretic Handguards
+- removed 240148 Heretic Hood
+- removed 240149 Heretic Pants
+- removed 240150 Heretic Mantle
+- removed 240151 Heretic Waistguard
+- removed 240152 Heretic Wristguards
+- removed 240153 Heretic Boots
+- removed 240993 Tim's Test Ranged Weapon
+- removed 242709 Character Bank Tab Bag (DNT)
+- removed 246055 Inquisition Grips
+- removed 246056 Inquisition Armbraces
+- removed 246057 Inquisition Stompers
+- removed 246058 Inquisition Plate Pants
+- removed 246059 Inquisition Cord
+- removed 246060 Inquisition Cuirass
+- removed 246061 Inquisition Epaulets
+- removed 246062 Inquisition Faceguard
+- removed 251533 Forsaken Greataxe
+- removed 251534 Gnarled Necromancer's Staff
+- removed 251932 Sharpened Cirrusfly Stinger
+- removed 251962 Violet Sash
+- removed 251963 Gravewalker Boots
+- removed 251965 Undead Knight's Bracers
+- removed 252948 Cleansed Felbloom
+- removed 263005 Thendal Watcher's Vest
+- removed 263006 Scout Ranger's Tunic
+- removed 263007 Skyseer's Vest
+- removed 263015 Skyseer's Pants
+- removed 263016 Scout Ranger's Leggings
+- removed 263017 Thendal Watcher's Leggings
+- removed 263935 Elunar Longstaff
+- removed 263936 Windforged Shortblade
+- removed 263937 Skyseeker's Greatstaff
+- removed 267369 Wolfsbane
+- removed 270001 Rusty Cutlass
+- removed 270002 Midshipman's Worn Boots
+- removed 270003 Garrison Cuffs
+- removed 270005 Monastic Hammer
+- removed 270008 Heat Resistant Mitts
+- removed 270009 Safety Boots
+- removed 270015 Bravo's Armbands
+- removed 270016 Dreamer's Leggings
+- removed 270018 Hammerbone
+- removed 270021 Staghide Armguards
+- removed 270023 Tanned Shoulderpads
+- removed 270024 Bronzed Shoulderguards
+- removed 270025 Silvered Gauntlets
+- removed 270027 Ursine Hammer
+- removed 270029 Town Clerk's Mittens
+- removed 270030 Tattered Mittens
+- removed 270031 Dark Ritual Leggings
+- removed 270032 Cultist's Armguards
+- removed 270036 Magistrate's Pantaloons
+- removed 270042 Technician's Bracers
+- removed 270043 Dreamer's Chestguard
+- removed 270045 Operator's Gloves
+- removed 270047 Sentinel's Boots
+- removed 270054 Cultist's Chestguard
+- removed 270055 Charged Leather Bracers
+- removed 270059 Restorer's Fine Gloves
+- removed 270060 Excavator Gauntlets
+- removed 270074 Doomcaller's Pants
+- removed 270075 Fists of Impending Doom
+- removed 270227 Ephemeral Choker
+- removed 270228 Golemheart Stave
+- removed 270229 Treads of the Protector Golem
+- removed 270230 Kindlegem Girdle
+- removed 270231 Flamefist Grips
+- removed 270256 Durgen's Crescent Axe
+- removed 270260 Direhammer Leggings
+- removed 270261 Robes of the Disgraced Thane
+- removed 271095 Fang of Magmatus
+- removed 271096 Aetherwisp Bracers
+- removed 271097 Spiritwraith Drape
+- removed 271098 Golemguard Chest
+- removed 271201 Atrophic Girdle
+- removed 271202 Witherbite Bracers
+- removed 271203 Segmented Spider Leg
+- removed 271204 Meathook Slicer
+- removed 271205 Abomination Bones
+- removed 271206 Leftover Abomination Skin
+- removed 271207 Rotmender's Leggings
+- removed 271208 Grip of Fear
+- removed 271209 Bonerust Leggings
+- removed 271210 Tuskwrap Belt
+- removed 271211 Vilewalkers
+- removed 271212 Bloodied Chestwraps
+- removed 271213 Mirror of Rath'mael
+- removed 271214 Rotmender's Treads
+- removed 271215 Coldspire Staff
+- removed 271216 Scepter of the Abandoned
+- removed 271217 Corpse Chopper
+- removed 271218 Vileblood Scimitar
+- removed 271768 Songblade Stabilizer
+- removed 271907 Expeditionary's Cape
+- removed 271921 Expeditionary's Cape
+- removed 271922 Expeditionary's Cape
+- removed 271923 Expeditionary's Cape
+- removed 271924 Rebels' Rugged Reaper
+- removed 271925 Rebels' Rugged Reaper
+- removed 271926 Rebels' Rugged Reaper
+- removed 271927 Rebels' Rugged Reaper
+- removed 271928 Clever Expeditionary's Spellblade
+- removed 271929 Clever Expeditionary's Spellblade
+- removed 271930 Clever Expeditionary's Spellblade
+- removed 271931 Clever Expeditionary's Spellblade
+- removed 271932 Insurgent's Manifesto
+- removed 271933 Insurgent's Manifesto
+- removed 271934 Insurgent's Manifesto
+- removed 271935 Insurgent's Manifesto
+- removed 271936 Guerrilla's Jagged Mace
+- removed 271937 Guerrilla's Jagged Mace
+- removed 271938 Guerrilla's Jagged Mace
+- removed 271939 Guerrilla's Jagged Mace
+- removed 271948 Theramore Gloves
+- removed 271949 Theramore Gloves
+- removed 271950 Theramore Handguards
+- removed 271951 Theramore Handguards
+- removed 271953 Theramore Shoulderpads
+- removed 271954 Theramore Shoulders
+- removed 271956 Theramore Epaulets
+- removed 271957 Theramore Mantle
+- removed 271959 Theramore Spaulders
+- removed 272063 Darkspear Raider's Cloak
+- removed 272076 Darkspear Raider's Cloak
+- removed 272077 Darkspear Raider's Cloak
+- removed 272078 Darkspear Raider's Cloak
+- removed 272079 Darkspear Raider's Reaper
+- removed 272080 Darkspear Raider's Reaper
+- removed 272081 Darkspear Raider's Reaper
+- removed 272082 Darkspear Raider's Reaper
+- removed 272083 Darkspear Insurgent's Spellblade
+- removed 272084 Darkspear Insurgent's Spellblade
+- removed 272085 Darkspear Insurgent's Spellblade
+- removed 272086 Darkspear Insurgent's Spellblade
+- removed 272087 Tome of the Darkspear Prophecy
+- removed 272088 Tome of the Darkspear Prophecy
+- removed 272089 Tome of the Darkspear Prophecy
+- removed 272090 Tome of the Darkspear Prophecy
+- removed 272091 Darkspear Skirmisher's Bludgeon
+- removed 272092 Darkspear Skirmisher's Bludgeon
+- removed 272093 Darkspear Skirmisher's Bludgeon
+- removed 272094 Darkspear Skirmisher's Bludgeon
+- removed 272099 Raider Gloves
+- removed 272100 Raider Gloves
+- removed 272101 Raider Handguards
+- removed 272102 Raider Handguards
+- removed 272103 Darkspear Shoulderpads
+- removed 272104 Darkspear Shoulders
+- removed 272106 Darkspear Epaulets
+- removed 272107 Darkspear Mantle
+- removed 272108 Darkspear Spaulders
+- removed 272393 Magician's Cord
+- removed 272411 Arcanoweave Cloak
+- removed 272414 Howler's Furs
+- removed 272415 Stalwart Cloak
+- removed 272491 Premier Chain Headguard
+- removed 272957 Theramore Shoulderguards
+- removed 272958 Darkspear Shoulderguards
+- removed 272996 Trogg Scepter
+- removed 272998 Bone Knuckles
+- removed 272999 Barbaric Crossbow
+- removed 273003 Searing Dagger
+- removed 273005 Satyrskin Cloak
+- removed 273007 Chasm Walkers
+- removed 273022 Supple Bellyskin Leggings
+- removed 273023 Saltscale Girdle
+- removed 273024 Glinteye Slippers
+- removed 273025 Raptorclaw Greaves
+- removed 273026 Garb of Florid Feathers
+- removed 273027 Raptor's Gaze
+- removed 273028 Reliquary Mantle
+- removed 273029 Golemsight Long Gun
+- removed 273030 Ring of Power Regulation
+- removed 273084 Cloak of Hermitic Bliss
+- removed 273088 Snake Eye Kaleidoscope
+- removed 273089 Slither Cord
+- removed 273137 Skum's Bucket
+- removed 273289 Ogre Loincloth
+- removed 273293 Bandsaw Wristbands
+- removed 273297 Goblin Hammer
+- removed 273298 Lookie's Spyglass
+- removed 273456 Cell Keeper's Claws
+- removed 273457 Sorcerer Collar
+- removed 273637 Blade of Silverlaine
+- removed 273643 Worgenbane Talisman
+- removed 273645 Blindwatcher's Sight
+- removed 273646 Half-Eaten Boots
+- removed 273647 Worgpelt Leggings
+- removed 273804 Executioner Mantle
+- removed 273805 Blackrock Harness
+- removed 273806 Dark Horde Band
+- removed 273807 Demolition Girdle
+- removed 273808 Bridgebreaker Bindings
+- removed 273809 Hamhock's Cleaver
+- removed 273810 Ogre Grips
+- removed 273811 Repurposed Rack
+- removed 273817 Graverobber's Shovel
+- removed 273819 Boneslicer
+- removed 273820 Nightskulker Ring
+- removed 273824 Defias Jailbreakers
+- removed 273825 Red Wool Cloak
+- removed 273827 Debt Collector
+- removed 273829 Concealed Hand Crossbow
+- removed 273839 Spiked Shell Band
+- removed 273840 Cursed Murloc Eye
+- removed 273841 Twilight Maul
+- removed 273842 Treacherous Treads
+- removed 273843 Fallenroot Longbow
+- removed 273846 Twilight Lord Girdle
+- removed 273884 Grovekeeper Trousers
+- removed 273885 Grovekeeper Grips
+- removed 273886 Grovekeeper Shoulderpads
+- removed 273887 Grovekeeper Stompers
+- removed 273888 Grovekeeper Kilt
+- removed 273889 Grovekeeper Mitts
+- removed 273890 Grovekeeper Mantle
+- removed 273891 Grovekeeper Sandals
+- removed 273892 Grovekeeper Legguards
+- removed 273893 Grovekeeper Handguards
+- removed 273894 Grovekeeper Pauldrons
+- removed 273895 Grovekeeper Boots
+- removed 273896 Grovekeeper Leggings
+- removed 273897 Grovekeeper Gauntlets
+- removed 273898 Grovekeeper Spaulders
+- removed 273899 Grovekeeper Treads
+- removed 273900 Wildstalker's Legguards
+- removed 273901 Wildstalker's Gauntlets
+- removed 273902 Wildstalker's Spaulders
+- removed 273903 Wildstalker's Greaves
+- removed 273904 Manaflare Pants
+- removed 273905 Manaflare Gloves
+- removed 273906 Manaflare Mantle
+- removed 273907 Manaflare Boots
+- removed 273908 Justice Leggings
+- removed 273909 Justice Gauntlets
+- removed 273910 Justice Spaulders
+- removed 273911 Justice Greaves
+- removed 273912 Justice Legplates
+- removed 273913 Justice Gloves
+- removed 273914 Justice Epaulets
+- removed 273915 Justice Treads
+- removed 273916 Justice Legguards
+- removed 273917 Justice Handguards
+- removed 273918 Justice Pauldrons
+- removed 273919 Justice Sabatons
+- removed 273920 Pants of Conviction
+- removed 273921 Gloves of Conviction
+- removed 273922 Mantle of Conviction
+- removed 273923 Treads of Conviction
+- removed 273924 Leggings of Conviction
+- removed 273925 Handguards of Conviction
+- removed 273926 Pauldrons of Conviction
+- removed 273927 Boots of Conviction
+- removed 273928 Grimstitch Pants
+- removed 273929 Grimstitch Gloves
+- removed 273930 Grimstitch Spaulders
+- removed 273931 Grimstitch Boots
+- removed 273932 Spiritcaller Leggings
+- removed 273933 Spiritcaller Grips
+- removed 273934 Spiritcaller Spaulders
+- removed 273935 Spiritcaller Treads
+- removed 273936 Spiritcaller Pants
+- removed 273937 Spiritcaller Gauntlets
+- removed 273938 Spiritcaller Epaulets
+- removed 273939 Spiritcaller Greaves
+- removed 273940 Demonheart Leggings
+- removed 273941 Demonheart Gloves
+- removed 273942 Demonheart Spaulders
+- removed 273943 Demonheart Boots
+- removed 273944 Legplates of Glory
+- removed 273945 Gauntlets of Glory
+- removed 273946 Shoulders of Glory
+- removed 273947 Greaves of Glory
+- removed 273948 Legguards of Glory
+- removed 273949 Handguards of Glory
+- removed 273950 Pauldrons of Glory
+- removed 273951 Sabatons of Glory
+- removed 274042 Skullduggery Belt
+- removed 274043 Irradiated Shield
+- removed 274048 9-60 Battery Pack
+- removed 274049 Schematic: 9-60 Battery Pack
+- removed 274068 Thermaplugg Medal of Honor
+- removed 274078 Boar Signet
+- removed 274084 Quilboar Blaster
+- removed 274092 Sharpened Cutlery
+- removed 274149 Thornweaver Drape
+- removed 274152 Roogug's Severed Head
+- removed 274155 Geomancer Headdress
+- removed 274158 Death Prophet Spine
+- removed 274159 Thorncursed Grips
+- removed 274160 Quilrager Throwing Axe
+- removed 274161 Quillord Mail Leggings
+- removed 274290 Painwalker Buckler
+- removed 274291 Polished Skullcap
+- removed 274292 Houndmaster Boomerang
+- removed 274293 Spellsever Crossbow
+- removed 274294 Library Walkers
+- removed 274295 Band of Crimson Light
+- removed 274425 White Obsidian Wand
+- removed 274428 Dark Golem Breastplate
+- removed 274430 Rock Sentinel Slicer
+- removed 274485 Axe of Lingering Dread
+- removed 274517 Unerring Purpose
+- removed 275290 Stormforged Protector
+- removed 276631 Coldflame Saber
+- removed 277056 Al'Aketh Chainmail
+- removed 277057 Al'Aketh Wristguards
+- removed 277058 Al'Aketh Gauntlets
+- removed 277059 Al'Aketh Chain
+- removed 277060 Al'Aketh Legguards
+- removed 277061 Al'Aketh Greaves
+- removed 277062 Al'Aketh Harness
+- removed 277063 Al'Aketh Bracers
+- removed 277064 Al'Aketh Gloves
+- removed 277065 Al'Aketh Belt
+- removed 277066 Al'Aketh Trousers
+- removed 277067 Al'Aketh Boots
+- removed 277068 Al'Aketh Jerkin
+- removed 277069 Al'Aketh Armguards
+- removed 277070 Al'Aketh Mitts
+- removed 277071 Al'Aketh Strap
+- removed 277072 Al'Aketh Pants
+- removed 277073 Al'Aketh Footwraps
+- removed 277074 Al'Aketh Vestments
+- removed 277075 Al'Aketh Cuffs
+- removed 277076 Al'Aketh Handwraps
+- removed 277077 Al'Aketh Cord
+- removed 277078 Al'Aketh Leggings
+- removed 277079 Al'Aketh Shoes
+- removed 277213 Dro'zem's Tunic
+- removed 279024 Corrupted Chestguard of the Warden
+- removed 279025 Corrupted Chestguard of the Sentinel
+- removed 279026 Corrupted Chestguard of the Harbinger
+- removed 279028 Corrupted Pauldrons of the Warden
+- removed 279029 Corrupted Pauldrons of the Sentinel
+- removed 279030 Corrupted Pauldrons of the Harbinger
+- removed 279031 Corrupted Helm of the Warden
+- removed 279032 Corrupted Helm of the Sentinel
+- removed 279033 Corrupted Helm of the Harbinger
+- removed 279034 Corrupted Gloves of the Warden
+- removed 279035 Corrupted Gloves of the Sentinel
+- removed 279036 Corrupted Gloves of the Harbinger
+- removed 279037 Corrupted Leggings of the Warden
+- removed 279038 Corrupted Leggings of the Sentinel
+- removed 279039 Corrupted Leggings of the Harbinger
+- removed 279040 Corrupted Boots of the Warden
+- removed 279041 Corrupted Boots of the Sentinel
+- removed 279042 Corrupted Boots of the Harbinger
+- removed 279388 Brewer's Bracers
+- removed 279537 Rotheap Innards
+- removed 279835 Vine Pruner's Cloak
+- removed 279836 Thorn Protecting Girdle
+- removed 279837 Fallen Guard's Pendant
+- removed 279838 Arcane Infused Rod
+- removed 279839 Spellguard Pauldrons
+- removed 279840 Renewing Footpads
+- removed 279841 Defender of Dalaran
+- removed 279842 Battle Spaulders
+- removed 279843 Enchanted Sandals
+- removed 279844 Striking Staff
+- removed 279847 Unstable Power Core
+- removed 279848 Construct Cloak
+- removed 279849 Runebound Gloves
+- removed 279864 Monstrous Cleaver
+- removed 279865 Grave Shroud
+- removed 279867 Slain Baron's Signet
+- removed 279868 Duty Bound Leggings
+- removed 279869 Remembrance Armor
+- removed 279870 Tarnished Locket
+- removed 279874 The Stitcher
+- removed 279875 Spare Part Bindings
+- removed 279876 Plaguefang
+- removed 279877 Blight Gloves
+- removed 279888 Tidesoaked Leggings
+- removed 279889 Naga Priestess's Mantle
+- removed 279894 Calibrated Blunderbuss
+- removed 279895 Ironforge Greathammer
+- removed 279896 Deepblaze
+- removed 279897 Dusty Belt
+- removed 279898 Dwarven Tome
+- removed 279899 Catacomb Cloak
+- removed 279900 Deepgrave Trousers
+- removed 280095 Cryptwalker Bracers
+- removed 280096 Tomb Robber's Gloves
+- removed 280304 Invisible Dagger
+- removed 280363 Nightclaw Mantle
+- removed 280612 Night Watchman's Torch
+- removed 280805 Serrated Raptor Claw
+- removed 281014 Vine-Wrapped Scroll
+- removed 281146 Grant's Mace
+- removed 281246 Toxic Skullcap
+- removed 281300 Blisterweed
+- removed 281327 Hissing Serum
+- removed 281600 Wail of Death
+- removed 281648 Gul'gash's Greathammer
+- removed 281665 Twilight Forgehammer
+- removed 281746 Kurmokk's Pelt
+- removed 281750 Murloc Oracle's Dagger
+- removed 281891 Fishscale Hauberk
+- removed 281925 Whelpfire Wand
+- removed 281926 Bound Bracers
+- removed 281993 Gnoll Hide Boots
+- removed 282003 Lost Chieftain's Greatsword
+- removed 282007 Emerald Watcher's Dreamstaff
+- removed 282008 Wyrmak's Cuirass
+- removed 282010 Tusk of Grunter
+- removed 282012 Corsepickers
+- removed 282019 Braided Seer Stones
+- removed 282023 Clack's Claw
+- removed 282029 Reaver's Repeater
+- removed 282047 Baby Crocolisk
+- removed 282048 Ragged Dark Iron Cuffs
+- removed 282070 Gruklash's Basher
+- removed 282074 Ogre Sorcerer Belt
+- removed 282088 Heart of Smoldar
+- removed 282097 Unbreakable Golem Grips
+- removed 282406 Azsharan Key
+- removed 282431 Tears of Anguish
+- removed 282551 Golem Fist
+- removed 282555 Shadowforge Shield
+- removed 282557 Broken Tooth's Flayed Hide
+- removed 282558 Firebird's Cowl
+- removed 282560 Earth-Infused Rockguards
+- removed 282561 Siegebreaker's Blaster
+- removed 282636 Silkspun Gloves
+- removed 282637 Shaking Egg
+- removed 282639 Emogg's "Crusher"
+- removed 282642 Feather-Stitched Moccasins
+- removed 282653 Dissolved Locket
+- removed 282654 Gnawed Bone
+- removed 282655 Bog Pickers
+- removed 282658 Dragonmaw Battle Shroud
+- removed 282702 Molok's Masher
+- removed 282703 Needletooth's Needletooth
+- removed 282704 Shadow Council Apprentice's Mantle
+- removed 282706 Rotting Meat
+- removed 282710 Dun Garok Rifle
+- removed 282711 Naga Maiden's Gown
+- removed 282713 Bloodstained Pants
+- removed 282716 Imbued Scaled Cuffs
+- removed 282717 Durable Bearhide Pauldrons
+- removed 282720 Spider Swarm
+- removed 282721 Gnoll Shaman's Staff
+- removed 282778 Mark of the Red Flight
+- removed 283253 Denmother's Hide
+- removed 283254 Heart of Alterac
+- removed 283255 Syndicate Executioner's Slicer
+- removed 283259 Bearhide Vicegrips
+- removed 283361 Gorefang's Runners
+- removed 283460 Decaying Flesh Belt
+- removed 283462 Bayne's Bite
+- removed 283471 Fellicent's Bindings
+- removed 283473 Batwing Bindings
+- removed 283480 Cracked Carapace Hauberk
+- removed 284041 Ironback Signet
+- removed 284063 Witherbark Hatecleaver
+- removed 284067 Rusted Family Memento
+- removed 284100 Horseman's Unyielding Shroud
+- removed 284101 Blade of Senseless Slaughter
+- removed 284102 Signet of the Soulless Rider
+- removed 284154 Unmovable Sabatons
+- removed 284165 Duskstalker's Hide
+- removed 284166 Gnarlpine War Staff
+- removed 284167 Blackmoss Robes
+- removed 284173 Impcaster's Staff
+- removed 284174 Serrated Shadowclaw
+- removed 284176 Tallstrider Hatchling
+- removed 284177 Sinslayer's Smasher
+- removed 284185 Greymist Gauntlets
+- removed 284187 Crazed Firecaller's Cloak
+- removed 284192 Furbolg Loincloth
+- removed 284193 Moongazer's Wand
+- removed 284214 Minfernal
+- removed 284228 Vial of Vile Liquid
+- removed 284230 Rage Paw
+- removed 284253 Eternally Frozen Band
+- removed 284257 Icesworn Decapitator
+- removed 284261 Magically Fortified Legguards
+- removed 284262 Howling Hide
+- removed 284266 Wintersaber Hide Lined Gloves
+- removed 284268 Furbolg Shaman's Girdle
+- removed 284272 Chimaera Hide Legs
+- removed 284282 Queen Guard's Royal Seal
+- removed 284286 Battleguard Captain's Sticker
+- removed 284287 Felweaver's Staff
+- removed 284320 Flayed Scorpid Bands
+- removed 284321 Centaur Raider's Axe
+- removed 284322 Invading Marine's Shield
+- removed 284323 Geolord's Mitts
+- removed 284361 Venture Company Legguards
+- removed 284382 Budding Leaf Belt
+- removed 284383 Faerie Dragon's Skin
+- removed 284386 Whipfang's Skinsearer
+- removed 284399 Seared Grove Shoulderpads
+- removed 284400 Foreman's Helm
+- removed 284401 Sorrow's Shroud
+- removed 284403 Shapeshifting Sentinel's Strides
+- removed 284459 Dendweller's Hammer
+- removed 284573 Ursol'lok's Paws
+- removed 284574 Snapped Branch Wand
+- removed 284666 Wolf Whistle
+- removed 284667 Flame Seared Sword
+- removed 284668 Apothecary's Concoction
+- removed 284696 Carved Furbolg Tooth
+- removed 284697 Arcane Charged Robes
+- removed 284699 Still Water Band
+- removed 284700 Den Guardian's Crusher
+- removed 284702 Slimy Sword
+- removed 284704 Frostbitten Staff
+- removed 284707 Basilisk Sinew Belt
+- removed 284712 Hyena Hide Helm
+- removed 284713 Accursed Legguards
+- removed 284715 First Mate Band
+- removed 284716 Band of the Better Half
+- removed 284717 Royal Satyr Slicer
+- removed 284866 Windserpent Scaled Cloak
+- removed 285043 Snarling Fang
+- removed 285089 Swamp Roamer's Band
+- removed 285093 Ripscaled Cuffs
+- removed 285094 Ravaged Fishing Pole
+- removed 285095 Twitching Eye
+- removed 285100 Serrated Raptor Teeth
+- removed 285102 Darkmist Dirk
+- removed 285103 Marsh Serpent's Scales
+- removed 285104 Windle's Lighter
+- removed 285177 Nature's Sting Legguards
+- removed 285190 Wyvern Heart Band
+- removed 285191 Banished Centaur's Pauldrons
+- removed 285192 Kobold Firestarter
+- removed 285212 Foulmountain Family Hammer
+- removed 285228 Mystmane's Pelt
+- removed 285236 Worn Ranger's Dagger
+- removed 285238 Chipped Spellstaff
+- removed 285239 Explorer's Shortsword
+- removed 285253 Skyseer's Gloves
+- removed 285254 Scout Ranger's Gloves
+- removed 285255 Thendal Watcher's Gloves
+- removed 285264 Skyseer's Slippers
+- removed 285268 Scout Ranger's Boots
+- removed 285269 Thendal Watcher's Boots
+- removed 285272 Skyseer's Belt
+- removed 285273 Scout Ranger's Belt
+- removed 285274 Thendal Watcher's Belt
+- removed 285282 Jagged Knives
+- removed 285283 Serrated Axes
+- removed 285284 Balanced Knives
+- removed 285292 Dull Sawblade
+- removed 285328 Taurenbane's Family Cleaver
+- removed 285329 Raptor Hide Cloak
+- removed 285330 Signet of the Zhevra
+- removed 285331 Mark of the Pack Leader
+- removed 285332 Puncturing Spear
+- removed 285338 Kodohide Legguards
+- removed 285339 Centaur War Chain
+- removed 285344 Guard Captain's Barrier
+- removed 285345 Feather Padded Treads
+- removed 285346 Alliance Outrunner's Sword
+- removed 285347 Alliance Outrunner Bow
+- removed 285348 Alliance Outrunner Healing Rod
+- removed 285350 Alliance Outrunner Staff
+- removed 285351 Foreman's Enforcers
+- removed 285359 Warm Apple Juice
+- removed 285362 Red Wine Glass
+- removed 285366 Whirleygig's Supply Stash
+- removed 286533 Cheetah Hide Grips
+- removed 286534 Silithid Piercer
+- removed 286535 Sludge-Stained Band
+- removed 286536 Heckler's Hide
+- removed 286537 Thunderstomp's Horn
+- removed 286540 The Skyblade
+- removed 286541 Bael'dun Tankard
+- removed 286554 Warleader's Signet
+- removed 286556 Winds of Tanaris
+- removed 286568 Blisterpaw Bones
+- removed 286572 Ogre Casting Cloak
+- removed 286639 Ambassador's Bloodrobes
+- removed 286728 Kolkar Hammer
+- removed 286729 Kolkar Bow
+- removed 286730 Pristine Orcish Dagger
+- removed 286731 Aggor's Refitted Belt
+- removed 286732 Shiny Silver Coin
+- removed 286733 Fightin' Fish
+- removed 286734 Ban'ethil Quiver
+- removed 286735 Sentinel's Slasher
+- removed 286740 Proud Brave's Guard
+- removed 286741 Centaur Skull Basher
+- removed 286742 Riptear's Cleaver
+- removed 286743 Riptear's Spare Arm
+- removed 286744 Thrice-Stitched Flesh
+- removed 286745 Furlfeather Ring
+- removed 286746 Shal'ma's Shawl
+- removed 286748 Bristlebark Bow
+- removed 286749 Wrathroot
+- removed 286750 Wisesight Wand
+- removed 286751 Ghostfang's Steps
+- removed 286752 Igleggings
+- removed 286753 Snarlsnout Shooter
+- removed 286754 Ukta's Conduit
+- removed 286755 Helm Splitter
+- removed 286977 Sword of the Fallen
+- removed 286978 Rotmender's Garb
+- removed 286979 Rotmender's Gloves
+- removed 286980 Rotmender's Sash
+- removed 286981 Death Bindings
+- changed 40 Recruit's Boots
+- changed 43 Squire's Boots
+- changed 47 Footpad's Shoes
+- changed 51 Neophyte's Boots
+- changed 55 Apprentice's Boots
+- changed 59 Acolyte's Shoes
+- changed 121 Thug Boots
+- changed 140 Brawler's Boots
+- changed 147 Rugged Trapper's Pants
+- changed 6122 Recruit's Boots
+- changed 6127 Trapper's Boots
+- changed 6975 Whirlwind Axe
+- changed 6976 Whirlwind Warhammer
+- changed 6977 Whirlwind Sword
+- changed 10327 Horn of Echeyakee
+- changed 11287 Lesser Magic Wand
+- changed 11288 Greater Magic Wand
+- changed 11289 Lesser Mystic Wand
+- changed 20744 Minor Wizard Oil
+- changed 217287 Greater Mystic Wand
+- changed 221192 Dream Journal
+- changed 221518 Whisper
+- changed 247789 Novice's Practice Wand
+- changed 249144 Twisted Nether Wand
+- changed 249232 Lesser Eternal Wand
+- changed 249234 Dreambough Wand
+- changed 249237 Greater Eternal Wand
+- changed 249409 Cerulean Dye
+- changed 249410 Sulfuric Acid
+- changed 249430 Magenta Dye
+- changed 249431 Viridian Dye
+- changed 249534 Formula: Enchant Gloves - Arcane Power
+- changed 249535 Formula: Enchant Gloves - Natural Power
+- changed 249536 Formula: Enchant Gloves - Holy Power
+- changed 249879 Recipe: Peace Tea
+- changed 249900 Regurgitated Seed Pod
+- changed 251485 Edward's Knife
+- changed 251486 Tabitha's Cuffs
+- changed 255010 Harvester Gyrostabilizer
+- changed 255663 Windstone
+- changed 258771 Al'Aketh Cultist's Ear
+- changed 264239 Schematic: EZ-Thro Magnetic Displacer
+- changed 271658 Thendal Apprentice's Pants
+- changed 271659 Thendal Apprentice's Boots
+- changed 271661 Thendal Novice's Boots
+- changed 271662 Thendal Novice's Pants
+- changed 271664 Hornbeam Heft
+- changed 271665 Thendal Survivalist's Boots
+- changed 271666 Thendal Survivalist's Pants
+- changed 271667 Ironwood Destroyer
+- changed 271668 Thendal Survivalist's Shirt
+- changed 271670 Curl of Life
+- changed 271671 Thendal Warrior's Boots
+- changed 271672 Thendal Warrior's Pants
+- changed 271673 Grove Scoundrel's Boots
+- changed 271674 Grove Scoundrel's Pants
+- changed 271716 Explorer's League Dustcover
+- changed 271719 Furs of the Earthen Ring
+- changed 271722 Shen'dorei Magister's Belt
+- changed 271723 Shen'dorei Magister's Boots
+- changed 271724 Shen'dorei Magister's Cloak
+- changed 271725 Shen'dorei Magister's Robe
+- changed 271726 Shen'dorei Magister's Gloves
+- changed 271727 Shen'dorei Magister's Helm
+- changed 271728 Shen'dorei Magister's Leggings
+- changed 271729 Shen'dorei Magister's Vest
+- changed 271730 Shen'dorei Magister's Pauldrons
+- changed 271731 Ensemble: Shen'dorei Magister's Garb
+- changed 271732 Dirt-Heavy Bracers
+- changed 271733 Shen'dorei Peacekeeper's Belt
+- changed 271734 Shen'dorei Peacekeeper's Boots
+- changed 271735 Shen'dorei Peacekeeper's Cloak
+- changed 271736 Shen'dorei Peacekeeper's Robe
+- changed 271737 Shen'dorei Peacekeeper's Gloves
+- changed 271738 Shen'dorei Peacekeeper's Helm
+- changed 271739 Shen'dorei Peacekeeper's Leggings
+- changed 271740 Knife-Polishing Rag
+- changed 271742 Shen'dorei Peacekeeper's Vest
+- changed 271743 Shen'dorei Peacekeeper's Pauldrons
+- changed 271744 Ensemble: Shen'dorei Peacekeeper's Garb
+- changed 271746 Shen'dorei Skyseer's Belt
+- changed 271747 Shen'dorei Skyseer's Boots
+- changed 271748 Shen'dorei Skyseer's Cloak
+- changed 271749 Shen'dorei Skyseer's Robe
+- changed 271750 Shen'dorei Skyseer's Gloves
+- changed 271751 Shen'dorei Skyseer's Helm
+- changed 271752 Shen'dorei Skyseer's Leggings
+- changed 271753 Shen'dorei Skyseer's Vest
+- changed 271754 Shen'dorei Skyseer's Pauldrons
+- changed 271755 Ensemble: Shen'dorei Skyseer's Garb
+- changed 271756 Al'Aketh Zealot's Belt
+- changed 271757 Al'Aketh Zealot's Boots
+- changed 271758 Al'Aketh Zealot's Cloak
+- changed 271759 Al'Aketh Zealot's Robe
+- changed 271760 Al'Aketh Zealot's Gloves
+- changed 271761 Al'Aketh Zealot's Helm
+- changed 271762 Al'Aketh Zealot's Leggings
+- changed 271763 Al'Aketh Zealot's Vest
+- changed 271764 Al'Aketh Zealot's Pauldrons
+- changed 271765 Ensemble: Al'Aketh Zealot's Garb
+- changed 271766 Heavehammer
+- changed 271769 Daewyn's Girdle
+- changed 272184 Amulet of Vengeance
+- changed 272185 Amulet of Forgiveness
+- changed 273658 Bloody Parchment
+- changed 274391 Formula: Enchant Off Hand - Superior Intellect
+- changed 274392 Formula: Enchant Off Hand - Excellent Spirit
+- changed 274393 Formula: Enchant Off Hand - Wisdom
+- changed 274915 Sacristan Band
+- changed 274916 Verger Greaves
+- changed 274918 Warding Candle
+- changed 274922 Riverglades Marsh Gas
+- changed 274928 Curly's Chopper
+- changed 274929 Hurley's Felling Axe
+- changed 274938 Gnollhide Tunic
+- changed 274939 Southern Watch Leggings
+- changed 274940 Unbalanced Fighting Stick
+- changed 274941 Bristle Hills Mystic Robe
+- changed 274942 Bristlepelt Vest
+- changed 274943 Gnoll Crusher Leggings
+- changed 274944 Bloodsnout Striker
+- changed 274946 Gnollblood Robe
+- changed 274955 Clobrok's Block Rock
+- changed 274957 Lumber Luggers
+- changed 274958 Especially Delicious Berries
+- changed 274961 Brute Slayer Band
+- changed 274963 Rot-Covered Harpoon
+- changed 276538 Spiritcaller Kilt
+- changed 276539 Spiritcaller Gloves
+- changed 276540 Spiritcaller Mantle
+- changed 276541 Spiritcaller Boots
+- changed 277200 Scorched Leather Pouch
+- changed 277254 Truthseeker's Bow
+- changed 277977 Canvas Latchbag
+- changed 279173 Veteran Adventurer's Chestpiece
+- changed 279174 Veteran Adventurer's Belt
+- changed 279175 Veteran Adventurer's Legguards
+- changed 279176 Veteran Adventurer's Boots
+- changed 279177 Veteran Adventurer's Bracer
+- changed 279178 Veteran Adventurer's Gloves
+- changed 279179 Veteran Adventurer's Cloak
+- changed 279180 Veteran Adventurer's Hood
+- changed 279181 Veteran Adventurer's Shoulderpads
+- changed 279182 Ensemble: Veteran Adventurer's Outdoor Wear
+- changed 279450 Fractured Insignia
+- changed 279936 Book Bag
+- changed 279939 Collecting Basket
+- changed 280088 Soft Saber Sack
+- changed 280404 Lordaeron Forever Tabard
+- changed 280417 Damaged Blue Crystal
+- changed 280604 Rage of the Storm
+- changed 280614 Pachimari
+- changed 280623 Veteran Adventurer's Rucksack
+- changed 280729 Shen'dorei Tabard
+- changed 280740 Shen'dorei Windwell
+- changed 280766 Satchel of Potions
+- changed 281286 High Order Pendant
+- changed 281348 Parchment of Chaos
+- changed 281349 Parchment of Darkness
+- changed 281356 Burnt Page
+- changed 287090 Letter Opener
+
+## Files
+
+- [`items-changed.diff`](items-changed.diff)
+- [`items-removed.txt`](items-removed.txt)
+- [`items.txt`](items.txt)
+- [`spells.diff`](spells.diff)

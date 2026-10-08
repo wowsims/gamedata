@@ -276,8 +276,8 @@ duration  20 s
 attrs     periodic can crit, not a proc
 labels    23
 
-effect 1  208–265 fire damage to every enemy around the caster (at level 60)
-          E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 target=[22,15]
+effect 1  208–265 fire damage to every enemy in the area (at level 60)
+          E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 target=[22,7]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
 
@@ -288,7 +288,7 @@ school    physical
 attrs     passive
 labels    23
 proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; 10% chance, from effect 1
-refs      5302 Defensive State
+refs      1310726 Expose Prey
 
 effect 1  casts 1310726 Expose Prey on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1310726 target=[1,0]
@@ -368,12 +368,51 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      50 mana
 labels    23
-refs      3355 Freezing Trap Effect
+refs      3355 Freezing Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=2561 target=[47,0]
 
 https://www.wowhead.com/forever/spell=1499
+=======
+3355 Freezing Trap (Rank 1)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  10 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=3355
+=======
+14308 Freezing Trap (Rank 2)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  15 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14308
+=======
+14309 Freezing Trap (Rank 3)
+school    frost
+defense   magic
+mechanic  mechanic 13
+duration  20 s
+range     10 yd
+labels    23
+
+effect 1  stuns to the enemy
+          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+
+https://www.wowhead.com/forever/spell=14309
 =======
 14310 Freezing Trap (Rank 2)
 school    frost
@@ -382,7 +421,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      75 mana
 labels    23
-refs      14308 Freezing Trap Effect
+refs      14308 Freezing Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164876 target=[47,0]
@@ -396,7 +435,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      100 mana
 labels    23
-refs      14309 Freezing Trap Effect
+refs      14309 Freezing Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164877 target=[47,0]
@@ -409,7 +448,7 @@ duration  60 s
 cooldown  15 s (category)
 gcd       1.5 s
 cost      100 mana
-refs      14309 Freezing Trap Effect
+refs      14309 Freezing Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164877 radius=2 target=[47,0]
@@ -423,12 +462,26 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      60 mana
 labels    23
-refs      13810 Frost Trap Aura, 14207 OLDFrost Trap Effect
+refs      13810 Frost Trap, 14207 OLDFrost Trap Effect
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164639 target=[47,0]
 
 https://www.wowhead.com/forever/spell=13809
+=======
+13810 Frost Trap
+school    frost
+defense   magic
+mechanic  mechanic 11
+duration  30 s
+labels    23
+
+effect 1  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_MOD_DECREASE_SPEED base=-60 sp=1 radius=10 target=[28,0]
+effect 2  unrecognised shape
+          E_PERSISTENT_AREA_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=2000ms trigger=18350 radius=10 target=[28,0]
+
+https://www.wowhead.com/forever/spell=13810
 =======
 409580 Heart of the Lion
 school    nature
@@ -466,12 +519,77 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      50 mana
 labels    23
-refs      13797 Immolation Trap Effect
+refs      13797 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164638 target=[47,0]
 
 https://www.wowhead.com/forever/spell=13795
+=======
+13797 Immolation Trap (Rank 1)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  21 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=13797
+=======
+14298 Immolation Trap (Rank 2)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  43 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=43 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14298
+=======
+14299 Immolation Trap (Rank 3)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  68 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=68 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14299
+=======
+14300 Immolation Trap (Rank 4)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  102 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=102 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14300
+=======
+14301 Immolation Trap (Rank 5)
+school    fire
+defense   magic
+duration  15 s
+range     10 yd
+attrs     periodic can crit
+labels    23
+
+effect 1  138 fire damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=138 period=3000ms target=[6,0]
+
+https://www.wowhead.com/forever/spell=14301
 =======
 14302 Immolation Trap (Rank 2)
 school    fire
@@ -480,7 +598,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      90 mana
 labels    23
-refs      14298 Immolation Trap Effect
+refs      14298 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164872 target=[47,0]
@@ -494,7 +612,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      135 mana
 labels    23
-refs      14299 Immolation Trap Effect
+refs      14299 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164873 target=[47,0]
@@ -508,7 +626,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      190 mana
 labels    23
-refs      14300 Immolation Trap Effect
+refs      14300 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164874 target=[47,0]
@@ -522,7 +640,7 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      245 mana
 labels    23
-refs      14301 Immolation Trap Effect
+refs      14301 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 target=[47,0]
@@ -535,7 +653,7 @@ duration  60 s
 cooldown  15 s (category)
 gcd       1.5 s
 cost      245 mana
-refs      14301 Immolation Trap Effect
+refs      14301 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 radius=2 target=[47,0]
@@ -548,77 +666,12 @@ duration  60 s
 cooldown  15 s (category)
 gcd       1.5 s
 cost      245 mana
-refs      14301 Immolation Trap Effect
+refs      14301 Immolation Trap
 
 effect 1  unrecognised shape
           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 radius=2 target=[47,0]
 
 https://www.wowhead.com/forever/spell=1213271
-=======
-13797 Immolation Trap Effect (Rank 1)
-school    fire
-defense   magic
-duration  15 s
-range     10 yd
-attrs     periodic can crit
-labels    23
-
-effect 1  21 fire damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
-
-https://www.wowhead.com/forever/spell=13797
-=======
-14298 Immolation Trap Effect (Rank 2)
-school    fire
-defense   magic
-duration  15 s
-range     10 yd
-attrs     periodic can crit
-labels    23
-
-effect 1  43 fire damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=43 period=3000ms target=[6,0]
-
-https://www.wowhead.com/forever/spell=14298
-=======
-14299 Immolation Trap Effect (Rank 3)
-school    fire
-defense   magic
-duration  15 s
-range     10 yd
-attrs     periodic can crit
-labels    23
-
-effect 1  68 fire damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=68 period=3000ms target=[6,0]
-
-https://www.wowhead.com/forever/spell=14299
-=======
-14300 Immolation Trap Effect (Rank 4)
-school    fire
-defense   magic
-duration  15 s
-range     10 yd
-attrs     periodic can crit
-labels    23
-
-effect 1  102 fire damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=102 period=3000ms target=[6,0]
-
-https://www.wowhead.com/forever/spell=14300
-=======
-14301 Immolation Trap Effect (Rank 5)
-school    fire
-defense   magic
-duration  15 s
-range     10 yd
-attrs     periodic can crit
-labels    23
-
-effect 1  138 fire damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=138 period=3000ms target=[6,0]
-
-https://www.wowhead.com/forever/spell=14301
 =======
 19286 Improved Feign Death (Rank 1)
 school    physical

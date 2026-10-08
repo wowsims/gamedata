@@ -583,7 +583,7 @@ school    physical
 duration  permanent
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16083 target=[1,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16083 misc2=1 target=[1,0]
 effect 2  -50% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 sp=1 misc=126 target=[1,0]
 
@@ -1419,21 +1419,6 @@ effect 1  a dummy aura holding 4
           E_APPLY_AURA A_DUMMY base=4 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1306483
-=======
-1270650 Lunar Fire
-school    arcane
-defense   magic
-duration  20 s
-cast      1.5 s
-range     100 yd
-refs      1271100 Lunar Venting, 1270830 Lunar Expulsion
-
-effect 1  casts 1271100 Lunar Venting every 4 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=15 variance=0.05 sp=0.13 period=4000ms trigger=1271100 target=[6,0]
-effect 2  49–51 arcane damage to the enemy
-          E_SCHOOL_DAMAGE base=50 variance=0.05 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1270650
 =======
 419288 Lunar Idol
 school    physical
@@ -2946,21 +2931,6 @@ effect 3  unrecognised shape
 
 https://www.wowhead.com/forever/spell=447548
 =======
-1270651 Umbral Fire
-school    shadow
-defense   magic
-duration  20 s
-cast      1.5 s
-range     100 yd
-refs      1271100 Lunar Venting, 1270830 Lunar Expulsion
-
-effect 1  casts 1271047 Umbral Venting every 4 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=15 variance=0.05 sp=0.13 period=4000ms trigger=1271047 target=[6,0]
-effect 2  49–51 shadow damage to the enemy (+0.15 spell power)
-          E_SCHOOL_DAMAGE base=50 variance=0.05 sp=0.15 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1270651
-=======
 424339 Unbalanced Idol Dream
 school    physical
 range     40 yd
@@ -3118,8 +3088,8 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT2 +50% on family 7 mask 0x80000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=12 family=7 mask=0x80000 target=[1,0]
-effect 2  a dummy aura holding 20
-          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+effect 2  a dummy aura holding 5
+          E_APPLY_AURA A_DUMMY base=5 target=[1,0]
 
 https://www.wowhead.com/forever/spell=17768
 =======
@@ -3128,8 +3098,8 @@ school    physical
 caster aura 768 Cat Form
 labels    21
 
-effect 1  restores 20 energy to the caster
-          E_ENERGIZE base=20 misc=3 target=[1,0]
+effect 1  restores 5 energy to the caster
+          E_ENERGIZE base=5 misc=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1310990
 =======

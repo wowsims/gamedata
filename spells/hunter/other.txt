@@ -934,45 +934,6 @@ effect 1  replaces an action bar spell with 417346
 
 https://www.wowhead.com/forever/spell=431600
 =======
-3355 Freezing Trap Effect (Rank 1)
-school    frost
-defense   magic
-mechanic  mechanic 13
-duration  10 s
-range     10 yd
-labels    23
-
-effect 1  stuns to the enemy
-          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-
-https://www.wowhead.com/forever/spell=3355
-=======
-14308 Freezing Trap Effect (Rank 2)
-school    frost
-defense   magic
-mechanic  mechanic 13
-duration  15 s
-range     10 yd
-labels    23
-
-effect 1  stuns to the enemy
-          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-
-https://www.wowhead.com/forever/spell=14308
-=======
-14309 Freezing Trap Effect (Rank 3)
-school    frost
-defense   magic
-mechanic  mechanic 13
-duration  20 s
-range     10 yd
-labels    23
-
-effect 1  stuns to the enemy
-          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-
-https://www.wowhead.com/forever/spell=14309
-=======
 470788 Frost Specialization
 school    physical
 duration  permanent
@@ -981,20 +942,6 @@ effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 9 mask 0x18
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=9 mask=0x18 target=[1,0]
 
 https://www.wowhead.com/forever/spell=470788
-=======
-13810 Frost Trap Aura
-school    frost
-defense   magic
-mechanic  mechanic 11
-duration  30 s
-labels    23
-
-effect 1  unrecognised shape
-          E_PERSISTENT_AREA_AURA A_MOD_DECREASE_SPEED base=-60 sp=1 radius=10 target=[28,0]
-effect 2  unrecognised shape
-          E_PERSISTENT_AREA_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=2000ms trigger=18350 radius=10 target=[28,0]
-
-https://www.wowhead.com/forever/spell=13810
 =======
 461165 Hand of Injustice
 school    physical
