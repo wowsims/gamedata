@@ -198,7 +198,7 @@ duration  15 s
 range     100 yd
 charges   1
 labels    24
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  SPELLMOD_COST -100% on family 11 mask 0x98100003,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=11 mask=0x98100003,0x1000 target=[1,0]
@@ -1331,8 +1331,8 @@ cost      15 mana
 range     30 yd
 labels    24
 
-effect 1  15–17 nature damage to the enemy (at level 60, +0.429 spell power)
-          E_SCHOOL_DAMAGE base=14 ppl=0.4 variance=0.14285715 sp=0.429 target=[6,0]
+effect 1  14–17 nature damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=15 ppl=0.1 variance=0.14285715 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=403
 =======
@@ -1345,8 +1345,8 @@ cost      30 mana
 range     30 yd
 labels    24
 
-effect 1  29–34 nature damage to the enemy (at level 60, +0.571 spell power)
-          E_SCHOOL_DAMAGE base=29 ppl=0.5 variance=0.14285715 sp=0.571 target=[6,0]
+effect 1  25–30 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=27 ppl=0.1 variance=0.14285715 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=529
 =======
@@ -1359,8 +1359,8 @@ cost      45 mana
 range     30 yd
 labels    24
 
-effect 1  44–52 nature damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=45 ppl=0.6 variance=0.1632653 sp=0.714 target=[6,0]
+effect 1  42–51 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=45 ppl=0.3 variance=0.1632653 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=548
 =======
@@ -1373,8 +1373,8 @@ cost      60 mana
 range     30 yd
 labels    24
 
-effect 1  55–63 nature damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=56 ppl=0.6 variance=0.13483146 sp=0.714 target=[6,0]
+effect 1  59–67 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=61 ppl=0.4 variance=0.13483146 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=915
 =======
@@ -1387,8 +1387,8 @@ cost      85 mana
 range     30 yd
 labels    24
 
-effect 1  70–81 nature damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=72 ppl=0.7 variance=0.13432837 sp=0.714 target=[6,0]
+effect 1  78–91 nature damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=82 ppl=0.5 variance=0.13432837 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=943
 =======

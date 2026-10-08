@@ -298,7 +298,7 @@ cost      100 mana
 labels    24, 6511
 
 effect 1  shifts into form 16
-          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 target=[1,0]
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 misc2=6 target=[1,0]
 effect 2  +40% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
 
@@ -394,6 +394,19 @@ effect 1  summons creature 5925 to target 43
           E_SUMMON base=5 misc=5925 misc2=83 target=[43,0]
 
 https://www.wowhead.com/forever/spell=8177
+=======
+8178 Grounding Totem (Rank 1)
+school    nature
+duration  permanent
+charges   1
+attrs     can proc from procs
+labels    24
+proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PARTY A_SPELL_MAGNET base=0 radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=8178
 =======
 16258 Guardian Totems
 school    physical

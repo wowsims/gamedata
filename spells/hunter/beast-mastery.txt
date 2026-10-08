@@ -892,7 +892,7 @@ school    physical
 attrs     passive
 labels    23
 
-effect 1  SPELLMOD_EFFECT1 +20% on family 9 mask 0x2000000,0x0,0x2000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=3 family=9 mask=0x2000000,0x0,0x2000 target=[1,0]
+effect 1  SPELLMOD_EFFECT1 +20 on family 9 mask 0x2000000,0x0,0x2000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=3 family=9 mask=0x2000000,0x0,0x2000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19616

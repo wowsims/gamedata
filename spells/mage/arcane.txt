@@ -553,8 +553,8 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  25.2 arcane damage to the enemy (at level 60, +0.286 spell power)
-          E_SCHOOL_DAMAGE base=24 ppl=0.3 sp=0.286 target=[6,0]
+effect 1  24.8 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=24 ppl=0.2 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7268
 =======
@@ -616,8 +616,8 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  32.6 arcane damage to the enemy (at level 60, +0.286 spell power)
-          E_SCHOOL_DAMAGE base=31 ppl=0.4 sp=0.286 target=[6,0]
+effect 1  35.2 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=34 ppl=0.3 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7269
 =======
@@ -628,8 +628,8 @@ range     30 yd
 attrs     not a proc
 labels    17
 
-effect 1  46 arcane damage to the enemy (at level 60, +0.286 spell power)
-          E_SCHOOL_DAMAGE base=44 ppl=0.5 sp=0.286 target=[6,0]
+effect 1  48.6 arcane damage to the enemy (at level 60, +0.286 spell power)
+          E_SCHOOL_DAMAGE base=47 ppl=0.4 sp=0.286 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7270
 =======
@@ -1957,7 +1957,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=100 misc=21 target=[6,0]
 
@@ -1978,7 +1978,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 
@@ -1999,7 +1999,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 
@@ -2020,7 +2020,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 
@@ -2041,7 +2041,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16377 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16377 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 
@@ -2062,7 +2062,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16371 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16371 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 
@@ -2076,7 +2076,7 @@ range     30 yd
 effect 1  fears
           E_APPLY_AURA A_MOD_FEAR base=0 target=[1,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16479 target=[1,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16479 misc2=9 target=[1,0]
 
 https://www.wowhead.com/forever/spell=29124
 =======
@@ -2094,7 +2094,7 @@ labels    17
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_TRANSFORM base=0 misc=16779 target=[6,0]
+          E_APPLY_AURA A_TRANSFORM base=0 misc=16779 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
 

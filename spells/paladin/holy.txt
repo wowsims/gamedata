@@ -1476,7 +1476,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
+refs      20267 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
@@ -1533,7 +1534,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
+refs      20341 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
@@ -1546,7 +1548,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
+refs      20342 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
@@ -1559,7 +1562,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
+refs      20343 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
@@ -1716,7 +1720,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
+refs      20268 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
@@ -1729,7 +1734,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
+refs      20352 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
@@ -1742,7 +1748,8 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
+refs      20353 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]

@@ -933,8 +933,8 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  16–25 fire damage to the enemy (at level 60, +0.429 spell power)
-          E_SCHOOL_DAMAGE base=18 ppl=0.6 variance=0.44444445 sp=0.429 target=[6,0]
+effect 1  14–23 fire damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=18 ppl=0.2 variance=0.44444445 sp=0.429 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (2 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
 
@@ -951,8 +951,8 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  32–47 fire damage to the enemy (at level 60, +0.571 spell power)
-          E_SCHOOL_DAMAGE base=37 ppl=0.7 variance=0.36842105 sp=0.571 target=[6,0]
+effect 1  27–40 fire damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=32 ppl=0.3 variance=0.36842105 sp=0.571 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
 
@@ -969,8 +969,8 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  48–65 fire damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=53 ppl=0.9 variance=0.31746033 sp=0.714 target=[6,0]
+effect 1  45–62 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=51 ppl=0.6 variance=0.31746033 sp=0.714 target=[6,0]
 effect 2  2 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=2000ms target=[6,0]
 
@@ -987,8 +987,8 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  66–91 fire damage to the enemy (at level 60, +0.857 spell power)
-          E_SCHOOL_DAMAGE base=74 ppl=1.1 variance=0.32 sp=0.857 target=[6,0]
+effect 1  68–93 fire damage to the enemy (at level 60, +0.857 spell power)
+          E_SCHOOL_DAMAGE base=77 ppl=0.9 variance=0.32 sp=0.857 target=[6,0]
 effect 2  3 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms target=[6,0]
 
@@ -1005,8 +1005,8 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  98–130 fire damage to the enemy (at level 60)
-          E_SCHOOL_DAMAGE base=108 ppl=1.5 variance=0.29447854 sp=1 target=[6,0]
+effect 1  107–144 fire damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=120 ppl=1.4 variance=0.29447854 sp=1 target=[6,0]
 effect 2  4 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
 

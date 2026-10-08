@@ -1,0 +1,1571 @@
+--- 40 Recruit's Boots
++++ 40 Recruit's Boots
+@@ -1,4 +1,4 @@
+ 40 Recruit's Boots
+-item      common, Miscellaneous, feet
++item      common, Mail, feet
+ level     ilvl 1
+ sells     1 copper
+--- 43 Squire's Boots
++++ 43 Squire's Boots
+@@ -1,4 +1,4 @@
+ 43 Squire's Boots
+-item      common, Miscellaneous, feet
++item      common, Mail, feet
+ level     ilvl 1
+ sells     1 copper
+--- 47 Footpad's Shoes
++++ 47 Footpad's Shoes
+@@ -1,4 +1,4 @@
+ 47 Footpad's Shoes
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
+ sells     1 copper
+--- 51 Neophyte's Boots
++++ 51 Neophyte's Boots
+@@ -1,4 +1,4 @@
+ 51 Neophyte's Boots
+-item      common, Miscellaneous, feet
++item      common, Cloth, feet
+ level     ilvl 1
+ sells     1 copper
+--- 55 Apprentice's Boots
++++ 55 Apprentice's Boots
+@@ -1,4 +1,4 @@
+ 55 Apprentice's Boots
+-item      common, Miscellaneous, feet
++item      common, Cloth, feet
+ level     ilvl 1
+ sells     1 copper
+--- 59 Acolyte's Shoes
++++ 59 Acolyte's Shoes
+@@ -1,4 +1,4 @@
+ 59 Acolyte's Shoes
+-item      common, Miscellaneous, feet
++item      common, Cloth, feet
+ level     ilvl 1
+ sells     1 copper
+--- 121 Thug Boots
++++ 121 Thug Boots
+@@ -1,4 +1,4 @@
+ 121 Thug Boots
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
+ sells     1 copper
+--- 140 Brawler's Boots
++++ 140 Brawler's Boots
+@@ -1,4 +1,4 @@
+ 140 Brawler's Boots
+-item      common, Miscellaneous, feet
++item      common, Mail, feet
+ level     ilvl 1
+ sells     1 copper
+--- 147 Rugged Trapper's Pants
++++ 147 Rugged Trapper's Pants
+@@ -1,4 +1,4 @@
+ 147 Rugged Trapper's Pants
+-item      poor, Cloth, legs
++item      poor, Leather, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 6122 Recruit's Boots
++++ 6122 Recruit's Boots
+@@ -1,4 +1,4 @@
+ 6122 Recruit's Boots
+-item      common, Miscellaneous, feet
++item      common, Mail, feet
+ level     ilvl 1
+ sells     1 copper
+--- 6127 Trapper's Boots
++++ 6127 Trapper's Boots
+@@ -1,4 +1,4 @@
+ 6127 Trapper's Boots
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
+ sells     1 copper
+--- 6975 Whirlwind Axe
++++ 6975 Whirlwind Axe
+@@ -1,8 +1,8 @@
+ 6975 Whirlwind Axe
+ item      rare, Axe, two-hand
+ level     ilvl 40
+ binds     binds when picked up
+ classes   warrior
+-stats     +15 strength, +14 stamina
++stats     +16 strength, +15 stamina
+ weapon    102 - 154 damage, speed 3.60, 35.6 dps
+ sells     16766 copper
+--- 6976 Whirlwind Warhammer
++++ 6976 Whirlwind Warhammer
+@@ -1,8 +1,8 @@
+ 6976 Whirlwind Warhammer
+ item      rare, Mace, two-hand
+ level     ilvl 40
+ binds     binds when picked up
+ classes   warrior
+-stats     +14 stamina, +15 strength
++stats     +15 stamina, +16 strength
+ weapon    97 - 146 damage, speed 3.40, 35.7 dps
+ sells     17264 copper
+--- 6977 Whirlwind Sword
++++ 6977 Whirlwind Sword
+@@ -1,8 +1,8 @@
+ 6977 Whirlwind Sword
+ item      rare, Sword, two-hand
+ level     ilvl 40
+ binds     binds when picked up
+ classes   warrior
+-stats     +14 stamina, +15 strength
++stats     +15 stamina, +16 strength
+ weapon    82 - 124 damage, speed 2.90, 35.5 dps
+ sells     17325 copper
+--- 10327 Horn of Echeyakee
++++ 10327 Horn of Echeyakee
+@@ -1,6 +1,6 @@
+ 10327 Horn of Echeyakee
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-effect    use: 12189 Summon Echeyakee (1 charge, consumed, 30 s cooldown)
++effect    use: 12189 Summon Echeyakee (30 s cooldown)
+--- 11287 Lesser Magic Wand
++++ 11287 Lesser Magic Wand
+@@ -1,7 +1,7 @@
+ 11287 Lesser Magic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 15, requires level 5
+ binds     binds when equipped
+ stats     +1 spell power
+ weapon    12 - 22 damage, speed 1.50, 11.3 dps
+-sells     1 copper
++sells     110 copper
+--- 11288 Greater Magic Wand
++++ 11288 Greater Magic Wand
+@@ -1,7 +1,7 @@
+ 11288 Greater Magic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 23, requires level 13
+ binds     binds when equipped
+ stats     +2 spell power
+ weapon    22 - 41 damage, speed 1.80, 17.5 dps
+-sells     1 copper
++sells     200 copper
+--- 11289 Lesser Mystic Wand
++++ 11289 Lesser Mystic Wand
+@@ -1,7 +1,7 @@
+ 11289 Lesser Mystic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 31, requires level 26
+ binds     binds when equipped
+ stats     +4 intellect
+ weapon    23 - 43 damage, speed 1.30, 25.4 dps
+-sells     1 copper
++sells     450 copper
+--- 20744 Minor Wizard Oil
++++ 20744 Minor Wizard Oil
+@@ -1,5 +1,5 @@
+ 20744 Minor Wizard Oil
+ item      common, Other
+ level     ilvl 15, requires level 5
+ effect    use: 25117 Minor Wizard Oil (5 charges, consumed, 1 s cooldown)
+-sells     500 copper
++sells     100 copper
+--- 217287 Greater Mystic Wand
++++ 217287 Greater Mystic Wand
+@@ -1,7 +1,7 @@
+ 217287 Greater Mystic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 35, requires level 30
+ binds     binds when equipped
+ stats     +5 spell power
+ weapon    40 - 76 damage, speed 2.00, 29 dps
+-sells     1 copper
++sells     600 copper
+--- 221192 Dream Journal
++++ 221192 Dream Journal
+@@ -1,7 +1,7 @@
+ 221192 Dream Journal
+-item      epic, Junk
++item      uncommon, Other
+ level     ilvl 1
+ binds     binds when picked up
+ unique    yes
+ effect    use (no delay): 1234770 Dreamform
+ sells     17000 copper
+--- 221518 Whisper
++++ 221518 Whisper
+@@ -1,7 +1,7 @@
+ 221518 Whisper
+ item      rare, Mace, two-hand
+-level     ilvl 56
++level     ilvl 53
+ binds     binds when picked up
+-stats     +17 strength, +17 stamina, +17 crit rating
+-weapon    123 - 185 damage, speed 3.20, 48.1 dps
++stats     +23 strength, +14 spell power, +7 crit rating
++weapon    124 - 187 damage, speed 3.40, 45.7 dps
+ sells     44863 copper
+--- 247789 Novice's Practice Wand
++++ 247789 Novice's Practice Wand
+@@ -1,6 +1,6 @@
+ 247789 Novice's Practice Wand
+ item      common, Wand, ranged
+ level     ilvl 6, requires level 1
+ binds     binds when equipped
+ weapon    4 - 8 damage, speed 1.50, 4 dps
+-sells     1 copper
++sells     5 copper
+--- 249144 Twisted Nether Wand
++++ 249144 Twisted Nether Wand
+@@ -1,7 +1,7 @@
+ 249144 Twisted Nether Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 42, requires level 37
+ binds     binds when equipped
+ stats     +6 spell power
+ weapon    35 - 67 damage, speed 1.50, 34 dps
+-sells     1 copper
++sells     1000 copper
+--- 249232 Lesser Eternal Wand
++++ 249232 Lesser Eternal Wand
+@@ -1,7 +1,7 @@
+ 249232 Lesser Eternal Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 54, requires level 49
+ binds     binds when equipped
+ stats     +8 spell power
+ weapon    64 - 119 damage, speed 2.00, 45.8 dps
+-sells     1 copper
++sells     2000 copper
+--- 249234 Dreambough Wand
++++ 249234 Dreambough Wand
+@@ -1,7 +1,7 @@
+ 249234 Dreambough Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 48, requires level 43
+ binds     binds when equipped
+ stats     +7 spell power
+ weapon    49 - 92 damage, speed 1.80, 39.2 dps
+-sells     1 copper
++sells     1500 copper
+--- 249237 Greater Eternal Wand
++++ 249237 Greater Eternal Wand
+@@ -1,7 +1,7 @@
+ 249237 Greater Eternal Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 60, requires level 55
+ binds     binds when equipped
+ stats     +9 spell power
+ weapon    56 - 104 damage, speed 1.50, 53.3 dps
+-sells     1 copper
++sells     2500 copper
+--- 249409 Cerulean Dye
++++ 249409 Cerulean Dye
+@@ -1,5 +1,5 @@
+ 249409 Cerulean Dye
+ item      uncommon, Other
+ level     ilvl 25
+-text      "Fermented by alchemists."
++text      "Crafted by alchemists."
+ sells     125 copper
+--- 249410 Sulfuric Acid
++++ 249410 Sulfuric Acid
+@@ -1,5 +1,5 @@
+ 249410 Sulfuric Acid
+ item      uncommon, Other
+ level     ilvl 25
+-text      "Fermented by alchemists."
++text      "Crafted by alchemists."
+ sells     125 copper
+--- 249430 Magenta Dye
++++ 249430 Magenta Dye
+@@ -1,5 +1,5 @@
+ 249430 Magenta Dye
+ item      uncommon, Other
+ level     ilvl 45
+-text      "Fermented by alchemists."
++text      "Crafted by alchemists."
+ sells     250 copper
+--- 249431 Viridian Dye
++++ 249431 Viridian Dye
+@@ -1,5 +1,5 @@
+ 249431 Viridian Dye
+ item      uncommon, Other
+ level     ilvl 60
+-text      "Fermented by alchemists."
++text      "Crafted by alchemists."
+ sells     375 copper
+--- 249534 Formula: Enchant Gloves - Arcane Power
++++ 249534 Formula: Enchant Gloves - Arcane Power
+@@ -1,8 +1,8 @@
+ 249534 Formula: Enchant Gloves - Arcane Power
+ item      uncommon, Enchanting
+ level     ilvl 60
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1213626 Enchant Gloves - Arcane Power
+-text      "Teaches you how to permanently enchant gloves to increase arcane damage by up to 20."
++text      "Teaches you how to permanently enchant gloves to increase Arcane damage by up to 20."
+ sells     1500 copper
+--- 249535 Formula: Enchant Gloves - Natural Power
++++ 249535 Formula: Enchant Gloves - Natural Power
+@@ -1,8 +1,8 @@
+ 249535 Formula: Enchant Gloves - Natural Power
+ item      uncommon, Enchanting
+ level     ilvl 60
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1248645 Enchant Gloves - Natural Power
+-text      "Teaches you how to permanently enchant gloves to increase nature damage by up to 20."
++text      "Teaches you how to permanently enchant gloves to increase Nature damage by up to 20."
+ sells     1500 copper
+--- 249536 Formula: Enchant Gloves - Holy Power
++++ 249536 Formula: Enchant Gloves - Holy Power
+@@ -1,8 +1,8 @@
+ 249536 Formula: Enchant Gloves - Holy Power
+ item      uncommon, Enchanting
+ level     ilvl 60
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1213622 Enchant Gloves - Holy Power
+-text      "Teaches you how to permanently enchant gloves to increase holy damage by up to 20."
++text      "Teaches you how to permanently enchant gloves to increase Holy damage by up to 20."
+ sells     1500 copper
+--- 249879 Recipe: Peace Tea
++++ 249879 Recipe: Peace Tea
+@@ -1,8 +1,8 @@
+ 249879 Recipe: Peace Tea
+ item      common, Cooking
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1249957 Peace Tea
+ text      "Teaches you how to cook Peace Tea."
+-sells     1875 copper
++sells     10 copper
+--- 249900 Regurgitated Seed Pod
++++ 249900 Regurgitated Seed Pod
+@@ -1,5 +1,4 @@
+ 249900 Regurgitated Seed Pod
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
+-unique    yes
+--- 251485 Edward's Knife
++++ 251485 Edward's Knife
+@@ -1,7 +1,7 @@
+ 251485 Edward's Knife
+ item      uncommon, Dagger, one-hand
+ level     ilvl 24
+ binds     binds when picked up
+ stats     +2 stamina, +2 agility
+ weapon    13 - 26 damage, speed 1.60, 12.2 dps
+-sells     1046 copper
++sells     2285 copper
+--- 251486 Tabitha's Cuffs
++++ 251486 Tabitha's Cuffs
+@@ -1,6 +1,6 @@
+ 251486 Tabitha's Cuffs
+ item      uncommon, Cloth, wrists
+ level     ilvl 24
+ binds     binds when picked up
+ stats     +4 stamina, +3 spell power
+-sells     1665 copper
++sells     458 copper
+--- 255010 Harvester Gyrostabilizer
++++ 255010 Harvester Gyrostabilizer
+@@ -1,4 +1,4 @@
+ 255010 Harvester Gyrostabilizer
+-item      common, Parts
++item      common, Quest
+ level     ilvl 1
+-sells     31 copper
++binds     quest item
+--- 255663 Windstone
++++ 255663 Windstone
+@@ -1,6 +1,6 @@
+ 255663 Windstone
+ item      common, Other
+ level     ilvl 1
+-effect    use: 1259231 Infusion of Wind (1 charge, consumed, 120 s cooldown)
++effect    use: 1259231 Infusion of Wind (1 charge, consumed, 120 s shared cooldown)
+ text      "A small glowing stone empowered with the magical essence of Skywall. It is often used as both a currency and a source of magical energy on Zephras Isle."
+ sells     4 copper
+--- 258771 Al'Aketh Cultist's Ear
++++ 258771 Al'Aketh Cultist's Ear
+@@ -1,5 +1,5 @@
+-258771 Al'Alketh Cultist's Ear
++258771 Al'Aketh Cultist's Ear
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
+-text      "You can't help but wonder what the Nightclaw plan to do with all these ears."
++text      "You can't help but wonder what the Nightclaw plans to do with all these ears."
+--- 264239 Schematic: EZ-Thro Magnetic Displacer
++++ 264239 Schematic: EZ-Thro Magnetic Displacer
+@@ -1,7 +1,7 @@
+ 264239 Schematic: EZ-Thro Magnetic Displacer
+ item      common, Engineering
+ level     ilvl 60
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1266942 EZ-Thro Magnetic Displacer
+-text      "Teaches you how to make EZ-Throw Magnetic Displacer."
++text      "Teaches you how to make EZ-Thro Magnetic Displacer."
+ sells     6000 copper
+--- 271658 Thendal Apprentice's Pants
++++ 271658 Thendal Apprentice's Pants
+@@ -1,4 +1,4 @@
+ 271658 Thendal Apprentice's Pants
+-item      common, Miscellaneous, legs
++item      common, Cloth, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 271659 Thendal Apprentice's Boots
++++ 271659 Thendal Apprentice's Boots
+@@ -1,4 +1,4 @@
+ 271659 Thendal Apprentice's Boots
+-item      common, Miscellaneous, feet
++item      common, Cloth, feet
+ level     ilvl 1
+ sells     1 copper
+--- 271661 Thendal Novice's Boots
++++ 271661 Thendal Novice's Boots
+@@ -1,4 +1,5 @@
+ 271661 Thendal Novice's Boots
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
++binds     binds when picked up
+ sells     1 copper
+--- 271662 Thendal Novice's Pants
++++ 271662 Thendal Novice's Pants
+@@ -1,4 +1,4 @@
+ 271662 Thendal Novice's Pants
+-item      common, Miscellaneous, legs
++item      common, Leather, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 271664 Hornbeam Heft
++++ 271664 Hornbeam Heft
+@@ -1,7 +1,7 @@
+ 271664 Hornbeam Heft
+-item      rare, Axe, one-hand
++item      uncommon, Axe, one-hand
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +6 stamina, +3 strength, +3 spirit
+-weapon    36 - 67 damage, speed 2.40, 21.5 dps
++stats     +6 strength
++weapon    28 - 54 damage, speed 2.40, 17.1 dps
+ sells     16 copper
+--- 271665 Thendal Survivalist's Boots
++++ 271665 Thendal Survivalist's Boots
+@@ -1,4 +1,4 @@
+ 271665 Thendal Survivalist's Boots
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
+ sells     1 copper
+--- 271666 Thendal Survivalist's Pants
++++ 271666 Thendal Survivalist's Pants
+@@ -1,4 +1,4 @@
+ 271666 Thendal Survivalist's Pants
+-item      common, Miscellaneous, legs
++item      common, Leather, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 271667 Ironwood Destroyer
++++ 271667 Ironwood Destroyer
+@@ -1,7 +1,7 @@
+ 271667 Ironwood Destroyer
+-item      rare, Mace, two-hand
++item      uncommon, Mace, two-hand
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +9 stamina, +7 spirit, +24 attack power
+-weapon    75 - 114 damage, speed 3.40, 27.8 dps
++stats     +19 nature damage
++weapon    60 - 91 damage, speed 3.40, 22.2 dps
+ sells     6340 copper
+--- 271668 Thendal Survivalist's Shirt
++++ 271668 Thendal Survivalist's Shirt
+@@ -1,4 +1,4 @@
+ 271668 Thendal Survivalist's Shirt
+-item      common, Miscellaneous, shirt
++item      common, Leather, shirt
+ level     ilvl 1
+ sells     1 copper
+--- 271670 Curl of Life
++++ 271670 Curl of Life
+@@ -1,6 +1,6 @@
+ 271670 Curl of Life
+-item      rare, Miscellaneous, finger
++item      uncommon, Miscellaneous, finger
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +7 stamina, +5 spell power, +5 health per 5 sec
++stats     +5 stamina, +5 spell power
+ sells     10709 copper
+--- 271671 Thendal Warrior's Boots
++++ 271671 Thendal Warrior's Boots
+@@ -1,4 +1,4 @@
+ 271671 Thendal Warrior's Boots
+-item      common, Miscellaneous, feet
++item      common, Mail, feet
+ level     ilvl 1
+ sells     1 copper
+--- 271672 Thendal Warrior's Pants
++++ 271672 Thendal Warrior's Pants
+@@ -1,4 +1,4 @@
+ 271672 Thendal Warrior's Pants
+-item      common, Miscellaneous, legs
++item      common, Mail, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 271673 Grove Scoundrel's Boots
++++ 271673 Grove Scoundrel's Boots
+@@ -1,4 +1,4 @@
+ 271673 Grove Scoundrel's Boots
+-item      common, Miscellaneous, feet
++item      common, Leather, feet
+ level     ilvl 1
+ sells     1 copper
+--- 271674 Grove Scoundrel's Pants
++++ 271674 Grove Scoundrel's Pants
+@@ -1,4 +1,4 @@
+ 271674 Grove Scoundrel's Pants
+-item      common, Miscellaneous, legs
++item      common, Leather, legs
+ level     ilvl 1, requires level 1
+ sells     1 copper
+--- 271716 Explorer's League Dustcover
++++ 271716 Explorer's League Dustcover
+@@ -1,6 +1,6 @@
+ 271716 Explorer's League Dustcover
+ item      rare, Cloth, back
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +7 intellect, +4 strength, +4 agility
++stats     +5 intellect, +5 spirit, +5 agility
+ sells     805 copper
+--- 271719 Furs of the Earthen Ring
++++ 271719 Furs of the Earthen Ring
+@@ -1,6 +1,6 @@
+ 271719 Furs of the Earthen Ring
+ item      rare, Cloth, back
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +5 intellect, +3 stamina, +4 strength, +4 spirit
++stats     +5 intellect, +5 strength, +5 spirit
+ sells     805 copper
+--- 271722 Shen'dorei Magister's Belt
++++ 271722 Shen'dorei Magister's Belt
+@@ -1,5 +1,5 @@
+ 271722 Shen'dorei Magister's Belt
+-item      epic, Cosmetic, waist
++item      common, Cosmetic, waist
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271723 Shen'dorei Magister's Boots
++++ 271723 Shen'dorei Magister's Boots
+@@ -1,5 +1,5 @@
+ 271723 Shen'dorei Magister's Boots
+-item      epic, Cosmetic, feet
++item      common, Cosmetic, feet
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271724 Shen'dorei Magister's Cloak
++++ 271724 Shen'dorei Magister's Cloak
+@@ -1,5 +1,5 @@
+ 271724 Shen'dorei Magister's Cloak
+-item      epic, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271725 Shen'dorei Magister's Robe
++++ 271725 Shen'dorei Magister's Robe
+@@ -1,5 +1,5 @@
+ 271725 Shen'dorei Magister's Robe
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271726 Shen'dorei Magister's Gloves
++++ 271726 Shen'dorei Magister's Gloves
+@@ -1,5 +1,5 @@
+ 271726 Shen'dorei Magister's Gloves
+-item      epic, Cosmetic, hands
++item      common, Cosmetic, hands
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271727 Shen'dorei Magister's Helm
++++ 271727 Shen'dorei Magister's Helm
+@@ -1,5 +1,5 @@
+ 271727 Shen'dorei Magister's Helm
+-item      epic, Cosmetic, head
++item      common, Cosmetic, head
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271728 Shen'dorei Magister's Leggings
++++ 271728 Shen'dorei Magister's Leggings
+@@ -1,5 +1,5 @@
+ 271728 Shen'dorei Magister's Leggings
+-item      epic, Cosmetic, legs
++item      common, Cosmetic, legs
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271729 Shen'dorei Magister's Vest
++++ 271729 Shen'dorei Magister's Vest
+@@ -1,5 +1,5 @@
+ 271729 Shen'dorei Magister's Vest
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271730 Shen'dorei Magister's Pauldrons
++++ 271730 Shen'dorei Magister's Pauldrons
+@@ -1,5 +1,5 @@
+ 271730 Shen'dorei Magister's Pauldrons
+-item      epic, Cosmetic, shoulders
++item      common, Cosmetic, shoulders
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271731 Ensemble: Shen'dorei Magister's Garb
++++ 271731 Ensemble: Shen'dorei Magister's Garb
+@@ -1,5 +1,5 @@
+ 271731 Ensemble: Shen'dorei Magister's Garb
+-item      epic, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1289402 Ensemble: Shen'dorei Magister's Garb (1 charge, consumed)
+--- 271732 Dirt-Heavy Bracers
++++ 271732 Dirt-Heavy Bracers
+@@ -1,6 +1,6 @@
+ 271732 Dirt-Heavy Bracers
+-item      rare, Leather, wrists
++item      uncommon, Leather, wrists
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +7 spirit, +8 attack power, +4 stamina
++stats     +4 spirit, +10 attack power
+ sells     1216 copper
+--- 271733 Shen'dorei Peacekeeper's Belt
++++ 271733 Shen'dorei Peacekeeper's Belt
+@@ -1,5 +1,5 @@
+ 271733 Shen'dorei Peacekeeper's Belt
+-item      epic, Cosmetic, waist
++item      common, Cosmetic, waist
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271734 Shen'dorei Peacekeeper's Boots
++++ 271734 Shen'dorei Peacekeeper's Boots
+@@ -1,5 +1,5 @@
+ 271734 Shen'dorei Peacekeeper's Boots
+-item      epic, Cosmetic, feet
++item      common, Cosmetic, feet
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271735 Shen'dorei Peacekeeper's Cloak
++++ 271735 Shen'dorei Peacekeeper's Cloak
+@@ -1,5 +1,5 @@
+ 271735 Shen'dorei Peacekeeper's Cloak
+-item      epic, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271736 Shen'dorei Peacekeeper's Robe
++++ 271736 Shen'dorei Peacekeeper's Robe
+@@ -1,5 +1,5 @@
+ 271736 Shen'dorei Peacekeeper's Robe
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271737 Shen'dorei Peacekeeper's Gloves
++++ 271737 Shen'dorei Peacekeeper's Gloves
+@@ -1,5 +1,5 @@
+ 271737 Shen'dorei Peacekeeper's Gloves
+-item      epic, Cosmetic, hands
++item      common, Cosmetic, hands
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271738 Shen'dorei Peacekeeper's Helm
++++ 271738 Shen'dorei Peacekeeper's Helm
+@@ -1,5 +1,5 @@
+ 271738 Shen'dorei Peacekeeper's Helm
+-item      epic, Cosmetic, head
++item      common, Cosmetic, head
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271739 Shen'dorei Peacekeeper's Leggings
++++ 271739 Shen'dorei Peacekeeper's Leggings
+@@ -1,5 +1,5 @@
+ 271739 Shen'dorei Peacekeeper's Leggings
+-item      epic, Cosmetic, legs
++item      common, Cosmetic, legs
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271740 Knife-Polishing Rag
++++ 271740 Knife-Polishing Rag
+@@ -1,6 +1,6 @@
+ 271740 Knife-Polishing Rag
+-item      rare, Cloth, wrists
++item      uncommon, Cloth, wrists
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +4 intellect, +7 spirit, +5 spell power
++stats     +4 spirit, +6 spell power
+ sells     1216 copper
+--- 271742 Shen'dorei Peacekeeper's Vest
++++ 271742 Shen'dorei Peacekeeper's Vest
+@@ -1,5 +1,5 @@
+ 271742 Shen'dorei Peacekeeper's Vest
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271743 Shen'dorei Peacekeeper's Pauldrons
++++ 271743 Shen'dorei Peacekeeper's Pauldrons
+@@ -1,5 +1,5 @@
+ 271743 Shen'dorei Peacekeeper's Pauldrons
+-item      epic, Cosmetic, shoulders
++item      common, Cosmetic, shoulders
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271744 Ensemble: Shen'dorei Peacekeeper's Garb
++++ 271744 Ensemble: Shen'dorei Peacekeeper's Garb
+@@ -1,5 +1,5 @@
+ 271744 Ensemble: Shen'dorei Peacekeeper's Garb
+-item      epic, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1289407 Ensemble: Shen'dorei Peacekeeper's Garb (1 charge, consumed)
+--- 271746 Shen'dorei Skyseer's Belt
++++ 271746 Shen'dorei Skyseer's Belt
+@@ -1,5 +1,5 @@
+ 271746 Shen'dorei Skyseer's Belt
+-item      epic, Cosmetic, waist
++item      common, Cosmetic, waist
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271747 Shen'dorei Skyseer's Boots
++++ 271747 Shen'dorei Skyseer's Boots
+@@ -1,5 +1,5 @@
+ 271747 Shen'dorei Skyseer's Boots
+-item      epic, Cosmetic, feet
++item      common, Cosmetic, feet
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271748 Shen'dorei Skyseer's Cloak
++++ 271748 Shen'dorei Skyseer's Cloak
+@@ -1,5 +1,5 @@
+ 271748 Shen'dorei Skyseer's Cloak
+-item      epic, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271749 Shen'dorei Skyseer's Robe
++++ 271749 Shen'dorei Skyseer's Robe
+@@ -1,5 +1,5 @@
+ 271749 Shen'dorei Skyseer's Robe
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271750 Shen'dorei Skyseer's Gloves
++++ 271750 Shen'dorei Skyseer's Gloves
+@@ -1,5 +1,5 @@
+ 271750 Shen'dorei Skyseer's Gloves
+-item      epic, Cosmetic, hands
++item      common, Cosmetic, hands
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271751 Shen'dorei Skyseer's Helm
++++ 271751 Shen'dorei Skyseer's Helm
+@@ -1,5 +1,5 @@
+ 271751 Shen'dorei Skyseer's Helm
+-item      epic, Cosmetic, head
++item      common, Cosmetic, head
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271752 Shen'dorei Skyseer's Leggings
++++ 271752 Shen'dorei Skyseer's Leggings
+@@ -1,5 +1,5 @@
+ 271752 Shen'dorei Skyseer's Leggings
+-item      epic, Cosmetic, legs
++item      common, Cosmetic, legs
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271753 Shen'dorei Skyseer's Vest
++++ 271753 Shen'dorei Skyseer's Vest
+@@ -1,5 +1,5 @@
+ 271753 Shen'dorei Skyseer's Vest
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271754 Shen'dorei Skyseer's Pauldrons
++++ 271754 Shen'dorei Skyseer's Pauldrons
+@@ -1,5 +1,5 @@
+ 271754 Shen'dorei Skyseer's Pauldrons
+-item      epic, Cosmetic, shoulders
++item      common, Cosmetic, shoulders
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271755 Ensemble: Shen'dorei Skyseer's Garb
++++ 271755 Ensemble: Shen'dorei Skyseer's Garb
+@@ -1,5 +1,5 @@
+ 271755 Ensemble: Shen'dorei Skyseer's Garb
+-item      epic, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1289417 Ensemble: Shen'dorei Skyseer's Garb (1 charge, consumed)
+--- 271756 Al'Aketh Zealot's Belt
++++ 271756 Al'Aketh Zealot's Belt
+@@ -1,5 +1,5 @@
+ 271756 Al'Aketh Zealot's Belt
+-item      epic, Cosmetic, waist
++item      common, Cosmetic, waist
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271757 Al'Aketh Zealot's Boots
++++ 271757 Al'Aketh Zealot's Boots
+@@ -1,5 +1,5 @@
+ 271757 Al'Aketh Zealot's Boots
+-item      epic, Cosmetic, feet
++item      common, Cosmetic, feet
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271758 Al'Aketh Zealot's Cloak
++++ 271758 Al'Aketh Zealot's Cloak
+@@ -1,5 +1,5 @@
+ 271758 Al'Aketh Zealot's Cloak
+-item      epic, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271759 Al'Aketh Zealot's Robe
++++ 271759 Al'Aketh Zealot's Robe
+@@ -1,5 +1,5 @@
+ 271759 Al'Aketh Zealot's Robe
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271760 Al'Aketh Zealot's Gloves
++++ 271760 Al'Aketh Zealot's Gloves
+@@ -1,5 +1,5 @@
+ 271760 Al'Aketh Zealot's Gloves
+-item      epic, Cosmetic, hands
++item      common, Cosmetic, hands
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271761 Al'Aketh Zealot's Helm
++++ 271761 Al'Aketh Zealot's Helm
+@@ -1,5 +1,5 @@
+ 271761 Al'Aketh Zealot's Helm
+-item      epic, Cosmetic, head
++item      common, Cosmetic, head
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271762 Al'Aketh Zealot's Leggings
++++ 271762 Al'Aketh Zealot's Leggings
+@@ -1,5 +1,5 @@
+ 271762 Al'Aketh Zealot's Leggings
+-item      epic, Cosmetic, legs
++item      common, Cosmetic, legs
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271763 Al'Aketh Zealot's Vest
++++ 271763 Al'Aketh Zealot's Vest
+@@ -1,5 +1,5 @@
+ 271763 Al'Aketh Zealot's Vest
+-item      epic, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271764 Al'Aketh Zealot's Pauldrons
++++ 271764 Al'Aketh Zealot's Pauldrons
+@@ -1,5 +1,5 @@
+ 271764 Al'Aketh Zealot's Pauldrons
+-item      epic, Cosmetic, shoulders
++item      common, Cosmetic, shoulders
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+--- 271765 Ensemble: Al'Aketh Zealot's Garb
++++ 271765 Ensemble: Al'Aketh Zealot's Garb
+@@ -1,5 +1,5 @@
+ 271765 Ensemble: Al'Aketh Zealot's Garb
+-item      epic, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1289419 Ensemble: Al'Aketh Zealot's Garb (1 charge, consumed)
+--- 271766 Heavehammer
++++ 271766 Heavehammer
+@@ -1,7 +1,7 @@
+ 271766 Heavehammer
+ item      rare, Mace, two-hand
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +26 attack power, +7 agility, +70 armor
++stats     +32 attack power, +60 armor
+ weapon    73 - 110 damage, speed 3.30, 27.7 dps
+ sells     3103 copper
+--- 271769 Daewyn's Girdle
++++ 271769 Daewyn's Girdle
+@@ -1,6 +1,6 @@
+ 271769 Daewyn's Girdle
+-item      rare, Cloth, waist
++item      uncommon, Cloth, waist
+ level     ilvl 33
+ binds     binds when picked up
+-stats     +9 spirit, +6 spell power, +10 health per 5 sec
++stats     +6 spirit, +7 spell power
+ sells     1000 copper
+--- 272184 Amulet of Vengeance
++++ 272184 Amulet of Vengeance
+@@ -1,6 +1,6 @@
+ 272184 Amulet of Vengeance
+-item      rare, Miscellaneous, neck
++item      uncommon, Miscellaneous, neck
+ level     ilvl 43, requires level 1
+ binds     binds when picked up
+-stats     +10 stamina, +8 strength
++stats     +7 stamina, +6 strength
+ sells     5653 copper
+--- 272185 Amulet of Forgiveness
++++ 272185 Amulet of Forgiveness
+@@ -1,6 +1,6 @@
+ 272185 Amulet of Forgiveness
+-item      rare, Miscellaneous, neck
++item      uncommon, Miscellaneous, neck
+ level     ilvl 43, requires level 1
+ binds     binds when picked up
+-stats     +10 spirit, +8 intellect
++stats     +7 spirit, +13 healing, +4 spell damage
+ sells     5653 copper
+--- 273658 Bloody Parchment
++++ 273658 Bloody Parchment
+@@ -1,6 +1,6 @@
+ 273658 Bloody Parchment
+ item      common, Other
+-level     ilvl 30, requires level 30
++level     ilvl 23, requires level 23
+ binds     binds when picked up
+ unique    yes
+ text      "There's a note tucked into the folds of the Broodmother's robes."
+--- 274391 Formula: Enchant Off Hand - Superior Intellect
++++ 274391 Formula: Enchant Off Hand - Superior Intellect
+@@ -1,9 +1,9 @@
+-274391 Formula: Enchant Off-Hand - Superior Intellect
++274391 Formula: Enchant Off Hand - Superior Intellect
+ item      rare, Enchanting
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1219577 Enchant Off-Hand - Superior Intellect
+ effect    trigger 9: 1293875 Flag Tracking Quest
+-text      "Teaches you how to permanently enchant an off-hand to give +9 Intellect."
++text      "Teaches you how to permanently enchant an Off Hand to give +9 Intellect."
+ sells     1250 copper
+--- 274392 Formula: Enchant Off Hand - Excellent Spirit
++++ 274392 Formula: Enchant Off Hand - Excellent Spirit
+@@ -1,9 +1,9 @@
+-274392 Formula: Enchant Off-Hand - Excellent Spirit
++274392 Formula: Enchant Off Hand - Excellent Spirit
+ item      rare, Enchanting
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1219578 Enchant Off-Hand - Excellent Spirit
+ effect    trigger 9: 1293876 Flag Tracking Quest
+-text      "Teaches you how to permanently enchant an off-hand to give +12 Spirit."
++text      "Teaches you how to permanently enchant an Off Hand to give +12 Spirit."
+ sells     1250 copper
+--- 274393 Formula: Enchant Off Hand - Wisdom
++++ 274393 Formula: Enchant Off Hand - Wisdom
+@@ -1,8 +1,8 @@
+-274393 Formula: Enchant Off-Hand - Wisdom
++274393 Formula: Enchant Off Hand - Wisdom
+ item      rare, Enchanting
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1219579 Enchant Off-Hand - Wisdom
+-text      "Teaches you how to permanently enchant an off-hand to give +6 Intellect and +5 Spirit."
++text      "Teaches you how to permanently enchant an Off Hand to give +6 Intellect and +5 Spirit."
+ sells     1500 copper
+--- 274915 Sacristan Band
++++ 274915 Sacristan Band
+@@ -1,6 +1,6 @@
+ 274915 Sacristan Band
+ item      uncommon, Miscellaneous, finger
+-level     ilvl 40
++level     ilvl 38
+ binds     binds when picked up
+-stats     +8 stamina, +7 healing, +3 spell damage
++stats     +7 stamina, +6 healing, +2 spell damage
+ sells     4554 copper
+--- 274916 Verger Greaves
++++ 274916 Verger Greaves
+@@ -1,6 +1,6 @@
+ 274916 Verger Greaves
+ item      uncommon, Mail, feet
+-level     ilvl 40
++level     ilvl 38
+ binds     binds when picked up
+-stats     +8 strength, +9 spell power
++stats     +7 strength, +8 spell power
+ sells     5164 copper
+--- 274918 Warding Candle
++++ 274918 Warding Candle
+@@ -1,6 +1,6 @@
+ 274918 Warding Candle
+ item      common, Other
+-level     ilvl 40
++level     ilvl 38
+ binds     binds when picked up
+ effect    use: 1295608 Warding Candle (5 charges, consumed, 60 s shared cooldown)
+ sells     102 copper
+--- 274922 Riverglades Marsh Gas
++++ 274922 Riverglades Marsh Gas
+@@ -1,6 +1,6 @@
+ 274922 Riverglades Marsh Gas
+ item      common, Other
+-level     ilvl 40
++level     ilvl 38
+ binds     binds when picked up
+ effect    use: 1295639 Riverglades Marsh Gas (1 charge, consumed, 15 s cooldown)
+ sells     204 copper
+--- 274928 Curly's Chopper
++++ 274928 Curly's Chopper
+@@ -1,7 +1,7 @@
+ 274928 Curly's Chopper
+ item      uncommon, Axe, one-hand
+-level     ilvl 40
++level     ilvl 39
+ binds     binds when picked up
+ stats     +6 stamina, +2 defense rating
+-weapon    31 - 58 damage, speed 2.00, 22.2 dps
++weapon    30 - 56 damage, speed 2.00, 21.5 dps
+ sells     11101 copper
+--- 274929 Hurley's Felling Axe
++++ 274929 Hurley's Felling Axe
+@@ -1,7 +1,7 @@
+ 274929 Hurley's Felling Axe
+ item      uncommon, Axe, two-hand
+-level     ilvl 40
++level     ilvl 39
+ binds     binds when picked up
+ stats     +7 strength, +1 stat 90
+-weapon    76 - 115 damage, speed 3.30, 28.9 dps
++weapon    73 - 110 damage, speed 3.30, 27.7 dps
+ sells     13927 copper
+--- 274938 Gnollhide Tunic
++++ 274938 Gnollhide Tunic
+@@ -1,6 +1,6 @@
+ 274938 Gnollhide Tunic
+ item      uncommon, Leather, chest
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+ stats     +11 spirit, +11 agility
+ sells     6710 copper
+--- 274939 Southern Watch Leggings
++++ 274939 Southern Watch Leggings
+@@ -1,6 +1,6 @@
+ 274939 Southern Watch Leggings
+ item      uncommon, Mail, legs
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +14 strength, +8 stamina
++stats     +13 strength, +8 stamina
+ sells     8080 copper
+--- 274940 Unbalanced Fighting Stick
++++ 274940 Unbalanced Fighting Stick
+@@ -1,7 +1,7 @@
+ 274940 Unbalanced Fighting Stick
+ item      uncommon, Polearm, two-hand
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +8 stamina, +14 strength
+-weapon    75 - 113 damage, speed 3.00, 31.3 dps
++stats     +8 stamina, +13 strength
++weapon    69 - 104 damage, speed 3.00, 28.8 dps
+ sells     15711 copper
+--- 274941 Bristle Hills Mystic Robe
++++ 274941 Bristle Hills Mystic Robe
+@@ -1,6 +1,6 @@
+ 274941 Bristle Hills Mystic Robe
+ item      uncommon, Cloth, chest
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +11 intellect, +13 spell power
++stats     +11 intellect, +12 spell power
+ sells     5046 copper
+--- 274942 Bristlepelt Vest
++++ 274942 Bristlepelt Vest
+@@ -1,6 +1,6 @@
+ 274942 Bristlepelt Vest
+ item      uncommon, Leather, chest
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +13 stamina, +9 agility
++stats     +12 stamina, +8 agility
+ sells     6331 copper
+--- 274943 Gnoll Crusher Leggings
++++ 274943 Gnoll Crusher Leggings
+@@ -1,6 +1,6 @@
+ 274943 Gnoll Crusher Leggings
+ item      uncommon, Mail, legs
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+ stats     +11 strength, +11 intellect
+ sells     7626 copper
+--- 274944 Bloodsnout Striker
++++ 274944 Bloodsnout Striker
+@@ -1,7 +1,7 @@
+ 274944 Bloodsnout Striker
+ item      uncommon, Polearm, two-hand
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +12 stamina, +20 attack power
+-weapon    80 - 120 damage, speed 3.20, 31.2 dps
++stats     +11 stamina, +18 attack power
++weapon    74 - 111 damage, speed 3.20, 28.9 dps
+ sells     15947 copper
+--- 274946 Gnollblood Robe
++++ 274946 Gnollblood Robe
+@@ -1,6 +1,6 @@
+ 274946 Gnollblood Robe
+ item      uncommon, Cloth, chest
+-level     ilvl 42
++level     ilvl 40
+ binds     binds when picked up
+-stats     +12 spirit, +12 spell power
++stats     +11 spirit, +11 spell power
+ sells     5140 copper
+--- 274955 Clobrok's Block Rock
++++ 274955 Clobrok's Block Rock
+@@ -1,6 +1,6 @@
+ 274955 Clobrok's Block Rock
+ item      uncommon, Miscellaneous, neck
+-level     ilvl 43
++level     ilvl 42
+ binds     binds when picked up
+ stats     +7 strength, +10 block value
+ sells     5736 copper
+--- 274957 Lumber Luggers
++++ 274957 Lumber Luggers
+@@ -1,6 +1,6 @@
+ 274957 Lumber Luggers
+ item      uncommon, Leather, hands
+-level     ilvl 43
++level     ilvl 38
+ binds     binds when picked up
+-stats     +13 strength
++stats     +11 strength
+ sells     3381 copper
+--- 274958 Especially Delicious Berries
++++ 274958 Especially Delicious Berries
+@@ -1,4 +1,5 @@
+ 274958 Especially Delicious Berries
+ item      common, Quest
+ level     ilvl 1, requires level 1
++binds     binds when picked up
+ unique    yes
+--- 274961 Brute Slayer Band
++++ 274961 Brute Slayer Band
+@@ -1,6 +1,6 @@
+ 274961 Brute Slayer Band
+ item      uncommon, Miscellaneous, finger
+-level     ilvl 40
++level     ilvl 39
+ binds     binds when picked up
+ stats     +6 intellect, +2 spell penetration
+ sells     4325 copper
+--- 274963 Rot-Covered Harpoon
++++ 274963 Rot-Covered Harpoon
+@@ -1,7 +1,7 @@
+ 274963 Rot-Covered Harpoon
+ item      rare, Polearm, two-hand
+-level     ilvl 44
++level     ilvl 42
+ binds     binds when picked up
+-weapon    77 - 117 damage, speed 2.50, 38.8 dps
++weapon    74 - 112 damage, speed 2.50, 37.2 dps
+ effect    chance on hit: 1295744 Rot
+ sells     17157 copper
+--- 276538 Spiritcaller Kilt
++++ 276538 Spiritcaller Kilt
+@@ -1,7 +1,8 @@
+ 276538 Spiritcaller Kilt
+ item      epic, Mail, legs
+ level     ilvl 61, requires level 60
+ tag       Crafted
+ binds     binds when equipped
++classes   shaman
+ set       The Spiritcaller's Storm
+-sells     21104 copper
++sells     40208 copper
+--- 276539 Spiritcaller Gloves
++++ 276539 Spiritcaller Gloves
+@@ -1,7 +1,8 @@
+ 276539 Spiritcaller Gloves
+ item      epic, Mail, hands
+ level     ilvl 61, requires level 60
+ tag       Crafted
+ binds     binds when equipped
++classes   shaman
+ set       The Spiritcaller's Storm
+-sells     21182 copper
++sells     20181 copper
+--- 276540 Spiritcaller Mantle
++++ 276540 Spiritcaller Mantle
+@@ -1,7 +1,8 @@
+ 276540 Spiritcaller Mantle
+ item      epic, Mail, shoulders
+ level     ilvl 61, requires level 60
+ tag       Crafted
+ binds     binds when equipped
++classes   shaman
+ set       The Spiritcaller's Storm
+-sells     21259 copper
++sells     30523 copper
+--- 276541 Spiritcaller Boots
++++ 276541 Spiritcaller Boots
+@@ -1,7 +1,8 @@
+ 276541 Spiritcaller Boots
+ item      epic, Mail, feet
+ level     ilvl 61, requires level 60
+ tag       Crafted
+ binds     binds when equipped
++classes   shaman
+ set       The Spiritcaller's Storm
+-sells     32147 copper
++sells     30639 copper
+--- 277200 Scorched Leather Pouch
++++ 277200 Scorched Leather Pouch
+@@ -1,5 +1,5 @@
+ 277200 Scorched Leather Pouch
+ item      common, Bag, bag
+ level     ilvl 5
+ binds     binds when picked up
+-sells     250 copper
++sells     62 copper
+--- 277254 Truthseeker's Bow
++++ 277254 Truthseeker's Bow
+@@ -1,6 +1,6 @@
+ 277254 Truthseeker's Bow
+ item      rare, Bow, ranged
+-level     ilvl 45
++level     ilvl 45, requires level 40
+ binds     binds when picked up
+ stats     +7 agility, +3 stamina
+ weapon    46 - 87 damage, speed 2.80, 23.8 dps
+--- 277977 Canvas Latchbag
++++ 277977 Canvas Latchbag
+@@ -1,5 +1,5 @@
+ 277977 Canvas Latchbag
+ item      common, Bag, bag
+ level     ilvl 6
+ binds     binds when picked up
+-sells     875 copper
++sells     62 copper
+--- 279173 Veteran Adventurer's Chestpiece
++++ 279173 Veteran Adventurer's Chestpiece
+@@ -1,5 +1,5 @@
+ 279173 Veteran Adventurer's Chestpiece
+-item      rare, Cosmetic, chest
++item      common, Cosmetic, chest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279174 Veteran Adventurer's Belt
++++ 279174 Veteran Adventurer's Belt
+@@ -1,5 +1,5 @@
+ 279174 Veteran Adventurer's Belt
+-item      rare, Cosmetic, waist
++item      common, Cosmetic, waist
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279175 Veteran Adventurer's Legguards
++++ 279175 Veteran Adventurer's Legguards
+@@ -1,5 +1,5 @@
+ 279175 Veteran Adventurer's Legguards
+-item      rare, Cosmetic, legs
++item      common, Cosmetic, legs
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279176 Veteran Adventurer's Boots
++++ 279176 Veteran Adventurer's Boots
+@@ -1,5 +1,5 @@
+ 279176 Veteran Adventurer's Boots
+-item      rare, Cosmetic, feet
++item      common, Cosmetic, feet
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279177 Veteran Adventurer's Bracer
++++ 279177 Veteran Adventurer's Bracer
+@@ -1,5 +1,5 @@
+ 279177 Veteran Adventurer's Bracer
+-item      rare, Cosmetic, wrists
++item      common, Cosmetic, wrists
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279178 Veteran Adventurer's Gloves
++++ 279178 Veteran Adventurer's Gloves
+@@ -1,5 +1,5 @@
+ 279178 Veteran Adventurer's Gloves
+-item      rare, Cosmetic, hands
++item      common, Cosmetic, hands
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279179 Veteran Adventurer's Cloak
++++ 279179 Veteran Adventurer's Cloak
+@@ -1,5 +1,5 @@
+ 279179 Veteran Adventurer's Cloak
+-item      rare, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279180 Veteran Adventurer's Hood
++++ 279180 Veteran Adventurer's Hood
+@@ -1,5 +1,5 @@
+ 279180 Veteran Adventurer's Hood
+-item      rare, Cosmetic, head
++item      common, Cosmetic, head
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 279181 Veteran Adventurer's Shoulderpads
++++ 279181 Veteran Adventurer's Shoulderpads
+@@ -1,5 +1,5 @@
+ 279181 Veteran Adventurer's Shoulderpads
+-item      rare, Cosmetic, shoulders
++item      common, Cosmetic, shoulders
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     3 copper
+--- 279182 Ensemble: Veteran Adventurer's Outdoor Wear
++++ 279182 Ensemble: Veteran Adventurer's Outdoor Wear
+@@ -1,5 +1,5 @@
+ 279182 Ensemble: Veteran Adventurer's Outdoor Wear
+-item      rare, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1306128 Ensemble: Veteran Adventurer's Outdoor Wear (1 charge, consumed)
+--- 279450 Fractured Insignia
++++ 279450 Fractured Insignia
+@@ -1,4 +1,4 @@
+ 279450 Fractured Insignia
+-item      rare, Other
++item      uncommon, Other
+ level     ilvl 1, requires level 40
+ effect    use: 1306734 ?
+--- 279936 Book Bag
++++ 279936 Book Bag
+@@ -1,5 +1,5 @@
+ 279936 Book Bag
+ item      common, Bag, bag
+ level     ilvl 5
+ binds     binds when picked up
+-sells     875 copper
++sells     62 copper
+--- 279939 Collecting Basket
++++ 279939 Collecting Basket
+@@ -1,5 +1,5 @@
+ 279939 Collecting Basket
+ item      common, Bag, bag
+ level     ilvl 5
+ binds     binds when picked up
+-sells     875 copper
++sells     62 copper
+--- 280088 Soft Saber Sack
++++ 280088 Soft Saber Sack
+@@ -1,5 +1,5 @@
+ 280088 Soft Saber Sack
+ item      common, Bag, bag
+ level     ilvl 5
+ binds     binds when picked up
+-sells     875 copper
++sells     62 copper
+--- 280404 Lordaeron Forever Tabard
++++ 280404 Lordaeron Forever Tabard
+@@ -1,4 +1,4 @@
+ 280404 Lordaeron Forever Tabard
+-item      epic, Cosmetic, tabard
++item      common, Cosmetic, tabard
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+--- 280417 Damaged Blue Crystal
++++ 280417 Damaged Blue Crystal
+@@ -1,3 +1,4 @@
+ 280417 Damaged Blue Crystal
+ item      common, Quest
+ level     ilvl 1
++binds     quest item
+--- 280604 Rage of the Storm
++++ 280604 Rage of the Storm
+@@ -1,7 +1,7 @@
+ 280604 Rage of the Storm
+ item      rare, Mace, two-hand
+ level     ilvl 40, requires level 1
+ binds     binds when picked up
+-stats     +16 intellect, +15 stamina
+-weapon    102 - 154 damage, speed 3.60, 35.6 dps
++stats     +12 intellect, +15 stamina
++weapon    94 - 141 damage, speed 3.30, 35.6 dps
+ effect    equip: 1309422 Rage of Earth
+--- 280614 Pachimari
++++ 280614 Pachimari
+@@ -1,7 +1,7 @@
+ 280614 Pachimari
+-item      epic, Pet
++item      rare, Pet
+ level     ilvl 20
+ binds     binds when picked up
+ effect    use: 55884 Learning (1 charge, consumed)
+ effect    learn: 1309420 Summon Pachimari
+ text      "Teaches you how to summon this companion."
+--- 280623 Veteran Adventurer's Rucksack
++++ 280623 Veteran Adventurer's Rucksack
+@@ -1,5 +1,5 @@
+ 280623 Veteran Adventurer's Rucksack
+-item      rare, Cosmetic, back
++item      common, Cosmetic, back
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     2 copper
+--- 280729 Shen'dorei Tabard
++++ 280729 Shen'dorei Tabard
+@@ -1,5 +1,5 @@
+ 280729 Shen'dorei Tabard
+-item      epic, Cosmetic, tabard
++item      common, Cosmetic, tabard
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ sells     1 copper
+--- 280740 Shen'dorei Windwell
++++ 280740 Shen'dorei Windwell
+@@ -1,6 +1,6 @@
+ 280740 Shen'dorei Windwell
+-item      rare, Other
++item      common, Other
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 1309618 Shen'dorei Windwell (900 s cooldown)
+ sells     750000 copper
+--- 280766 Satchel of Potions
++++ 280766 Satchel of Potions
+@@ -1,6 +1,6 @@
+ 280766 Satchel of Potions
+-item      rare, Miscellaneous, trinket
++item      uncommon, Miscellaneous, trinket
+ level     ilvl 33, requires level 1
+ binds     binds when picked up
+ effect    use: 1309685 Satchel of Potions
+ text      "Not every potion is meant for consumption."
+--- 281286 High Order Pendant
++++ 281286 High Order Pendant
+@@ -1,5 +1,5 @@
+ 281286 High Order Pendant
+ item      uncommon, Miscellaneous, neck
+ level     ilvl 57
+ binds     binds when picked up
+-stats     +6 stamina, +11 intellect
++stats     +7 spell power, +11 intellect
+--- 281348 Parchment of Chaos
++++ 281348 Parchment of Chaos
+@@ -1,5 +1,6 @@
+ 281348 Parchment of Chaos
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
++unique    yes
+ sells     170 copper
+--- 281349 Parchment of Darkness
++++ 281349 Parchment of Darkness
+@@ -1,5 +1,6 @@
+ 281349 Parchment of Darkness
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
++unique    yes
+ sells     170 copper
+--- 281356 Burnt Page
++++ 281356 Burnt Page
+@@ -1,5 +1,6 @@
+ 281356 Burnt Page
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
++unique    yes
+ sells     170 copper
+--- 287090 Letter Opener
++++ 287090 Letter Opener
+@@ -1,6 +1,6 @@
+-287090 Sharpened Letter Opener
++287090 Letter Opener
+ item      common, Miscellaneous, held in off hand
+ level     ilvl 17, requires level 2
+ binds     binds when picked up
+ unique    yes
+ sells     38 copper

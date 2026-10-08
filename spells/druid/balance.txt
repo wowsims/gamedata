@@ -356,8 +356,8 @@ stance    Cat, Bear, Dire Bear, Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  -175 armor to the enemy
-          E_APPLY_AURA A_MOD_RESISTANCE base=-175 misc=1 target=[6,0]
+effect 1  unrecognised shape
+          E_APPLY_AURA A_674 base=-175 misc=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
@@ -376,8 +376,8 @@ stance    Cat, Bear, Dire Bear, Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  -285 armor to the enemy
-          E_APPLY_AURA A_MOD_RESISTANCE base=-285 misc=1 target=[6,0]
+effect 1  unrecognised shape
+          E_APPLY_AURA A_674 base=-285 misc=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
@@ -396,8 +396,8 @@ stance    Cat, Bear, Dire Bear, Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  -395 armor to the enemy
-          E_APPLY_AURA A_MOD_RESISTANCE base=-395 misc=1 target=[6,0]
+effect 1  unrecognised shape
+          E_APPLY_AURA A_674 base=-395 misc=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
@@ -416,8 +416,8 @@ stance    Cat, Bear, Dire Bear, Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  -505 armor to the enemy
-          E_APPLY_AURA A_MOD_RESISTANCE base=-505 misc=1 target=[6,0]
+effect 1  unrecognised shape
+          E_APPLY_AURA A_674 base=-505 misc=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
@@ -1798,8 +1798,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  4 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=4 target=[21,0]
+effect 1  3 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=3 target=[21,0]
 
 https://www.wowhead.com/forever/spell=467
 =======
@@ -1813,8 +1813,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  9 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[21,0]
+effect 1  6 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=6 target=[21,0]
 
 https://www.wowhead.com/forever/spell=782
 =======
@@ -1828,8 +1828,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  11 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=11 target=[21,0]
+effect 1  9 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1075
 =======
@@ -1843,8 +1843,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  13 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=13 target=[21,0]
+effect 1  12 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=12 target=[21,0]
 
 https://www.wowhead.com/forever/spell=8914
 =======
@@ -1858,8 +1858,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  16 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=16 target=[21,0]
+effect 1  15 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=15 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9756
 =======
@@ -1873,8 +1873,8 @@ range     30 yd
 stance    Tree of Life, Moonkin
 labels    21
 
-effect 1  22 nature damage back to melee attackers to the friendly target
-          E_APPLY_AURA A_DAMAGE_SHIELD base=22 target=[21,0]
+effect 1  18 nature damage back to melee attackers to the friendly target
+          E_APPLY_AURA A_DAMAGE_SHIELD base=18 target=[21,0]
 
 https://www.wowhead.com/forever/spell=9910
 =======
@@ -1997,8 +1997,8 @@ stance    Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  15–18 nature damage to the enemy (at level 60, +0.429 spell power)
-          E_SCHOOL_DAMAGE base=15 ppl=0.4 variance=0.15384616 sp=0.429 target=[6,0]
+effect 1  14–17 nature damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=15 ppl=0.2 variance=0.15384616 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5176
 =======
@@ -2013,8 +2013,8 @@ stance    Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  24–29 nature damage to the enemy (at level 60, +0.486 spell power)
-          E_SCHOOL_DAMAGE base=23 ppl=0.6 variance=0.14814815 sp=0.486 target=[6,0]
+effect 1  20–25 nature damage to the enemy (at level 60, +0.486 spell power)
+          E_SCHOOL_DAMAGE base=21 ppl=0.3 variance=0.14814815 sp=0.486 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5177
 =======
@@ -2029,8 +2029,8 @@ stance    Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  32–37 nature damage to the enemy (at level 60, +0.571 spell power)
-          E_SCHOOL_DAMAGE base=30 ppl=0.7 variance=0.16666667 sp=0.571 target=[6,0]
+effect 1  31–35 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=30 ppl=0.5 variance=0.16666667 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5178
 =======
@@ -2045,8 +2045,8 @@ stance    Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  40–47 nature damage to the enemy (at level 60, +0.571 spell power)
-          E_SCHOOL_DAMAGE base=38 ppl=0.9 variance=0.14705883 sp=0.571 target=[6,0]
+effect 1  37–44 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=37 ppl=0.6 variance=0.14705883 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5179
 =======
@@ -2061,8 +2061,8 @@ stance    Moonkin
 stance exclude Tree of Life
 labels    21
 
-effect 1  47–54 nature damage to the enemy (at level 60, +0.571 spell power)
-          E_SCHOOL_DAMAGE base=45 ppl=0.9 variance=0.12962963 sp=0.571 target=[6,0]
+effect 1  46–53 nature damage to the enemy (at level 60, +0.571 spell power)
+          E_SCHOOL_DAMAGE base=45 ppl=0.7 variance=0.12962963 sp=0.571 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5180
 =======

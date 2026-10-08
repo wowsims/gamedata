@@ -1183,25 +1183,12 @@ effect 1  1 healing to the friendly target
 
 https://www.wowhead.com/forever/spell=467810
 =======
-8178 Grounding Totem Effect (Rank 1)
-school    nature
-duration  permanent
-charges   1
-attrs     can proc from procs
-labels    24
-proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
-
-effect 1  unrecognised shape
-          E_APPLY_AREA_AURA_PARTY A_SPELL_MAGNET base=0 radius=30 target=[1,0]
-
-https://www.wowhead.com/forever/spell=8178
-=======
 8179 Grounding Totem Passive
 school    nature
 attrs     passive
 labels    24
 
-effect 1  casts 8178 Grounding Totem Effect every 10 s
+effect 1  casts 8178 Grounding Totem every 10 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=10000ms trigger=8178 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8179
