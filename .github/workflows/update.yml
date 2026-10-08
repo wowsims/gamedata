@@ -99,6 +99,8 @@ jobs:
                   repository: wowsims/forever
                   ref: ${{ inputs.forever_ref || 'master' }}
                   path: forever
+                  # wowsims/forever is private: a read-only deploy key on it, the job token reaches gamedata only.
+                  ssh-key: ${{ secrets.FOREVER_DEPLOY_KEY }}
 
             - name: Install Go
               if: steps.moved.outputs.run == 'true'
