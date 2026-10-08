@@ -1,0 +1,18 @@
+# shaman
+--- 16353 Frostbrand Attack (Rank 5)
++++ 16353 Frostbrand Attack (Rank 5)
+@@ -1,13 +1,14 @@
+ 16353 Frostbrand Attack (Rank 5)
+ school    frost
+ defense   magic
+ duration  8 s
+ range     100 yd
+ labels    24
++proc      9 procs per minute
+ 
+ effect 1  -25% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
+ effect 2  169.2 frost damage to the enemy (at level 60, +0.1 spell power)
+           E_SCHOOL_DAMAGE base=158 ppl=5.6 sp=0.1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=16353

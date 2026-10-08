@@ -1072,6 +1072,7 @@ defense   magic
 duration  8 s
 range     100 yd
 labels    24
+proc      9 procs per minute
 
 effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
