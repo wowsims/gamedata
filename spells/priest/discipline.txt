@@ -5,7 +5,7 @@ mechanic  mechanic 2
 duration  3 s
 cast      0.5 s
 cooldown  120 s
-cost      3% of maximum mana
+cost      3% of base mana
 stance exclude Shadowform
 targets   up to 5
 labels    18
@@ -239,7 +239,7 @@ https://www.wowhead.com/forever/spell=1277640
 school    holy
 defense   magic
 gcd       1.5 s
-cost      18% of maximum mana
+cost      18% of base mana
 range     30 yd
 stance    Shadowform
 labels    18
@@ -253,7 +253,7 @@ https://www.wowhead.com/forever/spell=527
 school    holy
 defense   magic
 gcd       1.5 s
-cost      18% of maximum mana
+cost      18% of base mana
 range     30 yd
 stance    Shadowform
 labels    18
@@ -303,7 +303,7 @@ https://www.wowhead.com/forever/spell=23859
 school    holy
 defense   magic
 gcd       1.5 s
-cost      18% of maximum mana
+cost      18% of base mana
 range     30 yd
 stance    Shadowform
 
@@ -427,7 +427,7 @@ defense   magic
 duration  15 s
 cooldown  300 s (category)
 gcd       1.5 s
-cost      3% of maximum mana
+cost      3% of base mana
 stance    Shadowform
 charges   3
 labels    18
@@ -841,8 +841,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -100% on family 6 mask 0xd4f7fffb,0x10940436,0x5010200,0x10000490
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0xd4f7fffb,0x10940436,0x5010200,0x10000490 target=[1,0]
-effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 6 mask 0xdb54be90,0x98434,0x0,0x10200000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=7 family=6 mask=0xdb54be90,0x98434,0x0,0x10200000 target=[1,0]
+effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 6 mask 0xd9f43e90,0x98434,0x0,0x10200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=7 family=6 mask=0xd9f43e90,0x98434,0x0,0x10200000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=14751
 =======
@@ -970,7 +970,7 @@ defense   magic
 duration  8 s
 cooldown  180 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     40 yd
 
 effect 1  -40% every school damage taken to the friendly target
@@ -1273,7 +1273,7 @@ https://www.wowhead.com/forever/spell=1316995
 school    holy
 duration  15 s
 cooldown  180 s
-cost      20% of maximum mana
+cost      20% of base mana
 range     30 yd
 labels    18
 
@@ -1302,7 +1302,7 @@ defense   magic
 duration  10 s
 cooldown  180 s
 gcd       1.5 s
-cost      4% of maximum mana
+cost      4% of base mana
 range     30 yd
 excluded caster aura 15473 Shadowform
 refs      425205 Power Word: Barrier
@@ -1624,7 +1624,7 @@ range     40 yd
 stance    Shadowform
 refs      6788 Weakened Soul
 
-effect 1  absorbs 942 every school damage to the target's raid (at level 60)
+effect 1  absorbs 1200 every school damage to the target's raid (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=942 ppl=4.3 misc=127 target=[57,0]
 
 https://www.wowhead.com/forever/spell=27607
@@ -1640,7 +1640,7 @@ range     40 yd
 stance    Shadowform
 refs      6788 Weakened Soul
 
-effect 1  absorbs 16888.65–19627.35 every school damage to the target's raid (at level 60)
+effect 1  absorbs 16908–19608 every school damage to the target's raid (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=18000 ppl=4.3 variance=0.15 misc=127 target=[57,0]
 
 https://www.wowhead.com/forever/spell=1236154
@@ -1947,7 +1947,7 @@ range     30 yd
 stance    Shadowform
 attrs     channeled
 
-effect 1  180 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
+effect 1  183 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 ppl=3 sp=0.167 period=1000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=22822
@@ -1962,7 +1962,7 @@ range     30 yd
 stance    Shadowform
 attrs     channeled
 
-effect 1  300 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
+effect 1  305 arcane damage every 1 s to the enemy (6 ticks, at level 60, +0.167 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 ppl=5 sp=0.167 period=1000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=22823

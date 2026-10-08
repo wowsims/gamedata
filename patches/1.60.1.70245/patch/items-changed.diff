@@ -1,0 +1,2292 @@
+--- 872 Rockslicer
++++ 872 Rockslicer
+@@ -1,9 +1,9 @@
+ 872 Rockslicer
+ item      rare, Axe, two-hand
+ level     ilvl 23, requires level 18
+ binds     binds when picked up
+ unique    yes
+-stats     +10 strength
++stats     +7 strength, +7 nature resistance
+ weapon    52 - 78 damage, speed 3.30, 19.7 dps
+ effect    use: 1291896 Slicing (30 charges)
+ sells     3189 copper
+--- 902 Deprecated Palomino Summoning (Mount)
++++ 902 Deprecated Palomino Summoning (Mount)
+@@ -1,5 +1,5 @@
+ 902 Deprecated Palomino Summoning (Mount)
+ item      common, Junk
+ level     ilvl 1, requires level 1
+-effect    use: 471 Palamino Stallion
++effect    use: 471 Palomino Stallion
+ sells     1 copper
+--- 1124 Deprecated Amulet of the Palomino
++++ 1124 Deprecated Amulet of the Palomino
+@@ -1,7 +1,7 @@
+ 1124 Deprecated Amulet of the Palomino
+ item      common, Miscellaneous, neck
+ level     ilvl 45, requires level 40
+ binds     binds when picked up
+-effect    use: 471 Palamino Stallion
++effect    use: 471 Palomino Stallion
+ text      "Summons a Palamino to be your steed."
+ sells     25000 copper
+--- 1177 Oil of Olaf
++++ 1177 Oil of Olaf
+@@ -1,5 +1,5 @@
+ 1177 Oil of Olaf
+ item      common, Other
+ level     ilvl 8
+-effect    use: 673 Elixir of Minor Defense (1 charge, consumed, 1 s cooldown)
++effect    use: 673 Elixir of Minor Defense (1 charge, consumed, 1 s cooldown, 3 s shared cooldown)
+ sells     3 copper
+--- 2074 Solid Shortblade
++++ 2074 Solid Shortblade
+@@ -1,7 +1,7 @@
+ 2074 Solid Shortblade
+ item      uncommon, Sword, one-hand
+ level     ilvl 19
+ binds     binds when picked up
+-stats     +0 strength, +0 stamina
++stats     +1 strength, +1 stamina
+ weapon    16 - 31 damage, speed 2.50, 9.4 dps
+ sells     1237 copper
+--- 2413 Palomino
++++ 2413 Palomino
+@@ -1,5 +1,5 @@
+ 2413 Palomino
+ item      common, Junk
+ level     ilvl 40, requires level 40
+ binds     binds when used
+-effect    use: 471 Palamino Stallion (3 s shared cooldown)
++effect    use: 471 Palomino Stallion (3 s shared cooldown)
+--- 2850 Bronze Shortsword
++++ 2850 Bronze Shortsword
+@@ -1,6 +1,7 @@
+ 2850 Bronze Shortsword
+ item      uncommon, Sword, one-hand
+ level     ilvl 24, requires level 19
++binds     binds when equipped
+ stats     +3 agility
+ weapon    21 - 40 damage, speed 2.50, 12.2 dps
+ sells     1439 copper
+--- 2866 Rough Bronze Cuirass
++++ 2866 Rough Bronze Cuirass
+@@ -1,5 +1,6 @@
+ 2866 Rough Bronze Cuirass
+ item      uncommon, Mail, chest
+ level     ilvl 23, requires level 18
++binds     binds when equipped
+ stats     +8 stamina
+ sells     752 copper
+--- 3382 Minor Troll's Blood Elixir
++++ 3382 Minor Troll's Blood Elixir
+@@ -1,5 +1,5 @@
+ 3382 Minor Troll's Blood Elixir
+-item      common, Potions
++item      common, Elixirs
+ level     ilvl 8, requires level 1
+ effect    use: 3219 Minor Troll's Blood Elixir (1 charge, consumed, 3 s shared cooldown)
+ sells     10 copper
+--- 3388 Lesser Troll's Blood Elixir
++++ 3388 Lesser Troll's Blood Elixir
+@@ -1,5 +1,5 @@
+ 3388 Lesser Troll's Blood Elixir
+-item      common, Potions
++item      common, Elixirs
+ level     ilvl 25, requires level 15
+-effect    use: 3222 Regeneration (1 charge, consumed, 3 s shared cooldown)
++effect    use: 3222 Lesser Troll's Blood Elixir (1 charge, consumed, 3 s shared cooldown)
+ sells     40 copper
+--- 3480 Rough Bronze Shoulders
++++ 3480 Rough Bronze Shoulders
+@@ -1,5 +1,6 @@
+ 3480 Rough Bronze Shoulders
+ item      uncommon, Mail, shoulders
+ level     ilvl 22, requires level 17
++binds     binds when equipped
+ stats     +4 stamina, +3 strength
+ sells     532 copper
+--- 3826 Troll's Blood Elixir
++++ 3826 Troll's Blood Elixir
+@@ -1,5 +1,5 @@
+ 3826 Troll's Blood Elixir
+-item      common, Potions
++item      common, Elixirs
+ level     ilvl 36, requires level 26
+-effect    use: 3223 Regeneration (1 charge, consumed, 3 s shared cooldown)
++effect    use: 3223 Troll's Blood Elixir (1 charge, consumed, 3 s shared cooldown)
+ sells     105 copper
+--- 4255 Green Leather Armor
++++ 4255 Green Leather Armor
+@@ -1,6 +1,6 @@
+ 4255 Green Leather Armor
+ item      uncommon, Leather, chest
+ level     ilvl 31, requires level 26
+-binds     binds when picked up
++binds     binds when equipped
+ stats     +8 agility, +8 intellect
+ sells     2366 copper
+--- 4261 Solliden's Trousers
++++ 4261 Solliden's Trousers
+@@ -1,5 +1,6 @@
+ 4261 Solliden's Trousers
+ item      uncommon, Cloth, legs
+ level     ilvl 10, requires level 5
++binds     binds when equipped
+ stats     +1 strength
+ sells     31 copper
+--- 4302 Small Green Dagger
++++ 4302 Small Green Dagger
+@@ -1,6 +1,7 @@
+ 4302 Small Green Dagger
+ item      uncommon, Dagger, one-hand
+ level     ilvl 12, requires level 7
++binds     binds when equipped
+ stats     +1 stamina
+ weapon    6 - 13 damage, speed 1.50, 6.3 dps
+ sells     146 copper
+--- 5196 Smite's Reaver
++++ 5196 Smite's Reaver
+@@ -1,7 +1,7 @@
+ 5196 Smite's Reaver
+ item      rare, Axe, one-hand
+ level     ilvl 21, requires level 17
+ binds     binds when picked up
+-stats     +3 strength, +2 spirit, +2 stamina
++stats     +3 strength, +3 spirit
+ weapon    18 - 35 damage, speed 1.90, 13.9 dps
+ sells     1963 copper
+--- 5197 Cookie's Tenderizer
++++ 5197 Cookie's Tenderizer
+@@ -1,8 +1,8 @@
+ 5197 Cookie's Tenderizer
+ item      rare, Mace, one-hand
+ level     ilvl 21, requires level 16
+ binds     binds when picked up
+-stats     +4 strength
++stats     +4 spirit
+ weapon    27 - 51 damage, speed 2.80, 13.9 dps
+ effect    chance on hit: 1292008 Tenderized
+ sells     1963 copper
+--- 5198 Cookie's Stirring Rod
++++ 5198 Cookie's Stirring Rod
+@@ -1,7 +1,7 @@
+ 5198 Cookie's Stirring Rod
+ item      rare, Wand, ranged
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +3 fire resistance, +3 spell power
+ weapon    20 - 38 damage, speed 1.30, 22.3 dps
++effect    equip: 1322312 Cookie's Stirring Rod
+ sells     1693 copper
+--- 5201 Emberstone Staff
++++ 5201 Emberstone Staff
+@@ -1,7 +1,7 @@
+ 5201 Emberstone Staff
+ item      rare, Staff, two-hand
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +5 spirit, +5 stamina, +8 fire resistance
++stats     +8 stamina, +8 fire resistance
+ weapon    45 - 69 damage, speed 3.00, 19 dps
+ sells     2822 copper
+--- 6040 Golden Scale Bracers
++++ 6040 Golden Scale Bracers
+@@ -1,5 +1,6 @@
+ 6040 Golden Scale Bracers
+ item      uncommon, Mail, wrists
+ level     ilvl 37, requires level 32
++binds     binds when equipped
+ stats     +5 stamina, +6 strength
+ sells     1649 copper
+--- 6953 Verigan's Fist
++++ 6953 Verigan's Fist
+@@ -1,8 +1,9 @@
+ 6953 Verigan's Fist
+ item      rare, Mace, two-hand
+ level     ilvl 31
+ binds     binds when picked up
+ classes   paladin
+-stats     +7 stamina, +12 spirit, +6 intellect
++stats     +5 stamina, +10 spirit, +6 intellect
+ weapon    65 - 99 damage, speed 3.20, 25.6 dps
++effect    chance on hit: 1322218 Holy Forgefire
+ sells     7459 copper
+--- 7606 Polar Gauntlets
++++ 7606 Polar Gauntlets
+@@ -1,6 +1,6 @@
+ 7606 Polar Gauntlets
+-item      rare, Mail, hands
++item      uncommon, Mail, hands
+ level     ilvl 22
+ binds     binds when picked up
+-stats     +6 strength, +6 spirit
++stats     +4 strength, +2 spirit
+ sells     677 copper
+--- 7607 Sable Wand
++++ 7607 Sable Wand
+@@ -1,7 +1,7 @@
+ 7607 Sable Wand
+-item      rare, Wand, ranged
++item      uncommon, Wand, ranged
+ level     ilvl 22
+ binds     binds when picked up
+-stats     +3 spell power, +3 spirit
+-weapon    28 - 52 damage, speed 1.80, 22.2 dps
++stats     +2 spirit
++weapon    21 - 40 damage, speed 1.80, 16.9 dps
+ sells     1693 copper
+--- 7914 Barbaric Iron Breastplate
++++ 7914 Barbaric Iron Breastplate
+@@ -1,5 +1,6 @@
+ 7914 Barbaric Iron Breastplate
+ item      uncommon, Mail, chest
+ level     ilvl 32, requires level 27
++binds     binds when equipped
+ stats     +12 strength
+ sells     3330 copper
+--- 7922 Steel Plate Helm
++++ 7922 Steel Plate Helm
+@@ -1,5 +1,6 @@
+ 7922 Steel Plate Helm
+ item      uncommon, Plate, head
+ level     ilvl 43, requires level 40
++binds     binds when equipped
+ stats     +12 stamina, +12 strength
+ sells     2377 copper
+--- 7956 Bronze Warhammer
++++ 7956 Bronze Warhammer
+@@ -1,6 +1,7 @@
+ 7956 Bronze Warhammer
+ item      uncommon, Mace, two-hand
+ level     ilvl 25, requires level 20
++binds     binds when equipped
+ stats     +6 stamina, +6 strength
+ weapon    47 - 71 damage, speed 3.50, 16.9 dps
+ sells     1944 copper
+--- 7957 Bronze Greatsword
++++ 7957 Bronze Greatsword
+@@ -1,6 +1,7 @@
+ 7957 Bronze Greatsword
+ item      uncommon, Sword, two-hand
+ level     ilvl 26, requires level 21
++binds     binds when equipped
+ stats     +7 spell power, +6 stamina
+ weapon    47 - 72 damage, speed 3.40, 17.5 dps
+ sells     2205 copper
+--- 7958 Bronze Battle Axe
++++ 7958 Bronze Battle Axe
+@@ -1,6 +1,7 @@
+ 7958 Bronze Battle Axe
+ item      uncommon, Axe, two-hand
+ level     ilvl 27, requires level 22
++binds     binds when equipped
+ stats     +10 strength
+ weapon    48 - 73 damage, speed 3.30, 18.3 dps
+ sells     2435 copper
+--- 7997 Red Defias Mask
++++ 7997 Red Defias Mask
+@@ -1,6 +1,6 @@
+ 7997 Red Defias Mask
+-item      poor, Miscellaneous, head
++item      poor, Leather, head
+ level     ilvl 15
+ binds     binds when picked up
+ classes   rogue, monk
+ sells     81 copper
+--- 11287 Lesser Magic Wand
++++ 11287 Lesser Magic Wand
+@@ -1,7 +1,7 @@
+ 11287 Lesser Magic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 15, requires level 5
+ binds     binds when equipped
+ stats     +1 spell power
+ weapon    12 - 22 damage, speed 1.50, 11.3 dps
+-sells     508 copper
++sells     1 copper
+--- 11288 Greater Magic Wand
++++ 11288 Greater Magic Wand
+@@ -1,7 +1,7 @@
+ 11288 Greater Magic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 23, requires level 13
+ binds     binds when equipped
+ stats     +2 spell power
+ weapon    22 - 41 damage, speed 1.80, 17.5 dps
+-sells     1535 copper
++sells     1 copper
+--- 11289 Lesser Mystic Wand
++++ 11289 Lesser Mystic Wand
+@@ -1,7 +1,7 @@
+ 11289 Lesser Mystic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 31, requires level 26
+ binds     binds when equipped
+ stats     +4 intellect
+ weapon    23 - 43 damage, speed 1.30, 25.4 dps
+-sells     3581 copper
++sells     1 copper
+--- 13503 Alchemist's Stone
++++ 13503 Alchemist's Stone
+@@ -1,8 +1,8 @@
+-13503 Alchemists' Stone
++13503 Alchemist's Stone
+ item      uncommon, Miscellaneous, trinket
+ level     ilvl 50, requires level 45
+ binds     binds when picked up
+ stats     +4 spirit
+ effect    equip: 17619 Alchemists Stone
+ text      "Can be used for transmutations in place of a Philosopher's Stone."
+ sells     25000 copper
+--- 13517 Recipe: Alchemist's Stone
++++ 13517 Recipe: Alchemist's Stone
+@@ -1,7 +1,7 @@
+-13517 Recipe: Alchemists' Stone
++13517 Recipe: Alchemist's Stone
+ item      common, Alchemy
+ level     ilvl 50
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 17632 Alchemist's Stone
+ text      "Teaches you how to make an Alchemist's Stone."
+--- 14147 Cavedweller Bracers
++++ 14147 Cavedweller Bracers
+@@ -1,6 +1,6 @@
+ 14147 Cavedweller Bracers
+ item      rare, Mail, wrists
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +2 strength, +3 stamina
++stats     +2 strength, +3 spirit
+ sells     322 copper
+--- 14148 Crystalline Cuffs
++++ 14148 Crystalline Cuffs
+@@ -1,6 +1,6 @@
+ 14148 Crystalline Cuffs
+ item      rare, Cloth, wrists
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +3 spirit, +2 intellect
++stats     +3 spirit, +2 stamina
+ sells     215 copper
+--- 14150 Robe of Evocation
++++ 14150 Robe of Evocation
+@@ -1,6 +1,6 @@
+ 14150 Robe of Evocation
+ item      rare, Cloth, chest
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +4 intellect, +4 stamina, +5 spirit
++stats     +4 intellect, +6 stamina, +4 spirit
+ sells     430 copper
+--- 14151 Chanting Blade
++++ 14151 Chanting Blade
+@@ -1,7 +1,7 @@
+ 14151 Chanting Blade
+ item      rare, Dagger, one-hand
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +2 agility, +2 stamina
++stats     +2 agility, +3 stamina
+ weapon    12 - 24 damage, speed 1.50, 12 dps
+ sells     1076 copper
+--- 15424 Axe of Orgrimmar
++++ 15424 Axe of Orgrimmar
+@@ -1,7 +1,7 @@
+ 15424 Axe of Orgrimmar
+ item      rare, Axe, two-hand
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +5 stamina, +5 strength
++stats     +6 stamina, +6 spirit
+ weapon    42 - 64 damage, speed 3.30, 16.1 dps
+ sells     1614 copper
+--- 15443 Kris of Orgrimmar
++++ 15443 Kris of Orgrimmar
+@@ -1,7 +1,7 @@
+ 15443 Kris of Orgrimmar
+ item      rare, Dagger, one-hand
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +2 stamina, +2 spirit
++stats     +4 stamina
+ weapon    12 - 24 damage, speed 1.50, 12 dps
+ sells     1291 copper
+--- 15444 Staff of Orgrimmar
++++ 15444 Staff of Orgrimmar
+@@ -1,7 +1,7 @@
+ 15444 Staff of Orgrimmar
+ item      rare, Staff, two-hand
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +5 spirit, +4 intellect, +2 mana per 5 sec
++stats     +6 agility, +6 intellect
+ weapon    42 - 64 damage, speed 3.30, 16.1 dps
+ sells     1614 copper
+--- 15445 Hammer of Orgrimmar
++++ 15445 Hammer of Orgrimmar
+@@ -1,7 +1,7 @@
+ 15445 Hammer of Orgrimmar
+ item      rare, Mace, main hand
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +2 strength, +2 stamina
++stats     +3 strength, +3 spirit
+ weapon    25 - 47 damage, speed 2.90, 12.4 dps
+ sells     1291 copper
+--- 15449 Ghastly Trousers
++++ 15449 Ghastly Trousers
+@@ -1,6 +1,6 @@
+ 15449 Ghastly Trousers
+-item      rare, Cloth, legs
++item      uncommon, Cloth, legs
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +4 stamina, +5 intellect, +2 mana per 5 sec
++stats     +3 stamina, +3 intellect
+ sells     516 copper
+--- 15450 Dredgemire Leggings
++++ 15450 Dredgemire Leggings
+@@ -1,6 +1,6 @@
+ 15450 Dredgemire Leggings
+-item      rare, Leather, legs
++item      uncommon, Leather, legs
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +4 stamina, +4 spirit, +4 agility
++stats     +3 stamina, +3 spirit
+ sells     645 copper
+--- 15451 Gargoyle Leggings
++++ 15451 Gargoyle Leggings
+@@ -1,6 +1,6 @@
+ 15451 Gargoyle Leggings
+-item      rare, Mail, legs
++item      uncommon, Mail, legs
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +4 strength, +5 stamina, +3 spirit
++stats     +3 strength, +3 spirit
+ sells     774 copper
+--- 15452 Featherbead Bracers
++++ 15452 Featherbead Bracers
+@@ -1,6 +1,6 @@
+ 15452 Featherbead Bracers
+-item      rare, Cloth, wrists
++item      uncommon, Cloth, wrists
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +5 intellect
++stats     +3 intellect
+ sells     258 copper
+--- 15453 Savannah Bracers
++++ 15453 Savannah Bracers
+@@ -1,6 +1,6 @@
+ 15453 Savannah Bracers
+-item      rare, Leather, wrists
++item      uncommon, Leather, wrists
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +5 stamina
++stats     +3 stamina
+ sells     325 copper
+--- 20004 Major Troll's Blood Elixir
++++ 20004 Major Troll's Blood Elixir
+@@ -1,5 +1,5 @@
+ 20004 Major Troll's Blood Elixir
+-item      common, Potions
++item      common, Elixirs
+ level     ilvl 58, requires level 53
+-effect    use: 24361 Regeneration (1 charge, consumed, 3 s shared cooldown)
++effect    use: 24361 Major Troll's Blood Elixir (1 charge, consumed, 3 s shared cooldown)
+ sells     1000 copper
+--- 20007 Mageblood Elixir
++++ 20007 Mageblood Elixir
+@@ -1,5 +1,5 @@
+ 20007 Mageblood Elixir
+-item      common, Potions
++item      common, Elixirs
+ level     ilvl 50, requires level 40
+ effect    use: 24363 Mana Regeneration (1 charge, consumed, 3 s shared cooldown)
+ sells     1000 copper
+--- 22192 Bloodkelp Elixir of Dodging
++++ 22192 Bloodkelp Elixir of Dodging
+@@ -1,5 +1,5 @@
+ 22192 Bloodkelp Elixir of Dodging
+ item      common, Other
+ level     ilvl 60
+ binds     binds when picked up
+-effect    use: 27653 Elixir of Dodging (1 charge, consumed)
++effect    use: 27653 Elixir of Dodging (1 charge, consumed, 3 s shared cooldown)
+--- 22193 Bloodkelp Elixir of Resistance
++++ 22193 Bloodkelp Elixir of Resistance
+@@ -1,5 +1,5 @@
+ 22193 Bloodkelp Elixir of Resistance
+ item      common, Other
+ level     ilvl 60
+ binds     binds when picked up
+-effect    use: 27652 Elixir of Resistance (1 charge, consumed)
++effect    use: 27652 Elixir of Resistance (1 charge, consumed, 3 s shared cooldown)
+--- 217287 Greater Mystic Wand
++++ 217287 Greater Mystic Wand
+@@ -1,7 +1,7 @@
+ 217287 Greater Mystic Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 35, requires level 30
+ binds     binds when equipped
+ stats     +5 spell power
+ weapon    40 - 76 damage, speed 2.00, 29 dps
+-sells     5263 copper
++sells     1 copper
+--- 247684 Forgotten Ashes
++++ 247684 Forgotten Ashes
+@@ -1,6 +1,6 @@
+ 247684 Forgotten Ashes
+ item      common, Quest
+ level     ilvl 1
+ binds     binds when picked up
+ unique    yes
+-text      "All that remains of a terrible thing"
++text      "All that remains of a terrible thing."
+--- 248613 Lightning in a Bottle
++++ 248613 Lightning in a Bottle
+@@ -1,6 +1,6 @@
+ 248613 Lightning in a Bottle
+ item      common, Food & Drink
+ level     ilvl 25, requires level 15
+-effect    use: 5006 Food (1 charge, consumed)
++effect    use: 435 Food (1 charge, consumed)
+ text      "The "Lightning" is just mustard."
+ sells     25 copper
+--- 249144 Twisted Nether Wand
++++ 249144 Twisted Nether Wand
+@@ -1,7 +1,7 @@
+ 249144 Twisted Nether Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 42, requires level 37
+ binds     binds when equipped
+ stats     +6 spell power
+ weapon    35 - 67 damage, speed 1.50, 34 dps
+-sells     5263 copper
++sells     1 copper
+--- 249232 Lesser Eternal Wand
++++ 249232 Lesser Eternal Wand
+@@ -1,7 +1,7 @@
+ 249232 Lesser Eternal Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 54, requires level 49
+ binds     binds when equipped
+ stats     +8 spell power
+ weapon    64 - 119 damage, speed 2.00, 45.8 dps
+-sells     5263 copper
++sells     1 copper
+--- 249234 Dreambough Wand
++++ 249234 Dreambough Wand
+@@ -1,7 +1,7 @@
+ 249234 Dreambough Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 48, requires level 43
+ binds     binds when equipped
+ stats     +7 spell power
+ weapon    49 - 92 damage, speed 1.80, 39.2 dps
+-sells     5263 copper
++sells     1 copper
+--- 249237 Greater Eternal Wand
++++ 249237 Greater Eternal Wand
+@@ -1,7 +1,7 @@
+ 249237 Greater Eternal Wand
+ item      uncommon, Wand, ranged
+ level     ilvl 60, requires level 55
+ binds     binds when equipped
+ stats     +9 spell power
+ weapon    56 - 104 damage, speed 1.50, 53.3 dps
+-sells     5263 copper
++sells     1 copper
+--- 249477 Formula: Tenets of the Silver Hand
++++ 249477 Formula: Tenets of the Silver Hand
+@@ -1,8 +1,8 @@
+ 249477 Formula: Tenets of the Silver Hand
+ item      rare, Enchanting
+ level     ilvl 26
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1248754 Tenets of the Silver Hand
+-text      "Teaches you how to craft Tenants of the Silver Hand."
++text      "Teaches you how to craft Tenets of the Silver Hand."
+ sells     650 copper
+--- 249494 Formula: Libram of Invocation
++++ 249494 Formula: Libram of Invocation
+@@ -1,8 +1,8 @@
+ 249494 Formula: Libram of Invocation
+ item      rare, Enchanting
+ level     ilvl 42
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1249006 Libram of Invocation
+-text      "Teaches you how to craft Libram of Invocation."
++text      "Teaches you how to craft a Libram of Invocation."
+ sells     1050 copper
+--- 249495 Formula: Totem of Ancestral Protection
++++ 249495 Formula: Totem of Ancestral Protection
+@@ -1,8 +1,8 @@
+ 249495 Formula: Totem of Ancestral Protection
+ item      rare, Enchanting
+ level     ilvl 42
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1249015 Totem of Ancestral Protection
+-text      "Teaches you how to craft an Totem of Ancestral Protection."
++text      "Teaches you how to craft a Totem of Ancestral Protection."
+ sells     1050 copper
+--- 249539 Formula: Enchant Bracer - Superior Deflection
++++ 249539 Formula: Enchant Bracer - Superior Deflection
+@@ -1,8 +1,8 @@
+ 249539 Formula: Enchant Bracer - Superior Deflection
+ item      uncommon, Enchanting
+ level     ilvl 60
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1248665 Enchant Bracer - Superior Deflection
+-text      "Teaches you how to permanently enchant bracers to give +9 Defense Skill."
++text      "Teaches you how to permanently enchant bracers to give +6 Defense Skill."
+ sells     1500 copper
+--- 250327 Draught of Predatory Senses
++++ 250327 Draught of Predatory Senses
+@@ -1,5 +1,5 @@
+ 250327 Draught of Predatory Senses
+ item      common, Elixirs
+ level     ilvl 45, requires level 45
+-effect    use: 1250889 Draught of Predatory Senses (1 charge, consumed)
++effect    use: 1250889 Draught of Predatory Senses (1 charge, consumed, 3 s shared cooldown)
+ sells     100 copper
+--- 250725 Crate of Exotic Parts
++++ 250725 Crate of Exotic Parts
+@@ -1,7 +1,7 @@
+ 250725 Crate of Exotic Parts
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+ effect    use (no delay): 1251286 Unstable Package
+-text      "A bill-of-lading is attached that clearly marks the shipment as hazardous and requiring gentle transport.  Notes on the contents indicate that they will soon expire if not secured properly by the recipient."
++text      "A bill of lading is attached that clearly marks the shipment as hazardous and requiring gentle transport. Notes on the contents indicate that they will soon expire if not secured properly by the recipient."
+--- 250744 Firestarter Fir
++++ 250744 Firestarter Fir
+@@ -1,5 +1,5 @@
+ 250744 Firestarter Fir
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+-text      "A twisted handful of viable kindling"
++text      "A twisted handful of viable kindling."
+--- 251320 Sachet of Spirit Powder
++++ 251320 Sachet of Spirit Powder
+@@ -1,6 +1,6 @@
+-251320 Satchet of Spirit Powder
++251320 Sachet of Spirit Powder
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+ text      "The exact composition of the powder is unknown, but it sure smells like feet."
+--- 251485 Edward's Knife
++++ 251485 Edward's Knife
+@@ -1,7 +1,7 @@
+ 251485 Edward's Knife
+-item      rare, Dagger, one-hand
++item      uncommon, Dagger, one-hand
+ level     ilvl 24
+ binds     binds when picked up
+-stats     +4 stamina, +4 agility
+-weapon    17 - 33 damage, speed 1.60, 15.6 dps
++stats     +2 stamina, +2 agility
++weapon    13 - 26 damage, speed 1.60, 12.2 dps
+ sells     1046 copper
+--- 251486 Tabitha's Cuffs
++++ 251486 Tabitha's Cuffs
+@@ -1,6 +1,6 @@
+ 251486 Tabitha's Cuffs
+-item      rare, Cloth, wrists
++item      uncommon, Cloth, wrists
+ level     ilvl 24
+ binds     binds when picked up
+-stats     +3 stamina, +6 intellect
++stats     +4 stamina, +3 spell power
+ sells     1665 copper
+--- 251534 Gnarled Necromancer's Staff
++++ 251534 Gnarled Necromancer's Staff
+@@ -1,8 +1,8 @@
+ 251534 Gnarled Necromancer's Staff
+ item      rare, Staff, two-hand
+ level     ilvl 24
+ binds     binds when picked up
+-stats     +10 intellect
++stats     +10 spirit
+ weapon    45 - 69 damage, speed 2.80, 20.4 dps
+ effect    equip: 1309369 Forsaken Weapons
+ sells     995 copper
+--- 253258 The Hum Gun
++++ 253258 The Hum Gun
+@@ -1,6 +1,6 @@
+ 253258 The Hum Gun
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+ effect    use: 1255924 Ear Irritant (20 s cooldown, 30 s shared cooldown)
+-text      "You can almost make out the sigil of the alliance, barely visible under heavy corrosion"
++text      "You can almost make out the sigil of the alliance, barely visible under heavy corrosion."
+--- 254696 Reverence
++++ 254696 Reverence
+@@ -1,8 +1,8 @@
+-254696 Reverance
++254696 Reverence
+ item      poor, Staff, two-hand
+ level     ilvl 75, requires level 60
+ binds     binds when picked up
+ unique    yes
+ classes   priest
+ stats     intellect (allocation 5962, no budget), stamina (allocation 1923, no budget), spirit (allocation 2308, no budget), shadow resistance (allocation 3846, no budget)
+ weapon    85 - 129 damage, speed 3.00, 35.7 dps
+--- 254780 Huge Feather
++++ 254780 Huge Feather
+@@ -1,6 +1,6 @@
+ 254780 Huge Feather
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+-text      "Only the procurer could tell whether it was pulled from a harpy or a hippogryph"
++text      "Only the procurer could tell whether it was pulled from a harpy or a hippogryph."
+--- 254859 Vicious Hook Talon
++++ 254859 Vicious Hook Talon
+@@ -1,6 +1,6 @@
+ 254859 Vicious Hook Talon
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+-text      "Retractable claw, like a razor, on the middle toe"
++text      "Retractable claw, like a razor, on the middle toe."
+--- 258530 Lucky Lure
++++ 258530 Lucky Lure
+@@ -1,6 +1,6 @@
+ 258530 Lucky Lure
+ item      common, Quest
+ level     ilvl 1
+ binds     binds when picked up
+ unique    yes
+-text      "Covered in the guts of countless swamp fish"
++text      "Covered in the guts of countless swamp fish."
+--- 258771 Al'Alketh Cultist's Ear
++++ 258771 Al'Alketh Cultist's Ear
+@@ -1,5 +1,5 @@
+ 258771 Al'Alketh Cultist's Ear
+ item      common, Junk
+ level     ilvl 1
+ binds     binds when picked up
+-text      "You can't help but wonder what the Nightclaw plan to do with all these ears?"
++text      "You can't help but wonder what the Nightclaw plan to do with all these ears."
+--- 260236 Scribbled Directions to Sulfur Vents
++++ 260236 Scribbled Directions to Sulfur Vents
+@@ -1,6 +1,6 @@
+ 260236 Scribbled Directions to Sulfur Vents
+ item      common, Other
+ level     ilvl 1, requires level 1
+ binds     quest item
+ unique    yes
+-text      "A hastily-scrawled list of locations for prospecting."
++text      "A hastily scrawled list of locations for prospecting."
+--- 263411 Idol of Shifting Tides
++++ 263411 Idol of Shifting Tides
+@@ -1,6 +1,6 @@
+-263411 Windcharged Leaf
+-item      common, Idol, relic
+-level     ilvl 6
++263411 Idol of Shifting Tides
++item      uncommon, Idol, relic
++level     ilvl 16
+ binds     binds when picked up
+ classes   druid
+ effect    equip: 1270470 Clever Shapeshifter
+--- 263412 Totem of Charged Flames
++++ 263412 Totem of Charged Flames
+@@ -1,6 +1,6 @@
+-263412 Windcarved Effigy
+-item      common, Totem, relic
+-level     ilvl 6
++263412 Totem of Charged Flames
++item      uncommon, Totem, relic
++level     ilvl 10
+ binds     binds when picked up
+ classes   shaman
+-effect    equip: 1270478 Charged Lightning
++effect    equip: 1270478 Flame Charged
+--- 264218 Schematic: EZ-Thro Tru-Trigger
++++ 264218 Schematic: EZ-Thro Tru-Trigger
+@@ -1,7 +1,7 @@
+ 264218 Schematic: EZ-Thro Tru-Trigger
+ item      common, Engineering
+ level     ilvl 48
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1266921 EZ-Thro Tru-Trigger
+-text      "Teaches you how to make Ez-Thro Tru-Trigger."
++text      "Teaches you how to make EZ-Thro Tru-Trigger."
+ sells     950 copper
+--- 265141 Bloody Heirloom
++++ 265141 Bloody Heirloom
+@@ -1,5 +1,5 @@
+ 265141 Bloody Heirloom
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+-text      "Drenched in the blood of those who were once were promised a brighter future."
++text      "Drenched in the blood of those who were once promised a brighter future."
+--- 268535 Bloodied Insignia
++++ 268535 Bloodied Insignia
+@@ -1,4 +1,5 @@
+ 268535 Bloodied Insignia
+-item      common, Other
+-level     ilvl 1
++item      common, Quest
++level     ilvl 1, requires level 16
+ binds     binds when picked up
++unique    yes
+--- 268813 Fel Ash Sample
++++ 268813 Fel Ash Sample
+@@ -1,5 +1,5 @@
+ 268813 Fel Ash Sample
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+-text      "The acrid smell of brimestone wafts off the pile, causing a burning sensation in the nose and throat if accidently inhaled. It is warm to the touch and glows softly with latent Fel energy."
++text      "The acrid smell of brimstone wafts off the pile, causing a burning sensation in the nose and throat if accidentally inhaled. It is warm to the touch and glows softly with latent Fel energy."
+--- 268814 Sludgy Bits
++++ 268814 Sludgy Bits
+@@ -1,5 +1,5 @@
+ 268814 Sludgy Bits
+ item      poor, Junk
+ level     ilvl 1
+-text      "Pieces of something that didn't quite liquify..."
++text      "Pieces of something that didn't quite liquefy..."
+ sells     15 copper
+--- 268815 Bone Fragments
++++ 268815 Bone Fragments
+@@ -1,5 +1,5 @@
+ 268815 Bone Fragments
+ item      poor, Junk
+ level     ilvl 1
+-text      "To small to identify, yet sharp enough to leave a nasty cut."
++text      "Too small to identify, yet sharp enough to leave a nasty cut."
+ sells     15 copper
+--- 269008 Corrupted Grovewalker Sap
++++ 269008 Corrupted Grovewalker Sap
+@@ -1,5 +1,5 @@
+ 269008 Corrupted Grovewalker Sap
+ item      common, Quest
+ level     ilvl 60
+ binds     quest item
+-text      "Thick and almost gellationous in consistancy, this sap seems to be as acrid as it is thick."
++text      "Thick and almost gelatinous in consistency, this sap seems to be as acrid as it is thick."
+--- 269233 Ashen Infused Crystal
++++ 269233 Ashen Infused Crystal
+@@ -1,6 +1,6 @@
+ 269233 Ashen Infused Crystal
+ item      common, Quest
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ unique    yes
+-text      "As you hold this crystal, it almost feels as if somthing is writhing within it."
++text      "As you hold this crystal, it almost feels as if something is writhing within it."
+--- 270003 Garrison Cuffs
++++ 270003 Garrison Cuffs
+@@ -1,6 +1,6 @@
+ 270003 Garrison Cuffs
+-item      rare, Mail, wrists
++item      uncommon, Mail, wrists
+ level     ilvl 18
+ binds     binds when picked up
+-stats     +4 spirit, +4 healing, +1 spell damage
++stats     +2 spirit, +2 healing, +1 spell damage
+ sells     389 copper
+--- 270015 Bravo's Armbands
++++ 270015 Bravo's Armbands
+@@ -1,6 +1,6 @@
+ 270015 Bravo's Armbands
+-item      rare, Leather, wrists
++item      uncommon, Leather, wrists
+ level     ilvl 22
+ binds     binds when picked up
+-stats     +4 agility, +2 strength, +4 spirit
++stats     +3 agility, +3 strength
+ sells     555 copper
+--- 270016 Dreamer's Leggings
++++ 270016 Dreamer's Leggings
+@@ -1,6 +1,6 @@
+ 270016 Dreamer's Leggings
+-item      rare, Leather, legs
++item      uncommon, Leather, legs
+ level     ilvl 22
+ binds     binds when picked up
+-stats     +11 intellect, +4 spell power
++stats     +6 intellect, +2 spell power
+ sells     1106 copper
+--- 270227 Ephemeral Choker
++++ 270227 Ephemeral Choker
+@@ -1,6 +1,6 @@
+ 270227 Ephemeral Choker
+ item      rare, Miscellaneous, neck
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +4 stamina, +2 spirit
++stats     +5 spirit
+ sells     429 copper
+--- 270228 Golemheart Stave
++++ 270228 Golemheart Stave
+@@ -1,7 +1,7 @@
+ 270228 Golemheart Stave
+ item      rare, Staff, two-hand
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +6 intellect, +5 spirit, +3 stamina
++stats     +9 fire resistance
+ weapon    41 - 62 damage, speed 3.20, 16.1 dps
+ sells     1392 copper
+--- 270229 Treads of the Protector Golem
++++ 270229 Treads of the Protector Golem
+@@ -1,6 +1,6 @@
+ 270229 Treads of the Protector Golem
+ item      rare, Mail, feet
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +5 strength, +4 spirit
++stats     +5 strength, +50 armor
+ sells     469 copper
+--- 270230 Kindlegem Girdle
++++ 270230 Kindlegem Girdle
+@@ -1,6 +1,6 @@
+ 270230 Kindlegem Girdle
+ item      rare, Mail, waist
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +4 strength, +4 stamina
++stats     +7 stamina
+ sells     337 copper
+--- 270231 Flamefist Grips
++++ 270231 Flamefist Grips
+@@ -1,6 +1,6 @@
+ 270231 Flamefist Grips
+ item      rare, Leather, hands
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +4 agility, +2 strength, +4 spirit
++stats     +5 agility, +5 spirit
+ sells     262 copper
+--- 270256 Durgen's Crescent Axe
++++ 270256 Durgen's Crescent Axe
+@@ -1,7 +1,7 @@
+ 270256 Durgen's Crescent Axe
+ item      rare, Axe, main hand
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +2 strength, +1 agility, +1 spirit
++stats     +4 strength
+ weapon    20 - 39 damage, speed 2.40, 12.3 dps
+ sells     1094 copper
+--- 270261 Robes of the Disgraced Thane
++++ 270261 Robes of the Disgraced Thane
+@@ -1,6 +1,6 @@
+ 270261 Robes of the Disgraced Thane
+ item      rare, Cloth, chest
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +5 intellect, +7 spirit
++stats     +8 spell power, +4 spirit
+ sells     420 copper
+--- 271096 Aetherwisp Bracers
++++ 271096 Aetherwisp Bracers
+@@ -1,6 +1,6 @@
+ 271096 Aetherwisp Bracers
+ item      rare, Cloth, wrists
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +3 spell power, +3 stamina
++stats     +3 spell power, +30 armor
+ sells     215 copper
+--- 271097 Spiritwraith Drape
++++ 271097 Spiritwraith Drape
+@@ -1,6 +1,6 @@
+ 271097 Spiritwraith Drape
+ item      rare, Cloth, back
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +4 agility, +3 spirit
++stats     +3 agility, +4 spirit
+ sells     474 copper
+--- 271098 Golemguard Chest
++++ 271098 Golemguard Chest
+@@ -1,6 +1,6 @@
+ 271098 Golemguard Chest
+ item      rare, Mail, chest
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +6 stamina, +4 strength, +4 spirit
++stats     +6 stamina, +60 armor
+ sells     407 copper
+--- 271201 Atrophic Girdle
++++ 271201 Atrophic Girdle
+@@ -1,6 +1,6 @@
+ 271201 Atrophic Girdle
+ item      rare, Mail, waist
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +5 strength, +5 stamina
++stats     +3 strength, +7 stamina
+ sells     505 copper
+--- 271202 Witherbite Bracers
++++ 271202 Witherbite Bracers
+@@ -1,6 +1,6 @@
+ 271202 Witherbite Bracers
+ item      rare, Leather, wrists
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +4 agility, +3 intellect, +3 spirit
++stats     +4 agility, +5 spell power
+ sells     426 copper
+--- 271203 Segmented Spider Leg
++++ 271203 Segmented Spider Leg
+@@ -1,7 +1,7 @@
+ 271203 Segmented Spider Leg
+ item      rare, Staff, two-hand
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +9 agility, +5 strength
++stats     +9 agility, +5 spirit
+ weapon    50 - 76 damage, speed 3.60, 17.5 dps
+ sells     2123 copper
+--- 271204 Meathook Slicer
++++ 271204 Meathook Slicer
+@@ -1,7 +1,7 @@
+ 271204 Meathook Slicer
+ item      rare, Dagger, one-hand
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +4 agility, +3 stamina
++stats     +5 stamina
+ weapon    17 - 32 damage, speed 1.80, 13.6 dps
+ sells     1705 copper
+--- 271205 Abomination Bones
++++ 271205 Abomination Bones
+@@ -1,6 +1,6 @@
+ 271205 Abomination Bones
+ item      rare, Mail, chest
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +9 strength, +4 intellect, +2 stamina
++stats     +8 strength, +5 shadow resistance
+ sells     1027 copper
+--- 271206 Leftover Abomination Skin
++++ 271206 Leftover Abomination Skin
+@@ -1,6 +1,6 @@
+ 271206 Leftover Abomination Skin
+ item      rare, Cloth, chest
+ level     ilvl 20, requires level 15
+ binds     binds when picked up
+-stats     +8 spell power, +7 spirit
++stats     +7 shadow damage, +9 spirit
+ sells     687 copper
+--- 271207 Rotmender's Leggings
++++ 271207 Rotmender's Leggings
+@@ -1,7 +1,7 @@
+ 271207 Rotmender's Leggings
+ item      rare, Cloth, legs
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +8 intellect, +5 spirit, +5 stamina
++stats     +4 mana per 5 sec, +5 stamina
+ set       Rotmender's Raiment
+ sells     689 copper
+--- 271208 Grip of Fear
++++ 271208 Grip of Fear
+@@ -1,6 +1,6 @@
+ 271208 Grip of Fear
+ item      rare, Mail, hands
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +5 strength, +4 agility, +5 stamina
++stats     +6 strength, +6 intellect
+ sells     519 copper
+--- 271209 Bonerust Leggings
++++ 271209 Bonerust Leggings
+@@ -1,6 +1,6 @@
+ 271209 Bonerust Leggings
+ item      rare, Mail, legs
+ level     ilvl 21, requires level 16
+ binds     binds when picked up
+-stats     +7 strength, +6 agility, +3 spirit
++stats     +4 strength, +9 agility
+ sells     1042 copper
+--- 271210 Tuskwrap Belt
++++ 271210 Tuskwrap Belt
+@@ -1,6 +1,6 @@
+ 271210 Tuskwrap Belt
+ item      rare, Cloth, waist
+ level     ilvl 21, requires level 16
+ binds     binds when picked up
+-stats     +5 intellect, +5 stamina
++stats     +6 spell power, +5 spirit
+ sells     348 copper
+--- 271212 Bloodied Chestwraps
++++ 271212 Bloodied Chestwraps
+@@ -1,6 +1,6 @@
+ 271212 Bloodied Chestwraps
+ item      rare, Leather, chest
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +9 agility, +4 intellect, +4 stamina
++stats     +7 agility, +9 spirit
+ sells     814 copper
+--- 271213 Mirror of Rath'mael
++++ 271213 Mirror of Rath'mael
+@@ -1,6 +1,6 @@
+ 271213 Mirror of Rath'mael
+ item      rare, Shield, shield
+ level     ilvl 24, requires level 19
+ binds     binds when picked up
+-stats     +4 strength, +3 intellect, +4 stamina
++stats     +5 strength, +5 block rating
+ sells     1047 copper
+--- 271214 Rotmender's Treads
++++ 271214 Rotmender's Treads
+@@ -1,7 +1,7 @@
+ 271214 Rotmender's Treads
+ item      rare, Cloth, feet
+ level     ilvl 24, requires level 19
+ binds     binds when picked up
+-stats     +4 intellect, +4 spirit, +7 stamina
++stats     +5 spell damage, +7 stamina, +15 healing
+ set       Rotmender's Raiment
+ sells     492 copper
+--- 271215 Coldspire Staff
++++ 271215 Coldspire Staff
+@@ -1,7 +1,7 @@
+ 271215 Coldspire Staff
+ item      rare, Staff, two-hand
+ level     ilvl 24, requires level 19
+ binds     binds when picked up
+-stats     +13 spirit
++stats     +13 frost resistance, +32 frost damage
+ weapon    58 - 88 damage, speed 3.60, 20.3 dps
+ sells     2060 copper
+--- 271216 Scepter of the Abandoned
++++ 271216 Scepter of the Abandoned
+@@ -1,7 +1,7 @@
+ 271216 Scepter of the Abandoned
+ item      rare, Mace, main hand
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +5 strength
++stats     +5 shadow resistance
+ weapon    26 - 50 damage, speed 2.60, 14.6 dps
+ sells     1654 copper
+--- 271217 Corpse Chopper
++++ 271217 Corpse Chopper
+@@ -1,7 +1,7 @@
+ 271217 Corpse Chopper
+ item      rare, Axe, two-hand
+ level     ilvl 21, requires level 16
+ binds     binds when picked up
+-stats     +11 strength
+ weapon    52 - 79 damage, speed 3.60, 18.2 dps
++effect    use: 1322303 Corpse Chopper
+ sells     2076 copper
+--- 271218 Vileblood Scimitar
++++ 271218 Vileblood Scimitar
+@@ -1,7 +1,7 @@
+ 271218 Vileblood Scimitar
+ item      rare, Sword, one-hand
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +4 strength, +2 agility
++stats     +5 spirit
+ weapon    26 - 50 damage, speed 2.60, 14.6 dps
+ sells     1667 copper
+--- 271770 Explorers' League Cartographer's Kit
++++ 271770 Explorers' League Cartographer's Kit
+@@ -1,7 +1,7 @@
+ 271770 Explorers' League Cartographer's Kit
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+ effect    use: 1289422 Explorers' League Drawing Kit
+-text      "A standard issue kit with all the tools necessary for exploring and categorizing newly explored areas."
++text      "A standard-issue kit with all the tools necessary for exploring and categorizing newly explored areas."
+--- 271771 Drained Crystal Fragment
++++ 271771 Drained Crystal Fragment
+@@ -1,7 +1,7 @@
+ 271771 Drained Crystal Fragment
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-text      "A gem that is cool to the touch and hums gently. Strangely no light seems to filter through it."
++text      "A gem that is cool to the touch and hums gently. Strangely, no light seems to filter through it."
+--- 271898 Charged Crystal
++++ 271898 Charged Crystal
+@@ -1,6 +1,6 @@
+ 271898 Charged Crystal
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-text      "A gem that hums gently and seems to emit a static charge. On it's own it emits a tiny amount of light and small flashes can be seen right under the surface, as if a tiny storm was trapped within."
++text      "A gem that hums gently and seems to emit a static charge. On its own it emits a tiny amount of light and small flashes can be seen right under the surface, as if a tiny storm was trapped within."
+--- 271904 Volunteer's Lucky Seal
++++ 271904 Volunteer's Lucky Seal
+@@ -1,8 +1,8 @@
+ 271904 Volunteer's Lucky Seal
+ item      rare, Miscellaneous, trinket
+-level     ilvl 33, requires level 28
++level     ilvl 38, requires level 33
+ binds     binds when picked up
+-stats     +6 stamina
++stats     +7 stamina
+ effect    equip: 1316057 Volunteer's Lucky Seal
+ effect    equip: 1316058 Volunteer's Lucky Seal
+ sells     13921 copper
+--- 271905 Enriched Seal
++++ 271905 Enriched Seal
+@@ -1,8 +1,8 @@
+ 271905 Enriched Seal
+ item      rare, Miscellaneous, trinket
+-level     ilvl 33, requires level 28
++level     ilvl 38, requires level 33
+ binds     binds when picked up
+-stats     +6 stamina
++stats     +7 stamina
+ effect    equip: 1316053 Enriched Seal
+ effect    equip: 1316054 Enriched Seal
+ sells     6908 copper
+--- 271912 Moist Crystal
++++ 271912 Moist Crystal
+@@ -1,6 +1,6 @@
+ 271912 Moist Crystal
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-text      "A gem that seems to collect condensation on the surface making it perpetually wet and hums gently.When turned in the light, it looks as if there is water trapped within the crystal itself."
++text      "A gem that seems to collect condensation on the surface making it perpetually wet and hums gently. When turned in the light, it looks as if there is water trapped within the crystal itself."
+--- 271936 Guerrilla's Jagged Mace
++++ 271936 Guerrilla's Jagged Mace
+@@ -1,7 +1,7 @@
+-271936 Guerilla's Jagged Mace
++271936 Guerrilla's Jagged Mace
+ item      rare, Mace, main hand
+ level     ilvl 63, requires level 58
+ binds     binds when picked up
+ stats     +13 stamina, +11 attack power
+ weapon    81 - 151 damage, speed 2.80, 41.4 dps
+ sells     57738 copper
+--- 271937 Guerrilla's Jagged Mace
++++ 271937 Guerrilla's Jagged Mace
+@@ -1,7 +1,7 @@
+-271937 Guerilla's Jagged Mace
++271937 Guerrilla's Jagged Mace
+ item      rare, Mace, main hand
+ level     ilvl 53, requires level 48
+ binds     binds when picked up
+ stats     +11 stamina, +9 attack power
+ weapon    69 - 128 damage, speed 2.80, 35.2 dps
+ sells     33926 copper
+--- 271938 Guerrilla's Jagged Mace
++++ 271938 Guerrilla's Jagged Mace
+@@ -1,7 +1,7 @@
+-271938 Guerilla's Jagged Mace
++271938 Guerrilla's Jagged Mace
+ item      rare, Mace, main hand
+ level     ilvl 43, requires level 38
+ binds     binds when picked up
+ stats     +8 stamina, +7 attack power
+ weapon    57 - 107 damage, speed 2.80, 29.3 dps
+ sells     16836 copper
+--- 271939 Guerrilla's Jagged Mace
++++ 271939 Guerrilla's Jagged Mace
+@@ -1,7 +1,7 @@
+-271939 Guerilla's Jagged Mace
++271939 Guerrilla's Jagged Mace
+ item      rare, Mace, main hand
+ level     ilvl 33, requires level 28
+ binds     binds when picked up
+ stats     +7 stamina, +6 attack power
+ weapon    42 - 78 damage, speed 2.80, 21.4 dps
+ sells     7273 copper
+--- 272025 Dathrohan's Correspondence
++++ 272025 Dathrohan's Correspondence
+@@ -1,6 +1,6 @@
+-272025 Dathrohan's Correspondance
++272025 Dathrohan's Correspondence
+ item      rare, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+-text      "Saidan Dathrohan's correspondance before and during the third war"
++text      "Saidan Dathrohan's correspondence before and during the third war"
+--- 272059 Darkspear Voodoo Seal
++++ 272059 Darkspear Voodoo Seal
+@@ -1,8 +1,8 @@
+ 272059 Darkspear Voodoo Seal
+ item      rare, Miscellaneous, trinket
+-level     ilvl 33, requires level 28
++level     ilvl 38, requires level 33
+ binds     binds when picked up
+-stats     +6 stamina
++stats     +7 stamina
+ effect    equip: 1316055 Darkspear Voodoo Seal
+ effect    equip: 1316056 Darkspear Voodoo Seal
+ sells     23691 copper
+--- 272062 Relentless Raider's Seal
++++ 272062 Relentless Raider's Seal
+@@ -1,8 +1,8 @@
+ 272062 Relentless Raider's Seal
+ item      rare, Miscellaneous, trinket
+-level     ilvl 33, requires level 28
++level     ilvl 38, requires level 33
+ binds     binds when picked up
+-stats     +6 stamina
++stats     +7 stamina
+ effect    equip: 1316051 Raider's Seal
+ effect    equip: 1316052 Raider's Seal
+ sells     2984 copper
+--- 272427 Howling Idol
++++ 272427 Howling Idol
+@@ -1,7 +1,7 @@
+ 272427 Howling Idol
+ item      rare, Idol, relic
+ level     ilvl 65, requires level 60
+ binds     binds when picked up
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-effect    equip: 1291059 Tiger's Fury Cooldown Reduction
++effect    equip: 1291059 Shifting Power Cooldown Reduction
+ sells     13067 copper
+--- 273002 Slime Ward - Fel Ash Experimentation Notes
++++ 273002 Slime Ward - Fel Ash Experimentation Notes
+@@ -1,6 +1,6 @@
+ 273002 Slime Ward - Fel Ash Experimentation Notes
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-text      "Both runes and script dance across the surface of the page like spiders. Something about the this book feels sinister and unnatural."
++text      "Both runes and script dance across the surface of the page like spiders. Something about this book feels sinister and unnatural."
+--- 273003 Searing Dagger
++++ 273003 Searing Dagger
+@@ -1,7 +1,8 @@
+ 273003 Searing Dagger
+ item      rare, Dagger, main hand
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
++stats     +4 spirit
+ weapon    13 - 26 damage, speed 1.60, 12.2 dps
+ effect    equip: 1291568 Sear
+ sells     1038 copper
+--- 273007 Chasm Walkers
++++ 273007 Chasm Walkers
+@@ -1,6 +1,6 @@
+ 273007 Chasm Walkers
+ item      rare, Leather, feet
+ level     ilvl 18, requires level 13
+ binds     binds when picked up
+-stats     +5 spirit, +7 attack power
++stats     +5 spirit, +4 attack power
+ sells     396 copper
+--- 273115 Blueprint: Iron Oven
++++ 273115 Blueprint: Iron Oven
+@@ -1,7 +1,7 @@
+-273115 Blueprint: Baker's Oven
++273115 Blueprint: Iron Oven
+ item      uncommon, Cooking
+ level     ilvl 60
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1263067 Iron Oven
+-text      "Teaches you how to place a Baker's Oven at a campsite."
++text      "Teaches you how to place a Iron Oven at a campsite."
+ sells     120000 copper
+--- 273308 Disease Ward - Fel Ash Experimentation Notes
++++ 273308 Disease Ward - Fel Ash Experimentation Notes
+@@ -1,6 +1,6 @@
+ 273308 Disease Ward - Fel Ash Experimentation Notes
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-text      "Both runes and script dance across the surface of the page like spiders. Something about the this book feels sinister and unnatural."
++text      "Both runes and script dance across the surface of the page like spiders. Something about this book feels sinister and unnatural."
+--- 273309 Vessel Ward - Fel Ash Experimentation Notes
++++ 273309 Vessel Ward - Fel Ash Experimentation Notes
+@@ -1,6 +1,6 @@
+ 273309 Vessel Ward - Fel Ash Experimentation Notes
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-text      "Both runes and script dance across the surface of the page like spiders. Something about the this book feels sinister and unnatural."
++text      "Both runes and script dance across the surface of the page like spiders. Something about this book feels sinister and unnatural."
+--- 273310 Alchemy Ward - Fel Ash Experimentation Notes
++++ 273310 Alchemy Ward - Fel Ash Experimentation Notes
+@@ -1,6 +1,6 @@
+-273310 Alchemey Ward - Fel Ash Experimentation Notes
++273310 Alchemy Ward - Fel Ash Experimentation Notes
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-text      "Both runes and script dance across the surface of the page like spiders. Something about the this book feels sinister and unnatural."
++text      "Both runes and script dance across the surface of the page like spiders. Something about this book feels sinister and unnatural."
+--- 273636 Chef's Knife
++++ 273636 Chef's Knife
+@@ -1,5 +1,5 @@
+ 273636 Chef's Knife
+ item      common, Other
+ level     ilvl 45, requires level 35
+ effect    use: 1292332 Prepare Fish
+-sells     16 copper
++sells     60 copper
+--- 273659 Bloody Parchment
++++ 273659 Bloody Parchment
+@@ -1,6 +1,6 @@
+ 273659 Bloody Parchment
+ item      common, Quest
+ level     ilvl 30, requires level 30
+ binds     quest item
+ unique    yes
+-text      "The letter makes mention of  'The Pact' and a 'Wild King'... what could this mean?"
++text      "The letter makes mention of 'The Pact' and a 'Wild King'... what could this mean?"
+--- 274003 Pattern: Spiritcaller Treads
++++ 274003 Pattern: Spiritcaller Treads
+@@ -1,7 +1,7 @@
+ 274003 Pattern: Spiritcaller Treads
+ item      epic, Leatherworking
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+-effect    learn: 1292972 Spiritcaller Boots
++effect    learn: 1292972 Spiritcaller Treads
+ text      "Teaches you how to craft Spiritcaller Treads."
+--- 274373 Leather-bound Flask
++++ 274373 Leather-bound Flask
+@@ -1,7 +1,7 @@
+ 274373 Leather-bound Flask
+ item      common, Quest
+ level     ilvl 55
+ binds     quest item
+ unique    yes
+ effect    use: 1293800 Prickly Potion (180 s cooldown, 180 s shared cooldown)
+-text      "The pure hyjal springwater shimmers with pinecone resin."
++text      "The pure Hyjal springwater shimmers with pinecone resin."
+--- 274396 Fel Ash Experimentation Notes
++++ 274396 Fel Ash Experimentation Notes
+@@ -1,5 +1,5 @@
+ 274396 Fel Ash Experimentation Notes
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+-text      "Both runes and script dance across the surface of the page like spiders. Something about the this note feels sinister and unnatural."
++text      "Both runes and script dance across the surface of the page like spiders. Something about this note feels sinister and unnatural."
+--- 274748 Booty Bay Bruiser's Buckshot
++++ 274748 Booty Bay Bruiser's Buckshot
+@@ -1,8 +1,7 @@
+ 274748 Booty Bay Bruiser's Buckshot
+ item      rare, Gun, ranged
+ level     ilvl 35, requires level 30
+ binds     binds when picked up
+ stats     +9 attack power, +3 stamina
+ weapon    35 - 66 damage, speed 2.80, 18 dps
+-effect    use: 1295313 Booty Bay Bruiser Buckshot
+ sells     6217 copper
+--- 274749 Souvenir Sea Shell
++++ 274749 Souvenir Sea Shell
+@@ -1,6 +1,6 @@
+-274749 Souvenier Sea Shell
++274749 Souvenir Sea Shell
+ item      rare, Miscellaneous, neck
+ level     ilvl 35, requires level 30
+ binds     binds when picked up
+ stats     +5 health per 5 sec, +13 stamina
+ sells     3328 copper
+--- 276158 Crystallized Shard
++++ 276158 Crystallized Shard
+@@ -1,4 +1,4 @@
+-276158 Crystalized Shard
++276158 Crystallized Shard
+ item      poor, Junk
+ level     ilvl 1
+ sells     740 copper
+--- 276545 Pattern: Spiritcaller Boots
++++ 276545 Pattern: Spiritcaller Boots
+@@ -1,7 +1,7 @@
+ 276545 Pattern: Spiritcaller Boots
+ item      epic, Leatherworking
+ level     ilvl 1, requires level 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+-effect    learn: 1299917 Spiritcaller Treads
++effect    learn: 1299917 Spiritcaller Boots
+ text      "Teaches you how to craft Spiritcaller Boots."
+--- 276909 Corrupted Cat Figurine
++++ 276909 Corrupted Cat Figurine
+@@ -1,5 +1,5 @@
+ 276909 Corrupted Cat Figurine
+ item      poor, Junk
+ level     ilvl 1
+ binds     binds when picked up
+-text      "This once beautiful figurine has been stained by the felbood. It looks like it belonged to a set."
++text      "This once beautiful figurine has been stained by the felblood. It looks like it belonged to a set."
+--- 277056 Al'Aketh Chainmail
++++ 277056 Al'Aketh Chainmail
+@@ -1,6 +1,6 @@
+-277056 Al'aketh Chainmail
++277056 Al'Aketh Chainmail
+ item      uncommon, Mail, chest
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 stamina
+ sells     190 copper
+--- 277057 Al'Aketh Wristguards
++++ 277057 Al'Aketh Wristguards
+@@ -1,6 +1,6 @@
+-277057 Al'aketh Wristguards
++277057 Al'Aketh Wristguards
+ item      uncommon, Mail, wrists
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 agility
+ sells     56 copper
+--- 277058 Al'Aketh Gauntlets
++++ 277058 Al'Aketh Gauntlets
+@@ -1,6 +1,6 @@
+-277058 Al'aketh Gauntlets
++277058 Al'Aketh Gauntlets
+ item      uncommon, Mail, hands
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 stamina
+ sells     73 copper
+--- 277059 Al'Aketh Chain
++++ 277059 Al'Aketh Chain
+@@ -1,6 +1,6 @@
+-277059 Al'aketh Chain
++277059 Al'Aketh Chain
+ item      uncommon, Mail, waist
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 strength
+ sells     57 copper
+--- 277060 Al'Aketh Legguards
++++ 277060 Al'Aketh Legguards
+@@ -1,6 +1,6 @@
+-277060 Al'aketh Legguards
++277060 Al'Aketh Legguards
+ item      uncommon, Mail, legs
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 agility
+ sells     193 copper
+--- 277061 Al'Aketh Greaves
++++ 277061 Al'Aketh Greaves
+@@ -1,6 +1,6 @@
+-277061 Al'aketh Greaves
++277061 Al'Aketh Greaves
+ item      uncommon, Mail, feet
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 strength
+ sells     112 copper
+--- 277062 Al'Aketh Harness
++++ 277062 Al'Aketh Harness
+@@ -1,6 +1,6 @@
+-277062 Al'aketh Harness
++277062 Al'Aketh Harness
+ item      uncommon, Leather, chest
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 stamina
+ sells     150 copper
+--- 277063 Al'Aketh Bracers
++++ 277063 Al'Aketh Bracers
+@@ -1,6 +1,6 @@
+-277063 Al'aketh Bracers
++277063 Al'Aketh Bracers
+ item      uncommon, Leather, wrists
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 agility
+ sells     45 copper
+--- 277064 Al'Aketh Gloves
++++ 277064 Al'Aketh Gloves
+@@ -1,6 +1,6 @@
+-277064 Al'aketh Gloves
++277064 Al'Aketh Gloves
+ item      uncommon, Leather, hands
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 stamina
+ sells     58 copper
+--- 277065 Al'Aketh Belt
++++ 277065 Al'Aketh Belt
+@@ -1,6 +1,6 @@
+-277065 Al'aketh Belt
++277065 Al'Aketh Belt
+ item      uncommon, Leather, waist
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 strength
+ sells     45 copper
+--- 277066 Al'Aketh Trousers
++++ 277066 Al'Aketh Trousers
+@@ -1,6 +1,6 @@
+-277066 Al'aketh Trousers
++277066 Al'Aketh Trousers
+ item      uncommon, Leather, legs
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 agility
+ sells     153 copper
+--- 277067 Al'Aketh Boots
++++ 277067 Al'Aketh Boots
+@@ -1,6 +1,6 @@
+-277067 Al'aketh Boots
++277067 Al'Aketh Boots
+ item      uncommon, Leather, feet
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 strength
+ sells     88 copper
+--- 277068 Al'Aketh Jerkin
++++ 277068 Al'Aketh Jerkin
+@@ -1,6 +1,6 @@
+-277068 Al'aketh Jerkin
++277068 Al'Aketh Jerkin
+ item      uncommon, Leather, chest
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 stamina
+ sells     154 copper
+--- 277069 Al'Aketh Armguards
++++ 277069 Al'Aketh Armguards
+@@ -1,6 +1,6 @@
+-277069 Al'aketh Armguards
++277069 Al'Aketh Armguards
+ item      uncommon, Leather, wrists
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 spirit
+ sells     46 copper
+--- 277070 Al'Aketh Mitts
++++ 277070 Al'Aketh Mitts
+@@ -1,6 +1,6 @@
+-277070 Al'aketh Mitts
++277070 Al'Aketh Mitts
+ item      uncommon, Leather, hands
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 stamina
+ sells     60 copper
+--- 277071 Al'Aketh Strap
++++ 277071 Al'Aketh Strap
+@@ -1,6 +1,6 @@
+-277071 Al'aketh Strap
++277071 Al'Aketh Strap
+ item      uncommon, Leather, waist
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 intellect
+ sells     46 copper
+--- 277072 Al'Aketh Pants
++++ 277072 Al'Aketh Pants
+@@ -1,6 +1,6 @@
+-277072 Al'aketh Pants
++277072 Al'Aketh Pants
+ item      uncommon, Leather, legs
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 spirit
+ sells     156 copper
+--- 277073 Al'Aketh Footwraps
++++ 277073 Al'Aketh Footwraps
+@@ -1,6 +1,6 @@
+-277073 Al'aketh Footwraps
++277073 Al'Aketh Footwraps
+ item      uncommon, Leather, feet
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 intellect
+ sells     90 copper
+--- 277074 Al'Aketh Vestments
++++ 277074 Al'Aketh Vestments
+@@ -1,6 +1,6 @@
+-277074 Al'aketh Vestments
++277074 Al'Aketh Vestments
+ item      uncommon, Cloth, chest
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 stamina
+ sells     126 copper
+--- 277075 Al'Aketh Cuffs
++++ 277075 Al'Aketh Cuffs
+@@ -1,6 +1,6 @@
+-277075 Al'aketh Cuffs
++277075 Al'Aketh Cuffs
+ item      uncommon, Cloth, wrists
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 spirit
+ sells     37 copper
+--- 277076 Al'Aketh Handwraps
++++ 277076 Al'Aketh Handwraps
+@@ -1,6 +1,6 @@
+-277076 Al'aketh Handwraps
++277076 Al'Aketh Handwraps
+ item      uncommon, Cloth, hands
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 stamina
+ sells     48 copper
+--- 277077 Al'Aketh Cord
++++ 277077 Al'Aketh Cord
+@@ -1,6 +1,6 @@
+-277077 Al'aketh Cord
++277077 Al'Aketh Cord
+ item      uncommon, Cloth, waist
+ level     ilvl 9, requires level 4
+ binds     binds when picked up
+ stats     +1 intellect
+ sells     37 copper
+--- 277078 Al'Aketh Leggings
++++ 277078 Al'Aketh Leggings
+@@ -1,6 +1,6 @@
+-277078 Al'aketh Leggings
++277078 Al'Aketh Leggings
+ item      uncommon, Cloth, legs
+ level     ilvl 11, requires level 6
+ binds     binds when picked up
+ stats     +2 spirit
+ sells     131 copper
+--- 277079 Al'Aketh Shoes
++++ 277079 Al'Aketh Shoes
+@@ -1,6 +1,6 @@
+-277079 Al'aketh Shoes
++277079 Al'Aketh Shoes
+ item      uncommon, Cloth, feet
+ level     ilvl 10, requires level 5
+ binds     binds when picked up
+ stats     +1 intellect
+ sells     76 copper
+--- 277128 Bloodtalon Matriarch Eggs
++++ 277128 Bloodtalon Matriarch Eggs
+@@ -1,5 +1,5 @@
+-277128 Bloodtalon Martriarch Eggs
++277128 Bloodtalon Matriarch Eggs
+ item      common, Quest
+ level     ilvl 10
+ binds     quest item
+ unique    yes
+--- 277202 Artifact Seeker's Pendant
++++ 277202 Artifact Seeker's Pendant
+@@ -1,5 +1,5 @@
+ 277202 Artifact Seeker's Pendant
+ item      rare, Miscellaneous, neck
+ level     ilvl 58
+ binds     binds when picked up
+-stats     +10 stamina, +10 strength, +10 agility
++stats     +14 stamina, +9 strength, +8 agility
+--- 277203 Scholarly Pendant
++++ 277203 Scholarly Pendant
+@@ -1,5 +1,5 @@
+ 277203 Scholarly Pendant
+-item      rare, Miscellaneous, neck
+-level     ilvl 25
++item      uncommon, Miscellaneous, neck
++level     ilvl 23
+ binds     binds when picked up
+-stats     +6 stamina, +4 spirit
++stats     +3 stamina, +2 spirit
+--- 277204 Erudite's Amulet
++++ 277204 Erudite's Amulet
+@@ -1,5 +1,5 @@
+ 277204 Erudite's Amulet
+-item      rare, Miscellaneous, neck
+-level     ilvl 25
++item      uncommon, Miscellaneous, neck
++level     ilvl 23
+ binds     binds when picked up
+-stats     +6 stamina, +4 agility
++stats     +3 stamina, +2 agility
+--- 277254 Truthseeker's Bow
++++ 277254 Truthseeker's Bow
+@@ -1,6 +1,6 @@
+ 277254 Truthseeker's Bow
+ item      rare, Bow, ranged
+-level     ilvl 48
++level     ilvl 45
+ binds     binds when picked up
+-stats     +8 agility, +3 stamina
+-weapon    49 - 92 damage, speed 2.80, 25.2 dps
++stats     +7 agility, +3 stamina
++weapon    46 - 87 damage, speed 2.80, 23.8 dps
+--- 277258 Crest of Elucidation
++++ 277258 Crest of Elucidation
+@@ -1,5 +1,5 @@
+ 277258 Crest of Elucidation
+ item      rare, Shield, shield
+-level     ilvl 50, requires level 40
++level     ilvl 45, requires level 40
+ binds     binds when picked up
+-stats     +13 spirit, +6 intellect
++stats     +12 spirit, +11 healing, +4 spell damage
+--- 277260 Researcher's Night Light
++++ 277260 Researcher's Night Light
+@@ -1,5 +1,5 @@
+ 277260 Researcher's Night Light
+ item      rare, Miscellaneous, held in off hand
+-level     ilvl 50, requires level 40
++level     ilvl 45, requires level 40
+ binds     binds when picked up
+-stats     +13 stamina, +6 intellect
++stats     +12 stamina, +7 fire damage
+--- 277533 Fel Tainted Journal
++++ 277533 Fel Tainted Journal
+@@ -1,4 +1,4 @@
+-277533 Fel Tained Journal
++277533 Fel Tainted Journal
+ item      common, Junk
+ level     ilvl 1, requires level 1
+ unique    yes
+--- 277673 Plans: Rough Copper Chain Boots
++++ 277673 Plans: Rough Copper Chain Boots
+@@ -1,8 +1,8 @@
+ 277673 Plans: Rough Copper Chain Boots
+ item      uncommon, Blacksmithing
+ level     ilvl 1
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1302598 Rough Copper Chain Boots
+-text      "Teaches you how to make a Rough Copper Chain Boots."
++text      "Teaches you how to make Rough Copper Chain Boots."
+ sells     150 copper
+--- 279864 Monstrous Cleaver
++++ 279864 Monstrous Cleaver
+@@ -1,6 +1,6 @@
+ 279864 Monstrous Cleaver
+-item      rare, Sword, two-hand
++item      uncommon, Sword, two-hand
+ level     ilvl 23, requires level 1
+ binds     binds when picked up
+-stats     +9 stat 128, +9 stamina, +10 attack power
+-weapon    52 - 78 damage, speed 3.30, 19.7 dps
++stats     +6 stat 128, +6 stamina, +4 attack power
++weapon    40 - 60 damage, speed 3.30, 15.2 dps
+--- 279865 Grave Shroud
++++ 279865 Grave Shroud
+@@ -1,6 +1,6 @@
+ 279865 Grave Shroud
+-item      rare, Cloth, back
++item      uncommon, Cloth, back
+ level     ilvl 23, requires level 1
+ binds     binds when picked up
+-stats     +5 stamina, +3 strength, +2 agility
++stats     +3 stamina, +3 strength
+ sells     728 copper
+--- 279867 Slain Baron's Signet
++++ 279867 Slain Baron's Signet
+@@ -1,6 +1,6 @@
+ 279867 Slain Baron's Signet
+-item      rare, Miscellaneous, finger
++item      uncommon, Miscellaneous, finger
+ level     ilvl 23, requires level 1
+ binds     binds when picked up
+-stats     +5 stamina, +2 defense rating
++stats     +3 stamina, +1 defense rating
+ sells     978 copper
+--- 279868 Duty Bound Leggings
++++ 279868 Duty Bound Leggings
+@@ -1,5 +1,5 @@
+ 279868 Duty Bound Leggings
+-item      rare, Leather, legs
++item      uncommon, Leather, legs
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +9 stamina, +6 agility, +6 intellect
++stats     +6 agility, +4 intellect
+--- 279869 Remembrance Armor
++++ 279869 Remembrance Armor
+@@ -1,5 +1,5 @@
+ 279869 Remembrance Armor
+-item      rare, Mail, chest
++item      uncommon, Mail, chest
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +9 stamina, +6 spirit, +5 strength
++stats     +5 stamina, +3 strength, +3 intellect
+--- 279870 Tarnished Locket
++++ 279870 Tarnished Locket
+@@ -1,6 +1,6 @@
+ 279870 Tarnished Locket
+-item      rare, Miscellaneous, neck
++item      uncommon, Miscellaneous, neck
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +5 stamina, +4 spirit
++stats     +6 stamina, +-3 strength
+ text      "Some memories are best forgotten."
+--- 279874 The Stitcher
++++ 279874 The Stitcher
+@@ -1,6 +1,6 @@
+ 279874 The Stitcher
+-item      rare, Mace, main hand
++item      uncommon, Mace, main hand
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +6 stamina
+-weapon    26 - 49 damage, speed 2.40, 15.6 dps
++stats     +3 stamina
++weapon    20 - 39 damage, speed 2.40, 12.3 dps
+--- 279875 Spare Part Bindings
++++ 279875 Spare Part Bindings
+@@ -1,5 +1,5 @@
+ 279875 Spare Part Bindings
+-item      rare, Leather, wrists
++item      uncommon, Leather, wrists
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +5 stamina, +3 agility, +3 spirit
++stats     +3 stamina, +3 agility
+--- 279876 Plaguefang
++++ 279876 Plaguefang
+@@ -1,6 +1,6 @@
+ 279876 Plaguefang
+-item      rare, Sword, one-hand
++item      uncommon, Sword, one-hand
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-weapon    23 - 43 damage, speed 2.10, 15.7 dps
++weapon    18 - 34 damage, speed 2.10, 12.4 dps
+ effect    chance on hit: 1309315 Poison
+--- 279877 Blight Gloves
++++ 279877 Blight Gloves
+@@ -1,6 +1,6 @@
+ 279877 Blight Gloves
+-item      rare, Cloth, hands
++item      uncommon, Cloth, hands
+ level     ilvl 24, requires level 1
+ binds     binds when picked up
+-stats     +5 spirit, +7 intellect, +3 nature resistance
++stats     +5 spell power, +4 nature resistance
+ sells     589 copper
+--- 279895 Ironforge Greathammer
++++ 279895 Ironforge Greathammer
+@@ -1,6 +1,6 @@
+ 279895 Ironforge Greathammer
+ item      rare, Mace, two-hand
+ level     ilvl 18, requires level 1
+ binds     binds when picked up
+-stats     +7 stamina, +4 strength
+ weapon    39 - 60 damage, speed 3.10, 16 dps
++effect    chance on hit: 1322295 Firebolt
+--- 279897 Dusty Belt
++++ 279897 Dusty Belt
+@@ -1,5 +1,5 @@
+ 279897 Dusty Belt
+-item      rare, Leather, waist
++item      uncommon, Leather, waist
+ level     ilvl 17, requires level 1
+ binds     binds when picked up
+-stats     +5 agility, +4 spirit
++stats     +2 agility, +2 spirit
+--- 279898 Dwarven Tome
++++ 279898 Dwarven Tome
+@@ -1,6 +1,6 @@
+ 279898 Dwarven Tome
+-item      rare, Miscellaneous, held in off hand
++item      uncommon, Miscellaneous, held in off hand
+ level     ilvl 17, requires level 1
+ binds     binds when picked up
+-stats     +5 spell power, +2 spirit
++stats     +3 spell power, +1 spirit
+ text      "Details the history of dwarves long since forgotten."
+--- 279899 Catacomb Cloak
++++ 279899 Catacomb Cloak
+@@ -1,6 +1,6 @@
+ 279899 Catacomb Cloak
+-item      rare, Cloth, back
++item      uncommon, Cloth, back
+ level     ilvl 17, requires level 1
+ binds     binds when picked up
+-stats     +3 stamina, +4 stat 125, +6 attack power
++stats     +2 stamina, +4 stat 125, +3 attack power
+ sells     346 copper
+--- 279900 Deepgrave Trousers
++++ 279900 Deepgrave Trousers
+@@ -1,5 +1,5 @@
+ 279900 Deepgrave Trousers
+-item      rare, Leather, legs
++item      uncommon, Leather, legs
+ level     ilvl 17, requires level 1
+ binds     binds when picked up
+-stats     +7 strength, +3 agility, +3 spirit
++stats     +3 agility, +3 spirit
+--- 280095 Cryptwalker Bracers
++++ 280095 Cryptwalker Bracers
+@@ -1,6 +1,6 @@
+ 280095 Cryptwalker Bracers
+-item      rare, Mail, wrists
++item      uncommon, Mail, wrists
+ level     ilvl 17
+ binds     binds when picked up
+-stats     +4 strength, +3 stamina
++stats     +2 strength, +2 spirit
+ sells     69 copper
+--- 280096 Tomb Robber's Gloves
++++ 280096 Tomb Robber's Gloves
+@@ -1,6 +1,6 @@
+ 280096 Tomb Robber's Gloves
+-item      rare, Cloth, hands
++item      uncommon, Cloth, hands
+ level     ilvl 17
+ binds     binds when picked up
+-stats     +3 stamina, +6 intellect
++stats     +1 stamina, +2 intellect
+ sells     217 copper
+--- 280438 Abominable Head
++++ 280438 Abominable Head
+@@ -1,5 +1,5 @@
+ 280438 Abominable Head
+ item      common, Other
+-level     ilvl 1
++level     ilvl 1, requires level 16
+ binds     binds when picked up
+ unique    yes
+--- 280604 Rage of the Storm
++++ 280604 Rage of the Storm
+@@ -1,7 +1,7 @@
+ 280604 Rage of the Storm
+ item      rare, Mace, two-hand
+ level     ilvl 40, requires level 1
+ binds     binds when picked up
+-stats     +16 strength, +15 stamina
++stats     +16 intellect, +15 stamina
+ weapon    102 - 154 damage, speed 3.60, 35.6 dps
+ effect    equip: 1309422 Rage of Earth
+--- 280797 Rabbit Crate (Arctic)
++++ 280797 Rabbit Crate (Arctic)
+@@ -1,7 +1,7 @@
+-280797 Rabbit Crate (Artic)
++280797 Rabbit Crate (Arctic)
+ item      common, Pet
+ level     ilvl 20
+ effect    use: 55884 Learning (1 charge, consumed)
+ effect    learn: 10712 Summon Arctic Hare
+ text      "Teaches you how to summon this companion."
+ sells     500 copper
+--- 280839 Blackrock Supplies
++++ 280839 Blackrock Supplies
+@@ -1,4 +1,4 @@
+-280839 Stolen Supplies
++280839 Blackrock Supplies
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+--- 281014 Vine-Wrapped Scroll
++++ 281014 Vine-Wrapped Scroll
+@@ -1,4 +1,4 @@
+-281014 Vine Wrapped Scroll
++281014 Vine-Wrapped Scroll
+ item      common, Quest
+ level     ilvl 1, requires level 1
+ binds     quest item
+--- 281634 Field Researcher's Loop
++++ 281634 Field Researcher's Loop
+@@ -1,6 +1,5 @@
+ 281634 Field Researcher's Loop
+ item      rare, Miscellaneous, finger
+-level     ilvl 40
++level     ilvl 35
+ binds     binds when picked up
+-classes   rogue
+-stats     +7 stamina, +7 agility, +7 strength
++stats     +7 stamina, +7 agility
+--- 281635 Philanthropist's Ring
++++ 281635 Philanthropist's Ring
+@@ -1,5 +1,5 @@
+ 281635 Philanthropist's Ring
+ item      rare, Miscellaneous, finger
+-level     ilvl 40
++level     ilvl 35
+ binds     binds when picked up
+-stats     +6 intellect, +10 spell power
++stats     +5 intellect, +10 spell power
+--- 281636 Museum Keeper's Chain
++++ 281636 Museum Keeper's Chain
+@@ -1,5 +1,5 @@
+ 281636 Museum Keeper's Chain
+ item      rare, Miscellaneous, neck
+ level     ilvl 58
+ binds     binds when picked up
+-stats     +10 stamina, +10 intellect, +10 spell power
++stats     +10 stamina, +10 intellect, +11 spell power
+--- 281637 Antique Bulwark
++++ 281637 Antique Bulwark
+@@ -1,5 +1,5 @@
+ 281637 Antique Bulwark
+ item      rare, Shield, shield
+ level     ilvl 58
+ binds     binds when picked up
+-stats     +16 stamina, +10 defense rating
++stats     +13 stamina, +8 defense rating
+--- 284067 Rusted Family Memento
++++ 284067 Rusted Family Memento
+@@ -1,7 +1,7 @@
+ 284067 Rusted Family Memento
+ item      uncommon, Miscellaneous, neck
+ level     ilvl 54, requires level 49
+ binds     binds when equipped
+ stats     +10 spirit, +7 crit rating
+-text      "Memories of a time before tradgedy."
++text      "Memories of a time before tragedy."
+ sells     5896 copper
+--- 284192 Furbolg Loincloth
++++ 284192 Furbolg Loincloth
+@@ -1,6 +1,6 @@
+-284192 Furblog Loincloth
++284192 Furbolg Loincloth
+ item      uncommon, Cloth, legs
+ level     ilvl 18, requires level 13
+ binds     binds when equipped
+ stats     +4 stamina, +4 health per 5 sec
+ sells     378 copper
+--- 284715 First Mate Band
++++ 284715 First Mate Band
+@@ -1,7 +1,7 @@
+ 284715 First Mate Band
+ item      rare, Miscellaneous, finger
+ level     ilvl 22, requires level 17
+ binds     binds when picked up
+-stats     +2 stamina, +6 strength
++stats     +5 stamina, +4 strength
+ set       Partners in Crime
+ sells     903 copper
+--- 285292 Dull Sawblade
++++ 285292 Dull Sawblade
+@@ -1,7 +1,7 @@
+ 285292 Dull Sawblade
+ item      rare, Thrown, thrown
+ level     ilvl 21, requires level 16
+ binds     binds when picked up
+-stats     +2 agility, +9 stat 125
++stats     +6 attack power, +2 stamina
+ weapon    15 - 28 damage, speed 1.70, 12.6 dps
+ sells     9 copper
+--- 285344 Guard Captain's Barrier
++++ 285344 Guard Captain's Barrier
+@@ -1,6 +1,6 @@
+-285344 Guard Captains Barrier
++285344 Guard Captain's Barrier
+ item      rare, Shield, shield
+ level     ilvl 29, requires level 24
+ binds     binds when picked up
+ stats     +6 strength, +4 defense rating
+ sells     2 copper
+--- 286265 Alleria's Silver Coin
++++ 286265 Alleria's Silver Coin
+@@ -1,5 +1,5 @@
+ 286265 Alleria's Silver Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "May my sisters realize their full potential, the name Windrunner known as result of their deeds."
++text      "May my sisters realize their full potential, the name Windrunner known as a result of their deeds."
+ sells     3 copper
+--- 286281 Arthas' Gold Coin
++++ 286281 Arthas' Gold Coin
+@@ -1,5 +1,5 @@
+ 286281 Arthas' Gold Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "Already, I've a kingdom in my prospects, a land to rule. What to ask for?  Perhaps a frozen scone..."
++text      "Already, I've a kingdom in my prospects, a land to rule. What to ask for? Perhaps a frozen scone..."
+ sells     4 copper
+--- 286302 Zarla Ober's Gold Coin
++++ 286302 Zarla Ober's Gold Coin
+@@ -1,5 +1,5 @@
+ 286302 Zarla Ober's Gold Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "The amount of coins shining in the pool.. Maybe no one will notice if I take just one."
++text      "The amount of coins shining in the pool. Maybe no one will notice if I take just one."
+ sells     4 copper
+--- 286308 Attumen's Copper Coin
++++ 286308 Attumen's Copper Coin
+@@ -1,5 +1,5 @@
+ 286308 Attumen's Copper Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "Can I have a more comfortable saddle?  My hindquarters ache."
++text      "Can I have a more comfortable saddle? My hindquarters ache."
+ sells     1 copper
+--- 286310 Elling Trias' Copper Coin
++++ 286310 Elling Trias' Copper Coin
+@@ -1,5 +1,5 @@
+ 286310 Elling Trias' Copper Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "Being a rogue is hard work.  Someday I hope to pursue my life's one true passion..."
++text      "Being a rogue is hard work. Someday I hope to pursue my life's one true passion..."
+ sells     1 copper
+--- 286327 Rhonin's Gold Coin
++++ 286327 Rhonin's Gold Coin
+@@ -1,5 +1,5 @@
+ 286327 Rhonin's Gold Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "Here you go Nozdormu. What was I supposed to do after this?"
++text      "Here you go, Nozdormu. What was I supposed to do after this?"
+ sells     4 copper
+--- 286328 Elaadrin Evengale's Silver Coin
++++ 286328 Elaadrin Evengale's Silver Coin
+@@ -1,5 +1,5 @@
+ 286328 Elaadrin Evengale's Silver Coin
+ item      poor, Junk
+ level     ilvl 1
+-text      "How do I prove they copied us with this fountain."
++text      "How do I prove they copied us with this fountain?"
+ sells     3 copper
+--- 286978 Rotmender's Garb
++++ 286978 Rotmender's Garb
+@@ -1,5 +1,6 @@
+-286978 Rotmender's Robes
++286978 Rotmender's Garb
+ item      rare, Cloth, chest
+ level     ilvl 23, requires level 18
+-binds     binds when equipped
++binds     binds when picked up
++stats     +10 intellect, +11 healing, +4 spell damage
+ set       Rotmender's Raiment
+--- 286979 Rotmender's Gloves
++++ 286979 Rotmender's Gloves
+@@ -1,5 +1,6 @@
+ 286979 Rotmender's Gloves
+ item      rare, Cloth, hands
+ level     ilvl 22, requires level 17
+ binds     binds when equipped
++stats     +8 spirit, +3 intellect
+ set       Rotmender's Raiment
+--- 286980 Rotmender's Sash
++++ 286980 Rotmender's Sash
+@@ -1,5 +1,6 @@
+ 286980 Rotmender's Sash
+ item      rare, Cloth, waist
+ level     ilvl 22, requires level 17
+ binds     binds when equipped
++stats     +6 stamina, +6 intellect
+ set       Rotmender's Raiment

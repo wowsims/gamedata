@@ -115,7 +115,7 @@ school    arcane
 range     50000 yd
 
 effect 1  unrecognised shape
-          E_INSTAKILL base=1 radius=30 target=[15,0]
+          E_INSTAKILL base=1 radius=20 target=[16,0]
 
 https://www.wowhead.com/forever/spell=265
 =======
@@ -371,7 +371,7 @@ gcd       1.5 s
 cost      50 mana
 range     30 yd
 
-effect 1  298 shadow damage every 3 s to every enemy around the caster (10 ticks)
+effect 1  298.19568 shadow damage every 3 s to every enemy around the caster (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=298.19568 period=3000ms radius=45 target=[22,15]
 
 https://www.wowhead.com/forever/spell=18671
@@ -384,7 +384,7 @@ gcd       1.5 s
 cost      50 mana
 range     30 yd
 
-effect 1  2700.852–3145.148 shadow damage every 1 s to every enemy around the caster (15 ticks)
+effect 1  2701–3146 shadow damage every 1 s to every enemy around the caster (15 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2923.487 variance=0.152 period=1000ms target=[22,15]
 
 https://www.wowhead.com/forever/spell=1233077
@@ -484,7 +484,7 @@ https://www.wowhead.com/forever/spell=1243028
 460906 Demonic Frenzy
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 refs      460907 Demonic Frenzy
 
 effect 1  casts 460907 Demonic Frenzy on its trigger
@@ -539,7 +539,7 @@ defense   melee
 duration  5 s
 cooldown  10 s (category)
 gcd       1 s
-cost      5% of maximum mana
+cost      5% of base mana
 range     5 yd
 attrs     refund on miss
 
@@ -576,14 +576,14 @@ cooldown  120 s
 charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
-effect 1  SPELLMOD_COST -10% on family 5 mask 0x845af,0x800182
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=5 mask=0x845af,0x800182 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x845af,0x800182
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x845af,0x800182 target=[1,0]
-effect 3  SPELLMOD_DOT +10% on family 5 mask 0x440e,0x102
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x440e,0x102 target=[1,0]
+effect 1  SPELLMOD_COST -10% on family 5 mask 0x841ed,0x840080
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=5 mask=0x841ed,0x840080 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x801e5,0x800080
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x801e5,0x800080 target=[1,0]
+effect 3  SPELLMOD_DOT +10% on family 5 mask 0x4008,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x4008,0x40000 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 
@@ -790,7 +790,7 @@ gcd       1.5 s
 cost      170 mana
 range     30 yd
 
-effect 1  114.92674–135.07326 shadow damage to the enemy (+0.429 spell power)
+effect 1  115–135 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=125 variance=0.16117217 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
@@ -818,7 +818,7 @@ gcd       1.5 s
 cost      200 mana
 range     30 yd
 
-effect 1  149.86447–176.13553 shadow damage to the enemy (+0.429 spell power)
+effect 1  150–176 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=163 variance=0.16117217 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
@@ -837,7 +837,7 @@ gcd       1.5 s
 cost      240 mana
 range     30 yd
 
-effect 1  194.91576–229.08424 shadow damage to the enemy (+0.429 spell power)
+effect 1  195–229 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=212 variance=0.16117217 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
@@ -1118,7 +1118,7 @@ school    shadow
 defense   magic
 duration  10 s
 cooldown  60 s
-cost      3% of maximum mana
+cost      3% of base mana
 labels    3096, 3100
 
 effect 1  -20% holy+fire+nature+frost+shadow+arcane damage taken
@@ -1334,17 +1334,17 @@ defense   magic
 duration  120 s
 range     100 yd
 
-effect 1  -75 fire+frost resistance to the enemy (at level 60)
+effect 1  -83 fire+frost resistance to the enemy (at level 60)
           E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=20 target=[6,0]
-effect 2  +10% fire+frost damage taken to the enemy (at level 60)
+effect 2  +11% fire+frost damage taken to the enemy (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=20 target=[6,0]
-effect 3  -75 shadow+arcane resistance to the enemy (at level 60)
+effect 3  -83 shadow+arcane resistance to the enemy (at level 60)
           E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=96 target=[6,0]
-effect 4  -75 nature resistance to the enemy (at level 60)
+effect 4  -83 nature resistance to the enemy (at level 60)
           E_APPLY_AURA A_MOD_RESISTANCE base=-27 ppl=-1 misc=8 target=[6,0]
-effect 5  +10% shadow+arcane damage taken to the enemy (at level 60)
+effect 5  +11% shadow+arcane damage taken to the enemy (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=96 target=[6,0]
-effect 6  +10% nature damage taken to the enemy (at level 60)
+effect 6  +11% nature damage taken to the enemy (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=8 target=[6,0]
 
 https://www.wowhead.com/forever/spell=461615
@@ -1561,6 +1561,18 @@ effect 1  SPELLMOD_COOLDOWN -2 s on family 5 mask 0x2000,0x1000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=5 mask=0x2000,0x1000000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=468303
+=======
+1323392 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x841e9,0x840040
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x841e9,0x840040 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323392
 =======
 1219421 S03 - Item - Naxxramas - Warlock - Damage 2P Bonus
 school    physical
@@ -1916,7 +1928,7 @@ https://www.wowhead.com/forever/spell=468447
 school    shadow
 icd       60 s
 attrs     passive
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance; tooltip says damaging spells only
 refs      469220 Scythe of Chaos
 
 effect 1  casts 469220 Scythe of Chaos on its trigger
@@ -2040,7 +2052,7 @@ gcd       1.5 s
 cost      380 mana
 range     5 yd
 
-effect 1  1403.2–2104.8 shadow damage to every enemy around the caster
+effect 1  1403–2105 shadow damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1754.0923 variance=0.4 radius=8 target=[22,15]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=30 misc=150 radius=8 target=[22,15]
@@ -2223,7 +2235,7 @@ defense   magic
 duration  permanent
 cast      10 s
 gcd       1.5 s
-cost      80% of maximum mana
+cost      80% of base mana
 labels    3096, 3100
 
 effect 1  unrecognised shape
@@ -2259,7 +2271,7 @@ cooldown  5 s (category)
 gcd       1.5 s
 range     5 yd
 
-effect 1  1000 threat to the enemy
+effect 1  1120 threat to the enemy
           E_THREAT base=1000 ppl=2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=26281

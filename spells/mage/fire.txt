@@ -4,7 +4,7 @@ defense   magic
 duration  30 s
 cast      2.5 s
 gcd       1.5 s
-cost      20% of maximum mana
+cost      20% of base mana
 range     35 yd
 stack     up to 5
 labels    3096, 3100
@@ -37,7 +37,7 @@ gcd       1.5 s
 cost      215 mana
 labels    17
 
-effect 1  153.09412–184.90588 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+effect 1  154–184 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.1882353 sp=0.129 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[22,15]
@@ -53,7 +53,7 @@ gcd       1.5 s
 cost      270 mana
 labels    17
 
-effect 1  199.181–238.819 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+effect 1  200–239 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=212 ppl=1.2 variance=0.18099548 sp=0.129 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
@@ -69,7 +69,7 @@ gcd       1.5 s
 cost      355 mana
 labels    17
 
-effect 1  275.17163–326.82837 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+effect 1  276–327 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=293 ppl=1.4 variance=0.17161717 sp=0.129 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
@@ -85,7 +85,7 @@ gcd       1.5 s
 cost      450 mana
 labels    17
 
-effect 1  364.0852–431.9148 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+effect 1  365–432 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=389 ppl=1.6 variance=0.17042607 sp=0.129 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
@@ -101,7 +101,7 @@ gcd       1.5 s
 cost      545 mana
 labels    17
 
-effect 1  452.81512–533.1849 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
+effect 1  453–533 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=493 ppl=1.9 variance=0.16302186 sp=0.129 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
@@ -116,7 +116,7 @@ duration  6 s
 gcd       1.5 s
 cost      120 mana
 
-effect 1  472.9655–543.0345 fire damage to every enemy around the caster
+effect 1  474–544 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -131,7 +131,7 @@ duration  6 s
 gcd       1.5 s
 cost      120 mana
 
-effect 1  712.44275–817.55725 fire damage to every enemy around the caster
+effect 1  713–819 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -145,7 +145,7 @@ mechanic  mechanic 14
 duration  6 s
 gcd       1.5 s
 
-effect 1  941.0173–1092.9828 fire damage to every enemy around the caster
+effect 1  941–1093 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
 effect 2  -70% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 radius=10 target=[22,15]
@@ -160,7 +160,7 @@ duration  6 s
 gcd       1.5 s
 cost      120 mana
 
-effect 1  941.0173–1092.9828 fire damage to every enemy around the caster
+effect 1  941–1093 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -174,7 +174,7 @@ mechanic  mechanic 14
 duration  6 s
 gcd       1.5 s
 
-effect 1  472.9655–543.0345 fire damage to every enemy around the caster
+effect 1  474–544 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -200,7 +200,7 @@ mechanic  mechanic 14
 duration  6 s
 gcd       1.5 s
 
-effect 1  1419.9733–1642.0267 fire damage to every enemy around the caster
+effect 1  1421–1643 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1531.9073 variance=0.14503817 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -215,7 +215,7 @@ duration  6 s
 gcd       1.5 s
 cost      120 mana
 
-effect 1  654.4132–759.5868 fire damage to every enemy around the caster
+effect 1  655–760 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=707.4839 variance=0.14876033 sp=1 radius=10 target=[22,15]
 effect 2  -30% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 radius=10 target=[22,15]
@@ -229,7 +229,7 @@ mechanic  mechanic 14
 duration  6 s
 gcd       1.5 s
 
-effect 1  712.44275–817.55725 fire damage to every enemy around the caster
+effect 1  713–819 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
@@ -284,11 +284,11 @@ mechanic  mechanic 14
 duration  6 s
 gcd       1.5 s
 
-effect 1  472.9655–543.0345 fire damage to target 46
+effect 1  474–544 fire damage to target 46
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 target=[22,46]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
-effect 3  472.9655–543.0345 fire damage to every enemy in the target area
+effect 3  474–544 fire damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 target=[22,16]
 
 https://www.wowhead.com/forever/spell=469161
@@ -301,7 +301,7 @@ duration  6 s
 gcd       1.5 s
 cost      120 mana
 
-effect 1  2847.002–2998.998 fire damage to every enemy around the caster
+effect 1  2847–2999 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=2923.487 variance=0.052 sp=1 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[22,15]
@@ -325,9 +325,9 @@ school    fire
 defense   magic
 duration  permanent
 cooldown  180 s (category)
-charges   4
+charges   3
 labels    17
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
 refs      28682 Combustion
 
 effect 1  a dummy aura
@@ -380,7 +380,7 @@ cost      40 mana
 range     20 yd
 labels    17
 
-effect 1  26.571428–35.42857 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  27–35 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=2136
@@ -394,7 +394,7 @@ cost      75 mana
 range     20 yd
 labels    17
 
-effect 1  56.109375–69.890625 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  57–69 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=58 ppl=1 variance=0.21875 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=2137
@@ -408,7 +408,7 @@ cost      115 mana
 range     20 yd
 labels    17
 
-effect 1  95.834785–118.165215 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  97–117 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=100 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=2138
@@ -422,7 +422,7 @@ cost      165 mana
 range     20 yd
 labels    17
 
-effect 1  156.1946–187.8054 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  157–187 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=163 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8412
@@ -436,7 +436,7 @@ cost      220 mana
 range     20 yd
 labels    17
 
-effect 1  224.71428–269.2857 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  226–268 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=236 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8413
@@ -450,7 +450,7 @@ cost      280 mana
 range     20 yd
 labels    17
 
-effect 1  314.6226–373.3774 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  316–372 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=331 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10197
@@ -464,7 +464,7 @@ cost      340 mana
 range     20 yd
 labels    17
 
-effect 1  415.41064–490.58936 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  417–489 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=438 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10199
@@ -475,7 +475,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  642.5833–759.4167 fire damage to the enemy
+effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13339
@@ -485,7 +485,7 @@ school    fire
 defense   magic
 range     20 yd
 
-effect 1  642.5833–759.4167 fire damage to the enemy
+effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13340
@@ -496,7 +496,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  964.3333–1139.6666 fire damage to the enemy
+effect 1  965–1140 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13341
@@ -506,7 +506,7 @@ school    fire
 defense   magic
 range     20 yd
 
-effect 1  964.3333–1139.6666 fire damage to the enemy
+effect 1  965–1140 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13342
@@ -517,7 +517,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  642.5833–759.4167 fire damage to the enemy
+effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13374
@@ -528,7 +528,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  1286.0834–1519.9166 fire damage to the enemy
+effect 1  1286–1520 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=14145
@@ -538,7 +538,7 @@ school    fire
 defense   magic
 range     20 yd
 
-effect 1  1286.0834–1519.9166 fire damage to the enemy
+effect 1  1286–1520 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15574
@@ -548,7 +548,7 @@ school    fire
 defense   magic
 range     20 yd
 
-effect 1  2104 fire damage to the enemy
+effect 1  2104.9106 fire damage to the enemy
           E_SCHOOL_DAMAGE base=2104.9106 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16144
@@ -580,7 +580,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  730.07245–881.92755 fire damage to the enemy
+effect 1  731–883 fire damage to the enemy
           E_SCHOOL_DAMAGE base=806.8825 variance=0.1884058 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20795
@@ -591,7 +591,7 @@ defense   magic
 cost      120 mana
 range     20 yd
 
-effect 1  888.4762–1075.5238 fire damage to the enemy
+effect 1  889–1076 fire damage to the enemy
           E_SCHOOL_DAMAGE base=982.29175 variance=0.1904762 target=[6,0]
 
 https://www.wowhead.com/forever/spell=20832
@@ -613,7 +613,7 @@ cooldown  15 s (category)
 cost      115 mana
 range     20 yd
 
-effect 1  109.26956–134.73044 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  140–165 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=115 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400616
@@ -625,7 +625,7 @@ cooldown  15 s (category)
 cost      40 mana
 range     20 yd
 
-effect 1  26.571428–35.42857 fire damage to the enemy (at level 60, +0.204 spell power)
+effect 1  30–39 fire damage to the enemy (at level 60, +0.204 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.204 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400618
@@ -637,7 +637,7 @@ cooldown  15 s (category)
 cost      75 mana
 range     20 yd
 
-effect 1  61.453125–76.546875 fire damage to the enemy (at level 60, +0.332 spell power)
+effect 1  76–90 fire damage to the enemy (at level 60, +0.332 spell power)
           E_SCHOOL_DAMAGE base=64 ppl=1 variance=0.21875 sp=0.332 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400619
@@ -649,7 +649,7 @@ cooldown  15 s (category)
 cost      165 mana
 range     20 yd
 
-effect 1  176.17297–211.82703 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  231–265 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=185 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400620
@@ -661,7 +661,7 @@ cooldown  15 s (category)
 cost      220 mana
 range     20 yd
 
-effect 1  252.00752–301.9925 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  336–385 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=266 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400621
@@ -673,7 +673,7 @@ cooldown  15 s (category)
 cost      280 mana
 range     20 yd
 
-effect 1  343.8898–408.1102 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  464–527 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=363 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400622
@@ -685,7 +685,7 @@ cooldown  15 s (category)
 cost      340 mana
 range     20 yd
 
-effect 1  444.7553–525.2447 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  608–686 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=470 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400623
@@ -933,7 +933,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  15.555555–24.444445 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  16–25 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=18 ppl=0.6 variance=0.44444445 sp=0.429 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (2 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
@@ -951,7 +951,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  31.81579–46.18421 fire damage to the enemy (at level 60, +0.571 spell power)
+effect 1  32–47 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=37 ppl=0.7 variance=0.36842105 sp=0.571 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
@@ -969,7 +969,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  47.11111–64.888885 fire damage to the enemy (at level 60, +0.714 spell power)
+effect 1  48–65 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=53 ppl=0.9 variance=0.31746033 sp=0.714 target=[6,0]
 effect 2  2 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=2000ms target=[6,0]
@@ -987,7 +987,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  65.52–90.48 fire damage to the enemy (at level 60, +0.857 spell power)
+effect 1  66–91 fire damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=74 ppl=1.1 variance=0.32 sp=0.857 target=[6,0]
 effect 2  3 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms target=[6,0]
@@ -1005,7 +1005,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  97.21472–130.78528 fire damage to the enemy (at level 60)
+effect 1  98–130 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=108 ppl=1.5 variance=0.29447854 sp=1 target=[6,0]
 effect 2  4 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
@@ -1023,7 +1023,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  137.24138–182.75862 fire damage to the enemy (at level 60)
+effect 1  138–183 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=153 ppl=1.8 variance=0.28448275 sp=1 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
@@ -1041,7 +1041,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  169.42372–222.57628 fire damage to the enemy (at level 60)
+effect 1  171–222 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.27118644 sp=1 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
@@ -1059,7 +1059,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  211.13115–274.86884 fire damage to the enemy (at level 60)
+effect 1  212–275 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=235 ppl=2.2 variance=0.26229507 sp=1 target=[6,0]
 effect 2  8 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms target=[6,0]
@@ -1077,7 +1077,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  269.77283–348.22717 fire damage to the enemy (at level 60)
+effect 1  271–348 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.25389755 sp=1 target=[6,0]
 effect 2  10 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=2000ms target=[6,0]
@@ -1095,7 +1095,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  336.53137–431.46863 fire damage to the enemy (at level 60)
+effect 1  338–431 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=374 ppl=2.7 variance=0.24723247 sp=1 target=[6,0]
 effect 2  12 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=2000ms target=[6,0]
@@ -1113,7 +1113,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  396.56897–505.43103 fire damage to the enemy (at level 60)
+effect 1  397–505 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.2413793 sp=1 target=[6,0]
 effect 2  14 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=2000ms target=[6,0]
@@ -1304,7 +1304,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  424.58408–541.41595 fire damage to the enemy (at level 60)
+effect 1  425–541 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=483 ppl=3 variance=0.24188791 sp=1 target=[6,0]
 effect 2  15 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
@@ -1346,7 +1346,7 @@ range     30 yd
 labels    17
 refs      1279983 Flamestrike
 
-effect 1  54.6–71.4 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  55–71 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=60 ppl=0.6 variance=0.26666668 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41266 target=[87,16]
@@ -1366,7 +1366,7 @@ range     30 yd
 labels    17
 refs      1279985 Flamestrike
 
-effect 1  99.522934–126.477066 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  100–126 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=109 ppl=0.8 variance=0.23853211 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41267 target=[87,16]
@@ -1386,7 +1386,7 @@ range     30 yd
 labels    17
 refs      1279987 Flamestrike
 
-effect 1  158.45087–197.54913 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  159–197 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=173 ppl=1 variance=0.21965317 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41268 target=[87,16]
@@ -1406,7 +1406,7 @@ range     30 yd
 labels    17
 refs      1279988 Flamestrike
 
-effect 1  225.36586–278.63416 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  226–279 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=246 ppl=1.3 variance=0.21138212 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41269 target=[87,16]
@@ -1426,7 +1426,7 @@ range     30 yd
 labels    17
 refs      1279989 Flamestrike
 
-effect 1  297.2677–366.7323 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  298–367 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=325 ppl=1.5 variance=0.20923077 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41270 target=[87,16]
@@ -1446,7 +1446,7 @@ range     30 yd
 labels    17
 refs      1279990 Flamestrike
 
-effect 1  380.3957–465.6043 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
+effect 1  381–466 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=417 ppl=1.7 variance=0.20143884 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41271 target=[87,16]
@@ -1534,7 +1534,7 @@ labels    17
 
 effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  101.5625–118.4375 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+effect 2  102–119 fire+frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=100 ppl=1.3 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  9 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
@@ -1564,7 +1564,7 @@ labels    17
 
 effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  180.04262–209.95738 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+effect 2  181–210 fire+frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=182 ppl=1.7 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  13 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 period=3000ms target=[6,0]
@@ -1584,37 +1584,26 @@ labels    17
 
 effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  269.60226–314.39774 fire+frost damage to the enemy (at level 60, +0.814 spell power)
+effect 2  270–314 fire+frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=292 ppl=2.1 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  19 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=1237313
 =======
-48108 Hot Streak
-school    physical
-duration  10 s
-stack     up to 1
-labels    17
-
-effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x400000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=3 mask=0x400000 target=[1,0]
-
-https://www.wowhead.com/forever/spell=48108
-=======
-400624 Hot Streak
+400624 Heating Up
 school    fire
 attrs     passive, can proc from procs
 labels    17
 proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
-refs      400625 Hot Streak
+refs      400625 Heating Up
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 
 https://www.wowhead.com/forever/spell=400624
 =======
-400625 Hot Streak
+400625 Heating Up
 school    fire
 defense   magic
 duration  20 s
@@ -1630,21 +1619,11 @@ effect 2  a dummy aura holding -3
 
 https://www.wowhead.com/forever/spell=400625
 =======
-401724 Hot Streak
-school    physical
-attrs     passive
-labels    3096
-
-effect 1  replaces an action bar spell with 417345
-          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400624 misc=417345 target=[1,0]
-
-https://www.wowhead.com/forever/spell=401724
-=======
 11119 Ignite
 school    physical
 attrs     passive
 labels    17
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
 refs      412538 Ignite
 
 effect 1  a dummy aura holding 40
@@ -1768,7 +1747,7 @@ school    fire
 defense   magic
 duration  12 s
 gcd       1.5 s
-cost      22% of maximum mana
+cost      22% of base mana
 range     35 yd
 refs      400614 Living Bomb
 
@@ -1806,7 +1785,7 @@ defense   magic
 duration  10 s
 cooldown  30 s
 gcd       1.5 s
-cost      11% of maximum mana
+cost      11% of base mana
 range     35 yd
 refs      401558 Living Flame
 
@@ -1860,7 +1839,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  99.731705–132.2683 fire damage to the enemy (at level 60)
+effect 1  101–131 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=110 ppl=1.5 variance=0.2804878 sp=1 target=[6,0]
 effect 2  11 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=11 sp=0.15 period=3000ms target=[6,0]
@@ -1878,7 +1857,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  124.61539–163.38461 fire damage to the enemy (at level 60)
+effect 1  126–163 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=134 ppl=1.7 variance=0.26923078 sp=1 target=[6,0]
 effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.15 period=3000ms target=[6,0]
@@ -1896,7 +1875,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  177.8866–228.1134 fire damage to the enemy (at level 60)
+effect 1  179–228 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=191 ppl=2.1 variance=0.24742268 sp=1 target=[6,0]
 effect 2  19 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.15 period=3000ms target=[6,0]
@@ -1914,7 +1893,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  227.8369–290.16312 fire damage to the enemy (at level 60)
+effect 1  230–289 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=245 ppl=2.4 variance=0.24064171 sp=1 target=[6,0]
 effect 2  25 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.15 period=3000ms target=[6,0]
@@ -1932,7 +1911,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  288.69632–365.30368 fire damage to the enemy (at level 60)
+effect 1  291–364 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=311 ppl=2.7 variance=0.23427331 sp=1 target=[6,0]
 effect 2  31 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=31 sp=0.15 period=3000ms target=[6,0]
@@ -1950,7 +1929,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  365.4956–458.5044 fire damage to the enemy (at level 60)
+effect 1  368–456 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=394 ppl=3 variance=0.22574955 sp=1 target=[6,0]
 effect 2  38 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=38 sp=0.15 period=3000ms target=[6,0]
@@ -1968,7 +1947,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  445.33334–556.6667 fire damage to the enemy (at level 60)
+effect 1  448–555 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=481 ppl=3.4 variance=0.22222222 sp=1 target=[6,0]
 effect 2  46 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.15 period=3000ms target=[6,0]
@@ -1983,9 +1962,9 @@ cast      6 s
 cost      130 mana
 range     35 yd
 
-effect 1  934.8837–1075.1163 fire damage to the enemy (+0.75 spell power)
+effect 1  936–1076 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
-effect 2  87 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+effect 2  87.70461 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=17273
@@ -1998,9 +1977,9 @@ cast      6 s
 cost      130 mana
 range     35 yd
 
-effect 1  3723.8577–4320.1426 fire damage to the enemy (+0.75 spell power)
+effect 1  3725–4321 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=4022.718 variance=0.14825581 sp=0.75 target=[6,0]
-effect 2  350 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+effect 2  350.81845 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.05 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=17274
@@ -2016,7 +1995,7 @@ range     35 yd
 attrs     periodic can crit
 labels    17
 
-effect 1  519.83563–646.16437 fire damage to the enemy (at level 60)
+effect 1  520–646 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=583 ppl=4.6 variance=0.21668743 sp=1 target=[6,0]
 effect 2  53 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=53 sp=0.15 period=3000ms target=[6,0]
@@ -2043,9 +2022,9 @@ duration  12 s
 cast      6 s
 range     35 yd
 
-effect 1  934.8837–1075.1163 fire damage to the enemy (+0.75 spell power)
+effect 1  936–1076 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
-effect 2  87 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
+effect 2  87.70461 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=434443
@@ -2112,7 +2091,7 @@ cost      50 mana
 range     30 yd
 labels    17
 
-effect 1  37.728813–46.271187 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  38–47 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=39 ppl=0.8 variance=0.20338982 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=2948
@@ -2126,7 +2105,7 @@ cost      65 mana
 range     30 yd
 labels    17
 
-effect 1  53.44706–64.55294 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  54–64 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=55 ppl=1 variance=0.1882353 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8444
@@ -2140,7 +2119,7 @@ cost      80 mana
 range     30 yd
 labels    17
 
-effect 1  66.36364–79.63636 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  67–79 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=69 ppl=1 variance=0.18181819 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8445
@@ -2154,7 +2133,7 @@ cost      100 mana
 range     30 yd
 labels    17
 
-effect 1  88.363014–105.636986 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  89–106 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=93 ppl=1.2 variance=0.1780822 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8446
@@ -2168,7 +2147,7 @@ cost      115 mana
 range     30 yd
 labels    17
 
-effect 1  110.745766–131.25424 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  111–132 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=116 ppl=1.4 variance=0.16949153 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10205
@@ -2182,7 +2161,7 @@ cost      135 mana
 range     30 yd
 labels    17
 
-effect 1  142.10959–169.89041 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  143–169 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=150 ppl=1.5 variance=0.1780822 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10206
@@ -2196,7 +2175,7 @@ cost      150 mana
 range     30 yd
 labels    17
 
-effect 1  166.03543–195.96457 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  166–197 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=178 ppl=1.7 variance=0.16535433 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10207
@@ -2209,7 +2188,7 @@ gcd       1.5 s
 cost      50 mana
 range     30 yd
 
-effect 1  268.33334–361.66666 fire damage to the enemy
+effect 1  269–363 fire damage to the enemy
           E_SCHOOL_DAMAGE base=315.7366 variance=0.2962963 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=13878
@@ -2222,7 +2201,7 @@ gcd       1.5 s
 cost      50 mana
 range     30 yd
 
-effect 1  537.5185–724.4815 fire damage to the enemy
+effect 1  538–725 fire damage to the enemy
           E_SCHOOL_DAMAGE base=631.4732 variance=0.2962963 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=15241
@@ -2235,7 +2214,7 @@ gcd       1.5 s
 cost      50 mana
 range     30 yd
 
-effect 1  672.1111–905.8889 fire damage to the enemy
+effect 1  672–906 fire damage to the enemy
           E_SCHOOL_DAMAGE base=789.3415 variance=0.2962963 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17195

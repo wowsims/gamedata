@@ -304,7 +304,7 @@ school    fire
 duration  permanent
 labels    3096, 3100
 
-effect 1  +120 holy+fire+nature+frost+shadow+arcane damage done (at level 60)
+effect 1  +122 holy+fire+nature+frost+shadow+arcane damage done (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=2 ppl=2 misc=126 target=[1,0]
 
 https://www.wowhead.com/forever/spell=454042
@@ -336,16 +336,6 @@ effect 1  SPELLMOD_JUMP_TARGETS +3 on family 11 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=17 family=11 mask=0x40 target=[1,0]
 
 https://www.wowhead.com/forever/spell=23573
-=======
-1270478 Charged Lightning
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 11 mask 0x1
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=14 family=11 mask=0x1 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1270478
 =======
 415012 Clastic Icon
 school    physical
@@ -697,7 +687,7 @@ school    shadow
 duration  45 s
 cooldown  180 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 range     30 yd
 stance    Shadowform
 
@@ -764,6 +754,16 @@ effect 1  raid aura: +60 fire resistance
 
 https://www.wowhead.com/forever/spell=10535
 =======
+1270478 Flame Charged
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 11 mask 0x10000001
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=14 family=11 mask=0x10000001 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1270478
+=======
 436286 Flame Shock Cost Reduced
 school    physical
 attrs     passive
@@ -780,8 +780,8 @@ defense   magic
 range     50000 yd
 labels    24
 
-effect 1  1 fire damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=1 sp=0.1 target=[6,0]
+effect 1  0 fire damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=0 sp=0.1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10444
 =======
@@ -802,8 +802,8 @@ defense   magic
 range     50000 yd
 labels    24
 
-effect 1  1 fire damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=1 sp=0.1 target=[6,0]
+effect 1  0 fire damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=0 sp=0.1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=29469
 =======
@@ -813,8 +813,8 @@ defense   magic
 range     50000 yd
 labels    24
 
-effect 1  1 fire damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=1 sp=0.1 target=[6,0]
+effect 1  0 fire damage to the enemy (+0.1 spell power)
+          E_SCHOOL_DAMAGE base=0 sp=0.1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=29470
 =======
@@ -1019,7 +1019,7 @@ labels    24
 
 effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
-effect 2  44 frost damage to the enemy (at level 60, +0.1 spell power)
+effect 2  44.6 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=2.1 sp=0.1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8034
@@ -1075,7 +1075,7 @@ labels    24
 
 effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
-effect 2  169 frost damage to the enemy (at level 60, +0.1 spell power)
+effect 2  169.2 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=158 ppl=5.6 sp=0.1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=16353
@@ -1812,7 +1812,7 @@ https://www.wowhead.com/forever/spell=8168
 school    fire
 attrs     passive
 labels    3096
-proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; 5% chance; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; 5% chance; tooltip says heals count, damaging spells only
 refs      415105 Power Surge, 468526 Power Surge, 440285 Power Surge
 
 effect 1  a dummy aura holding 14
@@ -1910,6 +1910,18 @@ effect 1  SPELLMOD_COST -5% on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 misc=14 family=11 mask=0x0,0x0,0x10 target=[1,0]
 
 https://www.wowhead.com/forever/spell=27797
+=======
+1323418 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 11 mask 0x801001c3,0x41000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=11 mask=0x801001c3,0x41000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323418
 =======
 10400 Rockbiter Weapon (Passive) (Rank 1)
 school    nature
@@ -2287,7 +2299,7 @@ https://www.wowhead.com/forever/spell=1226961
 1226977 S03 - Item - Scarlet Enclave - Shaman - Elemental 4P Bonus
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 refs      1233835 Thunder and Lava
 
 effect 1  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 11 mask 0x0,0x0,0x8000
@@ -2311,7 +2323,7 @@ https://www.wowhead.com/forever/spell=1226978
 1226984 S03 - Item - Scarlet Enclave - Shaman - Enhancement 2P Bonus
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance; tooltip says damaging spells only
 
 effect 1  a dummy aura holding 9
           E_APPLY_AURA A_DUMMY base=9 target=[1,0]
@@ -2394,7 +2406,7 @@ https://www.wowhead.com/forever/spell=1227153
 school    physical
 icd       3 s
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count, damaging spells only
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
@@ -2552,7 +2564,7 @@ https://www.wowhead.com/forever/spell=467882
 467804 S03 - Item - T2 - Shaman - Restoration 2P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance; tooltip says on a crit, heals count
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance; tooltip says on a crit, heals count, damaging spells only
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 perResource=5 target=[1,0]
@@ -2673,7 +2685,7 @@ https://www.wowhead.com/forever/spell=1213894
 1213930 S03 - Item - TAQ - Shaman - Tank 2P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 refs      1213934 Stormbraced
 
 effect 1  casts 1213934 Stormbraced on its trigger
@@ -2943,7 +2955,7 @@ https://www.wowhead.com/forever/spell=440591
 school    physical
 attrs     passive
 labels    3096, 3100
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 12% chance
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 12% chance; tooltip says damaging spells only
 
 effect 1  SPELLMOD_CHARGES +6 on family 11 mask 0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=4 family=11 mask=0x400 target=[1,0]

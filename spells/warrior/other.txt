@@ -59,7 +59,7 @@ https://www.wowhead.com/forever/spell=1301071
 school    physical
 attrs     passive
 
-effect 1  unrecognised shape
+effect 1  +12 expertise rating
           E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1301096
@@ -204,7 +204,7 @@ https://www.wowhead.com/forever/spell=457817
 412507 Blood Frenzy
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0x20 target=[1,0]
@@ -320,7 +320,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      30 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  -50% healing taken to the enemy
@@ -507,7 +507,7 @@ duration  30 s
 gcd       1.5 s
 range     30 yd
 
-effect 1  -120 attack power to the enemy (at level 60)
+effect 1  -130 attack power to the enemy (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-10 ppl=-2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=23262
@@ -548,7 +548,7 @@ duration  15 s
 stack     up to 1
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xffffffff,0xfffdffff,0xffffffff,0xffffffff target=[1,0]
 
 https://www.wowhead.com/forever/spell=457819
 =======
@@ -656,6 +656,16 @@ effect 1  SPELLMOD_THREAT +15% on family 4 mask 0x4000
 
 https://www.wowhead.com/forever/spell=23561
 =======
+12880 Enrage
+school    physical
+duration  12 s
+labels    25
+
+effect 1  +10% physical damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=12880
+=======
 427066 Enrage
 school    physical
 duration  12 s
@@ -684,14 +694,14 @@ cooldown  120 s
 charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
-effect 1  SPELLMOD_COST -10% on family 4 mask 0x2a6000e6,0x4
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=4 mask=0x2a6000e6,0x4 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +10% on family 4 mask 0x2a6000e6,0x4
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=4 mask=0x2a6000e6,0x4 target=[1,0]
-effect 3  SPELLMOD_DOT +10% on family 4 mask 0x20
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=4 mask=0x20 target=[1,0]
+effect 1  SPELLMOD_COST -10% on family 4 mask 0x6a600cce,0x5,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=4 mask=0x6a600cce,0x5,0x1 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 4 mask 0x6a600cce,0x5,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=4 mask=0x6a600cce,0x5,0x1 target=[1,0]
+effect 3  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 
@@ -783,7 +793,7 @@ https://www.wowhead.com/forever/spell=30112
 440484 Fresh Meat
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance, from effect 2
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance, from effect 2; tooltip says damaging spells only
 refs      440483 Enrage
 
 effect 1  a dummy aura holding 10
@@ -869,7 +879,7 @@ effect 1  +10% every school damage done
 effect 2  +10% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=10 sp=1 target=[1,0]
 effect 3  unrecognised shape
-          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xfffdffff,0xffffffff,0xffffffff target=[1,0]
 
 https://www.wowhead.com/forever/spell=413479
 =======
@@ -969,7 +979,7 @@ defense   magic
 duration  120 s
 cooldown  20 s
 gcd       1.5 s
-cost      10% of maximum mana
+cost      10% of base mana
 
 effect 1  +1 strength to the party around the caster
           E_APPLY_AURA A_MOD_STAT base=1 radius=30 target=[20,0]
@@ -1115,6 +1125,26 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=16508
+=======
+1323965 Lingering Rage
+school    physical
+duration  10 s
+labels    25
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_INTERRUPT_REGEN base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323965
+=======
+1323966 Lingering Rage
+school    physical
+duration  permanent
+labels    25
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323966
 =======
 15602 Lord General's Sword
 school    physical
@@ -1364,7 +1394,7 @@ school    physical
 defense   melee
 duration  30 s
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
@@ -1374,6 +1404,17 @@ effect 3  a dummy aura holding 1 to the enemy
           E_APPLY_AURA A_DUMMY base=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=468071
+=======
+1322574 Rule of Rage (DND)
+school    physical
+attrs     passive
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1322574
 =======
 1219481 S03 - Item - Naxxramas - Warrior - Damage 2P Bonus
 school    physical
@@ -1476,7 +1517,7 @@ https://www.wowhead.com/forever/spell=1227232
 1227234 S03 - Item - Scarlet Enclave - Warrior - Damage 6P Bonus
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
@@ -1517,7 +1558,7 @@ refs      1234067 Gladiator's Cunning
 effect 1  casts 1234067 Gladiator's Cunning on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1234067 target=[1,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[1,0]
+          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xfffdffff,0xffffffff,0xffffffff target=[1,0]
 
 https://www.wowhead.com/forever/spell=1227245
 =======
@@ -2059,7 +2100,7 @@ effect 1  charges
           E_CHARGE base=0 target=[53,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
-effect 3  360–540 physical damage to every enemy in the target area
+effect 3  270–630 physical damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 target=[53,16]
 
 https://www.wowhead.com/forever/spell=464250
@@ -2078,7 +2119,7 @@ https://www.wowhead.com/forever/spell=19223
 school    physical
 attrs     passive, can proc from procs
 labels    3096, 3100
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 30% chance; tooltip says one named ability
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 30% chance; tooltip says one named ability, damaging spells only
 refs      426979 Sword and Board
 
 effect 1  casts 426979 Sword and Board on its trigger

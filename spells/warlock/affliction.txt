@@ -224,7 +224,7 @@ gcd       1.5 s
 cost      100 mana
 range     30 yd
 
-effect 1  350 shadow damage every 3 s to every enemy around the caster (8 ticks, +0.125 spell power)
+effect 1  350.81845 shadow damage every 3 s to every enemy around the caster (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.125 period=3000ms radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=18376
@@ -237,7 +237,7 @@ cast      2 s
 gcd       1.5 s
 range     30 yd
 
-effect 1  116 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
+effect 1  116.93949 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=21068
@@ -275,7 +275,7 @@ cast      2 s
 gcd       1.5 s
 range     30 yd
 
-effect 1  116 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
+effect 1  116.93949 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=1213450
@@ -308,7 +308,7 @@ defense   magic
 mechanic  mechanic 11
 duration  12 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     30 yd
 labels    19
 
@@ -905,7 +905,7 @@ mechanic  mechanic 5
 duration  10 s
 cast      1.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     20 yd
 targets   up to 1
 labels    19
@@ -925,7 +925,7 @@ mechanic  mechanic 5
 duration  15 s
 cast      1.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     20 yd
 targets   up to 1
 labels    19
@@ -945,7 +945,7 @@ mechanic  mechanic 5
 duration  20 s
 cast      1.5 s
 gcd       1.5 s
-cost      15% of maximum mana
+cost      15% of base mana
 range     20 yd
 targets   up to 1
 labels    19
@@ -1366,7 +1366,7 @@ https://www.wowhead.com/forever/spell=1310949
 school    physical
 attrs     passive
 labels    19
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; 4% chance, from effect 1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; 4% chance, from effect 1; tooltip says damaging spells only
 refs      17941 Shadow Trance
 
 effect 1  a dummy aura holding 4
@@ -1472,7 +1472,7 @@ effect 1  0 healing to the caster
 
 https://www.wowhead.com/forever/spell=1242957
 =======
-437032 Soul Harvesting
+437032 Soul Harvest
 school    physical
 attrs     passive
 labels    19

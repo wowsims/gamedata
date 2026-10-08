@@ -1,0 +1,2186 @@
+# Patch: 1.60.1.70245
+
+- Build: 1.60.1.70245 (`wow_classic_beta` on Blizzard's CDN)
+- Hotfixes: applied, 4696 pushes (29493 entries)
+- Previous: 1.60.1.70009 with 4343 hotfix pushes (2026-09-25)
+- Exported by wowsims/forever@6980c91940cc on 2026-10-08
+
+## Hotfix pushes
+
+- 112323: 1 entries
+- 112340: 1 entries
+- 112347: 259 entries
+- 112349: 8 entries
+- 112350: 938 entries
+- 112369: 1 entries
+- 112378: 2 entries
+- 112380: 30 entries
+- 112382: 1 entries
+- 112387: 19 entries
+- 112399: 23 entries
+- 112402: 2 entries
+- 112405: 1 entries
+- 112407: 3 entries
+- 112408: 1 entries
+- 112409: 1 entries
+- 112412: 1 entries
+- 112413: 1 entries
+- 112421: 1 entries
+- 112425: 157 entries
+- 112426: 2 entries
+- 112427: 1 entries
+- 112436: 9 entries
+- 112439: 4 entries
+- 112457: 1 entries
+- 112463: 2 entries
+- 112486: 9 entries
+- 16777969: 6 entries
+- 16777972: 6 entries
+- 16777992: 6 entries
+- 16778028: 6 entries
+- 16778085: 6 entries
+- 16778130: 6 entries
+- 16778160: 6 entries
+- 16778480: 6 entries
+- 16778496: 6 entries
+- 16778533: 6 entries
+- 16778567: 6 entries
+- 16778663: 6 entries
+- 16778704: 6 entries
+- 16778738: 6 entries
+- 16778739: 6 entries
+- 16778818: 6 entries
+- 16778840: 6 entries
+- 16778894: 6 entries
+- 16778943: 6 entries
+- 16778944: 6 entries
+- 16779191: 6 entries
+- 16779196: 6 entries
+- 16779197: 6 entries
+- 16779198: 6 entries
+- 16779202: 6 entries
+- 16779207: 6 entries
+- 16779208: 6 entries
+- 16779213: 6 entries
+- 16779214: 6 entries
+- 16779249: 6 entries
+- 16779300: 6 entries
+- 16779380: 6 entries
+- 16779459: 6 entries
+- 16779478: 6 entries
+- 16779480: 6 entries
+- 16779782: 6 entries
+- 16779837: 6 entries
+- 16779840: 6 entries
+- 16780041: 6 entries
+- 16780122: 6 entries
+- 16780171: 6 entries
+- 16780269: 6 entries
+- 16780557: 6 entries
+- 16780561: 6 entries
+- 16780616: 6 entries
+- 16780672: 6 entries
+- 16780691: 6 entries
+- 16780778: 6 entries
+- 16780785: 6 entries
+- 16781413: 6 entries
+- 16781654: 6 entries
+- 16781692: 6 entries
+- 16781859: 6 entries
+- 16781939: 6 entries
+- 16781940: 6 entries
+- 16781962: 6 entries
+- 16782026: 6 entries
+- 16782196: 6 entries
+- 16782244: 6 entries
+- 16782396: 6 entries
+- 16782397: 6 entries
+- 16782461: 6 entries
+- 16782473: 6 entries
+- 16782824: 6 entries
+- 16782840: 6 entries
+- 16782969: 6 entries
+- 16782970: 6 entries
+- 16782971: 6 entries
+- 16782972: 6 entries
+- 16783035: 6 entries
+- 16783414: 6 entries
+- 16783547: 6 entries
+- 16783898: 6 entries
+- 16783904: 6 entries
+- 16783905: 6 entries
+- 16783906: 6 entries
+- 16783907: 6 entries
+- 16783908: 6 entries
+- 16783909: 6 entries
+- 16783910: 6 entries
+- 16783911: 6 entries
+- 16783912: 6 entries
+- 16783913: 6 entries
+- 16783941: 6 entries
+- 16783958: 6 entries
+- 16783964: 6 entries
+- 16783965: 6 entries
+- 16783966: 6 entries
+- 16783967: 6 entries
+- 16783968: 6 entries
+- 16784020: 6 entries
+- 16784022: 6 entries
+- 16784900: 6 entries
+- 16784901: 6 entries
+- 16784902: 6 entries
+- 16784903: 6 entries
+- 16784904: 6 entries
+- 16784905: 6 entries
+- 16784906: 6 entries
+- 16784907: 6 entries
+- 16784924: 6 entries
+- 16784925: 6 entries
+- 16784926: 6 entries
+- 16784927: 6 entries
+- 16784928: 6 entries
+- 16784929: 6 entries
+- 16784930: 6 entries
+- 16784933: 6 entries
+- 16784935: 6 entries
+- 16784943: 6 entries
+- 16784944: 6 entries
+- 16784945: 6 entries
+- 16784947: 6 entries
+- 16784952: 6 entries
+- 16784962: 6 entries
+- 16784963: 6 entries
+- 16784965: 6 entries
+- 16784966: 6 entries
+- 16784967: 6 entries
+- 16784968: 6 entries
+- 16784969: 6 entries
+- 16784970: 6 entries
+- 16784971: 6 entries
+- 16784972: 6 entries
+- 16784973: 6 entries
+- 16784975: 6 entries
+- 16784977: 6 entries
+- 16785002: 6 entries
+- 16785003: 6 entries
+- 16785439: 6 entries
+- 16785440: 6 entries
+- 16785441: 6 entries
+- 16785442: 6 entries
+- 16786594: 6 entries
+- 16786598: 6 entries
+- 16786600: 6 entries
+- 16786602: 6 entries
+- 16786603: 6 entries
+- 16786604: 6 entries
+- 16786605: 6 entries
+- 16786606: 6 entries
+- 16786607: 6 entries
+- 16786609: 6 entries
+- 16786612: 6 entries
+- 16786613: 6 entries
+- 16786622: 6 entries
+- 16786623: 6 entries
+- 16786625: 6 entries
+- 16786636: 6 entries
+- 16786642: 6 entries
+- 16786644: 6 entries
+- 16786663: 6 entries
+- 16786664: 6 entries
+- 16786671: 6 entries
+- 16786672: 6 entries
+- 16786673: 6 entries
+- 16786674: 6 entries
+- 16786675: 6 entries
+- 16786677: 6 entries
+- 16786701: 6 entries
+- 16786703: 6 entries
+- 16786705: 6 entries
+- 16786706: 6 entries
+- 16786707: 6 entries
+- 16786708: 6 entries
+- 16786724: 6 entries
+- 16786725: 6 entries
+- 16786726: 6 entries
+- 16786738: 6 entries
+- 16786754: 6 entries
+- 16786804: 6 entries
+- 16786820: 6 entries
+- 16786821: 6 entries
+- 16786839: 6 entries
+- 16786840: 6 entries
+- 16786841: 6 entries
+- 16787544: 6 entries
+- 16787545: 6 entries
+- 16787546: 6 entries
+- 16787547: 6 entries
+- 16787548: 6 entries
+- 16787549: 6 entries
+- 16787574: 6 entries
+- 16787575: 6 entries
+- 16787787: 6 entries
+- 16787789: 6 entries
+- 16787794: 6 entries
+- 16787798: 6 entries
+- 16787800: 6 entries
+- 16787985: 6 entries
+- 16787986: 6 entries
+- 16787988: 6 entries
+- 16787991: 6 entries
+- 16787992: 6 entries
+- 16787993: 6 entries
+- 16790291: 6 entries
+- 16790323: 6 entries
+- 16790332: 6 entries
+- 16790349: 6 entries
+- 16794102: 6 entries
+- 16794103: 6 entries
+- 16794255: 6 entries
+- 16794258: 6 entries
+- 16794259: 6 entries
+- 16794724: 6 entries
+- 16795894: 6 entries
+- 16795895: 6 entries
+- 16800408: 6 entries
+- 16988509: 6 entries
+- 16989563: 6 entries
+- 16990198: 6 entries
+- 16992589: 6 entries
+- 16992591: 6 entries
+- 16994713: 6 entries
+- 17029178: 6 entries
+- 17029179: 6 entries
+- 17029181: 6 entries
+- 17047243: 6 entries
+- 17047245: 6 entries
+- 17047252: 6 entries
+- 17047259: 6 entries
+- 17047263: 6 entries
+- 17047270: 6 entries
+- 17047271: 6 entries
+- 17047275: 6 entries
+- 17047276: 6 entries
+- 17047290: 6 entries
+- 17047291: 6 entries
+- 17048984: 6 entries
+- 17050238: 6 entries
+- 17050239: 6 entries
+- 17050240: 6 entries
+- 17050241: 6 entries
+- 17050242: 6 entries
+- 17050243: 6 entries
+- 17050244: 6 entries
+- 17050245: 6 entries
+- 17050246: 6 entries
+- 17051259: 6 entries
+- 17051294: 6 entries
+- 17051300: 6 entries
+- 17051376: 6 entries
+- 17051377: 6 entries
+- 17051506: 6 entries
+- 17051507: 6 entries
+- 17051508: 6 entries
+- 17051509: 6 entries
+- 17051510: 6 entries
+- 17051511: 6 entries
+- 17051641: 6 entries
+- 17051644: 6 entries
+- 17051646: 6 entries
+- 17051701: 6 entries
+- 17051733: 6 entries
+- 17056604: 6 entries
+- 17057051: 6 entries
+- 17057052: 6 entries
+- 17057053: 6 entries
+- 17057054: 6 entries
+- 17057055: 6 entries
+- 17057056: 6 entries
+- 17057057: 6 entries
+- 17057058: 6 entries
+- 17057059: 6 entries
+- 17057060: 6 entries
+- 17057063: 6 entries
+- 17057064: 6 entries
+- 17057065: 6 entries
+- 17057104: 6 entries
+- 17057105: 6 entries
+- 17058021: 6 entries
+- 17058816: 6 entries
+- 17058962: 6 entries
+- 17058966: 6 entries
+- 17059107: 6 entries
+- 17059219: 6 entries
+- 17059226: 6 entries
+- 17059264: 6 entries
+- 17059290: 6 entries
+- 17059313: 6 entries
+- 17059771: 6 entries
+- 17059774: 6 entries
+- 17059869: 6 entries
+- 17059918: 6 entries
+- 17059919: 6 entries
+- 17059920: 6 entries
+- 17059922: 6 entries
+- 17059926: 6 entries
+- 17059929: 6 entries
+- 17059932: 6 entries
+- 17060469: 6 entries
+- 17061257: 6 entries
+- 17061279: 6 entries
+- 17061316: 6 entries
+- 17061317: 6 entries
+- 17061318: 6 entries
+- 17061370: 6 entries
+- 17061444: 6 entries
+- 17061469: 6 entries
+- 17061488: 6 entries
+- 17061598: 6 entries
+- 17061599: 6 entries
+- 17061675: 6 entries
+- 17061789: 6 entries
+- 17061790: 6 entries
+- 17061883: 6 entries
+- 17061913: 6 entries
+- 17061915: 6 entries
+- 17061923: 6 entries
+- 17061928: 6 entries
+- 17061929: 6 entries
+- 17061933: 6 entries
+- 17062082: 6 entries
+- 17062305: 6 entries
+- 17062309: 6 entries
+- 17062310: 6 entries
+- 17062311: 6 entries
+- 17062316: 6 entries
+- 17062318: 6 entries
+- 17062319: 6 entries
+- 17062393: 6 entries
+- 17062406: 6 entries
+- 17062500: 6 entries
+- 17063772: 6 entries
+- 17063784: 6 entries
+- 17063788: 6 entries
+- 17063855: 6 entries
+- 17064193: 6 entries
+- 17064197: 6 entries
+
+## Spells
+
+### Druid: 3 added, 0 removed, 126 changed
+- added 1322670 Improved Shifting Power · feral-combat
+- added 1322605 Shifting Power · feral-combat
+- added 1323400 Revelation · other
+- changed 428713 Barkskin · balance
+- changed 1278965 Hurricane (Rank 1) · balance
+- changed 1278968 Hurricane (Rank 2) · balance
+- changed 8921 Moonfire (Rank 1) · balance
+- changed 8924 Moonfire (Rank 2) · balance
+- changed 8925 Moonfire (Rank 3) · balance
+- changed 8926 Moonfire (Rank 4) · balance
+- changed 8927 Moonfire (Rank 5) · balance
+- changed 8928 Moonfire (Rank 6) · balance
+- changed 8929 Moonfire (Rank 7) · balance
+- changed 9833 Moonfire (Rank 8) · balance
+- changed 9834 Moonfire (Rank 9) · balance
+- changed 9835 Moonfire (Rank 10) · balance
+- changed 429823 Moonfire · balance
+- changed 24858 Moonkin Form (Shapeshift) · balance
+- changed 24905 Moonkin Form (Passive) (Passive) · balance
+- changed 443359 Moonkin Form (Passive) (Passive) · balance
+- changed 16864 Omen of Clarity · balance
+- changed 439748 Starfall · balance
+- changed 2912 Starfire (Rank 1) · balance
+- changed 8949 Starfire (Rank 2) · balance
+- changed 8950 Starfire (Rank 3) · balance
+- changed 8951 Starfire (Rank 4) · balance
+- changed 9875 Starfire (Rank 5) · balance
+- changed 9876 Starfire (Rank 6) · balance
+- changed 25298 Starfire (Rank 7) · balance
+- changed 414684 Sunfire · balance
+- changed 21335 Thorns · balance
+- changed 21337 Thorns · balance
+- changed 22128 Thorns · balance
+- changed 22696 Thorns · balance
+- changed 25640 Thorns · balance
+- changed 5176 Wrath (Rank 1) · balance
+- changed 5177 Wrath (Rank 2) · balance
+- changed 5178 Wrath (Rank 3) · balance
+- changed 5179 Wrath (Rank 4) · balance
+- changed 5180 Wrath (Rank 5) · balance
+- changed 6780 Wrath (Rank 6) · balance
+- changed 8905 Wrath (Rank 7) · balance
+- changed 9912 Wrath (Rank 8) · balance
+- changed 1066 Aquatic Form (Shapeshift) · feral-combat
+- changed 5421 Aquatic Form (Passive) (Passive) · feral-combat
+- changed 5487 Bear Form (Shapeshift) · feral-combat
+- changed 1178 Bear Form (Passive) (Passive) · feral-combat
+- changed 768 Cat Form (Shapeshift) · feral-combat
+- changed 3025 Cat Form (Passive) (Passive) · feral-combat
+- changed 9634 Dire Bear Form (Shapeshift) · feral-combat
+- changed 9635 Dire Bear Form (Passive) (Passive) · feral-combat
+- changed 22568 Ferocious Bite (Rank 1) · feral-combat
+- changed 22827 Ferocious Bite (Rank 2) · feral-combat
+- changed 22828 Ferocious Bite (Rank 3) · feral-combat
+- changed 22829 Ferocious Bite (Rank 4) · feral-combat
+- changed 27557 Ferocious Bite · feral-combat
+- changed 31018 Ferocious Bite (Rank 5) · feral-combat
+- changed 24331 Rake · feral-combat
+- changed 24332 Rake · feral-combat
+- changed 27556 Rake · feral-combat
+- changed 27638 Rake · feral-combat
+- changed 27555 Shred · feral-combat
+- changed 27554 Swipe · feral-combat
+- changed 783 Travel Form (Shapeshift) · feral-combat
+- changed 1301247 1.60.0 - Item - Tier 1 - Druid - Feral 5P Bonus - Shifting Power · other
+- changed 1301076 1.60.0 - Item - Tier 1 - Druid - Guardian 4P Bonus - Expertise · other
+- changed 460673 Demonskin · other
+- changed 408258 Dreamstate · other
+- changed 414799 Fury of Stormrage · other
+- changed 1270650 Lunar Fire · other
+- changed 28855 Reduced Maul and Swipe Cost · other
+- changed 1291059 Shifting Power Cooldown Reduction · other
+- changed 775 Tree Form (Shapeshift) · other
+- changed 439733 Tree of Life (Shapeshift) · other
+- changed 21793 Twisted Tranquility · other
+- changed 1270651 Umbral Fire · other
+- changed 2893 Abolish Poison · restoration
+- changed 8946 Cure Poison · restoration
+- changed 5185 Healing Touch (Rank 1) · restoration
+- changed 5186 Healing Touch (Rank 2) · restoration
+- changed 5187 Healing Touch (Rank 3) · restoration
+- changed 5188 Healing Touch (Rank 4) · restoration
+- changed 5189 Healing Touch (Rank 5) · restoration
+- changed 6778 Healing Touch (Rank 6) · restoration
+- changed 8903 Healing Touch (Rank 7) · restoration
+- changed 9758 Healing Touch (Rank 8) · restoration
+- changed 9888 Healing Touch (Rank 9) · restoration
+- changed 9889 Healing Touch (Rank 10) · restoration
+- changed 25297 Healing Touch (Rank 11) · restoration
+- changed 29166 Innervate · restoration
+- changed 408124 Lifebloom · restoration
+- changed 408247 Nourish · restoration
+- changed 20484 Rebirth (Rank 1) · restoration
+- changed 20739 Rebirth (Rank 2) · restoration
+- changed 20742 Rebirth (Rank 3) · restoration
+- changed 20747 Rebirth (Rank 4) · restoration
+- changed 20748 Rebirth (Rank 5) · restoration
+- changed 8936 Regrowth (Rank 1) · restoration
+- changed 8938 Regrowth (Rank 2) · restoration
+- changed 8939 Regrowth (Rank 3) · restoration
+- changed 8940 Regrowth (Rank 4) · restoration
+- changed 8941 Regrowth (Rank 5) · restoration
+- changed 9750 Regrowth (Rank 6) · restoration
+- changed 9856 Regrowth (Rank 7) · restoration
+- changed 9857 Regrowth (Rank 8) · restoration
+- changed 9858 Regrowth (Rank 9) · restoration
+- changed 436937 Regrowth (Rank 1) · restoration
+- changed 436938 Regrowth (Rank 2) · restoration
+- changed 436939 Regrowth (Rank 3) · restoration
+- changed 436940 Regrowth (Rank 4) · restoration
+- changed 436942 Regrowth (Rank 5) · restoration
+- changed 436943 Regrowth (Rank 6) · restoration
+- changed 436944 Regrowth (Rank 7) · restoration
+- changed 436945 Regrowth (Rank 8) · restoration
+- changed 436946 Regrowth (Rank 9) · restoration
+- changed 2782 Remove Curse · restoration
+- changed 437138 Revive (Rank 1) · restoration
+- changed 1237948 Revive (Rank 2) · restoration
+- changed 1237949 Revive (Rank 3) · restoration
+- changed 1237950 Revive (Rank 4) · restoration
+- changed 1237951 Revive (Rank 5) · restoration
+- changed 18562 Swiftmend · restoration
+- changed 740 Tranquility (Rank 1) · restoration
+- changed 8918 Tranquility (Rank 2) · restoration
+- changed 9862 Tranquility (Rank 3) · restoration
+- changed 21791 Tranquility · restoration
+- changed 25817 Tranquility · restoration
+- changed 1253568 Tranquility · restoration
+- changed 1238214 Wild Growth (Rank 2) · restoration
+
+### Hunter: 1 added, 0 removed, 150 changed
+- added 1323410 Revelation · other
+- changed 19574 Bestial Wrath · beast-mastery
+- changed 19577 Intimidation · beast-mastery
+- changed 409379 Kill Command · beast-mastery
+- changed 982 Revive Pet · beast-mastery
+- changed 1236188 Aimed Shot (Rank 6) · marksmanship
+- changed 1294124 Aimed Shot · marksmanship
+- changed 1223984 Careful Aim · marksmanship
+- changed 409433 Chimera Shot · marksmanship
+- changed 5116 Concussive Shot · marksmanship
+- changed 1221416 Enchanted Flare · marksmanship
+- changed 2643 Multi-Shot · marksmanship
+- changed 19503 Scatter Shot · marksmanship
+- changed 3043 Scorpid Sting · marksmanship
+- changed 1310687 Sniper Shot (Rank 1) · marksmanship
+- changed 1310785 Sniper Shot (Rank 2) · marksmanship
+- changed 1310786 Sniper Shot (Rank 3) · marksmanship
+- changed 19767 Aynasha's Bow · other
+- changed 28317 Copy of Shoot · other
+- changed 440533 Hit and Run · other
+- changed 15860 Impale · other
+- changed 16001 Impale · other
+- changed 409593 Kill Shot · other
+- changed 28761 Not There · other
+- changed 1218358 Rabid Frenzy · other
+- changed 467312 S03 - Item - T2- Hunter - Ranged 4P Bonus · other
+- changed 6660 Shoot · other
+- changed 15547 Shoot · other
+- changed 15620 Shoot · other
+- changed 16100 Shoot · other
+- changed 16496 Shoot · other
+- changed 17353 Shoot · other
+- changed 18561 Shoot · other
+- changed 20463 Shoot · other
+- changed 22121 Shoot · other
+- changed 22411 Shoot · other
+- changed 22907 Shoot · other
+- changed 23073 Shoot · other
+- changed 23337 Shoot · other
+- changed 1213272 Shoot · other
+- changed 1230438 Shoot · other
+- changed 1306284 Shoot · other
+- changed 25200 Shoot Silithus Rifleman Long Range · other
+- changed 26282 Shoot Tauren Rifleman · other
+- changed 27919 Spit · other
+- changed 437123 Steady Shot · other
+- changed 10277 Throw · other
+- changed 15607 Throw · other
+- changed 15795 Throw · other
+- changed 16000 Throw · other
+- changed 19785 Throw · other
+- changed 22887 Throw · other
+- changed 458436 Wyvern Strike (Rank 1) · other
+- changed 458481 Wyvern Strike (Rank 2) · other
+- changed 458482 Wyvern Strike (Rank 3) · other
+- changed 17253 Bite (Rank 1) · pets
+- changed 17255 Bite (Rank 2) · pets
+- changed 17256 Bite (Rank 3) · pets
+- changed 17257 Bite (Rank 4) · pets
+- changed 17258 Bite (Rank 5) · pets
+- changed 17259 Bite (Rank 6) · pets
+- changed 17260 Bite (Rank 7) · pets
+- changed 17261 Bite (Rank 8) · pets
+- changed 3009 Claw (Rank 8) · pets
+- changed 3010 Claw (Rank 7) · pets
+- changed 16827 Claw (Rank 1) · pets
+- changed 16828 Claw (Rank 2) · pets
+- changed 16829 Claw (Rank 3) · pets
+- changed 16830 Claw (Rank 4) · pets
+- changed 16831 Claw (Rank 5) · pets
+- changed 16832 Claw (Rank 6) · pets
+- changed 1264758 Dismember (Rank 1) · pets
+- changed 1264927 Dismember (Rank 2) · pets
+- changed 1264929 Dismember (Rank 3) · pets
+- changed 1264930 Dismember (Rank 4) · pets
+- changed 1264933 Dismember (Rank 5) · pets
+- changed 444678 Lava Breath (Rank 1) · pets
+- changed 444681 Lava Breath (Rank 2) · pets
+- changed 24844 Lightning Breath (Rank 1) · pets
+- changed 25008 Lightning Breath (Rank 2) · pets
+- changed 25009 Lightning Breath (Rank 3) · pets
+- changed 25010 Lightning Breath (Rank 4) · pets
+- changed 25011 Lightning Breath (Rank 5) · pets
+- changed 25012 Lightning Breath (Rank 6) · pets
+- changed 1265054 Mine! (Rank 1) · pets
+- changed 1265055 Mine! (Rank 2) · pets
+- changed 1265056 Mine! (Rank 3) · pets
+- changed 1265057 Mine! (Rank 4) · pets
+- changed 1265058 Mine! (Rank 5) · pets
+- changed 1264735 Pinch (Rank 1) · pets
+- changed 1264736 Pinch (Rank 2) · pets
+- changed 1264739 Pinch (Rank 3) · pets
+- changed 1264741 Pinch (Rank 4) · pets
+- changed 1264742 Pinch (Rank 5) · pets
+- changed 1264478 Sonic Blast (Rank 1) · pets
+- changed 1264481 Sonic Blast (Rank 4) · pets
+- changed 1264494 Swipe (Rank 1) · pets
+- changed 1264497 Swipe (Rank 2) · pets
+- changed 1264498 Swipe (Rank 3) · pets
+- changed 1264501 Swipe (Rank 4) · pets
+- changed 1264502 Swipe (Rank 5) · pets
+- changed 26090 Thunderstomp (Rank 1) · pets
+- changed 26187 Thunderstomp (Rank 2) · pets
+- changed 26188 Thunderstomp (Rank 3) · pets
+- changed 1264455 Thunderstomp (Rank 4) · pets
+- changed 425711 Carve · survival
+- changed 433100 Carve · survival
+- changed 781 Disengage (Rank 1) · survival
+- changed 14272 Disengage (Rank 2) · survival
+- changed 14273 Disengage (Rank 3) · survival
+- changed 13812 Explosive Trap Effect (Rank 1) · survival
+- changed 14314 Explosive Trap Effect (Rank 2) · survival
+- changed 14315 Explosive Trap Effect (Rank 3) · survival
+- changed 415320 Flanking Strike · survival
+- changed 409580 Heart of the Lion · survival
+- changed 409583 Heart of the Lion · survival
+- changed 24119 Lacerate (Rank 2) · survival
+- changed 24120 Lacerate (Rank 3) · survival
+- changed 1495 Mongoose Bite (Rank 1) · survival
+- changed 14269 Mongoose Bite (Rank 2) · survival
+- changed 14270 Mongoose Bite (Rank 3) · survival
+- changed 2973 Raptor Strike (Rank 1) · survival
+- changed 14260 Raptor Strike (Rank 2) · survival
+- changed 14261 Raptor Strike (Rank 3) · survival
+- changed 14262 Raptor Strike (Rank 4) · survival
+- changed 14263 Raptor Strike (Rank 5) · survival
+- changed 14264 Raptor Strike (Rank 6) · survival
+- changed 14265 Raptor Strike (Rank 7) · survival
+- changed 14266 Raptor Strike (Rank 8) · survival
+- changed 409691 Raptor Strike (Rank 1) · survival
+- changed 409693 Raptor Strike (Rank 2) · survival
+- changed 409748 Raptor Strike (Rank 3) · survival
+- changed 409750 Raptor Strike (Rank 4) · survival
+- changed 409751 Raptor Strike (Rank 5) · survival
+- changed 409752 Raptor Strike (Rank 6) · survival
+- changed 409754 Raptor Strike (Rank 7) · survival
+- changed 409755 Raptor Strike (Rank 8) · survival
+- changed 415335 Raptor Strike (Rank 1) · survival
+- changed 415336 Raptor Strike (Rank 2) · survival
+- changed 415337 Raptor Strike (Rank 3) · survival
+- changed 415338 Raptor Strike (Rank 4) · survival
+- changed 415340 Raptor Strike (Rank 5) · survival
+- changed 415341 Raptor Strike (Rank 6) · survival
+- changed 415342 Raptor Strike (Rank 7) · survival
+- changed 415343 Raptor Strike (Rank 8) · survival
+- changed 1317257 Strider Kick (Rank 1) · survival
+- changed 2974 Wing Clip (Rank 1) · survival
+- changed 14267 Wing Clip (Rank 2) · survival
+- changed 14268 Wing Clip (Rank 3) · survival
+- changed 27633 Wing Clip (Rank 3) · survival
+- changed 1310180 Wing Clip · survival
+
+### Mage: 1 added, 0 removed, 185 changed
+- added 1248808 Revelation · other
+- changed 400610 Arcane Barrage · arcane
+- changed 16067 Arcane Blast · arcane
+- changed 18091 Arcane Blast · arcane
+- changed 42896 Arcane Blast (Rank 3) · arcane
+- changed 400574 Arcane Blast (Rank 1) · arcane
+- changed 1239696 Arcane Blast (Rank 2) · arcane
+- changed 1239697 Arcane Blast (Rank 3) · arcane
+- changed 1239699 Arcane Blast (Rank 4) · arcane
+- changed 1239700 Arcane Blast (Rank 5) · arcane
+- changed 11213 Arcane Concentration · arcane
+- changed 8437 Arcane Explosion (Rank 2) · arcane
+- changed 8438 Arcane Explosion (Rank 3) · arcane
+- changed 8439 Arcane Explosion (Rank 4) · arcane
+- changed 10201 Arcane Explosion (Rank 5) · arcane
+- changed 10202 Arcane Explosion (Rank 6) · arcane
+- changed 22460 Arcane Explosion · arcane
+- changed 13326 Arcane Intellect · arcane
+- changed 11232 Arcane Mind · arcane
+- changed 7268 Arcane Missile (Rank 1) · arcane
+- changed 7269 Arcane Missiles (Rank 2) · arcane
+- changed 8418 Arcane Missiles (Rank 5) · arcane
+- changed 8419 Arcane Missiles (Rank 4) · arcane
+- changed 10273 Arcane Missiles (Rank 6) · arcane
+- changed 10274 Arcane Missiles (Rank 7) · arcane
+- changed 15736 Arcane Missiles · arcane
+- changed 15791 Arcane Missiles · arcane
+- changed 22273 Arcane Missiles · arcane
+- changed 1953 Blink · arcane
+- changed 412510 Mass Regeneration · arcane
+- changed 401417 Regeneration · arcane
+- changed 475 Remove Lesser Curse · arcane
+- changed 428878 Balefire Bolt · fire
+- changed 11113 Blast Wave (Rank 1) · fire
+- changed 13018 Blast Wave (Rank 2) · fire
+- changed 13019 Blast Wave (Rank 3) · fire
+- changed 13020 Blast Wave (Rank 4) · fire
+- changed 13021 Blast Wave (Rank 5) · fire
+- changed 15091 Blast Wave · fire
+- changed 15744 Blast Wave · fire
+- changed 16046 Blast Wave · fire
+- changed 17145 Blast Wave · fire
+- changed 17277 Blast Wave · fire
+- changed 22424 Blast Wave · fire
+- changed 23039 Blast Wave · fire
+- changed 23113 Blast Wave · fire
+- changed 469161 Blast Wave · fire
+- changed 1235318 Blast Wave · fire
+- changed 11129 Combustion · fire
+- changed 2136 Fire Blast (Rank 1) · fire
+- changed 2137 Fire Blast (Rank 2) · fire
+- changed 2138 Fire Blast (Rank 3) · fire
+- changed 8412 Fire Blast (Rank 4) · fire
+- changed 8413 Fire Blast (Rank 5) · fire
+- changed 10197 Fire Blast (Rank 6) · fire
+- changed 10199 Fire Blast (Rank 7) · fire
+- changed 13339 Fire Blast · fire
+- changed 13340 Fire Blast · fire
+- changed 13341 Fire Blast · fire
+- changed 13342 Fire Blast · fire
+- changed 13374 Fire Blast · fire
+- changed 14145 Fire Blast · fire
+- changed 15574 Fire Blast · fire
+- changed 16144 Fire Blast · fire
+- changed 20795 Fire Blast · fire
+- changed 20832 Fire Blast · fire
+- changed 400616 Fire Blast (Rank 3) · fire
+- changed 400618 Fire Blast (Rank 1) · fire
+- changed 400619 Fire Blast (Rank 2) · fire
+- changed 400620 Fire Blast (Rank 4) · fire
+- changed 400621 Fire Blast (Rank 5) · fire
+- changed 400622 Fire Blast (Rank 6) · fire
+- changed 400623 Fire Blast (Rank 7) · fire
+- changed 133 Fireball (Rank 1) · fire
+- changed 143 Fireball (Rank 2) · fire
+- changed 145 Fireball (Rank 3) · fire
+- changed 3140 Fireball (Rank 4) · fire
+- changed 8400 Fireball (Rank 5) · fire
+- changed 8401 Fireball (Rank 6) · fire
+- changed 8402 Fireball (Rank 7) · fire
+- changed 10148 Fireball (Rank 8) · fire
+- changed 10149 Fireball (Rank 9) · fire
+- changed 10150 Fireball (Rank 10) · fire
+- changed 10151 Fireball (Rank 11) · fire
+- changed 25306 Fireball (Rank 12) · fire
+- changed 2120 Flamestrike (Rank 1) · fire
+- changed 2121 Flamestrike (Rank 2) · fire
+- changed 8422 Flamestrike (Rank 3) · fire
+- changed 8423 Flamestrike (Rank 4) · fire
+- changed 10215 Flamestrike (Rank 5) · fire
+- changed 10216 Flamestrike (Rank 6) · fire
+- changed 401502 Frostfire Bolt (Rank 1) · fire
+- changed 1237312 Frostfire Bolt (Rank 2) · fire
+- changed 1237313 Frostfire Bolt (Rank 3) · fire
+- changed 400624 Heating Up · fire
+- changed 400625 Heating Up · fire
+- changed 11119 Ignite · fire
+- changed 400613 Living Bomb · fire
+- changed 401556 Living Flame · fire
+- changed 11366 Pyroblast (Rank 1) · fire
+- changed 12505 Pyroblast (Rank 2) · fire
+- changed 12522 Pyroblast (Rank 3) · fire
+- changed 12523 Pyroblast (Rank 4) · fire
+- changed 12524 Pyroblast (Rank 5) · fire
+- changed 12525 Pyroblast (Rank 6) · fire
+- changed 12526 Pyroblast (Rank 7) · fire
+- changed 17273 Pyroblast · fire
+- changed 17274 Pyroblast · fire
+- changed 18809 Pyroblast (Rank 8) · fire
+- changed 434443 Pyroblast · fire
+- changed 2948 Scorch (Rank 1) · fire
+- changed 8444 Scorch (Rank 2) · fire
+- changed 8445 Scorch (Rank 3) · fire
+- changed 8446 Scorch (Rank 4) · fire
+- changed 10205 Scorch (Rank 5) · fire
+- changed 10206 Scorch (Rank 6) · fire
+- changed 10207 Scorch (Rank 7) · fire
+- changed 13878 Scorch · fire
+- changed 15241 Scorch · fire
+- changed 17195 Scorch · fire
+- changed 1279976 Blizzard (Rank 1) · frost
+- changed 1279979 Blizzard (Rank 4) · frost
+- changed 1279980 Blizzard (Rank 5) · frost
+- changed 120 Cone of Cold (Rank 1) · frost
+- changed 8492 Cone of Cold (Rank 2) · frost
+- changed 10159 Cone of Cold (Rank 3) · frost
+- changed 10160 Cone of Cold (Rank 4) · frost
+- changed 10161 Cone of Cold (Rank 5) · frost
+- changed 12557 Cone of Cold · frost
+- changed 12611 Cone of Cold · frost
+- changed 15244 Cone of Cold · frost
+- changed 20828 Cone of Cold · frost
+- changed 22746 Cone of Cold · frost
+- changed 12544 Frost Armor · frost
+- changed 12556 Frost Armor · frost
+- changed 15784 Frost Armor · frost
+- changed 18100 Frost Armor · frost
+- changed 122 Frost Nova (Rank 1) · frost
+- changed 865 Frost Nova (Rank 2) · frost
+- changed 6131 Frost Nova (Rank 3) · frost
+- changed 10230 Frost Nova (Rank 4) · frost
+- changed 116 Frostbolt (Rank 1) · frost
+- changed 205 Frostbolt (Rank 2) · frost
+- changed 837 Frostbolt (Rank 3) · frost
+- changed 7322 Frostbolt (Rank 4) · frost
+- changed 8406 Frostbolt (Rank 5) · frost
+- changed 8407 Frostbolt (Rank 6) · frost
+- changed 8408 Frostbolt (Rank 7) · frost
+- changed 10179 Frostbolt (Rank 8) · frost
+- changed 10180 Frostbolt (Rank 9) · frost
+- changed 10181 Frostbolt (Rank 10) · frost
+- changed 25304 Frostbolt (Rank 11) · frost
+- changed 350025 Frostbolt · frost
+- changed 1293790 Frostbolt · frost
+- changed 1298416 Frostbolt · frost
+- changed 440802 Frozen Orb · frost
+- changed 1213278 Ice Barrier (Rank 4) · frost
+- changed 400640 Ice Lance (Rank 2) · frost
+- changed 1240045 Ice Lance (Rank 4) · frost
+- changed 1240046 Ice Lance (Rank 5) · frost
+- changed 1240047 Ice Lance (Rank 6) · frost
+- changed 1312002 Ice Lance (Rank 1) · frost
+- changed 425121 Icy Veins · frost
+- changed 429125 Icy Veins · frost
+- changed 412532 Spellfrost Bolt · frost
+- changed 11180 Winter's Chill · frost
+- changed 1308937 Arcane Missile · other
+- changed 400731 Brain Freeze · other
+- changed 436516 Chronostatic Preservation · other
+- changed 29163 Copy of Frostbolt (Rank 1) · other
+- changed 29607 Debug Frost Spell (Rank 10) · other
+- changed 428739 Deep Freeze · other
+- changed 449010 Dispel Shadows (DNT) · other
+- changed 428861 Displacement · other
+- changed 1259817 Eureka! (Racial) · other
+- changed 16785 Flamebreak · other
+- changed 1218352 Glaciate · other
+- changed 17492 Hand of Thaurissan · other
+- changed 428741 Molten Armor · other
+- changed 401460 Rapid Regeneration · other
+- changed 412113 Remove Greater Curse · other
+- changed 1226407 S03 - Item - Scarlet Enclave - Mage - Healer 2P Bonus · other
+- changed 17276 Scald · other
+- changed 428885 Temporal Anomaly · other
+- changed 412437 Waterbolt · other
+- changed 31378 Worm Blast · other
+
+### Paladin: 1 added, 0 removed, 106 changed
+- added 1323419 Revelation · other
+- changed 4987 Cleanse · holy
+- changed 20216 Divine Favor · holy
+- changed 458856 Divine Light · holy
+- changed 879 Exorcism (Rank 1) · holy
+- changed 5614 Exorcism (Rank 2) · holy
+- changed 5615 Exorcism (Rank 3) · holy
+- changed 10312 Exorcism (Rank 4) · holy
+- changed 10313 Exorcism (Rank 5) · holy
+- changed 10314 Exorcism (Rank 6) · holy
+- changed 19750 Flash of Light (Rank 1) · holy
+- changed 19939 Flash of Light (Rank 2) · holy
+- changed 19940 Flash of Light (Rank 3) · holy
+- changed 19941 Flash of Light (Rank 4) · holy
+- changed 19942 Flash of Light (Rank 5) · holy
+- changed 19943 Flash of Light (Rank 6) · holy
+- changed 24239 Hammer of Wrath (Rank 3) · holy
+- changed 24274 Hammer of Wrath (Rank 2) · holy
+- changed 24275 Hammer of Wrath (Rank 1) · holy
+- changed 429151 Hammer of Wrath · holy
+- changed 635 Holy Light (Rank 1) · holy
+- changed 639 Holy Light (Rank 2) · holy
+- changed 647 Holy Light (Rank 3) · holy
+- changed 1026 Holy Light (Rank 4) · holy
+- changed 1042 Holy Light (Rank 5) · holy
+- changed 3472 Holy Light (Rank 6) · holy
+- changed 10328 Holy Light (Rank 7) · holy
+- changed 10329 Holy Light (Rank 8) · holy
+- changed 25292 Holy Light (Rank 9) · holy
+- changed 25902 Holy Shock (Rank 4) · holy
+- changed 25903 Holy Shock (Rank 4) · holy
+- changed 25911 Holy Shock (Rank 3) · holy
+- changed 25912 Holy Shock (Rank 2) · holy
+- changed 25913 Holy Shock (Rank 3) · holy
+- changed 25914 Holy Shock (Rank 2) · holy
+- changed 1311604 Holy Shock (Rank 1) · holy
+- changed 1311605 Holy Shock (Rank 1) · holy
+- changed 2812 Holy Wrath (Rank 1) · holy
+- changed 429145 Holy Wrath (Rank 1) · holy
+- changed 429146 Holy Wrath (Rank 2) · holy
+- changed 407880 Inspiration Exemplar · holy
+- changed 20187 Judgement of Righteousness (Rank 1) · holy
+- changed 20280 Judgement of Righteousness (Rank 2) · holy
+- changed 20281 Judgement of Righteousness (Rank 3) · holy
+- changed 20282 Judgement of Righteousness (Rank 4) · holy
+- changed 20283 Judgement of Righteousness (Rank 5) · holy
+- changed 20284 Judgement of Righteousness (Rank 6) · holy
+- changed 20285 Judgement of Righteousness (Rank 7) · holy
+- changed 20286 Judgement of Righteousness (Rank 8) · holy
+- changed 1310912 Light's Vigil (Rank 1) · holy
+- changed 1310914 Light's Vigil (Rank 1) · holy
+- changed 1311591 Light's Vigil (Rank 2) · holy
+- changed 1311592 Light's Vigil (Rank 2) · holy
+- changed 1311593 Light's Vigil (Rank 2) · holy
+- changed 1311596 Light's Vigil (Rank 3) · holy
+- changed 1311598 Light's Vigil (Rank 3) · holy
+- changed 1152 Purify · holy
+- changed 7328 Redemption (Rank 1) · holy
+- changed 10322 Redemption (Rank 2) · holy
+- changed 10324 Redemption (Rank 3) · holy
+- changed 20772 Redemption (Rank 4) · holy
+- changed 20773 Redemption (Rank 5) · holy
+- changed 53601 Sacred Shield (Rank 1) · holy
+- changed 412019 Sacred Shield · holy
+- changed 1301083 1.60.0 - Item - Tier 1 - Paladin - Protection 4P Bonus - Expertise · other
+- changed 462853 Hand of Sacrifice · other
+- changed 1302540 Libram of Divinity · other
+- changed 1044 Blessing of Freedom · protection
+- changed 20217 Blessing of Kings · protection
+- changed 10278 Blessing of Protection (Rank 3) · protection
+- changed 442948 Blessing of Protection · protection
+- changed 1038 Blessing of Salvation · protection
+- changed 25895 Greater Blessing of Salvation · protection
+- changed 407632 Hammer of the Righteous · protection
+- changed 20925 Holy Shield (Rank 1) · protection
+- changed 20927 Holy Shield (Rank 2) · protection
+- changed 20928 Holy Shield (Rank 3) · protection
+- changed 20183 Judgement of Fury (Rank 3) · protection
+- changed 20411 Judgement of Fury (Rank 4) · protection
+- changed 20412 Judgement of Fury (Rank 5) · protection
+- changed 20413 Judgement of Fury (Rank 6) · protection
+- changed 20414 Judgement of Fury (Rank 7) · protection
+- changed 1311650 Judgement of Fury (Rank 1) · protection
+- changed 1311655 Judgement of Fury (Rank 2) · protection
+- changed 25780 Righteous Fury · protection
+- changed 1224697 Sacred Duty · protection
+- changed 20164 Seal of Justice · protection
+- changed 440658 Shield of Righteousness · protection
+- changed 407788 Avenging Wrath · retribution
+- changed 1311084 Champion of the Light · retribution
+- changed 407778 Divine Storm · retribution
+- changed 415068 Exorcism (Rank 1) · retribution
+- changed 415069 Exorcism (Rank 2) · retribution
+- changed 415070 Exorcism (Rank 3) · retribution
+- changed 415071 Exorcism (Rank 4) · retribution
+- changed 415072 Exorcism (Rank 5) · retribution
+- changed 415073 Exorcism (Rank 6) · retribution
+- changed 678 Holy Strike (Rank 2) · retribution
+- changed 679 Holy Strike (Rank 1) · retribution
+- changed 680 Holy Strike (Rank 4) · retribution
+- changed 5569 Holy Strike (Rank 6) · retribution
+- changed 20271 Judgement · retribution
+- changed 20467 Judgement of Command (Rank 1) · retribution
+- changed 20963 Judgement of Command (Rank 2) · retribution
+- changed 20964 Judgement of Command (Rank 3) · retribution
+- changed 20965 Judgement of Command (Rank 4) · retribution
+- changed 407798 Seal of Martyrdom · retribution
+
+### Priest: 1 added, 0 removed, 155 changed
+- added 1323377 Revelation · other
+- changed 1277455 Confounding Flash · discipline
+- changed 527 Dispel Magic (Rank 1) · discipline
+- changed 988 Dispel Magic (Rank 2) · discipline
+- changed 27609 Dispel Magic (Rank 2) · discipline
+- changed 2651 Elune's Grace · discipline
+- changed 14751 Inner Focus · discipline
+- changed 402004 Pain Suppression · discipline
+- changed 10060 Power Infusion · discipline
+- changed 425207 Power Word: Barrier · discipline
+- changed 27607 Power Word: Shield (Rank 10) · discipline
+- changed 1236154 Power Word: Shield (Rank 10) · discipline
+- changed 22822 Starshards · discipline
+- changed 22823 Starshards · discipline
+- changed 552 Abolish Disease · holy
+- changed 401937 Binding Heal (Rank 1) · holy
+- changed 1240770 Binding Heal (Rank 2) · holy
+- changed 1240771 Binding Heal (Rank 3) · holy
+- changed 1240772 Binding Heal (Rank 4) · holy
+- changed 1240773 Binding Heal (Rank 5) · holy
+- changed 1240774 Binding Heal (Rank 6) · holy
+- changed 1277331 Chastise (Rank 1) · holy
+- changed 1277332 Chastise (Rank 2) · holy
+- changed 1277333 Chastise (Rank 3) · holy
+- changed 1277334 Chastise (Rank 4) · holy
+- changed 1277335 Chastise (Rank 5) · holy
+- changed 401946 Circle of Healing · holy
+- changed 528 Cure Disease · holy
+- changed 13908 Desperate Prayer (Rank 1) · holy
+- changed 19236 Desperate Prayer (Rank 2) · holy
+- changed 19238 Desperate Prayer (Rank 3) · holy
+- changed 19240 Desperate Prayer (Rank 4) · holy
+- changed 19241 Desperate Prayer (Rank 5) · holy
+- changed 19242 Desperate Prayer (Rank 6) · holy
+- changed 19243 Desperate Prayer (Rank 7) · holy
+- changed 1277370 Divine Grace (Rank 1) · holy
+- changed 1277371 Divine Grace (Rank 2) · holy
+- changed 1277372 Divine Grace (Rank 3) · holy
+- changed 1277374 Divine Grace (Rank 4) · holy
+- changed 1277376 Divine Grace (Rank 5) · holy
+- changed 1277377 Divine Grace (Rank 6) · holy
+- changed 1277378 Divine Grace (Rank 7) · holy
+- changed 2061 Flash Heal (Rank 1) · holy
+- changed 9472 Flash Heal (Rank 2) · holy
+- changed 9473 Flash Heal (Rank 3) · holy
+- changed 9474 Flash Heal (Rank 4) · holy
+- changed 10915 Flash Heal (Rank 5) · holy
+- changed 10916 Flash Heal (Rank 6) · holy
+- changed 10917 Flash Heal (Rank 7) · holy
+- changed 17137 Flash Heal · holy
+- changed 17138 Flash Heal · holy
+- changed 17843 Flash Heal · holy
+- changed 27608 Flash Heal (Rank 7) · holy
+- changed 1232758 Flash Heal · holy
+- changed 1236153 Flash Heal (Rank 7) · holy
+- changed 2060 Greater Heal (Rank 1) · holy
+- changed 10963 Greater Heal (Rank 2) · holy
+- changed 10964 Greater Heal (Rank 3) · holy
+- changed 10965 Greater Heal (Rank 4) · holy
+- changed 25314 Greater Heal (Rank 5) · holy
+- changed 2054 Heal (Rank 1) · holy
+- changed 2055 Heal (Rank 2) · holy
+- changed 6063 Heal (Rank 3) · holy
+- changed 6064 Heal (Rank 4) · holy
+- changed 14914 Holy Fire (Rank 1) · holy
+- changed 15261 Holy Fire (Rank 8) · holy
+- changed 15262 Holy Fire (Rank 2) · holy
+- changed 15263 Holy Fire (Rank 3) · holy
+- changed 15264 Holy Fire (Rank 4) · holy
+- changed 15265 Holy Fire (Rank 5) · holy
+- changed 15266 Holy Fire (Rank 6) · holy
+- changed 15267 Holy Fire (Rank 7) · holy
+- changed 17140 Holy Fire · holy
+- changed 17141 Holy Fire · holy
+- changed 17142 Holy Fire · holy
+- changed 18165 Holy Fire · holy
+- changed 15237 Holy Nova (Rank 1) · holy
+- changed 15430 Holy Nova (Rank 2) · holy
+- changed 15431 Holy Nova (Rank 3) · holy
+- changed 23455 Holy Nova (Rank 1) · holy
+- changed 23458 Holy Nova (Rank 2) · holy
+- changed 23459 Holy Nova (Rank 3) · holy
+- changed 27799 Holy Nova (Rank 4) · holy
+- changed 27800 Holy Nova (Rank 5) · holy
+- changed 27801 Holy Nova (Rank 6) · holy
+- changed 27803 Holy Nova (Rank 4) · holy
+- changed 27804 Holy Nova (Rank 5) · holy
+- changed 27805 Holy Nova (Rank 6) · holy
+- changed 2050 Lesser Heal (Rank 1) · holy
+- changed 2052 Lesser Heal (Rank 2) · holy
+- changed 2053 Lesser Heal (Rank 3) · holy
+- changed 596 Prayer of Healing (Rank 1) · holy
+- changed 996 Prayer of Healing (Rank 2) · holy
+- changed 10960 Prayer of Healing (Rank 3) · holy
+- changed 10961 Prayer of Healing (Rank 4) · holy
+- changed 25316 Prayer of Healing (Rank 5) · holy
+- changed 1289450 Renew (Rank 9) · holy
+- changed 2006 Resurrection (Rank 1) · holy
+- changed 2010 Resurrection (Rank 2) · holy
+- changed 10880 Resurrection (Rank 3) · holy
+- changed 10881 Resurrection (Rank 4) · holy
+- changed 20770 Resurrection (Rank 5) · holy
+- changed 14909 Searing Light · holy
+- changed 585 Smite (Rank 1) · holy
+- changed 591 Smite (Rank 2) · holy
+- changed 598 Smite (Rank 3) · holy
+- changed 984 Smite (Rank 4) · holy
+- changed 1004 Smite (Rank 5) · holy
+- changed 6060 Smite (Rank 6) · holy
+- changed 10933 Smite (Rank 7) · holy
+- changed 10934 Smite (Rank 8) · holy
+- changed 27640 Baron Rivendare's Soul Drain · other
+- changed 23964 Bloodrager's Requiem · other
+- changed 402791 Curse of Shadow · other
+- changed 402794 Curse of Tongues · other
+- changed 402792 Curse of the Elements · other
+- changed 1259823 Eureka! (Racial) · other
+- changed 16873 Holy Word: Fortitude (Rank 6) · other
+- changed 20706 Power Word: Shield 500 (Rank 7) · other
+- changed 467608 S03 - Item - T2 - Priest - Shadow 4P Bonus · other
+- changed 431681 Void Zone · other
+- changed 15268 Blackout (Rank 1) · shadow
+- changed 15323 Blackout (Rank 2) · shadow
+- changed 15324 Blackout (Rank 3) · shadow
+- changed 15325 Blackout (Rank 4) · shadow
+- changed 15326 Blackout (Rank 5) · shadow
+- changed 1309950 Devouring Contagion · shadow
+- changed 2944 Devouring Plague (Rank 1) · shadow
+- changed 19276 Devouring Plague (Rank 2) · shadow
+- changed 19277 Devouring Plague (Rank 3) · shadow
+- changed 19278 Devouring Plague (Rank 4) · shadow
+- changed 19279 Devouring Plague (Rank 5) · shadow
+- changed 19280 Devouring Plague (Rank 6) · shadow
+- changed 8092 Mind Blast (Rank 1) · shadow
+- changed 8102 Mind Blast (Rank 2) · shadow
+- changed 8103 Mind Blast (Rank 3) · shadow
+- changed 8104 Mind Blast (Rank 4) · shadow
+- changed 8105 Mind Blast (Rank 5) · shadow
+- changed 8106 Mind Blast (Rank 6) · shadow
+- changed 10945 Mind Blast (Rank 7) · shadow
+- changed 10946 Mind Blast (Rank 8) · shadow
+- changed 10947 Mind Blast (Rank 9) · shadow
+- changed 16568 Mind Flay · shadow
+- changed 17165 Mind Flay · shadow
+- changed 474204 Mind Flay · shadow
+- changed 413259 Mind Sear · shadow
+- changed 431655 Mind Spike · shadow
+- changed 15257 Shadow Weaving · shadow
+- changed 401955 Shadow Word: Death · shadow
+- changed 1309595 Shadow Word: Death (Rank 1) · shadow
+- changed 1309633 Shadow Word: Death (Rank 2) · shadow
+- changed 1309635 Shadow Word: Death (Rank 3) · shadow
+- changed 1309636 Shadow Word: Death (Rank 4) · shadow
+- changed 15473 Shadowform · shadow
+- changed 402668 Vampiric Touch · shadow
+- changed 425204 Void Plague · shadow
+
+### Rogue: 0 added, 0 removed, 120 changed
+- changed 8676 Ambush (Rank 1) · assassination
+- changed 8724 Ambush (Rank 2) · assassination
+- changed 8725 Ambush (Rank 3) · assassination
+- changed 11267 Ambush (Rank 4) · assassination
+- changed 11268 Ambush (Rank 5) · assassination
+- changed 11269 Ambush (Rank 6) · assassination
+- changed 24337 Ambush · assassination
+- changed 462718 Ambush (Rank 1) · assassination
+- changed 462719 Ambush (Rank 2) · assassination
+- changed 462720 Ambush (Rank 3) · assassination
+- changed 462721 Ambush (Rank 4) · assassination
+- changed 462722 Ambush (Rank 5) · assassination
+- changed 462723 Ambush (Rank 6) · assassination
+- changed 2098 Eviscerate (Rank 1) · assassination
+- changed 6760 Eviscerate (Rank 2) · assassination
+- changed 6761 Eviscerate (Rank 3) · assassination
+- changed 6762 Eviscerate (Rank 4) · assassination
+- changed 8623 Eviscerate (Rank 5) · assassination
+- changed 8624 Eviscerate (Rank 6) · assassination
+- changed 11299 Eviscerate (Rank 7) · assassination
+- changed 11300 Eviscerate (Rank 8) · assassination
+- changed 15691 Eviscerate · assassination
+- changed 15692 Eviscerate · assassination
+- changed 27611 Eviscerate · assassination
+- changed 31016 Eviscerate (Rank 9) · assassination
+- changed 1271520 Eviscerate · assassination
+- changed 8647 Expose Armor (Rank 1) · assassination
+- changed 8649 Expose Armor (Rank 2) · assassination
+- changed 8650 Expose Armor (Rank 3) · assassination
+- changed 11197 Expose Armor (Rank 4) · assassination
+- changed 11198 Expose Armor (Rank 5) · assassination
+- changed 408 Kidney Shot (Rank 1) · assassination
+- changed 8643 Kidney Shot (Rank 2) · assassination
+- changed 27615 Kidney Shot (Rank 2) · assassination
+- changed 1329 Mutilate (Rank 1) · assassination
+- changed 399956 Mutilate (Rank 2) · assassination
+- changed 399960 Mutilate (Rank 2) · assassination
+- changed 399961 Mutilate (Rank 2) · assassination
+- changed 1241582 Mutilate (Rank 3) · assassination
+- changed 1241584 Mutilate (Rank 4) · assassination
+- changed 1241585 Mutilate (Rank 3) · assassination
+- changed 1241586 Mutilate (Rank 4) · assassination
+- changed 1241588 Mutilate (Rank 3) · assassination
+- changed 1241590 Mutilate (Rank 4) · assassination
+- changed 1310705 Mutilate (Rank 1) · assassination
+- changed 1310706 Mutilate (Rank 1) · assassination
+- changed 1310707 Mutilate (Rank 1) · assassination
+- changed 1943 Rupture (Rank 1) · assassination
+- changed 8639 Rupture (Rank 2) · assassination
+- changed 8640 Rupture (Rank 3) · assassination
+- changed 11273 Rupture (Rank 4) · assassination
+- changed 11274 Rupture (Rank 5) · assassination
+- changed 11275 Rupture (Rank 6) · assassination
+- changed 14874 Rupture · assassination
+- changed 14903 Rupture · assassination
+- changed 15583 Rupture · assassination
+- changed 1271514 Rupture · assassination
+- changed 53 Backstab (Rank 1) · combat
+- changed 2589 Backstab (Rank 2) · combat
+- changed 2590 Backstab (Rank 3) · combat
+- changed 2591 Backstab (Rank 4) · combat
+- changed 8721 Backstab (Rank 5) · combat
+- changed 11279 Backstab (Rank 6) · combat
+- changed 11280 Backstab (Rank 7) · combat
+- changed 11281 Backstab (Rank 8) · combat
+- changed 25300 Backstab (Rank 9) · combat
+- changed 462709 Backstab (Rank 1) · combat
+- changed 462710 Backstab (Rank 2) · combat
+- changed 462711 Backstab (Rank 3) · combat
+- changed 462712 Backstab (Rank 4) · combat
+- changed 462713 Backstab (Rank 5) · combat
+- changed 462714 Backstab (Rank 6) · combat
+- changed 462715 Backstab (Rank 7) · combat
+- changed 462716 Backstab (Rank 8) · combat
+- changed 462717 Backstab (Rank 9) · combat
+- changed 400009 Between the Eyes · combat
+- changed 1776 Gouge (Rank 1) · combat
+- changed 1777 Gouge (Rank 2) · combat
+- changed 8629 Gouge (Rank 3) · combat
+- changed 11285 Gouge (Rank 4) · combat
+- changed 11286 Gouge (Rank 5) · combat
+- changed 424919 Main Gauche · combat
+- changed 1289695 Main Gauche · combat
+- changed 425012 Poisoned Knife · combat
+- changed 425013 Poisoned Knife · combat
+- changed 424785 Saber Slash · combat
+- changed 5938 Shiv · combat
+- changed 424799 Shiv · combat
+- changed 424800 Shiv · combat
+- changed 1752 Sinister Strike (Rank 1) · combat
+- changed 1757 Sinister Strike (Rank 2) · combat
+- changed 1758 Sinister Strike (Rank 3) · combat
+- changed 1759 Sinister Strike (Rank 4) · combat
+- changed 1760 Sinister Strike (Rank 5) · combat
+- changed 8621 Sinister Strike (Rank 6) · combat
+- changed 11293 Sinister Strike (Rank 7) · combat
+- changed 11294 Sinister Strike (Rank 8) · combat
+- changed 14873 Sinister Strike · combat
+- changed 15581 Sinister Strike · combat
+- changed 15667 Sinister Strike · combat
+- changed 19472 Sinister Strike · combat
+- changed 1213441 Sinister Strike · combat
+- changed 436564 Blunderbuss · other
+- changed 412096 Crimson Tempest · other
+- changed 1259812 Eureka! (Racial) · other
+- changed 409239 Fan of Knives · other
+- changed 409240 Fan of Knives · other
+- changed 8680 Instant Poison (Rank 1) · other
+- changed 8685 Instant Poison II (Rank 2) · other
+- changed 8689 Instant Poison III (Rank 3) · other
+- changed 11335 Instant Poison IV (Rank 4) · other
+- changed 11336 Instant Poison V (Rank 5) · other
+- changed 11337 Instant Poison VI (Rank 6) · other
+- changed 425609 Rebuke · other
+- changed 1241797 Restless Blades · other
+- changed 468436 S03 - Item - ZG - Rogue - Dagger 3P Bonus · other
+- changed 23959 Test Stab R50 (Rank 8) · other
+- changed 14278 Ghostly Strike · subtlety
+- changed 16511 Hemorrhage · subtlety
+- changed 399985 Shadowstrike · subtlety
+
+### Shaman: 2 added, 0 removed, 134 changed
+- added 1323420 Totemic Recall · elemental
+- added 1323418 Revelation · other
+- changed 421 Chain Lightning (Rank 1) · elemental
+- changed 930 Chain Lightning (Rank 2) · elemental
+- changed 2860 Chain Lightning (Rank 3) · elemental
+- changed 10605 Chain Lightning (Rank 4) · elemental
+- changed 408479 Chain Lightning (Rank 1) · elemental
+- changed 408481 Chain Lightning (Rank 2) · elemental
+- changed 408482 Chain Lightning (Rank 3) · elemental
+- changed 408484 Chain Lightning (Rank 4) · elemental
+- changed 16246 Clearcasting · elemental
+- changed 8042 Earth Shock (Rank 1) · elemental
+- changed 8044 Earth Shock (Rank 2) · elemental
+- changed 8045 Earth Shock (Rank 3) · elemental
+- changed 8046 Earth Shock (Rank 4) · elemental
+- changed 10412 Earth Shock (Rank 5) · elemental
+- changed 10413 Earth Shock (Rank 6) · elemental
+- changed 10414 Earth Shock (Rank 7) · elemental
+- changed 408681 Earth Shock (Rank 1) · elemental
+- changed 408683 Earth Shock (Rank 2) · elemental
+- changed 408685 Earth Shock (Rank 3) · elemental
+- changed 408687 Earth Shock (Rank 4) · elemental
+- changed 408688 Earth Shock (Rank 5) · elemental
+- changed 408689 Earth Shock (Rank 6) · elemental
+- changed 408690 Earth Shock (Rank 7) · elemental
+- changed 1220744 Earth Shock (Rank 1) · elemental
+- changed 1220746 Earth Shock (Rank 2) · elemental
+- changed 1220747 Earth Shock (Rank 3) · elemental
+- changed 1220748 Earth Shock (Rank 4) · elemental
+- changed 1220749 Earth Shock (Rank 5) · elemental
+- changed 1220750 Earth Shock (Rank 6) · elemental
+- changed 1220751 Earth Shock (Rank 7) · elemental
+- changed 2484 Earthbind Totem · elemental
+- changed 16164 Elemental Focus · elemental
+- changed 8349 Fire Nova (Rank 1) · elemental
+- changed 8502 Fire Nova (Rank 2) · elemental
+- changed 8503 Fire Nova (Rank 3) · elemental
+- changed 11306 Fire Nova (Rank 4) · elemental
+- changed 11307 Fire Nova (Rank 5) · elemental
+- changed 408423 Fire Nova (Rank 1) · elemental
+- changed 408424 Fire Nova (Rank 2) · elemental
+- changed 408426 Fire Nova (Rank 3) · elemental
+- changed 408427 Fire Nova (Rank 4) · elemental
+- changed 408428 Fire Nova (Rank 5) · elemental
+- changed 10448 Flame Shock (Rank 5) · elemental
+- changed 8056 Frost Shock (Rank 1) · elemental
+- changed 8058 Frost Shock (Rank 2) · elemental
+- changed 10472 Frost Shock (Rank 3) · elemental
+- changed 10473 Frost Shock (Rank 4) · elemental
+- changed 408490 Lava Burst (Rank 1) · elemental
+- changed 408491 Lava Burst · elemental
+- changed 1238299 Lava Burst (Rank 2) · elemental
+- changed 1238300 Lava Burst (Rank 3) · elemental
+- changed 1238373 Lava Burst · elemental
+- changed 1238376 Lava Burst · elemental
+- changed 403 Lightning Bolt (Rank 1) · elemental
+- changed 529 Lightning Bolt (Rank 2) · elemental
+- changed 548 Lightning Bolt (Rank 3) · elemental
+- changed 915 Lightning Bolt (Rank 4) · elemental
+- changed 943 Lightning Bolt (Rank 5) · elemental
+- changed 6041 Lightning Bolt (Rank 6) · elemental
+- changed 10391 Lightning Bolt (Rank 7) · elemental
+- changed 10392 Lightning Bolt (Rank 8) · elemental
+- changed 15207 Lightning Bolt (Rank 9) · elemental
+- changed 15208 Lightning Bolt (Rank 10) · elemental
+- changed 408439 Lightning Bolt (Rank 1) · elemental
+- changed 408440 Lightning Bolt (Rank 2) · elemental
+- changed 408441 Lightning Bolt (Rank 3) · elemental
+- changed 408442 Lightning Bolt (Rank 4) · elemental
+- changed 408443 Lightning Bolt (Rank 5) · elemental
+- changed 408472 Lightning Bolt (Rank 6) · elemental
+- changed 408473 Lightning Bolt (Rank 7) · elemental
+- changed 408474 Lightning Bolt (Rank 8) · elemental
+- changed 408475 Lightning Bolt (Rank 9) · elemental
+- changed 408477 Lightning Bolt (Rank 10) · elemental
+- changed 425339 Molten Blast · elemental
+- changed 370 Purge (Rank 1) · elemental
+- changed 8012 Purge (Rank 2) · elemental
+- changed 27626 Purge (Rank 2) · elemental
+- changed 425874 Decoy Totem · enhancement
+- changed 8177 Grounding Totem · enhancement
+- changed 408507 Lava Lash · enhancement
+- changed 408498 Maelstrom Weapon · enhancement
+- changed 415140 Mental Dexterity · enhancement
+- changed 408696 Spirit of the Alpha · enhancement
+- changed 437009 Totemic Projection · enhancement
+- changed 454042 Burn · other
+- changed 440580 Feral Spirit · other
+- changed 1270478 Flame Charged · other
+- changed 10444 Flametongue Attack (Rank 3) · other
+- changed 29469 Flametongue Attack (Rank 1) · other
+- changed 29470 Flametongue Attack (Rank 2) · other
+- changed 8034 Frostbrand Attack (Rank 1) · other
+- changed 16353 Frostbrand Attack (Rank 5) · other
+- changed 415100 Power Surge · other
+- changed 1226977 S03 - Item - Scarlet Enclave - Shaman - Elemental 4P Bonus · other
+- changed 1226984 S03 - Item - Scarlet Enclave - Shaman - Enhancement 2P Bonus · other
+- changed 1227159 S03 - Item - Scarlet Enclave - Shaman - Tank 4P Bonus · other
+- changed 467804 S03 - Item - T2 - Shaman - Restoration 2P Bonus · other
+- changed 1213930 S03 - Item - TAQ - Shaman - Tank 2P Bonus · other
+- changed 432134 Static Shock · other
+- changed 2008 Ancestral Spirit (Rank 1) · restoration
+- changed 20609 Ancestral Spirit (Rank 2) · restoration
+- changed 20610 Ancestral Spirit (Rank 3) · restoration
+- changed 20776 Ancestral Spirit (Rank 4) · restoration
+- changed 20777 Ancestral Spirit (Rank 5) · restoration
+- changed 1064 Chain Heal (Rank 1) · restoration
+- changed 10622 Chain Heal (Rank 2) · restoration
+- changed 10623 Chain Heal (Rank 3) · restoration
+- changed 2870 Cure Disease · restoration
+- changed 526 Cure Poison · restoration
+- changed 8170 Disease Cleansing Totem · restoration
+- changed 974 Earth Shield (Rank 1) · restoration
+- changed 408514 Earth Shield · restoration
+- changed 415236 Healing Rain · restoration
+- changed 331 Healing Wave (Rank 1) · restoration
+- changed 332 Healing Wave (Rank 2) · restoration
+- changed 547 Healing Wave (Rank 3) · restoration
+- changed 913 Healing Wave (Rank 4) · restoration
+- changed 939 Healing Wave (Rank 5) · restoration
+- changed 959 Healing Wave (Rank 6) · restoration
+- changed 8005 Healing Wave (Rank 7) · restoration
+- changed 10395 Healing Wave (Rank 8) · restoration
+- changed 10396 Healing Wave (Rank 9) · restoration
+- changed 25357 Healing Wave (Rank 10) · restoration
+- changed 8004 Lesser Healing Wave (Rank 1) · restoration
+- changed 8008 Lesser Healing Wave (Rank 2) · restoration
+- changed 8010 Lesser Healing Wave (Rank 3) · restoration
+- changed 10466 Lesser Healing Wave (Rank 4) · restoration
+- changed 10467 Lesser Healing Wave (Rank 5) · restoration
+- changed 10468 Lesser Healing Wave (Rank 6) · restoration
+- changed 27624 Lesser Healing Wave (Rank 6) · restoration
+- changed 8166 Poison Cleansing Totem · restoration
+- changed 408521 Riptide (Rank 1) · restoration
+- changed 1239242 Riptide (Rank 2) · restoration
+- changed 1239243 Riptide (Rank 3) · restoration
+
+### Warlock: 1 added, 0 removed, 121 changed
+- added 1323392 Revelation · other
+- changed 18376 Corruption · affliction
+- changed 21068 Corruption · affliction
+- changed 1213450 Corruption · affliction
+- changed 18223 Curse of Exhaustion · affliction
+- changed 5782 Fear (Rank 1) · affliction
+- changed 6213 Fear (Rank 2) · affliction
+- changed 6215 Fear (Rank 3) · affliction
+- changed 18094 Nightfall · affliction
+- changed 437032 Soul Harvest · affliction
+- changed 693 Create Soulstone (Rank 1) · demonology
+- changed 20752 Create Soulstone (Rank 2) · demonology
+- changed 20755 Create Soulstone (Rank 3) · demonology
+- changed 20756 Create Soulstone (Rank 4) · demonology
+- changed 20757 Create Soulstone (Rank 5) · demonology
+- changed 412788 Demon Charge · demonology
+- changed 412789 Demonic Howl · demonology
+- changed 403619 Fel Armor · demonology
+- changed 755 Health Funnel (Rank 1) · demonology
+- changed 3698 Health Funnel (Rank 2) · demonology
+- changed 3700 Health Funnel (Rank 4) · demonology
+- changed 11695 Health Funnel (Rank 7) · demonology
+- changed 1122 Inferno (Summon) · demonology
+- changed 403789 Metamorphosis (Shapeshift) · demonology
+- changed 437169 Portal of Summoning · demonology
+- changed 18540 Ritual of Doom · demonology
+- changed 403835 Shadow Cleave (Rank 1) · demonology
+- changed 403839 Shadow Cleave (Rank 2) · demonology
+- changed 403840 Shadow Cleave (Rank 3) · demonology
+- changed 403841 Shadow Cleave (Rank 4) · demonology
+- changed 403842 Shadow Cleave (Rank 5) · demonology
+- changed 403843 Shadow Cleave (Rank 6) · demonology
+- changed 403844 Shadow Cleave (Rank 7) · demonology
+- changed 403848 Shadow Cleave (Rank 8) · demonology
+- changed 403851 Shadow Cleave (Rank 9) · demonology
+- changed 403852 Shadow Cleave (Rank 10) · demonology
+- changed 691 Summon Felhunter (Summon) · demonology
+- changed 688 Summon Imp (Summon) · demonology
+- changed 713 Summon Incubus (Summon) · demonology
+- changed 712 Summon Succubus (Summon) · demonology
+- changed 697 Summon Voidwalker (Summon) · demonology
+- changed 1225228 Bane of Havoc · destruction
+- changed 403629 Chaos Bolt · destruction
+- changed 17962 Conflagrate (Rank 3) · destruction
+- changed 18930 Conflagrate (Rank 4) · destruction
+- changed 18931 Conflagrate (Rank 5) · destruction
+- changed 18932 Conflagrate (Rank 6) · destruction
+- changed 1293817 Conflagrate (Rank 1) · destruction
+- changed 1293818 Conflagrate (Rank 2) · destruction
+- changed 11684 Hellfire (Rank 3) · destruction
+- changed 5857 Hellfire Effect (Rank 1) · destruction
+- changed 11681 Hellfire Effect (Rank 2) · destruction
+- changed 11682 Hellfire Effect (Rank 3) · destruction
+- changed 348 Immolate (Rank 1) · destruction
+- changed 2941 Immolate (Rank 4) · destruction
+- changed 11667 Immolate (Rank 6) · destruction
+- changed 412758 Incinerate (Rank 1) · destruction
+- changed 1293812 Incinerate (Rank 2) · destruction
+- changed 1293813 Incinerate (Rank 3) · destruction
+- changed 1282380 Rain of Fire (Rank 1) · destruction
+- changed 1282384 Rain of Fire (Rank 3) · destruction
+- changed 1282385 Rain of Fire (Rank 4) · destruction
+- changed 5676 Searing Pain (Rank 1) · destruction
+- changed 17919 Searing Pain (Rank 2) · destruction
+- changed 17920 Searing Pain (Rank 3) · destruction
+- changed 17921 Searing Pain (Rank 4) · destruction
+- changed 17922 Searing Pain (Rank 5) · destruction
+- changed 17923 Searing Pain (Rank 6) · destruction
+- changed 686 Shadow Bolt (Rank 1) · destruction
+- changed 695 Shadow Bolt (Rank 2) · destruction
+- changed 705 Shadow Bolt (Rank 3) · destruction
+- changed 1088 Shadow Bolt (Rank 4) · destruction
+- changed 1106 Shadow Bolt (Rank 5) · destruction
+- changed 7641 Shadow Bolt (Rank 6) · destruction
+- changed 11659 Shadow Bolt (Rank 7) · destruction
+- changed 11660 Shadow Bolt (Rank 8) · destruction
+- changed 11661 Shadow Bolt (Rank 9) · destruction
+- changed 25307 Shadow Bolt (Rank 10) · destruction
+- changed 350026 Shadow Bolt · destruction
+- changed 17877 Shadowburn (Rank 1) · destruction
+- changed 18867 Shadowburn (Rank 2) · destruction
+- changed 18868 Shadowburn (Rank 3) · destruction
+- changed 18869 Shadowburn (Rank 4) · destruction
+- changed 18870 Shadowburn (Rank 5) · destruction
+- changed 18871 Shadowburn (Rank 6) · destruction
+- changed 426320 Shadowflame · destruction
+- changed 6353 Soul Fire (Rank 1) · destruction
+- changed 17924 Soul Fire (Rank 2) · destruction
+- changed 265 Area Death (TEST) · other
+- changed 18671 Curse of Agony · other
+- changed 1233077 Curse of Agony · other
+- changed 460906 Demonic Frenzy · other
+- changed 412787 Disrupt · other
+- changed 1259821 Eureka! (Racial) · other
+- changed 403501 Haunt (Rank 1) · other
+- changed 1293693 Haunt (Rank 2) · other
+- changed 1293694 Haunt (Rank 3) · other
+- changed 440882 Infernal Armor · other
+- changed 461615 Mark of Chaos · other
+- changed 469211 Scythe of Chaos · other
+- changed 28447 Shadow Burst · other
+- changed 427733 Summon Felguard (Summon) · other
+- changed 26281 Taunt · other
+- changed 427742 Anguish · pets
+- changed 427744 Cleave · pets
+- changed 17850 Consume Shadows (Rank 2) · pets
+- changed 17851 Consume Shadows (Rank 3) · pets
+- changed 17853 Consume Shadows (Rank 5) · pets
+- changed 17854 Consume Shadows (Rank 6) · pets
+- changed 19732 Devour Magic Effect (Rank 2) · pets
+- changed 19733 Devour Magic Effect (Rank 3) · pets
+- changed 19735 Devour Magic Effect (Rank 4) · pets
+- changed 3110 Firebolt (Rank 1) · pets
+- changed 7799 Firebolt (Rank 2) · pets
+- changed 7800 Firebolt (Rank 3) · pets
+- changed 7801 Firebolt (Rank 4) · pets
+- changed 7802 Firebolt (Rank 5) · pets
+- changed 11762 Firebolt (Rank 6) · pets
+- changed 11763 Firebolt (Rank 7) · pets
+- changed 20801 Firebolt · pets
+- changed 427745 Intercept · pets
+- changed 6358 Seduction · pets
+
+### Warrior: 7 added, 1 removed, 116 changed
+- added 1323967 Gore Drinker · fury
+- added 1323968 Gore Drinker · fury
+- added 1323969 Gore Drinker · fury
+- added 12880 Enrage · other
+- added 1323965 Lingering Rage · other
+- added 1323966 Lingering Rage · other
+- added 1322574 Rule of Rage (DND) · other
+- removed 1313291 Dual Wield Specialization · fury
+- changed 438540 Charge · arms
+- changed 1715 Hamstring (Rank 1) · arms
+- changed 7372 Hamstring (Rank 2) · arms
+- changed 7373 Hamstring (Rank 3) · arms
+- changed 27584 Hamstring (Rank 3) · arms
+- changed 1236177 Hamstring (Rank 3) · arms
+- changed 78 Heroic Strike (Rank 1) · arms
+- changed 284 Heroic Strike (Rank 2) · arms
+- changed 285 Heroic Strike (Rank 3) · arms
+- changed 1608 Heroic Strike (Rank 4) · arms
+- changed 11564 Heroic Strike (Rank 5) · arms
+- changed 11565 Heroic Strike (Rank 6) · arms
+- changed 11566 Heroic Strike (Rank 7) · arms
+- changed 11567 Heroic Strike (Rank 8) · arms
+- changed 25286 Heroic Strike (Rank 9) · arms
+- changed 25710 Heroic Strike · arms
+- changed 25712 Heroic Strike (Rank 3) · arms
+- changed 694 Mocking Blow (Rank 1) · arms
+- changed 7400 Mocking Blow (Rank 2) · arms
+- changed 7402 Mocking Blow (Rank 3) · arms
+- changed 20559 Mocking Blow (Rank 4) · arms
+- changed 20560 Mocking Blow (Rank 5) · arms
+- changed 21008 Mocking Blow · arms
+- changed 12294 Mortal Strike (Rank 1) · arms
+- changed 21551 Mortal Strike (Rank 2) · arms
+- changed 21552 Mortal Strike (Rank 3) · arms
+- changed 21553 Mortal Strike (Rank 4) · arms
+- changed 27580 Mortal Strike (Rank 4) · arms
+- changed 14895 Overpower · arms
+- changed 17198 Overpower · arms
+- changed 429765 Quick Strike · arms
+- changed 772 Rend (Rank 1) · arms
+- changed 6546 Rend (Rank 2) · arms
+- changed 6547 Rend (Rank 3) · arms
+- changed 6548 Rend (Rank 4) · arms
+- changed 11572 Rend (Rank 5) · arms
+- changed 11573 Rend (Rank 6) · arms
+- changed 11574 Rend (Rank 7) · arms
+- changed 1232702 Shockwave · arms
+- changed 1310222 Spearing Strike · arms
+- changed 6343 Thunder Clap (Rank 1) · arms
+- changed 8198 Thunder Clap (Rank 2) · arms
+- changed 8204 Thunder Clap (Rank 3) · arms
+- changed 8205 Thunder Clap (Rank 4) · arms
+- changed 11580 Thunder Clap (Rank 5) · arms
+- changed 11581 Thunder Clap (Rank 6) · arms
+- changed 27578 Battle Shout (Rank 6) · fury
+- changed 23881 Bloodthirst (Rank 1) · fury
+- changed 23892 Bloodthirst (Rank 2) · fury
+- changed 23893 Bloodthirst (Rank 3) · fury
+- changed 23894 Bloodthirst (Rank 4) · fury
+- changed 12321 Booming Voice · fury
+- changed 845 Cleave (Rank 1) · fury
+- changed 7369 Cleave (Rank 2) · fury
+- changed 11608 Cleave (Rank 3) · fury
+- changed 11609 Cleave (Rank 4) · fury
+- changed 20569 Cleave (Rank 5) · fury
+- changed 13730 Demoralizing Shout · fury
+- changed 16244 Demoralizing Shout · fury
+- changed 27579 Demoralizing Shout (Rank 5) · fury
+- changed 23584 Dual Wield Specialization · fury
+- changed 5308 Execute (Rank 1) · fury
+- changed 20658 Execute (Rank 2) · fury
+- changed 20660 Execute (Rank 3) · fury
+- changed 20661 Execute (Rank 4) · fury
+- changed 20662 Execute (Rank 5) · fury
+- changed 5246 Intimidating Shout · fury
+- changed 402911 Raging Blow · fury
+- changed 1310315 Raging Blows · fury
+- changed 1464 Slam (Rank 2) · fury
+- changed 8820 Slam (Rank 3) · fury
+- changed 11604 Slam (Rank 4) · fury
+- changed 11605 Slam (Rank 5) · fury
+- changed 462893 Slam (Rank 1) · fury
+- changed 462895 Slam (Rank 2) · fury
+- changed 462896 Slam (Rank 3) · fury
+- changed 462897 Slam (Rank 4) · fury
+- changed 1240193 Slam (Rank 1) · fury
+- changed 1310196 Slam (Rank 1) · fury
+- changed 1310197 Slam (Rank 2) · fury
+- changed 1310198 Slam (Rank 3) · fury
+- changed 1310199 Slam (Rank 4) · fury
+- changed 1310200 Slam (Rank 5) · fury
+- changed 462891 Whirlwind · fury
+- changed 1301096 1.60.0 - Item - Tier 1 - Warrior - Protection 4P Bonus - Expertise · other
+- changed 412507 Blood Frenzy · other
+- changed 26652 Copy of Mortal Strike (Rank 1) · other
+- changed 23262 Demoralize · other
+- changed 457819 Echoes of Gladiator Stance · other
+- changed 1259813 Eureka! (Racial) · other
+- changed 440484 Fresh Meat · other
+- changed 413479 Gladiator Stance Shield Passive · other
+- changed 425600 Horn of Lordaeron · other
+- changed 468071 Retaliate · other
+- changed 1227234 S03 - Item - Scarlet Enclave - Warrior - Damage 6P Bonus · other
+- changed 1227245 S03 - Item - Scarlet Enclave - Warrior - Protection 6P Bonus · other
+- changed 464250 Surge · other
+- changed 426978 Sword and Board · other
+- changed 2687 Bloodrage · protection
+- changed 12809 Concussion Blow · protection
+- changed 71 Defensive Stance · protection
+- changed 6572 Revenge (Rank 1) · protection
+- changed 6574 Revenge (Rank 2) · protection
+- changed 7379 Revenge (Rank 3) · protection
+- changed 11600 Revenge (Rank 4) · protection
+- changed 11601 Revenge (Rank 5) · protection
+- changed 25288 Revenge (Rank 6) · protection
+- changed 23922 Shield Slam (Rank 1) · protection
+- changed 23923 Shield Slam (Rank 2) · protection
+- changed 23924 Shield Slam (Rank 3) · protection
+- changed 23925 Shield Slam (Rank 4) · protection
+- changed 7386 Sunder Armor (Rank 1) · protection
+- changed 7405 Sunder Armor (Rank 2) · protection
+- changed 8380 Sunder Armor (Rank 3) · protection
+- changed 11596 Sunder Armor (Rank 4) · protection
+- changed 11597 Sunder Armor (Rank 5) · protection
+
+## Items
+
+334 added, 3 removed, 221 changed.
+
+- added 753 Dragonmaw Shortsword
+- added 756 Tunnel Pick
+- added 776 Vendetta
+- added 812 Glowing Brightwood Staff
+- added 869 Dazzling Longsword
+- added 914 Large Ogre Chain Armor
+- added 944 Elemental Mage Staff
+- added 1264 Headbasher
+- added 1280 Cloaked Hood
+- added 1317 Hardened Root Staff
+- added 1351 Fingerbone Bracers
+- added 1447 Ring of Saviors
+- added 1488 Avenger's Armor
+- added 1522 Headhunting Spear
+- added 1523 Huge Stone Club
+- added 1602 Sickle Axe
+- added 1624 Skullsplitter Helm
+- added 1678 Black Ogre Kickers
+- added 1727 Sword of Decay
+- added 1728 Teebu's Blazing Longsword
+- added 1975 Pysan's Old Greatsword
+- added 1980 Underworld Band
+- added 1981 Icemail Jerkin
+- added 1982 Nightblade
+- added 1986 Gutrender
+- added 1991 Goblin Power Shovel
+- added 1992 Swampchill Fetish
+- added 1997 Pressed Felt Robe
+- added 1998 Bloodscalp Channeling Staff
+- added 2033 Ambassador's Boots
+- added 2084 Darksteel Bastard Sword
+- added 2164 Gut Ripper
+- added 2243 Hand of Edward the Odd
+- added 2262 Mark of Kern
+- added 2264 Mantle of Thieves
+- added 2566 Sacrificial Robes
+- added 2621 Cowl of Necromancy
+- added 2624 Thinking Cap
+- added 2825 Bow of Searing Arrows
+- added 2906 Darkshire Mail Leggings
+- added 2955 First Mate Hat
+- added 3053 Humbert's Chestpiece
+- added 3341 Gauntlets of Ogre Strength
+- added 3345 Silk Wizard Hat
+- added 3400 Lucine Longsword
+- added 3456 Dog Whistle
+- added 3475 Cloak of Flames
+- added 3562 Belt of Vindication
+- added 3569 Vicar's Robe
+- added 4197 Berylline Pads
+- added 4438 Pugilist Bracers
+- added 4476 Beastwalker Robe
+- added 4643 Grimsteel Cape
+- added 4723 Humbert's Pants
+- added 4724 Humbert's Helm
+- added 4746 Doomsayer's Robe
+- added 4810 Boulder Pads
+- added 4980 Prospector Gloves
+- added 5028 Lord Sakrasis' Scepter
+- added 5180 Necklace of Harmony
+- added 5181 Vibrant Silk Cape
+- added 5245 Summoner's Wand
+- added 5257 Dark Hooded Cape
+- added 5608 Living Cowl
+- added 5624 Circlet of the Order
+- added 5753 Ruffled Chaplet
+- added 5754 Wolfpack Medallion
+- added 5755 Onyx Shredder Plate
+- added 5756 Sliverblade
+- added 5819 Sunblaze Coif
+- added 6198 Jurassic Wristguards
+- added 6331 Howling Blade
+- added 6682 Death Speaker Robes
+- added 6688 Whisperwind Headdress
+- added 6689 Wind Spirit Staff
+- added 6690 Ferine Leggings
+- added 6691 Swinetusk Shank
+- added 6692 Pronged Reaver
+- added 6693 Agamaggan's Clutch
+- added 6694 Heart of Agamaggan
+- added 6695 Stygian Bone Amulet
+- added 6696 Nightstalker Bow
+- added 6697 Batwing Mantle
+- added 6725 Marbled Buckler
+- added 6742 Stonefist Girdle
+- added 6748 Monkey Ring
+- added 6749 Tiger Band
+- added 6750 Snake Hoop
+- added 6751 Mourning Shawl
+- added 6752 Lancer Boots
+- added 6804 Windstorm Hammer
+- added 6806 Dancing Flame
+- added 7684 Bloodmage Mantle
+- added 7685 Orb of the Forgotten Seer
+- added 7686 Ironspine's Eye
+- added 7687 Ironspine's Fist
+- added 7688 Ironspine's Ribcage
+- added 7689 Morbid Dawn
+- added 7690 Ebon Vise
+- added 7691 Embalmed Shroud
+- added 7708 Necrotic Wand
+- added 7709 Blighted Leggings
+- added 7710 Loksey's Training Stick
+- added 7711 Robe of Doan
+- added 7712 Mantle of Doan
+- added 7713 Illusionary Rod
+- added 7714 Hypnotic Blade
+- added 7717 Ravager
+- added 7719 Raging Berserker's Helm
+- added 7727 Watchman Pauldrons
+- added 7728 Beguiler Robes
+- added 7729 Chesterfall Musket
+- added 7731 Ghostshard Talisman
+- added 7736 Fight Club
+- added 7746 Explorers' League Commendation
+- added 7747 Vile Protector
+- added 7749 Omega Orb
+- added 7750 Mantle of Woe
+- added 7751 Vorrel's Boots
+- added 7752 Dreamslayer
+- added 7753 Bloodspiller
+- added 7754 Harbinger Boots
+- added 7755 Flintrock Shoulders
+- added 7756 Dog Training Gloves
+- added 7757 Windweaver Staff
+- added 7759 Archon Chestpiece
+- added 7761 Steelclaw Reaver
+- added 7786 Headsplitter
+- added 7787 Resplendent Guardian
+- added 8223 Blade of the Basilisk
+- added 8224 Silithid Ripper
+- added 8225 Tainted Pierce
+- added 8226 The Butcher
+- added 9378 Shovelphlange's Mining Axe
+- added 9382 Tromping Miner's Boots
+- added 9384 Stonevault Shiv
+- added 9386 Excavator's Brand
+- added 9387 Revelosh's Boots
+- added 9388 Revelosh's Armguards
+- added 9389 Revelosh's Spaulders
+- added 9390 Revelosh's Gloves
+- added 9391 The Shoveler
+- added 9393 Beacon of Hope
+- added 9396 Legguards of the Vault
+- added 9397 Energy Cloak
+- added 9406 Spirewind Fetter
+- added 9407 Stoneweaver Leggings
+- added 9409 Ironaya's Bracers
+- added 9420 Adventurer's Pith Helmet
+- added 9426 Monolithic Bow
+- added 9428 Unearthed Bands
+- added 9447 Electrocutioner Lagnut
+- added 9448 Spidertank Oilrag
+- added 9455 Emissary Cuffs
+- added 9456 Glass Shooter
+- added 9457 Royal Diplomatic Scepter
+- added 9458 Thermaplugg's Central Core
+- added 9459 Thermaplugg's Left Arm
+- added 9461 Charged Gear
+- added 9485 Vibroblade
+- added 9487 Hi-Tech Supergun
+- added 9489 Gyromatic Icemaker
+- added 9490 Gizmotron Megachopper
+- added 9491 Hotshot Pilot's Gloves
+- added 9492 Electromagnetic Gigaflux Reactivator
+- added 9508 Mechbuilder's Overalls
+- added 9509 Petrolspill Leggings
+- added 9510 Caverndeep Trudgers
+- added 9522 Energized Stone Circle
+- added 9538 Talvash's Gold Ring
+- added 9588 Nogg's Gold Ring
+- added 9604 Mechanic's Pipehammer
+- added 9605 Repairman's Cape
+- added 9623 Civinad Robes
+- added 9624 Triprunner Dungarees
+- added 9625 Dual Reinforced Leggings
+- added 10328 Scarlet Chestpiece
+- added 10329 Scarlet Belt
+- added 10330 Scarlet Leggings
+- added 10331 Scarlet Gauntlets
+- added 10332 Scarlet Boots
+- added 10333 Scarlet Wristguards
+- added 10358 Duracin Bracers
+- added 10359 Everlast Boots
+- added 10571 Ebony Boneclub
+- added 10573 Boneslasher
+- added 10578 Thoughtcast Boots
+- added 10582 Briar Tredders
+- added 10584 Stormgale Fists
+- added 10769 Glowing Eye of Mordresh
+- added 10770 Mordresh's Lifeless Skull
+- added 10772 Glutton's Cleaver
+- added 10775 Carapace of Tuten'kash
+- added 10776 Silky Spider Cape
+- added 10777 Arachnid Gloves
+- added 13075 Direwing Legguards
+- added 13107 Magiskull Cuffs
+- added 13116 Spaulders of the Unseen
+- added 13133 Drakesfire Epaulets
+- added 16886 Outlaw Sabre
+- added 16887 Witch's Finger
+- added 17039 Skullbreaker
+- added 17042 Nail Spitter
+- added 17043 Zealot's Robe
+- added 17508 Forcestone Buckler
+- added 18678 Tempestria's Frozen Necklace
+- added 18679 Frigid Ring
+- added 23192 Tabard of the Scarlet Crusade
+- added 211293 Crimson Trophy Quill
+- added 212347 Illari's Key
+- added 212982 Squall-breakers Potion
+- added 215373 Silver Hand Training Hammer
+- added 215375 Tactician's Staff
+- added 217497 Narpas Sword
+- added 251962 Violet Sash
+- added 251963 Gravewalker Boots
+- added 251965 Undead Knight's Bracers
+- added 270027 Ursine Hammer
+- added 270029 Town Clerk's Mittens
+- added 270036 Magistrate's Pantaloons
+- added 270043 Dreamer's Chestguard
+- added 270047 Sentinel's Boots
+- added 270054 Cultist's Chestguard
+- added 270055 Charged Leather Bracers
+- added 270059 Restorer's Fine Gloves
+- added 270060 Excavator Gauntlets
+- added 270074 Doomcaller's Pants
+- added 270075 Fists of Impending Doom
+- added 271768 Songblade Stabilizer
+- added 273022 Supple Bellyskin Leggings
+- added 273023 Saltscale Girdle
+- added 273024 Glinteye Slippers
+- added 273025 Raptorclaw Greaves
+- added 273026 Garb of Florid Feathers
+- added 273027 Raptor's Gaze
+- added 273028 Reliquary Mantle
+- added 273029 Golemsight Long Gun
+- added 273030 Ring of Power Regulation
+- added 274043 Irradiated Shield
+- added 274078 Boar Signet
+- added 274084 Quilboar Blaster
+- added 274160 Quilrager Throwing Axe
+- added 274161 Quillord Mail Leggings
+- added 274290 Painwalker Buckler
+- added 274291 Polished Skullcap
+- added 274292 Houndmaster Boomerang
+- added 274293 Spellsever Crossbow
+- added 274294 Library Walkers
+- added 274295 Band of Crimson Light
+- added 274425 White Obsidian Wand
+- added 274428 Dark Golem Breastplate
+- added 274430 Rock Sentinel Slicer
+- added 274485 Axe of Lingering Dread
+- added 274517 Unerring Purpose
+- added 279388 Brewer's Bracers
+- added 279835 Vine Pruner's Cloak
+- added 279836 Thorn Protecting Girdle
+- added 279837 Fallen Guard's Pendant
+- added 279838 Arcane Infused Rod
+- added 279839 Spellguard Pauldrons
+- added 279840 Renewing Footpads
+- added 279841 Defender of Dalaran
+- added 279842 Battle Spaulders
+- added 279843 Enchanted Sandals
+- added 279844 Striking Staff
+- added 279847 Unstable Power Core
+- added 279848 Construct Cloak
+- added 279849 Runebound Gloves
+- added 279888 Tidesoaked Leggings
+- added 279889 Naga Priestess's Mantle
+- added 280805 Serrated Raptor Claw
+- added 281600 Wail of Death
+- added 281746 Kurmokk's Pelt
+- added 281750 Murloc Oracle's Dagger
+- added 281891 Fishscale Hauberk
+- added 282003 Lost Chieftain's Greatsword
+- added 282010 Tusk of Grunter
+- added 282048 Ragged Dark Iron Cuffs
+- added 282074 Ogre Sorcerer Belt
+- added 282097 Unbreakable Golem Grips
+- added 282555 Shadowforge Shield
+- added 282558 Firebird's Cowl
+- added 282653 Dissolved Locket
+- added 282702 Molok's Masher
+- added 282703 Needletooth's Needletooth
+- added 282704 Shadow Council Apprentice's Mantle
+- added 282706 Rotting Meat
+- added 282710 Dun Garok Rifle
+- added 282713 Bloodstained Pants
+- added 282716 Imbued Scaled Cuffs
+- added 283253 Denmother's Hide
+- added 284041 Ironback Signet
+- added 284063 Witherbark Hatecleaver
+- added 284100 Horseman's Unyielding Shroud
+- added 284101 Blade of Senseless Slaughter
+- added 284102 Signet of the Soulless Rider
+- added 284154 Unmovable Sabatons
+- added 284228 Vial of Vile Liquid
+- added 284253 Eternally Frozen Band
+- added 284272 Chimaera Hide Legs
+- added 284382 Budding Leaf Belt
+- added 284383 Faerie Dragon's Skin
+- added 284459 Dendweller's Hammer
+- added 284573 Ursol'lok's Paws
+- added 284574 Snapped Branch Wand
+- added 284667 Flame Seared Sword
+- added 284697 Arcane Charged Robes
+- added 284699 Still Water Band
+- added 284707 Basilisk Sinew Belt
+- added 284712 Hyena Hide Helm
+- added 284713 Accursed Legguards
+- added 284717 Royal Satyr Slicer
+- added 284866 Windserpent Scaled Cloak
+- added 285089 Swamp Roamer's Band
+- added 285093 Ripscaled Cuffs
+- added 285094 Ravaged Fishing Pole
+- added 285095 Twitching Eye
+- added 285100 Serrated Raptor Teeth
+- added 285102 Darkmist Dirk
+- added 285103 Marsh Serpent's Scales
+- added 285177 Nature's Sting Legguards
+- added 285190 Wyvern Heart Band
+- added 285284 Balanced Knives
+- added 286140 Monster - Shield, Paladin
+- added 286556 Winds of Tanaris
+- added 286568 Blisterpaw Bones
+- added 286572 Ogre Casting Cloak
+- added 286639 Ambassador's Bloodrobes
+- added 286977 Sword of the Fallen
+- added 286981 Death Bindings
+- added 287416 Truskis' Cheesecake Slice
+- added 287505 Tender Strider Meat
+- added 287958 Titan Relic
+- added 287959 Titan Relic
+- removed 274978 Leafre's Ring of Great Resistance
+- removed 276765 Leafre's Ring of Precise Spell Power
+- removed 285326 Leafre's Ring of Armor Piercing
+- changed 872 Rockslicer
+- changed 902 Deprecated Palomino Summoning (Mount)
+- changed 1124 Deprecated Amulet of the Palomino
+- changed 1177 Oil of Olaf
+- changed 2074 Solid Shortblade
+- changed 2413 Palomino
+- changed 2850 Bronze Shortsword
+- changed 2866 Rough Bronze Cuirass
+- changed 3382 Minor Troll's Blood Elixir
+- changed 3388 Lesser Troll's Blood Elixir
+- changed 3480 Rough Bronze Shoulders
+- changed 3826 Troll's Blood Elixir
+- changed 4255 Green Leather Armor
+- changed 4261 Solliden's Trousers
+- changed 4302 Small Green Dagger
+- changed 5196 Smite's Reaver
+- changed 5197 Cookie's Tenderizer
+- changed 5198 Cookie's Stirring Rod
+- changed 5201 Emberstone Staff
+- changed 6040 Golden Scale Bracers
+- changed 6953 Verigan's Fist
+- changed 7606 Polar Gauntlets
+- changed 7607 Sable Wand
+- changed 7914 Barbaric Iron Breastplate
+- changed 7922 Steel Plate Helm
+- changed 7956 Bronze Warhammer
+- changed 7957 Bronze Greatsword
+- changed 7958 Bronze Battle Axe
+- changed 7997 Red Defias Mask
+- changed 11287 Lesser Magic Wand
+- changed 11288 Greater Magic Wand
+- changed 11289 Lesser Mystic Wand
+- changed 13503 Alchemist's Stone
+- changed 13517 Recipe: Alchemist's Stone
+- changed 14147 Cavedweller Bracers
+- changed 14148 Crystalline Cuffs
+- changed 14150 Robe of Evocation
+- changed 14151 Chanting Blade
+- changed 15424 Axe of Orgrimmar
+- changed 15443 Kris of Orgrimmar
+- changed 15444 Staff of Orgrimmar
+- changed 15445 Hammer of Orgrimmar
+- changed 15449 Ghastly Trousers
+- changed 15450 Dredgemire Leggings
+- changed 15451 Gargoyle Leggings
+- changed 15452 Featherbead Bracers
+- changed 15453 Savannah Bracers
+- changed 20004 Major Troll's Blood Elixir
+- changed 20007 Mageblood Elixir
+- changed 22192 Bloodkelp Elixir of Dodging
+- changed 22193 Bloodkelp Elixir of Resistance
+- changed 217287 Greater Mystic Wand
+- changed 247684 Forgotten Ashes
+- changed 248613 Lightning in a Bottle
+- changed 249144 Twisted Nether Wand
+- changed 249232 Lesser Eternal Wand
+- changed 249234 Dreambough Wand
+- changed 249237 Greater Eternal Wand
+- changed 249477 Formula: Tenets of the Silver Hand
+- changed 249494 Formula: Libram of Invocation
+- changed 249495 Formula: Totem of Ancestral Protection
+- changed 249539 Formula: Enchant Bracer - Superior Deflection
+- changed 250327 Draught of Predatory Senses
+- changed 250725 Crate of Exotic Parts
+- changed 250744 Firestarter Fir
+- changed 251320 Sachet of Spirit Powder
+- changed 251485 Edward's Knife
+- changed 251486 Tabitha's Cuffs
+- changed 251534 Gnarled Necromancer's Staff
+- changed 253258 The Hum Gun
+- changed 254696 Reverence
+- changed 254780 Huge Feather
+- changed 254859 Vicious Hook Talon
+- changed 258530 Lucky Lure
+- changed 258771 Al'Alketh Cultist's Ear
+- changed 260236 Scribbled Directions to Sulfur Vents
+- changed 263411 Idol of Shifting Tides
+- changed 263412 Totem of Charged Flames
+- changed 264218 Schematic: EZ-Thro Tru-Trigger
+- changed 265141 Bloody Heirloom
+- changed 268535 Bloodied Insignia
+- changed 268813 Fel Ash Sample
+- changed 268814 Sludgy Bits
+- changed 268815 Bone Fragments
+- changed 269008 Corrupted Grovewalker Sap
+- changed 269233 Ashen Infused Crystal
+- changed 270003 Garrison Cuffs
+- changed 270015 Bravo's Armbands
+- changed 270016 Dreamer's Leggings
+- changed 270227 Ephemeral Choker
+- changed 270228 Golemheart Stave
+- changed 270229 Treads of the Protector Golem
+- changed 270230 Kindlegem Girdle
+- changed 270231 Flamefist Grips
+- changed 270256 Durgen's Crescent Axe
+- changed 270261 Robes of the Disgraced Thane
+- changed 271096 Aetherwisp Bracers
+- changed 271097 Spiritwraith Drape
+- changed 271098 Golemguard Chest
+- changed 271201 Atrophic Girdle
+- changed 271202 Witherbite Bracers
+- changed 271203 Segmented Spider Leg
+- changed 271204 Meathook Slicer
+- changed 271205 Abomination Bones
+- changed 271206 Leftover Abomination Skin
+- changed 271207 Rotmender's Leggings
+- changed 271208 Grip of Fear
+- changed 271209 Bonerust Leggings
+- changed 271210 Tuskwrap Belt
+- changed 271212 Bloodied Chestwraps
+- changed 271213 Mirror of Rath'mael
+- changed 271214 Rotmender's Treads
+- changed 271215 Coldspire Staff
+- changed 271216 Scepter of the Abandoned
+- changed 271217 Corpse Chopper
+- changed 271218 Vileblood Scimitar
+- changed 271770 Explorers' League Cartographer's Kit
+- changed 271771 Drained Crystal Fragment
+- changed 271898 Charged Crystal
+- changed 271904 Volunteer's Lucky Seal
+- changed 271905 Enriched Seal
+- changed 271912 Moist Crystal
+- changed 271936 Guerrilla's Jagged Mace
+- changed 271937 Guerrilla's Jagged Mace
+- changed 271938 Guerrilla's Jagged Mace
+- changed 271939 Guerrilla's Jagged Mace
+- changed 272025 Dathrohan's Correspondence
+- changed 272059 Darkspear Voodoo Seal
+- changed 272062 Relentless Raider's Seal
+- changed 272427 Howling Idol
+- changed 273002 Slime Ward - Fel Ash Experimentation Notes
+- changed 273003 Searing Dagger
+- changed 273007 Chasm Walkers
+- changed 273115 Blueprint: Iron Oven
+- changed 273308 Disease Ward - Fel Ash Experimentation Notes
+- changed 273309 Vessel Ward - Fel Ash Experimentation Notes
+- changed 273310 Alchemy Ward - Fel Ash Experimentation Notes
+- changed 273636 Chef's Knife
+- changed 273659 Bloody Parchment
+- changed 274003 Pattern: Spiritcaller Treads
+- changed 274373 Leather-bound Flask
+- changed 274396 Fel Ash Experimentation Notes
+- changed 274748 Booty Bay Bruiser's Buckshot
+- changed 274749 Souvenir Sea Shell
+- changed 276158 Crystallized Shard
+- changed 276545 Pattern: Spiritcaller Boots
+- changed 276909 Corrupted Cat Figurine
+- changed 277056 Al'Aketh Chainmail
+- changed 277057 Al'Aketh Wristguards
+- changed 277058 Al'Aketh Gauntlets
+- changed 277059 Al'Aketh Chain
+- changed 277060 Al'Aketh Legguards
+- changed 277061 Al'Aketh Greaves
+- changed 277062 Al'Aketh Harness
+- changed 277063 Al'Aketh Bracers
+- changed 277064 Al'Aketh Gloves
+- changed 277065 Al'Aketh Belt
+- changed 277066 Al'Aketh Trousers
+- changed 277067 Al'Aketh Boots
+- changed 277068 Al'Aketh Jerkin
+- changed 277069 Al'Aketh Armguards
+- changed 277070 Al'Aketh Mitts
+- changed 277071 Al'Aketh Strap
+- changed 277072 Al'Aketh Pants
+- changed 277073 Al'Aketh Footwraps
+- changed 277074 Al'Aketh Vestments
+- changed 277075 Al'Aketh Cuffs
+- changed 277076 Al'Aketh Handwraps
+- changed 277077 Al'Aketh Cord
+- changed 277078 Al'Aketh Leggings
+- changed 277079 Al'Aketh Shoes
+- changed 277128 Bloodtalon Matriarch Eggs
+- changed 277202 Artifact Seeker's Pendant
+- changed 277203 Scholarly Pendant
+- changed 277204 Erudite's Amulet
+- changed 277254 Truthseeker's Bow
+- changed 277258 Crest of Elucidation
+- changed 277260 Researcher's Night Light
+- changed 277533 Fel Tainted Journal
+- changed 277673 Plans: Rough Copper Chain Boots
+- changed 279864 Monstrous Cleaver
+- changed 279865 Grave Shroud
+- changed 279867 Slain Baron's Signet
+- changed 279868 Duty Bound Leggings
+- changed 279869 Remembrance Armor
+- changed 279870 Tarnished Locket
+- changed 279874 The Stitcher
+- changed 279875 Spare Part Bindings
+- changed 279876 Plaguefang
+- changed 279877 Blight Gloves
+- changed 279895 Ironforge Greathammer
+- changed 279897 Dusty Belt
+- changed 279898 Dwarven Tome
+- changed 279899 Catacomb Cloak
+- changed 279900 Deepgrave Trousers
+- changed 280095 Cryptwalker Bracers
+- changed 280096 Tomb Robber's Gloves
+- changed 280438 Abominable Head
+- changed 280604 Rage of the Storm
+- changed 280797 Rabbit Crate (Arctic)
+- changed 280839 Blackrock Supplies
+- changed 281014 Vine-Wrapped Scroll
+- changed 281634 Field Researcher's Loop
+- changed 281635 Philanthropist's Ring
+- changed 281636 Museum Keeper's Chain
+- changed 281637 Antique Bulwark
+- changed 284067 Rusted Family Memento
+- changed 284192 Furbolg Loincloth
+- changed 284715 First Mate Band
+- changed 285292 Dull Sawblade
+- changed 285344 Guard Captain's Barrier
+- changed 286265 Alleria's Silver Coin
+- changed 286281 Arthas' Gold Coin
+- changed 286302 Zarla Ober's Gold Coin
+- changed 286308 Attumen's Copper Coin
+- changed 286310 Elling Trias' Copper Coin
+- changed 286327 Rhonin's Gold Coin
+- changed 286328 Elaadrin Evengale's Silver Coin
+- changed 286978 Rotmender's Garb
+- changed 286979 Rotmender's Gloves
+- changed 286980 Rotmender's Sash
+
+## Files
+
+- [`items-changed.diff`](items-changed.diff)
+- [`items-removed.txt`](items-removed.txt)
+- [`items.txt`](items.txt)
+- [`spells.diff`](spells.diff)

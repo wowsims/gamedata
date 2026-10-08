@@ -118,7 +118,7 @@ gcd       1.5 s
 range     100 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  1387–1613 physical damage to the enemy
+effect 1  1274–1726 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1236188
@@ -132,7 +132,7 @@ gcd       1.5 s
 range     100 yd
 equip     needs a bow, gun or crossbow
 
-effect 1  1387–1613 physical damage to the enemy
+effect 1  1274–1726 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1294124
@@ -306,9 +306,9 @@ attrs     passive
 labels    23
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_580 base=100 misc=3 target=[1,0]
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_598 base=100 misc=3 target=[1,0]
+          E_APPLY_AURA A_MOD_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1223984
 =======
@@ -318,7 +318,7 @@ defense   ranged
 cast      -1000 s
 cooldown  6 s
 gcd       1.5 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     8-35 yd
 equip     needs a bow, gun or crossbow
 refs      409493 Chimera Shot - Serpent, 409494 Chimera Shot - Viper, 409495 Chimera Shot - Scorpid
@@ -423,7 +423,7 @@ duration  4 s
 cast      -1000 s
 cooldown  12 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     8-35 yd
 equip     needs a bow, gun or crossbow
 labels    23
@@ -565,7 +565,7 @@ duration  2 s
 range     10 yd
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_635 base=0 target=[1,0]
+          E_APPLY_AURA A_IGNORE_FOG_OF_WAR base=0 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1221416
 =======
@@ -830,7 +830,7 @@ defense   ranged
 cast      0.5 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      13.9% of maximum mana
+cost      13.9% of base mana
 range     8-35 yd
 equip     needs a bow, gun or crossbow
 labels    23
@@ -936,7 +936,7 @@ duration  4 s
 cast      -1000 s
 cooldown  30 s
 gcd       1.5 s
-cost      8% of maximum mana
+cost      8% of base mana
 range     15 yd
 equip     needs a bow, gun or crossbow
 labels    23
@@ -969,12 +969,12 @@ defense   ranged
 duration  20 s
 cast      -1000 s
 gcd       1.5 s
-cost      9% of maximum mana
+cost      9% of base mana
 range     8-35 yd
 equip     needs a bow, gun or crossbow
 labels    23
 
-effect 1  -2% physical hit to the enemy
+effect 1  -2% physical hit to the enemy (the weapon requirement only gates casting)
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=3043
@@ -1278,48 +1278,63 @@ https://www.wowhead.com/forever/spell=1232982
 1310687 Sniper Shot (Rank 1)
 school    physical
 defense   ranged
+duration  10 s
 cast      4 s
 cooldown  15 s
 gcd       1.5 s
 cost      365 mana
-range     8-35 yd
+range     8-45 yd
 equip     needs a bow, gun or crossbow
+charges   3
 labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  normalised weapon damage +160 to the enemy
           E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
+effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1310687
 =======
 1310785 Sniper Shot (Rank 2)
 school    physical
 defense   ranged
+duration  10 s
 cast      4 s
 cooldown  15 s
 gcd       1.5 s
 cost      365 mana
-range     8-35 yd
+range     8-45 yd
 equip     needs a bow, gun or crossbow
+charges   3
 labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  normalised weapon damage +225 to the enemy
           E_NORMALIZED_WEAPON_DMG base=225 sp=1 target=[6,0]
+effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1310785
 =======
 1310786 Sniper Shot (Rank 3)
 school    physical
 defense   ranged
+duration  10 s
 cast      4 s
 cooldown  15 s
 gcd       1.5 s
 cost      365 mana
-range     8-35 yd
+range     8-45 yd
 equip     needs a bow, gun or crossbow
+charges   3
 labels    23
+proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  normalised weapon damage +295 to the enemy
           E_NORMALIZED_WEAPON_DMG base=295 sp=1 target=[6,0]
+effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1310786
 =======

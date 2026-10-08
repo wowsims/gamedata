@@ -2,7 +2,7 @@
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 2% chance
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 2% chance; tooltip says damaging spells only
 refs      15269 Blackout
 
 effect 1  casts 15269 Blackout on its trigger
@@ -14,7 +14,7 @@ https://www.wowhead.com/forever/spell=15268
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 4% chance; tooltip says damaging spells only
 refs      15269 Blackout
 
 effect 1  casts 15269 Blackout on its trigger
@@ -26,7 +26,7 @@ https://www.wowhead.com/forever/spell=15323
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 6% chance
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 6% chance; tooltip says damaging spells only
 refs      15269 Blackout
 
 effect 1  casts 15269 Blackout on its trigger
@@ -38,7 +38,7 @@ https://www.wowhead.com/forever/spell=15324
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 8% chance
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 8% chance; tooltip says damaging spells only
 refs      15269 Blackout
 
 effect 1  casts 15269 Blackout on its trigger
@@ -50,7 +50,7 @@ https://www.wowhead.com/forever/spell=15325
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 1; tooltip says damaging spells only
 refs      15269 Blackout
 
 effect 1  casts 15269 Blackout on its trigger
@@ -153,8 +153,8 @@ school    physical
 attrs     passive
 labels    18
 
-effect 1  SPELLMOD_COST -50% on family 6 mask 0x2000000,0x0,0x0,0x10
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=6 mask=0x2000000,0x0,0x0,0x10 target=[1,0]
+effect 1  SPELLMOD_COST -50% on family 6 mask 0x0,0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=6 mask=0x0,0x0,0x0,0x10 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 
@@ -169,6 +169,7 @@ gcd       1.5 s
 cost      215 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 16 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -185,6 +186,7 @@ gcd       1.5 s
 cost      350 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 29 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -201,6 +203,7 @@ gcd       1.5 s
 cost      495 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 43 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -217,6 +220,7 @@ gcd       1.5 s
 cost      645 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 61 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -233,6 +237,7 @@ gcd       1.5 s
 cost      810 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 82 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -249,6 +254,7 @@ gcd       1.5 s
 cost      985 mana
 range     30 yd
 stance    Shadowform
+attrs     periodic can crit
 labels    18
 
 effect 1  leeches 106 every 3 s to the enemy (8 ticks, +0.1 spell power)
@@ -658,7 +664,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  39.95122–44.04878 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  40–44 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=39 ppl=0.6 variance=0.09756097 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8092
@@ -674,7 +680,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  69.12–74.88 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  69–76 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=68 ppl=0.9 variance=0.08 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8102
@@ -690,7 +696,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  102.344826–109.655174 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  103–110 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=101 ppl=1.1 variance=0.06896552 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8103
@@ -706,7 +712,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  153.40698–162.59302 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  154–162 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=151 ppl=1.4 variance=0.058139537 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8104
@@ -722,7 +728,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  197.625–210.375 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  198–210 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=196 ppl=1.6 variance=0.0625 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8105
@@ -738,7 +744,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  258.65625–275.34375 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  259–276 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=258 ppl=1.9 variance=0.0625 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8106
@@ -754,7 +760,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  324.61798–343.38202 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  325–344 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=324 ppl=2.1 variance=0.056179777 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10945
@@ -770,7 +776,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  405.5492–428.4508 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  406–428 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=405 ppl=2.4 variance=0.05491991 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10946
@@ -786,7 +792,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  476.73114–503.26886 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  477–504 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=485 ppl=2.6 variance=0.054158606 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10947
@@ -884,7 +890,7 @@ cost      60 mana
 range     20 yd
 attrs     channeled
 
-effect 1  233 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
+effect 1  233.87898 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=233.87898 sp=0.1 period=1000ms target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
@@ -900,7 +906,7 @@ cost      60 mana
 range     20 yd
 attrs     channeled
 
-effect 1  467 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
+effect 1  467.75797 shadow damage every 1 s to the enemy (3 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=467.75797 sp=0.1 period=1000ms target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
@@ -1113,7 +1119,7 @@ cost      60 mana
 range     20 yd
 attrs     channeled
 
-effect 1  467 shadow damage every 1 s to the enemy (5 ticks, +0.1 spell power)
+effect 1  467.75797 shadow damage every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=467.75797 sp=0.1 period=1000ms target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
@@ -1156,7 +1162,7 @@ school    shadow
 defense   magic
 duration  6 s
 gcd       1.5 s
-cost      28% of maximum mana
+cost      28% of base mana
 range     30 yd
 stance    Shadowform
 attrs     channeled
@@ -1232,7 +1238,7 @@ defense   magic
 duration  10 s
 cast      1.5 s
 gcd       1.5 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     35 yd
 stack     up to 3
 labels    3096
@@ -1554,7 +1560,7 @@ https://www.wowhead.com/forever/spell=17322
 school    physical
 attrs     passive, can proc from procs
 labels    18
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 100% chance, from effect 1; tooltip says damaging spells only
 refs      15258 Shadow Weaving
 
 effect 1  casts 15258 Shadow Weaving on its trigger
@@ -1580,7 +1586,7 @@ school    shadow
 defense   magic
 cooldown  12 s
 gcd       1.5 s
-cost      12% of maximum mana
+cost      12% of base mana
 range     30 yd
 stance    Shadowform
 
@@ -1612,7 +1618,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  292.8645–311.1355 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  293–312 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=295 ppl=1.5 variance=0.0605 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=150 target=[6,0]
@@ -1642,7 +1648,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  367.53525–390.46475 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  368–391 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=370 ppl=1.9 variance=0.0605 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=150 target=[6,0]
@@ -1661,7 +1667,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  401.4765–426.5235 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  402–426 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=403 ppl=2.2 variance=0.0605 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=150 target=[6,0]
@@ -1680,7 +1686,7 @@ range     30 yd
 stance    Shadowform
 labels    18
 
-effect 1  444.1455–471.8545 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 1  444–472 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=448 ppl=2.5 variance=0.0605 sp=0.429 target=[6,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=150 target=[6,0]
@@ -1899,7 +1905,7 @@ school    shadow
 duration  permanent
 cooldown  1.5 s (category)
 gcd       1.5 s
-cost      40% of maximum mana
+cost      40% of base mana
 labels    18
 
 effect 1  shifts into Shadowform
@@ -2403,7 +2409,7 @@ defense   magic
 duration  15 s
 cast      1.5 s
 gcd       1.5 s
-cost      16% of maximum mana
+cost      16% of base mana
 range     30 yd
 attrs     can proc from procs
 proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
@@ -2421,7 +2427,7 @@ defense   magic
 duration  18 s
 cooldown  6 s
 gcd       1.5 s
-cost      13% of maximum mana
+cost      13% of base mana
 range     30 yd
 stance    Shadowform
 

@@ -54,7 +54,7 @@ https://www.wowhead.com/forever/spell=17788
 school    physical
 defense   magic
 duration  300 s
-cost      5% of maximum mana
+cost      5% of base mana
 range     30 yd
 targets   up to 1
 labels    19
@@ -105,7 +105,7 @@ defense   magic
 cast      2.5 s
 cooldown  12 s
 gcd       1.5 s
-cost      7% of maximum mana
+cost      7% of base mana
 range     30 yd
 
 effect 1  522–662 fire+nature+frost+shadow+arcane damage to the enemy (+0.714 spell power)
@@ -140,7 +140,7 @@ cost      165 mana
 range     30 yd
 labels    19
 
-effect 1  133.62637–170.37363 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  134–170 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=146 ppl=1 variance=0.24175824 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17962
@@ -154,7 +154,7 @@ cost      200 mana
 range     30 yd
 labels    19
 
-effect 1  177.52809–222.47191 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  178–223 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=194 ppl=1.1 variance=0.2247191 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18930
@@ -168,7 +168,7 @@ cost      230 mana
 range     30 yd
 labels    19
 
-effect 1  218.60324–273.39676 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  219–274 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=239 ppl=1.2 variance=0.22273782 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18931
@@ -182,7 +182,7 @@ cost      255 mana
 range     30 yd
 labels    19
 
-effect 1  251.10359–312.89642 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  251–313 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=282 ppl=1.3 variance=0.21912351 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18932
@@ -196,7 +196,7 @@ cost      100 mana
 range     30 yd
 labels    19
 
-effect 1  87.03297–110.96703 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  88–111 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=95 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1293817
@@ -210,7 +210,7 @@ cost      130 mana
 range     30 yd
 labels    19
 
-effect 1  111.64835–142.35165 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  112–143 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=122 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1293818
@@ -313,7 +313,7 @@ refs      11682 Hellfire Effect
 
 effect 1  casts 11682 Hellfire Effect every 1 s (15 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=1000ms trigger=11682 target=[1,0]
-effect 2  210 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
+effect 2  210.2 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=206 ppl=0.7 sp=0.022 period=1000ms target=[1,0]
 effect 3  immune to bandage
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
@@ -323,7 +323,7 @@ https://www.wowhead.com/forever/spell=11684
 5857 Hellfire Effect (Rank 1)
 school    fire
 defense   magic
-attrs     cannot crit
+attrs     periodic can crit
 labels    19
 
 effect 1  86 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
@@ -334,7 +334,7 @@ https://www.wowhead.com/forever/spell=5857
 11681 Hellfire Effect (Rank 2)
 school    fire
 defense   magic
-attrs     cannot crit
+attrs     periodic can crit
 labels    19
 
 effect 1  142 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
@@ -345,10 +345,10 @@ https://www.wowhead.com/forever/spell=11681
 11682 Hellfire Effect (Rank 3)
 school    fire
 defense   magic
-attrs     cannot crit
+attrs     periodic can crit
 labels    19
 
-effect 1  210 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
+effect 1  210.2 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
           E_SCHOOL_DAMAGE base=206 ppl=0.7 sp=0.022 target=[18,16]
 
 https://www.wowhead.com/forever/spell=11682
@@ -366,7 +366,7 @@ labels    19
 
 effect 1  3 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 sp=0.13 period=3000ms target=[6,0]
-effect 2  10 fire damage to the enemy (at level 60, +0.2 spell power)
+effect 2  10.8 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=8 ppl=0.7 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
@@ -426,7 +426,7 @@ labels    19
 
 effect 1  19 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.13 period=3000ms target=[6,0]
-effect 2  63 fire damage to the enemy (at level 60, +0.2 spell power)
+effect 2  63.5 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=56 ppl=1.5 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
@@ -466,7 +466,7 @@ labels    19
 
 effect 1  38 fire damage every 3 s to the enemy (5 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=38 sp=0.13 period=3000ms target=[6,0]
-effect 2  115 fire damage to the enemy (at level 60, +0.2 spell power)
+effect 2  115.5 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=1.9 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
@@ -644,7 +644,7 @@ gcd       1.5 s
 cost      205 mana
 range     30 yd
 
-effect 1  98.05–113.95 fire damage to the enemy (at level 60, +0.714 spell power)
+effect 1  99–114 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=97 ppl=1.1 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
@@ -659,7 +659,7 @@ gcd       1.5 s
 cost      265 mana
 range     30 yd
 
-effect 1  144.3–167.7 fire damage to the enemy (at level 60, +0.714 spell power)
+effect 1  145–168 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=145 ppl=1.3 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
@@ -674,7 +674,7 @@ gcd       1.5 s
 cost      325 mana
 range     30 yd
 
-effect 1  200.725–233.275 fire damage to the enemy (at level 60, +0.714 spell power)
+effect 1  201–233 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=217 ppl=1.4 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
@@ -874,7 +874,7 @@ defense   magic
 range     50000 yd
 labels    19
 
-effect 1  41 fire damage to target 87 (at level 60, +0.083 spell power)
+effect 1  41.5 fire damage to target 87 (at level 60, +0.083 spell power)
           E_SCHOOL_DAMAGE base=40 ppl=0.3 sp=0.083 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282380
@@ -907,7 +907,7 @@ defense   magic
 range     50000 yd
 labels    19
 
-effect 1  151 fire damage to target 87 (at level 60, +0.083 spell power)
+effect 1  151.5 fire damage to target 87 (at level 60, +0.083 spell power)
           E_SCHOOL_DAMAGE base=149 ppl=0.5 sp=0.083 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282384
@@ -918,7 +918,7 @@ defense   magic
 range     50000 yd
 labels    19
 
-effect 1  221 fire damage to target 87 (at level 60, +0.083 spell power)
+effect 1  221.2 fire damage to target 87 (at level 60, +0.083 spell power)
           E_SCHOOL_DAMAGE base=220 ppl=0.6 sp=0.083 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282385
@@ -942,7 +942,7 @@ cost      45 mana
 range     30 yd
 labels    19
 
-effect 1  23.263159–28.736841 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  24–29 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=23 ppl=0.6 variance=0.21052632 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=5676
@@ -956,7 +956,7 @@ cost      68 mana
 range     30 yd
 labels    19
 
-effect 1  33.584614–40.415386 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  34–41 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.18461539 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17919
@@ -970,7 +970,7 @@ cost      91 mana
 range     30 yd
 labels    19
 
-effect 1  43.452633–52.547367 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  44–53 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=44 ppl=0.8 variance=0.18947369 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17920
@@ -984,7 +984,7 @@ cost      118 mana
 range     30 yd
 labels    19
 
-effect 1  61–73 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  61–74 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=62 ppl=0.9 variance=0.17910448 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17921
@@ -998,7 +998,7 @@ cost      141 mana
 range     30 yd
 labels    19
 
-effect 1  83.109825–98.890175 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  84–98 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=85 ppl=1 variance=0.1734104 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17922
@@ -1012,7 +1012,7 @@ cost      168 mana
 range     30 yd
 labels    19
 
-effect 1  106.5946–125.4054 fire damage to the enemy (at level 60, +0.429 spell power)
+effect 1  107–126 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=114 ppl=1.2 variance=0.16216215 sp=0.429 chain=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17923
@@ -1026,7 +1026,7 @@ cost      25 mana
 range     30 yd
 labels    19
 
-effect 1  12–16 shadow damage to the enemy (at level 60, +0.486 spell power)
+effect 1  12–17 shadow damage to the enemy (at level 60, +0.486 spell power)
           E_SCHOOL_DAMAGE base=13 ppl=0.3 variance=0.2857143 sp=0.486 target=[6,0]
 
 https://www.wowhead.com/forever/spell=686
@@ -1040,7 +1040,7 @@ cost      40 mana
 range     30 yd
 labels    19
 
-effect 1  24.76923–31.23077 shadow damage to the enemy (at level 60, +0.629 spell power)
+effect 1  25–31 shadow damage to the enemy (at level 60, +0.629 spell power)
           E_SCHOOL_DAMAGE base=25 ppl=0.6 variance=0.23076923 sp=0.629 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=695
@@ -1054,7 +1054,7 @@ cost      70 mana
 range     30 yd
 labels    19
 
-effect 1  40.615383–47.384617 shadow damage to the enemy (at level 60, +0.8 spell power)
+effect 1  41–48 shadow damage to the enemy (at level 60, +0.8 spell power)
           E_SCHOOL_DAMAGE base=41 ppl=0.7 variance=0.15384616 sp=0.8 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=705
@@ -1068,7 +1068,7 @@ cost      110 mana
 range     30 yd
 labels    19
 
-effect 1  56.086956–63.913044 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  56–65 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=56 ppl=0.9 variance=0.13043478 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1088
@@ -1082,7 +1082,7 @@ cost      160 mana
 range     30 yd
 labels    19
 
-effect 1  78.47369–89.52631 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  79–89 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=78 ppl=1.2 variance=0.13157895 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1106
@@ -1096,7 +1096,7 @@ cost      210 mana
 range     30 yd
 labels    19
 
-effect 1  100.58986–113.41014 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  101–113 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=101 ppl=1.2 variance=0.11981567 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=7641
@@ -1110,7 +1110,7 @@ cost      265 mana
 range     30 yd
 labels    19
 
-effect 1  139.55705–156.44295 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  140–156 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=141 ppl=1.4 variance=0.11409396 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11659
@@ -1124,7 +1124,7 @@ cost      315 mana
 range     30 yd
 labels    19
 
-effect 1  188.0315–209.9685 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  188–210 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=191 ppl=1.6 variance=0.11023622 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11660
@@ -1138,7 +1138,7 @@ cost      370 mana
 range     30 yd
 labels    19
 
-effect 1  237.43243–264.56757 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  237–265 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=251 ppl=1.8 variance=0.10810811 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11661
@@ -1152,7 +1152,7 @@ cost      380 mana
 range     30 yd
 labels    19
 
-effect 1  253.28627–282.7137 shadow damage to the enemy (at level 60, +0.857 spell power)
+effect 1  253–283 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=268 ppl=1.9 variance=0.10980392 sp=0.857 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25307
@@ -1163,8 +1163,9 @@ defense   magic
 cast      2.8 s
 cost      70 mana
 range     30 yd
+icd       10 s
 
-effect 1  51.692307–60.307693 shadow damage to the enemy (at level 60, +0.56 spell power)
+effect 1  63–72 shadow damage to the enemy (at level 60, +0.56 spell power)
           E_SCHOOL_DAMAGE base=52 ppl=0.9 variance=0.15384616 sp=0.56 amplitude=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=350026
@@ -1207,7 +1208,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
-effect 2  64.548386–73.451614 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  65–74 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.12903225 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17877
@@ -1224,7 +1225,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
-effect 2  80.4065–91.5935 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  81–91 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=80 ppl=1 variance=0.1300813 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18867
@@ -1241,7 +1242,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
-effect 2  117.42424–132.57576 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  118–133 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=118 ppl=1.3 variance=0.12121212 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18868
@@ -1258,7 +1259,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
-effect 2  146.04694–163.95306 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  146–165 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=148 ppl=1.3 variance=0.11552346 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18869
@@ -1275,7 +1276,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
-effect 2  200–224 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  201–224 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=203 ppl=1.6 variance=0.11320755 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18870
@@ -1292,7 +1293,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 sp=1 target=[6,0]
-effect 2  258.08823–287.91177 shadow damage to the enemy (at level 60, +0.429 spell power)
+effect 2  258–289 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=266 ppl=1.8 variance=0.1092437 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18871
@@ -1303,7 +1304,7 @@ defense   magic
 duration  15 s
 cast      2 s
 gcd       1.5 s
-cost      27% of maximum mana
+cost      27% of base mana
 range     30 yd
 refs      426454 Shadowflame
 
@@ -1369,7 +1370,7 @@ cost      305 mana
 range     30 yd
 labels    19
 
-effect 1  342.96017–431.03983 fire damage to the enemy (at level 60)
+effect 1  344–431 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=377 ppl=1.7 variance=0.22759601 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6353
@@ -1384,7 +1385,7 @@ cost      335 mana
 range     30 yd
 labels    19
 
-effect 1  388.7803–487.2197 fire damage to the enemy (at level 60)
+effect 1  390–487 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=431 ppl=1.9 variance=0.22474748 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17924

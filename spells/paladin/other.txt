@@ -72,7 +72,7 @@ https://www.wowhead.com/forever/spell=1301015
 school    physical
 attrs     passive
 
-effect 1  unrecognised shape
+effect 1  +12 expertise rating
           E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1301083
@@ -587,7 +587,7 @@ defense   magic
 duration  12 s
 cooldown  120 s
 gcd       1.5 s
-cost      6% of maximum mana
+cost      6% of base mana
 range     30 yd
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
 
@@ -1023,7 +1023,7 @@ https://www.wowhead.com/forever/spell=28853
 school    holy
 range     30 yd
 
-effect 1  22.5–27.5 healing to the party around the caster
+effect 1  22–28 healing to the party around the caster
           E_HEAL base=25 variance=0.2 radius=30 target=[20,0]
 
 https://www.wowhead.com/forever/spell=1302540
@@ -1311,6 +1311,18 @@ effect 1  SPELLMOD_DURATION +1 s on family 10 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=10 mask=0x4 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1316101
+=======
+1323419 Revelation
+school    physical
+duration  15 s
+stack     up to 1
+charges   1
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 10 mask 0xc0200400,0x200280,0x40,0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=10 mask=0xc0200400,0x200280,0x40,0x4000000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323419
 =======
 1317271 Righteous Indignation
 school    holy

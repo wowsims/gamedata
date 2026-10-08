@@ -95,7 +95,7 @@ defense   magic
 duration  120 s
 gcd       1.5 s
 
-effect 1  +193 attack power to the party around the caster (at level 60)
+effect 1  +245 attack power to the party around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=185 ppl=1 radius=20 target=[20,0]
 
 https://www.wowhead.com/forever/spell=27578
@@ -158,8 +158,8 @@ labels    25
 
 effect 1  30 physical damage to the enemy
           E_SCHOOL_DAMAGE base=30 sp=1 target=[6,0]
-effect 2  a dummy effect holding 35 to the enemy
-          E_DUMMY base=35 sp=1 target=[6,0]
+effect 2  a dummy effect holding 45 to the enemy
+          E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
 
@@ -178,8 +178,8 @@ labels    25
 
 effect 1  37 physical damage to the enemy
           E_SCHOOL_DAMAGE base=37 sp=1 target=[6,0]
-effect 2  a dummy effect holding 35 to the enemy
-          E_DUMMY base=35 sp=1 target=[6,0]
+effect 2  a dummy effect holding 45 to the enemy
+          E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
 
@@ -198,8 +198,8 @@ labels    25
 
 effect 1  43 physical damage to the enemy
           E_SCHOOL_DAMAGE base=43 sp=1 target=[6,0]
-effect 2  a dummy effect holding 35 to the enemy
-          E_DUMMY base=35 sp=1 target=[6,0]
+effect 2  a dummy effect holding 45 to the enemy
+          E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
 
@@ -218,8 +218,8 @@ labels    25
 
 effect 1  48 physical damage to the enemy
           E_SCHOOL_DAMAGE base=48 sp=1 target=[6,0]
-effect 2  a dummy effect holding 35 to the enemy
-          E_DUMMY base=35 sp=1 target=[6,0]
+effect 2  a dummy effect holding 45 to the enemy
+          E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
 
@@ -230,8 +230,10 @@ school    physical
 attrs     passive
 labels    25
 
-effect 1  SPELLMOD_RADIUS +50% on family 4 mask 0x30000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=6 family=4 mask=0x30000 target=[1,0]
+effect 1  SPELLMOD_RADIUS +50% on family 4 mask 0xf0000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=6 family=4 mask=0xf0000 target=[1,0]
+effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=12321
 =======
@@ -254,7 +256,7 @@ school    physical
 defense   melee
 cost      20 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    25
 
 effect 1  weapon damage in the weapon's own school +5 to the enemy
@@ -267,7 +269,7 @@ school    physical
 defense   melee
 cost      20 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    25
 
 effect 1  weapon damage in the weapon's own school +10 to the enemy
@@ -280,7 +282,7 @@ school    physical
 defense   melee
 cost      20 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    25
 
 effect 1  weapon damage in the weapon's own school +18 to the enemy
@@ -293,7 +295,7 @@ school    physical
 defense   melee
 cost      20 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    25
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
@@ -306,7 +308,7 @@ school    physical
 defense   melee
 cost      20 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 labels    25
 
 effect 1  weapon damage in the weapon's own school +50 to the enemy
@@ -402,7 +404,7 @@ defense   magic
 duration  30 s
 gcd       1.5 s
 
-effect 1  -120 attack power to every enemy around the caster (at level 60)
+effect 1  -130 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-10 ppl=-2 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=13730
@@ -413,7 +415,7 @@ defense   magic
 duration  30 s
 gcd       1.5 s
 
-effect 1  -240 attack power to every enemy around the caster (at level 60)
+effect 1  -260 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-20 ppl=-4 target=[22,15]
 
 https://www.wowhead.com/forever/spell=16244
@@ -437,16 +439,16 @@ defense   magic
 duration  30 s
 gcd       1.5 s
 
-effect 1  -146 attack power to every enemy around the caster (at level 60)
+effect 1  -200 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-140 ppl=-1 target=[22,15]
-effect 2  -146 ranged attack power to every enemy around the caster (at level 60)
+effect 2  -200 ranged attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-140 ppl=-1 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27579
 =======
 23584 Dual Wield Specialization
 school    physical
-equip     needs a one-handed axe, one-handed mace, one-handed sword, fist weapon or dagger
+equip     needs a one-handed axe, one-handed mace, one-handed sword, fist weapon or dagger in the off hand
 attrs     passive
 labels    25
 proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_OFF_HAND_WEAPON_SWING; no roll, it fires whenever its condition is met
@@ -455,20 +457,8 @@ effect 1  +5% off-hand damage
           E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=5 sp=1 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 sp=1 target=[1,0]
-effect 3  +10% physical hit
-          E_APPLY_AURA A_MOD_HIT_CHANCE base=10 sp=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=23584
-=======
-1313291 Dual Wield Specialization
-school    physical
-attrs     suppresses weapon procs
-labels    25
-
-effect 1  restores 0 rage to the caster
-          E_ENERGIZE base=0 misc=1 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1313291
 =======
 402913 Enraged Regeneration
 school    physical
@@ -498,7 +488,7 @@ gcd       1.5 s
 cost      15 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -529,7 +519,7 @@ gcd       1.5 s
 cost      15 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -547,7 +537,7 @@ gcd       1.5 s
 cost      15 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -565,7 +555,7 @@ gcd       1.5 s
 cost      15 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -583,7 +573,7 @@ gcd       1.5 s
 cost      15 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -604,6 +594,39 @@ effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=26651
+=======
+1323967 Gore Drinker
+school    physical
+attrs     passive, can proc from procs
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+effect 2  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323967
+=======
+1323968 Gore Drinker
+school    physical
+attrs     cannot crit
+
+effect 1  0 healing to the caster
+          E_HEAL base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323968
+=======
+1323969 Gore Drinker
+school    physical
+duration  8 s
+charges   3
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=0 sp=1 trigger=1323968 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1323969
 =======
 12318 Improved Battle Shout (Rank 1)
 school    physical
@@ -884,9 +907,9 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 effect 1  casts 20511 Intimidating Shout to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=20511 target=[6,0]
 effect 2  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 target=[22,15]
 
 https://www.wowhead.com/forever/spell=5246
 =======
@@ -1071,7 +1094,7 @@ defense   melee
 cooldown  8 s
 gcd       1.5 s
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  115% weapon damage to the enemy
@@ -1090,8 +1113,8 @@ labels    25
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
-effect 2  SPELLMOD_COST -20 (-2 on a rage bar) on family 4 mask 0x400000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=4 mask=0x400000 target=[1,0]
+effect 2  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x400000,0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x400000,0x4 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1310315
 =======
@@ -1135,7 +1158,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1152,7 +1175,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1169,7 +1192,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1186,7 +1209,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1199,7 +1222,7 @@ https://www.wowhead.com/forever/spell=11605
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
@@ -1211,7 +1234,7 @@ https://www.wowhead.com/forever/spell=462893
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +43 to the enemy
@@ -1223,7 +1246,7 @@ https://www.wowhead.com/forever/spell=462895
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +68 to the enemy
@@ -1235,7 +1258,7 @@ https://www.wowhead.com/forever/spell=462896
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +87 to the enemy
@@ -1251,7 +1274,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1268,7 +1291,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1285,7 +1308,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1302,7 +1325,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1319,7 +1342,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1336,7 +1359,7 @@ cooldown  18 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1366,7 +1389,7 @@ school    physical
 defense   melee
 range     100 yd
 stance    Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the off hand
 attrs     not a proc
 labels    25
 

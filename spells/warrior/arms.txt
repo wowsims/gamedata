@@ -235,7 +235,7 @@ school    physical
 defense   melee
 range     45 yd
 
-effect 1  675–825 physical damage to the caster
+effect 1  600–900 physical damage to the caster
           E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 target=[87,16]
@@ -407,7 +407,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -426,7 +426,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -445,7 +445,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Berserker
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -462,7 +462,7 @@ defense   melee
 duration  15 s
 gcd       1.5 s
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  45 physical damage to the enemy
@@ -478,7 +478,7 @@ defense   melee
 duration  5 s
 gcd       1.5 s
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  450 physical damage to the enemy
@@ -493,7 +493,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -507,7 +507,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -521,7 +521,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -535,7 +535,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -549,7 +549,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -563,7 +563,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -577,7 +577,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -591,7 +591,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -605,7 +605,7 @@ school    physical
 defense   melee
 cost      15 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -618,10 +618,10 @@ https://www.wowhead.com/forever/spell=25286
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
-effect 1  weapon damage in the weapon's own school +129 to the enemy (at level 60)
+effect 1  weapon damage in the weapon's own school +131 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=11 ppl=2 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25710
@@ -630,7 +630,7 @@ https://www.wowhead.com/forever/spell=25710
 school    physical
 defense   melee
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
@@ -848,7 +848,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -868,7 +868,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -888,7 +888,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -908,7 +908,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -928,7 +928,7 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -947,7 +947,7 @@ range     5 yd
 equip     needs a melee weapon
 attrs     refund on miss
 
-effect 1  181 physical damage to the enemy
+effect 1  181.25621 physical damage to the enemy
           E_SCHOOL_DAMAGE base=181.25621 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
@@ -962,7 +962,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      30 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -981,7 +981,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      30 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1000,7 +1000,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      30 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1019,7 +1019,7 @@ cooldown  6 s (category)
 gcd       1.5 s
 cost      30 rage
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1037,7 +1037,7 @@ duration  10 s
 cooldown  6 s (category)
 gcd       1.5 s
 range     5 yd
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  -50% healing taken to the enemy
@@ -1128,7 +1128,7 @@ range     5 yd
 equip     needs a melee weapon
 attrs     refund on miss
 
-effect 1  weapon damage in the weapon's own school +45 to the enemy (at level 60)
+effect 1  weapon damage in the weapon's own school +60 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=15 ppl=0.75 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=14895
@@ -1142,7 +1142,7 @@ range     5 yd
 equip     needs a melee weapon
 attrs     refund on miss
 
-effect 1  weapon damage in the weapon's own school +90 to the enemy (at level 60)
+effect 1  weapon damage in the weapon's own school +120 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=30 ppl=1.5 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17198
@@ -1174,10 +1174,10 @@ defense   melee
 gcd       1.5 s
 cost      20 rage
 range     5 yd
-equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the two-handed weapon
+equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the two-handed weapon or main hand
 attrs     refund on miss
 
-effect 1  30–40 physical damage to the enemy
+effect 1  25–45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=35 variance=0.2857143 target=[6,0]
 
 https://www.wowhead.com/forever/spell=429765
@@ -1191,12 +1191,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  5 physical damage every 3 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=3000ms target=[6,0]
+effect 1  5 physical damage every 3 s to the enemy (3 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=772
 =======
@@ -1209,12 +1209,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  7 physical damage every 3 s to the enemy (4 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 period=3000ms target=[6,0]
+effect 1  7 physical damage every 3 s to the enemy (4 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=6546
 =======
@@ -1227,12 +1227,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  9 physical damage every 3 s to the enemy (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
+effect 1  9 physical damage every 3 s to the enemy (5 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=6547
 =======
@@ -1245,12 +1245,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  11 physical damage every 3 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=3000ms target=[6,0]
+effect 1  11 physical damage every 3 s to the enemy (6 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=6548
 =======
@@ -1263,12 +1263,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  14 physical damage every 3 s to the enemy (7 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=3000ms target=[6,0]
+effect 1  14 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=11572
 =======
@@ -1281,12 +1281,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  18 physical damage every 3 s to the enemy (7 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 period=3000ms target=[6,0]
+effect 1  18 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=11573
 =======
@@ -1299,12 +1299,12 @@ gcd       1.5 s
 cost      10 rage
 range     5 yd
 stance    Battle, Defensive
-equip     needs a melee weapon
+equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  21 physical damage every 3 s to the enemy (7 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
+effect 1  21 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.02 period=3000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=11574
 =======
@@ -1388,7 +1388,7 @@ equip     needs a shield
 
 effect 1  stuns to target 104
           E_APPLY_AURA A_MOD_STUN base=0 radius=10 mechanic=12 target=[104,0]
-effect 2  1462–1538 physical damage to target 104
+effect 2  1424–1576 physical damage to target 104
           E_SCHOOL_DAMAGE base=1500 variance=0.050666668 radius=10 target=[104,0]
 effect 3  a dummy effect holding 50
           E_DUMMY base=50 target=[0,0]
@@ -1402,7 +1402,8 @@ cooldown  20 s
 gcd       1.5 s
 cost      15 rage
 range     5 yd
-equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff
+stance    Battle
+equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
@@ -1452,8 +1453,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  10 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=10 target=[22,15]
+effect 1  10 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=10 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
@@ -1470,8 +1471,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  23 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=23 target=[22,15]
+effect 1  23 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=23 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
@@ -1488,8 +1489,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  37 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=37 target=[22,15]
+effect 1  37 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=37 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
@@ -1506,8 +1507,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  55 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=55 target=[22,15]
+effect 1  55 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=55 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
@@ -1524,8 +1525,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  82 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=82 target=[22,15]
+effect 1  82 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=82 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
@@ -1542,8 +1543,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  103 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=103 target=[22,15]
+effect 1  103 physical damage to every enemy around the caster (+0.07 attack power)
+          E_SCHOOL_DAMAGE base=103 ap=0.07 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
 
