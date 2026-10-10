@@ -346,8 +346,8 @@ labels    19
 
 effect 1  a dummy aura holding 20 to the enemy
           E_APPLY_AURA A_DUMMY base=20 target=[6,0]
-effect 2  unrecognised shape
-          E_APPLY_AURA A_674 base=-175 misc=1 target=[6,0]
+effect 2  -175 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-175 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 
@@ -364,8 +364,8 @@ labels    19
 
 effect 1  a dummy aura holding 45 to the enemy
           E_APPLY_AURA A_DUMMY base=45 target=[6,0]
-effect 2  unrecognised shape
-          E_APPLY_AURA A_674 base=-285 misc=1 target=[6,0]
+effect 2  -285 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-285 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 
@@ -382,8 +382,8 @@ labels    19
 
 effect 1  a dummy aura holding 65 to the enemy
           E_APPLY_AURA A_DUMMY base=65 target=[6,0]
-effect 2  unrecognised shape
-          E_APPLY_AURA A_674 base=-395 misc=1 target=[6,0]
+effect 2  -395 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-395 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 
@@ -400,8 +400,8 @@ labels    19
 
 effect 1  a dummy aura holding 90 to the enemy
           E_APPLY_AURA A_DUMMY base=90 target=[6,0]
-effect 2  unrecognised shape
-          E_APPLY_AURA A_674 base=-505 misc=1 target=[6,0]
+effect 2  -505 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-505 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 

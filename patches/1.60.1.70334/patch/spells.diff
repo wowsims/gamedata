@@ -1,0 +1,967 @@
+# druid
+--- 770 Faerie Fire (Rank 1)
++++ 770 Faerie Fire (Rank 1)
+@@ -1,19 +1,19 @@
+ 770 Faerie Fire (Rank 1)
+ school    nature
+ defense   magic
+ duration  40 s
+ gcd       1.5 s
+ cost      55 mana
+ range     30 yd
+ stance    Cat, Bear, Dire Bear, Moonkin
+ stance exclude Tree of Life
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-175 misc=1 target=[6,0]
++effect 1  -175 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-175 misc=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=770
+--- 778 Faerie Fire (Rank 2)
++++ 778 Faerie Fire (Rank 2)
+@@ -1,19 +1,19 @@
+ 778 Faerie Fire (Rank 2)
+ school    nature
+ defense   magic
+ duration  40 s
+ gcd       1.5 s
+ cost      75 mana
+ range     30 yd
+ stance    Cat, Bear, Dire Bear, Moonkin
+ stance exclude Tree of Life
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-285 misc=1 target=[6,0]
++effect 1  -285 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-285 misc=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=778
+--- 9749 Faerie Fire (Rank 3)
++++ 9749 Faerie Fire (Rank 3)
+@@ -1,19 +1,19 @@
+ 9749 Faerie Fire (Rank 3)
+ school    nature
+ defense   magic
+ duration  40 s
+ gcd       1.5 s
+ cost      95 mana
+ range     30 yd
+ stance    Cat, Bear, Dire Bear, Moonkin
+ stance exclude Tree of Life
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-395 misc=1 target=[6,0]
++effect 1  -395 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-395 misc=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=9749
+--- 9907 Faerie Fire (Rank 4)
++++ 9907 Faerie Fire (Rank 4)
+@@ -1,19 +1,19 @@
+ 9907 Faerie Fire (Rank 4)
+ school    nature
+ defense   magic
+ duration  40 s
+ gcd       1.5 s
+ cost      115 mana
+ range     30 yd
+ stance    Cat, Bear, Dire Bear, Moonkin
+ stance exclude Tree of Life
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-505 misc=1 target=[6,0]
++effect 1  -505 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-505 misc=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=9907
+--- 21849 Gift of the Wild (Rank 1)
++++ 21849 Gift of the Wild (Rank 1)
+@@ -1,28 +1,28 @@
+ 21849 Gift of the Wild (Rank 1)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      900 mana
+ range     40 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=324 amplitude=1 misc=1 radius=100 target=[56,0]
++effect 1  +324 armor to the raid around the caster
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=324 amplitude=1 misc=1 radius=100 target=[56,0]
+ effect 2  +14 to all stats to the raid around the caster
+           E_APPLY_AURA A_MOD_STAT base=14 misc=-1 radius=100 target=[56,0]
+ effect 3  +20 holy resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=2 radius=100 target=[56,0]
+ effect 4  +20 fire resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=4 radius=100 target=[56,0]
+ effect 5  +20 nature resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=8 radius=100 target=[56,0]
+ effect 6  +20 frost resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=16 radius=100 target=[56,0]
+ effect 7  +20 shadow resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 radius=100 target=[56,0]
+ effect 8  +20 arcane resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 radius=100 target=[56,0]
+ 
+ https://www.wowhead.com/forever/spell=21849
+--- 21850 Gift of the Wild (Rank 2)
++++ 21850 Gift of the Wild (Rank 2)
+@@ -1,28 +1,28 @@
+ 21850 Gift of the Wild (Rank 2)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      1200 mana
+ range     40 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=385 amplitude=1 misc=1 radius=100 target=[56,0]
++effect 1  +385 armor to the raid around the caster
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 radius=100 target=[56,0]
+ effect 2  +16 to all stats to the raid around the caster
+           E_APPLY_AURA A_MOD_STAT base=16 misc=-1 radius=100 target=[56,0]
+ effect 3  +27 holy resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 radius=100 target=[56,0]
+ effect 4  +27 fire resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 radius=100 target=[56,0]
+ effect 5  +27 nature resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 radius=100 target=[56,0]
+ effect 6  +27 frost resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 radius=100 target=[56,0]
+ effect 7  +27 shadow resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 radius=100 target=[56,0]
+ effect 8  +27 arcane resistance to the raid around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 radius=100 target=[56,0]
+ 
+ https://www.wowhead.com/forever/spell=21850
+--- 1126 Mark of the Wild (Rank 1)
++++ 1126 Mark of the Wild (Rank 1)
+@@ -1,14 +1,14 @@
+ 1126 Mark of the Wild (Rank 1)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      20 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=34 amplitude=1 misc=1 target=[21,0]
++effect 1  +34 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=34 amplitude=1 misc=1 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=1126
+--- 5232 Mark of the Wild (Rank 2)
++++ 5232 Mark of the Wild (Rank 2)
+@@ -1,16 +1,16 @@
+ 5232 Mark of the Wild (Rank 2)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      50 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=88 amplitude=1 misc=1 target=[21,0]
++effect 1  +88 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=88 amplitude=1 misc=1 target=[21,0]
+ effect 2  +3 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=3 amplitude=1 misc=-1 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=5232
+--- 5234 Mark of the Wild (Rank 4)
++++ 5234 Mark of the Wild (Rank 4)
+@@ -1,28 +1,28 @@
+ 5234 Mark of the Wild (Rank 4)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      160 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=203 amplitude=1 misc=1 target=[21,0]
++effect 1  +203 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=203 amplitude=1 misc=1 target=[21,0]
+ effect 2  +8 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=8 misc=-1 target=[21,0]
+ effect 3  +7 holy resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=2 target=[21,0]
+ effect 4  +7 fire resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=4 target=[21,0]
+ effect 5  +7 nature resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=8 target=[21,0]
+ effect 6  +7 frost resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=16 target=[21,0]
+ effect 7  +7 shadow resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=32 target=[21,0]
+ effect 8  +7 arcane resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=64 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=5234
+--- 6756 Mark of the Wild (Rank 3)
++++ 6756 Mark of the Wild (Rank 3)
+@@ -1,16 +1,16 @@
+ 6756 Mark of the Wild (Rank 3)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      100 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=142 amplitude=1 misc=1 target=[21,0]
++effect 1  +142 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=142 amplitude=1 misc=1 target=[21,0]
+ effect 2  +5 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=5 misc=-1 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=6756
+--- 8907 Mark of the Wild (Rank 5)
++++ 8907 Mark of the Wild (Rank 5)
+@@ -1,28 +1,28 @@
+ 8907 Mark of the Wild (Rank 5)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      240 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=263 amplitude=1 misc=1 target=[21,0]
++effect 1  +263 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=263 amplitude=1 misc=1 target=[21,0]
+ effect 2  +11 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=11 misc=-1 target=[21,0]
+ effect 3  +14 holy resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=2 target=[21,0]
+ effect 4  +14 fire resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=4 target=[21,0]
+ effect 5  +14 nature resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=8 target=[21,0]
+ effect 6  +14 frost resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=16 target=[21,0]
+ effect 7  +14 shadow resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=32 target=[21,0]
+ effect 8  +14 arcane resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=64 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=8907
+--- 9884 Mark of the Wild (Rank 6)
++++ 9884 Mark of the Wild (Rank 6)
+@@ -1,28 +1,28 @@
+ 9884 Mark of the Wild (Rank 6)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      340 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=324 amplitude=1 misc=1 target=[21,0]
++effect 1  +324 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=324 amplitude=1 misc=1 target=[21,0]
+ effect 2  +14 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=14 misc=-1 target=[21,0]
+ effect 3  +20 holy resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=2 target=[21,0]
+ effect 4  +20 fire resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=4 target=[21,0]
+ effect 5  +20 nature resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=8 target=[21,0]
+ effect 6  +20 frost resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=16 target=[21,0]
+ effect 7  +20 shadow resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 target=[21,0]
+ effect 8  +20 arcane resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=9884
+--- 9885 Mark of the Wild (Rank 7)
++++ 9885 Mark of the Wild (Rank 7)
+@@ -1,28 +1,28 @@
+ 9885 Mark of the Wild (Rank 7)
+ school    nature
+ defense   magic
+ duration  3600 s
+ gcd       1.5 s
+ cost      445 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=385 amplitude=1 misc=1 target=[21,0]
++effect 1  +385 armor to the friendly target
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 target=[21,0]
+ effect 2  +16 to all stats to the friendly target
+           E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[21,0]
+ effect 3  +27 holy resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[21,0]
+ effect 4  +27 fire resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[21,0]
+ effect 5  +27 nature resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[21,0]
+ effect 6  +27 frost resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[21,0]
+ effect 7  +27 shadow resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[21,0]
+ effect 8  +27 arcane resistance to the friendly target
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=9885
+--- 1291335 Mark of the Wild (Rank 7)
++++ 1291335 Mark of the Wild (Rank 7)
+@@ -1,26 +1,26 @@
+ 1291335 Mark of the Wild (Rank 7)
+ school    nature
+ defense   magic
+ duration  1800 s
+ gcd       1.5 s
+ cost      445 mana
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=385 amplitude=1 misc=1 target=[1,0]
++effect 1  +385 armor
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 target=[1,0]
+ effect 2  +16 to all stats
+           E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[1,0]
+ effect 3  +27 holy resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[1,0]
+ effect 4  +27 fire resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[1,0]
+ effect 5  +27 nature resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[1,0]
+ effect 6  +27 frost resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[1,0]
+ effect 7  +27 shadow resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[1,0]
+ effect 8  +27 arcane resistance
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1291335
+--- 1310503 Mark of the Wild (Rank 7)
++++ 1310503 Mark of the Wild (Rank 7)
+@@ -1,26 +1,26 @@
+ 1310503 Mark of the Wild (Rank 7)
+ school    nature
+ defense   magic
+ duration  1800 s
+ gcd       1.5 s
+ cost      445 mana
+ labels    21
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=385 amplitude=1 misc=1 target=[22,30]
++effect 1  +385 armor to every ally around the caster
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 target=[22,30]
+ effect 2  +16 to all stats to every ally around the caster
+           E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[22,30]
+ effect 3  +27 holy resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[22,30]
+ effect 4  +27 fire resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[22,30]
+ effect 5  +27 nature resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[22,30]
+ effect 6  +27 frost resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[22,30]
+ effect 7  +27 shadow resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[22,30]
+ effect 8  +27 arcane resistance to every ally around the caster
+           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[22,30]
+ 
+ https://www.wowhead.com/forever/spell=1310503
+# hunter
+--- 1265899 Dust Cloud (Rank 1)
++++ 1265899 Dust Cloud (Rank 1)
+@@ -1,15 +1,15 @@
+ 1265899 Dust Cloud (Rank 1)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      10 focus
+ range     5 yd
+ targets   up to 1
+ stack     up to 1
+ labels    23
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-65 misc=1 target=[6,0]
++effect 1  -65 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-65 misc=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1265899
+--- 1265901 Dust Cloud (Rank 2)
++++ 1265901 Dust Cloud (Rank 2)
+@@ -1,15 +1,15 @@
+ 1265901 Dust Cloud (Rank 2)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      10 focus
+ range     5 yd
+ targets   up to 1
+ stack     up to 1
+ labels    23
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-175 misc=1 target=[6,0]
++effect 1  -175 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-175 misc=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1265901
+--- 1265902 Dust Cloud (Rank 3)
++++ 1265902 Dust Cloud (Rank 3)
+@@ -1,15 +1,15 @@
+ 1265902 Dust Cloud (Rank 3)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      10 focus
+ range     5 yd
+ targets   up to 1
+ stack     up to 1
+ labels    23
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-285 misc=1 target=[6,0]
++effect 1  -285 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-285 misc=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1265902
+--- 1265903 Dust Cloud (Rank 4)
++++ 1265903 Dust Cloud (Rank 4)
+@@ -1,15 +1,15 @@
+ 1265903 Dust Cloud (Rank 4)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      10 focus
+ range     5 yd
+ targets   up to 1
+ stack     up to 1
+ labels    23
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-395 misc=1 target=[6,0]
++effect 1  -395 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-395 misc=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1265903
+--- 1265904 Dust Cloud (Rank 5)
++++ 1265904 Dust Cloud (Rank 5)
+@@ -1,15 +1,15 @@
+ 1265904 Dust Cloud (Rank 5)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      10 focus
+ range     5 yd
+ targets   up to 1
+ stack     up to 1
+ labels    23
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-505 misc=1 target=[6,0]
++effect 1  -505 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-505 misc=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1265904
+# paladin
+--- 465 Devotion Aura (Rank 1)
++++ 465 Devotion Aura (Rank 1)
+@@ -1,13 +1,13 @@
+ 465 Devotion Aura (Rank 1)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=55 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +55 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=55 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=465
+--- 643 Devotion Aura (Rank 3)
++++ 643 Devotion Aura (Rank 3)
+@@ -1,13 +1,13 @@
+ 643 Devotion Aura (Rank 3)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=275 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +275 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=275 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=643
+--- 1032 Devotion Aura (Rank 5)
++++ 1032 Devotion Aura (Rank 5)
+@@ -1,13 +1,13 @@
+ 1032 Devotion Aura (Rank 5)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=505 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +505 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=505 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1032
+--- 10290 Devotion Aura (Rank 2)
++++ 10290 Devotion Aura (Rank 2)
+@@ -1,13 +1,13 @@
+ 10290 Devotion Aura (Rank 2)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=160 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +160 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=160 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=10290
+--- 10291 Devotion Aura (Rank 4)
++++ 10291 Devotion Aura (Rank 4)
+@@ -1,13 +1,13 @@
+ 10291 Devotion Aura (Rank 4)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=390 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +390 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=390 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=10291
+--- 10292 Devotion Aura (Rank 6)
++++ 10292 Devotion Aura (Rank 6)
+@@ -1,13 +1,13 @@
+ 10292 Devotion Aura (Rank 6)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=620 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +620 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=620 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=10292
+--- 10293 Devotion Aura (Rank 7)
++++ 10293 Devotion Aura (Rank 7)
+@@ -1,13 +1,13 @@
+ 10293 Devotion Aura (Rank 7)
+ school    holy
+ defense   magic
+ duration  permanent
+ gcd       1.5 s
+ labels    26
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AREA_AURA_PARTY A_674 base=735 misc=1 radius=30 target=[1,0]
++effect 1  party aura: +735 armor
++          E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=735 misc=1 radius=30 target=[1,0]
+ effect 2  party aura: +0% healing taken
+           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=10293
+# rogue
+--- 8647 Expose Armor (Rank 1)
++++ 8647 Expose Armor (Rank 1)
+@@ -1,18 +1,18 @@
+ 8647 Expose Armor (Rank 1)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=0 misc=1 perResource=-90 target=[6,0]
++effect 1  +0 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 perResource=-90 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=8647
+--- 8649 Expose Armor (Rank 2)
++++ 8649 Expose Armor (Rank 2)
+@@ -1,18 +1,18 @@
+ 8649 Expose Armor (Rank 2)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=0 misc=1 perResource=-180 target=[6,0]
++effect 1  +0 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 perResource=-180 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=8649
+--- 8650 Expose Armor (Rank 3)
++++ 8650 Expose Armor (Rank 3)
+@@ -1,18 +1,18 @@
+ 8650 Expose Armor (Rank 3)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=0 misc=1 perResource=-270 target=[6,0]
++effect 1  +0 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 perResource=-270 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=8650
+--- 11197 Expose Armor (Rank 4)
++++ 11197 Expose Armor (Rank 4)
+@@ -1,18 +1,18 @@
+ 11197 Expose Armor (Rank 4)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=0 misc=1 perResource=-360 target=[6,0]
++effect 1  +0 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 perResource=-360 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=11197
+--- 11198 Expose Armor (Rank 5)
++++ 11198 Expose Armor (Rank 5)
+@@ -1,18 +1,18 @@
+ 11198 Expose Armor (Rank 5)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=0 misc=1 perResource=-450 target=[6,0]
++effect 1  +0 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 perResource=-450 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=11198
+# warlock
+--- 704 Curse of Recklessness (Rank 1)
++++ 704 Curse of Recklessness (Rank 1)
+@@ -1,17 +1,17 @@
+ 704 Curse of Recklessness (Rank 1)
+ school    shadow
+ defense   magic
+ duration  120 s
+ gcd       1.5 s
+ cost      35 mana
+ range     30 yd
+ labels    19
+ 
+ effect 1  a dummy aura holding 20 to the enemy
+           E_APPLY_AURA A_DUMMY base=20 target=[6,0]
+-effect 2  unrecognised shape
+-          E_APPLY_AURA A_674 base=-175 misc=1 target=[6,0]
++effect 2  -175 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-175 misc=1 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=704
+--- 7658 Curse of Recklessness (Rank 2)
++++ 7658 Curse of Recklessness (Rank 2)
+@@ -1,17 +1,17 @@
+ 7658 Curse of Recklessness (Rank 2)
+ school    shadow
+ defense   magic
+ duration  120 s
+ gcd       1.5 s
+ cost      60 mana
+ range     30 yd
+ labels    19
+ 
+ effect 1  a dummy aura holding 45 to the enemy
+           E_APPLY_AURA A_DUMMY base=45 target=[6,0]
+-effect 2  unrecognised shape
+-          E_APPLY_AURA A_674 base=-285 misc=1 target=[6,0]
++effect 2  -285 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-285 misc=1 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=7658
+--- 7659 Curse of Recklessness (Rank 3)
++++ 7659 Curse of Recklessness (Rank 3)
+@@ -1,17 +1,17 @@
+ 7659 Curse of Recklessness (Rank 3)
+ school    shadow
+ defense   magic
+ duration  120 s
+ gcd       1.5 s
+ cost      90 mana
+ range     30 yd
+ labels    19
+ 
+ effect 1  a dummy aura holding 65 to the enemy
+           E_APPLY_AURA A_DUMMY base=65 target=[6,0]
+-effect 2  unrecognised shape
+-          E_APPLY_AURA A_674 base=-395 misc=1 target=[6,0]
++effect 2  -395 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-395 misc=1 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=7659
+--- 11717 Curse of Recklessness (Rank 4)
++++ 11717 Curse of Recklessness (Rank 4)
+@@ -1,17 +1,17 @@
+ 11717 Curse of Recklessness (Rank 4)
+ school    shadow
+ defense   magic
+ duration  120 s
+ gcd       1.5 s
+ cost      115 mana
+ range     30 yd
+ labels    19
+ 
+ effect 1  a dummy aura holding 90 to the enemy
+           E_APPLY_AURA A_DUMMY base=90 target=[6,0]
+-effect 2  unrecognised shape
+-          E_APPLY_AURA A_674 base=-505 misc=1 target=[6,0]
++effect 2  -505 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-505 misc=1 target=[6,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11717
+# warrior
+--- 7386 Sunder Armor (Rank 1)
++++ 7386 Sunder Armor (Rank 1)
+@@ -1,18 +1,18 @@
+ 7386 Sunder Armor (Rank 1)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ stack     up to 5
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-90 misc=1 target=[6,0]
++effect 1  -90 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-90 misc=1 target=[6,0]
+ effect 2  34 threat to the enemy (+0.05 attack power)
+           E_THREAT base=34 ap=0.05 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=7386
+--- 7405 Sunder Armor (Rank 2)
++++ 7405 Sunder Armor (Rank 2)
+@@ -1,18 +1,18 @@
+ 7405 Sunder Armor (Rank 2)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ stack     up to 5
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-180 misc=1 target=[6,0]
++effect 1  -180 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-180 misc=1 target=[6,0]
+ effect 2  75 threat to the enemy (+0.05 attack power)
+           E_THREAT base=75 ap=0.05 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=7405
+--- 8380 Sunder Armor (Rank 3)
++++ 8380 Sunder Armor (Rank 3)
+@@ -1,18 +1,18 @@
+ 8380 Sunder Armor (Rank 3)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ stack     up to 5
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-270 misc=1 target=[6,0]
++effect 1  -270 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-270 misc=1 target=[6,0]
+ effect 2  117 threat to the enemy (+0.05 attack power)
+           E_THREAT base=117 ap=0.05 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=8380
+--- 11596 Sunder Armor (Rank 4)
++++ 11596 Sunder Armor (Rank 4)
+@@ -1,18 +1,18 @@
+ 11596 Sunder Armor (Rank 4)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ stack     up to 5
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-360 misc=1 target=[6,0]
++effect 1  -360 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-360 misc=1 target=[6,0]
+ effect 2  158 threat to the enemy (+0.05 attack power)
+           E_THREAT base=158 ap=0.05 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11596
+--- 11597 Sunder Armor (Rank 5)
++++ 11597 Sunder Armor (Rank 5)
+@@ -1,18 +1,18 @@
+ 11597 Sunder Armor (Rank 5)
+ school    physical
+ defense   melee
+ duration  30 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ stack     up to 5
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  unrecognised shape
+-          E_APPLY_AURA A_674 base=-450 misc=1 target=[6,0]
++effect 1  -450 armor to the enemy
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-450 misc=1 target=[6,0]
+ effect 2  206 threat to the enemy (+0.05 attack power)
+           E_THREAT base=206 ap=0.05 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11597

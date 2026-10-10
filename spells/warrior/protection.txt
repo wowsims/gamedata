@@ -696,8 +696,8 @@ stack     up to 5
 attrs     refund on miss
 labels    25
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_674 base=-90 misc=1 target=[6,0]
+effect 1  -90 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-90 misc=1 target=[6,0]
 effect 2  34 threat to the enemy (+0.05 attack power)
           E_THREAT base=34 ap=0.05 target=[6,0]
 
@@ -715,8 +715,8 @@ stack     up to 5
 attrs     refund on miss
 labels    25
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_674 base=-180 misc=1 target=[6,0]
+effect 1  -180 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-180 misc=1 target=[6,0]
 effect 2  75 threat to the enemy (+0.05 attack power)
           E_THREAT base=75 ap=0.05 target=[6,0]
 
@@ -734,8 +734,8 @@ stack     up to 5
 attrs     refund on miss
 labels    25
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_674 base=-270 misc=1 target=[6,0]
+effect 1  -270 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-270 misc=1 target=[6,0]
 effect 2  117 threat to the enemy (+0.05 attack power)
           E_THREAT base=117 ap=0.05 target=[6,0]
 
@@ -753,8 +753,8 @@ stack     up to 5
 attrs     refund on miss
 labels    25
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_674 base=-360 misc=1 target=[6,0]
+effect 1  -360 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-360 misc=1 target=[6,0]
 effect 2  158 threat to the enemy (+0.05 attack power)
           E_THREAT base=158 ap=0.05 target=[6,0]
 
@@ -772,8 +772,8 @@ stack     up to 5
 attrs     refund on miss
 labels    25
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_674 base=-450 misc=1 target=[6,0]
+effect 1  -450 armor to the enemy
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-450 misc=1 target=[6,0]
 effect 2  206 threat to the enemy (+0.05 attack power)
           E_THREAT base=206 ap=0.05 target=[6,0]
 
