@@ -1,0 +1,378 @@
+# druid
+--- 16864 Omen of Clarity
++++ 16864 Omen of Clarity
+@@ -1,13 +1,13 @@
+ 16864 Omen of Clarity
+ school    nature
+ defense   magic
+ icd       10 s
+ attrs     passive
+ labels    21
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no stated chance, the rate has to come from an override; tooltip says heals count, damaging spells only
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 2 procs per minute; tooltip says heals count, damaging spells only
+ refs      16870 Clearcasting
+ 
+ effect 1  casts 16870 Clearcasting on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=16870 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=16864
+--- 22829 Ferocious Bite (Rank 4)
++++ 22829 Ferocious Bite (Rank 4)
+@@ -1,17 +1,17 @@
+ 22829 Ferocious Bite (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  20–120 physical damage to the enemy
+-          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 perResource=128 target=[6,0]
++effect 1  20–120 physical damage to the enemy (+0.03 attack power)
++          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 ap=0.03 perResource=128 target=[6,0]
+ effect 2  a dummy effect holding 250 to the enemy
+           E_DUMMY base=250 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=22829
+--- 1822 Rake (Rank 1)
++++ 1822 Rake (Rank 1)
+@@ -1,19 +1,19 @@
+ 1822 Rake (Rank 1)
+ school    physical
+ defense   melee
+ duration  9 s
+ gcd       1 s
+ cost      40 energy
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  23 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=23 target=[6,0]
+-effect 2  16 physical damage every 3 s to the enemy (3 ticks)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 period=3000ms mechanic=15 target=[6,0]
++effect 2  16 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1822
+--- 1823 Rake (Rank 2)
++++ 1823 Rake (Rank 2)
+@@ -1,19 +1,19 @@
+ 1823 Rake (Rank 2)
+ school    physical
+ defense   melee
+ duration  9 s
+ gcd       1 s
+ cost      40 energy
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  31 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=31 target=[6,0]
+-effect 2  21 physical damage every 3 s to the enemy (3 ticks)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms mechanic=15 target=[6,0]
++effect 2  21 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1823
+--- 1824 Rake (Rank 3)
++++ 1824 Rake (Rank 3)
+@@ -1,19 +1,19 @@
+ 1824 Rake (Rank 3)
+ school    physical
+ defense   melee
+ duration  9 s
+ gcd       1 s
+ cost      40 energy
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  45 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=45 target=[6,0]
+-effect 2  26 physical damage every 3 s to the enemy (3 ticks)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 period=3000ms mechanic=15 target=[6,0]
++effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1824
+--- 9904 Rake (Rank 4)
++++ 9904 Rake (Rank 4)
+@@ -1,19 +1,19 @@
+ 9904 Rake (Rank 4)
+ school    physical
+ defense   melee
+ duration  9 s
+ gcd       1 s
+ cost      40 energy
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  61 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=61 target=[6,0]
+-effect 2  34 physical damage every 3 s to the enemy (3 ticks)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 period=3000ms mechanic=15 target=[6,0]
++effect 2  34 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=9904
+--- 9896 Rip (Rank 6)
++++ 9896 Rip (Rank 6)
+@@ -1,19 +1,19 @@
+ 9896 Rip (Rank 6)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  12 s
+ gcd       1 s
+ cost      30 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+-effect 1  15 physical damage every 2 s to the enemy (6 ticks)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms perResource=25.5 target=[6,0]
++effect 1  15 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 ap=0.01 period=2000ms perResource=25.5 target=[6,0]
+ effect 2  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=9896
+--- 9908 Swipe (Rank 5)
++++ 9908 Swipe (Rank 5)
+@@ -1,13 +1,13 @@
+ 9908 Swipe (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ labels    21
+ 
+-effect 1  83 physical damage to the enemy
+-          E_SCHOOL_DAMAGE base=83 sp=1 chain=3 target=[6,0]
++effect 1  83 physical damage to the enemy (+0.03 attack power)
++          E_SCHOOL_DAMAGE base=83 sp=1 ap=0.03 chain=3 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=9908
+# paladin
+--- 20185 Judgement of Light (Rank 1)
++++ 20185 Judgement of Light (Rank 1)
+@@ -1,13 +1,13 @@
+ 20185 Judgement of Light (Rank 1)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+ refs      20267 Judgement of Light
+ 
+ effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20185
+--- 20344 Judgement of Light (Rank 2)
++++ 20344 Judgement of Light (Rank 2)
+@@ -1,13 +1,13 @@
+ 20344 Judgement of Light (Rank 2)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+ refs      20341 Judgement of Light
+ 
+ effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20344
+--- 20345 Judgement of Light (Rank 3)
++++ 20345 Judgement of Light (Rank 3)
+@@ -1,13 +1,13 @@
+ 20345 Judgement of Light (Rank 3)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+ refs      20342 Judgement of Light
+ 
+ effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20345
+--- 20346 Judgement of Light (Rank 4)
++++ 20346 Judgement of Light (Rank 4)
+@@ -1,13 +1,13 @@
+ 20346 Judgement of Light (Rank 4)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+ refs      20343 Judgement of Light
+ 
+ effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20346
+--- 20186 Judgement of Wisdom (Rank 1)
++++ 20186 Judgement of Wisdom (Rank 1)
+@@ -1,13 +1,13 @@
+ 20186 Judgement of Wisdom (Rank 1)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+ refs      20268 Judgement of Wisdom
+ 
+ effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20186
+--- 20354 Judgement of Wisdom (Rank 2)
++++ 20354 Judgement of Wisdom (Rank 2)
+@@ -1,13 +1,13 @@
+ 20354 Judgement of Wisdom (Rank 2)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+ refs      20352 Judgement of Wisdom
+ 
+ effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20354
+--- 20355 Judgement of Wisdom (Rank 3)
++++ 20355 Judgement of Wisdom (Rank 3)
+@@ -1,13 +1,13 @@
+ 20355 Judgement of Wisdom (Rank 3)
+ school    holy
+ defense   melee
+ duration  40 s
+ range     100 yd
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+ refs      20353 Judgement of Wisdom
+ 
+ effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20355
+--- 20165 Seal of Light (Rank 1)
++++ 20165 Seal of Light (Rank 1)
+@@ -1,16 +1,16 @@
+ 20165 Seal of Light (Rank 1)
+ school    holy
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ cost      110 mana
+ labels    26, 1203
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+ refs      20167 Seal of Light, 20185 Judgement of Light, 20267 Judgement of Light
+ 
+ effect 1  casts 20167 Seal of Light on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20167 target=[1,0]
+ effect 2  a dummy aura holding 20185
+           E_APPLY_AURA A_DUMMY base=20185 index=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=20165
+--- 20347 Seal of Light (Rank 2)
++++ 20347 Seal of Light (Rank 2)
+@@ -1,16 +1,16 @@
+ 20347 Seal of Light (Rank 2)
+ school    holy
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ cost      140 mana
+ labels    26, 1203
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+ refs      20333 Seal of Light, 20344 Judgement of Light, 20341 Judgement of Light
+ 
+ effect 1  casts 20333 Seal of Light on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20333 target=[1,0]
+ effect 2  a dummy aura holding 20344
+           E_APPLY_AURA A_DUMMY base=20344 index=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=20347
+--- 20348 Seal of Light (Rank 3)
++++ 20348 Seal of Light (Rank 3)
+@@ -1,16 +1,16 @@
+ 20348 Seal of Light (Rank 3)
+ school    holy
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ cost      180 mana
+ labels    26, 1203
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+ refs      20334 Seal of Light, 20345 Judgement of Light, 20342 Judgement of Light
+ 
+ effect 1  casts 20334 Seal of Light on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20334 target=[1,0]
+ effect 2  a dummy aura holding 20345
+           E_APPLY_AURA A_DUMMY base=20345 index=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=20348
+--- 20349 Seal of Light (Rank 4)
++++ 20349 Seal of Light (Rank 4)
+@@ -1,16 +1,16 @@
+ 20349 Seal of Light (Rank 4)
+ school    holy
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ cost      210 mana
+ labels    26, 1203
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+ refs      20340 Seal of Light, 20346 Judgement of Light, 20343 Judgement of Light
+ 
+ effect 1  casts 20340 Seal of Light on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20340 target=[1,0]
+ effect 2  a dummy aura holding 20346
+           E_APPLY_AURA A_DUMMY base=20346 index=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=20349

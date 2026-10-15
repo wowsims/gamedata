@@ -812,8 +812,8 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  20–120 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 perResource=128 target=[6,0]
+effect 1  20–120 physical damage to the enemy (+0.03 attack power)
+          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 ap=0.03 perResource=128 target=[6,0]
 effect 2  a dummy effect holding 250 to the enemy
           E_DUMMY base=250 sp=1 target=[6,0]
 
@@ -1381,8 +1381,8 @@ labels    21
 
 effect 1  23 physical damage to the enemy
           E_SCHOOL_DAMAGE base=23 target=[6,0]
-effect 2  16 physical damage every 3 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 period=3000ms mechanic=15 target=[6,0]
+effect 2  16 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 
@@ -1401,8 +1401,8 @@ labels    21
 
 effect 1  31 physical damage to the enemy
           E_SCHOOL_DAMAGE base=31 target=[6,0]
-effect 2  21 physical damage every 3 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms mechanic=15 target=[6,0]
+effect 2  21 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 
@@ -1421,8 +1421,8 @@ labels    21
 
 effect 1  45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=45 target=[6,0]
-effect 2  26 physical damage every 3 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 period=3000ms mechanic=15 target=[6,0]
+effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 
@@ -1441,8 +1441,8 @@ labels    21
 
 effect 1  61 physical damage to the enemy
           E_SCHOOL_DAMAGE base=61 target=[6,0]
-effect 2  34 physical damage every 3 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 period=3000ms mechanic=15 target=[6,0]
+effect 2  34 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 
@@ -1701,8 +1701,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  15 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms perResource=25.5 target=[6,0]
+effect 1  15 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 ap=0.01 period=2000ms perResource=25.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
@@ -1984,8 +1984,8 @@ range     5 yd
 stance    Bear, Dire Bear
 labels    21
 
-effect 1  83 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=83 sp=1 chain=3 target=[6,0]
+effect 1  83 physical damage to the enemy (+0.03 attack power)
+          E_SCHOOL_DAMAGE base=83 sp=1 ap=0.03 chain=3 target=[6,0]
 
 https://www.wowhead.com/forever/spell=9908
 =======
