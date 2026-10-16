@@ -1330,18 +1330,6 @@ effect 1  0 shadow damage to the enemy
 
 https://www.wowhead.com/forever/spell=468029
 =======
-1225177 Malediction
-school    physical
-attrs     passive
-labels    19
-
-effect 1  SPELLMOD_DOT +10% on family 5 mask 0x445e,0x40103
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x445e,0x40103 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x0,0x100
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x0,0x100 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1225177
-=======
 1310949 Malevolence
 school    physical
 attrs     passive
