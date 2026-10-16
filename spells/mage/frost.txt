@@ -1639,8 +1639,8 @@ cost      160 mana
 range     30 yd
 labels    17
 
-effect 1  136–161 frost damage to the enemy (at level 60)
-          E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 target=[6,0]
+effect 1  136–161 frost damage to the enemy (at level 60, +0.14285715 spell power)
+          E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 sp=0.14285715 target=[6,0]
 effect 2  a dummy effect holding 200
           E_DUMMY base=200 target=[0,0]
 effect 3  a dummy effect holding 20

@@ -58,6 +58,29 @@ effect 1  casts 15269 Blackout on its trigger
 
 https://www.wowhead.com/forever/spell=15326
 =======
+1326159 Dark Inspiration
+school    physical
+attrs     passive
+labels    18
+refs      1326168 Dark Inspiration
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1326159
+=======
+1326168 Dark Inspiration
+school    shadow
+duration  10 s
+range     50000 yd
+labels    18
+refs      1326159 Dark Inspiration
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_PERCENT_STAT base=15 misc=4 radius=100 target=[20,1]
+
+https://www.wowhead.com/forever/spell=1326168
+=======
 1277324 Dark Sacrifice (Rank 1)
 school    shadow
 defense   magic
