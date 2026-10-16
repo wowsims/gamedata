@@ -1314,6 +1314,18 @@ effect 2  absorbs 900 holy+fire+nature+frost+shadow+arcane damage
 
 https://www.wowhead.com/forever/spell=17730
 =======
+1225177 Malediction
+school    physical
+attrs     passive
+labels    19
+
+effect 1  SPELLMOD_DOT +10% on family 5 mask 0x445e,0x40103
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x445e,0x40103 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x0,0x100
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x0,0x100 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1225177
+=======
 440895 Mark of Chaos
 school    fire
 defense   magic
