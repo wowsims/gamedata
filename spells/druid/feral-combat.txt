@@ -101,6 +101,8 @@ effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
+effect 5  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=5487
 =======
@@ -513,6 +515,8 @@ effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
+effect 5  unrecognised shape
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
 
 https://www.wowhead.com/forever/spell=9634
 =======
@@ -742,8 +746,8 @@ duration  permanent
 stance    Cat
 labels    21
 
-effect 1  +30% movement speed
-          E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 target=[1,0]
+effect 1  +0% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 target=[1,0]
 
 https://www.wowhead.com/forever/spell=24867
 =======
@@ -1042,8 +1046,8 @@ duration  permanent
 stance    Cat, Bear, Dire Bear
 labels    21
 
-effect 1  party aura: +3% physical and spell crit
-          E_APPLY_AREA_AURA_PARTY A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
+effect 1  raid aura: +3% physical crit
+          E_APPLY_AREA_AURA_RAID A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=24932
 =======
@@ -1744,8 +1748,8 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  weapon damage +24 to the enemy
-          E_WEAPON_DAMAGE base=24 sp=1 target=[6,0]
+effect 1  weapon damage +22 to the enemy
+          E_WEAPON_DAMAGE base=22 sp=1 target=[6,0]
 effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster

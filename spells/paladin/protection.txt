@@ -35,7 +35,7 @@ duration  permanent
 range     30 yd
 
 effect 1  +10% to all stats
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[1,0]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1213408
 =======
@@ -139,20 +139,6 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_SPLIT_DAMAGE_FLAT base=55 amplitude=1 misc=127 target=[57,0]
 
 https://www.wowhead.com/forever/spell=20729
-=======
-1038 Blessing of Salvation
-school    holy
-defense   magic
-duration  3600 s
-gcd       1.5 s
-cost      8% of base mana
-range     30 yd
-labels    26
-
-effect 1  -30% threat to the target's raid
-          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[57,0]
-
-https://www.wowhead.com/forever/spell=1038
 =======
 19746 Concentration Aura
 school    holy
@@ -499,20 +485,6 @@ effect 1  +10% to all stats to target 153
 
 https://www.wowhead.com/forever/spell=25898
 =======
-25895 Greater Blessing of Salvation
-school    holy
-defense   magic
-duration  3600 s
-gcd       1.5 s
-cost      16% of base mana
-range     40 yd
-labels    26
-
-effect 1  -30% threat to target 153
-          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 radius=100 target=[153,0]
-
-https://www.wowhead.com/forever/spell=25895
-=======
 20174 Guardian's Favor
 school    physical
 attrs     passive
@@ -781,8 +753,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  66–73 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=54 ppl=2.52 variance=0.1 sp=0.45 target=[6,0]
+effect 1  66–73 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=54 ppl=2.52 variance=0.1 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 655 (at level 60)
@@ -811,8 +783,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  86–95 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=74 ppl=2.79 variance=0.09756097 sp=0.45 target=[6,0]
+effect 1  86–95 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=74 ppl=2.79 variance=0.09756097 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 929 (at level 60)
@@ -827,8 +799,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  111–122 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=96 ppl=3.42 variance=0.09756097 sp=0.45 target=[6,0]
+effect 1  111–122 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=96 ppl=3.42 variance=0.09756097 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1196 (at level 60)
@@ -843,8 +815,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  140–151 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=123 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
+effect 1  140–151 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=3.69 variance=0.087591 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1519 (at level 60)
@@ -859,8 +831,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  153–168 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=153 ppl=3.69 variance=0.087591 sp=0.45 target=[6,0]
+effect 1  153–168 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=153 ppl=3.69 variance=0.087591 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1691 (at level 60)
@@ -875,8 +847,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  32–35 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=23 ppl=1.71 variance=0.1 sp=0.45 target=[6,0]
+effect 1  32–35 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=23 ppl=1.71 variance=0.1 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 345 (at level 60)
@@ -891,8 +863,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  47–52 holy damage to the enemy (at level 60, +0.45 spell power)
-          E_SCHOOL_DAMAGE base=36.9 ppl=2.16 variance=0.1 sp=0.45 target=[6,0]
+effect 1  47–52 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=36.9 ppl=2.16 variance=0.1 sp=0.429 target=[6,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 468 (at level 60)
@@ -934,6 +906,35 @@ effect 1  casts 25944 Judgement of Justice on its trigger
 
 https://www.wowhead.com/forever/spell=25945
 =======
+25895 Mass Salvation
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      16% of base mana
+range     40 yd
+labels    26
+
+effect 1  -30% threat to target 153
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 radius=100 target=[153,0]
+
+https://www.wowhead.com/forever/spell=25895
+=======
+1325499 Revoke
+school    holy
+defense   magic
+gcd       1.5 s
+range     40 yd
+attrs     suppresses weapon procs
+labels    26
+
+effect 1  unrecognised shape
+          E_REMOVE_AURA_2 base=0 trigger=1038 target=[57,0]
+effect 2  unrecognised shape
+          E_REMOVE_AURA_2 base=0 trigger=25895 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1325499
+=======
 25780 Righteous Fury
 school    holy
 defense   magic
@@ -942,8 +943,8 @@ gcd       1.5 s
 cost      30% of base mana
 labels    26
 
-effect 1  +60% threat
-          E_APPLY_AURA A_MOD_THREAT base=60 sp=1 misc=2 target=[1,0]
+effect 1  +90% threat
+          E_APPLY_AURA A_MOD_THREAT base=90 sp=1 misc=2 target=[1,0]
 effect 2  +0% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 sp=1 misc=127 target=[1,0]
 effect 3  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x40000
@@ -991,6 +992,20 @@ effect 2  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x400000,0x0,0x200100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=10 mask=0x400000,0x0,0x200100 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1224697
+=======
+1038 Salvation
+school    holy
+defense   magic
+duration  3600 s
+gcd       1.5 s
+cost      8% of base mana
+range     30 yd
+labels    26
+
+effect 1  -30% threat to the target's raid
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[57,0]
+
+https://www.wowhead.com/forever/spell=1038
 =======
 20163 Seal of Fury (Rank 3)
 school    holy

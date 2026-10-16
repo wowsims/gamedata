@@ -92,6 +92,15 @@ effect 1  245–273 arcane damage to every ally around the caster
 
 https://www.wowhead.com/forever/spell=23413
 =======
+88163 Attack
+school    physical
+labels    16, 25, 292
+
+effect 1  a dummy effect
+          E_DUMMY base=0 target=[0,0]
+
+https://www.wowhead.com/forever/spell=88163
+=======
 457816 Battle Forecast
 school    physical
 duration  15 s
@@ -689,12 +698,10 @@ https://www.wowhead.com/forever/spell=462885
 1259813 Eureka! (Racial)
 school    nature
 defense   magic
-duration  15 s
+duration  8 s
 cooldown  120 s
-charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  SPELLMOD_COST -10% on family 4 mask 0x6a600cce,0x5,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=4 mask=0x6a600cce,0x5,0x1 target=[1,0]
@@ -1132,7 +1139,7 @@ duration  10 s
 labels    25
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_INTERRUPT_REGEN base=0 target=[1,0]
+          E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1323965
 =======
@@ -1801,10 +1808,10 @@ https://www.wowhead.com/forever/spell=446658
 18826 Savior's Sacrifice
 school    physical
 defense   magic
-duration  10 s
+duration  20 s
 
 effect 1  +300 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=300 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=300 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=18826
 =======

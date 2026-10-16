@@ -994,8 +994,8 @@ labels    18
 
 effect 1  103–127 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=1.5 variance=0.23376623 sp=0.75 target=[6,0]
-effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
+effect 2  9 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 sp=0.05 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=15265
 =======
@@ -2333,7 +2333,7 @@ stance exclude Shadowform
 attrs     passive
 labels    18
 
-effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 6 mask 0xb63e90,0x818004,0x80,0x100000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=6 mask=0xb63e90,0x818004,0x80,0x100000 target=[1,0]
+effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 6 mask 0xb63e90,0x818004,0x80,0x40100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=6 mask=0xb63e90,0x818004,0x80,0x40100000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=14913

@@ -453,6 +453,29 @@ effect 2  SPELLMOD_DAMAGE +4% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
 
 https://www.wowhead.com/forever/spell=1222997
 =======
+1326159 Dark Inspiration
+school    physical
+attrs     passive
+labels    18
+refs      1326168 Dark Inspiration
+
+effect 1  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1326159
+=======
+1326168 Dark Inspiration
+school    shadow
+duration  10 s
+range     50000 yd
+labels    18
+refs      1326159 Dark Inspiration
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_PERCENT_STAT base=15 misc=4 radius=100 target=[20,1]
+
+https://www.wowhead.com/forever/spell=1326168
+=======
 467543 Deliverance
 school    physical
 defense   magic
@@ -646,12 +669,10 @@ https://www.wowhead.com/forever/spell=28804
 1259823 Eureka! (Racial)
 school    nature
 defense   magic
-duration  15 s
+duration  8 s
 cooldown  120 s
-charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count, damaging spells only
 
 effect 1  SPELLMOD_COST -10% on family 6 mask 0x8f43e90,0x800006
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=6 mask=0x8f43e90,0x800006 target=[1,0]
@@ -1284,7 +1305,7 @@ https://www.wowhead.com/forever/spell=28808
 =======
 15007 Resurrection Sickness
 school    physical
-duration  600 s
+duration  60 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_PERCENT_STAT base=-75 misc=-1 target=[1,0]
@@ -1709,7 +1730,7 @@ effect 7  +0 shadow resistance
 effect 8  +0 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
 effect 9  +0 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
 effect 10 +0% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
 effect 11 +0% spell hit
@@ -1886,8 +1907,8 @@ school    shadow
 defense   magic
 duration  120 s
 
-effect 1  SPELLMOD_COST -100% on family 6 mask 0x11041e49,0x42000005,0x1,0x100000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x11041e49,0x42000005,0x1,0x100000 target=[1,0]
+effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62810025,0x1,0x100000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62810025,0x1,0x100000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1262312
 =======

@@ -2333,7 +2333,7 @@ range     30 yd
 effect 1  +92 attack power to the enemy (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=14 ppl=1.3 target=[6,0]
 effect 2  -650 armor to the enemy (at level 60)
-          E_APPLY_AURA A_MOD_RESISTANCE base=-50 ppl=-10 misc=1 target=[6,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-50 ppl=-10 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 
@@ -3699,7 +3699,7 @@ effect 7  +0 shadow resistance
 effect 8  +0 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
 effect 9  +0 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
 effect 10 +0% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
 effect 11 +0% spell hit

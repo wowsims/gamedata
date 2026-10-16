@@ -436,7 +436,7 @@ cost      275 mana
 labels    19
 
 effect 1  +210 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=210 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=210 misc=1 target=[1,0]
 effect 2  +3 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=3 misc=32 target=[1,0]
 effect 3  unrecognised shape
@@ -453,7 +453,7 @@ cost      520 mana
 labels    19
 
 effect 1  +300 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=300 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=300 misc=1 target=[1,0]
 effect 2  +6 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=6 misc=32 target=[1,0]
 effect 3  unrecognised shape
@@ -470,7 +470,7 @@ cost      800 mana
 labels    19
 
 effect 1  +390 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=390 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=390 misc=1 target=[1,0]
 effect 2  +9 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=9 misc=32 target=[1,0]
 effect 3  unrecognised shape
@@ -487,7 +487,7 @@ cost      1150 mana
 labels    19
 
 effect 1  +480 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=480 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=480 misc=1 target=[1,0]
 effect 2  +12 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=12 misc=32 target=[1,0]
 effect 3  unrecognised shape
@@ -504,7 +504,7 @@ cost      1580 mana
 labels    19
 
 effect 1  +570 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=570 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=570 misc=1 target=[1,0]
 effect 2  +15 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=32 target=[1,0]
 effect 3  unrecognised shape
@@ -535,7 +535,7 @@ cost      50 mana
 labels    19
 
 effect 1  +40 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=40 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=40 misc=1 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_IN_COMBAT base=3 target=[1,0]
 
@@ -550,7 +550,7 @@ cost      120 mana
 labels    19
 
 effect 1  +120 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=120 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=120 misc=1 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_HEALTH_REGEN_IN_COMBAT base=5 target=[1,0]
 
@@ -1400,9 +1400,9 @@ https://www.wowhead.com/forever/spell=403873
 school    shadow
 defense   magic
 duration  120 s
-cooldown  120 s
+cooldown  3600 s
 gcd       1.5 s
-cost      12% of base mana
+cost      100% of base mana
 range     30 yd
 attrs     channeled
 labels    19
@@ -1415,13 +1415,13 @@ https://www.wowhead.com/forever/spell=437169
 437311 Portal of Summoning
 school    shadow
 defense   magic
-duration  120 s
+duration  300 s
 cast      5 s
 gcd       1.5 s
 range     30 yd
 
 effect 1  unrecognised shape
-          E_TRANS_DOOR base=0 misc=425892 target=[47,0]
+          E_TRANS_DOOR base=0 misc=707165 target=[47,0]
 
 https://www.wowhead.com/forever/spell=437311
 =======
@@ -1457,6 +1457,22 @@ effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=36727 target=[18,0]
 
 https://www.wowhead.com/forever/spell=698
+=======
+1326140 Ritual of Summoning
+school    shadow
+defense   magic
+duration  600 s
+cast      5 s
+gcd       1.5 s
+cost      300 mana
+range     30 yd
+attrs     channeled
+labels    19
+
+effect 1  unrecognised shape
+          E_TRANS_DOOR base=0 misc=36727 target=[18,0]
+
+https://www.wowhead.com/forever/spell=1326140
 =======
 403835 Shadow Cleave (Rank 1)
 school    shadow

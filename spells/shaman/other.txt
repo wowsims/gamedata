@@ -1129,8 +1129,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +49 agility
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=49 misc=1 radius=30 target=[1,0]
+effect 1  raid aura: +49 agility
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=49 misc=1 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8836
 =======
@@ -1140,8 +1140,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +77 agility
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=77 misc=1 radius=30 target=[1,0]
+effect 1  raid aura: +77 agility
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=77 misc=1 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10626
 =======
@@ -1151,8 +1151,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +89 agility
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=89 misc=1 radius=30 target=[1,0]
+effect 1  raid aura: +89 agility
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=89 misc=1 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=25360
 =======
@@ -1589,8 +1589,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: restores 197 mana every 3 s
-          E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=197 period=3000ms radius=30 target=[1,0]
+effect 1  party aura: restores 133 mana every 3 s
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=133 period=3000ms radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=17355
 =======
@@ -1600,10 +1600,21 @@ defense   magic
 attrs     passive
 labels    24
 
+effect 1  party aura: restores 197 mana every 3 s
+          E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=197 period=3000ms radius=30 target=[1,0]
+
+https://www.wowhead.com/forever/spell=17360
+=======
+1325257 Mana Tide (Rank 4)
+school    nature
+defense   magic
+attrs     passive
+labels    24
+
 effect 1  party aura: restores 290 mana every 3 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=290 period=3000ms radius=30 target=[1,0]
 
-https://www.wowhead.com/forever/spell=17360
+https://www.wowhead.com/forever/spell=1325257
 =======
 1232890 Mercy by Fire
 school    physical
@@ -2772,7 +2783,7 @@ effect 7  +0 shadow resistance
 effect 8  +0 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
 effect 9  +0 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
 effect 10 +0% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
 effect 11 +0% spell hit
@@ -2840,7 +2851,7 @@ duration  15 s
 stack     up to 7
 
 effect 1  +30 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=30 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=30 misc=1 target=[1,0]
 effect 2  restores 8% of maximum mana to the caster
           E_ENERGIZE_PCT base=8 target=[1,0]
 effect 3  SPELLMOD_CASTING_TIME +0% on family 11 mask 0x0,0x1000
@@ -3196,8 +3207,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +7 strength
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=7 radius=30 target=[1,0]
+effect 1  raid aura: +7 strength
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=7 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8076
 =======
@@ -3207,8 +3218,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +14 strength
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=14 radius=30 target=[1,0]
+effect 1  raid aura: +14 strength
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=14 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8162
 =======
@@ -3218,8 +3229,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +25 strength
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=25 radius=30 target=[1,0]
+effect 1  raid aura: +25 strength
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=25 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8163
 =======
@@ -3229,8 +3240,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +42 strength
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=42 radius=30 target=[1,0]
+effect 1  raid aura: +42 strength
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=42 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10441
 =======
@@ -3240,8 +3251,8 @@ defense   magic
 attrs     passive
 labels    24
 
-effect 1  party aura: +53 strength
-          E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=53 radius=30 target=[1,0]
+effect 1  raid aura: +53 strength
+          E_APPLY_AREA_AURA_RAID A_MOD_STAT base=53 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=25362
 =======

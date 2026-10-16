@@ -209,7 +209,7 @@ labels    23
 refs      13812 Explosive Trap Effect
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=13813
 =======
@@ -223,7 +223,7 @@ labels    23
 refs      14314 Explosive Trap Effect
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14316
 =======
@@ -237,7 +237,7 @@ labels    23
 refs      14315 Explosive Trap Effect
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14317
 =======
@@ -491,7 +491,7 @@ cost      8% of base mana
 refs      409583 Heart of the Lion
 
 effect 1  +10% to all stats
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[1,0]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[1,0]
 effect 2  a dummy aura holding 10 every 14 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=10 period=14000ms target=[1,0]
 
@@ -504,7 +504,7 @@ range     100 yd
 refs      409580 Heart of the Lion
 
 effect 1  +10% to all stats to every ally in the target area
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 target=[18,31]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[18,31]
 effect 2  +280 attack power to every ally in the target area (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
 effect 3  +280 ranged attack power to every ally in the target area (at level 60)
@@ -522,7 +522,7 @@ labels    23
 refs      13797 Immolation Trap
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164638 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164638 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=13795
 =======
@@ -601,7 +601,7 @@ labels    23
 refs      14298 Immolation Trap
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164872 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164872 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14302
 =======
@@ -615,7 +615,7 @@ labels    23
 refs      14299 Immolation Trap
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164873 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164873 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14303
 =======
@@ -629,7 +629,7 @@ labels    23
 refs      14300 Immolation Trap
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164874 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164874 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14304
 =======
@@ -643,7 +643,7 @@ labels    23
 refs      14301 Immolation Trap
 
 effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 target=[47,0]
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164875 misc2=3 target=[47,0]
 
 https://www.wowhead.com/forever/spell=14305
 =======
@@ -1211,12 +1211,12 @@ https://www.wowhead.com/forever/spell=23989
 440529 Resourcefulness
 school    physical
 attrs     passive
-labels    23, 3096
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no stated chance, the rate has to come from an override; tooltip says on a crit, one named ability
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY; 100% chance, from effect 2
 refs      1242688 Resourcefulness
 
-effect 1  SPELLMOD_COST -60% on family 9 mask 0xc2,0x80000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=14 family=9 mask=0xc2,0x80000 target=[1,0]
+effect 1  SPELLMOD_COST -60% on family 9 mask 0xc2,0x80000,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=14 family=9 mask=0xc2,0x80000,0x200000 target=[1,0]
 effect 2  casts 1242688 Resourcefulness on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=1242688 target=[1,0]
 
@@ -1241,7 +1241,7 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +20% on family 9 mask 0x42,0x81000,0x200000
 
 https://www.wowhead.com/forever/spell=19159
 =======
-1317257 Strider Kick (Rank 1)
+1317257 Strider Kick
 school    physical
 defense   melee
 duration  3 s
@@ -1249,7 +1249,6 @@ cooldown  8 s
 gcd       1.5 s
 cost      5.81% of base mana
 range     5 yd
-equip     needs a melee weapon in the main hand
 labels    23
 
 effect 1  normalised weapon damage to the enemy

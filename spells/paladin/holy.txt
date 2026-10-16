@@ -304,8 +304,8 @@ labels    26
 
 effect 1  2 holy damage to target 87
           E_SCHOOL_DAMAGE base=2 target=[87,16]
-effect 2  4 holy damage to target 87 (+0.095 spell power)
-          E_SCHOOL_DAMAGE base=4 sp=0.095 target=[87,16]
+effect 2  4 holy damage to target 87 (+0.042 spell power)
+          E_SCHOOL_DAMAGE base=4 sp=0.042 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1280345
 =======
@@ -317,8 +317,8 @@ labels    26
 
 effect 1  3 holy damage to target 87
           E_SCHOOL_DAMAGE base=3 target=[87,16]
-effect 2  7 holy damage to target 87 (+0.095 spell power)
-          E_SCHOOL_DAMAGE base=7 sp=0.095 target=[87,16]
+effect 2  7 holy damage to target 87 (+0.042 spell power)
+          E_SCHOOL_DAMAGE base=7 sp=0.042 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1280346
 =======
@@ -330,8 +330,8 @@ labels    26
 
 effect 1  6 holy damage to target 87
           E_SCHOOL_DAMAGE base=6 target=[87,16]
-effect 2  11 holy damage to target 87 (+0.095 spell power)
-          E_SCHOOL_DAMAGE base=11 sp=0.095 target=[87,16]
+effect 2  11 holy damage to target 87 (+0.042 spell power)
+          E_SCHOOL_DAMAGE base=11 sp=0.042 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1280347
 =======
@@ -343,8 +343,8 @@ labels    26
 
 effect 1  8 holy damage to target 87
           E_SCHOOL_DAMAGE base=8 target=[87,16]
-effect 2  20 holy damage to target 87 (+0.095 spell power)
-          E_SCHOOL_DAMAGE base=20 sp=0.095 target=[87,16]
+effect 2  20 holy damage to target 87 (+0.042 spell power)
+          E_SCHOOL_DAMAGE base=20 sp=0.042 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1280348
 =======
@@ -356,8 +356,8 @@ labels    26
 
 effect 1  12 holy damage to target 87
           E_SCHOOL_DAMAGE base=12 target=[87,16]
-effect 2  27 holy damage to target 87 (+0.095 spell power)
-          E_SCHOOL_DAMAGE base=27 sp=0.095 target=[87,16]
+effect 2  27 holy damage to target 87 (+0.042 spell power)
+          E_SCHOOL_DAMAGE base=27 sp=0.042 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1280349
 =======
@@ -369,7 +369,7 @@ labels    26
 proc      hears PROC_FLAG_TAKE_MELEE_SWING; no roll, it fires whenever its condition is met
 
 effect 1  a dummy aura to target 87
-          E_APPLY_AURA A_DUMMY base=0 sp=0.095 target=[87,16]
+          E_APPLY_AURA A_DUMMY base=0 sp=0.042 target=[87,16]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=0 misc=2 target=[87,16]
 
@@ -1382,8 +1382,8 @@ school    physical
 attrs     passive
 labels    26
 
-effect 1  SPELLMOD_DAMAGE +3% on family 10 mask 0x2000400,0x20000a00,0x40
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=10 mask=0x2000400,0x20000a00,0x40 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +0% on family 10 mask 0x2000400,0x20000a00,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 family=10 mask=0x2000400,0x20000a00,0x40 target=[1,0]
 
 https://www.wowhead.com/forever/spell=20224
 =======
@@ -1609,8 +1609,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  24–27 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=15 ppl=1.8 variance=0.077 sp=0.5 target=[6,0]
+effect 1  24–27 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=15 ppl=1.8 variance=0.077 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 216 (at level 60)
           E_DUMMY base=108 ppl=18 sp=0.058 index=2 target=[0,0]
 
@@ -1623,8 +1623,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  36–39 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=26 ppl=1.9 variance=0.07692308 sp=0.5 target=[6,0]
+effect 1  36–39 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=26 ppl=1.9 variance=0.07692308 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 318 (at level 60)
           E_DUMMY base=216 ppl=17 sp=0.125 index=2 target=[0,0]
 
@@ -1637,8 +1637,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  53–58 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=41 ppl=2.4 variance=0.09756097 sp=0.5 target=[6,0]
+effect 1  53–58 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=41 ppl=2.4 variance=0.09756097 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 490 (at level 60)
           E_DUMMY base=352 ppl=23 sp=0.185 index=2 target=[0,0]
 
@@ -1651,8 +1651,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  73–80 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=60 ppl=2.8 variance=0.1 sp=0.5 target=[6,0]
+effect 1  73–80 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=60 ppl=2.8 variance=0.1 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 727 (at level 60)
           E_DUMMY base=541 ppl=31 sp=0.2 index=2 target=[0,0]
 
@@ -1665,8 +1665,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  96–105 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=82 ppl=3.1 variance=0.09756097 sp=0.5 target=[6,0]
+effect 1  96–105 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=82 ppl=3.1 variance=0.09756097 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 1007 (at level 60)
           E_DUMMY base=785 ppl=37 sp=0.2 index=2 target=[0,0]
 
@@ -1679,8 +1679,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  124–135 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=107 ppl=3.8 variance=0.093457945 sp=0.5 target=[6,0]
+effect 1  124–135 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=107 ppl=3.8 variance=0.093457945 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 1328 (at level 60)
           E_DUMMY base=1082 ppl=41 sp=0.2 index=2 target=[0,0]
 
@@ -1693,8 +1693,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  155–168 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=137 ppl=4.1 variance=0.08759124 sp=0.5 target=[6,0]
+effect 1  155–168 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=137 ppl=4.1 variance=0.08759124 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 1689 (at level 60)
           E_DUMMY base=1407 ppl=47 sp=0.2 index=2 target=[0,0]
 
@@ -1707,8 +1707,8 @@ range     100 yd
 attrs     not a proc
 labels    26
 
-effect 1  170–187 holy damage to the enemy (at level 60, +0.5 spell power)
-          E_SCHOOL_DAMAGE base=170 ppl=4.1 variance=0.09411765 sp=0.5 target=[6,0]
+effect 1  170–187 holy damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=170 ppl=4.1 variance=0.09411765 sp=0.429 target=[6,0]
 effect 2  a dummy effect holding 1880 (at level 60)
           E_DUMMY base=1786 ppl=47 sp=0.2 index=2 target=[0,0]
 
@@ -2509,7 +2509,7 @@ gcd       1.5 s
 cost      200 mana
 labels    26, 1203
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
-refs      20286 Judgement of Righteousness
+refs      20286 Judgement of Righteousness, 20224 Improved Seals
 
 effect 1  a dummy aura holding 1880 (at level 60)
           E_APPLY_AURA A_DUMMY base=1786 ppl=47 target=[1,0]
@@ -2541,8 +2541,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  35 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=35 sp=0.1 target=[6,0]
+effect 1  35 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=35 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25713
 =======
@@ -2552,8 +2552,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  32 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=32 sp=0.1 target=[6,0]
+effect 1  32 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=32 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25735
 =======
@@ -2563,8 +2563,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  25 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=25 sp=0.1 target=[6,0]
+effect 1  25 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=25 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25736
 =======
@@ -2574,8 +2574,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  19 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=19 sp=0.1 target=[6,0]
+effect 1  19 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=19 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25737
 =======
@@ -2585,8 +2585,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  14 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=14 sp=0.1 target=[6,0]
+effect 1  14 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=14 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25738
 =======
@@ -2596,8 +2596,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  9 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=9 sp=0.1 target=[6,0]
+effect 1  9 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=9 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25739
 =======
@@ -2607,8 +2607,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  6 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=6 sp=0.1 target=[6,0]
+effect 1  6 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=6 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25740
 =======
@@ -2618,8 +2618,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  4 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=4 sp=0.1 target=[6,0]
+effect 1  4 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=4 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25741
 =======
@@ -2629,8 +2629,8 @@ defense   melee
 range     50000 yd
 labels    26
 
-effect 1  4 holy damage to the enemy (+0.1 spell power)
-          E_SCHOOL_DAMAGE base=4 sp=0.1 target=[6,0]
+effect 1  4 holy damage to the enemy
+          E_SCHOOL_DAMAGE base=4 target=[6,0]
 
 https://www.wowhead.com/forever/spell=25742
 =======

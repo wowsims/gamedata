@@ -789,7 +789,7 @@ gcd       1.5 s
 range     30 yd
 
 effect 1  +285 armor to the target
-          E_APPLY_AURA A_MOD_RESISTANCE base=285 amplitude=1 misc=1 target=[25,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=285 amplitude=1 misc=1 target=[25,0]
 effect 2  +12 to all stats to the target
           E_APPLY_AURA A_MOD_STAT base=12 misc=-1 target=[25,0]
 effect 3  unrecognised shape
@@ -807,7 +807,7 @@ range     30 yd
 stance exclude Moonkin
 
 effect 1  +240 armor to the friendly target
-          E_APPLY_AURA A_MOD_RESISTANCE base=240 amplitude=1 misc=1 target=[21,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=240 amplitude=1 misc=1 target=[21,0]
 effect 2  +10 to all stats to the friendly target
           E_APPLY_AURA A_MOD_STAT base=10 misc=-1 target=[21,0]
 effect 3  +15 holy resistance to the friendly target
