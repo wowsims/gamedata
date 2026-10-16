@@ -358,7 +358,7 @@ range     5 yd
 stance    Stealth
 equip     needs a melee weapon
 targets   up to 1
-attrs     refund on miss
+attrs     refund on miss, suppresses weapon procs
 labels    20
 
 effect 1  stuns to the enemy
@@ -377,7 +377,7 @@ range     5 yd
 stance    Stealth
 equip     needs a melee weapon
 targets   up to 1
-attrs     refund on miss
+attrs     refund on miss, suppresses weapon procs
 labels    20
 
 effect 1  stuns to the enemy
@@ -396,7 +396,7 @@ range     5 yd
 stance    Stealth
 equip     needs a melee weapon
 targets   up to 1
-attrs     refund on miss
+attrs     refund on miss, suppresses weapon procs
 labels    20
 
 effect 1  stuns to the enemy
@@ -615,6 +615,16 @@ effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1318151
+=======
+1326175 Stealth
+school    physical
+duration  permanent
+attrs     not a proc, suppresses weapon procs
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1326175
 =======
 1310721 Thousand Cuts
 school    physical

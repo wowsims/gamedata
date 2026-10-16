@@ -534,8 +534,8 @@ school    physical
 attrs     passive
 labels    23
 
-effect 1  SPELLMOD_COST -15% on family 9 mask 0x7fa42,0x80081000,0x2000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=14 family=9 mask=0x7fa42,0x80081000,0x2000 target=[1,0]
+effect 1  SPELLMOD_COST -15% on family 9 mask 0x7fa42,0x80081000,0x2000,0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=14 family=9 mask=0x7fa42,0x80081000,0x2000,0x800000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19416
 =======
@@ -819,15 +819,14 @@ school    physical
 attrs     passive
 labels    23
 
-effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +30% on family 9 mask 0x67a01,0x80000000,0x10000200
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=15 family=9 mask=0x67a01,0x80000000,0x10000200 target=[1,0]
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +30% on family 9 mask 0x67a01,0x80000000,0x10000200,0x800000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=15 family=9 mask=0x67a01,0x80000000,0x10000200,0x800000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19485
 =======
 2643 Multi-Shot
 school    physical
 defense   ranged
-cast      0.5 s
 cooldown  6 s (category)
 gcd       1.5 s
 cost      13.9% of base mana
@@ -907,7 +906,7 @@ https://www.wowhead.com/forever/spell=415407
 school    physical
 attrs     passive
 labels    23
-proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says one named ability
+proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its condition is met
 refs      1242512 Rapid Recuperation
 
 effect 1  a dummy aura holding 50
@@ -1345,8 +1344,8 @@ gcd       1.5 s
 cost      325 mana
 labels    23
 
-effect 1  party aura: +50 ranged attack power
-          E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_ATTACK_POWER base=50 radius=45 target=[1,0]
+effect 1  raid aura: +50 ranged attack power
+          E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=50 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=19506
 =======
@@ -1357,8 +1356,8 @@ gcd       1.5 s
 cost      425 mana
 labels    23
 
-effect 1  party aura: +75 ranged attack power
-          E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_ATTACK_POWER base=75 radius=45 target=[1,0]
+effect 1  raid aura: +75 ranged attack power
+          E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=75 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=20905
 =======
@@ -1369,8 +1368,8 @@ gcd       1.5 s
 cost      525 mana
 labels    23
 
-effect 1  party aura: +50 ranged attack power
-          E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_ATTACK_POWER base=50 radius=45 target=[1,0]
+effect 1  raid aura: +50 ranged attack power
+          E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=50 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=20906
 =======
@@ -1381,8 +1380,8 @@ gcd       1.5 s
 cost      180 mana
 labels    23
 
-effect 1  party aura: +30 ranged attack power
-          E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_ATTACK_POWER base=30 radius=45 target=[1,0]
+effect 1  raid aura: +30 ranged attack power
+          E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=30 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1299346
 =======
@@ -1393,8 +1392,8 @@ gcd       1.5 s
 cost      245 mana
 labels    23
 
-effect 1  party aura: +40 ranged attack power
-          E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_ATTACK_POWER base=40 radius=45 target=[1,0]
+effect 1  raid aura: +40 ranged attack power
+          E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=40 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1299348
 =======

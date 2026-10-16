@@ -220,10 +220,8 @@ school    physical
 attrs     passive
 labels    19
 
-effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x48c7ff,0x50043,0x2,0x400000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x48c7ff,0x50043,0x2,0x400000 target=[1,0]
-effect 2  SPELLMOD_RADIUS +10% on family 5 mask 0x0,0x10000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=5 mask=0x0,0x10000 target=[1,0]
+effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x3e5,0x140,0x0,0x400000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x3e5,0x140,0x0,0x400000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=17917
 =======

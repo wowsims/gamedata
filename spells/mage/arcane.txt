@@ -131,35 +131,30 @@ https://www.wowhead.com/forever/spell=42896
 =======
 400573 Arcane Blast
 school    arcane
-duration  8 s
-cooldown  180 s
+duration  15 s
 stack     up to 4
-charges   1
 attrs     suppresses weapon procs
 labels    17
-proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says cast trigger
 
-effect 1  SPELLMOD_DAMAGE +10% on family 3 mask 0xc21273,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0xc21273,0x1000 target=[1,0]
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=15 misc=126 misc2=3 target=[1,0]
 effect 2  SPELLMOD_COST +175% on family 3 mask 0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=175 misc=14 family=3 mask=0x20000000 target=[1,0]
-effect 3  SPELLMOD_DOT +10% on family 3 mask 0x1,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=3 mask=0x1,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=400573
 =======
 400574 Arcane Blast (Rank 1)
 school    arcane
 defense   magic
-cast      2.5 s
+cast      1.5 s
 gcd       1.5 s
 cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  57–66 arcane damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=54 ppl=0.9 variance=0.15102041 sp=0.714 target=[6,0]
+effect 1  34–38 arcane damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=32 ppl=0.5 variance=0.15102041 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=400574
 =======
@@ -188,60 +183,60 @@ https://www.wowhead.com/forever/spell=401729
 1239696 Arcane Blast (Rank 2)
 school    arcane
 defense   magic
-cast      2.5 s
+cast      1.5 s
 gcd       1.5 s
 cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  131–152 arcane damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=130 ppl=1.4 variance=0.15102041 sp=0.714 target=[6,0]
+effect 1  78–91 arcane damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=78 ppl=0.8 variance=0.15102041 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239696
 =======
 1239697 Arcane Blast (Rank 3)
 school    arcane
 defense   magic
-cast      2.5 s
+cast      1.5 s
 gcd       1.5 s
 cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  168–195 arcane damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=169 ppl=1.6 variance=0.15102041 sp=0.714 target=[6,0]
+effect 1  101–117 arcane damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=101 ppl=1 variance=0.15102041 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239697
 =======
 1239699 Arcane Blast (Rank 4)
 school    arcane
 defense   magic
-cast      2.5 s
+cast      1.5 s
 gcd       1.5 s
 cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  269–312 arcane damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=274 ppl=2.1 variance=0.15102041 sp=0.714 target=[6,0]
+effect 1  165–192 arcane damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=168 ppl=1.3 variance=0.15102041 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239699
 =======
 1239700 Arcane Blast (Rank 5)
 school    arcane
 defense   magic
-cast      2.5 s
+cast      1.5 s
 gcd       1.5 s
 cost      15% of base mana
 range     30 yd
 labels    17
 refs      400573 Arcane Blast
 
-effect 1  364–424 arcane damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=394 ppl=2.6 variance=0.15102041 sp=0.714 target=[6,0]
+effect 1  218–254 arcane damage to the enemy (at level 60, +0.429 spell power)
+          E_SCHOOL_DAMAGE base=236 ppl=1.6 variance=0.15102041 sp=0.429 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1239700
 =======
@@ -388,8 +383,8 @@ school    arcane
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_RESIST_MISS_CHANCE +2% on family 3 mask 0x20240000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=16 family=3 mask=0x20240000 target=[1,0]
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +2% on family 3 mask 0x20240000,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=16 family=3 mask=0x20240000,0x8000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11222
 =======
@@ -398,8 +393,8 @@ school    physical
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_RANGE +6 on family 3 mask 0xa0206c00
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0xa0206c00 target=[1,0]
+effect 1  SPELLMOD_RANGE +6 on family 3 mask 0xa0206c00,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0xa0206c00,0x8000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11247
 =======
@@ -408,8 +403,8 @@ school    physical
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20201000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=3 mask=0x20201000 target=[1,0]
+effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20201000,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=3 mask=0x20201000,0x8000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11242
 =======
@@ -418,8 +413,8 @@ school    physical
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_DAMAGE +1% on family 3 mask 0x20e212f7,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=3 mask=0x20e212f7,0x1000 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +1% on family 3 mask 0x20e212f7,0x9000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=3 mask=0x20e212f7,0x9000 target=[1,0]
 effect 2  SPELLMOD_DOT +1% on family 3 mask 0x400085
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
 effect 3  +1% physical and spell crit
@@ -541,8 +536,8 @@ labels    17
 
 effect 1  +10% intellect
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc2=8 target=[1,0]
-effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x20201000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x20201000 target=[1,0]
+effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x20201000,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x20201000,0x8000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11232
 =======
@@ -875,10 +870,10 @@ duration  15 s
 cooldown  180 s
 labels    17
 
-effect 1  SPELLMOD_DAMAGE +30% on family 3 mask 0x20e212f7,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 family=3 mask=0x20e212f7,0x1000 target=[1,0]
-effect 2  SPELLMOD_COST +30% on family 3 mask 0x20c21af7,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=14 family=3 mask=0x20c21af7,0x1000 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +30% on family 3 mask 0x20e212f7,0x9000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 family=3 mask=0x20e212f7,0x9000 target=[1,0]
+effect 2  SPELLMOD_COST +30% on family 3 mask 0x20c21af7,0x9000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=14 family=3 mask=0x20c21af7,0x9000 target=[1,0]
 effect 3  SPELLMOD_DOT +30% on family 3 mask 0x400085
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
 
@@ -935,6 +930,70 @@ effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425124 misc=399966 target=[1,0]
 
 https://www.wowhead.com/forever/spell=425168
+=======
+1326079 Arcane Wrath (Rank 1)
+school    arcane
+defense   magic
+cast      3.5 s
+cooldown  6 s
+gcd       1.5 s
+cost      140 mana
+range     30 yd
+
+effect 1  122–146 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=120 ppl=1.4 variance=0.20100503 sp=1 target=[6,0]
+effect 2  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1326079
+=======
+1326080 Arcane Wrath (Rank 2)
+school    arcane
+defense   magic
+cast      3.5 s
+cooldown  6 s
+gcd       1.5 s
+cost      220 mana
+range     30 yd
+
+effect 1  193–232 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.20100503 sp=1 target=[6,0]
+effect 2  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1326080
+=======
+1326081 Arcane Wrath (Rank 3)
+school    arcane
+defense   magic
+cast      3.5 s
+cooldown  6 s
+gcd       1.5 s
+cost      305 mana
+range     30 yd
+
+effect 1  296–357 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.20100503 sp=1 target=[6,0]
+effect 2  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1326081
+=======
+1326082 Arcane Wrath (Rank 4)
+school    arcane
+defense   magic
+cast      3.5 s
+cooldown  6 s
+gcd       1.5 s
+cost      395 mana
+range     30 yd
+
+effect 1  406–496 arcane damage to the enemy (at level 60)
+          E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.20100503 sp=1 target=[6,0]
+effect 2  a dummy effect holding 5 to the enemy
+          E_DUMMY base=5 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1326082
 =======
 1953 Blink
 school    arcane
@@ -1577,8 +1636,8 @@ labels    17
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +20% on family 3 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=9 family=3 mask=0x800 target=[1,0]
-effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 3 mask 0x20000000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 misc=9 family=3 mask=0x20000000 target=[1,0]
+effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 3 mask 0x20000000,0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 misc=9 family=3 mask=0x20000000,0x8000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11237
 =======
@@ -1941,6 +2000,22 @@ effect 3  SPELLMOD_COST -100% on family 3 mask 0x0,0x0,0x0,0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x0,0x0,0x0,0x2 target=[1,0]
 
 https://www.wowhead.com/forever/spell=467409
+=======
+1326083 Missile Barrage
+school    arcane
+defense   magic
+duration  15 s
+labels    17
+refs      400589 Missile Barrage, 400588 Missile Barrage
+
+effect 1  a dummy aura holding -50
+          E_APPLY_AURA A_DUMMY base=-50 target=[1,0]
+effect 2  a dummy aura holding -500
+          E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
+effect 3  a dummy aura holding -100
+          E_APPLY_AURA A_DUMMY base=-100 misc2=111 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1326083
 =======
 118 Polymorph (Rank 1)
 school    arcane

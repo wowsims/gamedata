@@ -163,8 +163,8 @@ attrs     passive
 labels    24
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
-effect 1  party aura: casts nothing on its trigger
-          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=8253 radius=30 target=[1,0]
+effect 1  raid aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=8253 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8230
 =======
@@ -189,8 +189,8 @@ attrs     passive
 labels    24
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
-effect 1  party aura: casts nothing on its trigger
-          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
+effect 1  raid aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8250
 =======
@@ -201,8 +201,8 @@ attrs     passive
 labels    24
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
-effect 1  party aura: casts nothing on its trigger
-          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=10523 radius=30 target=[1,0]
+effect 1  raid aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=10523 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10521
 =======
@@ -227,8 +227,8 @@ attrs     passive
 labels    24
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
-effect 1  party aura: casts nothing on its trigger
-          E_APPLY_AREA_AURA_PARTY A_PROC_TRIGGER_SPELL base=16389 radius=30 target=[1,0]
+effect 1  raid aura: casts nothing on its trigger
+          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=16389 radius=30 target=[1,0]
 
 https://www.wowhead.com/forever/spell=15036
 =======
@@ -1249,7 +1249,7 @@ defense   melee
 duration  12 s
 cooldown  8 s
 gcd       1.5 s
-cost      125 mana
+cost      8% of base mana
 range     5 yd
 charges   1
 attrs     can proc from procs

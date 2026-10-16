@@ -1221,8 +1221,8 @@ attrs     passive
 labels    20
 refs      14181 Relentless Strikes Effect
 
-effect 1  casts 14181 Relentless Strikes Effect when the target is hit from family 8 mask 0x3e0000,0x0,0x4000000
-          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=0 sp=1 trigger=14181 perResource=20 family=8 mask=0x3e0000,0x0,0x4000000 target=[1,0]
+effect 1  casts 14181 Relentless Strikes Effect when the target is hit from family 8 mask 0x3e0000,0x0,0x4000004
+          E_APPLY_AURA A_ADD_TARGET_TRIGGER base=0 sp=1 trigger=14181 perResource=20 family=8 mask=0x3e0000,0x0,0x4000004 target=[1,0]
 
 https://www.wowhead.com/forever/spell=14179
 =======

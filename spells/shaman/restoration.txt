@@ -734,7 +734,7 @@ defense   magic
 duration  13 s
 cooldown  300 s (category)
 gcd       1 s
-cost      30 mana
+cost      20 mana
 labels    24
 refs      17355 Mana Tide
 
@@ -749,7 +749,7 @@ defense   magic
 duration  13 s
 cooldown  300 s (category)
 gcd       1 s
-cost      60 mana
+cost      30 mana
 labels    24
 refs      17360 Mana Tide
 
@@ -757,6 +757,21 @@ effect 1  summons creature 11101 to target 42
           E_SUMMON base=5 misc=11101 misc2=82 target=[42,0]
 
 https://www.wowhead.com/forever/spell=17359
+=======
+1325256 Mana Tide Totem (Rank 4)
+school    frost
+defense   magic
+duration  13 s
+cooldown  300 s (category)
+gcd       1 s
+cost      60 mana
+labels    24
+refs      1325257 Mana Tide
+
+effect 1  summons creature 277993 to target 42
+          E_SUMMON base=5 misc=277993 misc2=82 target=[42,0]
+
+https://www.wowhead.com/forever/spell=1325256
 =======
 29187 Natural Grace
 school    physical
@@ -882,8 +897,8 @@ labels    24
 
 effect 1  SPELLMOD_ALL_EFFECTS +5% on family 11 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=11 mask=0x4000 target=[1,0]
-effect 2  SPELLMOD_ALL_EFFECTS +5% on family 11 mask 0x2000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=11 mask=0x2000 target=[1,0]
+effect 2  SPELLMOD_DOT +5% on family 11 mask 0x2000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=11 mask=0x2000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=16187
 =======
@@ -1026,7 +1041,7 @@ gcd       1.5 s
 charges   3
 icd       3.5 s
 labels    24
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count, heals only
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count
 refs      408511 Water Shield
 
 effect 1  casts 408511 Water Shield on its trigger

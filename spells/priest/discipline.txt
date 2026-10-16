@@ -334,6 +334,8 @@ refs      431624 Divine Aegis
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+effect 2  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=431622
 =======
@@ -745,7 +747,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +315 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=315 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=315 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=588
 =======
@@ -761,7 +763,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +720 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=720 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=720 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=602
 =======
@@ -777,7 +779,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +945 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=945 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=945 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1006
 =======
@@ -793,7 +795,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +495 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=495 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=495 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=7128
 =======
@@ -809,7 +811,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +1170 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=1170 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=1170 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10951
 =======
@@ -825,7 +827,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
 
 effect 1  +1395 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=1395 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=1395 misc=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10952
 =======
@@ -1796,7 +1798,7 @@ attrs     passive
 labels    18
 
 effect 1  -30% threat
-          E_APPLY_AURA A_MOD_THREAT base=-30 misc=2 target=[1,0]
+          E_APPLY_AURA A_MOD_THREAT base=-30 misc=34 target=[1,0]
 effect 2  -15% stun duration
           E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-15 misc=12 target=[1,0]
 effect 3  -15% fear duration
@@ -1995,9 +1997,9 @@ school    physical
 attrs     passive
 labels    18
 
-effect 1  SPELLMOD_DAMAGE +5% on family 6 mask 0x19480020,0x10,0x0,0x200000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=6 mask=0x19480020,0x10,0x0,0x200000 target=[1,0]
-effect 2  SPELLMOD_DOT +5% on family 6 mask 0x8060,0x0,0x0,0x10
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=22 family=6 mask=0x8060,0x0,0x0,0x10 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +5% on family 6 mask 0x19480020,0x18012,0x0,0x200000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=6 mask=0x19480020,0x18012,0x0,0x200000 target=[1,0]
+effect 2  SPELLMOD_DOT +5% on family 6 mask 0xa08060,0x0,0x0,0x10
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=22 family=6 mask=0xa08060,0x0,0x0,0x10 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1225132

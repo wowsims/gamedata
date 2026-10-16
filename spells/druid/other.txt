@@ -894,7 +894,7 @@ range     50000 yd
 labels    25
 
 effect 1  +700 armor to the friendly target
-          E_APPLY_AURA A_MOD_RESISTANCE base=700 amplitude=1 misc=1 target=[21,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=28790
 =======
@@ -980,7 +980,7 @@ duration  8 s
 range     50000 yd
 
 effect 1  +700 armor to the friendly target
-          E_APPLY_AURA A_MOD_RESISTANCE base=700 amplitude=1 misc=1 target=[21,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1220546
 =======
@@ -2490,8 +2490,8 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_COOLDOWN -1 s on family 7 mask 0x0,0x80000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+effect 1  SPELLMOD_COOLDOWN -0.5 s on family 7 mask 0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1291059
 =======
@@ -2610,8 +2610,8 @@ duration  30 s
 range     30 yd
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 3% chance
 
-effect 1  3 nature damage back to melee attackers
-          E_APPLY_AURA A_DAMAGE_SHIELD base=3 target=[1,0]
+effect 1  5 nature damage back to melee attackers
+          E_APPLY_AURA A_DAMAGE_SHIELD base=5 target=[1,0]
 effect 2  +50 nature resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=50 misc=8 target=[1,0]
 
@@ -2765,7 +2765,7 @@ range     50000 yd
 labels    25
 
 effect 1  +700 armor to the friendly target
-          E_APPLY_AURA A_MOD_RESISTANCE base=700 amplitude=1 misc=1 target=[21,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=28827
 =======
@@ -2776,7 +2776,7 @@ duration  8 s
 range     50000 yd
 
 effect 1  +700 armor to the friendly target
-          E_APPLY_AURA A_MOD_RESISTANCE base=700 amplitude=1 misc=1 target=[21,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
 
 https://www.wowhead.com/forever/spell=1220683
 =======
@@ -2882,20 +2882,12 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -20% on family 7 mask 0xd0,0x4000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=7 mask=0xd0,0x4000010 target=[1,0]
-effect 2  +25% to all stats
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=25 misc=-1 target=[1,0]
-effect 3  +200% armor from items
+effect 2  +200% armor from items
           E_APPLY_AURA A_MOD_BASE_RESISTANCE_PCT base=200 misc=1 target=[1,0]
-effect 4  -20% intellect
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-20 misc=3 target=[1,0]
-effect 5  -20% agility
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-20 misc=1 target=[1,0]
-effect 6  -20% stamina
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-20 misc=2 target=[1,0]
-effect 7  -20% strength
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-20 target=[1,0]
-effect 8  SPELLMOD_DOT +60% on family 7 mask 0x0,0x4000000
+effect 3  SPELLMOD_DOT +60% on family 7 mask 0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 misc=22 family=7 mask=0x0,0x4000000 target=[1,0]
+effect 4  +25% spirit
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=25 misc2=16 target=[1,0]
 
 https://www.wowhead.com/forever/spell=439734
 =======

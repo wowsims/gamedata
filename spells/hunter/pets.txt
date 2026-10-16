@@ -217,9 +217,9 @@ https://www.wowhead.com/forever/spell=16832
 1264758 Dismember (Rank 1)
 school    physical
 defense   melee
-duration  10 s
-cooldown  6 s
-cooldown  6 s (category)
+duration  6 s
+cooldown  15 s
+cooldown  15 s (category)
 gcd       1.5 s
 cost      35 focus
 range     5 yd
@@ -228,17 +228,17 @@ labels    23
 
 effect 1  10–14 physical damage to the enemy
           E_SCHOOL_DAMAGE base=12 variance=0.1388889 target=[6,0]
-effect 2  -50% healing taken to the enemy
-          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  -25% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264758
 =======
 1264927 Dismember (Rank 2)
 school    physical
 defense   melee
-duration  10 s
-cooldown  6 s
-cooldown  6 s (category)
+duration  6 s
+cooldown  15 s
+cooldown  15 s (category)
 gcd       1.5 s
 cost      35 focus
 range     5 yd
@@ -247,17 +247,17 @@ labels    23
 
 effect 1  16–22 physical damage to the enemy
           E_SCHOOL_DAMAGE base=19 variance=0.1388889 target=[6,0]
-effect 2  -50% healing taken to the enemy
-          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  -25% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264927
 =======
 1264929 Dismember (Rank 3)
 school    physical
 defense   melee
-duration  10 s
-cooldown  6 s
-cooldown  6 s (category)
+duration  6 s
+cooldown  15 s
+cooldown  15 s (category)
 gcd       1.5 s
 cost      35 focus
 range     5 yd
@@ -266,17 +266,17 @@ labels    23
 
 effect 1  24–32 physical damage to the enemy
           E_SCHOOL_DAMAGE base=28 variance=0.1388889 target=[6,0]
-effect 2  -50% healing taken to the enemy
-          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  -25% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264929
 =======
 1264930 Dismember (Rank 4)
 school    physical
 defense   melee
-duration  10 s
-cooldown  6 s
-cooldown  6 s (category)
+duration  6 s
+cooldown  15 s
+cooldown  15 s (category)
 gcd       1.5 s
 cost      35 focus
 range     5 yd
@@ -285,17 +285,17 @@ labels    23
 
 effect 1  36–48 physical damage to the enemy
           E_SCHOOL_DAMAGE base=42 variance=0.1388889 target=[6,0]
-effect 2  -50% healing taken to the enemy
-          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  -25% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264930
 =======
 1264933 Dismember (Rank 5)
 school    physical
 defense   melee
-duration  10 s
-cooldown  6 s
-cooldown  6 s (category)
+duration  6 s
+cooldown  15 s
+cooldown  15 s (category)
 gcd       1.5 s
 cost      35 focus
 range     5 yd
@@ -304,8 +304,8 @@ labels    23
 
 effect 1  46–62 physical damage to the enemy
           E_SCHOOL_DAMAGE base=54 variance=0.1388889 target=[6,0]
-effect 2  -50% healing taken to the enemy
-          E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
+effect 2  -25% healing taken to the enemy
+          E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264933
 =======
@@ -517,7 +517,7 @@ effect 7  +0 shadow resistance
 effect 8  +0 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
 effect 9  +0 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
 effect 10 +0% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
 effect 11 +0% spell hit
@@ -654,9 +654,9 @@ https://www.wowhead.com/forever/spell=25012
 1265054 Mine! (Rank 1)
 school    physical
 defense   melee
-duration  4 s
-cooldown  60 s
-cooldown  60 s (category)
+duration  3 s
+cooldown  90 s
+cooldown  90 s (category)
 gcd       1.5 s
 cost      20 focus
 range     5 yd
@@ -673,9 +673,9 @@ https://www.wowhead.com/forever/spell=1265054
 1265055 Mine! (Rank 2)
 school    physical
 defense   melee
-duration  4 s
-cooldown  60 s
-cooldown  60 s (category)
+duration  3 s
+cooldown  90 s
+cooldown  90 s (category)
 gcd       1.5 s
 cost      20 focus
 range     5 yd
@@ -692,9 +692,9 @@ https://www.wowhead.com/forever/spell=1265055
 1265056 Mine! (Rank 3)
 school    physical
 defense   melee
-duration  4 s
-cooldown  60 s
-cooldown  60 s (category)
+duration  3 s
+cooldown  90 s
+cooldown  90 s (category)
 gcd       1.5 s
 cost      20 focus
 range     5 yd
@@ -711,9 +711,9 @@ https://www.wowhead.com/forever/spell=1265056
 1265057 Mine! (Rank 4)
 school    physical
 defense   melee
-duration  4 s
-cooldown  60 s
-cooldown  60 s (category)
+duration  3 s
+cooldown  90 s
+cooldown  90 s (category)
 gcd       1.5 s
 cost      20 focus
 range     5 yd
@@ -730,9 +730,9 @@ https://www.wowhead.com/forever/spell=1265057
 1265058 Mine! (Rank 5)
 school    physical
 defense   melee
-duration  4 s
-cooldown  60 s
-cooldown  60 s (category)
+duration  3 s
+cooldown  90 s
+cooldown  90 s (category)
 gcd       1.5 s
 cost      20 focus
 range     5 yd
@@ -1014,9 +1014,9 @@ https://www.wowhead.com/forever/spell=24640
 1264478 Sonic Blast (Rank 1)
 school    nature
 defense   magic
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
+duration  20 s
+cooldown  60 s
+cooldown  60 s (category)
 gcd       1.5 s
 cost      80 focus
 range     5 yd
@@ -1024,17 +1024,17 @@ labels    23
 
 effect 1  15–17 nature damage to the enemy
           E_SCHOOL_DAMAGE base=16 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  -30% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-30 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264478
 =======
 1264479 Sonic Blast (Rank 2)
 school    nature
 defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
+duration  20 s
+cooldown  60 s
+cooldown  60 s (category)
 gcd       1.5 s
 cost      80 focus
 range     5 yd
@@ -1042,17 +1042,17 @@ labels    23
 
 effect 1  33–39 nature damage to the enemy
           E_SCHOOL_DAMAGE base=36 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  -30% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-30 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264479
 =======
 1264480 Sonic Blast (Rank 3)
 school    nature
 defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
+duration  20 s
+cooldown  60 s
+cooldown  60 s (category)
 gcd       1.5 s
 cost      80 focus
 range     5 yd
@@ -1060,17 +1060,17 @@ labels    23
 
 effect 1  44–52 nature damage to the enemy
           E_SCHOOL_DAMAGE base=48 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  -30% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-30 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264480
 =======
 1264481 Sonic Blast (Rank 4)
 school    nature
 defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
+duration  20 s
+cooldown  60 s
+cooldown  60 s (category)
 gcd       1.5 s
 cost      80 focus
 range     5 yd
@@ -1078,17 +1078,17 @@ labels    23
 
 effect 1  62–74 nature damage to the enemy
           E_SCHOOL_DAMAGE base=68 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  -30% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-30 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264481
 =======
 1264482 Sonic Blast (Rank 5)
 school    nature
 defense   melee
-duration  30 s
-cooldown  30 s
-cooldown  30 s (category)
+duration  20 s
+cooldown  60 s
+cooldown  60 s (category)
 gcd       1.5 s
 cost      80 focus
 range     5 yd
@@ -1096,8 +1096,8 @@ labels    23
 
 effect 1  77–91 nature damage to the enemy
           E_SCHOOL_DAMAGE base=84 variance=0.16666667 target=[6,0]
-effect 2  -60% cast speed to the enemy
-          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
+effect 2  -30% cast speed to the enemy
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-30 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1264482
 =======
@@ -1454,7 +1454,7 @@ effect 7  +0 shadow resistance
 effect 8  +0 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
 effect 9  +0 armor
-          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=1 target=[1,0]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
 effect 10 +0% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
 effect 11 +0% spell hit

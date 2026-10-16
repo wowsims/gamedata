@@ -38,6 +38,8 @@ effect 1  SPELLMOD_DAMAGE +15% on family 11 mask 0x50000000,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=11 mask=0x50000000,0x1000 target=[1,0]
 effect 2  SPELLMOD_DOT +15% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=11 mask=0x10000000 target=[1,0]
+effect 3  SPELLMOD_DURATION +9 s on family 11 mask 0x10000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=11 mask=0x10000000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=16038
 =======
@@ -93,7 +95,7 @@ defense   magic
 cast      2 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      225 mana
+cost      145 mana
 range     30 yd
 labels    24
 
@@ -108,7 +110,7 @@ defense   magic
 cast      2 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      305 mana
+cost      200 mana
 range     30 yd
 labels    24
 
@@ -123,7 +125,7 @@ defense   magic
 cast      2 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      390 mana
+cost      250 mana
 range     30 yd
 labels    24
 
@@ -138,7 +140,7 @@ defense   magic
 cast      2 s
 cooldown  6 s (category)
 gcd       1.5 s
-cost      485 mana
+cost      315 mana
 range     30 yd
 labels    24
 
@@ -679,7 +681,7 @@ https://www.wowhead.com/forever/spell=16578
 school    physical
 attrs     passive
 labels    24
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
 refs      30165 Elemental Devastation
 
 effect 1  a dummy aura
@@ -719,6 +721,21 @@ effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 11 mask 0xd1300403,0x1000,0
 
 https://www.wowhead.com/forever/spell=16089
 =======
+16166 Elemental Mastery
+school    nature
+defense   magic
+duration  15 s
+cooldown  180 s
+charges   1
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 11 mask 0x1,0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=11 mask=0x1,0x1000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -100% on family 11 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=11 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16166
+=======
 28999 Elemental Reach
 school    physical
 attrs     passive
@@ -726,8 +743,10 @@ labels    24
 
 effect 1  SPELLMOD_RANGE +6 on family 11 mask 0x3,0x41000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=5 family=11 mask=0x3,0x41000 target=[1,0]
-effect 2  SPELLMOD_RANGE +15 on family 11 mask 0x10000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=5 family=11 mask=0x10000000 target=[1,0]
+effect 2  a dummy aura holding 15
+          E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -20 s on family 11 mask 0x0,0x0,0x0,0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20000 sp=1 misc=11 family=11 mask=0x0,0x0,0x0,0x80 target=[1,0]
 
 https://www.wowhead.com/forever/spell=28999
 =======
@@ -869,10 +888,10 @@ school    fire
 defense   magic
 cooldown  10 s (category)
 gcd       1.5 s
-cost      95 mana
+cost      65 mana
 range     30 yd
 labels    24
-refs      8349 Fire Nova
+refs      408423 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
@@ -884,10 +903,10 @@ school    fire
 defense   magic
 cooldown  10 s (category)
 gcd       1.5 s
-cost      170 mana
+cost      120 mana
 range     30 yd
 labels    24
-refs      8502 Fire Nova
+refs      408424 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
@@ -899,10 +918,10 @@ school    fire
 defense   magic
 cooldown  10 s (category)
 gcd       1.5 s
-cost      280 mana
+cost      210 mana
 range     30 yd
 labels    24
-refs      8503 Fire Nova
+refs      408426 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
@@ -914,10 +933,10 @@ school    fire
 defense   magic
 cooldown  10 s (category)
 gcd       1.5 s
-cost      395 mana
+cost      290 mana
 range     30 yd
 labels    24
-refs      11306 Fire Nova
+refs      408427 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
@@ -929,10 +948,10 @@ school    fire
 defense   magic
 cooldown  10 s (category)
 gcd       1.5 s
-cost      520 mana
+cost      375 mana
 range     30 yd
 labels    24
-refs      11307 Fire Nova
+refs      408428 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
@@ -945,8 +964,8 @@ defense   magic
 range     36 yd
 labels    24
 
-effect 1  51–60 fire damage to target 87 (at level 60, +0.214 spell power)
-          E_SCHOOL_DAMAGE base=50 ppl=1.1 variance=0.15384616 sp=0.214 target=[87,16]
+effect 1  32–38 fire damage to target 87 (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=33 ppl=0.4 variance=0.15384616 sp=0.143 target=[87,16]
 
 https://www.wowhead.com/forever/spell=408423
 =======
@@ -956,8 +975,8 @@ defense   magic
 range     36 yd
 labels    24
 
-effect 1  103–117 fire damage to target 87 (at level 60, +0.214 spell power)
-          E_SCHOOL_DAMAGE base=102 ppl=1.6 variance=0.12844037 sp=0.214 target=[87,16]
+effect 1  54–62 fire damage to target 87 (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.12844037 sp=0.143 target=[87,16]
 
 https://www.wowhead.com/forever/spell=408424
 =======
@@ -967,8 +986,8 @@ defense   magic
 range     36 yd
 labels    24
 
-effect 1  183–205 fire damage to target 87 (at level 60, +0.214 spell power)
-          E_SCHOOL_DAMAGE base=183 ppl=2.2 variance=0.12244898 sp=0.214 target=[87,16]
+effect 1  126–143 fire damage to target 87 (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=130 ppl=0.9 variance=0.12244898 sp=0.143 target=[87,16]
 
 https://www.wowhead.com/forever/spell=408426
 =======
@@ -978,8 +997,8 @@ defense   magic
 range     36 yd
 labels    24
 
-effect 1  281–315 fire damage to target 87 (at level 60, +0.214 spell power)
-          E_SCHOOL_DAMAGE base=284 ppl=2.8 variance=0.12040134 sp=0.214 target=[87,16]
+effect 1  173–196 fire damage to target 87 (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=179 ppl=1.1 variance=0.12040134 sp=0.143 target=[87,16]
 
 https://www.wowhead.com/forever/spell=408427
 =======
@@ -989,8 +1008,8 @@ defense   magic
 range     36 yd
 labels    24
 
-effect 1  398–442 fire damage to target 87 (at level 60, +0.214 spell power)
-          E_SCHOOL_DAMAGE base=403 ppl=3.4 variance=0.1097852 sp=0.214 target=[87,16]
+effect 1  232–259 fire damage to target 87 (at level 60, +0.143 spell power)
+          E_SCHOOL_DAMAGE base=239 ppl=1.3 variance=0.1097852 sp=0.143 target=[87,16]
 
 https://www.wowhead.com/forever/spell=408428
 =======
@@ -1214,30 +1233,18 @@ effect 2  278–295 frost damage to the enemy (at level 60, +0.386 spell power)
 
 https://www.wowhead.com/forever/spell=10473
 =======
-16086 Improved Fire Nova
-school    physical
-attrs     passive
-labels    24
-
-effect 1  SPELLMOD_DAMAGE +20% on family 11 mask 0x0,0x40000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=11 mask=0x0,0x40000 target=[1,0]
-effect 2  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x40000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=11 mask=0x0,0x40000 target=[1,0]
-
-https://www.wowhead.com/forever/spell=16086
-=======
 408490 Lava Burst (Rank 1)
 school    fire
 defense   magic
 cast      2.5 s
 cooldown  10 s (category)
 gcd       1.5 s
-cost      165 mana
+cost      135 mana
 range     30 yd
 labels    24
 
-effect 1  150–193 fire damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=164 ppl=0.9 variance=0.25325885 sp=0.714 target=[6,0]
+effect 1  113–146 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=123 ppl=0.8 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy
           E_DUMMY base=20 target=[6,0]
 
@@ -1270,12 +1277,12 @@ defense   magic
 cast      2.5 s
 cooldown  10 s (category)
 gcd       1.5 s
-cost      230 mana
+cost      165 mana
 range     30 yd
 labels    24
 
-effect 1  179–230 fire damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
+effect 1  150–193 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=164 ppl=0.9 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy
           E_DUMMY base=20 sp=0.714 target=[6,0]
 
@@ -1287,13 +1294,13 @@ defense   magic
 cast      2.5 s
 cooldown  10 s (category)
 gcd       1.5 s
-cost      265 mana
+cost      230 mana
 range     30 yd
 labels    24
 
-effect 1  192–248 fire damage to the enemy (at level 60, +0.714 spell power)
-          E_SCHOOL_DAMAGE base=220 ppl=1.3 variance=0.25325885 sp=0.714 target=[6,0]
-effect 2  a dummy effect holding 20 to the enemy (at level 60)
+effect 1  179–230 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 53 to the enemy (at level 60)
           E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1238300
@@ -1321,6 +1328,23 @@ effect 1  96–124 fire damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=110 ppl=0.65 variance=0.25746268 sp=0.357 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1238376
+=======
+1326047 Lava Burst (Rank 4)
+school    fire
+defense   magic
+cast      2.5 s
+cooldown  10 s (category)
+gcd       1.5 s
+cost      265 mana
+range     30 yd
+labels    24
+
+effect 1  192–248 fire damage to the enemy (at level 60, +0.714 spell power)
+          E_SCHOOL_DAMAGE base=220 ppl=1.3 variance=0.25325885 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 20 to the enemy (at level 60)
+          E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
+
+https://www.wowhead.com/forever/spell=1326047
 =======
 403 Lightning Bolt (Rank 1)
 school    nature
@@ -1981,3 +2005,17 @@ effect 2  a dummy effect
           E_DUMMY base=0 target=[0,0]
 
 https://www.wowhead.com/forever/spell=1323420
+=======
+16086 Trial by Fire
+school    physical
+attrs     passive
+labels    24
+
+effect 1  SPELLMOD_DAMAGE +20% on family 11 mask 0x0,0x40000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=11 mask=0x0,0x40000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=11 mask=0x0,0x40000 target=[1,0]
+effect 3  SPELLMOD_DURATION +20 s on family 11 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20000 sp=1 misc=1 family=11 mask=0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=16086

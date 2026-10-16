@@ -157,6 +157,8 @@ effect 1  SPELLMOD_COST -50% on family 6 mask 0x0,0x0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=6 mask=0x0,0x0,0x0,0x10 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+effect 3  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1309950
 =======
@@ -164,7 +166,7 @@ https://www.wowhead.com/forever/spell=1309950
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      215 mana
 range     30 yd
@@ -181,7 +183,7 @@ https://www.wowhead.com/forever/spell=2944
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      350 mana
 range     30 yd
@@ -198,7 +200,7 @@ https://www.wowhead.com/forever/spell=19276
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      495 mana
 range     30 yd
@@ -215,7 +217,7 @@ https://www.wowhead.com/forever/spell=19277
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      645 mana
 range     30 yd
@@ -232,7 +234,7 @@ https://www.wowhead.com/forever/spell=19278
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      810 mana
 range     30 yd
@@ -249,7 +251,7 @@ https://www.wowhead.com/forever/spell=19279
 school    shadow
 defense   magic
 duration  24 s
-cooldown  60 s (category)
+cooldown  24 s (category)
 gcd       1.5 s
 cost      985 mana
 range     30 yd
@@ -612,14 +614,8 @@ school    physical
 attrs     passive
 labels    18
 
-effect 1  SPELLMOD_DOT +20% on family 6 mask 0x800000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=6 mask=0x800000 target=[1,0]
-effect 2  SPELLMOD_RANGE +10 on family 6 mask 0x800000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=6 mask=0x800000 target=[1,0]
-effect 3  SPELLMOD_EFFECT2 -30 on family 6 mask 0x800000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=12 family=6 mask=0x800000 target=[1,0]
-effect 4  a dummy aura holding 50
-          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1225139
 =======
@@ -1611,7 +1607,7 @@ https://www.wowhead.com/forever/spell=401962
 1309595 Shadow Word: Death (Rank 1)
 school    shadow
 defense   magic
-cooldown  15 s (category)
+cooldown  18 s (category)
 gcd       1.5 s
 cost      175 mana
 range     30 yd
@@ -1641,7 +1637,7 @@ https://www.wowhead.com/forever/spell=1309598
 1309633 Shadow Word: Death (Rank 2)
 school    shadow
 defense   magic
-cooldown  15 s (category)
+cooldown  18 s (category)
 gcd       1.5 s
 cost      205 mana
 range     30 yd
@@ -1660,7 +1656,7 @@ https://www.wowhead.com/forever/spell=1309633
 1309635 Shadow Word: Death (Rank 3)
 school    shadow
 defense   magic
-cooldown  15 s (category)
+cooldown  18 s (category)
 gcd       1.5 s
 cost      250 mana
 range     30 yd
@@ -1679,7 +1675,7 @@ https://www.wowhead.com/forever/spell=1309635
 1309636 Shadow Word: Death (Rank 4)
 school    shadow
 defense   magic
-cooldown  15 s (category)
+cooldown  18 s (category)
 gcd       1.5 s
 cost      340 mana
 range     30 yd
@@ -1916,8 +1912,8 @@ effect 3  -15% physical damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-15 misc=1 target=[1,0]
 effect 4  -50% shadow power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-50 misc=32 misc2=1 target=[1,0]
-effect 5  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 6 mask 0x280a010
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=6 mask=0x280a010 target=[1,0]
+effect 5  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 6 mask 0x280a010,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=6 mask=0x280a010,0x2 target=[1,0]
 
 https://www.wowhead.com/forever/spell=15473
 =======
@@ -2357,7 +2353,7 @@ https://www.wowhead.com/forever/spell=459714
 school    shadow
 defense   magic
 duration  30 s
-cooldown  60 s
+cooldown  30 s
 gcd       1.5 s
 cost      40 mana
 range     30 yd

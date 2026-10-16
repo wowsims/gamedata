@@ -362,6 +362,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+effect 4  0 threat to the enemy
+          E_THREAT base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=770
 =======
@@ -382,6 +384,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+effect 4  0 threat to the enemy
+          E_THREAT base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=778
 =======
@@ -402,6 +406,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+effect 4  0 threat to the enemy
+          E_THREAT base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=9749
 =======
@@ -422,6 +428,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
+effect 4  0 threat to the enemy
+          E_THREAT base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=9907
 =======
@@ -1090,8 +1098,8 @@ duration  permanent
 stance    Moonkin
 labels    21
 
-effect 1  party aura: +3% physical and spell crit
-          E_APPLY_AREA_AURA_PARTY A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
+effect 1  raid aura: +3% spell crit
+          E_APPLY_AREA_AURA_RAID A_MOD_SPELL_CRIT_CHANCE base=3 sp=1 radius=45 target=[1,0]
 
 https://www.wowhead.com/forever/spell=24907
 =======
@@ -2128,9 +2136,9 @@ https://www.wowhead.com/forever/spell=17144
 18104 Wrath
 school    nature
 defense   magic
-range     5 yd
+range     10 yd
 
-effect 1  90–126 nature damage to the enemy
-          E_SCHOOL_DAMAGE base=108 variance=0.33333334 target=[6,0]
+effect 1  105–147 nature damage to the enemy
+          E_SCHOOL_DAMAGE base=126 variance=0.33333334 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18104

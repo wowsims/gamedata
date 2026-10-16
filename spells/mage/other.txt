@@ -592,7 +592,7 @@ gcd       1.5 s
 range     100 yd
 
 effect 1  -50% strength to every enemy around the caster
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 target=[22,15]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 misc2=1 target=[22,15]
 
 https://www.wowhead.com/forever/spell=18948
 =======
@@ -879,12 +879,10 @@ https://www.wowhead.com/forever/spell=415729
 1259817 Eureka! (Racial)
 school    nature
 defense   magic
-duration  15 s
+duration  8 s
 cooldown  120 s
-charges   3
 attrs     can proc from procs
 labels    5710
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
 
 effect 1  SPELLMOD_COST -10% on family 3 mask 0x20c21af7,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=14 family=3 mask=0x20c21af7,0x1000 target=[1,0]
@@ -1008,13 +1006,11 @@ https://www.wowhead.com/forever/spell=13441
 18833 Firebolt
 school    fire
 defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
 cost      80 mana
-range     30 yd
+range     50000 yd
 
-effect 1  75–105 fire damage to the enemy
-          E_SCHOOL_DAMAGE base=90 variance=0.33333334 target=[6,0]
+effect 1  94–116 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=105 variance=0.2 target=[6,0]
 
 https://www.wowhead.com/forever/spell=18833
 =======
@@ -1141,84 +1137,6 @@ effect 3  SPELLMOD_THREAT -2000 on family 3 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=2 family=3 mask=0x200000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=21879
-=======
-14105 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  80–90 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=85 variance=0.11764706 target=[6,0]
-
-https://www.wowhead.com/forever/spell=14105
-=======
-16407 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  30 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=30 target=[6,0]
-
-https://www.wowhead.com/forever/spell=16407
-=======
-18085 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  65 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=65 target=[6,0]
-
-https://www.wowhead.com/forever/spell=18085
-=======
-18398 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  45 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=45 target=[6,0]
-
-https://www.wowhead.com/forever/spell=18398
-=======
-19260 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  160–250 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=205 variance=0.4390244 target=[6,0]
-
-https://www.wowhead.com/forever/spell=19260
-=======
-20869 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  75 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=75 target=[6,0]
-
-https://www.wowhead.com/forever/spell=20869
 =======
 468512 Frost Potency
 school    arcane
@@ -3150,6 +3068,18 @@ effect 1  summons creature 16697
           E_SUMMON base=1 misc=16697 misc2=64 radius=1 target=[53,0]
 
 https://www.wowhead.com/forever/spell=28863
+=======
+1312934 Wake of Fire
+school    physical
+duration  30 s
+charges   1
+labels    17
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 sp=1 misc=7 family=3 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1312934
 =======
 425430 Warbringer
 school    physical

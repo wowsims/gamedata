@@ -729,10 +729,10 @@ school    fire
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_DAMAGE +2% on family 3 mask 0xc00017,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 family=3 mask=0xc00017,0x1000 target=[1,0]
-effect 2  SPELLMOD_DOT +2% on family 3 mask 0x400005,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=3 mask=0x400005,0x1000 target=[1,0]
+effect 1  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+effect 2  a dummy aura holding 3
+          E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11124
 =======
@@ -1173,10 +1173,10 @@ cost      45 mana
 range     35 yd
 attrs     periodic can crit
 
-effect 1  180–220 fire damage to the enemy
-          E_SCHOOL_DAMAGE base=200 variance=0.2 target=[6,0]
-effect 2  9 fire damage every 2 s to the enemy (4 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=2000ms target=[6,0]
+effect 1  270–330 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=300 variance=0.2 target=[6,0]
+effect 2  25 fire damage every 2 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=25 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=16415
 =======
@@ -1255,10 +1255,10 @@ cost      45 mana
 range     35 yd
 attrs     periodic can crit
 
-effect 1  155–197 fire damage to the enemy
-          E_SCHOOL_DAMAGE base=176 variance=0.23863636 target=[6,0]
-effect 2  8 fire damage every 2 s to the enemy (3 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms target=[6,0]
+effect 1  231–293 fire damage to the enemy
+          E_SCHOOL_DAMAGE base=262 variance=0.23863636 target=[6,0]
+effect 2  20 fire damage every 2 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=20 period=2000ms target=[6,0]
 
 https://www.wowhead.com/forever/spell=18796
 =======
@@ -1595,7 +1595,7 @@ https://www.wowhead.com/forever/spell=1237313
 school    fire
 attrs     passive, can proc from procs
 labels    17
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
 refs      400625 Heating Up
 
 effect 1  a dummy aura holding 100
@@ -1610,7 +1610,7 @@ duration  20 s
 stack     up to 3
 charges   1
 labels    17
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
 
 effect 1  SPELLMOD_CASTING_TIME -25% on family 3 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=10 misc2=161 family=3 mask=0x400000 target=[1,0]
@@ -1680,6 +1680,18 @@ effect 1  casts 12355 Impact on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=12355 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1239832
+=======
+11078 Improved Fire Blast
+school    physical
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x2 target=[1,0]
+effect 2  SPELLMOD_RANGE +15 on family 3 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=5 family=3 mask=0x2 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11078
 =======
 11094 Improved Fire Ward
 school    physical
@@ -2218,29 +2230,3 @@ effect 1  672–906 fire damage to the enemy
           E_SCHOOL_DAMAGE base=789.3415 variance=0.2962963 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=17195
-=======
-11078 Wake of Fire
-school    physical
-attrs     passive
-labels    17
-proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met; tooltip says on a crit, one named ability
-refs      1312934 Wake of Fire
-
-effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x2
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x2 target=[1,0]
-effect 2  a dummy aura holding 50
-          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
-
-https://www.wowhead.com/forever/spell=11078
-=======
-1312934 Wake of Fire
-school    physical
-duration  30 s
-charges   1
-labels    17
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit
-
-effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0x2
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 sp=1 misc=7 family=3 mask=0x2 target=[1,0]
-
-https://www.wowhead.com/forever/spell=1312934
