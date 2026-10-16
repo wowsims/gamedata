@@ -126942,7 +126942,7 @@ text      "A shipment of lumber from Stranglethorn Vale that can be of use to yo
 item      uncommon, Shield, shield
 level     ilvl 14
 binds     binds when picked up
-stats     +0 stamina
+stats     +2 stamina
 sells     15 copper
 =======
 246377 Monster - Sword, 1h - Kirin Tor
@@ -130397,6 +130397,12 @@ sells     1 copper
 item      common, Potions
 level     ilvl 5, requires level 45
 effect    use: 1252525 Caustic Smog Potion (1 charge, consumed)
+sells     1 copper
+=======
+250952 Disorienting Smog Potion
+item      common, Potions
+level     ilvl 25, requires level 45
+effect    use: 1252544 Disorienting Smog Potion (1 charge, consumed)
 sells     1 copper
 =======
 250953 Dragonfire Potion
@@ -163693,6 +163699,15 @@ binds     binds when picked up
 item      common, Other
 level     ilvl 1, requires level 1
 binds     binds when picked up
+=======
+284587 Ankle Slicers
+item      epic, Thrown, thrown
+level     ilvl 63, requires level 58
+binds     binds when equipped
+stats     +9 stamina, +12 attack power
+weapon    51 - 96 damage, speed 1.80, 40.8 dps
+effect    chance on hit: 1316346 Sliced Ankle
+sells     57582 copper
 =======
 284597 Monster - Mace, Thaurissan Hammer
 item      poor, Mace, one-hand

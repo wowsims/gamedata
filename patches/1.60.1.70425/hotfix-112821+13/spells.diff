@@ -1,0 +1,234 @@
+# mage
+--- 1326079 Arcane Wrath (Rank 1)
++++ 1326079 Arcane Wrath (Rank 1)
+@@ -1,15 +1,16 @@
+ 1326079 Arcane Wrath (Rank 1)
+ school    arcane
+ defense   magic
+ cast      3.5 s
+ cooldown  6 s
++cooldown  6 s (category)
+ gcd       1.5 s
+ cost      140 mana
+ range     30 yd
+ 
+ effect 1  122–146 arcane damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=120 ppl=1.4 variance=0.20100503 sp=1 target=[6,0]
+ effect 2  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1326079
+--- 1326080 Arcane Wrath (Rank 2)
++++ 1326080 Arcane Wrath (Rank 2)
+@@ -1,15 +1,16 @@
+ 1326080 Arcane Wrath (Rank 2)
+ school    arcane
+ defense   magic
+ cast      3.5 s
+ cooldown  6 s
++cooldown  6 s (category)
+ gcd       1.5 s
+ cost      220 mana
+ range     30 yd
+ 
+ effect 1  193–232 arcane damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.20100503 sp=1 target=[6,0]
+ effect 2  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1326080
+--- 1326081 Arcane Wrath (Rank 3)
++++ 1326081 Arcane Wrath (Rank 3)
+@@ -1,15 +1,16 @@
+ 1326081 Arcane Wrath (Rank 3)
+ school    arcane
+ defense   magic
+ cast      3.5 s
+ cooldown  6 s
++cooldown  6 s (category)
+ gcd       1.5 s
+ cost      305 mana
+ range     30 yd
+ 
+ effect 1  296–357 arcane damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.20100503 sp=1 target=[6,0]
+ effect 2  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1326081
+--- 1326082 Arcane Wrath (Rank 4)
++++ 1326082 Arcane Wrath (Rank 4)
+@@ -1,15 +1,16 @@
+ 1326082 Arcane Wrath (Rank 4)
+ school    arcane
+ defense   magic
+ cast      3.5 s
+ cooldown  6 s
++cooldown  6 s (category)
+ gcd       1.5 s
+ cost      395 mana
+ range     30 yd
+ 
+ effect 1  406–496 arcane damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.20100503 sp=1 target=[6,0]
+ effect 2  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1326082
+--- 1240047 Ice Lance (Rank 6)
++++ 1240047 Ice Lance (Rank 6)
+@@ -1,18 +1,18 @@
+ 1240047 Ice Lance (Rank 6)
+ school    frost
+ defense   magic
+ gcd       1.5 s
+ cost      160 mana
+ range     30 yd
+ labels    17
+ 
+-effect 1  136–161 frost damage to the enemy (at level 60)
+-          E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 target=[6,0]
++effect 1  136–161 frost damage to the enemy (at level 60, +0.14285715 spell power)
++          E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 sp=0.14285715 target=[6,0]
+ effect 2  a dummy effect holding 200
+           E_DUMMY base=200 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ 
+ https://www.wowhead.com/forever/spell=1240047
+# warlock
+--- 18288 Amplify Curse
++++ 18288 Amplify Curse
+@@ -1,12 +1,14 @@
+ 18288 Amplify Curse
+ school    shadow
+ duration  30 s
+ cooldown  180 s
+ charges   1
+ labels    19
+ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+-effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8400
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8400 target=[1,0]
++effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
++effect 2  SPELLMOD_ALL_EFFECTS -20 on family 5 mask 0x0,0x0,0x40000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=8 family=5 mask=0x0,0x0,0x40000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=18288
+--- 980 Bane of Agony (Rank 1)
++++ 980 Bane of Agony (Rank 1)
+@@ -1,14 +1,16 @@
+ 980 Bane of Agony (Rank 1)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      25 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  6 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=980
+--- 1014 Bane of Agony (Rank 2)
++++ 1014 Bane of Agony (Rank 2)
+@@ -1,14 +1,16 @@
+ 1014 Bane of Agony (Rank 2)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      50 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  10 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1014
+--- 6217 Bane of Agony (Rank 3)
++++ 6217 Bane of Agony (Rank 3)
+@@ -1,14 +1,16 @@
+ 6217 Bane of Agony (Rank 3)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      90 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  14 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=6217
+--- 11711 Bane of Agony (Rank 4)
++++ 11711 Bane of Agony (Rank 4)
+@@ -1,14 +1,16 @@
+ 11711 Bane of Agony (Rank 4)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      130 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  21 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11711
+--- 11712 Bane of Agony (Rank 5)
++++ 11712 Bane of Agony (Rank 5)
+@@ -1,14 +1,16 @@
+ 11712 Bane of Agony (Rank 5)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      170 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  33 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=33 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11712
+--- 11713 Bane of Agony (Rank 6)
++++ 11713 Bane of Agony (Rank 6)
+@@ -1,14 +1,16 @@
+ 11713 Bane of Agony (Rank 6)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      215 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  46 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.133 period=2000ms target=[6,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11713

@@ -6,8 +6,10 @@ charges   1
 labels    19
 proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
 
-effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8400
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8400 target=[1,0]
+effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+effect 2  SPELLMOD_ALL_EFFECTS -20 on family 5 mask 0x0,0x0,0x40000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=8 family=5 mask=0x0,0x0,0x40000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=18288
 =======
@@ -23,6 +25,8 @@ labels    19
 
 effect 1  6 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=980
 =======
@@ -38,6 +42,8 @@ labels    19
 
 effect 1  10 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1014
 =======
@@ -53,6 +59,8 @@ labels    19
 
 effect 1  14 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6217
 =======
@@ -68,6 +76,8 @@ labels    19
 
 effect 1  21 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11711
 =======
@@ -83,6 +93,8 @@ labels    19
 
 effect 1  33 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=33 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11712
 =======
@@ -98,6 +110,8 @@ labels    19
 
 effect 1  46 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.133 period=2000ms target=[6,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11713
 =======
