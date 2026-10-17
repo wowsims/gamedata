@@ -76,8 +76,8 @@ range     50000 yd
 labels    18
 refs      1326159 Dark Inspiration
 
-effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_PERCENT_STAT base=15 misc=4 radius=100 target=[20,1]
+effect 1  +15% spirit to the party around the caster
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=15 misc2=16 radius=100 target=[20,1]
 
 https://www.wowhead.com/forever/spell=1326168
 =======
