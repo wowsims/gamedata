@@ -1105,8 +1105,8 @@ school    physical
 mechanic  mechanic 9
 duration  2 s
 range     50000 yd
-stance    Shadowform
 labels    20
+refs      13754 Improved Kick
 
 effect 1  silences to the enemy
           E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]

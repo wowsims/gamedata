@@ -902,8 +902,8 @@ range     30 yd
 attrs     periodic can crit
 labels    18
 
-effect 1  56–71 holy damage to the enemy (at level 60, +0.75 spell power)
-          E_SCHOOL_DAMAGE base=58 ppl=1.3 variance=0.22727273 sp=0.75 target=[6,0]
+effect 1  53–66 holy damage to the enemy (at level 60, +0.75 spell power)
+          E_SCHOOL_DAMAGE base=54 ppl=1.3 variance=0.22727273 sp=0.75 target=[6,0]
 effect 2  4 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.05 period=2000ms target=[6,0]
 
