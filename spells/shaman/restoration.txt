@@ -273,7 +273,7 @@ attrs     cannot crit
 refs      415242 Healing Rain
 
 effect 1  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=29398 target=[132,31]
+          E_CREATE_AREATRIGGER base=0 misc=29398 radius=15 target=[132,31]
 effect 2  a dummy effect to the friendly target
           E_DUMMY base=0 target=[21,0]
 effect 3  a dummy aura every 1 s (10 ticks)
@@ -288,7 +288,7 @@ range     100 yd
 attrs     not a proc
 
 effect 1  15 healing to target 87 (+0.063 spell power)
-          E_HEAL base=15 sp=0.063 target=[87,31]
+          E_HEAL base=15 sp=0.063 radius=15 target=[87,31]
 
 https://www.wowhead.com/forever/spell=415242
 =======

@@ -518,7 +518,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  850–1150 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=460399
 =======
@@ -871,7 +871,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  850–1150 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=19781
 =======
@@ -882,7 +882,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  850–1150 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=1000 variance=0.3 sp=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=461139
 =======
@@ -893,7 +893,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  2000 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=2000 sp=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=461142
 =======
@@ -904,7 +904,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  2000 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=2000 sp=1 radius=10 target=[53,16]
 effect 2  unrecognised shape
           E_TRIGGER_MISSILE base=0 trigger=461143 target=[53,0]
 
@@ -1666,7 +1666,7 @@ duration  5 s
 attrs     not a proc
 
 effect 1  -60% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[22,15]
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=14207
 =======
@@ -1690,7 +1690,7 @@ range     45 yd
 equip     needs a thrown
 
 effect 1  2000 nature damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=2000 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=2000 sp=1 radius=5 target=[53,16]
 effect 2  unrecognised shape
           E_TRIGGER_MISSILE base=0 sp=1 trigger=1294208 radius=5 target=[16,0]
 
@@ -3798,7 +3798,7 @@ range     100 yd
 targets   up to 4
 
 effect 1  stuns to every enemy around the caster
-          E_APPLY_AURA A_MOD_STUN base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_STUN base=0 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1215753
 =======

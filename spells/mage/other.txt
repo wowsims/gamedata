@@ -192,7 +192,7 @@ gcd       1.5 s
 range     100 yd
 
 effect 1  40 nature damage every 3 s to every enemy around the caster (10 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=1 period=3000ms target=[22,15]
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=1 period=3000ms radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=18949
 =======
@@ -396,7 +396,7 @@ school    arcane
 range     100 yd
 
 effect 1  0 healing to every ally in the target area
-          E_HEAL base=0 target=[18,31]
+          E_HEAL base=0 radius=100 target=[18,31]
 
 https://www.wowhead.com/forever/spell=401405
 =======
@@ -592,7 +592,7 @@ gcd       1.5 s
 range     100 yd
 
 effect 1  -50% strength to every enemy around the caster
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 misc2=1 target=[22,15]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 misc2=1 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=18948
 =======
@@ -1054,7 +1054,7 @@ gcd       1.5 s
 range     100 yd
 
 effect 1  213–287 fire damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=250 variance=0.296 sp=1 target=[22,15]
+          E_SCHOOL_DAMAGE base=250 variance=0.296 sp=1 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=12354
 =======
@@ -1063,7 +1063,7 @@ school    fire
 defense   magic
 
 effect 1  1356–1567 fire damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=1461.7435 variance=0.144 target=[22,15]
+          E_SCHOOL_DAMAGE base=1461.7435 variance=0.144 radius=10 target=[22,15]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 sp=1 misc=200 radius=10 target=[22,15]
 
@@ -3111,7 +3111,7 @@ cost      150 mana
 range     50000 yd
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_CONFUSE base=0 target=[22,30]
+          E_APPLY_AURA A_MOD_CONFUSE base=0 radius=100 target=[22,30]
 effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=14801 misc2=118 radius=100 target=[22,30]
 effect 3  dispels mount to every ally around the caster

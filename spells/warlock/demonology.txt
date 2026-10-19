@@ -259,7 +259,7 @@ school    shadow
 refs      3026 Use Soulstone
 
 effect 1  creates item 0 to every ally around the caster
-          E_CREATE_ITEM base=1 target=[22,30]
+          E_CREATE_ITEM base=1 radius=100 target=[22,30]
 
 https://www.wowhead.com/forever/spell=20022
 =======
@@ -645,7 +645,7 @@ cooldown  20 s
 range     50000 yd
 
 effect 1  +20% dodge chance to every ally in the target area
-          E_APPLY_AURA A_MOD_DODGE_PERCENT base=20 target=[18,31]
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=20 radius=100 target=[18,31]
 effect 2  +20% physical and spell crit
           E_APPLY_AURA A_MOD_CRIT_PCT base=20 target=[1,0]
 
@@ -670,7 +670,7 @@ gcd       1.5 s
 cost      5% of base mana
 
 effect 1  taunts to every enemy around the caster
-          E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=412789
 =======

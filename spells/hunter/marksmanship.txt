@@ -582,7 +582,7 @@ labels    23
 effect 1  a dummy effect to target 87
           E_DUMMY base=0 radius=10 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41236 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41236 radius=10 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1543
 =======
@@ -1463,7 +1463,7 @@ refs      1279721 Volley
 effect 1  a dummy effect holding 6 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41245 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41245 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -1484,7 +1484,7 @@ refs      1279719 Volley
 effect 1  a dummy effect holding 3 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41244 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41244 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -1505,7 +1505,7 @@ refs      1279715 Volley
 effect 1  a dummy effect to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41242 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41242 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -1533,7 +1533,7 @@ range     50000 yd
 labels    23
 
 effect 1  112 arcane damage to target 87
-          E_SCHOOL_DAMAGE base=112 target=[87,16]
+          E_SCHOOL_DAMAGE base=112 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279715
 =======
@@ -1544,7 +1544,7 @@ range     50000 yd
 labels    23
 
 effect 1  91 arcane damage to target 87
-          E_SCHOOL_DAMAGE base=91 target=[87,16]
+          E_SCHOOL_DAMAGE base=91 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279719
 =======
@@ -1555,6 +1555,6 @@ range     50000 yd
 labels    23
 
 effect 1  70 arcane damage to target 87
-          E_SCHOOL_DAMAGE base=70 target=[87,16]
+          E_SCHOOL_DAMAGE base=70 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279721

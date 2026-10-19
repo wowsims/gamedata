@@ -88,7 +88,7 @@ cost      400 mana
 labels    17
 
 effect 1  245–273 arcane damage to every ally around the caster
-          E_SCHOOL_DAMAGE base=259 variance=0.10810811 sp=1 target=[22,30]
+          E_SCHOOL_DAMAGE base=259 variance=0.10810811 sp=1 radius=20 target=[22,30]
 
 https://www.wowhead.com/forever/spell=23413
 =======
@@ -127,7 +127,7 @@ duration  30 s
 labels    25
 
 effect 1  shifts into Berserker to every enemy around the caster
-          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=19 misc2=1 target=[22,15]
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=19 misc2=1 radius=100 target=[22,15]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3654 radius=100 family=4 mask=0x800000 target=[22,15]
 effect 3  +30% every school damage taken to every enemy around the caster
@@ -344,7 +344,7 @@ school    shadow
 labels    23
 
 effect 1  unrecognised shape
-          E_DURABILITY_DAMAGE_PCT base=100 sp=1 misc=17 target=[22,15]
+          E_DURABILITY_DAMAGE_PCT base=100 sp=1 misc=17 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23436
 =======
@@ -363,7 +363,7 @@ duration  30 s
 labels    24
 
 effect 1  casts 23424 Corrupted Totems every 4 s to every enemy around the caster (7 ticks)
-          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=4000ms trigger=23424 target=[22,15]
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=4000ms trigger=23424 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23425
 =======
@@ -732,7 +732,7 @@ cost      400 mana
 labels    17
 
 effect 1  602–674 fire damage to every ally around the caster
-          E_SCHOOL_DAMAGE base=638 variance=0.11285266 sp=1 target=[22,30]
+          E_SCHOOL_DAMAGE base=638 variance=0.11285266 sp=1 radius=20 target=[22,30]
 effect 2  18 fire damage every 2 s to every ally around the caster (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=18 sp=1 period=2000ms radius=30 target=[22,30]
 
@@ -826,7 +826,7 @@ cost      300 mana
 labels    17
 
 effect 1  431–483 frost damage to every ally around the caster
-          E_SCHOOL_DAMAGE base=457 variance=0.11378556 sp=1 target=[22,30]
+          E_SCHOOL_DAMAGE base=457 variance=0.11378556 sp=1 radius=20 target=[22,30]
 effect 2  -40% movement speed to every ally around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 sp=1 radius=20 target=[22,30]
 
@@ -1230,7 +1230,7 @@ duration  30 s
 labels    20
 
 effect 1  roots to every enemy around the caster
-          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 target=[22,15]
+          E_APPLY_AURA A_MOD_ROOT base=0 sp=1 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23414
 =======
@@ -1906,7 +1906,7 @@ duration  30 s
 labels    26
 
 effect 1  casts 23415 Improved Blessing of Protection every 5 s to every enemy around the caster (6 ticks)
-          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms trigger=23415 target=[22,15]
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms trigger=23415 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23418
 =======
@@ -1934,9 +1934,9 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 effect 1  casts 460086 Spectral Shout to the enemy
           E_TRIGGER_SPELL base=0 trigger=460086 target=[6,0]
 effect 2  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 target=[22,15]
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=460084
 =======
@@ -2066,7 +2066,7 @@ duration  0.001 s
 labels    19
 
 effect 1  a dummy aura to every enemy around the caster
-          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[22,15]
+          E_APPLY_AURA A_DUMMY base=0 sp=1 radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23427
 =======
@@ -2108,7 +2108,7 @@ effect 1  charges
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
 effect 3  270–630 physical damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 target=[53,16]
+          E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=464250
 =======
@@ -2118,7 +2118,7 @@ defense   magic
 range     40 yd
 
 effect 1  unrecognised shape
-          E_POWER_DRAIN base=1000 sp=1 amplitude=1 target=[53,16]
+          E_POWER_DRAIN base=1000 sp=1 amplitude=1 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=19223
 =======
@@ -2298,7 +2298,7 @@ cooldown  15 s
 range     5 yd
 
 effect 1  taunts to every ally around the caster
-          E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,30]
+          E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,30]
 
 https://www.wowhead.com/forever/spell=440589
 =======
@@ -2419,7 +2419,7 @@ duration  30 s
 labels    17
 
 effect 1  casts nothing every 5 s to every enemy around the caster (6 ticks)
-          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms target=[22,15]
+          E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms radius=100 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23410
 =======

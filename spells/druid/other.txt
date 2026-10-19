@@ -283,7 +283,7 @@ range     45 yd
 effect 1  casts 437715 Blood Leech every 2 s (2 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=325 variance=0.10461538 sp=1 period=2000ms trigger=437715 target=[1,0]
 effect 2  unrecognised shape
-          E_KNOCK_BACK_DEST base=175 variance=0.30857143 misc=90 target=[18,16]
+          E_KNOCK_BACK_DEST base=175 variance=0.30857143 misc=90 radius=15 target=[18,16]
 
 https://www.wowhead.com/forever/spell=437711
 =======
@@ -1379,9 +1379,9 @@ duration  30 s
 labels    21
 
 effect 1  shifts into Cat to every enemy around the caster
-          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=1 misc2=7 target=[22,15]
+          E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=1 misc2=7 radius=100 target=[22,15]
 effect 2  unrecognised shape
-          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3655 family=7 mask=0xf0000000 target=[22,15]
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3655 radius=100 family=7 mask=0xf0000000 target=[22,15]
 effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -2652,7 +2652,7 @@ attrs     periodic can crit
 refs      417441 Thrash (Bear)
 
 effect 1  45 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=45 target=[22,15]
+          E_SCHOOL_DAMAGE base=45 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=417440
 =======
@@ -2683,9 +2683,9 @@ attrs     periodic can crit
 refs      417450 Thrash (Cat)
 
 effect 1  60 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=60 target=[22,15]
+          E_SCHOOL_DAMAGE base=60 radius=8 target=[22,15]
 effect 2  40 physical damage every 3 s to every enemy around the caster (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 period=3000ms target=[22,15]
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=40 period=3000ms radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=417448
 =======
@@ -2899,11 +2899,11 @@ cost      200 mana
 attrs     channeled
 
 effect 1  403.44125 nature damage every 2 s to every enemy in the target area (5 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=403.44125 sp=1 period=2000ms target=[18,16]
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=403.44125 sp=1 period=2000ms radius=45 target=[18,16]
 effect 2  -70% movement speed to every enemy in the target area
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 sp=1 radius=45 target=[18,16]
 effect 3  -300% melee haste to every enemy in the target area
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-300 sp=1 target=[18,16]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-300 sp=1 radius=45 target=[18,16]
 
 https://www.wowhead.com/forever/spell=21793
 =======
@@ -3017,7 +3017,7 @@ gcd       1.5 s
 range     40 yd
 
 effect 1  unrecognised shape
-          E_SCRIPT_EFFECT base=5 target=[132,31]
+          E_SCRIPT_EFFECT base=5 radius=43.5 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1226046
 =======

@@ -261,7 +261,7 @@ defense   magic
 range     40 yd
 
 effect 1  100 healing to every ally in the target area
-          E_HEAL base=100 target=[18,31]
+          E_HEAL base=100 radius=40 target=[18,31]
 
 https://www.wowhead.com/forever/spell=1213377
 =======
@@ -496,7 +496,7 @@ school    nature
 labels    24
 
 effect 1  dispels 1 disease effect to the party around the caster
-          E_DISPEL base=1 misc=3 target=[22,33]
+          E_DISPEL base=1 misc=3 radius=30 target=[22,33]
 
 https://www.wowhead.com/forever/spell=8171
 =======
@@ -553,7 +553,7 @@ duration  5 s
 labels    24
 
 effect 1  -50% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[22,15]
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=3600
 =======
@@ -565,7 +565,7 @@ duration  5 s
 labels    24
 
 effect 1  roots to every enemy around the caster
-          E_APPLY_AURA A_MOD_ROOT base=100 target=[22,15]
+          E_APPLY_AURA A_MOD_ROOT base=100 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1238289
 =======
@@ -587,7 +587,7 @@ duration  5 s
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  roots to every enemy around the caster
-          E_APPLY_AURA A_MOD_ROOT base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_ROOT base=0 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=440574
 =======
@@ -1803,7 +1803,7 @@ school    nature
 labels    24
 
 effect 1  dispels 1 poison effect to the party around the caster
-          E_DISPEL base=1 misc=4 target=[22,33]
+          E_DISPEL base=1 misc=4 radius=30 target=[22,33]
 
 https://www.wowhead.com/forever/spell=8168
 =======
@@ -2814,7 +2814,7 @@ school    physical
 duration  15 s
 
 effect 1  restores 18 mana every 1 s to every ally in the target area (15 ticks)
-          E_APPLY_AURA A_PERIODIC_ENERGIZE base=18 period=1000ms target=[18,31]
+          E_APPLY_AURA A_PERIODIC_ENERGIZE base=18 period=1000ms radius=40 target=[18,31]
 
 https://www.wowhead.com/forever/spell=433255
 =======
@@ -2976,7 +2976,7 @@ school    nature
 defense   magic
 
 effect 1  22 threat to every enemy around the caster
-          E_THREAT base=22 target=[22,15]
+          E_THREAT base=22 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=5729
 =======
@@ -2985,7 +2985,7 @@ school    nature
 defense   magic
 
 effect 1  37 threat to every enemy around the caster
-          E_THREAT base=37 target=[22,15]
+          E_THREAT base=37 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=6393
 =======
@@ -2994,7 +2994,7 @@ school    nature
 defense   magic
 
 effect 1  60 threat to every enemy around the caster
-          E_THREAT base=60 target=[22,15]
+          E_THREAT base=60 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=6394
 =======
@@ -3004,7 +3004,7 @@ defense   magic
 labels    24
 
 effect 1  75 threat to every enemy around the caster
-          E_THREAT base=75 target=[22,15]
+          E_THREAT base=75 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=6395
 =======
@@ -3013,7 +3013,7 @@ school    nature
 defense   magic
 
 effect 1  115 threat to every enemy around the caster
-          E_THREAT base=115 target=[22,15]
+          E_THREAT base=115 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10423
 =======
@@ -3022,7 +3022,7 @@ school    nature
 defense   magic
 
 effect 1  150 threat to every enemy around the caster
-          E_THREAT base=150 target=[22,15]
+          E_THREAT base=150 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10424
 =======
@@ -3666,7 +3666,7 @@ school    nature
 labels    24
 
 effect 1  dispels charm to the party around the caster
-          E_DISPEL_MECHANIC base=1 sp=1 misc=1 target=[22,33]
+          E_DISPEL_MECHANIC base=1 sp=1 misc=1 radius=30 target=[22,33]
 effect 2  dispels fear to the party around the caster
           E_DISPEL_MECHANIC base=1 sp=1 misc=5 radius=30 target=[22,33]
 effect 3  dispels sleep to the party around the caster

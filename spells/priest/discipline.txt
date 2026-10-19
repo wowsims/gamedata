@@ -11,7 +11,7 @@ targets   up to 5
 labels    18
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_CONFUSE base=0 amplitude=1 target=[18,16]
+          E_APPLY_AURA A_MOD_CONFUSE base=0 amplitude=1 radius=8 target=[18,16]
 
 https://www.wowhead.com/forever/spell=1277455
 =======
@@ -404,7 +404,7 @@ gcd       1.5 s
 range     30 yd
 
 effect 1  +40 spirit to every ally around the caster
-          E_APPLY_AURA A_MOD_STAT base=40 misc=4 target=[22,30]
+          E_APPLY_AURA A_MOD_STAT base=40 misc=4 radius=100 target=[22,30]
 
 https://www.wowhead.com/forever/spell=16875
 =======

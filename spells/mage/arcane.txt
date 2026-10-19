@@ -303,7 +303,7 @@ cost      75 mana
 labels    17
 
 effect 1  32–36 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=32 ppl=0.4 variance=0.11764706 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=32 ppl=0.4 variance=0.11764706 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1449
 =======
@@ -315,7 +315,7 @@ cost      120 mana
 labels    17
 
 effect 1  55–61 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.1 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.1 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8437
 =======
@@ -327,7 +327,7 @@ cost      185 mana
 labels    17
 
 effect 1  94–103 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=94 ppl=0.9 variance=0.07920792 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=94 ppl=0.9 variance=0.07920792 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8438
 =======
@@ -339,7 +339,7 @@ cost      250 mana
 labels    17
 
 effect 1  133–146 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=135 ppl=0.9 variance=0.08275862 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=135 ppl=0.9 variance=0.08275862 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8439
 =======
@@ -351,7 +351,7 @@ cost      315 mana
 labels    17
 
 effect 1  180–197 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=183 ppl=1.1 variance=0.082474224 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=183 ppl=1.1 variance=0.082474224 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10201
 =======
@@ -363,7 +363,7 @@ cost      390 mana
 labels    17
 
 effect 1  238–259 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
-          E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.07905138 sp=0.143 target=[22,15]
+          E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.07905138 sp=0.143 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=10202
 =======
@@ -1010,7 +1010,7 @@ excluded caster aura 450804
 labels    17
 
 effect 1  unrecognised shape
-          E_LEAP base=0 target=[1,55]
+          E_LEAP base=0 radius=20 target=[1,55]
 effect 2  immune to stun
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=12 target=[1,0]
 effect 3  immune to root
@@ -1145,7 +1145,7 @@ gcd       1.5 s
 cost      75 mana
 
 effect 1  unrecognised shape
-          E_LEAP base=0 target=[1,47]
+          E_LEAP base=0 radius=20 target=[1,47]
 effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
@@ -1937,7 +1937,7 @@ attrs     channeled
 refs      400735 Temporal Beacon
 
 effect 1  42 healing every 1 s to target 132 (3 ticks, +0.198 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.198 period=1000ms amplitude=1 target=[132,31]
+          E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.198 period=1000ms amplitude=1 radius=43.5 target=[132,31]
 
 https://www.wowhead.com/forever/spell=412510
 =======

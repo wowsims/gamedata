@@ -9,7 +9,7 @@ range     30 yd
 refs      436391 Decoy Totem
 
 effect 1  summons creature 212157 to target 132
-          E_SUMMON base=5 misc=212157 misc2=81 target=[132,82]
+          E_SUMMON base=5 misc=212157 misc2=81 radius=3 target=[132,82]
 effect 2  a dummy effect to the friendly target
           E_DUMMY base=0 target=[21,0]
 
@@ -795,7 +795,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  13 nature damage to every enemy in the target area (+0.147 spell power)
-          E_SCHOOL_DAMAGE base=13 sp=0.147 target=[18,16]
+          E_SCHOOL_DAMAGE base=13 sp=0.147 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -810,7 +810,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  29 nature damage to every enemy in the target area (+0.227 spell power)
-          E_SCHOOL_DAMAGE base=29 sp=0.227 target=[18,16]
+          E_SCHOOL_DAMAGE base=29 sp=0.227 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -825,7 +825,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  51 nature damage to every enemy in the target area (+0.267 spell power)
-          E_SCHOOL_DAMAGE base=51 sp=0.267 target=[18,16]
+          E_SCHOOL_DAMAGE base=51 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -840,7 +840,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  80 nature damage to every enemy in the target area (+0.267 spell power)
-          E_SCHOOL_DAMAGE base=80 sp=0.267 target=[18,16]
+          E_SCHOOL_DAMAGE base=80 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -855,7 +855,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  114 nature damage to every enemy in the target area (+0.267 spell power)
-          E_SCHOOL_DAMAGE base=114 sp=0.267 target=[18,16]
+          E_SCHOOL_DAMAGE base=114 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -870,7 +870,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  154 nature damage to every enemy in the target area (+0.267 spell power)
-          E_SCHOOL_DAMAGE base=154 sp=0.267 target=[18,16]
+          E_SCHOOL_DAMAGE base=154 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 
@@ -885,7 +885,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  198 nature damage to every enemy in the target area (+0.267 spell power)
-          E_SCHOOL_DAMAGE base=198 sp=0.267 target=[18,16]
+          E_SCHOOL_DAMAGE base=198 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 

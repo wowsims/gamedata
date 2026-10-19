@@ -249,7 +249,7 @@ attrs     periodic can crit
 labels    23
 
 effect 1  104–135 fire damage to every enemy around the caster (at level 60)
-          E_SCHOOL_DAMAGE base=115 ppl=0.8 variance=0.26086956 target=[22,15]
+          E_SCHOOL_DAMAGE base=115 ppl=0.8 variance=0.26086956 radius=10 target=[22,15]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=15 period=2000ms radius=10 target=[28,0]
 
@@ -263,7 +263,7 @@ attrs     periodic can crit
 labels    23
 
 effect 1  145–193 fire damage to every enemy around the caster (at level 60)
-          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.29447854 target=[22,15]
+          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.29447854 radius=10 target=[22,15]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=24 period=2000ms radius=10 target=[28,0]
 
@@ -277,7 +277,7 @@ attrs     periodic can crit, not a proc
 labels    23
 
 effect 1  208–265 fire damage to every enemy in the area (at level 60)
-          E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 target=[22,7]
+          E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 radius=10 target=[22,7]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
 
@@ -504,11 +504,11 @@ range     100 yd
 refs      409580 Heart of the Lion
 
 effect 1  +10% to all stats to every ally in the target area
-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[18,31]
+          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 radius=100 target=[18,31]
 effect 2  +280 attack power to every ally in the target area (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=40 ppl=4 misc=-1 radius=100 target=[18,31]
 effect 3  +280 ranged attack power to every ally in the target area (at level 60)
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 ppl=4 misc=-1 target=[18,31]
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 ppl=4 misc=-1 radius=100 target=[18,31]
 
 https://www.wowhead.com/forever/spell=409583
 =======
