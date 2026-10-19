@@ -237,7 +237,7 @@ range     45 yd
 effect 1  600–900 physical damage to the caster
           E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
 effect 2  unrecognised shape
-          E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 target=[87,16]
+          E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 radius=10 target=[87,16]
 
 https://www.wowhead.com/forever/spell=438540
 =======
@@ -392,9 +392,9 @@ school    fire
 effect 1  unrecognised shape
           E_INSTAKILL base=0 sp=1 target=[1,0]
 effect 2  unrecognised shape
-          E_KNOCK_BACK base=200 variance=0.1 sp=1 misc=200 target=[22,15]
+          E_KNOCK_BACK base=200 variance=0.1 sp=1 misc=200 radius=8 target=[22,15]
 effect 3  1313–1687 fire damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=1500 variance=0.24933334 sp=1 target=[22,15]
+          E_SCHOOL_DAMAGE base=1500 variance=0.24933334 sp=1 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=20527
 =======
@@ -1453,9 +1453,9 @@ targets   up to 4
 labels    25
 
 effect 1  10 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=10 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=10 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=6343
 =======
@@ -1471,9 +1471,9 @@ targets   up to 4
 labels    25
 
 effect 1  23 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=23 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=23 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8198
 =======
@@ -1489,9 +1489,9 @@ targets   up to 4
 labels    25
 
 effect 1  37 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=37 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=37 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8204
 =======
@@ -1507,9 +1507,9 @@ targets   up to 4
 labels    25
 
 effect 1  55 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=55 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=55 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=8205
 =======
@@ -1525,9 +1525,9 @@ targets   up to 4
 labels    25
 
 effect 1  82 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=82 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=82 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=11580
 =======
@@ -1543,9 +1543,9 @@ targets   up to 4
 labels    25
 
 effect 1  103 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=103 ap=0.07 target=[22,15]
+          E_SCHOOL_DAMAGE base=103 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=11581
 =======
@@ -1557,7 +1557,7 @@ range     40 yd
 targets   up to 4
 
 effect 1  -10% melee haste to target 87
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[87,16]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=413589
 =======
@@ -1572,9 +1572,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  103 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=103 target=[22,15]
+          E_SCHOOL_DAMAGE base=103 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461810
 =======
@@ -1589,9 +1589,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  82 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=82 target=[22,15]
+          E_SCHOOL_DAMAGE base=82 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461826
 =======
@@ -1606,9 +1606,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  55 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=55 target=[22,15]
+          E_SCHOOL_DAMAGE base=55 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461827
 =======
@@ -1623,9 +1623,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  37 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=37 target=[22,15]
+          E_SCHOOL_DAMAGE base=37 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461828
 =======
@@ -1640,9 +1640,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  23 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=23 target=[22,15]
+          E_SCHOOL_DAMAGE base=23 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461829
 =======
@@ -1657,9 +1657,9 @@ stance    Battle
 targets   up to 10
 
 effect 1  10 physical damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=10 target=[22,15]
+          E_SCHOOL_DAMAGE base=10 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 target=[22,15]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461830
 =======

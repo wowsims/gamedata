@@ -38,9 +38,9 @@ cost      215 mana
 labels    17
 
 effect 1  154–184 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
-          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.1882353 sp=0.129 target=[22,15]
+          E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.1882353 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[22,15]
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
 
 https://www.wowhead.com/forever/spell=11113
 =======
@@ -54,7 +54,7 @@ cost      270 mana
 labels    17
 
 effect 1  200–239 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
-          E_SCHOOL_DAMAGE base=212 ppl=1.2 variance=0.18099548 sp=0.129 target=[22,15]
+          E_SCHOOL_DAMAGE base=212 ppl=1.2 variance=0.18099548 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
 
@@ -70,7 +70,7 @@ cost      355 mana
 labels    17
 
 effect 1  276–327 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
-          E_SCHOOL_DAMAGE base=293 ppl=1.4 variance=0.17161717 sp=0.129 target=[22,15]
+          E_SCHOOL_DAMAGE base=293 ppl=1.4 variance=0.17161717 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
 
@@ -86,7 +86,7 @@ cost      450 mana
 labels    17
 
 effect 1  365–432 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
-          E_SCHOOL_DAMAGE base=389 ppl=1.6 variance=0.17042607 sp=0.129 target=[22,15]
+          E_SCHOOL_DAMAGE base=389 ppl=1.6 variance=0.17042607 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
 
@@ -102,7 +102,7 @@ cost      545 mana
 labels    17
 
 effect 1  453–533 fire damage to every enemy around the caster (at level 60, +0.129 spell power)
-          E_SCHOOL_DAMAGE base=493 ppl=1.9 variance=0.16302186 sp=0.129 target=[22,15]
+          E_SCHOOL_DAMAGE base=493 ppl=1.9 variance=0.16302186 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
 
@@ -242,11 +242,11 @@ defense   magic
 duration  8 s
 
 effect 1  2625–3375 fire damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=3000 variance=0.25 sp=1 target=[22,15]
+          E_SCHOOL_DAMAGE base=3000 variance=0.25 sp=1 radius=20 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=20 target=[22,15]
 effect 3  unrecognised shape
-          E_KNOCK_BACK base=175 sp=1 misc=100 target=[22,15]
+          E_KNOCK_BACK base=175 sp=1 misc=100 radius=20 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23331
 =======
@@ -289,7 +289,7 @@ effect 1  474–544 fire damage to target 46
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
 effect 3  474–544 fire damage to every enemy in the target area
-          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 target=[22,16]
+          E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=60 target=[22,16]
 
 https://www.wowhead.com/forever/spell=469161
 =======
@@ -302,9 +302,9 @@ gcd       1.5 s
 cost      120 mana
 
 effect 1  2847–2999 fire damage to every enemy around the caster
-          E_SCHOOL_DAMAGE base=2923.487 variance=0.052 sp=1 target=[22,15]
+          E_SCHOOL_DAMAGE base=2923.487 variance=0.052 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[22,15]
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1235318
 =======
@@ -1349,7 +1349,7 @@ refs      1279983 Flamestrike
 effect 1  55–71 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=60 ppl=0.6 variance=0.26666668 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41266 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41266 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1369,7 +1369,7 @@ refs      1279985 Flamestrike
 effect 1  100–126 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=109 ppl=0.8 variance=0.23853211 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41267 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41267 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1389,7 +1389,7 @@ refs      1279987 Flamestrike
 effect 1  159–197 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=173 ppl=1 variance=0.21965317 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41268 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41268 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1409,7 +1409,7 @@ refs      1279988 Flamestrike
 effect 1  226–279 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=246 ppl=1.3 variance=0.21138212 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41269 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41269 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1429,7 +1429,7 @@ refs      1279989 Flamestrike
 effect 1  298–367 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=325 ppl=1.5 variance=0.20923077 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41270 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41270 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1449,7 +1449,7 @@ refs      1279990 Flamestrike
 effect 1  381–466 fire damage to every enemy in the target area (at level 60, +0.157 spell power)
           E_SCHOOL_DAMAGE base=417 ppl=1.7 variance=0.20143884 sp=0.157 radius=5 target=[16,0]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41271 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41271 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -1462,7 +1462,7 @@ range     50000 yd
 labels    17
 
 effect 1  11 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=11 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=11 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279983
 =======
@@ -1473,7 +1473,7 @@ range     50000 yd
 labels    17
 
 effect 1  21 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=21 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=21 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279985
 =======
@@ -1484,7 +1484,7 @@ range     50000 yd
 labels    17
 
 effect 1  33 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=33 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=33 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279987
 =======
@@ -1495,7 +1495,7 @@ range     50000 yd
 labels    17
 
 effect 1  47 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=47 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=47 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279988
 =======
@@ -1506,7 +1506,7 @@ range     50000 yd
 labels    17
 
 effect 1  64 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=64 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=64 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279989
 =======
@@ -1517,7 +1517,7 @@ range     50000 yd
 labels    17
 
 effect 1  83 fire damage to target 87 (+0.032 spell power)
-          E_SCHOOL_DAMAGE base=83 sp=0.032 target=[87,16]
+          E_SCHOOL_DAMAGE base=83 sp=0.032 radius=5 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1279990
 =======
@@ -1776,9 +1776,9 @@ attrs     not a proc
 refs      400613 Living Bomb
 
 effect 1  171 fire damage to every enemy in the target area (+0.4 spell power)
-          E_SCHOOL_DAMAGE base=171 sp=0.4 target=[53,16]
+          E_SCHOOL_DAMAGE base=171 sp=0.4 radius=10 target=[53,16]
 effect 2  a dummy effect holding 171 to every enemy in the target area
-          E_DUMMY base=171 sp=0.4 target=[53,16]
+          E_DUMMY base=171 sp=0.4 radius=10 target=[53,16]
 
 https://www.wowhead.com/forever/spell=400614
 =======

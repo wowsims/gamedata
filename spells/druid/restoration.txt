@@ -49,7 +49,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  16 healing to target 87 (+0.06 spell power)
-          E_HEAL base=16 sp=0.06 target=[87,31]
+          E_HEAL base=16 sp=0.06 radius=15 target=[87,31]
 
 https://www.wowhead.com/forever/spell=417148
 =======
@@ -861,21 +861,21 @@ cost      445 mana
 labels    21
 
 effect 1  +385 armor to every ally around the caster
-          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 target=[22,30]
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=385 amplitude=1 misc=1 radius=50 target=[22,30]
 effect 2  +16 to all stats to every ally around the caster
-          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 target=[22,30]
+          E_APPLY_AURA A_MOD_STAT base=16 misc=-1 radius=50 target=[22,30]
 effect 3  +27 holy resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=2 radius=50 target=[22,30]
 effect 4  +27 fire resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=4 radius=50 target=[22,30]
 effect 5  +27 nature resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=8 radius=50 target=[22,30]
 effect 6  +27 frost resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=16 radius=50 target=[22,30]
 effect 7  +27 shadow resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 radius=50 target=[22,30]
 effect 8  +27 arcane resistance to every ally around the caster
-          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[22,30]
+          E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 radius=50 target=[22,30]
 
 https://www.wowhead.com/forever/spell=1310503
 =======
@@ -2003,7 +2003,7 @@ range     100 yd
 attrs     channeled
 
 effect 1  254–296 healing every 3 s to every ally around the caster (5 ticks, +0.067 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 sp=0.067 period=3000ms target=[22,30]
+          E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 sp=0.067 period=3000ms radius=100 target=[22,30]
 effect 2  254–296 healing every 3 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 period=3000ms target=[1,1]
 
@@ -2023,9 +2023,9 @@ attrs     periodic can crit
 labels    21
 
 effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms target=[132,31]
+          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
-          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+          E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 
 https://www.wowhead.com/forever/spell=408120
 =======
@@ -2052,9 +2052,9 @@ attrs     periodic can crit
 labels    21
 
 effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms target=[132,31]
+          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
-          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+          E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1238214
 =======
@@ -2072,8 +2072,8 @@ attrs     periodic can crit
 labels    21
 
 effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms target=[132,31]
+          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
-          E_APPLY_AURA A_DUMMY base=5 target=[132,31]
+          E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 
 https://www.wowhead.com/forever/spell=1238215

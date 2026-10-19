@@ -518,7 +518,7 @@ refs      1278965 Hurricane
 effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=-20 misc=41199 target=[87,16]
+          E_CREATE_AREATRIGGER base=-20 misc=41199 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -540,7 +540,7 @@ refs      1278968 Hurricane
 effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=-20 misc=41198 target=[87,16]
+          E_CREATE_AREATRIGGER base=-20 misc=41198 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -562,7 +562,7 @@ refs      1278759 Hurricane
 effect 1  a dummy effect to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=-20 misc=41170 target=[87,16]
+          E_CREATE_AREATRIGGER base=-20 misc=41170 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
 
@@ -593,9 +593,9 @@ range     50000 yd
 labels    21
 
 effect 1  132 nature damage to target 87 (at level 60, +0.03 spell power)
-          E_SCHOOL_DAMAGE base=132 ppl=0.3 sp=0.03 target=[87,16]
+          E_SCHOOL_DAMAGE base=132 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[87,16]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1278759
 =======
@@ -608,9 +608,9 @@ range     50000 yd
 labels    21
 
 effect 1  69.2 nature damage to target 87 (at level 60, +0.03 spell power)
-          E_SCHOOL_DAMAGE base=68 ppl=0.2 sp=0.03 target=[87,16]
+          E_SCHOOL_DAMAGE base=68 ppl=0.2 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[87,16]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1278965
 =======
@@ -623,9 +623,9 @@ range     50000 yd
 labels    21
 
 effect 1  99.2 nature damage to target 87 (at level 60, +0.03 spell power)
-          E_SCHOOL_DAMAGE base=98 ppl=0.2 sp=0.03 target=[87,16]
+          E_SCHOOL_DAMAGE base=98 ppl=0.2 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
-          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 target=[87,16]
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1278968
 =======
@@ -1514,7 +1514,7 @@ https://www.wowhead.com/forever/spell=439753
 school    arcane
 
 effect 1  a dummy effect holding 439753 to every enemy around the caster
-          E_DUMMY base=439753 target=[22,15]
+          E_DUMMY base=439753 radius=30 target=[22,15]
 
 https://www.wowhead.com/forever/spell=439755
 =======
@@ -1524,7 +1524,7 @@ defense   magic
 range     50000 yd
 
 effect 1  8 arcane damage to every enemy in the target area (+0.13 spell power)
-          E_SCHOOL_DAMAGE base=8 sp=0.13 target=[53,16]
+          E_SCHOOL_DAMAGE base=8 sp=0.13 radius=5 target=[53,16]
 
 https://www.wowhead.com/forever/spell=439756
 =======
@@ -1894,7 +1894,7 @@ gcd       1.5 s
 range     30 yd
 
 effect 1  22 nature damage back to melee attackers to every ally around the caster
-          E_APPLY_AURA A_DAMAGE_SHIELD base=22 target=[22,30]
+          E_APPLY_AURA A_DAMAGE_SHIELD base=22 radius=100 target=[22,30]
 
 https://www.wowhead.com/forever/spell=16877
 =======

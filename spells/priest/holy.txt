@@ -255,7 +255,7 @@ stance    Spirit of Redemption
 stance exclude Shadowform
 
 effect 1  130–144 healing to target 132 (+0.214 spell power)
-          E_HEAL base=137 variance=0.10218978 sp=0.214 target=[132,31]
+          E_HEAL base=137 variance=0.10218978 sp=0.214 radius=43.5 target=[132,31]
 
 https://www.wowhead.com/forever/spell=401946
 =======
@@ -1135,7 +1135,7 @@ labels    18
 refs      23455 Holy Nova
 
 effect 1  26–31 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=27 ppl=0.2 variance=0.13333334 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=27 ppl=0.2 variance=0.13333334 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15237
 =======
@@ -1149,7 +1149,7 @@ labels    18
 refs      23458 Holy Nova
 
 effect 1  47–56 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=49 ppl=0.4 variance=0.14814815 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=49 ppl=0.4 variance=0.14814815 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15430
 =======
@@ -1163,7 +1163,7 @@ labels    18
 refs      23459 Holy Nova
 
 effect 1  73–84 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=75 ppl=0.6 variance=0.14634146 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=75 ppl=0.6 variance=0.14634146 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=15431
 =======
@@ -1233,7 +1233,7 @@ labels    18
 refs      27803 Holy Nova
 
 effect 1  103–118 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=106 ppl=0.8 variance=0.14035088 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=106 ppl=0.8 variance=0.14035088 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27799
 =======
@@ -1247,7 +1247,7 @@ labels    18
 refs      27804 Holy Nova
 
 effect 1  139–159 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=143 ppl=1 variance=0.14569536 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=143 ppl=1 variance=0.14569536 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27800
 =======
@@ -1261,7 +1261,7 @@ labels    18
 refs      27805 Holy Nova
 
 effect 1  174–200 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
-          E_SCHOOL_DAMAGE base=187 ppl=1.2 variance=0.14358975 sp=0.107 target=[22,15]
+          E_SCHOOL_DAMAGE base=187 ppl=1.2 variance=0.14358975 sp=0.107 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=27801
 =======
@@ -1430,7 +1430,7 @@ labels    18
 refs      7001 Lightwell Renew
 
 effect 1  unrecognised shape
-          E_TRANS_DOOR base=0 sp=1 misc=181102 target=[22,47]
+          E_TRANS_DOOR base=0 sp=1 misc=181102 radius=2 target=[22,47]
 
 https://www.wowhead.com/forever/spell=724
 =======
@@ -1445,7 +1445,7 @@ labels    18
 refs      27873 Lightwell Renew
 
 effect 1  unrecognised shape
-          E_TRANS_DOOR base=0 sp=1 misc=181105 target=[22,47]
+          E_TRANS_DOOR base=0 sp=1 misc=181105 radius=2 target=[22,47]
 
 https://www.wowhead.com/forever/spell=27870
 =======
@@ -1460,7 +1460,7 @@ labels    18
 refs      27874 Lightwell Renew
 
 effect 1  unrecognised shape
-          E_TRANS_DOOR base=0 sp=1 misc=181106 target=[22,47]
+          E_TRANS_DOOR base=0 sp=1 misc=181106 radius=2 target=[22,47]
 
 https://www.wowhead.com/forever/spell=27871
 =======
@@ -1488,7 +1488,7 @@ stance exclude Shadowform
 labels    18
 
 effect 1  179–192 healing to target 132 (at level 60, +0.286 spell power)
-          E_HEAL base=178 ppl=0.8 variance=0.06430868 sp=0.286 target=[132,31]
+          E_HEAL base=178 ppl=0.8 variance=0.06430868 sp=0.286 radius=40 target=[132,31]
 
 https://www.wowhead.com/forever/spell=596
 =======
@@ -1504,7 +1504,7 @@ stance exclude Shadowform
 labels    18
 
 effect 1  266–282 healing to target 132 (at level 60, +0.286 spell power)
-          E_HEAL base=265 ppl=1 variance=0.06113537 sp=0.286 target=[132,31]
+          E_HEAL base=265 ppl=1 variance=0.06113537 sp=0.286 radius=40 target=[132,31]
 
 https://www.wowhead.com/forever/spell=996
 =======
@@ -1520,7 +1520,7 @@ stance exclude Shadowform
 labels    18
 
 effect 1  401–424 healing to target 132 (at level 60, +0.286 spell power)
-          E_HEAL base=401 ppl=1.3 variance=0.056213018 sp=0.286 target=[132,31]
+          E_HEAL base=401 ppl=1.3 variance=0.056213018 sp=0.286 radius=40 target=[132,31]
 
 https://www.wowhead.com/forever/spell=10960
 =======
@@ -1536,7 +1536,7 @@ stance exclude Shadowform
 labels    18
 
 effect 1  567–599 healing to target 132 (at level 60, +0.286 spell power)
-          E_HEAL base=583 ppl=1.5 variance=0.05388601 sp=0.286 target=[132,31]
+          E_HEAL base=583 ppl=1.5 variance=0.05388601 sp=0.286 radius=40 target=[132,31]
 
 https://www.wowhead.com/forever/spell=10961
 =======
@@ -1552,7 +1552,7 @@ stance exclude Shadowform
 labels    18
 
 effect 1  631–667 healing to target 132 (at level 60, +0.286 spell power)
-          E_HEAL base=649 ppl=1.6 variance=0.054205608 sp=0.286 target=[132,31]
+          E_HEAL base=649 ppl=1.6 variance=0.054205608 sp=0.286 radius=40 target=[132,31]
 
 https://www.wowhead.com/forever/spell=25316
 =======

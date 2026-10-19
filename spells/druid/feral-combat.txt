@@ -245,7 +245,7 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  taunts to every enemy around the caster
-          E_APPLY_AURA A_MOD_TAUNT base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=5209
 =======
@@ -428,9 +428,9 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  -56 attack power to every enemy around the caster (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=-46 ppl=-1 target=[22,15]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-46 ppl=-1 radius=10 target=[22,15]
 effect 2  16 threat to every enemy around the caster
-          E_THREAT base=8 ppl=0.8 target=[22,15]
+          E_THREAT base=8 ppl=0.8 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=99
 =======
@@ -444,9 +444,9 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  -88 attack power to every enemy around the caster (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=-74 ppl=-1.4 target=[22,15]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-74 ppl=-1.4 radius=10 target=[22,15]
 effect 2  24 threat to every enemy around the caster
-          E_THREAT base=16 ppl=0.8 target=[22,15]
+          E_THREAT base=16 ppl=0.8 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1735
 =======
@@ -460,9 +460,9 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  -105 attack power to every enemy around the caster (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=-95 ppl=-1 target=[22,15]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-95 ppl=-1 radius=10 target=[22,15]
 effect 2  34 threat to every enemy around the caster
-          E_THREAT base=26 ppl=0.8 target=[22,15]
+          E_THREAT base=26 ppl=0.8 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9490
 =======
@@ -476,9 +476,9 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  -158 attack power to every enemy around the caster (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=-144 ppl=-1.4 target=[22,15]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-144 ppl=-1.4 radius=10 target=[22,15]
 effect 2  42 threat to every enemy around the caster
-          E_THREAT base=34 ppl=0.8 target=[22,15]
+          E_THREAT base=34 ppl=0.8 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9747
 =======
@@ -492,9 +492,9 @@ stance    Bear, Dire Bear
 labels    21
 
 effect 1  -205 attack power to every enemy around the caster (at level 60)
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=-193 ppl=-1.4 target=[22,15]
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=-193 ppl=-1.4 radius=10 target=[22,15]
 effect 2  48 threat to every enemy around the caster
-          E_THREAT base=42 ppl=0.8 target=[22,15]
+          E_THREAT base=42 ppl=0.8 radius=10 target=[22,15]
 
 https://www.wowhead.com/forever/spell=9898
 =======

@@ -996,7 +996,7 @@ labels    19
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=10 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
 
@@ -1016,7 +1016,7 @@ labels    19
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=10 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
 

@@ -299,7 +299,7 @@ school    shadow
 refs      11732 Major Healthstone
 
 effect 1  creates item 0 to every ally around the caster
-          E_CREATE_ITEM base=1 target=[22,30]
+          E_CREATE_ITEM base=1 radius=100 target=[22,30]
 
 https://www.wowhead.com/forever/spell=20018
 =======
@@ -385,7 +385,7 @@ cost      50 mana
 range     30 yd
 
 effect 1  2701–3146 shadow damage every 1 s to every enemy around the caster (15 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=2923.487 variance=0.152 period=1000ms target=[22,15]
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=2923.487 variance=0.152 period=1000ms radius=45 target=[22,15]
 
 https://www.wowhead.com/forever/spell=1233077
 =======
@@ -918,7 +918,7 @@ attrs     cannot crit
 labels    3096, 3100
 
 effect 1  20 fire damage to every enemy around the caster (+0.045 spell power)
-          E_SCHOOL_DAMAGE base=20 sp=0.045 target=[22,15]
+          E_SCHOOL_DAMAGE base=20 sp=0.045 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=427725
 =======
@@ -2306,7 +2306,7 @@ defense   magic
 attrs     cannot crit
 
 effect 1  20 fire damage to every enemy around the caster (+0.045 spell power)
-          E_SCHOOL_DAMAGE base=20 sp=0.045 target=[22,15]
+          E_SCHOOL_DAMAGE base=20 sp=0.045 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=461230
 =======

@@ -216,7 +216,7 @@ range     50000 yd
 attrs     channeled
 
 effect 1  a dummy aura to every enemy in the area
-          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[22,7]
+          E_APPLY_AURA A_DUMMY base=0 sp=1 radius=100 target=[22,7]
 
 https://www.wowhead.com/forever/spell=22203
 =======
@@ -291,7 +291,7 @@ duration  30 s
 labels    18
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3656 family=6 mask=0x41e00 target=[22,15]
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3656 radius=100 family=6 mask=0x41e00 target=[22,15]
 
 https://www.wowhead.com/forever/spell=23401
 =======
@@ -810,7 +810,7 @@ duration  1800 s
 gcd       1.5 s
 
 effect 1  +94 stamina to every ally around the caster (at level 60)
-          E_APPLY_AURA A_MOD_STAT base=70 ppl=0.4 misc=2 target=[22,30]
+          E_APPLY_AURA A_MOD_STAT base=70 ppl=0.4 misc=2 radius=100 target=[22,30]
 effect 2  unrecognised shape
           E_HEAL_MAX_HEALTH base=0 sp=1 radius=100 target=[22,30]
 
@@ -843,7 +843,7 @@ defense   magic
 range     50000 yd
 
 effect 1  a dummy effect to every enemy in the area
-          E_DUMMY base=0 sp=1 target=[22,7]
+          E_DUMMY base=0 sp=1 radius=50000 target=[22,7]
 
 https://www.wowhead.com/forever/spell=1238817
 =======
@@ -1965,7 +1965,7 @@ stance exclude Shadowform
 labels    3096, 3100
 
 effect 1  51 shadow damage to target 87 (+0.084 spell power)
-          E_SCHOOL_DAMAGE base=51 sp=0.084 target=[87,16]
+          E_SCHOOL_DAMAGE base=51 sp=0.084 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=431690
 =======

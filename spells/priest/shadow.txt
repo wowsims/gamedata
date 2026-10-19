@@ -582,7 +582,7 @@ range     40 yd
 stance    Shadowform
 
 effect 1  summons creature 202390 to target 80
-          E_SUMMON base=3 misc=202390 misc2=5604 target=[53,80]
+          E_SUMMON base=3 misc=202390 misc2=5604 radius=3 target=[53,80]
 
 https://www.wowhead.com/forever/spell=402799
 =======
@@ -595,7 +595,7 @@ range     40 yd
 stance    Shadowform
 
 effect 1  summons creature 202391 to target 81
-          E_SUMMON base=5 misc=202391 misc2=5604 target=[53,81]
+          E_SUMMON base=5 misc=202391 misc2=5604 radius=3 target=[53,81]
 
 https://www.wowhead.com/forever/spell=402801
 =======
@@ -608,7 +608,7 @@ range     40 yd
 stance    Shadowform
 
 effect 1  summons creature 202392 to target 79
-          E_SUMMON base=5 misc=202392 misc2=5604 target=[53,79]
+          E_SUMMON base=5 misc=202392 misc2=5604 radius=3 target=[53,79]
 
 https://www.wowhead.com/forever/spell=402802
 =======
@@ -1199,7 +1199,7 @@ range     100 yd
 attrs     not a proc
 
 effect 1  70–78 shadow damage to target 76 (+0.286 spell power)
-          E_SCHOOL_DAMAGE base=74 variance=0.10810811 sp=0.286 target=[76,16]
+          E_SCHOOL_DAMAGE base=74 variance=0.10810811 sp=0.286 radius=10 target=[76,16]
 
 https://www.wowhead.com/forever/spell=413260
 =======
@@ -1390,7 +1390,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
 
@@ -1410,7 +1410,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
 
@@ -1430,7 +1430,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
 
@@ -1450,7 +1450,7 @@ labels    18
 proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  fears to every enemy around the caster
-          E_APPLY_AURA A_MOD_FEAR base=0 target=[22,15]
+          E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
 
@@ -1561,7 +1561,7 @@ gcd       1.5 s
 range     30 yd
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_RESISTANCE_EXCLUSIVE base=60 misc=32 target=[18,31]
+          E_APPLY_AURA A_MOD_RESISTANCE_EXCLUSIVE base=60 misc=32 radius=100 target=[18,31]
 
 https://www.wowhead.com/forever/spell=16874
 =======

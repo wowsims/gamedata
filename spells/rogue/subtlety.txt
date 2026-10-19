@@ -449,7 +449,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 
 effect 1  unrecognised shape
-          E_TELEPORT_UNITS base=0 target=[1,65]
+          E_TELEPORT_UNITS base=0 radius=2 target=[1,65]
 effect 2  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
 effect 3  150% weapon damage to the enemy

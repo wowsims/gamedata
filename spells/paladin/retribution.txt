@@ -185,7 +185,7 @@ effect 1  a dummy effect holding 110 to the caster
 effect 2  a dummy effect holding 25 to the caster
           E_DUMMY base=25 target=[1,0]
 effect 3  110% weapon damage to every enemy around the caster
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[22,15]
+          E_WEAPON_PERCENT_DAMAGE base=110 radius=8 target=[22,15]
 
 https://www.wowhead.com/forever/spell=407778
 =======

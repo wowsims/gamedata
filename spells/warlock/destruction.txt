@@ -325,7 +325,7 @@ attrs     periodic can crit
 labels    19
 
 effect 1  86 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
-          E_SCHOOL_DAMAGE base=82 ppl=0.4 sp=0.022 target=[18,16]
+          E_SCHOOL_DAMAGE base=82 ppl=0.4 sp=0.022 radius=10 target=[18,16]
 
 https://www.wowhead.com/forever/spell=5857
 =======
@@ -336,7 +336,7 @@ attrs     periodic can crit
 labels    19
 
 effect 1  142 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
-          E_SCHOOL_DAMAGE base=137 ppl=0.5 sp=0.022 target=[18,16]
+          E_SCHOOL_DAMAGE base=137 ppl=0.5 sp=0.022 radius=10 target=[18,16]
 
 https://www.wowhead.com/forever/spell=11681
 =======
@@ -347,7 +347,7 @@ attrs     periodic can crit
 labels    19
 
 effect 1  210.2 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
-          E_SCHOOL_DAMAGE base=206 ppl=0.7 sp=0.022 target=[18,16]
+          E_SCHOOL_DAMAGE base=206 ppl=0.7 sp=0.022 radius=10 target=[18,16]
 
 https://www.wowhead.com/forever/spell=11682
 =======
@@ -716,7 +716,7 @@ refs      1282380 Rain of Fire
 effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41450 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41450 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -736,7 +736,7 @@ refs      1282383 Rain of Fire
 effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41452 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41452 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -756,7 +756,7 @@ refs      1282384 Rain of Fire
 effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41455 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41455 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -776,7 +776,7 @@ refs      1282385 Rain of Fire
 effect 1  a dummy effect to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41456 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41456 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -796,7 +796,7 @@ refs      1282381 Rain of Fire
 effect 1  a dummy effect to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  unrecognised shape
-          E_CREATE_AREATRIGGER base=0 misc=41454 target=[87,16]
+          E_CREATE_AREATRIGGER base=0 misc=41454 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
 
@@ -873,7 +873,7 @@ range     50000 yd
 labels    19
 
 effect 1  41.5 fire damage to target 87 (at level 60, +0.083 spell power)
-          E_SCHOOL_DAMAGE base=40 ppl=0.3 sp=0.083 target=[87,16]
+          E_SCHOOL_DAMAGE base=40 ppl=0.3 sp=0.083 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282380
 =======
@@ -884,7 +884,7 @@ range     50000 yd
 labels    19
 
 effect 1  196 fire damage to target 87 (at level 60, +0.083 spell power)
-          E_SCHOOL_DAMAGE base=196 ppl=0.6 sp=0.083 target=[87,16]
+          E_SCHOOL_DAMAGE base=196 ppl=0.6 sp=0.083 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282381
 =======
@@ -895,7 +895,7 @@ range     50000 yd
 labels    19
 
 effect 1  93 fire damage to target 87 (at level 60, +0.083 spell power)
-          E_SCHOOL_DAMAGE base=91 ppl=0.4 sp=0.083 target=[87,16]
+          E_SCHOOL_DAMAGE base=91 ppl=0.4 sp=0.083 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282383
 =======
@@ -906,7 +906,7 @@ range     50000 yd
 labels    19
 
 effect 1  151.5 fire damage to target 87 (at level 60, +0.083 spell power)
-          E_SCHOOL_DAMAGE base=149 ppl=0.5 sp=0.083 target=[87,16]
+          E_SCHOOL_DAMAGE base=149 ppl=0.5 sp=0.083 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282384
 =======
@@ -917,7 +917,7 @@ range     50000 yd
 labels    19
 
 effect 1  221.2 fire damage to target 87 (at level 60, +0.083 spell power)
-          E_SCHOOL_DAMAGE base=220 ppl=0.6 sp=0.083 target=[87,16]
+          E_SCHOOL_DAMAGE base=220 ppl=0.6 sp=0.083 radius=8 target=[87,16]
 
 https://www.wowhead.com/forever/spell=1282385
 =======

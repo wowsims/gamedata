@@ -329,7 +329,7 @@ equip     needs a melee weapon in the main hand
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 2  0 physical damage every 2 s to every enemy in the target area (1 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=2000ms mechanic=15 target=[18,16]
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=2000ms radius=8 mechanic=15 target=[18,16]
 
 https://www.wowhead.com/forever/spell=412096
 =======
@@ -982,7 +982,7 @@ range     5 yd
 equip     needs a melee weapon in the off hand
 
 effect 1  50% weapon damage to every enemy in the target area
-          E_WEAPON_PERCENT_DAMAGE base=50 target=[18,16]
+          E_WEAPON_PERCENT_DAMAGE base=50 radius=8 target=[18,16]
 
 https://www.wowhead.com/forever/spell=409239
 =======
@@ -994,7 +994,7 @@ cost      50 energy
 equip     needs a melee weapon in the main hand
 
 effect 1  50% weapon damage to every enemy in the target area
-          E_WEAPON_PERCENT_DAMAGE base=50 target=[18,16]
+          E_WEAPON_PERCENT_DAMAGE base=50 radius=8 target=[18,16]
 
 https://www.wowhead.com/forever/spell=409240
 =======
@@ -2418,7 +2418,7 @@ range     25 yd
 labels    3096
 
 effect 1  unrecognised shape
-          E_TELEPORT_UNITS base=0 target=[1,65]
+          E_TELEPORT_UNITS base=0 radius=2 target=[1,65]
 
 https://www.wowhead.com/forever/spell=406754
 =======
