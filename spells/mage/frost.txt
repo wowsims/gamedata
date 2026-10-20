@@ -851,11 +851,12 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      85 mana
 labels    17
+refs      11189 Frost Warding
 
 effect 1  absorbs 162 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=16 target=[1,0]
-effect 2  reflects 0% of frost damage
-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=6143
 =======
@@ -867,11 +868,12 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      135 mana
 labels    17
+refs      11189 Frost Warding
 
 effect 1  absorbs 284 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=284 misc=16 target=[1,0]
-effect 2  reflects 0% of frost damage
-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8461
 =======
@@ -883,11 +885,12 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      195 mana
 labels    17
+refs      11189 Frost Warding
 
 effect 1  absorbs 463 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=16 target=[1,0]
-effect 2  reflects 0% of frost damage
-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=8462
 =======
@@ -899,11 +902,12 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      255 mana
 labels    17
+refs      11189 Frost Warding
 
 effect 1  absorbs 668 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=16 target=[1,0]
-effect 2  reflects 0% of frost damage
-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=10177
 =======
@@ -928,11 +932,12 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      320 mana
 labels    17
+refs      11189 Frost Warding
 
 effect 1  absorbs 913 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=16 target=[1,0]
-effect 2  reflects 0% of frost damage
-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
+effect 2  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=28609
 =======
@@ -1023,8 +1028,10 @@ labels    17
 
 effect 1  SPELLMOD_ALL_EFFECTS +15% on family 3 mask 0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=3 mask=0x2000000 target=[1,0]
-effect 2  SPELLMOD_EFFECT2 +10 on family 3 mask 0x100
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=12 family=3 mask=0x100 target=[1,0]
+effect 2  SPELLMOD_EFFECT2 +0 on family 3 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=12 family=3 mask=0x100 target=[1,0]
+effect 3  SPELLMOD_EFFECT1 +0% on family 3 mask 0x100,0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=3 family=3 mask=0x100,0x1 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11189
 =======
@@ -1447,9 +1454,14 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      305 mana
 labels    17
+refs      11189 Frost Warding, 1326891 Frigid Power
 
 effect 1  absorbs 447 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=431 ppl=2.8 misc=127 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11426
 =======
@@ -1461,9 +1473,14 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      360 mana
 labels    17
+refs      11189 Frost Warding, 1326891 Frigid Power
 
 effect 1  absorbs 561 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=542 ppl=3.2 misc=127 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=13031
 =======
@@ -1475,9 +1492,14 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      420 mana
 labels    17
+refs      11189 Frost Warding, 1326891 Frigid Power
 
 effect 1  absorbs 692 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=671 ppl=3.6 misc=127 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=13032
 =======
@@ -1489,9 +1511,14 @@ cooldown  30 s (category)
 gcd       1.5 s
 cost      480 mana
 labels    17
+refs      11189 Frost Warding, 1326891 Frigid Power
 
 effect 1  absorbs 819 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=811 ppl=4 misc=127 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=13033
 =======
