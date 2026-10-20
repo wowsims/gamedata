@@ -1138,6 +1138,19 @@ effect 3  SPELLMOD_THREAT -2000 on family 3 mask 0x200000
 
 https://www.wowhead.com/forever/spell=21879
 =======
+1326891 Frigid Power
+school    frost
+defense   magic
+duration  60 s
+labels    17
+
+effect 1  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1326891
+=======
 468512 Frost Potency
 school    arcane
 defense   magic

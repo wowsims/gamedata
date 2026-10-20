@@ -1,0 +1,290 @@
+# mage
+--- 1326891 Frigid Power
++++ 1326891 Frigid Power
+@@ -0,0 +1,12 @@
++1326891 Frigid Power
++school    frost
++defense   magic
++duration  60 s
++labels    17
++
++effect 1  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 2  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++
++https://www.wowhead.com/forever/spell=1326891
+--- 6143 Frost Ward (Rank 1)
++++ 6143 Frost Ward (Rank 1)
+@@ -1,15 +1,16 @@
+ 6143 Frost Ward (Rank 1)
+ school    frost
+ defense   magic
+ duration  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      85 mana
+ labels    17
++refs      11189 Frost Warding
+ 
+ effect 1  absorbs 162 frost damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=16 target=[1,0]
+-effect 2  reflects 0% of frost damage
+-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
++effect 2  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=6143
+--- 8461 Frost Ward (Rank 2)
++++ 8461 Frost Ward (Rank 2)
+@@ -1,15 +1,16 @@
+ 8461 Frost Ward (Rank 2)
+ school    frost
+ defense   magic
+ duration  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      135 mana
+ labels    17
++refs      11189 Frost Warding
+ 
+ effect 1  absorbs 284 frost damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=284 misc=16 target=[1,0]
+-effect 2  reflects 0% of frost damage
+-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
++effect 2  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=8461
+--- 8462 Frost Ward (Rank 3)
++++ 8462 Frost Ward (Rank 3)
+@@ -1,15 +1,16 @@
+ 8462 Frost Ward (Rank 3)
+ school    frost
+ defense   magic
+ duration  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      195 mana
+ labels    17
++refs      11189 Frost Warding
+ 
+ effect 1  absorbs 463 frost damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=16 target=[1,0]
+-effect 2  reflects 0% of frost damage
+-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
++effect 2  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=8462
+--- 10177 Frost Ward (Rank 4)
++++ 10177 Frost Ward (Rank 4)
+@@ -1,15 +1,16 @@
+ 10177 Frost Ward (Rank 4)
+ school    frost
+ defense   magic
+ duration  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      255 mana
+ labels    17
++refs      11189 Frost Warding
+ 
+ effect 1  absorbs 668 frost damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=16 target=[1,0]
+-effect 2  reflects 0% of frost damage
+-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
++effect 2  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=10177
+--- 28609 Frost Ward (Rank 5)
++++ 28609 Frost Ward (Rank 5)
+@@ -1,15 +1,16 @@
+ 28609 Frost Ward (Rank 5)
+ school    frost
+ defense   magic
+ duration  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      320 mana
+ labels    17
++refs      11189 Frost Warding
+ 
+ effect 1  absorbs 913 frost damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=16 target=[1,0]
+-effect 2  reflects 0% of frost damage
+-          E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[1,0]
++effect 2  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=28609
+--- 11189 Frost Warding
++++ 11189 Frost Warding
+@@ -1,11 +1,13 @@
+ 11189 Frost Warding
+ school    physical
+ attrs     passive
+ labels    17
+ 
+ effect 1  SPELLMOD_ALL_EFFECTS +15% on family 3 mask 0x2000000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=3 mask=0x2000000 target=[1,0]
+-effect 2  SPELLMOD_EFFECT2 +10 on family 3 mask 0x100
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=12 family=3 mask=0x100 target=[1,0]
++effect 2  SPELLMOD_EFFECT2 +0 on family 3 mask 0x100
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=12 family=3 mask=0x100 target=[1,0]
++effect 3  SPELLMOD_EFFECT1 +0% on family 3 mask 0x100,0x1
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=3 family=3 mask=0x100,0x1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=11189
+--- 11426 Ice Barrier (Rank 1)
++++ 11426 Ice Barrier (Rank 1)
+@@ -1,13 +1,18 @@
+ 11426 Ice Barrier (Rank 1)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      305 mana
+ labels    17
++refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 447 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=431 ppl=2.8 misc=127 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=11426
+--- 13031 Ice Barrier (Rank 2)
++++ 13031 Ice Barrier (Rank 2)
+@@ -1,13 +1,18 @@
+ 13031 Ice Barrier (Rank 2)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      360 mana
+ labels    17
++refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 561 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=542 ppl=3.2 misc=127 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=13031
+--- 13032 Ice Barrier (Rank 3)
++++ 13032 Ice Barrier (Rank 3)
+@@ -1,13 +1,18 @@
+ 13032 Ice Barrier (Rank 3)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      420 mana
+ labels    17
++refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 692 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=671 ppl=3.6 misc=127 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=13032
+--- 13033 Ice Barrier (Rank 4)
++++ 13033 Ice Barrier (Rank 4)
+@@ -1,13 +1,18 @@
+ 13033 Ice Barrier (Rank 4)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      480 mana
+ labels    17
++refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 819 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=811 ppl=4 misc=127 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=13033
+# rogue
+--- 2070 Sap (Rank 2)
++++ 2070 Sap (Rank 2)
+@@ -1,18 +1,18 @@
+ 2070 Sap (Rank 2)
+ school    physical
+ defense   melee
+-mechanic  mechanic 14
++mechanic  mechanic 30
+ duration  35 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=2070
+--- 6770 Sap (Rank 1)
++++ 6770 Sap (Rank 1)
+@@ -1,18 +1,18 @@
+ 6770 Sap (Rank 1)
+ school    physical
+ defense   melee
+-mechanic  mechanic 14
++mechanic  mechanic 30
+ duration  25 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=6770
+--- 11297 Sap (Rank 3)
++++ 11297 Sap (Rank 3)
+@@ -1,18 +1,18 @@
+ 11297 Sap (Rank 3)
+ school    physical
+ defense   melee
+-mechanic  mechanic 14
++mechanic  mechanic 30
+ duration  45 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11297
