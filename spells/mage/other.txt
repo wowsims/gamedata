@@ -2304,8 +2304,8 @@ stack     up to 1
 charges   1
 proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
 
-effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x0,0x0,0x8
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x0,0x0,0x8 target=[1,0]
+effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x8000,0x0,0x8
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x8000,0x0,0x8 target=[1,0]
 
 https://www.wowhead.com/forever/spell=1248808
 =======

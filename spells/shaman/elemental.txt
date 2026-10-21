@@ -1300,8 +1300,8 @@ labels    24
 
 effect 1  179–230 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
-effect 2  a dummy effect holding 53 to the enemy (at level 60)
-          E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
+effect 2  a dummy effect holding 20 to the enemy
+          E_DUMMY base=20 sp=0.714 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1238300
 =======

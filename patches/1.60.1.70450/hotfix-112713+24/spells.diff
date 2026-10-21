@@ -1,0 +1,191 @@
+# hunter
+--- 14325 Hunter's Mark (Rank 4)
++++ 14325 Hunter's Mark (Rank 4)
+@@ -1,14 +1,14 @@
+ 14325 Hunter's Mark (Rank 4)
+ school    arcane
+ duration  120 s
+ gcd       1.5 s
+ cost      60 mana
+ range     100 yd
+ labels    23
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
+ effect 2  unrecognised shape
+-          E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=71 target=[6,0]
++          E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=143 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=14325
+# mage
+--- 1279983 Flamestrike (Rank 1)
++++ 1279983 Flamestrike (Rank 1)
+@@ -1,10 +1,11 @@
+ 1279983 Flamestrike (Rank 1)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  11 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=11 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279983
+--- 1279985 Flamestrike (Rank 2)
++++ 1279985 Flamestrike (Rank 2)
+@@ -1,10 +1,11 @@
+ 1279985 Flamestrike (Rank 2)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  21 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=21 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279985
+--- 1279987 Flamestrike (Rank 3)
++++ 1279987 Flamestrike (Rank 3)
+@@ -1,10 +1,11 @@
+ 1279987 Flamestrike (Rank 3)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  33 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=33 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279987
+--- 1279988 Flamestrike (Rank 4)
++++ 1279988 Flamestrike (Rank 4)
+@@ -1,10 +1,11 @@
+ 1279988 Flamestrike (Rank 4)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  47 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=47 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279988
+--- 1279989 Flamestrike (Rank 5)
++++ 1279989 Flamestrike (Rank 5)
+@@ -1,10 +1,11 @@
+ 1279989 Flamestrike (Rank 5)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  64 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=64 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279989
+--- 1279990 Flamestrike (Rank 6)
++++ 1279990 Flamestrike (Rank 6)
+@@ -1,10 +1,11 @@
+ 1279990 Flamestrike (Rank 6)
+ school    fire
+ defense   magic
+ range     50000 yd
++attrs     not a proc
+ labels    17
+ 
+ effect 1  83 fire damage to target 87 (+0.032 spell power)
+           E_SCHOOL_DAMAGE base=83 sp=0.032 radius=5 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279990
+--- 1248808 Revelation
++++ 1248808 Revelation
+@@ -1,11 +1,11 @@
+ 1248808 Revelation
+ school    physical
+ duration  15 s
+ stack     up to 1
+ charges   1
+ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+-effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x0,0x0,0x8
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x0,0x0,0x8 target=[1,0]
++effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x8000,0x0,0x8
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x8000,0x0,0x8 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1248808
+# shaman
+--- 1238300 Lava Burst (Rank 3)
++++ 1238300 Lava Burst (Rank 3)
+@@ -1,16 +1,16 @@
+ 1238300 Lava Burst (Rank 3)
+ school    fire
+ defense   magic
+ cast      2.5 s
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      230 mana
+ range     30 yd
+ labels    24
+ 
+ effect 1  179–230 fire damage to the enemy (at level 60, +0.714 spell power)
+           E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
+-effect 2  a dummy effect holding 53 to the enemy (at level 60)
+-          E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
++effect 2  a dummy effect holding 20 to the enemy
++          E_DUMMY base=20 sp=0.714 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1238300
+# warlock
+--- 1237162 Increase Shadow Dam (Rank 1)
++++ 1237162 Increase Shadow Dam (Rank 1)
+@@ -1,11 +1,11 @@
+ 1237162 Increase Shadow Dam (Rank 1)
+ school    physical
+ attrs     passive
+ labels    19
+ 
+-effect 1  +14 fire+shadow damage done
+-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=36 target=[1,0]
++effect 1  +14 shadow damage done
++          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=32 target=[1,0]
+ effect 2  +1% cast speed
+           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1237162
+--- 1237164 Increase Shadow Dam (Rank 2)
++++ 1237164 Increase Shadow Dam (Rank 2)
+@@ -1,11 +1,11 @@
+ 1237164 Increase Shadow Dam (Rank 2)
+ school    physical
+ attrs     passive
+ labels    19
+ 
+-effect 1  +17 fire+shadow damage done
+-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=36 target=[1,0]
++effect 1  +17 shadow damage done
++          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=32 target=[1,0]
+ effect 2  +2% cast speed
+           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1237164
+--- 1237165 Increase Shadow Dam (Rank 3)
++++ 1237165 Increase Shadow Dam (Rank 3)
+@@ -1,11 +1,11 @@
+ 1237165 Increase Shadow Dam (Rank 3)
+ school    physical
+ attrs     passive
+ labels    19
+ 
+-effect 1  +21 fire+shadow damage done
+-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=36 target=[1,0]
++effect 1  +21 shadow damage done
++          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=32 target=[1,0]
+ effect 2  +2% cast speed
+           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1237165
