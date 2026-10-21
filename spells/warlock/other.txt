@@ -1080,8 +1080,8 @@ school    physical
 attrs     passive
 labels    19
 
-effect 1  +14 fire+shadow damage done
-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=36 target=[1,0]
+effect 1  +14 shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=32 target=[1,0]
 effect 2  +1% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
 
@@ -1092,8 +1092,8 @@ school    physical
 attrs     passive
 labels    19
 
-effect 1  +17 fire+shadow damage done
-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=36 target=[1,0]
+effect 1  +17 shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=32 target=[1,0]
 effect 2  +2% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
 
@@ -1104,8 +1104,8 @@ school    physical
 attrs     passive
 labels    19
 
-effect 1  +21 fire+shadow damage done
-          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=36 target=[1,0]
+effect 1  +21 shadow damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=32 target=[1,0]
 effect 2  +2% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
 
