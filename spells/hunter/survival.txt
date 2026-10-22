@@ -199,49 +199,7 @@ effect 1  a dummy aura holding 5000 to the enemy
 
 https://www.wowhead.com/forever/spell=19184
 =======
-13813 Explosive Trap (Rank 1)
-school    fire
-duration  60 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      275 mana
-labels    23
-refs      13812 Explosive Trap Effect
-
-effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 misc2=3 target=[47,0]
-
-https://www.wowhead.com/forever/spell=13813
-=======
-14316 Explosive Trap (Rank 2)
-school    fire
-duration  60 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      395 mana
-labels    23
-refs      14314 Explosive Trap Effect
-
-effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 misc2=3 target=[47,0]
-
-https://www.wowhead.com/forever/spell=14316
-=======
-14317 Explosive Trap (Rank 3)
-school    fire
-duration  60 s
-cooldown  30 s (category)
-gcd       1.5 s
-cost      520 mana
-labels    23
-refs      14315 Explosive Trap Effect
-
-effect 1  unrecognised shape
-          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 misc2=3 target=[47,0]
-
-https://www.wowhead.com/forever/spell=14317
-=======
-13812 Explosive Trap Effect (Rank 1)
+13812 Explosive Trap (Rank 1)
 school    fire
 defense   magic
 duration  20 s
@@ -255,7 +213,21 @@ effect 2  unrecognised shape
 
 https://www.wowhead.com/forever/spell=13812
 =======
-14314 Explosive Trap Effect (Rank 2)
+13813 Explosive Trap (Rank 1)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      275 mana
+labels    23
+refs      13812 Explosive Trap
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 misc2=3 target=[47,0]
+
+https://www.wowhead.com/forever/spell=13813
+=======
+14314 Explosive Trap (Rank 2)
 school    fire
 defense   magic
 duration  20 s
@@ -269,7 +241,7 @@ effect 2  unrecognised shape
 
 https://www.wowhead.com/forever/spell=14314
 =======
-14315 Explosive Trap Effect (Rank 3)
+14315 Explosive Trap (Rank 3)
 school    fire
 defense   magic
 duration  20 s
@@ -282,6 +254,34 @@ effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
 
 https://www.wowhead.com/forever/spell=14315
+=======
+14316 Explosive Trap (Rank 2)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      395 mana
+labels    23
+refs      14314 Explosive Trap
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 misc2=3 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14316
+=======
+14317 Explosive Trap (Rank 3)
+school    fire
+duration  60 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      520 mana
+labels    23
+refs      14315 Explosive Trap
+
+effect 1  unrecognised shape
+          E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 misc2=3 target=[47,0]
+
+https://www.wowhead.com/forever/spell=14317
 =======
 1310532 Expose Prey
 school    physical

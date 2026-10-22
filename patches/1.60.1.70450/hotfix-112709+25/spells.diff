@@ -1,0 +1,251 @@
+# hunter
+--- 13812 Explosive Trap (Rank 1)
++++ 13812 Explosive Trap (Rank 1)
+@@ -1,13 +1,13 @@
+-13812 Explosive Trap Effect (Rank 1)
++13812 Explosive Trap (Rank 1)
+ school    fire
+ defense   magic
+ duration  20 s
+ attrs     periodic can crit
+ labels    23
+ 
+ effect 1  104–135 fire damage to every enemy around the caster (at level 60)
+           E_SCHOOL_DAMAGE base=115 ppl=0.8 variance=0.26086956 radius=10 target=[22,15]
+ effect 2  unrecognised shape
+           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=15 period=2000ms radius=10 target=[28,0]
+ 
+ https://www.wowhead.com/forever/spell=13812
+--- 13813 Explosive Trap (Rank 1)
++++ 13813 Explosive Trap (Rank 1)
+@@ -1,13 +1,13 @@
+ 13813 Explosive Trap (Rank 1)
+ school    fire
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      275 mana
+ labels    23
+-refs      13812 Explosive Trap Effect
++refs      13812 Explosive Trap
+ 
+ effect 1  unrecognised shape
+           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164839 misc2=3 target=[47,0]
+ 
+ https://www.wowhead.com/forever/spell=13813
+--- 14314 Explosive Trap (Rank 2)
++++ 14314 Explosive Trap (Rank 2)
+@@ -1,13 +1,13 @@
+-14314 Explosive Trap Effect (Rank 2)
++14314 Explosive Trap (Rank 2)
+ school    fire
+ defense   magic
+ duration  20 s
+ attrs     periodic can crit
+ labels    23
+ 
+ effect 1  145–193 fire damage to every enemy around the caster (at level 60)
+           E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.29447854 radius=10 target=[22,15]
+ effect 2  unrecognised shape
+           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=24 period=2000ms radius=10 target=[28,0]
+ 
+ https://www.wowhead.com/forever/spell=14314
+--- 14315 Explosive Trap (Rank 3)
++++ 14315 Explosive Trap (Rank 3)
+@@ -1,13 +1,13 @@
+-14315 Explosive Trap Effect (Rank 3)
++14315 Explosive Trap (Rank 3)
+ school    fire
+ defense   magic
+ duration  20 s
+ attrs     periodic can crit, not a proc
+ labels    23
+ 
+ effect 1  208–265 fire damage to every enemy in the area (at level 60)
+           E_SCHOOL_DAMAGE base=229 ppl=1.2 variance=0.24454148 radius=10 target=[22,7]
+ effect 2  unrecognised shape
+           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=33 period=2000ms radius=10 target=[28,0]
+ 
+ https://www.wowhead.com/forever/spell=14315
+--- 14316 Explosive Trap (Rank 2)
++++ 14316 Explosive Trap (Rank 2)
+@@ -1,13 +1,13 @@
+ 14316 Explosive Trap (Rank 2)
+ school    fire
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      395 mana
+ labels    23
+-refs      14314 Explosive Trap Effect
++refs      14314 Explosive Trap
+ 
+ effect 1  unrecognised shape
+           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164879 misc2=3 target=[47,0]
+ 
+ https://www.wowhead.com/forever/spell=14316
+--- 14317 Explosive Trap (Rank 3)
++++ 14317 Explosive Trap (Rank 3)
+@@ -1,13 +1,13 @@
+ 14317 Explosive Trap (Rank 3)
+ school    fire
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      520 mana
+ labels    23
+-refs      14315 Explosive Trap Effect
++refs      14315 Explosive Trap
+ 
+ effect 1  unrecognised shape
+           E_SUMMON_OBJECT_SLOT1 base=0 sp=1 misc=164880 misc2=3 target=[47,0]
+ 
+ https://www.wowhead.com/forever/spell=14317
+# mage
+--- 400589 Missile Barrage
++++ 400589 Missile Barrage
+@@ -1,15 +1,15 @@
+ 400589 Missile Barrage
+ school    arcane
+ defense   magic
+ duration  15 s
+ labels    17
+ refs      400588 Missile Barrage
+ 
+ effect 1  SPELLMOD_DURATION -50% on family 3 mask 0x800
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=1 family=3 mask=0x800 target=[1,0]
+-effect 2  SPELLMOD_ACTIVATION_TIME -500 on family 3 mask 0x800
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=19 family=3 mask=0x800 target=[1,0]
++effect 2  a dummy aura holding -500
++          E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
+ effect 3  SPELLMOD_COST -100% on family 3 mask 0x800
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x800 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=400589
+# warlock
+--- 980 Bane of Agony (Rank 1)
++++ 980 Bane of Agony (Rank 1)
+@@ -1,16 +1,18 @@
+ 980 Bane of Agony (Rank 1)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      25 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  6 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=980
+--- 1014 Bane of Agony (Rank 2)
++++ 1014 Bane of Agony (Rank 2)
+@@ -1,16 +1,18 @@
+ 1014 Bane of Agony (Rank 2)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      50 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  10 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1014
+--- 6217 Bane of Agony (Rank 3)
++++ 6217 Bane of Agony (Rank 3)
+@@ -1,16 +1,18 @@
+ 6217 Bane of Agony (Rank 3)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      90 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  14 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=6217
+--- 11711 Bane of Agony (Rank 4)
++++ 11711 Bane of Agony (Rank 4)
+@@ -1,16 +1,18 @@
+ 11711 Bane of Agony (Rank 4)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      130 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  21 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11711
+--- 11712 Bane of Agony (Rank 5)
++++ 11712 Bane of Agony (Rank 5)
+@@ -1,16 +1,18 @@
+ 11712 Bane of Agony (Rank 5)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      170 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  33 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=33 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11712
+--- 11713 Bane of Agony (Rank 6)
++++ 11713 Bane of Agony (Rank 6)
+@@ -1,16 +1,18 @@
+ 11713 Bane of Agony (Rank 6)
+ school    shadow
+ defense   magic
+ duration  24 s
+ gcd       1.5 s
+ cost      215 mana
+ range     30 yd
+ attrs     periodic can crit
+ labels    19
+ 
+ effect 1  46 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.133 period=2000ms target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
++effect 3  a dummy aura to the enemy
++          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=11713
