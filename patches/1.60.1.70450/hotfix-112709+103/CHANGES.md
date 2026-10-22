@@ -1,0 +1,250 @@
+# Hotfix: 1.60.1.70450, hotfix pushes 112709, 112720, 112864, 113016, 113091 and 99 more
+
+- Build: 1.60.1.70450 (`wow_classic_beta` on Blizzard's CDN)
+- Hotfixes: applied, 5053 pushes (38355 entries)
+- Previous: 1.60.1.70450 with 4951 hotfix pushes (2026-10-22)
+- Exported by wowsims/forever@d6429b71ce72 on 2026-10-22
+
+## Hotfix pushes
+
+- 112709: 452 entries (was 450)
+- 112720: 1692 entries
+- 112864: 2047 entries (was 2041)
+- 113016: 1281 entries
+- 113091: 223 entries
+- 113092: 83 entries
+- 113125: 1 entries
+- 16794290: 6 entries
+- 17066039: 6 entries
+- 17066040: 6 entries
+- 17066041: 6 entries
+- 17066042: 6 entries
+- 17066043: 6 entries
+- 17066044: 6 entries
+- 17066045: 6 entries
+- 17066046: 6 entries
+- 17066047: 6 entries
+- 17066048: 6 entries
+- 17066049: 6 entries
+- 17066050: 6 entries
+- 17066051: 6 entries
+- 17066052: 6 entries
+- 17066053: 6 entries
+- 17066054: 6 entries
+- 17066055: 6 entries
+- 17066056: 6 entries
+- 17066057: 6 entries
+- 17066058: 6 entries
+- 17066059: 6 entries
+- 17066060: 6 entries
+- 17066061: 6 entries
+- 17066062: 6 entries
+- 17066063: 6 entries
+- 17066064: 6 entries
+- 17066065: 6 entries
+- 17066066: 6 entries
+- 17066067: 6 entries
+- 17066068: 6 entries
+- 17066069: 6 entries
+- 17066070: 6 entries
+- 17066071: 6 entries
+- 17066072: 6 entries
+- 17066073: 6 entries
+- 17066074: 6 entries
+- 17066075: 6 entries
+- 17066076: 6 entries
+- 17066077: 6 entries
+- 17066078: 6 entries
+- 17066079: 6 entries
+- 17066080: 6 entries
+- 17066081: 6 entries
+- 17066082: 6 entries
+- 17066083: 6 entries
+- 17066084: 6 entries
+- 17066085: 6 entries
+- 17066086: 6 entries
+- 17066087: 6 entries
+- 17066088: 6 entries
+- 17066089: 6 entries
+- 17066090: 6 entries
+- 17066091: 6 entries
+- 17066092: 6 entries
+- 17066093: 6 entries
+- 17066094: 6 entries
+- 17066095: 6 entries
+- 17066096: 6 entries
+- 17066097: 6 entries
+- 17066098: 6 entries
+- 17066099: 6 entries
+- 17066100: 6 entries
+- 17066101: 6 entries
+- 17066102: 6 entries
+- 17066103: 6 entries
+- 17066104: 6 entries
+- 17066105: 6 entries
+- 17066106: 6 entries
+- 17066107: 6 entries
+- 17066108: 6 entries
+- 17066109: 6 entries
+- 17066110: 6 entries
+- 17066117: 6 entries
+- 17066118: 6 entries
+- 17066119: 6 entries
+- 17066120: 6 entries
+- 17066121: 6 entries
+- 17066122: 6 entries
+- 17066123: 6 entries
+- 17066124: 6 entries
+- 17066125: 6 entries
+- 17066126: 6 entries
+- 17066127: 6 entries
+- 17066129: 6 entries
+- 17066130: 6 entries
+- 17066131: 6 entries
+- 17066132: 6 entries
+- 17066133: 6 entries
+- 17066134: 6 entries
+- 17066135: 6 entries
+- 17066136: 6 entries
+- 17066137: 6 entries
+- 17066138: 6 entries
+- 17066139: 6 entries
+- 17066140: 6 entries
+- 17066141: 6 entries
+
+## Spells
+
+No class spell changed.
+
+## Items
+
+124 added, 0 removed, 0 changed.
+
+- added 17074 Shadowstrike
+- added 288823 Arcanist Crown
+- added 288824 Arcanist Leggings
+- added 288825 Arcanist Mantle
+- added 288826 Arcanist Robes
+- added 288827 Arcanist Bindings
+- added 288828 Arcanist Boots
+- added 288829 Arcanist Gloves
+- added 288830 Arcanist Belt
+- added 288831 Felheart Slippers
+- added 288832 Felheart Bracers
+- added 288833 Felheart Gloves
+- added 288834 Felheart Belt
+- added 288835 Felheart Shoulder Pads
+- added 288836 Felheart Horns
+- added 288837 Felheart Robes
+- added 288838 Felheart Pants
+- added 288839 Boots of Prophecy
+- added 288840 Gloves of Prophecy
+- added 288841 Circlet of Prophecy
+- added 288842 Pants of Prophecy
+- added 288843 Robes of Prophecy
+- added 288844 Mantle of Prophecy
+- added 288845 Girdle of Prophecy
+- added 288846 Vambraces of Prophecy
+- added 288847 Nightslayer Chestpiece
+- added 288848 Nightslayer Cover
+- added 288849 Nightslayer Pants
+- added 288850 Nightslayer Shoulder Pads
+- added 288851 Nightslayer Boots
+- added 288852 Nightslayer Bracelets
+- added 288853 Nightslayer Gloves
+- added 288854 Nightslayer Belt
+- added 288855 Cenarion Belt
+- added 288856 Cenarion Boots
+- added 288857 Cenarion Bracers
+- added 288858 Cenarion Gloves
+- added 288859 Cenarion Vestments
+- added 288860 Cenarion Helm
+- added 288861 Cenarion Leggings
+- added 288862 Cenarion Spaulders
+- added 288863 Earthfury Boots
+- added 288864 Earthfury Belt
+- added 288865 Earthfury Gauntlets
+- added 288866 Earthfury Bracers
+- added 288867 Earthfury Vestments
+- added 288868 Earthfury Helmet
+- added 288869 Earthfury Legguards
+- added 288870 Earthfury Epaulets
+- added 288871 Giantstalker's Breastplate
+- added 288872 Giantstalker's Helmet
+- added 288873 Giantstalker's Leggings
+- added 288874 Giantstalker's Epaulets
+- added 288875 Giantstalker's Boots
+- added 288876 Giantstalker's Bracers
+- added 288877 Giantstalker's Belt
+- added 288878 Giantstalker's Gloves
+- added 288879 Lawbringer Chestguard
+- added 288880 Lawbringer Helm
+- added 288881 Lawbringer Legplates
+- added 288882 Lawbringer Spaulders
+- added 288883 Lawbringer Bracers
+- added 288884 Lawbringer Belt
+- added 288885 Lawbringer Boots
+- added 288886 Lawbringer Gauntlets
+- added 288887 Bracers of Might
+- added 288888 Sabatons of Might
+- added 288889 Gauntlets of Might
+- added 288890 Belt of Might
+- added 288891 Breastplate of Might
+- added 288892 Helm of Might
+- added 288893 Legplates of Might
+- added 288894 Pauldrons of Might
+- added 288896 Superior Healing Potion
+- added 288897 Superior Mana Potion
+- added 288898 Swiftness Potion
+- added 288900 Earthshaker
+- added 288901 Spinal Reaper
+- added 288902 Hyperthermically Insulated Lava Dredger
+- added 288903 Shadowstrike
+- added 288904 Bonereaver's Edge
+- added 288905 Obsidian Edged Blade
+- added 288906 Staff of Dominance
+- added 288907 Gutgore Ripper
+- added 288908 Aurastone Hammer
+- added 288909 Perdition's Blade
+- added 288910 Sorcerous Dagger
+- added 288911 Striker's Mark
+- added 288913 Blastershot Launcher
+- added 288914 Crimson Shocker
+- added 288915 Azuresong Mageblade
+- added 288916 Drillborer Disk
+- added 288917 Fire Runed Grimoire
+- added 288918 Malistar's Defender
+- added 288919 Band of Accuria
+- added 288920 Medallion of Steadfast Might
+- added 288921 Cloak of the Shrouded Mists
+- added 288922 Dragon's Blood Cape
+- added 288923 Choker of Enlightenment
+- added 288924 Seal of the Archmagus
+- added 288925 Fireproof Cloak
+- added 288926 Choker of the Fire Lord
+- added 288927 Quick Strike Ring
+- added 288928 Heavy Dark Iron Ring
+- added 288929 Band of Sulfuras
+- added 288930 Cauterizing Band
+- added 288931 Ring of Spell Power
+- added 289081 Noggenfogger Elixir
+- added 289082 Elixir of Endless Intellect
+- added 289083 Elixir of Endless Power
+- added 289084 Elixir of Endless Healing
+- added 289086 Elixir of Endless Rapidity
+- added 289087 Elixir of Endless Opportunity
+- added 289088 Scroll of Endless Fortitude
+- added 289292 Hammer of Bestial Fury
+- added 289294 Thunderfury, Blessed Blade of the Windseeker
+- added 289295 Sulfuras, Hand of Ragnaros
+- added 289296 Benediction
+- added 289297 Anathema
+- added 289303 Rhok'delar, Longbow of the Ancient Keepers
+- added 289321 Elixir of Endless Mana
+- added 289329 Elixir of Endless Growth
+- added 289330 Scroll of Endless Speed
+- added 289334 Elixir of Endless Experience
+
+## Files
+
+- [`items.txt`](items.txt)
