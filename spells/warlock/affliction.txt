@@ -27,6 +27,8 @@ effect 1  6 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=980
 =======
@@ -44,6 +46,8 @@ effect 1  10 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1014
 =======
@@ -61,6 +65,8 @@ effect 1  14 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=6217
 =======
@@ -78,6 +84,8 @@ effect 1  21 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11711
 =======
@@ -95,6 +103,8 @@ effect 1  33 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=33 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11712
 =======
@@ -112,6 +122,8 @@ effect 1  46 shadow damage every 2 s to the enemy (12 ticks, +0.133 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.133 period=2000ms target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
+effect 3  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=11713
 =======

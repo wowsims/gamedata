@@ -1973,8 +1973,8 @@ refs      400588 Missile Barrage
 
 effect 1  SPELLMOD_DURATION -50% on family 3 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=1 family=3 mask=0x800 target=[1,0]
-effect 2  SPELLMOD_ACTIVATION_TIME -500 on family 3 mask 0x800
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=19 family=3 mask=0x800 target=[1,0]
+effect 2  a dummy aura holding -500
+          E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
 effect 3  SPELLMOD_COST -100% on family 3 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x800 target=[1,0]
 
