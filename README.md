@@ -37,10 +37,12 @@ placed spell that triggers it. Anything none of those places is in `other.txt`.
 
 ## Where the data comes from
 
-- **Build:** `wow_classic_beta` as `us.version.battle.net` serves it, read off the CDN by
+- **Build:** `wowf` as `us.version.battle.net` serves it, read off the CDN by
   [wowsims/forever](https://github.com/wowsims/forever)'s `tools/db2tool`.
-- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`. It lags a build push, so a new build
-  is recorded first without hotfixes (`patch/`), and the hotfixes follow as `hotfix-<push>/`. Push ids
+- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`. Raidbots collects no `wowf` cache and
+  calls its Forever files `classic_beta`, usually for an older build than the CDN serves, so db2tool
+  carries the cache onto the CDN build (`--carry-hotfixes`); the update's Hotfixes line says which build
+  the cache is for. Later pushes follow as `hotfix-<push>/`. Push ids
   are not in time order, so a run compares the whole push list with `hotfix-pushes.txt`, not the highest
   id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
 - **Spells:** `tools/spelldata -dump` from forever, after `gen_spelldata -everyClassSpell` has built the
