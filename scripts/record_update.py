@@ -119,7 +119,7 @@ def main():
 
     named = ", ".join(map(str, new_pushes[:5])) + (f" and {len(new_pushes) - 5} more" if len(new_pushes) > 5 else "")
     lines = [f"# {kind}: {args.version}" + (f", hotfix push{'es' if len(new_pushes) > 1 else ''} {named}" if kind == "Hotfix" else ""), ""]
-    lines.append(f"- Build: {args.version} (`wow_classic_beta` on Blizzard's CDN)")
+    lines.append(f"- Build: {args.version} (`wowf` on Blizzard's CDN)")
     lines.append(f"- Hotfixes: {args.hotfixes}")
     if state:
         lines.append(f"- Previous: {state['version']} with {len(old_pushes)} hotfix pushes ({state.get('date', '?')})")
