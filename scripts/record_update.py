@@ -3,11 +3,11 @@
 now, writes what changed to its own folder under patches/<version>/, then replaces spells/ and
 items/ with the export and moves state.json on.
 
-    record_update.py --repo . --export <dir> --version 1.60.1.70009 --build 70009 \
-        --pushes pushes.txt --hotfixes applied --forever <sha> [--body <file>]
+    record_update.py --repo . --export <dir> --product wowf --version 1.60.1.70009 --build 70009 \
+        --pushes pushes.txt --hotfixes "applied, 4343 pushes (36624 entries)" --forever <sha> [--body <file>]
 
-pushes.txt is dbcache_info.py's list of the hotfix pushes the export applied (empty when it applied
-none); it replaces hotfix-pushes.txt, and the pushes it adds are the update's hotfixes.
+pushes.txt is dbcache_info.py's list of the hotfix pushes in the cache the export applied (empty only
+when no cache applied); it replaces hotfix-pushes.txt, and the pushes it adds are the update's hotfixes.
 
 <dir> holds spells/<class>/<spec>.txt (split_spells.py) and items/items.txt (export_items.py).
 
@@ -88,6 +88,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--repo", required=True)
     p.add_argument("--export", required=True)
+    p.add_argument("--product", required=True, help="Blizzard's product the build is read from")
     p.add_argument("--version", required=True)
     p.add_argument("--build", required=True)
     p.add_argument("--pushes", required=True, help="dbcache_info.py's push list for the export")
@@ -119,7 +120,7 @@ def main():
 
     named = ", ".join(map(str, new_pushes[:5])) + (f" and {len(new_pushes) - 5} more" if len(new_pushes) > 5 else "")
     lines = [f"# {kind}: {args.version}" + (f", hotfix push{'es' if len(new_pushes) > 1 else ''} {named}" if kind == "Hotfix" else ""), ""]
-    lines.append(f"- Build: {args.version} (`wowf` on Blizzard's CDN)")
+    lines.append(f"- Build: {args.version} (`{args.product}` on Blizzard's CDN)")
     lines.append(f"- Hotfixes: {args.hotfixes}")
     if state:
         lines.append(f"- Previous: {state['version']} with {len(old_pushes)} hotfix pushes ({state.get('date', '?')})")

@@ -39,12 +39,11 @@ placed spell that triggers it. Anything none of those places is in `other.txt`.
 
 - **Build:** `wowf` as `us.version.battle.net` serves it, read off the CDN by
   [wowsims/forever](https://github.com/wowsims/forever)'s `tools/db2tool`.
-- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`. Raidbots collects no `wowf` cache and
-  calls its Forever files `classic_beta`, usually for an older build than the CDN serves, so db2tool
-  carries the cache onto the CDN build (`--carry-hotfixes`); the update's Hotfixes line says which build
-  the cache is for. Later pushes follow as `hotfix-<push>/`. Push ids
-  are not in time order, so a run compares the whole push list with `hotfix-pushes.txt`, not the highest
-  id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
+- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`: the newest `classic_beta` file for the
+  CDN build or an older one, carried onto the CDN build with db2tool's `--carry-hotfixes`; the update's
+  Hotfixes line names the build it was carried from. With no such file the line says so and no hotfixes
+  apply. Later pushes follow as `hotfix-<push>/`. Push ids are not in time order, so a run compares the
+  whole push list with `hotfix-pushes.txt`, not the highest id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
 - **Spells:** `tools/spelldata -dump` from forever, after `gen_spelldata -everyClassSpell` has built the
   spell store from every spell whose class family is a player class. Each card shows the row's columns
   in words and as the client's own values.
@@ -68,5 +67,5 @@ python3 ../gamedata/scripts/split_spells.py . tools/database/wowsims.db /tmp/dum
 python3 ../gamedata/scripts/export_items.py tools/database/wowsims.db /tmp/export/items/items.txt
 cd ../gamedata
 python3 scripts/record_update.py --repo . --export /tmp/export --version <version> --build <build> \
-    --pushes <pushes.txt from scripts/dbcache_info.py> --hotfixes "<how>" --forever <sha>
+    --product wowf --pushes <pushes.txt from scripts/dbcache_info.py> --hotfixes "<how>" --forever <sha>
 ```
