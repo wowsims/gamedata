@@ -2,9 +2,9 @@ name: Update game data
 
 # Exports the Forever client's class spells and items and records what changed since the last run.
 #
-# Each run reads the build Blizzard's CDN serves for wowf and the newest raidbots classic_beta hotfix
-# cache for that build or an older one, carried onto the CDN build (see wowsims/forever's
-# docs/spell_data/partial-updates.md).
+# Each run reads the build Blizzard's CDN serves for wowf and the newest raidbots forever hotfix
+# cache for that build or an older one, carried onto the CDN build with the last beta cache under it
+# (see wowsims/forever's docs/spell_data/partial-updates.md).
 # If neither moved since state.json, it stops there.
 # Otherwise it checks out wowsims/forever, extracts the client database with its db2tool, dumps
 # every class spell with tools/spelldata (split per spec by scripts/split_spells.py) and every item
@@ -31,6 +31,9 @@ concurrency:
 env:
     PRODUCT: wowf
     DBCACHE_LIST_URL: https://www.raidbots.com/api/dbcache/verified
+    # The last beta cache (build 70532) holds items the beta looked up that the live cache lacks; every
+    # export carries it under the live one, so only the live cache's pushes can move.
+    BETA_DBCACHE_URL: https://storage.googleapis.com/raidbots-static/wow%2F70532%2FenUS%2FDBCache-aBWtgUUog1pUdSFsVK1fE4.bin
 
 jobs:
     update:
@@ -54,13 +57,15 @@ jobs:
                   version=$(echo "$row" | cut -d'|' -f6)
                   test -n "$config" && test -n "$build" && test -n "$version"
 
-                  # The newest classic_beta cache for the CDN build or an older one. The list is read
+                  # The newest forever cache for the CDN build or an older one. The list is read
                   # first so a failed request stops the run instead of exporting without hotfixes.
                   mkdir -p "$RUNNER_TEMP/caches"
                   list=$(curl -fsS "$DBCACHE_LIST_URL")
+                  beta_dbcache="$RUNNER_TEMP/caches/BetaDBCache.bin"
+                  curl -fsSL -o "$beta_dbcache" "$BETA_DBCACHE_URL"
                   cache_url=$(echo "$list" | BUILD="$build" python3 -c '
                   import json, os, sys
-                  rows = [r for r in json.load(sys.stdin)["data"] if r["version"] == "classic_beta" and r["build"] <= int(os.environ["BUILD"])]
+                  rows = [r for r in json.load(sys.stdin)["data"] if r["version"] == "forever" and r["build"] <= int(os.environ["BUILD"])]
                   print(max(rows, key=lambda r: r["created"])["url"] if rows else "")
                   ')
                   dbcache=""
@@ -73,9 +78,10 @@ jobs:
                       if [ "$cache_build" != "$build" ]; then
                           hotfixes="$hotfixes, carried from build $cache_build"
                       fi
+                      hotfixes="$hotfixes, with the beta build 70532 cache under it"
                   else
                       : > "$RUNNER_TEMP/pushes.txt"
-                      hotfixes="none: no raidbots classic_beta cache for build <= $build"
+                      hotfixes="beta build 70532 cache only: no raidbots forever cache for build <= $build"
                   fi
 
                   echo "Current $PRODUCT build: $version, hotfixes: $hotfixes"
@@ -85,6 +91,7 @@ jobs:
                       echo "version=$version"
                       echo "hotfixes=$hotfixes"
                       echo "dbcache=$dbcache"
+                      echo "beta_dbcache=$beta_dbcache"
                   } >> "$GITHUB_OUTPUT"
 
             - name: Check whether anything moved 🧭
@@ -150,10 +157,11 @@ jobs:
               working-directory: forever
               env:
                   DBCACHE: ${{ steps.build.outputs.dbcache }}
+                  BETA_DBCACHE: ${{ steps.build.outputs.beta_dbcache }}
               run: |
                   make sim/core/proto/api.pb.go binary_dist/dist.go
-                  args=()
-                  test -n "$DBCACHE" && args+=(--dbcache "$DBCACHE" --carry-hotfixes)
+                  args=(--dbcache "$BETA_DBCACHE" --carry-hotfixes)
+                  test -n "$DBCACHE" && args+=(--dbcache "$DBCACHE")
                   go run ./tools/db2tool -s "$PWD/tools/database/generator-settings.json" --output "$PWD/tools/database/wowsims.db" --cdn "${args[@]}"
 
             # -everyClassSpell roots the store at every class spell, not only what the sim reaches,
