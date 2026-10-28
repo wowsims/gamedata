@@ -109,8 +109,8 @@ cost      20 mana
 labels    23
 proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
 
-effect 1  +20 ranged attack power
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=20 target=[1,0]
+effect 1  +15 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=15 target=[1,0]
 effect 2  casts 6150 Quick Shots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
 
@@ -125,8 +125,8 @@ cost      35 mana
 labels    23
 proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
 
-effect 1  +35 ranged attack power
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=35 target=[1,0]
+effect 1  +22 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=22 target=[1,0]
 effect 2  casts 6150 Quick Shots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
 
@@ -141,8 +141,8 @@ cost      50 mana
 labels    23
 proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
 
-effect 1  +50 ranged attack power
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=50 target=[1,0]
+effect 1  +30 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=30 target=[1,0]
 effect 2  casts 6150 Quick Shots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
 
@@ -157,8 +157,8 @@ cost      70 mana
 labels    23
 proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
 
-effect 1  +70 ranged attack power
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=70 target=[1,0]
+effect 1  +38 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=38 target=[1,0]
 effect 2  casts 6150 Quick Shots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
 
@@ -173,8 +173,8 @@ cost      90 mana
 labels    23
 proc      hears PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY; no stated chance, the rate has to come from an override
 
-effect 1  +90 ranged attack power
-          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=90 target=[1,0]
+effect 1  +47 ranged attack power
+          E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=47 target=[1,0]
 effect 2  casts 6150 Quick Shots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6150 target=[1,0]
 

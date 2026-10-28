@@ -1,0 +1,334 @@
+--- 7586 Tharnariun's Hope
++++ 7586 Tharnariun's Hope
+@@ -1,6 +1,6 @@
+ 7586 Tharnariun's Hope
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ unique    yes
+-effect    use: 9437 Placing Bear Trap (1 charge, consumed)
++effect    use: 9437 Placing Bear Trap (30 s cooldown)
+--- 260825 Ultralight Goblin Glider
++++ 260825 Ultralight Goblin Glider
+@@ -1,5 +1,5 @@
+ 260825 Ultralight Goblin Glider
+ item      uncommon, Other
+ level     ilvl 1
+ binds     binds when used
+-effect    use: 1271049 Gliding on Air (180 s cooldown)
++effect    use: 1271049 Gliding on Air (300 s cooldown)
+--- 271668 Thendal Survivalist's Shirt
++++ 271668 Thendal Survivalist's Shirt
+@@ -1,4 +1,4 @@
+ 271668 Thendal Survivalist's Shirt
+-item      common, Leather, shirt
++item      common, Miscellaneous, shirt
+ level     ilvl 1
+ sells     1 copper
+--- 271898 Charged Crystal
++++ 271898 Charged Crystal
+@@ -1,6 +1,6 @@
+ 271898 Charged Crystal
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-text      "A gem that hums gently and seems to emit a static charge. On its own it emits a tiny amount of light and small flashes can be seen right under the surface, as if a tiny storm was trapped within."
++text      "A gem that hums gently and seems to emit a static charge. On its own, it emits a tiny amount of light, and small flashes can be seen right under the surface, as if a tiny storm was trapped within."
+--- 271912 Moist Crystal
++++ 271912 Moist Crystal
+@@ -1,6 +1,6 @@
+ 271912 Moist Crystal
+ item      common, Quest
+ level     ilvl 1
+ binds     quest item
+ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+-text      "A gem that seems to collect condensation on the surface making it perpetually wet and hums gently. When turned in the light, it looks as if there is water trapped within the crystal itself."
++text      "A gem that seems to collect condensation on the surface, making it perpetually wet and hums gently. When turned in the light, it looks as if there is water trapped within the crystal itself."
+--- 272028 Freya's Sigil
++++ 272028 Freya's Sigil
+@@ -1,6 +1,6 @@
+ 272028 Freya's Sigil
+ item      rare, Quest
+ level     ilvl 60
+ binds     quest item
+ unique    yes
+-text      "A stone marked with the sigil of the titan Freya"
++text      "A stone marked with the sigil of the titan Freya."
+--- 275968 Initiate's Signet of Ferocity
++++ 275968 Initiate's Signet of Ferocity
+@@ -1,6 +1,5 @@
+-275968 Ferocious Watcher's Signet
++275968 Initiate's Signet of Ferocity
+ item      rare, Miscellaneous, finger
+ level     ilvl 63, requires level 60
+-tag       Rank 1
+ binds     binds when picked up
+ stats     +20 attack power, +10 stamina, +10 hit rating
+--- 275969 Initiate's Signet of Brilliance
++++ 275969 Initiate's Signet of Brilliance
+@@ -1,6 +1,5 @@
+-275969 Brilliant Watcher's Signet
++275969 Initiate's Signet of Brilliance
+ item      rare, Miscellaneous, finger
+ level     ilvl 63, requires level 60
+-tag       Rank 1
+ binds     binds when picked up
+ stats     +8 spell power, +6 stamina, +14 crit rating
+--- 275970 Initiate's Signet of Resolve
++++ 275970 Initiate's Signet of Resolve
+@@ -1,6 +1,5 @@
+-275970 Vigilant Watcher's Signet
++275970 Initiate's Signet of Resolve
+ item      rare, Miscellaneous, finger
+ level     ilvl 63, requires level 60
+-tag       Rank 1
+ binds     binds when picked up
+ stats     +22 healing, +10 spirit, +10 stamina, +7 spell damage
+--- 275971 Initiate's Signet of Vigilance
++++ 275971 Initiate's Signet of Vigilance
+@@ -1,6 +1,5 @@
+-275971 Stalwart Watcher's Signet
++275971 Initiate's Signet of Vigilance
+ item      rare, Miscellaneous, finger
+ level     ilvl 63, requires level 60
+-tag       Rank 1
+ binds     binds when picked up
+ stats     +10 stamina, +6 defense rating, +10 expertise rating
+--- 275972 Tracker's Signet of Ferocity
++++ 275972 Tracker's Signet of Ferocity
+@@ -1,6 +1,5 @@
+-275972 Ferocious Watcher's Signet
++275972 Tracker's Signet of Ferocity
+ item      rare, Miscellaneous, finger
+ level     ilvl 68, requires level 60
+-tag       Rank 2
+ binds     binds when picked up
+ stats     +24 attack power, +11 stamina, +10 hit rating
+--- 275973 Tracker's Signet of Brilliance
++++ 275973 Tracker's Signet of Brilliance
+@@ -1,6 +1,5 @@
+-275973 Brilliant Watcher's Signet
++275973 Tracker's Signet of Brilliance
+ item      rare, Miscellaneous, finger
+ level     ilvl 68, requires level 60
+-tag       Rank 2
+ binds     binds when picked up
+ stats     +10 spell power, +8 stamina, +14 crit rating
+--- 275974 Tracker's Signet of Resolve
++++ 275974 Tracker's Signet of Resolve
+@@ -1,6 +1,5 @@
+-275974 Vigilant Watcher's Signet
++275974 Tracker's Signet of Resolve
+ item      rare, Miscellaneous, finger
+ level     ilvl 68, requires level 60
+-tag       Rank 2
+ binds     binds when picked up
+ stats     +26 healing, +11 spirit, +10 stamina, +9 spell damage
+--- 275975 Tracker's Signet of Vigilance
++++ 275975 Tracker's Signet of Vigilance
+@@ -1,6 +1,5 @@
+-275975 Stalwart Watcher's Signet
++275975 Tracker's Signet of Vigilance
+ item      rare, Miscellaneous, finger
+ level     ilvl 68, requires level 60
+-tag       Rank 2
+ binds     binds when picked up
+ stats     +14 stamina, +7 defense rating, +10 expertise rating
+--- 275976 Watcher's Signet of Ferocity
++++ 275976 Watcher's Signet of Ferocity
+@@ -1,6 +1,5 @@
+-275976 Ferocious Watcher's Signet
++275976 Watcher's Signet of Ferocity
+ item      epic, Miscellaneous, finger
+ level     ilvl 60, requires level 60
+-tag       Rank 3
+ binds     binds when picked up
+ stats     +30 attack power, +13 stamina, +10 hit rating
+--- 275977 Watcher's Signet of Brilliance
++++ 275977 Watcher's Signet of Brilliance
+@@ -1,6 +1,5 @@
+-275977 Brilliant Watcher's Signet
++275977 Watcher's Signet of Brilliance
+ item      epic, Miscellaneous, finger
+ level     ilvl 60, requires level 60
+-tag       Rank 3
+ binds     binds when picked up
+ stats     +15 spell power, +10 stamina, +14 crit rating
+--- 275979 Watcher's Signet of Resolve
++++ 275979 Watcher's Signet of Resolve
+@@ -1,6 +1,5 @@
+-275979 Vigilant Watcher's Signet
++275979 Watcher's Signet of Resolve
+ item      epic, Miscellaneous, finger
+ level     ilvl 60, requires level 60
+-tag       Rank 3
+ binds     binds when picked up
+ stats     +33 healing, +12 spirit, +10 stamina, +11 spell damage
+--- 275980 Watcher's Signet of Vigilance
++++ 275980 Watcher's Signet of Vigilance
+@@ -1,6 +1,5 @@
+-275980 Stalwart Watcher's Signet
++275980 Watcher's Signet of Vigilance
+ item      epic, Miscellaneous, finger
+ level     ilvl 60, requires level 60
+-tag       Rank 3
+ binds     binds when picked up
+ stats     +16 stamina, +8 defense rating, +10 expertise rating
+--- 275981 Warden's Signet of Ferocity
++++ 275981 Warden's Signet of Ferocity
+@@ -1,6 +1,5 @@
+-275981 Ferocious Watcher's Signet
++275981 Warden's Signet of Ferocity
+ item      epic, Miscellaneous, finger
+ level     ilvl 65, requires level 60
+-tag       Max Rank
+ binds     binds when picked up
+ stats     +34 attack power, +14 stamina, +10 hit rating
+--- 275982 Warden's Signet of Brilliance
++++ 275982 Warden's Signet of Brilliance
+@@ -1,6 +1,5 @@
+-275982 Brilliant Watcher's Signet
++275982 Warden's Signet of Brilliance
+ item      epic, Miscellaneous, finger
+ level     ilvl 65, requires level 60
+-tag       Max Rank
+ binds     binds when picked up
+ stats     +17 spell power, +12 stamina, +14 crit rating
+--- 275983 Warden's Signet of Resolve
++++ 275983 Warden's Signet of Resolve
+@@ -1,6 +1,5 @@
+-275983 Vigilant Watcher's Signet
++275983 Warden's Signet of Resolve
+ item      epic, Miscellaneous, finger
+ level     ilvl 65, requires level 60
+-tag       Max Rank
+ binds     binds when picked up
+ stats     +37 healing, +14 spirit, +10 stamina, +12 spell damage
+--- 275984 Warden's Signet of Vigilance
++++ 275984 Warden's Signet of Vigilance
+@@ -1,6 +1,5 @@
+-275984 Stalwart Watcher's Signet
++275984 Warden's Signet of Vigilance
+ item      epic, Miscellaneous, finger
+ level     ilvl 65, requires level 60
+-tag       Max Rank
+ binds     binds when picked up
+ stats     +18 stamina, +8 defense rating, +10 expertise rating
+--- 288896 Superior Healing Potion
++++ 288896 Superior Healing Potion
+@@ -1,5 +1,5 @@
+ 288896 Superior Healing Potion
+ item      common, Potions
+-level     ilvl 30, requires level 1
++level     ilvl 10, requires level 1
+ effect    use: 4042 Healing Potion (1 charge, consumed, 120 s shared cooldown)
+ sells     250 copper
+--- 288897 Superior Mana Potion
++++ 288897 Superior Mana Potion
+@@ -1,5 +1,5 @@
+ 288897 Superior Mana Potion
+ item      common, Potions
+-level     ilvl 30, requires level 1
++level     ilvl 10, requires level 1
+ effect    use: 17530 Restore Mana (1 charge, consumed, 120 s shared cooldown)
+ sells     400 copper
+--- 288898 Swiftness Potion
++++ 288898 Swiftness Potion
+@@ -1,5 +1,5 @@
+ 288898 Swiftness Potion
+ item      common, Potions
+-level     ilvl 30, requires level 1
++level     ilvl 10, requires level 1
+ effect    use: 2379 Speed (1 charge, consumed, 120 s shared cooldown)
+ sells     25 copper
+--- 288900 Earthshaker
++++ 288900 Earthshaker
+@@ -1,8 +1,8 @@
+ 288900 Earthshaker
+ item      epic, Mace, two-hand
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
+-stats     +11 attack power
+-weapon    87 - 132 damage, speed 3.50, 31.3 dps
++level     ilvl 10, requires level 1
++binds     binds when picked up
++stats     +4 attack power
++weapon    40 - 61 damage, speed 3.50, 14.4 dps
+ effect    chance on hit: 21152 Earthshaker
+ sells     113631 copper
+--- 288926 Choker of the Fire Lord
++++ 288926 Choker of the Fire Lord
+@@ -1,6 +1,6 @@
+ 288926 Choker of the Fire Lord
+ item      epic, Miscellaneous, neck
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
+-stats     +3 intellect, +3 stamina, +15 spell power
++level     ilvl 10, requires level 1
++binds     binds when picked up
++stats     +1 intellect, +1 stamina, +6 spell power
+ sells     89135 copper
+--- 288927 Quick Strike Ring
++++ 288927 Quick Strike Ring
+@@ -1,7 +1,7 @@
+ 288927 Quick Strike Ring
+ item      epic, Miscellaneous, finger
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
++level     ilvl 10, requires level 1
++binds     binds when picked up
+ unique    yes
+-stats     +4 stamina, +2 strength, +6 crit rating, +14 attack power
++stats     +1 stamina, +1 strength, +2 crit rating, +5 attack power
+ sells     64030 copper
+--- 288928 Heavy Dark Iron Ring
++++ 288928 Heavy Dark Iron Ring
+@@ -1,7 +1,7 @@
+ 288928 Heavy Dark Iron Ring
+ item      epic, Miscellaneous, finger
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
++level     ilvl 10, requires level 1
++binds     binds when picked up
+ unique    yes
+-stats     +10 stamina, +53 armor, +2 defense rating
++stats     +4 stamina, +20 armor, +1 defense rating
+ sells     53364 copper
+--- 288929 Band of Sulfuras
++++ 288929 Band of Sulfuras
+@@ -1,7 +1,7 @@
+ 288929 Band of Sulfuras
+ item      epic, Miscellaneous, finger
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
++level     ilvl 10, requires level 1
++binds     binds when picked up
+ unique    yes
+-stats     +10 intellect, +4 spirit, +6 stamina
++stats     +4 intellect, +2 spirit, +2 stamina
+ sells     79853 copper
+--- 288930 Cauterizing Band
++++ 288930 Cauterizing Band
+@@ -1,6 +1,6 @@
+ 288930 Cauterizing Band
+ item      epic, Miscellaneous, finger
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
+-stats     +5 intellect, +4 stamina, +21 healing, +7 spell damage
++level     ilvl 10, requires level 1
++binds     binds when picked up
++stats     +2 intellect, +2 stamina, +8 healing, +3 spell damage
+ sells     60256 copper
+--- 288931 Ring of Spell Power
++++ 288931 Ring of Spell Power
+@@ -1,6 +1,6 @@
+ 288931 Ring of Spell Power
+ item      epic, Miscellaneous, finger
+-level     ilvl 30, requires level 1
+-binds     binds when equipped
+-stats     +16 spell power
++level     ilvl 10, requires level 1
++binds     binds when picked up
++stats     +6 spell power
+ sells     91453 copper
