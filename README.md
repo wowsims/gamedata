@@ -26,7 +26,7 @@ patches/<version>/
         items-removed.txt the removed items' cards
         items-changed.diff each changed item as a diff of its card
 state.json                the build of the last export
-hotfix-pushes.txt         every hotfix push the last export applied: `<push id> <entries>` per line
+hotfix-pushes.txt         every hotfix push in the live cache the last export applied: `<push id> <entries>` per line
 ```
 
 Git history on `spells/` shows the same changes over time, e.g. `git log -p -- spells/hunter/`.
@@ -39,11 +39,13 @@ placed spell that triggers it. Anything none of those places is in `other.txt`.
 
 - **Build:** `wowf` as `us.version.battle.net` serves it, read off the CDN by
   [wowsims/forever](https://github.com/wowsims/forever)'s `tools/db2tool`.
-- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`: the newest `classic_beta` file for the
+- **Hotfixes:** raidbots' mirror of the client's `DBCache.bin`: the newest `forever` file for the
   CDN build or an older one, carried onto the CDN build with db2tool's `--carry-hotfixes`; the update's
-  Hotfixes line names the build it was carried from. With no such file the line says so and no hotfixes
-  apply. Later pushes follow as `hotfix-<push>/`. Push ids are not in time order, so a run compares the
-  whole push list with `hotfix-pushes.txt`, not the highest id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
+  Hotfixes line names the build it was carried from. Every export also carries the last beta file
+  (`classic_beta` build 70532) under it, for the items the beta looked up that the live file lacks; a
+  row the live file marks invalid stays out. With no `forever` file the line says so and only the beta
+  file applies. Later pushes follow as `hotfix-<push>/`. Push ids are not in time order, so a run
+  compares the live file's whole push list with `hotfix-pushes.txt`, not the highest id. Records under push id 0 or below are the client's own lookup cache, not hotfixes, and are left out.
 - **Spells:** `tools/spelldata -dump` from forever, after `gen_spelldata -everyClassSpell` has built the
   spell store from every spell whose class family is a player class. Each card shows the row's columns
   in words and as the client's own values.
