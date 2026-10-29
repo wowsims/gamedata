@@ -1,3 +1,13 @@
+11069 Accelerant
+school    fire
+attrs     passive
+labels    17
+
+effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x9000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x9000 target=[1,0]
+
+https://www.wowhead.com/forever/spell=11069
+=======
 428878 Balefire Bolt
 school    fire+frost+arcane
 defense   magic
@@ -1708,16 +1718,6 @@ effect 1  SPELLMOD_EFFECT2 +20 on family 3 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=12 family=3 mask=0x8 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11094
-=======
-11069 Improved Fireball
-school    fire
-attrs     passive
-labels    17
-
-effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x1000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x1000 target=[1,0]
-
-https://www.wowhead.com/forever/spell=11069
 =======
 11108 Improved Flamestrike
 school    physical

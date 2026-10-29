@@ -1,0 +1,53 @@
+# mage
+--- 11069 Accelerant
++++ 11069 Accelerant
+@@ -1,9 +1,9 @@
+-11069 Improved Fireball
++11069 Accelerant
+ school    fire
+ attrs     passive
+ labels    17
+ 
+-effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x1000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x1000 target=[1,0]
++effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x9000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x9000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=11069
+--- 1312002 Ice Lance (Rank 1)
++++ 1312002 Ice Lance (Rank 1)
+@@ -1,18 +1,19 @@
+ 1312002 Ice Lance (Rank 1)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      45 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  28–33 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=28 ppl=0.35 variance=0.16666667 target=[6,0]
+ effect 2  a dummy effect holding 200
+           E_DUMMY base=200 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ 
+ https://www.wowhead.com/forever/spell=1312002
+--- 29438 Precision
++++ 29438 Precision
+@@ -1,9 +1,9 @@
+-29438 Elemental Precision
++29438 Precision
+ school    arcane
+ attrs     passive
+ labels    17
+ 
+-effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 3 mask 0xc202f7,0x1000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=3 mask=0xc202f7,0x1000 target=[1,0]
++effect 1  +6% spell hit
++          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=6 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=29438
