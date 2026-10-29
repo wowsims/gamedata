@@ -470,16 +470,6 @@ effect 2  1350–1650 frost damage to a cone of enemies in front of the caster
 
 https://www.wowhead.com/forever/spell=30095
 =======
-29438 Elemental Precision
-school    arcane
-attrs     passive
-labels    17
-
-effect 1  SPELLMOD_RESIST_MISS_CHANCE +6% on family 3 mask 0xc202f7,0x1000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=16 family=3 mask=0xc202f7,0x1000 target=[1,0]
-
-https://www.wowhead.com/forever/spell=29438
-=======
 400647 Fingers of Frost
 school    frost
 attrs     passive, can proc from procs
@@ -632,135 +622,6 @@ effect 2  casts 18101 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=18101 target=[1,0]
 
 https://www.wowhead.com/forever/spell=18100
-=======
-14105 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  80–90 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=85 variance=0.11764706 target=[6,0]
-
-https://www.wowhead.com/forever/spell=14105
-=======
-16407 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  30 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=30 target=[6,0]
-
-https://www.wowhead.com/forever/spell=16407
-=======
-18085 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  65 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=65 target=[6,0]
-
-https://www.wowhead.com/forever/spell=18085
-=======
-18398 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  45 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=45 target=[6,0]
-
-https://www.wowhead.com/forever/spell=18398
-=======
-19260 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  160–250 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=205 variance=0.4390244 target=[6,0]
-
-https://www.wowhead.com/forever/spell=19260
-=======
-20869 Frost Blast
-school    frost
-defense   magic
-cooldown  8 s (category)
-gcd       1.5 s
-cost      80 mana
-range     30 yd
-
-effect 1  75 frost damage to the enemy
-          E_SCHOOL_DAMAGE base=75 target=[6,0]
-
-https://www.wowhead.com/forever/spell=20869
-=======
-1326053 Frost Blast (Rank 1)
-school    frost
-defense   magic
-duration  9 s
-cast      1.5 s
-gcd       1.5 s
-cost      40 mana
-range     30 yd
-labels    17
-
-effect 1  -40% movement speed to the enemy
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  28–31 frost damage to the enemy (at level 60, +0.271 spell power)
-          E_SCHOOL_DAMAGE base=26 ppl=0.3 variance=0.10526316 sp=0.271 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1326053
-=======
-1326054 Frost Blast (Rank 2)
-school    frost
-defense   magic
-duration  9 s
-cast      1.5 s
-gcd       1.5 s
-cost      65 mana
-range     30 yd
-labels    17
-
-effect 1  -40% movement speed to the enemy
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  48–53 frost damage to the enemy (at level 60, +0.271 spell power)
-          E_SCHOOL_DAMAGE base=45 ppl=0.5 variance=0.10526316 sp=0.271 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1326054
-=======
-1326055 Frost Blast (Rank 3)
-school    frost
-defense   magic
-duration  9 s
-cast      1.5 s
-gcd       1.5 s
-cost      90 mana
-range     30 yd
-labels    17
-
-effect 1  -40% movement speed to the enemy
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
-effect 2  80–89 frost damage to the enemy (at level 60, +0.271 spell power)
-          E_SCHOOL_DAMAGE base=77 ppl=0.6 variance=0.10526316 sp=0.271 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1326055
 =======
 11160 Frost Channeling
 school    frost
@@ -1680,6 +1541,7 @@ https://www.wowhead.com/forever/spell=1240047
 1312002 Ice Lance (Rank 1)
 school    frost
 defense   magic
+cooldown  8 s (category)
 gcd       1.5 s
 cost      45 mana
 range     30 yd
@@ -1808,6 +1670,16 @@ effect 2  SPELLMOD_DOT +2% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 
 https://www.wowhead.com/forever/spell=11151
+=======
+29438 Precision
+school    arcane
+attrs     passive
+labels    17
+
+effect 1  +6% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=6 target=[1,0]
+
+https://www.wowhead.com/forever/spell=29438
 =======
 11170 Shatter
 school    physical
