@@ -13,6 +13,10 @@ A spell goes to the first of:
   4. the file of a placed spell that triggers it, followed as far as the triggers go;
 and to other.txt when none of them places it.
 
+Each card gains the spell's tooltip, aura tooltip and description variables as the game files write
+them, with the $ tokens left unrendered, so a hotfix that rewrites only the text shows too. The dump
+leaves them out: the store carries what the generator reads off the text, never the text itself.
+
     split_spells.py <forever checkout> <wowsims.db> <dump dir> <out dir>
 """
 import json
@@ -30,6 +34,21 @@ def slug(name):
     return name.lower().replace(" ", "-")
 
 
+def with_text(card, fields):
+    """The card with each (key, text) as a field between its effects and its wowhead link, a text's
+    later lines indented under its first."""
+    lines = []
+    for key, text in fields:
+        rows = [row.rstrip() for row in text.replace("\r\n", "\n").replace("\r", "\n").strip().split("\n")] if text else []
+        if rows:
+            lines.append(f"{key:<9} {rows[0]}")
+            lines += [f"{'':9} {row}" if row else "" for row in rows[1:]]
+    if not lines:
+        return card
+    head, link = card.rstrip("\n").rsplit("\n", 1)
+    return head + "\n".join(lines) + "\n\n" + link + "\n"
+
+
 def main(forever, db_path, dump_dir, out_dir):
     db = sqlite3.connect(db_path)
     names = dict(db.execute("SELECT ID, Name_lang FROM SpellName"))
@@ -41,6 +60,12 @@ def main(forever, db_path, dump_dir, out_dir):
                                                FROM SkillLineAbility sla JOIN SkillLine sl ON sl.ID = sla.SkillLine
                                                ORDER BY sla.ID"""):
         skills.setdefault(spell, []).append((name, category))
+    texts = {id: (desc, aura) for id, desc, aura in db.execute("SELECT ID, Description_lang, AuraDescription_lang FROM Spell")}
+    variables = {}
+    for spell, text in db.execute("""SELECT x.SpellID, d.Variables FROM SpellXDescriptionVariables x
+                                     JOIN SpellDescriptionVariables d ON d.ID = x.SpellDescriptionVariablesID
+                                     ORDER BY x.ID"""):
+        variables[spell] = variables[spell] + "\n" + text if spell in variables else text
 
     for file in sorted(os.listdir(dump_dir)):
         if not file.endswith(".txt"):
@@ -92,6 +117,8 @@ def main(forever, db_path, dump_dir, out_dir):
         files = {}
         for id, card in zip(ids, cards):
             spec = placed.get(id, "Other")
+            desc, aura = texts.get(id, (None, None))
+            card = with_text(card, [("tooltip", desc), ("aura", aura), ("vars", variables.get(id))])
             files.setdefault(slug(spec), []).append(card)
 
         os.makedirs(os.path.join(out_dir, cls), exist_ok=True)
