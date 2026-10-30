@@ -6,6 +6,7 @@ refs      409324 Ancestral Guidance
 
 effect 1  51–57 healing to the party in the target area
           E_HEAL base=54 variance=0.11111111 radius=15 target=[18,34]
+tooltip   For the next $409324d, $409324s1% of your damage is converted to healing on up to 3 nearby party members, and $409324s2% of your healing is converted to damage on your most recent Flame Shock target.
 
 https://www.wowhead.com/forever/spell=409333
 =======
@@ -17,6 +18,7 @@ refs      409324 Ancestral Guidance
 
 effect 1  51–57 nature damage to the enemy
           E_SCHOOL_DAMAGE base=54 variance=0.11111111 target=[6,0]
+tooltip   For the next $409324d, $409324s1% of your damage is converted to healing on up to 3 nearby party members, and $409324s2% of your healing is converted to damage on your most recent Flame Shock target.
 
 https://www.wowhead.com/forever/spell=409337
 =======
@@ -26,6 +28,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409324 misc=399966 target=[1,0]
+tooltip   Gain the Ancestral Guidance ability:
+
+          $@spellicon409324
+          $@spelldesc409324
 
 https://www.wowhead.com/forever/spell=409944
 =======
@@ -40,6 +46,7 @@ effect 2  SPELLMOD_DOT +15% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=11 mask=0x10000000 target=[1,0]
 effect 3  SPELLMOD_DURATION +9 s on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by $m1%, as well as increases the duration of your Flame Shock spell by ${$m3/1000} sec.
 
 https://www.wowhead.com/forever/spell=16038
 =======
@@ -50,6 +57,7 @@ labels    24
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 11 mask 0x3
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=11 mask=0x3 target=[1,0]
+tooltip   Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 https://www.wowhead.com/forever/spell=16120
 =======
@@ -62,6 +70,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_CAST_BUTTON base=0 misc=4 misc2=4 target=[0,0]
+tooltip   Simultaneously places up to 4 totems specified in the Totem Bar. Can call different totems than Call of the Elements.
 
 https://www.wowhead.com/forever/spell=66843
 =======
@@ -74,6 +83,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_CAST_BUTTON base=0 misc2=4 target=[0,0]
+tooltip   Simultaneously places up to 4 totems specified in the Totem Bar.
 
 https://www.wowhead.com/forever/spell=66842
 =======
@@ -86,6 +96,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_CAST_BUTTON base=0 misc=8 misc2=4 target=[0,0]
+tooltip   Simultaneously places up to 4 totems specified in the Totem Bar. Can call different totems than Call of the Elements or Call of the Ancestors.
 
 https://www.wowhead.com/forever/spell=66844
 =======
@@ -101,6 +112,7 @@ labels    24
 
 effect 1  85–97 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=88 ppl=0.6 variance=0.12745099 sp=0.571 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=421
 =======
@@ -116,6 +128,7 @@ labels    24
 
 effect 1  97–109 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=100 ppl=0.6 variance=0.11564626 sp=0.571 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=930
 =======
@@ -131,6 +144,7 @@ labels    24
 
 effect 1  109–122 nature damage to the enemy (at level 60, +0.517 spell power)
           E_SCHOOL_DAMAGE base=112 ppl=0.7 variance=0.11471321 sp=0.517 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=2860
 =======
@@ -146,6 +160,7 @@ labels    24
 
 effect 1  119–134 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=123 ppl=0.8 variance=0.11111111 sp=0.571 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=10605
 =======
@@ -157,6 +172,7 @@ labels    24
 
 effect 1  44–51 nature damage to the enemy (at level 60, +0.2855 spell power)
           E_SCHOOL_DAMAGE base=44 ppl=0.75 variance=0.13725491 sp=0.2855 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=408479
 =======
@@ -168,6 +184,7 @@ labels    24
 
 effect 1  51–58 nature damage to the enemy (at level 60, +0.2855 spell power)
           E_SCHOOL_DAMAGE base=50 ppl=0.9 variance=0.12244898 sp=0.2855 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=408481
 =======
@@ -179,6 +196,7 @@ labels    24
 
 effect 1  58–65 nature damage to the enemy (at level 60, +0.2855 spell power)
           E_SCHOOL_DAMAGE base=56 ppl=1.05 variance=0.115 sp=0.2855 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=408482
 =======
@@ -190,6 +208,7 @@ labels    24
 
 effect 1  62–71 nature damage to the enemy (at level 60, +0.2855 spell power)
           E_SCHOOL_DAMAGE base=62 ppl=1.2 variance=0.11494253 sp=0.2855 chain=3 target=[6,0]
+tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 https://www.wowhead.com/forever/spell=408484
 =======
@@ -204,6 +223,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -100% on family 11 mask 0x98100003,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=11 mask=0x98100003,0x1000 target=[1,0]
+tooltip   Your next elemental damage spell has its mana cost reduced by $s1%.
+aura      Your next elemental damage spell has its mana cost reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=16246
 =======
@@ -214,6 +235,7 @@ labels    24
 
 effect 1  SPELLMOD_DAMAGE +1% on family 11 mask 0x100003
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 family=11 mask=0x100003 target=[1,0]
+tooltip   Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16035
 =======
@@ -224,6 +246,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -2% on family 11 mask 0x90100003,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-2 sp=1 misc=14 family=11 mask=0x90100003,0x1000 target=[1,0]
+tooltip   Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16039
 =======
@@ -241,6 +264,7 @@ effect 1  19–22 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=18 ppl=0.5 variance=0.11111111 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=8042
 =======
@@ -258,6 +282,7 @@ effect 1  35–38 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.060606062 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=8044
 =======
@@ -275,6 +300,7 @@ effect 1  51–56 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=49 ppl=0.9 variance=0.06451613 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=8045
 =======
@@ -292,6 +318,7 @@ effect 1  83–90 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=81 ppl=1.1 variance=0.06504065 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=8046
 =======
@@ -309,6 +336,7 @@ effect 1  134–143 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=132 ppl=1.3 variance=0.060344826 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=10412
 =======
@@ -326,6 +354,7 @@ effect 1  207–219 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=205 ppl=1.6 variance=0.05945946 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=10413
 =======
@@ -343,6 +372,7 @@ effect 1  293–309 nature damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=301 ppl=1.9 variance=0.0527307 sp=0.386 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=10414
 =======
@@ -363,6 +393,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408681
 =======
@@ -383,6 +415,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408683
 =======
@@ -403,6 +437,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408685
 =======
@@ -423,6 +459,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408687
 =======
@@ -443,6 +481,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408688
 =======
@@ -463,6 +503,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408689
 =======
@@ -483,6 +525,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408690
 =======
@@ -496,6 +540,8 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you, but has no effect if the target is already attacking you.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=408693
 =======
@@ -509,6 +555,8 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you, but has no effect if the target is already attacking you.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1219379
 =======
@@ -529,6 +577,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220744
 =======
@@ -549,6 +599,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220746
 =======
@@ -569,6 +621,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220747
 =======
@@ -589,6 +643,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220748
 =======
@@ -609,6 +665,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220749
 =======
@@ -629,6 +687,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220750
 =======
@@ -649,6 +709,8 @@ effect 3  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 4  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat and taunts the target.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1220751
 =======
@@ -664,6 +726,7 @@ refs      3600 Earthbind
 
 effect 1  summons creature 2630 to target 41
           E_SUMMON base=5 misc=2630 misc2=81 target=[41,0]
+tooltip   Summons an Earthbind Totem with $s1 health at the feet of the caster for $d that slows the movement speed of enemies within $3600a1 yards.
 
 https://www.wowhead.com/forever/spell=2484
 =======
@@ -674,6 +737,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 11 mask 0x3,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=11 mask=0x3,0x1000 target=[1,0]
+tooltip   Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ${$m1/-1000}.2 sec.
 
 https://www.wowhead.com/forever/spell=16578
 =======
@@ -686,6 +750,7 @@ refs      30165 Elemental Devastation
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by $m1% for $30165d.
 
 https://www.wowhead.com/forever/spell=30160
 =======
@@ -696,6 +761,7 @@ labels    24
 
 effect 1  +3% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 target=[1,0]
+aura      Increases your chance to get a critical strike with melee attacks by $w1%.
 
 https://www.wowhead.com/forever/spell=30165
 =======
@@ -708,6 +774,7 @@ refs      16246 Clearcasting
 
 effect 1  casts 16246 Clearcasting on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=16246 target=[1,0]
+tooltip   Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
 https://www.wowhead.com/forever/spell=16164
 =======
@@ -718,6 +785,7 @@ labels    24
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 11 mask 0xd1300403,0x1000,0x0,0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=11 mask=0xd1300403,0x1000,0x0,0x40000000 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16089
 =======
@@ -733,6 +801,8 @@ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 11 mask 0x1,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=11 mask=0x1,0x1000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -100% on family 11 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=11 mask=0x2 target=[1,0]
+tooltip   Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by ${$m1/-1000}.1 sec, and removing the cooldown from Chain Lightning. Lasts $d.
+aura      Lightning Bolt and Lava Burst cast time reduced by ${$m1/-1000}.1 sec and Chain Lightning has no cooldown.
 
 https://www.wowhead.com/forever/spell=16166
 =======
@@ -747,6 +817,7 @@ effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
 effect 3  SPELLMOD_COOLDOWN -20 s on family 11 mask 0x0,0x0,0x0,0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20000 sp=1 misc=11 family=11 mask=0x0,0x0,0x0,0x80 target=[1,0]
+tooltip   Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by $m1 yards and reduces the cooldown of Totemic Projection by ${$m3/-1000} sec.
 
 https://www.wowhead.com/forever/spell=28999
 =======
@@ -757,6 +828,7 @@ labels    24
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x3,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x3,0x1000 target=[1,0]
+tooltip   Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=29062
 =======
@@ -880,6 +952,7 @@ effect 4  replaces an action bar spell with 11314
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408344 misc=11314 target=[1,0]
 effect 5  replaces an action bar spell with 11315
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408345 misc=11315 target=[1,0]
+tooltip   Your Fire Nova Totem spell is replaced with Fire Nova, which causes your current Fire totem to emit damage at its location.
 
 https://www.wowhead.com/forever/spell=408339
 =======
@@ -895,6 +968,7 @@ refs      408423 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
+tooltip   Instantly inflicts $408423s1 fire damage to enemies within $408423a1 yd of your active Fire totem.
 
 https://www.wowhead.com/forever/spell=408341
 =======
@@ -910,6 +984,7 @@ refs      408424 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
+tooltip   Instantly inflicts $408424s1 fire damage to enemies within $408424a1 yd of your active Fire totem.
 
 https://www.wowhead.com/forever/spell=408342
 =======
@@ -925,6 +1000,7 @@ refs      408426 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
+tooltip   Instantly inflicts $408426s1 fire damage to enemies within $408426a1 yd of your active Fire totem.
 
 https://www.wowhead.com/forever/spell=408343
 =======
@@ -940,6 +1016,7 @@ refs      408427 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
+tooltip   Instantly inflicts $408427s1 fire damage to enemies within $408427a1 yd of your active Fire totem.
 
 https://www.wowhead.com/forever/spell=408344
 =======
@@ -955,6 +1032,7 @@ refs      408428 Fire Nova
 
 effect 1  a dummy effect holding 5 to the caster
           E_DUMMY base=5 target=[1,0]
+tooltip   Instantly inflicts $408428s1 fire damage to enemies within $408428a1 yd of your active Fire totem.
 
 https://www.wowhead.com/forever/spell=408345
 =======
@@ -1020,6 +1098,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408339 misc=415449 target=[1,0]
+tooltip   Gain the Fire Nova ability, replacing your Fire Nova Totem:
+
+          $@spellicon408339
+          $@spelldesc408339
 
 https://www.wowhead.com/forever/spell=409938
 =======
@@ -1040,6 +1122,8 @@ effect 2  7 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8050
 =======
@@ -1060,6 +1144,8 @@ effect 2  8 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8052
 =======
@@ -1080,6 +1166,8 @@ effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8053
 =======
@@ -1100,6 +1188,8 @@ effect 2  21 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10447
 =======
@@ -1120,6 +1210,8 @@ effect 2  34 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10448
 =======
@@ -1140,6 +1232,8 @@ effect 2  44 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=44 sp=0.1 period=3000ms target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=29228
 =======
@@ -1179,6 +1273,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  68–73 frost damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.06521739 sp=0.386 target=[6,0]
+tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=8056
 =======
@@ -1196,6 +1292,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  126–135 frost damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=124 ppl=1.3 variance=0.065727696 sp=0.386 target=[6,0]
+tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=8058
 =======
@@ -1213,6 +1311,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  190–201 frost damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=188 ppl=1.5 variance=0.058309037 sp=0.386 target=[6,0]
+tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=10472
 =======
@@ -1230,6 +1330,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  278–295 frost damage to the enemy (at level 60, +0.386 spell power)
           E_SCHOOL_DAMAGE base=283 ppl=1.8 variance=0.056 sp=0.386 target=[6,0]
+tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=10473
 =======
@@ -1247,6 +1349,7 @@ effect 1  113–146 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=123 ppl=0.8 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy
           E_DUMMY base=20 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 https://www.wowhead.com/forever/spell=408490
 =======
@@ -1259,6 +1362,7 @@ refs      408490 Lava Burst
 
 effect 1  59–73 fire damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=57 ppl=0.45 variance=0.25746268 sp=0.357 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 https://www.wowhead.com/forever/spell=408491
 =======
@@ -1268,6 +1372,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408490 misc=399967 target=[1,0]
+tooltip   Gain the Lava Burst ability:
+
+          $@spellicon408490
+          $@spelldesc408490
 
 https://www.wowhead.com/forever/spell=409952
 =======
@@ -1285,6 +1393,7 @@ effect 1  150–193 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=164 ppl=0.9 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy
           E_DUMMY base=20 sp=0.714 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 https://www.wowhead.com/forever/spell=1238299
 =======
@@ -1302,6 +1411,7 @@ effect 1  179–230 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=196 ppl=1.1 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy
           E_DUMMY base=20 sp=0.714 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 https://www.wowhead.com/forever/spell=1238300
 =======
@@ -1314,6 +1424,7 @@ refs      408490 Lava Burst
 
 effect 1  83–106 fire damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=89 ppl=0.55 variance=0.25746268 sp=0.357 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 https://www.wowhead.com/forever/spell=1238373
 =======
@@ -1326,6 +1437,7 @@ refs      408490 Lava Burst
 
 effect 1  96–124 fire damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=110 ppl=0.65 variance=0.25746268 sp=0.357 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 https://www.wowhead.com/forever/spell=1238376
 =======
@@ -1343,6 +1455,7 @@ effect 1  192–248 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=220 ppl=1.3 variance=0.25325885 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 20 to the enemy (at level 60)
           E_DUMMY base=20 ppl=4.2 sp=0.714 target=[6,0]
+tooltip   You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 https://www.wowhead.com/forever/spell=1326047
 =======
@@ -1357,6 +1470,7 @@ labels    24
 
 effect 1  14–17 nature damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=15 ppl=0.1 variance=0.14285715 sp=0.429 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=403
 =======
@@ -1371,6 +1485,7 @@ labels    24
 
 effect 1  25–30 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=27 ppl=0.1 variance=0.14285715 sp=0.571 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=529
 =======
@@ -1385,6 +1500,7 @@ labels    24
 
 effect 1  42–51 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=45 ppl=0.3 variance=0.1632653 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=548
 =======
@@ -1399,6 +1515,7 @@ labels    24
 
 effect 1  59–67 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=61 ppl=0.4 variance=0.13483146 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=915
 =======
@@ -1413,6 +1530,7 @@ labels    24
 
 effect 1  78–91 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=82 ppl=0.5 variance=0.13432837 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=943
 =======
@@ -1427,6 +1545,7 @@ labels    24
 
 effect 1  108–122 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=111 ppl=0.8 variance=0.12021858 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=6041
 =======
@@ -1441,6 +1560,7 @@ labels    24
 
 effect 1  142–160 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=147 ppl=0.8 variance=0.11618257 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=10391
 =======
@@ -1455,6 +1575,7 @@ labels    24
 
 effect 1  158–176 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=162 ppl=1 variance=0.11371238 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=10392
 =======
@@ -1469,6 +1590,7 @@ labels    24
 
 effect 1  173–193 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=178 ppl=1 variance=0.11413044 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=15207
 =======
@@ -1483,6 +1605,7 @@ labels    24
 
 effect 1  189–212 nature damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=196 ppl=1.2 variance=0.10835215 sp=0.714 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=15208
 =======
@@ -1494,6 +1617,7 @@ labels    24
 
 effect 1  8–8 nature damage to the enemy (at level 60, +0.2145 spell power)
           E_SCHOOL_DAMAGE base=7 ppl=0.2 variance=0.142857 sp=0.2145 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408439
 =======
@@ -1505,6 +1629,7 @@ labels    24
 
 effect 1  14–18 nature damage to the enemy (at level 60, +0.2855 spell power)
           E_SCHOOL_DAMAGE base=14.5 ppl=0.25 variance=0.14285715 sp=0.2855 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408440
 =======
@@ -1516,6 +1641,7 @@ labels    24
 
 effect 1  22–26 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=22.5 ppl=0.3 variance=0.163265 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408441
 =======
@@ -1527,6 +1653,7 @@ labels    24
 
 effect 1  27–32 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.3 variance=0.134831 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408442
 =======
@@ -1538,6 +1665,7 @@ labels    24
 
 effect 1  35–40 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=36 ppl=0.35 variance=0.134328 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408443
 =======
@@ -1549,6 +1677,7 @@ labels    24
 
 effect 1  55–61 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=56 ppl=0.4 variance=0.12087912 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408472
 =======
@@ -1560,6 +1689,7 @@ labels    24
 
 effect 1  71–81 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=74 ppl=0.4 variance=0.125 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408473
 =======
@@ -1572,6 +1702,7 @@ labels    24
 
 effect 1  78–89 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=81 ppl=0.5 variance=0.11409396 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408474
 =======
@@ -1583,6 +1714,7 @@ labels    24
 
 effect 1  86–97 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=89 ppl=0.5 variance=0.11956522 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408475
 =======
@@ -1594,6 +1726,7 @@ labels    24
 
 effect 1  94–107 nature damage to the enemy (at level 60, +0.357 spell power)
           E_SCHOOL_DAMAGE base=98 ppl=0.6 variance=0.11312217 sp=0.357 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=408477
 =======
@@ -1604,6 +1737,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -0.4 s on family 11 mask 0x3
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-400 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+tooltip   Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=16579
 =======
@@ -1614,6 +1748,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -0.6 s on family 11 mask 0x3
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-600 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+tooltip   Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=16580
 =======
@@ -1624,6 +1759,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -0.8 s on family 11 mask 0x3
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-800 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+tooltip   Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=16581
 =======
@@ -1634,6 +1770,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -1 s on family 11 mask 0x3
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=11 mask=0x3 target=[1,0]
+tooltip   Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=16582
 =======
@@ -1645,6 +1782,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 30% chance, from effect 1
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   Gives your Lightning Bolt and Chain Lightning spells a $m1% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.
 
 https://www.wowhead.com/forever/spell=408438
 =======
@@ -1669,6 +1807,7 @@ refs      8187 Magma Totem, 8188 Magma Totem Passive
 
 effect 1  summons creature 5929 to target 44
           E_SUMMON base=5 misc=5929 misc2=63 target=[44,0]
+tooltip   Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $8187s1 Fire damage to creatures within $8187a1 yards every $8188t1 seconds.
 
 https://www.wowhead.com/forever/spell=8190
 =======
@@ -1713,6 +1852,7 @@ refs      10579 Magma Totem, 10582 Magma Totem Passive
 
 effect 1  summons creature 7464 to target 44
           E_SUMMON base=5 misc=7464 misc2=63 target=[44,0]
+tooltip   Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10579s1 Fire damage to creatures within $10579a1 yards every $10582t1 seconds.
 
 https://www.wowhead.com/forever/spell=10585
 =======
@@ -1727,6 +1867,7 @@ refs      10580 Magma Totem, 10583 Magma Totem Passive
 
 effect 1  summons creature 7465 to target 44
           E_SUMMON base=5 misc=7465 misc2=63 target=[44,0]
+tooltip   Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10580s1 Fire damage to creatures within $10580a1 yards every $10583t1 seconds.
 
 https://www.wowhead.com/forever/spell=10586
 =======
@@ -1741,6 +1882,7 @@ refs      10581 Magma Totem, 10584 Magma Totem Passive
 
 effect 1  summons creature 7466 to target 44
           E_SUMMON base=5 misc=7466 misc2=63 target=[44,0]
+tooltip   Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10581s1 Fire damage to creatures within $10581a1 yards every $10584t1 seconds.
 
 https://www.wowhead.com/forever/spell=10587
 =======
@@ -1758,6 +1900,9 @@ effect 2  a dummy effect holding 5 to a cone of enemies in front of the caster
           E_DUMMY base=5 radius=10 target=[24,0]
 effect 3  a dummy effect holding 10 to a cone of enemies in front of the caster
           E_DUMMY base=10 radius=10 target=[24,0]
+tooltip   Blast up to $i enemies in a cone in front of you for ${$<damagepower>*$m1/100+$m2/100*$AP} to ${$<damagepower>*$M1/100+$m2/100*$AP} Fire damage. This ability generates a high amount of threat. Flame Shock periodic damage has a $s3% chance to reset the cooldown on Molten Blast.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=425339
 =======
@@ -1767,6 +1912,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425339 misc=399967 target=[1,0]
+tooltip   Gain the Molten Blast ability:
+
+          $@spellicon425339
+          $@spelldesc425339
 
 https://www.wowhead.com/forever/spell=425340
 =======
@@ -1780,6 +1929,7 @@ labels    24
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
+tooltip   Purges the enemy target, removing $m1 magic $leffect:effects;.
 
 https://www.wowhead.com/forever/spell=370
 =======
@@ -1793,6 +1943,7 @@ labels    24
 
 effect 1  dispels 2 magic effect to the enemy
           E_DISPEL base=2 misc=1 target=[6,0]
+tooltip   Purges the enemy target, removing $m1 beneficial magic $leffect:effects;.
 
 https://www.wowhead.com/forever/spell=8012
 =======
@@ -1805,6 +1956,7 @@ range     30 yd
 
 effect 1  dispels 2 magic effect to the enemy
           E_DISPEL base=2 misc=1 target=[6,0]
+tooltip   Purges the enemy target, removing $m1 beneficial magic $leffect:effects;.
 
 https://www.wowhead.com/forever/spell=27626
 =======
@@ -1815,6 +1967,7 @@ labels    24
 
 effect 1  SPELLMOD_COOLDOWN -0.2 s on family 11 mask 0x90100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=11 family=11 mask=0x90100000 target=[1,0]
+tooltip   Reduces the cooldown of your Shock spells by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=16040
 =======
@@ -1828,6 +1981,7 @@ refs      3606 Attack
 
 effect 1  summons creature 2523 to target 44
           E_SUMMON base=5 misc=2523 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $3606r yards for $3606s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=3599
 =======
@@ -1841,6 +1995,7 @@ refs      6350 Attack
 
 effect 1  summons creature 3902 to target 44
           E_SUMMON base=5 misc=3902 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6350r yards for $6350s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=6363
 =======
@@ -1854,6 +2009,7 @@ refs      6351 Attack
 
 effect 1  summons creature 3903 to target 44
           E_SUMMON base=5 misc=3903 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6351r yards for $6351s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=6364
 =======
@@ -1867,6 +2023,7 @@ refs      6352 Attack
 
 effect 1  summons creature 3904 to target 44
           E_SUMMON base=5 misc=3904 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6352r yards for $6352s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=6365
 =======
@@ -1880,6 +2037,7 @@ refs      10435 Attack
 
 effect 1  summons creature 7400 to target 44
           E_SUMMON base=5 misc=7400 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $10435r yards for $10435s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10437
 =======
@@ -1893,6 +2051,7 @@ refs      10436 Attack
 
 effect 1  summons creature 7402 to target 44
           E_SUMMON base=5 misc=7402 misc2=63 target=[44,0]
+tooltip   Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $10436r yards for $10436s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10438
 =======
@@ -1908,6 +2067,7 @@ refs      5729 Stoneclaw Totem Effect
 
 effect 1  summons creature 3579 to target 41
           E_SUMMON base=50 ppl=3 misc=3579 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $5729a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=5730
 =======
@@ -1923,6 +2083,7 @@ refs      6393 Stoneclaw Totem Effect
 
 effect 1  summons creature 3911 to target 41
           E_SUMMON base=150 ppl=3 misc=3911 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6393a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=6390
 =======
@@ -1938,6 +2099,7 @@ refs      6394 Stoneclaw Totem Effect
 
 effect 1  summons creature 3912 to target 41
           E_SUMMON base=220 ppl=3 misc=3912 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6394a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=6391
 =======
@@ -1953,6 +2115,7 @@ refs      6395 Stoneclaw Totem Effect
 
 effect 1  summons creature 3913 to target 41
           E_SUMMON base=280 ppl=3 misc=3913 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6395a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=6392
 =======
@@ -1968,6 +2131,7 @@ refs      10423 Stoneclaw Totem Effect
 
 effect 1  summons creature 7398 to target 41
           E_SUMMON base=390 ppl=3 misc=7398 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10423a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=10427
 =======
@@ -1983,6 +2147,7 @@ refs      10424 Stoneclaw Totem Effect
 
 effect 1  summons creature 7399 to target 41
           E_SUMMON base=480 ppl=3 misc=7399 misc2=81 target=[41,0]
+tooltip   Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10424a1 yards to attack it.
 
 https://www.wowhead.com/forever/spell=10428
 =======
@@ -1992,6 +2157,7 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_DESTROY_ALL_TOTEMS base=25 target=[0,0]
+tooltip   Returns your totems to the earth, giving you $s1% of the mana required to cast each totem destroyed by Totemic Recall.
 
 https://www.wowhead.com/forever/spell=36936
 =======
@@ -2003,6 +2169,7 @@ effect 1  restores 0 mana to the caster
           E_ENERGIZE base=0 target=[1,0]
 effect 2  a dummy effect
           E_DUMMY base=0 target=[0,0]
+tooltip   Returns your totems to the earth, giving you $s1% of the mana required to cast each totem destroyed by Totemic Recall.
 
 https://www.wowhead.com/forever/spell=1323420
 =======
@@ -2017,5 +2184,6 @@ effect 2  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=11 mask=0x0,0x40000 target=[1,0]
 effect 3  SPELLMOD_DURATION +20 s on family 11 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20000 sp=1 misc=1 family=11 mask=0x1000 target=[1,0]
+tooltip   Increases the damage done by your Fire Nova spell by $m1% and reduces its cooldown by ${$m2/-1000} sec, and increases the duration of your Magma Totem by ${$m3/1000} sec.
 
 https://www.wowhead.com/forever/spell=16086

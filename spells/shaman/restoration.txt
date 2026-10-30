@@ -7,6 +7,7 @@ refs      16177 Ancestral Fortitude
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 trigger=16177 target=[1,0]
+tooltip   Increases your target's armor value by $m1% for $16177d after getting a critical effect from one of your healing spells.
 
 https://www.wowhead.com/forever/spell=16176
 =======
@@ -21,6 +22,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=65 sp=1 misc=120 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=2008
 =======
@@ -35,6 +37,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=150 sp=1 misc=260 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20609
 =======
@@ -49,6 +52,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=250 sp=1 misc=420 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20610
 =======
@@ -63,6 +67,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=400 sp=1 misc=600 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20776
 =======
@@ -77,6 +82,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=600 sp=1 misc=800 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20777
 =======
@@ -91,6 +97,7 @@ labels    24, 6316
 
 effect 1  unrecognised shape
           E_329 base=600 sp=1 misc=800 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=1326619
 =======
@@ -105,6 +112,7 @@ labels    24
 
 effect 1  245–282 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=251 ppl=2.5 variance=0.13953489 sp=0.714 chain=3 target=[45,0]
+tooltip   Heals the friendly target for $s1, then jumps to heal additional nearby targets.  If cast on a party member, the heal will only jump to other party members.  Each jump is $?a415096[65%][50%] as effective as the previous target.  Heals $x1 total targets.
 
 https://www.wowhead.com/forever/spell=1064
 =======
@@ -119,6 +127,7 @@ labels    24
 
 effect 1  326–372 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=335 ppl=2.8 variance=0.13793103 sp=0.714 chain=3 target=[45,0]
+tooltip   Heals the friendly target for $s1, then jumps to heal additional nearby targets.  If cast on a party member, the heal will only jump to other party members.  Each jump is $?a415096[65%][50%] as effective as the previous target.  Heals $x1 total targets.
 
 https://www.wowhead.com/forever/spell=10622
 =======
@@ -133,6 +142,7 @@ labels    24
 
 effect 1  474–539 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=490 ppl=3.3 variance=0.13220339 sp=0.714 chain=3 target=[45,0]
+tooltip   Heals the friendly target for $s1, then jumps to heal additional nearby targets.  If cast on a party member, the heal will only jump to other party members.  Each jump is $?a415096[65%][50%] as effective as the previous target.  Heals $x1 total targets.
 
 https://www.wowhead.com/forever/spell=10623
 =======
@@ -146,6 +156,7 @@ labels    24
 
 effect 1  dispels 1 disease effect to the friendly target
           E_DISPEL base=1 misc=3 target=[21,0]
+tooltip   Cures $s1 $ldisease:diseases; on the target.
 
 https://www.wowhead.com/forever/spell=2870
 =======
@@ -159,6 +170,7 @@ labels    24
 
 effect 1  dispels 1 poison effect to the friendly target
           E_DISPEL base=1 misc=4 target=[21,0]
+tooltip   Cures $s1 poison $leffect:effects; on the target.
 
 https://www.wowhead.com/forever/spell=526
 =======
@@ -173,6 +185,7 @@ refs      8171 Disease Cleansing Totem Effect, 8172 Disease Cleansing Totem Pass
 
 effect 1  summons creature 5924 to target 42
           E_SUMMON base=5 misc=5924 misc2=82 target=[42,0]
+tooltip   Summons a Disease Cleansing Totem with $s1 health at the feet of the caster that attempts to remove 1 disease effect from party members within $8171a1 yards every $8172t1 seconds.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8170
 =======
@@ -184,6 +197,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  0 healing to the friendly target
           E_HEAL base=0 target=[21,0]
+tooltip   Protects the target with an earthen shield, giving a chance of ignoring spell interruption when damaged and causing attacks to heal the shielded target.  This effect can only occur once every few seconds.  Limited charges. Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time.
 
 https://www.wowhead.com/forever/spell=379
 =======
@@ -203,6 +217,8 @@ effect 1  a dummy aura holding 150 to the friendly target
           E_APPLY_AURA A_DUMMY base=150 sp=1 target=[21,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=30 misc=126 target=[21,0]
+tooltip   Protects the target with an earthen shield, reducing casting or channeling time lost when damaged by $s2%  and causing attacks to heal the shielded target for $<heal>.  This effect can only occur once every few seconds.  $n charges.  Lasts $d.  Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time.
+aura      Reduces casting or channeling time lost when damaged by $s2% and attacks heal the shielded target for $s1.
 
 https://www.wowhead.com/forever/spell=974
 =======
@@ -224,6 +240,10 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=30 misc=126 target=[21,0]
 effect 3  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 target=[21,0]
+tooltip   Protects the target with an earthen shield, reducing casting or channeling time lost when damaged by $s2%  and causing attacks to heal the shielded target for ${$m1*$<healpower>/100}.  This effect can only occur once every few seconds.  $n charges. Lasts $d.  Earth Shield can only be placed on one target at a time.
+aura      Reduces casting or channeling time lost when damaged by $s2% and attacks heal the shielded target for $w1.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=408514
 =======
@@ -233,6 +253,7 @@ range     50000 yd
 
 effect 1  1 healing to the friendly target
           E_HEAL base=1 target=[21,0]
+tooltip   Healed by Earth Shield.
 
 https://www.wowhead.com/forever/spell=408519
 =======
@@ -242,6 +263,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408514 misc=399966 target=[1,0]
+tooltip   Gain the Earth Shield ability:
+
+          $@spellicon408514
+          $@spelldesc408514
 
 https://www.wowhead.com/forever/spell=409947
 =======
@@ -252,6 +277,7 @@ labels    24
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x1c0,0x0,0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x1c0,0x0,0x100000 target=[1,0]
+tooltip   Gives your healing spells a $m1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=16181
 =======
@@ -262,6 +288,7 @@ labels    24
 
 effect 1  SPELLMOD_THREAT -10% on family 11 mask 0x1c0,0x400,0x900050
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=2 family=11 mask=0x1c0,0x400,0x900050 target=[1,0]
+tooltip   Reduces the threat generated by your healing spells by $s1%.
 
 https://www.wowhead.com/forever/spell=29189
 =======
@@ -272,6 +299,7 @@ labels    24
 
 effect 1  SPELLMOD_THREAT -15% on family 11 mask 0x1c0,0x400,0x900050
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=2 family=11 mask=0x1c0,0x400,0x900050 target=[1,0]
+tooltip   Reduces the threat generated by your healing spells by $s1%.
 
 https://www.wowhead.com/forever/spell=29191
 =======
@@ -292,6 +320,10 @@ effect 2  a dummy effect to the friendly target
           E_DUMMY base=0 target=[21,0]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Selects the area $415242a1 yards around target player, and heals all of target player's party members within that area for ${$<healpower>*$415242m1/100} every second.
+aura      Healing target player's party within your Healing Rain for ${$<healpower>*$415242m1/100} every second.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=415236
 =======
@@ -303,6 +335,9 @@ attrs     not a proc
 
 effect 1  15 healing to target 87 (+0.063 spell power)
           E_HEAL base=15 sp=0.063 radius=15 target=[87,31]
+tooltip   Heals up to 5 friendly party or raid members within $a1 yards of the target for ${$<healpower>*$m1/100}.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=415242
 =======
@@ -317,6 +352,7 @@ refs      5672 Healing Stream
 
 effect 1  summons creature 3527 to target 42
           E_SUMMON base=5 misc=3527 misc2=82 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $5672a1 yards for $5672s1 every $5672t1 seconds.
 
 https://www.wowhead.com/forever/spell=5394
 =======
@@ -331,6 +367,7 @@ refs      6371 Healing Stream
 
 effect 1  summons creature 3906 to target 42
           E_SUMMON base=5 misc=3906 misc2=82 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $6371a1 yards for $6371s1 every $6371t1 seconds.
 
 https://www.wowhead.com/forever/spell=6375
 =======
@@ -345,6 +382,7 @@ refs      6372 Healing Stream
 
 effect 1  summons creature 3907 to target 42
           E_SUMMON base=5 misc=3907 misc2=82 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $6372a1 yards for $6372s1 every $6372t1 seconds.
 
 https://www.wowhead.com/forever/spell=6377
 =======
@@ -359,6 +397,7 @@ refs      10460 Healing Stream
 
 effect 1  summons creature 3908 to target 42
           E_SUMMON base=5 misc=3908 misc2=82 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10460a1 yards for $10460s1 every $10460t1 seconds.
 
 https://www.wowhead.com/forever/spell=10462
 =======
@@ -373,6 +412,7 @@ refs      10461 Healing Stream
 
 effect 1  summons creature 3909 to target 42
           E_SUMMON base=5 misc=3909 misc2=82 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10461a1 yards for $10461s1 every $10461t1 seconds.
 
 https://www.wowhead.com/forever/spell=10463
 =======
@@ -387,6 +427,7 @@ labels    24
 
 effect 1  36–47 healing to the chain-heal target (at level 60, +0.429 spell power)
           E_HEAL base=39 ppl=0.7 variance=0.25641027 sp=0.429 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=331
 =======
@@ -401,6 +442,7 @@ labels    24
 
 effect 1  69–83 healing to the chain-heal target (at level 60, +0.571 spell power)
           E_HEAL base=71 ppl=1 variance=0.1971831 sp=0.571 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=332
 =======
@@ -415,6 +457,7 @@ labels    24
 
 effect 1  126–151 healing to the chain-heal target (at level 60, +0.714 spell power)
           E_HEAL base=131 ppl=1.5 variance=0.18309858 sp=0.714 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=547
 =======
@@ -429,6 +472,7 @@ labels    24
 
 effect 1  246–289 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=256 ppl=2.3 variance=0.16438356 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=913
 =======
@@ -443,6 +487,7 @@ labels    24
 
 effect 1  328–383 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=342 ppl=2.7 variance=0.15686275 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=939
 =======
@@ -457,6 +502,7 @@ labels    24
 
 effect 1  464–537 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=484 ppl=3.3 variance=0.14853196 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=959
 =======
@@ -471,6 +517,7 @@ labels    24
 
 effect 1  655–754 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=685 ppl=3.9 variance=0.14303638 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=8005
 =======
@@ -485,6 +532,7 @@ labels    24
 
 effect 1  928–1063 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=972 ppl=4.7 variance=0.13736264 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10395
 =======
@@ -499,6 +547,7 @@ labels    24
 
 effect 1  1277–1455 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=1344 ppl=5.5 variance=0.13251366 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10396
 =======
@@ -513,6 +562,7 @@ labels    24
 
 effect 1  1508–1722 healing to the chain-heal target (at level 60, +0.857 spell power)
           E_HEAL base=1615 ppl=5.5 variance=0.13256484 sp=0.857 target=[45,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=25357
 =======
@@ -523,6 +573,7 @@ labels    24
 
 effect 1  SPELLMOD_DAMAGE +33% on family 11 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=33 family=11 mask=0x40 target=[1,0]
+tooltip   Increases the amount healed by your Healing Wave spell by $m1%.
 
 https://www.wowhead.com/forever/spell=29206
 =======
@@ -533,6 +584,7 @@ labels    24
 
 effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 11 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=11 mask=0x40 target=[1,0]
+tooltip   Reduces the casting time of your Healing Wave spell by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=16182
 =======
@@ -547,6 +599,7 @@ effect 2  +4% health
           E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=4 misc=1 target=[1,0]
 effect 3  SPELLMOD_ALL_EFFECTS +10 on family 11 mask 0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=8 family=11 mask=0x200 target=[1,0]
+tooltip   Reduces the cooldown of your Reincarnation spell by ${$m1/-60000} min, increases your maximum health by $m2%, and increases the amount of health and Mana you reincarnate with by an additional $m3%.
 
 https://www.wowhead.com/forever/spell=16184
 =======
@@ -561,6 +614,7 @@ labels    24
 
 effect 1  150–173 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=153 ppl=1.7 variance=0.13793103 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=8004
 =======
@@ -575,6 +629,7 @@ labels    24
 
 effect 1  220–249 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=224 ppl=2.1 variance=0.12878788 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=8008
 =======
@@ -589,6 +644,7 @@ labels    24
 
 effect 1  297–336 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=304 ppl=2.5 variance=0.12256268 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=8010
 =======
@@ -603,6 +659,7 @@ labels    24
 
 effect 1  416–466 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=426 ppl=3 variance=0.11522634 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10466
 =======
@@ -617,6 +674,7 @@ labels    24
 
 effect 1  592–660 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=608 ppl=3.6 variance=0.11077844 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10467
 =======
@@ -631,6 +689,7 @@ labels    24
 
 effect 1  775–865 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=820 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10468
 =======
@@ -644,6 +703,7 @@ range     40 yd
 
 effect 1  1084–1180 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=880 ppl=4.2 variance=0.10909091 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=27624
 =======
@@ -656,6 +716,7 @@ refs      28850 Lesser Healing Wave
 
 effect 1  a dummy aura from family 11 mask 0x20
           E_APPLY_AURA A_DUMMY base=0 sp=1 family=11 mask=0x20 target=[1,0]
+tooltip   Regain up to $28850s1 mana each time you cast Lesser Healing Wave.
 
 https://www.wowhead.com/forever/spell=28849
 =======
@@ -670,6 +731,7 @@ refs      5677 Mana Spring
 
 effect 1  summons creature 3573 to target 42
           E_SUMMON base=5 misc=3573 misc2=82 target=[42,0]
+tooltip   Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $5677s1 mana every $5677t1 seconds to group members within $5677a1 yards.
 
 https://www.wowhead.com/forever/spell=5675
 =======
@@ -684,6 +746,7 @@ refs      10491 Mana Spring
 
 effect 1  summons creature 7414 to target 42
           E_SUMMON base=5 misc=7414 misc2=82 target=[42,0]
+tooltip   Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10491s1 mana every $10491t1 seconds to group members within $10491a1 yards.
 
 https://www.wowhead.com/forever/spell=10495
 =======
@@ -698,6 +761,7 @@ refs      10493 Mana Spring
 
 effect 1  summons creature 7415 to target 42
           E_SUMMON base=5 misc=7415 misc2=82 target=[42,0]
+tooltip   Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10493s1 mana every $10493t1 seconds to group members within $10493a1 yards.
 
 https://www.wowhead.com/forever/spell=10496
 =======
@@ -712,6 +776,7 @@ refs      10494 Mana Spring
 
 effect 1  summons creature 7416 to target 42
           E_SUMMON base=5 misc=7416 misc2=82 target=[42,0]
+tooltip   Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10494s1 mana every $10494t1 seconds to group members within $10494a1 yards.
 
 https://www.wowhead.com/forever/spell=10497
 =======
@@ -724,6 +789,7 @@ refs      24853 Mana Spring
 
 effect 1  summons creature 15304 to target 42
           E_SUMMON base=5 misc=15304 misc2=82 target=[42,0]
+tooltip   Summons a Mana Spring Totem for $d, restoring $24853s1 Mana every $24853t1 sec to party members within $24853a1 yards.
 
 https://www.wowhead.com/forever/spell=24854
 =======
@@ -739,6 +805,7 @@ refs      16191 Mana Tide
 
 effect 1  summons creature 10467 to target 42
           E_SUMMON base=5 misc=10467 misc2=82 target=[42,0]
+tooltip   Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $16191s1 mana every $16191t1 seconds to group members within $16191a1 yards.
 
 https://www.wowhead.com/forever/spell=16190
 =======
@@ -754,6 +821,7 @@ refs      17355 Mana Tide
 
 effect 1  summons creature 11100 to target 42
           E_SUMMON base=5 misc=11100 misc2=82 target=[42,0]
+tooltip   Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $17355s1 mana every $17355t1 seconds to group members within $17355a1 yards.
 
 https://www.wowhead.com/forever/spell=17354
 =======
@@ -769,6 +837,7 @@ refs      17360 Mana Tide
 
 effect 1  summons creature 11101 to target 42
           E_SUMMON base=5 misc=11101 misc2=82 target=[42,0]
+tooltip   Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $17360s1 mana every $17360t1 seconds to group members within $17360a1 yards.
 
 https://www.wowhead.com/forever/spell=17359
 =======
@@ -784,6 +853,7 @@ refs      1325257 Mana Tide
 
 effect 1  summons creature 277993 to target 42
           E_SUMMON base=5 misc=277993 misc2=82 target=[42,0]
+tooltip   Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $1325257s1 mana every $1325257t1 seconds to group members within $1325257a1 yards.
 
 https://www.wowhead.com/forever/spell=1325256
 =======
@@ -794,6 +864,7 @@ labels    24
 
 effect 1  -30% threat
           E_APPLY_AURA A_MOD_THREAT base=-30 sp=1 misc=126 target=[1,0]
+tooltip   Reduces the threat generated by your spells by $m1%.
 
 https://www.wowhead.com/forever/spell=29187
 =======
@@ -806,6 +877,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 sp=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by $s1%.
 
 https://www.wowhead.com/forever/spell=16180
 =======
@@ -818,6 +890,7 @@ effect 1  +2% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=2 sp=1 target=[1,0]
 effect 2  +2% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=2 target=[1,0]
+tooltip   Improves your chance to hit by $m1%.
 
 https://www.wowhead.com/forever/spell=16196
 =======
@@ -830,6 +903,7 @@ effect 1  +3% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=3 sp=1 target=[1,0]
 effect 2  +3% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=3 target=[1,0]
+tooltip   Improves your chance to hit by $s1%.
 
 https://www.wowhead.com/forever/spell=16198
 =======
@@ -844,6 +918,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x9c3,0x0,0x100000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x9c3,0x0,0x100000,0x10000 target=[1,0]
+tooltip   When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell.
+aura      Your next Nature spell with a casting time less than 10 secs will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=16188
 =======
@@ -858,6 +934,7 @@ refs      8168 Poison Cleansing Totem Effect, 8167 Poison Cleansing Totem Passiv
 
 effect 1  summons creature 5923 to target 42
           E_SUMMON base=5 misc=5923 misc2=82 target=[42,0]
+tooltip   Summons a Poison Cleansing Totem with $s1 health at the feet of the caster that attempts to remove 1 poison effect from party members within $8168a1 yards every $8167t1 seconds.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8166
 =======
@@ -870,6 +947,7 @@ effect 1  SPELLMOD_DAMAGE +10% on family 11 mask 0x1c0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=11 mask=0x1c0,0x0,0x10 target=[1,0]
 effect 2  SPELLMOD_DOT +10% on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=11 mask=0x0,0x0,0x10 target=[1,0]
+tooltip   Increases the effectiveness of your healing spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16178
 =======
@@ -882,6 +960,7 @@ refs      21169 Reincarnation
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Allows you to resurrect yourself upon death with $21169s1% health and mana.
 
 https://www.wowhead.com/forever/spell=20608
 =======
@@ -913,6 +992,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +5% on family 11 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=8 family=11 mask=0x4000 target=[1,0]
 effect 2  SPELLMOD_DOT +5% on family 11 mask 0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=11 mask=0x2000 target=[1,0]
+tooltip   Increases the effect of your Mana Spring Totem by $m1% and increases the effect of your Healing Stream Totem by $m2%.
 
 https://www.wowhead.com/forever/spell=16187
 =======
@@ -934,6 +1014,11 @@ effect 2  89 healing every 3 s to the friendly target (5 ticks, +0.1 spell power
           E_APPLY_AURA A_PERIODIC_HEAL base=89 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+aura      Heals $w2 every $t2 sec.
+          Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=408521
 =======
@@ -944,6 +1029,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408521 misc=417346 target=[1,0]
+tooltip   Gain the Riptide ability:
+
+          $@spellicon408521
+          $@spelldesc408521
 
 https://www.wowhead.com/forever/spell=409954
 =======
@@ -965,6 +1054,11 @@ effect 2  115 healing every 3 s to the friendly target (5 ticks, +0.1 spell powe
           E_APPLY_AURA A_PERIODIC_HEAL base=115 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+aura      Heals $w2 every $t2 sec.
+          Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1239242
 =======
@@ -986,6 +1080,11 @@ effect 2  161 healing every 3 s to the friendly target (5 ticks, at level 60, +0
           E_APPLY_AURA A_PERIODIC_HEAL base=161 ppl=3.7 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+aura      Heals $w2 every $t2 sec.
+          Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1239243
 =======
@@ -1000,6 +1099,7 @@ effect 2  +5% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=5 sp=1 target=[1,0]
 effect 3  +5% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=5 sp=1 target=[1,0]
+tooltip   Reduces the Mana cost of your healing spells by $m1% and improves your chance to hit by $m2%.
 
 https://www.wowhead.com/forever/spell=16179
 =======
@@ -1010,6 +1110,7 @@ labels    24
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 11 mask 0x5c0,0x0,0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=7 family=11 mask=0x5c0,0x0,0x10 target=[1,0]
+tooltip   Increases the critical effect chance of your healing spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16194
 =======
@@ -1020,6 +1121,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -5% on family 11 mask 0x20081018,0x0,0x0,0x880
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=11 mask=0x20081018,0x0,0x0,0x880 target=[1,0]
+tooltip   Reduces the Mana cost of your totems and any spells that summon or move them by $m1%.
 
 https://www.wowhead.com/forever/spell=16173
 =======
@@ -1030,6 +1132,7 @@ labels    24
 
 effect 1  SPELLMOD_RADIUS +10 on family 11 mask 0x407e000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=6 family=11 mask=0x407e000 target=[1,0]
+tooltip   The radius of your totems that affect friendly targets is increased to 30 yd.
 
 https://www.wowhead.com/forever/spell=16189
 =======
@@ -1044,6 +1147,7 @@ refs      8146 Tremor Totem Effect
 
 effect 1  summons creature 5913 to target 41
           E_SUMMON base=5 misc=5913 misc2=81 target=[41,0]
+tooltip   Summons a Tremor Totem with $s1 health at the feet of the caster that shakes the ground around it, removing Fear, Charm and Sleep effects from party members within $8146a1 yards.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8143
 =======
@@ -1062,6 +1166,10 @@ effect 1  casts 408511 Water Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=408511 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   The caster is surrounded by $n globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, $408511s1% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds.  Lasts $d.
+
+          Only one Elemental Shield can be active on the Shaman at any one time.
+aura      Attacks and spells used against you and your critical spells restore ${$408511m1/$s2}% of your maximum mana. $s2 charges.
 
 https://www.wowhead.com/forever/spell=408510
 =======
@@ -1072,6 +1180,7 @@ labels    24
 
 effect 1  restores 2% of maximum mana to the caster
           E_ENERGIZE_PCT base=2 target=[1,0]
+tooltip   Gaining mana when hit while Water Shield is active.
 
 https://www.wowhead.com/forever/spell=408511
 =======
@@ -1081,5 +1190,9 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408510 misc=399967 target=[1,0]
+tooltip   Gain the Water Shield ability:
+
+          $@spellicon408510
+          $@spelldesc408510
 
 https://www.wowhead.com/forever/spell=409941

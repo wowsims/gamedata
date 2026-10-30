@@ -11,6 +11,8 @@ effect 1  a dummy aura holding 210 to the friendly target
           E_APPLY_AURA A_DUMMY base=210 target=[21,0]
 effect 2  a dummy aura holding 60 to the friendly target
           E_APPLY_AURA A_DUMMY base=60 target=[21,0]
+tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
 
 https://www.wowhead.com/forever/spell=19977
 =======
@@ -27,6 +29,8 @@ effect 1  a dummy aura holding 300 to the friendly target
           E_APPLY_AURA A_DUMMY base=300 target=[21,0]
 effect 2  a dummy aura holding 85 to the friendly target
           E_APPLY_AURA A_DUMMY base=85 target=[21,0]
+tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
 
 https://www.wowhead.com/forever/spell=19978
 =======
@@ -43,6 +47,8 @@ effect 1  a dummy aura holding 400 to the friendly target
           E_APPLY_AURA A_DUMMY base=400 target=[21,0]
 effect 2  a dummy aura holding 115 to the friendly target
           E_APPLY_AURA A_DUMMY base=115 target=[21,0]
+tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
 
 https://www.wowhead.com/forever/spell=19979
 =======
@@ -68,6 +74,8 @@ labels    26
 
 effect 1  restores 12 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=12 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19742
 =======
@@ -82,6 +90,8 @@ labels    26
 
 effect 1  restores 18 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=18 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19850
 =======
@@ -96,6 +106,8 @@ labels    26
 
 effect 1  restores 24 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=24 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19852
 =======
@@ -110,6 +122,8 @@ labels    26
 
 effect 1  restores 30 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=30 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19853
 =======
@@ -124,6 +138,8 @@ labels    26
 
 effect 1  restores 36 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=36 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19854
 =======
@@ -138,6 +154,8 @@ labels    26
 
 effect 1  restores 40 mana every 5 s to the friendly target (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=40 period=5000ms target=[21,0]
+tooltip   Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25290
 =======
@@ -155,6 +173,7 @@ effect 2  dispels 1 disease effect to the friendly target
           E_DISPEL base=1 misc=3 target=[21,0]
 effect 3  dispels 1 magic effect to the friendly target
           E_DISPEL base=1 misc=1 target=[21,0]
+tooltip   Cleanses a friendly target, removing $s1 poison effect, $s2 disease effect, and $s3 magic effect.
 
 https://www.wowhead.com/forever/spell=4987
 =======
@@ -165,6 +184,7 @@ attrs     passive
 
 effect 1  casts 28788 Cleanse when the target is hit from family 10 mask 0x1000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=28788 family=10 mask=0x1000 target=[1,0]
+tooltip   Your Cleanse spell also heals the target for 200.
 
 https://www.wowhead.com/forever/spell=28787
 =======
@@ -176,6 +196,7 @@ refs      20924 Consecration
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   Gives your Holy spells $m1% increased damage against the first $20924s3 enemies that enter your Consecration.
 
 https://www.wowhead.com/forever/spell=1310905
 =======
@@ -195,6 +216,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41313 radius=8 target=[87,16]
 effect 3  a dummy aura holding 4 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=4 period=1000ms target=[1,0]
+tooltip   Consecrates the land beneath the Paladin, doing ${$1280346m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280346m2*8} damage over $d.
 
 https://www.wowhead.com/forever/spell=20116
 =======
@@ -214,6 +236,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41314 radius=8 target=[87,16]
 effect 3  a dummy aura holding 4 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=4 period=1000ms target=[1,0]
+tooltip   Consecrates the land beneath the Paladin, doing ${$1280347m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280347m2*8} damage over $d.
 
 https://www.wowhead.com/forever/spell=20922
 =======
@@ -233,6 +256,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41315 radius=8 target=[87,16]
 effect 3  a dummy aura holding 4 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=4 period=1000ms target=[1,0]
+tooltip   Consecrates the land beneath the Paladin, doing ${$1280348m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280348m2*8} damage over $d.
 
 https://www.wowhead.com/forever/spell=20923
 =======
@@ -252,6 +276,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41316 radius=8 target=[87,16]
 effect 3  a dummy aura holding 4 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=4 period=1000ms target=[1,0]
+tooltip   Consecrates the land beneath the Paladin, doing ${$1280349m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280349m2*8} damage over $d.
 
 https://www.wowhead.com/forever/spell=20924
 =======
@@ -271,6 +296,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41311 radius=8 target=[87,16]
 effect 3  a dummy aura holding 4 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=4 period=1000ms target=[1,0]
+tooltip   Consecrates the land beneath the Paladin, doing ${$1280345m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280345m2*8} damage over $d.
 
 https://www.wowhead.com/forever/spell=26573
 =======
@@ -281,6 +307,7 @@ duration  8 s
 
 effect 1  a dummy aura holding 48 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=48 period=1000ms radius=8 target=[1,34]
+aura      $s1 healing every $t1 $lsecond:seconds;.
 
 https://www.wowhead.com/forever/spell=458285
 =======
@@ -372,6 +399,8 @@ effect 1  a dummy aura to target 87
           E_APPLY_AURA A_DUMMY base=0 sp=0.042 radius=8 target=[87,16]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=0 misc=2 radius=8 target=[87,16]
+tooltip   Taking increased damage from Consecration.
+aura      Taking increased damage from Consecration.
 
 https://www.wowhead.com/forever/spell=1280353
 =======
@@ -388,6 +417,8 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 10 mask 0x80206000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 misc=7 family=10 mask=0x80206000 target=[1,0]
+tooltip   When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a $s1% critical effect chance.
+aura      Critical effect chance of next Flash of Light, Holy Light, or Holy Shock spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=20216
 =======
@@ -397,6 +428,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458856 misc=417347 target=[1,0]
+tooltip   Gain the Divine Light ability:
+
+          $@spellicon458856
+          $@spelldesc458856
 
 https://www.wowhead.com/forever/spell=409925
 =======
@@ -414,6 +449,11 @@ effect 1  355–393 healing to the friendly target
           E_HEAL base=374 variance=0.10160428 sp=1 target=[21,0]
 effect 2  a dummy effect holding 50 to the friendly target
           E_DUMMY base=50 sp=1 target=[21,0]
+tooltip   Heals a friendly target for ${$<healpower>*$m1/100} to ${$<healpower>*$M1/100}. $s2% of any excess healing on the target is converted into an absorption shield that lasts $458857d. Multiple casts of Divine Light do not accumulate this shield.
+
+          Divine Light benefits from all talents and effects that trigger from or modify Holy Light.
+vars      $damagepower=${9.046514+0.676562*$PL+0.019349*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=458856
 =======
@@ -425,6 +465,7 @@ labels    3096
 
 effect 1  absorbs 36 every school damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=36 misc=127 target=[21,0]
+aura      Absorbs $w damage.
 
 https://www.wowhead.com/forever/spell=458857
 =======
@@ -445,6 +486,7 @@ labels    26
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +18% on family 10 mask 0x200824,0x200000,0x40102000,0x4008000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=18 misc=16 family=10 mask=0x200824,0x200000,0x40102000,0x4008000 target=[1,0]
+tooltip   Improves your chance to hit with Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1310904
 =======
@@ -456,6 +498,7 @@ effect 1  SPELLMOD_DURATION +100% on family 10 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=1 family=10 mask=0x0,0x0,0x10000 target=[1,0]
 effect 2  SPELLMOD_COST -50% on family 10 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=10 mask=0x0,0x0,0x10000 target=[1,0]
+tooltip   Increases the duration of your Blessing of Might, Wisdom, Salvation, Sanctuary, Light, and Kings by $s1% and reduces their mana cost by $s2%.
 
 https://www.wowhead.com/forever/spell=435984
 =======
@@ -470,6 +513,7 @@ labels    26
 
 effect 1  80–90 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=79 ppl=1.2 variance=0.13333334 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=879
 =======
@@ -484,6 +528,7 @@ labels    26
 
 effect 1  140–158 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=141 ppl=1.6 variance=0.12345679 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=5614
 =======
@@ -498,6 +543,7 @@ labels    26
 
 effect 1  200–224 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=202 ppl=2 variance=0.12121212 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=5615
 =======
@@ -512,6 +558,7 @@ labels    26
 
 effect 1  286–320 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=291 ppl=2.4 variance=0.11764706 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=10312
 =======
@@ -526,6 +573,7 @@ labels    26
 
 effect 1  377–419 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=384 ppl=2.8 variance=0.11057692 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=10313
 =======
@@ -540,6 +588,7 @@ labels    26
 
 effect 1  475–529 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=502 ppl=3.2 variance=0.10861423 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Holy damage to an Undead or Demon target.
 
 https://www.wowhead.com/forever/spell=10314
 =======
@@ -554,6 +603,7 @@ labels    26
 
 effect 1  48–54 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=46 ppl=1 variance=0.14925373 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19750
 =======
@@ -568,6 +618,7 @@ labels    26
 
 effect 1  68–77 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=66 ppl=1.3 variance=0.13592233 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19939
 =======
@@ -582,6 +633,7 @@ labels    26
 
 effect 1  103–115 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=101 ppl=1.6 variance=0.11688311 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19940
 =======
@@ -596,6 +648,7 @@ labels    26
 
 effect 1  151–170 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=151 ppl=1.9 variance=0.11483254 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19941
 =======
@@ -610,6 +663,7 @@ labels    26
 
 effect 1  221–247 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=223 ppl=2.2 variance=0.11307421 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19942
 =======
@@ -624,6 +678,7 @@ labels    26
 
 effect 1  291–326 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=303 ppl=2.6 variance=0.11019284 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19943
 =======
@@ -636,6 +691,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19993
 =======
@@ -648,6 +704,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313342
 =======
@@ -660,6 +717,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313343
 =======
@@ -672,6 +730,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313344
 =======
@@ -684,6 +743,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313345
 =======
@@ -696,6 +756,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313346
 =======
@@ -712,6 +773,8 @@ effect 1  a dummy aura holding 400 to target 153
           E_APPLY_AURA A_DUMMY base=400 radius=100 target=[153,0]
 effect 2  a dummy aura holding 115 to target 153
           E_APPLY_AURA A_DUMMY base=115 radius=100 target=[153,0]
+tooltip   Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
 
 https://www.wowhead.com/forever/spell=25890
 =======
@@ -726,6 +789,8 @@ labels    26
 
 effect 1  restores 36 mana every 5 s to target 153 (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=36 period=5000ms radius=100 target=[153,0]
+tooltip   Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25894
 =======
@@ -740,6 +805,8 @@ labels    26
 
 effect 1  restores 40 mana every 5 s to target 153 (720 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=40 period=5000ms radius=100 target=[153,0]
+tooltip   Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25918
 =======
@@ -755,6 +822,7 @@ labels    26
 
 effect 1  474–522 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=498 ppl=3.1 variance=0.09811321 sp=0.429 target=[6,0]
+tooltip   Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=24239
 =======
@@ -770,6 +838,7 @@ labels    26
 
 effect 1  382–421 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=388 ppl=2.7 variance=0.1 sp=0.429 target=[6,0]
+tooltip   Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=24274
 =======
@@ -785,6 +854,7 @@ labels    26
 
 effect 1  286–314 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=288 ppl=2.4 variance=0.1 sp=0.429 target=[6,0]
+tooltip   Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=24275
 =======
@@ -796,6 +866,9 @@ range     30 yd
 
 effect 1  300 holy damage to the enemy (+0.15 spell power +0.15 attack power)
           E_SCHOOL_DAMAGE base=300 sp=0.15 ap=0.15 target=[6,0]
+tooltip   Hurls a hammer that strikes an enemy for ${$m1*$<damagepower>+0.15*$SPH+0.15*$AP} to ${$M1*$<damagepower>+0.15*$SPH+0.15*$AP} Holy damage.  Only usable on enemies that have 20% or less health.
+vars      $damagepower=${9.046514+0.676562*$PL+0.019349*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=429151
 =======
@@ -806,6 +879,7 @@ labels    26
 
 effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x6000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=10 mask=0x6000,0x10000 target=[1,0]
+tooltip   Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by $s1%.
 
 https://www.wowhead.com/forever/spell=20237
 =======
@@ -820,6 +894,7 @@ labels    26
 
 effect 1  42–51 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=43 ppl=0.8 variance=0.18604651 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=635
 =======
@@ -834,6 +909,7 @@ labels    26
 
 effect 1  81–96 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=83 ppl=1.1 variance=0.16867469 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=639
 =======
@@ -848,6 +924,7 @@ labels    26
 
 effect 1  150–177 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=155 ppl=1.7 variance=0.1618497 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=647
 =======
@@ -862,6 +939,7 @@ labels    26
 
 effect 1  279–319 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=287 ppl=2.4 variance=0.13813815 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1026
 =======
@@ -876,6 +954,7 @@ labels    26
 
 effect 1  440–495 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=452 ppl=3.1 variance=0.11877394 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1042
 =======
@@ -890,6 +969,7 @@ labels    26
 
 effect 1  629–701 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=646 ppl=3.8 variance=0.11096076 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=3472
 =======
@@ -904,6 +984,7 @@ labels    26
 
 effect 1  873–971 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=899 ppl=4.6 variance=0.10810811 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10328
 =======
@@ -918,6 +999,7 @@ labels    26
 
 effect 1  1177–1309 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=1217 ppl=5.2 variance=0.1078208 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10329
 =======
@@ -931,6 +1013,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19968
 =======
@@ -944,6 +1027,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19980
 =======
@@ -957,6 +1041,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19981
 =======
@@ -970,6 +1055,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=19982
 =======
@@ -984,6 +1070,7 @@ labels    26
 
 effect 1  1495–1665 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=1580 ppl=5.8 variance=0.10714286 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=25292
 =======
@@ -997,6 +1084,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313348
 =======
@@ -1010,6 +1098,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313349
 =======
@@ -1023,6 +1112,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313350
 =======
@@ -1036,6 +1126,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313351
 =======
@@ -1049,6 +1140,7 @@ labels    26
 
 effect 1  1 healing to the friendly target (+0.714 spell power)
           E_HEAL base=1 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1313352
 =======
@@ -1061,6 +1153,7 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 10 mask 0x200e428,0x20200a80,0x
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=7 family=10 mask=0x200e428,0x20200a80,0x2040,0x4000000 target=[1,0]
 effect 2  SPELLMOD_CRITICAL_CHANCE +15% on family 10 mask 0x200000,0x0,0x0,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=7 family=10 mask=0x200000,0x0,0x0,0x8000 target=[1,0]
+tooltip   Increases the critical strike chance of your Holy Shock and Holy Strike spells by $m2%, and all other spells by $m1%.
 
 https://www.wowhead.com/forever/spell=5923
 =======
@@ -1072,6 +1165,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 10% chance
 
 effect 1  a dummy aura from family 10 mask 0x1000
           E_APPLY_AURA A_DUMMY base=0 family=10 mask=0x1000 target=[1,0]
+tooltip   Your Flash of Light and Holy Light spells have a chance to imbue your target with Holy Power.
 
 https://www.wowhead.com/forever/spell=28789
 =======
@@ -1085,6 +1179,7 @@ effect 1  +20% holy damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 sp=1 misc=2 target=[1,0]
 effect 2  a dummy aura every 1 s (15 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 sp=1 period=1000ms target=[1,0]
+aura      Increases all Holy damage you deal by $s1%.
 
 https://www.wowhead.com/forever/spell=1226461
 =======
@@ -1099,6 +1194,7 @@ refs      25912 Holy Shock, 25914 Holy Shock
 
 effect 1  a dummy effect to the target
           E_DUMMY base=0 sp=1 target=[25,0]
+tooltip   Blasts the target with Holy energy, causing $25912s1 Holy damage to an enemy, or $25914s1 healing to an ally.
 
 https://www.wowhead.com/forever/spell=20473
 =======
@@ -1113,6 +1209,7 @@ refs      25911 Holy Shock, 25913 Holy Shock
 
 effect 1  a dummy effect to the target
           E_DUMMY base=0 sp=1 target=[25,0]
+tooltip   Blasts the target with Holy energy, causing $25911s1 Holy damage to an enemy, or $25913s1 healing to an ally.
 
 https://www.wowhead.com/forever/spell=20929
 =======
@@ -1127,6 +1224,7 @@ refs      25902 Holy Shock, 25903 Holy Shock
 
 effect 1  a dummy effect to the target
           E_DUMMY base=0 sp=1 target=[25,0]
+tooltip   Blasts the target with Holy energy, causing $25902s1 Holy damage to an enemy, or $25903s1 healing to an ally.
 
 https://www.wowhead.com/forever/spell=20930
 =======
@@ -1139,6 +1237,7 @@ labels    26
 
 effect 1  334–362 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=348 variance=0.078947365 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=25902
 =======
@@ -1151,6 +1250,7 @@ labels    26
 
 effect 1  307–333 healing to the friendly target (+0.429 spell power)
           E_HEAL base=320 variance=0.078947365 sp=0.429 target=[21,0]
+tooltip   Healed for $s1.
 
 https://www.wowhead.com/forever/spell=25903
 =======
@@ -1163,6 +1263,7 @@ labels    26
 
 effect 1  248–268 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=258 variance=0.07586207 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=25911
 =======
@@ -1175,6 +1276,7 @@ labels    26
 
 effect 1  175–189 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=182 variance=0.0754717 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=25912
 =======
@@ -1187,6 +1289,7 @@ labels    26
 
 effect 1  221–239 healing to the friendly target (+0.429 spell power)
           E_HEAL base=230 variance=0.07586207 sp=0.429 target=[21,0]
+tooltip   Healed for $s1.
 
 https://www.wowhead.com/forever/spell=25913
 =======
@@ -1199,6 +1302,7 @@ labels    26
 
 effect 1  150–162 healing to the friendly target (+0.429 spell power)
           E_HEAL base=156 variance=0.0754717 sp=0.429 target=[21,0]
+tooltip   Healed for $s1.
 
 https://www.wowhead.com/forever/spell=25914
 =======
@@ -1209,6 +1313,7 @@ range     20 yd
 
 effect 1  0 holy damage to the caster
           E_SCHOOL_DAMAGE base=0 target=[1,0]
+tooltip   A blast of Holy Power.
 
 https://www.wowhead.com/forever/spell=444894
 =======
@@ -1221,6 +1326,7 @@ labels    26
 
 effect 1  129–139 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=134 variance=0.0754717 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1311604
 =======
@@ -1233,6 +1339,7 @@ labels    26
 
 effect 1  110–118 healing to the friendly target (+0.429 spell power)
           E_HEAL base=114 variance=0.0754717 sp=0.429 target=[21,0]
+tooltip   Heals $s1 damage.
 
 https://www.wowhead.com/forever/spell=1311605
 =======
@@ -1247,6 +1354,7 @@ refs      1311604 Holy Shock, 1311605 Holy Shock
 
 effect 1  a dummy effect to the target
           E_DUMMY base=0 sp=1 target=[25,0]
+tooltip   Blasts the target with Holy energy, causing $1311604s1 Holy damage to an enemy, or $1311605s1 healing to an ally.
 
 https://www.wowhead.com/forever/spell=1311606
 =======
@@ -1262,6 +1370,7 @@ refs      429147 Stun
 
 effect 1  368–435 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=395 ppl=1.6 variance=0.16708861 sp=0.19 radius=20 target=[22,15]
+tooltip   Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 https://www.wowhead.com/forever/spell=2812
 =======
@@ -1277,6 +1386,7 @@ refs      429147 Stun
 
 effect 1  490–576 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=533 ppl=1.9 variance=0.16135085 sp=0.19 radius=20 target=[22,15]
+tooltip   Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 https://www.wowhead.com/forever/spell=10318
 =======
@@ -1292,6 +1402,7 @@ refs      429147 Stun
 
 effect 1  448–515 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=395 ppl=1.6 variance=0.16708861 sp=0.19 radius=20 target=[22,15]
+tooltip   Sends bolts of holy power in all directions, causing $s1 Holy damage to all targets within $a1 yds and Stunning Demon and Undead targets for $429147d.
 
 https://www.wowhead.com/forever/spell=429145
 =======
@@ -1307,6 +1418,7 @@ refs      429147 Stun
 
 effect 1  604–690 holy damage to every enemy around the caster (at level 60, +0.19 spell power)
           E_SCHOOL_DAMAGE base=533 ppl=1.9 variance=0.16135085 sp=0.19 radius=20 target=[22,15]
+tooltip   Sends bolts of holy power in all directions, causing $s1 Holy damage to all targets within $a1 yds and Stunning Demon and Undead targets for $429147d.
 
 https://www.wowhead.com/forever/spell=429146
 =======
@@ -1324,6 +1436,7 @@ effect 3  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
 effect 4  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a $m1% chance to gain Mana equal to $m3% of the base cost of the spell.
 
 https://www.wowhead.com/forever/spell=20210
 =======
@@ -1334,6 +1447,7 @@ labels    26
 
 effect 1  SPELLMOD_ALL_EFFECTS +10% on family 10 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=8 family=10 mask=0x10000 target=[1,0]
+tooltip   Increases the effect of your Blessing of Wisdom spell by $s1%.
 
 https://www.wowhead.com/forever/spell=20244
 =======
@@ -1344,6 +1458,7 @@ labels    26
 
 effect 1  SPELLMOD_ALL_EFFECTS +20% on family 10 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=8 family=10 mask=0x10000 target=[1,0]
+tooltip   Increases the effect of your Blessing of Wisdom spell by $s1%.
 
 https://www.wowhead.com/forever/spell=20245
 =======
@@ -1354,6 +1469,7 @@ labels    26
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 10 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=7 family=10 mask=0x2000 target=[1,0]
+tooltip   Increases the critical effect chance of your Flash of Light spell by $s1%.
 
 https://www.wowhead.com/forever/spell=20249
 =======
@@ -1364,6 +1480,7 @@ labels    26
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +4% on family 10 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=7 family=10 mask=0x2000 target=[1,0]
+tooltip   Increases the critical effect chance of your Flash of Light spell by $s1%.
 
 https://www.wowhead.com/forever/spell=20250
 =======
@@ -1374,6 +1491,7 @@ labels    26
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 10 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=7 family=10 mask=0x2000 target=[1,0]
+tooltip   Increases the critical effect chance of your Flash of Light spell by $s1%.
 
 https://www.wowhead.com/forever/spell=20251
 =======
@@ -1384,6 +1502,7 @@ labels    26
 
 effect 1  SPELLMOD_DAMAGE +0% on family 10 mask 0x2000400,0x20000a00,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 family=10 mask=0x2000400,0x20000a00,0x40 target=[1,0]
+tooltip   Increases the damage done by your Seals and Judgements by $s1%.
 
 https://www.wowhead.com/forever/spell=20224
 =======
@@ -1398,6 +1517,8 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 10 mask 0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=10 mask=0x80000000 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -0.75 s on family 10 mask 0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-750 misc=10 family=10 mask=0x40000000 target=[1,0]
+tooltip   Your Holy Shock critical hits reduce the cast time of your next Flash of Light by ${$53672m2/-1000}.2 sec or increase the critical chance of your next Holy Light by $s1%.
+aura      Reduces the cast time of your next Flash of Light by ${$53672m2/-1000}.2 sec or increase the critical chance of your next Holy Light by $s1%.
 
 https://www.wowhead.com/forever/spell=53672
 =======
@@ -1410,6 +1531,7 @@ refs      437063 Infusion of Light
 
 effect 1  a dummy aura holding -1000
           E_APPLY_AURA A_DUMMY base=-1000 sp=1 target=[1,0]
+tooltip   Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within $437063d by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=426065
 =======
@@ -1420,6 +1542,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426065 misc=415449 target=[1,0]
+tooltip   Gain the Infusion of Light ability:
+
+          $@spellicon426065
+          $@spelldesc426065
 
 https://www.wowhead.com/forever/spell=426179
 =======
@@ -1433,6 +1559,8 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x80000000 target=[1,0]
+tooltip   Reduces the cast time of your next Holy Light spell by 1 sec.
+aura      Reduces the cast time of your next Holy Light spell by ${$w/1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=437063
 =======
@@ -1445,6 +1573,8 @@ cost      2% of base mana
 
 effect 1  a dummy aura every 4 s (30 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=4000ms target=[1,0]
+tooltip   Your inspiring presence periodically dispels Fear and Sleep effects on nearby party members.
+aura      Periodically dispelling Fear and Sleep effects on nearby party members.
 
 https://www.wowhead.com/forever/spell=407880
 =======
@@ -1458,6 +1588,7 @@ effect 2  dispels fear to the party around the caster
           E_DISPEL_MECHANIC base=1 sp=1 misc=5 radius=30 target=[22,33]
 effect 3  dispels sleep to the party around the caster
           E_DISPEL_MECHANIC base=1 sp=1 misc=10 radius=30 target=[22,33]
+tooltip   Your inspiring presence periodically dispels Fear and Sleep effects on nearby party members.
 
 https://www.wowhead.com/forever/spell=407881
 =======
@@ -1467,6 +1598,11 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407880 misc=399966 target=[1,0]
+tooltip   Gain the Inspiration Exemplar
+           ability:
+
+          $@spellicon407880
+          $@spelldesc407880
 
 https://www.wowhead.com/forever/spell=409936
 =======
@@ -1481,6 +1617,8 @@ refs      20267 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+tooltip   Melee attacks made against you have a chance of causing the attacker to be healed for $20267s1.
+aura      Melee attacks made against you have a chance of causing the attacker to be healed for $20267s1.
 
 https://www.wowhead.com/forever/spell=20185
 =======
@@ -1539,6 +1677,8 @@ refs      20341 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+tooltip   Melee attacks made against you have a chance of causing the attacker to be healed for $20341s1.
+aura      Melee attacks made against you have a chance of causing the attacker to be healed for $20341s1.
 
 https://www.wowhead.com/forever/spell=20344
 =======
@@ -1553,6 +1693,8 @@ refs      20342 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+tooltip   Melee attacks made against you have a chance of causing the attacker to be healed for $20342s1.
+aura      Melee attacks made against you have a chance of causing the attacker to be healed for $20342s1.
 
 https://www.wowhead.com/forever/spell=20345
 =======
@@ -1567,6 +1709,8 @@ refs      20343 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=5373 target=[6,0]
+tooltip   Melee attacks made against you have a chance of causing the attacker to be healed for $20343s1.
+aura      Melee attacks made against you have a chance of causing the attacker to be healed for $20343s1.
 
 https://www.wowhead.com/forever/spell=20346
 =======
@@ -1599,6 +1743,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20 from family 10 mask 0x0,0x1
           E_APPLY_AURA A_DUMMY base=20 family=10 mask=0x0,0x1 target=[1,0]
+tooltip   Increases the amount healed by your Judgement of Light by $s1.
 
 https://www.wowhead.com/forever/spell=28775
 =======
@@ -1725,6 +1870,8 @@ refs      20268 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+tooltip   Attacks and spells used against the target have a chance of restoring $20268s1 of the attacker's mana.
+aura      Attacks and spells used against you have a chance of restoring $20268s1 of the attacker's mana.
 
 https://www.wowhead.com/forever/spell=20186
 =======
@@ -1739,6 +1886,8 @@ refs      20352 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+tooltip   Attacks and spells used against the target have a chance of restoring $20352s1 of the attacker's mana.
+aura      Attacks and spells used against you have a chance of restoring $20352s1 of the attacker's mana.
 
 https://www.wowhead.com/forever/spell=20354
 =======
@@ -1753,6 +1902,8 @@ refs      20353 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1826 target=[6,0]
+tooltip   Attacks and spells used against the target have a chance of restoring $20353s1 of the attacker's mana.
+aura      Attacks and spells used against you have a chance of restoring $20353s1 of the attacker's mana.
 
 https://www.wowhead.com/forever/spell=20355
 =======
@@ -1785,6 +1936,7 @@ labels    26
 
 effect 1  SPELLMOD_DURATION +10 s on family 10 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=1 family=10 mask=0x80000 target=[1,0]
+tooltip   Increases the duration of your Judgement of Light and Judgement of Wisdom by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=20359
 =======
@@ -1795,6 +1947,7 @@ labels    26
 
 effect 1  SPELLMOD_DURATION +20 s on family 10 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20000 sp=1 misc=1 family=10 mask=0x80000 target=[1,0]
+tooltip   Increases the duration of your Judgement of Light and Judgement of Wisdom by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=20360
 =======
@@ -1805,6 +1958,7 @@ labels    26
 
 effect 1  SPELLMOD_DURATION +30 s on family 10 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30000 sp=1 misc=1 family=10 mask=0x80000 target=[1,0]
+tooltip   Increases the duration of your Judgement of Light and Judgement of Wisdom by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=20361
 =======
@@ -1820,6 +1974,7 @@ effect 1  unrecognised shape
           E_HEAL_MAX_HEALTH base=0 target=[21,0]
 effect 2  restores 0 mana to the friendly target
           E_ENERGIZE base=0 target=[21,0]
+tooltip   Heals a friendly target for an amount equal to the Paladin's maximum health.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 https://www.wowhead.com/forever/spell=633
 =======
@@ -1835,6 +1990,7 @@ effect 1  unrecognised shape
           E_HEAL_MAX_HEALTH base=0 target=[21,0]
 effect 2  restores 250 mana to the friendly target
           E_ENERGIZE base=250 target=[21,0]
+tooltip   Heals a friendly target for an amount equal to the Paladin's maximum health and restores $s2 of their mana.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 https://www.wowhead.com/forever/spell=2800
 =======
@@ -1850,6 +2006,7 @@ effect 1  unrecognised shape
           E_HEAL_MAX_HEALTH base=0 target=[21,0]
 effect 2  restores 550 mana to the friendly target
           E_ENERGIZE base=550 target=[21,0]
+tooltip   Heals a friendly target for an amount equal to the Paladin's maximum health and restores $s2 of their mana.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 https://www.wowhead.com/forever/spell=10310
 =======
@@ -1866,6 +2023,8 @@ refs      1310912 Light's Vigil
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+tooltip   The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1310912s1.
+aura      The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1310912s1.
 
 https://www.wowhead.com/forever/spell=1310909
 =======
@@ -1882,6 +2041,8 @@ refs      1310914 Light's Vigil
 
 effect 1  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Detonates for $1310914s1 Holy damage when struck by the caster's Holy Shock.
+aura      Detonates for $1310914s1 Holy damage when struck by the caster's Holy Shock.
 
 https://www.wowhead.com/forever/spell=1310910
 =======
@@ -1900,6 +2061,7 @@ effect 1  a dummy effect to the target
           E_DUMMY base=0 target=[25,0]
 effect 2  a dummy effect holding 75 to the target
           E_DUMMY base=75 target=[25,0]
+tooltip   Applies Light's Vigil to the target for $1310909d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1310914s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1310912s1. You may only have one Light's Vigil active per party.
 
 https://www.wowhead.com/forever/spell=1310911
 =======
@@ -1912,6 +2074,7 @@ labels    26
 
 effect 1  325–344 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=324 ppl=1.2 variance=0.056213018 sp=0.143 radius=40 target=[132,31]
+tooltip   Activated by Holy Shock. Heals the target and their party for $s1. Party members must be within $a1 yds of the target.
 
 https://www.wowhead.com/forever/spell=1310912
 =======
@@ -1924,6 +2087,7 @@ labels    26
 
 effect 1  175–189 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=182 variance=0.0754717 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1310914
 =======
@@ -1942,6 +2106,7 @@ effect 1  a dummy effect to the target
           E_DUMMY base=0 target=[25,0]
 effect 2  a dummy effect holding 75 to the target
           E_DUMMY base=75 target=[25,0]
+tooltip   Applies Light's Vigil to the target for $1311593d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1311592s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1311591s1. You may only have one Light's Vigil active per party.
 
 https://www.wowhead.com/forever/spell=1311590
 =======
@@ -1954,6 +2119,7 @@ labels    26
 
 effect 1  486–515 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=487 ppl=1.5 variance=0.056213018 sp=0.143 radius=40 target=[132,31]
+tooltip   Activated by Holy Shock. Heals the target and their party for $s1. Party members must be within $a1 yds of target.
 
 https://www.wowhead.com/forever/spell=1311591
 =======
@@ -1966,6 +2132,7 @@ labels    26
 
 effect 1  268–288 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=278 variance=0.0754717 sp=0.429 target=[6,0]
+tooltip   Deals $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1311592
 =======
@@ -1982,6 +2149,8 @@ refs      1311591 Light's Vigil
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+tooltip   The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1311591s1.
+aura      The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1311591s1.
 
 https://www.wowhead.com/forever/spell=1311593
 =======
@@ -1998,6 +2167,8 @@ refs      1311592 Light's Vigil
 
 effect 1  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Detonates for $1311592s1 Holy damage when struck by the caster's Holy Shock.
+aura      Detonates for $1311592s1 Holy damage when struck by the caster's Holy Shock.
 
 https://www.wowhead.com/forever/spell=1311594
 =======
@@ -2016,6 +2187,7 @@ effect 1  a dummy effect to the target
           E_DUMMY base=0 target=[25,0]
 effect 2  a dummy effect holding 75 to the target
           E_DUMMY base=75 target=[25,0]
+tooltip   Applies Light's Vigil to the target for $1311597d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1311598s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1311596s1. You may only have one Light's Vigil active per party.
 
 https://www.wowhead.com/forever/spell=1311595
 =======
@@ -2028,6 +2200,7 @@ labels    26
 
 effect 1  684–724 healing to target 132 (at level 60, +0.143 spell power)
           E_HEAL base=704 ppl=1.8 variance=0.056213018 sp=0.143 radius=40 target=[132,31]
+tooltip   Activated by Holy Shock. Heals the target and their party for $s1. Party members must be within $a1 yds of target.
 
 https://www.wowhead.com/forever/spell=1311596
 =======
@@ -2044,6 +2217,8 @@ refs      1311596 Light's Vigil
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+tooltip   The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1311596s1.
+aura      The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1311596s1.
 
 https://www.wowhead.com/forever/spell=1311597
 =======
@@ -2056,6 +2231,7 @@ labels    26
 
 effect 1  380–410 holy damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=395 variance=0.0754717 sp=0.429 target=[6,0]
+tooltip   Deals $s1 damage.
 
 https://www.wowhead.com/forever/spell=1311598
 =======
@@ -2072,6 +2248,8 @@ refs      1311598 Light's Vigil
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=0 trigger=1311601 target=[6,0]
+tooltip   Detonates for $1311598s1 Holy damage when struck by the caster's Holy Shock.
+aura      Detonates for $1311598s1 Holy damage when struck by the caster's Holy Shock.
 
 https://www.wowhead.com/forever/spell=1311599
 =======
@@ -2097,6 +2275,7 @@ effect 1  dispels 1 disease effect to the friendly target
           E_DISPEL base=1 misc=3 target=[21,0]
 effect 2  dispels 1 poison effect to the friendly target
           E_DISPEL base=1 misc=4 target=[21,0]
+tooltip   Purifies the friendly target, removing $s1 disease effect and $s2 poison effect.
 
 https://www.wowhead.com/forever/spell=1152
 =======
@@ -2109,6 +2288,7 @@ effect 1  SPELLMOD_COST -20% on family 10 mask 0x0,0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=10 mask=0x0,0x2 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -50% on family 10 mask 0x0,0x200000,0x40002000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=10 mask=0x0,0x200000,0x40002000 target=[1,0]
+tooltip   Reduces the mana cost of your Cleanse and Purify spells by $m1% and reduces the cooldown of your Exorcism and Holy Wrath spells by $m2%.
 
 https://www.wowhead.com/forever/spell=429144
 =======
@@ -2119,6 +2299,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429144 misc=417346 target=[1,0]
+tooltip   Gain the Purifying Power ability:
+
+          $@spellicon429144
+          $@spelldesc429144
 
 https://www.wowhead.com/forever/spell=429254
 =======
@@ -2133,6 +2317,7 @@ labels    26, 6316
 
 effect 1  unrecognised shape
           E_329 base=65 sp=1 misc=120 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=7328
 =======
@@ -2147,6 +2332,7 @@ labels    26, 6316
 
 effect 1  unrecognised shape
           E_329 base=150 sp=1 misc=260 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=10322
 =======
@@ -2161,6 +2347,7 @@ labels    26, 6316
 
 effect 1  unrecognised shape
           E_329 base=250 sp=1 misc=420 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=10324
 =======
@@ -2175,6 +2362,7 @@ labels    26, 6316
 
 effect 1  unrecognised shape
           E_329 base=400 sp=1 misc=600 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20772
 =======
@@ -2189,6 +2377,7 @@ labels    26, 6316
 
 effect 1  unrecognised shape
           E_329 base=600 sp=1 misc=800 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20773
 =======
@@ -2207,6 +2396,8 @@ effect 1  a dummy aura holding 6 to the friendly target
           E_APPLY_AURA A_DUMMY base=6 misc=127 target=[21,0]
 effect 2  a dummy aura holding 6 to the friendly target
           E_APPLY_AURA A_DUMMY base=6 misc=127 trigger=58597 target=[21,0]
+tooltip   Each time the target takes damage they gain a Sacred Shield, absorbing $58597s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $58597s2% for up to $58597d.  They cannot gain this effect more than once every $s2 sec.  Lasts $d.  This spell cannot be on more than one target at any one time.
+aura      Each time the target takes damage they gain a Sacred Shield, absorbing $58597s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $58597s2%.   The target cannot gain this effect more than once every $s2 sec.
 
 https://www.wowhead.com/forever/spell=53601
 =======
@@ -2220,6 +2411,8 @@ effect 1  absorbs 500 every school damage to the friendly target (+0.429 spell p
           E_APPLY_AURA A_SCHOOL_ABSORB base=500 sp=0.429 misc=127 target=[21,0]
 effect 2  a dummy aura holding 50 to the friendly target
           E_APPLY_AURA A_DUMMY base=50 target=[21,0]
+tooltip   Each time the target takes damage they gain a Sacred Shield, absorbing $58597s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $58597s2% for up to $58597d.  They cannot gain this effect more than once every 6 sec.  Lasts $d.
+aura      Absorbs damage and increases the casting paladin's chance to critically hit with Flash of Light by $s2%.
 
 https://www.wowhead.com/forever/spell=58597
 =======
@@ -2233,6 +2426,8 @@ effect 1  absorbs 36 every school damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=36 misc=127 target=[21,0]
 effect 2  a dummy aura holding 50 from family 10 mask 0x2000 to the friendly target
           E_APPLY_AURA A_DUMMY base=50 family=10 mask=0x2000 target=[21,0]
+tooltip   Each time the target takes damage they gain a Sacred Shield, absorbing $s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $s2% for up to $d.  They cannot gain this effect more than once every 6 sec.  Lasts $d.
+aura      Absorbs damage and increases the casting paladin's chance to critically hit with Flash of Light by $s2%.
 
 https://www.wowhead.com/forever/spell=412018
 =======
@@ -2253,6 +2448,10 @@ effect 2  a dummy aura holding 6 to the friendly target
           E_APPLY_AURA A_DUMMY base=6 misc=127 target=[21,0]
 effect 3  a dummy effect holding 100 to the caster
           E_DUMMY base=100 target=[1,0]
+tooltip   Each time the target takes damage they gain a Sacred Shield, absorbing ${$412018m1*$<healpower>/100} damage and increasing the Paladin's chance to critically hit with Flash of Light by $412018s2% for up to $412018d.  In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional $s3% over $412020d. They cannot gain this effect more than once every $s2 sec.  Lasts $d.  This spell cannot be on more than one target at any one time.
+aura      Each time the target takes damage they gain a Sacred Shield, absorbing ${$412018m1*$<healpower>/100} damage and increasing the Paladin's chance to critically hit with Flash of Light by $412018s2%.   The target cannot gain this effect more than once every $s2 sec.
+vars      $damagepower=${9.456667+0.635108*$PL+0.039063*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=412019
 =======
@@ -2263,6 +2462,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412019 misc=415450 target=[1,0]
+tooltip   Gain the Sacred Shield ability:
+
+          $@spellicon412019
+          $@spelldesc412019
 
 https://www.wowhead.com/forever/spell=415703
 =======
@@ -2274,6 +2477,8 @@ labels    3096
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 10 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=10 mask=0x2000 target=[1,0]
+tooltip   Each time the target takes damage they gain a Sacred Shield, absorbing $s1 damage and increasing the paladin's chance to critically hit with Flash of Light by $s2% for up to $d.  They cannot gain this effect more than once every 6 sec.  Lasts $d.
+aura      Absorbs damage and increases the casting paladin's chance to critically hit with Flash of Light by $s2%.
 
 https://www.wowhead.com/forever/spell=440651
 =======
@@ -2291,6 +2496,10 @@ effect 1  casts 20167 Seal of Light on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20167 target=[1,0]
 effect 2  a dummy aura holding 20185
           E_APPLY_AURA A_DUMMY base=20185 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20167s1.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20185d, granting melee attacks made against the judged enemy a chance of healing the attacker for $20267s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to heal you for $20167s1.
 
 https://www.wowhead.com/forever/spell=20165
 =======
@@ -2348,6 +2557,10 @@ effect 1  casts 20333 Seal of Light on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20333 target=[1,0]
 effect 2  a dummy aura holding 20344
           E_APPLY_AURA A_DUMMY base=20344 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20333s1.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20344d, granting melee attacks made against the judged enemy a chance of healing the attacker for $20341s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to heal you for $20333s1.
 
 https://www.wowhead.com/forever/spell=20347
 =======
@@ -2365,6 +2578,10 @@ effect 1  casts 20334 Seal of Light on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20334 target=[1,0]
 effect 2  a dummy aura holding 20345
           E_APPLY_AURA A_DUMMY base=20345 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20334s1.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20345d, granting melee attacks made against the judged enemy a chance of healing the attacker for $20342s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to heal you for $20334s1.
 
 https://www.wowhead.com/forever/spell=20348
 =======
@@ -2382,6 +2599,10 @@ effect 1  casts 20340 Seal of Light on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20340 target=[1,0]
 effect 2  a dummy aura holding 20346
           E_APPLY_AURA A_DUMMY base=20346 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20340s1.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20346d, granting melee attacks made against the judged enemy a chance of healing the attacker for $20343s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to heal you for $20340s1.
 
 https://www.wowhead.com/forever/spell=20349
 =======
@@ -2396,6 +2617,11 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  a dummy aura holding 216 (at level 60)
           E_APPLY_AURA A_DUMMY base=108 ppl=18 sp=0.1 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($s1/87+$<1h>)*$<mult>} to ${($s1/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+aura      Melee attacks cause an additional ${($20187s3/87+$<1h>)*$<mult>} to ${($20187s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20154
 =======
@@ -2413,6 +2639,13 @@ effect 1  a dummy aura holding 318 (at level 60)
           E_APPLY_AURA A_DUMMY base=216 ppl=17 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20280
           E_APPLY_AURA A_DUMMY base=20280 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20280s3/87+$<1h>)*$<mult>} to ${($20280s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20280s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20280s3/87+$<1h>)*$<mult>} to ${($20280s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20287
 =======
@@ -2430,6 +2663,13 @@ effect 1  a dummy aura holding 490 (at level 60)
           E_APPLY_AURA A_DUMMY base=352 ppl=23 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20281
           E_APPLY_AURA A_DUMMY base=20281 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20281s3/87+$<1h>)*$<mult>} to ${($20281s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20281s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20281s3/87+$<1h>)*$<mult>} to ${($20281s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20288
 =======
@@ -2447,6 +2687,13 @@ effect 1  a dummy aura holding 727 (at level 60)
           E_APPLY_AURA A_DUMMY base=541 ppl=31 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20282
           E_APPLY_AURA A_DUMMY base=20282 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20282s3/87+$<1h>)*$<mult>} to ${($20282s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20282s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20282s3/87+$<1h>)*$<mult>} to ${($20282s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20289
 =======
@@ -2464,6 +2711,13 @@ effect 1  a dummy aura holding 1007 (at level 60)
           E_APPLY_AURA A_DUMMY base=785 ppl=37 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20283
           E_APPLY_AURA A_DUMMY base=20283 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20283s3/87+$<1h>)*$<mult>} to ${($20283s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20283s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20283s3/87+$<1h>)*$<mult>} to ${($20283s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20290
 =======
@@ -2481,6 +2735,13 @@ effect 1  a dummy aura holding 1328 (at level 60)
           E_APPLY_AURA A_DUMMY base=1082 ppl=41 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20284
           E_APPLY_AURA A_DUMMY base=20284 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20284s3/87+$<1h>)*$<mult>} to ${($20284s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20284s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20284s3/87+$<1h>)*$<mult>} to ${($20284s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20291
 =======
@@ -2498,6 +2759,13 @@ effect 1  a dummy aura holding 1689 (at level 60)
           E_APPLY_AURA A_DUMMY base=1407 ppl=47 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20285
           E_APPLY_AURA A_DUMMY base=20285 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20285s3/87+$<1h>)*$<mult>} to ${($20285s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20285s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20285s3/87+$<1h>)*$<mult>} to ${($20285s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20292
 =======
@@ -2515,6 +2783,15 @@ effect 1  a dummy aura holding 1880 (at level 60)
           E_APPLY_AURA A_DUMMY base=1786 ppl=47 target=[1,0]
 effect 2  a dummy aura holding 20286
           E_APPLY_AURA A_DUMMY base=20286 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20286s1 Holy damage to an enemy.
+
+          $20224s1
+aura      Melee attacks cause an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=20293
 =======
@@ -2532,6 +2809,13 @@ effect 1  a dummy aura holding 216 (at level 60)
           E_APPLY_AURA A_DUMMY base=108 ppl=18 sp=0.1 target=[1,0]
 effect 2  a dummy aura holding 20187
           E_APPLY_AURA A_DUMMY base=20187 index=2 target=[1,0]
+tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20187s3/87+$<1h>)*$<mult>} to ${($20187s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will cause $20187s1 Holy damage to an enemy.
+aura      Melee attacks cause an additional ${($20187s3/87+$<1h>)*$<mult>} to ${($20187s3/25+$<2h>)*$<mult>} Holy damage.
+vars      $2h=${0.12*$SPH}
+          $1h=${0.0765*$SPH}
+          $mult=${$20224s1/100+1}
 
 https://www.wowhead.com/forever/spell=21084
 =======
@@ -2648,6 +2932,10 @@ effect 1  casts 20168 Seal of Wisdom on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20168 target=[1,0]
 effect 2  a dummy aura holding 20186
           E_APPLY_AURA A_DUMMY base=20186 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20168s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20186d, granting attacks and spells used against the judged enemy a chance to restore $20268s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to restore $20168s1 mana.
 
 https://www.wowhead.com/forever/spell=20166
 =======
@@ -2695,6 +2983,10 @@ effect 1  casts 20350 Seal of Wisdom on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20350 target=[1,0]
 effect 2  a dummy aura holding 20354
           E_APPLY_AURA A_DUMMY base=20354 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20350s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20354d, granting attacks and spells used against the judged enemy a chance to restore $20352s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to restore $20350s1 mana.
 
 https://www.wowhead.com/forever/spell=20356
 =======
@@ -2712,6 +3004,10 @@ effect 1  casts 20351 Seal of Wisdom on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20351 target=[1,0]
 effect 2  a dummy aura holding 20355
           E_APPLY_AURA A_DUMMY base=20355 index=2 target=[1,0]
+tooltip   Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20351s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20355d, granting attacks and spells used against the judged enemy a chance to restore $20353s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to restore $20351s1 mana.
 
 https://www.wowhead.com/forever/spell=20357
 =======
@@ -2722,6 +3018,7 @@ labels    26
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 10 mask 0xc0000000,0x0,0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 sp=1 misc=9 family=10 mask=0xc0000000,0x0,0x0,0x4000000 target=[1,0]
+tooltip   Gives your Flash of Light, Holy Light, and Light's Vigil spells a $s1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=20205
 =======
@@ -2742,6 +3039,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted undead enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
 
 https://www.wowhead.com/forever/spell=2878
 =======
@@ -2762,6 +3061,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted undead enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
 
 https://www.wowhead.com/forever/spell=5627
 =======
@@ -2782,6 +3083,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted undead enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
 
 https://www.wowhead.com/forever/spell=10326
 =======
@@ -2797,5 +3100,7 @@ effect 2  party aura: immune to interrupt
           E_APPLY_AREA_AURA_PARTY A_MECHANIC_IMMUNITY base=100 sp=1 misc=26 target=[1,0]
 effect 3  party aura: immune to silence
           E_APPLY_AREA_AURA_PARTY A_MECHANIC_IMMUNITY base=100 sp=1 misc=9 target=[1,0]
+tooltip   Grants you immunity to Silence and Interrupt effects for $d.
+aura      Immune to Silence and Interrupt effects.
 
 https://www.wowhead.com/forever/spell=1310897

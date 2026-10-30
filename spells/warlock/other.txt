@@ -6,6 +6,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=1300966
 =======
@@ -15,6 +16,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 5 mask 0x0,0x8000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=10 family=5 mask=0x0,0x8000000 target=[1,0]
+tooltip   Reduces the cast time of your Banish spell by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1301068
 =======
@@ -24,6 +26,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=4 target=[1,0]
+tooltip   Increases damage done by your spells and effects by up to $s1 when fighting Demons.
 
 https://www.wowhead.com/forever/spell=1301094
 =======
@@ -33,6 +36,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Life Tap generates $s1% more Mana at no additional Health cost.
 
 https://www.wowhead.com/forever/spell=1301715
 =======
@@ -63,6 +67,7 @@ duration  permanent
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+aura      Your sacrifice will be grueling...
 
 https://www.wowhead.com/forever/spell=420744
 =======
@@ -74,6 +79,7 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=100 target=[1,0]
+aura      Invisible.
 
 https://www.wowhead.com/forever/spell=1264530
 =======
@@ -116,6 +122,7 @@ range     50000 yd
 
 effect 1  unrecognised shape
           E_INSTAKILL base=1 radius=20 target=[16,0]
+tooltip   Kills all enemies in a 30 yard radius.  Cheater.
 
 https://www.wowhead.com/forever/spell=265
 =======
@@ -127,6 +134,7 @@ refs      427714 Backdraft
 
 effect 1  casts 427714 Backdraft when the target is hit from family 5 mask 0x0,0x800000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 misc=12 trigger=427714 family=5 mask=0x0,0x800000 target=[1,0]
+tooltip   Your Conflagrate ability also grants $427714s1% spellcasting haste for $427714d and no longer consumes Immolate.
 
 https://www.wowhead.com/forever/spell=427713
 =======
@@ -137,6 +145,7 @@ labels    3096, 3100
 
 effect 1  +30% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=30 target=[1,0]
+aura      Spellcasting haste increased by $w1%.
 
 https://www.wowhead.com/forever/spell=427714
 =======
@@ -147,6 +156,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427713 misc=417345 target=[1,0]
+tooltip   Gain the Backdraft ability:
+
+          $@spellicon427713
+          $@spelldesc427713
 
 https://www.wowhead.com/forever/spell=431742
 =======
@@ -157,6 +170,8 @@ duration  11 s
 
 effect 1  SPELLMOD_DOT +222 on family 5 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=222 sp=1 misc=22 family=5 mask=0x4000 target=[1,0]
+tooltip   Increases the periodic damage of your Drain Soul spell by $s1.  Lasts $d.
+aura      Periodic damage of your Drain Soul spell increased by $o1.
 
 https://www.wowhead.com/forever/spell=24893
 =======
@@ -167,6 +182,7 @@ stack     up to 1
 
 effect 1  +20% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=127 target=[1,0]
+aura      Increases all damage done by $s1%.
 
 https://www.wowhead.com/forever/spell=1214166
 =======
@@ -201,6 +217,7 @@ effect 1  +15% shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=32 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+aura      Shadow damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=18789
 =======
@@ -211,6 +228,7 @@ stack     up to 15
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=10 misc=1 target=[1,0]
+aura      $s1% resistance to charm effects.
 
 https://www.wowhead.com/forever/spell=20785
 =======
@@ -223,6 +241,7 @@ refs      28846 Cheat Death
 
 effect 1  casts 28846 Cheat Death on its trigger from family 5 mask 0x1
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=28846 family=5 mask=0x1 target=[1,0]
+tooltip   When your health drops below 20%, for the next 5 seconds healing spells cast on you help you to Cheat Death, increasing healing done by up to $28846s1.
 
 https://www.wowhead.com/forever/spell=28845
 =======
@@ -231,6 +250,7 @@ duration  permanent
 
 effect 1  SPELLMOD_RANGE +10 on family 5 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=5 mask=0x8 target=[1,0]
+tooltip   Mind Flay's, Fire Blast's, and Drain Life's ranges are increased by $s1 yards, but Mind Flay no longer slows enemies.
 
 https://www.wowhead.com/forever/spell=1231663
 =======
@@ -300,6 +320,9 @@ refs      11732 Major Healthstone
 
 effect 1  creates item 0 to every ally around the caster
           E_CREATE_ITEM base=1 radius=100 target=[22,30]
+tooltip   Creates a Major Healthstone that can be used to instantly restore $11732s1 health.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=20018
 =======
@@ -373,6 +396,8 @@ range     30 yd
 
 effect 1  298.19568 shadow damage every 3 s to every enemy around the caster (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=298.19568 period=3000ms radius=45 target=[22,15]
+tooltip   Curses nearby enemies with agony, inflicting Shadow damage every $t1 sec. for $d. Only one curse per warlock can be active on any one target.
+aura      Shadow damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=18671
 =======
@@ -386,6 +411,8 @@ range     30 yd
 
 effect 1  2701–3146 shadow damage every 1 s to every enemy around the caster (15 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2923.487 variance=0.152 period=1000ms radius=45 target=[22,15]
+tooltip   Curses nearby enemies with agony, inflicting Shadow damage every $t1 sec. for $d. Only one curse per warlock can be active on any one target.
+aura      Shadow damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1233077
 =======
@@ -400,6 +427,8 @@ range     30 yd
 
 effect 1  3200 shadow damage every 60 s to the enemy (1 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3200 sp=1 period=60000ms target=[6,0]
+tooltip   Curses the target with impending doom, causing $s1 Shadow damage after $d.  If the target dies from this damage, there is a chance that a Doomguard will be summoned.  Cannot be cast on players.
+aura      Causes $s1 Shadow damage after $d.
 
 https://www.wowhead.com/forever/spell=449432
 =======
@@ -410,6 +439,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PR
 
 effect 1  immune to every school
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+aura      The bones hunger for cursed energy
 
 https://www.wowhead.com/forever/spell=421322
 =======
@@ -419,6 +449,7 @@ attrs     passive, suppresses weapon procs
 
 effect 1  SPELLMOD_DOT +2% on family 5 mask 0x406,0x103
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222974
 =======
@@ -428,6 +459,7 @@ attrs     passive, suppresses weapon procs
 
 effect 1  SPELLMOD_DOT +1% on family 5 mask 0x406,0x103
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222975
 =======
@@ -437,6 +469,7 @@ attrs     passive, suppresses weapon procs
 
 effect 1  SPELLMOD_DOT +3% on family 5 mask 0x406,0x103
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222976
 =======
@@ -446,6 +479,7 @@ attrs     passive, suppresses weapon procs
 
 effect 1  SPELLMOD_DOT +4% on family 5 mask 0x406,0x103
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 misc=22 family=5 mask=0x406,0x103 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222977
 =======
@@ -456,6 +490,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +8% on every spell of family 5
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 target=[1,0]
+tooltip   Increases the damge dealt and health regained by your Death Coil spell by $s1%.
 
 https://www.wowhead.com/forever/spell=28541
 =======
@@ -465,6 +500,7 @@ attrs     passive
 
 effect 1  SPELLMOD_THREAT -20% on family 5 mask 0x3e5,0x10000,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=2 family=5 mask=0x3e5,0x10000,0x800002 target=[1,0]
+tooltip   Reduces the threat generated by your Destruction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=23555
 =======
@@ -495,6 +531,7 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_PERCENT_STAT base=20 misc=2 target=[1,0]
 effect 4  +0% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+tooltip   The Felguard's damaging melee attacks cause a demonic frenzy, increasing attack power by $460907s1% for $460907d.  This effect can stack up to $460907u times.
 
 https://www.wowhead.com/forever/spell=460906
 =======
@@ -505,6 +542,7 @@ labels    19
 
 effect 1  SPELLMOD_ALL_EFFECTS +10 on family 5 mask 0x0,0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=8 family=5 mask=0x0,0x2000 target=[1,0]
+tooltip   Increases the critical strike chance of all attacks for you and your summoned Demon by $m1% while the Demon is active.
 
 https://www.wowhead.com/forever/spell=412727
 =======
@@ -517,6 +555,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AREA_AURA_OWNER A_MOD_CRIT_PCT base=10 radius=100 target=[1,0]
+aura      Increases Warlock's critical strike chance by $w1% while their Demon pet is active.
 
 https://www.wowhead.com/forever/spell=1243030
 =======
@@ -530,6 +569,7 @@ labels    19
 
 effect 1  dispels 1 magic effect to the target
           E_DISPEL base=1 misc=1 target=[25,0]
+tooltip   Dispels magic on the target, removing $s1 harmful $lspell:spells; from a friend or $s1 beneficial $lspell:spells; from an enemy.
 
 https://www.wowhead.com/forever/spell=19476
 =======
@@ -547,6 +587,7 @@ effect 1  10 shadow damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=10 sp=0.1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Choke your enemy with a surge of Shadowy energy that deals $s1 damage, interrupts spellcasting, and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=412787
 =======
@@ -556,6 +597,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +5% on family 5 mask 0x4,0x10000,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=8 family=5 mask=0x4,0x10000,0x800002 target=[1,0]
+tooltip   $s1% increased damage on your Immolate spell.
 
 https://www.wowhead.com/forever/spell=26116
 =======
@@ -565,6 +607,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -15% on family 5 mask 0x1,0x0,0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=5 mask=0x1,0x0,0x20000 target=[1,0]
+tooltip   Reduces the mana cost of Shadow Bolt by $s1%.
 
 https://www.wowhead.com/forever/spell=26117
 =======
@@ -584,6 +627,8 @@ effect 3  SPELLMOD_DOT +10% on family 5 mask 0x4008,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x4008,0x40000 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your non-periodic damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage for $d.
+aura      Non-periodic damaging abilities cost $s1% less Mana and deal $s2% more damage.
 
 https://www.wowhead.com/forever/spell=1259821
 =======
@@ -594,6 +639,7 @@ labels    19
 
 effect 1  casts 412698 Everlasting Affliction when the target is hit from family 5 mask 0x1
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=412698 family=5 mask=0x1 target=[1,0]
+tooltip   Each time your Drain Life, Drain Soul, or Shadowbolt spell deals damage, your Corruption on the target is refreshed to its maximum duration.
 
 https://www.wowhead.com/forever/spell=412689
 =======
@@ -614,6 +660,7 @@ effect 5  replaces an action bar spell with 10313 Exorcism
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415072 misc=10313 target=[1,0]
 effect 6  replaces an action bar spell with 10314 Exorcism
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415073 misc=10314 target=[1,0]
+tooltip   Exorcism can now be cast on any target and has $415068s2% increased critical strike chance against Undead and Demons.
 
 https://www.wowhead.com/forever/spell=415076
 =======
@@ -627,6 +674,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_OBS_MOD_POWER base=2 period=4000ms target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+aura      Restores $s1% of total Mana every $t1 sec.
 
 https://www.wowhead.com/forever/spell=18792
 =======
@@ -642,6 +690,8 @@ effect 3  SPELLMOD_COOLDOWN -90% on family 5 mask 0x0,0x0,0x0,0x80000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-90 misc=11 family=5 mask=0x0,0x0,0x0,0x80000000 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+tooltip   Physical damage taken reduced by $s1%, and your Demon Charge ability is now usable while in combat and has no cooldown.
+aura      Physical damage taken reduced by $s1%, and your Demon Charge ability is now usable while in combat and has no cooldown.
 
 https://www.wowhead.com/forever/spell=469230
 =======
@@ -656,6 +706,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_OBS_MOD_HEALTH base=3 period=4000ms target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+aura      Restores $s1% of total Health every $t1 sec.
 
 https://www.wowhead.com/forever/spell=18790
 =======
@@ -667,6 +718,7 @@ range     100 yd
 
 effect 1  silences to the enemy
           E_APPLY_AURA A_MOD_SILENCE base=0 sp=1 misc=126 target=[6,0]
+aura      Silenced.
 
 https://www.wowhead.com/forever/spell=469227
 =======
@@ -682,6 +734,7 @@ effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
 effect 2  casts 469227 Felhunted to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=469227 mechanic=9 target=[6,0]
+tooltip   Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.
 
 https://www.wowhead.com/forever/spell=469228
 =======
@@ -691,6 +744,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +2 on family 5 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 family=5 mask=0x1000 target=[1,0]
+tooltip   Increases the damage of your Imp's Firebolt spell by $s1.
 
 https://www.wowhead.com/forever/spell=423474
 =======
@@ -710,6 +764,7 @@ duration  10 s
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x4,0x10040
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x4,0x10040 target=[1,0]
+aura      Your next Immolate or Incinerate becomes an instant cast spell.
 
 https://www.wowhead.com/forever/spell=457558
 =======
@@ -721,6 +776,7 @@ labels    19
 
 effect 1  40–60 fire damage to the enemy
           E_SCHOOL_DAMAGE base=50 variance=0.4 target=[6,0]
+tooltip   Fire damage proc.
 
 https://www.wowhead.com/forever/spell=17933
 =======
@@ -732,6 +788,7 @@ labels    19
 
 effect 1  60–90 fire damage to the enemy
           E_SCHOOL_DAMAGE base=75 variance=0.4 target=[6,0]
+tooltip   Fire damage proc.
 
 https://www.wowhead.com/forever/spell=17934
 =======
@@ -742,6 +799,7 @@ labels    19
 
 effect 1  960 healing to the caster
           E_HEAL base=960 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=5723
 =======
@@ -752,6 +810,7 @@ labels    19
 
 effect 1  880 healing to the caster
           E_HEAL base=880 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23474
 =======
@@ -762,6 +821,7 @@ labels    19
 
 effect 1  960 healing to the caster
           E_HEAL base=960 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23475
 =======
@@ -775,6 +835,8 @@ effect 1  dispels 100 magic effect to the caster
           E_DISPEL base=100 misc=1 target=[1,0]
 effect 2  absorbs 650 holy+fire+nature+frost+shadow+arcane damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=650 misc=126 target=[1,0]
+tooltip   Removes all magic effects from the caster and will absorb $s2 magic damage for $d.
+aura      Absorbs magic damage.
 
 https://www.wowhead.com/forever/spell=17729
 =======
@@ -794,6 +856,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
 effect 3  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
+tooltip   Send a ghostly soul to assault your current target, dealing $s1 damage, and increasing all Shadow damage over time you deal to that target by $s2% for $d. When Haunt expires for any reason you will be healed for $s3% of the damage it dealt to your target.
+aura      Damage taken from Shadow damage over time effects from the caster increased by $s2%.
 
 https://www.wowhead.com/forever/spell=403501
 =======
@@ -803,6 +867,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403501 misc=399967 target=[1,0]
+tooltip   Gain the Haunt ability:
+
+          $@spellicon403501
+          $@spelldesc403501
 
 https://www.wowhead.com/forever/spell=403858
 =======
@@ -822,6 +890,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
 effect 3  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
+tooltip   Send a ghostly soul to assault your current target, dealing $s1 damage, and increasing all Shadow damage over time you deal to that target by $s2% for $d. When Haunt expires for any reason you will be healed for $s3% of the damage it dealt to your target.
+aura      Damage taken from Shadow damage over time effects from the caster increased by $s2%.
 
 https://www.wowhead.com/forever/spell=1293693
 =======
@@ -841,6 +911,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x440a target=[6,0]
 effect 3  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
+tooltip   Send a ghostly soul to assault your current target, dealing $s1 damage, and increasing all Shadow damage over time you deal to that target by $s2% for $d. When Haunt expires for any reason you will be healed for $s3% of the damage it dealt to your target.
+aura      Damage taken from Shadow damage over time effects from the caster increased by $s2%.
 
 https://www.wowhead.com/forever/spell=1293694
 =======
@@ -853,6 +925,7 @@ attrs     channeled
 
 effect 1  1000 healing every 1 s to target 38 (10 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=1000 period=1000ms amplitude=2.5 target=[38,0]
+aura      $o1 damage healed over $d.
 
 https://www.wowhead.com/forever/spell=19952
 =======
@@ -863,6 +936,7 @@ labels    19
 
 effect 1  600 healing to the caster
           E_HEAL base=600 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=5720
 =======
@@ -873,6 +947,7 @@ labels    19
 
 effect 1  550 healing to the caster
           E_HEAL base=550 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23472
 =======
@@ -883,6 +958,7 @@ labels    19
 
 effect 1  600 healing to the caster
           E_HEAL base=600 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23473
 =======
@@ -897,6 +973,8 @@ effect 1  casts 469228 Felhunted on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=469228 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+tooltip   Your next Curse of Tongues cast will silence the target for $469227d1. If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $469228d1.
+aura      Your next Curse of Tongues cast will silence the target for $469227d1. If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $469228d1.
 
 https://www.wowhead.com/forever/spell=469229
 =======
@@ -908,6 +986,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.2 s on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=21 family=5 mask=0x4,0x10000 target=[1,0]
+tooltip   Reduces the casting time of your Immolate spell by 0.2  sec.
 
 https://www.wowhead.com/forever/spell=23047
 =======
@@ -938,6 +1017,9 @@ effect 2  -10% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=126 target=[1,0]
 effect 3  +10% fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=4 target=[1,0]
+tooltip   Burns nearby enemies for ${$<power>*$427725m1/100} damage every time an enemy makes a melee attack against you (no more than once per sec), reduces all magic damage taken by $s2%, and increases Fire damage done by $s3%. Lasts $d.
+aura      Burning nearby enemies for $w1 damage when attacked, taking $s2% reduced magic damage, and dealing $s3% increased Fire damage.
+vars      $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=427726
 =======
@@ -948,6 +1030,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427726 misc=417346 target=[1,0]
+tooltip   Gain the Immolation Aura ability:
+
+          $@spellicon431757
+          $@spelldesc427726
 
 https://www.wowhead.com/forever/spell=431757
 =======
@@ -962,6 +1048,9 @@ refs      427725 Immolation Aura
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Burns nearby enemies for ${$<power>*$427725m1/100} damage every time an enemy makes a melee attack against you (no more than once per sec), reduces all magic damage taken by $s2%, and increases Fire damage done by $s3%. Lasts $d.
+aura      Burning nearby enemies for $w1 damage when attacked, taking $s2% reduced magic damage, and dealing $s3% increased Fire damage.
+vars      $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=469357
 =======
@@ -973,6 +1062,7 @@ effect 1  +15% fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=4 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+aura      Fire damage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=469222
 =======
@@ -985,6 +1075,7 @@ effect 1  SPELLMOD_DAMAGE +5% on family 5 mask 0x3000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=5 mask=0x3000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +5 on family 5 mask 0x4000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=8 family=5 mask=0x4000000 target=[0,0]
+tooltip   $s1% increased damage from your summoned pets' melee attacks and damage spells.
 
 https://www.wowhead.com/forever/spell=26118
 =======
@@ -995,6 +1086,7 @@ labels    19
 
 effect 1  SPELLMOD_COOLDOWN -15% on family 5 mask 0x80000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=11 family=5 mask=0x80000 target=[1,0]
+tooltip   Decreases the cooldown of Death Coil by $s1%.
 
 https://www.wowhead.com/forever/spell=24487
 =======
@@ -1005,6 +1097,7 @@ attrs     passive
 
 effect 1  SPELLMOD_VALUE_MULTIPLIER +15% on family 5 mask 0x18
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=27 family=5 mask=0x18 target=[1,0]
+tooltip   Health or Mana gained from Drain Life and Drain Mana increased by $s1%.
 
 https://www.wowhead.com/forever/spell=23554
 =======
@@ -1015,6 +1108,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +1 on family 5 mask 0x60
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=6 family=5 mask=0x60 target=[1,0]
+tooltip   Increases the radius of Rain of Fire and Hellfire by 1 yard.
 
 https://www.wowhead.com/forever/spell=24430
 =======
@@ -1036,6 +1130,7 @@ effect 1  +10 fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=10 misc=4 target=[1,0]
 effect 2  +1% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=1 target=[1,0]
+tooltip   Increases your critical strike chance with spells by $m2% and increases damage done by your Fire spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=23480
 =======
@@ -1048,6 +1143,7 @@ effect 1  +14 fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=4 target=[1,0]
 effect 2  +1% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=1 target=[1,0]
+tooltip   Increases your critical strike chance with spells by $m2% and increases damage done by your Fire spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=23481
 =======
@@ -1060,6 +1156,7 @@ effect 1  +17 fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=4 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 target=[1,0]
+tooltip   Increases your critical strike chance with spells by $m2% and increases damage done by your Fire spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=23482
 =======
@@ -1072,6 +1169,7 @@ effect 1  +21 fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=4 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 target=[1,0]
+tooltip   Increases your critical strike chance with spells by $m2% and increases damage done by your Fire spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=23483
 =======
@@ -1084,6 +1182,7 @@ effect 1  +14 shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=32 target=[1,0]
 effect 2  +1% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+tooltip   Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=1237162
 =======
@@ -1096,6 +1195,7 @@ effect 1  +17 shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=17 misc=32 target=[1,0]
 effect 2  +2% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+tooltip   Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=1237164
 =======
@@ -1108,6 +1208,7 @@ effect 1  +21 shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=21 misc=32 target=[1,0]
 effect 2  +2% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=2 target=[1,0]
+tooltip   Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=1237165
 =======
@@ -1123,6 +1224,8 @@ effect 1  -20% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-20 misc=126 target=[1,0]
 effect 2  a dummy aura holding 60
           E_APPLY_AURA A_DUMMY base=60 target=[1,0]
+tooltip   Your spirit becomes infused with demonic energy, reducing all Magic damage you take by a percentage equal to $s2% of your Physical damage reduction from armor. Lasts $d.
+aura      Magical damage taken is reduced by $w1%.
 
 https://www.wowhead.com/forever/spell=440882
 =======
@@ -1137,6 +1240,8 @@ effect 1  1651–2349 fire damage to the enemy
           E_SCHOOL_DAMAGE base=2000 variance=0.349 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=0 target=[6,27]
+tooltip   Incinerates the target for $d Fire damage.
+aura      Damages self and all nearby enemies.
 
 https://www.wowhead.com/forever/spell=24826
 =======
@@ -1147,6 +1252,7 @@ stack     up to 2
 
 effect 1  +5% fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=5 misc=4 target=[1,0]
+aura      Increases all Fire damage done by $s1%.
 
 https://www.wowhead.com/forever/spell=1214088
 =======
@@ -1156,6 +1262,7 @@ duration  20 s
 
 effect 1  +20% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=126 target=[1,0]
+aura      Magical damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1233988
 =======
@@ -1165,6 +1272,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 5 mask 0x855ef,0x870143
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=5 mask=0x855ef,0x870143 target=[1,0]
+tooltip   The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1232093
 =======
@@ -1176,6 +1285,8 @@ range     100 yd
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=50 radius=8 family=5 mask=0x200164,0x8200c0,0x11000002 target=[87,16]
+tooltip   Rain of Fire also leaves a Lake of Fire on the ground that increases all Fire damage you deal and your Demon pet deals to affected enemies by $s1%.
+aura      Fire damage taken increased by $s1%.
 
 https://www.wowhead.com/forever/spell=403650
 =======
@@ -1193,6 +1304,7 @@ effect 4  replaces an action bar spell with 11678 Rain of Fire
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=460700 misc=11678 target=[1,0]
 effect 5  a dummy aura holding 8
           E_APPLY_AURA A_DUMMY base=8 target=[1,0]
+tooltip   Your Rain of Fire is no longer channeled, but gains a $s5 sec cooldown.
 
 https://www.wowhead.com/forever/spell=403666
 =======
@@ -1202,6 +1314,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403666 misc=399954 target=[1,0]
+tooltip   Gain the Lake of Fire ability:
+
+          $@spellicon403666
+          $@spelldesc403666
 
 https://www.wowhead.com/forever/spell=403872
 =======
@@ -1213,6 +1329,7 @@ labels    19
 
 effect 1  25–35 fire damage to the enemy
           E_SCHOOL_DAMAGE base=30 variance=0.33333334 target=[6,0]
+tooltip   Fire damage proc.
 
 https://www.wowhead.com/forever/spell=17809
 =======
@@ -1223,6 +1340,7 @@ labels    19
 
 effect 1  300 healing to the caster
           E_HEAL base=300 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=6263
 =======
@@ -1233,6 +1351,7 @@ labels    19
 
 effect 1  275 healing to the caster
           E_HEAL base=275 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23470
 =======
@@ -1243,6 +1362,7 @@ labels    19
 
 effect 1  300 healing to the caster
           E_HEAL base=300 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23471
 =======
@@ -1257,6 +1377,7 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you, but has no effect if the target is already attacking you.
 
 https://www.wowhead.com/forever/spell=433672
 =======
@@ -1268,6 +1389,7 @@ labels    19
 
 effect 1  80–120 fire damage to the enemy
           E_SCHOOL_DAMAGE base=100 variance=0.4 target=[6,0]
+tooltip   Fire damage proc.
 
 https://www.wowhead.com/forever/spell=17935
 =======
@@ -1278,6 +1400,7 @@ labels    19
 
 effect 1  1440 healing to the caster
           E_HEAL base=1440 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=11732
 =======
@@ -1288,6 +1411,7 @@ labels    19
 
 effect 1  1320 healing to the caster
           E_HEAL base=1320 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23476
 =======
@@ -1298,6 +1422,7 @@ labels    19
 
 effect 1  1440 healing to the caster
           E_HEAL base=1440 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23477
 =======
@@ -1311,6 +1436,8 @@ effect 1  dispels 100 magic effect to the caster
           E_DISPEL base=100 misc=1 target=[1,0]
 effect 2  absorbs 900 holy+fire+nature+frost+shadow+arcane damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=900 misc=126 target=[1,0]
+tooltip   Removes all magic effects from the caster and will absorb $s2 magic damage for $d.
+aura      Absorbs magic damage.
 
 https://www.wowhead.com/forever/spell=17730
 =======
@@ -1323,6 +1450,7 @@ effect 1  SPELLMOD_DOT +10% on family 5 mask 0x445e,0x40103
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=5 mask=0x445e,0x40103 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x0,0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x0,0x100 target=[1,0]
+tooltip   Increases all periodic damage done by your Warlock spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1225177
 =======
@@ -1335,6 +1463,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x185,0x8200c0
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x185,0x8200c0 target=[1,0]
+aura      Your next single-target non-periodic spell gains $s1% increased critical strike chance.
 
 https://www.wowhead.com/forever/spell=440895
 =======
@@ -1356,6 +1485,7 @@ effect 5  +11% shadow+arcane damage taken to the enemy (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=96 target=[6,0]
 effect 6  +11% nature damage taken to the enemy (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 ppl=0.125 misc=8 target=[6,0]
+aura      Reduces Arcane, Fire, Frost, Nature, and Shadow resistances by $w1.  Increases Arcane, Fire, Frost, Nature, and Shadow damage taken by $w2%.
 
 https://www.wowhead.com/forever/spell=461615
 =======
@@ -1367,6 +1497,8 @@ labels    19
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 5 mask 0x3e5,0x10000,0x820002
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=5 mask=0x3e5,0x10000,0x820002 target=[1,0]
+tooltip   Increases the critical hit chance of your Destruction spells by $s1% for $d.
+aura      Destruction spell critical hit chance increased by $s1%.
 
 https://www.wowhead.com/forever/spell=24543
 =======
@@ -1383,6 +1515,8 @@ effect 2  +10% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=10 sp=1 target=[1,0]
 effect 3  casts 468543 Demonic Destruction to the caster
           E_TRIGGER_SPELL base=0 trigger=468543 target=[1,0]
+tooltip   Increases your critical hit chance by $s1%, and increases your pet's attack speed by $468543s1% for $d. This spell does not affect temporary pets or Subjugated Demons.
+aura      Critical hit chance increased by $s1%.
 
 https://www.wowhead.com/forever/spell=468540
 =======
@@ -1407,6 +1541,7 @@ effect 7  replaces an action bar spell with 11699 Drain Life
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403688 misc=11699 target=[1,0]
 effect 8  replaces an action bar spell with 11700 Drain Life
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403689 misc=11700 target=[1,0]
+tooltip   Your Drain Life is no longer channeled, lasts $403677d with a $403677d cooldown, costs $s2% more mana, and heals you for $s1% more each time it deals damage.
 
 https://www.wowhead.com/forever/spell=403668
 =======
@@ -1416,6 +1551,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403668 misc=399954 target=[1,0]
+tooltip   Gain the Master Channeler ability:
+
+          $@spellicon403668
+          $@spelldesc403668
 
 https://www.wowhead.com/forever/spell=403868
 =======
@@ -1428,6 +1567,7 @@ effect 1  SPELLMOD_COST -20% on family 5 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=14 family=5 mask=0x100000 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -20% on family 5 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=10 family=5 mask=0x100000 target=[1,0]
+tooltip   Reduces the Mana cost and casting time of your Stone creation spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18757
 =======
@@ -1440,6 +1580,7 @@ effect 1  SPELLMOD_COST -40% on family 5 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=5 mask=0x100000 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -40% on family 5 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=10 family=5 mask=0x100000 target=[1,0]
+tooltip   Reduces the Mana cost and casting time of your Stone creation spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18758
 =======
@@ -1450,6 +1591,7 @@ labels    19
 
 effect 1  120 healing to the caster
           E_HEAL base=120 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=6262
 =======
@@ -1460,6 +1602,7 @@ labels    19
 
 effect 1  110 healing to the caster
           E_HEAL base=110 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23468
 =======
@@ -1470,6 +1613,7 @@ labels    19
 
 effect 1  120 healing to the caster
           E_HEAL base=120 target=[1,0]
+tooltip   Instantly restores $s1 life.
 
 https://www.wowhead.com/forever/spell=23469
 =======
@@ -1483,6 +1627,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x201008c0,0x80000080,0xa000000,0x4000 target=[1,0]
+tooltip   Your next Soul Shard consuming spell cost no Soul Shards to cast.
+aura      Your next Soul Shard consuming spell cost no Soul Shards to cast.
 
 https://www.wowhead.com/forever/spell=433813
 =======
@@ -1497,6 +1643,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 5 mask 0xffffffff,0xffffffff,0xfffff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=5 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216486
 =======
@@ -1507,6 +1655,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PR
 
 effect 1  immune to every school
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=127 target=[1,0]
+aura      Unmotivated... No pain, no gain.
 
 https://www.wowhead.com/forever/spell=426764
 =======
@@ -1526,6 +1675,7 @@ attrs     cannot crit
 
 effect 1  50000 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=50000 radius=20 target=[22,15]
+tooltip   Deals $s1 damage to all enemies in a $a1 yard radius from the caster.
 
 https://www.wowhead.com/forever/spell=30879
 =======
@@ -1536,6 +1686,8 @@ attrs     passive
 
 effect 1  casts nothing every 5 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=9 period=5000ms target=[1,0]
+tooltip   Restores $s1 mana per 5 sec to your Imp.
+aura      Restoring $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=22855
 =======
@@ -1547,6 +1699,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_CRITICAL_THREAT base=-25 sp=1 misc=126 target=[1,0]
 effect 2  SPELLMOD_THREAT -25% on family 5 mask 0x406,0x10001,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=2 family=5 mask=0x406,0x10001,0x800002 target=[0,0]
+tooltip   Your spell critical hits generate $s1% less threat.  In addition, Corruption, Immolate, Curse of Agony, and Siphon Life generate $s2% less threat.
 
 https://www.wowhead.com/forever/spell=28746
 =======
@@ -1569,6 +1722,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 5 mask 0x2000,0x1000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=5 mask=0x2000,0x1000000 target=[1,0]
+tooltip   Reduces the cooldown of your Felguard's Cleave spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=468303
 =======
@@ -1581,6 +1735,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x841e9,0x840040
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x841e9,0x840040 target=[1,0]
+aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1323392
 =======
@@ -1594,6 +1749,7 @@ effect 2  SPELLMOD_DAMAGE +20% on family 5 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=5 mask=0x2 target=[1,0]
 effect 3  SPELLMOD_DAMAGE +20% on family 5 mask 0x2,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=5 mask=0x2,0x40 target=[1,0]
+tooltip   Increases the damage done by your Incinerate and Corruption abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=1219421
 =======
@@ -1604,6 +1760,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 20 from family 5 mask 0x2
           E_APPLY_AURA A_DUMMY base=20 family=5 mask=0x2 target=[1,0]
+tooltip   Your non-periodic critical strikes cause your active Corruption, Immolate, Shadowflame, and Unstable Affliction spells on the target to immediately deal a tick of damage at $s1% effectiveness.
 
 https://www.wowhead.com/forever/spell=1219423
 =======
@@ -1613,6 +1770,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Curse of Agony also applies the effects of Curse of Recklessness. In addition, it does not expire on Undead targets and continues to grow in power indefinitely.
 
 https://www.wowhead.com/forever/spell=1219462
 =======
@@ -1624,6 +1782,7 @@ effect 1  SPELLMOD_COOLDOWN -10 s on family 5 mask 0x0,0x0,0x0,0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -3 s on family 5 mask 0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=5 mask=0x0,0x0,0x40000 target=[1,0]
+tooltip   Reduces the cooldown on your Infernal Armor ability by ${$m1/-1000} sec and reduces the cooldown on your Demonic Grace ability by ${$m2/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1219476
 =======
@@ -1634,6 +1793,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   When an Undead enemy attempts to attack you, the remaining duration of your active Vengeance is reset to $s1 sec.
 
 https://www.wowhead.com/forever/spell=1219479
 =======
@@ -1645,6 +1805,7 @@ refs      1214156 Spreading Pain
 
 effect 1  casts 1214156 Spreading Pain on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=50 trigger=1214156 target=[1,0]
+tooltip   For $1214156d after using Shadowcleave, your Searing Pain strikes $1214156s1 additional target within melee range.
 
 https://www.wowhead.com/forever/spell=1214151
 =======
@@ -1656,6 +1817,7 @@ refs      1227177 Burn
 
 effect 1  a dummy aura holding 25
           E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+tooltip   Your Shadow and Fire non-periodic critical strikes cause the target to Burn for $s1% of the damage they deal over $1227177d.
 
 https://www.wowhead.com/forever/spell=1227175
 =======
@@ -1665,6 +1827,7 @@ attrs     passive, can proc from procs
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   Your Shadow Bolt, Haunt, Chaos Bolt, Shadow Cleave, and Soul Fire deal $s1% more damage to targets afflicted with your Corruption.
 
 https://www.wowhead.com/forever/spell=1227186
 =======
@@ -1678,6 +1841,7 @@ effect 1  casts 1227200 Wickedness on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1227200 target=[1,0]
 effect 2  a dummy aura holding 12
           E_APPLY_AURA A_DUMMY base=12 target=[1,0]
+tooltip   Your periodic critical strikes grant $1227200s1% spellcasting haste for $1227200d, and your Backdraft grants an additional $s2% spellcasting haste.
 
 https://www.wowhead.com/forever/spell=1227196
 =======
@@ -1688,6 +1852,7 @@ refs      1223963 Corruption
 
 effect 1  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   Your Shadow Cleave now applies your Corruption Rank 7 to every target it hits but its duration is only $1223963d.
 
 https://www.wowhead.com/forever/spell=1227214
 =======
@@ -1700,6 +1865,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   You heal for $s1% of all damage done by your Corruption. This healing is increased to $s2% if the target is also afflicted with your Drain Life.
 
 https://www.wowhead.com/forever/spell=1227204
 =======
@@ -1712,6 +1878,7 @@ effect 1  SPELLMOD_DURATION +10 s on family 5 mask 0x0,0x0,0x0,0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 misc=1 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
 effect 2  casts 1233988 Infernalist Armor when the target is hit from family 5 mask 0x0,0x0,0x0,0x2000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=1233988 family=5 mask=0x0,0x0,0x0,0x2000 target=[1,0]
+tooltip   Your Infernal Armor now also increases all magical damage you deal by $440882s1% and lasts an additional ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1227228
 =======
@@ -1724,6 +1891,7 @@ effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 trigger=16280 target=[1,0]
 effect 2  SPELLMOD_THREAT -100% on every spell of family 5
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=2 target=[1,0]
+tooltip   Lifetap generates $s1% more mana and $s2% less threat.
 
 https://www.wowhead.com/forever/spell=457548
 =======
@@ -1735,6 +1903,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=457549
 =======
@@ -1747,6 +1916,7 @@ effect 1  SPELLMOD_CHANCE_OF_SUCCESS +4% on family 5 mask 0x0,0x0,0x4000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=18 family=5 mask=0x0,0x0,0x4000000 target=[1,0]
 effect 2  casts 440873 Decimation on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=4 sp=1 trigger=440873 target=[1,0]
+tooltip   Your Nightfall talent has a $s1% increased chance to trigger. Your Incinerate has a $h% chance to trigger your Decimation regardless of the target's health.
 
 https://www.wowhead.com/forever/spell=457553
 =======
@@ -1760,6 +1930,7 @@ effect 1  replaces an action bar spell with 710 Banish
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=457569 misc=710 target=[1,0]
 effect 2  replaces an action bar spell with 18647 Banish
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=465352 misc=18647 target=[1,0]
+tooltip   Banish is now instant cast, and can be cast on yourself while you are a Demon. You cannot Banish yourself while you have Forbearance, and doing so will give you Forbearance for $25771d.
 
 https://www.wowhead.com/forever/spell=457571
 =======
@@ -1771,6 +1942,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura holding 420 from family 5 mask 0x0,0x8000000
           E_APPLY_AURA A_DUMMY base=420 family=5 mask=0x0,0x8000000 target=[1,0]
+tooltip   Each time you take damage, you and your pet gain mana equal to the damage taken, up to a maximum of $s1 mana per event. Can only occur once every few seconds.
 
 https://www.wowhead.com/forever/spell=457572
 =======
@@ -1783,6 +1955,7 @@ refs      457643 Soul Fire!
 
 effect 1  casts 457643 Soul Fire! on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=420 trigger=457643 target=[1,0]
+tooltip   Your Shadow Cleave hits have a $h% chance to grant you a Soul Shard, reset the cooldown on Soul Fire, and make your next Soul Fire within $457643d instant.
 
 https://www.wowhead.com/forever/spell=457642
 =======
@@ -1794,6 +1967,7 @@ effect 1  SPELLMOD_DOT +10% on family 5 mask 0x442e,0x10101,0x1000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 perResource=5 family=5 mask=0x442e,0x10101,0x1000000 target=[1,0]
 effect 2  SPELLMOD_EFFECT4 +10 on family 5 mask 0x0,0x0,0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=32 perResource=5 family=5 mask=0x0,0x0,0x0,0x40 target=[1,0]
+tooltip   Increases the damage of your periodic spells and Felguard pet by $s1%.
 
 https://www.wowhead.com/forever/spell=467917
 =======
@@ -1806,6 +1980,7 @@ effect 1  casts 17941 Shadow Trance on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=17941 perResource=5 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4309 family=5 mask=0x1 target=[1,0]
+tooltip   Periodic damage from your Shadowflame, Unstable Affliction, and Curse of Agony spells and damage done by your Felguard have a $h% chance to grant the Shadow Trance effect.
 
 https://www.wowhead.com/forever/spell=467983
 =======
@@ -1817,6 +1992,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 perResource=5 target=[1,0]
 effect 2  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 perResource=5 target=[1,0]
+tooltip   Shadowbolt deals $s1% increased damage for each of your effects afflicting the target, up to a maximum of $s2%.
 
 https://www.wowhead.com/forever/spell=467988
 =======
@@ -1827,6 +2003,7 @@ refs      468029 Life Tap
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 perResource=5 target=[1,0]
+tooltip   While you are targeting an enemy within $468029r yards, Life Tap grants you mana at the expense of your target's health but deals $s1% reduced damage to them. Mana gained remains unchanged.
 
 https://www.wowhead.com/forever/spell=468028
 =======
@@ -1840,6 +2017,7 @@ effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 perResource=5 target=[1,0]
 effect 2  casts 468062 Soul Essence on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 sp=1 trigger=468062 perResource=5 target=[1,0]
+tooltip   While Metamorphosis is active, your offensive abilities and Demon summons cost no Soul Shards. In addition, you heal for $468062s1% of your maximum health when you damage a target with Shadowburn.
 
 https://www.wowhead.com/forever/spell=468046
 =======
@@ -1859,6 +2037,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 perResource=5 target=[1,0]
+tooltip   Any excess healing you deal to yourself  is converted into a shield that absorbs damage. This shield can absorb up to $s1% of your maximum health, and stacks from multiple heals.
 
 https://www.wowhead.com/forever/spell=468061
 =======
@@ -1873,6 +2052,7 @@ effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x1,0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=5 mask=0x1,0x20000 target=[1,0]
 effect 3  SPELLMOD_CHARGES +26 on family 5 mask 0x0,0x0,0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=26 misc=4 family=5 mask=0x0,0x0,0x80000000 target=[1,0]
+tooltip   Reduces the cooldown on your Chaos Bolt by $s1% and increases Chaos Bolt and Shadow Bolt damage done by $s2%. In addition, Chaos Bolt can now trigger your Improved Shadow Bolt talent and causes it to have $s3 additional charges (does not stack with Shadowflame's additional charges).
 
 https://www.wowhead.com/forever/spell=1214085
 =======
@@ -1884,6 +2064,7 @@ refs      1214088 Infernalist
 
 effect 1  casts 1214088 Infernalist on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=-50 trigger=1214088 target=[1,0]
+tooltip   Each time you hit a target with Conflagrate, you gain $1214088s1% increased Fire damage for $1214088d, stacking up to $1214088u times.
 
 https://www.wowhead.com/forever/spell=1214087
 =======
@@ -1893,6 +2074,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 5 mask 0x0,0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=5 mask=0x0,0x0,0x20000 target=[1,0]
+tooltip   Reduces the cooldown on your Shadow Cleave by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1214091
 =======
@@ -1902,6 +2084,7 @@ attrs     passive
 
 effect 1  a dummy aura holding -1500
           E_APPLY_AURA A_DUMMY base=-1500 target=[1,0]
+tooltip   The effects of your Demonic Sacrifice now persist while you have a Demon pet active, as long as you do not resummon the sacrificed pet. You may have only one Demonic Sacrifice effect active at a time.
 
 https://www.wowhead.com/forever/spell=1214095
 =======
@@ -1913,6 +2096,7 @@ effect 1  +12 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=12 misc=126 target=[1,0]
 effect 2  +12 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=12 misc=126 target=[1,0]
+tooltip   Increases damage and healing done by magical spells and effects by up to $s1.
 
 https://www.wowhead.com/forever/spell=468400
 =======
@@ -1922,6 +2106,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Increases the Attack Power and Spell Damage your Demon pet gains from your attributes by $s1%.
 
 https://www.wowhead.com/forever/spell=468446
 =======
@@ -1931,6 +2116,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Increases the benefits of your Master Demonologist talent by $s1%.
 
 https://www.wowhead.com/forever/spell=468447
 =======
@@ -1943,6 +2129,8 @@ refs      469220 Scythe of Chaos
 
 effect 1  casts 469220 Scythe of Chaos on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=469220 target=[1,0]
+tooltip   Chance on direct damage spell to cause your next pet summoned within $469220d1 to be instant cast and not consume a Soul Shard.
+aura      Chance on direct damage spell to cause your next pet summoned within $469220d1 to be instant cast and not consume a Soul Shard.
 
 https://www.wowhead.com/forever/spell=469211
 =======
@@ -1959,6 +2147,8 @@ effect 2  SPELLMOD_COST -100% on family 5 mask 0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=5 mask=0x20000000 target=[1,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x20000000 target=[1,0]
+tooltip   Your next Imp, Voidwalker, Succubus, Incubus, Felhunter, or Felguard Summon spell has its casting time reduced by $/1000;s1 sec, and does not cost a Soul Shard or Mana.
+aura      Imp, Voidwalker, Succubus, Incubus, Fellhunter, and Felguard casting time reduced by $/1000;S1 sec.  Mana and Soul Shard costs reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=469220
 =======
@@ -1976,6 +2166,8 @@ effect 2  SPELLMOD_COST -100% on family 5 mask 0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=5 mask=0x20000000 target=[1,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_NO_REAGENT_USE base=-50 sp=1 family=5 mask=0x20000000 target=[1,0]
+tooltip   Your next Imp, Voidwalker, Succubus, Incubus, Felhunter, or Felguard Summon spell has its casting time reduced by $/1000;s1 sec, and does not cost a Soul Shard or Mana.
+aura      Imp, Voidwalker, Succubus, Incubus, Fellhunter, and Felguard casting time reduced by $/1000;S1 sec.  Mana and Soul Shard costs reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=1219101
 =======
@@ -1987,6 +2179,7 @@ attrs     suppresses weapon procs
 
 effect 1  SPELLMOD_VALUE_MULTIPLIER +0% on family 5 mask 0x8,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=27 family=5 mask=0x8,0x1 target=[1,0]
+tooltip   Unlocks your potential while inside Naxxramas.  Increasing your damage by ${$m1/100}.2% and your health by ${$m2/100}.2% for each piece of Sanctified armor equipped.
 
 https://www.wowhead.com/forever/spell=1223794
 =======
@@ -2000,6 +2193,8 @@ effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 5 mask 0x100,0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=5 mask=0x100,0x0,0x20000 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=5 mask=0x100 target=[1,0]
+tooltip   Reduce the cast time and global cooldown of Searing Pain and Shadow Cleave by ${$m/-1000}.1 sec for $d.
+aura      Reduce the cast time and global cooldown of Searing Pain and Shadow Cleave by ${$m/-1000}.1 sec for $d.
 
 https://www.wowhead.com/forever/spell=1227369
 =======
@@ -2010,6 +2205,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 5 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=5 mask=0x100 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Searing Pain.
 
 https://www.wowhead.com/forever/spell=23046
 =======
@@ -2019,6 +2215,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 5 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=9 family=5 mask=0x100 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Searing Pain.
 
 https://www.wowhead.com/forever/spell=459607
 =======
@@ -2030,6 +2227,7 @@ effect 1  +15% shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=32 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+aura      Shadow damage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=469225
 =======
@@ -2043,6 +2241,7 @@ effect 2  SPELLMOD_JUMP_DISTANCE +10 on family 5 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=35 family=5 mask=0x1 target=[1,0]
 effect 3  SPELLMOD_DAMAGE -5% on family 5 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 family=5 mask=0x1 target=[1,0]
+tooltip   Your Shadow Bolt now strikes up to $s1 targets within a chain distance of $s2 yards, but for $s3% reduced damage.
 
 https://www.wowhead.com/forever/spell=403628
 =======
@@ -2052,6 +2251,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403628 misc=399967 target=[1,0]
+tooltip   Gain the Shadow Bolt Volley ability:
+
+          $@spellicon403628
+          $@spelldesc403628
 
 https://www.wowhead.com/forever/spell=403871
 =======
@@ -2066,6 +2269,7 @@ effect 1  1403–2105 shadow damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1754.0923 variance=0.4 radius=8 target=[22,15]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=30 misc=150 radius=8 target=[22,15]
+tooltip   Let forth a burst of energy knocking all nearby enemies back, dealing $s1 Shadow damage and removing all threat.
 
 https://www.wowhead.com/forever/spell=28447
 =======
@@ -2086,6 +2290,7 @@ attrs     passive
 
 effect 1  -15% shadow power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-15 sp=1 misc=32 target=[1,0]
+tooltip   Mana cost of Shadow spells reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=23553
 =======
@@ -2097,6 +2302,7 @@ refs      450013 Shadow Spark
 
 effect 1  casts 450013 Shadow Spark on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 sp=1 trigger=450013 target=[1,0]
+tooltip   Dealing damage with Shadow Cleave reduces the cast time of your next Immolate spell by $450013s1%. Stacking up to $s1 times. Lasts $450013d.
 
 https://www.wowhead.com/forever/spell=450012
 =======
@@ -2111,6 +2317,8 @@ effect 1  SPELLMOD_CASTING_TIME -50% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=10 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   Reduces the casting time of your next Immolate spell by $s1%.
+aura      Reduces the casting time of your next Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=450013
 =======
@@ -2122,6 +2330,7 @@ labels    19
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x1 target=[1,0]
+aura      Your next Shadow Bolt becomes an instant cast spell.
 
 https://www.wowhead.com/forever/spell=17941
 =======
@@ -2134,6 +2343,7 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=4 sp=1 misc=32 target=[6,0]
+aura      Shadow damage taken from Warlock increased by $w1%.
 
 https://www.wowhead.com/forever/spell=17794
 =======
@@ -2148,6 +2358,7 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 5 mask 0x0,0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=5 mask=0x0,0x80 target=[1,0]
 effect 2  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
+aura      Your next Soulfire is instant cast.
 
 https://www.wowhead.com/forever/spell=457643
 =======
@@ -2161,6 +2372,8 @@ refs      3026 Use Soulstone
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+tooltip   Stores the friendly target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $3026s1 health and $3026q1 mana.
+aura      Soul is stored.
 
 https://www.wowhead.com/forever/spell=20707
 =======
@@ -2174,6 +2387,8 @@ refs      20758 Use Soulstone
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+tooltip   Stores the friendly target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20758s1 health and $20758q1 mana.
+aura      Soul is stored.
 
 https://www.wowhead.com/forever/spell=20762
 =======
@@ -2187,6 +2402,8 @@ refs      20759 Use Soulstone
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+tooltip   Stores the friendly target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20759s1 health and $20759q1 mana.
+aura      Soul is stored.
 
 https://www.wowhead.com/forever/spell=20763
 =======
@@ -2200,6 +2417,8 @@ refs      20760 Use Soulstone
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+tooltip   Stores the friendly target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20760s1 health and $20760q1 mana.
+aura      Soul is stored.
 
 https://www.wowhead.com/forever/spell=20764
 =======
@@ -2213,6 +2432,8 @@ refs      20761 Use Soulstone
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[21,0]
+tooltip   Stores the friendly target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20761s1 health and $20761q1 mana.
+aura      Soul is stored.
 
 https://www.wowhead.com/forever/spell=20765
 =======
@@ -2226,6 +2447,8 @@ effect 1  dispels 100 magic effect to the caster
           E_DISPEL base=100 misc=1 target=[1,0]
 effect 2  absorbs 400 holy+fire+nature+frost+shadow+arcane damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=400 misc=126 target=[1,0]
+tooltip   Removes all magic effects from the caster and will absorb $s2 magic damage for $d.
+aura      Absorbs magic damage.
 
 https://www.wowhead.com/forever/spell=128
 =======
@@ -2236,6 +2459,7 @@ stack     up to 1
 
 effect 1  SPELLMOD_JUMP_TARGETS +1 on family 5 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=17 family=5 mask=0x100 target=[1,0]
+aura      Your Searing Pain hits $s1 additional targets within melee range.
 
 https://www.wowhead.com/forever/spell=1214156
 =======
@@ -2250,6 +2474,9 @@ labels    3096, 3100
 
 effect 1  unrecognised shape
           E_SUMMON_PET base=1 misc=213450 misc2=1 target=[32,0]
+tooltip   Summons a Felguard under the command of the Warlock.
+
+          The Felguard benefits from all talents and effects that trigger from or benefit any of your other Demon minions.
 
 https://www.wowhead.com/forever/spell=427733
 =======
@@ -2271,6 +2498,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427733 misc=417346 target=[1,0]
+tooltip   Gain the Summon Felguard ability:
+
+          $@spellicon427733
+          $@spelldesc427733
 
 https://www.wowhead.com/forever/spell=431754
 =======
@@ -2283,6 +2514,7 @@ range     5 yd
 
 effect 1  1120 threat to the enemy
           E_THREAT base=1000 ppl=2 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the caster.
 
 https://www.wowhead.com/forever/spell=26281
 =======
@@ -2297,6 +2529,8 @@ labels    19
 
 effect 1  87 shadow damage every 2 s to the enemy (12 ticks, +0.083 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=87 sp=0.083 period=2000ms target=[6,0]
+tooltip   Curses the target with agony, causing $o1 Shadow damage over $d.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration.  Only one Curse per Warlock can be active on any one target.
+aura      $o1 Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=28608
 =======
@@ -2317,6 +2551,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 5 mask 0x21100000,0x20000020,0x30
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=5 mask=0x21100000,0x20000020,0x30 target=[1,0]
+aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262316
 =======
@@ -2341,6 +2576,7 @@ effect 1  +15% fire damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=15 sp=1 misc=4 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=2228 family=5 mask=0x20000000 target=[1,0]
+aura      Fire damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=18791
 =======
@@ -2362,6 +2598,8 @@ effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=60 target=[6,0]
 effect 3  a dummy effect holding 200 to the enemy
           E_DUMMY base=200 target=[6,0]
+tooltip   Shadow energy slowly destroys the target, causing $o1 damage over $d. In addition, if the Unstable Affliction is dispelled it will cause ${$m1*$m3/100} damage to the dispeller and silence them for $427719d. Only one Unstable Affliction or Immolate per Warlock can be active on any one target.
+aura      $w1 Shadow damage every $t1 sec.  If dispelled, will cause ${$w1*$m3/100} damage to the dispeller and silence them for $427719d.
 
 https://www.wowhead.com/forever/spell=427717
 =======
@@ -2376,6 +2614,7 @@ effect 1  1 shadow damage to the target
           E_SCHOOL_DAMAGE base=1 target=[25,0]
 effect 2  silences to the target
           E_APPLY_AURA A_MOD_SILENCE base=0 misc=128 mechanic=9 target=[25,0]
+aura      Silenced.
 
 https://www.wowhead.com/forever/spell=427719
 =======
@@ -2386,6 +2625,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427717 misc=417346 target=[1,0]
+tooltip   Gain the Unstable Affliction ability:
+
+          $@spellicon427717
+          $@spelldesc427717
 
 https://www.wowhead.com/forever/spell=431748
 =======
@@ -2418,6 +2661,8 @@ effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=60 target=[6,0]
 effect 3  a dummy effect holding 200 to the enemy
           E_DUMMY base=200 target=[6,0]
+tooltip   Shadow energy slowly destroys the target, causing $o1 damage over $d. In addition, if the Unstable Affliction is dispelled it will cause ${$m1*$m3/100} damage to the dispeller and silence them for $427719d. Only one Unstable Affliction or Immolate per Warlock can be active on any one target.
+aura      $w1 Shadow damage every $t1 sec. If dispelled, will cause ${$w1*$m3/100} damage to the dispeller and silence them for $427719d.
 
 https://www.wowhead.com/forever/spell=1242971
 =======
@@ -2439,6 +2684,8 @@ effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=60 target=[6,0]
 effect 3  a dummy effect holding 200 to the enemy
           E_DUMMY base=200 target=[6,0]
+tooltip   Shadow energy slowly destroys the target, causing $o1 damage over $d. In addition, if the Unstable Affliction is dispelled it will cause ${$m1*$m3/100} damage to the dispeller and silence them for $427719d. Only one Unstable Affliction or Immolate per Warlock can be active on any one target.
+aura      $w1 Shadow damage every $t1 sec. If dispelled, will cause ${$w1*$m3/100} damage to the dispeller and silence them for $427719d.
 
 https://www.wowhead.com/forever/spell=1242972
 =======
@@ -2449,6 +2696,7 @@ refs      28839 Vampirism
 
 effect 1  casts 28839 Vampirism when the target is hit from family 5 mask 0x1,0x0,0x20000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=28839 family=5 mask=0x1,0x0,0x20000 target=[1,0]
+tooltip   Your Shadow Bolts now have a chance to heal you for $28839s1.
 
 https://www.wowhead.com/forever/spell=28831
 =======
@@ -2461,6 +2709,7 @@ effect 1  immune to every school
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=127 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 sp=1 misc=65115 family=5 mask=0x20000000 target=[1,0]
+aura      Immune to damage. This effect ends early if any action is taken.
 
 https://www.wowhead.com/forever/spell=469224
 =======
@@ -2471,6 +2720,7 @@ labels    3096, 3100
 
 effect 1  +20% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
+aura      Spellcasting haste increased by $w1%.
 
 https://www.wowhead.com/forever/spell=1227200
 =======
@@ -2481,6 +2731,8 @@ caster aura 403789 Metamorphosis
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune to the darkness within, allowing you better control over your inner demon.
+aura      Your soul is one with the demon...
 
 https://www.wowhead.com/forever/spell=471699
 =======
@@ -2492,5 +2744,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DOT +10% on family 5 mask 0x402,0x10901
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x402,0x10901 target=[1,0]
+tooltip   Increases the damage of your next non-channeled Affliction based damage over time spell by $s1%.
+aura      Damage of your next non-channeled Affliction based damage over time spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=448686

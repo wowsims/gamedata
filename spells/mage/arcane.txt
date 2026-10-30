@@ -11,6 +11,8 @@ effect 1  +23 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=23 misc=126 target=[57,0]
 effect 2  +45 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=45 misc=126 target=[57,0]
+tooltip   Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=1008
 =======
@@ -27,6 +29,8 @@ effect 1  +45 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=45 misc=126 target=[57,0]
 effect 2  +90 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=90 misc=126 target=[57,0]
+tooltip   Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=8455
 =======
@@ -43,6 +47,8 @@ effect 1  +75 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=75 misc=126 target=[57,0]
 effect 2  +150 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=150 misc=126 target=[57,0]
+tooltip   Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=10169
 =======
@@ -59,6 +65,8 @@ effect 1  +113 holy+fire+nature+frost+shadow+arcane damage taken to the target's
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=113 misc=126 target=[57,0]
 effect 2  +225 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=225 misc=126 target=[57,0]
+tooltip   Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=10170
 =======
@@ -74,6 +82,12 @@ refs      400588 Missile Barrage
 
 effect 1  358–438 arcane damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=398 variance=0.20100503 sp=0.429 target=[6,0]
+tooltip   Launches several missiles at the enemy target, causing ${$<power>*$m1/100} to ${$<power>*$M1/100} Arcane damage. This spell also has a ${$400588h/2}% to trigger Missile Barrage.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=400610
 =======
@@ -84,6 +98,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400610 misc=417347 target=[1,0]
+tooltip   Gain the Arcane Barrage ability:
+
+          $@spellicon400610
+          $@spelldesc400610
 
 https://www.wowhead.com/forever/spell=401719
 =======
@@ -97,6 +115,7 @@ range     30 yd
 
 effect 1  180 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=120 ppl=1 target=[6,0]
+tooltip   Blasts a target for $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=16067
 =======
@@ -110,6 +129,7 @@ range     30 yd
 
 effect 1  145 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=85 ppl=1 target=[6,0]
+tooltip   Blasts a target for $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=18091
 =======
@@ -126,6 +146,7 @@ effect 1  1419–1587 arcane damage to the enemy (at level 60, +0.714 spell powe
           E_SCHOOL_DAMAGE base=1131 ppl=6.2 variance=0.14854111 sp=0.714 target=[6,0]
 effect 2  casts 36032 to the caster
           E_TRIGGER_SPELL base=0 trigger=36032 target=[1,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage.  Each time you cast Arcane Blast, the damage of all Arcane spells is increased by $36032s1% and mana cost of Arcane Blast is increased by $36032s2%.  Effect stacks up to $36032u times and lasts $36032d or until any Arcane damage spell except Arcane Blast is cast.
 
 https://www.wowhead.com/forever/spell=42896
 =======
@@ -140,6 +161,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=15 misc=126 misc2=3 target=[1,0]
 effect 2  SPELLMOD_COST +175% on family 3 mask 0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=175 misc=14 family=3 mask=0x20000000 target=[1,0]
+tooltip   Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, you gain $s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d.
+aura      Spell damage increased by $s1% of Intellect and mana cost of Arcane Blast increased by $s2%.
 
 https://www.wowhead.com/forever/spell=400573
 =======
@@ -155,6 +178,7 @@ refs      400573 Arcane Blast
 
 effect 1  34–38 arcane damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=0.5 variance=0.15102041 sp=0.429 target=[6,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 https://www.wowhead.com/forever/spell=400574
 =======
@@ -168,6 +192,8 @@ refs      400573 Arcane Blast
 
 effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x200000 target=[1,0]
+tooltip   Blasts the target with energy, dealing Arcane damage.  Each time you cast Arcane Blast, the damage of all other Arcane spells is increased by $400573s1% and mana cost of Arcane Blast is increased by $400573s2%.  Effect stacks up to $400573u times and lasts $400573d.
+aura      Non-Arcane Blast Arcane spell damage increased by $s1% and mana cost of Arcane Blast increased by $s2%.
 
 https://www.wowhead.com/forever/spell=400586
 =======
@@ -177,6 +203,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400574 misc=399967 target=[1,0]
+tooltip   Gain the Arcane Blast ability:
+
+          $@spellicon400574
+          $@spelldesc400574
 
 https://www.wowhead.com/forever/spell=401729
 =======
@@ -192,6 +222,7 @@ refs      400573 Arcane Blast
 
 effect 1  78–91 arcane damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=78 ppl=0.8 variance=0.15102041 sp=0.429 target=[6,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 https://www.wowhead.com/forever/spell=1239696
 =======
@@ -207,6 +238,7 @@ refs      400573 Arcane Blast
 
 effect 1  101–117 arcane damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=101 ppl=1 variance=0.15102041 sp=0.429 target=[6,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 https://www.wowhead.com/forever/spell=1239697
 =======
@@ -222,6 +254,7 @@ refs      400573 Arcane Blast
 
 effect 1  165–192 arcane damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=168 ppl=1.3 variance=0.15102041 sp=0.429 target=[6,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 https://www.wowhead.com/forever/spell=1239699
 =======
@@ -237,6 +270,7 @@ refs      400573 Arcane Blast
 
 effect 1  218–254 arcane damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=236 ppl=1.6 variance=0.15102041 sp=0.429 target=[6,0]
+tooltip   Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 https://www.wowhead.com/forever/spell=1239700
 =======
@@ -250,6 +284,8 @@ refs      400573 Arcane Blast
 
 effect 1  SPELLMOD_DAMAGE +10% on family 3 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=3 mask=0x80 target=[1,0]
+tooltip   Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, the damage of all other spells is increased by $400573s1% and mana cost of Arcane Blast is increased by $400573s2%.  Effect stacks up to $400573u times and lasts $400573d.
+aura      Non-Arcane Blast spell damage increased by $s1% and mana cost of Arcane Blast increased by $s2%.
 
 https://www.wowhead.com/forever/spell=1300176
 =======
@@ -263,6 +299,8 @@ refs      400573 Arcane Blast
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, the damage of all other spells is increased by $400573s1% and mana cost of Arcane Blast is increased by $400573s2%.  Effect stacks up to $400573u times and lasts $400573d.
+aura      Non-Arcane Blast spell damage increased by $s1% and mana cost of Arcane Blast increased by $s2%.
 
 https://www.wowhead.com/forever/spell=1300177
 =======
@@ -277,6 +315,8 @@ labels    17
 
 effect 1  +31 intellect to the raid around the caster
           E_APPLY_AURA A_MOD_STAT base=31 misc=3 radius=100 target=[56,0]
+tooltip   Infuses the target's party and raid with brilliance, increasing their Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=23028
 =======
@@ -292,6 +332,7 @@ effect 1  casts 12536 Clearcasting on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=12536 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Gives you a $m1% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by $/10;12536s1%.
 
 https://www.wowhead.com/forever/spell=11213
 =======
@@ -304,6 +345,7 @@ labels    17
 
 effect 1  32–36 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=0.4 variance=0.11764706 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=1449
 =======
@@ -316,6 +358,7 @@ labels    17
 
 effect 1  55–61 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=55 ppl=0.6 variance=0.1 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=8437
 =======
@@ -328,6 +371,7 @@ labels    17
 
 effect 1  94–103 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=94 ppl=0.9 variance=0.07920792 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=8438
 =======
@@ -340,6 +384,7 @@ labels    17
 
 effect 1  133–146 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=135 ppl=0.9 variance=0.08275862 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=8439
 =======
@@ -352,6 +397,7 @@ labels    17
 
 effect 1  180–197 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=183 ppl=1.1 variance=0.082474224 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=10201
 =======
@@ -364,6 +410,7 @@ labels    17
 
 effect 1  238–259 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.07905138 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=10202
 =======
@@ -375,6 +422,7 @@ cost      390 mana
 
 effect 1  319–340 arcane damage to every enemy around the caster (at level 60, +0.143 spell power)
           E_SCHOOL_DAMAGE base=253 ppl=1.3 variance=0.07905138 sp=0.143 radius=10 target=[22,15]
+tooltip   Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 https://www.wowhead.com/forever/spell=22460
 =======
@@ -385,6 +433,7 @@ labels    17
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +2% on family 3 mask 0x20240000,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=16 family=3 mask=0x20240000,0x8000 target=[1,0]
+tooltip   Improves your chance to hit with Arcane spells by $s1%.
 
 https://www.wowhead.com/forever/spell=11222
 =======
@@ -395,6 +444,7 @@ labels    17
 
 effect 1  SPELLMOD_RANGE +6 on family 3 mask 0xa0206c00,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0xa0206c00,0x8000 target=[1,0]
+tooltip   Increases the range of your Arcane spells by $m1 yards.
 
 https://www.wowhead.com/forever/spell=11247
 =======
@@ -405,6 +455,7 @@ labels    17
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20201000,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=7 family=3 mask=0x20201000,0x8000 target=[1,0]
+tooltip   Increases the critical strike chance of your Arcane spells by $m1%.
 
 https://www.wowhead.com/forever/spell=11242
 =======
@@ -419,6 +470,7 @@ effect 2  SPELLMOD_DOT +1% on family 3 mask 0x400085
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
 effect 3  +1% physical and spell crit
           E_APPLY_AURA A_MOD_CRIT_PCT base=1 sp=1 target=[1,0]
+tooltip   Increases the damage done by your spells by $m1% and your critical strike chance by $m2%.
 
 https://www.wowhead.com/forever/spell=15058
 =======
@@ -433,6 +485,8 @@ labels    17
 
 effect 1  +2 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=2 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=1459
 =======
@@ -447,6 +501,8 @@ labels    17
 
 effect 1  +7 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=7 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=1460
 =======
@@ -461,6 +517,8 @@ labels    17
 
 effect 1  +15 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=15 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=1461
 =======
@@ -475,6 +533,8 @@ labels    17
 
 effect 1  +22 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=22 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=10156
 =======
@@ -489,6 +549,8 @@ labels    17
 
 effect 1  +31 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=31 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=10157
 =======
@@ -501,6 +563,8 @@ range     30 yd
 
 effect 1  +22 intellect to the friendly target (at level 60)
           E_APPLY_AURA A_MOD_STAT base=10 ppl=0.2 misc=3 target=[21,0]
+tooltip   Increases an ally's Intellect by $s1 for $d.
+aura      Intellect increased by $s1.
 
 https://www.wowhead.com/forever/spell=13326
 =======
@@ -513,6 +577,8 @@ range     30 yd
 
 effect 1  +31 intellect to every ally around the caster
           E_APPLY_AURA A_MOD_STAT base=31 misc=3 radius=100 target=[22,30]
+tooltip   Increases the target's Intellect by $M1 for $d.
+aura      Increases Intellect by $M1.
 
 https://www.wowhead.com/forever/spell=16876
 =======
@@ -526,6 +592,8 @@ range     30 yd
 
 effect 1  +7 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=7 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $s1 for $d.
+aura      Increases Intellect by $s1.
 
 https://www.wowhead.com/forever/spell=364161
 =======
@@ -538,6 +606,7 @@ effect 1  +10% intellect
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc2=8 target=[1,0]
 effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x20201000,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x20201000,0x8000 target=[1,0]
+tooltip   Increases your Intellect by $m1% and increases the critical strike damage bonus of your Arcane spells by $m2%.
 
 https://www.wowhead.com/forever/spell=11232
 =======
@@ -550,6 +619,7 @@ labels    17
 
 effect 1  24.8 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=24 ppl=0.2 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=7268
 =======
@@ -567,6 +637,7 @@ effect 1  casts 7268 Arcane Missile every 1 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7268 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $7268s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=5143
 =======
@@ -584,6 +655,7 @@ effect 1  casts 7269 Arcane Missiles every 1 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7269 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $7269s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=5144
 =======
@@ -601,6 +673,7 @@ effect 1  casts 7270 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=7270 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $7270s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=5145
 =======
@@ -613,6 +686,7 @@ labels    17
 
 effect 1  35.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=34 ppl=0.3 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=7269
 =======
@@ -625,6 +699,7 @@ labels    17
 
 effect 1  48.6 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=47 ppl=0.4 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=7270
 =======
@@ -642,6 +717,7 @@ effect 1  casts 8419 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=8419 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $8419s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=8416
 =======
@@ -659,6 +735,7 @@ effect 1  casts 8418 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=8418 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $8418s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=8417
 =======
@@ -671,6 +748,7 @@ labels    17
 
 effect 1  97.8 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=95 ppl=0.7 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=8418
 =======
@@ -683,6 +761,7 @@ labels    17
 
 effect 1  68.4 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=66 ppl=0.6 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=8419
 =======
@@ -700,6 +779,7 @@ effect 1  casts 10273 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=10273 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $10273s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=10211
 =======
@@ -717,6 +797,7 @@ effect 1  casts 10274 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=10274 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $10274s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=10212
 =======
@@ -729,6 +810,7 @@ labels    17
 
 effect 1  133.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=130 ppl=0.8 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=10273
 =======
@@ -741,6 +823,7 @@ labels    17
 
 effect 1  174.6 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=171 ppl=0.9 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=10274
 =======
@@ -758,6 +841,7 @@ effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=15735
 =======
@@ -768,6 +852,7 @@ range     30 yd
 
 effect 1  327.43057 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=327.43057 sp=0.2 target=[6,0]
+tooltip   Launches a magical missile at an enemy, inflicting Arcane damage.
 
 https://www.wowhead.com/forever/spell=15736
 =======
@@ -783,6 +868,7 @@ effect 1  casts 15791 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=15791 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=15790
 =======
@@ -793,6 +879,7 @@ range     30 yd
 
 effect 1  654.86115 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=654.86115 sp=0.2 target=[6,0]
+tooltip   Launches magical missiles at an enemy, inflicting Arcane damage.
 
 https://www.wowhead.com/forever/spell=15791
 =======
@@ -810,6 +897,7 @@ effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches magical missiles at an enemy, inflicting Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=22272
 =======
@@ -820,6 +908,7 @@ range     30 yd
 
 effect 1  1309.7223 arcane damage to the enemy (+0.2 spell power)
           E_SCHOOL_DAMAGE base=1309.7223 sp=0.2 target=[6,0]
+tooltip   Launches magical missiles at an enemy, inflicting Arcane damage.
 
 https://www.wowhead.com/forever/spell=22273
 =======
@@ -837,6 +926,7 @@ effect 1  casts 25346 Arcane Missiles every 1 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=25346 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches Arcane Missiles at the enemy, causing $25346s1 Arcane damage each second for $d.
 
 https://www.wowhead.com/forever/spell=25345
 =======
@@ -849,6 +939,7 @@ labels    17
 
 effect 1  209 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=209 ppl=1 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=25346
 =======
@@ -876,6 +967,8 @@ effect 2  SPELLMOD_COST +30% on family 3 mask 0x20c21af7,0x9000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=14 family=3 mask=0x20c21af7,0x9000 target=[1,0]
 effect 3  SPELLMOD_DOT +30% on family 3 mask 0x400085
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=3 mask=0x400085 target=[1,0]
+tooltip   For the next $d, your spells deal $s1% more damage while costing $s2% more mana to cast.
+aura      Increased damage and mana cost for your spells.
 
 https://www.wowhead.com/forever/spell=12042
 =======
@@ -888,6 +981,7 @@ effect 1  SPELLMOD_VALUE_MULTIPLIER -33% on family 3 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-33 misc=27 family=3 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_EFFECT1 +50% on family 3 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=3 family=3 mask=0x10000000 target=[1,0]
+tooltip   Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by $m1% and increases the resistances granted by your Mage Armor spell by $m2%.
 
 https://www.wowhead.com/forever/spell=11252
 =======
@@ -900,6 +994,7 @@ effect 1  SPELLMOD_THREAT -30% on family 3 mask 0x20241800,0x0,0x4,0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-30 misc=2 family=3 mask=0x20241800,0x0,0x4,0x80 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_TARGET_RESISTANCE base=-15 misc=126 target=[1,0]
+tooltip   Reduces your target's resistance to all your spells by $s2 and reduces the threat caused by your Arcane spells by $s1%.
 
 https://www.wowhead.com/forever/spell=11210
 =======
@@ -919,6 +1014,13 @@ effect 3  +100% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
 effect 4  a dummy aura holding 300
           E_APPLY_AURA A_DUMMY base=300 target=[1,0]
+tooltip   Unleash all of your remaining mana in a surge of energy focused at the target dealing ${$<power>*$m1/100} to ${$<power>*$M1/100} Arcane damage, increased by up to $s4% based on your mana remaining. Afterward, your normal mana regeneration is activated and increased by $s2% for $d.
+aura      Normal mana regeneration activated and increased by $s2%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=425124
 =======
@@ -928,6 +1030,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425124 misc=399966 target=[1,0]
+tooltip   Gain the Arcane Surge ability:
+
+          $@spellicon425124
+          $@spelldesc425124
 
 https://www.wowhead.com/forever/spell=425168
 =======
@@ -945,6 +1051,7 @@ effect 1  122–146 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=120 ppl=1.4 variance=0.20100503 sp=1 target=[6,0]
 effect 2  a dummy effect holding 5 to the enemy
           E_DUMMY base=5 target=[6,0]
+tooltip   Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 https://www.wowhead.com/forever/spell=1326079
 =======
@@ -962,6 +1069,7 @@ effect 1  193–232 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.20100503 sp=1 target=[6,0]
 effect 2  a dummy effect holding 5 to the enemy
           E_DUMMY base=5 target=[6,0]
+tooltip   Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 https://www.wowhead.com/forever/spell=1326080
 =======
@@ -979,6 +1087,7 @@ effect 1  296–357 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.20100503 sp=1 target=[6,0]
 effect 2  a dummy effect holding 5 to the enemy
           E_DUMMY base=5 target=[6,0]
+tooltip   Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 https://www.wowhead.com/forever/spell=1326081
 =======
@@ -996,6 +1105,7 @@ effect 1  406–496 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.20100503 sp=1 target=[6,0]
 effect 2  a dummy effect holding 5 to the enemy
           E_DUMMY base=5 target=[6,0]
+tooltip   Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 https://www.wowhead.com/forever/spell=1326082
 =======
@@ -1015,6 +1125,8 @@ effect 2  immune to stun
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=12 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yards forward, unless something is in the way. Also frees the caster from Stuns and Immobilizes.
+aura      Blinking.
 
 https://www.wowhead.com/forever/spell=1953
 =======
@@ -1031,6 +1143,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=14514
 =======
@@ -1046,6 +1160,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=21655
 =======
@@ -1062,6 +1178,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster to an enemy target. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=28391
 =======
@@ -1074,6 +1192,8 @@ range     50000 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 target=[1,63]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=28401
 =======
@@ -1089,6 +1209,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=29208
 =======
@@ -1104,6 +1226,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=29209
 =======
@@ -1119,6 +1243,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=29210
 =======
@@ -1134,6 +1260,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=29211
 =======
@@ -1150,6 +1278,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=1236175
 =======
@@ -1164,6 +1294,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -1000% on family 3 mask 0x20c21af7,0x29000,0x10040040,0x84000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-1000 misc=14 family=3 mask=0x20c21af7,0x29000,0x10040040,0x84000 target=[1,0]
+aura      Your next damage spell has its mana cost reduced by $/10;s1%.
 
 https://www.wowhead.com/forever/spell=12536
 =======
@@ -1177,6 +1308,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lmuffin:muffins;, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=587
 =======
@@ -1190,6 +1324,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lloaf:loaves; of bread, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=597
 =======
@@ -1203,6 +1340,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lloaf:loaves; of rye, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=990
 =======
@@ -1216,6 +1356,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lloaf:loaves; of pumpernickel, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=6129
 =======
@@ -1229,6 +1372,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lloaf:loaves; of sourdough, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10144
 =======
@@ -1242,6 +1388,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2.25 target=[1,0]
+tooltip   Conjures $s1 $lsweet roll:sweet rolls;, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10145
 =======
@@ -1255,6 +1404,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=10 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lcinnamon roll:cinnamon rolls;, providing the mage and $ghis:her; allies with something to eat.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=28612
 =======
@@ -1269,6 +1421,9 @@ refs      5405 Replenish Mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
+tooltip   Conjures a mana agate that can be used to instantly restore $5405s1 mana.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=759
 =======
@@ -1283,6 +1438,9 @@ refs      10057 Replenish Mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
+tooltip   Conjures a mana citrine that can be used to instantly restore $10057s1 mana.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10053
 =======
@@ -1297,6 +1455,9 @@ refs      10052 Replenish Mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
+tooltip   Conjures a mana jade that can be used to instantly restore $10052s1 mana.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=3552
 =======
@@ -1311,6 +1472,9 @@ refs      10058 Replenish Mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
+tooltip   Conjures a mana ruby that can be used to instantly restore $10058s1 mana.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10054
 =======
@@ -1324,6 +1488,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=5504
 =======
@@ -1337,6 +1504,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of fresh water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=5505
 =======
@@ -1350,6 +1520,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of purified water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=5506
 =======
@@ -1363,6 +1536,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of spring water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=6127
 =======
@@ -1376,6 +1552,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of mineral water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10138
 =======
@@ -1389,6 +1568,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=2 ppl=2 target=[1,0]
+tooltip   Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of sparkling water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10139
 =======
@@ -1402,6 +1584,9 @@ labels    17
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=10 ppl=2 target=[1,0]
+tooltip   Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of crystal water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=10140
 =======
@@ -1414,6 +1599,9 @@ cost      845 mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=20 ppl=2 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of mountain spring water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=468766
 =======
@@ -1429,6 +1617,7 @@ labels    17
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.  Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=2139
 =======
@@ -1442,6 +1631,7 @@ range     30 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=15122
 =======
@@ -1452,6 +1642,7 @@ range     30 yd
 
 effect 1  interrupts the cast to every enemy around the caster
           E_INTERRUPT_CAST base=0 radius=45 target=[22,15]
+tooltip   Counters the spellcasting of nearby enemies, preventing any spell from that school of magic from being cast for $d. Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=19715
 =======
@@ -1465,6 +1656,7 @@ range     30 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=20537
 =======
@@ -1477,6 +1669,7 @@ range     10 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters an enemy's spell.
 
 https://www.wowhead.com/forever/spell=20788
 =======
@@ -1489,6 +1682,7 @@ range     30 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.  Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=29443
 =======
@@ -1502,6 +1696,7 @@ range     30 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 target=[6,0]
+tooltip   Counters an enemy's spell, preventing the enemy from casting that spell again for $d. Generates a high amount of threat.
 
 https://www.wowhead.com/forever/spell=1233255
 =======
@@ -1518,6 +1713,8 @@ effect 1  -15 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-15 misc=126 target=[57,0]
 effect 2  -30 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=-30 misc=126 target=[57,0]
+tooltip   Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=604
 =======
@@ -1534,6 +1731,8 @@ effect 1  -30 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-30 misc=126 target=[57,0]
 effect 2  -60 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=-60 misc=126 target=[57,0]
+tooltip   Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=8450
 =======
@@ -1550,6 +1749,8 @@ effect 1  -60 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-60 misc=126 target=[57,0]
 effect 2  -120 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=-120 misc=126 target=[57,0]
+tooltip   Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=8451
 =======
@@ -1566,6 +1767,8 @@ effect 1  -90 holy+fire+nature+frost+shadow+arcane damage taken to the target's 
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-90 misc=126 target=[57,0]
 effect 2  -180 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=-180 misc=126 target=[57,0]
+tooltip   Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=10173
 =======
@@ -1582,6 +1785,8 @@ effect 1  -135 holy+fire+nature+frost+shadow+arcane damage taken to the target's
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-135 misc=126 target=[57,0]
 effect 2  -270 healing taken to the target's raid
           E_APPLY_AURA A_MOD_HEALING base=-270 misc=126 target=[57,0]
+tooltip   Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
+aura      Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 https://www.wowhead.com/forever/spell=10174
 =======
@@ -1599,6 +1804,8 @@ effect 2  +100% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
 effect 3  a dummy aura holding 100 every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=100 sp=1 period=1000ms target=[1,0]
+tooltip   While channeling this spell, your mana regeneration is active and increased by $s1%.  Lasts $d.
+aura      Mana regeneration increased by $s1%.
 
 https://www.wowhead.com/forever/spell=12051
 =======
@@ -1609,6 +1816,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -60 s on family 3 mask 0x4000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=3 mask=0x4000000 target=[1,0]
+tooltip   Reduces cooldown on your Evocation by $/60000;s1 minute.
 
 https://www.wowhead.com/forever/spell=28763
 =======
@@ -1619,6 +1827,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_DAMAGE_IMMUNITY base=0 misc=127 target=[1,0]
+aura      Immune to all damage.
 
 https://www.wowhead.com/forever/spell=456397
 =======
@@ -1630,6 +1839,7 @@ effect 1  SPELLMOD_COST -50% on family 3 mask 0x0,0x0,0x0,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=3 mask=0x0,0x0,0x0,0x2000000 target=[1,0]
 effect 2  SPELLMOD_DURATION +50% on family 3 mask 0x0,0x0,0x0,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=3 mask=0x0,0x0,0x0,0x2000000 target=[1,0]
+tooltip   Decreases the mana cost of Arcane Intellect by $s1% and increases its duration by $s2%.
 
 https://www.wowhead.com/forever/spell=436949
 =======
@@ -1642,6 +1852,7 @@ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +20% on family 3 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=9 family=3 mask=0x800 target=[1,0]
 effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 3 mask 0x20000000,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 misc=9 family=3 mask=0x20000000,0x8000 target=[1,0]
+tooltip   Gives your Arcane Missiles spell a $m1% chance and your Arcane Blast and Arcane Wrath spells a $m2% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=11237
 =======
@@ -1653,6 +1864,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  a dummy aura holding 4000
           E_APPLY_AURA A_DUMMY base=4000 target=[1,0]
+tooltip   Your Counterspell also Silences the target for ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=11255
 =======
@@ -1663,6 +1875,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x4020
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x4020 target=[1,0]
+tooltip   Reduces the cooldown of Counterspell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24429
 =======
@@ -1678,6 +1891,8 @@ effect 1  +5 holy+fire+nature+frost+shadow+arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=5 misc=126 target=[1,0]
 effect 2  +50% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.
 
 https://www.wowhead.com/forever/spell=6117
 =======
@@ -1693,6 +1908,8 @@ effect 1  +10 holy+fire+nature+frost+shadow+arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=10 misc=126 target=[1,0]
 effect 2  +50% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.
 
 https://www.wowhead.com/forever/spell=22782
 =======
@@ -1708,6 +1925,8 @@ effect 1  +15 holy+fire+nature+frost+shadow+arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=126 target=[1,0]
 effect 2  +50% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.
 
 https://www.wowhead.com/forever/spell=22783
 =======
@@ -1722,6 +1941,7 @@ effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
 effect 2  +2 fire+nature+frost+shadow+arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=2 misc=124 target=[1,0]
+tooltip   Increases all your resistances by $s2 and causes all spells you fully resist to restore $s1% of your total mana. Cannot trigger more often than 1 time per sec.
 
 https://www.wowhead.com/forever/spell=29441
 =======
@@ -1732,6 +1952,7 @@ labels    17
 
 effect 1  SPELLMOD_ALL_EFFECTS +50% on family 3 mask 0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=8 family=3 mask=0x2000 target=[1,0]
+tooltip   Increases the effect of your Amplify Magic and Dampen Magic spells by $s1%.
 
 https://www.wowhead.com/forever/spell=12606
 =======
@@ -1745,6 +1966,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=120 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=1463
 =======
@@ -1758,6 +1981,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=210 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=8494
 =======
@@ -1771,6 +1996,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=300 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=8495
 =======
@@ -1784,6 +2011,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=390 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=10191
 =======
@@ -1797,6 +2026,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=480 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=10192
 =======
@@ -1810,6 +2041,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=570 amplitude=2 misc=1 target=[1,0]
+tooltip   Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=10193
 =======
@@ -1821,6 +2054,8 @@ cost      40 mana
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=120 ppl=6 amplitude=2 misc=1 target=[1,0]
+tooltip   Enfolds the caster in a protective shield that lasts $d. and absorbs up to $s1 Physical damage, draining mana instead of health. Drains $e mana per point of damage absorbed.
+aura      Shielded against Physical damage: losing mana instead of health.
 
 https://www.wowhead.com/forever/spell=17740
 =======
@@ -1832,6 +2067,8 @@ cost      40 mana
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MANA_SHIELD base=120 ppl=6 amplitude=2 misc=1 target=[1,0]
+tooltip   Enfolds the caster in a protective shield that lasts $d. and absorbs up to $s1 Physical damage, draining mana instead of health. Drains $e mana per point of damage absorbed.
+aura      Shielded against Physical damage: losing mana instead of health.
 
 https://www.wowhead.com/forever/spell=17741
 =======
@@ -1847,6 +2084,8 @@ effect 1  absorbs 240 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=240 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412116
 =======
@@ -1862,6 +2101,8 @@ effect 1  absorbs 420 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=420 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412118
 =======
@@ -1877,6 +2118,8 @@ effect 1  absorbs 600 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=600 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412120
 =======
@@ -1892,6 +2135,8 @@ effect 1  absorbs 780 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=780 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412121
 =======
@@ -1907,6 +2152,8 @@ effect 1  absorbs 960 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=960 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412122
 =======
@@ -1922,6 +2169,8 @@ effect 1  absorbs 1140 physical damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1140 amplitude=2 misc=1 target=[21,0]
 effect 2  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=2 target=[21,0]
+tooltip   Absorbs $s1 physical damage on a friendly target, draining mana instead.  Drains $s2 mana from the casting Mage per damage absorbed.  Lasts $d.
+aura      Absorbs physical damage, draining mana instead.
 
 https://www.wowhead.com/forever/spell=412123
 =======
@@ -1938,6 +2187,17 @@ refs      400735 Temporal Beacon
 
 effect 1  42 healing every 1 s to target 132 (3 ticks, +0.198 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.198 period=1000ms amplitude=1 radius=43.5 target=[132,31]
+tooltip   Heals all of target player's party members within $a1 yards of target player for ${$<healpower>*$m1/100*3} health over $d and applies Temporal Beacon to each target for ${$400735m3/2} sec.
+
+          Temporal Beacon
+          $@spellicon400735
+          $@spelldesc400735
+aura      Healing ${$w1*3} health over $d.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=412510
 =======
@@ -1947,6 +2207,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412510 misc=399966 target=[1,0]
+tooltip   Gain the Mass Regeneration ability:
+
+          $@spellicon412510
+          $@spelldesc412510
 
 https://www.wowhead.com/forever/spell=415467
 =======
@@ -1961,6 +2225,7 @@ effect 1  casts 400589 Missile Barrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=400589 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 trigger=400589 target=[1,0]
+tooltip   Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
 
 https://www.wowhead.com/forever/spell=400588
 =======
@@ -1977,6 +2242,8 @@ effect 2  a dummy aura holding -500
           E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
 effect 3  SPELLMOD_COST -100% on family 3 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 misc2=111 family=3 mask=0x800 target=[1,0]
+tooltip   Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec.
+aura      Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec.
 
 https://www.wowhead.com/forever/spell=400589
 =======
@@ -1987,6 +2254,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400588 misc=415449 target=[1,0]
+tooltip   Gain the Missile Barrage ability:
+
+          $@spellicon400588
+          $@spelldesc400588
 
 https://www.wowhead.com/forever/spell=401736
 =======
@@ -2018,6 +2289,8 @@ effect 2  a dummy aura holding -500
           E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
 effect 3  a dummy aura holding -100
           E_APPLY_AURA A_DUMMY base=-100 misc2=111 target=[1,0]
+tooltip   Gives your Arcane Blast, Fireball, and Frostbolt spells a chance to reduce the channeled duration of the next Arcane Missiles spell by $400589s1%, reduce the mana cost by $s3%, and missiles fire every ${$400588m2/10}.1 sec.
+aura      Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec.
 
 https://www.wowhead.com/forever/spell=1326083
 =======
@@ -2039,6 +2312,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=100 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=118
 =======
@@ -2060,6 +2335,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=12824
 =======
@@ -2081,6 +2358,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=12825
 =======
@@ -2102,6 +2381,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16372 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=12826
 =======
@@ -2123,6 +2404,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16377 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a turtle, forcing it to wander around for up to $d.  While wandering, the turtle cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=28271
 =======
@@ -2144,6 +2427,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16371 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a pig, forcing it to wander around for up to $d.  While wandering, the pig cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=28272
 =======
@@ -2156,6 +2441,7 @@ effect 1  fears
           E_APPLY_AURA A_MOD_FEAR base=0 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16479 misc2=9 target=[1,0]
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=29124
 =======
@@ -2176,6 +2462,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16779 misc2=9 target=[6,0]
 effect 3  dispels mount to the enemy
           E_DISPEL_MECHANIC base=10 misc=21 target=[6,0]
+tooltip   Transforms the enemy into a cow, forcing it to wander around for up to $d.  While wandering, the cow cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.
+aura      Cannot attack or cast spells.  Increased regeneration.
 
 https://www.wowhead.com/forever/spell=28270
 =======
@@ -2192,6 +2480,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176498 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Darnassus.
 
 https://www.wowhead.com/forever/spell=11419
 =======
@@ -2208,6 +2497,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176497 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Ironforge.
 
 https://www.wowhead.com/forever/spell=11416
 =======
@@ -2224,6 +2514,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176499 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=11417
 =======
@@ -2240,6 +2531,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176296 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Stormwind.
 
 https://www.wowhead.com/forever/spell=10059
 =======
@@ -2256,6 +2548,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176500 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Thunder Bluff.
 
 https://www.wowhead.com/forever/spell=11420
 =======
@@ -2272,6 +2565,7 @@ labels    17
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176501 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Undercity.
 
 https://www.wowhead.com/forever/spell=11418
 =======
@@ -2286,6 +2580,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=3 mask=0x40000000 target=[1,0]
+tooltip   When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.
+aura      Your next Mage spell with a casting time less than 10 sec will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=12043
 =======
@@ -2305,6 +2601,17 @@ effect 2  +0% movement speed to the friendly target
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 amplitude=1 target=[21,0]
 effect 3  a dummy aura holding 1 to the friendly target
           E_APPLY_AURA A_DUMMY base=1 amplitude=1 target=[21,0]
+tooltip   Heals the target for ${$<healpower>*$m1/100*3} health over $d and applies Temporal Beacon for $400735s3 sec.
+
+          Temporal Beacon
+          $@spellicon400735
+          $@spelldesc400735
+aura      Healing ${$w1*3} health over $d.$?$w2>0[ Movement speed increased by $w2%.][]
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=401417
 =======
@@ -2314,6 +2621,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401417 misc=399954 target=[1,0]
+tooltip   Gain the Regeneration ability:
+
+          $@spellicon401417
+          $@spelldesc401417
 
 https://www.wowhead.com/forever/spell=401743
 =======
@@ -2326,6 +2637,17 @@ refs      400735 Temporal Beacon
 
 effect 1  42 healing to target 77 (+0.594 spell power)
           E_HEAL base=42 sp=0.594 amplitude=1 target=[77,0]
+tooltip   Heals the target for ${$<healpower>*$m1/100*3} health over $d and applies Temporal Beacon for $400735s3 sec.
+
+          Temporal Beacon
+          $@spellicon400735
+          $@spelldesc400735
+aura      Healing ${$w1*3} health over $d.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=456485
 =======
@@ -2339,6 +2661,7 @@ labels    17
 
 effect 1  dispels 1 curse effect to the friendly target
           E_DISPEL base=1 misc=2 target=[21,0]
+tooltip   Removes $m1 Curse or Bane from a friendly target.
 
 https://www.wowhead.com/forever/spell=475
 =======
@@ -2349,6 +2672,7 @@ range     60 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=5 target=[21,0]
+tooltip   Your current target with your Temporal Beacon instantly heals all damage taken over the last $s1 seconds. Ineffective on targets that did not have a Temporal Beacon $s1 seconds ago.
 
 https://www.wowhead.com/forever/spell=401462
 =======
@@ -2358,6 +2682,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401462 misc=417346 target=[1,0]
+tooltip   Gain the Rewind Time ability:
+
+          $@spellicon401462
+          $@spelldesc401462
 
 https://www.wowhead.com/forever/spell=401734
 =======
@@ -2371,6 +2699,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_FEATHER_FALL base=0 target=[1,0]
+tooltip   Slows falling speed for $d.
+aura      Slows falling speed.
 
 https://www.wowhead.com/forever/spell=130
 =======
@@ -2386,6 +2716,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Dalaran.
 
 https://www.wowhead.com/forever/spell=1297659
 =======
@@ -2399,6 +2730,7 @@ labels    17
 
 effect 1  a dummy effect to the caster
           E_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Teleports you to Dalaran.
 
 https://www.wowhead.com/forever/spell=1308652
 =======
@@ -2414,6 +2746,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Darnassus.
 
 https://www.wowhead.com/forever/spell=3565
 =======
@@ -2429,6 +2762,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Ironforge.
 
 https://www.wowhead.com/forever/spell=3562
 =======
@@ -2444,6 +2778,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=3567
 =======
@@ -2459,6 +2794,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Stormwind.
 
 https://www.wowhead.com/forever/spell=3561
 =======
@@ -2474,6 +2810,7 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Thunder Bluff.
 
 https://www.wowhead.com/forever/spell=3566
 =======
@@ -2489,5 +2826,6 @@ effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[1,0]
+tooltip   Teleports the caster to Undercity.
 
 https://www.wowhead.com/forever/spell=3563

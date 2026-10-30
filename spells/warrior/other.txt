@@ -5,6 +5,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 4 mask 0x88000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=4 mask=0x88000 target=[1,0]
+tooltip   Improves your chance to hit with Taunt and Challenging Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=28843
 =======
@@ -16,6 +17,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
 effect 2  +1% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+tooltip   Increases your attack speed and casting speed by $s1%.
 
 https://www.wowhead.com/forever/spell=1300968
 =======
@@ -25,6 +27,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x40000 target=[1,0]
+tooltip   Reduces the cooldown of your Intimidating Shout ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301069
 =======
@@ -34,6 +37,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=64 target=[1,0]
+tooltip   +$s1 Attack Power against Humanoids.
 
 https://www.wowhead.com/forever/spell=1301095
 =======
@@ -43,6 +47,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x10 target=[1,0]
+tooltip   Reduces the cooldown of your Recklessness ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301721
 =======
@@ -52,6 +57,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -10 s on family 4 mask 0x0,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=4 mask=0x0,0x10000 target=[1,0]
+tooltip   Reduces the cooldown of your Intervene ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301071
 =======
@@ -61,6 +67,7 @@ attrs     passive
 
 effect 1  +12 expertise rating
           E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
+tooltip   Reduces the chance for your melee attacks to be Dodged or Parried by ${$m1/10}.1%.
 
 https://www.wowhead.com/forever/spell=1301096
 =======
@@ -70,6 +77,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -30 s on family 4 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=4 mask=0x2000 target=[1,0]
+tooltip   Reduces the cooldown of your Shield Wall ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301722
 =======
@@ -79,6 +87,7 @@ attrs     passive
 
 effect 1  casts 409075 Annihilation on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=409075 target=[1,0]
+tooltip   Your melee attacks generate ${$409073m1/10} Rage.
 
 https://www.wowhead.com/forever/spell=409073
 =======
@@ -98,6 +107,7 @@ labels    16, 25, 292
 
 effect 1  a dummy effect
           E_DUMMY base=0 target=[0,0]
+tooltip   Starts combat by attacking a target with a melee weapon.
 
 https://www.wowhead.com/forever/spell=88163
 =======
@@ -108,6 +118,7 @@ stack     up to 1
 
 effect 1  +10% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=1 target=[1,0]
+aura      Increases Physical damage done by $s1%.
 
 https://www.wowhead.com/forever/spell=457816
 =======
@@ -118,6 +129,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 4 mask 0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=4 mask=0x40000000 target=[1,0]
+tooltip   -$/10;s1 rage cost to Intercept.
 
 https://www.wowhead.com/forever/spell=26111
 =======
@@ -132,6 +144,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3654 radius=100 family=4 mask=0x800000 target=[22,15]
 effect 3  +30% every school damage taken to every enemy around the caster
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=30 sp=1 misc=127 radius=100 target=[22,15]
+aura      Forced into Berseker Stance.
+          Increases damage taken by $s3%.
 
 https://www.wowhead.com/forever/spell=23397
 =======
@@ -145,6 +159,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=350 sp=1 misc=200 target=[6,0]
 effect 3  weapon damage +300 to the enemy
           E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+tooltip   Charges at an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=16636
 =======
@@ -158,6 +173,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=175 sp=1 misc=100 target=[6,0]
 effect 3  weapon damage +150 to the enemy
           E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+tooltip   Charges at an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=19471
 =======
@@ -171,6 +187,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=120 sp=1 misc=175 target=[6,0]
 effect 3  weapon damage +300 to the enemy
           E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+tooltip   Charges at an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=22886
 =======
@@ -184,6 +201,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=350 sp=1 misc=200 target=[6,0]
 effect 3  weapon damage +300 to the enemy
           E_WEAPON_DAMAGE base=300 sp=1 target=[6,0]
+tooltip   Charges at an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=26561
 =======
@@ -197,6 +215,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=175 sp=1 misc=100 target=[6,0]
 effect 3  weapon damage +150 to the enemy
           E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+tooltip   Charges at an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=1270802
 =======
@@ -207,6 +226,7 @@ stack     up to 1
 
 effect 1  +10% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=10 target=[1,0]
+aura      Increases Critical Strike chance by $s1%.
 
 https://www.wowhead.com/forever/spell=457817
 =======
@@ -221,6 +241,7 @@ effect 2  SPELLMOD_DOT +100% on family 4 mask 0x20
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=22 family=4 mask=0x20 target=[1,0]
 effect 3  a dummy aura holding 4 from family 4 mask 0x20
           E_APPLY_AURA A_DUMMY base=4 family=4 mask=0x20 target=[1,0]
+tooltip   Rend can now be used in Berserker stance, Rend's damage is increased by $s2%, and Rend deals additional damage equal to $s3% of your Attack Power each time it deals damage.
 
 https://www.wowhead.com/forever/spell=412507
 =======
@@ -232,6 +253,7 @@ refs      413399 Blood Surge
 
 effect 1  casts 413399 Blood Surge on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=413399 target=[1,0]
+tooltip   Heroic Strike, Bloodthirst, and Whirlwind have a $h% chance to make your next Slam within $413399d instant, strike with both melee weapons, and cost no Rage.
 
 https://www.wowhead.com/forever/spell=413380
 =======
@@ -245,6 +267,7 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=4 mask=0x200000 target=[1,0]
 effect 2  SPELLMOD_COST -100% on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x200000 target=[1,0]
+aura      Your next Slam is instant cast and costs no Rage.
 
 https://www.wowhead.com/forever/spell=413399
 =======
@@ -254,6 +277,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413380 misc=415449 target=[1,0]
+tooltip   Gain the Blood Surge ability:
+
+          $@spellicon413380
+          $@spelldesc413380
 
 https://www.wowhead.com/forever/spell=415743
 =======
@@ -267,6 +294,8 @@ effect 1  -1000 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-1000 target=[6,0]
 effect 2  -1000 ranged attack power to the enemy
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-1000 target=[6,0]
+tooltip   Reduces the melee  and ranged attack power of nearby enemies by $s1 for $d.
+aura      Melee and ranged attack power reduced by $s1.
 
 https://www.wowhead.com/forever/spell=28342
 =======
@@ -278,6 +307,8 @@ range     30 yd
 
 effect 1  +160 healing taken
           E_APPLY_AURA A_MOD_HEALING base=160 misc=126 target=[1,0]
+tooltip   Increases healing received by up to $s1.
+aura      Increases healing received by up to $s1.
 
 https://www.wowhead.com/forever/spell=28846
 =======
@@ -298,6 +329,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -35% on family 4 mask 0xf0000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-35 misc=14 family=4 mask=0xf0000 target=[1,0]
+tooltip   Decreases the rage cost of all Warrior shouts by $s1%.
 
 https://www.wowhead.com/forever/spell=26109
 =======
@@ -308,6 +340,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +50% on family 4 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=8 family=4 mask=0x80 target=[1,0]
+tooltip   Increase the Slow effect and damage of Thunder Clap by $s1%.
 
 https://www.wowhead.com/forever/spell=26110
 =======
@@ -318,6 +351,7 @@ refs      425415 Enrage
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_TRIGGER_SPELL_ON_POWER_PCT base=60 misc=1 trigger=425415 target=[1,0]
+tooltip   Enrages you (activating abilities which require being Enraged) for $425415d  after you exceed $s1 Rage. In addition, Whirlwind also strikes with off-hand melee weapons while you are Enraged.
 
 https://www.wowhead.com/forever/spell=425418
 =======
@@ -336,6 +370,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +85 to the enemy
           E_NORMALIZED_WEAPON_DMG base=85 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=26652
 =======
@@ -345,6 +381,7 @@ labels    23
 
 effect 1  unrecognised shape
           E_DURABILITY_DAMAGE_PCT base=100 sp=1 misc=17 radius=100 target=[22,15]
+aura      Damages ranged weapon.
 
 https://www.wowhead.com/forever/spell=23436
 =======
@@ -364,6 +401,7 @@ labels    24
 
 effect 1  casts 23424 Corrupted Totems every 4 s to every enemy around the caster (7 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=4000ms trigger=23424 radius=100 target=[22,15]
+aura      Summons corrupted totems.
 
 https://www.wowhead.com/forever/spell=23425
 =======
@@ -392,6 +430,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no rol
 
 effect 1  a dummy aura holding 10 from family 4 mask 0x20000000 to the enemy
           E_APPLY_AURA A_DUMMY base=10 family=4 mask=0x20000000 target=[6,0]
+aura      Take $s1% increased damage from the attacker's next Execute.
 
 https://www.wowhead.com/forever/spell=1231416
 =======
@@ -408,6 +447,8 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your next $u instances of Cleave damage are increased by $s1%.  Lasts $d.
+aura      Cleave damage dealt increased by ${$s1/$m2}%.
 
 https://www.wowhead.com/forever/spell=1235336
 =======
@@ -431,6 +472,8 @@ effect 1  -24 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-24 target=[6,0]
 effect 2  -24 ranged attack power to the enemy
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-24 target=[6,0]
+tooltip   Reduces target enemy's attack power by $s1 for $d.
+aura      Attack power lowered by $s1.
 
 https://www.wowhead.com/forever/spell=18381
 =======
@@ -442,6 +485,7 @@ attrs     refund on miss
 
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 sp=1 target=[6,47]
+tooltip   $@spelldesc1219093
 
 https://www.wowhead.com/forever/spell=1219110
 =======
@@ -454,6 +498,7 @@ labels    25
 
 effect 1  a dummy aura holding 1 every 3 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=1 sp=1 period=3000ms target=[6,0]
+aura      Bleeding.
 
 https://www.wowhead.com/forever/spell=412609
 =======
@@ -466,6 +511,7 @@ labels    25
 
 effect 1  1 physical damage to the target
           E_SCHOOL_DAMAGE base=1 target=[25,0]
+tooltip   Bleeding.
 
 https://www.wowhead.com/forever/spell=412613
 =======
@@ -476,6 +522,7 @@ stack     up to 1
 
 effect 1  -10% physical damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=1 target=[1,0]
+aura      Reduces Physical damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=457814
 =======
@@ -486,6 +533,7 @@ labels    25
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 misc=831 family=4 mask=0x800000 target=[1,0]
+tooltip   You retain up to $s1% of your rage when you change from Defensive Stance to any other stance.
 
 https://www.wowhead.com/forever/spell=29559
 =======
@@ -496,6 +544,7 @@ labels    25
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=66 misc=831 family=4 mask=0x800000 target=[1,0]
+tooltip   You retain up to $s1% of your rage when you change from Defensive Stance to any other stance.
 
 https://www.wowhead.com/forever/spell=29588
 =======
@@ -506,6 +555,7 @@ labels    25
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=100 misc=831 family=4 mask=0x800000 target=[1,0]
+tooltip   You retain up to $s1% of your rage when you change from Defensive Stance to any other stance.
 
 https://www.wowhead.com/forever/spell=29589
 =======
@@ -518,6 +568,8 @@ range     30 yd
 
 effect 1  -130 attack power to the enemy (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-10 ppl=-2 target=[6,0]
+tooltip   Reduces the melee attack power of an enemy by $s1 for $d.
+aura      Melee attack power reduced by $s1.
 
 https://www.wowhead.com/forever/spell=23262
 =======
@@ -528,6 +580,7 @@ stack     up to 1
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x280008a7,0x100008 target=[1,0]
+aura      You can temporarily use all abilities that require Battle Stance.
 
 https://www.wowhead.com/forever/spell=457706
 =======
@@ -538,6 +591,7 @@ stack     up to 1
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x7000001a,0x4 target=[1,0]
+aura      You can temporarily use all abilities that require Berserker Stance.
 
 https://www.wowhead.com/forever/spell=457708
 =======
@@ -548,6 +602,7 @@ stack     up to 1
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xbe20 target=[1,0]
+aura      You can temporarily use all abilities that require Defensive Stance.
 
 https://www.wowhead.com/forever/spell=457699
 =======
@@ -558,6 +613,7 @@ stack     up to 1
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0xffffffff,0xfffdffff,0xffffffff,0xffffffff target=[1,0]
+aura      You can temporarily use all abilities that require Gladiator Stance.
 
 https://www.wowhead.com/forever/spell=457819
 =======
@@ -567,6 +623,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_RAGE_FROM_DAMAGE_DEALT base=25 target=[1,0]
+tooltip   You generate $s1% more Rage from all damage you deal.
 
 https://www.wowhead.com/forever/spell=403218
 =======
@@ -576,6 +633,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403218 misc=417345 target=[1,0]
+tooltip   Gain the Endless Rage ability:
+
+          $@spellicon403218
+          $@spelldesc403218
 
 https://www.wowhead.com/forever/spell=403349
 =======
@@ -587,6 +648,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7068
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7068 target=[0,0]
+tooltip   Engrave your bracers with the Rampage rune:
+
+          $@spellicon426940
+          $@spelldesc426940
 
 https://www.wowhead.com/forever/spell=427081
 =======
@@ -598,6 +663,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7069
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7069 target=[0,0]
+tooltip   Engrave your bracers with the Sword and Board rune:
+
+          $@spellicon426978
+          $@spelldesc426978
 
 https://www.wowhead.com/forever/spell=427082
 =======
@@ -609,6 +678,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7070
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7070 target=[0,0]
+tooltip   Engrave your bracers with the Wrecking Crew rune:
+
+          $@spellicon427065
+          $@spelldesc427065
 
 https://www.wowhead.com/forever/spell=427084
 =======
@@ -620,6 +693,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7067
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7067 target=[0,0]
+tooltip   Engrave your helm with the Shield Mastery rune:
+
+          $@spellicon426980
+          $@spelldesc426980
 
 https://www.wowhead.com/forever/spell=427080
 =======
@@ -631,6 +708,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7065
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7065 target=[0,0]
+tooltip   Engrave your helm with the Taste for Blood rune:
+
+          $@spellicon426953
+          $@spelldesc426953
 
 https://www.wowhead.com/forever/spell=427076
 =======
@@ -642,6 +723,10 @@ labels    3071, 3096, 3100
 
 effect 1  applies temporary enchant 7066
           E_ENCHANT_ITEM_TEMPORARY base=0 misc=7066 target=[0,0]
+tooltip   Engrave your helm with the Vigilance rune:
+
+          $@spellicon426972
+          $@spelldesc426972
 
 https://www.wowhead.com/forever/spell=427078
 =======
@@ -652,6 +737,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +30 on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the attack power granted by Battle Shout by $s1.
 
 https://www.wowhead.com/forever/spell=23563
 =======
@@ -662,6 +748,7 @@ attrs     passive
 
 effect 1  SPELLMOD_THREAT +15% on family 4 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=2 family=4 mask=0x4000 target=[1,0]
+tooltip   Increases the threat generated by Sunder Armor by $s1%.
 
 https://www.wowhead.com/forever/spell=23561
 =======
@@ -672,6 +759,7 @@ labels    25
 
 effect 1  +10% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=1 target=[1,0]
+aura      Physical damage done increased by $w1%.
 
 https://www.wowhead.com/forever/spell=12880
 =======
@@ -682,6 +770,7 @@ labels    3096, 3100
 
 effect 1  SPELLMOD_DAMAGE +10% on family 4 mask 0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=4 mask=0x2000000 target=[1,0]
+aura      Enraged. Mortal Strike, Bloodthirst, and Shield Slam damage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=427066
 =======
@@ -692,6 +781,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+aura      Enraged.
 
 https://www.wowhead.com/forever/spell=462885
 =======
@@ -711,6 +801,8 @@ effect 3  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your non-periodic damaging abilities have their Rage cost reduced by $s1% and deal $s2% more damage for $d.
+aura      Non-periodic damaging abilities cost $s1% less Rage and deal $s2% more damage.
 
 https://www.wowhead.com/forever/spell=1259813
 =======
@@ -722,6 +814,7 @@ range     10 yd
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+aura      Cowering in fear.
 
 https://www.wowhead.com/forever/spell=1264437
 =======
@@ -745,6 +838,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   You gain Rage from Physical damage taken as if you were wearing no armor.
 
 https://www.wowhead.com/forever/spell=402877
 =======
@@ -755,6 +849,7 @@ duration  12 s
 
 effect 1  +25% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=25 misc=1 target=[1,0]
+aura      Physical damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=402906
 =======
@@ -766,6 +861,7 @@ effect 1  a dummy aura holding 30 every 2 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=30 period=2000ms target=[1,0]
 effect 2  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   While wielding 2-handed weapons, your attack speed is increased by $s1% and your successful melee hits generate $s2 additional Rage, or ${$m2*2} additional Rage if they are critical hits.
 
 https://www.wowhead.com/forever/spell=425412
 =======
@@ -780,6 +876,7 @@ effect 1  +30% melee haste
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=30 target=[1,0]
 effect 2  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   While wielding 2-handed weapons, your attack speed is increased by $s1%.
 
 https://www.wowhead.com/forever/spell=431046
 =======
@@ -794,6 +891,8 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+tooltip   Dives upon an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=30112
 =======
@@ -807,6 +906,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Damaging a target with Bloodthirst, Mortal Strike, or Shield Slam has a 100% chance the first time and a $s2% chance each subsequent time to Enrage you (activating abilities which requiring being Enraged), and cause you to deal $440483s1% increased Physical damage for $440483d.
 
 https://www.wowhead.com/forever/spell=440484
 =======
@@ -816,6 +916,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440484 misc=417347 target=[1,0]
+tooltip   Gain the Fresh Meat ability:
+
+          $@spellicon440484
+          $@spelldesc440484
 
 https://www.wowhead.com/forever/spell=440493
 =======
@@ -844,6 +948,7 @@ effect 3  SPELLMOD_THREAT +50% on family 4 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=2 family=4 mask=0x80 target=[1,0]
 effect 4  SPELLMOD_EFFECT1 +100% on family 4 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=4 mask=0x80 target=[1,0]
+tooltip   Thunder Clap now increases the time between attacks by an additional $s1%, can be used in any stance, deals $s4% increased damage, and deals $s3% increased threat.
 
 https://www.wowhead.com/forever/spell=403219
 =======
@@ -860,6 +965,9 @@ effect 2  a dummy aura holding 50 every 1 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=50 period=1000ms target=[1,0]
 effect 3  +0% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=127 target=[1,0]
+tooltip   An aggressive stance that increases damage while you are wearing a shield by $413479s1% and increases block chance by $413479s2%, but reduces armor by $413476s1% and threat generated by $413476s2%. In addition, you gain $s2% increased Rage when your auto-attack damages an enemy not targeting you.
+
+          While wearing a shield in Gladiator Stance, you may use all abilities that are restricted to other stances.
 
 https://www.wowhead.com/forever/spell=412513
 =======
@@ -900,6 +1008,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x20000000,0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=4 mask=0x20000000,0x4 target=[1,0]
+aura      Increases damage done by your next Whirlwind or Execute by $s1%.
 
 https://www.wowhead.com/forever/spell=1234067
 =======
@@ -911,6 +1020,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  weapon damage +6000 to the enemy
           E_WEAPON_DAMAGE base=6000 variance=0.4 target=[6,0]
+tooltip   Charge an enemy at less than 20% health, doing massive damage.
 
 https://www.wowhead.com/forever/spell=28336
 =======
@@ -927,6 +1037,7 @@ effect 3  SPELLMOD_RANGE +1 on family 4 mask 0x2e604e6e,0x140,0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=5 family=4 mask=0x2e604e6e,0x140,0x1 target=[1,0]
 effect 4  SPELLMOD_RADIUS +1 on family 4 mask 0x0,0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=6 family=4 mask=0x0,0x4 target=[1,0]
+tooltip   Increases melee attack range by $s2 yds.
 
 https://www.wowhead.com/forever/spell=1306686
 =======
@@ -937,6 +1048,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x2 target=[1,0]
+tooltip   Hamstring Rage cost reduced by $/10;s1.
 
 https://www.wowhead.com/forever/spell=22778
 =======
@@ -946,6 +1058,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x2 target=[1,0]
+tooltip   Hamstring Rage cost reduced by $/10;s1.
 
 https://www.wowhead.com/forever/spell=459608
 =======
@@ -959,6 +1072,7 @@ effect 1  weapon damage +250 to the enemy
           E_WEAPON_DAMAGE base=250 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.
 
 https://www.wowhead.com/forever/spell=25788
 =======
@@ -977,6 +1091,8 @@ effect 2  300% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=300 target=[6,0]
 effect 3  restores 20 rage to the caster
           E_ENERGIZE base=200 misc=1 target=[1,0]
+tooltip   Fire at the target for $s2% ranged weapon damage. Generates ${$m3/10} Rage.
+aura      Silenced.
 
 https://www.wowhead.com/forever/spell=403332
 =======
@@ -994,6 +1110,8 @@ effect 2  +1 agility to the party around the caster
           E_APPLY_AURA A_MOD_STAT base=1 misc=1 radius=30 target=[20,0]
 effect 3  a dummy aura holding 1 every 2 s to the party around the caster (60 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=1 period=2000ms radius=30 target=[20,0]
+tooltip   The Paladin blows the Horn of Lordaeron, which increases total Strength and Agility of all party members within $a1 yards by $?s25291[89][${$cond($gte($PL,56),74,$cond($gte($PL,52),60,$cond($gte($PL,42),45,$cond($gte($PL,32),26,$cond($gte($PL,22),17,$cond($gte($PL,12),11,6)))))))}]. Lasts $d. Exclusive with Blessing of Might.
+aura      Increases your total Strength and Agility by $w1.
 
 https://www.wowhead.com/forever/spell=425600
 =======
@@ -1007,6 +1125,8 @@ effect 1  -30 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-30 target=[6,0]
 effect 2  -30 ranged attack power to the enemy
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-30 target=[6,0]
+tooltip   Reduces target's attack power by $s1 for $d.
+aura      Reduces attack power by $s1.
 
 https://www.wowhead.com/forever/spell=13490
 =======
@@ -1017,6 +1137,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -40 s on family 4 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-40000 misc=11 family=4 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=12325
 =======
@@ -1027,6 +1148,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -80 s on family 4 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-80000 misc=11 family=4 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=12863
 =======
@@ -1037,6 +1159,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -120 s on family 4 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=4 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=12864
 =======
@@ -1047,6 +1170,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -100 s on family 4 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100000 misc=11 family=4 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Inner Rage ability by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=12865
 =======
@@ -1057,6 +1181,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -120 s on family 4 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=4 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Inner Rage ability by $/60000;s1 mins.
 
 https://www.wowhead.com/forever/spell=12866
 =======
@@ -1067,6 +1192,7 @@ labels    25
 
 effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x80000000 target=[1,0]
+tooltip   Decrease the rage cost of Whirlwind by $/10;s1.
 
 https://www.wowhead.com/forever/spell=24431
 =======
@@ -1077,6 +1203,8 @@ duration  60 s
 
 effect 1  -60% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 radius=20 target=[22,15]
+tooltip   Reduces the movement speed of nearby enemies by $s1% for $d.
+aura      Movement speed reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=18328
 =======
@@ -1087,6 +1215,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 4 mask 0x4440,0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=4 mask=0x4440,0x1 target=[1,0]
+tooltip   Improves your chance to hit with Sunder Armor, Heroic Strike, Revenge, and Shield Slam by $s1%.
 
 https://www.wowhead.com/forever/spell=28842
 =======
@@ -1097,6 +1226,7 @@ range     50000 yd
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +8% on family 4 mask 0x88000 to the target
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=8 misc=16 family=4 mask=0x88000 target=[25,0]
+tooltip   Improves your chance to hit with Taunt and Challenging Shout by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=30440
 =======
@@ -1107,6 +1237,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -5 s on family 4 mask 0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 sp=1 misc=11 family=4 mask=0x40000000 target=[1,0]
+tooltip   Reduces the cooldown of your Intercept ability by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=22738
 =======
@@ -1116,6 +1247,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403338 misc=415450 target=[1,0]
+tooltip   Gain the Intervene ability:
+
+          $@spellicon403338
+          $@spelldesc403338
 
 https://www.wowhead.com/forever/spell=403437
 =======
@@ -1130,6 +1265,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+tooltip   Roars at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=16508
 =======
@@ -1140,6 +1277,7 @@ labels    25
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=1 target=[1,0]
+tooltip   Increases the time before your Rage begins to decay after leaving combat by $d.
 
 https://www.wowhead.com/forever/spell=1323965
 =======
@@ -1161,6 +1299,8 @@ effect 1  +84 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=84 target=[1,0]
 effect 2  +84 ranged attack power
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=84 target=[1,0]
+tooltip   Increases attack power by $s1 for $d.
+aura      Attack power increased by $s1.
 
 https://www.wowhead.com/forever/spell=15602
 =======
@@ -1177,6 +1317,8 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your next $u instances of Whirlwind damage are increased by $s1%.  Lasts $d.
+aura      Whirlwind damage dealt increased by ${$s1/$m2}%.
 
 https://www.wowhead.com/forever/spell=1235355
 =======
@@ -1201,6 +1343,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 4 mask 0xffffffff,0xffffffff,0xfffff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=4 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216487
 =======
@@ -1210,6 +1354,7 @@ range     50000 yd
 
 effect 1  unrecognised shape
           E_REDIRECT_THREAT base=10 target=[57,0]
+aura      $s1% of all threat transferred to your protector.
 
 https://www.wowhead.com/forever/spell=461313
 =======
@@ -1221,6 +1366,8 @@ range     30 yd
 
 effect 1  a dummy aura holding -5 every 6 s to the target's raid (300 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=-5 period=6000ms target=[57,0]
+tooltip   Make a promise to protect a party or raid member, transferring $m1% of the threat they cause to you. This effect can only be on one target at a time.
+aura      $s1% of all threat transferred to your protector.
 
 https://www.wowhead.com/forever/spell=461314
 =======
@@ -1231,6 +1378,7 @@ labels    20
 
 effect 1  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 sp=1 radius=100 target=[22,15]
+aura      Unable to move.
 
 https://www.wowhead.com/forever/spell=23414
 =======
@@ -1242,6 +1390,8 @@ duration  6 s
 
 effect 1  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Causes all enemies nearby to be dazed for $d.
+aura      Dazed.
 
 https://www.wowhead.com/forever/spell=26379
 =======
@@ -1253,6 +1403,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=120 sp=1 misc=175 target=[6,0]
+tooltip   Charges at an enemy, knocking it back.
 
 https://www.wowhead.com/forever/spell=23416
 =======
@@ -1265,6 +1416,8 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  2500 nature damage every 3 s to every enemy in the target area (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2500 period=3000ms radius=15 target=[53,16]
+tooltip   Charges an enemy and causes poison damage to all within 10 yards of the target.
+aura      $s2 Nature damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=28431
 =======
@@ -1276,6 +1429,7 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=4 mask=0x200000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN +6 s on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=11 family=4 mask=0x200000 target=[1,0]
+tooltip   Slam is now instant but has a ${$m2/1000} sec cooldown.
 
 https://www.wowhead.com/forever/spell=402922
 =======
@@ -1285,6 +1439,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402922 misc=415449 target=[1,0]
+tooltip   Gain the Precision Timing ability:
+
+          $@spellicon402922
+          $@spelldesc402922
 
 https://www.wowhead.com/forever/spell=415744
 =======
@@ -1298,6 +1456,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MECHANIC_IMMUNITY_MASK base=0 misc=2399 misc2=1 target=[1,0]
 effect 3  SPELLMOD_COST -100% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x10000 target=[1,0]
+tooltip   Reduces the power cost of spells and abilities by $s1%.
+aura      Reduces the power cost of spells and abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=422621
 =======
@@ -1322,6 +1482,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
 effect 3  1000 physical damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=1000 sp=1 radius=10 target=[53,16]
+tooltip   Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.
 
 https://www.wowhead.com/forever/spell=25744
 =======
@@ -1334,6 +1495,8 @@ labels    3096, 3100
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACK_POWER_PCT base=10 target=[1,0]
+tooltip   Go on a rampage, increasing your attack power by $s1% for $d.  This ability can only be used while Enraged.
+aura      Increases attack power by $s1%.
 
 https://www.wowhead.com/forever/spell=426940
 =======
@@ -1344,6 +1507,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426940 misc=417346 target=[1,0]
+tooltip   Gain the Rampage ability:
+
+          $@spellicon426940
+          $@spelldesc426940
 
 https://www.wowhead.com/forever/spell=427070
 =======
@@ -1363,6 +1530,9 @@ effect 2  -50% health to the enemy
           E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=-50 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-80 misc=1 target=[6,0]
+tooltip   Prime recycling shears to recycle the target, repurposing it for something cool.
+aura      Health reduced by $s2%.
+          Armor reduced by $s3%
 
 https://www.wowhead.com/forever/spell=458882
 =======
@@ -1372,6 +1542,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -50 (-5 on a rage bar) on family 4 mask 0x0,0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 misc=14 family=4 mask=0x0,0x1 target=[1,0]
+tooltip   Reduces the rage cost of your Shield Slam ability by $/10;s1.
 
 https://www.wowhead.com/forever/spell=468309
 =======
@@ -1381,6 +1552,7 @@ duration  10 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=-100 family=4 mask=0x20000000 target=[1,0]
+aura      Allows the use Execute on a fully Coup stacked target, regardless of the target's health.
 
 https://www.wowhead.com/forever/spell=1231436
 =======
@@ -1393,6 +1565,8 @@ range     10 yd
 
 effect 1  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
+tooltip   Roars at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=21869
 =======
@@ -1429,6 +1603,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x0,0x10 target=[1,0]
+tooltip   Increases damage done by your Deep Wounds talent by $s1%.
 
 https://www.wowhead.com/forever/spell=1219481
 =======
@@ -1440,6 +1615,7 @@ effect 1  SPELLMOD_COOLDOWN -25% on family 4 mask 0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=11 family=4 mask=0x2000000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -10 s on family 4 mask 0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=4 mask=0x0,0x0,0x40000 target=[1,0]
+tooltip   Reduces the cooldown on your Bloodthirst, Mortal Strike, and Shield Slam abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=1219483
 =======
@@ -1451,6 +1627,7 @@ refs      1219485 Undead Slaying
 
 effect 1  casts 1219485 Undead Slaying on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=1219485 target=[1,0]
+tooltip   Your melee critical strikes against Undead enemies grant you $1219485s1% increased damage and critical damage done to Undead for $1219485d, stacking up to $1219485u times.
 
 https://www.wowhead.com/forever/spell=1219486
 =======
@@ -1462,6 +1639,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=2 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
+tooltip   Your Taunt ability never misses, and your chance to be Dodged or Parried is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1219540
 =======
@@ -1477,6 +1655,7 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=4 mask=0x10 target=[1,0]
 effect 4  SPELLMOD_EFFECT2 -100% on family 4 mask 0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=4 mask=0x10 target=[1,0]
+tooltip   Reduces the cooldown on your Shield Wall ability by ${$m1/-60000} min and reduces the cooldown on your Recklessness ability by ${$m1/-60000} min. Recklessness can now be used in any Stance and does not increase damage taken.
 
 https://www.wowhead.com/forever/spell=1219543
 =======
@@ -1487,6 +1666,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   When you take damage from an Undead enemy, the remaining duration of your active Last Stand is reset to $m1 sec.
 
 https://www.wowhead.com/forever/spell=1219544
 =======
@@ -1496,6 +1676,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -50% on family 4 mask 0x0,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=4 mask=0x0,0x8000 target=[1,0]
+tooltip   Reduces the cooldown on Shockwave by $s1%.
 
 https://www.wowhead.com/forever/spell=1214165
 =======
@@ -1507,6 +1688,7 @@ effect 1  SPELLMOD_JUMP_TARGETS +1 on family 4 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=17 family=4 mask=0x400000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +20% on family 4 mask 0x400040,0x0,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=4 mask=0x400040,0x0,0x1 target=[1,0]
+tooltip   Your Heroic Strike, Cleave, and Quick Strike damage is increased by $s2% while in Battle Stance or Berserker Stance. Your Cleave strikes $s1 additional target and can trigger Blood Surge.
 
 https://www.wowhead.com/forever/spell=1227231
 =======
@@ -1518,6 +1700,7 @@ refs      1234005 Slammin'
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Each time you hit a target with Whirlwind, Heroic Strike, Quick Strike, or Cleave, the damage of your next Slam is increased by $1234005s1%, stacking up to $1234005u times.
 
 https://www.wowhead.com/forever/spell=1227232
 =======
@@ -1530,6 +1713,7 @@ effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
 effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Each time Deep Wounds deals damage, it reduces the remaining cooldown on your Whirlwind by $s1 sec. Whirlwind deals $s2% increased damage to targets afflicted with your Deep Wounds.
 
 https://www.wowhead.com/forever/spell=1227234
 =======
@@ -1542,6 +1726,7 @@ effect 1  SPELLMOD_DAMAGE +35% on family 4 mask 0x0,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=35 family=4 mask=0x0,0x8000 target=[1,0]
 effect 2  a dummy aura holding 2000
           E_APPLY_AURA A_DUMMY base=2000 target=[1,0]
+tooltip   Your Shockwave deals $s1% increased damage and its cooldown is reduced by ${$m2/1000}.1 sec each time you hit a target with Heroic Strike or Cleave.
 
 https://www.wowhead.com/forever/spell=1227237
 =======
@@ -1553,6 +1738,7 @@ effect 1  SPELLMOD_DURATION +15 s on family 4 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15000 misc=1 family=4 mask=0x10 target=[1,0]
 effect 2  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Your Recklessness, Retaliation, and Shield Wall abilities no longer share a cooldown. Additionally, your Recklessness ability lasts ${$m1/1000} sec longer, and while it is active you gain $s2% of your Defense Skill over 300 as Strength.
 
 https://www.wowhead.com/forever/spell=1227242
 =======
@@ -1566,6 +1752,7 @@ effect 1  casts 1234067 Gladiator's Cunning on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1234067 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0xffffffff,0xfffdffff,0xffffffff,0xffffffff target=[1,0]
+tooltip   Your abilities no longer have stance requirements. In addition, hits from Revenge, Devastate, or Shield Slam increase the damage done by your next Whirlwind or Execute by $1234067s3%, stacking up to $1234067u times.
 
 https://www.wowhead.com/forever/spell=1227245
 =======
@@ -1575,6 +1762,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   After changing stances, your next offensive ability's rage cost is reduced by $s1.
 
 https://www.wowhead.com/forever/spell=457652
 =======
@@ -1585,6 +1773,7 @@ refs      457699 Echoes of Defensive Stance
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   For $457699d after leaving a stance, you can use abilities requiring that stance as if you were still in that stance.
 
 https://www.wowhead.com/forever/spell=457697
 =======
@@ -1595,6 +1784,13 @@ refs      457816 Battle Forecast, 457817 Berserker Forecast, 457814 Defensive Fo
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   For the first $457816d after activating a stance, you can gain an additional benefit:
+
+          Battle Stance/Gladiator Stance: $457816s1% increased damage done.
+
+          Berserker Stance: $457817s1% increased critical strike chance.
+
+          Defensive Stance: $457814s1% reduced Physical damage taken.
 
 https://www.wowhead.com/forever/spell=457820
 =======
@@ -1604,6 +1800,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_BLOCK_VALUE_FLAT base=30 target=[1,0]
+tooltip   Increases the block value of your shield by $s1.
 
 https://www.wowhead.com/forever/spell=457645
 =======
@@ -1615,6 +1812,7 @@ refs      457648 Inner Fury
 
 effect 1  casts 457648 Inner Fury on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=457648 target=[1,0]
+tooltip   You gain ${$457648m1/10} extra Rage every time you take any damage or deal auto attack damage.
 
 https://www.wowhead.com/forever/spell=457646
 =======
@@ -1627,6 +1825,7 @@ effect 1  SPELLMOD_EFFECT3 +10 on family 4 mask 0x0,0x0,0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=23 family=4 mask=0x0,0x0,0x100000 target=[1,0]
 effect 2  SPELLMOD_EFFECT3 +4 on family 4 mask 0x0,0x0,0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 misc=23 family=4 mask=0x0,0x0,0x0,0x40 target=[1,0]
+tooltip   Increases all threat you generate in Defensive Stance by an additional $s1% and increases all damage you deal in Gladiator Stance by $s2%.
 
 https://www.wowhead.com/forever/spell=457651
 =======
@@ -1637,6 +1836,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 perResource=5 target=[1,0]
+tooltip   Overpower critical strikes refresh the duration of Rend on your target back to its maximum duration.
 
 https://www.wowhead.com/forever/spell=468072
 =======
@@ -1646,6 +1846,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +25% on family 4 mask 0x200044,0x0,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 perResource=5 family=4 mask=0x200044,0x0,0x1 target=[1,0]
+tooltip   Your Heroic Strike, Slam, and Overpower abilities deal $s1% more damage.
 
 https://www.wowhead.com/forever/spell=468235
 =======
@@ -1656,6 +1857,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 perResource=5 target=[1,0]
+tooltip   Your Slam hits reset the remaining cooldown on your Mortal Strike, Bloodthirst, and Shield Slam abilities.
 
 https://www.wowhead.com/forever/spell=468236
 =======
@@ -1667,6 +1869,7 @@ refs      468066 Thrill of Battle
 
 effect 1  casts 468066 Thrill of Battle on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=468066 perResource=5 target=[1,0]
+tooltip   You gain ${$468066m1/10} Rage every time you Parry or one of your attacks is Parried.
 
 https://www.wowhead.com/forever/spell=468065
 =======
@@ -1677,6 +1880,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  casts 12970 on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=12970 perResource=5 target=[1,0]
+tooltip   Revenge also grants you Flurry, increasing your attack speed by $12970s1% for the next $12970n swings.
 
 https://www.wowhead.com/forever/spell=468067
 =======
@@ -1688,6 +1892,7 @@ refs      468071 Retaliate
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 perResource=5 target=[1,0]
+tooltip   When your target Parries an attack, you instantly Retaliate for $468071s2% weapon damage to that target. Retaliate cannot be Dodged, Blocked, or Parried, but can only occur once every $468071d per target.
 
 https://www.wowhead.com/forever/spell=468069
 =======
@@ -1697,6 +1902,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -50% on family 4 mask 0x0,0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=4 mask=0x0,0x2000 target=[1,0]
+tooltip   Reduces the cooldown on your Death Wish by $s1%.
 
 https://www.wowhead.com/forever/spell=1214159
 =======
@@ -1706,6 +1912,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   You deal $s1% increased damage while any nearby enemy is afflicted with both your Rend and your Deep Wounds.
 
 https://www.wowhead.com/forever/spell=1214163
 =======
@@ -1715,6 +1922,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -100% on family 4 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=4 mask=0x80 target=[1,0]
+tooltip   Reduces the cooldown on Thunder Clap by $s1%.
 
 https://www.wowhead.com/forever/spell=1214160
 =======
@@ -1725,6 +1933,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_THREAT +100% on family 4 mask 0x0,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=2 family=4 mask=0x0,0x1 target=[1,0]
+tooltip   Your Shield Slam deals $s1% increased threat and its cooldown is reset if it is Dodged, Parried, or Blocked.
 
 https://www.wowhead.com/forever/spell=1214162
 =======
@@ -1734,6 +1943,7 @@ attrs     passive
 
 effect 1  +7 to skill 95
           E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+tooltip   Increased Defense +$s1.
 
 https://www.wowhead.com/forever/spell=468412
 =======
@@ -1743,6 +1953,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 4 mask 0x0,0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=4 mask=0x0,0x1 target=[1,0]
+tooltip   Reduces the cooldown on your Shield Slam ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=468452
 =======
@@ -1752,6 +1963,7 @@ attrs     passive
 
 effect 1  a dummy aura holding -30000
           E_APPLY_AURA A_DUMMY base=-30000 target=[1,0]
+tooltip   Reduces the cooldown on your Bloodrage ability by ${$m1/-1000} sec while you are in Gladiator Stance.
 
 https://www.wowhead.com/forever/spell=468453
 =======
@@ -1812,6 +2024,8 @@ duration  20 s
 
 effect 1  +300 armor
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=300 misc=1 target=[1,0]
+tooltip   Increases armor by $s1 for $d.
+aura      Increased armor.
 
 https://www.wowhead.com/forever/spell=18826
 =======
@@ -1826,6 +2040,8 @@ effect 1  a dummy aura to every enemy around the caster
           E_APPLY_AURA A_DUMMY base=0 radius=8 target=[22,15]
 effect 2  normalised weapon damage to every enemy around the caster
           E_NORMALIZED_WEAPON_DMG base=0 radius=8 target=[22,15]
+tooltip   In a whirlwind of steel you attack up to $i enemies within $a1 yards, causing weapon damage to each enemy.
+aura      Unrelenting Riders will now target you with shadowbolts.
 
 https://www.wowhead.com/forever/spell=27825
 =======
@@ -1839,6 +2055,8 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
 effect 3  weapon damage +150 to the enemy
           E_WEAPON_DAMAGE base=150 sp=1 target=[6,0]
+tooltip   Charges an enemy, knocking it back and inflicting normal damage plus $s3.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=15749
 =======
@@ -1852,6 +2070,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
 effect 3  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+tooltip   Charges an enemy, knocking it back and inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=19131
 =======
@@ -1862,6 +2081,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426980 misc=417345 target=[1,0]
+tooltip   Gain the Shield Mastery ability:
+
+          $@spellicon426980
+          $@spelldesc426980
 
 https://www.wowhead.com/forever/spell=427069
 =======
@@ -1873,6 +2096,7 @@ labels    25
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_REFLECT_SPELLS base=2 target=[1,0]
+tooltip   A passive ability that grants a $s1% chance to reflect spells while a shield is equipped.
 
 https://www.wowhead.com/forever/spell=23921
 =======
@@ -1883,6 +2107,7 @@ refs      430472 Single-Minded Fury, 461470 Single-Minded
 
 effect 1  a dummy aura holding 10 every 2 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=10 period=2000ms target=[1,0]
+tooltip   While dual-wielding, your movement speed is increased by $430472s2% and you gain $461470s1% attack speed each time your melee auto-attack strikes the same target as your previous auto-attack, stacking up to $461470u times. Lasts $461470d or until your auto-attack strikes a different target.
 
 https://www.wowhead.com/forever/spell=413404
 =======
@@ -1897,6 +2122,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPEED_ALWAYS base=10 target=[1,0]
 effect 3  a dummy aura holding -10
           E_APPLY_AURA A_DUMMY base=-10 target=[1,0]
+tooltip   
 
 https://www.wowhead.com/forever/spell=430472
 =======
@@ -1907,6 +2133,7 @@ labels    26
 
 effect 1  casts 23415 Improved Blessing of Protection every 5 s to every enemy around the caster (6 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms trigger=23415 radius=100 target=[22,15]
+aura      Forced to periodically cast Blessing of Protection on Nefarian.
 
 https://www.wowhead.com/forever/spell=23418
 =======
@@ -1920,6 +2147,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +20% on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=4 mask=0x200000 target=[1,0]
+aura      Increases damage done by your next Slam by $s1%.
 
 https://www.wowhead.com/forever/spell=1234005
 =======
@@ -1937,6 +2165,8 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+tooltip   Shouts at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=460084
 =======
@@ -1948,6 +2178,7 @@ range     10 yd
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+aura      Cowering in fear.
 
 https://www.wowhead.com/forever/spell=460086
 =======
@@ -1965,6 +2196,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_REFLECT_SPELLS base=100 amplitude=1 target=[1,0]
+tooltip   Raise your shield, reflecting the next spell cast on you.  Lasts $d.
+aura      Reflects the next spell cast on you.
 
 https://www.wowhead.com/forever/spell=23920
 =======
@@ -1975,6 +2208,8 @@ range     5 yd
 
 effect 1  +15% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=15 misc=126 target=[6,0]
+tooltip   Spell damage taken by target increased by $s1% for $d.
+aura      Increase spell damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=23605
 =======
@@ -1988,6 +2223,7 @@ effect 2  weapon damage +500 to the enemy
           E_WEAPON_DAMAGE base=500 sp=1 target=[6,0]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s2
 
 https://www.wowhead.com/forever/spell=25190
 =======
@@ -2001,6 +2237,7 @@ effect 2  weapon damage +2500 to the enemy
           E_WEAPON_DAMAGE base=2500 variance=0.3496 sp=1 target=[6,0]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s2
 
 https://www.wowhead.com/forever/spell=25191
 =======
@@ -2014,6 +2251,7 @@ effect 2  weapon damage +1000 to the enemy
           E_WEAPON_DAMAGE base=1000 variance=0.2 sp=1 target=[6,0]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s2
 
 https://www.wowhead.com/forever/spell=26081
 =======
@@ -2027,6 +2265,7 @@ effect 2  weapon damage +5500 to the enemy
           E_WEAPON_DAMAGE base=5500 variance=0.34981817 sp=1 target=[6,0]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.1 sp=1 misc=10 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s2
 
 https://www.wowhead.com/forever/spell=26082
 =======
@@ -2039,6 +2278,7 @@ effect 1  casts 440114 Sudden Death on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=9 trigger=440114 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Your melee hits have a $h% chance to grant Sudden Death. Sudden Death allows one use of Execute regardless of the target's health state. When Execute is enabled by Sudden Death, you will retain $s2 rage after using Execute.
 
 https://www.wowhead.com/forever/spell=440113
 =======
@@ -2048,6 +2288,7 @@ duration  10 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=-100 family=4 mask=0x20000000 target=[1,0]
+aura      You may use Execute once regardless of target's health and you will have $440113s2 Rage remaining afterward.
 
 https://www.wowhead.com/forever/spell=440114
 =======
@@ -2057,6 +2298,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440113 misc=417347 target=[1,0]
+tooltip   Gain the Fresh Meat ability:
+
+          $@spellicon440113
+          $@spelldesc440113
 
 https://www.wowhead.com/forever/spell=440495
 =======
@@ -2081,6 +2326,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
 effect 3  1000 physical damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=1000 sp=1 radius=10 target=[53,16]
+tooltip   Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.
 
 https://www.wowhead.com/forever/spell=19196
 =======
@@ -2095,6 +2341,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
 effect 3  600 physical damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=600 sp=1 radius=10 target=[53,16]
+tooltip   Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.
 
 https://www.wowhead.com/forever/spell=25787
 =======
@@ -2109,6 +2356,7 @@ effect 2  unrecognised shape
           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
 effect 3  270–630 physical damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 radius=10 target=[53,16]
+tooltip   Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.
 
 https://www.wowhead.com/forever/spell=464250
 =======
@@ -2131,6 +2379,7 @@ refs      426979 Sword and Board
 
 effect 1  casts 426979 Sword and Board on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=426979 target=[1,0]
+tooltip   When your Devastate and Revenge abilities deal damage they have a $h% chance of refreshing the cooldown of your Shield Slam ability and reducing its Rage cost by $426979s1% for $426979d.
 
 https://www.wowhead.com/forever/spell=426978
 =======
@@ -2143,6 +2392,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_COST -100% on family 4 mask 0x0,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x0,0x1 target=[1,0]
+aura      Shield Slam rage cost reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=426979
 =======
@@ -2153,6 +2403,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426978 misc=417346 target=[1,0]
+tooltip   Gain the Sword and Board ability:
+
+          $@spellicon426978
+          $@spelldesc426978
 
 https://www.wowhead.com/forever/spell=427073
 =======
@@ -2164,6 +2418,8 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  SPELLMOD_COST -100 (-10 on a rage bar) on family 4 mask 0x6e6e4eee,0x40c264,0x4000001
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=14 family=4 mask=0x6e6e4eee,0x40c264,0x4000001 target=[1,0]
+tooltip   Reduces the rage cost of your next offensive ability by $/10;s1.
+aura      Reduces the rage cost of your next offensive ability by $/10;s1.
 
 https://www.wowhead.com/forever/spell=464241
 =======
@@ -2177,6 +2433,7 @@ refs      426969 Taste for Blood
 
 effect 1  casts 426969 Taste for Blood on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=6 trigger=426969 target=[1,0]
+tooltip   Whenever your Rend ability causes damage, your Overpower ability will activate for $426969d or 1 attack.  This effect will not occur more than once every $s1 sec.
 
 https://www.wowhead.com/forever/spell=426953
 =======
@@ -2190,6 +2447,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=2 family=4 mask=0x4 target=[1,0]
+aura      Allows the use of Overpower.
 
 https://www.wowhead.com/forever/spell=426969
 =======
@@ -2200,6 +2458,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426953 misc=417345 target=[1,0]
+tooltip   Gain the Taste for Blood ability:
+
+          $@spellicon426953
+          $@spelldesc426953
 
 https://www.wowhead.com/forever/spell=427067
 =======
@@ -2215,6 +2477,7 @@ attrs     refund on miss
 
 effect 1  276 physical damage to the enemy
           E_SCHOOL_DAMAGE base=276 sp=1 index=1 target=[6,0]
+tooltip   457 Damage.
 
 https://www.wowhead.com/forever/spell=24393
 =======
@@ -2235,6 +2498,8 @@ effect 2  weapon damage in the weapon's own school +1130 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=1130 sp=1 target=[6,0]
 effect 3  35% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=35 sp=1 target=[6,0]
+tooltip   A vicious strike that deals $s3% weapon damage plus 396 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=23850
 =======
@@ -2255,6 +2520,8 @@ effect 2  weapon damage in the weapon's own school +682 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=682 sp=1 target=[6,0]
 effect 3  50% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+tooltip   A vicious strike that deals $s3% weapon damage plus $/2;s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=23848
 =======
@@ -2265,6 +2532,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 4 mask 0x10000,0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=4 mask=0x10000,0x80 target=[1,0]
+aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262317
 =======
@@ -2277,6 +2545,8 @@ range     10 yd
 
 effect 1  stuns to every enemy in the area
           E_APPLY_AURA A_MOD_STUN base=0 radius=40 target=[7,0]
+tooltip   Threatens an enemy, causing them to panic.
+aura      Fleeing for your life.
 
 https://www.wowhead.com/forever/spell=444522
 =======
@@ -2287,6 +2557,7 @@ attrs     passive
 
 effect 1  SPELLMOD_THREAT +1500 on family 4 mask 0x2000040
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1500 sp=1 misc=2 family=4 mask=0x2000040 target=[1,0]
+tooltip   Increases the threat generated by your Heroic Strike and Mortal Strike abilities.
 
 https://www.wowhead.com/forever/spell=21856
 =======
@@ -2299,6 +2570,7 @@ range     5 yd
 
 effect 1  taunts to every ally around the caster
           E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,30]
+tooltip   Your Spirit Wolves howl, forcing all enemies to attack them for $d.
 
 https://www.wowhead.com/forever/spell=440589
 =======
@@ -2308,6 +2580,8 @@ duration  20 s
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Follows killing an enemy, allowing the use of Victory Rush.
+aura      Victory Rush recently activated.
 
 https://www.wowhead.com/forever/spell=402975
 =======
@@ -2325,6 +2599,8 @@ effect 2  a dummy aura holding -10 every 6 s to the target's raid (300 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=-10 period=6000ms target=[57,0]
 effect 3  -3% every school damage taken to the target's raid
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-3 sp=1 misc=127 target=[57,0]
+tooltip   Focus your protective gaze on a party or raid member, reducing their damage taken by $s1% and transferring $m2% of the threat they cause to you.  In addition, each time they are hit by an attack your Taunt cooldown is refreshed.  Lasts $d.  This effect can only be on one target at a time.
+aura      Damage taken reduced by $s1% and $s2% of all threat transferred to warrior.
 
 https://www.wowhead.com/forever/spell=426972
 =======
@@ -2335,6 +2611,7 @@ labels    3096, 3100
 
 effect 1  unrecognised shape
           E_REDIRECT_THREAT base=10 target=[57,0]
+aura      Damage taken reduced by $426972s3% and $s1% of all threat transferred to the warrior.
 
 https://www.wowhead.com/forever/spell=426975
 =======
@@ -2345,6 +2622,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426972 misc=417345 target=[1,0]
+tooltip   Gain the Vigilance ability:
+
+          $@spellicon426972
+          $@spelldesc426972
 
 https://www.wowhead.com/forever/spell=427068
 =======
@@ -2354,6 +2635,7 @@ range     50000 yd
 
 effect 1  unrecognised shape
           E_REDIRECT_THREAT base=5 target=[57,0]
+aura      Damage taken reduced by $426972s3% and $s1% of all threat transferred to the warrior.
 
 https://www.wowhead.com/forever/spell=463518
 =======
@@ -2365,6 +2647,7 @@ refs      413302 War Machine Rage Effect
 
 effect 1  casts 413302 War Machine Rage Effect on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=413302 target=[1,0]
+tooltip   Killing an enemy worth experience or Honor generates ${$413302s1/10} Rage.
 
 https://www.wowhead.com/forever/spell=413301
 =======
@@ -2376,6 +2659,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=0 family=4 mask=0x1 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=4 mask=0x40000001,0x10000 target=[1,0]
+tooltip   Your Charge, Intercept, and Intervene abilities are now usable while in combat and in any stance, and will all remove movement impairing effects when activated.
 
 https://www.wowhead.com/forever/spell=425421
 =======
@@ -2388,6 +2672,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -50 (-5 on a rage bar) on family 4 mask 0xee604eee
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 sp=1 misc=14 family=4 mask=0xee604eee target=[1,0]
+aura      Your next offensive ability requires less rage.
 
 https://www.wowhead.com/forever/spell=21887
 =======
@@ -2400,6 +2685,7 @@ refs      21887 Warrior's Wrath
 
 effect 1  casts 21977 Warrior's Wrath on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=21977 target=[1,0]
+tooltip   $h% chance after using an offensive ability requiring rage that your next offensive ability requires $/10;21887s1 less rage to use.
 
 https://www.wowhead.com/forever/spell=21890
 =======
@@ -2420,6 +2706,7 @@ labels    17
 
 effect 1  casts nothing every 5 s to every enemy around the caster (6 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms radius=100 target=[22,15]
+aura      You have lost control of some of your magic.
 
 https://www.wowhead.com/forever/spell=23410
 =======
@@ -2432,6 +2719,7 @@ refs      427066 Enrage
 
 effect 1  casts 427066 Enrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=427066 target=[1,0]
+tooltip   Your melee critical hits Enrage you (activating abilities which require being Enraged), and increase Mortal Strike, Bloodthirst, and Shield Slam damage by $427066s1% for $427066d.
 
 https://www.wowhead.com/forever/spell=427065
 =======
@@ -2442,6 +2730,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427065 misc=417346 target=[1,0]
+tooltip   Gain the Wrecking Crew ability:
+
+          $@spellicon427065
+          $@spelldesc427065
 
 https://www.wowhead.com/forever/spell=427074
 =======

@@ -13,6 +13,8 @@ effect 1  -60% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+tooltip   Blinds the target, causing it to wander disoriented for up to $d.  Any damage caused will remove the effect.
+aura      Disoriented.
 
 https://www.wowhead.com/forever/spell=2094
 =======
@@ -26,6 +28,8 @@ effect 1  -60% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-60 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 target=[6,0]
+tooltip   Blinds the target, causing it to wander confused for up to $d.  Any damage caused will remove the effect.
+aura      Confused.
 
 https://www.wowhead.com/forever/spell=21060
 =======
@@ -38,6 +42,7 @@ effect 1  SPELLMOD_EFFECT3 +15 on family 8 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=23 family=8 mask=0x400000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -6 s on family 8 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=8 mask=0x400000 target=[1,0]
+tooltip   Reduces your speed penalty from your Stealth ability by $s1% and reduces its cooldown by $/1000;s2 sec.
 
 https://www.wowhead.com/forever/spell=13975
 =======
@@ -49,6 +54,10 @@ effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=462708 misc=399967 target=[1,0]
 effect 2  a dummy effect holding 15
           E_DUMMY base=15 target=[0,0]
+tooltip   Gain the Cutthroat ability:
+
+          $@spellicon462708
+          $@spelldesc462708
 
 https://www.wowhead.com/forever/spell=424980
 =======
@@ -62,6 +71,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PRO
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=20 family=8 mask=0x200 target=[1,0]
+aura      Next Ambush does not require Stealth.
 
 https://www.wowhead.com/forever/spell=462707
 =======
@@ -74,6 +84,7 @@ refs      462707 Cutthroat
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+tooltip   Your Backstab has a $m1% chance to cause your next Ambush within $462707d to not require Stealth.
 
 https://www.wowhead.com/forever/spell=462708
 =======
@@ -85,6 +96,7 @@ labels    20
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+aura      Ambush, Backstab, and Garrote have no positional requirement.
 
 https://www.wowhead.com/forever/spell=1241810
 =======
@@ -95,6 +107,7 @@ labels    20
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 8 mask 0x500
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=8 mask=0x500 target=[1,0]
+tooltip   Reduces the Energy cost of your Cheap Shot and Garrote abilities by $m1, and your Garrote ability no longer requires you to be behind your target.
 
 https://www.wowhead.com/forever/spell=14082
 =======
@@ -105,6 +118,7 @@ labels    20
 
 effect 1  SPELLMOD_COST -50% on family 8 mask 0x1000080
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=8 mask=0x1000080 target=[1,0]
+tooltip   Reduces the Energy cost of your Sap and Blind abilities by $m1%.
 
 https://www.wowhead.com/forever/spell=1224782
 =======
@@ -116,6 +130,7 @@ labels    20
 
 effect 1  unrecognised shape
           E_OPEN_LOCK base=200 ppl=5 misc=4 target=[23,0]
+tooltip   Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.
 
 https://www.wowhead.com/forever/spell=1842
 =======
@@ -134,6 +149,8 @@ effect 1  unrecognised shape
           E_DISTRACT base=10 radius=10 target=[16,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH_DETECT base=-5 radius=10 target=[16,0]
+tooltip   Throws a distraction, attracting the attention of all nearby enemies and reducing their Stealth detection as if they were ${$m2/-5} $Llevel:levels; lower for $s1 seconds. Does not break stealth.
+aura      Stealth detection reduced.
 
 https://www.wowhead.com/forever/spell=1725
 =======
@@ -144,6 +161,7 @@ labels    20
 
 effect 1  SPELLMOD_COOLDOWN -90 s on family 8 mask 0x1000800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-90000 sp=1 misc=11 family=8 mask=0x1000800 target=[1,0]
+tooltip   Reduces the cooldown of your Vanish and Blind abilities by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=13981
 =======
@@ -167,6 +185,8 @@ effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 4  a dummy effect holding 180 to the enemy
           E_DUMMY base=180 sp=1 target=[6,0]
+tooltip   A strike that deals $s1% ($m4% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by $s2% for $d.  Awards $s3 combo $lpoint:points;.
+aura      Dodge chance increased by $s2%.
 
 https://www.wowhead.com/forever/spell=14278
 =======
@@ -192,6 +212,8 @@ effect 4  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
 effect 5  a dummy effect holding 145 to the enemy
           E_DUMMY base=145 sp=1 target=[6,0]
+tooltip   An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.
+aura      Taking $w3% increased Rupture damage from the caster.
 
 https://www.wowhead.com/forever/spell=16511
 =======
@@ -202,6 +224,7 @@ labels    20
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +45% on family 8 mask 0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=45 sp=1 misc=7 family=8 mask=0x200 target=[1,0]
+tooltip   Increases the critical strike chance of your Ambush ability by $s1%.
 
 https://www.wowhead.com/forever/spell=14079
 =======
@@ -213,6 +236,7 @@ effect 1  SPELLMOD_RADIUS +5 on family 8 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=6 family=8 mask=0x1000 target=[1,0]
 effect 2  SPELLMOD_EFFECT2 -10 on family 8 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=12 family=8 mask=0x1000 target=[1,0]
+tooltip   Increases the radius of your Distract ability by $s1 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional ${$m2/-5} $Llevel:levels; lower.
 
 https://www.wowhead.com/forever/spell=14084
 =======
@@ -224,6 +248,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PR
 
 effect 1  casts 14093 Vanished on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=14093 target=[1,0]
+tooltip   Gives you a $s1% chance to return to stealth mode after using your Sap ability.
 
 https://www.wowhead.com/forever/spell=14076
 =======
@@ -235,6 +260,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PR
 
 effect 1  casts 14093 Vanished on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=60 sp=1 trigger=14093 target=[1,0]
+tooltip   Gives you a $s1% chance to return to stealth mode after using your Sap ability.
 
 https://www.wowhead.com/forever/spell=14094
 =======
@@ -246,6 +272,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PR
 
 effect 1  casts 14093 Vanished on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=90 sp=1 trigger=14093 target=[1,0]
+tooltip   Gives you a $s1% chance to return to stealth mode after using your Sap ability.
 
 https://www.wowhead.com/forever/spell=14095
 =======
@@ -257,6 +284,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 100% chance, from effect 1
 
 effect 1  casts 13977 Initiative on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=13977 target=[1,0]
+tooltip   Gives you a $s1% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.
 
 https://www.wowhead.com/forever/spell=13976
 =======
@@ -269,6 +297,7 @@ effect 1  SPELLMOD_DAMAGE +10% on family 8 mask 0x204,0x6
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=8 mask=0x204,0x6 target=[1,0]
 effect 2  SPELLMOD_DOT +10% on family 8 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=8 mask=0x100 target=[1,0]
+tooltip   Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=14057
 =======
@@ -281,6 +310,7 @@ labels    20
 
 effect 1  unrecognised shape
           E_PICKPOCKET base=0 target=[6,0]
+tooltip   Pick the target's pocket.
 
 https://www.wowhead.com/forever/spell=921
 =======
@@ -297,6 +327,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_RETAIN_COMBO_POINTS base=2 sp=1 target=[1,0]
 effect 3  a dummy effect holding 2 to the enemy
           E_DUMMY base=2 target=[6,0]
+tooltip   Adds $s1 Combo Points to your target. You must add to or use those combo points within $d or the combo points are lost.
+aura      $s1 additional Combo Points.
 
 https://www.wowhead.com/forever/spell=14183
 =======
@@ -308,6 +340,7 @@ labels    20
 
 effect 1  a dummy effect to the caster
           E_DUMMY base=0 sp=1 target=[1,0]
+tooltip   When activated, this ability immediately finishes the cooldown on your other Rogue abilities.
 
 https://www.wowhead.com/forever/spell=14185
 =======
@@ -320,6 +353,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
 effect 2  a dummy aura holding 35
           E_APPLY_AURA A_DUMMY base=35 sp=1 target=[1,0]
+tooltip   Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause $m1% more damage against targets below $m2% health.
 
 https://www.wowhead.com/forever/spell=1310728
 =======
@@ -335,6 +369,8 @@ effect 1  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Removes all your existing combo points from your target and stores them for up to $d. These stored combat points will be transferred to the next non-player enemy you hit with a melee or ranged ability.
+aura      Combo points will be transferred to the next target hit by this Rogue's abilities.
 
 https://www.wowhead.com/forever/spell=438040
 =======
@@ -344,6 +380,7 @@ range     40 yd
 
 effect 1  unrecognised shape
           E_328 base=0 sp=1 target=[6,0]
+tooltip   Transfers any existing combo points to the current non-player enemy target. Requires active combo points.
 
 https://www.wowhead.com/forever/spell=438045
 =======
@@ -363,6 +400,8 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=2070
 =======
@@ -382,6 +421,8 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=6770
 =======
@@ -401,6 +442,8 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=11297
 =======
@@ -413,6 +456,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_SPELL_AURA_MOD_ARMOR_PENETRATION_PCT base=9 target=[1,0]
 effect 2  SPELLMOD_DOT +30% on family 8 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=8 mask=0x100000 target=[1,0]
+tooltip   Causes your attacks to ignore $m1% of your target's Armor and increases the damage dealt by your Rupture ability by $m2%.
 
 https://www.wowhead.com/forever/spell=14171
 =======
@@ -426,6 +470,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_AUTOATTACK_WITH_MELEE_SPELL base=0 trigger=461328 target=[1,0]
 effect 3  casts 438567 Bruised every 3 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=3000ms trigger=438567 target=[1,0]
+tooltip   Causes your attacks to ignore $s2 of your target's Armor and increases the damage dealt by your Rupture ability by $s1%.  The amount of Armor reduced increases with your level.
 
 https://www.wowhead.com/forever/spell=461327
 =======
@@ -434,6 +479,7 @@ school    physical
 
 effect 1  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 chain=7 target=[6,0]
+tooltip   Causes your attacks to ignore $s2 of your target's Armor and increases the damage dealt by your Rupture ability by $s1%.  The amount of Armor reduced increases with your level.
 
 https://www.wowhead.com/forever/spell=461328
 =======
@@ -456,6 +502,7 @@ effect 3  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 4  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Teleport behind your target and strike, causing $s3% weapon damage to the target.  Must be stealthed.  Awards $s4 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=399985
 =======
@@ -465,6 +512,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=399985 misc=399967 family=8 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+tooltip   Gain the Shadowstrike ability:
+
+          $@spellicon399985
+          $@spelldesc399985
 
 https://www.wowhead.com/forever/spell=400031
 =======
@@ -480,6 +531,7 @@ effect 1  50 physical damage to the enemy
           E_SCHOOL_DAMAGE base=50 chain=5 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Throw a shuriken at your enemy dealing damage equal to $s1% of your Attack Power, and also strike up to ${$x1-1} additional nearby targets. Awards $s2 combo $lpoint:points; per target hit.
 
 https://www.wowhead.com/forever/spell=399986
 =======
@@ -489,6 +541,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=399986 misc=415449 family=8 mask=0x0,0x0,0x0,0x80000000 target=[1,0]
+tooltip   Gain the Shuriken Toss ability:
+
+          $@spellicon399986
+          $@spelldesc399986
 
 https://www.wowhead.com/forever/spell=400032
 =======
@@ -501,6 +557,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_AND_WEAPON_CRIT_CHANCE base=-2 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +20% on family 8 mask 0x8000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=8 family=8 mask=0x8000000 target=[1,0]
+tooltip   Reduces the chance you are critically hit by attacks by $m1% and increases the threat reduction of your Feint ability by $m2%.
 
 https://www.wowhead.com/forever/spell=30892
 =======
@@ -516,6 +573,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=5 ppl=5 target=[1,0]
 effect 3  -50% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.
+aura      Stealthed.  Movement slowed by $w3%.
 
 https://www.wowhead.com/forever/spell=1784
 =======
@@ -531,6 +590,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=100 ppl=5 target=[1,0]
 effect 3  -40% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.
+aura      Stealthed.  Movement slowed by $w3%.
 
 https://www.wowhead.com/forever/spell=1785
 =======
@@ -546,6 +607,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=200 ppl=5 target=[1,0]
 effect 3  -35% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-35 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.
+aura      Stealthed.  Movement slowed by $w3%.
 
 https://www.wowhead.com/forever/spell=1786
 =======
@@ -561,6 +624,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=300 ppl=5 target=[1,0]
 effect 3  -30% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.
+aura      Stealthed.  Movement slowed by $w3%.
 
 https://www.wowhead.com/forever/spell=1787
 =======
@@ -570,6 +635,8 @@ duration  permanent
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.
+aura      Stealthed.  Movement slowed by $s3%.
 
 https://www.wowhead.com/forever/spell=450667
 =======
@@ -584,6 +651,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=2 ppl=5 target=[1,0]
 effect 3  -20% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-20 target=[1,0]
+tooltip   Stealthed.
+aura      Stealthed.
 
 https://www.wowhead.com/forever/spell=1256867
 =======
@@ -594,6 +663,7 @@ attrs     not a proc, suppresses weapon procs
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Stealthed.
 
 https://www.wowhead.com/forever/spell=1287162
 =======
@@ -603,6 +673,8 @@ duration  300 s
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Allows the rogue to sneak around, but reduces your speed by $s3%. Lasts until cancelled.
+aura      Stealthed. Movement slowed by $s3%.
 
 https://www.wowhead.com/forever/spell=1290708
 =======
@@ -613,6 +685,7 @@ attrs     not a proc, suppresses weapon procs
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Stealthed.
 
 https://www.wowhead.com/forever/spell=1318151
 =======
@@ -623,6 +696,7 @@ attrs     not a proc, suppresses weapon procs
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Stealthed.
 
 https://www.wowhead.com/forever/spell=1326175
 =======
@@ -636,6 +710,7 @@ refs      1310723 Thousand Cuts
 
 effect 1  casts 1310723 Thousand Cuts on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 sp=1 trigger=1310723 target=[1,0]
+tooltip   When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within $1310723d is reduced by $1310723s1, stacking up to $1310723u times.
 
 https://www.wowhead.com/forever/spell=1310721
 =======
@@ -648,6 +723,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; no
 
 effect 1  SPELLMOD_COST -3 (-0.3 on a rage bar) on family 8 mask 0x2000004
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3 sp=1 misc=14 family=8 mask=0x2000004 target=[1,0]
+aura      Energy cost of Hemorrhage and Backstab reduced by $m1.
 
 https://www.wowhead.com/forever/spell=1310723
 =======
@@ -663,6 +739,8 @@ effect 2  casts 18461 Vanish Purge to the caster
           E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
 effect 3  unrecognised shape
           E_SANCTUARY base=0 target=[1,0]
+tooltip   Allows the rogue to vanish from sight, entering an improved stealth mode for $11327d. Also breaks movement impairing effects.
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=1856
 =======
@@ -678,6 +756,8 @@ effect 2  casts 18461 Vanish Purge to the caster
           E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
 effect 3  unrecognised shape
           E_SANCTUARY base=0 target=[1,0]
+tooltip   Allows the rogue to vanish from sight, entering an improved stealth mode for $11329d.  Also breaks movement impairing effects. More effective than Vanish (Rank 1).
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=1857
 =======
@@ -691,6 +771,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=170 ppl=5 index=1 target=[1,0]
 effect 2  +0% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 index=2 target=[1,0]
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=11327
 =======
@@ -704,6 +785,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=270 ppl=5 index=1 target=[1,0]
 effect 2  +0% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 index=2 target=[1,0]
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=11329
 =======
@@ -718,6 +800,8 @@ effect 2  casts 18461 Vanish Purge to the caster
           E_TRIGGER_SPELL base=0 trigger=18461 target=[1,0]
 effect 3  unrecognised shape
           E_SANCTUARY base=0 target=[1,0]
+tooltip   Allows the rogue to vanish from sight, entering an improved stealth mode for $11329d.  Also breaks movement impairing effects.  More effective than Vanish (Rank 1).
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=27617
 =======
@@ -728,6 +812,8 @@ cooldown  300 s (category)
 
 effect 1  -50% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=126 target=[1,0]
+tooltip   Reduces all Magic damage taken by $s1% for $d.
+aura      Magic damage taken reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=457437
 =======
@@ -746,5 +832,7 @@ effect 3  unrecognised shape
           E_SANCTUARY base=0 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=50 misc2=50 target=[1,0]
+tooltip   Allows the rogue to vanish from sight, entering an improved stealth mode for $11329d. Also breaks movement impairing effects. More effective than Vanish (Rank 2).
+aura      Improved stealth.
 
 https://www.wowhead.com/forever/spell=1285372

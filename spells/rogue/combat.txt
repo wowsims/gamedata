@@ -7,6 +7,8 @@ labels    20
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=100 sp=1 misc=3 target=[1,0]
+tooltip   Increases your Energy regeneration rate by $s1% for $d.
+aura      Energy regeneration increased by $s1%.
 
 https://www.wowhead.com/forever/spell=13750
 =======
@@ -17,6 +19,7 @@ labels    20
 
 effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20006
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20006 target=[1,0]
+tooltip   Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=18427
 =======
@@ -36,6 +39,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=53
 =======
@@ -55,6 +59,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=2589
 =======
@@ -74,6 +79,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=2590
 =======
@@ -93,6 +99,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=2591
 =======
@@ -112,6 +119,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=8721
 =======
@@ -131,6 +139,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=11279
 =======
@@ -150,6 +159,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=11280
 =======
@@ -169,6 +179,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=11281
 =======
@@ -188,6 +199,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=25300
 =======
@@ -206,6 +218,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 15 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462709
 =======
@@ -224,6 +237,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 30 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462710
 =======
@@ -242,6 +256,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 48 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462711
 =======
@@ -260,6 +275,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 69 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462712
 =======
@@ -278,6 +294,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 90 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462713
 =======
@@ -296,6 +313,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 135 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462714
 =======
@@ -314,6 +332,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 165 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462715
 =======
@@ -332,6 +351,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 210 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462716
 =======
@@ -350,6 +370,7 @@ effect 2  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Backstab the target, causing $s2% weapon damage plus 225 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=462717
 =======
@@ -371,6 +392,18 @@ effect 2  a dummy effect to the caster
           E_DUMMY base=0 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 mechanic=12 target=[6,0]
+tooltip   Ranged Finishing move that causes damage per combo point, increased by Attack Power, and Stuns the target:
+
+             1 point:   ${$m1/100*($<base>+$<percombo>)} to ${$M1/100*($<base>+$<percombo>)} damage, 1 sec Stun
+             2 points: ${$m1/100*($<base>+$<percombo>*2)} to ${$M1/100*($<base>+$<percombo>*2)} damage, 2 sec Stun
+             3 points: ${$m1/100*($<base>+$<percombo>*3)} to ${$M1/100*($<base>+$<percombo>*3)} damage, 3 sec Stun
+             4 points: ${$m1/100*($<base>+$<percombo>*4)} to ${$M1/100*($<base>+$<percombo>*4)} damage, 4 sec Stun
+             5 points: ${$m1/100*($<base>+$<percombo>*5)} to ${$M1/100*($<base>+$<percombo>*5)} damage, 5 sec Stun
+
+          Cooldown shared with Kidney Shot.
+aura      Stunned.
+vars      $base=${5.741530-0.255683*$PL+0.032656*$PL*$PL}
+          $percombo=${8.740728-0.415787*$PL+0.051973*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=400009
 =======
@@ -380,6 +413,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400009 misc=399966 family=8 mask=0x0,0x0,0x0,0x20000000 target=[1,0]
+tooltip   Gain the Between the Eyes ability:
+
+          $@spellicon400009
+          $@spelldesc400009
 
 https://www.wowhead.com/forever/spell=400033
 =======
@@ -399,6 +436,14 @@ effect 3  +0% physical damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 target=[1,0]
 effect 4  a dummy aura holding 4
           E_APPLY_AURA A_DUMMY base=4 target=[1,0]
+tooltip   Finishing move that increases your Parry chance by $s2% and grants $s4 Attack Power for each point of your defense skill beyond ${$PL*5}. Lasts longer per combo point:
+
+             1 point  : 14 seconds
+             2 points: 18 seconds
+             3 points: 22 seconds
+             4 points: 26 seconds
+             5 points: 30 seconds
+aura      Parry chance increased by $w2%. $?$w3<0[ Physical damage taken reduced by $w3%.][]
 
 https://www.wowhead.com/forever/spell=400012
 =======
@@ -408,6 +453,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400012 misc=399966 family=8 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+tooltip   Gain the Blade Dance ability:
+
+          $@spellicon400012
+          $@spelldesc400012
 
 https://www.wowhead.com/forever/spell=400038
 =======
@@ -433,6 +482,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no rol
 
 effect 1  +20% melee haste
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=20 target=[1,0]
+tooltip   Increases your melee attack speed by $s1% and your melee attacks strike an additional nearby opponent. Lasts $d.
+aura      Attack speed increased by $s1%.  Weapon attacks strike an additional nearby opponent.
 
 https://www.wowhead.com/forever/spell=13877
 =======
@@ -443,6 +494,7 @@ labels    20
 
 effect 1  +50% off-hand damage
           E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=50 sp=1 target=[1,0]
+tooltip   Increases the damage done by your off-hand weapon by $s1%.
 
 https://www.wowhead.com/forever/spell=13715
 =======
@@ -453,6 +505,7 @@ labels    24
 
 effect 1  +2% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=2 sp=1 target=[1,0]
+tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30816
 =======
@@ -463,6 +516,7 @@ labels    24
 
 effect 1  +4% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=4 sp=1 target=[1,0]
+tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30818
 =======
@@ -473,6 +527,7 @@ labels    24
 
 effect 1  +6% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=6 sp=1 target=[1,0]
+tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30819
 =======
@@ -483,6 +538,7 @@ labels    24
 
 effect 1  +8% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=8 sp=1 target=[1,0]
+tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30820
 =======
@@ -493,6 +549,7 @@ labels    24
 
 effect 1  +10% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=10 sp=1 target=[1,0]
+tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30821
 =======
@@ -503,6 +560,7 @@ labels    20
 
 effect 1  SPELLMOD_COOLDOWN -60% on family 8 mask 0x60
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 misc=11 family=8 mask=0x60 target=[1,0]
+tooltip   Reduces the cooldown of your Sprint and Evasion abilities by $m1%.
 
 https://www.wowhead.com/forever/spell=13742
 =======
@@ -514,6 +572,8 @@ labels    20
 
 effect 1  +50% dodge chance
           E_APPLY_AURA A_MOD_DODGE_PERCENT base=50 target=[1,0]
+tooltip   The rogue's dodge chance will increase by $s1% for $d.
+aura      Increases dodge chance by $s1%.
 
 https://www.wowhead.com/forever/spell=5277
 =======
@@ -523,6 +583,8 @@ duration  15 s
 
 effect 1  +50% dodge chance
           E_APPLY_AURA A_MOD_DODGE_PERCENT base=50 target=[1,0]
+tooltip   Increases the rogue's chance to dodge by $s1% for $d.
+aura      Chance to dodge increased by $s1%.
 
 https://www.wowhead.com/forever/spell=15087
 =======
@@ -538,6 +600,7 @@ labels    20
 
 effect 1  -800 threat to the enemy
           E_THREAT base=-750 ppl=-5 target=[6,0]
+tooltip   Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=1966
 =======
@@ -553,6 +616,7 @@ labels    20
 
 effect 1  -1250 threat to the enemy
           E_THREAT base=-1200 ppl=-5 target=[6,0]
+tooltip   Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=6768
 =======
@@ -568,6 +632,7 @@ labels    20
 
 effect 1  -2000 threat to the enemy
           E_THREAT base=-1950 ppl=-5 target=[6,0]
+tooltip   Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=8637
 =======
@@ -583,6 +648,7 @@ labels    20
 
 effect 1  -3040 threat to the enemy
           E_THREAT base=-3000 ppl=-5 target=[6,0]
+tooltip   Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=11303
 =======
@@ -598,6 +664,7 @@ labels    20
 
 effect 1  -4000 threat to the enemy
           E_THREAT base=-4000 ppl=-5 target=[6,0]
+tooltip   Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=25302
 =======
@@ -608,6 +675,7 @@ labels    20
 
 effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
+tooltip   Reduces the Energy cost of your Eviscerate ability by $m1.
 
 https://www.wowhead.com/forever/spell=1310711
 =======
@@ -630,6 +698,8 @@ effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Causes $s1 damage, stops your attack, and incapacitates the target for $d.  The target must be facing you.  Any damage taken will break the effect.  Awards $s2 combo $lpoint:points;.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=1776
 =======
@@ -652,6 +722,8 @@ effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Causes $s1 damage, stops your attack, and incapacitates the target for $d.  The target must be facing you.  Any damage taken will break the effect.  Awards $s2 combo $lpoint:points;.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=1777
 =======
@@ -674,6 +746,8 @@ effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Causes $s1 damage, stops your attack, and incapacitates the target for $d.  The target must be facing you.  Any damage taken will break the effect.  Awards $s2 combo $lpoint:points;.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=8629
 =======
@@ -696,6 +770,8 @@ effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Causes $s1 damage, stops your attack, and incapacitates the target for $d.  The target must be facing you.  Any damage taken will break the effect.  Awards $s2 combo $lpoint:points;.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=11285
 =======
@@ -718,6 +794,8 @@ effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Causes $s1 damage, stops your attack, and incapacitates the target for $d.  The target must be facing you.  Any damage taken will break the effect.  Awards $s2 combo $lpoint:points;.
+aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=11286
 =======
@@ -728,6 +806,7 @@ labels    20
 
 effect 1  SPELLMOD_DAMAGE +20% on family 8 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x20000 target=[1,0]
+tooltip   Increases the damage done by your Eviscerate ability by $m1%.
 
 https://www.wowhead.com/forever/spell=14162
 =======
@@ -740,6 +819,7 @@ refs      18425 Silenced - Kick
 
 effect 1  casts 18425 Silenced - Kick on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=18425 target=[1,0]
+tooltip   Gives your Kick ability a $m1% chance to Silence the target for $18425d.
 
 https://www.wowhead.com/forever/spell=13754
 =======
@@ -750,6 +830,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -0.5 s on family 8 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=11 family=8 mask=0x10 target=[1,0]
+tooltip   Decreases the cooldown of Kick by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24434
 =======
@@ -760,6 +841,7 @@ labels    20
 
 effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2 target=[1,0]
+tooltip   Reduces the Energy cost of your Sinister Strike ability by $s1.
 
 https://www.wowhead.com/forever/spell=13732
 =======
@@ -770,6 +852,7 @@ labels    20
 
 effect 1  casts 30918 Improved Sprint when the target is hit from family 8 mask 0x40
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=30918 family=8 mask=0x40 target=[1,0]
+tooltip   Gives a $m1% chance to remove all movement impairing effects when you activate your Sprint ability.
 
 https://www.wowhead.com/forever/spell=13743
 =======
@@ -788,6 +871,7 @@ effect 1  15 physical damage to the enemy
           E_SCHOOL_DAMAGE base=15 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=1766
 =======
@@ -806,6 +890,7 @@ effect 1  30 physical damage to the enemy
           E_SCHOOL_DAMAGE base=30 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=1767
 =======
@@ -824,6 +909,7 @@ effect 1  45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=1768
 =======
@@ -842,6 +928,7 @@ effect 1  80 physical damage to the enemy
           E_SCHOOL_DAMAGE base=80 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=1769
 =======
@@ -867,6 +954,10 @@ effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 4  SPELLMOD_JUMP_TARGETS +0 on family 8 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=17 family=8 mask=0x2 target=[1,0]
+tooltip   Instantly strike with your off-hand weapon for normal off-hand weapon damage and increase your chance to parry by $s2% for $d or until you successfully parry. For $462752d after using Main Gauche, Sinister Strike costs $462752s1 less Energy, deals $462752s2% more threat, grants stacks of Rolling with the Punches, and both Sinister Strike and Eviscerate deal $462752s3% more damage. Awards $s3 combo $lpoint:points;.
+
+          Main Gauche benefits from most talents and effects that trigger from or modify Sinister Strike. Main Gauche's effect will not discount or empower Main Gauche.
+aura      Parry chance increased by $s2%.
 
 https://www.wowhead.com/forever/spell=424919
 =======
@@ -876,6 +967,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=424919 misc=399967 target=[1,0]
+tooltip   Gain the Main Gauche ability:
+
+          $@spellicon424919
+          $@spelldesc424919
 
 https://www.wowhead.com/forever/spell=424982
 =======
@@ -893,6 +988,9 @@ effect 3  SPELLMOD_DAMAGE +50% on family 8 mask 0x20002,0x1,0x0,0x20
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=8 mask=0x20002,0x1,0x0,0x20 target=[1,0]
 effect 4  casts 1218154 Strikes of the Sinister to the caster
           E_TRIGGER_SPELL base=0 trigger=1218154 target=[1,0]
+aura      Sinister Strike Energy cost reduced by $s1.
+          Sinister Strike threat generated increased by $s2%.
+          Sinister Strike and Eviscerate damage increased by $s3%.
 
 https://www.wowhead.com/forever/spell=462752
 =======
@@ -907,6 +1005,7 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 chain=1 target=[6,0]
 effect 2  50% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+tooltip   Grants a chance for your Main Hand melee auto attacks to make an instant attack with your Off Hand weapon for $s2% of normal damage.
 
 https://www.wowhead.com/forever/spell=1289695
 =======
@@ -918,6 +1017,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 trigger=1289695 target=[1,0]
+tooltip   Grants a chance for your Main Hand melee auto attacks to trigger an instant extra attack with your Off Hand weapon for $s1% of normal damage.
 
 https://www.wowhead.com/forever/spell=1289849
 =======
@@ -937,6 +1037,9 @@ effect 2  a dummy effect holding 1 to the enemy
           E_DUMMY base=1 target=[6,0]
 effect 3  a dummy effect holding 5 to the enemy
           E_DUMMY base=5 target=[6,0]
+tooltip   Instantly throw your off-hand weapon to deal normal off-hand weapon damage with a 100% chance to apply the poison from your off-hand weapon to the target. Awards $s2 combo $lpoint:points;. Refunds $s3 Energy per application of Deadly Poison on the target.
+
+          Poisoned Knife benefits from all talents and effects that trigger from or modify Sinister Strike.
 
 https://www.wowhead.com/forever/spell=425012
 =======
@@ -951,6 +1054,9 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Instantly throw your off-hand weapon to deal normal off-hand weapon damage with a 100% chance to apply the poison from your off-hand weapon to the target. Awards $s2 combo $lpoint:points;.
+
+          Poisoned Knife benefits from all talents and effects that trigger from or modify Sinister Strike.
 
 https://www.wowhead.com/forever/spell=425013
 =======
@@ -960,6 +1066,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425012 misc=415449 target=[1,0]
+tooltip   Gain the Poisoned Knife ability:
+
+          $@spellicon425012
+          $@spelldesc425012
 
 https://www.wowhead.com/forever/spell=425100
 =======
@@ -975,6 +1085,7 @@ effect 2  casts 1310710 Improved Backstab on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=45 trigger=1310710 target=[1,0]
 effect 3  SPELLMOD_CRITICAL_CHANCE +15% on family 8 mask 0x0,0x6
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=7 family=8 mask=0x0,0x6 target=[1,0]
+tooltip   Increases the critical strike chance of your Backstab by $m1% and your Mutilate by $m3%, and gives Backstab a $m2% chance to add an additional Combo Point.
 
 https://www.wowhead.com/forever/spell=1224716
 =======
@@ -994,6 +1105,10 @@ effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Draw your ranged weapon and fire a quick shot at an enemy, causing normal ranged weapon damage and reducing the target's movement speed by $s2% for $d. Awards $s3 combo $lpoint:points;.
+
+          Quick Draw benefits from all talents and effects that trigger from or modify Sinister Strike.
+aura      Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=398196
 =======
@@ -1003,6 +1118,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=398196 misc=399954 target=[1,0]
+tooltip   Gain the Quick Draw ability:
+
+          $@spellicon398196
+          $@spelldesc398196
 
 https://www.wowhead.com/forever/spell=398197
 =======
@@ -1019,6 +1138,8 @@ effect 1  150% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=150 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_DISARM base=0 sp=1 mechanic=3 target=[6,0]
+tooltip   A strike that becomes active after parrying an opponent's attack.  This attack deals $s1% weapon damage and disarms the target for $19718d.
+aura      Disarmed.
 
 https://www.wowhead.com/forever/spell=14251
 =======
@@ -1043,6 +1164,11 @@ effect 4  5 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=2000ms mechanic=15 target=[6,0]
 effect 5  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=33 family=8 mask=0x2,0x1,0x0,0x4 target=[6,0]
+tooltip   Viciously slash an enemy for $s2% weapon damage, and cause the target to bleed for ${$AP*$m4/100} damage every $t4 sec for $d, stacking up to $u times. Each stack also increases damage done by your Saber Slash and Sinister Strike by $s5%. Awards $s3 combo $lpoint:points;.
+
+          Saber Slash benefits from all talents and effects that trigger from or modify Sinister Strike.
+aura      Bleeding for $w4 damage every $t4 sec.
+          Damage taken from Saber Slash and Sinister Strike increased by $s5%.
 
 https://www.wowhead.com/forever/spell=424785
 =======
@@ -1052,6 +1178,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=424785 misc=399967 target=[1,0]
+tooltip   Gain the Saber Slash ability:
+
+          $@spellicon424785
+          $@spelldesc424785
 
 https://www.wowhead.com/forever/spell=424979
 =======
@@ -1067,6 +1197,7 @@ labels    20
 
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 sp=1 target=[6,0]
+tooltip   Performs an instant off-hand weapon attack that automatically applies the poison from your off-hand weapon to the target.  Slower weapons require more Energy.  Neither Shiv nor the poison it applies can be a critical strike.  Awards 1 combo point.
 
 https://www.wowhead.com/forever/spell=5938
 =======
@@ -1083,6 +1214,9 @@ effect 1  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 2  a dummy effect holding 1 to the enemy
           E_DUMMY base=1 target=[6,0]
+tooltip   Instantly attack with your off-hand weapon to deal normal off-hand weapon damage with a 100% chance to apply the poison from your off-hand weapon to the target. Slower weapons require more energy. Awards $s2 combo $lpoint:points;.
+
+          Shiv benefits from all talents and effects that trigger from or modify Sinister Strike.
 
 https://www.wowhead.com/forever/spell=424799
 =======
@@ -1097,6 +1231,7 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Instantly attack with your off-hand weapon with a 100% chance to apply the poison from your off-hand weapon to the target. Slower weapons require more energy. Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=424800
 =======
@@ -1110,6 +1245,8 @@ refs      13754 Improved Kick
 
 effect 1  silences to the enemy
           E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]
+tooltip   Gives your kick ability a $13754s1% chance to silence the target.
+aura      Silenced.
 
 https://www.wowhead.com/forever/spell=18425
 =======
@@ -1127,6 +1264,7 @@ effect 1  normalised weapon damage +3 to the enemy
           E_NORMALIZED_WEAPON_DMG base=3 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1752
 =======
@@ -1144,6 +1282,7 @@ effect 1  normalised weapon damage +6 to the enemy
           E_NORMALIZED_WEAPON_DMG base=6 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1757
 =======
@@ -1161,6 +1300,7 @@ effect 1  normalised weapon damage +10 to the enemy
           E_NORMALIZED_WEAPON_DMG base=10 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1758
 =======
@@ -1178,6 +1318,7 @@ effect 1  normalised weapon damage +15 to the enemy
           E_NORMALIZED_WEAPON_DMG base=15 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1759
 =======
@@ -1195,6 +1336,7 @@ effect 1  normalised weapon damage +22 to the enemy
           E_NORMALIZED_WEAPON_DMG base=22 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1760
 =======
@@ -1212,6 +1354,7 @@ effect 1  normalised weapon damage +33 to the enemy
           E_NORMALIZED_WEAPON_DMG base=33 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=8621
 =======
@@ -1229,6 +1372,7 @@ effect 1  normalised weapon damage +52 to the enemy
           E_NORMALIZED_WEAPON_DMG base=52 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=11293
 =======
@@ -1246,6 +1390,7 @@ effect 1  normalised weapon damage +68 to the enemy
           E_NORMALIZED_WEAPON_DMG base=68 sp=1 chain=1 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=11294
 =======
@@ -1257,6 +1402,7 @@ equip     needs a melee weapon
 
 effect 1  weapon damage in the weapon's own school +73 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+tooltip   Inflicts normal damage plus $s1 to an enemy.
 
 https://www.wowhead.com/forever/spell=14873
 =======
@@ -1268,6 +1414,7 @@ equip     needs a melee weapon
 
 effect 1  weapon damage in the weapon's own school +219 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=3 ppl=3.6 sp=1 target=[6,0]
+tooltip   Inflicts normal damage plus $s1 to an enemy.
 
 https://www.wowhead.com/forever/spell=15581
 =======
@@ -1279,6 +1426,7 @@ equip     needs a melee weapon
 
 effect 1  weapon damage in the weapon's own school +146 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=2 ppl=2.4 sp=1 target=[6,0]
+tooltip   Inflicts normal damage plus $s1 to an enemy.
 
 https://www.wowhead.com/forever/spell=15667
 =======
@@ -1289,6 +1437,7 @@ range     5 yd
 
 effect 1  weapon damage in the weapon's own school +73 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+tooltip   Inflicts normal damage plus $s1 to an enemy.
 
 https://www.wowhead.com/forever/spell=19472
 =======
@@ -1300,6 +1449,7 @@ equip     needs a melee weapon
 
 effect 1  weapon damage in the weapon's own school +73 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=1 ppl=1.2 sp=1 target=[6,0]
+tooltip   Inflicts normal damage plus $s1 to an enemy.
 
 https://www.wowhead.com/forever/spell=1213441
 =======
@@ -1311,6 +1461,8 @@ labels    20
 
 effect 1  +50% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=50 target=[1,0]
+tooltip   Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
+aura      Movement speed increased by $s1%.
 
 https://www.wowhead.com/forever/spell=2983
 =======
@@ -1322,6 +1474,8 @@ labels    20
 
 effect 1  +60% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=60 target=[1,0]
+tooltip   Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
+aura      Movement speed increased by $s1%.
 
 https://www.wowhead.com/forever/spell=8696
 =======
@@ -1333,6 +1487,8 @@ labels    20
 
 effect 1  +70% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=70 target=[1,0]
+tooltip   Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
+aura      Movement speed increased by $s1%.
 
 https://www.wowhead.com/forever/spell=11305
 =======
@@ -1343,5 +1499,6 @@ duration  10 s
 
 effect 1  SPELLMOD_JUMP_TARGETS +1 on family 8 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=17 family=8 mask=0x2 target=[1,0]
+aura      Sinister Strike hits $s1 additional nearby target.
 
 https://www.wowhead.com/forever/spell=1218154

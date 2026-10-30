@@ -5,6 +5,7 @@ labels    17
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x1,0x9000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=3 mask=0x1,0x9000 target=[1,0]
+tooltip   Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=11069
 =======
@@ -25,6 +26,17 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_PERCENT_STAT base=-20 misc=4 target=[1,0]
 effect 3  SPELLMOD_DAMAGE +20% on family 3 mask 0x400000,0x0,0x0,0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=3 mask=0x400000,0x0,0x0,0x4000 target=[1,0]
+tooltip   Unleash a reality-distorting burst of raw magic at your enemy, dealing ${$<power>*$m1/100} to ${$<power>*$M1/100} Chimeric damage.
+
+          Increasing your Balefire Bolt and Pyroblast damage by $s3%, decreasing your Spirit by $s2%, and stacking up to $u times for $d. If your Spirit reaches 0, you die.
+
+          This spell will be checked against the lower of the target's Arcane, Fire, and Frost resists.
+aura      Increases damage dealt by Balefire Bolt and Pyroblast by $s3% but decreases Spirit by $s2%. Reaching 0 Spirit is fatal.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=428878
 =======
@@ -35,6 +47,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428878 misc=417346 target=[1,0]
+tooltip   Gain the Balefire Bolt ability:
+
+          $@spellicon428878
+          $@spelldesc428878
 
 https://www.wowhead.com/forever/spell=429310
 =======
@@ -51,6 +67,8 @@ effect 1  154–184 fire damage to every enemy around the caster (at level 60, +
           E_SCHOOL_DAMAGE base=163 ppl=1 variance=0.1882353 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+tooltip   A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
+aura      Dazed. Movement speed reduced by 50%.
 
 https://www.wowhead.com/forever/spell=11113
 =======
@@ -67,6 +85,8 @@ effect 1  200–239 fire damage to every enemy around the caster (at level 60, +
           E_SCHOOL_DAMAGE base=212 ppl=1.2 variance=0.18099548 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+tooltip   A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
+aura      Dazed. Movement speed reduced by 50%.
 
 https://www.wowhead.com/forever/spell=13018
 =======
@@ -83,6 +103,8 @@ effect 1  276–327 fire damage to every enemy around the caster (at level 60, +
           E_SCHOOL_DAMAGE base=293 ppl=1.4 variance=0.17161717 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+tooltip   A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
+aura      Dazed. Movement speed reduced by 50%.
 
 https://www.wowhead.com/forever/spell=13019
 =======
@@ -99,6 +121,8 @@ effect 1  365–432 fire damage to every enemy around the caster (at level 60, +
           E_SCHOOL_DAMAGE base=389 ppl=1.6 variance=0.17042607 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+tooltip   A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
+aura      Dazed. Movement speed reduced by 50%.
 
 https://www.wowhead.com/forever/spell=13020
 =======
@@ -115,6 +139,8 @@ effect 1  453–533 fire damage to every enemy around the caster (at level 60, +
           E_SCHOOL_DAMAGE base=493 ppl=1.9 variance=0.16302186 sp=0.129 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 mechanic=11 target=[22,15]
+tooltip   A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
+aura      Dazed. Movement speed reduced by 50%.
 
 https://www.wowhead.com/forever/spell=13021
 =======
@@ -130,6 +156,8 @@ effect 1  474–544 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=15091
 =======
@@ -145,6 +173,8 @@ effect 1  713–819 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=15744
 =======
@@ -159,6 +189,8 @@ effect 1  941–1093 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
 effect 2  -70% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=16046
 =======
@@ -174,6 +206,8 @@ effect 1  941–1093 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1017.3735 variance=0.14942528 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=17145
 =======
@@ -188,6 +222,8 @@ effect 1  474–544 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=17277
 =======
@@ -200,6 +236,8 @@ effect 1  694–806 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=750 variance=0.14933333 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Inflicts $s1 Fire damage to nearby enemies and reduces their movement speed by $s2% for $d.
+aura      Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=20229
 =======
@@ -214,6 +252,8 @@ effect 1  1421–1643 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1531.9073 variance=0.14503817 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22424
 =======
@@ -229,6 +269,8 @@ effect 1  655–760 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=707.4839 variance=0.14876033 sp=1 radius=10 target=[22,15]
 effect 2  -30% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=23039
 =======
@@ -243,6 +285,8 @@ effect 1  713–819 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=765.9537 variance=0.13740458 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=23113
 =======
@@ -257,6 +301,8 @@ effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=20 target=[22,15]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=175 sp=1 misc=100 radius=20 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=23331
 =======
@@ -272,6 +318,8 @@ effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=45 target=[22,15]
 effect 3  unrecognised shape
           E_KNOCK_BACK base=60 sp=1 misc=60 radius=45 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=25049
 =======
@@ -284,6 +332,8 @@ effect 1  1575–2025 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1800 variance=0.25 sp=1 radius=15 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=20 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=30092
 =======
@@ -300,6 +350,8 @@ effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
 effect 3  474–544 fire damage to every enemy in the target area
           E_SCHOOL_DAMAGE base=508.68674 variance=0.13793103 sp=1 radius=60 target=[22,16]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=469161
 =======
@@ -315,6 +367,8 @@ effect 1  2847–2999 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=2923.487 variance=0.052 sp=1 radius=10 target=[22,15]
 effect 2  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=1235318
 =======
@@ -327,6 +381,7 @@ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 3 mask 0x400015,0x21000,
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=3 mask=0x400015,0x21000,0x40100,0x4000 target=[1,0]
 effect 2  -30% threat
           E_APPLY_AURA A_MOD_THREAT base=-30 misc=4 target=[1,0]
+tooltip   Gives your Fire spells a $s1% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by $s2%.
 
 https://www.wowhead.com/forever/spell=11083
 =======
@@ -344,6 +399,7 @@ effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 effect 2  casts 28682 Combustion to the caster
           E_TRIGGER_SPELL base=0 trigger=28682 target=[1,0]
+tooltip   When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by $28682s1%.  This effect lasts until you have caused $n non-periodic critical strikes with Fire spells.
 
 https://www.wowhead.com/forever/spell=11129
 =======
@@ -356,6 +412,8 @@ labels    17
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 3 mask 0xc00017,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=7 family=3 mask=0xc00017,0x1000 target=[1,0]
+tooltip   Increases critical strike chance from Fire damage spells by $s1%.
+aura      Increases critical strike chance from Fire damage spells by $s1%.
 
 https://www.wowhead.com/forever/spell=28682
 =======
@@ -366,6 +424,7 @@ labels    17
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 3 mask 0xc00017,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=3 mask=0xc00017,0x1000 target=[1,0]
+tooltip   Increases the critical strike chance of your Fire spells by $s1%.
 
 https://www.wowhead.com/forever/spell=11115
 =======
@@ -378,6 +437,7 @@ range     100 yd
 
 effect 1  500 fire damage to the enemy
           E_SCHOOL_DAMAGE base=500 sp=1 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=24530
 =======
@@ -392,6 +452,7 @@ labels    17
 
 effect 1  27–35 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=2136
 =======
@@ -406,6 +467,7 @@ labels    17
 
 effect 1  57–69 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=58 ppl=1 variance=0.21875 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=2137
 =======
@@ -420,6 +482,7 @@ labels    17
 
 effect 1  97–117 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=100 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=2138
 =======
@@ -434,6 +497,7 @@ labels    17
 
 effect 1  157–187 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=163 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=8412
 =======
@@ -448,6 +512,7 @@ labels    17
 
 effect 1  226–268 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=236 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=8413
 =======
@@ -462,6 +527,7 @@ labels    17
 
 effect 1  316–372 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=331 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10197
 =======
@@ -476,6 +542,7 @@ labels    17
 
 effect 1  417–489 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=438 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10199
 =======
@@ -487,6 +554,7 @@ range     20 yd
 
 effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=13339
 =======
@@ -497,6 +565,7 @@ range     20 yd
 
 effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=13340
 =======
@@ -508,6 +577,7 @@ range     20 yd
 
 effect 1  965–1140 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=13341
 =======
@@ -518,6 +588,7 @@ range     20 yd
 
 effect 1  965–1140 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1052.4553 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=13342
 =======
@@ -529,6 +600,7 @@ range     20 yd
 
 effect 1  643–760 fire damage to the enemy
           E_SCHOOL_DAMAGE base=701.6369 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=13374
 =======
@@ -540,6 +612,7 @@ range     20 yd
 
 effect 1  1286–1520 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=14145
 =======
@@ -550,6 +623,7 @@ range     20 yd
 
 effect 1  1286–1520 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 variance=0.16666667 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=15574
 =======
@@ -560,6 +634,7 @@ range     20 yd
 
 effect 1  2104.9106 fire damage to the enemy
           E_SCHOOL_DAMAGE base=2104.9106 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=16144
 =======
@@ -570,6 +645,7 @@ range     20 yd
 
 effect 1  1080–1320 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1200 variance=0.2 target=[6,0]
+tooltip   Inflicts $s1 Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=20623
 =======
@@ -581,6 +657,7 @@ range     20 yd
 
 effect 1  1260–1540 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1400 variance=0.2 target=[6,0]
+tooltip   Inflicts $s1 Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=20679
 =======
@@ -592,6 +669,7 @@ range     20 yd
 
 effect 1  731–883 fire damage to the enemy
           E_SCHOOL_DAMAGE base=806.8825 variance=0.1884058 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=20795
 =======
@@ -603,6 +681,7 @@ range     20 yd
 
 effect 1  889–1076 fire damage to the enemy
           E_SCHOOL_DAMAGE base=982.29175 variance=0.1904762 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=20832
 =======
@@ -613,6 +692,7 @@ range     20 yd
 
 effect 1  1094–1406 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1250 variance=0.2496 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy.
 
 https://www.wowhead.com/forever/spell=25028
 =======
@@ -625,6 +705,7 @@ range     20 yd
 
 effect 1  140–165 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=115 ppl=1.4 variance=0.20869565 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400616
 =======
@@ -637,6 +718,7 @@ range     20 yd
 
 effect 1  30–39 fire damage to the enemy (at level 60, +0.204 spell power)
           E_SCHOOL_DAMAGE base=28 ppl=0.6 variance=0.2857143 sp=0.204 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400618
 =======
@@ -649,6 +731,7 @@ range     20 yd
 
 effect 1  76–90 fire damage to the enemy (at level 60, +0.332 spell power)
           E_SCHOOL_DAMAGE base=64 ppl=1 variance=0.21875 sp=0.332 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400619
 =======
@@ -661,6 +744,7 @@ range     20 yd
 
 effect 1  231–265 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=185 ppl=1.8 variance=0.18378378 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400620
 =======
@@ -673,6 +757,7 @@ range     20 yd
 
 effect 1  336–385 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=266 ppl=2.2 variance=0.18045112 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400621
 =======
@@ -685,6 +770,7 @@ range     20 yd
 
 effect 1  464–527 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=363 ppl=2.6 variance=0.1707989 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400622
 =======
@@ -697,6 +783,7 @@ range     20 yd
 
 effect 1  608–686 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=470 ppl=3 variance=0.16595745 sp=0.429 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=400623
 =======
@@ -708,6 +795,7 @@ range     40 yd
 
 effect 1  70 fire damage to the enemy
           E_SCHOOL_DAMAGE base=70 target=[6,0]
+tooltip   Blasts the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=461896
 =======
@@ -721,6 +809,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0xc00017,0x11000,0x40000,0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=3 mask=0xc00017,0x11000,0x40000,0x4000 target=[1,0]
+aura      Increases the critical strike chance of your next Fire damage spell by $s1%.
 
 https://www.wowhead.com/forever/spell=1213317
 =======
@@ -731,6 +820,7 @@ range     20 yd
 
 effect 1  a dummy effect
           E_DUMMY base=0 target=[0,0]
+tooltip   Blasts the target for Fire damage.
 
 https://www.wowhead.com/forever/spell=1318432
 =======
@@ -743,6 +833,7 @@ effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
 effect 2  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+tooltip   Increases the damage done by your Fire spells by $s1% per your Fire effects on the target, up to a maximum increase of ${$s1*4}%. Effects which mix multiple schools of magic do not qualify.
 
 https://www.wowhead.com/forever/spell=11124
 =======
@@ -756,6 +847,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SCHOOL_MASK_DAMAGE_FROM_CASTER base=3 misc=4 target=[6,0]
+tooltip   Increases Fire damage taken from the Mage by $s1% per stack.
+aura      Increases Fire damage taken from the Mage by $s1%.
 
 https://www.wowhead.com/forever/spell=22959
 =======
@@ -772,6 +865,8 @@ effect 1  absorbs 162 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=4 target=[1,0]
 effect 2  reflects 0% of fire damage
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+tooltip   Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to reflect Fire spells and effects][].  Lasts $d.
+aura      Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 https://www.wowhead.com/forever/spell=543
 =======
@@ -788,6 +883,8 @@ effect 1  absorbs 285 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=285 misc=4 target=[1,0]
 effect 2  reflects 0% of fire damage
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+tooltip   Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to reflect Fire spells and effects][].  Lasts $d.
+aura      Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 https://www.wowhead.com/forever/spell=8457
 =======
@@ -804,6 +901,8 @@ effect 1  absorbs 463 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=4 target=[1,0]
 effect 2  reflects 0% of fire damage
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+tooltip   Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to reflect Fire spells and effects][].  Lasts $d.
+aura      Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 https://www.wowhead.com/forever/spell=8458
 =======
@@ -820,6 +919,8 @@ effect 1  absorbs 668 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=4 target=[1,0]
 effect 2  reflects 0% of fire damage
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+tooltip   Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to reflect Fire spells and effects][].  Lasts $d.
+aura      Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 https://www.wowhead.com/forever/spell=10223
 =======
@@ -836,6 +937,8 @@ effect 1  absorbs 913 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=4 target=[1,0]
 effect 2  reflects 0% of fire damage
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[1,0]
+tooltip   Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to reflect Fire spells and effects][].  Lasts $d.
+aura      Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 https://www.wowhead.com/forever/spell=10225
 =======
@@ -849,6 +952,8 @@ cost      95 mana
 
 effect 1  absorbs 701 fire damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=701.6369 misc=4 target=[1,0]
+tooltip   Surrounds the caster with a shield that lasts $d. and can absorb a fixed amount of Fire damage.
+aura      Shielded against Fire damage.
 
 https://www.wowhead.com/forever/spell=15041
 =======
@@ -865,6 +970,8 @@ effect 1  absorbs 330 fire damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=330 misc=4 target=[21,0]
 effect 2  reflects 0% of fire damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+tooltip   Absorbs $s1 Fire damage.  Lasts $d.
+aura      Absorbs Fire damage.
 
 https://www.wowhead.com/forever/spell=412214
 =======
@@ -881,6 +988,8 @@ effect 1  absorbs 580 fire damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=580 misc=4 target=[21,0]
 effect 2  reflects 0% of fire damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+tooltip   Absorbs $s1 Fire damage.  Lasts $d.
+aura      Absorbs Fire damage.
 
 https://www.wowhead.com/forever/spell=412218
 =======
@@ -897,6 +1006,8 @@ effect 1  absorbs 940 fire damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=940 misc=4 target=[21,0]
 effect 2  reflects 0% of fire damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+tooltip   Absorbs $s1 Fire damage.  Lasts $d.
+aura      Absorbs Fire damage.
 
 https://www.wowhead.com/forever/spell=412230
 =======
@@ -913,6 +1024,8 @@ effect 1  absorbs 1350 fire damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1350 misc=4 target=[21,0]
 effect 2  reflects 0% of fire damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+tooltip   Absorbs $s1 Fire damage.  Lasts $d.
+aura      Absorbs Fire damage.
 
 https://www.wowhead.com/forever/spell=412231
 =======
@@ -929,6 +1042,8 @@ effect 1  absorbs 1840 fire damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1840 misc=4 target=[21,0]
 effect 2  reflects 0% of fire damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=4 target=[21,0]
+tooltip   Absorbs $s1 Fire damage.  Lasts $d.
+aura      Absorbs Fire damage.
 
 https://www.wowhead.com/forever/spell=412232
 =======
@@ -947,6 +1062,8 @@ effect 1  14–23 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=18 ppl=0.2 variance=0.44444445 sp=0.429 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (2 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=133
 =======
@@ -965,6 +1082,8 @@ effect 1  27–40 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=0.3 variance=0.36842105 sp=0.571 target=[6,0]
 effect 2  1 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=143
 =======
@@ -983,6 +1102,8 @@ effect 1  45–62 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=51 ppl=0.6 variance=0.31746033 sp=0.714 target=[6,0]
 effect 2  2 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=145
 =======
@@ -1001,6 +1122,8 @@ effect 1  68–93 fire damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=77 ppl=0.9 variance=0.32 sp=0.857 target=[6,0]
 effect 2  3 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=3140
 =======
@@ -1019,6 +1142,8 @@ effect 1  107–144 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=120 ppl=1.4 variance=0.29447854 sp=1 target=[6,0]
 effect 2  4 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8400
 =======
@@ -1037,6 +1162,8 @@ effect 1  138–183 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=153 ppl=1.8 variance=0.28448275 sp=1 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8401
 =======
@@ -1055,6 +1182,8 @@ effect 1  171–222 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=187 ppl=2.3 variance=0.27118644 sp=1 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8402
 =======
@@ -1073,6 +1202,8 @@ effect 1  212–275 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=235 ppl=2.2 variance=0.26229507 sp=1 target=[6,0]
 effect 2  8 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10148
 =======
@@ -1091,6 +1222,8 @@ effect 1  271–348 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=300 ppl=2.4 variance=0.25389755 sp=1 target=[6,0]
 effect 2  10 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10149
 =======
@@ -1109,6 +1242,8 @@ effect 1  338–431 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=374 ppl=2.7 variance=0.24723247 sp=1 target=[6,0]
 effect 2  12 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10150
 =======
@@ -1127,6 +1262,8 @@ effect 1  397–505 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=451 ppl=3 variance=0.2413793 sp=1 target=[6,0]
 effect 2  14 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=10151
 =======
@@ -1141,6 +1278,8 @@ effect 1  171 fire damage to the enemy
           E_SCHOOL_DAMAGE base=171 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=15662
 =======
@@ -1158,6 +1297,8 @@ effect 1  135–165 fire damage to the enemy
           E_SCHOOL_DAMAGE base=150 variance=0.2 target=[6,0]
 effect 2  4 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=16412
 =======
@@ -1171,6 +1312,8 @@ effect 1  77 fire damage to the enemy
           E_SCHOOL_DAMAGE base=77 target=[6,0]
 effect 2  2 fire damage every 1 s to the enemy (7 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=1000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=16413
 =======
@@ -1187,6 +1330,8 @@ effect 1  270–330 fire damage to the enemy
           E_SCHOOL_DAMAGE base=300 variance=0.2 target=[6,0]
 effect 2  25 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=25 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=16415
 =======
@@ -1203,6 +1348,8 @@ effect 1  200–256 fire damage to the enemy
           E_SCHOOL_DAMAGE base=228 variance=0.24561404 target=[6,0]
 effect 2  12 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18082
 =======
@@ -1220,6 +1367,8 @@ effect 1  180–220 fire damage to the enemy
           E_SCHOOL_DAMAGE base=200 variance=0.2 target=[6,0]
 effect 2  13 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18105
 =======
@@ -1237,6 +1386,8 @@ effect 1  270–330 fire damage to the enemy
           E_SCHOOL_DAMAGE base=300 variance=0.2 target=[6,0]
 effect 2  9 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18108
 =======
@@ -1253,6 +1404,8 @@ effect 1  86–110 fire damage to the enemy
           E_SCHOOL_DAMAGE base=98 variance=0.24489796 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18199
 =======
@@ -1269,6 +1422,8 @@ effect 1  231–293 fire damage to the enemy
           E_SCHOOL_DAMAGE base=262 variance=0.23863636 target=[6,0]
 effect 2  20 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=20 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18796
 =======
@@ -1284,6 +1439,8 @@ effect 1  83–101 fire damage to the enemy
           E_SCHOOL_DAMAGE base=92 variance=0.19565217 target=[6,0]
 effect 2  4 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=21159
 =======
@@ -1300,6 +1457,8 @@ effect 1  273–333 fire damage to the enemy
           E_SCHOOL_DAMAGE base=303 variance=0.1980198 target=[6,0]
 effect 2  15 fire damage every 2 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=21162
 =======
@@ -1318,6 +1477,8 @@ effect 1  425–541 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=483 ppl=3 variance=0.24188791 sp=1 target=[6,0]
 effect 2  15 fire damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=25306
 =======
@@ -1332,6 +1493,8 @@ effect 1  80 fire damage to the enemy
           E_SCHOOL_DAMAGE base=80 target=[6,0]
 effect 2  6 fire damage every 2 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1299850
 =======
@@ -1342,6 +1505,7 @@ labels    17
 
 effect 1  SPELLMOD_RANGE +6 on family 3 mask 0x400017,0x21000,0x40100,0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=5 family=3 mask=0x400017,0x21000,0x40100,0x4000 target=[1,0]
+tooltip   Increases the range of your Fire spells by $s1 yards.
 
 https://www.wowhead.com/forever/spell=11100
 =======
@@ -1362,6 +1526,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41266 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279983m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $1279983m1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=2120
 =======
@@ -1382,6 +1548,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41267 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279985m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $279985m1 Fire damage every $t3.
 
 https://www.wowhead.com/forever/spell=2121
 =======
@@ -1402,6 +1570,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41268 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279987m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $1279987m1 Fire damage every $t3.
 
 https://www.wowhead.com/forever/spell=8422
 =======
@@ -1422,6 +1592,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41269 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279988m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $1279988s1 Fire damage every $t3.
 
 https://www.wowhead.com/forever/spell=8423
 =======
@@ -1442,6 +1614,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41270 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279989m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $1279989m1 Fire damage every $t3.
 
 https://www.wowhead.com/forever/spell=10215
 =======
@@ -1462,6 +1636,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41271 radius=5 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional ${$1279990m1*4} Fire damage over $d. Only one Flamestrike can be active per Mage at a time.
+aura      $1279990s1 Fire damage every $t3.
 
 https://www.wowhead.com/forever/spell=10216
 =======
@@ -1474,6 +1650,7 @@ labels    17
 
 effect 1  11 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=11 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279983
 =======
@@ -1486,6 +1663,7 @@ labels    17
 
 effect 1  21 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=21 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279985
 =======
@@ -1498,6 +1676,7 @@ labels    17
 
 effect 1  33 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=33 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279987
 =======
@@ -1510,6 +1689,7 @@ labels    17
 
 effect 1  47 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=47 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279988
 =======
@@ -1522,6 +1702,7 @@ labels    17
 
 effect 1  64 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=64 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279989
 =======
@@ -1534,6 +1715,7 @@ labels    17
 
 effect 1  83 fire damage to target 87 (+0.032 spell power)
           E_SCHOOL_DAMAGE base=83 sp=0.032 radius=5 target=[87,16]
+tooltip   $s1 Fire damage dealt to all enemies in target area.
 
 https://www.wowhead.com/forever/spell=1279990
 =======
@@ -1554,6 +1736,8 @@ effect 2  102–119 fire+frost damage to the enemy (at level 60, +0.814 spell po
           E_SCHOOL_DAMAGE base=100 ppl=1.3 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  9 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
+tooltip   Launches a bolt of frostfire at the enemy, causing $s2 Frostfire damage, slowing movement speed by $s1% and causing an additional $o3 Frostfire damage over $d. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
+aura      Movement slowed by $w1%. $w3 Frostfire damage every $t3 sec.
 
 https://www.wowhead.com/forever/spell=401502
 =======
@@ -1564,6 +1748,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401502 misc=415449 target=[1,0]
+tooltip   Gain the Frostfire Bolt ability:
+
+          $@spellicon401502
+          $@spelldesc401502
 
 https://www.wowhead.com/forever/spell=401735
 =======
@@ -1584,6 +1772,8 @@ effect 2  181–210 fire+frost damage to the enemy (at level 60, +0.814 spell po
           E_SCHOOL_DAMAGE base=182 ppl=1.7 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  13 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 period=3000ms target=[6,0]
+tooltip   Launches a bolt of frostfire at the enemy, causing $s2 Frostfire damage, slowing movement speed by $s1% and causing an additional $o3 Frostfire damage over $d. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
+aura      Movement slowed by $w1%. $w3 Frostfire damage every $t3 sec.
 
 https://www.wowhead.com/forever/spell=1237312
 =======
@@ -1604,6 +1794,8 @@ effect 2  270–314 fire+frost damage to the enemy (at level 60, +0.814 spell po
           E_SCHOOL_DAMAGE base=292 ppl=2.1 variance=0.1534091 sp=0.814 target=[6,0]
 effect 3  19 fire+frost damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 period=3000ms target=[6,0]
+tooltip   Launches a bolt of frostfire at the enemy, causing $s2 Frostfire damage, slowing movement speed by $s1% and causing an additional $o3 Frostfire damage over $d. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
+aura      Movement slowed by $w1%. $w3 Frostfire damage every $t3 sec.
 
 https://www.wowhead.com/forever/spell=1237313
 =======
@@ -1616,6 +1808,7 @@ refs      400625 Heating Up
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within $400625d by $400625s1%, stacking up to $400625s2 times. Fire Blast grants an additional stack every time it deals damage.
 
 https://www.wowhead.com/forever/spell=400624
 =======
@@ -1632,6 +1825,8 @@ effect 1  SPELLMOD_CASTING_TIME -25% on family 3 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=10 misc2=161 family=3 mask=0x400000 target=[1,0]
 effect 2  a dummy aura holding -3
           E_APPLY_AURA A_DUMMY base=-3 target=[0,0]
+tooltip   Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within $400625d by $400625s1%, stacking up to $400625s2 times.
+aura      Your next Pyroblast spell has its cast time reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=400625
 =======
@@ -1644,6 +1839,7 @@ refs      412538 Ignite
 
 effect 1  a dummy aura holding 40
           E_APPLY_AURA A_DUMMY base=40 target=[1,0]
+tooltip   Your critical strikes from Fire damage spells cause the target to burn for an additional $m1% of your spell's damage over $412538d.
 
 https://www.wowhead.com/forever/spell=11119
 =======
@@ -1656,6 +1852,8 @@ labels    17
 
 effect 1  a dummy aura every 2 s to the enemy (2 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[6,0]
+tooltip   Deals Fire damage every $t1 sec.
+aura      Deals ${$w1/2} Fire damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=412538
 =======
@@ -1669,6 +1867,8 @@ labels    17
 
 effect 1  0 fire damage to the target
           E_SCHOOL_DAMAGE base=0 target=[25,0]
+tooltip   Deals Fire damage every $t sec.
+aura      Deals fire damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=412545
 =======
@@ -1681,6 +1881,7 @@ refs      12355 Impact
 
 effect 1  casts 12355 Impact on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=12355 target=[1,0]
+tooltip   Gives your Fire spells a $m1% chance to stun the target for $12355d.
 
 https://www.wowhead.com/forever/spell=11103
 =======
@@ -1694,6 +1895,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  casts 12355 Impact on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=12355 target=[1,0]
+aura      The Mage's next Fire Blast hit will also Stun the target for $12355d.
 
 https://www.wowhead.com/forever/spell=1239832
 =======
@@ -1706,6 +1908,7 @@ effect 1  SPELLMOD_COOLDOWN -2 s on family 3 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=3 mask=0x2 target=[1,0]
 effect 2  SPELLMOD_RANGE +15 on family 3 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=5 family=3 mask=0x2 target=[1,0]
+tooltip   Reduces the cooldown of your Fire Blast spell by ${$s1/-1000} sec and increases its range by $s2 yards.
 
 https://www.wowhead.com/forever/spell=11078
 =======
@@ -1716,6 +1919,7 @@ labels    17
 
 effect 1  SPELLMOD_EFFECT2 +20 on family 3 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=12 family=3 mask=0x8 target=[1,0]
+tooltip   Causes your Fire Ward to have a $s1% chance to reflect Fire spells while active.
 
 https://www.wowhead.com/forever/spell=11094
 =======
@@ -1726,6 +1930,7 @@ labels    17
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +15% on family 3 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=7 family=3 mask=0x4 target=[1,0]
+tooltip   Increases the critical strike chance of your Flamestrike spell by $s1%.
 
 https://www.wowhead.com/forever/spell=11108
 =======
@@ -1736,6 +1941,7 @@ labels    17
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 3 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=3 mask=0x4 target=[1,0]
+tooltip   Reduces the casting time of your Flamestrike spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24491
 =======
@@ -1747,6 +1953,7 @@ refs      22959 Fire Vulnerability
 
 effect 1  casts 22959 Fire Vulnerability when the target is hit from family 3 mask 0x10 to the enemy
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=22959 family=3 mask=0x10 target=[6,0]
+tooltip   Your Scorch spell has a $m1% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by $22959s1% and lasts $22959d, stacking up to $22959u times.
 
 https://www.wowhead.com/forever/spell=11095
 =======
@@ -1757,6 +1964,7 @@ labels    17
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +6% on family 3 mask 0x20020012
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=7 family=3 mask=0x20020012 target=[1,0]
+tooltip   Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18459
 =======
@@ -1771,6 +1979,15 @@ refs      400614 Living Bomb
 
 effect 1  85 fire damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=85 sp=0.2 period=3000ms target=[6,0]
+tooltip   The target becomes a Living Bomb, taking ${$<power>*$400613m1/100*4} Fire damage over $d.  After $d or when the spell is dispelled, the target explodes dealing ${$<power>*$400614m1/100} Fire damage to all enemies within $400614a1 yards.
+
+          Living Bomb benefits from all talents and effects that trigger from or modify Scorch.
+aura      Causes $w1 Fire damage every $t1 sec.  After $d or when the spell is dispelled, the target explodes causing ${$<power>*$400614m1/100} Fire damage to all enemies within $400614a1 yards.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=400613
 =======
@@ -1785,6 +2002,12 @@ effect 1  171 fire damage to every enemy in the target area (+0.4 spell power)
           E_SCHOOL_DAMAGE base=171 sp=0.4 radius=10 target=[53,16]
 effect 2  a dummy effect holding 171 to every enemy in the target area
           E_DUMMY base=171 sp=0.4 radius=10 target=[53,16]
+tooltip   The target becomes a Living Bomb, taking ${$<power>*$400613m1/100*4} Fire damage over $d.  After $d or when the spell is dispelled, the target explodes dealing ${$<power>*$400614m1/100} Fire damage to all enemies within $400614a1 yards.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=400614
 =======
@@ -1794,6 +2017,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400613 misc=399967 target=[1,0]
+tooltip   Gain the Living Bomb ability:
+
+          $@spellicon400613
+          $@spelldesc400613
 
 https://www.wowhead.com/forever/spell=401731
 =======
@@ -1811,6 +2038,12 @@ effect 1  a dummy aura holding 40 every 0.4 s to the enemy (25 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=40 period=400ms target=[6,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Summons a spellfire flame that moves toward the target, leaving a trail of spellfire. This trail deals ${$<power>*$401558m1/100} Spellfire damage every second to nearby enemies. Lasts $d.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=401556
 =======
@@ -1822,6 +2055,13 @@ attrs     cannot crit
 
 effect 1  100 fire+arcane damage every 1 s to the target (2 ticks, +0.143 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 sp=0.143 period=1000ms target=[25,0]
+tooltip   Deals ${$<power>*$m1/100} Fire damage every $t1 sec.
+aura      Deals $w1 Fire damage every $t1 sec.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=401558
 =======
@@ -1831,6 +2071,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401556 misc=399966 target=[1,0]
+tooltip   Gain the Living Flame ability:
+
+          $@spellicon401556
+          $@spelldesc401556
 
 https://www.wowhead.com/forever/spell=401744
 =======
@@ -1843,6 +2087,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Your Fire and Frost critical strikes will refund $s1% of their base mana cost.
 
 https://www.wowhead.com/forever/spell=29074
 =======
@@ -1861,6 +2106,8 @@ effect 1  101–131 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=110 ppl=1.5 variance=0.2804878 sp=1 target=[6,0]
 effect 2  11 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=11 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=11366
 =======
@@ -1879,6 +2126,8 @@ effect 1  126–163 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=134 ppl=1.7 variance=0.26923078 sp=1 target=[6,0]
 effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12505
 =======
@@ -1897,6 +2146,8 @@ effect 1  179–228 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=191 ppl=2.1 variance=0.24742268 sp=1 target=[6,0]
 effect 2  19 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12522
 =======
@@ -1915,6 +2166,8 @@ effect 1  230–289 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=245 ppl=2.4 variance=0.24064171 sp=1 target=[6,0]
 effect 2  25 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12523
 =======
@@ -1933,6 +2186,8 @@ effect 1  291–364 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=311 ppl=2.7 variance=0.23427331 sp=1 target=[6,0]
 effect 2  31 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=31 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12524
 =======
@@ -1951,6 +2206,8 @@ effect 1  368–456 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=394 ppl=3 variance=0.22574955 sp=1 target=[6,0]
 effect 2  38 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=38 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12525
 =======
@@ -1969,6 +2226,8 @@ effect 1  448–555 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=481 ppl=3.4 variance=0.22222222 sp=1 target=[6,0]
 effect 2  46 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=46 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=12526
 =======
@@ -1984,6 +2243,8 @@ effect 1  936–1076 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
 effect 2  87.70461 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=17273
 =======
@@ -1999,6 +2260,8 @@ effect 1  3725–4321 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=4022.718 variance=0.14825581 sp=0.75 target=[6,0]
 effect 2  350.81845 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=17274
 =======
@@ -2017,6 +2280,8 @@ effect 1  520–646 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=583 ppl=4.6 variance=0.21668743 sp=1 target=[6,0]
 effect 2  53 fire damage every 3 s to the enemy (4 ticks, +0.15 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=53 sp=0.15 period=3000ms target=[6,0]
+tooltip   Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
+aura      $s2 Fire damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=18809
 =======
@@ -2030,6 +2295,8 @@ effect 1  1388–1612 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1500 variance=0.14933333 sp=0.75 target=[6,0]
 effect 2  200 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts $s1 Fire damage to an enemy and scorches the target for an additional $s2 damage every $t2 sec. for $d.
+aura      $s2 Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=20228
 =======
@@ -2044,6 +2311,8 @@ effect 1  936–1076 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1005.6795 variance=0.13953489 sp=0.75 target=[6,0]
 effect 2  87.70461 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=87.70461 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=434443
 =======
@@ -2057,6 +2326,8 @@ effect 1  1388–1612 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=1500 variance=0.14933333 sp=0.75 target=[6,0]
 effect 2  200 fire damage every 2 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=2000ms target=[6,0]
+tooltip   Inflicts $s1 Fire damage to an enemy and scorches the target for an additional $s2 damage every $t2 sec. for $d.
+aura      $s2 Fire damage inflicted every $t2  sec.
 
 https://www.wowhead.com/forever/spell=460858
 =======
@@ -2068,6 +2339,7 @@ range     40 yd
 
 effect 1  200 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=200 sp=0.05 period=3000ms target=[6,0]
+aura      $20476s1  Fire damage inflicted to nearby allies after $t1 sec. Afflicted allies will also become Living Bombs.
 
 https://www.wowhead.com/forever/spell=460860
 =======
@@ -2083,6 +2355,8 @@ effect 1  4625–5375 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=5000 variance=0.15 sp=0.75 target=[6,0]
 effect 2  500 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=500 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1236173
 =======
@@ -2097,6 +2371,8 @@ effect 1  4625–5375 fire damage to the enemy (+0.75 spell power)
           E_SCHOOL_DAMAGE base=5000 variance=0.15 sp=0.75 target=[6,0]
 effect 2  500 fire damage every 3 s to the enemy (4 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=500 sp=0.05 period=3000ms target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, then additional damage every $t2 sec. for $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1236291
 =======
@@ -2111,6 +2387,7 @@ labels    17
 
 effect 1  38–47 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=39 ppl=0.8 variance=0.20338982 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=2948
 =======
@@ -2125,6 +2402,7 @@ labels    17
 
 effect 1  54–64 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=55 ppl=1 variance=0.1882353 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=8444
 =======
@@ -2139,6 +2417,7 @@ labels    17
 
 effect 1  67–79 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=69 ppl=1 variance=0.18181819 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=8445
 =======
@@ -2153,6 +2432,7 @@ labels    17
 
 effect 1  89–106 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=93 ppl=1.2 variance=0.1780822 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=8446
 =======
@@ -2167,6 +2447,7 @@ labels    17
 
 effect 1  111–132 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=116 ppl=1.4 variance=0.16949153 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10205
 =======
@@ -2181,6 +2462,7 @@ labels    17
 
 effect 1  143–169 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=150 ppl=1.5 variance=0.1780822 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10206
 =======
@@ -2195,6 +2477,7 @@ labels    17
 
 effect 1  166–197 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=178 ppl=1.7 variance=0.16535433 sp=0.429 target=[6,0]
+tooltip   Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=10207
 =======
@@ -2208,6 +2491,7 @@ range     30 yd
 
 effect 1  269–363 fire damage to the enemy
           E_SCHOOL_DAMAGE base=315.7366 variance=0.2962963 sp=1 target=[6,0]
+tooltip   Scorches an enemy for Fire damage.
 
 https://www.wowhead.com/forever/spell=13878
 =======
@@ -2221,6 +2505,7 @@ range     30 yd
 
 effect 1  538–725 fire damage to the enemy
           E_SCHOOL_DAMAGE base=631.4732 variance=0.2962963 sp=1 target=[6,0]
+tooltip   Scorches an enemy for Fire damage.
 
 https://www.wowhead.com/forever/spell=15241
 =======
@@ -2234,5 +2519,6 @@ range     30 yd
 
 effect 1  672–906 fire damage to the enemy
           E_SCHOOL_DAMAGE base=789.3415 variance=0.2962963 sp=1 target=[6,0]
+tooltip   Scorches an enemy for Fire damage.
 
 https://www.wowhead.com/forever/spell=17195

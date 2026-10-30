@@ -10,6 +10,8 @@ labels    18
 
 effect 1  +40 spirit to the raid around the caster
           E_APPLY_AURA A_MOD_STAT base=40 misc=4 radius=100 target=[56,0]
+tooltip   Power infuses all party and raid members, increasing their Spirit by $s1 for $d.
+aura      Increases Spirit by $s1.
 
 https://www.wowhead.com/forever/spell=1286257
 =======
@@ -19,6 +21,7 @@ attrs     passive
 
 effect 1  +10 spirit
           E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+tooltip   Increased Spirit +$s1
 
 https://www.wowhead.com/forever/spell=1300954
 =======
@@ -28,6 +31,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -60 s on family 6 mask 0x0,0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=6 mask=0x0,0x2000000 target=[1,0]
+tooltip   Reduces the cooldown of your Fear Ward spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301041
 =======
@@ -39,6 +43,7 @@ effect 1  +26 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=26 misc=126 target=[1,0]
 effect 2  +9 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=9 misc=126 target=[1,0]
+tooltip   Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.
 
 https://www.wowhead.com/forever/spell=1301085
 =======
@@ -48,6 +53,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 6 mask 0x0,0x800020
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=6 mask=0x0,0x800020 target=[1,0]
+tooltip   Reduces the cooldown of your Penance and Prayer of Mending spells by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301703
 =======
@@ -59,6 +65,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=1300955
 =======
@@ -68,6 +75,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +10 s on family 6 mask 0x0,0x4000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 misc=1 family=6 mask=0x0,0x4000000 target=[1,0]
+tooltip   Increases the duration of your Shackle Undead spell by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1301045
 =======
@@ -77,6 +85,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=32 target=[1,0]
+tooltip   Increases damage done by your spells and effects by up to $s1 when fighting Undead.
 
 https://www.wowhead.com/forever/spell=1301087
 =======
@@ -86,6 +95,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -60 s on family 6 mask 0x0,0x0,0x0,0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=6 mask=0x0,0x0,0x0,0x10 target=[1,0]
+tooltip   Reduces the cooldown of your Devouring Plague spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301706
 =======
@@ -98,6 +108,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 6 mask 0x41e00,0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=6 mask=0x41e00,0x4 target=[1,0]
+aura      Cast time of your next Lesser Heal, Heal, Greater Heal, Flash Heal, Binding Heal, or Prayer of Healing spell reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1226500
 =======
@@ -108,6 +119,8 @@ gcd       1.5 s
 
 effect 1  +10 spirit
           E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+tooltip   Increases Spirit by $s1 for $d.
+aura      Spirit increased by $m1.
 
 https://www.wowhead.com/forever/spell=23697
 =======
@@ -129,6 +142,8 @@ stance    Shadowform
 
 effect 1  absorbs 500 every school damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=500 misc=127 target=[21,0]
+tooltip   Absorbs $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs damage.
 
 https://www.wowhead.com/forever/spell=28810
 =======
@@ -145,6 +160,9 @@ effect 1  11693.948 shadow damage every 1 s to the target (3 ticks, +0.1 spell p
           E_APPLY_AURA A_PERIODIC_DAMAGE base=11693.948 sp=0.1 period=1000ms target=[25,0]
 effect 2  -50% movement speed to the target
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[25,0]
+tooltip   Inflicts Shadow damage to an enemy and reduces its movement speed for $d.
+aura      Shadow damage inflicted over $d.
+          Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=27640
 =======
@@ -155,6 +173,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 6 mask 0x9541e80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=6 mask=0x9541e80 target=[1,0]
+tooltip   Increases the critical effect chance of your Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=23236
 =======
@@ -166,6 +185,7 @@ stack     up to 5
 
 effect 1  +10% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=126 target=[1,0]
+aura      Spell damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=402368
 =======
@@ -177,6 +197,8 @@ stance    Shadowform
 
 effect 1  +10 strength
           E_APPLY_AURA A_MOD_STAT base=10 target=[1,0]
+tooltip   Increases Strength by $s1 for $d.
+aura      Strength increased by $m1.
 
 https://www.wowhead.com/forever/spell=18125
 =======
@@ -188,6 +210,8 @@ stance    Shadowform
 
 effect 1  +10 spirit
           E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+tooltip   Increases Spirit by $s1 for $d.
+aura      Spirit increased by $m1.
 
 https://www.wowhead.com/forever/spell=18141
 =======
@@ -206,6 +230,8 @@ effect 2  +10% spell crit to the friendly target
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=10 sp=1 target=[21,0]
 effect 3  +10% movement speed to the friendly target
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[21,0]
+tooltip   While active, target's critical hit chance with spells and attacks increases by 10%.
+aura      While active, target's critical hit chance with spells and attacks increases by 10%.
 
 https://www.wowhead.com/forever/spell=23964
 =======
@@ -217,6 +243,7 @@ attrs     channeled
 
 effect 1  a dummy aura to every enemy in the area
           E_APPLY_AURA A_DUMMY base=0 sp=1 radius=100 target=[22,7]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22203
 =======
@@ -239,6 +266,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 6 mask 0x19543e90,0x18006,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 misc=7 family=6 mask=0x19543e90,0x18006,0x10000 target=[1,0]
+tooltip   Read a prophecy from the tome, granting $s1% increased critical strike chance for your next non-periodic spell or attack.
+aura      $s1% increased critical strike chance for your next spell or attack.
 
 https://www.wowhead.com/forever/spell=469191
 =======
@@ -249,6 +278,7 @@ range     100 yd
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=400 variance=0.2 sp=1 period=1000ms radius=10 target=[18,28]
+aura      Deals $s1 nature damage every $t1 second.
 
 https://www.wowhead.com/forever/spell=22802
 =======
@@ -261,6 +291,7 @@ effect 1  dispels 1 dispel type -1 effect to every ally around the caster
           E_DISPEL base=1 sp=1 misc=-1 radius=30 target=[22,30]
 effect 2  2188–2812 healing to every ally around the caster
           E_HEAL base=2500 variance=0.2496 sp=1 radius=30 target=[22,30]
+tooltip   Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.
 
 https://www.wowhead.com/forever/spell=24022
 =======
@@ -271,6 +302,7 @@ effect 1  SPELLMOD_RANGE +10 on family 6 mask 0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=6 mask=0x800000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +50 on family 6 mask 0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=8 misc2=1 family=6 mask=0x800000 target=[1,0]
+tooltip   Mind Flay's, Fire Blast's, and Drain Life's ranges are increased by $s1 yards, but Mind Flay no longer slows enemies.
 
 https://www.wowhead.com/forever/spell=1231657
 =======
@@ -282,6 +314,7 @@ attrs     channeled
 
 effect 1  a dummy aura to every enemy in the area
           E_APPLY_AURA A_DUMMY base=0 sp=1 radius=100 target=[22,7]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=28309
 =======
@@ -292,6 +325,7 @@ labels    18
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3656 radius=100 family=6 mask=0x41e00 target=[22,15]
+aura      Direct healing spells cause the target to take damage over time.
 
 https://www.wowhead.com/forever/spell=23401
 =======
@@ -304,6 +338,7 @@ labels    18
 
 effect 1  175–225 shadow damage every 1 s to the target (30 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=200 variance=0.25 sp=1 period=1000ms target=[25,0]
+aura      Deals $s1 damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=23402
 =======
@@ -314,6 +349,7 @@ labels    18
 
 effect 1  -100% healing taken
           E_APPLY_AURA A_MOD_HEALING_PCT base=-100 sp=1 misc=127 target=[1,1]
+aura      Direct healing spells cause the target to take damage over time.
 
 https://www.wowhead.com/forever/spell=1310993
 =======
@@ -326,6 +362,7 @@ labels    18
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4327 family=6 mask=0x9441e45,0x1 target=[1,0]
+aura      Can't cast healing or curing spells.
 
 https://www.wowhead.com/forever/spell=29184
 =======
@@ -339,6 +376,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, 
 
 effect 1  casts 29184 Corrupted Mind on its trigger to the target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=29184 target=[25,0]
+aura      Can only cast one healing or curing spell every 60 seconds.
 
 https://www.wowhead.com/forever/spell=29185
 =======
@@ -350,6 +388,7 @@ attrs     channeled
 
 effect 1  a dummy aura to every enemy in the area
           E_APPLY_AURA A_DUMMY base=0 sp=1 radius=100 target=[22,7]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=23642
 =======
@@ -361,6 +400,8 @@ range     40 yd
 
 effect 1  134 healing every 3 s to the friendly target (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=134 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=15229
 =======
@@ -376,6 +417,8 @@ effect 1  -75 shadow+arcane resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-75 misc=96 target=[6,0]
 effect 2  +10% shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=10 misc=96 target=[6,0]
+tooltip   Curses the target for $d, reducing Shadow and Arcane resistances by $s1 and increasing Shadow and Arcane damage taken by $s2%.  Only one Curse per Warlock can be active on any one target.
+aura      Shadow and Arcane resistances reduced by $s1.  Shadow and Arcane damage taken increased by $s2%.
 
 https://www.wowhead.com/forever/spell=402791
 =======
@@ -391,6 +434,8 @@ effect 1  -60% cast speed to the enemy
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_LANGUAGE base=0 misc=8 target=[6,0]
+tooltip   Forces the target to speak in Demonic, slowing the casting time of all spells by $s1%.  Only one Curse per Warlock can be active on any one target.  Lasts $d.
+aura      Speaking Demonic increasing casting time by $s1%.
 
 https://www.wowhead.com/forever/spell=402794
 =======
@@ -406,6 +451,8 @@ effect 1  -75 fire+frost resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-75 misc=20 target=[6,0]
 effect 2  +10% fire+frost damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=10 misc=20 target=[6,0]
+tooltip   Curses the target for $d, reducing Fire and Frost resistances by $s1 and increasing Fire and Frost damage taken by $s2%.  Only one Curse per Warlock can be active on any one target.
+aura      Reduces Fire and Frost resistances by $s1.  Increases Fire and Frost damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=402792
 =======
@@ -417,6 +464,7 @@ effect 1  SPELLMOD_DOT +2% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +2% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222994
 =======
@@ -428,6 +476,7 @@ effect 1  SPELLMOD_DOT +1% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 misc=22 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +1% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 sp=1 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222995
 =======
@@ -439,6 +488,7 @@ effect 1  SPELLMOD_DOT +3% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +3% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222996
 =======
@@ -450,6 +500,7 @@ effect 1  SPELLMOD_DOT +4% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 misc=22 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +4% on family 6 mask 0xa08000,0x100400,0x0,0x10000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 sp=1 family=6 mask=0xa08000,0x100400,0x0,0x10000010 target=[1,0]
+tooltip   Increases the damage dealt by your damage over time spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1222997
 =======
@@ -462,6 +513,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 6 mask 0x143e90,0x4000400,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=6 mask=0x143e90,0x4000400,0x10000 target=[1,0]
+aura      Your next Priest spell with a casting time less than 10 sec will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=467543
 =======
@@ -474,6 +526,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_PERIODIC_CRIT base=100 sp=1 misc=12 family=6 mask=0xb08000,0x80400,0x0,0x10000410 target=[1,0]
 effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 6 mask 0x2f0a090,0x88402,0x10000,0x10000410
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=6 mask=0x2f0a090,0x88402,0x10000,0x10000410 target=[1,0]
+tooltip   Periodic damage from your spells can now be critical strikes and all your damaging spell critical strikes deal ${$m2+100}% damage.
 
 https://www.wowhead.com/forever/spell=431670
 =======
@@ -484,6 +537,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431670 misc=417346 target=[1,0]
+tooltip   Gain the Despair ability:
+
+          $@spellicon431670
+          $@spelldesc431670
 
 https://www.wowhead.com/forever/spell=431675
 =======
@@ -494,6 +551,7 @@ range     100 yd
 
 effect 1  a dummy aura holding 1 every 2 s to the friendly target (2 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=1 period=2000ms target=[21,0]
+aura      Healing ${$w1/2} damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1226502
 =======
@@ -503,6 +561,7 @@ duration  permanent
 
 effect 1  summons creature 13022 to target 32
           E_SUMMON base=4 sp=1 misc=13022 misc2=64 radius=8 target=[32,0]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22803
 =======
@@ -514,6 +573,7 @@ range     100 yd
 
 effect 1  dispels 5 dispel type -1 effect to the friendly target
           E_DISPEL base=5 misc=-1 target=[21,0]
+tooltip   Dispels magic on an ally, removing $s1 harmful $lspell:spells;.
 
 https://www.wowhead.com/forever/spell=25808
 =======
@@ -525,6 +585,8 @@ stance    Shadowform
 
 effect 1  absorbs 488 every school damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=488 misc=127 target=[1,0]
+tooltip   Absorbs $s1 damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=27779
 =======
@@ -545,6 +607,7 @@ effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 effect 3  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+tooltip   Controls Emberstrife's mind when his will falters.
 
 https://www.wowhead.com/forever/spell=16053
 =======
@@ -555,6 +618,7 @@ labels    24
 
 effect 1  -4% fire+nature+frost damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-4 misc=28 target=[1,0]
+tooltip   Reduces damage taken from Fire, Frost, and Nature effects by $m1%.
 
 https://www.wowhead.com/forever/spell=28996
 =======
@@ -593,6 +657,9 @@ effect 10 replaces an action bar spell with 10929 Renew
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425276 misc=10929 target=[1,0]
 effect 11 replaces an action bar spell with 25315 Renew
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425277 misc=25315 target=[1,0]
+tooltip   Your Renew now heals one extra time immediately when applied, and gains $s1% increased benefit each time it heals from your bonus healing effects.
+
+          In addition, your Renew can now be active on targets affected by another Priest's Renew.
 
 https://www.wowhead.com/forever/spell=425266
 =======
@@ -603,6 +670,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425266 misc=415449 target=[1,0]
+tooltip   Gain the Empowered Renew ability:
+
+          $@spellicon425266
+          $@spelldesc425266
 
 https://www.wowhead.com/forever/spell=425302
 =======
@@ -617,6 +688,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 sp=1 target=[6,0]
 effect 2  225–275 nature damage every 2 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=250 variance=0.2 sp=1 period=2000ms target=[6,0]
+aura      Unable to move.
+          Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22800
 =======
@@ -629,6 +702,7 @@ refs      28804 Epiphany
 
 effect 1  casts 28804 Epiphany on its trigger from family 6 mask 0x8000
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=28804 family=6 mask=0x8000 target=[1,0]
+tooltip   Each spell you cast can trigger an Epiphany, increasing your mana regeneration by $28804s1 for $28804d.
 
 https://www.wowhead.com/forever/spell=28802
 =======
@@ -640,6 +714,8 @@ range     50000 yd
 
 effect 1  +24 mana per 5 s
           E_APPLY_AURA A_MOD_POWER_REGEN base=24 amplitude=1 target=[1,0]
+tooltip   Increases the friendly target's mana regeneration by $s1 per 5 sec. for $d.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=28804
 =======
@@ -659,6 +735,8 @@ effect 3  SPELLMOD_DOT +10% on family 6 mask 0xa00000,0x18000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 family=6 mask=0xa00000,0x18000 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your non-periodic damaging or healing abilities have their Mana cost reduced by $s1% and deal $s2% more damage or healing for $d.
+aura      Non-periodic damaging or healing abilities cost $w1% less Mana and deal $w2% more damage or healing.
 
 https://www.wowhead.com/forever/spell=1259823
 =======
@@ -671,6 +749,7 @@ stance    Cat
 
 effect 1  immune to shield
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=19 target=[0,0]
+aura      Cannot have Fury of the Frostwolf re-applied.
 
 https://www.wowhead.com/forever/spell=22752
 =======
@@ -680,6 +759,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 6 mask 0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=6 mask=0x800 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Flash Heal.
 
 https://www.wowhead.com/forever/spell=1293542
 =======
@@ -693,6 +773,8 @@ range     50000 yd
 
 effect 1  +20% health to the friendly target
           E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=20 target=[21,0]
+tooltip   Health increased by $s0%.
+aura      Health increased by $s0%.
 
 https://www.wowhead.com/forever/spell=22751
 =======
@@ -708,6 +790,8 @@ effect 1  +10% every school damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=127 target=[21,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCALE base=20 target=[21,0]
+tooltip   While active, target's size increases, damage done increases by 10%.
+aura      While active, target's size increases, damage done increases by 10%.
 
 https://www.wowhead.com/forever/spell=28418
 =======
@@ -723,6 +807,8 @@ effect 1  +20% every school damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=127 target=[21,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCALE base=30 target=[21,0]
+tooltip   While active, target's size increases, damage done increases by 20%.
+aura      While active, target's size increases, damage done increases by 20%.
 
 https://www.wowhead.com/forever/spell=28419
 =======
@@ -738,6 +824,8 @@ effect 1  +30% every school damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=30 misc=127 target=[21,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCALE base=40 target=[21,0]
+tooltip   While active, target's size increases, damage done increases by 30%.
+aura      While active, target's size increases, damage done increases by 30%.
 
 https://www.wowhead.com/forever/spell=28420
 =======
@@ -747,6 +835,7 @@ attrs     passive
 
 effect 1  casts 22009 Greater Heal when the target is hit from family 6 mask 0x1000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=22009 family=6 mask=0x1000 target=[1,0]
+tooltip   Your Greater Heals now have a heal over time component equivalent to a rank 5 Renew.
 
 https://www.wowhead.com/forever/spell=22010
 =======
@@ -757,6 +846,7 @@ stack     up to 1
 
 effect 1  +25% shadow damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=25 sp=1 misc=32 target=[1,0]
+aura      Shadow damage done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=467632
 =======
@@ -769,6 +859,7 @@ stance exclude Shadowform
 
 effect 1  47251–52749 healing to the target
           E_HEAL base=50000 variance=0.10996 sp=1 amplitude=1 target=[25,0]
+tooltip   Heal a target for $s1
 
 https://www.wowhead.com/forever/spell=26565
 =======
@@ -780,6 +871,7 @@ range     40 yd
 
 effect 1  1 healing every 3 s to the friendly target (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=1 period=3000ms target=[21,0]
+aura      Healing $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=467588
 =======
@@ -790,6 +882,7 @@ range     50000 yd
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      The hand will open for a savior
 
 https://www.wowhead.com/forever/spell=420877
 =======
@@ -800,6 +893,7 @@ range     50000 yd
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      The hand has opened for you
 
 https://www.wowhead.com/forever/spell=420878
 =======
@@ -813,6 +907,8 @@ effect 1  +94 stamina to every ally around the caster (at level 60)
           E_APPLY_AURA A_MOD_STAT base=70 ppl=0.4 misc=2 radius=100 target=[22,30]
 effect 2  unrecognised shape
           E_HEAL_MAX_HEALTH base=0 sp=1 radius=100 target=[22,30]
+tooltip   Holy power infuses the target increasing their Stamina by $M1 for $d.
+aura      Increases Stamina by $M1.
 
 https://www.wowhead.com/forever/spell=16873
 =======
@@ -864,6 +960,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +7 on family 6 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=7 sp=1 misc=8 family=6 mask=0x8 target=[1,0]
+tooltip   Your Power Word: Fortitude provides +$s1 more Stamina than normal.
 
 https://www.wowhead.com/forever/spell=21093
 =======
@@ -874,6 +971,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 6 mask 0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=6 mask=0x20000 target=[1,0]
+tooltip   Reduces the casting time of your Mind Control spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24483
 =======
@@ -884,6 +982,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME +0 s on family 6 mask 0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=10 family=6 mask=0x200 target=[1,0]
+tooltip   Reduces the casting time of your Prayer of Healing by $s1 sec.
 
 https://www.wowhead.com/forever/spell=21339
 =======
@@ -903,6 +1002,7 @@ labels    18
 
 effect 1  SPELLMOD_RANGE +5 on family 6 mask 0x100080
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=5 family=6 mask=0x100080 target=[1,0]
+tooltip   Increase the range of your Smite and Holy Fire spells by $s1 yds.
 
 https://www.wowhead.com/forever/spell=24482
 =======
@@ -913,6 +1013,7 @@ labels    18
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 6 mask 0x9541ec0
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=7 family=6 mask=0x9541ec0 target=[1,0]
+tooltip   Increases the critical effect chance of your Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=24426
 =======
@@ -923,6 +1024,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 6 mask 0x9541e80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=6 mask=0x9541e80 target=[1,0]
+tooltip   Increases the critical effect chance of your Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=23435
 =======
@@ -933,6 +1035,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +25% on family 6 mask 0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 sp=1 misc=7 family=6 mask=0x200 target=[1,0]
+tooltip   Increases your chance of a critical hit with Prayer of Healing by $s1%.
 
 https://www.wowhead.com/forever/spell=23550
 =======
@@ -943,6 +1046,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +3 s on family 6 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 misc=1 family=6 mask=0x40 target=[1,0]
+tooltip   Increases the duration of your Renew spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=26171
 =======
@@ -953,6 +1057,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +5% on family 6 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=8 family=6 mask=0x8000 target=[1,0]
+tooltip   Increases the damage of your Shadow Word: Pain spell by $s1%.
 
 https://www.wowhead.com/forever/spell=26172
 =======
@@ -962,6 +1067,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 6 mask 0xf0a090,0x100402,0x10000,0x10000410
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=6 mask=0xf0a090,0x100402,0x10000,0x10000410 target=[1,0]
+tooltip   The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1232095
 =======
@@ -975,6 +1082,7 @@ labels    18
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=1 target=[6,0]
+aura      Interrupted.
 
 https://www.wowhead.com/forever/spell=1241057
 =======
@@ -990,6 +1098,8 @@ effect 1  +40 attack power to the friendly target
           E_APPLY_AURA A_MOD_ATTACK_POWER base=40 target=[21,0]
 effect 2  +40 ranged attack power to the friendly target
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=40 target=[21,0]
+tooltip   Increases attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=16329
 =======
@@ -1005,6 +1115,8 @@ effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 target=[25,0]
 effect 2  a dummy aura holding 5 to the target
           E_APPLY_AURA A_DUMMY base=5 target=[25,0]
+tooltip   Removes all from the friendly target.
+aura      Health increased in Eastern Plaguelands, Stratholme and Scholmance by $s2%.
 
 https://www.wowhead.com/forever/spell=30238
 =======
@@ -1016,6 +1128,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 6 mask 0x1400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=6 mask=0x1400 target=[1,0]
+tooltip   Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=14904
 =======
@@ -1027,6 +1140,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 6 mask 0x1400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 misc=10 family=6 mask=0x1400 target=[1,0]
+tooltip   Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=15024
 =======
@@ -1038,6 +1152,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.3 s on family 6 mask 0x1400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-300 misc=10 family=6 mask=0x1400 target=[1,0]
+tooltip   Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=15025
 =======
@@ -1049,6 +1164,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.4 s on family 6 mask 0x1400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-400 misc=10 family=6 mask=0x1400 target=[1,0]
+tooltip   Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=15026
 =======
@@ -1060,6 +1176,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 6 mask 0x1400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=6 mask=0x1400 target=[1,0]
+tooltip   Reduces the casting time of your Heal and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=15027
 =======
@@ -1075,6 +1192,7 @@ effect 2  SPELLMOD_ACTIVATION_TIME -500 on family 6 mask 0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=19 family=6 mask=0x800000 target=[1,0]
 effect 3  SPELLMOD_DOT +50% on family 6 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=22 family=6 mask=0x800000 target=[1,0]
+aura      Reduces the channeled duration of your next Mind Flay spell by $s1% and increases its total damage by $s3%.
 
 https://www.wowhead.com/forever/spell=456549
 =======
@@ -1085,6 +1203,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 6 mask 0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=6 mask=0x2000 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Mind Blast.
 
 https://www.wowhead.com/forever/spell=23043
 =======
@@ -1094,6 +1213,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 6 mask 0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=6 mask=0x2000 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Mind Blast.
 
 https://www.wowhead.com/forever/spell=459604
 =======
@@ -1108,6 +1228,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 6 mask 0xffffffff,0xffffffff,0xfffff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=6 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216483
 =======
@@ -1119,6 +1241,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 20% chance; tooltip says heals cou
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   20% chance that your heals on others will also heal you 10% of the amount healed.
 
 https://www.wowhead.com/forever/spell=26169
 =======
@@ -1139,6 +1262,7 @@ labels    3096, 3100
 
 effect 1  casts 409076 Pain and Suffering when the target is hit from family 6 mask 0x802000,0x0,0x10000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=409076 family=6 mask=0x802000,0x0,0x10000 target=[1,0]
+tooltip   Mind Blast, Mind Spike, and Mind Flay refresh the duration of your one of your Shadow Word: Pain, Void Plague, or Vampiric Touch abilities on the target back to its maximum duration. The ability with the shortest remaining duration will always be the one refreshed.
 
 https://www.wowhead.com/forever/spell=413251
 =======
@@ -1153,6 +1277,8 @@ refs      6788 Weakened Soul
 
 effect 1  absorbs 641 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=500 ppl=3 misc=127 target=[1,0]
+tooltip   Draws on the soul of the target to shield them, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.
+aura      Absorbs damage.
 
 https://www.wowhead.com/forever/spell=20706
 =======
@@ -1165,6 +1291,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 6 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=6 mask=0x800 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.1 s on family 6 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=21 family=6 mask=0x800 target=[1,0]
+tooltip   -$/1000;S1 sec to the casting time of your Flash Heal spell.
 
 https://www.wowhead.com/forever/spell=21973
 =======
@@ -1175,6 +1302,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +1 s on family 6 mask 0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=6 mask=0x10000 target=[1,0]
+tooltip   Increases the duration of your Psychic Scream spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=23044
 =======
@@ -1185,6 +1313,7 @@ attrs     channeled
 
 effect 1  a dummy effect
           E_DUMMY base=0 sp=1 target=[0,0]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22313
 =======
@@ -1195,6 +1324,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 6 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=6 mask=0x4000 target=[1,0]
+tooltip   Reduces the cooldown of your Fade ability by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=18388
 =======
@@ -1208,6 +1338,9 @@ effect 1  SPELLMOD_CASTING_TIME -40% on family 6 mask 0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=10 family=6 mask=0x1000 target=[1,0]
 effect 2  SPELLMOD_COST -5% on family 6 mask 0x441e40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=6 mask=0x441e40 target=[1,0]
+tooltip   Reduces the casting time of your Greater Heal spells by $s1%, and reduces the mana cost of your healing spells by $s2% for $d.
+aura      Greater Heal casting time decreased by $s1%.
+          Healing spell mana cost reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=24546
 =======
@@ -1222,6 +1355,10 @@ effect 2  SPELLMOD_COST -5% on family 6 mask 0x441e40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=6 mask=0x441e40 target=[1,0]
 effect 3  SPELLMOD_JUMP_TARGETS +3 on family 6 mask 0x0,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 misc=17 family=6 mask=0x0,0x10000 target=[1,0]
+tooltip   Reduces the casting time of your Greater Heal spells by $s1%, reduces the mana cost of your healing spells by $s2%, and casts of Penance on allies will target up to ${$s3-1} additional targets for $d.
+aura      Greater Heal casting time decreased by $s1%.
+          Healing spell mana cost reduced by $s2%.
+          Penance casts on allies will target up to ${$s3-1} additional targets.
 
 https://www.wowhead.com/forever/spell=468531
 =======
@@ -1235,6 +1372,7 @@ refs      21976 Reactive Fade
 
 effect 1  casts 21976 Reactive Fade on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=21976 target=[1,0]
+tooltip   When struck in melee there is a $h% chance you will Fade for $21976d.
 
 https://www.wowhead.com/forever/spell=21853
 =======
@@ -1244,6 +1382,8 @@ duration  4 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_TOTAL_THREAT base=-800 target=[1,0]
+tooltip   Fade out, discouraging enemies from attacking you for $d.
+aura      Reduced threat level.
 
 https://www.wowhead.com/forever/spell=21976
 =======
@@ -1267,6 +1407,7 @@ duration  10 s
 
 effect 1  +20% healing done
           E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=20 sp=1 misc=127 target=[1,0]
+aura      All healing done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1234542
 =======
@@ -1277,6 +1418,7 @@ attrs     passive
 
 effect 1  SPELLMOD_THREAT -10% on family 6 mask 0x9041e40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 misc=2 family=6 mask=0x9041e40 target=[1,0]
+tooltip   Reduces the threat from your healing spells.
 
 https://www.wowhead.com/forever/spell=28808
 =======
@@ -1290,6 +1432,7 @@ effect 2  -75% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-75 misc=127 target=[1,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=127 target=[1,0]
+aura      Decreases all attributes by $s1%, all damage caused by $s2%, armor and resistance by $s3%.
 
 https://www.wowhead.com/forever/spell=15007
 =======
@@ -1301,6 +1444,7 @@ refs      21091 Retributive Smite
 
 effect 1  casts 21091 Retributive Smite when the target is hit from family 6 mask 0x1000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=15 sp=1 trigger=21091 family=6 mask=0x1000 target=[1,0]
+tooltip   $s1% chance your next Smite after casting Greater Heal requires $21091s1 less mana to cast.
 
 https://www.wowhead.com/forever/spell=21089
 =======
@@ -1312,6 +1456,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -300 (-30 on a rage bar) on family 6 mask 0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-300 sp=1 misc=14 family=6 mask=0x80 target=[1,0]
+aura      Your next Smite requires less mana.
 
 https://www.wowhead.com/forever/spell=21091
 =======
@@ -1324,6 +1469,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 6 mask 0x9a43e90,0x818016,0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=6 mask=0x9a43e90,0x818016,0x80 target=[1,0]
+aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1323377
 =======
@@ -1333,6 +1479,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -25% on family 6 mask 0x10000000,0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=11 family=6 mask=0x10000000,0x800000 target=[1,0]
+tooltip   Reduces the cooldown on your Circle of Healing and Penance abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=1219230
 =======
@@ -1344,6 +1491,7 @@ refs      1219232 Mind's Eye
 
 effect 1  casts 1219232 Mind's Eye on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=1219232 target=[1,0]
+tooltip   Your Penance, Flash Heal Rank 7, Binding Heal, and Greater Heal Rank 4 and Rank 5 have a $h% chance to grant the target $1219232s1% increased critical strike chance for $1219232d.
 
 https://www.wowhead.com/forever/spell=1219233
 =======
@@ -1353,6 +1501,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Your Power Word: Shield has a $s1% chance to not deplete when the target is damaged by an Undead enemy.
 
 https://www.wowhead.com/forever/spell=1219238
 =======
@@ -1364,6 +1513,7 @@ effect 1  SPELLMOD_DOT +20% on family 6 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=6 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +20% on family 6 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=6 mask=0x8000 target=[1,0]
+tooltip   Your Shadow Word: Pain ability deals $s1% more damage.
 
 https://www.wowhead.com/forever/spell=1219242
 =======
@@ -1373,6 +1523,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 6 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=6 mask=0x2000 target=[1,0]
+tooltip   Reduces the cooldown on your Mind Blast ability by ${$m/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1219244
 =======
@@ -1382,6 +1533,7 @@ attrs     passive
 
 effect 1  a dummy aura holding -1000
           E_APPLY_AURA A_DUMMY base=-1000 target=[1,0]
+tooltip   Your Mind Flay, Mind Blast, and Mind Spike abilities deal increased damage to Undead targets equal to their critical strike chance.
 
 https://www.wowhead.com/forever/spell=1219250
 =======
@@ -1393,6 +1545,7 @@ effect 1  a dummy aura holding -100
           E_APPLY_AURA A_DUMMY base=-100 target=[1,0]
 effect 2  replaces an action bar spell with 1219274
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19280 misc=1219274 target=[1,0]
+tooltip   Your Pain and Suffering rune can now refresh the duration of Devouring Plague.
 
 https://www.wowhead.com/forever/spell=1213708
 =======
@@ -1404,6 +1557,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -30 s on family 6 mask 0x0,0x0,0x1000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=6 mask=0x0,0x0,0x1000000 target=[1,0]
+tooltip   Reduces the cooldown of Power Word: Barrier by ${$m2/-1000} sec and Surge of Light now also makes Prayer of Healing and Greater Heal instant cast.
 
 https://www.wowhead.com/forever/spell=1226499
 =======
@@ -1415,6 +1569,7 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Power Word: Shield casts instantly heal the target for $s1% of the absorb value and Serendipity empowered spells have their healing increased by $s2% per stack.
 
 https://www.wowhead.com/forever/spell=1226565
 =======
@@ -1428,6 +1583,7 @@ effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 3  SPELLMOD_DAMAGE +25% on family 6 mask 0x10000000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 family=6 mask=0x10000000,0x10000 target=[1,0]
+tooltip   Increases the healing of Circle of Healing and Penance by $s3%. Additionally, the cooldown of your Spirit of the Redeemer is reduced by ${$m1/-1000} sec and your healing is increased by $s2% while your Spirit of the Redeemer is active.
 
 https://www.wowhead.com/forever/spell=1226501
 =======
@@ -1440,6 +1596,7 @@ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 6 mask 0x800000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=6 mask=0x800000,0x100000 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Your Mind Flay and Mind Sear no longer lose duration from taking damage during their channel. In addition, they deal $s2% increased damage per other periodic Shadow effect you have on the target, up to a maximum increase of ${$m2*3}%.
 
 https://www.wowhead.com/forever/spell=1226585
 =======
@@ -1451,6 +1608,7 @@ effect 1  SPELLMOD_THREAT +100% on family 6 mask 0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=2 family=6 mask=0x2000 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Your Mind Blast deals $s1% reduced threat, and gains $s2% damage increase from each stack of Mind Spike on the target.
 
 https://www.wowhead.com/forever/spell=1226591
 =======
@@ -1460,6 +1618,7 @@ attrs     passive, can proc from procs
 
 effect 1  a dummy aura holding 285000
           E_APPLY_AURA A_DUMMY base=285000 sp=1 target=[1,0]
+tooltip   Damage done by your Mind Flay now increases the longer you channel the spell. Each time it deals damage, subsequent damage will increase by $s1%. This resets on each new channel.
 
 https://www.wowhead.com/forever/spell=1226595
 =======
@@ -1471,6 +1630,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 6 mask 0x800,0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=6 mask=0x800,0x4 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -0.2 s on family 6 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=6 mask=0x1000 target=[1,0]
+tooltip   -$/1000;S1 sec to the casting time of Flash Heal and -$/1000;S2 sec to the casting time of Greater Heal.
 
 https://www.wowhead.com/forever/spell=456545
 =======
@@ -1480,6 +1640,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +25% on family 6 mask 0x10000200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 sp=1 misc=7 family=6 mask=0x10000200 target=[1,0]
+tooltip   Increases your critical strike chance with Prayer of Healing and Circle of Healing by $s1%.
 
 https://www.wowhead.com/forever/spell=456547
 =======
@@ -1489,6 +1650,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 sp=1 family=6 mask=0x800 target=[1,0]
+tooltip   You may cast Flash Heal while in Shadowform.
 
 https://www.wowhead.com/forever/spell=456548
 =======
@@ -1500,6 +1662,7 @@ refs      456549 Melting Faces
 
 effect 1  casts 456549 Melting Faces on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=456549 target=[1,0]
+tooltip   Mind Blast critical strikes reduce the duration of your next Mind Flay by $456549s1% while increasing its total damage by $456549s3%.
 
 https://www.wowhead.com/forever/spell=457325
 =======
@@ -1511,6 +1674,7 @@ refs      467588 Healing Echoes
 
 effect 1  a dummy aura holding 25
           E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+tooltip   Circle of Healing and Penance also place a heal over time effect on their targets that heals for $s1% as much over $467588d.
 
 https://www.wowhead.com/forever/spell=467586
 =======
@@ -1520,6 +1684,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -6 s on family 6 mask 0x0,0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=6 mask=0x0,0x2 target=[1,0]
+tooltip   Reduces the cooldown of your Shadow Word: Death spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=467604
 =======
@@ -1532,6 +1697,7 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Shadow Word: Pain has a ${$m1/10}.1% chance per talent point in Spirit Tap to trigger your Spirit Tap talent when it deals damage, or a $s2% chance per talent point when a target dies with your Shadow Word: Pain active. Inner Focus also has a $s2% chance per talent point to trigger Spirit Tap.
 
 https://www.wowhead.com/forever/spell=467608
 =======
@@ -1542,6 +1708,7 @@ refs      467632 Harness the Spirit
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   While Spirit Tap is active, you deal $467632s1% more Shadow damage.
 
 https://www.wowhead.com/forever/spell=467624
 =======
@@ -1551,6 +1718,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT2 +2 on family 6 mask 0x0,0x8020
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=12 family=6 mask=0x0,0x8020 target=[1,0]
+tooltip   Your Prayer of Mending gains $s1 additional charges.
 
 https://www.wowhead.com/forever/spell=1213624
 =======
@@ -1560,6 +1728,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Circle of Healing now heals the most injured member of the target party for $s1% more.
 
 https://www.wowhead.com/forever/spell=1213631
 =======
@@ -1569,6 +1738,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 6 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=6 mask=0x800000 target=[1,0]
+tooltip   Your Mind Flay no longer loses duration from taking damage and launches a free Mind Spike at the target on cast.
 
 https://www.wowhead.com/forever/spell=1213675
 =======
@@ -1580,6 +1750,7 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 6 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=6 mask=0x0,0x0,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +10% on family 6 mask 0x0,0x0,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=6 mask=0x0,0x0,0x10000 target=[1,0]
+tooltip   Your Mind Spike is now instant, deals $s2% more damage, and can be cast while channeling another spell.
 
 https://www.wowhead.com/forever/spell=1213705
 =======
@@ -1591,6 +1762,7 @@ effect 1  +22 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=22 misc=126 target=[1,0]
 effect 2  +7 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=7 misc=126 target=[1,0]
+tooltip   Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.
 
 https://www.wowhead.com/forever/spell=468398
 =======
@@ -1600,6 +1772,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -6 s on family 6 mask 0x0,0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=6 mask=0x0,0x800000 target=[1,0]
+tooltip   Reduces the cooldown of your Penance spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=468433
 =======
@@ -1609,6 +1782,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Increases the damage absorbed by your Power Word: Shield spell by $s1%.
 
 https://www.wowhead.com/forever/spell=468434
 =======
@@ -1647,6 +1821,7 @@ effect 1  SPELLMOD_CASTING_TIME -20% on family 6 mask 0x41600
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=10 family=6 mask=0x41600 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +0% on family 6 mask 0x41600
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 family=6 mask=0x41600 target=[1,0]
+aura      Cast time of next Lesser Heal, Heal, Greater Heal, or Prayer of Healing reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=413247
 =======
@@ -1658,6 +1833,7 @@ refs      413247 Serendipity
 
 effect 1  casts 413247 Serendipity on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=413247 target=[1,0]
+tooltip   Healing with Flash Heal reduces the cast time of your next Lesser Heal, Heal, Greater Heal, or Prayer of Healing by $413247s1% for $413247d, stacking up to $413247u times.
 
 https://www.wowhead.com/forever/spell=413248
 =======
@@ -1671,6 +1847,8 @@ range     30 yd
 
 effect 1  -50 shadow damage taken to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=-50 misc=32 target=[21,0]
+tooltip   Reduces the Shadow damage taken by an ally by $s1 for $d.
+aura      Shadow damage taken is reduced by $s1.
 
 https://www.wowhead.com/forever/spell=17151
 =======
@@ -1733,6 +1911,7 @@ effect 1  SPELLMOD_JUMP_TARGETS +3 on family 6 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 misc=17 misc2=2 family=6 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_JUMP_DISTANCE +15 on family 6 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=35 family=6 mask=0x8000 target=[1,0]
+tooltip   Your Shadow Word: Pain now also afflicts up to ${$m1-1} additional nearby targets within $s2 yards.
 
 https://www.wowhead.com/forever/spell=401969
 =======
@@ -1757,6 +1936,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_WATER_BREATHING base=0 target=[1,0]
 effect 3  shifts into Spirit of Redemption
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=32 target=[1,0]
+aura      You have become more powerful than anyone can possibly imagine.
 
 https://www.wowhead.com/forever/spell=27827
 =======
@@ -1770,6 +1950,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_WATER_BREATHING base=0 target=[1,0]
 effect 2  shifts into Spirit of Redemption
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 sp=1 misc=32 target=[1,0]
+tooltip   Activate to become the Spirit of Redemption for $d. While in this form, you can cast any healing spell free of cost, but you cannot move, attack, be attacked, or be targeted by any spells or effects. Requires Spirit of Redemption talent to activate, and you will no longer enter Spirit of Redemption  upon dying.
+aura      You have become more powerful than anyone can possibly imagine.
 
 https://www.wowhead.com/forever/spell=425284
 =======
@@ -1779,6 +1961,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425284 misc=415450 target=[1,0]
+tooltip   Gain the Spirit of the Redeemer ability:
+
+          $@spellicon425284
+          $@spelldesc425284
 
 https://www.wowhead.com/forever/spell=425304
 =======
@@ -1792,6 +1978,8 @@ range     50000 yd
 
 effect 1  +20% health to the friendly target
           E_APPLY_AURA A_MOD_INCREASE_HEALTH_PERCENT base=20 target=[21,0]
+tooltip   Health increased by $s0%.
+aura      Health increased by $s0%.
 
 https://www.wowhead.com/forever/spell=23693
 =======
@@ -1811,6 +1999,7 @@ refs      409317 Strength of Soul
 
 effect 1  casts 409317 Strength of Soul when the target is hit from family 6 mask 0x41c00,0x4
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=409317 family=6 mask=0x41c00,0x4 target=[1,0]
+tooltip   Lesser Heal, Heal, Greater Heal, and Flash Heal reduce the remaining duration of Weakened Soul on targets they heal by $409317s1 sec. In addition, targets of your Power Word: Shield will gain Rage from taking damage despite the damage being absorbed, and Righteous Fury will trigger from damage absorbed by your Power Word: Shield as if it were a heal.
 
 https://www.wowhead.com/forever/spell=415739
 =======
@@ -1823,6 +2012,7 @@ refs      431666 Surge of Light
 
 effect 1  casts 431666 Surge of Light on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=431666 target=[1,0]
+tooltip   Critical spellcasts cause your next Smite or Flash Heal cast within $431666d to be instant cast.
 
 https://www.wowhead.com/forever/spell=431664
 =======
@@ -1837,6 +2027,8 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 6 mask 0x880,0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=6 mask=0x880,0x4 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME +0% on family 6 mask 0x1200
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 misc=10 family=6 mask=0x1200 target=[1,0]
+tooltip   
+aura      Your next Smite, Flash Heal, or Binding Heal is instant.
 
 https://www.wowhead.com/forever/spell=431666
 =======
@@ -1847,6 +2039,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431664 misc=417346 target=[1,0]
+tooltip   Gain the Surge of Light ability:
+
+          $@spellicon431664
+          $@spelldesc431664
 
 https://www.wowhead.com/forever/spell=431668
 =======
@@ -1857,6 +2053,7 @@ range     40 yd
 
 effect 1  50000 healing to the caster
           E_HEAL base=50000 sp=1 amplitude=1 target=[1,0]
+tooltip   Heal yourself for $s1.
 
 https://www.wowhead.com/forever/spell=15068
 =======
@@ -1867,6 +2064,7 @@ range     40 yd
 
 effect 1  50000 healing to the caster
           E_HEAL base=50000 sp=1 amplitude=1 target=[1,0]
+tooltip   Heal yourself for $s1.
 
 https://www.wowhead.com/forever/spell=1293973
 =======
@@ -1886,6 +2084,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62810025,0x1,0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62810025,0x1,0x100000 target=[1,0]
+aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262312
 =======
@@ -1907,6 +2106,7 @@ range     50000 yd
 
 effect 1  a dummy effect to target 38
           E_DUMMY base=0 sp=1 target=[38,0]
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22205
 =======
@@ -1917,6 +2117,7 @@ labels    18
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Mind Flay and Mind Blast deal $s1% increased damage to targets afflicted with your Shadow Word: Pain.
 
 https://www.wowhead.com/forever/spell=425198
 =======
@@ -1932,6 +2133,8 @@ effect 1  +30 attack power to target 120
           E_APPLY_AURA A_MOD_ATTACK_POWER base=30 radius=25 target=[120,0]
 effect 2  +30 ranged attack power to target 120
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=30 radius=25 target=[120,0]
+tooltip   Increases attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=1287768
 =======
@@ -1953,6 +2156,10 @@ effect 2  a dummy aura holding 40 every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=40 period=1000ms target=[1,0]
 effect 3  summons creature 223496 to target 87
           E_SUMMON base=0 misc=223496 misc2=5937 target=[87,0]
+tooltip   Summons a void zone in the target area that deals ${$<damagepower>*$431690m1/100} Shadow damage to enemies that stand within it every second for $d.
+aura      Dealing ${$<damagepower>*$431690m1/100} Shadow damage to enemies within the void zone every second.
+vars      $damagepower=${9.456667+0.635108*$PL+0.039063*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=431681
 =======
@@ -1966,6 +2173,8 @@ labels    3096, 3100
 
 effect 1  51 shadow damage to target 87 (+0.084 spell power)
           E_SCHOOL_DAMAGE base=51 sp=0.084 radius=8 target=[87,16]
+vars      $damagepower=${9.456667+0.635108*$PL+0.039063*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=431690
 =======
@@ -1976,6 +2185,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431681 misc=417346 target=[1,0]
+tooltip   Gain the Void Zone ability:
+
+          $@spellicon431681
+          $@spelldesc431681
 
 https://www.wowhead.com/forever/spell=431704
 =======
@@ -1986,6 +2199,8 @@ range     100 yd
 
 effect 1  summons creature 14366 to target 32
           E_SUMMON base=1 sp=1 misc=14366 misc2=64 radius=1 target=[32,0]
+aura      Causes $s1 every $t1
+          Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22821
 =======
@@ -1998,6 +2213,8 @@ labels    18
 
 effect 1  immune to shield to the target
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=19 target=[25,0]
+tooltip   Cannot benefit from Power Word: Shield.
+aura      Cannot benefit from Power Word: Shield.
 
 https://www.wowhead.com/forever/spell=6788
 =======
@@ -2007,6 +2224,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION -2 s on family 6 mask 0x20000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=1 family=6 mask=0x20000000 target=[1,0]
+tooltip   Reduces the duration of your Weakened Soul by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=459603
 =======
@@ -2021,6 +2239,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 sp=1 target=[6,0]
 effect 2  113–137 nature damage every 2 s to the enemy (7 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=125 variance=0.192 sp=1 period=2000ms target=[6,0]
+aura      Unable to move.
+          Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=24152
 =======
@@ -2032,6 +2252,7 @@ stack     up to 5
 
 effect 1  +10% healing done
           E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=10 misc=2 target=[1,0]
+aura      Healing done increased by $s1%.
 
 https://www.wowhead.com/forever/spell=402362
 =======

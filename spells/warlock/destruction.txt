@@ -9,6 +9,7 @@ effect 1  casts 18118 Aftermath on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=18118 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +50% on family 5 mask 0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 family=5 mask=0x4 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $m2% and your Conflagrate spell has a $m1% chance to Daze the target, reducing the target's movement speed by $18118m1% for $18118d.
 
 https://www.wowhead.com/forever/spell=18119
 =======
@@ -23,6 +24,7 @@ effect 2  SPELLMOD_DAMAGE +10% on family 5 mask 0x1a5,0x8000c0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=5 mask=0x1a5,0x8000c0 target=[1,0]
 effect 3  SPELLMOD_DOT +10% on family 5 mask 0x24
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x24 target=[1,0]
+tooltip   Increases the critical strike chance of your Searing Pain spell by $m1% and the damage done by all your Destruction spells by $m2%.
 
 https://www.wowhead.com/forever/spell=17927
 =======
@@ -35,6 +37,7 @@ refs      18093 Pyroclasm
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   Your non-periodic critical strikes with your Fire spells increase your Shadow damage done by $m1% for $18093d, and your non-periodic critical strikes with your Shadow spells increase your Fire damage done by $m1% for $18093d.
 
 https://www.wowhead.com/forever/spell=18096
 =======
@@ -47,6 +50,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x5,0x10040
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=5 mask=0x5,0x10040 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -2 s on family 5 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=10 family=5 mask=0x40 target=[1,0]
+tooltip   Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by $/1000;S1 sec and your Soul Fire spell by $/1000;S2 sec.
 
 https://www.wowhead.com/forever/spell=17788
 =======
@@ -61,6 +65,8 @@ labels    19
 
 effect 1  a dummy aura holding 15 to the enemy
           E_APPLY_AURA A_DUMMY base=15 target=[6,0]
+tooltip   Afflicts the target for $d, causing $s1% of all damage done by the Warlock to other targets to also be dealt to the cursed target. Bane of Havoc is limited to 1 target, and only one Bane per Warlock can be active on any one target.
+aura      Taking $s1% of all damage done by the Warlock to other targets.
 
 https://www.wowhead.com/forever/spell=1225228
 =======
@@ -86,6 +92,7 @@ refs      1225228 Bane of Havoc
 
 effect 1  0 shadow damage to the enemy
           E_SCHOOL_DAMAGE base=0 target=[6,0]
+tooltip   Afflicts the target for $1225228d, causing $1225228s1% of all damage done by the Warlock to other targets to also be dealt to the cursed target. Bane of Havoc is limited to 1 target, and only one Bane per Warlock can be active on any one target.
 
 https://www.wowhead.com/forever/spell=1243339
 =======
@@ -96,6 +103,7 @@ labels    19
 
 effect 1  SPELLMOD_COST -10% on family 5 mask 0x3e5,0x30040,0x20000,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=5 mask=0x3e5,0x30040,0x20000,0x400000 target=[1,0]
+tooltip   Reduces the Mana cost of your Destruction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17778
 =======
@@ -110,6 +118,8 @@ range     30 yd
 
 effect 1  522–662 fire+nature+frost+shadow+arcane damage to the enemy (+0.714 spell power)
           E_SCHOOL_DAMAGE base=592 variance=0.23648648 sp=0.714 target=[6,0]
+tooltip   Sends a bolt of chaotic fire at the enemy, dealing ${$<power>*$m1/100} to ${$<power>*$M1/100} Chaos damage.  Chaos Bolt always hits, cannot be resisted, and its knowledge causes all your Fire spells to pierce through absorption effects. Chaos Bolt gains a high chance to be resisted when used against monsters 4 or more levels above your level.
+vars      $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=403629
 =======
@@ -128,6 +138,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403629 misc=399967 target=[1,0]
+tooltip   Gain the Chaos Bolt ability:
+
+          $@spellicon403629
+          $@spelldesc403629
 
 https://www.wowhead.com/forever/spell=403860
 =======
@@ -142,6 +156,7 @@ labels    19
 
 effect 1  134–170 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=146 ppl=1 variance=0.24175824 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=17962
 =======
@@ -156,6 +171,7 @@ labels    19
 
 effect 1  178–223 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=194 ppl=1.1 variance=0.2247191 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=18930
 =======
@@ -170,6 +186,7 @@ labels    19
 
 effect 1  219–274 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=239 ppl=1.2 variance=0.22273782 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=18931
 =======
@@ -184,6 +201,7 @@ labels    19
 
 effect 1  251–313 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=282 ppl=1.3 variance=0.21912351 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=18932
 =======
@@ -198,6 +216,7 @@ labels    19
 
 effect 1  88–111 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=95 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=1293817
 =======
@@ -212,6 +231,7 @@ labels    19
 
 effect 1  112–143 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=122 ppl=0.9 variance=0.24175824 sp=0.429 target=[6,0]
+tooltip   Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 https://www.wowhead.com/forever/spell=1293818
 =======
@@ -222,6 +242,7 @@ labels    19
 
 effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x3e5,0x140,0x0,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x3e5,0x140,0x0,0x400000 target=[1,0]
+tooltip   Increases the range of your Destruction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17917
 =======
@@ -232,6 +253,7 @@ labels    19
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 5 mask 0x3e5,0x30040,0x820002
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=5 mask=0x3e5,0x30040,0x820002 target=[1,0]
+tooltip   Increases the critical strike chance of your Destruction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18130
 =======
@@ -246,6 +268,7 @@ effect 2  SPELLMOD_DOT +10% on family 5 mask 0x64
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x64 target=[1,0]
 effect 3  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=5 mask=0x100 target=[1,0]
+tooltip   Increases the damage done by your Fire spells by $m1% and reduces the cast time of your Searing Pain spell by ${$m3/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=17954
 =======
@@ -258,6 +281,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
 effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 5 mask 0x0,0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 sp=1 misc=7 family=5 mask=0x0,0x800000 target=[1,0]
+tooltip   Increases the critical strike chance of your Conflagrate spell by $m2%.
 
 https://www.wowhead.com/forever/spell=412751
 =======
@@ -277,6 +301,8 @@ effect 2  86 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=82 ppl=0.4 sp=0.022 period=1000ms target=[1,0]
 effect 3  immune to bandage
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+tooltip   Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $5857s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.
+aura      Damages self and all nearby enemies.
 
 https://www.wowhead.com/forever/spell=1949
 =======
@@ -296,6 +322,8 @@ effect 2  142 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=137 ppl=0.5 sp=0.022 period=1000ms target=[1,0]
 effect 3  immune to bandage
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+tooltip   Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $11681s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.
+aura      Damages self and all nearby enemies.
 
 https://www.wowhead.com/forever/spell=11683
 =======
@@ -315,6 +343,8 @@ effect 2  210.2 fire damage every 1 s (15 ticks, at level 60, +0.022 spell power
           E_APPLY_AURA A_PERIODIC_DAMAGE base=206 ppl=0.7 sp=0.022 period=1000ms target=[1,0]
 effect 3  immune to bandage
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 sp=1 misc=16 target=[1,0]
+tooltip   Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $11682s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.
+aura      Damages self and all nearby enemies.
 
 https://www.wowhead.com/forever/spell=11684
 =======
@@ -326,6 +356,7 @@ labels    19
 
 effect 1  86 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
           E_SCHOOL_DAMAGE base=82 ppl=0.4 sp=0.022 radius=10 target=[18,16]
+tooltip   Deals $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=5857
 =======
@@ -337,6 +368,7 @@ labels    19
 
 effect 1  142 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
           E_SCHOOL_DAMAGE base=137 ppl=0.5 sp=0.022 radius=10 target=[18,16]
+tooltip   Deals $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=11681
 =======
@@ -348,6 +380,7 @@ labels    19
 
 effect 1  210.2 fire damage to every enemy in the target area (at level 60, +0.022 spell power)
           E_SCHOOL_DAMAGE base=206 ppl=0.7 sp=0.022 radius=10 target=[18,16]
+tooltip   Deals $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=11682
 =======
@@ -368,6 +401,14 @@ effect 2  10.8 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=8 ppl=0.7 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=348
 =======
@@ -388,6 +429,14 @@ effect 2  21 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=17 ppl=0.8 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=707
 =======
@@ -408,6 +457,14 @@ effect 2  38 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=1.2 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1094
 =======
@@ -428,6 +485,14 @@ effect 2  63.5 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=56 ppl=1.5 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=2941
 =======
@@ -448,6 +513,14 @@ effect 2  80 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=72 ppl=1.6 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=11665
 =======
@@ -468,6 +541,14 @@ effect 2  115.5 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=1.9 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=11667
 =======
@@ -488,6 +569,14 @@ effect 2  146 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=146 ppl=2.3 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=11668
 =======
@@ -508,6 +597,14 @@ effect 2  158 fire damage to the enemy (at level 60, +0.2 spell power)
           E_SCHOOL_DAMAGE base=158 ppl=2.3 sp=0.2 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=25309
 =======
@@ -529,6 +626,7 @@ labels    19
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 5 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=5 mask=0x1000 target=[1,0]
+tooltip   Reduces the casting time of your Imp's Firebolt spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=18126
 =======
@@ -539,6 +637,7 @@ labels    19
 
 effect 1  SPELLMOD_CASTING_TIME -1 s on family 5 mask 0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=5 mask=0x1000 target=[1,0]
+tooltip   Reduces the casting time of your Imp's Firebolt spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=18127
 =======
@@ -551,6 +650,7 @@ effect 1  SPELLMOD_DAMAGE +5% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE -5% on family 5 mask 0x0,0x0,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17815
 =======
@@ -563,6 +663,7 @@ effect 1  SPELLMOD_DAMAGE +10% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE -10% on family 5 mask 0x0,0x0,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17833
 =======
@@ -575,6 +676,7 @@ effect 1  SPELLMOD_DAMAGE +15% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE -15% on family 5 mask 0x0,0x0,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17834
 =======
@@ -587,6 +689,7 @@ effect 1  SPELLMOD_DAMAGE +20% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE -20% on family 5 mask 0x0,0x0,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17835
 =======
@@ -599,6 +702,7 @@ effect 1  SPELLMOD_DAMAGE +25% on family 5 mask 0x4,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 family=5 mask=0x4,0x10000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE -25% on family 5 mask 0x0,0x0,0x800002
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 sp=1 family=5 mask=0x0,0x0,0x800002 target=[1,0]
+tooltip   Increases the initial damage of your Immolate spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17836
 =======
@@ -609,6 +713,7 @@ labels    19
 
 effect 1  SPELLMOD_COOLDOWN -3 s on family 5 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 sp=1 misc=11 family=5 mask=0x2000 target=[1,0]
+tooltip   Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=18128
 =======
@@ -619,6 +724,7 @@ labels    19
 
 effect 1  SPELLMOD_COOLDOWN -6 s on family 5 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 sp=1 misc=11 family=5 mask=0x2000 target=[1,0]
+tooltip   Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=18129
 =======
@@ -631,6 +737,7 @@ refs      17794 Shadow Vulnerability
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by $m1% for $17794d.
 
 https://www.wowhead.com/forever/spell=17793
 =======
@@ -646,6 +753,7 @@ effect 1  99–114 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=97 ppl=1.1 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
+tooltip   Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.
 
 https://www.wowhead.com/forever/spell=412758
 =======
@@ -661,6 +769,7 @@ effect 1  145–168 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=145 ppl=1.3 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
+tooltip   Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.
 
 https://www.wowhead.com/forever/spell=1293812
 =======
@@ -676,6 +785,7 @@ effect 1  201–233 fire damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=217 ppl=1.4 variance=0.15 sp=0.714 target=[6,0]
 effect 2  a dummy effect holding 25 to the enemy
           E_DUMMY base=25 target=[6,0]
+tooltip   Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.
 
 https://www.wowhead.com/forever/spell=1293813
 =======
@@ -686,6 +796,7 @@ labels    19
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 5 mask 0x3e5
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 sp=1 misc=9 family=5 mask=0x3e5 target=[1,0]
+tooltip   Gives your Destruction spells a $s1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=18135
 =======
@@ -699,6 +810,7 @@ effect 1  a dummy aura holding 26
           E_APPLY_AURA A_DUMMY base=26 sp=1 target=[1,0]
 effect 2  casts 18350 Dummy Trigger on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=18350 target=[1,0]
+tooltip   Gives your Soul Fire spell a $s1% chance to Stun the target for $18093d, and your Rain of Fire and Hellfire spells a $s1% chance over their duration to Stun targets they damage for $18093d.
 
 https://www.wowhead.com/forever/spell=18073
 =======
@@ -719,6 +831,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41450 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282380m1} Fire damage over $d.
+aura      $1282380s1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=5740
 =======
@@ -739,6 +853,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41452 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282383m1} Fire damage over $d.
+aura      $1282383s1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=6219
 =======
@@ -759,6 +875,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41455 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282384m1} Fire damage over $d.
+aura      $1282384s1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=11677
 =======
@@ -779,6 +897,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41456 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282385m1} Fire damage over $d.
+aura      $1282385s1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=11678
 =======
@@ -799,6 +919,8 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41454 radius=8 target=[87,16]
 effect 3  a dummy aura every 2 s (4 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=2000ms target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282381m1} Fire damage over $d.
+aura      $1282381s1 Fire damage every $t3 seconds.
 
 https://www.wowhead.com/forever/spell=19474
 =======
@@ -815,6 +937,8 @@ effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=42 ppl=0.3 sp=0.083 period=2000ms radius=8 target=[28,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=460692
 =======
@@ -831,6 +955,8 @@ effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=96 ppl=0.4 sp=0.083 period=2000ms radius=8 target=[28,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=460698
 =======
@@ -847,6 +973,8 @@ effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=155 ppl=0.5 sp=0.083 period=2000ms radius=8 target=[28,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=460699
 =======
@@ -863,6 +991,8 @@ effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=226 ppl=0.6 sp=0.083 period=2000ms radius=8 target=[28,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
+aura      $s1 Fire damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=460700
 =======
@@ -928,6 +1058,7 @@ labels    19
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 5 mask 0x3e5,0x30040,0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=5 mask=0x3e5,0x30040,0x20000 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Destruction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17959
 =======
@@ -942,6 +1073,7 @@ labels    19
 
 effect 1  24–29 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=23 ppl=0.6 variance=0.21052632 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=5676
 =======
@@ -956,6 +1088,7 @@ labels    19
 
 effect 1  34–41 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.18461539 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=17919
 =======
@@ -970,6 +1103,7 @@ labels    19
 
 effect 1  44–53 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=44 ppl=0.8 variance=0.18947369 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=17920
 =======
@@ -984,6 +1118,7 @@ labels    19
 
 effect 1  61–74 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=62 ppl=0.9 variance=0.17910448 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=17921
 =======
@@ -998,6 +1133,7 @@ labels    19
 
 effect 1  84–98 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=85 ppl=1 variance=0.1734104 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=17922
 =======
@@ -1012,6 +1148,7 @@ labels    19
 
 effect 1  107–126 fire damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=114 ppl=1.2 variance=0.16216215 sp=0.429 chain=1 target=[6,0]
+tooltip   Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=17923
 =======
@@ -1026,6 +1163,7 @@ labels    19
 
 effect 1  11–16 shadow damage to the enemy (at level 60, +0.486 spell power)
           E_SCHOOL_DAMAGE base=13 ppl=0.2 variance=0.2857143 sp=0.486 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=686
 =======
@@ -1040,6 +1178,7 @@ labels    19
 
 effect 1  21–28 shadow damage to the enemy (at level 60, +0.629 spell power)
           E_SCHOOL_DAMAGE base=23 ppl=0.3 variance=0.23076923 sp=0.629 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=695
 =======
@@ -1054,6 +1193,7 @@ labels    19
 
 effect 1  40–46 shadow damage to the enemy (at level 60, +0.8 spell power)
           E_SCHOOL_DAMAGE base=40 ppl=0.6 variance=0.15384616 sp=0.8 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=705
 =======
@@ -1068,6 +1208,7 @@ labels    19
 
 effect 1  58–66 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=58 ppl=0.8 variance=0.13043478 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=1088
 =======
@@ -1082,6 +1223,7 @@ labels    19
 
 effect 1  79–89 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=78 ppl=1.2 variance=0.13157895 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=1106
 =======
@@ -1096,6 +1238,7 @@ labels    19
 
 effect 1  101–113 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=101 ppl=1.2 variance=0.11981567 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=7641
 =======
@@ -1110,6 +1253,7 @@ labels    19
 
 effect 1  140–156 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=141 ppl=1.4 variance=0.11409396 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=11659
 =======
@@ -1124,6 +1268,7 @@ labels    19
 
 effect 1  188–210 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=191 ppl=1.6 variance=0.11023622 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=11660
 =======
@@ -1138,6 +1283,7 @@ labels    19
 
 effect 1  237–265 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=251 ppl=1.8 variance=0.10810811 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=11661
 =======
@@ -1152,6 +1298,7 @@ labels    19
 
 effect 1  253–283 shadow damage to the enemy (at level 60, +0.857 spell power)
           E_SCHOOL_DAMAGE base=268 ppl=1.9 variance=0.10980392 sp=0.857 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=25307
 =======
@@ -1165,6 +1312,7 @@ icd       10 s
 
 effect 1  63–72 shadow damage to the enemy (at level 60, +0.56 spell power)
           E_SCHOOL_DAMAGE base=52 ppl=0.9 variance=0.15384616 sp=0.56 amplitude=1 target=[6,0]
+tooltip   Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 https://www.wowhead.com/forever/spell=350026
 =======
@@ -1182,6 +1330,7 @@ effect 3  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Hitting an enemy with Conflagrate increases all Shadow damage you deal by $m3% for $1293816d, and hitting an enemy with Shadowburn increases all Fire damage you deal by $m4% for $426311d. In addition, Conflagrate has a $m2% chance not to consume Immolate, and Shadowburn has a $m2% chance to instantly refund a Soul Shard.
 
 https://www.wowhead.com/forever/spell=426316
 =======
@@ -1191,6 +1340,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426316 misc=415449 target=[1,0]
+tooltip   Gain the Shadow and Flame ability:
+
+          $@spellicon426316
+          $@spelldesc426316
 
 https://www.wowhead.com/forever/spell=426449
 =======
@@ -1208,6 +1361,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  65–74 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.12903225 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If a non-trivial target dies within $d of being hit with Shadowburn, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=17877
 =======
@@ -1225,6 +1380,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  81–91 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=80 ppl=1 variance=0.1300813 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=18867
 =======
@@ -1242,6 +1399,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  118–133 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=118 ppl=1.3 variance=0.12121212 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=18868
 =======
@@ -1259,6 +1418,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  146–165 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=148 ppl=1.3 variance=0.11552346 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=18869
 =======
@@ -1276,6 +1437,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  201–224 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=203 ppl=1.6 variance=0.11320755 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=18870
 =======
@@ -1293,6 +1456,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 sp=1 target=[6,0]
 effect 2  258–289 shadow damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=266 ppl=1.8 variance=0.1092437 sp=0.429 target=[6,0]
+tooltip   Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+aura      Death will grant the Warlock a Soul Shard.
 
 https://www.wowhead.com/forever/spell=18871
 =======
@@ -1312,6 +1477,16 @@ effect 2  64 fire+shadow damage every 3 s to the enemy (5 ticks, +0.13 spell pow
           E_APPLY_AURA A_PERIODIC_DAMAGE base=64 sp=0.13 period=3000ms target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=100 target=[6,0]
+tooltip   Burns the enemy for ${$m1*$<power>/100*$<mult>} Shadowflame damage and then an additional ${$m2*5*$<power>/100} Shadowflame damage over $d.
+
+          Shadowflame triggers and benefits from all effects that modify or interact with Immolate, or with Affliction, Destruction, Fire, or Shadow spells, but only one of Immolate or Shadowflame per Warlock can be active on any target. In addition, Shadowflame can trigger your Improved Shadow Bolt talent and causes it to have $426454s2 additional charges.
+aura      ${$m2*$<power>/100} Shadowflame damage every $t2 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=426320
 =======
@@ -1323,6 +1498,7 @@ range     100 yd
 
 effect 1  61 fire damage every 2 s to the enemy (4 ticks, +0.107 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=61 sp=0.107 period=2000ms target=[6,0]
+aura      $w1 Fire damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=426325
 =======
@@ -1335,6 +1511,10 @@ effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426320 misc=415450 target=[1,0]
 effect 2  SPELLMOD_CHARGES +26 on family 5 mask 0x0,0x0,0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=26 misc=4 family=5 mask=0x0,0x0,0x80000000 target=[1,0]
+tooltip   Gain the Shadowflame ability:
+
+          $@spellicon426320
+          $@spelldesc426320
 
 https://www.wowhead.com/forever/spell=426454
 =======
@@ -1355,6 +1535,16 @@ defense   magic
 duration  15 s
 range     100 yd
 refs      426454 Shadowflame
+tooltip   Burns the enemy for ${$m1*$<power>/100*$<mult>} Shadowflame damage and then an additional ${$m2*5*$<power>/100} Shadowflame damage over $d.
+
+          Shadowflame triggers and benefits from all effects that modify or interact with Immolate, or with Affliction, Destruction, Fire, or Shadow spells, but only one of Immolate or Shadowflame per Warlock can be active on any target. In addition, Shadowflame can trigger your Improved Shadow Bolt talent and causes it to have $426454s2 additional charges.
+aura      ${$m1*$<power>/100} Shadowflame damage every $t1 seconds.
+vars      $mult1=$?s17815[${1.05}][${1.0}]
+          $mult2=$?s17833[${1.10}][${$<mult1>}]
+          $mult3=$?s17834[${1.15}][${$<mult2>}]
+          $mult4=$?s17835[${1.20}][${$<mult3>}]
+          $mult=$?s17836[${1.25}][${$<mult4>}]
+          $power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1228049
 =======
@@ -1370,6 +1560,7 @@ labels    19
 
 effect 1  344–431 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=377 ppl=1.7 variance=0.22759601 sp=1 target=[6,0]
+tooltip   Burn the enemy's soul, causing $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=6353
 =======
@@ -1385,5 +1576,6 @@ labels    19
 
 effect 1  390–487 fire damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=431 ppl=1.9 variance=0.22474748 sp=1 target=[6,0]
+tooltip   Burn the enemy's soul, causing $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=17924

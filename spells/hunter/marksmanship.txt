@@ -11,6 +11,7 @@ labels    23
 
 effect 1  normalised weapon damage +20 to the enemy
           E_NORMALIZED_WEAPON_DMG base=20 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=19434
 =======
@@ -27,6 +28,7 @@ labels    23
 
 effect 1  normalised weapon damage +34 to the enemy
           E_NORMALIZED_WEAPON_DMG base=34 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=20900
 =======
@@ -43,6 +45,7 @@ labels    23
 
 effect 1  normalised weapon damage +55 to the enemy
           E_NORMALIZED_WEAPON_DMG base=55 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=20901
 =======
@@ -59,6 +62,7 @@ labels    23
 
 effect 1  normalised weapon damage +89 to the enemy
           E_NORMALIZED_WEAPON_DMG base=89 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=20902
 =======
@@ -75,6 +79,7 @@ labels    23
 
 effect 1  normalised weapon damage +125 to the enemy
           E_NORMALIZED_WEAPON_DMG base=125 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=20903
 =======
@@ -91,6 +96,7 @@ labels    23
 
 effect 1  normalised weapon damage +166 to the enemy
           E_NORMALIZED_WEAPON_DMG base=166 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 https://www.wowhead.com/forever/spell=20904
 =======
@@ -106,6 +112,7 @@ equip     needs a bow, gun or crossbow
 
 effect 1  normalised weapon damage +600 to the enemy
           E_NORMALIZED_WEAPON_DMG base=600 sp=1 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1.
 
 https://www.wowhead.com/forever/spell=27632
 =======
@@ -120,6 +127,7 @@ equip     needs a bow, gun or crossbow
 
 effect 1  1274–1726 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1.
 
 https://www.wowhead.com/forever/spell=1236188
 =======
@@ -134,6 +142,7 @@ equip     needs a bow, gun or crossbow
 
 effect 1  1274–1726 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
+tooltip   An aimed shot that increases ranged damage by $s1.
 
 https://www.wowhead.com/forever/spell=1294124
 =======
@@ -150,6 +159,7 @@ labels    23
 
 effect 1  20 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=20 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=3044
 =======
@@ -166,6 +176,7 @@ labels    23
 
 effect 1  26 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=26 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14281
 =======
@@ -182,6 +193,7 @@ labels    23
 
 effect 1  39 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=39 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14282
 =======
@@ -198,6 +210,7 @@ labels    23
 
 effect 1  65 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=65 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14283
 =======
@@ -214,6 +227,7 @@ labels    23
 
 effect 1  94 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=94 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14284
 =======
@@ -230,6 +244,7 @@ labels    23
 
 effect 1  134 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=134 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14285
 =======
@@ -246,6 +261,7 @@ labels    23
 
 effect 1  170 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=170 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14286
 =======
@@ -262,6 +278,7 @@ labels    23
 
 effect 1  217 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=217 target=[6,0]
+tooltip   An instant shot that causes $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=14287
 =======
@@ -274,6 +291,8 @@ labels    23
 
 effect 1  weapon damage to the enemy
           E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+tooltip   Automatically shoots the target until cancelled.
+aura      Firing at the target.
 
 https://www.wowhead.com/forever/spell=75
 =======
@@ -285,6 +304,8 @@ equip     needs a bow
 
 effect 1  weapon damage to the enemy
           E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+tooltip   Automatically shoots the target with your bow until cancelled.
+aura      Firing at the target.
 
 https://www.wowhead.com/forever/spell=413446
 =======
@@ -297,6 +318,7 @@ effect 1  SPELLMOD_DAMAGE +15% on family 9 mask 0x23000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=9 mask=0x23000 target=[1,0]
 effect 2  SPELLMOD_DOT +15% on every spell of family 9
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 target=[1,0]
+tooltip   Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=19461
 =======
@@ -309,6 +331,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
+tooltip   Increases your Attack Power by $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=1223984
 =======
@@ -329,6 +352,13 @@ effect 2  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
 effect 3  135% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=135 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=409433
 =======
@@ -338,6 +368,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409433 misc=399967 target=[1,0]
+tooltip   Gain the Chimera Shot ability:
+
+          $@spellicon409433
+          $@spelldesc409433
 
 https://www.wowhead.com/forever/spell=409976
 =======
@@ -352,6 +386,14 @@ refs      409433 Chimera Shot, 409493 Chimera Shot - Serpent, 409494 Chimera Sho
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DISARM base=1 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
+aura      Disarmed.
 
 https://www.wowhead.com/forever/spell=409495
 =======
@@ -364,6 +406,13 @@ refs      409433 Chimera Shot, 409494 Chimera Shot - Viper, 409495 Chimera Shot 
 
 effect 1  48 nature damage to the enemy (+0.4 spell power)
           E_SCHOOL_DAMAGE base=48 sp=0.4 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=409493
 =======
@@ -376,6 +425,13 @@ refs      409433 Chimera Shot, 409493 Chimera Shot - Serpent, 409494 Chimera Sho
 
 effect 1  48 nature damage to the enemy (+0.37 spell power)
           E_SCHOOL_DAMAGE base=48 sp=0.37 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=436393
 =======
@@ -388,6 +444,13 @@ refs      409433 Chimera Shot, 409493 Chimera Shot - Serpent, 409494 Chimera Sho
 
 effect 1  48 nature damage to the enemy (+0.25 spell power)
           E_SCHOOL_DAMAGE base=48 sp=0.25 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=436394
 =======
@@ -400,6 +463,13 @@ refs      409433 Chimera Shot, 409493 Chimera Shot - Serpent, 409494 Chimera Sho
 
 effect 1  48 nature damage to the enemy (+0.16 spell power)
           E_SCHOOL_DAMAGE base=48 sp=0.16 target=[6,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=436395
 =======
@@ -412,6 +482,13 @@ refs      409433 Chimera Shot, 409493 Chimera Shot - Serpent, 409495 Chimera Sho
 
 effect 1  restores 60 mana to the caster
           E_ENERGIZE base=60 target=[1,0]
+tooltip   You deal $409433s3% weapon damage, refreshing the current Sting on your target and triggering an effect:
+
+          Serpent Sting - Instantly deals $409493s1% of the damage done by your Serpent Sting.
+
+          Viper Sting - Instantly restores mana to you equal to $409494s1% of the total amount drained by your Viper Sting.
+
+          Scorpid Sting - Attempts to Disarm the target for $409495d. This effect cannot occur more than once per 1 minute.
 
 https://www.wowhead.com/forever/spell=409494
 =======
@@ -430,6 +507,8 @@ labels    23
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+tooltip   Dazes the target, slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=5116
 =======
@@ -446,6 +525,7 @@ labels    23
 
 effect 1  178 threat to the enemy
           E_THREAT base=160 ppl=2 target=[6,0]
+tooltip   Distract the target, causing threat.  More effective than Distracting Shot (Rank 1).
 
 https://www.wowhead.com/forever/spell=14274
 =======
@@ -462,6 +542,7 @@ labels    23
 
 effect 1  272 threat to the enemy
           E_THREAT base=250 ppl=2.5 target=[6,0]
+tooltip   Distract the target, causing threat.  More effective than Distracting Shot (Rank 2).
 
 https://www.wowhead.com/forever/spell=15629
 =======
@@ -478,6 +559,7 @@ labels    23
 
 effect 1  377 threat to the enemy
           E_THREAT base=350 ppl=3 target=[6,0]
+tooltip   Distract the target, causing threat.  More effective than Distracting Shot (Rank 3).
 
 https://www.wowhead.com/forever/spell=15630
 =======
@@ -494,6 +576,7 @@ labels    23
 
 effect 1  496 threat to the enemy
           E_THREAT base=465 ppl=3.5 target=[6,0]
+tooltip   Distract the target, causing threat.  More effective than Distracting Shot (Rank 4).
 
 https://www.wowhead.com/forever/spell=15631
 =======
@@ -510,6 +593,7 @@ labels    23
 
 effect 1  600 threat to the enemy
           E_THREAT base=600 ppl=4 target=[6,0]
+tooltip   Distract the target, causing threat.  More effective than Distracting Shot (Rank 5).
 
 https://www.wowhead.com/forever/spell=15632
 =======
@@ -526,6 +610,7 @@ labels    23
 
 effect 1  120 threat to the enemy
           E_THREAT base=110 ppl=1.5 target=[6,0]
+tooltip   Distract the target, causing threat.
 
 https://www.wowhead.com/forever/spell=20736
 =======
@@ -536,6 +621,7 @@ labels    23
 
 effect 1  SPELLMOD_COST -15% on family 9 mask 0x7fa42,0x80081000,0x202000,0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=14 family=9 mask=0x7fa42,0x80081000,0x202000,0x800000 target=[1,0]
+tooltip   Reduces the Mana cost of your Shots, Stings, and melee abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=19416
 =======
@@ -556,6 +642,8 @@ effect 3  summons creature 238619 to target 87
           E_SUMMON base=0 misc=238619 misc2=64 target=[87,0]
 effect 4  casts 1221416 Enchanted Flare to the caster
           E_TRIGGER_SPELL base=0 trigger=1221416 target=[1,0]
+tooltip   Exposes all hidden and invisible enemies within $a1 yards of the targeted area, and staves off magical darkness for $d.
+aura      Hidden and invisible units are revealed.
 
 https://www.wowhead.com/forever/spell=1221404
 =======
@@ -566,6 +654,8 @@ range     10 yd
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_IGNORE_FOG_OF_WAR base=0 target=[1,0]
+tooltip   Exposes all hidden and invisible enemies within $a1 yards of the targeted area, and staves off magical darkness for $d.
+aura      Hidden and invisible units are revealed.
 
 https://www.wowhead.com/forever/spell=1221416
 =======
@@ -583,6 +673,8 @@ effect 1  a dummy effect to target 87
           E_DUMMY base=0 radius=10 target=[87,16]
 effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41236 radius=10 target=[87,16]
+tooltip   Exposes all hidden and invisible enemies within $a1 yards of the targeted area for $d.
+aura      Hidden and invisible units are revealed.
 
 https://www.wowhead.com/forever/spell=1543
 =======
@@ -596,6 +688,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=6 target=[6,0]
+aura      Hidden and invisible units are revealed.
 
 https://www.wowhead.com/forever/spell=1279692
 =======
@@ -606,6 +699,7 @@ labels    23
 
 effect 1  SPELLMOD_RANGE +6 on family 9 mask 0x7fa01,0x80000000,0x2000,0x800000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=5 family=9 mask=0x7fa01,0x80000000,0x2000,0x800000 target=[1,0]
+tooltip   Increases the range of your ranged weapons by $s1 yards.
 
 https://www.wowhead.com/forever/spell=19498
 =======
@@ -621,6 +715,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=26 target=[6,0]
+tooltip   Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
+aura      All attackers gain $s2 Ranged Attack Power against this target.
 
 https://www.wowhead.com/forever/spell=1130
 =======
@@ -636,6 +732,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=59 target=[6,0]
+tooltip   Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
+aura      All attackers gain $s2 Ranged Attack Power against this target.
 
 https://www.wowhead.com/forever/spell=14323
 =======
@@ -651,6 +749,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=98 target=[6,0]
+tooltip   Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
+aura      All attackers gain $s2 Ranged Attack Power against this target.
 
 https://www.wowhead.com/forever/spell=14324
 =======
@@ -666,6 +766,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=143 target=[6,0]
+tooltip   Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
+aura      All attackers gain $s2 Ranged Attack Power against this target.
 
 https://www.wowhead.com/forever/spell=14325
 =======
@@ -680,6 +782,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STALKED base=0 amplitude=1 target=[25,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_RANGED_ATTACK_POWER_ATTACKER_BONUS base=110 target=[6,0]
+tooltip   Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
+aura      All attackers gain $s2 Ranged Attack Power against this target.
 
 https://www.wowhead.com/forever/spell=1213268
 =======
@@ -690,6 +794,7 @@ labels    23
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 9 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=11 family=9 mask=0x800 target=[1,0]
+tooltip   Reduces the cooldown of your Arcane Shot by $/1000;S1 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.
 
 https://www.wowhead.com/forever/spell=19454
 =======
@@ -701,6 +806,7 @@ refs      19410 Improved Concussive Shot
 
 effect 1  casts 19410 Improved Concussive Shot on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19410 target=[1,0]
+tooltip   Gives your Concussive Shot a $m1% chance to stun the target for $19410d.
 
 https://www.wowhead.com/forever/spell=19407
 =======
@@ -711,6 +817,7 @@ labels    23
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=11 family=9 mask=0x200 target=[1,0]
+tooltip   Decreases the cooldown of Concussive Shot by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24465
 =======
@@ -721,6 +828,7 @@ labels    23
 
 effect 1  SPELLMOD_ALL_EFFECTS +3% on family 9 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=8 family=9 mask=0x400 target=[1,0]
+tooltip   Increases the Ranged Attack Power bonus of your Hunter's Mark spell by $s1%.
 
 https://www.wowhead.com/forever/spell=19421
 =======
@@ -733,6 +841,7 @@ effect 1  SPELLMOD_DOT +10% on family 9 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=9 mask=0x4000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +10% on family 9 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=9 mask=0x4000 target=[1,0]
+tooltip   Increases the damage done by your Serpent Sting by $s1%.
 
 https://www.wowhead.com/forever/spell=19464
 =======
@@ -743,6 +852,7 @@ labels    23
 
 effect 1  SPELLMOD_DURATION +3 s on family 9 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 sp=1 misc=1 family=9 mask=0x4000 target=[1,0]
+tooltip   Increases the duration of Serpent Sting by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24467
 =======
@@ -757,6 +867,7 @@ effect 2  SPELLMOD_COOLDOWN -6 s on family 9 mask 0x0,0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6000 misc=11 family=9 mask=0x0,0x80 target=[1,0]
 effect 3  SPELLMOD_DURATION +45 s on family 9 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=45000 misc=1 family=9 mask=0x8000 target=[1,0]
+tooltip   Increases the damage of your Serpent Sting ability by $s1%, reduces the cooldown of your Viper Sting ability by ${$m2/-1000} sec, and increases the duration of your Scorpid Sting ability by ${$m3/1000} sec.
 
 https://www.wowhead.com/forever/spell=1310661
 =======
@@ -767,6 +878,7 @@ labels    23
 
 effect 1  +1% physical and spell crit
           E_APPLY_AURA A_MOD_CRIT_PCT base=1 sp=1 target=[1,0]
+tooltip   Increases your critical strike chance with all attacks by $m1%.
 
 https://www.wowhead.com/forever/spell=19426
 =======
@@ -776,6 +888,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415370 misc=399954 target=[1,0]
+tooltip   Gain the Lone Wolf ability:
+
+          $@spellicon415370
+          $@spelldesc415370
 
 https://www.wowhead.com/forever/spell=409979
 =======
@@ -789,6 +905,7 @@ effect 1  +20% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=20 misc=127 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   You deal $s2% increased damage with all attacks while you do not have an active pet.
 
 https://www.wowhead.com/forever/spell=415370
 =======
@@ -800,6 +917,7 @@ labels    23
 
 effect 1  unrecognised shape
           E_APPLY_AREA_AURA_OWNER A_MOD_DAMAGE_PERCENT_DONE base=-20 misc=127 radius=100 target=[1,0]
+aura      Damage decreased by $415370m1% while you have a pet.
 
 https://www.wowhead.com/forever/spell=415372
 =======
@@ -811,6 +929,7 @@ labels    23
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Damage increased by $415370m1% while you have no pet.
 
 https://www.wowhead.com/forever/spell=1310684
 =======
@@ -821,6 +940,7 @@ labels    23
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +30% on family 9 mask 0x67a01,0x80000000,0x10000200,0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=15 family=9 mask=0x67a01,0x80000000,0x10000200,0x800000 target=[1,0]
+tooltip   Increases the critical strike damage bonus on all ranged abilities by $m1%.
 
 https://www.wowhead.com/forever/spell=19485
 =======
@@ -836,6 +956,7 @@ labels    23
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 chain=3 target=[6,0]
+tooltip   Fires several missiles, hitting $x1 targets. Multi-Shot shares its cooldown with Aimed Shot.
 
 https://www.wowhead.com/forever/spell=2643
 =======
@@ -845,6 +966,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 9 mask 0x21000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=9 mask=0x21000 target=[1,0]
+tooltip   Reduces the mana cost of your Multi-Shot and Aimed Shot by $s1.
 
 https://www.wowhead.com/forever/spell=28751
 =======
@@ -863,6 +985,8 @@ effect 3  +0% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=0 target=[1,0]
 effect 4  +40% melee haste
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=40 target=[1,0]
+tooltip   Increases ranged and melee attack speed by $s1% for $d.
+aura      Ranged and melee attack speed increased by $s1%$?$w2>0[,  Mana regeneration increased by $w2%, and $w3% of mana regeneration continued while casting][].
 
 https://www.wowhead.com/forever/spell=3045
 =======
@@ -872,6 +996,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +4 s on family 9 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4000 misc=1 family=9 mask=0x20 target=[1,0]
+tooltip   Increases the duration of your Rapid Fire by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=28755
 =======
@@ -886,6 +1011,7 @@ effect 1  SPELLMOD_COOLDOWN -120 s on family 9 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 sp=1 misc=11 family=9 mask=0x20 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Reduces the cooldown on your Rapid Fire ability by ${$m1/-60000} min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within $415407d by $m2%.
 
 https://www.wowhead.com/forever/spell=415405
 =======
@@ -899,6 +1025,8 @@ proc      hears PROC_FLAG_DEAL_RANGED_ABILITY; no roll, it fires whenever its co
 
 effect 1  SPELLMOD_DAMAGE +20% on family 9 mask 0x61a00,0x80820001,0xa101,0x880000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=9 mask=0x61a00,0x80820001,0xa101,0x880000 target=[1,0]
+tooltip   Increases the damage of your next Shot ability by $s1%.
+aura      Next Shot ability deals $w1% increased damage.
 
 https://www.wowhead.com/forever/spell=415407
 =======
@@ -913,6 +1041,7 @@ effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
 effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Afflicting a target with Serpent Sting allows $s1% of your Mana Regeneration to continue while casting for $1242512d, increased to $s2% when Rapid Killing is consumed.
 
 https://www.wowhead.com/forever/spell=1223987
 =======
@@ -924,6 +1053,8 @@ labels    23
 
 effect 1  +50% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Regenerating Mana while casting.
+aura      Regenerating $w1% of normal while casting spells.
 
 https://www.wowhead.com/forever/spell=1242512
 =======
@@ -944,6 +1075,8 @@ effect 1  50% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 sp=1 mechanic=2 target=[6,0]
+tooltip   A short-range shot that deals $s1% weapon damage and disorients the target for $d.  Any damage caused will remove the effect.  Turns off your attack when used.
+aura      Disoriented.
 
 https://www.wowhead.com/forever/spell=19503
 =======
@@ -959,6 +1092,8 @@ effect 1  50% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_CONFUSE base=0 sp=1 mechanic=2 target=[6,0]
+tooltip   A short-range shot that deals $s1% weapon damage and disorients the target for $d.  Any damage caused will remove the effect.
+aura      Disoriented.
 
 https://www.wowhead.com/forever/spell=23601
 =======
@@ -975,6 +1110,8 @@ labels    23
 
 effect 1  -2% physical hit to the enemy (the weapon requirement only gates casting)
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   Stings the target, reducing the target's chance to hit with attacks by $s1% for $d. Only one Sting per Hunter can be active on any one target.
+aura      Chance to hit with attacks reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=3043
 =======
@@ -992,6 +1129,8 @@ labels    23
 
 effect 1  2 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1978
 =======
@@ -1009,6 +1148,8 @@ labels    23
 
 effect 1  6 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13549
 =======
@@ -1026,6 +1167,8 @@ labels    23
 
 effect 1  12 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13550
 =======
@@ -1043,6 +1186,8 @@ labels    23
 
 effect 1  22 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=22 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13551
 =======
@@ -1060,6 +1205,8 @@ labels    23
 
 effect 1  34 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=34 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13552
 =======
@@ -1077,6 +1224,8 @@ labels    23
 
 effect 1  48 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=48 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13553
 =======
@@ -1094,6 +1243,8 @@ labels    23
 
 effect 1  64 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=64 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13554
 =======
@@ -1111,6 +1262,8 @@ labels    23
 
 effect 1  83 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=83 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=13555
 =======
@@ -1128,6 +1281,8 @@ labels    23
 
 effect 1  111 nature damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=25295
 =======
@@ -1139,6 +1294,8 @@ range     100 yd
 
 effect 1  4 nature damage every 3 s to the enemy (4 ticks, +0.08 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.08 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425728
 =======
@@ -1150,6 +1307,8 @@ range     100 yd
 
 effect 1  8 nature damage every 3 s to the enemy (4 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 sp=0.125 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425729
 =======
@@ -1161,6 +1320,8 @@ range     100 yd
 
 effect 1  16 nature damage every 3 s to the enemy (4 ticks, +0.185 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=16 sp=0.185 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425730
 =======
@@ -1172,6 +1333,8 @@ range     100 yd
 
 effect 1  28 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=28 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425732
 =======
@@ -1183,6 +1346,8 @@ range     100 yd
 
 effect 1  42 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=42 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425733
 =======
@@ -1194,6 +1359,8 @@ range     100 yd
 
 effect 1  58 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=58 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425734
 =======
@@ -1205,6 +1372,8 @@ range     100 yd
 
 effect 1  77 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=77 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425735
 =======
@@ -1216,6 +1385,8 @@ range     100 yd
 
 effect 1  98 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=98 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425736
 =======
@@ -1227,6 +1398,8 @@ range     100 yd
 
 effect 1  111 nature damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425737
 =======
@@ -1238,6 +1411,8 @@ range     100 yd
 
 effect 1  111 nature damage every 3 s to the enemy (7 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1232979
 =======
@@ -1249,6 +1424,8 @@ range     100 yd
 
 effect 1  111 nature damage every 3 s to the enemy (14 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1232980
 =======
@@ -1260,6 +1437,8 @@ range     100 yd
 
 effect 1  111 nature damage every 3 s to the enemy (21 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1232981
 =======
@@ -1271,6 +1450,8 @@ range     100 yd
 
 effect 1  111 nature damage every 3 s to the enemy (28 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=111 sp=0.2 period=3000ms target=[6,0]
+tooltip   Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Causes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1232982
 =======
@@ -1292,6 +1473,8 @@ effect 1  normalised weapon damage +160 to the enemy
           E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
 effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
+tooltip   A long-range shot that deals ranged damage plus $s1 and increases the range of your next $n Shots by $s2 yards for $d.
+aura      Shot range increased by $s2.
 
 https://www.wowhead.com/forever/spell=1310687
 =======
@@ -1313,6 +1496,8 @@ effect 1  normalised weapon damage +225 to the enemy
           E_NORMALIZED_WEAPON_DMG base=225 sp=1 target=[6,0]
 effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
+tooltip   A long-range shot that deals ranged damage plus $s1 and increases the range of your next $n Shots by $s2 yards for $d.
+aura      Shot range increased by $s2.
 
 https://www.wowhead.com/forever/spell=1310785
 =======
@@ -1334,6 +1519,8 @@ effect 1  normalised weapon damage +295 to the enemy
           E_NORMALIZED_WEAPON_DMG base=295 sp=1 target=[6,0]
 effect 2  SPELLMOD_RANGE +10 on family 9 mask 0x61a01
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=9 mask=0x61a01 target=[1,0]
+tooltip   A long-range shot that deals ranged damage plus $s1 and increases the range of your next $n Shots by $s2 yards for $d.
+aura      Shot range increased by $s2.
 
 https://www.wowhead.com/forever/spell=1310786
 =======
@@ -1346,6 +1533,8 @@ labels    23
 
 effect 1  raid aura: +30 ranged attack power
           E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=30 radius=45 target=[1,0]
+tooltip   Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
+aura      Ranged Attack Power increased by $w1.
 
 https://www.wowhead.com/forever/spell=19506
 =======
@@ -1358,6 +1547,8 @@ labels    23
 
 effect 1  raid aura: +40 ranged attack power
           E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=40 radius=45 target=[1,0]
+tooltip   Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
+aura      Ranged Attack Power increased by $w1.
 
 https://www.wowhead.com/forever/spell=20905
 =======
@@ -1370,6 +1561,8 @@ labels    23
 
 effect 1  raid aura: +50 ranged attack power
           E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=50 radius=45 target=[1,0]
+tooltip   Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
+aura      Ranged Attack Power increased by $w1.
 
 https://www.wowhead.com/forever/spell=20906
 =======
@@ -1382,6 +1575,8 @@ labels    23
 
 effect 1  raid aura: +15 ranged attack power
           E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=15 radius=45 target=[1,0]
+tooltip   Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
+aura      Ranged Attack Power increased by $w1.
 
 https://www.wowhead.com/forever/spell=1299346
 =======
@@ -1394,6 +1589,8 @@ labels    23
 
 effect 1  raid aura: +22 ranged attack power
           E_APPLY_AREA_AURA_RAID A_MOD_RANGED_ATTACK_POWER base=22 radius=45 target=[1,0]
+tooltip   Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
+aura      Ranged Attack Power increased by $w1.
 
 https://www.wowhead.com/forever/spell=1299348
 =======
@@ -1411,6 +1608,8 @@ labels    23
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=154 period=2000ms target=[6,0]
+tooltip   Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Drains $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=3034
 =======
@@ -1428,6 +1627,8 @@ labels    23
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=212 period=2000ms target=[6,0]
+tooltip   Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Drains $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=14279
 =======
@@ -1445,6 +1646,8 @@ labels    23
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=277 period=2000ms target=[6,0]
+tooltip   Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.
+aura      Drains $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=14280
 =======
@@ -1466,6 +1669,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41245 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Continuously fires a volley of ammo at the target area, causing $1279721s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 https://www.wowhead.com/forever/spell=1510
 =======
@@ -1487,6 +1691,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41244 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 https://www.wowhead.com/forever/spell=14294
 =======
@@ -1508,6 +1713,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41242 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (6 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Continuously fires a volley of ammo at the target area, causing $1279715s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 https://www.wowhead.com/forever/spell=14295
 =======
@@ -1523,6 +1729,7 @@ attrs     channeled
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=300 sp=0.056 period=1000ms radius=8 target=[28,0]
+tooltip   Continuously fires a volley of ammo at the target area, causing $s1 Arcane damage to enemy targets within $a1 yards every second for $d.
 
 https://www.wowhead.com/forever/spell=22908
 =======

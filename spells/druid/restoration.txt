@@ -13,6 +13,8 @@ effect 1  casts 3137 Abolish Poison Effect every 2 s to the friendly target (4 t
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=2000ms trigger=3137 target=[21,0]
 effect 2  dispels 1 poison effect to the friendly target
           E_DISPEL base=1 misc=4 target=[21,0]
+tooltip   Attempts to cure $s2 poison effect on the target, and $3137s1 more poison effect every $t1 seconds for $d.
+aura      Attempts to cure $3137s1 poison every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=2893
 =======
@@ -27,6 +29,7 @@ labels    21
 
 effect 1  dispels 1 poison effect to the friendly target
           E_DISPEL base=1 misc=4 target=[21,0]
+tooltip   Cures $s1 poison $leffect:effects; on the target.
 
 https://www.wowhead.com/forever/spell=8946
 =======
@@ -38,6 +41,7 @@ effect 1  SPELLMOD_COST -50% on family 7 mask 0x0,0x0,0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=7 mask=0x0,0x0,0x20000000 target=[1,0]
 effect 2  SPELLMOD_DURATION +50% on family 7 mask 0x0,0x0,0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=7 mask=0x0,0x0,0x20000000 target=[1,0]
+tooltip   Decreases the mana cost of Mark of the Wild by $s1% and increases its duration by $s2%.
 
 https://www.wowhead.com/forever/spell=436956
 =======
@@ -50,6 +54,9 @@ labels    3096, 3100
 
 effect 1  16 healing to target 87 (+0.06 spell power)
           E_HEAL base=16 sp=0.06 radius=15 target=[87,31]
+tooltip   Heals all party members within $a1 yards of the target for ${$<healpower>*$m1/100}.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=417148
 =======
@@ -61,6 +68,9 @@ refs      417148 Efflorescence, 417147 Efflorescence
 
 effect 1  a dummy aura holding 100 from family 7 mask 0x0,0x2
           E_APPLY_AURA A_DUMMY base=100 family=7 mask=0x0,0x2 target=[1,0]
+tooltip   Your Swiftmend now also causes Efflorescence, healing all party members within $417148a1 yards of the Swiftmend target's location for ${$<healpower>*$417148m1/100} every $417147t2 sec for $417147d.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=417149
 =======
@@ -71,6 +81,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417149 misc=417346 target=[1,0]
+tooltip   Gain the Efflorescence ability:
+
+          $@spellicon417149
+          $@spelldesc417149
 
 https://www.wowhead.com/forever/spell=431466
 =======
@@ -118,6 +132,7 @@ effect 19 replaces an action bar spell with 9857 Regrowth
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436945 sp=1 misc=9857 target=[1,0]
 effect 20 replaces an action bar spell with 9858 Regrowth
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436946 sp=1 misc=9858 target=[1,0]
+tooltip   Your Rejuvenation and Regrowth spells can now be active on targets affected by another Druid's Rejuvenation or Regrowth.
 
 https://www.wowhead.com/forever/spell=417123
 =======
@@ -131,6 +146,7 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Gives you a $m1% chance to gain $/10;17057s1 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores ${100*($m2/100)}% of the Energy you had when last in Cat Form, plus ${10*($m2/100)} Energy per second spent outside Bear Form or Dire Bear Form, up to ${100*($m2/100)} Energy.
 
 https://www.wowhead.com/forever/spell=17056
 =======
@@ -143,6 +159,7 @@ effect 1  SPELLMOD_DAMAGE +2% on family 7 mask 0xe0,0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=7 mask=0xe0,0x2 target=[1,0]
 effect 2  SPELLMOD_DOT +2% on family 7 mask 0x50,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=7 mask=0x50,0x4000000 target=[1,0]
+tooltip   Increases the effect of all your healing spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17104
 =======
@@ -153,6 +170,7 @@ labels    21
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10,0x4000012
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=21 family=7 mask=0x10,0x4000012 target=[1,0]
+tooltip   Reduces the global cooldown by ${$m1/-1000}.1 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells.
 
 https://www.wowhead.com/forever/spell=414673
 =======
@@ -182,6 +200,8 @@ effect 7  +20 shadow resistance to the raid around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 radius=100 target=[56,0]
 effect 8  +20 arcane resistance to the raid around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 radius=100 target=[56,0]
+tooltip   Gives the Gift of the Wild to all party and raid members, increasing armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=21849
 =======
@@ -211,6 +231,8 @@ effect 7  +27 shadow resistance to the raid around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 radius=100 target=[56,0]
 effect 8  +27 arcane resistance to the raid around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 radius=100 target=[56,0]
+tooltip   Gives the Gift of the Wild to all party and raid members, increasing armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=21850
 =======
@@ -227,6 +249,7 @@ labels    21
 
 effect 1  40–55 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=44 ppl=0.8 variance=0.3181818 sp=0.429 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=5185
 =======
@@ -243,6 +266,7 @@ labels    21
 
 effect 1  94–119 healing to the friendly target (at level 60, +0.571 spell power)
           E_HEAL base=100 ppl=1.3 variance=0.24 sp=0.571 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=5186
 =======
@@ -259,6 +283,7 @@ labels    21
 
 effect 1  188–233 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=201 ppl=1.9 variance=0.21917808 sp=0.714 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=5187
 =======
@@ -275,6 +300,7 @@ labels    21
 
 effect 1  338–413 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=362 ppl=2.7 variance=0.2029703 sp=0.857 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=5188
 =======
@@ -291,6 +317,7 @@ labels    21
 
 effect 1  510–617 healing to the friendly target (at level 60)
           E_HEAL base=546 ppl=3.5 variance=0.19273302 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=5189
 =======
@@ -307,6 +334,7 @@ labels    21
 
 effect 1  661–793 healing to the friendly target (at level 60)
           E_HEAL base=707 ppl=4 variance=0.18581907 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=6778
 =======
@@ -323,6 +351,7 @@ labels    21
 
 effect 1  840–1001 healing to the friendly target (at level 60)
           E_HEAL base=898 ppl=4.5 variance=0.17898832 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=8903
 =======
@@ -339,6 +368,7 @@ labels    21
 
 effect 1  1097–1301 healing to the friendly target (at level 60)
           E_HEAL base=1173 ppl=5.2 variance=0.17364813 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9758
 =======
@@ -355,6 +385,7 @@ labels    21
 
 effect 1  1417–1674 healing to the friendly target (at level 60)
           E_HEAL base=1516 ppl=5.9 variance=0.16908212 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9888
 =======
@@ -371,6 +402,7 @@ labels    21
 
 effect 1  1788–2105 healing to the friendly target (at level 60)
           E_HEAL base=1920 ppl=6.6 variance=0.16504854 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9889
 =======
@@ -387,6 +419,7 @@ labels    21
 
 effect 1  2139–2525 healing to the friendly target (at level 60)
           E_HEAL base=2332 ppl=7.3 variance=0.1658576 sp=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=25297
 =======
@@ -398,6 +431,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura from family 7 mask 0x10
           E_APPLY_AURA A_DUMMY base=0 family=7 mask=0x10 target=[1,0]
+tooltip   On Healing Touch critical hits, you regain 30% of the mana cost of the spell.
 
 https://www.wowhead.com/forever/spell=28719
 =======
@@ -410,6 +444,7 @@ refs      17080 Improved Enrage
 
 effect 1  casts 17080 Improved Enrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=17080 target=[1,0]
+tooltip   $?a436895[The Enrage ability instantly generates an additional $/10;17080s1 Rage.][The Enrage ability now instantly generates $/10;17080s1 Rage.]
 
 https://www.wowhead.com/forever/spell=17079
 =======
@@ -422,6 +457,7 @@ refs      17081 Improved Enrage
 
 effect 1  casts 17081 Improved Enrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=17081 target=[1,0]
+tooltip   $?a436895[The Enrage ability instantly generates an additional $/10;17081s1 Rage.][The Enrage ability now instantly generates $/10;17081s1 Rage.]
 
 https://www.wowhead.com/forever/spell=17082
 =======
@@ -432,6 +468,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +7% on family 7 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=7 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+tooltip   Increases the effects of your Mark of the Wild and Gift of the Wild spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17050
 =======
@@ -442,6 +479,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +14% on family 7 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+tooltip   Increases the effects of your Mark of the Wild and Gift of the Wild spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17051
 =======
@@ -452,6 +490,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +21% on family 7 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=21 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+tooltip   Increases the effects of your Mark of the Wild and Gift of the Wild spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17053
 =======
@@ -462,6 +501,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +28% on family 7 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=28 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+tooltip   Increases the effects of your Mark of the Wild and Gift of the Wild spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17054
 =======
@@ -472,6 +512,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +35% on family 7 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=35 sp=1 misc=8 family=7 mask=0x40000 target=[1,0]
+tooltip   Increases the effects of your Mark of the Wild and Gift of the Wild spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17055
 =======
@@ -482,6 +523,7 @@ labels    21
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 7 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=7 family=7 mask=0x40 target=[1,0]
+tooltip   Increases the critical effect chance of your Regrowth spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17074
 =======
@@ -492,6 +534,7 @@ labels    21
 
 effect 1  SPELLMOD_DOT +5% on family 7 mask 0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=7 mask=0x10 target=[1,0]
+tooltip   Increases the effect of your Rejuvenation spell by $s1%.
 
 https://www.wowhead.com/forever/spell=17111
 =======
@@ -504,6 +547,7 @@ effect 1  SPELLMOD_THREAT -100% on family 7 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=2 family=7 mask=0x80 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -60% on family 7 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=11 family=7 mask=0x80 target=[1,0]
+tooltip   Reduces threat caused by Tranquility by $s1% and its cooldown by $m2%.
 
 https://www.wowhead.com/forever/spell=17123
 =======
@@ -522,6 +566,8 @@ effect 1  +100% mana regen while casting to the friendly target
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[21,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=400 sp=1 target=[21,0]
+tooltip   Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.
+aura      Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.
 
 https://www.wowhead.com/forever/spell=29166
 =======
@@ -535,6 +581,8 @@ effect 1  +100% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=400 sp=1 target=[1,0]
+tooltip   Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.
+aura      Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.
 
 https://www.wowhead.com/forever/spell=456195
 =======
@@ -555,6 +603,10 @@ effect 1  4 healing every 1 s to the friendly target (7 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=4 period=1000ms target=[21,0]
 effect 2  a dummy aura holding 57 to the friendly target
           E_APPLY_AURA A_DUMMY base=57 sp=0.274 target=[21,0]
+tooltip   Heals the target for ${$m1/100*7*$<healpower>} over $d.  When Lifebloom completes its duration or is dispelled, the target instantly heals for ${$m2/100*$<healpower>} and the Druid regains half the cost of the spell.  This effect can stack up to $u times on the same target.
+aura      Heals $w1 every second and $w2 when effect finishes or is dispelled.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=408124
 =======
@@ -565,6 +617,7 @@ range     40 yd
 
 effect 1  37–51 healing to the caster
           E_HEAL base=44 variance=0.3181818 target=[1,0]
+tooltip   Heals the target over 7 sec.  When Lifebloom completes its duration or is dispelled, the target instantly heals.  This effect can stack up to 3 times on the same target.
 
 https://www.wowhead.com/forever/spell=408245
 =======
@@ -576,6 +629,10 @@ effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408124 misc=399966 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=7 mask=0x10 target=[1,0]
+tooltip   Reduces the global cooldown on your  Rejuvenation and Lifebloom abilities by ${$m2/-1000}.1 sec and you gain the Lifebloom ability:
+
+          $@spellicon408124
+          $@spelldesc408124
 
 https://www.wowhead.com/forever/spell=409824
 =======
@@ -587,6 +644,7 @@ refs      414680 Living Seed
 
 effect 1  a dummy aura holding 50 from family 7 mask 0x10,0x10
           E_APPLY_AURA A_DUMMY base=50 sp=1 family=7 mask=0x10,0x10 target=[1,0]
+tooltip   When you critically heal your target with any non-periodic healing spell you plant a Living Seed on the target for $s1% of the amount healed. The Living Seed will bloom the next time the target takes damage or receives non-periodic healing. Lasts $414680d.
 
 https://www.wowhead.com/forever/spell=414677
 =======
@@ -601,6 +659,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  casts nothing on its trigger to the friendly target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 target=[21,0]
+aura      Healed for $w1 health the next time damage is taken or non-periodic healing is received.
 
 https://www.wowhead.com/forever/spell=414680
 =======
@@ -613,6 +672,7 @@ attrs     cannot crit
 
 effect 1  100 healing to the friendly target
           E_HEAL base=100 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=414683
 =======
@@ -628,6 +688,8 @@ labels    21
 
 effect 1  +34 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=34 amplitude=1 misc=1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 for $d.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=1126
 =======
@@ -645,6 +707,8 @@ effect 1  +88 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=88 amplitude=1 misc=1 target=[21,0]
 effect 2  +3 to all stats to the friendly target
           E_APPLY_AURA A_MOD_STAT base=3 amplitude=1 misc=-1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 and all attributes by $s2 for $d.
+aura      Increases armor by $s1 and all attributes by $s2.
 
 https://www.wowhead.com/forever/spell=5232
 =======
@@ -674,6 +738,8 @@ effect 7  +7 shadow resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=32 target=[21,0]
 effect 8  +7 arcane resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=7 misc=64 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=5234
 =======
@@ -691,6 +757,8 @@ effect 1  +142 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=142 amplitude=1 misc=1 target=[21,0]
 effect 2  +5 to all stats to the friendly target
           E_APPLY_AURA A_MOD_STAT base=5 misc=-1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 and all attributes by $s2 for $d.
+aura      Increases armor by $s1 and all attributes by $s2.
 
 https://www.wowhead.com/forever/spell=6756
 =======
@@ -720,6 +788,8 @@ effect 7  +14 shadow resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=32 target=[21,0]
 effect 8  +14 arcane resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=14 misc=64 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=8907
 =======
@@ -749,6 +819,8 @@ effect 7  +20 shadow resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=32 target=[21,0]
 effect 8  +20 arcane resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=20 misc=64 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=9884
 =======
@@ -778,6 +850,8 @@ effect 7  +27 shadow resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[21,0]
 effect 8  +27 arcane resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=9885
 =======
@@ -794,6 +868,8 @@ effect 2  +12 to all stats to the target
           E_APPLY_AURA A_MOD_STAT base=12 misc=-1 target=[25,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_EXCLUSIVE base=20 misc=126 target=[25,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=24752
 =======
@@ -822,6 +898,8 @@ effect 7  +15 shadow resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=32 target=[21,0]
 effect 8  +15 arcane resistance to the friendly target
           E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=64 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=364163
 =======
@@ -849,6 +927,8 @@ effect 7  +27 shadow resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 target=[1,0]
 effect 8  +27 arcane resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 target=[1,0]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2, and all resistances by $s3 for $d.
+aura      Increases armor by $s1, all attributes by $s2, and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=1291335
 =======
@@ -876,6 +956,8 @@ effect 7  +27 shadow resistance to every ally around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=32 radius=50 target=[22,30]
 effect 8  +27 arcane resistance to every ally around the caster
           E_APPLY_AURA A_MOD_RESISTANCE base=27 misc=64 radius=50 target=[22,30]
+tooltip   Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.
+aura      Armor increased by $s1, all attributes by $s2 and all resistances by $s3.
 
 https://www.wowhead.com/forever/spell=1310503
 =======
@@ -886,6 +968,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -10% on family 7 mask 0xe0000000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
+tooltip   Reduces the mana cost of all shapeshifting by $s1%.
 
 https://www.wowhead.com/forever/spell=16833
 =======
@@ -898,6 +981,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x2000000 target=[1,0]
 effect 2  +100% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=100 sp=1 misc=127 target=[1,0]
+tooltip   Reduces the cast time of your Healing Touch spell by $/1000;S1 sec and increases all damage you deal by $m2%.
 
 https://www.wowhead.com/forever/spell=17069
 =======
@@ -908,6 +992,7 @@ labels    21
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +14% on family 7 mask 0x104002e5,0x2000000,0xa200,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 sp=1 misc=9 family=7 mask=0x104002e5,0x2000000,0xa200,0x10000 target=[1,0]
+tooltip   Gives your Arcane and Nature spells a $m1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=17063
 =======
@@ -924,6 +1009,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x1000261,0x2000000,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x1000261,0x2000000,0x2000000 target=[1,0]
+tooltip   When activated, your next Nature spell becomes an instant cast spell.
+aura      Your next Nature spell will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=17116
 =======
@@ -951,6 +1038,9 @@ labels    3096
 
 effect 1  161–189 healing to the friendly target (+0.357 spell power)
           E_HEAL base=175 variance=0.16 sp=0.357 target=[21,0]
+tooltip   Heals a friendly target for ${$m1/100*$<healpower>} to ${$M1/100*$<healpower>}. Heals for an additional 20% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target. This spell benefits from and triggers all effects associated with Healing Touch or Regrowth.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=408247
 =======
@@ -967,6 +1057,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=400 misc=700 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 https://www.wowhead.com/forever/spell=20484
 =======
@@ -983,6 +1074,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=750 misc=1200 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 https://www.wowhead.com/forever/spell=20739
 =======
@@ -999,6 +1091,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=1100 misc=1700 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 https://www.wowhead.com/forever/spell=20742
 =======
@@ -1015,6 +1108,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=1600 misc=2200 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 https://www.wowhead.com/forever/spell=20747
 =======
@@ -1031,6 +1125,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=2200 misc=2800 target=[0,0]
+tooltip   Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 https://www.wowhead.com/forever/spell=20748
 =======
@@ -1052,6 +1147,8 @@ effect 1  89–103 healing to the friendly target (at level 60, +0.286 spell pow
           E_HEAL base=87 ppl=1.8 variance=0.15384616 sp=0.286 target=[21,0]
 effect 2  13 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=13 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8936
 =======
@@ -1073,6 +1170,8 @@ effect 1  165–188 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=164 ppl=2.5 variance=0.13636364 sp=0.286 target=[21,0]
 effect 2  22 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=22 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8938
 =======
@@ -1094,6 +1193,8 @@ effect 1  234–267 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=235 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
 effect 2  32 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8939
 =======
@@ -1115,6 +1216,8 @@ effect 1  310–348 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=311 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
 effect 2  42 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8940
 =======
@@ -1136,6 +1239,8 @@ effect 1  390–439 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=394 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
 effect 2  52 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=52 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8941
 =======
@@ -1157,6 +1262,8 @@ effect 1  497–558 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=504 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
 effect 2  68 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=68 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=9750
 =======
@@ -1178,6 +1285,8 @@ effect 1  634–709 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=645 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
 effect 2  88 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=88 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=9856
 =======
@@ -1199,6 +1308,8 @@ effect 1  801–893 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=817 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
 effect 2  113 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=113 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=9857
 =======
@@ -1220,6 +1331,8 @@ effect 1  965–1077 healing to the friendly target (at level 60, +0.286 spell p
           E_HEAL base=1021 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
 effect 2  142 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=142 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=9858
 =======
@@ -1230,6 +1343,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 misc=4537 family=7 mask=0x40 target=[1,0]
+tooltip   Your initial cast and Regrowth ticks will increase the maximum health of your target by up to 50, stacking up to 7 times.
 
 https://www.wowhead.com/forever/spell=28744
 =======
@@ -1249,6 +1363,8 @@ effect 1  114–129 healing to the friendly target (at level 60, +0.2 spell powe
           E_HEAL base=91 ppl=1.8 variance=0.15384616 sp=0.2 target=[21,0]
 effect 2  14 healing every 3 s to the friendly target (7 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=14 sp=0.05 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436937
 =======
@@ -1268,6 +1384,8 @@ effect 1  221–246 healing to the friendly target (at level 60, +0.264 spell po
           E_HEAL base=176 ppl=2.5 variance=0.13636364 sp=0.264 target=[21,0]
 effect 2  25 healing every 3 s to the friendly target (7 ticks, +0.066 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.066 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436938
 =======
@@ -1287,6 +1405,8 @@ effect 1  329–364 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=257 ppl=3.1 variance=0.13229571 sp=0.286 target=[21,0]
 effect 2  37 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=37 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436939
 =======
@@ -1306,6 +1426,8 @@ effect 1  444–486 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=339 ppl=3.6 variance=0.1238938 sp=0.286 target=[21,0]
 effect 2  49 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=49 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436940
 =======
@@ -1325,6 +1447,8 @@ effect 1  573–626 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=431 ppl=4.1 variance=0.12064965 sp=0.286 target=[21,0]
 effect 2  61 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=61 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436942
 =======
@@ -1344,6 +1468,8 @@ effect 1  731–796 healing to the friendly target (at level 60, +0.286 spell po
           E_HEAL base=543 ppl=4.7 variance=0.11786372 sp=0.286 target=[21,0]
 effect 2  78 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=78 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436943
 =======
@@ -1363,6 +1489,8 @@ effect 1  926–1005 healing to the friendly target (at level 60, +0.286 spell p
           E_HEAL base=685 ppl=5.3 variance=0.11386862 sp=0.286 target=[21,0]
 effect 2  98 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=98 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436944
 =======
@@ -1382,6 +1510,8 @@ effect 1  1163–1259 healing to the friendly target (at level 60, +0.286 spell 
           E_HEAL base=857 ppl=6 variance=0.11201867 sp=0.286 target=[21,0]
 effect 2  123 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=123 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436945
 =======
@@ -1401,6 +1531,8 @@ effect 1  1411–1527 healing to the friendly target (at level 60, +0.286 spell 
           E_HEAL base=1061 ppl=6.8 variance=0.10933082 sp=0.286 target=[21,0]
 effect 2  152 healing every 3 s to the friendly target (7 ticks, +0.071 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=152 sp=0.071 period=3000ms target=[21,0]
+tooltip   Heals a friendly target for $s1 and another $o2 over $d.
+aura      Heals $s2 every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=436946
 =======
@@ -1419,6 +1551,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  8 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=8 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=774
 =======
@@ -1437,6 +1571,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  12 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=12 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1058
 =======
@@ -1455,6 +1591,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  23 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=23 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1430
 =======
@@ -1473,6 +1611,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  32 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=2090
 =======
@@ -1491,6 +1631,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  42 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=42 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=2091
 =======
@@ -1509,6 +1651,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  51 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=51 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=3627
 =======
@@ -1527,6 +1671,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  71 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=71 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=8910
 =======
@@ -1545,6 +1691,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  94 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=94 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=9839
 =======
@@ -1563,6 +1711,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  124 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=124 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=9840
 =======
@@ -1581,6 +1731,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  161 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=161 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=9841
 =======
@@ -1599,6 +1751,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  194 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=194 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25299
 =======
@@ -1609,6 +1763,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 misc=4533 family=7 mask=0x10 target=[1,0]
+tooltip   Your Rejuvenation ticks have a chance to restore 60 mana, 8 energy, or 2 rage to your target.
 
 https://www.wowhead.com/forever/spell=28716
 =======
@@ -1625,6 +1780,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  8 healing every 3 s to the friendly target (4 ticks, +0.08 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=8 sp=0.08 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417057
 =======
@@ -1641,6 +1798,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  14 healing every 3 s to the friendly target (4 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=14 sp=0.125 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417058
 =======
@@ -1657,6 +1816,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  29 healing every 3 s to the friendly target (4 ticks, +0.17 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=29 sp=0.17 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417059
 =======
@@ -1673,6 +1834,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  45 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=45 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417060
 =======
@@ -1689,6 +1852,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  61 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=61 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417061
 =======
@@ -1705,6 +1870,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  76 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=76 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417062
 =======
@@ -1721,6 +1888,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  97 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=97 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417063
 =======
@@ -1737,6 +1906,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  122 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=122 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417064
 =======
@@ -1753,6 +1924,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  152 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=152 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417065
 =======
@@ -1769,6 +1942,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  189 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=189 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417066
 =======
@@ -1785,6 +1960,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  222 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=222 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target for $o1 over $d.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417068
 =======
@@ -1799,6 +1976,7 @@ labels    21
 
 effect 1  dispels 1 curse effect to the friendly target
           E_DISPEL base=1 misc=2 target=[21,0]
+tooltip   Dispels $s1 Curse or Bane from a friendly target.
 
 https://www.wowhead.com/forever/spell=2782
 =======
@@ -1812,6 +1990,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=70 misc=135 target=[121,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=437138
 =======
@@ -1825,6 +2004,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=160 misc=300 target=[121,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=1237948
 =======
@@ -1838,6 +2018,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=300 misc=520 target=[121,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=1237949
 =======
@@ -1851,6 +2032,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=500 misc=750 target=[121,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=1237950
 =======
@@ -1864,6 +2046,7 @@ labels    21, 6316
 
 effect 1  unrecognised shape
           E_329 base=750 misc=1000 target=[121,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=1237951
 =======
@@ -1874,6 +2057,7 @@ labels    21
 
 effect 1  -30% threat
           E_APPLY_AURA A_MOD_THREAT base=-30 sp=1 misc=72 target=[1,0]
+tooltip   Reduces the threat generated by your Nature and Arcane spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17118
 =======
@@ -1890,6 +2074,7 @@ labels    21
 
 effect 1  1 healing to the friendly target
           E_HEAL base=1 target=[21,0]
+tooltip   Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.
 
 https://www.wowhead.com/forever/spell=18562
 =======
@@ -1900,6 +2085,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -2% on family 7 mask 0xa0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-2 sp=1 misc=14 family=7 mask=0xa0 target=[1,0]
+tooltip   Reduces the mana cost of your Healing Touch and Tranquility spells by $s1%.
 
 https://www.wowhead.com/forever/spell=24968
 =======
@@ -1917,6 +2103,8 @@ labels    21
 
 effect 1  party aura: 90.6 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=87 ppl=0.6 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby party members within $a yards for $?$p456322[${$m1*2}][$s1] every $t1 sec for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $w1 every $t1 sec.
 
 https://www.wowhead.com/forever/spell=740
 =======
@@ -1934,6 +2122,8 @@ labels    21
 
 effect 1  party aura: 133.2 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=129 ppl=0.7 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby party members within $a yards for $?$p456322[${$m1*2}][$s1] every $t1 sec for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $w1 every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8918
 =======
@@ -1951,6 +2141,8 @@ labels    21
 
 effect 1  party aura: 201.4 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=196 ppl=0.9 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby party members within $a yards for $?$p456322[${$m1*2}][$s1] every $t1 sec for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $w1 every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9862
 =======
@@ -1968,6 +2160,8 @@ labels    21
 
 effect 1  party aura: 285 healing every 2 s (5 ticks, at level 60, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=285 ppl=1 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby party members within $a yards for $?$p456322[${$m1*2}][$s1] every $t1 sec for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $w1 every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9863
 =======
@@ -1980,6 +2174,8 @@ attrs     channeled
 
 effect 1  party aura: 374.20636 healing every 2 s (5 ticks, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=374.20636 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby group members for $s1 every $t1 seconds for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $s1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=21791
 =======
@@ -1992,6 +2188,8 @@ attrs     channeled
 
 effect 1  party aura: 5408–6285 healing every 2 s (5 ticks, +0.067 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=5846.974 variance=0.15 sp=0.067 period=2000ms radius=20 target=[1,0]
+tooltip   Regenerates all nearby group members for $s1 every $t1 seconds for $d.  Druid must channel to maintain the spell.
+aura      Heals nearby party members for $s1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25817
 =======
@@ -2006,6 +2204,8 @@ effect 1  254–296 healing every 3 s to every ally around the caster (5 ticks, 
           E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 sp=0.067 period=3000ms radius=100 target=[22,30]
 effect 2  254–296 healing every 3 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=275 variance=0.15 period=3000ms target=[1,1]
+tooltip   Regenerates all nearby group members for $s1 every $t1 sec for $d. The Druid must channel to maintain the spell.
+aura      Heals nearby party members for $s1 every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1253568
 =======
@@ -2026,6 +2226,10 @@ effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell
           E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+aura      Heals $w1 damage every $t1 second.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=408120
 =======
@@ -2035,6 +2239,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408120 misc=399967 target=[1,0]
+tooltip   Gain the Wild Growth ability:
+
+          $@spellicon408120
+          $@spelldesc408120
 
 https://www.wowhead.com/forever/spell=409810
 =======
@@ -2055,6 +2263,10 @@ effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spe
           E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+aura      Heals $w1 damage every $t1 sec.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1238214
 =======
@@ -2075,5 +2287,9 @@ effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell
           E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+aura      Heals $w1 damage every $t1 sec.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=1238215

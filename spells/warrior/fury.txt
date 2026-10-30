@@ -8,6 +8,8 @@ labels    25
 
 effect 1  +23 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=21 ppl=0.3 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=5242
 =======
@@ -21,6 +23,8 @@ labels    25
 
 effect 1  +35 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=33 ppl=0.3 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=6192
 =======
@@ -34,6 +38,8 @@ labels    25
 
 effect 1  +12 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=9 ppl=0.3 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=6673
 =======
@@ -47,6 +53,8 @@ labels    25
 
 effect 1  +56 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=51 ppl=0.6 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11549
 =======
@@ -60,6 +68,8 @@ labels    25
 
 effect 1  +83 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=78 ppl=0.6 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11550
 =======
@@ -73,6 +83,8 @@ labels    25
 
 effect 1  +115 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=111 ppl=0.6 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11551
 =======
@@ -86,6 +98,8 @@ labels    25
 
 effect 1  +139 attack power to the raid around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=139 ppl=0.6 radius=20 target=[56,0]
+tooltip   The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=25289
 =======
@@ -97,6 +111,8 @@ gcd       1.5 s
 
 effect 1  +245 attack power to the party around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=185 ppl=1 radius=20 target=[20,0]
+tooltip   The warrior shouts, increasing the attack power of all party members within $a1 yards by $s1.  Lasts $d.
+aura      Increases your attack power by $s1.
 
 https://www.wowhead.com/forever/spell=27578
 =======
@@ -113,6 +129,8 @@ effect 1  immune to fear
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[1,0]
 effect 2  immune to knockout
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=14 target=[1,0]
+tooltip   The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.
+aura      Immune to Fear and Incapacitate effects.  Generating extra rage when taking damage.
 
 https://www.wowhead.com/forever/spell=18499
 =======
@@ -126,6 +144,7 @@ refs      7381 Berserker Stance Passive
 
 effect 1  shifts into Berserker
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=19 target=[1,0]
+tooltip   An aggressive stance. Critical strike chance increased by $7381s1% and all damage taken is increased by $7381s2%.
 
 https://www.wowhead.com/forever/spell=2458
 =======
@@ -142,6 +161,7 @@ effect 3  -20% threat
           E_APPLY_AURA A_MOD_THREAT base=-20 misc=127 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACK_POWER_PCT base=0 target=[1,0]
+tooltip   Increases crit chance by $s1%. Increases all damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=7381
 =======
@@ -162,6 +182,8 @@ effect 2  a dummy effect holding 45 to the enemy
           E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
+tooltip   Instantly attack the target causing damage equal to $s2% of your Attack Power plus $s1 and increasing your movement speed by $s3% for $d.
+aura      Movement speed increased by $s3%.
 
 https://www.wowhead.com/forever/spell=23881
 =======
@@ -182,6 +204,8 @@ effect 2  a dummy effect holding 45 to the enemy
           E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
+tooltip   Instantly attack the target causing damage equal to $s2% of your Attack Power plus $s1 and increasing your movement speed by $s3% for $d.
+aura      Movement speed increased by $s3%.
 
 https://www.wowhead.com/forever/spell=23892
 =======
@@ -202,6 +226,8 @@ effect 2  a dummy effect holding 45 to the enemy
           E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
+tooltip   Instantly attack the target causing damage equal to $s2% of your Attack Power plus $s1 and increasing your movement speed by $s3% for $d.
+aura      Movement speed increased by $s3%.
 
 https://www.wowhead.com/forever/spell=23893
 =======
@@ -222,6 +248,8 @@ effect 2  a dummy effect holding 45 to the enemy
           E_DUMMY base=45 sp=1 target=[6,0]
 effect 3  +10% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 target=[1,0]
+tooltip   Instantly attack the target causing damage equal to $s2% of your Attack Power plus $s1 and increasing your movement speed by $s3% for $d.
+aura      Movement speed increased by $s3%.
 
 https://www.wowhead.com/forever/spell=23894
 =======
@@ -234,6 +262,7 @@ effect 1  SPELLMOD_RADIUS +50% on family 4 mask 0xf0000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=6 family=4 mask=0xf0000 target=[1,0]
 effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000 target=[1,0]
+tooltip   Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.
 
 https://www.wowhead.com/forever/spell=12321
 =======
@@ -248,6 +277,8 @@ labels    25
 
 effect 1  taunts to every enemy around the caster
           E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,15]
+tooltip   Forces all nearby enemies within $a yards to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=1161
 =======
@@ -261,6 +292,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +5 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=5 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does your weapon damage plus $s1 to the target and a second nearby enemy.
 
 https://www.wowhead.com/forever/spell=845
 =======
@@ -274,6 +306,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +10 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=10 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does your weapon damage plus $s1 to the target and a second nearby enemy.
 
 https://www.wowhead.com/forever/spell=7369
 =======
@@ -287,6 +320,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +18 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=18 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does your weapon damage plus $s1 to the target and a second nearby enemy.
 
 https://www.wowhead.com/forever/spell=11608
 =======
@@ -300,6 +334,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does your weapon damage plus $s1 to the target and a second nearby enemy.
 
 https://www.wowhead.com/forever/spell=11609
 =======
@@ -313,6 +348,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +50 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=50 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does your weapon damage plus $s1 to the target and a second nearby enemy.
 
 https://www.wowhead.com/forever/spell=20569
 =======
@@ -330,6 +366,8 @@ effect 2  immune to fear
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=100 misc=5 target=[1,0]
 effect 3  +5% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=5 misc=127 target=[1,0]
+tooltip   When activated, increases your Physical damage done by $s1% and makes you immune to Fear effects, but increases all damage you take by $s3%. Lasts $d.
+aura      Increases physical damage by $s1%.  Reduces armor and all resistances by $s3%.  Immune to Fear effects.
 
 https://www.wowhead.com/forever/spell=12328
 =======
@@ -345,6 +383,8 @@ effect 1  -63 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-49 ppl=-1.4 radius=10 target=[22,15]
 effect 2  19 threat to every enemy around the caster
           E_THREAT base=11 ppl=0.8 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=1160
 =======
@@ -360,6 +400,8 @@ effect 1  -91 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-77 ppl=-1.4 radius=10 target=[22,15]
 effect 2  27 threat to every enemy around the caster
           E_THREAT base=19 ppl=0.8 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=6190
 =======
@@ -375,6 +417,8 @@ effect 1  -112 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-98 ppl=-1.4 radius=10 target=[22,15]
 effect 2  35 threat to every enemy around the caster
           E_THREAT base=27 ppl=0.8 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11554
 =======
@@ -390,6 +434,8 @@ effect 1  -161 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-147 ppl=-1.4 radius=10 target=[22,15]
 effect 2  43 threat to every enemy around the caster
           E_THREAT base=35 ppl=0.8 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11555
 =======
@@ -405,6 +451,8 @@ effect 1  -205 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-196 ppl=-1.4 radius=10 target=[22,15]
 effect 2  47 threat to every enemy around the caster
           E_THREAT base=43 ppl=0.8 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=11556
 =======
@@ -416,6 +464,8 @@ gcd       1.5 s
 
 effect 1  -130 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-10 ppl=-2 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of nearby enemies by $s1 for $d.
+aura      Melee attack power reduced by $s1.
 
 https://www.wowhead.com/forever/spell=13730
 =======
@@ -427,6 +477,8 @@ gcd       1.5 s
 
 effect 1  -260 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-20 ppl=-4 radius=10 target=[22,15]
+tooltip   Reduces the melee attack power of nearby enemies by $s1 for $d.
+aura      Melee attack power reduced by $s1.
 
 https://www.wowhead.com/forever/spell=16244
 =======
@@ -440,6 +492,8 @@ effect 1  -300 attack power to every enemy around the caster
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-300 radius=45 target=[22,15]
 effect 2  -300 ranged attack power to every enemy around the caster
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-300 sp=1 radius=45 target=[22,15]
+tooltip   Reduces the melee and ranged attack power of nearby enemies by $s1 for $d.
+aura      Melee and ranged attack power reduced by $s1.
 
 https://www.wowhead.com/forever/spell=19778
 =======
@@ -453,6 +507,8 @@ effect 1  -200 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-140 ppl=-1 radius=10 target=[22,15]
 effect 2  -200 ranged attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=-140 ppl=-1 radius=10 target=[22,15]
+tooltip   Reduces the attack power of all enemies within $a1 yards by $s1 for $d.
+aura      Reduces attack power by $s1.
 
 https://www.wowhead.com/forever/spell=27579
 =======
@@ -467,6 +523,7 @@ effect 1  +5% off-hand damage
           E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=5 sp=1 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 sp=1 target=[1,0]
+tooltip   Increases the damage done by your off-hand weapon by $m1% and the Rage generated by your off-hand attacks by $m2%.
 
 https://www.wowhead.com/forever/spell=23584
 =======
@@ -479,6 +536,8 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OBS_MOD_HEALTH base=3 period=1000ms target=[1,0]
+tooltip   Heals you for $o1% of your maximum health over $d, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Useable while Stunned.
+aura      Healing $s1% of maximum health every $t sec.
 
 https://www.wowhead.com/forever/spell=402913
 =======
@@ -488,6 +547,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402913 misc=415450 target=[1,0]
+tooltip   Gain the Enraged Regeneration ability:
+
+          $@spellicon402913
+          $@spelldesc402913
 
 https://www.wowhead.com/forever/spell=403359
 =======
@@ -506,6 +569,7 @@ effect 1  a dummy effect holding 125 to the enemy
           E_DUMMY base=125 sp=1 target=[6,0]
 effect 2  casts 26651 Execute to the caster
           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=5308
 =======
@@ -537,6 +601,7 @@ effect 1  a dummy effect holding 200 to the enemy
           E_DUMMY base=200 sp=1 target=[6,0]
 effect 2  casts 26651 Execute to the caster
           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=20658
 =======
@@ -555,6 +620,7 @@ effect 1  a dummy effect holding 325 to the enemy
           E_DUMMY base=325 sp=1 target=[6,0]
 effect 2  casts 26651 Execute to the caster
           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=20660
 =======
@@ -573,6 +639,7 @@ effect 1  a dummy effect holding 450 to the enemy
           E_DUMMY base=450 sp=1 target=[6,0]
 effect 2  casts 26651 Execute to the caster
           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=20661
 =======
@@ -591,6 +658,7 @@ effect 1  a dummy effect holding 600 to the enemy
           E_DUMMY base=600 sp=1 target=[6,0]
 effect 2  casts 26651 Execute to the caster
           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 https://www.wowhead.com/forever/spell=20662
 =======
@@ -602,6 +670,9 @@ labels    25
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   Designer Note:
+
+          This marks the warrior as having just used Execute.
 
 https://www.wowhead.com/forever/spell=26651
 =======
@@ -614,6 +685,7 @@ effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
 
 https://www.wowhead.com/forever/spell=1323967
 =======
@@ -623,6 +695,7 @@ attrs     cannot crit
 
 effect 1  0 healing to the caster
           E_HEAL base=0 target=[1,0]
+tooltip   Healing from melee attacks.
 
 https://www.wowhead.com/forever/spell=1323968
 =======
@@ -635,6 +708,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no rol
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=0 sp=1 trigger=1323968 target=[1,0]
+tooltip   Successful melee attacks restore $s1 Health.
+aura      Successful melee attacks restore $w1 Health.
 
 https://www.wowhead.com/forever/spell=1323969
 =======
@@ -645,6 +720,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +5% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12318
 =======
@@ -655,6 +731,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +10% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12857
 =======
@@ -665,6 +742,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +15% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12858
 =======
@@ -675,6 +753,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +20% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12860
 =======
@@ -685,6 +764,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +25% on family 4 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 misc=8 family=4 mask=0x10000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12861
 =======
@@ -698,6 +778,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Berserker Rage ability will instantly generate $/10;m1 Rage and has a $m2% chance to remove all movement impairing effects when activated.
 
 https://www.wowhead.com/forever/spell=20500
 =======
@@ -708,6 +789,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -120 s on family 4 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=4 mask=0x80000 target=[1,0]
+tooltip   Reduces the cooldown of your Challenging Shout ability by $/60000;s1 mins.
 
 https://www.wowhead.com/forever/spell=12327
 =======
@@ -718,6 +800,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -180 s on family 4 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-180000 misc=11 family=4 mask=0x80000 target=[1,0]
+tooltip   Reduces the cooldown of your Challenging Shout ability by $/60000;s1 mins.
 
 https://www.wowhead.com/forever/spell=12886
 =======
@@ -728,6 +811,7 @@ labels    25
 
 effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x400000 target=[1,0]
+tooltip   Reduces the Rage cost of your Cleave ability by ${$m1/-10}.
 
 https://www.wowhead.com/forever/spell=12329
 =======
@@ -738,6 +822,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +8% on family 4 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 misc=8 family=4 mask=0x20000 target=[1,0]
+tooltip   Increases the melee attack power reduction of your Demoralizing Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12324
 =======
@@ -748,6 +833,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +16% on family 4 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=16 misc=8 family=4 mask=0x20000 target=[1,0]
+tooltip   Increases the melee attack power reduction of your Demoralizing Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12876
 =======
@@ -758,6 +844,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +24% on family 4 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=24 misc=8 family=4 mask=0x20000 target=[1,0]
+tooltip   Increases the melee attack power reduction of your Demoralizing Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12877
 =======
@@ -768,6 +855,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +32% on family 4 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=32 misc=8 family=4 mask=0x20000 target=[1,0]
+tooltip   Increases the melee attack power reduction of your Demoralizing Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12878
 =======
@@ -778,6 +866,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +40% on family 4 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=40 misc=8 family=4 mask=0x20000 target=[1,0]
+tooltip   Increases the melee attack power reduction of your Demoralizing Shout by $s1%.
 
 https://www.wowhead.com/forever/spell=12879
 =======
@@ -788,6 +877,7 @@ labels    25
 
 effect 1  SPELLMOD_COST -50 (-5 on a rage bar) on family 4 mask 0x20000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-50 sp=1 misc=14 family=4 mask=0x20000000 target=[1,0]
+tooltip   Reduces the Rage cost of your Execute ability by $/10;s1.
 
 https://www.wowhead.com/forever/spell=20502
 =======
@@ -798,6 +888,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -10 s on family 4 mask 0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=11 family=4 mask=0x40000000 target=[1,0]
+tooltip   Reduces the cooldown of your Intercept ability by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=20504
 =======
@@ -808,6 +899,7 @@ labels    25
 
 effect 1  SPELLMOD_DURATION +1 s on family 4 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=4 mask=0x40000 target=[1,0]
+tooltip   Increases the duration of your Intimidating Shout by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=19870
 =======
@@ -818,6 +910,7 @@ labels    25
 
 effect 1  SPELLMOD_DURATION +2 s on family 4 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 sp=1 misc=1 family=4 mask=0x40000 target=[1,0]
+tooltip   Increases the duration of your Intimidating Shout by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=19871
 =======
@@ -828,6 +921,7 @@ labels    25
 
 effect 1  SPELLMOD_COOLDOWN -15 s on family 4 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15000 sp=1 misc=11 family=4 mask=0x40000 target=[1,0]
+tooltip   Decreases the cooldown of Intimidating Shout by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24456
 =======
@@ -844,6 +938,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 sp=1 target=[6,0]
 effect 2  casts 20253 Intercept Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=20253 target=[6,0]
+tooltip   Charge an enemy, causing $20253s2 damage and stunning it for $20253d.
 
 https://www.wowhead.com/forever/spell=20252
 =======
@@ -860,6 +955,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 sp=1 target=[6,0]
 effect 2  casts 20614 Intercept Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=20614 target=[6,0]
+tooltip   Charge an enemy, causing $20614s2 damage and stunning it for $20614d.
 
 https://www.wowhead.com/forever/spell=20616
 =======
@@ -876,6 +972,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 sp=1 target=[6,0]
 effect 2  casts 20615 Intercept Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=20615 target=[6,0]
+tooltip   Charge an enemy, causing $20615s2 damage and stunning it for $20615d.
 
 https://www.wowhead.com/forever/spell=20617
 =======
@@ -888,6 +985,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 sp=1 target=[6,0]
 effect 2  casts 20615 Intercept Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=20615 target=[6,0]
+tooltip   Charge an enemy, causing $20615s2 damage and stunning it for $20615d.
 
 https://www.wowhead.com/forever/spell=27577
 =======
@@ -898,6 +996,7 @@ refs      20253 Intercept Stun
 
 effect 1  a dummy effect to every enemy around the caster
           E_DUMMY base=0 sp=1 radius=30 target=[22,15]
+tooltip   Charge an enemy, causing $20253s2 damage and stunning it for $20253d.
 
 https://www.wowhead.com/forever/spell=27826
 =======
@@ -920,6 +1019,8 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+tooltip   The warrior shouts, causing the targeted enemy to cower in fear.  Up to $i enemies within $a2 yds will flee in fear.  Lasts $d.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=5246
 =======
@@ -937,6 +1038,8 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+tooltip   Shouts at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=19134
 =======
@@ -949,6 +1052,7 @@ labels    25
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+aura      Cowering in fear.
 
 https://www.wowhead.com/forever/spell=20511
 =======
@@ -960,6 +1064,7 @@ range     10 yd
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+aura      Cowering in fear.
 
 https://www.wowhead.com/forever/spell=29544
 =======
@@ -977,6 +1082,8 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 sp=1 radius=8 target=[22,15]
+tooltip   Shouts at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=1213465
 =======
@@ -994,6 +1101,8 @@ effect 2  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=8 target=[22,15]
 effect 3  +10% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=10 sp=1 radius=8 target=[22,15]
+tooltip   Shouts at an enemy, paralyzing it with terror for $d. and causing all other nearby enemies to flee in fear.
+aura      Intimidated.
 
 https://www.wowhead.com/forever/spell=1270811
 =======
@@ -1008,6 +1117,8 @@ labels    25
 
 effect 1  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Causes all enemies within $a2 yds to be Dazed, reducing movement speed by $s1% for $d.
+aura      Movement speed reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=12323
 =======
@@ -1019,6 +1130,8 @@ duration  6 s
 
 effect 1  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+tooltip   Causes all enemies near the warrior to be dazed for $d.
+aura      Dazed.
 
 https://www.wowhead.com/forever/spell=23600
 =======
@@ -1038,6 +1151,7 @@ effect 1  20 physical damage to the enemy
           E_SCHOOL_DAMAGE base=20 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Pummel the target for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=6552
 =======
@@ -1057,6 +1171,7 @@ effect 1  50 physical damage to the enemy
           E_SCHOOL_DAMAGE base=50 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Pummel the target for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=6554
 =======
@@ -1070,6 +1185,7 @@ effect 1  15 physical damage to the enemy
           E_SCHOOL_DAMAGE base=15 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.
 
 https://www.wowhead.com/forever/spell=12555
 =======
@@ -1083,6 +1199,7 @@ effect 1  45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
 effect 2  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   Pummels an enemy for $s1 damage and interrupts the spell being cast for $d.
 
 https://www.wowhead.com/forever/spell=15615
 =======
@@ -1095,6 +1212,7 @@ range     5 yd
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 sp=1 target=[6,0]
+tooltip   Pummels an enemy and interrupts the spell being cast for $d.
 
 https://www.wowhead.com/forever/spell=19639
 =======
@@ -1113,6 +1231,7 @@ effect 2  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
 effect 3  a dummy effect holding 1 to the enemy
           E_DUMMY base=1 target=[6,0]
+tooltip   A ferocious strike that deals $s1% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Each other melee ability used while Enrage, Berserker Rage, or Bloodrage is active reduces Raging Blow's remaining cooldown by $s3 sec.
 
 https://www.wowhead.com/forever/spell=402911
 =======
@@ -1125,6 +1244,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 2  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x400000,0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x400000,0x4 target=[1,0]
+tooltip   Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.
 
 https://www.wowhead.com/forever/spell=1310315
 =======
@@ -1143,6 +1263,8 @@ effect 2  +20% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=127 target=[1,0]
 effect 3  immune to fear
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 sp=1 misc=5 target=[1,0]
+tooltip   The warrior will gain $s1% increased critical strike chance and will be immune to Fear effects for the next $d, but all damage taken is increased by $s2%.
+aura      Immune to Fear effects, $w1% increased critical strike chance, but all damage taken is increased by $w2%.
 
 https://www.wowhead.com/forever/spell=1719
 =======
@@ -1157,6 +1279,9 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-35 misc=1 target=[1,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_STATE_IMMUNITY base=0 sp=1 misc=7 target=[1,0]
+aura      Immune to fear effects.
+          All attacks do critical hits.
+          Armor reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=13847
 =======
@@ -1174,6 +1299,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1464
 =======
@@ -1191,6 +1317,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +43 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=43 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=8820
 =======
@@ -1208,6 +1335,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +68 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=68 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=11604
 =======
@@ -1225,6 +1353,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +87 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=87 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=11605
 =======
@@ -1237,6 +1366,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=462893
 =======
@@ -1249,6 +1379,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +43 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=43 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=462895
 =======
@@ -1261,6 +1392,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +68 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=68 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=462896
 =======
@@ -1273,6 +1405,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +87 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=87 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=462897
 =======
@@ -1290,6 +1423,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +16 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=16 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1240193
 =======
@@ -1307,6 +1441,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +16 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=16 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1310196
 =======
@@ -1324,6 +1459,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1310197
 =======
@@ -1341,6 +1477,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +43 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=43 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1310198
 =======
@@ -1358,6 +1495,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +68 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=68 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1310199
 =======
@@ -1375,6 +1513,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +87 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=87 sp=1 target=[6,0]
+tooltip   Slams the opponent, causing weapon damage plus $s1.
 
 https://www.wowhead.com/forever/spell=1310200
 =======
@@ -1391,6 +1530,7 @@ labels    25
 
 effect 1  normalised weapon damage to every enemy around the caster
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 radius=8 target=[22,15]
+tooltip   In a whirlwind of steel you attack up to $i enemies within $a1 yards, causing weapon damage from both melee weapons to each enemy.
 
 https://www.wowhead.com/forever/spell=1680
 =======
@@ -1405,5 +1545,6 @@ labels    25
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+tooltip   In a whirlwind of steel you attack up to $i enemies within $a1 yards, causing weapon damage to each enemy.
 
 https://www.wowhead.com/forever/spell=462891
