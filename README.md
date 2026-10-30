@@ -48,7 +48,7 @@ placed spell that triggers it. Anything none of those places is in `other.txt`.
 - **Spells:** `tools/spelldata -dump` from forever, after `gen_spelldata -everyClassSpell` has built the
   spell store from every spell whose class family is a player class. Each card shows the row's columns
   in words and as the client's own values. `scripts/split_spells.py` adds the tooltip, aura tooltip and
-  description variables as the game files write them, `$` tokens unrendered.
+  description variables as the database stores them, `$` tokens unrendered.
 - **Items:** `scripts/export_items.py` over the same database. Stats come from the item's stat
   allocation and the `RandPropPoints` budget for its item level, quality and slot, and weapon damage
   comes from the `ItemDamage*` tables, as the client computes them. Base armor is not computed.
