@@ -9,6 +9,7 @@ labels    3096, 3100
 
 effect 1  325 threat to the enemy
           E_THREAT base=25 ppl=5 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Felguard.
 
 https://www.wowhead.com/forever/spell=427742
 =======
@@ -29,6 +30,8 @@ labels    19
 
 effect 1  party aura: +4 stamina (at level 60)
           E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=3 ppl=0.1 misc=2 radius=30 target=[1,0]
+tooltip   Increases party members' Stamina by $s1.
+aura      Increases Stamina by $s1.
 
 https://www.wowhead.com/forever/spell=6307
 =======
@@ -40,6 +43,8 @@ labels    19
 
 effect 1  party aura: +12 stamina (at level 60)
           E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=9 ppl=0.3 misc=2 radius=30 target=[1,0]
+tooltip   Increases party members' Stamina by $s1.
+aura      Increases Stamina by $s1.
 
 https://www.wowhead.com/forever/spell=7804
 =======
@@ -51,6 +56,8 @@ labels    19
 
 effect 1  party aura: +25 stamina (at level 60)
           E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=21 ppl=0.4 misc=2 radius=30 target=[1,0]
+tooltip   Increases party members' Stamina by $s1.
+aura      Increases Stamina by $s1.
 
 https://www.wowhead.com/forever/spell=7805
 =======
@@ -62,6 +69,8 @@ labels    19
 
 effect 1  party aura: +39 stamina (at level 60)
           E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=35 ppl=0.4 misc=2 radius=30 target=[1,0]
+tooltip   Increases party members' Stamina by $s1.
+aura      Increases Stamina by $s1.
 
 https://www.wowhead.com/forever/spell=11766
 =======
@@ -73,6 +82,8 @@ labels    19
 
 effect 1  party aura: +54 stamina (at level 60)
           E_APPLY_AREA_AURA_PARTY A_MOD_STAT base=49 ppl=0.5 misc=2 radius=30 target=[1,0]
+tooltip   Increases party members' Stamina by $s1.
+aura      Increases Stamina by $s1.
 
 https://www.wowhead.com/forever/spell=11767
 =======
@@ -87,6 +98,7 @@ labels    3096, 3100
 
 effect 1  weapon damage in the weapon's own school +38 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=2 ppl=0.6 sp=1 chain=2 target=[6,0]
+tooltip   A sweeping attack that does the Felguard's weapon damage plus $s1 to the target and his nearest ally.
 
 https://www.wowhead.com/forever/spell=427744
 =======
@@ -102,6 +114,8 @@ labels    19
 
 effect 1  65 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=62 ppl=0.5 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17767
 =======
@@ -117,6 +131,8 @@ labels    19
 
 effect 1  115.2 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=111 ppl=0.7 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17850
 =======
@@ -132,6 +148,8 @@ labels    19
 
 effect 1  167.8 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=163 ppl=0.8 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17851
 =======
@@ -147,6 +165,8 @@ labels    19
 
 effect 1  226 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=220 ppl=1 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17852
 =======
@@ -162,6 +182,8 @@ labels    19
 
 effect 1  305.6 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=299 ppl=1.1 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17853
 =======
@@ -176,6 +198,8 @@ labels    19
 
 effect 1  388.6 healing every 2 s (5 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_HEAL base=386 ppl=1.3 period=2000ms target=[1,0]
+tooltip   The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
+aura      Heals $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17854
 =======
@@ -191,6 +215,7 @@ refs      19658 Devour Magic Effect
 
 effect 1  dispels 1 magic effect to the target
           E_DISPEL base=1 misc=1 target=[25,0]
+tooltip   Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19658s1.
 
 https://www.wowhead.com/forever/spell=19505
 =======
@@ -206,6 +231,7 @@ refs      19732 Devour Magic Effect
 
 effect 1  dispels 1 magic effect to the target
           E_DISPEL base=1 misc=1 target=[25,0]
+tooltip   Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19732s1.
 
 https://www.wowhead.com/forever/spell=19731
 =======
@@ -221,6 +247,7 @@ refs      19733 Devour Magic Effect
 
 effect 1  dispels 1 magic effect to the target
           E_DISPEL base=1 misc=1 target=[25,0]
+tooltip   Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19733s1.
 
 https://www.wowhead.com/forever/spell=19734
 =======
@@ -236,6 +263,7 @@ refs      19735 Devour Magic Effect
 
 effect 1  dispels 1 magic effect to the target
           E_DISPEL base=1 misc=1 target=[25,0]
+tooltip   Purges $s1 harmful magic $leffect:effects; from a friend or $s1 beneficial magic $leffect:effects; from an enemy.  If an effect is devoured, the Felhunter will be healed for $19735s1.
 
 https://www.wowhead.com/forever/spell=19736
 =======
@@ -286,6 +314,8 @@ labels    19
 
 effect 1  5 fire damage back to melee attackers to the target's party
           E_APPLY_AURA A_DAMAGE_SHIELD base=5 target=[35,0]
+tooltip   Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.
+aura      Does $w1 Fire damage to attacker when struck.
 
 https://www.wowhead.com/forever/spell=2947
 =======
@@ -300,6 +330,8 @@ labels    19
 
 effect 1  7 fire damage back to melee attackers to the target's party
           E_APPLY_AURA A_DAMAGE_SHIELD base=7 target=[35,0]
+tooltip   Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.
+aura      Does $w1 Fire damage to attacker when struck.
 
 https://www.wowhead.com/forever/spell=8316
 =======
@@ -314,6 +346,8 @@ labels    19
 
 effect 1  9 fire damage back to melee attackers to the target's party
           E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[35,0]
+tooltip   Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.
+aura      Does $w1 Fire damage to attacker when struck.
 
 https://www.wowhead.com/forever/spell=8317
 =======
@@ -328,6 +362,8 @@ labels    19
 
 effect 1  11 fire damage back to melee attackers to the target's party
           E_APPLY_AURA A_DAMAGE_SHIELD base=11 target=[35,0]
+tooltip   Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.
+aura      Does $w1 Fire damage to attacker when struck.
 
 https://www.wowhead.com/forever/spell=11770
 =======
@@ -342,6 +378,8 @@ labels    19
 
 effect 1  13 fire damage back to melee attackers to the target's party
           E_APPLY_AURA A_DAMAGE_SHIELD base=13 target=[35,0]
+tooltip   Surrounds the target in a shield of fire. Every strike against the target causes $s1 Fire damage to the attacker. Lasts $d.  Your pet cannot cast Fire Shield on itself.
+aura      Does $w1 Fire damage to attacker when struck.
 
 https://www.wowhead.com/forever/spell=11771
 =======
@@ -357,6 +395,7 @@ refs      18769 Unholy Power
 
 effect 1  3–6 fire damage to the enemy (at level 60, +0.164 spell power)
           E_SCHOOL_DAMAGE base=4 ppl=0.1 variance=0.2857143 sp=0.164 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=3110
 =======
@@ -372,6 +411,7 @@ refs      18769 Unholy Power
 
 effect 1  7–9 fire damage to the enemy (at level 60, +0.314 spell power)
           E_SCHOOL_DAMAGE base=7 ppl=0.2 variance=0.15384616 sp=0.314 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=7799
 =======
@@ -387,6 +427,7 @@ refs      18769 Unholy Power
 
 effect 1  12–15 fire damage to the enemy (at level 60, +0.529 spell power)
           E_SCHOOL_DAMAGE base=12 ppl=0.3 variance=0.16666667 sp=0.529 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=7800
 =======
@@ -402,6 +443,7 @@ refs      18769 Unholy Power
 
 effect 1  17–20 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=17 ppl=0.3 variance=0.11428571 sp=0.571 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=7801
 =======
@@ -417,6 +459,7 @@ refs      18769 Unholy Power
 
 effect 1  26–28 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=25 ppl=0.4 variance=0.11764706 sp=0.571 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=7802
 =======
@@ -432,6 +475,7 @@ refs      18769 Unholy Power
 
 effect 1  35–40 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=35 ppl=0.5 variance=0.11267605 sp=0.571 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=11762
 =======
@@ -449,6 +493,7 @@ effect 1  43–48 fire damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
 effect 2  a dummy effect holding 45.5 to the enemy (at level 60)
           E_DUMMY base=44 ppl=0.6 variance=0.11363637 sp=0.571 target=[6,0]
+tooltip   Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 https://www.wowhead.com/forever/spell=11763
 =======
@@ -461,6 +506,7 @@ range     30 yd
 
 effect 1  146–158 fire damage to the enemy (+0.529 spell power)
           E_SCHOOL_DAMAGE base=152.02133 variance=0.07692308 sp=0.529 target=[6,0]
+tooltip   Shoots a bolt of flame at an enemy, inflicting Fire damage.
 
 https://www.wowhead.com/forever/spell=20801
 =======
@@ -477,6 +523,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 sp=1 target=[6,0]
 effect 2  casts 427746 Intercept Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=427746 target=[6,0]
+tooltip   Charge an enemy, causing $427746s2 damage and stunning it for $427746d.
 
 https://www.wowhead.com/forever/spell=427745
 =======
@@ -492,6 +539,7 @@ refs      18769 Unholy Power
 
 effect 1  16 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=16 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=7814
 =======
@@ -507,6 +555,7 @@ refs      18769 Unholy Power
 
 effect 1  22 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=22 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=7815
 =======
@@ -522,6 +571,7 @@ refs      18769 Unholy Power
 
 effect 1  30 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=30 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=7816
 =======
@@ -537,6 +587,7 @@ refs      18769 Unholy Power
 
 effect 1  36 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=36 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=11778
 =======
@@ -552,6 +603,7 @@ refs      18769 Unholy Power
 
 effect 1  43 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=43 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=11779
 =======
@@ -567,6 +619,7 @@ refs      18769 Unholy Power
 
 effect 1  50 shadow damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=50 sp=0.429 target=[6,0]
+tooltip   An instant attack that lashes the target, causing $?s18769[${$m1*($18769m1/100+1)}][$s1] Shadow damage.
 
 https://www.wowhead.com/forever/spell=11780
 =======
@@ -580,6 +633,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=100 target=[1,0]
+tooltip   Gives your summoned demon Lesser Invisibility for up to $d.  This spell can only be used out of combat.
+aura      Invisible.
 
 https://www.wowhead.com/forever/spell=7870
 =======
@@ -590,6 +645,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_MOD_STEALTH_DETECT base=30 radius=30 target=[1,0]
+tooltip   Increases the stealth detection of all party members within $a1 yds of the Felhunter as if they were ${$m1/5} levels higher.
+aura      Increases stealth detection as if ${$w1/5} levels higher.
 
 https://www.wowhead.com/forever/spell=19480
 =======
@@ -604,6 +661,8 @@ effect 1  absorbs 318 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=305 ppl=2.3 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=7812
 =======
@@ -618,6 +677,8 @@ effect 1  absorbs 528 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=510 ppl=3.1 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=19438
 =======
@@ -632,6 +693,8 @@ effect 1  absorbs 793 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=770 ppl=3.9 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=19440
 =======
@@ -646,6 +709,8 @@ effect 1  absorbs 1123 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=1095 ppl=4.7 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=19441
 =======
@@ -660,6 +725,8 @@ effect 1  absorbs 1503 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=1470 ppl=5.5 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=19442
 =======
@@ -674,6 +741,8 @@ effect 1  absorbs 1930 every school damage to the caster's master (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=1905 ppl=6.4 misc=127 target=[27,0]
 effect 2  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   Sacrifices the Voidwalker, giving its owner a shield that will absorb $s1 damage for $d.  While the shield holds, spellcasting will not be interrupted by damage.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=19443
 =======
@@ -691,6 +760,8 @@ labels    19
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Seduces the target, preventing all actions for up to $d.  Any damage caused will remove the effect.  Only works against Humanoids.
+aura      Charmed.
 
 https://www.wowhead.com/forever/spell=6358
 =======
@@ -705,6 +776,7 @@ labels    19
 
 effect 1  -55 threat to the enemy
           E_THREAT base=-45 ppl=-1 target=[6,0]
+tooltip   Soothes the target, increasing the chance that it will attack something else.
 
 https://www.wowhead.com/forever/spell=6360
 =======
@@ -719,6 +791,7 @@ labels    19
 
 effect 1  -85 threat to the enemy
           E_THREAT base=-75 ppl=-1 target=[6,0]
+tooltip   Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 1).
 
 https://www.wowhead.com/forever/spell=7813
 =======
@@ -733,6 +806,7 @@ labels    19
 
 effect 1  -141 threat to the enemy
           E_THREAT base=-127 ppl=-1 target=[6,0]
+tooltip   Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 2).
 
 https://www.wowhead.com/forever/spell=11784
 =======
@@ -747,6 +821,7 @@ labels    19
 
 effect 1  -167 threat to the enemy
           E_THREAT base=-165 ppl=-1 target=[6,0]
+tooltip   Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 3).
 
 https://www.wowhead.com/forever/spell=11785
 =======
@@ -765,6 +840,7 @@ effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
 effect 2  casts 24259 Spell Lock to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=24259 mechanic=9 target=[6,0]
+tooltip   Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.
 
 https://www.wowhead.com/forever/spell=19244
 =======
@@ -783,6 +859,7 @@ effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
 effect 2  casts 24259 Spell Lock to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=24259 mechanic=9 target=[6,0]
+tooltip   Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.
 
 https://www.wowhead.com/forever/spell=19647
 =======
@@ -795,6 +872,7 @@ labels    19
 
 effect 1  silences to the enemy
           E_APPLY_AURA A_MOD_SILENCE base=0 sp=1 misc=126 target=[6,0]
+aura      Silenced.
 
 https://www.wowhead.com/forever/spell=24259
 =======
@@ -808,6 +886,7 @@ labels    19
 
 effect 1  150 threat to every enemy around the caster
           E_THREAT base=150 radius=10 target=[22,15]
+tooltip   Taunts all enemies within $a1 yards, increasing the chance that they will attack the Voidwalker.
 
 https://www.wowhead.com/forever/spell=17735
 =======
@@ -821,6 +900,7 @@ labels    19
 
 effect 1  300 threat to every enemy around the caster
           E_THREAT base=300 radius=10 target=[22,15]
+tooltip   Taunts all enemies within $a1 yards, increasing the chance that they will attack the Voidwalker.  More effective than Suffering (Rank 1).
 
 https://www.wowhead.com/forever/spell=17750
 =======
@@ -834,6 +914,7 @@ labels    19
 
 effect 1  450 threat to every enemy around the caster
           E_THREAT base=450 radius=10 target=[22,15]
+tooltip   Taunts all enemies within $a1 yards, increasing the chance that they will attack the Voidwalker.  More effective than Suffering (Rank 2).
 
 https://www.wowhead.com/forever/spell=17751
 =======
@@ -847,6 +928,7 @@ labels    19
 
 effect 1  600 threat to every enemy around the caster
           E_THREAT base=600 radius=10 target=[22,15]
+tooltip   Taunts all enemies within $a1 yards, increasing the chance that they will attack the Voidwalker.  More effective than Suffering (Rank 3).
 
 https://www.wowhead.com/forever/spell=17752
 =======
@@ -862,6 +944,8 @@ refs      19479 Tainted Blood Effect
 
 effect 1  casts 19479 Tainted Blood Effect on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=17 trigger=19479 target=[1,0]
+tooltip   Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19479s1 melee attack power for $19479d.  Stacks up to 5 times on a single target.
+aura      Drains $w1 melee attack power when hit.  Stacks up to 5 times.
 
 https://www.wowhead.com/forever/spell=19478
 =======
@@ -877,6 +961,8 @@ refs      19652 Tainted Blood Effect
 
 effect 1  casts 19652 Tainted Blood Effect on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=23 trigger=19652 target=[1,0]
+tooltip   Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19652s1 melee attack power for $19652d.  Stacks up to 5 times on a single target.
+aura      Drains $w1 melee attack power when hit.  Stacks up to 5 times.
 
 https://www.wowhead.com/forever/spell=19655
 =======
@@ -892,6 +978,8 @@ refs      19653 Tainted Blood Effect
 
 effect 1  casts 19653 Tainted Blood Effect on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=32 trigger=19653 target=[1,0]
+tooltip   Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19653s1 melee attack power for $19653d.  Stacks up to 5 times on a single target.
+aura      Drains $w1 melee attack power when hit.  Stacks up to 5 times.
 
 https://www.wowhead.com/forever/spell=19656
 =======
@@ -907,6 +995,8 @@ refs      19654 Tainted Blood Effect
 
 effect 1  casts 19654 Tainted Blood Effect on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=19654 target=[1,0]
+tooltip   Taints the Felhunter's blood for $d.  When the Felhunter is hit with a melee attack, the attacker will lose $19654s1 melee attack power for $19654d.  Stacks up to 5 times on a single target.
+aura      Drains $w1 melee attack power when hit.  Stacks up to 5 times.
 
 https://www.wowhead.com/forever/spell=19660
 =======
@@ -919,6 +1009,7 @@ labels    19
 
 effect 1  -17 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-17 target=[6,0]
+aura      Melee attack power reduced by $w1.
 
 https://www.wowhead.com/forever/spell=19479
 =======
@@ -931,6 +1022,7 @@ labels    19
 
 effect 1  -23 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-23 target=[6,0]
+aura      Melee attack power reduced by $w1.
 
 https://www.wowhead.com/forever/spell=19652
 =======
@@ -943,6 +1035,7 @@ labels    19
 
 effect 1  -32 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-32 target=[6,0]
+aura      Melee attack power reduced by $w1.
 
 https://www.wowhead.com/forever/spell=19653
 =======
@@ -955,6 +1048,7 @@ labels    19
 
 effect 1  -40 attack power to the enemy
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-40 target=[6,0]
+aura      Melee attack power reduced by $w1.
 
 https://www.wowhead.com/forever/spell=19654
 =======
@@ -1130,6 +1224,7 @@ labels    19
 
 effect 1  85 threat to the enemy
           E_THREAT base=70 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.
 
 https://www.wowhead.com/forever/spell=3716
 =======
@@ -1144,6 +1239,7 @@ labels    19
 
 effect 1  130 threat to the enemy
           E_THREAT base=115 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 1).
 
 https://www.wowhead.com/forever/spell=7809
 =======
@@ -1158,6 +1254,7 @@ labels    19
 
 effect 1  205 threat to the enemy
           E_THREAT base=190 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 2).
 
 https://www.wowhead.com/forever/spell=7810
 =======
@@ -1172,6 +1269,7 @@ labels    19
 
 effect 1  335 threat to the enemy
           E_THREAT base=320 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 3).
 
 https://www.wowhead.com/forever/spell=7811
 =======
@@ -1186,6 +1284,7 @@ labels    19
 
 effect 1  465 threat to the enemy
           E_THREAT base=450 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 4).
 
 https://www.wowhead.com/forever/spell=11774
 =======
@@ -1200,5 +1299,6 @@ labels    19
 
 effect 1  600 threat to the enemy
           E_THREAT base=600 ppl=3 target=[6,0]
+tooltip   Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 5).
 
 https://www.wowhead.com/forever/spell=11775

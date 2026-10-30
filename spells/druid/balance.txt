@@ -10,6 +10,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=100 misc=127 misc2=15 target=[1,0]
 effect 2  -20% physical damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-20 misc=1 target=[1,0]
+tooltip   Your skin becomes as tough as bark. Physical damage taken is reduced by $s2%. While you are protected, damaging attacks will not cause spellcasting delays. Lasts $d.
+aura      Physical damage taken is reduced by $s2%. While protected, damaging attacks will not cause spellcasting delays.
 
 https://www.wowhead.com/forever/spell=22812
 =======
@@ -27,6 +29,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=100 misc=127 target=[21,0]
 effect 2  -20% physical damage taken to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-20 misc=1 target=[21,0]
+tooltip   The target's skin becomes as tough as bark. Physical damage taken is reduced by $s2%.  While protected, damaging attacks will not cause spellcasting delays. Lasts $d.
+aura      Physical damage taken is reduced by $s2%. While protected, damaging attacks will not cause spellcasting delays.
 
 https://www.wowhead.com/forever/spell=428713
 =======
@@ -41,6 +45,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0xf3bbfe,0x6000553,0x400,0x8800040
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xf3bbfe,0x6000553,0x400,0x8800040 target=[1,0]
+aura      Your next damage or healing spell or offensive ability has its mana, rage or energy cost reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=16870
 =======
@@ -59,6 +64,7 @@ effect 3  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
 effect 4  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.
 
 https://www.wowhead.com/forever/spell=408248
 =======
@@ -75,6 +81,7 @@ effect 1  a dummy aura holding -500
           E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+aura      Your next $m2 Starfire $Lcast has:casts have; ${$w1/$w2/1000}.1 sec reduced cast time.
 
 https://www.wowhead.com/forever/spell=408255
 =======
@@ -85,6 +92,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408248 misc=415449 target=[1,0]
+tooltip   Gain the Eclipse ability:
+
+          $@spellicon408248
+          $@spelldesc408248
 
 https://www.wowhead.com/forever/spell=409813
 =======
@@ -118,6 +129,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  5 nature damage every 3 s to the enemy (4 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=339
 =======
@@ -140,6 +153,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  9 nature damage every 3 s to the enemy (5 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1062
 =======
@@ -162,6 +177,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  12 nature damage every 3 s to the enemy (6 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=5195
 =======
@@ -184,6 +201,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  16 nature damage every 3 s to the enemy (7 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=16 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=5196
 =======
@@ -206,6 +225,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  21 nature damage every 3 s to the enemy (8 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=9852
 =======
@@ -228,6 +249,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  26 nature damage every 3 s to the enemy (9 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=26 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  You may $?s17245[have up to ${$17245m1+1} $ltarget:targets;][only have 1 target] Rooted at a time.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=9853
 =======
@@ -247,6 +270,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  26 nature damage every 3 s to the enemy (9 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=26 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19970
 =======
@@ -266,6 +291,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  21 nature damage every 3 s to the enemy (8 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19971
 =======
@@ -285,6 +312,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  16 nature damage every 3 s to the enemy (7 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=16 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19972
 =======
@@ -304,6 +333,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  12 nature damage every 3 s to the enemy (6 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19973
 =======
@@ -323,6 +354,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  9 nature damage every 3 s to the enemy (5 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19974
 =======
@@ -342,6 +375,8 @@ effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 target=[6,0]
 effect 2  5 nature damage every 3 s to the enemy (4 ticks, +0.06 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.06 period=3000ms target=[6,0]
+tooltip   Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.
+aura      Rooted. Causes $w2 Nature damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=19975
 =======
@@ -364,6 +399,8 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
 effect 4  0 threat to the enemy
           E_THREAT base=0 target=[6,0]
+tooltip   Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.
+aura      Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 https://www.wowhead.com/forever/spell=770
 =======
@@ -386,6 +423,8 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
 effect 4  0 threat to the enemy
           E_THREAT base=0 target=[6,0]
+tooltip   Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.
+aura      Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 https://www.wowhead.com/forever/spell=778
 =======
@@ -408,6 +447,8 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
 effect 4  0 threat to the enemy
           E_THREAT base=0 target=[6,0]
+tooltip   Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.
+aura      Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 https://www.wowhead.com/forever/spell=9749
 =======
@@ -430,6 +471,8 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_DISPEL_IMMUNITY base=0 misc=5 target=[6,0]
 effect 4  0 threat to the enemy
           E_THREAT base=0 target=[6,0]
+tooltip   Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.
+aura      Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 https://www.wowhead.com/forever/spell=9907
 =======
@@ -442,6 +485,7 @@ effect 1  SPELLMOD_DOT +1% on family 7 mask 0x220252,0x4000100,0x200000,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x220252,0x4000100,0x200000,0x40000000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x0,0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x0,0x2 target=[1,0]
+tooltip   Increases the periodic damage and healing done by your spells and abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=1223081
 =======
@@ -461,6 +505,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=2637
 =======
@@ -480,6 +526,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=18657
 =======
@@ -499,6 +547,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=18658
 =======
@@ -521,6 +571,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41199 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=16914
 =======
@@ -543,6 +594,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41198 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=17401
 =======
@@ -565,6 +617,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41170 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=17402
 =======
@@ -581,6 +634,8 @@ effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=500 sp=0.03 period=1000ms radius=8 target=[28,0]
 effect 2  unrecognised shape
           E_PERSISTENT_AREA_AURA A_MOD_MELEE_HASTE_3 base=-67 radius=8 target=[28,0]
+tooltip   Creates a violent storm in the target area causing $s1 Nature damage to enemies every $t1 sec, and increasing the time between the attacks of enemies by $s2%.  Lasts $d.  Druid must channel to maintain the spell.
+aura      $s1 damage every $t1 seconds, and time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=27530
 =======
@@ -596,6 +651,7 @@ effect 1  132 nature damage to target 87 (at level 60, +0.03 spell power)
           E_SCHOOL_DAMAGE base=132 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
+aura      $s1 damage every $17402t3 sec, and increasing the time between attacks by $s2%.
 
 https://www.wowhead.com/forever/spell=1278759
 =======
@@ -611,6 +667,7 @@ effect 1  69.2 nature damage to target 87 (at level 60, +0.03 spell power)
           E_SCHOOL_DAMAGE base=68 ppl=0.2 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
+aura      $s1 damage every $16914t3 sec, and increasing the time between attacks by $s2%.
 
 https://www.wowhead.com/forever/spell=1278965
 =======
@@ -626,6 +683,7 @@ effect 1  99.2 nature damage to target 87 (at level 60, +0.03 spell power)
           E_SCHOOL_DAMAGE base=98 ppl=0.2 sp=0.03 radius=8 target=[87,16]
 effect 2  -20% melee haste to target 87
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[87,16]
+aura      $s1 damage every $17401t3 sec, and increasing the time between attacks by $s2%.
 
 https://www.wowhead.com/forever/spell=1278968
 =======
@@ -636,6 +694,7 @@ labels    21
 
 effect 1  SPELLMOD_DOT +75% on family 7 mask 0x200
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=75 sp=1 misc=22 family=7 mask=0x200 target=[1,0]
+tooltip   Increases the damage done by your Entangling Roots spell by $m1%, and its victims can take up to $m1% more damage without interrupting the effect.
 
 https://www.wowhead.com/forever/spell=16918
 =======
@@ -650,6 +709,7 @@ effect 2  SPELLMOD_DAMAGE +2% on family 7 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=7 mask=0x2 target=[1,0]
 effect 3  SPELLMOD_DOT +2% on family 7 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=7 mask=0x2 target=[1,0]
+tooltip   Increases the damage and critical strike chance of your Moonfire spell by $s1%.
 
 https://www.wowhead.com/forever/spell=16821
 =======
@@ -660,6 +720,7 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 sp=1 misc=4555 family=7 mask=0x2 target=[1,0]
+tooltip   Increases the damage of your Moonfire spell by up to $s1.
 
 https://www.wowhead.com/forever/spell=28854
 =======
@@ -674,6 +735,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 7 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=7 mask=0x4 target=[1,0]
 effect 2  casts 16922 Starfire Stun on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 sp=1 trigger=16922 target=[1,0]
+tooltip   Reduces the cast time of Starfire by $/1000;S1 sec and Starfire has a $s2% chance to stun its target for $16922d.
 
 https://www.wowhead.com/forever/spell=16850
 =======
@@ -684,6 +746,7 @@ labels    21
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 7 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=7 mask=0x4 target=[1,0]
+tooltip   Increases the critical hit chance of your Starfire spell $s1%.
 
 https://www.wowhead.com/forever/spell=24480
 =======
@@ -694,6 +757,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +25% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=8 family=7 mask=0x100 target=[1,0]
+tooltip   Increases damage caused by your Thorns spell by $s1%.
 
 https://www.wowhead.com/forever/spell=16836
 =======
@@ -704,6 +768,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +50% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=7 mask=0x100 target=[1,0]
+tooltip   Increases damage caused by your Thorns spell by $s1%.
 
 https://www.wowhead.com/forever/spell=16839
 =======
@@ -714,6 +779,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +75% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=75 sp=1 misc=8 family=7 mask=0x100 target=[1,0]
+tooltip   Increases damage caused by your Thorns spell by $s1%.
 
 https://www.wowhead.com/forever/spell=16840
 =======
@@ -726,6 +792,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x1 target=[1,0]
 effect 2  SPELLMOD_COST -50% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=7 mask=0x1 target=[1,0]
+tooltip   Reduces the cast time of your Wrath spell by $/1000;S1 sec and its Mana cost by $s2%.
 
 https://www.wowhead.com/forever/spell=16814
 =======
@@ -736,6 +803,7 @@ labels    21
 
 effect 1  SPELLMOD_ALL_EFFECTS +2% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=8 family=7 mask=0x1 target=[1,0]
+tooltip   Increases the damage of your Wrath spell by up to $s1%.
 
 https://www.wowhead.com/forever/spell=436287
 =======
@@ -747,6 +815,7 @@ refs      1302521 Improved Wrath
 
 effect 1  casts 1302521 Improved Wrath on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1302521 target=[1,0]
+tooltip   Causes Wrath to have a $h% chance to restore $1302521s1 Mana.
 
 https://www.wowhead.com/forever/spell=1248996
 =======
@@ -765,6 +834,8 @@ effect 1  8 nature damage every 2 s to the enemy (6 ticks, +0.158 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 sp=0.158 period=2000ms target=[6,0]
 effect 2  -2% physical hit to the enemy
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   The enemy target is swarmed by insects, decreasing their chance to hit with attacks by $s2% and causing $o1 Nature damage over $d.
+aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=5570
 =======
@@ -783,6 +854,8 @@ effect 1  15 nature damage every 2 s to the enemy (6 ticks, +0.158 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 sp=0.158 period=2000ms target=[6,0]
 effect 2  -2% physical hit to the enemy
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   The enemy target is swarmed by insects, decreasing their chance to hit with attacks by $s2% and causing $o1 Nature damage over $d.
+aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24974
 =======
@@ -801,6 +874,8 @@ effect 1  20 nature damage every 2 s to the enemy (6 ticks, +0.158 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=20 sp=0.158 period=2000ms target=[6,0]
 effect 2  -2% physical hit to the enemy
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   The enemy target is swarmed by insects, decreasing their chance to hit with attacks by $s2% and causing $o1 Nature damage over $d.
+aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24975
 =======
@@ -819,6 +894,8 @@ effect 1  25 nature damage every 2 s to the enemy (6 ticks, +0.158 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=25 sp=0.158 period=2000ms target=[6,0]
 effect 2  -2% physical hit to the enemy
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   The enemy target is swarmed by insects, decreasing their chance to hit with attacks by $s2% and causing $o1 Nature damage over $d.
+aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24976
 =======
@@ -837,6 +914,8 @@ effect 1  31 nature damage every 2 s to the enemy (6 ticks, +0.158 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=31 sp=0.158 period=2000ms target=[6,0]
 effect 2  -2% physical hit to the enemy
           E_APPLY_AURA A_MOD_HIT_CHANCE base=-2 sp=1 target=[6,0]
+tooltip   The enemy target is swarmed by insects, decreasing their chance to hit with attacks by $s2% and causing $o1 Nature damage over $d.
+aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24977
 =======
@@ -856,6 +935,8 @@ effect 1  4 arcane damage every 3 s to the enemy (3 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.13 period=3000ms target=[6,0]
 effect 2  9–12 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=8 ppl=0.5 variance=0.25 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8921
 =======
@@ -875,6 +956,8 @@ effect 1  6 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.13 period=3000ms target=[6,0]
 effect 2  15–19 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=13 ppl=0.8 variance=0.26666668 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8924
 =======
@@ -894,6 +977,8 @@ effect 1  9 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 sp=0.13 period=3000ms target=[6,0]
 effect 2  25–29 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=22 ppl=1 variance=0.21428572 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8925
 =======
@@ -913,6 +998,8 @@ effect 1  13 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.13 period=3000ms target=[6,0]
 effect 2  36–43 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=1.5 variance=0.18181819 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8926
 =======
@@ -932,6 +1019,8 @@ effect 1  19 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=19 sp=0.13 period=3000ms target=[6,0]
 effect 2  50–59 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=47 ppl=1.5 variance=0.17910448 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8927
 =======
@@ -951,6 +1040,8 @@ effect 1  23 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=23 sp=0.13 period=3000ms target=[6,0]
 effect 2  62–72 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=59 ppl=1.6 variance=0.17977528 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8928
 =======
@@ -970,6 +1061,8 @@ effect 1  31 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=31 sp=0.13 period=3000ms target=[6,0]
 effect 2  75–88 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=73 ppl=1.7 variance=0.17391305 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=8929
 =======
@@ -989,6 +1082,8 @@ effect 1  39 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=39 sp=0.13 period=3000ms target=[6,0]
 effect 2  96–113 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=91 ppl=2.7 variance=0.16901408 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9833
 =======
@@ -1008,6 +1103,8 @@ effect 1  49 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=49 sp=0.13 period=3000ms target=[6,0]
 effect 2  112–131 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=111 ppl=2.1 variance=0.16374269 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9834
 =======
@@ -1027,6 +1124,8 @@ effect 1  60 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=60 sp=0.13 period=3000ms target=[6,0]
 effect 2  128–151 arcane damage to the enemy (at level 60, +0.15 spell power)
           E_SCHOOL_DAMAGE base=135 ppl=2.3 variance=0.15609756 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
+aura      $w1 Arcane damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9835
 =======
@@ -1041,6 +1140,8 @@ effect 1  285–315 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell p
           E_APPLY_AURA A_PERIODIC_DAMAGE base=300 variance=0.1 sp=0.13 period=3000ms target=[6,0]
 effect 2  1140–1260 arcane damage to the enemy (+0.15 spell power)
           E_SCHOOL_DAMAGE base=1200 variance=0.1 sp=0.15 target=[6,0]
+tooltip   Inflicts $s2 Arcane damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.
+aura      $s1 Arcane damage inflicted every $t1 sec.
 
 https://www.wowhead.com/forever/spell=20690
 =======
@@ -1055,6 +1156,8 @@ effect 1  190–210 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell p
           E_APPLY_AURA A_PERIODIC_DAMAGE base=200 variance=0.1 sp=0.13 period=3000ms target=[6,0]
 effect 2  760–840 arcane damage to the enemy (+0.15 spell power)
           E_SCHOOL_DAMAGE base=800 variance=0.1 sp=0.15 target=[6,0]
+tooltip   Inflicts $s2 Arcane damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.
+aura      $s1 Arcane damage inflicted every $t1 sec.
 
 https://www.wowhead.com/forever/spell=21669
 =======
@@ -1069,6 +1172,8 @@ effect 1  71–79 arcane damage every 3 s to the enemy (4 ticks, +0.13 spell pow
           E_APPLY_AURA A_PERIODIC_DAMAGE base=75 variance=0.10666667 sp=0.13 period=3000ms target=[6,0]
 effect 2  285–315 arcane damage to the enemy (+0.15 spell power)
           E_SCHOOL_DAMAGE base=300 variance=0.1 sp=0.15 target=[6,0]
+tooltip   Inflicts $s2 Arcane damage to an enemy, then an additional $s1 damage every $t1 sec. for $d.
+aura      $s1 Arcane damage inflicted every $t1 sec.
 
 https://www.wowhead.com/forever/spell=429823
 =======
@@ -1079,6 +1184,7 @@ labels    21
 
 effect 1  +2% nature+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=2 sp=1 misc=72 target=[1,0]
+tooltip   Increases the damage done by your Arcane and Nature spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16896
 =======
@@ -1089,6 +1195,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -25% on family 7 mask 0x700307
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 sp=1 misc=14 family=7 mask=0x700307 target=[1,0]
+tooltip   Reduces the Mana cost of your damaging spells by $s1%.
 
 https://www.wowhead.com/forever/spell=16845
 =======
@@ -1100,6 +1207,8 @@ labels    21
 
 effect 1  raid aura: +3% spell crit
           E_APPLY_AREA_AURA_RAID A_MOD_SPELL_CRIT_CHANCE base=3 sp=1 radius=45 target=[1,0]
+tooltip   Increases spell Critical Strike chance by $s1%.
+aura      Increases spell Critical Strike chance by $s1%.
 
 https://www.wowhead.com/forever/spell=24907
 =======
@@ -1123,6 +1232,10 @@ effect 5  SPELLMOD_CHANCE_OF_SUCCESS +100% on family 7 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=18 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
 effect 6  SPELLMOD_PROC_COOLDOWN -50% on family 7 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=38 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+tooltip   Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their spell Critical Strike chance increased by $24907s1%.  Also protects the caster from Polymorph effects and prevents the use of healing spells.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
 
 https://www.wowhead.com/forever/spell=24858
 =======
@@ -1168,6 +1281,7 @@ effect 1  +2% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=2 sp=1 misc=1 target=[1,0]
 effect 2  +2% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=2 sp=1 misc=126 target=[1,0]
+tooltip   $?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]
 
 https://www.wowhead.com/forever/spell=16902
 =======
@@ -1180,6 +1294,7 @@ effect 1  +4% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=4 sp=1 misc=1 target=[1,0]
 effect 2  +4% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=4 sp=1 misc=126 target=[1,0]
+tooltip   $?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]
 
 https://www.wowhead.com/forever/spell=16903
 =======
@@ -1192,6 +1307,7 @@ effect 1  +6% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=6 sp=1 misc=1 target=[1,0]
 effect 2  +6% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=6 sp=1 misc=126 target=[1,0]
+tooltip   $?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]
 
 https://www.wowhead.com/forever/spell=16904
 =======
@@ -1204,6 +1320,7 @@ effect 1  +8% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=8 sp=1 misc=1 target=[1,0]
 effect 2  +8% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=8 sp=1 misc=126 target=[1,0]
+tooltip   $?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]
 
 https://www.wowhead.com/forever/spell=16905
 =======
@@ -1216,6 +1333,7 @@ effect 1  +10% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 sp=1 misc=1 target=[1,0]
 effect 2  +10% holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 sp=1 misc=126 target=[1,0]
+tooltip   $?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]
 
 https://www.wowhead.com/forever/spell=16906
 =======
@@ -1228,6 +1346,7 @@ refs      16886 Nature's Grace
 
 effect 1  casts 16886 Nature's Grace on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=16886 target=[1,0]
+tooltip   All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by $m1% for $16886d.
 
 https://www.wowhead.com/forever/spell=16880
 =======
@@ -1241,6 +1360,7 @@ effect 1  +10% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=10 sp=1 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -10% on family 7 mask 0x7407f7,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=21 family=7 mask=0x7407f7,0x4000000 target=[1,0]
+aura      Casting speed increased by $s1% and global cooldown reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=16886
 =======
@@ -1257,6 +1377,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19975 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19975 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 1). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=16689
 =======
@@ -1273,6 +1395,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19974 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19974 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 2). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=16810
 =======
@@ -1289,6 +1413,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19973 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19973 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 3). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=16811
 =======
@@ -1305,6 +1431,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19972 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19972 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 4). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=16812
 =======
@@ -1321,6 +1449,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19971 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19971 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 5). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=16813
 =======
@@ -1337,6 +1467,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 19970 Entangling Roots on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=19970 index=1 target=[1,0]
+tooltip   The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 6). Castable while shapeshifted. Lasts $d.
+aura      Melee damage you take will entangle the enemy.
 
 https://www.wowhead.com/forever/spell=17329
 =======
@@ -1347,6 +1479,7 @@ labels    21
 
 effect 1  +1% physical and spell crit
           E_APPLY_AURA A_MOD_CRIT_PCT base=1 target=[1,0]
+tooltip   Increases your critical strike chance with spells and melee attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=1223082
 =======
@@ -1361,6 +1494,7 @@ effect 2  +4% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=4 sp=1 target=[1,0]
 effect 3  +4% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=4 sp=1 target=[1,0]
+tooltip   Increases the range of your offensive Balance spells by $m1% and improves your chance to hit by $m2%.
 
 https://www.wowhead.com/forever/spell=16819
 =======
@@ -1375,6 +1509,7 @@ effect 2  SPELLMOD_DURATION +6 s on family 7 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 misc=1 family=7 mask=0x40 target=[1,0]
 effect 3  SPELLMOD_DURATION +2 s on family 7 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 misc=1 family=7 mask=0x200000 target=[1,0]
+tooltip   Increases the duration of your Moonfire and Rejuvenation spells by ${$m1/1000} sec, your Regrowth spell by ${$m2/1000} sec, and your Insect Swarm spell by ${$m3/1000} sec.
 
 https://www.wowhead.com/forever/spell=1223083
 =======
@@ -1389,6 +1524,7 @@ refs      16870 Clearcasting
 
 effect 1  casts 16870 Clearcasting on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=16870 target=[1,0]
+tooltip   Your spells and attacks have a chance to grant you Clearcasting, reducing the Mana, Rage, or Energy cost of your next damage or healing spell or offensive ability by $16870s1%. Clearcasting is not consumed by Wrath or by spells or abilities that cost no resources.
 
 https://www.wowhead.com/forever/spell=16864
 =======
@@ -1399,6 +1535,7 @@ labels    21
 
 effect 1  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 sp=1 target=[1,0]
+tooltip   Increases the maximum number of targets you may have affected by Entangling Roots by $s1.
 
 https://www.wowhead.com/forever/spell=17245
 =======
@@ -1417,6 +1554,8 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+tooltip   Soothes the target beast, reducing the range at which it will attack you by $s1 yards.  Only affects Beast targets level 40 or lower.  Lasts $d.
+aura      Reduced distance at which target will attack.
 
 https://www.wowhead.com/forever/spell=2908
 =======
@@ -1435,6 +1574,8 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+tooltip   Soothes the target beast, reducing the range at which it will attack you by $s1 yards.  Only affects Beast targets level 55 or lower.  Lasts $d.
+aura      Reduced distance at which target will attack.
 
 https://www.wowhead.com/forever/spell=8955
 =======
@@ -1453,6 +1594,8 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DETECT_RANGE base=-10 target=[6,0]
+tooltip   Soothes the target beast, reducing the range at which it will attack you by $s1 yards.  Only affects Beast targets level 70 or lower.  Lasts $d.
+aura      Reduced distance at which target will attack.
 
 https://www.wowhead.com/forever/spell=9901
 =======
@@ -1466,6 +1609,7 @@ attrs     channeled
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=1350 variance=0.1 sp=1 period=2000ms radius=25 target=[18,16]
+tooltip   Inflicts $s1 Arcane damage to enemies in a selected area every $t1 sec. for $d.
 
 https://www.wowhead.com/forever/spell=20687
 =======
@@ -1478,6 +1622,7 @@ attrs     channeled
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=125 variance=0.112 sp=1 period=2000ms radius=25 target=[18,16]
+tooltip   Inflicts $s1 Arcane damage to enemies in a selected area every $t1 sec. for $d.
 
 https://www.wowhead.com/forever/spell=429820
 =======
@@ -1494,6 +1639,14 @@ refs      439755 Starfall, 439753 Starfall, 439756 Starfall
 
 effect 1  casts 439755 Starfall every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=0.127 period=1000ms trigger=439755 target=[1,0]
+tooltip   You summon a flurry of stars from the sky over $d, striking targets within $439755a yards of your location, each dealing ${$439753m1*$<damagepower>/100} to ${$439753M1*$<damagepower>/100} Arcane damage to its target and ${$439756m1*$<damagepower>/100} Arcane damage to all other enemies within $439756a1 yards. Maximum 20 stars.
+
+          Shapeshifting or mounting cancels the effect. Any effect which causes you to lose control of your character will suppress the Starfall effect.
+
+          Benefits from and triggers most talents and effects that trigger or benefit from Moonfire.
+aura      Summoning stars from the sky.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=439748
 =======
@@ -1507,6 +1660,8 @@ effect 1  46–54 arcane damage to the enemy (+0.3 spell power)
           E_SCHOOL_DAMAGE base=50 variance=0.16 sp=0.3 target=[6,0]
 effect 2  casts 439756 Starfall to the enemy
           E_TRIGGER_SPELL base=0 trigger=439756 target=[6,0]
+tooltip   You summon a flurry of stars from the sky on all targets within 30 yards of the caster, each dealing $50288s1 Arcane damage. Also causes $50294s1 Arcane damage to all other enemies within $50294a1 yards of the enemy target. Maximum 20 stars. Lasts $48505d.
+aura      You summon a flurry of stars from the sky on all targets within 30 yards of the caster, each dealing $50288s1 Arcane damage. Also causes $50294s1 Arcane damage to all other enemies within $50294a1 yards of the enemy target. Maximum 20 stars. Lasts $48505d.
 
 https://www.wowhead.com/forever/spell=439753
 =======
@@ -1525,6 +1680,7 @@ range     50000 yd
 
 effect 1  8 arcane damage to every enemy in the target area (+0.13 spell power)
           E_SCHOOL_DAMAGE base=8 sp=0.13 radius=5 target=[53,16]
+aura      Maximum 20 stars. Lasts $48505d.
 
 https://www.wowhead.com/forever/spell=439756
 =======
@@ -1534,6 +1690,11 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=439748 misc=417347 target=[1,0]
+tooltip   Gain the Starfall
+           ability:
+
+          $@spellicon439748
+          $@spelldesc439748
 
 https://www.wowhead.com/forever/spell=439768
 =======
@@ -1546,6 +1707,7 @@ attrs     channeled
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=225 ppl=4 variance=0.10666667 sp=1 period=1000ms radius=25 target=[18,16]
+tooltip   Inflicts $s1 Arcane damage to enemies in a selected area every $t1 sec. for $d.
 
 https://www.wowhead.com/forever/spell=449431
 =======
@@ -1562,6 +1724,7 @@ labels    21
 
 effect 1  79–96 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=81 ppl=1.3 variance=0.2020202 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=2912
 =======
@@ -1578,6 +1741,7 @@ labels    21
 
 effect 1  108–130 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=110 ppl=1.5 variance=0.19736843 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=8949
 =======
@@ -1594,6 +1758,7 @@ labels    21
 
 effect 1  140–167 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=144 ppl=1.6 variance=0.18099548 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=8950
 =======
@@ -1610,6 +1775,7 @@ labels    21
 
 effect 1  191–226 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=198 ppl=1.8 variance=0.17589577 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=8951
 =======
@@ -1626,6 +1792,7 @@ labels    21
 
 effect 1  257–302 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=266 ppl=2.2 variance=0.16708861 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=9875
 =======
@@ -1642,6 +1809,7 @@ labels    21
 
 effect 1  313–370 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=337 ppl=2.3 variance=0.16494845 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=9876
 =======
@@ -1655,6 +1823,7 @@ range     30 yd
 
 effect 1  900–1100 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=1000 variance=0.2 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=21668
 =======
@@ -1671,6 +1840,7 @@ labels    21
 
 effect 1  350–412 arcane damage to the enemy (at level 60)
           E_SCHOOL_DAMAGE base=381 ppl=2.4 variance=0.16296296 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=25298
 =======
@@ -1684,6 +1854,7 @@ range     30 yd
 
 effect 1  796–1004 arcane damage to the enemy
           E_SCHOOL_DAMAGE base=900 variance=0.23111111 sp=1 target=[6,0]
+tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=463285
 =======
@@ -1702,6 +1873,12 @@ effect 1  248–304 arcane damage to the enemy (+0.429 spell power)
           E_SCHOOL_DAMAGE base=276 variance=0.20289855 sp=0.429 target=[6,0]
 effect 2  SPELLMOD_DAMAGE +80% on family 7 mask 0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=80 family=7 mask=0x4 target=[1,0]
+tooltip   Launch surging stellar energies that cause ${$m1/100*$<damagepower>} to ${$M1/100*$<damagepower>} Arcane damage, and increases the damage done by your next $n Starfire $Lcast:casts; by $s2% for $d.
+
+          Starsurge benefits from and triggers most talents and effects that trigger or benefit from Wrath or Starfire.
+aura      Your next $n Starfire $Lcast deals:casts deal; $s2% increased damage.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=417157
 =======
@@ -1711,6 +1888,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417157 misc=399966 target=[1,0]
+tooltip   Gain the Starsurge ability:
+
+          $@spellicon417157
+          $@spelldesc417157
 
 https://www.wowhead.com/forever/spell=424715
 =======
@@ -1728,6 +1909,10 @@ effect 1  65 nature damage every 3 s to the enemy (4 ticks, +0.13 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=65 sp=0.13 period=3000ms target=[6,0]
 effect 2  130–152 nature damage to the enemy (+0.15 spell power)
           E_SCHOOL_DAMAGE base=141 variance=0.15602838 sp=0.15 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<damagepower>/100} to ${$M2*$<damagepower>/100} Nature damage and then an additional ${$m1*4*$<damagepower>/100} Nature damage over $d.
+aura      $w1 Nature damage every $t1 seconds.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=414684
 =======
@@ -1744,6 +1929,10 @@ effect 1  65 nature damage every 3 s to the enemy (4 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=65 period=3000ms target=[6,0]
 effect 2  130–152 nature damage to the enemy
           E_SCHOOL_DAMAGE base=141 variance=0.15602838 target=[6,0]
+tooltip   Burns the enemy for ${$m2*$<damagepower>/100} to ${$M2*$<damagepower>/100} Nature damage and then an additional ${$m1*4*$<damagepower>/100} Nature damage over $d.
+aura      $w1 Nature damage every $t1 seconds.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=414687
 =======
@@ -1762,6 +1951,10 @@ effect 2  130–152 nature damage to the enemy
           E_SCHOOL_DAMAGE base=141 variance=0.15602838 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Burns the enemy for ${$m2*$<damagepower>/100} to ${$M2*$<damagepower>/100} Nature damage and then an additional ${$m1*4*$<damagepower>/100} Nature damage over $d. Awards $s3 combo $lpoint:points;.
+aura      $w1 Nature damage every $t1 seconds.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=414689
 =======
@@ -1793,6 +1986,7 @@ labels    21
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Moonglade.
 
 https://www.wowhead.com/forever/spell=18960
 =======
@@ -1808,6 +2002,8 @@ labels    21
 
 effect 1  3 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=3 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=467
 =======
@@ -1823,6 +2019,8 @@ labels    21
 
 effect 1  6 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=6 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=782
 =======
@@ -1838,6 +2036,8 @@ labels    21
 
 effect 1  9 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=1075
 =======
@@ -1853,6 +2053,8 @@ labels    21
 
 effect 1  12 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=12 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=8914
 =======
@@ -1868,6 +2070,8 @@ labels    21
 
 effect 1  15 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=15 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=9756
 =======
@@ -1883,6 +2087,8 @@ labels    21
 
 effect 1  18 nature damage back to melee attackers to the friendly target
           E_APPLY_AURA A_DAMAGE_SHIELD base=18 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $w1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=9910
 =======
@@ -1895,6 +2101,8 @@ range     30 yd
 
 effect 1  22 nature damage back to melee attackers to every ally around the caster
           E_APPLY_AURA A_DAMAGE_SHIELD base=22 radius=100 target=[22,30]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=16877
 =======
@@ -1908,6 +2116,8 @@ range     30 yd
 
 effect 1  32 nature damage back to melee attackers (at level 60) to the friendly target (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=8 ppl=0.4 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=21335
 =======
@@ -1920,6 +2130,8 @@ range     30 yd
 
 effect 1  64 nature damage back to melee attackers (at level 60) to the friendly target (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=16 ppl=0.8 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=21337
 =======
@@ -1933,6 +2145,8 @@ range     30 yd
 
 effect 1  68 nature damage back to melee attackers (at level 60) to the friendly target (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=20 ppl=0.8 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=22128
 =======
@@ -1945,6 +2159,8 @@ range     30 yd
 
 effect 1  128 nature damage back to melee attackers (at level 60) (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=32 ppl=1.6 target=[1,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=22696
 =======
@@ -1957,6 +2173,8 @@ range     30 yd
 
 effect 1  256 nature damage back to melee attackers (at level 60) (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=64 ppl=3.2 target=[1,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=25640
 =======
@@ -1969,6 +2187,8 @@ range     50000 yd
 
 effect 1  475–525 nature damage back to melee attackers to the target
           E_APPLY_AURA A_DAMAGE_SHIELD base=500 variance=0.1 target=[25,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=25777
 =======
@@ -1981,6 +2201,8 @@ range     30 yd
 
 effect 1  48 nature damage back to melee attackers (at level 60) to the friendly target (at level 60)
           E_APPLY_AURA A_DAMAGE_SHIELD base=12 ppl=0.6 target=[21,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=1236308
 =======
@@ -1991,6 +2213,7 @@ labels    21
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x600207
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=15 family=7 mask=0x600207 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Arcane and Nature spells by $m1%.
 
 https://www.wowhead.com/forever/spell=16909
 =======
@@ -2007,6 +2230,7 @@ labels    21
 
 effect 1  14–17 nature damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=15 ppl=0.2 variance=0.15384616 sp=0.429 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=5176
 =======
@@ -2023,6 +2247,7 @@ labels    21
 
 effect 1  20–25 nature damage to the enemy (at level 60, +0.486 spell power)
           E_SCHOOL_DAMAGE base=21 ppl=0.3 variance=0.14814815 sp=0.486 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=5177
 =======
@@ -2039,6 +2264,7 @@ labels    21
 
 effect 1  31–35 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=30 ppl=0.5 variance=0.16666667 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=5178
 =======
@@ -2055,6 +2281,7 @@ labels    21
 
 effect 1  37–44 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=37 ppl=0.6 variance=0.14705883 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=5179
 =======
@@ -2071,6 +2298,7 @@ labels    21
 
 effect 1  46–53 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=45 ppl=0.7 variance=0.12962963 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=5180
 =======
@@ -2087,6 +2315,7 @@ labels    21
 
 effect 1  56–63 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=54 ppl=0.9 variance=0.12162162 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=6780
 =======
@@ -2103,6 +2332,7 @@ labels    21
 
 effect 1  69–78 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=68 ppl=0.9 variance=0.11055277 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=8905
 =======
@@ -2119,6 +2349,7 @@ labels    21
 
 effect 1  92–102 nature damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=91 ppl=1 variance=0.112 sp=0.571 target=[6,0]
+tooltip   Causes $s1 Nature damage to the target.
 
 https://www.wowhead.com/forever/spell=9912
 =======
@@ -2130,6 +2361,7 @@ range     5 yd
 
 effect 1  80 nature damage to the enemy
           E_SCHOOL_DAMAGE base=80 target=[6,0]
+tooltip   Blasts a target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=17144
 =======
@@ -2140,5 +2372,6 @@ range     10 yd
 
 effect 1  105–147 nature damage to the enemy
           E_SCHOOL_DAMAGE base=126 variance=0.33333334 target=[6,0]
+tooltip   Blasts a target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=18104

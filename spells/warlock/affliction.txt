@@ -10,6 +10,8 @@ effect 1  SPELLMOD_ALL_EFFECTS +50% on family 5 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS -20 on family 5 mask 0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=8 family=5 mask=0x0,0x0,0x40000 target=[1,0]
+tooltip   Increases the effect of your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.  Lasts $d.
+aura      Increases effect for your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.
 
 https://www.wowhead.com/forever/spell=18288
 =======
@@ -29,6 +31,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=980
 =======
@@ -48,6 +52,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=1014
 =======
@@ -67,6 +73,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=6217
 =======
@@ -86,6 +94,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=11711
 =======
@@ -105,6 +115,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=11712
 =======
@@ -124,6 +136,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=0 family=5 mask=0x400 target=[6,0]
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
+aura      $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 https://www.wowhead.com/forever/spell=11713
 =======
@@ -140,6 +154,8 @@ labels    19
 
 effect 1  1742 shadow damage every 60 s to the enemy (1 ticks, +4 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=1742 sp=4 period=60000ms target=[6,0]
+tooltip   Afflicts the target with impending doom, causing $s1 Shadow damage after $d.  If the target dies from this damage, there is a chance that a Doomguard will be summoned.  Cannot be cast on players. Only one Bane per Warlock can be active on any one target.
+aura      Causes $s1 Shadow damage after $d.
 
 https://www.wowhead.com/forever/spell=603
 =======
@@ -156,6 +172,8 @@ labels    19
 
 effect 1  10 shadow damage every 3 s to the enemy (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=172
 =======
@@ -172,6 +190,8 @@ labels    19
 
 effect 1  13 shadow damage every 3 s to the enemy (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6222
 =======
@@ -188,6 +208,8 @@ labels    19
 
 effect 1  22 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=22 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6223
 =======
@@ -204,6 +226,8 @@ labels    19
 
 effect 1  28 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=28 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=7648
 =======
@@ -220,6 +244,8 @@ labels    19
 
 effect 1  40 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=11671
 =======
@@ -236,6 +262,8 @@ labels    19
 
 effect 1  57 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=57 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=11672
 =======
@@ -250,6 +278,8 @@ range     30 yd
 
 effect 1  350.81845 shadow damage every 3 s to every enemy around the caster (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=350.81845 sp=0.125 period=3000ms radius=10 target=[22,15]
+tooltip   Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.
+aura      Shadow damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=18376
 =======
@@ -263,6 +293,8 @@ range     30 yd
 
 effect 1  116.93949 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
+tooltip   Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.
+aura      Shadow damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=21068
 =======
@@ -279,6 +311,8 @@ labels    19
 
 effect 1  73 shadow damage every 3 s to the enemy (6 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=73 sp=0.2 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25311
 =======
@@ -288,6 +322,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DOT +12% on family 5 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=12 misc=22 family=5 mask=0x2 target=[1,0]
+tooltip   Increases damage caused by your Corruption by $s1%.
 
 https://www.wowhead.com/forever/spell=28829
 =======
@@ -301,6 +336,8 @@ range     30 yd
 
 effect 1  116.93949 shadow damage every 3 s to the enemy (8 ticks, +0.125 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=116.93949 sp=0.125 period=3000ms target=[6,0]
+tooltip   Corrupts nearby enemies, inflicting Shadow damage every $t1 sec. for $d.
+aura      Shadow damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1213450
 =======
@@ -323,6 +360,8 @@ range     30 yd
 
 effect 1  137 shadow damage every 3 s to the enemy (4 ticks, +0.167 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=137 sp=0.167 period=3000ms target=[6,0]
+tooltip   Corrupts the target, causing $o1 Shadow damage over $d.
+aura      $s1 Shadow damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1223963
 =======
@@ -338,6 +377,8 @@ labels    19
 
 effect 1  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 sp=1 target=[6,0]
+tooltip   Reduces the target's movement speed by $s1% for $d.  Only one Curse per Warlock can be active on any one target.
+aura      Movement speed slowed by $w1%.
 
 https://www.wowhead.com/forever/spell=18223
 =======
@@ -356,6 +397,8 @@ effect 2  -6 spirit to the enemy
           E_APPLY_AURA A_MOD_STAT base=-6 misc=4 target=[6,0]
 effect 3  casts 1010 Curse of Idiocy every 3 s to the enemy (40 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=3000ms trigger=1010 target=[6,0]
+tooltip   Curse the target with idiocy, reducing Intellect and Spirit by $s1 every $t3 seconds until each is reduced by a total of $*15;s1.  Only one Curse per Warlock can be active on any one target.
+aura      Intellect and Spirit reduced.
 
 https://www.wowhead.com/forever/spell=1010
 =======
@@ -372,6 +415,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 effect 2  -175 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-175 misc=1 target=[6,0]
+tooltip   Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
+aura      Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
 
 https://www.wowhead.com/forever/spell=704
 =======
@@ -388,6 +433,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 effect 2  -285 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-285 misc=1 target=[6,0]
+tooltip   Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
+aura      Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
 
 https://www.wowhead.com/forever/spell=7658
 =======
@@ -404,6 +451,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 effect 2  -395 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-395 misc=1 target=[6,0]
+tooltip   Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
+aura      Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
 
 https://www.wowhead.com/forever/spell=7659
 =======
@@ -420,6 +469,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
 effect 2  -505 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-505 misc=1 target=[6,0]
+tooltip   Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
+aura      Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
 
 https://www.wowhead.com/forever/spell=11717
 =======
@@ -436,6 +487,8 @@ effect 2  -640 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-640 misc=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+tooltip   Curses the target with recklessness, increasing melee attack power by $s1 but reducing armor by $s2 for $d.  Cursed enemies will not flee and will ignore Fear and Horror effects.  Only one Curse per Warlock can be active on any one target.
+aura      Increases melee attack power by $s1 and decreases armor by $s2.   Target will not flee and will ignore Fear and Horror effects.
 
 https://www.wowhead.com/forever/spell=1225841
 =======
@@ -452,6 +505,8 @@ effect 1  -50% cast speed to the enemy
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-50 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_LANGUAGE base=0 misc=8 target=[6,0]
+tooltip   Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
+aura      Speaking Demonic increasing casting time by $s1%.
 
 https://www.wowhead.com/forever/spell=1714
 =======
@@ -468,6 +523,8 @@ effect 1  -60% cast speed to the enemy
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=-60 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_LANGUAGE base=0 misc=8 target=[6,0]
+tooltip   Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
+aura      Speaking Demonic increasing casting time by $s1%.
 
 https://www.wowhead.com/forever/spell=11719
 =======
@@ -482,6 +539,8 @@ labels    19
 
 effect 1  -4 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-4 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=702
 =======
@@ -496,6 +555,8 @@ labels    19
 
 effect 1  -7 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-7 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=1108
 =======
@@ -510,6 +571,8 @@ labels    19
 
 effect 1  -12 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-12 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=6205
 =======
@@ -524,6 +587,8 @@ labels    19
 
 effect 1  -18 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-18 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=7646
 =======
@@ -538,6 +603,8 @@ labels    19
 
 effect 1  -26 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-26 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=11707
 =======
@@ -552,6 +619,8 @@ labels    19
 
 effect 1  -37 physical damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=-37 misc=1 target=[6,0]
+tooltip   Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.
+aura      Physical damage done reduced by $w1.
 
 https://www.wowhead.com/forever/spell=11708
 =======
@@ -568,6 +637,8 @@ effect 1  -30 holy+fire+nature+frost+shadow+arcane resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-30 misc=126 target=[6,0]
 effect 2  +4% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=4 misc=126 target=[6,0]
+tooltip   Curses the target for $d, reducing Magic resistances by $s1 and increases Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.
+aura      Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=440892
 =======
@@ -584,6 +655,8 @@ effect 1  -45 holy+fire+nature+frost+shadow+arcane resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-45 misc=126 target=[6,0]
 effect 2  +6% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=6 misc=126 target=[6,0]
+tooltip   Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.
+aura      Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=1311676
 =======
@@ -600,6 +673,8 @@ effect 1  -60 holy+fire+nature+frost+shadow+arcane resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-60 misc=126 target=[6,0]
 effect 2  +8% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=8 misc=126 target=[6,0]
+tooltip   Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.
+aura      Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=1311677
 =======
@@ -616,6 +691,8 @@ effect 1  -75 holy+fire+nature+frost+shadow+arcane resistance to the enemy
           E_APPLY_AURA A_MOD_RESISTANCE base=-75 misc=126 target=[6,0]
 effect 2  +10% holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=10 misc=126 target=[6,0]
+tooltip   Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.
+aura      Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.
 
 https://www.wowhead.com/forever/spell=1311680
 =======
@@ -633,6 +710,8 @@ effect 1  unrecognised shape
           E_HEALTH_LEECH base=272 ppl=2.2 sp=0.214 amplitude=1 target=[6,0]
 effect 2  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+aura      Horrified.
 
 https://www.wowhead.com/forever/spell=6789
 =======
@@ -650,6 +729,8 @@ effect 1  unrecognised shape
           E_HEALTH_LEECH base=359 ppl=2.6 sp=0.214 amplitude=1 target=[6,0]
 effect 2  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+aura      Horrified.
 
 https://www.wowhead.com/forever/spell=17925
 =======
@@ -667,6 +748,8 @@ effect 1  unrecognised shape
           E_HEALTH_LEECH base=454 ppl=3 sp=0.214 amplitude=1 target=[6,0]
 effect 2  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+aura      Horrified.
 
 https://www.wowhead.com/forever/spell=17926
 =======
@@ -685,6 +768,8 @@ effect 2  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=0 target=[0,0]
+tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+aura      Horrified.
 
 https://www.wowhead.com/forever/spell=28412
 =======
@@ -700,6 +785,8 @@ labels    19
 
 effect 1  leeches 10 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=10 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=689
 =======
@@ -715,6 +802,8 @@ labels    19
 
 effect 1  leeches 14 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=14 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=699
 =======
@@ -730,6 +819,8 @@ labels    19
 
 effect 1  leeches 22 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=22 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=709
 =======
@@ -745,6 +836,8 @@ labels    19
 
 effect 1  leeches 28 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=28 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=7651
 =======
@@ -760,6 +853,8 @@ labels    19
 
 effect 1  leeches 39 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=39 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=11699
 =======
@@ -775,6 +870,8 @@ labels    19
 
 effect 1  leeches 51 every 1 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=51 sp=0.1 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health every $t1 second from the target to the caster. Lasts $d.
+aura      Drains $s1 health every $t1 second to the caster.
 
 https://www.wowhead.com/forever/spell=11700
 =======
@@ -790,6 +887,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=42 ppl=0.4 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.
+aura      Drains $s1 Mana each second to the caster.
 
 https://www.wowhead.com/forever/spell=5138
 =======
@@ -805,6 +904,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=68 ppl=0.5 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.
+aura      Drains $s1 Mana each second to the caster.
 
 https://www.wowhead.com/forever/spell=6226
 =======
@@ -820,6 +921,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=99 ppl=0.6 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.
+aura      Drains $s1 Mana each second to the caster.
 
 https://www.wowhead.com/forever/spell=11703
 =======
@@ -835,6 +938,8 @@ labels    19
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PERIODIC_MANA_LEECH base=136 ppl=0.7 period=1000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.
+aura      Drains $s1 Mana each second to the caster.
 
 https://www.wowhead.com/forever/spell=11704
 =======
@@ -854,6 +959,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  17 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=17 sp=0.1 period=3000ms target=[6,0]
+tooltip   Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.
+aura      $s2 Shadow damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=1120
 =======
@@ -873,6 +980,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  34 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.1 period=3000ms target=[6,0]
+tooltip   Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.
+aura      $s2 Shadow damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8288
 =======
@@ -892,6 +1001,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  54 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=54 sp=0.1 period=3000ms target=[6,0]
+tooltip   Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.
+aura      $s2 Shadow damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=8289
 =======
@@ -911,6 +1022,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_CHANNEL_DEATH_ITEM base=1 target=[6,0]
 effect 2  84 shadow damage every 3 s to the enemy (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=84 sp=0.1 period=3000ms target=[6,0]
+tooltip   Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.
+aura      $s2 Shadow damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=11675
 =======
@@ -931,6 +1044,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.
+aura      Feared.
 
 https://www.wowhead.com/forever/spell=5782
 =======
@@ -951,6 +1066,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.
+aura      Feared.
 
 https://www.wowhead.com/forever/spell=6213
 =======
@@ -971,6 +1088,8 @@ effect 1  fears to the enemy
           E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
 effect 2  +25% movement speed to the enemy
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.
+aura      Feared.
 
 https://www.wowhead.com/forever/spell=6215
 =======
@@ -981,6 +1100,7 @@ labels    19
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 5 mask 0x4018,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 sp=1 misc=9 family=5 mask=0x4018,0x40000 target=[1,0]
+tooltip   Gives your Drain Life, Drain Mana, Drain Soul, and Wrack spells a $s1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=17783
 =======
@@ -991,6 +1111,7 @@ labels    19
 
 effect 1  SPELLMOD_RANGE +20% on family 5 mask 0x8048c41a,0x40001
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=5 family=5 mask=0x8048c41a,0x40001 target=[1,0]
+tooltip   Increases the range of your Affliction spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18218
 =======
@@ -1011,6 +1132,8 @@ effect 1  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=10 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
+tooltip   Howl, causing $i enemies within $a1 yds to flee in terror for $d.  Damage caused may interrupt the effect.
+aura      Fleeing in terror.
 
 https://www.wowhead.com/forever/spell=5484
 =======
@@ -1031,6 +1154,8 @@ effect 1  fears to every enemy around the caster
           E_APPLY_AURA A_MOD_FEAR base=0 radius=10 target=[22,15]
 effect 2  +25% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 radius=10 target=[22,15]
+tooltip   Howl, causing $i enemies within $a1 yds to flee in terror for $d.  Damage caused may interrupt the effect.
+aura      Fleeing in terror.
 
 https://www.wowhead.com/forever/spell=17928
 =======
@@ -1041,6 +1166,7 @@ labels    19
 
 effect 1  SPELLMOD_DOT +2% on family 5 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x400 target=[1,0]
+tooltip   Increases the damage done by your Bane of Agony by $s1%.
 
 https://www.wowhead.com/forever/spell=18827
 =======
@@ -1053,6 +1179,7 @@ effect 1  SPELLMOD_CASTING_TIME -2 s on family 5 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=10 family=5 mask=0x2 target=[1,0]
 effect 2  SPELLMOD_DOT +10% on family 5 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=5 mask=0x2 target=[1,0]
+tooltip   Reduces the casting time of your Corruption spell by $/1000;S1 sec and increases the damage it deals by $m2%.
 
 https://www.wowhead.com/forever/spell=17810
 =======
@@ -1063,6 +1190,7 @@ labels    19
 
 effect 1  SPELLMOD_DOT +2% on family 5 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x2 target=[1,0]
+tooltip   Increases the damage of Corruption by $s1%.
 
 https://www.wowhead.com/forever/spell=24486
 =======
@@ -1073,6 +1201,7 @@ labels    19
 
 effect 1  SPELLMOD_EFFECT1 -5 on family 5 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+tooltip   Increases the speed reduction of your Curse of Exhaustion by $s1%.
 
 https://www.wowhead.com/forever/spell=18310
 =======
@@ -1083,6 +1212,7 @@ labels    19
 
 effect 1  SPELLMOD_EFFECT1 -10 on family 5 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+tooltip   Increases the speed reduction of your Curse of Exhaustion by $s1%.
 
 https://www.wowhead.com/forever/spell=18311
 =======
@@ -1093,6 +1223,7 @@ labels    19
 
 effect 1  SPELLMOD_EFFECT1 -15 on family 5 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+tooltip   Increases the speed reduction of your Curse of Exhaustion by $s1%.
 
 https://www.wowhead.com/forever/spell=18312
 =======
@@ -1103,6 +1234,7 @@ labels    19
 
 effect 1  SPELLMOD_EFFECT1 -20 on family 5 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=3 family=5 mask=0x400000 target=[1,0]
+tooltip   Increases the speed reduction of your Curse of Exhaustion by $s1%.
 
 https://www.wowhead.com/forever/spell=18313
 =======
@@ -1113,6 +1245,7 @@ labels    19
 
 effect 1  SPELLMOD_ALL_EFFECTS +6% on family 5 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=6 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+tooltip   Increases the effect of your Curse of Weakness by $s1%.
 
 https://www.wowhead.com/forever/spell=18179
 =======
@@ -1123,6 +1256,7 @@ labels    19
 
 effect 1  SPELLMOD_ALL_EFFECTS +13% on family 5 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=13 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+tooltip   Increases the effect of your Curse of Weakness by $s1%.
 
 https://www.wowhead.com/forever/spell=18180
 =======
@@ -1133,6 +1267,7 @@ labels    19
 
 effect 1  SPELLMOD_ALL_EFFECTS +20% on family 5 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=8 family=5 mask=0x8000 target=[1,0]
+tooltip   Increases the effect of your Curse of Weakness by $s1%.
 
 https://www.wowhead.com/forever/spell=18181
 =======
@@ -1143,6 +1278,7 @@ labels    19
 
 effect 1  SPELLMOD_DOT +20% on family 5 mask 0x4008,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=5 mask=0x4008,0x40000 target=[1,0]
+tooltip   Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by $m1%.
 
 https://www.wowhead.com/forever/spell=403511
 =======
@@ -1153,6 +1289,7 @@ labels    19
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Increases the amount of Mana awarded by your Life Tap spell by $s1%.
 
 https://www.wowhead.com/forever/spell=18182
 =======
@@ -1173,6 +1310,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 6 from family 5 mask 0x1
           E_APPLY_AURA A_DUMMY base=6 family=5 mask=0x1 target=[1,0]
+tooltip   Applying Corruption, Immolate, Curse of Agony, Unstable Affliction, Shadowflame, or Siphon Life will cause you to deal instant damage to the target equal to one tick of the spell's periodic damage. Refreshing any of those spells when it has less than $s1 seconds duration remaining will cause you to deal instant damage to the target equal to the spell's remaining periodic damage.
 
 https://www.wowhead.com/forever/spell=426243
 =======
@@ -1226,6 +1364,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=426243 misc=415449 target=[1,0]
+tooltip   Gain the Invocation ability:
+
+          $@spellicon426243
+          $@spelldesc426243
 
 https://www.wowhead.com/forever/spell=426442
 =======
@@ -1261,6 +1403,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 30 to the caster (at level 60)
           E_DUMMY base=20 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=1454
 =======
@@ -1273,6 +1416,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 75 to the caster (at level 60)
           E_DUMMY base=65 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=1455
 =======
@@ -1285,6 +1429,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 140 to the caster (at level 60)
           E_DUMMY base=130 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=1456
 =======
@@ -1297,6 +1442,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 220 to the caster (at level 60)
           E_DUMMY base=210 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=11687
 =======
@@ -1309,6 +1455,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 310 to the caster (at level 60)
           E_DUMMY base=300 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=11688
 =======
@@ -1321,6 +1468,7 @@ refs      18182 Improved Life Tap
 
 effect 1  a dummy effect holding 424 to the caster (at level 60)
           E_DUMMY base=420 ppl=1 radius=50000 target=[1,0]
+tooltip   Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 https://www.wowhead.com/forever/spell=11689
 =======
@@ -1331,6 +1479,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -12% on family 5 mask 0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-12 misc=14 family=5 mask=0x40000 target=[1,0]
+tooltip   Reduces health cost of your Life Tap by $s1%.
 
 https://www.wowhead.com/forever/spell=28830
 =======
@@ -1363,6 +1512,7 @@ labels    19
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 5 mask 0x8648b,0x40003,0x0,0x420000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=7 family=5 mask=0x8648b,0x40003,0x0,0x420000 target=[1,0]
+tooltip   Increases the critical effect chance of your Shadow spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1310949
 =======
@@ -1375,6 +1525,7 @@ refs      17941 Shadow Trance
 
 effect 1  a dummy aura holding 4
           E_APPLY_AURA A_DUMMY base=4 target=[1,0]
+tooltip   Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a $m1% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by $17941s1%.
 
 https://www.wowhead.com/forever/spell=18094
 =======
@@ -1385,6 +1536,7 @@ labels    19, 3096
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 5 mask 0x440a,0x40003
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=15 family=5 mask=0x440a,0x40003 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by $m1%.
 
 https://www.wowhead.com/forever/spell=427712
 =======
@@ -1395,6 +1547,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=427712 misc=417345 target=[1,0]
+tooltip   Gain the Pandemic ability:
+
+          $@spellicon427712
+          $@spelldesc427712
 
 https://www.wowhead.com/forever/spell=429283
 =======
@@ -1407,6 +1563,7 @@ effect 1  SPELLMOD_DAMAGE +2% on family 5 mask 0x80093
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=5 mask=0x80093 target=[1,0]
 effect 2  SPELLMOD_DOT +2% on family 5 mask 0x440a,0x40003
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=5 mask=0x440a,0x40003 target=[1,0]
+tooltip   Increases the damage dealt or life drained by your Shadow spells by $s1%.
 
 https://www.wowhead.com/forever/spell=18271
 =======
@@ -1422,6 +1579,8 @@ labels    19
 
 effect 1  leeches 11 every 3 s to the enemy (10 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=11 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.
+aura      Drains $s1 health to the caster every $t1 secs.
 
 https://www.wowhead.com/forever/spell=18265
 =======
@@ -1436,6 +1595,8 @@ attrs     periodic can crit
 
 effect 1  leeches 19 every 3 s to the enemy (10 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=19 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.
+aura      Drains $s1 health to the caster every $t1 secs.
 
 https://www.wowhead.com/forever/spell=18879
 =======
@@ -1450,6 +1611,8 @@ attrs     periodic can crit
 
 effect 1  leeches 29 every 3 s to the enemy (10 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=29 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.
+aura      Drains $s1 health to the caster every $t1 secs.
 
 https://www.wowhead.com/forever/spell=18880
 =======
@@ -1464,6 +1627,8 @@ attrs     periodic can crit
 
 effect 1  leeches 41 every 3 s to the enemy (10 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_LEECH base=41 sp=0.05 period=3000ms amplitude=1 target=[6,0]
+tooltip   Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.
+aura      Drains $s1 health to the caster every $t1 secs.
 
 https://www.wowhead.com/forever/spell=18881
 =======
@@ -1490,6 +1655,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
 effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+tooltip   Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by $m1% for $1242853d and allows $m2% of normal Mana regeneration to continue while casting.
 
 https://www.wowhead.com/forever/spell=437032
 =======
@@ -1500,6 +1666,7 @@ labels    19
 
 effect 1  a dummy aura holding 12
           E_APPLY_AURA A_DUMMY base=12 sp=1 target=[1,0]
+tooltip   Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your other Affliction effects active on the target, up to a maximum increase of ${$m1*3}%.
 
 https://www.wowhead.com/forever/spell=17804
 =======
@@ -1509,6 +1676,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403511 misc=417347 target=[1,0]
+tooltip   Gain the Soul Siphon ability:
+
+          $@spellicon403511
+          $@spelldesc403511
 
 https://www.wowhead.com/forever/spell=403863
 =======
@@ -1523,6 +1694,7 @@ effect 2  +5% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=5 sp=1 target=[1,0]
 effect 3  -20% threat
           E_APPLY_AURA A_MOD_THREAT base=-20 sp=1 misc=127 target=[1,0]
+tooltip   Improves your chance to hit by $m1% and reduces all threat you generate by $m3%.
 
 https://www.wowhead.com/forever/spell=18174
 =======
@@ -1540,5 +1712,7 @@ effect 1  36 shadow damage every 1 s to the enemy (6 ticks, +0.143 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=36 sp=0.143 period=1000ms amplitude=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x402 target=[6,0]
+tooltip   Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.
+aura      Inflicts $s1 Shadow damage every $t1 sec and increases damage taken from the caster's other Shadow damage over time effects by $s2%.
 
 https://www.wowhead.com/forever/spell=1316697

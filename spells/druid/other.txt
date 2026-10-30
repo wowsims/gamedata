@@ -5,6 +5,7 @@ range     50000 yd
 
 effect 1  SPELLMOD_RESIST_MISS_CHANCE +13% on family 7 mask 0x0,0x8 to the target
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=13 misc=16 family=7 mask=0x0,0x8 target=[25,0]
+tooltip   Improves your chance to hit with Growl by $s1%.
 
 https://www.wowhead.com/forever/spell=30441
 =======
@@ -16,6 +17,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=1300940
 =======
@@ -25,6 +27,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -15 s on family 7 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15000 misc=11 family=7 mask=0x100000 target=[1,0]
+tooltip   Reduces the cooldown of your Nature's Grasp spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1300975
 =======
@@ -34,6 +37,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=4 target=[1,0]
+tooltip   Increases damage done by your spells and effects by up to $s1 when fighting Demons.
 
 https://www.wowhead.com/forever/spell=1301073
 =======
@@ -43,6 +47,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +3 s on family 7 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 misc=1 family=7 mask=0x200000 target=[1,0]
+tooltip   Increases the duration of your Insect Swarm spell by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1301242
 =======
@@ -54,6 +59,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
 effect 2  +1% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+tooltip   Increases your attack speed and casting speed by $s1%.
 
 https://www.wowhead.com/forever/spell=1300934
 =======
@@ -68,6 +74,7 @@ effect 2  SPELLMOD_COOLDOWN +15 s on family 7 mask 0x0,0x0,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15000 misc=11 family=7 mask=0x0,0x0,0x8000 target=[1,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=7 mask=0x0,0x0,0x8000 target=[1,0]
+tooltip   Your Hibernate spell is now castable in Cat Form and its cast time is reduced by ${$m1/-1000}.1 sec while you are in Cat Form, but Hibernate gains a cooldown of ${$m2/1000} sec.
 
 https://www.wowhead.com/forever/spell=1300999
 =======
@@ -77,6 +84,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=4 target=[1,0]
+tooltip   +$s1 Attack Power against Demons.
 
 https://www.wowhead.com/forever/spell=1301075
 =======
@@ -87,6 +95,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 7 mask 0x0,0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+tooltip   Reduces the cooldown of your Shifting Power ability by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1301247
 =======
@@ -96,6 +105,7 @@ attrs     passive
 
 effect 1  +7 to skill 95
           E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+tooltip   Increased Defense +$s1
 
 https://www.wowhead.com/forever/spell=1300942
 =======
@@ -108,6 +118,7 @@ effect 1  SPELLMOD_CASTING_TIME -2 s on family 7 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=10 family=7 mask=0x10000000 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=0 family=7 mask=0x10000000 target=[1,0]
+tooltip   Your Rebirth spell is now castable in Bear Form and Dire Bear Form and its cast time is reduced by ${$m1/-1000}.1 sec while you are in Bear Form or Dire Bear Form.
 
 https://www.wowhead.com/forever/spell=1301005
 =======
@@ -117,6 +128,7 @@ attrs     passive
 
 effect 1  +12 expertise rating
           E_APPLY_AURA A_MOD_RATING base=12 misc=8388608 target=[1,0]
+tooltip   Reduces the chance for your melee attacks to be Dodged or Parried by ${$m1/10}.1%.
 
 https://www.wowhead.com/forever/spell=1301076
 =======
@@ -127,6 +139,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -15 s on family 7 mask 0x0,0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15000 misc=11 family=7 mask=0x0,0x0,0x40 target=[1,0]
+tooltip   Reduces the cooldown of your Berserk ability by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1301249
 =======
@@ -136,6 +149,7 @@ attrs     passive
 
 effect 1  +10 spirit
           E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+tooltip   Increased Spirit +$s1
 
 https://www.wowhead.com/forever/spell=1300943
 =======
@@ -145,6 +159,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -10 s on family 7 mask 0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=11 family=7 mask=0x0,0x40000 target=[1,0]
+tooltip   Reduces the cooldown of your Barkskin spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301006
 =======
@@ -156,6 +171,7 @@ effect 1  +26 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=26 misc=126 target=[1,0]
 effect 2  +9 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=9 misc=126 target=[1,0]
+tooltip   Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.
 
 https://www.wowhead.com/forever/spell=1301077
 =======
@@ -166,6 +182,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -3 s on family 7 mask 0x0,0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=7 mask=0x0,0x2 target=[1,0]
+tooltip   Reduces the cooldown of your Swiftmend spell by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1301250
 =======
@@ -175,6 +192,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=32 target=[1,0]
+tooltip   +$s1 Attack Power against Undead.
 
 https://www.wowhead.com/forever/spell=1301084
 =======
@@ -184,6 +202,7 @@ attrs     passive
 
 effect 1  +7 to skill 95
           E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+tooltip   Increased Defense +$s1
 
 https://www.wowhead.com/forever/spell=1300970
 =======
@@ -196,6 +215,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +10% on family 7 mask 0x0,0x100440,0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=7 mask=0x0,0x100440,0x400 target=[1,0]
+aura      Damage of next Mangle or Swipe increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1213190
 =======
@@ -206,6 +226,8 @@ caster aura 24858 Moonkin Form
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune with the heavens, allowing you to replace your Moonkin form with a more celestial visage.
+aura      Taking on an astral aspect...
 
 https://www.wowhead.com/forever/spell=453482
 =======
@@ -215,6 +237,8 @@ duration  permanent
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune with the heavens, allowing you to replace your Moonkin form with a more celestial visage.
+aura      Taking on an astral aspect...
 
 https://www.wowhead.com/forever/spell=469271
 =======
@@ -229,6 +253,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_DAMAGE +10% on family 7 mask 0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=7 mask=0x4 target=[1,0]
+aura      Increases the damage done by your next Starfire by $s1%.
 
 https://www.wowhead.com/forever/spell=467088
 =======
@@ -238,6 +263,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +3 s on family 7 mask 0x0,0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 sp=1 misc=1 family=7 mask=0x0,0x40000 target=[1,0]
+tooltip   Increases the duration of your Barkskin by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=459596
 =======
@@ -248,6 +274,7 @@ proc      hears PROC_FLAG_CAST_ENDED, PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it f
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+aura      The beast awaits a challenger.
 
 https://www.wowhead.com/forever/spell=435081
 =======
@@ -259,6 +286,8 @@ labels    18
 
 effect 1  a dummy aura holding 1 every 2 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=1 period=2000ms target=[1,0]
+tooltip   Heals the target over $d.
+aura      Healing damage over $d from a recent critical hit taken.
 
 https://www.wowhead.com/forever/spell=27813
 =======
@@ -271,6 +300,8 @@ stack     up to 7
 
 effect 1  +50 health to the friendly target
           E_APPLY_AURA A_MOD_INCREASE_HEALTH base=50 amplitude=1 target=[21,0]
+tooltip   Increases the friendly target's health by up to $s1 for $d.
+aura      Increases health by up to $s1.
 
 https://www.wowhead.com/forever/spell=28750
 =======
@@ -298,6 +329,8 @@ labels    23
 
 effect 1  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 sp=1 target=[6,0]
+tooltip   Immobilize the target for $d.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=25999
 =======
@@ -317,6 +350,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432276 misc=417346 target=[1,0]
+tooltip   Gain the Carnage ability:
+
+          $@spellicon432276
+          $@spelldesc432276
 
 https://www.wowhead.com/forever/spell=432298
 =======
@@ -327,6 +364,7 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0x80000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0x80000000 target=[1,0]
+aura      Your next shapeshift into a cat has no cost and, upon shifting, you gain 100 energy.
 
 https://www.wowhead.com/forever/spell=1294204
 =======
@@ -337,6 +375,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -150 (-15 on a rage bar) on family 7 mask 0xf0000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-150 misc=14 family=7 mask=0xf0000000 target=[1,0]
+tooltip   Reduces the Mana cost of your shapeshifting spells by $s1.
 
 https://www.wowhead.com/forever/spell=21873
 =======
@@ -347,6 +386,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -40 (-4 on a rage bar) on family 7 mask 0xe0000000,0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-40 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
+tooltip   Reduces the mana cost of shapeshifting spells by $s1.
 
 https://www.wowhead.com/forever/spell=1270470
 =======
@@ -361,6 +401,12 @@ attrs     refund on miss
 
 effect 1  a dummy effect holding 70 to the enemy
           E_DUMMY base=70 variance=0.71428573 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into $f1 additional damage:
+             1 point  : 170-220 damage
+             2 points: 295-345 damage
+             3 points: 420-470 damage
+             4 points: 545-595 damage
+             5 points: 670-720 damage
 
 https://www.wowhead.com/forever/spell=24248
 =======
@@ -374,6 +420,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no
 
 effect 1  casts 29195 Corrupted Mind on its trigger to the target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=29195 target=[25,0]
+aura      Can only cast one healing or curing spell every 60 seconds.
 
 https://www.wowhead.com/forever/spell=29194
 =======
@@ -386,6 +433,7 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4327 family=7 mask=0xf0,0x6 target=[1,0]
+aura      Can't cast healing or curing spells.
 
 https://www.wowhead.com/forever/spell=29195
 =======
@@ -396,6 +444,7 @@ attrs     cannot crit
 
 effect 1  a dummy effect to every enemy around the caster
           E_DUMMY base=0 radius=100 target=[22,15]
+aura      Can only cast one healing or curing spell every 60 seconds.
 
 https://www.wowhead.com/forever/spell=29201
 =======
@@ -416,6 +465,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432271 misc=417346 target=[1,0]
+tooltip   Gain the Cut to the Chase ability:
+
+          $@spellicon432271
+          $@spelldesc432271
 
 https://www.wowhead.com/forever/spell=432296
 =======
@@ -426,6 +479,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -50% on family 7 mask 0x400080
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=11 family=7 mask=0x400080 target=[1,0]
+tooltip   Reduces the cooldown of your Tranquility and Hurricane spells by $s1%.
 
 https://www.wowhead.com/forever/spell=23556
 =======
@@ -442,6 +496,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=100 misc=127 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME +1 s on family 7 mask 0x1000265
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=10 family=7 mask=0x1000265 index=2 target=[1,0]
+tooltip   Physical and Magical damage taken is reduced by $22839s2%.
+aura      Physical and Magical damage taken is reduced by $22839s2%.
 
 https://www.wowhead.com/forever/spell=460673
 =======
@@ -452,6 +508,7 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0x40000000 target=[1,0]
+aura      Your next shapeshift into a bear has no cost and, upon shifting, you gain 80 rage.
 
 https://www.wowhead.com/forever/spell=1294199
 =======
@@ -462,6 +519,8 @@ range     30 yd
 
 effect 1  10000 physical damage back to melee attackers
           E_APPLY_AURA A_DAMAGE_SHIELD base=10000 target=[1,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=25059
 =======
@@ -472,6 +531,8 @@ range     30 yd
 
 effect 1  50000 physical damage back to melee attackers
           E_APPLY_AURA A_DAMAGE_SHIELD base=50000 target=[1,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=26666
 =======
@@ -484,6 +545,7 @@ refs      408261 Dreamstate
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Your damaging non-periodic spell critical strikes grant you $m1% of your mana regeneration while casting for $408261d.
 
 https://www.wowhead.com/forever/spell=408258
 =======
@@ -494,6 +556,8 @@ labels    21
 
 effect 1  +50% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Allows $s1% of your Mana regeneration to continue while casting.
+aura      Regenerating $w1% of your normal Mana regeneration while casting spells.
 
 https://www.wowhead.com/forever/spell=408261
 =======
@@ -508,6 +572,7 @@ effect 1  +20% nature damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=8 target=[6,0]
 effect 2  +20% arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=64 target=[6,0]
+aura      Increases Arcane and Nature damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=437132
 =======
@@ -518,6 +583,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -3% on family 7 mask 0xf0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-3 sp=1 misc=14 family=7 mask=0xf0 target=[1,0]
+tooltip   Reduces the mana cost of your Healing Touch, Regrowth, Rejuvenation,  and Tranquility spells by $s1%.
 
 https://www.wowhead.com/forever/spell=28743
 =======
@@ -527,6 +593,7 @@ attrs     passive
 
 effect 1  -1% holy+fire+nature+frost+shadow+arcane power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-1 misc=126 misc2=1 target=[1,0]
+tooltip   Reduces the Mana cost of spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1306650
 =======
@@ -536,6 +603,7 @@ attrs     passive
 
 effect 1  -2% holy+fire+nature+frost+shadow+arcane power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-2 misc=126 misc2=1 target=[1,0]
+tooltip   Reduces the Mana cost of spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1306660
 =======
@@ -545,6 +613,7 @@ attrs     passive
 
 effect 1  -3% holy+fire+nature+frost+shadow+arcane power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=-3 misc=126 misc2=1 target=[1,0]
+tooltip   Reduces the Mana cost of spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1306662
 =======
@@ -564,6 +633,14 @@ effect 4  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 sp=1 target=[1,0]
 effect 5  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+tooltip   Some of your spells and abilities extend the duration of your damage and healing over time effects on their target:
+
+          Starfire extends Moonfire by $s1 sec.
+          Wrath extends Sunfire by $s2 sec.
+          Regrowth extends Rejuvenation by $s3 sec.
+          Shred extends Rip by $s4 sec.
+
+          Each effect can only be extended up to its initial duration.
 
 https://www.wowhead.com/forever/spell=414719
 =======
@@ -575,6 +652,7 @@ effect 1  SPELLMOD_DAMAGE +3% on family 7 mask 0x0,0x2000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=7 mask=0x0,0x2000010 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 7 mask 0x0,0x4000010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 misc=22 family=7 mask=0x0,0x4000010 target=[1,0]
+tooltip   Increases the amount healed by your Lifebloom, Nourish, and Wild Growth spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1214063
 =======
@@ -586,6 +664,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=16083 misc2=1 target=[1,0]
 effect 2  -50% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 sp=1 misc=126 target=[1,0]
+aura      Reduces magic damage taken by $s2%
 
 https://www.wowhead.com/forever/spell=27546
 =======
@@ -596,6 +675,7 @@ labels    21
 
 effect 1  SPELLMOD_CASTING_TIME -0.15 s on family 7 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-150 sp=1 misc=10 family=7 mask=0x20 target=[1,0]
+tooltip   Reduces the casting time of your Healing Touch spell by 0.15 sec.
 
 https://www.wowhead.com/forever/spell=27846
 =======
@@ -606,6 +686,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 7 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=7 mask=0x40 target=[1,0]
+tooltip   Reduces the casting time of your Regrowth spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=21872
 =======
@@ -616,6 +697,7 @@ stance    Cat
 
 effect 1  +30% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=30 sp=1 target=[1,0]
+tooltip   Increases your movement speed by $s1% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by $24864s1%.
 
 https://www.wowhead.com/forever/spell=436892
 =======
@@ -626,6 +708,7 @@ stance    Cat
 
 effect 1  +15% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=15 sp=1 target=[1,0]
+tooltip   Increases your movement speed by $s1% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by $24864s1%.
 
 https://www.wowhead.com/forever/spell=436893
 =======
@@ -641,6 +724,7 @@ effect 1  unrecognised shape
           E_175 base=0 amplitude=4 misc=5 misc2=150 target=[65,0]
 effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
+tooltip   Leap behind an enemy.
 
 https://www.wowhead.com/forever/spell=414924
 =======
@@ -651,6 +735,7 @@ refs      1231381 Feral Dedication
 
 effect 1  a dummy aura holding 40 every 5 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=40 period=5000ms target=[1,0]
+tooltip   If you remain in Cat Form for $1231381t seconds, increase your Energy Regeneration by $1231381s1%.
 
 https://www.wowhead.com/forever/spell=1231380
 =======
@@ -660,6 +745,8 @@ duration  permanent
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=25 misc=3 target=[1,0]
+tooltip   If you remain in Cat Form for $t seconds, increase your Energy Regeneration by $s1%, and the damage of your Ferocious Bite by $s2%.
+aura      Energy Regeneration increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1231381
 =======
@@ -670,6 +757,7 @@ refs      1231381 Feral Dedication
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Remaining in Cat Form for $1231381t seconds, causes your Energy Regeneration to increase by $1231381s1%.
 
 https://www.wowhead.com/forever/spell=1231382
 =======
@@ -679,6 +767,7 @@ duration  permanent
 
 effect 1  SPELLMOD_DAMAGE +25% on family 7 mask 0x0,0x0,0x0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 family=7 mask=0x0,0x0,0x0,0x1000 target=[1,0]
+tooltip   Increases the damage caused by your Ferocious Bite by $s1%.
 
 https://www.wowhead.com/forever/spell=1235681
 =======
@@ -689,6 +778,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPEED_ALWAYS base=15 target=[1,0]
+tooltip   Increases your movement speed by $s1% while in Bear, Cat, or Travel Form.  Only active outdoors.
 
 https://www.wowhead.com/forever/spell=23218
 =======
@@ -701,6 +791,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its 
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=420493
 =======
@@ -710,6 +801,8 @@ duration  permanent
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune with the fires within, allowing you to replace your Cat form with a more fiery visage.
+aura      Taking on a fiery aspect...
 
 https://www.wowhead.com/forever/spell=470037
 =======
@@ -733,6 +826,7 @@ effect 1  summons creature 204346
           E_SUMMON base=3 misc=204346 misc2=5650 target=[53,0]
 effect 2  a dummy aura every 0.2 s (75 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=200ms target=[1,0]
+tooltip   Summons $s1 treants to attack enemy targets for $d.
 
 https://www.wowhead.com/forever/spell=467079
 =======
@@ -755,6 +849,7 @@ effect 1  SPELLMOD_COST -100% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=7 mask=0x1 target=[1,0]
 effect 2  casts 414800 Fury of Stormrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=-100 sp=1 trigger=414800 target=[1,0]
+tooltip   Reduces the mana cost of Wrath by $s1% and each time you deal damage with Wrath you have a $h% chance for your next cast of Healing Touch within $414800d to be instant and castable in any shapeshift form. Allows Wrath to be cast while in Tree of Life form.
 
 https://www.wowhead.com/forever/spell=414799
 =======
@@ -769,6 +864,7 @@ effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x20,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x20,0x2000000 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=7 mask=0x20,0x2000000 target=[1,0]
+aura      Your next Healing Touch is instant cast and castable in any shapeshift form.
 
 https://www.wowhead.com/forever/spell=414800
 =======
@@ -796,6 +892,7 @@ effect 3  SPELLMOD_COOLDOWN -100% on family 7 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=11 family=7 mask=0x400000 target=[1,0]
 effect 4  SPELLMOD_COST -60% on family 7 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 sp=1 misc=14 family=7 mask=0x400000 target=[1,0]
+tooltip   Increases the damage done by your Hurricane by $s1%, it no longer has a cooldown, and its mana cost is reduced by $s4%.
 
 https://www.wowhead.com/forever/spell=417135
 =======
@@ -806,6 +903,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417135 misc=417345 target=[1,0]
+tooltip   Gain the Gale Winds ability:
+
+          $@spellicon417135
+          $@spelldesc417135
 
 https://www.wowhead.com/forever/spell=431450
 =======
@@ -816,6 +917,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -600 s on family 7 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-600000 misc=11 family=7 mask=0x10000000 target=[1,0]
+tooltip   Reduces the cooldown of Rebirth by $/60000;s1 minutes.
 
 https://www.wowhead.com/forever/spell=26106
 =======
@@ -829,6 +931,7 @@ refs      446699 Gore
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Striking a target with Lacerate, Swipe, or Maul has a $h% chance to reset the cooldown on Mangle (Bear) and grant ${$446699m1/10}  Rage. Striking a target with Mangle (Cat) or Shred has a $s1% chance to reset the cooldown on Tiger's Fury.
 
 https://www.wowhead.com/forever/spell=417145
 =======
@@ -839,6 +942,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417145 misc=417345 target=[1,0]
+tooltip   Gain the Gore ability:
+
+          $@spellicon417145
+          $@spelldesc417145
 
 https://www.wowhead.com/forever/spell=431446
 =======
@@ -871,6 +978,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 7 mask 0x60,0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=7 mask=0x60,0x2000000 target=[1,0]
+aura      The casting time of your next Healing Touch, Nourish, or Regrowth spell is reduced by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=467204
 =======
@@ -883,6 +991,7 @@ refs      28848 Healing Touch
 
 effect 1  a dummy aura from family 7 mask 0x20
           E_APPLY_AURA A_DUMMY base=0 sp=1 family=7 mask=0x20 target=[1,0]
+tooltip   Gain up to $28848s1 mana each time you cast Healing Touch.
 
 https://www.wowhead.com/forever/spell=28847
 =======
@@ -895,6 +1004,8 @@ labels    25
 
 effect 1  +700 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 for $d.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=28790
 =======
@@ -909,6 +1020,8 @@ effect 1  +140 attack power to the friendly target
           E_APPLY_AURA A_MOD_ATTACK_POWER base=140 amplitude=1 target=[21,0]
 effect 2  +140 ranged attack power to the friendly target
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=140 target=[21,0]
+tooltip   Increases the friendly target's attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=28791
 =======
@@ -921,6 +1034,8 @@ labels    17, 19
 
 effect 1  +80 holy+fire+nature+frost+shadow+arcane damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=80 amplitude=1 misc=126 target=[21,0]
+tooltip   Increases the friendly target's spell damage and healing by up to $s1 for $d.
+aura      Increases spell damage and healing by up to $s1.
 
 https://www.wowhead.com/forever/spell=28793
 =======
@@ -933,6 +1048,8 @@ labels    18, 21, 26
 
 effect 1  +28 mana per 5 s to the friendly target
           E_APPLY_AURA A_MOD_POWER_REGEN base=28 amplitude=1 target=[21,0]
+tooltip   Increases the friendly target's mana regeneration by $s1 per 5 sec. for $d.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=28795
 =======
@@ -944,6 +1061,8 @@ range     50000 yd
 
 effect 1  +28 mana per 5 s to the friendly target
           E_APPLY_AURA A_MOD_POWER_REGEN base=28 amplitude=1 target=[21,0]
+tooltip   Increases the friendly target's mana regeneration by $s1 per 5 sec. for $d.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=1220542
 =======
@@ -957,6 +1076,8 @@ effect 1  +80 holy+fire+nature+frost+shadow+arcane damage done to the friendly t
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=80 amplitude=1 misc=126 target=[21,0]
 effect 2  +80 healing power to the friendly target
           E_APPLY_AURA A_MOD_HEALING_DONE base=80 amplitude=1 misc=126 target=[21,0]
+tooltip   Increases the friendly target's spell damage and healing by up to $s1 for $d.
+aura      Increases spell damage and healing by up to $s1.
 
 https://www.wowhead.com/forever/spell=1220543
 =======
@@ -970,6 +1091,8 @@ effect 1  +140 attack power to the friendly target
           E_APPLY_AURA A_MOD_ATTACK_POWER base=140 amplitude=1 target=[21,0]
 effect 2  +140 ranged attack power to the friendly target
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=140 target=[21,0]
+tooltip   Increases the friendly target's attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=1220545
 =======
@@ -981,6 +1104,8 @@ range     50000 yd
 
 effect 1  +700 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 for $d.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=1220546
 =======
@@ -992,6 +1117,7 @@ effect 1  SPELLMOD_DAMAGE +10% on family 7 mask 0x0,0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=7 mask=0x0,0x800000 target=[1,0]
 effect 2  SPELLMOD_RADIUS -50% on family 7 mask 0x0,0x0,0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=6 family=7 mask=0x0,0x0,0x100 target=[1,0]
+tooltip   Increases the damage done by Starfall by $s1%, but decreases its radius by $s2%.
 
 https://www.wowhead.com/forever/spell=470079
 =======
@@ -1001,6 +1127,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +7 on family 7 mask 0x0,0x100,0x0,0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=7 sp=1 misc=8 family=7 mask=0x0,0x100,0x0,0x8 target=[1,0]
+tooltip   Increases initial and per application periodic damage done by Lacerate by $s1.
 
 https://www.wowhead.com/forever/spell=470269
 =======
@@ -1010,6 +1137,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 7 mask 0x0,0x0,0x200000,0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=7 mask=0x0,0x0,0x200000,0x40000000 target=[1,0]
+tooltip   The energy cost of your Rake and Rip spells is reduced by $s1.
 
 https://www.wowhead.com/forever/spell=461304
 =======
@@ -1021,6 +1149,7 @@ refs      461305 Idol of Exsanguination (Bear)
 
 effect 1  casts 461305 Idol of Exsanguination (Bear) on its trigger from family 7 mask 0x20
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=461305 family=7 mask=0x20 target=[1,0]
+tooltip   Your Lacerate ticks energize you for ${$461305s1/10} rage.
 
 https://www.wowhead.com/forever/spell=461306
 =======
@@ -1031,6 +1160,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  casts 470270 Idol of Feline Focus on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=470270 target=[1,0]
+tooltip   Your Ferocious Bite ability no longer converts additional energy into damage, and refunds $s1 energy on a Dodge, Miss, or Parry.
 
 https://www.wowhead.com/forever/spell=470080
 =======
@@ -1040,6 +1170,7 @@ attrs     passive
 
 effect 1  casts 1214290 Idol of Health when the target is hit from family 7 mask 0x0,0x4
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=200 trigger=1214290 family=7 mask=0x0,0x4 target=[1,0]
+tooltip   Your Cure Poison, Abolish Poison, and Remove Curse spells also heal the target for $s1 when cast.
 
 https://www.wowhead.com/forever/spell=1214289
 =======
@@ -1051,6 +1182,7 @@ effect 1  SPELLMOD_DAMAGE +3% on family 7 mask 0x0,0x2000000,0x1000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x0,0x2000000,0x1000000 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 7 mask 0x0,0x4000000,0x1000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=7 mask=0x0,0x4000000,0x1000000 target=[1,0]
+tooltip   Increases the amount healed by your Nourish, Wild Growth, and Efflorescence spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1220702
 =======
@@ -1064,6 +1196,7 @@ effect 1  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 target=[1,0]
 effect 2  a dummy aura holding 2000
           E_APPLY_AURA A_DUMMY base=2000 target=[1,0]
+tooltip   Shred damage extends the duration of your Rake on the target by ${$s1/1000} sec. Against Demons, this duration is extended by an additional ${$s2/1000} sec.
 
 https://www.wowhead.com/forever/spell=1309062
 =======
@@ -1087,6 +1220,7 @@ refs      461307 Idol of the Grove
 
 effect 1  casts 461307 Idol of the Grove on its trigger from family 7 mask 0x40
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=461307 family=7 mask=0x40 target=[1,0]
+tooltip   Your Regrowth spell energizes you for $461307s1 mana when it heals a target.
 
 https://www.wowhead.com/forever/spell=461308
 =======
@@ -1099,6 +1233,7 @@ proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=435097
 =======
@@ -1111,6 +1246,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL, PR
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=446095
 =======
@@ -1120,6 +1256,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +12 s on family 7 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=12000 sp=1 misc=1 family=7 mask=0x200000 target=[1,0]
+tooltip   The duration of your Insect Swarm spell is increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=447296
 =======
@@ -1132,6 +1269,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PR
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=426072
 =======
@@ -1144,6 +1282,7 @@ effect 1  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 target=[1,0]
 effect 2  a dummy aura holding 2000
           E_APPLY_AURA A_DUMMY base=2000 target=[1,0]
+tooltip   Wrath critical strikes extend the duration of your Insect Swarm on the target by ${$s1/1000} sec. Against Beasts, this duration is extended by an additional ${$s2/1000} sec.
 
 https://www.wowhead.com/forever/spell=1307400
 =======
@@ -1154,6 +1293,7 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 22812 Barkskin
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428713 misc=22812 target=[1,0]
+tooltip   Your Barkskin can now be cast on allies, no longer penalizes melee combat speed or spellcasting time, and can be cast while shapeshifted.
 
 https://www.wowhead.com/forever/spell=431388
 =======
@@ -1164,6 +1304,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431388 misc=417345 target=[1,0]
+tooltip   Gain the Improved Barkskin ability:
+
+          $@spellicon431388
+          $@spelldesc431388
 
 https://www.wowhead.com/forever/spell=431448
 =======
@@ -1174,6 +1318,7 @@ labels    21
 
 effect 1  SPELLMOD_DURATION +5 s on family 7 mask 0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5000 sp=1 misc=1 family=7 mask=0x400 target=[1,0]
+tooltip   Increases the duration of Faerie Fire by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24479
 =======
@@ -1185,6 +1330,7 @@ refs      428708 Frenzied Regeneration
 
 effect 1  replaces an action bar spell with 0
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428708 family=7 mask=0x0,0x40000000 target=[1,0]
+tooltip   Your Frenzied Regeneration can now be used in all forms except Moonkin Form or while not shapeshifted. It now converts your active resource into health every second for $428708d. Up to $428708s1 Rage, $428708s2 Energy, or $428708s3% base Mana is converted per second into up to $428708s4% health.
 
 https://www.wowhead.com/forever/spell=431389
 =======
@@ -1195,6 +1341,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431389 misc=417346 target=[1,0]
+tooltip   Gain the Improved Frenzied Regeneration ability:
+
+          $@spellicon431389
+          $@spelldesc431389
 
 https://www.wowhead.com/forever/spell=431458
 =======
@@ -1214,6 +1364,7 @@ labels    21
 
 effect 1  SPELLMOD_DURATION +2 s on family 7 mask 0x0,0x0,0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 misc=1 family=7 mask=0x0,0x0,0x200000 target=[1,0]
+tooltip   Increases the duration of Rip by ${$s1/1000} sec.
 
 https://www.wowhead.com/forever/spell=446212
 =======
@@ -1223,6 +1374,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +3% on family 7 mask 0x8000,0x0,0x0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x8000,0x0,0x0,0x1000 target=[1,0]
+tooltip   Increases the damage of Ferocious Bite and Shred by $s1%.
 
 https://www.wowhead.com/forever/spell=1214285
 =======
@@ -1232,6 +1384,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=439510 misc=417347 target=[1,0]
+tooltip   Gain the Improved Swipe ability:
+
+          $@spellicon439510
+          $@spelldesc439510
 
 https://www.wowhead.com/forever/spell=415452
 =======
@@ -1241,6 +1397,11 @@ attrs     passive
 
 effect 1  SPELLMOD_JUMP_TARGETS +7 on family 7 mask 0x0,0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=7 sp=1 misc=17 family=7 mask=0x0,0x100000 target=[1,0]
+tooltip   While in Cat Form, your Swipe ability becomes Swipe (Cat), and while in Bear Form, your Swipe ability strikes up to $s1 additional enemies.
+
+          Swipe (Cat)
+          $@spellicon411128
+          $@spelldesc411128
 
 https://www.wowhead.com/forever/spell=439510
 =======
@@ -1250,6 +1411,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +3% on family 7 mask 0x0,0x100440,0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x0,0x100440,0x400 target=[1,0]
+tooltip   Increases the damage of Swipe and Mangle by $s1%.
 
 https://www.wowhead.com/forever/spell=1214286
 =======
@@ -1262,6 +1424,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +4 on family 7 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 sp=1 misc=8 family=7 mask=0x100 target=[1,0]
 effect 2  SPELLMOD_DURATION +50% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=1 family=7 mask=0x100 target=[1,0]
+tooltip   Damage dealt by Thorns increased by $s1 and duration increased by $s2%.
 
 https://www.wowhead.com/forever/spell=23557
 =======
@@ -1273,6 +1436,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_DURATION +60 s on family 7 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=60000 sp=1 misc=1 family=7 mask=0x100 target=[1,0]
+tooltip   Increases the duration of your Thorns by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=21972
 =======
@@ -1284,6 +1448,7 @@ effect 1  SPELLMOD_DAMAGE +3% on family 7 mask 0x3,0x800000,0x2000000,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x3,0x800000,0x2000000,0x40 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 7 mask 0x2,0x0,0x0,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=7 mask=0x2,0x0,0x0,0x40 target=[1,0]
+tooltip   Increases the damage of Moonfire and Wrath by $s1%.
 
 https://www.wowhead.com/forever/spell=1214295
 =======
@@ -1294,6 +1459,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 7 mask 0x5
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=7 mask=0x5 target=[1,0]
+tooltip   Increases the critical hit chance of Wrath and Starfire by $s1%.
 
 https://www.wowhead.com/forever/spell=24433
 =======
@@ -1303,6 +1469,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 7 mask 0x5
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=7 family=7 mask=0x5 target=[1,0]
+tooltip   Increases the critical hit chance of Wrath and Starfire by $s1%.
 
 https://www.wowhead.com/forever/spell=468260
 =======
@@ -1312,6 +1479,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 7 mask 0x5
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=7 mask=0x5 target=[1,0]
+tooltip   Increases the critical hit chance of Wrath and Starfire by $s1%.
 
 https://www.wowhead.com/forever/spell=446169
 =======
@@ -1322,6 +1490,7 @@ labels    21
 
 effect 1  SPELLMOD_EFFECT1 +10 on family 7 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=3 family=7 mask=0x80000 target=[1,0]
+tooltip   Your Enrage ability generates an additional $s1 Rage over its duration.
 
 https://www.wowhead.com/forever/spell=1291060
 =======
@@ -1332,6 +1501,7 @@ labels    21
 
 effect 1  SPELLMOD_DURATION +2 s on family 7 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 sp=1 misc=1 family=7 mask=0x200000 target=[1,0]
+tooltip   Increases the duration of your Insect Swarm ability by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1291061
 =======
@@ -1341,6 +1511,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 77 from family 7 mask 0x0,0x2000000
           E_APPLY_AURA A_DUMMY base=77 sp=1 family=7 mask=0x0,0x2000000 target=[1,0]
+tooltip   Increases healing done by Nourish by up to $s1.
 
 https://www.wowhead.com/forever/spell=470266
 =======
@@ -1351,6 +1522,7 @@ labels    21
 
 effect 1  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   Increases the initial healing of Regrowth by $s1% when cast on a target affected by your Rejuvenation.
 
 https://www.wowhead.com/forever/spell=27853
 =======
@@ -1361,6 +1533,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +3 s on family 7 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 misc=1 family=7 mask=0x10 target=[1,0]
+tooltip   Increases the duration of your Rejuvenation spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=21871
 =======
@@ -1370,6 +1543,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 7 mask 0x600207,0x800000,0x2000000,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=7 mask=0x600207,0x800000,0x2000000,0x40 target=[1,0]
+tooltip   The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1232094
 =======
@@ -1384,6 +1559,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=3655 radius=100 family=7 mask=0xf0000000 target=[22,15]
 effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Forced into cat form.
 
 https://www.wowhead.com/forever/spell=23398
 =======
@@ -1396,6 +1572,7 @@ effect 1  a dummy aura holding 60
           E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Tiger's Fury now instantly grants you $s1 Energy.
 
 https://www.wowhead.com/forever/spell=417046
 =======
@@ -1406,6 +1583,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417046 misc=415450 target=[1,0]
+tooltip   Gain the King of the Jungle ability:
+
+          $@spellicon417046
+          $@spelldesc417046
 
 https://www.wowhead.com/forever/spell=424762
 =======
@@ -1417,6 +1598,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance
 
 effect 1  a dummy aura holding 4
           E_APPLY_AURA A_DUMMY base=4 target=[1,0]
+tooltip   Your Lacerate hits have a $h% chance to reset the cooldown on Primal Bite.
 
 https://www.wowhead.com/forever/spell=1306483
 =======
@@ -1429,6 +1611,7 @@ proc      hears PROC_FLAG_KILL, PROC_FLAG_2_TARGET_DIES; no roll, it fires whene
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=419288
 =======
@@ -1439,6 +1622,8 @@ duration  15 s
 
 effect 1  restores 50 mana every 3 s (5 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=50 period=3000ms target=[1,0]
+tooltip   Restores $s1 mana every $t1 sec for $d.
+aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=19634
 =======
@@ -1468,6 +1653,8 @@ labels    21
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0xf0000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=7 mask=0xf0000000 target=[1,0]
+tooltip   Decreases the mana cost of all Druid shapeshifting forms by $s1% for $d.
+aura      Shapeshifting mana cost reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=23724
 =======
@@ -1480,6 +1667,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +10% on family 7 mask 0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=7 mask=0x4 target=[1,0]
+aura      Increases damage done by your next Starfire by $s1%.
 
 https://www.wowhead.com/forever/spell=1226106
 =======
@@ -1489,6 +1677,8 @@ duration  permanent
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune with the heavens, allowing you to replace your Moonkin form with a more celestial visage.
+aura      Taking on an astral aspect...
 
 https://www.wowhead.com/forever/spell=1231860
 =======
@@ -1502,6 +1692,9 @@ effect 1  SPELLMOD_CASTING_TIME -40% on family 7 mask 0x20
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=10 family=7 mask=0x20 target=[1,0]
 effect 2  SPELLMOD_COST -5% on family 7 mask 0xf0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=7 mask=0xf0 target=[1,0]
+tooltip   Reduces the casting time of your Healing Touch spells by $s1%, and reduces the mana cost of your healing spells by $s2% for $d.
+aura      Healing Touch casting time decreased by $s1%.
+          Healing spell mana cost reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=24542
 =======
@@ -1516,6 +1709,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 7 mask 0xffffffff,0xffffffff,0xfffff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=7 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216479
 =======
@@ -1527,6 +1722,7 @@ range     30 yd
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=10 amplitude=1 misc=1 target=[25,0]
+aura      Armor increased by $s1%.
 
 https://www.wowhead.com/forever/spell=21163
 =======
@@ -1538,6 +1734,7 @@ refs      449925 Power Shredder
 
 effect 1  casts 449925 Power Shredder on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=449925 target=[1,0]
+tooltip   Shred reduces the mana cost of your next shapeshift cast within $449925d1 by $449925s1%.
 
 https://www.wowhead.com/forever/spell=449924
 =======
@@ -1549,6 +1746,8 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  SPELLMOD_COST -30% on family 7 mask 0xe0000000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-30 sp=1 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
+tooltip   Reduces the mana cost of all shapeshifting by $s1%.
+aura      Reduces the mana cost of all shapeshifting by $s1%.
 
 https://www.wowhead.com/forever/spell=449925
 =======
@@ -1572,6 +1771,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -2 (-0.2 on a rage bar) on family 7 mask 0x1000,0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2 sp=1 misc=14 family=7 mask=0x1000,0x400 target=[1,0]
+tooltip   Reduces the energy cost of Claw, Rake, and Mangle by $s1.
 
 https://www.wowhead.com/forever/spell=27851
 =======
@@ -1582,6 +1782,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 7 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=14 family=7 mask=0x800 target=[1,0]
+tooltip   Reduces the Rage cost of Maul and Swipe by $/10;s1.
 
 https://www.wowhead.com/forever/spell=28855
 =======
@@ -1593,6 +1794,8 @@ range     100 yd
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_HEALING_RECEIVED base=20 sp=1 family=7 mask=0x70,0x6000012,0x1000000,0x4000 target=[21,0]
+tooltip   Reduces the cast time of your next Healing Touch, Regrowth, or Nourish by $s1%.
+aura      Healing received from this Rejuvenation's owner is increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1226038
 =======
@@ -1604,6 +1807,7 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_HEAL_PCT base=30 target=[1,0]
+tooltip   Instantly heal yourself for $s1% of you maximum health. Useable in all forms.
 
 https://www.wowhead.com/forever/spell=417159
 =======
@@ -1628,6 +1832,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_RANGED_HIT_CHANCE base=1 target=[6,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_HIT_CHANCE base=1 misc=126 target=[6,0]
+aura      Increases chance to be hit by all attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=455868
 =======
@@ -1640,6 +1845,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 7 mask 0x400025,0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=7 mask=0x400025,0x2 target=[1,0]
+aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1323400
 =======
@@ -1651,6 +1857,7 @@ effect 1  SPELLMOD_DAMAGE +20% on family 7 mask 0x2,0x0,0x0,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=7 mask=0x2,0x0,0x0,0x40 target=[1,0]
 effect 2  SPELLMOD_DOT +20% on family 7 mask 0x2,0x0,0x0,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=7 mask=0x2,0x0,0x0,0x40 target=[1,0]
+tooltip   Your Moonfire and Sunfire deal $s1% more damage.
 
 https://www.wowhead.com/forever/spell=1218443
 =======
@@ -1660,6 +1867,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 7 mask 0x0,0x0,0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=7 mask=0x0,0x0,0x2000000 target=[1,0]
+tooltip   The cooldown of your Starsurge spell is reduced by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1218444
 =======
@@ -1670,6 +1878,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   When your Starsurge strikes an Undead target, the remaining duration on your active Starfall is reset to $m1 sec.
 
 https://www.wowhead.com/forever/spell=1218445
 =======
@@ -1683,6 +1892,7 @@ effect 2  SPELLMOD_ACTIVATION_TIME -2000 on family 7 mask 0x0,0x0,0x0,0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=19 family=7 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
 effect 3  a dummy aura holding 200
           E_APPLY_AURA A_DUMMY base=200 target=[1,0]
+tooltip   Your Rake now deals its periodic damage every $s1 sec, increasing its total damage over time by $s3%.
 
 https://www.wowhead.com/forever/spell=1218476
 =======
@@ -1692,6 +1902,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -50% on family 7 mask 0x0,0x0,0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=11 family=7 mask=0x0,0x0,0x800 target=[1,0]
+tooltip   Your Tiger's Fury cooldown is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1218477
 =======
@@ -1703,6 +1914,7 @@ refs      1218479 Undead Slaying
 
 effect 1  casts 1218479 Undead Slaying on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=1218479 target=[1,0]
+tooltip   Each time you deal Bleed damage to an Undead target, you gain $1218479s1% increased damage and critical damage done to Undead for $1218479d, stacking up to $1218479u times.
 
 https://www.wowhead.com/forever/spell=1218478
 =======
@@ -1714,6 +1926,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=2 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
+tooltip   Your Growl ability never misses, and your chance to be Dodged or Parried is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1218482
 =======
@@ -1725,6 +1938,7 @@ effect 1  SPELLMOD_COOLDOWN -120 s on family 7 mask 0x0,0x0,0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=7 mask=0x0,0x0,0x80 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -120 s on family 7 mask 0x0,0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-120000 misc=11 family=7 mask=0x0,0x0,0x40 target=[1,0]
+tooltip   Reduces the cooldown on your Survival Instincts by ${$m1/-60000} min, and reduces the cooldown on your Berserk ability by ${$m2/-60000} min.
 
 https://www.wowhead.com/forever/spell=1218507
 =======
@@ -1737,6 +1951,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   When you take damage from an Undead enemy, the remaining duration of your active Frenzied Regeneration is reset to $m1 sec. In addition, Frenzied Regeneration will never consume your last $s2 Rage to generate healing.
 
 https://www.wowhead.com/forever/spell=1218509
 =======
@@ -1746,6 +1961,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Lifebloom now has a $s1% chance to heal the target for one application of its dispel amount each time the target takes damage. This effect can only occur once every few seconds.
 
 https://www.wowhead.com/forever/spell=1218423
 =======
@@ -1756,6 +1972,7 @@ refs      1219708 Rejuvenation, 1219706 Rejuvenation, 1219707 Rejuvenation
 
 effect 1  a dummy aura holding 25
           E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+tooltip   Each time your Rejuvenation rank 10 or rank 11 heals a target, you have a $s1% chance to restore $1219708m1 mana, $1219706m1 energy, or ${$1219707m1/10} rage to your target.
 
 https://www.wowhead.com/forever/spell=1218427
 =======
@@ -1765,6 +1982,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Rejuvenation and Regrowth refresh their duration to full each time their target is damaged by an Undead enemy.
 
 https://www.wowhead.com/forever/spell=1218429
 =======
@@ -1777,6 +1995,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-5 misc=2 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-5 misc=4 target=[1,0]
+tooltip   Your melee attacks have $s1% less chance to be Dodged or Parried.
 
 https://www.wowhead.com/forever/spell=1213201
 =======
@@ -1788,6 +2007,7 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Starfire deals $s1% more damage to targets with your Moonfire, and your Wrath deals $s2% more damage to targets with your Sunfire.
 
 https://www.wowhead.com/forever/spell=1226092
 =======
@@ -1797,6 +2017,7 @@ attrs     passive, can proc from procs
 
 effect 1  SPELLMOD_CHARGES +1 on family 7 mask 0x0,0x0,0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=7 mask=0x0,0x0,0x2000000 target=[1,0]
+tooltip   Your Starsurge now increases the damage of your next ${$m1+1} Starfires.
 
 https://www.wowhead.com/forever/spell=1226103
 =======
@@ -1808,6 +2029,7 @@ refs      1226105 Sunsurge, 1226106 Moonsurge
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Each time your Sunfire deals periodic damage, you gain $1226105s1% increased damage to your next Wrath, stacking up to $1226105u times. Each time your Moonfire deals periodic damage, you gain $1226106s1% increased damage to your next Starfire, stacking up to $1226106u times. These bonuses do not apply to Starsurge.
 
 https://www.wowhead.com/forever/spell=1226108
 =======
@@ -1819,6 +2041,7 @@ refs      1226113 Scent of Blood
 
 effect 1  casts 1226113 Scent of Blood on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 trigger=1226113 target=[1,0]
+tooltip   You gain $1226113s1 Energy each time Rake or Rip deals periodic damage.
 
 https://www.wowhead.com/forever/spell=1226109
 =======
@@ -1828,6 +2051,7 @@ attrs     passive, can proc from procs
 
 effect 1  SPELLMOD_EFFECT1 +100% on family 7 mask 0x0,0x0,0x800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=7 mask=0x0,0x0,0x800 target=[1,0]
+tooltip   Multiplies the damage bonus from Tiger's Fury by ${1+$m2/100}.0.
 
 https://www.wowhead.com/forever/spell=1226116
 =======
@@ -1840,6 +2064,7 @@ effect 1  casts 1226118 S03 - Item - Scarlet Enclave - Druid - Feral 6P Bonus Tr
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=0 sp=1 trigger=1226118 perResource=20 family=7 mask=0x800000,0x10000000 target=[1,0]
 effect 2  a dummy aura holding 20 from family 7 mask 0x800000,0x10000000
           E_APPLY_AURA A_DUMMY base=20 sp=1 trigger=1226118 family=7 mask=0x800000,0x10000000 target=[1,0]
+tooltip   Your Finishing Moves have a $s2% chance per combo point spent to trigger Clearcasting and extend the duration of your active Tiger's Fury by $1226118s1 sec.
 
 https://www.wowhead.com/forever/spell=1226119
 =======
@@ -1851,6 +2076,7 @@ refs      410144 Savage Defense
 
 effect 1  casts 410144 Savage Defense on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=25 trigger=410144 target=[1,0]
+tooltip   Your melee critical strikes in Bear Form or Dire Bear Form grant you a shield lasting $410144d that absorbs Physical damage equal to $410144s1% of your Attack Power the next time you take Physical damage. Stacks up to $410144u times.
 
 https://www.wowhead.com/forever/spell=1226121
 =======
@@ -1860,6 +2086,7 @@ attrs     passive, can proc from procs
 
 effect 1  SPELLMOD_DURATION +15 s on family 7 mask 0x0,0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15000 misc=1 family=7 mask=0x0,0x0,0x40 target=[1,0]
+tooltip   Increases the duration of your Berserk ability by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1226125
 =======
@@ -1873,6 +2100,7 @@ effect 1  casts 1226127 Savage Flurry on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=4 trigger=1226127 target=[1,0]
 effect 2  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+tooltip   You gain $1226127s1% increased attack speed for $1226127d every time you deal a critical strike.
 
 https://www.wowhead.com/forever/spell=1226126
 =======
@@ -1884,6 +2112,7 @@ refs      1226035 Swiftbloom
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Each time your Lifebloom heals a target, it has a $h% chance to make your next Healing Touch, Nourish, or Regrowth within $1226035d instant cast.
 
 https://www.wowhead.com/forever/spell=1226032
 =======
@@ -1894,6 +2123,7 @@ refs      1226038 Rejuvenating
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Targets with your active Rejuvenation Rank 10 or Rank 11 receive $1226038s1% increased healing from your spells.
 
 https://www.wowhead.com/forever/spell=1226040
 =======
@@ -1905,6 +2135,7 @@ refs      1226046 Wild Rejuvenation
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your non-periodic heals from Regrowth Rank 8 or Rank 9 have a $h% chance to spread your Rejuvenation on that target to all members of the target's party within $1226046a1 yards not already affected by your Rejuvenation.
 
 https://www.wowhead.com/forever/spell=1226044
 =======
@@ -1916,6 +2147,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +100% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=8 family=7 mask=0x100 target=[1,0]
 effect 2  SPELLMOD_DURATION +200% on family 7 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=200 sp=1 misc=1 family=7 mask=0x100 target=[1,0]
+tooltip   Damage dealt by Thorns increased by $s1% and duration increased by $s2%.
 
 https://www.wowhead.com/forever/spell=455852
 =======
@@ -1927,6 +2159,7 @@ effect 1  +3% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=3 sp=1 target=[1,0]
 effect 2  +3% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=3 sp=1 target=[1,0]
+tooltip   Increases your chance to hit with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=455858
 =======
@@ -1936,6 +2169,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -50% on family 7 mask 0x0,0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=11 family=7 mask=0x0,0x800000 target=[1,0]
+tooltip   Reduces the cooldown on Starfall by $s1%.
 
 https://www.wowhead.com/forever/spell=455859
 =======
@@ -1946,6 +2180,7 @@ refs      455868 Revealed Weakness
 
 effect 1  casts 455868 Revealed Weakness when the target is hit from family 7 mask 0x0,0x0,0x0,0x800
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 sp=1 trigger=455868 family=7 mask=0x0,0x0,0x0,0x800 target=[1,0]
+tooltip   Your Faerie Fire (Feral) also increases the chance for all attacks to hit that target by $455868s1% for $455868d.
 
 https://www.wowhead.com/forever/spell=455864
 =======
@@ -1955,6 +2190,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_PERIODIC_CRIT base=100 sp=1 family=7 mask=0x801000 target=[1,0]
+tooltip   Periodic damage from your Rake and Rip can now be critical strikes.
 
 https://www.wowhead.com/forever/spell=455872
 =======
@@ -1965,6 +2201,7 @@ refs      455903 Sustained Roar
 
 effect 1  casts 455903 Sustained Roar when the target is hit from family 7 mask 0x800000
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=0 sp=1 trigger=455903 perResource=20 family=7 mask=0x800000 target=[1,0]
+tooltip   Your Rip and Ferocious Bite have a $455903s1% chance per combo point spent to refresh the duration of Savage Roar back to its initial value.
 
 https://www.wowhead.com/forever/spell=455873
 =======
@@ -1975,6 +2212,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 sp=1 family=7 mask=0x10000000,0x1000 target=[1,0]
+tooltip   You may cast Rebirth and Innervate while in Bear Form or Dire Bear Form.
 
 https://www.wowhead.com/forever/spell=456325
 =======
@@ -1985,6 +2223,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -30 s on family 7 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 sp=1 misc=11 family=7 mask=0x80000 target=[1,0]
+tooltip   Reduces the cooldown of Enrage by ${$m1/-1000} sec and it no longer reduces your armor.
 
 https://www.wowhead.com/forever/spell=456328
 =======
@@ -1996,6 +2235,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +20 on family 7 mask 0x2000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 sp=1 misc=8 family=7 mask=0x2000000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN +20 s on family 7 mask 0x0,0x20000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20000 sp=1 misc=11 family=7 mask=0x0,0x20000000 target=[1,0]
+tooltip   Bear Form and Dire Bear Form increase all threat you generate by an additional $s1%, and Cower now removes all your threat against the target but has a ${$m2/1000} sec longer cooldown.
 
 https://www.wowhead.com/forever/spell=456332
 =======
@@ -2005,6 +2245,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+tooltip   When you cast Innervate on another player, it is also cast on you.
 
 https://www.wowhead.com/forever/spell=456194
 =======
@@ -2016,6 +2257,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 25% chance
 
 effect 1  a dummy aura holding 35 from family 7 mask 0x20,0x2000000
           E_APPLY_AURA A_DUMMY base=35 family=7 mask=0x20,0x2000000 target=[1,0]
+tooltip   Casting your Healing Touch or Nourish spells gives you a $h% chance to gain Mana equal to $s1% of the base cost of the spell.
 
 https://www.wowhead.com/forever/spell=456222
 =======
@@ -2029,6 +2271,7 @@ effect 1  SPELLMOD_COOLDOWN -100% on family 7 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=7 mask=0x80 target=[1,0]
 effect 2  SPELLMOD_DOT +100% on family 7 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=22 family=7 mask=0x80 target=[1,0]
+tooltip   Reduces the cooldown on Tranquility by $s1% and increases its healing by $s2%.
 
 https://www.wowhead.com/forever/spell=456322
 =======
@@ -2040,6 +2283,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=457323
 =======
@@ -2051,6 +2295,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=456489
 =======
@@ -2062,6 +2307,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=456546
 =======
@@ -2073,6 +2319,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=457322
 =======
@@ -2084,6 +2331,7 @@ effect 1  +2% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=2 sp=1 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Increases your critical strike chance with spells and attacks by $s1%.
 
 https://www.wowhead.com/forever/spell=457530
 =======
@@ -2097,6 +2345,7 @@ effect 2  SPELLMOD_DAMAGE +25% on family 7 mask 0x400000,0x800000,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 family=7 mask=0x400000,0x800000,0x400000 target=[1,0]
 effect 3  SPELLMOD_DOT +25% on family 7 mask 0x400000,0x800000,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=22 family=7 mask=0x400000,0x800000,0x400000 target=[1,0]
+tooltip   Increases the damage done and damage radius of Starfall's stars and Hurricane by $s1%.
 
 https://www.wowhead.com/forever/spell=467077
 =======
@@ -2109,6 +2358,7 @@ refs      467079 Force of Nature
 
 effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+tooltip   Your Wrath casts have a $h% chance to summon a stand of $s1 Treants to attack your target for $467079d.
 
 https://www.wowhead.com/forever/spell=467084
 =======
@@ -2120,6 +2370,7 @@ refs      467088 Astral Power
 
 effect 1  casts 467088 Astral Power on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 sp=1 trigger=467088 target=[1,0]
+tooltip   Your Wrath critical strikes have a $h% chance to make your next Starfire deal $467088s1% increased damage, stacking up to $467088u times.
 
 https://www.wowhead.com/forever/spell=467090
 =======
@@ -2131,6 +2382,7 @@ effect 1  SPELLMOD_DOT +40% on family 7 mask 0x0,0x0,0x0,0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=40 sp=1 misc=22 family=7 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
 effect 2  SPELLMOD_DURATION +6 s on family 7 mask 0x0,0x0,0x0,0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 sp=1 misc=1 family=7 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+tooltip   Increases the duration of Rake by ${$m2/1000} sec and its periodic damage by $m1%.
 
 https://www.wowhead.com/forever/spell=467207
 =======
@@ -2141,6 +2393,7 @@ refs      467209 S03 - Item - T2- Druid - Feral 4P Bonus Tiger's Fury Effect
 
 effect 1  a dummy aura holding 15 from family 7 mask 0x0,0x0,0x0,0x40000000
           E_APPLY_AURA A_DUMMY base=15 sp=1 family=7 mask=0x0,0x0,0x0,0x40000000 target=[1,0]
+tooltip   Your critical strike chance is increased by $467209s1% while Tiger's Fury is active.
 
 https://www.wowhead.com/forever/spell=467208
 =======
@@ -2163,6 +2416,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Your Shred, Ferocious Bite, and Mangle(Cat) abilities deal $s1% increased damage per your Bleed effect on the target, up to a maximum of $s2% increase.
 
 https://www.wowhead.com/forever/spell=467211
 =======
@@ -2173,6 +2427,7 @@ refs      467217 S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   Swipe(Bear) also causes your Maul to hit $467217s1 additional target for the next $467217d.
 
 https://www.wowhead.com/forever/spell=467216
 =======
@@ -2193,6 +2448,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 sp=1 target=[1,0]
+tooltip   Your Mangle(Bear), Swipe(Bear), Maul, and Lacerate abilities gain $s1% increased critical strike chance against targets afflicted by your Lacerate.
 
 https://www.wowhead.com/forever/spell=467221
 =======
@@ -2202,6 +2458,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 sp=1 target=[1,0]
+tooltip   Your Swipe now spreads your Lacerate from your primary target to other targets it strikes.
 
 https://www.wowhead.com/forever/spell=467227
 =======
@@ -2214,6 +2471,7 @@ refs      408261 Dreamstate
 
 effect 1  casts 408261 Dreamstate on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=408261 target=[1,0]
+tooltip   Your healing spell critical strikes trigger the Dreamstate effect, granting you $408261s1% of your mana regeneration while casting for $408261d.
 
 https://www.wowhead.com/forever/spell=467099
 =======
@@ -2225,6 +2483,7 @@ refs      467204 Healing Grace
 
 effect 1  casts 467204 Healing Grace on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=467204 target=[1,0]
+tooltip   Your non-periodic spell critical strikes reduce the casting time of your next Healing Touch, Regrowth, or Nourish spell by ${$467204m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=467203
 =======
@@ -2235,6 +2494,7 @@ refs      467206 S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect
 
 effect 1  SPELLMOD_DOT +10% on family 7 mask 0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=22 family=7 mask=0x0,0x4000000 target=[1,0]
+tooltip   Increases healing from Wild Growth by $s1%. In addition, Wild Growth can now be used in Moonkin Form, and its healing is increased by an additional $467206s2% in that form.
 
 https://www.wowhead.com/forever/spell=467205
 =======
@@ -2257,6 +2517,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CHARGES +1 on family 7 mask 0x0,0x0,0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=7 mask=0x0,0x0,0x0,0x20000 target=[1,0]
+tooltip   Your Nature's Grace talent gains $s1 additional charge each time it triggers.
 
 https://www.wowhead.com/forever/spell=1213164
 =======
@@ -2266,6 +2527,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +60% on family 7 mask 0x5,0x0,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 misc=15 family=7 mask=0x5,0x0,0x2000000 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Starfire, Starsurge, and Wrath by $s1%.
 
 https://www.wowhead.com/forever/spell=1213167
 =======
@@ -2275,6 +2537,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Your Shred no longer has a positional requirement, but deals $s1% more damage if you are behind the target.
 
 https://www.wowhead.com/forever/spell=1213171
 =======
@@ -2286,6 +2549,7 @@ refs      1213176 Tooth and Claw
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   Your Mangle, Shred, and Ferocious Bite critical strikes cause your target to Bleed for $s1% of the damage done over the next $1213176d sec.
 
 https://www.wowhead.com/forever/spell=1213174
 =======
@@ -2297,6 +2561,7 @@ refs      1213190 Animal Fury
 
 effect 1  casts 1213190 Animal Fury on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1213190 target=[1,0]
+tooltip   Each time you Dodge while in Dire Bear Form, you gain $1213190s1% increased damage on your next Mangle or Swipe, stacking up to $1213190u times.
 
 https://www.wowhead.com/forever/spell=1213188
 =======
@@ -2306,6 +2571,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 7 mask 0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=7 mask=0x0,0x40 target=[1,0]
+tooltip   Reduces the cooldown on Mangle (Bear) by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1213196
 =======
@@ -2315,6 +2581,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -65% on family 7 mask 0x10000000,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-65 misc=11 family=7 mask=0x10000000,0x1000 target=[1,0]
+tooltip   Reduces the cooldown of your Rebirth and Innervate spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1213159
 =======
@@ -2325,6 +2592,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Your critical heals with Healing Touch, Regrowth, and Nourish instantly heal the target for another $s1% of the healing they dealt.
 
 https://www.wowhead.com/forever/spell=1213160
 =======
@@ -2336,6 +2604,7 @@ effect 1  +12 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=12 misc=126 target=[1,0]
 effect 2  +12 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=12 sp=1 misc=126 target=[1,0]
+tooltip   Increases damage and healing done by magical spells and effects by up to $s1.
 
 https://www.wowhead.com/forever/spell=468395
 =======
@@ -2347,6 +2616,7 @@ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 7 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=7 mask=0x4 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=7 mask=0x4 target=[1,0]
+tooltip   Reduces the cast time and global cooldown of Starfire by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=468415
 =======
@@ -2356,6 +2626,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +10% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=7 family=7 mask=0x1 target=[1,0]
+tooltip   Increases the critical strike chance of Wrath by $s1%.
 
 https://www.wowhead.com/forever/spell=468416
 =======
@@ -2423,6 +2694,7 @@ duration  10 s
 
 effect 1  +4% melee haste
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=4 target=[1,0]
+aura      Melee attack speed increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1226127
 =======
@@ -2441,6 +2713,15 @@ effect 1  a dummy effect to the enemy
           E_DUMMY base=0 sp=1 target=[6,0]
 effect 2  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   $?a768[|CFFFFFFFFRequires Cat Form|R][|CFFFF2020Requires Cat Form|R]
+          Finishing move that increases Physical damage done by $s2% while in Cat Form.  Lasts longer per combo point:
+             1 point  : ${14+$<points>} seconds
+             2 points: ${19+$<points>} seconds
+             3 points: ${24+$<points>} seconds
+             4 points: ${29+$<points>} seconds
+             5 points: ${34+$<points>} seconds
+aura      Physical damage done in Cat Form increased by $s2%.
+vars      $points=$?a446212[${$446212m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=407988
 =======
@@ -2451,6 +2732,13 @@ stance    Cat
 
 effect 1  +30% physical damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=30 misc=1 target=[1,0]
+tooltip   Finishing move that increases physical damage done by $s1%.  Lasts longer per combo point:
+             1 point  : 14 seconds
+             2 points: 19 seconds
+             3 points: 24 seconds
+             4 points: 29 seconds
+             5 points: 34 seconds
+aura      Physical damage done increased by $s2%.
 
 https://www.wowhead.com/forever/spell=407989
 =======
@@ -2460,6 +2748,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -150 (-15 on a rage bar) on family 7 mask 0xe0000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-150 sp=1 misc=14 family=7 mask=0xe0000000 target=[1,0]
+tooltip   Reduces the mana cost of your shapeshifts by $s1.
 
 https://www.wowhead.com/forever/spell=459594
 =======
@@ -2482,6 +2771,10 @@ effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0000000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
 effect 2  SPELLMOD_EFFECT1 +100% on family 7 mask 0x0,0x8000800,0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=7 mask=0x0,0x8000800,0x4 target=[1,0]
+tooltip   Decreases the mana cost of all Druid shapeshifting forms by $s1%, and increases the aura effect of Moonkin Aura, Tree of Life, and Leader of the Pack by $s2% for $d.
+aura      Shapeshifting mana cost reduced by $s1%.
+
+          Moonkin Aura, Tree of Life, and Leader of the Pack effects increased by $s2%.
 
 https://www.wowhead.com/forever/spell=467467
 =======
@@ -2492,6 +2785,7 @@ labels    21
 
 effect 1  SPELLMOD_COOLDOWN -0.5 s on family 7 mask 0x0,0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+tooltip   Reduces the cooldown of your Shifting Power ability by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1291059
 =======
@@ -2501,6 +2795,8 @@ duration  permanent
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Attune with the darkness within, allowing you better control over your inner demon.
+aura      Your soul is one with the demon...
 
 https://www.wowhead.com/forever/spell=471698
 =======
@@ -2511,6 +2807,7 @@ stance    Cat
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=100 family=7 mask=0x10000000,0x1000 target=[1,0]
+tooltip   You may cast Rebirth and Innervate while in Cat Form.
 
 https://www.wowhead.com/forever/spell=1232896
 =======
@@ -2532,6 +2829,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +10% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=7 mask=0x1 target=[1,0]
+aura      Increases damage done by your next Wrath by $s1%.
 
 https://www.wowhead.com/forever/spell=1226105
 =======
@@ -2544,6 +2842,7 @@ effect 1  -10% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 sp=1 misc=127 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_MELEE_CRIT_CHANCE base=-6 sp=1 target=[1,0]
+tooltip   Reduces the chance you'll be critically hit by melee attacks by $s2% and reduces all damage taken by $s1%. Damage taken reduced by an additional $411124s1% while in Bear Form or Dire Bear Form.
 
 https://www.wowhead.com/forever/spell=411115
 =======
@@ -2556,6 +2855,8 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x60,0x2000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x60,0x2000000 target=[1,0]
+tooltip   Reduces the cast time of your next Healing Touch, Regrowth, or Nourish by $s1%.
+aura      Cast time of your next Healing Touch, Regrowth, or Nourish reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1226035
 =======
@@ -2566,6 +2867,7 @@ labels    21
 
 effect 1  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 sp=1 target=[1,0]
+tooltip   Each of your heal over time effects on the target reduces the remaining cooldown on Swiftmend by ${$m1/1000} sec when you cast it.
 
 https://www.wowhead.com/forever/spell=1291075
 =======
@@ -2576,6 +2878,7 @@ labels    26
 
 effect 1  SPELLMOD_COOLDOWN -3 s on family 7 mask 0x0,0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=7 mask=0x0,0x2 target=[1,0]
+tooltip   Reduces the cooldown of your Swiftmend spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1306488
 =======
@@ -2587,6 +2890,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its con
 
 effect 1  casts 26976 Symbols of Unending Life on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=26976 target=[1,0]
+tooltip   Your finishing moves now refund 30 energy on a Miss, Dodge, Block, or Parry.
 
 https://www.wowhead.com/forever/spell=26107
 =======
@@ -2600,6 +2904,7 @@ attrs     refund on miss
 
 effect 1  weapon damage +210 to the enemy
           E_WEAPON_DAMAGE base=210 sp=1 target=[6,0]
+tooltip   Instant attack plus $s1 damage.
 
 https://www.wowhead.com/forever/spell=24042
 =======
@@ -2614,6 +2919,8 @@ effect 1  5 nature damage back to melee attackers
           E_APPLY_AURA A_DAMAGE_SHIELD base=5 target=[1,0]
 effect 2  +50 nature resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=50 misc=8 target=[1,0]
+tooltip   Causes $s1 Nature damage to attackers when hit and increases Nature resistance by $s2 for $d.
+aura      Increased Nature resistance and inflicts $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=17154
 =======
@@ -2624,6 +2931,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0044170,0x6041014,0x208,0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xe0044170,0x6041014,0x208,0x2 target=[1,0]
+aura      Your helpful spells and abilities have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262307
 =======
@@ -2637,6 +2945,8 @@ effect 1  100 physical damage back to melee attackers
           E_APPLY_AURA A_DAMAGE_SHIELD base=100 target=[1,0]
 effect 2  casts 22786 Irritating Spores every 2 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 sp=1 period=2000ms trigger=22786 target=[1,0]
+tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=22781
 =======
@@ -2653,6 +2963,9 @@ refs      417441 Thrash (Bear)
 
 effect 1  45 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=45 radius=8 target=[22,15]
+tooltip   Strikes all nearby enemies, dealing ${$m1*$<damagepower>/100+0.092*$AP} Bleed damage and an additional ${$417441m1*$<damagepower>/100*5+0.125*$AP} Bleed damage over $417441d. When applied from Bear Form, this effect can stack up to $417441u times.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=417440
 =======
@@ -2667,6 +2980,7 @@ attrs     periodic can crit
 
 effect 1  12 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms mechanic=15 target=[6,0]
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=417441
 =======
@@ -2686,6 +3000,10 @@ effect 1  60 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=60 radius=8 target=[22,15]
 effect 2  40 physical damage every 3 s to every enemy around the caster (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40 period=3000ms radius=8 target=[22,15]
+tooltip   Strikes all nearby enemies, dealing ${$m1*$<damagepower>/100+0.104*$AP} Bleed damage and an additional ${$m2*$<damagepower>/100*5+0.0661*5*$AP} Bleed damage over $d. Awards $417450s1 combo $lpoint:points;.
+aura      Bleeding for $w2 damage every $t2 sec.
+vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+          $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=417448
 =======
@@ -2695,6 +3013,19 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417437
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417448 sp=1 misc=417437 target=[1,0]
+tooltip   Gain several new demonic abilities: Disrupt, Demon Charge, Demonic Howl, and Infernal Strike.
+
+          $@spellicon412787
+          $@spelldesc412787
+
+          $@spellicon412788
+          $@spelldesc412788
+
+          $@spellicon412789
+          $@spelldesc412789
+
+          $@spellicon412790
+          $@spelldesc412790
 
 https://www.wowhead.com/forever/spell=417453
 =======
@@ -2716,6 +3047,7 @@ range     30 yd
 
 effect 1  115–135 nature+frost damage every 2 s to the target
           E_APPLY_AURA A_PERIODIC_DAMAGE base=125 variance=0.16 period=2000ms target=[25,0]
+aura      $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=405953
 =======
@@ -2728,6 +3060,8 @@ labels    18, 21, 24
 
 effect 1  +28 mana per 5 s to the friendly target
           E_APPLY_AURA A_MOD_POWER_REGEN base=28 amplitude=1 target=[21,0]
+tooltip   Increases the friendly target's mana regeneration by $s1 per 5 sec. for $d.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=28824
 =======
@@ -2740,6 +3074,8 @@ labels    17, 19
 
 effect 1  +80 holy+fire+nature+frost+shadow+arcane damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=80 amplitude=1 misc=126 target=[21,0]
+tooltip   Increases the friendly target's spell damage and healing by up to $s1 for $d.
+aura      Increases spell damage and healing by up to $s1.
 
 https://www.wowhead.com/forever/spell=28825
 =======
@@ -2754,6 +3090,8 @@ effect 1  +140 attack power to the friendly target
           E_APPLY_AURA A_MOD_ATTACK_POWER base=140 amplitude=1 target=[21,0]
 effect 2  +140 ranged attack power to the friendly target
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=140 target=[21,0]
+tooltip   Increases the friendly target's attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=28826
 =======
@@ -2766,6 +3104,8 @@ labels    25
 
 effect 1  +700 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 for $d.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=28827
 =======
@@ -2777,6 +3117,8 @@ range     50000 yd
 
 effect 1  +700 armor to the friendly target
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=700 amplitude=1 misc=1 target=[21,0]
+tooltip   Increases the friendly target's armor by $s1 for $d.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=1220683
 =======
@@ -2788,6 +3130,8 @@ range     50000 yd
 
 effect 1  +80 holy+fire+nature+frost+shadow+arcane damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=80 amplitude=1 misc=126 target=[21,0]
+tooltip   Increases the friendly target's spell damage and healing by up to $s1 for $d.
+aura      Increases spell damage and healing by up to $s1.
 
 https://www.wowhead.com/forever/spell=1220684
 =======
@@ -2799,6 +3143,8 @@ range     50000 yd
 
 effect 1  +28 mana per 5 s to the friendly target
           E_APPLY_AURA A_MOD_POWER_REGEN base=28 amplitude=1 target=[21,0]
+tooltip   Increases the friendly target's mana regeneration by $s1 per 5 sec. for $d.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=1220685
 =======
@@ -2812,6 +3158,8 @@ effect 1  +140 attack power to the friendly target
           E_APPLY_AURA A_MOD_ATTACK_POWER base=140 amplitude=1 target=[21,0]
 effect 2  +140 ranged attack power to the friendly target
           E_APPLY_AURA A_MOD_RANGED_ATTACK_POWER base=140 target=[21,0]
+tooltip   Increases the friendly target's attack power by $s1 for $d.
+aura      Increases attack power by $s1.
 
 https://www.wowhead.com/forever/spell=1220686
 =======
@@ -2821,6 +3169,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -10% on family 7 mask 0xe0000000,0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0xe0000000,0x10000 target=[1,0]
+tooltip   Reduces the mana cost of all shapeshifting by $s1%.
 
 https://www.wowhead.com/forever/spell=1217297
 =======
@@ -2839,6 +3188,10 @@ effect 2  stuns
           E_APPLY_AURA A_MOD_STUN base=0 target=[1,0]
 effect 3  immune to polymorph
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+tooltip   Transforms the druid into a tree form, removing all harmful physical effects and protecting from all physical attacks for $d, but during that time you cannot attack, move or cast spells.  Also protects the caster from polymorph effects.
+
+          The act of shapeshifting frees the caster of roots, snares, and freeze effects.
+aura      Immune to all physical attacks and polymorph effects.  Cannot attack, move or cast spells.
 
 https://www.wowhead.com/forever/spell=775
 =======
@@ -2853,6 +3206,13 @@ effect 1  shifts into Tree of Life
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=2 target=[1,0]
 effect 2  immune to polymorph
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+tooltip   Shapeshift into the Tree of Life. While in this form you increase healing received by $439745s1% for all party members within $439745a1 yards, Wild Growth healing is increased by $439734s8%, your heal over time spells cost $439734s1% less, you gain $439734s2% increased Spirit, you gain $439734s3% increased armor, and you cannot cast harmful spells.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects.
+          Reduces mana cost of heal over time spells by $439734s1%.
+          Increases Spirit by $439734s2% and armor by $439734s3%.
+          Increases healing received by $439745s1% for all party members within $439745a1 yards and healing done by Wild Growth by $439734s8%.
 
 https://www.wowhead.com/forever/spell=439733
 =======
@@ -2863,6 +3223,8 @@ stance    Tree of Life
 
 effect 1  party aura: +10% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=10 sp=1 misc=127 radius=45 target=[1,0]
+tooltip   Increased all healing received by party members within $a1 yards by $s1%.
+aura      Increases healing received by $s1%.
 
 https://www.wowhead.com/forever/spell=439745
 =======
@@ -2872,6 +3234,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=439733 misc=417347 target=[1,0]
+tooltip   Gain the Tree of Life ability:
+
+          $@spellicon439766
+          $@spelldesc439733
 
 https://www.wowhead.com/forever/spell=439766
 =======
@@ -2904,6 +3270,10 @@ effect 2  -70% movement speed to every enemy in the target area
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-70 sp=1 radius=45 target=[18,16]
 effect 3  -300% melee haste to every enemy in the target area
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-300 sp=1 radius=45 target=[18,16]
+tooltip   Deals nature damage to enemies in an area over $d, slowing their movement by $s2% and increasing the time between their attacks by $s3%.
+aura      Deals nature damage every $t sec.
+          Reduces movement speed by $s2%.
+          Time between attacks increased by $s3%.
 
 https://www.wowhead.com/forever/spell=21793
 =======
@@ -2920,6 +3290,10 @@ effect 2  party aura: -40% movement speed
           E_APPLY_AREA_AURA_PARTY A_MOD_DECREASE_SPEED base=-40 sp=1 radius=25 target=[1,16]
 effect 3  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_MELEE_SLOW base=-100 sp=1 radius=25 target=[16,16]
+tooltip   Deals nature damage to enemies in an area over $d, slowing their movement by $s2% and increasing the time between their attacks by $s3%.
+aura      Deals nature damage every $t sec.
+          Reduces movement speed by $s2%.
+          Time between attacks increased by $s3%.
 
 https://www.wowhead.com/forever/spell=447548
 =======
@@ -2943,6 +3317,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  casts 424190 Unbalanced Idol on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=424190 target=[1,0]
+aura      Balancing yourself with the powers of nature.
 
 https://www.wowhead.com/forever/spell=423186
 =======
@@ -2955,6 +3330,7 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; 50% chance
 
 effect 1  casts 423194 Power of the Wild on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=423194 target=[1,0]
+aura      Balancing yourself with the powers of nature.
 
 https://www.wowhead.com/forever/spell=424336
 =======
@@ -2965,6 +3341,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432273 misc=417346 target=[1,0]
+tooltip   Gain the Unfair Advantage ability:
+
+          $@spellicon432273
+          $@spelldesc432273
 
 https://www.wowhead.com/forever/spell=432300
 =======
@@ -2977,6 +3357,7 @@ effect 1  immune to physical+holy+fire+nature+frost+shadow
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 sp=1 misc=63 target=[1,0]
 effect 2  casts 415005 Powered on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=415005 target=[1,0]
+aura      Depleted of magical energy
 
 https://www.wowhead.com/forever/spell=415004
 =======
@@ -3032,6 +3413,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACK_POWER_PCT base=20 target=[1,0]
 effect 2  1 extra attacks
           E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+tooltip   Extra Attack.
 
 https://www.wowhead.com/forever/spell=407973
 =======
@@ -3043,6 +3425,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 20% ch
 
 effect 1  raid aura: casts 433107 Wild Strikes every 5 s
           E_APPLY_AREA_AURA_RAID A_PERIODIC_TRIGGER_SPELL base=20 sp=1 period=5000ms trigger=433107 radius=100 target=[1,0]
+tooltip   Party members within $8514a1 yards gain increased combat ferocity.  Each melee hit has a $h% chance of granting the attacker an extra attack with $s1% additional Attack Power. No effect if the party member is already benefitting from Windfury Totem.
+aura      Chance to gain extra attacks.
 
 https://www.wowhead.com/forever/spell=407975
 =======
@@ -3053,6 +3437,8 @@ refs      407975 Wild Strikes
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   While you are in Cat Form, Bear Form, or Dire Bear Form, party or raid members within $407975a1 yards gain increased combat ferocity.  Each melee hit has a $407975h% chance of granting the attacker an extra attack with $407975s1% additional Attack Power. No effect if the target is already benefitting from Windfury Totem.
+aura      Chance to gain extra attacks.
 
 https://www.wowhead.com/forever/spell=407977
 =======
@@ -3062,6 +3448,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407977 misc=399954 target=[1,0]
+tooltip   Gain the Wild Strikes ability:
+
+          $@spellicon407977
+          $@spelldesc407977
 
 https://www.wowhead.com/forever/spell=409805
 =======
@@ -3071,6 +3461,8 @@ refs      407975 Wild Strikes
 
 effect 1  unrecognised shape
           E_ENCHANT_HELD_ITEM base=20 misc=7141 radius=100 target=[56,0]
+tooltip   While you are in Cat Form, Bear Form, or Dire Bear Form, party members within $407975a1 yards gain increased combat ferocity.  Each melee hit has a $407975h% chance of granting the attacker an extra attack with $407975s1% additional Attack Power. No effect if the party member is already benefitting from Windfury Totem.
+aura      Chance to gain extra attacks.
 
 https://www.wowhead.com/forever/spell=433107
 =======
@@ -3082,6 +3474,7 @@ effect 1  SPELLMOD_EFFECT2 +50% on family 7 mask 0x80000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=12 family=7 mask=0x80000 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   You gain an additional ${$m1/10} Rage from activating Enrage and an additional $m2 Energy from activating Shifting Power.
 
 https://www.wowhead.com/forever/spell=17768
 =======
@@ -3092,6 +3485,7 @@ labels    21
 
 effect 1  restores 5 energy to the caster
           E_ENERGIZE base=5 misc=3 target=[1,0]
+tooltip   Instantly grants you Energy.
 
 https://www.wowhead.com/forever/spell=1310990
 =======
@@ -3101,6 +3495,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 7 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=7 mask=0x1 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Wrath.
 
 https://www.wowhead.com/forever/spell=459595
 =======
@@ -3123,6 +3518,7 @@ proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=461640
 =======
@@ -3135,6 +3531,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  casts 461643 [DNT] Idol of the Huntress Dummy on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=461643 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=461644
 =======

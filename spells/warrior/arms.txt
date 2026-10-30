@@ -7,6 +7,7 @@ labels    25
 
 effect 1  shifts into Battle
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=17 target=[1,0]
+tooltip   A balanced combat stance.
 
 https://www.wowhead.com/forever/spell=2457
 =======
@@ -24,6 +25,7 @@ effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
 effect 3  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
+aura      Overpower recently activated by Bloodthrill.
 
 https://www.wowhead.com/forever/spell=1289681
 =======
@@ -35,6 +37,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  casts 1282733 Overpower on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=1282733 target=[1,0]
+tooltip   Grants your Main Hand melee attacks against enemies afflicted by your Rend a $s1% chance to allow an activation of Overpower.
 
 https://www.wowhead.com/forever/spell=1289682
 =======
@@ -52,6 +55,7 @@ effect 2  restores 9 rage to the caster
           E_ENERGIZE base=90 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.  Cannot be used in combat.
 
 https://www.wowhead.com/forever/spell=100
 =======
@@ -69,6 +73,7 @@ effect 2  restores 12 rage to the caster
           E_ENERGIZE base=120 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.  Cannot be used in combat.
 
 https://www.wowhead.com/forever/spell=6178
 =======
@@ -86,6 +91,7 @@ effect 2  restores 15 rage to the caster
           E_ENERGIZE base=150 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.  Cannot be used in combat.
 
 https://www.wowhead.com/forever/spell=11578
 =======
@@ -99,6 +105,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting $20527s3 Fire damage to the target and any other nearby enemies, as well as knocking them all back.
 
 https://www.wowhead.com/forever/spell=20508
 =======
@@ -110,6 +117,7 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3.
 
 https://www.wowhead.com/forever/spell=22120
 =======
@@ -124,6 +132,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=22911
 =======
@@ -137,6 +146,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  casts 12021 Fixate to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=12021 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=24023
 =======
@@ -151,6 +161,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=24193
 =======
@@ -176,6 +187,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=24408
 =======
@@ -190,6 +202,7 @@ effect 2  weapon damage +1300 to the enemy
           E_WEAPON_DAMAGE base=1300 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=25821
 =======
@@ -210,6 +223,7 @@ effect 4  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 5  casts 411688 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=411688 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 rage, and stun it for $7922d.
 
 https://www.wowhead.com/forever/spell=411684
 =======
@@ -226,6 +240,7 @@ effect 3  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 4  casts 438539 Uppercut to the enemy
           E_TRIGGER_SPELL base=0 misc=700 trigger=438539 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=438538
 =======
@@ -238,6 +253,7 @@ effect 1  600–900 physical damage to the caster
           E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 radius=10 target=[87,16]
+tooltip   Charges an enemy, inflicting normal damage.
 
 https://www.wowhead.com/forever/spell=438540
 =======
@@ -252,6 +268,7 @@ effect 2  casts 438538 Charge to the enemy
           E_TRIGGER_SPELL base=0 misc=50 trigger=438538 target=[6,0]
 effect 3  casts nothing
           E_TRIGGER_SPELL base=0 misc=75 target=[0,0]
+tooltip   Charges an enemy.
 
 https://www.wowhead.com/forever/spell=438541
 =======
@@ -266,6 +283,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=462937
 =======
@@ -279,6 +297,7 @@ effect 2  weapon damage +75 to the enemy
           E_WEAPON_DAMAGE base=75 sp=1 target=[6,0]
 effect 3  casts 12021 Fixate to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=12021 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=1213463
 =======
@@ -294,6 +313,7 @@ effect 2  weapon damage +5 to the enemy
           E_WEAPON_DAMAGE base=5 sp=1 target=[6,0]
 effect 3  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+tooltip   Charges an enemy, inflicting normal damage plus $s3 and stuns the opponent for $d.
 
 https://www.wowhead.com/forever/spell=1235538
 =======
@@ -311,6 +331,7 @@ effect 2  restores 9 rage to the caster
           E_ENERGIZE base=90 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.
 
 https://www.wowhead.com/forever/spell=1240287
 =======
@@ -328,6 +349,7 @@ effect 2  restores 12 rage to the caster
           E_ENERGIZE base=120 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.
 
 https://www.wowhead.com/forever/spell=1240288
 =======
@@ -345,6 +367,7 @@ effect 2  restores 15 rage to the caster
           E_ENERGIZE base=150 misc=1 target=[1,0]
 effect 3  casts 7922 Charge Stun to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=7922 target=[6,0]
+tooltip   Charge an enemy, generate $/10;s2 Rage, and Stun it for $7922d.
 
 https://www.wowhead.com/forever/spell=1240289
 =======
@@ -359,6 +382,7 @@ labels    25
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=7922
 =======
@@ -372,6 +396,7 @@ refs      412609 Deep Wound
 
 effect 1  casts 12162 Deep Wounds on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=12162 target=[1,0]
+tooltip   Your critical strikes cause your opponent to Bleed, dealing $m1% of your melee weapon's average damage over $412609d.
 
 https://www.wowhead.com/forever/spell=12834
 =======
@@ -383,6 +408,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  casts 23256 Deep Wounds on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=23256 target=[1,0]
+tooltip   Your critical strikes cause the opponent to bleed, dealing 60% of your melee weapon's average damage over $12721d.
 
 https://www.wowhead.com/forever/spell=23255
 =======
@@ -414,6 +440,8 @@ effect 1  5 physical damage to the enemy
           E_SCHOOL_DAMAGE base=5 sp=1 target=[6,0]
 effect 2  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
+tooltip   Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.
+aura      Movement slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=1715
 =======
@@ -433,6 +461,8 @@ effect 1  18 physical damage to the enemy
           E_SCHOOL_DAMAGE base=18 sp=1 target=[6,0]
 effect 2  -45% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-45 mechanic=11 target=[6,0]
+tooltip   Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.
+aura      Movement slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=7372
 =======
@@ -452,6 +482,8 @@ effect 1  45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+tooltip   Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.
+aura      Movement slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=7373
 =======
@@ -468,6 +500,8 @@ effect 1  45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=45 sp=1 target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+tooltip   Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.
+aura      Movement slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=27584
 =======
@@ -484,6 +518,8 @@ effect 1  450 physical damage to the enemy
           E_SCHOOL_DAMAGE base=450 sp=1 target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+tooltip   Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.
+aura      Movement slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=1236177
 =======
@@ -498,6 +534,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +11 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=11 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=78
 =======
@@ -512,6 +549,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +21 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=21 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=284
 =======
@@ -526,6 +564,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=285
 =======
@@ -540,6 +579,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +44 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=44 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=1608
 =======
@@ -554,6 +594,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +58 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=58 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=11564
 =======
@@ -568,6 +609,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +80 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=80 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=11565
 =======
@@ -582,6 +624,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +111 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=111 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=11566
 =======
@@ -596,6 +639,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +138 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=138 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=11567
 =======
@@ -610,6 +654,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school +157 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=157 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=25286
 =======
@@ -622,6 +667,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +131 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=11 ppl=2 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=25710
 =======
@@ -634,6 +680,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +32 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+tooltip   A strong attack that increases melee damage by $s1 and causes a high amount of threat.
 
 https://www.wowhead.com/forever/spell=25712
 =======
@@ -644,6 +691,7 @@ labels    25
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +10% on family 4 mask 0xee604cee,0x8140,0x1,0x10000400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=15 family=4 mask=0xee604cee,0x8140,0x1,0x10000400 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=16493
 =======
@@ -654,6 +702,7 @@ labels    25
 
 effect 1  SPELLMOD_ALL_EFFECTS +30 on family 4 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 misc=8 family=4 mask=0x1 target=[1,0]
+tooltip   Increases the Rage generated by your Charge ability by $/10;s1.
 
 https://www.wowhead.com/forever/spell=12285
 =======
@@ -666,6 +715,7 @@ refs      23694 Improved Hamstring
 
 effect 1  casts 23694 Improved Hamstring on its trigger to the enemy
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=23694 target=[6,0]
+tooltip   Gives your Hamstring ability a $m1% chance to immobilize the target for $23694d.
 
 https://www.wowhead.com/forever/spell=12289
 =======
@@ -676,6 +726,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 4 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=4 mask=0x2 target=[1,0]
+tooltip   Reduces the cost of your Hamstring ability by $/10;s1 rage points.
 
 https://www.wowhead.com/forever/spell=24428
 =======
@@ -686,6 +737,7 @@ labels    25
 
 effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 4 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=14 family=4 mask=0x40 target=[1,0]
+tooltip   Reduces the cost of your Heroic Strike ability by $/10;s1 Rage.
 
 https://www.wowhead.com/forever/spell=12282
 =======
@@ -696,6 +748,7 @@ labels    25
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +25% on family 4 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=7 family=4 mask=0x4 target=[1,0]
+tooltip   Increases the critical strike chance of your Overpower ability by $s1%.
 
 https://www.wowhead.com/forever/spell=12290
 =======
@@ -706,6 +759,7 @@ labels    25
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 4 mask 0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 misc=7 family=4 mask=0x4 target=[1,0]
+tooltip   Increases the critical strike chance of your Overpower ability by $s1%.
 
 https://www.wowhead.com/forever/spell=12963
 =======
@@ -718,6 +772,7 @@ effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=25 trigger=12705 family=4 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DURATION +1 s on family 4 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 misc=1 family=4 mask=0x8 target=[1,0]
+tooltip   Increases the duration of your Pummel ability by $/1000;s2 sec and gives it a $s1% chance to daze the target.
 
 https://www.wowhead.com/forever/spell=12288
 =======
@@ -730,6 +785,7 @@ effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=50 trigger=12705 family=4 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DURATION +2 s on family 4 mask 0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2000 misc=1 family=4 mask=0x8 target=[1,0]
+tooltip   Increases the duration of your Pummel ability by $/1000;s2 sec and gives it a $s1% chance to daze the target.
 
 https://www.wowhead.com/forever/spell=12707
 =======
@@ -740,6 +796,7 @@ labels    25
 
 effect 1  casts 12705 Long Daze when the target is hit from family 4 mask 0x8
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=40 trigger=12705 family=4 mask=0x8 target=[1,0]
+tooltip   Gives your Pummel ability a $s1% chance to daze the target.
 
 https://www.wowhead.com/forever/spell=12708
 =======
@@ -750,6 +807,7 @@ labels    25
 
 effect 1  SPELLMOD_DOT +15% on family 4 mask 0x20
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=22 family=4 mask=0x20 target=[1,0]
+tooltip   Increases the Bleed damage done by your Rend ability by $s1%.
 
 https://www.wowhead.com/forever/spell=12286
 =======
@@ -760,6 +818,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +4 on family 4 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 misc=8 family=4 mask=0x20 target=[1,0]
+tooltip   Increases the bleed damage done by your Rend ability by $s1 per period.
 
 https://www.wowhead.com/forever/spell=21831
 =======
@@ -784,6 +843,7 @@ effect 7  replaces an action bar spell with 11604 Slam
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310199 misc=11604 target=[1,0]
 effect 8  replaces an action bar spell with 11605 Slam
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310200 misc=11605 target=[1,0]
+tooltip   Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=12862
 =======
@@ -794,6 +854,7 @@ labels    25
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Tactical Mastery lets you retain up to an additional $s1 Rage when you change stances.
 
 https://www.wowhead.com/forever/spell=12295
 =======
@@ -808,6 +869,7 @@ labels    3096
 
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 sp=1 target=[6,0]
+tooltip   Throw out a hooked chain to restrain the target and pull them toward you. May not be used on enemies higher than level ${$PL+1} or which are marked as boss enemies.
 
 https://www.wowhead.com/forever/spell=403228
 =======
@@ -821,6 +883,7 @@ attrs     refund on miss
 
 effect 1  a dummy effect to the enemy
           E_DUMMY base=0 sp=1 target=[6,47]
+tooltip   Throw out a hooked chain to restrain the target and pull them toward you.
 
 https://www.wowhead.com/forever/spell=403231
 =======
@@ -835,6 +898,8 @@ effect 1  unrecognised shape
           E_JUMP_DEST base=0 amplitude=63 misc2=150 target=[87,0]
 effect 2  immune to stun
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=12 target=[1,0]
+tooltip   Throw out a hooked chain to restrain the target and pull them toward you. Targets may not be stunned while being pulled.
+aura      Immune to Stun.
 
 https://www.wowhead.com/forever/spell=403233
 =======
@@ -855,6 +920,8 @@ effect 1  22 physical damage to the enemy
           E_SCHOOL_DAMAGE base=22 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=694
 =======
@@ -875,6 +942,8 @@ effect 1  31 physical damage to the enemy
           E_SCHOOL_DAMAGE base=31 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=7400
 =======
@@ -895,6 +964,8 @@ effect 1  46 physical damage to the enemy
           E_SCHOOL_DAMAGE base=46 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=7402
 =======
@@ -915,6 +986,8 @@ effect 1  71 physical damage to the enemy
           E_SCHOOL_DAMAGE base=71 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=20559
 =======
@@ -935,6 +1008,8 @@ effect 1  93 physical damage to the enemy
           E_SCHOOL_DAMAGE base=93 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=20560
 =======
@@ -950,6 +1025,8 @@ effect 1  181.25621 physical damage to the enemy
           E_SCHOOL_DAMAGE base=181.25621 sp=1 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   A mocking attack that causes $s1 damage and forces the target to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=21008
 =======
@@ -969,6 +1046,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +85 to the enemy
           E_NORMALIZED_WEAPON_DMG base=85 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=12294
 =======
@@ -988,6 +1067,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +110 to the enemy
           E_NORMALIZED_WEAPON_DMG base=110 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=21551
 =======
@@ -1007,6 +1088,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +135 to the enemy
           E_NORMALIZED_WEAPON_DMG base=135 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=21552
 =======
@@ -1026,6 +1109,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +160 to the enemy
           E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=21553
 =======
@@ -1043,6 +1128,8 @@ effect 1  -50% healing taken to the enemy
           E_APPLY_AURA A_MOD_HEALING_PCT base=-50 misc=127 target=[6,0]
 effect 2  normalised weapon damage +160 to the enemy
           E_NORMALIZED_WEAPON_DMG base=160 sp=1 target=[6,0]
+tooltip   A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.
+aura      Healing effects reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=27580
 =======
@@ -1061,6 +1148,7 @@ labels    25
 
 effect 1  normalised weapon damage +5 to the enemy
           E_NORMALIZED_WEAPON_DMG base=5 sp=1 target=[6,0]
+tooltip   Instantly overpower the enemy, causing weapon damage plus $s1.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.
 
 https://www.wowhead.com/forever/spell=7384
 =======
@@ -1079,6 +1167,7 @@ labels    25
 
 effect 1  normalised weapon damage +15 to the enemy
           E_NORMALIZED_WEAPON_DMG base=15 sp=1 target=[6,0]
+tooltip   Instantly overpower the enemy, causing weapon damage plus $s1.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.
 
 https://www.wowhead.com/forever/spell=7887
 =======
@@ -1097,6 +1186,7 @@ labels    25
 
 effect 1  normalised weapon damage +25 to the enemy
           E_NORMALIZED_WEAPON_DMG base=25 sp=1 target=[6,0]
+tooltip   Instantly overpower the enemy, causing weapon damage plus $s1.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.
 
 https://www.wowhead.com/forever/spell=11584
 =======
@@ -1115,6 +1205,7 @@ labels    25
 
 effect 1  normalised weapon damage +35 to the enemy
           E_NORMALIZED_WEAPON_DMG base=35 sp=1 target=[6,0]
+tooltip   Instantly overpower the enemy, causing weapon damage plus $s1.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.
 
 https://www.wowhead.com/forever/spell=11585
 =======
@@ -1129,6 +1220,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +60 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=15 ppl=0.75 sp=1 target=[6,0]
+tooltip   Instantly overpowers an enemy, causing weapon damage plus $s1. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.
 
 https://www.wowhead.com/forever/spell=14895
 =======
@@ -1143,6 +1235,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +120 to the enemy (at level 60)
           E_WEAPON_DAMAGE_NOSCHOOL base=30 ppl=1.5 sp=1 target=[6,0]
+tooltip   Instantly overpowers an enemy, causing weapon damage plus $s1. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.
 
 https://www.wowhead.com/forever/spell=17198
 =======
@@ -1155,6 +1248,7 @@ attrs     refund on miss
 
 effect 1  weapon damage in the weapon's own school +750 to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=750 sp=1 target=[6,0]
+tooltip   Instantly overpowers an enemy, causing weapon damage plus $s1. Can only be used after the target dodges. Overpower cannot be blocked, dodged, or parried.
 
 https://www.wowhead.com/forever/spell=24407
 =======
@@ -1164,6 +1258,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 0
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429765 family=4 mask=0x40 target=[1,0]
+tooltip   Replaces your Heroic Strike ability with Quick Strike:
+
+          $@spellicon429765
+          $@spelldesc429765
 
 https://www.wowhead.com/forever/spell=429748
 =======
@@ -1178,6 +1276,7 @@ attrs     refund on miss
 
 effect 1  25–45 physical damage to the enemy
           E_SCHOOL_DAMAGE base=35 variance=0.2857143 target=[6,0]
+tooltip   A reckless instant melee attack with your two-handed weapon dealing ${$AP*$m1/100} to ${$AP*$M1/100} physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.
 
 https://www.wowhead.com/forever/spell=429765
 =======
@@ -1196,6 +1295,8 @@ labels    25
 
 effect 1  5 physical damage every 3 s to the enemy (3 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=772
 =======
@@ -1214,6 +1315,8 @@ labels    25
 
 effect 1  7 physical damage every 3 s to the enemy (4 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6546
 =======
@@ -1232,6 +1335,8 @@ labels    25
 
 effect 1  9 physical damage every 3 s to the enemy (5 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6547
 =======
@@ -1250,6 +1355,8 @@ labels    25
 
 effect 1  11 physical damage every 3 s to the enemy (6 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=11 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6548
 =======
@@ -1268,6 +1375,8 @@ labels    25
 
 effect 1  14 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=14 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=11572
 =======
@@ -1286,6 +1395,8 @@ labels    25
 
 effect 1  18 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=18 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=11573
 =======
@@ -1304,6 +1415,8 @@ labels    25
 
 effect 1  21 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.02 period=3000ms target=[6,0]
+tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
+aura      Bleeding for $w1 damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=11574
 =======
@@ -1321,6 +1434,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Instantly counterattack any enemy that strikes you in melee for $d.  Melee attacks made from behind cannot be counterattacked.  A maximum of $n attacks will cause retaliation.
+aura      Counterattacking all melee attacks.
 
 https://www.wowhead.com/forever/spell=20230
 =======
@@ -1334,6 +1449,7 @@ labels    25
 
 effect 1  weapon damage in the weapon's own school to the enemy
           E_WEAPON_DAMAGE_NOSCHOOL base=0 sp=1 target=[6,0]
+tooltip   Designer note:  This costs 1 rage to prevent its damage from generating rage.
 
 https://www.wowhead.com/forever/spell=20240
 =======
@@ -1362,6 +1478,8 @@ effect 2  1 physical damage to target 104
           E_SCHOOL_DAMAGE base=1 radius=10 target=[104,0]
 effect 3  a dummy effect holding 50
           E_DUMMY base=50 target=[0,0]
+tooltip   Sends a wave of force in front of the warrior, causing ${$m3/100*$AP} damage and stunning all enemy targets within $a1 yards in a frontal cone for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=440488
 =======
@@ -1371,6 +1489,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440488 misc=417347 target=[1,0]
+tooltip   Gain the Shockwave ability:
+
+          $@spellicon440488
+          $@spelldesc440488
 
 https://www.wowhead.com/forever/spell=440497
 =======
@@ -1391,6 +1513,8 @@ effect 2  1424–1576 physical damage to target 104
           E_SCHOOL_DAMAGE base=1500 variance=0.050666668 radius=10 target=[104,0]
 effect 3  a dummy effect holding 50
           E_DUMMY base=50 target=[0,0]
+tooltip   Sends a wave of force in front of the warrior, causing Physical damage and stunning all enemy targets within $a1 yards in a frontal cone for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=1232702
 =======
@@ -1412,6 +1536,7 @@ effect 2  40% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=40 sp=1 target=[6,0]
 effect 3  a dummy effect holding 2 to the enemy
           E_DUMMY base=2 sp=1 target=[6,0]
+tooltip   A brutal attack that deals $s2% weapon damage. Deals an additional ${$s2*$s3}% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.
 
 https://www.wowhead.com/forever/spell=1310222
 =======
@@ -1427,6 +1552,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no rol
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Your next $n melee attacks strike an additional nearby opponent.
+aura      Your next $n melee attacks strike an additional nearby opponent.
 
 https://www.wowhead.com/forever/spell=12292
 =======
@@ -1438,6 +1565,7 @@ refs      12295 Improved Tactical Mastery
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   You retain up to $?s12295[${$m1+$12295m1}][$m1] Rage when you change Stances.
 
 https://www.wowhead.com/forever/spell=1310185
 =======
@@ -1456,6 +1584,8 @@ effect 1  10 physical damage to every enemy around the caster (+0.07 attack powe
           E_SCHOOL_DAMAGE base=10 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=6343
 =======
@@ -1474,6 +1604,8 @@ effect 1  23 physical damage to every enemy around the caster (+0.07 attack powe
           E_SCHOOL_DAMAGE base=23 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing, the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=8198
 =======
@@ -1492,6 +1624,8 @@ effect 1  37 physical damage to every enemy around the caster (+0.07 attack powe
           E_SCHOOL_DAMAGE base=37 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=8204
 =======
@@ -1510,6 +1644,8 @@ effect 1  55 physical damage to every enemy around the caster (+0.07 attack powe
           E_SCHOOL_DAMAGE base=55 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=8205
 =======
@@ -1528,6 +1664,8 @@ effect 1  82 physical damage to every enemy around the caster (+0.07 attack powe
           E_SCHOOL_DAMAGE base=82 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=11580
 =======
@@ -1546,6 +1684,8 @@ effect 1  103 physical damage to every enemy around the caster (+0.07 attack pow
           E_SCHOOL_DAMAGE base=103 ap=0.07 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=11581
 =======
@@ -1558,6 +1698,7 @@ targets   up to 4
 
 effect 1  -10% melee haste to target 87
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[87,16]
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=413589
 =======
@@ -1575,6 +1716,8 @@ effect 1  103 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=103 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461810
 =======
@@ -1592,6 +1735,8 @@ effect 1  82 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=82 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461826
 =======
@@ -1609,6 +1754,8 @@ effect 1  55 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=55 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461827
 =======
@@ -1626,6 +1773,8 @@ effect 1  37 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=37 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461828
 =======
@@ -1643,6 +1792,8 @@ effect 1  23 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=23 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461829
 =======
@@ -1660,6 +1811,8 @@ effect 1  10 physical damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=10 radius=8 target=[22,15]
 effect 2  -10% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-10 radius=8 target=[22,15]
+tooltip   Blasts nearby enemies increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.
+aura      Time between attacks increased by $s2%.
 
 https://www.wowhead.com/forever/spell=461830
 =======
@@ -1678,5 +1831,6 @@ effect 2  unrecognised shape
           E_HEAL_PCT base=10 target=[1,0]
 effect 3  a dummy effect holding 15 to the enemy
           E_DUMMY base=15 target=[6,0]
+tooltip   Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.
 
 https://www.wowhead.com/forever/spell=402927

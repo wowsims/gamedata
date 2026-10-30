@@ -13,6 +13,8 @@ effect 1  casts 10872 Abolish Disease Effect every 5 s to the friendly target (4
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=10872 target=[21,0]
 effect 2  dispels 1 disease effect to the friendly target
           E_DISPEL base=1 misc=3 target=[21,0]
+tooltip   Attempts to cure $s2 disease effect on the target, and $10872s1 more disease effect every $t1 seconds for $d.
+aura      Attempts to dispel $10872s1 disease every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=552
 =======
@@ -31,6 +33,7 @@ effect 1  236–285 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[21,0]
 effect 2  236–285 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heals a friendly target and the caster for $s1. Low threat.
 
 https://www.wowhead.com/forever/spell=401937
 =======
@@ -49,6 +52,7 @@ effect 1  295–354 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=312 ppl=2.5 variance=0.183333 sp=0.429 amplitude=1 target=[21,0]
 effect 2  294–352 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=312 ppl=2.2 variance=0.183333 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
 
 https://www.wowhead.com/forever/spell=1240770
 =======
@@ -67,6 +71,7 @@ effect 1  363–431 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[21,0]
 effect 2  363–431 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
 
 https://www.wowhead.com/forever/spell=1240771
 =======
@@ -85,6 +90,7 @@ effect 1  479–568 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[21,0]
 effect 2  479–568 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
 
 https://www.wowhead.com/forever/spell=1240772
 =======
@@ -103,6 +109,7 @@ effect 1  607–718 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=644.0001 ppl=3.7 variance=0.17045482 sp=0.429 amplitude=1 target=[21,0]
 effect 2  607–718 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=644 ppl=3.7 variance=0.170455 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
 
 https://www.wowhead.com/forever/spell=1240773
 =======
@@ -121,6 +128,7 @@ effect 1  773–910 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[21,0]
 effect 2  773–910 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
 
 https://www.wowhead.com/forever/spell=1240774
 =======
@@ -135,6 +143,7 @@ effect 1  a dummy aura holding 8
           E_APPLY_AURA A_DUMMY base=8 sp=1 target=[1,0]
 effect 2  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+tooltip   After being struck by a melee or ranged critical hit, or suffering more than $m2% of your maximum Health from a single attack, heal $s1% of the damage taken over $27813d. Refreshing this effect carries over any remaining healing.
 
 https://www.wowhead.com/forever/spell=27811
 =======
@@ -165,6 +174,8 @@ effect 1  43–49 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=46 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+tooltip   Chastise the target, causing $s1 Holy damage and immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1277331
 =======
@@ -184,6 +195,8 @@ effect 1  87–99 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=93 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+tooltip   Chastise the target, causing $s1 Holy damage and immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1277332
 =======
@@ -203,6 +216,8 @@ effect 1  132–148 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=140 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1277333
 =======
@@ -222,6 +237,8 @@ effect 1  201–227 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=214 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1277334
 =======
@@ -241,6 +258,8 @@ effect 1  272–306 holy damage to the enemy (+0.143 spell power)
           E_SCHOOL_DAMAGE base=289 variance=0.12 sp=0.143 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1277335
 =======
@@ -256,6 +275,9 @@ stance exclude Shadowform
 
 effect 1  130–144 healing to target 132 (+0.214 spell power)
           E_HEAL base=137 variance=0.10218978 sp=0.214 radius=43.5 target=[132,31]
+tooltip   Heals all of target player's party members within $a1 yards of target player for ${$<healpower>*$m1/100} to ${$<healpower>*$M1/100}.
+vars      $damagepower=${9.456667+0.635108*$PL+0.039063*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=401946
 =======
@@ -270,6 +292,7 @@ labels    18
 
 effect 1  dispels 1 disease effect to the friendly target
           E_DISPEL base=1 misc=3 target=[21,0]
+tooltip   Removes $s1 $ldisease:diseases; from the friendly target.
 
 https://www.wowhead.com/forever/spell=528
 =======
@@ -283,6 +306,7 @@ stance exclude Shadowform
 
 effect 1  dispels 1 disease effect
           E_DISPEL base=1 misc=3 target=[0,0]
+tooltip   Removes $s1 $ldisease:diseases; from the friendly target.
 
 https://www.wowhead.com/forever/spell=28133
 =======
@@ -296,6 +320,7 @@ labels    18
 
 effect 1  145–182 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=13908
 =======
@@ -309,6 +334,7 @@ labels    18
 
 effect 1  267–326 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=276 ppl=3.4 variance=0.21088435 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19236
 =======
@@ -322,6 +348,7 @@ labels    18
 
 effect 1  441–529 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19238
 =======
@@ -335,6 +362,7 @@ labels    18
 
 effect 1  571–682 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=595 ppl=5.3 variance=0.18518518 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19240
 =======
@@ -348,6 +376,7 @@ labels    18
 
 effect 1  819–970 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=856 ppl=6.4 variance=0.1750547 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19241
 =======
@@ -361,6 +390,7 @@ labels    18
 
 effect 1  1090–1285 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=1143 ppl=7.4 variance=0.16957606 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19242
 =======
@@ -374,6 +404,7 @@ labels    18
 
 effect 1  1285–1514 healing to the caster (at level 60, +0.429 spell power)
           E_HEAL base=1383 ppl=8.2 variance=0.16493416 sp=0.429 target=[1,0]
+tooltip   Instantly heals the caster for $s1.
 
 https://www.wowhead.com/forever/spell=19243
 =======
@@ -383,6 +414,10 @@ duration  permanent
 
 effect 1  replaces an action bar spell with 459695
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=19243 misc=459695 target=[1,0]
+tooltip   Gain the Desperate Prayer ability:
+
+          $@spellicon19243
+          $@spelldesc19243
 
 https://www.wowhead.com/forever/spell=459702
 =======
@@ -394,6 +429,7 @@ labels    18
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 6 mask 0x101480
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=6 mask=0x101480 target=[1,0]
+tooltip   Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=18530
 =======
@@ -410,6 +446,7 @@ effect 1  145–182 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=149 ppl=2.4 variance=0.23684211 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277370
 =======
@@ -426,6 +463,7 @@ effect 1  267–326 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=276 ppl=3.4 variance=0.210884 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277371
 =======
@@ -442,6 +480,7 @@ effect 1  441–529 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=458 ppl=4.5 variance=0.19393939 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277372
 =======
@@ -458,6 +497,7 @@ effect 1  571–682 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=595 ppl=5.3 variance=0.185185 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277374
 =======
@@ -474,6 +514,7 @@ effect 1  819–970 healing to the friendly target (at level 60, +0.429 spell po
           E_HEAL base=856 ppl=6.4 variance=0.175055 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277376
 =======
@@ -490,6 +531,7 @@ effect 1  1090–1285 healing to the friendly target (at level 60, +0.429 spell 
           E_HEAL base=1143 ppl=7.4 variance=0.169576 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277377
 =======
@@ -506,6 +548,7 @@ effect 1  1285–1514 healing to the friendly target (at level 60, +0.429 spell 
           E_HEAL base=1383 ppl=8.2 variance=0.164934 sp=0.429 target=[21,0]
 effect 2  unrecognised shape
           E_SCRIPT_EFFECT base=50 target=[21,0]
+tooltip   Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
 
 https://www.wowhead.com/forever/spell=1277378
 =======
@@ -524,6 +567,8 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no
 
 effect 1  immune to fear to the friendly target
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[21,0]
+tooltip   Wards the friendly target against Fear.  The next Fear effect used against the target will fail, using up the ward.  Lasts $d.
+aura      Warded against Fear.
 
 https://www.wowhead.com/forever/spell=6346
 =======
@@ -533,6 +578,10 @@ duration  permanent
 
 effect 1  replaces an action bar spell with 459695
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=6346 misc=459695 target=[1,0]
+tooltip   Gain the Fear Ward ability:
+
+          $@spellicon6346
+          $@spelldesc6346
 
 https://www.wowhead.com/forever/spell=459699
 =======
@@ -549,6 +598,7 @@ labels    18
 
 effect 1  183–224 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=194 ppl=1.9 variance=0.20465116 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=2061
 =======
@@ -565,6 +615,7 @@ labels    18
 
 effect 1  236–284 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=249 ppl=2.2 variance=0.1958042 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9472
 =======
@@ -581,6 +632,7 @@ labels    18
 
 effect 1  295–354 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=312 ppl=2.5 variance=0.18333334 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9473
 =======
@@ -597,6 +649,7 @@ labels    18
 
 effect 1  363–431 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=383 ppl=2.8 variance=0.17767654 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=9474
 =======
@@ -613,6 +666,7 @@ labels    18
 
 effect 1  479–568 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=507 ppl=3.3 variance=0.17283951 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10915
 =======
@@ -629,6 +683,7 @@ labels    18
 
 effect 1  607–718 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=644 ppl=3.7 variance=0.17045455 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10916
 =======
@@ -645,6 +700,7 @@ labels    18
 
 effect 1  773–910 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=825 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=10917
 =======
@@ -657,6 +713,7 @@ range     40 yd
 
 effect 1  1164–1351 healing to the friendly target (+0.429 spell power)
           E_HEAL base=1257.0995 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Calls upon Holy magic to heal an ally.
 
 https://www.wowhead.com/forever/spell=17137
 =======
@@ -669,6 +726,7 @@ range     40 yd
 
 effect 1  3415–4163 healing to the friendly target (+0.429 spell power)
           E_HEAL base=3788.8394 variance=0.19753087 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Calls upon Holy magic to heal an ally.
 
 https://www.wowhead.com/forever/spell=17138
 =======
@@ -681,6 +739,7 @@ range     40 yd
 
 effect 1  2327–2701 healing to the friendly target (+0.429 spell power)
           E_HEAL base=2514.199 variance=0.14883721 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Calls upon Holy magic to heal an ally.
 
 https://www.wowhead.com/forever/spell=17843
 =======
@@ -695,6 +754,7 @@ stance exclude Shadowform
 
 effect 1  1064–1210 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=885 ppl=4.2 variance=0.16497175 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=27608
 =======
@@ -707,6 +767,7 @@ range     40 yd
 
 effect 1  58469.74 healing to the friendly target (+0.429 spell power)
           E_HEAL base=58469.74 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Calls upon Holy magic to heal an ally.
 
 https://www.wowhead.com/forever/spell=1232758
 =======
@@ -720,6 +781,7 @@ stance exclude Shadowform
 
 effect 1  13202–15302 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=14000 ppl=4.2 variance=0.15 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heals a friendly target for $s1.
 
 https://www.wowhead.com/forever/spell=1236153
 =======
@@ -736,6 +798,7 @@ labels    18
 
 effect 1  819–920 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=844 ppl=5.1 variance=0.11924686 sp=0.857 amplitude=1 target=[21,0]
+tooltip   A slow casting spell that heals a single target for $s1.
 
 https://www.wowhead.com/forever/spell=2060
 =======
@@ -752,6 +815,7 @@ labels    18
 
 effect 1  1065–1191 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1099 ppl=5.8 variance=0.11484823 sp=0.857 amplitude=1 target=[21,0]
+tooltip   A slow casting spell that heals a single target for $s1.
 
 https://www.wowhead.com/forever/spell=10963
 =======
@@ -768,6 +832,7 @@ labels    18
 
 effect 1  1357–1515 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1403 ppl=6.6 variance=0.112935 sp=0.857 amplitude=1 target=[21,0]
+tooltip   A slow casting spell that heals a single target for $s1.
 
 https://www.wowhead.com/forever/spell=10964
 =======
@@ -784,6 +849,7 @@ labels    18
 
 effect 1  1700–1894 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1782 ppl=7.5 variance=0.10935857 sp=0.857 amplitude=1 target=[21,0]
+tooltip   A slow casting spell that heals a single target for $s1.
 
 https://www.wowhead.com/forever/spell=10965
 =======
@@ -796,6 +862,7 @@ attrs     periodic can crit
 
 effect 1  63 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=63 sp=0.2 period=3000ms target=[21,0]
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=22009
 =======
@@ -812,6 +879,7 @@ labels    18
 
 effect 1  1853–2067 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=1960 ppl=8.1 variance=0.10961539 sp=0.857 amplitude=1 target=[21,0]
+tooltip   A slow casting spell that heals a single target for $s1.
 
 https://www.wowhead.com/forever/spell=25314
 =======
@@ -824,6 +892,7 @@ refs      28810 Armor of Faith
 
 effect 1  a dummy aura from family 6 mask 0x10
           E_APPLY_AURA A_DUMMY base=0 family=6 mask=0x10 target=[1,0]
+tooltip   On Greater Heal critical hits, your target will gain Armor of Faith, absorbing up to $28810s1 damage.
 
 https://www.wowhead.com/forever/spell=28809
 =======
@@ -840,6 +909,7 @@ labels    18
 
 effect 1  260–300 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=270 ppl=2 variance=0.1446541 sp=0.857 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=2054
 =======
@@ -856,6 +926,7 @@ labels    18
 
 effect 1  364–415 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=375 ppl=2.9 variance=0.13478261 sp=0.857 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=2055
 =======
@@ -872,6 +943,7 @@ labels    18
 
 effect 1  510–576 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=523 ppl=4 variance=0.12582782 sp=0.857 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=6063
 =======
@@ -888,6 +960,7 @@ labels    18
 
 effect 1  633–714 healing to the friendly target (at level 60, +0.857 spell power)
           E_HEAL base=651 ppl=4.5 variance=0.12137203 sp=0.857 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=6064
 =======
@@ -906,6 +979,8 @@ effect 1  53–66 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=54 ppl=1.3 variance=0.22727273 sp=0.75 target=[6,0]
 effect 2  4 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=14914
 =======
@@ -924,6 +999,8 @@ effect 1  184–232 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=208 ppl=2 variance=0.23383084 sp=0.75 target=[6,0]
 effect 2  15 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15261
 =======
@@ -942,6 +1019,8 @@ effect 1  64–79 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=63 ppl=1.4 variance=0.22222222 sp=0.75 target=[6,0]
 effect 2  5 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15262
 =======
@@ -960,6 +1039,8 @@ effect 1  80–98 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=80 ppl=1.5 variance=0.22818792 sp=0.75 target=[6,0]
 effect 2  6 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15263
 =======
@@ -978,6 +1059,8 @@ effect 1  90–112 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=92 ppl=1.5 variance=0.23529412 sp=0.75 target=[6,0]
 effect 2  7 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15264
 =======
@@ -996,6 +1079,8 @@ effect 1  103–127 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=1.5 variance=0.23376623 sp=0.75 target=[6,0]
 effect 2  9 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=9 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15265
 =======
@@ -1014,6 +1099,8 @@ effect 1  133–166 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=139 ppl=1.7 variance=0.2361111 sp=0.75 target=[6,0]
 effect 2  10 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15266
 =======
@@ -1032,6 +1119,8 @@ effect 1  163–206 holy damage to the enemy (at level 60, +0.75 spell power)
           E_SCHOOL_DAMAGE base=173 ppl=1.9 variance=0.23768117 sp=0.75 target=[6,0]
 effect 2  13 holy damage every 2 s to the enemy (5 ticks, +0.05 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=13 sp=0.05 period=2000ms target=[6,0]
+tooltip   Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
+aura      $s2 Holy damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=15267
 =======
@@ -1048,6 +1137,8 @@ effect 1  596–748 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=672.40204 variance=0.22608696 sp=0.343 target=[6,0]
 effect 2  40.92882 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40.92882 sp=0.027 period=2000ms target=[6,0]
+tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=17140
 =======
@@ -1064,6 +1155,8 @@ effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
 effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=17141
 =======
@@ -1080,6 +1173,8 @@ effect 1  1777–2257 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=2017.206 variance=0.23768117 sp=0.343 target=[6,0]
 effect 2  122.78647 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=122.78647 sp=0.027 period=2000ms target=[6,0]
+tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=17142
 =======
@@ -1093,6 +1188,8 @@ effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
 effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=18165
 =======
@@ -1122,6 +1219,8 @@ effect 1  2203–2797 fire damage to the enemy (+0.343 spell power)
           E_SCHOOL_DAMAGE base=2500 variance=0.2376 sp=0.343 target=[6,0]
 effect 2  125 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=125 sp=0.027 period=2000ms target=[6,0]
+tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+aura      Fire damage inflicted every $t2 sec.
 
 https://www.wowhead.com/forever/spell=23860
 =======
@@ -1136,6 +1235,7 @@ refs      23455 Holy Nova
 
 effect 1  26–31 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=27 ppl=0.2 variance=0.13333334 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23455a1 yards for $23455s1. These effects cause no threat.
 
 https://www.wowhead.com/forever/spell=15237
 =======
@@ -1150,6 +1250,9 @@ refs      23458 Holy Nova
 
 effect 1  47–56 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=49 ppl=0.4 variance=0.14814815 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23458a1 yards for $23458s1. These effects cause no threat.
+
+          Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=15430
 =======
@@ -1164,6 +1267,9 @@ refs      23459 Holy Nova
 
 effect 1  73–84 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=75 ppl=0.6 variance=0.14634146 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $23459a1 yards for $23459s1. These effects cause no threat.
+
+          Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=15431
 =======
@@ -1174,6 +1280,7 @@ cost      315 mana
 
 effect 1  720–880 holy damage to every enemy around the caster (+0.071 spell power)
           E_SCHOOL_DAMAGE base=800 variance=0.2 sp=0.071 radius=15 target=[22,15]
+tooltip   Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.
 
 https://www.wowhead.com/forever/spell=20694
 =======
@@ -1220,6 +1327,7 @@ effect 1  875–1125 holy damage to every enemy around the caster (+0.071 spell 
           E_SCHOOL_DAMAGE base=1000 variance=0.25 sp=0.071 radius=15 target=[22,15]
 effect 2  1750–2250 healing to every ally around the caster
           E_HEAL base=2000 variance=0.25 sp=1 radius=15 target=[22,30]
+tooltip   Causes an explosion of divine light, inflicting $s1 Holy damage to nearby enemies and reducing the caster's threat level for $d.
 
 https://www.wowhead.com/forever/spell=23858
 =======
@@ -1234,6 +1342,9 @@ refs      27803 Holy Nova
 
 effect 1  103–118 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=106 ppl=0.8 variance=0.14035088 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $27803a1 yards for $27803s1. These effects cause no threat.
+
+          Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=27799
 =======
@@ -1248,6 +1359,9 @@ refs      27804 Holy Nova
 
 effect 1  139–159 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=143 ppl=1 variance=0.14569536 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $27804a1 yards for $27804s1. These effects cause no threat.
+
+          Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=27800
 =======
@@ -1262,6 +1376,9 @@ refs      27805 Holy Nova
 
 effect 1  174–200 holy damage to every enemy around the caster (at level 60, +0.107 spell power)
           E_SCHOOL_DAMAGE base=187 ppl=1.2 variance=0.14358975 sp=0.107 radius=10 target=[22,15]
+tooltip   Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $27805a1 yards for $27805s1. These effects cause no threat.
+
+          Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=27801
 =======
@@ -1310,6 +1427,8 @@ effect 1  SPELLMOD_COST -100% on family 6 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x400000 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=20 misc=26 target=[1,0]
+tooltip   Your next Holy Nova costs no Mana.
+aura      Your next Holy Nova costs no Mana.
 
 https://www.wowhead.com/forever/spell=1284536
 =======
@@ -1322,6 +1441,7 @@ effect 1  SPELLMOD_RANGE +10% on family 6 mask 0x100080
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=5 family=6 mask=0x100080 target=[1,0]
 effect 2  SPELLMOD_RADIUS +10% on family 6 mask 0x8400200
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=6 family=6 mask=0x8400200 target=[1,0]
+tooltip   Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by $s1%.
 
 https://www.wowhead.com/forever/spell=27789
 =======
@@ -1333,6 +1453,7 @@ labels    18
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 6 mask 0x9541ec0,0x18024
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=7 family=6 mask=0x9541ec0,0x18024 target=[1,0]
+tooltip   Increases the critical effect chance of your Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=14889
 =======
@@ -1344,6 +1465,7 @@ labels    18
 
 effect 1  SPELLMOD_COST -15% on family 6 mask 0x41400,0x800020
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=6 mask=0x41400,0x800020 target=[1,0]
+tooltip   Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by $s1%.
 
 https://www.wowhead.com/forever/spell=14912
 =======
@@ -1355,6 +1477,7 @@ labels    18
 
 effect 1  SPELLMOD_DOT +5% on family 6 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=22 family=6 mask=0x40 target=[1,0]
+tooltip   Increases the amount healed by your Renew spell by $s1%.
 
 https://www.wowhead.com/forever/spell=14908
 =======
@@ -1368,6 +1491,7 @@ refs      14893 Inspiration
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Your non-periodic critical heals increase your target's Armor by $m1% for $14893d.
 
 https://www.wowhead.com/forever/spell=14892
 =======
@@ -1384,6 +1508,7 @@ labels    18
 
 effect 1  46–57 healing to the friendly target (at level 60, +0.429 spell power)
           E_HEAL base=51 ppl=0.3 variance=0.19607843 sp=0.429 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=2050
 =======
@@ -1400,6 +1525,7 @@ labels    18
 
 effect 1  89–106 healing to the friendly target (at level 60, +0.571 spell power)
           E_HEAL base=94 ppl=0.7 variance=0.17948718 sp=0.571 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=2052
 =======
@@ -1416,6 +1542,7 @@ labels    18
 
 effect 1  157–181 healing to the friendly target (at level 60, +0.714 spell power)
           E_HEAL base=163 ppl=1.2 variance=0.15068494 sp=0.714 amplitude=1 target=[21,0]
+tooltip   Heal your target for $s1.
 
 https://www.wowhead.com/forever/spell=2053
 =======
@@ -1431,6 +1558,7 @@ refs      7001 Lightwell Renew
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 sp=1 misc=181102 radius=2 target=[22,47]
+tooltip   Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore $7001o1 health over $7001d.  Being attacked cancels the effect.  Lightwell lasts for $d or 5 charges.
 
 https://www.wowhead.com/forever/spell=724
 =======
@@ -1446,6 +1574,7 @@ refs      27873 Lightwell Renew
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 sp=1 misc=181105 radius=2 target=[22,47]
+tooltip   Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore $27873o1 health over $27873d.  Being attacked cancels the effect.  Lightwell lasts for $d or 5 charges.
 
 https://www.wowhead.com/forever/spell=27870
 =======
@@ -1461,6 +1590,7 @@ refs      27874 Lightwell Renew
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 sp=1 misc=181106 radius=2 target=[22,47]
+tooltip   Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore $27874o1 health over $27874d.  Being attacked cancels the effect.  Lightwell lasts for $d or 5 charges.
 
 https://www.wowhead.com/forever/spell=27871
 =======
@@ -1473,6 +1603,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no
 
 effect 1  casts nothing on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 target=[1,0]
+tooltip   When you cast a healing spell, gain Mana equal to $m1% of the base cost of the spell if your previous heal was a different spell.
 
 https://www.wowhead.com/forever/spell=1317006
 =======
@@ -1489,6 +1620,7 @@ labels    18
 
 effect 1  179–192 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=178 ppl=0.8 variance=0.06430868 sp=0.286 radius=40 target=[132,31]
+tooltip   A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 https://www.wowhead.com/forever/spell=596
 =======
@@ -1505,6 +1637,7 @@ labels    18
 
 effect 1  266–282 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=265 ppl=1 variance=0.06113537 sp=0.286 radius=40 target=[132,31]
+tooltip   A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 https://www.wowhead.com/forever/spell=996
 =======
@@ -1521,6 +1654,7 @@ labels    18
 
 effect 1  401–424 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=401 ppl=1.3 variance=0.056213018 sp=0.286 radius=40 target=[132,31]
+tooltip   A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 https://www.wowhead.com/forever/spell=10960
 =======
@@ -1537,6 +1671,7 @@ labels    18
 
 effect 1  567–599 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=583 ppl=1.5 variance=0.05388601 sp=0.286 radius=40 target=[132,31]
+tooltip   A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 https://www.wowhead.com/forever/spell=10961
 =======
@@ -1553,6 +1688,7 @@ labels    18
 
 effect 1  631–667 healing to target 132 (at level 60, +0.286 spell power)
           E_HEAL base=649 ppl=1.6 variance=0.054205608 sp=0.286 radius=40 target=[132,31]
+tooltip   A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 https://www.wowhead.com/forever/spell=25316
 =======
@@ -1572,6 +1708,10 @@ effect 1  a dummy effect holding 172 to the target's raid
           E_DUMMY base=172 sp=0.429 target=[57,0]
 effect 2  a dummy effect holding 5 to the target's raid
           E_DUMMY base=5 target=[57,0]
+tooltip   Places a spell on the target that heals them for ${($m1+($bh*$bc))*$<mult>} the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within $401880a1 yards. Jumps up to $s2 times and lasts $401877d after each jump. This spell can only be placed on one target at a time per caster.
+vars      $twinD=$?s1225132[${$1225132m1/100+1)}][${1}]
+          $spiritualH=$?s14898[${$14898m1/100+1)}][${1}]
+          $mult=${$<twinD>*$<spiritualH>}
 
 https://www.wowhead.com/forever/spell=401859
 =======
@@ -1583,6 +1723,7 @@ labels    18
 
 effect 1  1 healing to the target's raid
           E_HEAL base=1 amplitude=1 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage.  When the heal occurs, Prayer of Mending jumps to a party or raid member within $41635a1 yards. Jumps up to $48113n times and lasts $48111d after each jump. This spell can only be placed on one target at a time.
 
 https://www.wowhead.com/forever/spell=401863
 =======
@@ -1599,6 +1740,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura to the target's raid
           E_APPLY_AURA A_DUMMY base=0 variance=0.10935857 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage or receive healing.  When the heal occurs, Prayer of Mending jumps to a party or raid member within $a1 yards.  Jumps up to $n times and lasts $d after each jump.  This spell can only be placed on one target at a time.
+aura      Heals upon taking damage or receiving healing.
 
 https://www.wowhead.com/forever/spell=401877
 =======
@@ -1628,6 +1771,10 @@ effect 1  a dummy effect holding 298 to the target's raid
           E_DUMMY base=298 sp=0.429 target=[57,0]
 effect 2  a dummy effect holding 5 to the target's raid
           E_DUMMY base=5 target=[57,0]
+tooltip   Places a spell on the target that heals them for ${($m1+($bh*$bc))*$<mult>} the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within $401880a1 yds. Jumps up to $s2 times and lasts $401877d after each jump. This spell can only be placed on one target at a time per caster.
+vars      $twinD=$?s1225132[${$1225132m1/100+1)}][${1}]
+          $spiritualH=$?s14898[${$14898m1/100+1)}][${1}]
+          $mult=${$<twinD>*$<spiritualH>}
 
 https://www.wowhead.com/forever/spell=1240826
 =======
@@ -1647,6 +1794,10 @@ effect 1  a dummy effect holding 413 to the target's raid
           E_DUMMY base=413 sp=0.429 target=[57,0]
 effect 2  a dummy effect holding 5 to the target's raid
           E_DUMMY base=5 target=[57,0]
+tooltip   Places a spell on the target that heals them for ${($m1+($bh*$bc))*$<mult>} the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within $401880a1 yds. Jumps up to $s2 times and lasts $401877d after each jump. This spell can only be placed on one target at a time per caster.
+vars      $twinD=$?s1225132[${$1225132m1/100+1)}][${1}]
+          $spiritualH=$?s14898[${$14898m1/100+1)}][${1}]
+          $mult=${$<twinD>*$<spiritualH>}
 
 https://www.wowhead.com/forever/spell=1240827
 =======
@@ -1663,6 +1814,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura holding 1902 to the target's raid
           E_APPLY_AURA A_DUMMY base=1902 variance=0.10935857 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage or receive healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within $a1 yds. Jumps up to $n times and lasts $d after each jump. This spell can only be placed on one target at a time.
+aura      Heals upon taking damage or receiving healing.
 
 https://www.wowhead.com/forever/spell=1240848
 =======
@@ -1679,6 +1832,8 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura holding 1902 to the target's raid
           E_APPLY_AURA A_DUMMY base=1902 variance=0.10935857 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage or receive healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within $a1 yds. Jumps up to $n times and lasts $d after each jump. This spell can only be placed on one target at a time.
+aura      Heals upon taking damage or receiving healing.
 
 https://www.wowhead.com/forever/spell=1240849
 =======
@@ -1710,6 +1865,7 @@ labels    18
 
 effect 1  1 healing to the target's raid
           E_HEAL base=1 amplitude=1 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage. When the heal occurs, Prayer of Mending jumps to a party or raid member within $41635a1 yds. Jumps up to $48113n times and lasts $48111d after each jump. This spell can only be placed on one target at a time.
 
 https://www.wowhead.com/forever/spell=1313379
 =======
@@ -1721,6 +1877,7 @@ labels    18
 
 effect 1  1 healing to the target's raid
           E_HEAL base=1 amplitude=1 target=[57,0]
+tooltip   Places a spell on the target that heals them the next time they take damage. When the heal occurs, Prayer of Mending jumps to a party or raid member within $41635a1 yds. Jumps up to $48113n times and lasts $48111d after each jump. This spell can only be placed on one target at a time.
 
 https://www.wowhead.com/forever/spell=1313381
 =======
@@ -1738,6 +1895,8 @@ labels    18
 
 effect 1  9 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=9 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=139
 =======
@@ -1755,6 +1914,8 @@ labels    18
 
 effect 1  15 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=15 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6074
 =======
@@ -1772,6 +1933,8 @@ labels    18
 
 effect 1  25 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=25 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6075
 =======
@@ -1789,6 +1952,8 @@ labels    18
 
 effect 1  32 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=32 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6076
 =======
@@ -1806,6 +1971,8 @@ labels    18
 
 effect 1  41 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=41 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6077
 =======
@@ -1823,6 +1990,8 @@ labels    18
 
 effect 1  54 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=54 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6078
 =======
@@ -1840,6 +2009,8 @@ labels    18
 
 effect 1  74 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=74 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10927
 =======
@@ -1857,6 +2028,8 @@ labels    18
 
 effect 1  102 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=102 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10928
 =======
@@ -1874,6 +2047,8 @@ labels    18
 
 effect 1  134 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=134 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10929
 =======
@@ -1891,6 +2066,8 @@ labels    18
 
 effect 1  166 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=166 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25315
 =======
@@ -1905,6 +2082,8 @@ stance exclude Shadowform
 
 effect 1  162 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=162 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=27606
 =======
@@ -1915,6 +2094,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -12% on family 6 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-12 misc=14 family=6 mask=0x40 target=[1,0]
+tooltip   Reduces the mana cost of your Renew spell by $s1%.
 
 https://www.wowhead.com/forever/spell=28807
 =======
@@ -1930,6 +2110,8 @@ stance exclude Shadowform
 
 effect 1  9 healing every 3 s to the friendly target (5 ticks, +0.1265 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=9 sp=0.1265 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425268
 =======
@@ -1945,6 +2127,8 @@ stance exclude Shadowform
 
 effect 1  20 healing every 3 s to the friendly target (5 ticks, +0.17825 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=20 sp=0.17825 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425269
 =======
@@ -1960,6 +2144,8 @@ stance exclude Shadowform
 
 effect 1  35 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=35 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425270
 =======
@@ -1975,6 +2161,8 @@ stance exclude Shadowform
 
 effect 1  49 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=49 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425271
 =======
@@ -1990,6 +2178,8 @@ stance exclude Shadowform
 
 effect 1  63 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=63 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425272
 =======
@@ -2005,6 +2195,8 @@ stance exclude Shadowform
 
 effect 1  80 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=80 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425273
 =======
@@ -2020,6 +2212,8 @@ stance exclude Shadowform
 
 effect 1  102 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=102 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425274
 =======
@@ -2035,6 +2229,8 @@ stance exclude Shadowform
 
 effect 1  130 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=130 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425275
 =======
@@ -2050,6 +2246,8 @@ stance exclude Shadowform
 
 effect 1  162 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=162 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425276
 =======
@@ -2065,6 +2263,8 @@ stance exclude Shadowform
 
 effect 1  194 healing every 3 s to the friendly target (5 ticks, +0.23 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=194 sp=0.23 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=425277
 =======
@@ -2079,6 +2279,8 @@ stance exclude Shadowform
 
 effect 1  2500 healing every 3 s to the friendly target (5 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=2500 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals the target of $o1 damage over $d.
+aura      Healing $s1 damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1236151
 =======
@@ -2092,6 +2294,8 @@ range     40 yd
 
 effect 1  35 healing every 3 s to the friendly target (5 ticks)
           E_APPLY_AURA A_PERIODIC_HEAL base=35 period=3000ms target=[21,0]
+tooltip   Heals the target for $s1 every $t1 sec.
+aura      Healing $s1 damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1289450
 =======
@@ -2106,6 +2310,7 @@ labels    18, 6316
 
 effect 1  unrecognised shape
           E_329 base=70 sp=1 misc=135 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=2006
 =======
@@ -2120,6 +2325,7 @@ labels    18, 6316
 
 effect 1  unrecognised shape
           E_329 base=160 sp=1 misc=300 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=2010
 =======
@@ -2134,6 +2340,7 @@ labels    18, 6316
 
 effect 1  unrecognised shape
           E_329 base=300 sp=1 misc=520 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=10880
 =======
@@ -2148,6 +2355,7 @@ labels    18, 6316
 
 effect 1  unrecognised shape
           E_329 base=500 sp=1 misc=750 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=10881
 =======
@@ -2162,6 +2370,7 @@ labels    18, 6316
 
 effect 1  unrecognised shape
           E_329 base=750 sp=1 misc=1000 target=[0,0]
+tooltip   Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 https://www.wowhead.com/forever/spell=20770
 =======
@@ -2176,6 +2385,7 @@ effect 1  +10% holy damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=2 target=[1,0]
 effect 2  casts 1284536 Holy Purpose on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=1284536 target=[1,0]
+tooltip   Increases your Holy damage done by $m1%, and gives a $m2% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.
 
 https://www.wowhead.com/forever/spell=14909
 =======
@@ -2190,6 +2400,7 @@ labels    18
 
 effect 1  13–18 holy damage to the enemy (at level 60, +0.429 spell power)
           E_SCHOOL_DAMAGE base=15 ppl=0.1 variance=0.26666668 sp=0.429 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=585
 =======
@@ -2204,6 +2415,7 @@ labels    18
 
 effect 1  25–32 holy damage to the enemy (at level 60, +0.571 spell power)
           E_SCHOOL_DAMAGE base=27 ppl=0.3 variance=0.21428572 sp=0.571 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=591
 =======
@@ -2218,6 +2430,7 @@ labels    18
 
 effect 1  44–51 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=45 ppl=0.5 variance=0.13793103 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=598
 =======
@@ -2232,6 +2445,7 @@ labels    18
 
 effect 1  59–68 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=60 ppl=0.7 variance=0.14285715 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=984
 =======
@@ -2246,6 +2460,7 @@ labels    18
 
 effect 1  81–91 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=81 ppl=1 variance=0.125 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1004
 =======
@@ -2260,6 +2475,7 @@ labels    18
 
 effect 1  93–106 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=94 ppl=1.1 variance=0.1238938 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=6060
 =======
@@ -2274,6 +2490,7 @@ labels    18
 
 effect 1  124–139 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=126 ppl=1.1 variance=0.11803278 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=10933
 =======
@@ -2288,6 +2505,7 @@ labels    18
 
 effect 1  166–187 holy damage to the enemy (at level 60, +0.714 spell power)
           E_SCHOOL_DAMAGE base=170 ppl=1.3 variance=0.11195929 sp=0.714 target=[6,0]
+tooltip   Smite an enemy for $s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=10934
 =======
@@ -2298,6 +2516,7 @@ labels    18
 
 effect 1  -10% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=126 target=[1,0]
+tooltip   Reduces all spell damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=27900
 =======
@@ -2311,6 +2530,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=8 misc=126 misc2=4 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=25 misc=4 target=[1,0]
+tooltip   Increases your spell healing by up to $s2% of your total Spirit and your spell damage by up to $s1% of your total Spirit.
 
 https://www.wowhead.com/forever/spell=14901
 =======
@@ -2324,6 +2544,7 @@ effect 1  SPELLMOD_DAMAGE +2% on family 6 mask 0x9041e20,0x10024
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=6 mask=0x9041e20,0x10024 target=[1,0]
 effect 2  SPELLMOD_DOT +2% on family 6 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=6 mask=0x40 target=[1,0]
+tooltip   Increases the amount healed by your spells by $s1%.
 
 https://www.wowhead.com/forever/spell=14898
 =======
@@ -2335,5 +2556,6 @@ labels    18
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 6 mask 0xb63e90,0x818004,0x80,0x40100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=6 mask=0xb63e90,0x818004,0x80,0x40100000 target=[1,0]
+tooltip   Gives your spells a $s1% chance to not lose casting time when you take damage.
 
 https://www.wowhead.com/forever/spell=14913

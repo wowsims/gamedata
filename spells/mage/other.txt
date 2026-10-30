@@ -6,6 +6,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=1300947
 =======
@@ -15,6 +16,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -5 s on family 3 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 misc=11 family=3 mask=0x4000 target=[1,0]
+tooltip   Reduces the cooldown of your Counterspell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301013
 =======
@@ -24,6 +26,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=8 target=[1,0]
+tooltip   Increases damage done by your spells and effects by up to $s1 when fighting Elementals.
 
 https://www.wowhead.com/forever/spell=1301079
 =======
@@ -37,6 +40,7 @@ effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 3  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Your Frostfire Bolt spell has a $s1% increased chance to trigger Missile Barrage, gains $s2% increased critical strike chance while your Combustion spell is active, and has a $s3% increased chance to trigger Fingers of Frost.
 
 https://www.wowhead.com/forever/spell=1301488
 =======
@@ -47,6 +51,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412115 misc=417345 target=[1,0]
+tooltip   Gain the Advanced Warding ability:
+
+          $@spellicon412115
+          $@spelldesc412115
 
 https://www.wowhead.com/forever/spell=401726
 =======
@@ -92,6 +100,10 @@ effect 18 replaces an action bar spell with 10192 Mana Shield
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412122 misc=10192 target=[1,0]
 effect 19 replaces an action bar spell with 10193 Mana Shield
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412123 misc=10193 target=[1,0]
+tooltip   Your Mana Shield, Frost Ward, and Fire Ward spells can now be cast on any friendly target and absorb $s1% increased damage, with Mana Shield consuming $s2% less mana per damage absorbed. Additionally, your Remove Lesser Curse is replaced with Remove Greater Curse.
+
+          $@spellicon412113
+          $@spelldesc412113
 
 https://www.wowhead.com/forever/spell=412115
 =======
@@ -104,6 +116,7 @@ effect 1  SPELLMOD_EFFECT1 +100% on family 3 mask 0x8108
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=3 family=3 mask=0x8108 target=[1,0]
 effect 2  SPELLMOD_VALUE_MULTIPLIER -50% on family 3 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=27 family=3 mask=0x8000 target=[1,0]
+tooltip   Increases the magnitude of your Mana Shield, Frost Ward, and Fire Ward by $s1%, and decreases mana drained by Mana Shield by $s2% per damage done.
 
 https://www.wowhead.com/forever/spell=428738
 =======
@@ -113,6 +126,7 @@ attrs     passive
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +50% on family 3 mask 0x20000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=9 family=3 mask=0x20000000 target=[1,0]
+tooltip   Gives you a $s1% chance to avoid interruption caused by damage while casting Arcane Blast.
 
 https://www.wowhead.com/forever/spell=459600
 =======
@@ -125,6 +139,8 @@ range     30 yd
 
 effect 1  +50 holy+fire+nature+frost+shadow+arcane damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=50 misc=126 target=[21,0]
+tooltip   Increases the magical damage dealt by an ally by $s1 for $d.
+aura      Magical damage dealt is increased by $s1.
 
 https://www.wowhead.com/forever/spell=17150
 =======
@@ -137,6 +153,7 @@ labels    17
 
 effect 1  25.2 arcane damage to the enemy (at level 60, +0.286 spell power)
           E_SCHOOL_DAMAGE base=24 ppl=0.3 sp=0.286 target=[6,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=1308937
 =======
@@ -148,6 +165,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_DURATION +1 s on family 3 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=3 mask=0x800 target=[1,0]
+tooltip   Increases the duration of your Arcane Missiles by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=21228
 =======
@@ -161,6 +179,9 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 3 mask 0x240000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=3 mask=0x240000 target=[1,0]
 effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +50% on family 3 mask 0x240000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=15 family=3 mask=0x240000 target=[1,0]
+tooltip   Increases the critical hit chance of your Arcane spells by $s1%, and increases the critical hit damage of your Arcane spells by $s2% for $d.
+aura      Arcane spell critical hit chance increased by $s1%.
+          Arcane spell critical hit damage increased by $s2%.
 
 https://www.wowhead.com/forever/spell=24544
 =======
@@ -171,6 +192,7 @@ targets   up to 1
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+aura      Your next Arcane damage or healing spell will not consume your Arcane Blast effect.
 
 https://www.wowhead.com/forever/spell=1226406
 =======
@@ -181,6 +203,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415423 misc=415449 target=[1,0]
+tooltip   Gain the Aspect of the Viper ability:
+
+          $@spellicon415423
+          $@spelldesc415423
 
 https://www.wowhead.com/forever/spell=415718
 =======
@@ -193,6 +219,7 @@ range     100 yd
 
 effect 1  40 nature damage every 3 s to every enemy around the caster (10 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=1 period=3000ms radius=10 target=[22,15]
+aura      $s1 Nature damage inflicted every $t1 sec.
 
 https://www.wowhead.com/forever/spell=18949
 =======
@@ -202,6 +229,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407624 misc=399966 target=[1,0]
+tooltip   Gain the Aura Mastery ability:
+
+          $@spellicon407624
+          $@spelldesc407624
 
 https://www.wowhead.com/forever/spell=415756
 =======
@@ -211,6 +242,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401937 misc=417347 target=[1,0]
+tooltip   Gain the Binding Heal ability:
+
+          $@spellicon401937
+          $@spelldesc401937
 
 https://www.wowhead.com/forever/spell=402837
 =======
@@ -221,6 +256,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 3 mask 0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=11 family=3 mask=0x10000 target=[1,0]
+tooltip   Reduces the cooldown of your Blink spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=23025
 =======
@@ -231,6 +267,7 @@ labels    3096, 3100
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+aura      Location of recent Blink recorded.
 
 https://www.wowhead.com/forever/spell=428865
 =======
@@ -240,6 +277,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412507 misc=399954 target=[1,0]
+tooltip   Gain the Blood Frenzy ability:
+
+          $@spellicon412507
+          $@spelldesc412507
 
 https://www.wowhead.com/forever/spell=403352
 =======
@@ -252,6 +293,9 @@ cost      60 mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=4 target=[1,0]
+tooltip   Conjures $s1 food from the harvest.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=24006
 =======
@@ -263,6 +307,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 20% chance; tooltip says damaging 
 
 effect 1  casts 400730 Fireball! on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=400730 target=[1,0]
+tooltip   Your Frost damage spells with chilling effects have a $h% chance to cause your next Fireball, Spellfrost Bolt, Balefire Bolt, or Frostfire Bolt spell to be instant cast and cost no mana.
 
 https://www.wowhead.com/forever/spell=400731
 =======
@@ -273,6 +318,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400731 misc=415450 target=[1,0]
+tooltip   Gain the Brain Freeze ability:
+
+          $@spellicon400731
+          $@spelldesc400731
 
 https://www.wowhead.com/forever/spell=401725
 =======
@@ -283,6 +332,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415231 misc=417345 target=[1,0]
+tooltip   Gain the Burn ability:
+
+          $@spellicon415231
+          $@spelldesc415231
 
 https://www.wowhead.com/forever/spell=415768
 =======
@@ -295,6 +348,7 @@ effect 1  +15% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=15 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases your spell critical strike chance with all spells by $s1%, but your non-periodic spell critical strikes now have an additional mana cost of $s2% of your base mana.
 
 https://www.wowhead.com/forever/spell=412286
 =======
@@ -305,6 +359,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415428 misc=417345 target=[1,0]
+tooltip   Gain the Catlike Reflexes ability:
+
+          $@spellicon415428
+          $@spelldesc415428
 
 https://www.wowhead.com/forever/spell=415717
 =======
@@ -319,6 +377,8 @@ effect 1  SPELLMOD_DAMAGE +0 on family 3 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 variance=1.996 family=3 mask=0x2 target=[1,0]
 effect 2  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Refreshes the cooldown of Fire Ward and causes Fire damage absorbed by it to increase the damage of your next Fire Blast cast within $d by $s2% of the damage absorbed.
+aura      Fire Blast damage increased by $w1.
 
 https://www.wowhead.com/forever/spell=24389
 =======
@@ -335,6 +395,7 @@ effect 1  a dummy effect holding 1 to target 87 (at level 60)
           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
 effect 2  a dummy aura every 1 s (20 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+aura      Rapidly cooling the target.
 
 https://www.wowhead.com/forever/spell=1308651
 =======
@@ -346,6 +407,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15% ch
 
 effect 1  casts 15850 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=15850 target=[1,0]
+aura      May slow attackers.
 
 https://www.wowhead.com/forever/spell=15849
 =======
@@ -374,6 +436,8 @@ effect 1  -43% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-43 target=[6,0]
 effect 2  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+aura      Time between attacks increased by $s1%.
+          Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=12531
 =======
@@ -416,6 +480,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436516 misc=415450 target=[1,0]
+tooltip   Gain the Chronostatic Preservation ability:
+
+          $@spellicon436516
+          $@spelldesc436516
 
 https://www.wowhead.com/forever/spell=425187
 =======
@@ -431,6 +499,16 @@ refs      436517 Chronostatic Preservation
 
 effect 1  a dummy aura to the friendly target
           E_APPLY_AURA A_DUMMY base=0 target=[21,0]
+tooltip   $?a443369[Heals a friendly target for ${$<healpower>*$436517m1/100} to ${$<healpower>*$436517M1/100}.]
+
+          [Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to $d before it combusts and expires. When unleashed, heals a friendly target for ${$<healpower>*$436517m1/100} to ${$<healpower>*$436517M1/100}.
+
+          This spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.]
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=436516
 =======
@@ -441,6 +519,12 @@ range     40 yd
 
 effect 1  200–300 healing to the friendly target (+2.068 spell power)
           E_HEAL base=250 variance=0.4 sp=2.068 family=3 mask=0x0,0x0,0x100 target=[21,0]
+tooltip   Unleash stored chronomantic energy to instantly heal a friendly target for ${$<healpower>*$m1/100}to ${$<healpower>*$M1/100}.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=436517
 =======
@@ -454,6 +538,12 @@ effect 1  SPELLMOD_COST -100% on family 3 mask 0x0,0x0,0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=3 mask=0x0,0x0,0x100 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_CAST_WHILE_WALKING base=0 family=3 mask=0x0,0x0,0x100 target=[1,0]
+aura      Chronomantic energy ready to be unleashed. Instantly healing a friendly target for ${$<healpower>*$436517m1/100} to ${$<healpower>*$436517M1/100}.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=443369
 =======
@@ -463,6 +553,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401946 misc=399967 target=[1,0]
+tooltip   Gain the Circle of Healing ability:
+
+          $@spellicon401946
+          $@spelldesc401946
 
 https://www.wowhead.com/forever/spell=402842
 =======
@@ -476,6 +570,7 @@ cost      350 mana
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=5 target=[1,0]
+tooltip   Conjure $s1 Comprehension Charms.
 
 https://www.wowhead.com/forever/spell=435849
 =======
@@ -485,6 +580,9 @@ defense   magic
 
 effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=20 target=[1,0]
+tooltip   Conjures $s1 $lbottle:bottles; of spring water, providing the mage and $ghis:her; allies with something to drink.
+
+          Conjured items disappear if logged out for more than 15 minutes.
 
 https://www.wowhead.com/forever/spell=443635
 =======
@@ -494,6 +592,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425418 misc=399966 target=[1,0]
+tooltip   Gain the Consumed by Rage ability:
+
+          $@spellicon425418
+          $@spelldesc425418
 
 https://www.wowhead.com/forever/spell=425440
 =======
@@ -502,6 +604,7 @@ duration  permanent
 
 effect 1  SPELLMOD_RANGE +10 on family 3 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=5 family=3 mask=0x2 target=[1,0]
+tooltip   Mind Flay's, Fire Blast's, and Drain Life's ranges are increased by $s1 yards, but Mind Flay no longer slows enemies.
 
 https://www.wowhead.com/forever/spell=1231662
 =======
@@ -517,6 +620,8 @@ effect 2  immune to freeze
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=13 target=[1,0]
 effect 3  immune to root
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[1,0]
+tooltip   Teleports the caster 20 yd. forward unless something is in the way. Also frees the caster from any bonds.
+aura      Blinking...
 
 https://www.wowhead.com/forever/spell=29207
 =======
@@ -533,6 +638,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  20–22 frost damage to the enemy (at level 60, +0.163 spell power)
           E_SCHOOL_DAMAGE base=19 ppl=0.5 variance=0.10526316 sp=0.163 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=29163
 =======
@@ -548,6 +655,7 @@ range     10 yd
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=176501 radius=3 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Undercity.
 
 https://www.wowhead.com/forever/spell=28146
 =======
@@ -559,6 +667,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports you to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=1321337
 =======
@@ -570,6 +679,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports you to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=1321339
 =======
@@ -581,6 +691,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports you to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=1321343
 =======
@@ -593,6 +704,7 @@ range     100 yd
 
 effect 1  -50% strength to every enemy around the caster
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 misc2=1 radius=10 target=[22,15]
+aura      Strength reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=18948
 =======
@@ -605,6 +717,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  603–637 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=446 ppl=2.9 variance=0.076233186 sp=0.814 target=[6,0]
+tooltip   Debug launches a bolt of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=29607
 =======
@@ -614,6 +728,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440870 misc=415450 target=[1,0]
+tooltip   Gain the Decimation ability:
+
+          $@spellicon440870
+          $@spelldesc440870
 
 https://www.wowhead.com/forever/spell=440923
 =======
@@ -623,6 +741,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -10 s on family 3 mask 0x0,0x0,0x20000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=11 family=3 mask=0x0,0x0,0x20000000 target=[1,0]
+tooltip   Reduces the cooldown on your Frozen Orb spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=468273
 =======
@@ -639,6 +758,13 @@ refs      428917 Deep Freeze
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=100 mechanic=12 target=[6,0]
+tooltip   Stuns the target for $d.  Only usable on Frozen targets.  Deals ${$428917m1*$<power>/100*$<frostdamage>} to ${$428917M1*$<power>/100*$<frostdamage>} damage to targets permanently immune to Stun. This damage benefits from, but does not consume, stacks of Glaciate.
+aura      Stunned and Frozen.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=428739
 =======
@@ -671,6 +797,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428739 misc=417345 target=[1,0]
+tooltip   Gain the Deep Freeze ability:
+
+          $@spellicon428739
+          $@spelldesc428739
 
 https://www.wowhead.com/forever/spell=429303
 =======
@@ -680,6 +810,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425463 misc=399966 target=[1,0]
+tooltip   Gain the Demonic Grace ability:
+
+          $@spellicon425463
+          $@spelldesc425463
 
 https://www.wowhead.com/forever/spell=425474
 =======
@@ -689,6 +823,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425464 misc=399966 target=[1,0]
+tooltip   Gain the Demonic Pact ability:
+
+          $@spellicon425464
+          $@spelldesc425464
 
 https://www.wowhead.com/forever/spell=425473
 =======
@@ -698,6 +836,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412727 misc=399954 target=[1,0]
+tooltip   Gain the Demonic Tactics ability:
+
+          $@spellicon412727
+          $@spelldesc412727
 
 https://www.wowhead.com/forever/spell=415605
 =======
@@ -707,6 +849,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403195 misc=399967 target=[1,0]
+tooltip   Gain the Devastate ability:
+
+          $@spellicon403195
+          $@spelldesc403195
 
 https://www.wowhead.com/forever/spell=403355
 =======
@@ -735,6 +881,7 @@ refs      428865 Blinked
 
 effect 1  a dummy effect to the caster
           E_DUMMY base=0 target=[1,0]
+tooltip   Teleports back to where you last cast Blink from and resets the cooldown on Blink. Only usable within $428865d of casting Blink.
 
 https://www.wowhead.com/forever/spell=428861
 =======
@@ -745,6 +892,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428861 misc=417346 target=[1,0]
+tooltip   Gain the Displacement ability:
+
+          $@spellicon428861
+          $@spelldesc428861
 
 https://www.wowhead.com/forever/spell=428863
 =======
@@ -755,6 +906,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=431622 misc=417345 target=[1,0]
+tooltip   Gain the Divine Aegis ability:
+
+          $@spellicon431622
+          $@spelldesc431622
 
 https://www.wowhead.com/forever/spell=431649
 =======
@@ -765,6 +920,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408258 misc=415450 target=[1,0]
+tooltip   Gain the Dreamstate ability:
+
+          $@spellicon408258
+          $@spelldesc408258
 
 https://www.wowhead.com/forever/spell=409831
 =======
@@ -781,6 +940,7 @@ effect 1  casts 469433 Poison Bolt every 1 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=469433 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches a barrage of Earth at the enemy, causing $7268s1  Nature damage each second for $d.
 
 https://www.wowhead.com/forever/spell=469057
 =======
@@ -792,6 +952,7 @@ refs      1238289 Earthbound
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   Your Earthbind Totem Immobilizes nearby targets for $1238289d when cast.
 
 https://www.wowhead.com/forever/spell=1222988
 =======
@@ -807,6 +968,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  +200 holy+fire+nature+frost+shadow+arcane damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=200 misc=126 target=[6,0]
+aura      Vulnerable to elemental power, increasing the damage taken from spells by up to $s1.
 
 https://www.wowhead.com/forever/spell=28772
 =======
@@ -817,6 +979,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414719 misc=417346 target=[1,0]
+tooltip   Gain the Elune's Fires ability:
+
+          $@spellicon414719
+          $@spelldesc414719
 
 https://www.wowhead.com/forever/spell=415762
 =======
@@ -827,6 +993,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=100 sp=1 misc=4235 family=3 mask=0x80 target=[1,0]
+tooltip   Your Blizzard spell has a 30% chance to be uninterruptible.
 
 https://www.wowhead.com/forever/spell=26127
 =======
@@ -838,6 +1005,7 @@ refs      26129 Enigma's Answer
 
 effect 1  casts 26129 Enigma's Answer on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26129 target=[1,0]
+tooltip   Grants +$26129s1% increased spell hit chance for $26129d when one of your spells is resisted.
 
 https://www.wowhead.com/forever/spell=26128
 =======
@@ -849,6 +1017,7 @@ stack     up to 1
 
 effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 3 mask 0x80
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=3 mask=0x80 target=[1,0]
+aura      Uninterruptable while casting Blizzard.
 
 https://www.wowhead.com/forever/spell=26132
 =======
@@ -864,6 +1033,7 @@ effect 3  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
 effect 4  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   You deal $s1% more damage while you have more than $s2% mana. While below $s3% mana $s4% of your mana regeneration continues while casting.
 
 https://www.wowhead.com/forever/spell=412324
 =======
@@ -873,6 +1043,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412324 misc=399954 target=[1,0]
+tooltip   Gain the Enlightenment ability:
+
+          $@spellicon412324
+          $@spelldesc412324
 
 https://www.wowhead.com/forever/spell=415729
 =======
@@ -892,6 +1066,8 @@ effect 3  SPELLMOD_DOT +10% on every spell of family 3
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=22 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage for $d.
+aura      Damaging abilities cost $w1% less Mana and deal $w2% more damage.
 
 https://www.wowhead.com/forever/spell=1259817
 =======
@@ -901,6 +1077,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412689 misc=399966 target=[1,0]
+tooltip   Gain the Everlasting Affliction ability:
+
+          $@spellicon412689
+          $@spelldesc412689
 
 https://www.wowhead.com/forever/spell=415604
 =======
@@ -913,6 +1093,7 @@ effect 1  +5% every school damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=5 sp=1 misc=127 target=[21,0]
 effect 2  a dummy effect holding 1 to the friendly target
           E_DUMMY base=1 target=[21,0]
+aura      All damage done increased by $w1%.
 
 https://www.wowhead.com/forever/spell=1218701
 =======
@@ -923,6 +1104,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402789 misc=417345 target=[1,0]
+tooltip   Gain the Eye of the Void ability:
+
+          $@spellicon402789
+          $@spelldesc402789
 
 https://www.wowhead.com/forever/spell=402846
 =======
@@ -934,6 +1119,8 @@ effect 1  +100% physical and spell crit
           E_APPLY_AURA A_MOD_CRIT_PCT base=100 target=[1,0]
 effect 2  +100% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=100 target=[1,0]
+tooltip   All attacks are guaranteed to land and will be critical strikes for the next $d.
+aura      Chance to critically strike increased by $s1% and chance to hit increased by $s2%.
 
 https://www.wowhead.com/forever/spell=16551
 =======
@@ -963,6 +1150,7 @@ effect 1  casts 469370 Firebolt every 1 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=469370 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches a barrage of Fire at the enemy, causing $7268s1  Fire damage each second for $d.
 
 https://www.wowhead.com/forever/spell=469055
 =======
@@ -977,6 +1165,8 @@ effect 1  SPELLMOD_COST -1000% on family 3 mask 0x1,0x1000,0x40,0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-1000 misc=14 family=3 mask=0x1,0x1000,0x40,0x4000 target=[1,0]
 effect 2  SPELLMOD_CASTING_TIME -10000% on family 3 mask 0x1,0x1000,0x40,0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-10000 misc=10 family=3 mask=0x1,0x1000,0x40,0x4000 target=[1,0]
+tooltip   Your next Fireball, Spellfrost Bolt, Balefire Bolt, or Frostfire Bolt spell is instant and costs no mana.
+aura      Your next Fireball, Spellfrost Bolt, Balefire Bolt, or Frostfire Bolt spell is instant and costs no mana.
 
 https://www.wowhead.com/forever/spell=400730
 =======
@@ -987,6 +1177,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_DOT +24 on family 3 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=24 sp=1 misc=22 family=3 mask=0x1 target=[1,0]
+tooltip   Increases the added fire damage of your Fireballs by $s1 per period.
 
 https://www.wowhead.com/forever/spell=21230
 =======
@@ -1000,6 +1191,7 @@ range     30 yd
 
 effect 1  50–70 fire damage to the enemy
           E_SCHOOL_DAMAGE base=60 variance=0.33333334 target=[6,0]
+tooltip   Blasts a target for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=13441
 =======
@@ -1011,6 +1203,7 @@ range     50000 yd
 
 effect 1  94–116 fire damage to the enemy
           E_SCHOOL_DAMAGE base=105 variance=0.2 target=[6,0]
+tooltip   Blasts a target for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=18833
 =======
@@ -1024,6 +1217,7 @@ range     30 yd
 
 effect 1  40–56 fire damage to the enemy
           E_SCHOOL_DAMAGE base=48 variance=0.33333334 target=[6,0]
+tooltip   Blasts a target for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=23267
 =======
@@ -1035,6 +1229,7 @@ range     30 yd
 
 effect 1  98–122 fire damage to the enemy
           E_SCHOOL_DAMAGE base=110 variance=0.21818182 target=[6,0]
+tooltip   Blasts a target for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=461695
 =======
@@ -1044,6 +1239,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402877 misc=399954 target=[1,0]
+tooltip   Gain the Flagellation ability:
+
+          $@spellicon402877
+          $@spelldesc402877
 
 https://www.wowhead.com/forever/spell=403344
 =======
@@ -1066,6 +1265,7 @@ effect 1  1356–1567 fire damage to every enemy around the caster
           E_SCHOOL_DAMAGE base=1461.7435 variance=0.144 radius=10 target=[22,15]
 effect 2  unrecognised shape
           E_KNOCK_BACK base=100 sp=1 misc=200 radius=10 target=[22,15]
+tooltip   Inflicts Fire damage to nearby enemies, knocking them back.
 
 https://www.wowhead.com/forever/spell=16785
 =======
@@ -1076,6 +1276,8 @@ duration  2 s
 
 effect 1  stuns to every enemy around the caster
           E_APPLY_AURA A_MOD_STUN base=0 radius=15 target=[22,15]
+tooltip   Knocks down and stuns nearby enemies on death.
+aura      Knocked down and stunned.
 
 https://www.wowhead.com/forever/spell=28323
 =======
@@ -1086,6 +1288,7 @@ range     30 yd
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
+tooltip   Dispels a magic effect on the current foe.
 
 https://www.wowhead.com/forever/spell=1302360
 =======
@@ -1111,6 +1314,7 @@ effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=1 target=[6,0]
 effect 2  unrecognised shape
           E_POWER_DRAIN base=500 sp=1 amplitude=1 target=[6,0]
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=17011
 =======
@@ -1120,6 +1324,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425412 misc=399966 target=[1,0]
+tooltip   Gain the Frenzied Assault ability:
+
+          $@spellicon425412
+          $@spelldesc425412
 
 https://www.wowhead.com/forever/spell=425442
 =======
@@ -1135,6 +1343,7 @@ effect 2  SPELLMOD_THREAT -2000 on family 3 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=2 family=3 mask=0x1 target=[1,0]
 effect 3  SPELLMOD_THREAT -2000 on family 3 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=2 family=3 mask=0x200000 target=[1,0]
+tooltip   Reduces the threat generated by your Scorch,  Arcane Missiles, Fireball, and Frostbolt spells.
 
 https://www.wowhead.com/forever/spell=21879
 =======
@@ -1148,6 +1357,8 @@ effect 1  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Increases the damage done by your Frost spells by $s1%.
+aura      Increases the damage done by your Frost spells by $w1%.
 
 https://www.wowhead.com/forever/spell=1326891
 =======
@@ -1161,6 +1372,7 @@ range     30 yd
 
 effect 1  80–90 frost damage to the enemy
           E_SCHOOL_DAMAGE base=85 variance=0.11764706 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=14105
 =======
@@ -1174,6 +1386,7 @@ range     30 yd
 
 effect 1  30 frost damage to the enemy
           E_SCHOOL_DAMAGE base=30 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=16407
 =======
@@ -1187,6 +1400,7 @@ range     30 yd
 
 effect 1  65 frost damage to the enemy
           E_SCHOOL_DAMAGE base=65 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=18085
 =======
@@ -1200,6 +1414,7 @@ range     30 yd
 
 effect 1  45 frost damage to the enemy
           E_SCHOOL_DAMAGE base=45 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=18398
 =======
@@ -1213,6 +1428,7 @@ range     30 yd
 
 effect 1  160–250 frost damage to the enemy
           E_SCHOOL_DAMAGE base=205 variance=0.4390244 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=19260
 =======
@@ -1226,6 +1442,7 @@ range     30 yd
 
 effect 1  75 frost damage to the enemy
           E_SCHOOL_DAMAGE base=75 target=[6,0]
+tooltip   Blasts a target for $s1 Frost damage.
 
 https://www.wowhead.com/forever/spell=20869
 =======
@@ -1243,6 +1460,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  28–31 frost damage to the enemy (at level 60, +0.271 spell power)
           E_SCHOOL_DAMAGE base=26 ppl=0.3 variance=0.10526316 sp=0.271 target=[6,0]
+tooltip   Quickly launch a weak blast of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
 
 https://www.wowhead.com/forever/spell=1326053
 =======
@@ -1260,6 +1479,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  48–53 frost damage to the enemy (at level 60, +0.271 spell power)
           E_SCHOOL_DAMAGE base=45 ppl=0.5 variance=0.10526316 sp=0.271 target=[6,0]
+tooltip   Quickly launch a weak blast of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
 
 https://www.wowhead.com/forever/spell=1326054
 =======
@@ -1277,6 +1498,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  80–89 frost damage to the enemy (at level 60, +0.271 spell power)
           E_SCHOOL_DAMAGE base=77 ppl=0.6 variance=0.10526316 sp=0.271 target=[6,0]
+tooltip   Quickly launch a weak blast of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
 
 https://www.wowhead.com/forever/spell=1326055
 =======
@@ -1289,6 +1512,9 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 3 mask 0x20,0x0,0x4040
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=3 mask=0x20,0x0,0x4040 target=[1,0]
 effect 2  SPELLMOD_CRIT_DAMAGE_BONUS +50% on family 3 mask 0x20,0x0,0x4040
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 sp=1 misc=15 family=3 mask=0x20,0x0,0x4040 target=[1,0]
+tooltip   Increases the critical hit chance of your Frostbolt, Spellfrost Bolt, and Frozen Orb spells by $s1%, and increases the critical hit damage of your Frostbolt, Spellfrost Bolt, and Frozen Orb spells by $s2% for $d.
+aura      Frostbolt, Spellfrost Bolt, and Frozen Orb spell critical hit chance increased by $s1%.
+          Frostbolt, Spellfrost Bolt, and Frozen Orb spell critical hit damage increased by $s2%.
 
 https://www.wowhead.com/forever/spell=468512
 =======
@@ -1305,6 +1531,7 @@ effect 1  casts 469371 Waterbolt every 1 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=469371 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches a barrage of Frost at the enemy, causing $7268s1  Frost damage each second for $d.
 
 https://www.wowhead.com/forever/spell=469056
 =======
@@ -1315,6 +1542,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_DAMAGE +45 on family 3 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=45 sp=1 family=3 mask=0x20 target=[1,0]
+tooltip   Your Frostbolts do $s1 extra damage.
 
 https://www.wowhead.com/forever/spell=21229
 =======
@@ -1325,6 +1553,8 @@ range     100 yd
 
 effect 1  98 fire damage to the enemy
           E_SCHOOL_DAMAGE base=98 target=[6,0]
+tooltip   Deal $s2 Fire damage.
+aura      Deals $s2 Fire damage.
 
 https://www.wowhead.com/forever/spell=1300130
 =======
@@ -1337,6 +1567,7 @@ effect 1  casts 24405 Icy Energy when the target is hit from family 3 mask 0x20
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=6 trigger=24405 family=3 mask=0x20 target=[1,0]
 effect 2  a dummy effect holding 50
           E_DUMMY base=50 target=[0,0]
+tooltip   Your Frostbolt spells have a $s1% chance to restore $s2 mana when cast.
 
 https://www.wowhead.com/forever/spell=24392
 =======
@@ -1346,6 +1577,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403219 misc=399966 target=[1,0]
+tooltip   Gain the Furious Thunder ability:
+
+          $@spellicon403219
+          $@spelldesc403219
 
 https://www.wowhead.com/forever/spell=403356
 =======
@@ -1358,6 +1593,8 @@ range     30 yd
 
 effect 1  +25 holy+fire+nature+frost+shadow+arcane damage done to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=25 misc=126 target=[21,0]
+tooltip   Increases the magical damage dealt by an ally by $s1 for $d.
+aura      Magical damage dealt is increased by $s1.
 
 https://www.wowhead.com/forever/spell=15288
 =======
@@ -1367,6 +1604,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414799 misc=399954 target=[1,0]
+tooltip   Gain the Fury of Stormrage ability:
+
+          $@spellicon414799
+          $@spelldesc414799
 
 https://www.wowhead.com/forever/spell=409832
 =======
@@ -1379,6 +1620,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 20 from family 3 mask 0x20000 to the enemy
           E_APPLY_AURA A_DUMMY base=20 family=3 mask=0x20000 target=[6,0]
+aura      Target takes $s1% increased damage from the caster's next Ice Lance.
 
 https://www.wowhead.com/forever/spell=1218345
 =======
@@ -1390,6 +1632,7 @@ refs      12579 Winter's Chill
 
 effect 1  casts 1218345 Glaciate on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1218345 target=[1,0]
+tooltip   Gives your Frost damage spells a $h% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by $12579s1% for $12579d.  Stacks up to $12579u times.
 
 https://www.wowhead.com/forever/spell=1218352
 =======
@@ -1399,6 +1642,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412513 misc=415450 target=[1,0]
+tooltip   Gain the Gladiator Stance ability:
+
+          $@spellicon412513
+          $@spelldesc412513
 
 https://www.wowhead.com/forever/spell=415598
 =======
@@ -1409,6 +1656,7 @@ refs      415233 Ghost Wolf
 
 effect 1  replaces an action bar spell with 2645 Ghost Wolf
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415233 misc=2645 target=[1,0]
+tooltip   Your Ghost Wolf ability can now be used indoors, and reduces all damage you take by $415233s3% while active.
 
 https://www.wowhead.com/forever/spell=415813
 =======
@@ -1423,6 +1671,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=300 target=[1,0]
+tooltip   Turns the caster invisible for $d, though this spell is unstable and may end early.
+aura      Greater invisibility.
 
 https://www.wowhead.com/forever/spell=10228
 =======
@@ -1433,6 +1683,8 @@ duration  permanent
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=300 sp=1 target=[1,0]
+tooltip   Turns the caster invisible until the effect is cancelled.
+aura      Invisible.
 
 https://www.wowhead.com/forever/spell=16380
 =======
@@ -1446,6 +1698,8 @@ effect 1  122–158 fire damage to the enemy
           E_SCHOOL_DAMAGE base=140 variance=0.25714287 target=[6,0]
 effect 2  15 fire damage every 2 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
+tooltip   Fire the Gun Axe at your target. Dealing $s1 Fire damage and an additional $o2 damage over $d.
+aura      $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=446106
 =======
@@ -1460,6 +1714,9 @@ effect 1  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
 effect 2  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+aura      Spooked!
+          Time between attacks increased by $s1%.
+          Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=25022
 =======
@@ -1486,6 +1743,8 @@ effect 1  1403.2738 fire damage to the enemy
           E_SCHOOL_DAMAGE base=1403.2738 target=[6,0]
 effect 2  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 sp=1 mechanic=12 target=[6,0]
+tooltip   Inflicts Fire damage to an enemy, stunning it for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=17492
 =======
@@ -1495,6 +1754,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415236 misc=399954 target=[1,0]
+tooltip   Gain the Healing Rain ability:
+
+          $@spellicon415236
+          $@spelldesc415236
 
 https://www.wowhead.com/forever/spell=415714
 =======
@@ -1506,6 +1769,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to the Darnassus.
 
 https://www.wowhead.com/forever/spell=26409
 =======
@@ -1517,6 +1781,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to the Ironforge.
 
 https://www.wowhead.com/forever/spell=26408
 =======
@@ -1528,6 +1793,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=26414
 =======
@@ -1539,6 +1805,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to the Stormwind.
 
 https://www.wowhead.com/forever/spell=26406
 =======
@@ -1550,6 +1817,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to Thunderbluff.
 
 https://www.wowhead.com/forever/spell=26412
 =======
@@ -1561,6 +1829,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=0 sp=1 target=[21,0]
+tooltip   Teleports the caster to the Undercity.
 
 https://www.wowhead.com/forever/spell=26410
 =======
@@ -1572,6 +1841,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Darnassus.
 
 https://www.wowhead.com/forever/spell=26450
 =======
@@ -1583,6 +1853,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Ironforge.
 
 https://www.wowhead.com/forever/spell=26452
 =======
@@ -1594,6 +1865,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=26453
 =======
@@ -1605,6 +1877,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Stormwind.
 
 https://www.wowhead.com/forever/spell=26454
 =======
@@ -1616,6 +1889,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to Thunderbluff.
 
 https://www.wowhead.com/forever/spell=26455
 =======
@@ -1627,6 +1901,7 @@ range     15 yd
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Undercity.
 
 https://www.wowhead.com/forever/spell=26456
 =======
@@ -1637,6 +1912,7 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[25,17]
+tooltip   Teleports the caster to the Moonglade.
 
 https://www.wowhead.com/forever/spell=26448
 =======
@@ -1647,6 +1923,7 @@ gcd       1.5 s
 
 effect 1  unrecognised shape
           E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+tooltip   Teleports the caster to the Moonglade.
 
 https://www.wowhead.com/forever/spell=26451
 =======
@@ -1656,6 +1933,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402799 misc=399966 target=[1,0]
+tooltip   Gain the Homunculi ability:
+
+          $@spellicon402799
+          $@spelldesc402799
 
 https://www.wowhead.com/forever/spell=402836
 =======
@@ -1667,6 +1948,8 @@ labels    17
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 3 mask 0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=3 mask=0x400000 target=[1,0]
+tooltip   Any time you score 2 spell criticals in a row using using Fireball, Fire Blast, Scorch, Living Bomb, or Frostfire Bolt, you have a chance the next Pyroblast spell cast within $d will be instant cast.
+aura      Your next Pyroblast spell is instant cast.
 
 https://www.wowhead.com/forever/spell=48108
 =======
@@ -1677,6 +1960,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400624 misc=417345 target=[1,0]
+tooltip   Gain the Hot Streak ability:
+
+          $@spellicon400624
+          $@spelldesc400624
 
 https://www.wowhead.com/forever/spell=401724
 =======
@@ -1690,6 +1977,7 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  14 frost damage to the enemy
           E_SCHOOL_DAMAGE base=14 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=1292739
 =======
@@ -1708,6 +1996,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +7 on family 3 mask 0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=7 sp=1 misc=8 family=3 mask=0x400 target=[1,0]
+tooltip   Your Arcane Intellect provides +$s1 more Intellect than normal.
 
 https://www.wowhead.com/forever/spell=21088
 =======
@@ -1718,6 +2007,7 @@ labels    17
 
 effect 1  SPELLMOD_COST -5% on family 3 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=3 mask=0x400 target=[1,0]
+tooltip   Decreases the mana cost of Arcane Intellect and Arcane Brilliance by $s1%.
 
 https://www.wowhead.com/forever/spell=24489
 =======
@@ -1728,6 +2018,7 @@ labels    17
 
 effect 1  SPELLMOD_COOLDOWN -15 s on family 3 mask 0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15000 misc=11 family=3 mask=0x10000 target=[1,0]
+tooltip   Reduces the cooldown of your Blink spell by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=11262
 =======
@@ -1738,6 +2029,7 @@ labels    17
 
 effect 1  SPELLMOD_COOLDOWN -30 s on family 3 mask 0x10000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 misc=11 family=3 mask=0x10000 target=[1,0]
+tooltip   Reduces the cooldown of your Blink spell by $/1000;s1 secs.
 
 https://www.wowhead.com/forever/spell=12604
 =======
@@ -1747,6 +2039,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412758 misc=417346 target=[1,0]
+tooltip   Gain the Incinerate ability:
+
+          $@spellicon412758
+          $@spelldesc412758
 
 https://www.wowhead.com/forever/spell=415750
 =======
@@ -1757,6 +2053,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +25% on family 3 mask 0x1084
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=6 family=3 mask=0x1084 target=[1,0]
+tooltip   Increases the radius of Arcane Explosion, Flamestrike, and Blizzard by $s1%.
 
 https://www.wowhead.com/forever/spell=23549
 =======
@@ -1766,6 +2063,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440882 misc=417347 target=[1,0]
+tooltip   Gain the Infernal Armor ability:
+
+          $@spellicon440882
+          $@spelldesc440882
 
 https://www.wowhead.com/forever/spell=440927
 =======
@@ -1775,6 +2076,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN +0 s on family 3 mask 0x20c21af7,0x129000,0x30040040,0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=21 family=3 mask=0x20c21af7,0x129000,0x30040040,0x4000 target=[1,0]
+tooltip   The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1230948
 =======
@@ -1789,6 +2092,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=200 target=[1,0]
+tooltip   Turns the caster invisible for $d, though this spell is unstable and may end early.
+aura      Invisibility.
 
 https://www.wowhead.com/forever/spell=885
 =======
@@ -1801,6 +2106,8 @@ range     20 yd
 
 effect 1  +30 intellect to the friendly target
           E_APPLY_AURA A_MOD_STAT base=30 misc=3 target=[21,0]
+tooltip   Increases the target's Intellect by $M1 for $d.
+aura      Increases Intellect by $M1.
 
 https://www.wowhead.com/forever/spell=16327
 =======
@@ -1814,6 +2121,7 @@ range     5 yd
 
 effect 1  unrecognised shape
           E_OPEN_LOCK base=15 ppl=5 misc=1 target=[26,0]
+tooltip   Magically unlocks treasure chests and other locked items.
 
 https://www.wowhead.com/forever/spell=491
 =======
@@ -1827,6 +2135,7 @@ range     5 yd
 
 effect 1  unrecognised shape
           E_OPEN_LOCK base=75 ppl=5 misc=1 target=[26,0]
+tooltip   Magically unlocks treasure chests and other locked items.
 
 https://www.wowhead.com/forever/spell=857
 =======
@@ -1840,6 +2149,7 @@ range     5 yd
 
 effect 1  unrecognised shape
           E_OPEN_LOCK base=135 ppl=5 misc=1 target=[26,0]
+tooltip   Magically unlocks treasure chests and other locked items.
 
 https://www.wowhead.com/forever/spell=10165
 =======
@@ -1853,6 +2163,7 @@ range     5 yd
 
 effect 1  unrecognised shape
           E_OPEN_LOCK base=195 ppl=5 misc=1 target=[26,0]
+tooltip   Magically unlocks treasure chests and other locked items.
 
 https://www.wowhead.com/forever/spell=10166
 =======
@@ -1863,6 +2174,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409593 misc=415449 target=[1,0]
+tooltip   Gain the Kill Shot ability:
+
+          $@spellicon409593
+          $@spelldesc409593
 
 https://www.wowhead.com/forever/spell=415720
 =======
@@ -1872,6 +2187,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414644 misc=399966 target=[1,0]
+tooltip   Gain the Lacerate ability:
+
+          $@spellicon414644
+          $@spelldesc414644
 
 https://www.wowhead.com/forever/spell=415760
 =======
@@ -1886,6 +2205,8 @@ labels    17
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_INVISIBILITY base=100 target=[1,0]
+tooltip   Turns the caster invisible for $d, though this spell is unstable and may end early.
+aura      Lesser Invisibility.
 
 https://www.wowhead.com/forever/spell=66
 =======
@@ -1902,6 +2223,7 @@ effect 1  casts 469372 Lightning Bolt every 1 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=1000ms trigger=469372 target=[1,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Launches a barrage of Lightning at the enemy, causing $7268s1  Nature damage each second for $d.
 
 https://www.wowhead.com/forever/spell=469058
 =======
@@ -1911,6 +2233,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414677 misc=399954 target=[1,0]
+tooltip   Gain the Living Seed ability:
+
+          $@spellicon414677
+          $@spelldesc414677
 
 https://www.wowhead.com/forever/spell=415761
 =======
@@ -1921,6 +2247,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415413 misc=417345 target=[1,0]
+tooltip   Gain the Lock and Load ability:
+
+          $@spellicon415413
+          $@spelldesc415413
 
 https://www.wowhead.com/forever/spell=415719
 =======
@@ -1935,6 +2265,7 @@ effect 1  unrecognised shape
           E_ACTIVATE_OBJECT base=0 misc=5 target=[40,0]
 effect 2  a dummy effect to every enemy in the area
           E_DUMMY base=0 radius=20 target=[22,7]
+tooltip   Teleports the caster from within Greater Moonlight.
 
 https://www.wowhead.com/forever/spell=26373
 =======
@@ -1945,6 +2276,7 @@ attrs     passive
 
 effect 1  +3% holy+fire+nature+frost+shadow+arcane power cost
           E_APPLY_AURA A_MOD_POWER_COST_SCHOOL_PCT base=3 misc=126 target=[1,0]
+tooltip   Reduces the mana cost of your spells by $s1%.
 
 https://www.wowhead.com/forever/spell=27514
 =======
@@ -1955,6 +2287,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +285 on family 3 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=285 misc=8 family=3 mask=0x8000 target=[1,0]
+tooltip   Increases the damage absorbed by your Mana Shield by $s1.
 
 https://www.wowhead.com/forever/spell=23037
 =======
@@ -1964,6 +2297,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +285 on family 3 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=285 misc=8 family=3 mask=0x8000 target=[1,0]
+tooltip   Increases the damage absorbed by your Mana Shield by $s1.
 
 https://www.wowhead.com/forever/spell=459599
 =======
@@ -1983,6 +2317,13 @@ effect 5  replaces an action bar spell with 9849 Claw
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407993 misc=9849 target=[1,0]
 effect 6  replaces an action bar spell with 9850 Claw
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407993 misc=9850 target=[1,0]
+tooltip   Gain the Mangle (Bear) ability and replace your Claw ability with Mangle (Cat). This ability benefits from and triggers all effects associated with Claw and Maul.
+
+          $@spellicon407995
+          $@spelldesc407995
+
+          $@spellicon407993
+          $@spelldesc407993
 
 https://www.wowhead.com/forever/spell=409828
 =======
@@ -1997,6 +2338,7 @@ effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=178404 radius=3 target=[47,0]
 effect 2  unrecognised shape
           E_ACTIVATE_OBJECT base=1 misc=8 target=[40,0]
+tooltip   Creates a portal, teleporting group members that use it to Earth Song Falls in inner Maraudon.
 
 https://www.wowhead.com/forever/spell=21127
 =======
@@ -2006,6 +2348,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440892 misc=417347 target=[1,0]
+tooltip   Gain the Mark of Chaos ability:
+
+          $@spellicon440892
+          $@spelldesc440892
 
 https://www.wowhead.com/forever/spell=440925
 =======
@@ -2016,6 +2362,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=403228 misc=399966 target=[1,0]
+tooltip   Gain the Meathook ability:
+
+          $@spellicon403228
+          $@spelldesc403228
 
 https://www.wowhead.com/forever/spell=403436
 =======
@@ -2026,6 +2376,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415352 misc=415449 target=[1,0]
+tooltip   Gain the Melee Specialist ability:
+
+          $@spellicon415352
+          $@spelldesc415352
 
 https://www.wowhead.com/forever/spell=415723
 =======
@@ -2036,6 +2390,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415140 misc=417345 target=[1,0]
+tooltip   Gain the Mental Dexterity ability:
+
+          $@spellicon415140
+          $@spelldesc415140
 
 https://www.wowhead.com/forever/spell=415713
 =======
@@ -2045,6 +2403,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413259 misc=399967 target=[1,0]
+tooltip   Gain the Mind Sear ability:
+
+          $@spellicon413259
+          $@spelldesc413259
 
 https://www.wowhead.com/forever/spell=415738
 =======
@@ -2066,6 +2428,13 @@ effect 3  +5% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=5 target=[1,0]
 effect 4  a dummy aura every 6 s (300 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=6000ms target=[1,0]
+tooltip   Causes ${$428743m1/100*$<power>} Fire damage when hit, increases your spell critical strike chance by $s3%, and reduces the chance you are critically hit by $s2%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Causes Fire damage to attackers.  Chance to receive a critical hit reduced by $s2%.  Spell critical strike chance increased by $s3%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=428741
 =======
@@ -2087,6 +2456,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428741 misc=417346 target=[1,0]
+tooltip   Gain the Molten Armor ability:
+
+          $@spellicon428741
+          $@spelldesc428741
 
 https://www.wowhead.com/forever/spell=429307
 =======
@@ -2096,6 +2469,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408307 misc=399967 target=[1,0]
+tooltip   Gain the Nature's Fury ability:
+
+          $@spellicon408307
+          $@spelldesc408307
 
 https://www.wowhead.com/forever/spell=409826
 =======
@@ -2106,6 +2483,7 @@ range     60 yd
 
 effect 1  a dummy effect holding 1 to target 38
           E_DUMMY base=1 sp=1 target=[38,0]
+tooltip   Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 https://www.wowhead.com/forever/spell=16070
 =======
@@ -2118,6 +2496,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 10% chance, from effect 1
 
 effect 1  casts 22008 Netherwind Focus on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=22008 target=[1,0]
+tooltip   $s1% chance after casting Arcane Missiles, Fireball, or Frostbolt that your next spell with a casting time under 10 seconds cast instantly.
 
 https://www.wowhead.com/forever/spell=22007
 =======
@@ -2130,6 +2509,7 @@ effect 1  SPELLMOD_CASTING_TIME -10 s on family 3 mask 0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 sp=1 misc=10 family=3 mask=0x40000000 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=0 sp=1 misc=4081 family=3 mask=0x40000000 target=[1,0]
+aura      Your next spell casts instantly.
 
 https://www.wowhead.com/forever/spell=22008
 =======
@@ -2150,6 +2530,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  -100% threat
           E_APPLY_AURA A_MOD_THREAT base=-100 misc=126 target=[1,0]
+aura      Reduces the threat generated by your next damage spell by $s1%.
 
 https://www.wowhead.com/forever/spell=28762
 =======
@@ -2160,6 +2541,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408247 misc=415449 target=[1,0]
+tooltip   Gain the Nourish ability:
+
+          $@spellicon408247
+          $@spelldesc408247
 
 https://www.wowhead.com/forever/spell=409830
 =======
@@ -2174,6 +2559,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 3 mask 0xffffffff,0xffffffff,0xf7fff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=3 mask=0xffffffff,0xffffffff,0xf7ffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216481
 =======
@@ -2200,6 +2587,7 @@ effect 8  replaces an action bar spell with 10199 Fire Blast
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400623 misc=10199 misc2=1 target=[1,0]
 effect 9  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Fire Blast will always deal a critical strike, can be cast while casting another spell, and is not affected by the global cooldown, but its cooldown is increased to $s9 sec.
 
 https://www.wowhead.com/forever/spell=400615
 =======
@@ -2210,6 +2598,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400615 misc=417347 target=[1,0]
+tooltip   Gain the Overheat ability:
+
+          $@spellicon400615
+          $@spelldesc400615
 
 https://www.wowhead.com/forever/spell=401737
 =======
@@ -2220,6 +2612,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413251 misc=417345 target=[1,0]
+tooltip   Gain the Pain and Suffering ability:
+
+          $@spellicon413251
+          $@spelldesc413251
 
 https://www.wowhead.com/forever/spell=415481
 =======
@@ -2229,6 +2625,7 @@ duration  permanent
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_IGNORE_SPELL_COOLDOWN base=1 family=3 mask=0x10000 target=[1,0]
+aura      You are on the path
 
 https://www.wowhead.com/forever/spell=421063
 =======
@@ -2238,6 +2635,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402174 misc=399967 target=[1,0]
+tooltip   Gain the Penance ability:
+
+          $@spellicon402174
+          $@spelldesc402174
 
 https://www.wowhead.com/forever/spell=402844
 =======
@@ -2250,6 +2651,8 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  casts 13567 Dummy Trigger on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=13567 target=[1,0]
+tooltip   Your magical heals provide the target with a shield that absorbs damage equal to 15% of the amount healed for $d.
+aura      Provides damage absorption on heal.
 
 https://www.wowhead.com/forever/spell=26467
 =======
@@ -2260,6 +2663,7 @@ range     50000 yd
 
 effect 1  absorbs 1 every school damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1 misc=127 target=[21,0]
+aura      Absorbs damage.
 
 https://www.wowhead.com/forever/spell=26470
 =======
@@ -2274,6 +2678,7 @@ range     10 yd
 
 effect 1  unrecognised shape
           E_TRANS_DOOR base=0 misc=181146 radius=3 target=[47,0]
+tooltip   Creates a portal, teleporting group members that use it to Karazhan.
 
 https://www.wowhead.com/forever/spell=28148
 =======
@@ -2283,6 +2688,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425207 misc=417346 target=[1,0]
+tooltip   Gain the Power Word: Barrier ability:
+
+          $@spellicon425207
+          $@spelldesc425207
 
 https://www.wowhead.com/forever/spell=425212
 =======
@@ -2292,6 +2701,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401859 misc=399966 target=[1,0]
+tooltip   Gain the Prayer of Mending ability:
+
+          $@spellicon401859
+          $@spelldesc401859
 
 https://www.wowhead.com/forever/spell=402832
 =======
@@ -2306,6 +2719,7 @@ range     10 yd
 
 effect 1  unrecognised shape
           E_PORTAL base=0 radius=5 target=[17,30]
+tooltip   Used by Princess Bronzebeard to open a portal to Ironforge.
 
 https://www.wowhead.com/forever/spell=13912
 =======
@@ -2321,6 +2735,8 @@ effect 2  15 fire damage every 2 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=2000ms target=[6,0]
 effect 3  +30 holy+fire damage taken to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_TAKEN base=30 misc=6 target=[6,0]
+tooltip   Hurls a fiery ball that causes $s1 Fire damage and purges the target's soul, increasing Fire and Holy damage taken by up to $s3 and dealing an additional $o2 damage over $d.
+aura      Fire and Holy damage taken increased by up to $s3 and taking $s2 Fire damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=460338
 =======
@@ -2333,6 +2749,7 @@ charges   1
 
 effect 1  SPELLMOD_CASTING_TIME -99% on family 3 mask 0x80000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-99 misc=10 family=3 mask=0x80000000 target=[1,0]
+aura      Rapid casting speed.
 
 https://www.wowhead.com/forever/spell=27204
 =======
@@ -2342,6 +2759,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=429765 misc=399967 target=[1,0]
+tooltip   Gain the Quick Strike ability:
+
+          $@spellicon429765
+          $@spelldesc429765
 
 https://www.wowhead.com/forever/spell=425428
 =======
@@ -2351,6 +2772,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402911 misc=399954 target=[1,0]
+tooltip   Gain the Raging Blow ability:
+
+          $@spellicon402911
+          $@spelldesc402911
 
 https://www.wowhead.com/forever/spell=425429
 =======
@@ -2361,6 +2786,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415405 misc=417345 target=[1,0]
+tooltip   Gain the Rapid Killing ability:
+
+          $@spellicon415405
+          $@spelldesc415405
 
 https://www.wowhead.com/forever/spell=415817
 =======
@@ -2376,6 +2805,16 @@ refs      400735 Temporal Beacon
 
 effect 1  75 healing every 0.5 s to the friendly target (3 ticks, +0.215 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=75 sp=0.215 period=500ms amplitude=1 target=[21,0]
+tooltip   Heals the target for ${$<healpower>*$m1/100*3} health over $d and applies Temporal Beacon for ${$400735m3*2/3} sec.
+
+          $@spellicon400735
+          $@spelldesc400735
+aura      Healing ${$w1*3} health over $d.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=401460
 =======
@@ -2386,6 +2825,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415358 misc=417346 target=[1,0]
+tooltip   Gain the Raptor Fury ability:
+
+          $@spellicon415358
+          $@spelldesc415358
 
 https://www.wowhead.com/forever/spell=415822
 =======
@@ -2413,6 +2856,7 @@ effect 1  dispels 1 curse effect to the friendly target
           E_DISPEL base=1 misc=2 target=[21,0]
 effect 2  dispels 1 magic effect to the friendly target
           E_DISPEL base=1 misc=1 target=[21,0]
+tooltip   Removes $m1 Curse and $m2 harmful Magic effect from a friendly target.
 
 https://www.wowhead.com/forever/spell=412113
 =======
@@ -2423,6 +2867,7 @@ labels    21
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Increases damage done by your melee abilities on Bleeding targets by $m1%.
 
 https://www.wowhead.com/forever/spell=1223246
 =======
@@ -2435,6 +2880,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 3 mask 0x20a21af2,0x8000,0x0,0x8
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=3 mask=0x20a21af2,0x8000,0x0,0x8 target=[1,0]
+aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1248808
 =======
@@ -2445,6 +2891,12 @@ refs      400735 Temporal Beacon
 
 effect 1  a dummy aura holding 67
           E_APPLY_AURA A_DUMMY base=67 target=[1,0]
+tooltip   Allies with your Temporal Beacon heal for ${$SPA*$m1/1000+$<healpower>*$400735m1/100} health every $400735t1 sec.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=1218592
 =======
@@ -2455,6 +2907,12 @@ refs      1218695 Overclocked
 
 effect 1  SPELLMOD_EFFECT2 +60 on family 3 mask 0x0,0x0,0x0,0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=60 misc=12 family=3 mask=0x0,0x0,0x0,0x2 target=[1,0]
+tooltip   Your Regeneration ability grants your target $s1% increased movement speed while you are channeling, and each time it heals your target, they have a chance to gain $1218695s2% increased attack and casting speed for $1218695d.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=1218693
 =======
@@ -2466,6 +2924,7 @@ effect 1  a dummy aura holding 25
           E_APPLY_AURA A_DUMMY base=25 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   Damage you deal to Undead causes $s1% more chronomantic healing, and you gain mana equal to $s2% of the chronomantic healing you generate from damaging Undead.
 
 https://www.wowhead.com/forever/spell=1218697
 =======
@@ -2475,6 +2934,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -80% on family 3 mask 0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-80 misc=11 family=3 mask=0x4000000 target=[1,0]
+tooltip   Reduces the cooldown on your Evocation ability by $s1%.
 
 https://www.wowhead.com/forever/spell=1218993
 =======
@@ -2487,6 +2947,7 @@ effect 1  a dummy aura holding 67
           E_APPLY_AURA A_DUMMY base=67 target=[1,0]
 effect 2  a dummy aura holding 8
           E_APPLY_AURA A_DUMMY base=8 target=[1,0]
+tooltip   Your Evocation grants you $?a1218232|a1218271|a1218275|a1218276|a1218283|a1224428[$1218701s1%][$1218701s2%] increased damage done every sec you channel it, stacking up to $m2 times and lasting $1218701d.
 
 https://www.wowhead.com/forever/spell=1218700
 =======
@@ -2498,6 +2959,7 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Ignite damage does not decay on Undead targets below $s1% health, and Undead targets below $s2% health take damage as if they were Frozen.
 
 https://www.wowhead.com/forever/spell=1218995
 =======
@@ -2510,6 +2972,7 @@ effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
 effect 2  a dummy aura holding 9
           E_APPLY_AURA A_DUMMY base=9 target=[1,0]
+tooltip   Your Fireball, Frostfire Bolt, and Balefire Bolt spells gain $s1% increased damage for each of your Fire effects on your target, up to a maximum increased of $s2%.
 
 https://www.wowhead.com/forever/spell=1213321
 =======
@@ -2527,6 +2990,7 @@ effect 4  SPELLMOD_ACTIVATION_TIME -2000 on family 3 mask 0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=19 family=3 mask=0x0,0x20000 target=[1,0]
 effect 5  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+tooltip   Your Living Bomb now deals damage every $s1 sec, and will detonate if the target dies. In addition, the effect of Glaciate from the rune of Ice Lance now stacks up to $s2 times, and Spellfrost Bolt grants $s3 stacks each time it hits.
 
 https://www.wowhead.com/forever/spell=1226423
 =======
@@ -2538,6 +3002,7 @@ effect 1  a dummy aura holding 10000 from family 3 mask 0x0,0x4000
           E_APPLY_AURA A_DUMMY base=10000 family=3 mask=0x0,0x4000 target=[1,0]
 effect 2  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   Casting Deep Freeze increases the remaining duration of your Icy Veins spell by ${$m1/1000} sec. Casting Pyroblast cancels $s2 $lstack:stacks; of the effect from your Balefire Bolt.
 
 https://www.wowhead.com/forever/spell=1226446
 =======
@@ -2555,6 +3020,7 @@ effect 4  SPELLMOD_COOLDOWN -25 s on family 3 mask 0x0,0x0,0x20000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-25000 misc=11 family=3 mask=0x0,0x0,0x20000000 target=[1,0]
 effect 5  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 target=[1,0]
+tooltip   Reduces the cooldown on your Frozen Orb spell by ${$m4/-1000} sec. Each time Glaciate is consumed, the cooldown on your Deep Freeze is reduced by ${$m5/1000}.1 sec per stack consumed. Reduces the cooldown on Fire Blast by ${$m2/-1000} sec and Fire Blast now refreshes the duration of your Living Bomb on the target.
 
 https://www.wowhead.com/forever/spell=1226432
 =======
@@ -2567,6 +3033,7 @@ effect 1  casts 1226406 Arcane Tunneling on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=1226406 target=[1,0]
 effect 2  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 trigger=1226406 target=[1,0]
+tooltip   Your Arcane Blast has a $s2% chance to cause Arcane Tunneling. Arcane Tunneling prevents your Arcane Blast effect from being consumed by the next other Arcane damage spell you cast. In addition, activating Arcane Power resets the cooldown on your Mass Regeneration.
 
 https://www.wowhead.com/forever/spell=1226407
 =======
@@ -2577,6 +3044,7 @@ refs      1226414 Temporal Anchor
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Rewind Time also reduces all damage taken by your target by $1226414s1% for $1226414d.
 
 https://www.wowhead.com/forever/spell=1226415
 =======
@@ -2592,6 +3060,7 @@ effect 3  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 target=[1,0]
+tooltip   Reduces the cooldown of your Arcane Power by ${$m1/-1000} sec and increases its duration by ${$m2/1000} sec. While Arcane Power is active, your chance to gain Arcane Tunneling is increased by $s3% and each cast of Arcane Blast reduces the remaining cooldown on Mass Regeneration by ${$m4/1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1226378
 =======
@@ -2601,6 +3070,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+tooltip   You are immune to all damage while channeling Evocation.
 
 https://www.wowhead.com/forever/spell=456396
 =======
@@ -2612,6 +3082,7 @@ refs      456400 Noble
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+tooltip   You gain $456400s1% increased damage for $456400d each time you cast a spell from a different school of magic.
 
 https://www.wowhead.com/forever/spell=456398
 =======
@@ -2625,6 +3096,7 @@ effect 2  a dummy aura holding 18
           E_APPLY_AURA A_DUMMY base=18 sp=1 target=[1,0]
 effect 3  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Mage Armor increases your mana regeneration while casting by an additional $s1%. Molten Armor increases your spell damage and healing by $s2. Ice Armor grants $s3% increased chance to trigger Fingers of Frost.
 
 https://www.wowhead.com/forever/spell=456402
 =======
@@ -2636,6 +3108,7 @@ effect 1  SPELLMOD_DURATION +20% on family 3 mask 0x0,0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=1 family=3 mask=0x0,0x0,0x4000000 target=[1,0]
 effect 2  SPELLMOD_EFFECT3 +20% on family 3 mask 0x0,0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=23 family=3 mask=0x0,0x0,0x4000000 target=[1,0]
+tooltip   Your Temporal Beacons last $s1% longer.
 
 https://www.wowhead.com/forever/spell=456404
 =======
@@ -2645,6 +3118,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT4 +10% on family 3 mask 0x0,0x0,0x4000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=32 family=3 mask=0x0,0x0,0x4000000 target=[1,0]
+tooltip   Increases all chronomantic healing you deal by $s1%.
 
 https://www.wowhead.com/forever/spell=456477
 =======
@@ -2655,6 +3129,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   Each time you heal a target with Regeneration, the remaining cooldown on Rewind Time is reduced by $s1 sec.
 
 https://www.wowhead.com/forever/spell=456481
 =======
@@ -2664,6 +3139,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT1 +10 on family 3 mask 0x0,0x0,0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=3 family=3 mask=0x0,0x0,0x4 target=[1,0]
+tooltip   Your Arcane Blast increases damage done by an additional $s1% per stack.
 
 https://www.wowhead.com/forever/spell=1213312
 =======
@@ -2674,6 +3150,7 @@ refs      400735 Temporal Beacon
 
 effect 1  SPELLMOD_EFFECT1 +50% on family 3 mask 0x8108
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=3 family=3 mask=0x8108 target=[1,0]
+tooltip   Your Mana Shield, Fire Ward, and Frost Ward absorb $s1% more damage and also place a Temporal Beacon on the target for $400735d.
 
 https://www.wowhead.com/forever/spell=1213314
 =======
@@ -2684,6 +3161,7 @@ refs      1213317 Fire Blast
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Your Fire Blast now also causes your next Fire spell to gain $1213317s1% increased critical strike chance for $1213317d.
 
 https://www.wowhead.com/forever/spell=1213318
 =======
@@ -2693,6 +3171,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Increases the damage done by your Ignite talent by $s1%.
 
 https://www.wowhead.com/forever/spell=1213319
 =======
@@ -2702,6 +3181,7 @@ attrs     passive
 
 effect 1  +14 frost damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=14 misc=16 target=[1,0]
+tooltip   Increases damage done by Frost spells and effects by up to $s1.
 
 https://www.wowhead.com/forever/spell=468397
 =======
@@ -2711,6 +3191,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Increases the chance to trigger your Fingers of Frost rune by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=468425
 =======
@@ -2720,6 +3201,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +65% on family 3 mask 0x20,0x0,0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=65 family=3 mask=0x20,0x0,0x40 target=[1,0]
+tooltip   Increases damage done by your Frostbolt and Spellfrost Bolt spells by $s1%.
 
 https://www.wowhead.com/forever/spell=468427
 =======
@@ -2740,6 +3222,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407988 misc=399966 target=[1,0]
+tooltip   Gain the Savage Roar ability:
+
+          $@spellicon407988
+          $@spelldesc407988
 
 https://www.wowhead.com/forever/spell=409819
 =======
@@ -2754,6 +3240,8 @@ effect 1  584.69745 fire damage to the enemy
           E_SCHOOL_DAMAGE base=584.69745 target=[6,0]
 effect 2  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=1 sp=1 target=[6,0]
+tooltip   Scalds an enemy for Fire damage, stunning it for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=17276
 =======
@@ -2776,6 +3264,7 @@ effect 1  56 fire damage to the enemy
           E_SCHOOL_DAMAGE base=56 target=[6,0]
 effect 2  +10 fire damage done to the enemy
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=10 misc=4 target=[6,0]
+tooltip   Blasts a target for $s1 Fire damage and increases Fire damage done to target by $s2 for $d.
 
 https://www.wowhead.com/forever/spell=16454
 =======
@@ -2785,6 +3274,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413248 misc=399954 target=[1,0]
+tooltip   Gain the Serendipity ability:
+
+          $@spellicon413248
+          $@spelldesc413248
 
 https://www.wowhead.com/forever/spell=415737
 =======
@@ -2794,6 +3287,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401955 misc=399967 target=[1,0]
+tooltip   Gain the Shadow Word: Death ability:
+
+          $@spellicon401955
+          $@spelldesc401955
 
 https://www.wowhead.com/forever/spell=402833
 =======
@@ -2803,6 +3300,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=401969 misc=399966 target=[1,0]
+tooltip   Gain the Shared Pain ability:
+
+          $@spellicon401969
+          $@spelldesc401969
 
 https://www.wowhead.com/forever/spell=402838
 =======
@@ -2813,6 +3314,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=409069 misc=415449 target=[1,0]
+tooltip   Gain the Shield Mastery ability:
+
+          $@spellicon409069
+          $@spelldesc409069
 
 https://www.wowhead.com/forever/spell=415596
 =======
@@ -2822,6 +3327,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=413404 misc=399967 target=[1,0]
+tooltip   Gain the Single-Minded Fury ability:
+
+          $@spellicon413404
+          $@spelldesc413404
 
 https://www.wowhead.com/forever/spell=415599
 =======
@@ -2831,6 +3340,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=410176 misc=399967 target=[1,0]
+tooltip   Gain the Skull Bash ability:
+
+          $@spellicon410176
+          $@spelldesc410176
 
 https://www.wowhead.com/forever/spell=415759
 =======
@@ -2847,6 +3360,8 @@ targets   up to 1
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Puts the enemy target to sleep for up to $d.  Any damage caused will awaken the target.  Only one target can be asleep at a time.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=700
 =======
@@ -2863,6 +3378,8 @@ targets   up to 1
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Puts the enemy target to sleep for up to $d.  Any damage caused will awaken the target.  Only one target can be asleep at a time.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=1090
 =======
@@ -2878,6 +3395,8 @@ targets   up to 1
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Puts the enemy target to sleep for up to $d.  Any damage caused will awaken the target.  Only one target can be asleep at a time.
+aura      Asleep.
 
 https://www.wowhead.com/forever/spell=448572
 =======
@@ -2887,6 +3406,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415399 misc=399966 target=[1,0]
+tooltip   Gain the Sniper Training ability:
+
+          $@spellicon415399
+          $@spelldesc415399
 
 https://www.wowhead.com/forever/spell=415818
 =======
@@ -2896,6 +3419,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402000 misc=417347 target=[1,0]
+tooltip   Gain the Soul Warding ability:
+
+          $@spellicon402000
+          $@spelldesc402000
 
 https://www.wowhead.com/forever/spell=402834
 =======
@@ -2906,6 +3433,7 @@ labels    3096
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +50% on family 3 mask 0x20e212f7,0x19048,0x4040,0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=15 family=3 mask=0x20e212f7,0x19048,0x4040,0x4000 target=[1,0]
+tooltip   Increases critical strike damage bonus of all spells by $s1%.
 
 https://www.wowhead.com/forever/spell=412322
 =======
@@ -2916,6 +3444,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412322 misc=415450 target=[1,0]
+tooltip   Gain the Spell Power ability:
+
+          $@spellicon412322
+          $@spelldesc412322
 
 https://www.wowhead.com/forever/spell=415459
 =======
@@ -2926,6 +3458,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   Each time you deal arcane damage to a target, the remaining cooldown on Presence of Mind is reduced by $s1 sec.
 
 https://www.wowhead.com/forever/spell=469236
 =======
@@ -2935,6 +3468,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415739 misc=399954 target=[1,0]
+tooltip   Gain the Strength of Soul ability:
+
+          $@spellicon415739
+          $@spelldesc415739
 
 https://www.wowhead.com/forever/spell=415740
 =======
@@ -2946,6 +3483,7 @@ range     30 yd
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=29164
 =======
@@ -2957,6 +3495,7 @@ range     100 yd
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=1219270
 =======
@@ -2968,6 +3507,7 @@ range     30 yd
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=1220520
 =======
@@ -2977,6 +3517,16 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=414684 misc=399967 target=[1,0]
+tooltip   Gain the Sunfire ability and while in Bear Form, Cat Form, or Dire Bear Form your Moonfire is replaced with Sunfire (Bear) or Sunfire (Cat). This spell benefits from and triggers all effects associated with Moonfire.
+
+          $@spellicon414684
+          $@spelldesc414684
+
+          $@spellicon414687
+          $@spelldesc414687
+
+          $@spellicon414689
+          $@spelldesc414689
 
 https://www.wowhead.com/forever/spell=414692
 =======
@@ -2986,6 +3536,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=411115 misc=399954 target=[1,0]
+tooltip   Gain the Survival of the Fittest ability:
+
+          $@spellicon411115
+          $@spelldesc411115
 
 https://www.wowhead.com/forever/spell=415709
 =======
@@ -2998,6 +3552,7 @@ range     30 yd
 
 effect 1  100 fire damage to the enemy
           E_SCHOOL_DAMAGE base=100 target=[6,0]
+tooltip   TEST Scorch the enemy for $s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=29515
 =======
@@ -3008,6 +3563,7 @@ duration  300 s
 
 effect 1  -50% fire+frost damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=20 target=[1,0]
+aura      Fire and Frost spell damage done reduced by $s1% and unable to cast Ice Block.
 
 https://www.wowhead.com/forever/spell=432069
 =======
@@ -3019,6 +3575,7 @@ targets   up to 1
 
 effect 1  -20% every school damage taken to the friendly target
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-20 sp=1 misc=127 target=[21,0]
+aura      Damage taken decreased by $s1%.
 
 https://www.wowhead.com/forever/spell=1226414
 =======
@@ -3035,6 +3592,12 @@ refs      428888 Temporal Anomaly, 428895 Temporal Anomaly
 
 effect 1  summons creature 214063
           E_SUMMON base=1 misc=214063 misc2=5777 target=[47,0]
+tooltip   Launches an orb of temporal energy which slowly moves forward and every $428888t1 sec grants all nearby party members a shield absorbing ${$428895m1*$<power>/100} damage for $428895d. This shield accumulates additional value if party members remain near the orb.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=428885
 =======
@@ -3062,6 +3625,7 @@ labels    3096, 3100
 
 effect 1  absorbs 100 every school damage to the party in the target area
           E_APPLY_AURA A_SCHOOL_ABSORB base=100 misc=127 radius=8 target=[34,0]
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=428895
 =======
@@ -3072,6 +3636,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=428885 misc=417345 target=[1,0]
+tooltip   Gain the Temporal Anomaly ability:
+
+          $@spellicon428885
+          $@spelldesc428885
 
 https://www.wowhead.com/forever/spell=429305
 =======
@@ -3093,6 +3661,8 @@ effect 5  a dummy aura holding 50 to the friendly target
           E_APPLY_AURA A_DUMMY base=50 target=[21,0]
 effect 6  a dummy aura holding 80 to the friendly target
           E_APPLY_AURA A_DUMMY base=80 target=[21,0]
+tooltip   Records the subject's space-time position. $s4% of all Arcane damage done by the caster will be converted to chronomantic healing on each of the caster's current Temporal Beacon targets. This healing is reduced by $s5% on self, and also reduced by $s6% when damage is done by Arcane spells that damage multiple targets.
+aura      Records the subject's position in time and space. Damage done by caster will result in this subject receiving chronomantic healing.$?$w1>0[ Healing for $w1 health per sec.][]
 
 https://www.wowhead.com/forever/spell=400735
 =======
@@ -3103,6 +3673,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 3 mask 0x1600a508,0x800109,0x0,0x18000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=3 mask=0x1600a508,0x800109,0x0,0x18000000 target=[1,0]
+aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262243
 =======
@@ -3113,6 +3684,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417345
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432042 misc=417345 target=[1,0]
+tooltip   Gain the Tidal Waves ability:
+
+          $@spellicon432042
+          $@spelldesc432042
 
 https://www.wowhead.com/forever/spell=432233
 =======
@@ -3124,6 +3699,7 @@ stack     up to 3
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_HEALING_RECEIVED base=20 sp=1 family=3 mask=0x0,0x0,0x4001000,0x20100002 target=[21,0]
+aura      Healing from casting Mage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1226377
 =======
@@ -3135,6 +3711,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +15% on family 3 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=3 mask=0x8000 target=[1,0]
+tooltip   $s1% increase to the total damage absorbed by Mana Shield.
 
 https://www.wowhead.com/forever/spell=26131
 =======
@@ -3144,6 +3721,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425198 misc=399954 target=[1,0]
+tooltip   Gain the Twisted Faith ability:
+
+          $@spellicon425198
+          $@spelldesc425198
 
 https://www.wowhead.com/forever/spell=425210
 =======
@@ -3158,6 +3739,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=1500 target=[1,0]
 effect 2  +100% mana regen while casting
           E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=100 sp=1 target=[1,0]
+tooltip   While channeling this spell, your mana regeneration is active and increased by $s1%.  Lasts $d.
+aura      Mana regeneration increased by $s1%.
 
 https://www.wowhead.com/forever/spell=468466
 =======
@@ -3167,6 +3750,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402668 misc=417347 target=[1,0]
+tooltip   Gain the Vampiric Touch ability:
+
+          $@spellicon402668
+          $@spelldesc402668
 
 https://www.wowhead.com/forever/spell=402841
 =======
@@ -3178,6 +3765,8 @@ caster aura 403789 Metamorphosis
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_FEATHER_FALL base=0 target=[1,0]
+tooltip   Slows falling speed for $d.
+aura      Slows falling speed.
 
 https://www.wowhead.com/forever/spell=435112
 =======
@@ -3187,6 +3776,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=402927 misc=399967 target=[1,0]
+tooltip   Gain the Victory Rush ability:
+
+          $@spellicon402927
+          $@spelldesc402927
 
 https://www.wowhead.com/forever/spell=403434
 =======
@@ -3196,6 +3789,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425204 misc=415450 target=[1,0]
+tooltip   Gain the Void Plague ability:
+
+          $@spellicon425204
+          $@spelldesc425204
 
 https://www.wowhead.com/forever/spell=425211
 =======
@@ -3208,6 +3805,8 @@ range     45 yd
 
 effect 1  summons creature 16697
           E_SUMMON base=1 misc=16697 misc2=64 radius=1 target=[53,0]
+tooltip   Summon a Void Zone that deals shadow damage to enemies that stand within it
+aura      $s1 Shadow damage to those in the zone.
 
 https://www.wowhead.com/forever/spell=28863
 =======
@@ -3220,6 +3819,8 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +50% on family 3 mask 0x2
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=50 sp=1 misc=7 family=3 mask=0x2 target=[1,0]
+tooltip   Fire Blast critical strike chance increased by $s1%.
+aura      Fire Blast critical strike chance increased by $w1%.
 
 https://www.wowhead.com/forever/spell=1312934
 =======
@@ -3229,6 +3830,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425421 misc=399954 target=[1,0]
+tooltip   Gain the Warbringer ability:
+
+          $@spellicon425421
+          $@spelldesc425421
 
 https://www.wowhead.com/forever/spell=425430
 =======
@@ -3242,6 +3847,12 @@ range     45 yd
 
 effect 1  208–268 frost damage to the enemy (+0.833 spell power)
           E_SCHOOL_DAMAGE base=238 variance=0.25210086 sp=0.833 mechanic=11 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m1/100*$<power>} to ${$M1/100*$<power>} Frost damage.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=412437
 =======
@@ -3258,6 +3869,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_TRANSFORM base=0 misc=14801 misc2=118 radius=100 target=[22,30]
 effect 3  dispels mount to every ally around the caster
           E_DISPEL_MECHANIC base=100 misc=21 radius=100 target=[22,30]
+aura      Cannot attack or cast spells.
 
 https://www.wowhead.com/forever/spell=23603
 =======
@@ -3270,6 +3882,7 @@ effect 1  +100% physical crit
           E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=100 target=[1,0]
 effect 2  +100% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=100 target=[1,0]
+tooltip   All attacks are guaranteed to land and will be critical strikes for the next $d.
 
 https://www.wowhead.com/forever/spell=468971
 =======
@@ -3284,6 +3897,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_COST -1000% on family 3 mask 0x20c21af7,0x29000,0x10040040,0x84000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-1000 misc=14 family=3 mask=0x20c21af7,0x29000,0x10040040,0x84000 target=[1,0]
+aura      Your next damage spell has its mana cost reduced by $/10;s1%.
 
 https://www.wowhead.com/forever/spell=1300140
 =======
@@ -3294,6 +3908,7 @@ range     100 yd
 
 effect 1  600–1000 physical damage to the enemy
           E_SCHOOL_DAMAGE base=800 variance=0.25 target=[6,0]
+tooltip   Inflicts Physical damage to an enemy.
 
 https://www.wowhead.com/forever/spell=31378
 =======
@@ -3304,6 +3919,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=458479 misc=415450 target=[1,0]
+tooltip   Gain the Wyvern Strike ability:
+
+          $@spellicon458479
+          $@spelldesc458479
 
 https://www.wowhead.com/forever/spell=415816
 =======

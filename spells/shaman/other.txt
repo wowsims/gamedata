@@ -6,6 +6,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by ${$s1}.1%.
 
 https://www.wowhead.com/forever/spell=1300959
 =======
@@ -15,6 +16,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x0,0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=11 mask=0x0,0x0,0x20 target=[1,0]
+tooltip   Reduces the cooldown of your Earthbind Totem spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301053
 =======
@@ -24,6 +26,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_DAMAGE_DONE_CREATURE base=21 misc=8 target=[1,0]
+tooltip   Increases damage done by your spells and effects by up to $s1 when fighting Elementals.
 
 https://www.wowhead.com/forever/spell=1301092
 =======
@@ -33,6 +36,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 11 mask 0x0,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=11 mask=0x0,0x1000 target=[1,0]
+tooltip   Reduces the cooldown of your Lava Burst spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301711
 =======
@@ -44,6 +48,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=1 target=[1,0]
 effect 2  +1% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=1 target=[1,0]
+tooltip   Increases your attack speed and casting speed by $s1%.
 
 https://www.wowhead.com/forever/spell=1300957
 =======
@@ -53,6 +58,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +10 on family 11 mask 0x0,0x0,0x0,0x9000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=6 family=11 mask=0x0,0x0,0x0,0x9000000 target=[1,0]
+tooltip   Increases the radius of effect of your beneficial Air and Earth totems by $s1 yds.
 
 https://www.wowhead.com/forever/spell=1301051
 =======
@@ -62,6 +68,7 @@ attrs     passive
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_ATTACK_POWER_VERSUS base=36 misc=8 target=[1,0]
+tooltip   +$s1 Attack Power against Elementals.
 
 https://www.wowhead.com/forever/spell=1301090
 =======
@@ -71,6 +78,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -0.5 s on family 11 mask 0x0,0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=11 family=11 mask=0x0,0x10 target=[1,0]
+tooltip   Reduces the cooldown of your Stormstrike ability by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1301709
 =======
@@ -80,6 +88,7 @@ attrs     passive
 
 effect 1  +10 spirit
           E_APPLY_AURA A_MOD_STAT base=10 misc=4 target=[1,0]
+tooltip   Increased Spirit +$s1
 
 https://www.wowhead.com/forever/spell=1300960
 =======
@@ -89,6 +98,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +10 on family 11 mask 0x0,0x0,0x0,0x90000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=6 family=11 mask=0x0,0x0,0x0,0x90000000 target=[1,0]
+tooltip   Increases the radius of effect of your beneficial Fire and Water totems by $s1 yds.
 
 https://www.wowhead.com/forever/spell=1301059
 =======
@@ -100,6 +110,7 @@ effect 1  +26 healing power
           E_APPLY_AURA A_MOD_HEALING_DONE base=26 misc=126 target=[1,0]
 effect 2  +9 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=9 misc=126 target=[1,0]
+tooltip   Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects.
 
 https://www.wowhead.com/forever/spell=1301093
 =======
@@ -109,6 +120,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=11 mask=0x0,0x0,0x10 target=[1,0]
+tooltip   Reduces the cooldown of your Riptide spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1301713
 =======
@@ -119,6 +131,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   When you critically heal with your Healing Wave or Lesser Healing Wave you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health party member within 40 yards for $s1% of the amount healed.
 
 https://www.wowhead.com/forever/spell=425858
 =======
@@ -139,6 +152,7 @@ attrs     cannot crit
 
 effect 1  1 healing to the friendly target
           E_HEAL base=1 target=[21,0]
+tooltip   When you critically heal with your Healing Wave or Lesser Healing Wave, you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health friendly party or raid target within 40 yards.
 
 https://www.wowhead.com/forever/spell=425864
 =======
@@ -148,6 +162,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425858 misc=415450 target=[1,0]
+tooltip   Gain the Ancestral Awakening ability:
+
+          $@spellicon425858
+          $@spelldesc425858
 
 https://www.wowhead.com/forever/spell=425879
 =======
@@ -274,6 +292,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no rol
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=413338
 =======
@@ -296,6 +315,7 @@ effect 6  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
 effect 7  a dummy aura holding 150
           E_APPLY_AURA A_DUMMY base=150 target=[1,0]
+tooltip   Your Flame Shock now strikes up to $s1 targets, gains ${$m5/1000} sec increased duration, and deals $s3% increased damage. In addition, while you have Flametongue Weapon imbued on your main hand equipped weapon, you gain increased spell damage equal to $s7% of your Intellect.
 
 https://www.wowhead.com/forever/spell=415231
 =======
@@ -306,6 +326,7 @@ labels    3096, 3100
 
 effect 1  +122 holy+fire+nature+frost+shadow+arcane damage done (at level 60)
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=2 ppl=2 misc=126 target=[1,0]
+aura      Spell damage increased by $w1.
 
 https://www.wowhead.com/forever/spell=454042
 =======
@@ -315,6 +336,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 11 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 misc=10 family=11 mask=0x100 target=[1,0]
+tooltip   -$/1000;S1 seconds on the casting time of your Chain Heal spell.
 
 https://www.wowhead.com/forever/spell=446170
 =======
@@ -324,6 +346,7 @@ duration  20 s
 
 effect 1  SPELLMOD_COST -25 (-2.5 on a rage bar) on family 11 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-25 sp=1 misc=14 family=11 mask=0x100 target=[1,0]
+tooltip   Reduces the mana cost of your Chain Heal spell by $s1. Effect lasts $d seconds.
 
 https://www.wowhead.com/forever/spell=436376
 =======
@@ -334,6 +357,7 @@ attrs     passive
 
 effect 1  SPELLMOD_JUMP_TARGETS +3 on family 11 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=17 family=11 mask=0x40 target=[1,0]
+tooltip   Your Healing Wave will now jump to additional nearby targets. Each jump reduces the effectiveness of the heal by 80%, and the spell will jump to up to two additional targets.
 
 https://www.wowhead.com/forever/spell=23573
 =======
@@ -346,6 +370,7 @@ proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=415012
 =======
@@ -357,6 +382,7 @@ labels    23
 
 effect 1  +30% attack speed
           E_APPLY_AURA A_MOD_ATTACKSPEED base=30 sp=1 target=[1,0]
+tooltip   Attack speed increased by $s1%, but reduces damage.
 
 https://www.wowhead.com/forever/spell=25076
 =======
@@ -374,6 +400,7 @@ effect 4  SPELLMOD_DAMAGE_MULTIPLIER +30% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=20 family=11 mask=0x100 target=[1,0]
 effect 5  SPELLMOD_DAMAGE_MULTIPLIER +14% on family 11 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=14 misc=20 family=11 mask=0x2 target=[1,0]
+tooltip   Causes your Chain heal effectiveness to only reduce by $s1% per jump, and Chain Lightning effectiveness to only reduce by $s2% per jump. Each also jumps to $s3 additional target.
 
 https://www.wowhead.com/forever/spell=415096
 =======
@@ -383,6 +410,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415096 misc=417347 target=[1,0]
+tooltip   Gain the Coherence ability:
+
+          $@spellicon415096
+          $@spelldesc415096
 
 https://www.wowhead.com/forever/spell=416081
 =======
@@ -393,6 +424,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -20 (-2 on a rage bar) on family 11 mask 0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 misc=14 family=11 mask=0x80000 target=[1,0]
+tooltip   Decreases the mana cost of your Healing Stream and Mana Spring totems by $s1.
 
 https://www.wowhead.com/forever/spell=24436
 =======
@@ -405,6 +437,7 @@ effect 1  summons creature 14662 to target 44
           E_SUMMON base=0 sp=1 misc=14662 misc2=64 radius=5 target=[44,0]
 effect 2  summons creature 14667 to target 44
           E_SUMMON base=0 sp=1 misc=14667 misc2=63 radius=5 target=[44,0]
+tooltip   Summons a Fire Nova Totem that has $s1 health and lasts $d.  Unless it is destroyed within $11311t1 sec., the totem inflicts $11307s1 fire damage to enemies within $11307a1 yd.
 
 https://www.wowhead.com/forever/spell=23419
 =======
@@ -417,6 +450,7 @@ effect 1  summons creature 14667 to target 42
           E_SUMMON base=5 misc=14667 misc2=82 target=[42,0]
 effect 2  summons creature 14664 to target 42
           E_SUMMON base=0 sp=1 misc=14664 misc2=64 target=[42,0]
+tooltip   Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10461a1 yards for $10461s1 every $10461t1 seconds.
 
 https://www.wowhead.com/forever/spell=23422
 =======
@@ -430,6 +464,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no
 
 effect 1  casts 29199 Corrupted Mind on its trigger to the target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=29199 target=[25,0]
+aura      Can only cast one healing or curing spell every 60 seconds.
 
 https://www.wowhead.com/forever/spell=29198
 =======
@@ -442,6 +477,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=1 misc=4327 family=11 mask=0x1c0,0x8 target=[1,0]
+aura      Can't cast healing or curing spells.
 
 https://www.wowhead.com/forever/spell=29199
 =======
@@ -454,6 +490,7 @@ effect 1  summons creature 14667 to target 41
           E_SUMMON base=5 misc=14667 misc2=81 target=[41,0]
 effect 2  summons creature 14663 to target 41
           E_SUMMON base=0 sp=1 misc=14663 misc2=64 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10405a1 yards, reducing melee damage taken by $10405s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=23420
 =======
@@ -466,6 +503,7 @@ effect 1  summons creature 14667 to target 43
           E_SUMMON base=5 misc=14667 misc2=83 target=[43,0]
 effect 2  summons creature 14666 to target 43
           E_SUMMON base=0 sp=1 misc=14666 misc2=64 target=[43,0]
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster.  The totem enchants all party members weapons with wind, if they are within $10611a1 yards.  Each hit has a 20% chance of granting the attacker $10610s2 extra $lattack:attacks; with $10610s1 extra attack power.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=23423
 =======
@@ -475,6 +513,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x0,0x0,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 sp=1 misc=11 family=11 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+tooltip   Reduces the cooldown on your Decoy Totem spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=468289
 =======
@@ -488,6 +527,7 @@ effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
 effect 2  1000 healing to the caster
           E_HEAL base=1000 sp=1 target=[1,0]
+tooltip   Purges an enemy of $s1 magic $leffect:effects; and heals the caster for $s2.
 
 https://www.wowhead.com/forever/spell=17012
 =======
@@ -510,6 +550,7 @@ effect 2  a dummy aura holding 10 every 2 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=10 sp=1 period=2000ms target=[1,0]
 effect 3  +60% off-hand damage
           E_APPLY_AURA A_MOD_OFFHAND_DAMAGE_PCT base=60 sp=1 target=[1,0]
+tooltip   Increases your chance to hit with both spells and melee attacks by $s1% while dual wielding, your Stormstrike ability now hits with both weapons while dual wielding, and increases the damage done by your offhand weapon by $s3%.
 
 https://www.wowhead.com/forever/spell=408496
 =======
@@ -519,6 +560,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408496 misc=399954 target=[1,0]
+tooltip   Gain the Dual Wield Specialization ability:
+
+          $@spellicon408496
+          $@spelldesc408496
 
 https://www.wowhead.com/forever/spell=409940
 =======
@@ -542,6 +587,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PR
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=413429
 =======
@@ -554,6 +600,7 @@ labels    24
 
 effect 1  -50% movement speed to every enemy around the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[22,15]
+aura      Movement speed reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=3600
 =======
@@ -566,6 +613,7 @@ labels    24
 
 effect 1  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=100 radius=10 target=[22,15]
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1238289
 =======
@@ -576,6 +624,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +5 on family 11 mask 0x30000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=8 family=11 mask=0x30000 target=[1,0]
+tooltip   +$s1 to Strength of Earth and Grace of Air totem effect.
 
 https://www.wowhead.com/forever/spell=21891
 =======
@@ -588,6 +637,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 target=[22,15]
+aura      Rooted.
 
 https://www.wowhead.com/forever/spell=440574
 =======
@@ -600,6 +650,10 @@ stack     up to 1
 
 effect 1  16 healing every 3 s to the friendly target (4 ticks, +0.2 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=16 sp=0.2 period=3000ms target=[21,0]
+tooltip   Heals ${$m1/100*$<healpower>*4} over $d sec.
+aura      Heals $w1 every $t1 sec.
+vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+          $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=415292
 =======
@@ -610,6 +664,7 @@ stack     up to 3
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_BLOCK_VALUE_FLAT base=30 target=[1,0]
+aura      Block amount increased by $w1.
 
 https://www.wowhead.com/forever/spell=467910
 =======
@@ -620,6 +675,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_CRIT_CHANCE base=-2 misc=126 family=11 mask=0x1c0 target=[1,0]
+tooltip   Reduces the chance you will be critically hit by spells by $s1% while Lightning Shield or Water Shield are active.
 
 https://www.wowhead.com/forever/spell=30861
 =======
@@ -630,6 +686,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_CRIT_CHANCE base=-4 misc=126 family=11 mask=0x1c0 target=[1,0]
+tooltip   Reduces the chance you will be critically hit by spells by $s1% while Lightning Shield or Water Shield are active.
 
 https://www.wowhead.com/forever/spell=30862
 =======
@@ -640,6 +697,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_SPELL_CRIT_CHANCE base=-6 misc=126 family=11 mask=0x1c0 target=[1,0]
+tooltip   Reduces the chance you will be critically hit by spells by $s1% while Lightning Shield or Water Shield are active.
 
 https://www.wowhead.com/forever/spell=30863
 =======
@@ -649,6 +707,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x0,0x0,0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x0,0x0,0x100000 target=[1,0]
+tooltip   Reduces the cast time of Healing Rain by $s1%.
 
 https://www.wowhead.com/forever/spell=449930
 =======
@@ -658,6 +717,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +3% on family 11 mask 0x140
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=11 mask=0x140 target=[1,0]
+tooltip   Increases the amount healed by your Chain Heal and Healing Wave spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1214059
 =======
@@ -669,6 +729,8 @@ labels    24
 
 effect 1  SPELLMOD_DAMAGE +100% on family 11 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 family=11 mask=0x400 target=[1,0]
+tooltip   Increases the damage dealt by your Lightning Shield spell by $s1% for $d.
+aura      Lightning Shield damage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=24499
 =======
@@ -679,6 +741,8 @@ duration  20 s
 
 effect 1  SPELLMOD_DAMAGE +100% on family 11 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 family=11 mask=0x400 target=[1,0]
+tooltip   Increases the damage dealt by your Lightning Shield spell by $s1% for $d.
+aura      Lightning Shield damage increased by $s1%.
 
 https://www.wowhead.com/forever/spell=468460
 =======
@@ -693,6 +757,7 @@ stance    Shadowform
 
 effect 1  summons creature 219986 to the caster
           E_SUMMON base=2 misc=219986 misc2=5888 radius=2 target=[47,1]
+tooltip   Summons two Spirit Wolves under the command of the Shaman, lasting $d.
 
 https://www.wowhead.com/forever/spell=440580
 =======
@@ -704,6 +769,7 @@ refs      449932 Fiery Strength
 
 effect 1  casts 449932 Fiery Strength on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 trigger=449932 target=[1,0]
+tooltip   Dealing Fire damage causes you to gain $449932s1 attack power, stacking up to $449932u times. Lasts $449932d.
 
 https://www.wowhead.com/forever/spell=449931
 =======
@@ -718,6 +784,7 @@ refs      11311 Fire Nova, 11307 Fire Nova
 
 effect 1  summons creature 7845 to target 44
           E_SUMMON base=5 misc=7845 misc2=63 target=[44,0]
+tooltip   Summons a Fire Nova Totem that has $s1 health and lasts $d.  Unless it is destroyed within $11311t1 sec., the totem inflicts $11307s1 fire damage to enemies within $11307a1 yd.
 
 https://www.wowhead.com/forever/spell=27623
 =======
@@ -729,6 +796,7 @@ labels    24
 
 effect 1  raid aura: +30 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=4 radius=30 target=[1,0]
+aura      Fire Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=8185
 =======
@@ -740,6 +808,7 @@ labels    24
 
 effect 1  raid aura: +45 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=4 radius=30 target=[1,0]
+aura      Fire Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=10534
 =======
@@ -751,6 +820,7 @@ labels    24
 
 effect 1  raid aura: +60 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=4 radius=30 target=[1,0]
+aura      Fire Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=10535
 =======
@@ -761,6 +831,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 11 mask 0x10000001
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=14 family=11 mask=0x10000001 target=[1,0]
+tooltip   Reduces the mana cost of Flame Shock and Lightning Bolt by $s1 Mana.
 
 https://www.wowhead.com/forever/spell=1270478
 =======
@@ -771,6 +842,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=11 mask=0x10000000 target=[1,0]
+tooltip   Reduces the mana cost of your Flame Shock spell by $s1.
 
 https://www.wowhead.com/forever/spell=436286
 =======
@@ -938,6 +1010,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  +10% melee haste
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=10 target=[1,0]
+aura      Attack speed increased by $w1%.
 
 https://www.wowhead.com/forever/spell=16257
 =======
@@ -950,6 +1023,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=5 misc=26 family=11 mask=0x1c0 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=5 misc=9 target=[1,0]
+tooltip   Increases your chance to resist Silence and Interrupt mechanics by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30864
 =======
@@ -962,6 +1036,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=10 misc=26 family=11 mask=0x1c0 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=10 misc=9 target=[1,0]
+tooltip   Increases your chance to resist Silence and Interrupt mechanics by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30865
 =======
@@ -974,6 +1049,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=15 misc=26 family=11 mask=0x1c0 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_MECHANIC_RESISTANCE base=15 misc=9 target=[1,0]
+tooltip   Increases your chance to resist Silence and Interrupt mechanics by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30866
 =======
@@ -985,6 +1061,7 @@ labels    24
 
 effect 1  raid aura: +30 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=16 radius=30 target=[1,0]
+aura      Frost Resistance increased by $s1
 
 https://www.wowhead.com/forever/spell=8182
 =======
@@ -996,6 +1073,7 @@ labels    24
 
 effect 1  raid aura: +45 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=16 radius=30 target=[1,0]
+aura      Frost Resistance increased by $s1
 
 https://www.wowhead.com/forever/spell=10476
 =======
@@ -1007,6 +1085,7 @@ labels    24
 
 effect 1  raid aura: +60 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=16 radius=30 target=[1,0]
+aura      Frost Resistance increased by $s1
 
 https://www.wowhead.com/forever/spell=10477
 =======
@@ -1021,6 +1100,7 @@ effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
 effect 2  44.6 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=32 ppl=2.1 sp=0.1 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=8034
 =======
@@ -1035,6 +1115,7 @@ effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
 effect 2  72 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=48 ppl=3 sp=0.1 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=8037
 =======
@@ -1049,6 +1130,7 @@ effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
 effect 2  117 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=77 ppl=5 sp=0.1 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=10458
 =======
@@ -1063,6 +1145,7 @@ effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
 effect 2  159 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=127 ppl=4 sp=0.1 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=16352
 =======
@@ -1078,6 +1161,7 @@ effect 1  -25% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-25 mechanic=11 target=[6,0]
 effect 2  169.2 frost damage to the enemy (at level 60, +0.1 spell power)
           E_SCHOOL_DAMAGE base=158 ppl=5.6 sp=0.1 target=[6,0]
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=16353
 =======
@@ -1090,6 +1174,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=415015
 =======
@@ -1100,6 +1185,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT2 +15 on family 11 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 misc=12 family=11 mask=0x800 target=[1,0]
+tooltip   Increases the speed of your Ghost Wolf ability by $s1%.
 
 https://www.wowhead.com/forever/spell=22801
 =======
@@ -1109,6 +1195,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT2 +15 on family 11 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=12 family=11 mask=0x800 target=[1,0]
+tooltip   Increases the speed of your Ghost Wolf ability by $s1%.
 
 https://www.wowhead.com/forever/spell=459606
 =======
@@ -1120,6 +1207,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE_MULTIPLIER +5% on family 11 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 misc=20 family=11 mask=0x2 target=[1,0]
+tooltip   Increases the chain target damage multiplier of your Chain Lightning spell by $s1%.
 
 https://www.wowhead.com/forever/spell=26123
 =======
@@ -1131,6 +1219,7 @@ labels    24
 
 effect 1  raid aura: +49 agility
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=49 misc=1 radius=30 target=[1,0]
+aura      Increases Agility by $s1.
 
 https://www.wowhead.com/forever/spell=8836
 =======
@@ -1142,6 +1231,7 @@ labels    24
 
 effect 1  raid aura: +77 agility
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=77 misc=1 radius=30 target=[1,0]
+aura      Increases Agility by $s1.
 
 https://www.wowhead.com/forever/spell=10626
 =======
@@ -1153,6 +1243,7 @@ labels    24
 
 effect 1  raid aura: +89 agility
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=89 misc=1 radius=30 target=[1,0]
+aura      Increases Agility by $s1.
 
 https://www.wowhead.com/forever/spell=25360
 =======
@@ -1162,6 +1253,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415813 misc=399966 target=[1,0]
+tooltip   Gain the Greater Ghost Wolf ability:
+
+          $@spellicon415813
+          $@spelldesc415813
 
 https://www.wowhead.com/forever/spell=425341
 =======
@@ -1171,6 +1266,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +100% on family 11 mask 0x1e00000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=1 family=11 mask=0x1e00000 target=[1,0]
+tooltip   Increases the duration of your personal Weapon Imbuements by $s1%.
 
 https://www.wowhead.com/forever/spell=435985
 =======
@@ -1213,6 +1309,7 @@ labels    24
 
 effect 1  party aura: 5 healing every 2 s (+0.022 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=5 sp=0.022 period=2000ms radius=30 target=[1,0]
+aura      Heals $w1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=5672
 =======
@@ -1224,6 +1321,7 @@ labels    24
 
 effect 1  party aura: 6 healing every 2 s (+0.022 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=6 sp=0.022 period=2000ms radius=30 target=[1,0]
+aura      Heals $w1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6371
 =======
@@ -1235,6 +1333,7 @@ labels    24
 
 effect 1  party aura: 7 healing every 2 s (+0.022 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=7 sp=0.022 period=2000ms radius=30 target=[1,0]
+aura      Heals $w1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=6372
 =======
@@ -1246,6 +1345,7 @@ labels    24
 
 effect 1  party aura: 9 healing every 2 s (+0.022 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=9 sp=0.022 period=2000ms radius=30 target=[1,0]
+aura      Heals $w1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10460
 =======
@@ -1257,6 +1357,7 @@ labels    24
 
 effect 1  party aura: 11 healing every 2 s (+0.022 spell power)
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_HEAL base=11 sp=0.022 period=2000ms radius=30 target=[1,0]
+aura      Heals $w1 every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10461
 =======
@@ -1286,6 +1387,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE_MULTIPLIER +30% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=20 family=11 mask=0x100 target=[1,0]
+tooltip   Increases the amount healed by Chain Heal to targets beyond the first by $s1%.
 
 https://www.wowhead.com/forever/spell=21899
 =======
@@ -1296,6 +1398,7 @@ labels    24
 
 effect 1  SPELLMOD_ALL_EFFECTS +10% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=8 family=11 mask=0x100 target=[1,0]
+tooltip   Increases the effectiveness of your Chain Heal spell by $s1%.
 
 https://www.wowhead.com/forever/spell=30872
 =======
@@ -1307,6 +1410,7 @@ effect 1  SPELLMOD_DAMAGE +3% on family 11 mask 0x10000000,0x0,0x0,0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=11 mask=0x10000000,0x0,0x0,0x40000000 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increases the damage of Flame Shock and Molten Blast by $s1%.
 
 https://www.wowhead.com/forever/spell=1214301
 =======
@@ -1317,6 +1421,7 @@ labels    24
 
 effect 1  SPELLMOD_DURATION +1 s on family 11 mask 0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1000 sp=1 misc=1 family=11 mask=0x80000000 target=[1,0]
+tooltip   Improves the duration of your Frost Shock spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24461
 =======
@@ -1327,6 +1432,7 @@ labels    24
 
 effect 1  SPELLMOD_RANGE +5 on family 11 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=5 family=11 mask=0x1 target=[1,0]
+tooltip   Increase the range of your Lightning Bolt spell by $s1 yds.
 
 https://www.wowhead.com/forever/spell=24462
 =======
@@ -1336,6 +1442,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +3% on family 11 mask 0x3,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=11 mask=0x3,0x1000 target=[1,0]
+tooltip   Increases the damage of Lightning Bolt, Chain Lightning, and Lava Burst by $s1%.
 
 https://www.wowhead.com/forever/spell=1214302
 =======
@@ -1347,6 +1454,7 @@ effect 1  SPELLMOD_DAMAGE +3% on family 11 mask 0x100,0x400,0x50
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=11 mask=0x100,0x400,0x50 target=[1,0]
 effect 2  SPELLMOD_DOT +3% on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=11 mask=0x0,0x0,0x10 target=[1,0]
+tooltip   Increases the amount healed by your Chain Heal, Riptide, and Earth Shield spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1220642
 =======
@@ -1356,6 +1464,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+tooltip   Increases the damage of Stormstrike and Windfury Weapon by $s1%.
 
 https://www.wowhead.com/forever/spell=1214300
 =======
@@ -1366,6 +1475,7 @@ labels    24
 
 effect 1  SPELLMOD_DURATION +3 s on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 sp=1 misc=1 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increases the duration of your Flame Shock ability by ${$m1/1000} sec.
 
 https://www.wowhead.com/forever/spell=1291077
 =======
@@ -1376,6 +1486,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=80 sp=1 misc=3736 family=11 mask=0x80 target=[1,0]
+tooltip   Increases healing done by Lesser Healing Wave by up to $s1.
 
 https://www.wowhead.com/forever/spell=27855
 =======
@@ -1386,6 +1497,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 sp=1 misc=4554 family=11 mask=0x3 target=[1,0]
+tooltip   Increases damage done by Chain Lightning and Lightning Bolt by up to $s1.
 
 https://www.wowhead.com/forever/spell=28857
 =======
@@ -1398,6 +1510,7 @@ effect 1  SPELLMOD_DAMAGE +2% on family 11 mask 0x90100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 family=11 mask=0x90100000 target=[1,0]
 effect 2  SPELLMOD_DOT +2% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 misc=22 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increases the damage of your Shock spells by $s1%.
 
 https://www.wowhead.com/forever/spell=27859
 =======
@@ -1408,6 +1521,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +10 on family 11 mask 0x403e000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=6 family=11 mask=0x403e000 target=[1,0]
+tooltip   The radius of your totems that affect friendly targets is increased to 30 yd.
 
 https://www.wowhead.com/forever/spell=21895
 =======
@@ -1418,6 +1532,7 @@ labels    24
 
 effect 1  SPELLMOD_CHARGES +1 on family 11 mask 0x0,0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=11 mask=0x0,0x20 target=[1,0]
+tooltip   Increases the maximum number of charges on your Water Shield by $s1.
 
 https://www.wowhead.com/forever/spell=28856
 =======
@@ -1427,6 +1542,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 11 mask 0x90100003,0x41000,0x0,0x40000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=11 mask=0x90100003,0x41000,0x0,0x40000000 target=[1,0]
+tooltip   The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1232096
 =======
@@ -1443,6 +1560,7 @@ effect 2  a dummy aura every 1 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[0,0]
 effect 3  unrecognised shape
           E_APPLY_AURA A_MOD_ENVIRONMENTAL_DAMAGE_TAKEN base=0 target=[0,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=413839
 =======
@@ -1453,6 +1571,7 @@ labels    26
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +4% on family 11 mask 0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=4 misc=7 family=11 mask=0x80 target=[1,0]
+tooltip   Increases the critical strike chance of your Lesser Healing Wave spell by $s1%.
 
 https://www.wowhead.com/forever/spell=1306448
 =======
@@ -1463,6 +1582,7 @@ labels    24
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
+tooltip   Your Lightning Bolt ability can now also trigger the Maelstrom Weapon talent, but with a $s1% reduced chance.
 
 https://www.wowhead.com/forever/spell=1291078
 =======
@@ -1475,6 +1595,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no rol
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=413432
 =======
@@ -1490,6 +1611,7 @@ effect 2  -30% threat
           E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[1,0]
 effect 3  +0% fire+nature+frost damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=0 misc=28 target=[1,0]
+aura      Physical$?$w3>0[, Fire, Frost, and Nature][] damage done increased by $s1% and all threat generated reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=443320
 =======
@@ -1513,6 +1635,7 @@ labels    24
 
 effect 1  party aura: restores 4 mana every 2 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=4 period=2000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=5677
 =======
@@ -1524,6 +1647,7 @@ labels    24
 
 effect 1  party aura: restores 6 mana every 2 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=6 period=2000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10491
 =======
@@ -1535,6 +1659,7 @@ labels    24
 
 effect 1  party aura: restores 8 mana every 2 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=8 period=2000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10493
 =======
@@ -1546,6 +1671,7 @@ labels    24
 
 effect 1  party aura: restores 10 mana every 2 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=10 period=2000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=10494
 =======
@@ -1557,6 +1683,8 @@ labels    24
 
 effect 1  party aura: restores 33 mana every 2 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=33 period=2000ms radius=30 target=[1,0]
+tooltip   Gaining $s1 Mana every $t1 sec.
+aura      Gain $s1 Mana every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24853
 =======
@@ -1569,6 +1697,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 25% chance
 
 effect 1  casts 18350 Dummy Trigger on its trigger from family 11 mask 0x80
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=18350 family=11 mask=0x80 target=[1,0]
+tooltip   After casting your Healing Wave or Lesser Healing Wave spell, gives you a 25% chance to gain Mana equal to 35% of the base cost of the spell.
 
 https://www.wowhead.com/forever/spell=23572
 =======
@@ -1580,6 +1709,8 @@ labels    24
 
 effect 1  party aura: restores 88 mana every 3 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=88 period=3000ms radius=30 target=[1,0]
+tooltip   $@spelldesc16190
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=16191
 =======
@@ -1591,6 +1722,7 @@ labels    24
 
 effect 1  party aura: restores 133 mana every 3 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=133 period=3000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17355
 =======
@@ -1602,6 +1734,7 @@ labels    24
 
 effect 1  party aura: restores 197 mana every 3 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=197 period=3000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=17360
 =======
@@ -1613,6 +1746,7 @@ labels    24
 
 effect 1  party aura: restores 290 mana every 3 s
           E_APPLY_AREA_AURA_PARTY A_PERIODIC_ENERGIZE base=290 period=3000ms radius=30 target=[1,0]
+aura      Gain $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=1325257
 =======
@@ -1641,6 +1775,8 @@ effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 2  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Your next $u instances of Fire damage are increased by $s1%.  Lasts $d.
+aura      Fire damage dealt increased by ${$s1/$m2}%.
 
 https://www.wowhead.com/forever/spell=1235353
 =======
@@ -1653,6 +1789,7 @@ effect 1  +1% physical hit
           E_APPLY_AURA A_MOD_HIT_CHANCE base=1 sp=1 target=[1,0]
 effect 2  +1% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=1 target=[1,0]
+tooltip   Improves your chance to hit by $s1%.
 
 https://www.wowhead.com/forever/spell=1281744
 =======
@@ -1664,6 +1801,7 @@ labels    24
 
 effect 1  raid aura: +30 nature resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=8 radius=30 target=[1,0]
+aura      Nature Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=10596
 =======
@@ -1675,6 +1813,7 @@ labels    24
 
 effect 1  raid aura: +45 nature resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=8 radius=30 target=[1,0]
+aura      Nature Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=10598
 =======
@@ -1686,6 +1825,7 @@ labels    24
 
 effect 1  raid aura: +60 nature resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=8 radius=30 target=[1,0]
+aura      Nature Resistance increased by $s1.
 
 https://www.wowhead.com/forever/spell=10599
 =======
@@ -1696,6 +1836,7 @@ labels    24
 
 effect 1  a dummy aura holding 5 from family 11 mask 0x1c0
           E_APPLY_AURA A_DUMMY base=5 family=11 mask=0x1c0 target=[1,0]
+tooltip   Increases your spell damage and healing by an amount equal to $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30867
 =======
@@ -1706,6 +1847,7 @@ labels    24
 
 effect 1  a dummy aura holding 10 from family 11 mask 0x1c0
           E_APPLY_AURA A_DUMMY base=10 family=11 mask=0x1c0 target=[1,0]
+tooltip   Increases your spell damage and healing by an amount equal to $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30868
 =======
@@ -1716,6 +1858,7 @@ labels    24
 
 effect 1  a dummy aura holding 15 from family 11 mask 0x1c0
           E_APPLY_AURA A_DUMMY base=15 family=11 mask=0x1c0 target=[1,0]
+tooltip   Increases your spell damage and healing by an amount equal to $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30869
 =======
@@ -1726,6 +1869,7 @@ labels    24
 
 effect 1  a dummy aura holding 20 from family 11 mask 0x1c0
           E_APPLY_AURA A_DUMMY base=20 family=11 mask=0x1c0 target=[1,0]
+tooltip   Increases your spell damage and healing by an amount equal to $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30870
 =======
@@ -1736,6 +1880,7 @@ labels    24
 
 effect 1  a dummy aura holding 25 from family 11 mask 0x1c0
           E_APPLY_AURA A_DUMMY base=25 family=11 mask=0x1c0 target=[1,0]
+tooltip   Increases your spell damage and healing by an amount equal to $s1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30871
 =======
@@ -1750,6 +1895,8 @@ effect 1  SPELLMOD_COOLDOWN +10 s on family 11 mask 0xffffffff,0xffffffff,0xffff
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10000 sp=1 misc=11 family=11 mask=0xffffffff,0xffffffff,0xffffffff,0xffffffff target=[6,0]
 effect 2  a dummy aura holding 400 to the enemy
           E_APPLY_AURA A_DUMMY base=400 variance=0.25 sp=1 target=[6,0]
+aura      Deals $s2 damage every $t2 sec.
+          Cooldowns increased by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=1216485
 =======
@@ -1763,6 +1910,7 @@ effect 1  a dummy aura holding -2 from family 11 mask 0x400
           E_APPLY_AURA A_DUMMY base=-2 family=11 mask=0x400 target=[1,0]
 effect 2  a dummy aura holding 3 from family 11 mask 0x400
           E_APPLY_AURA A_DUMMY base=3 family=11 mask=0x400 target=[1,0]
+tooltip   Your Lightning Shield never loses charges, now has a $m2 sec cooldown, and deals damage to all enemies within $432143a1 yards.
 
 https://www.wowhead.com/forever/spell=432140
 =======
@@ -1773,6 +1921,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432140 misc=417346 target=[1,0]
+tooltip   Gain the Overcharged ability:
+
+          $@spellicon432140
+          $@spelldesc432140
 
 https://www.wowhead.com/forever/spell=432240
 =======
@@ -1782,6 +1934,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408438 misc=399954 target=[1,0]
+tooltip   Gain the Overload ability:
+
+          $@spellicon408438
+          $@spelldesc408438
 
 https://www.wowhead.com/forever/spell=409945
 =======
@@ -1795,6 +1951,7 @@ effect 2  +20% threat
           E_APPLY_AURA A_MOD_THREAT base=20 misc=127 target=[1,0]
 effect 3  +10% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=127 target=[1,0]
+aura      Increases maximum health by $s1%, threat generated by $s2%, and all damage done by $s3%.
 
 https://www.wowhead.com/forever/spell=1213939
 =======
@@ -1818,6 +1975,7 @@ effect 1  a dummy aura holding 14
           E_APPLY_AURA A_DUMMY base=14 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Each time Flame Shock deals damage, it has a $h% chance to reset the cooldown on Lava Burst and Chain Lightning and make your next Lava Burst or Chain Lightning within $415105d instant. Each time Riptide heals, it has a $h% chance to make your next Chain Heal within $468526d instant. Additionally, every $440285t sec you gain mana equal to $s2% of your Intellect.
 
 https://www.wowhead.com/forever/spell=415100
 =======
@@ -1831,6 +1989,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x2,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x2,0x1000 target=[1,0]
+aura      Your next Chain Lightning or Lava Burst spell will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=415105
 =======
@@ -1841,6 +2000,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=415100 misc=415449 target=[1,0]
+tooltip   Gain the Power Surge ability:
+
+          $@spellicon415100
+          $@spelldesc415100
 
 https://www.wowhead.com/forever/spell=415712
 =======
@@ -1852,6 +2015,7 @@ labels    3096
 
 effect 1  restores 0 mana every 5 s (3 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=0 period=5000ms target=[1,0]
+aura      Your next Chain Lightning, Chain Heal,  or Lava Burst spell will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=440285
 =======
@@ -1865,6 +2029,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL; no
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x100 target=[1,0]
+aura      Your next Chain Heal spell will be an instant cast spell.
 
 https://www.wowhead.com/forever/spell=468526
 =======
@@ -1874,6 +2039,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +10% on family 11 mask 0x0,0x10,0x1400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 family=11 mask=0x0,0x10,0x1400 target=[1,0]
+tooltip   Increases the damage dealt by your Stormstrike ability by $m1%.
 
 https://www.wowhead.com/forever/spell=1309422
 =======
@@ -1897,6 +2063,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -5% on family 11 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 sp=1 misc=14 family=11 mask=0x40 target=[1,0]
+tooltip   Reduces the Mana cost of your Healing Wave ability by $s1%.
 
 https://www.wowhead.com/forever/spell=1291076
 =======
@@ -1907,6 +2074,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -5% on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 misc=14 family=11 mask=0x0,0x0,0x10 target=[1,0]
+tooltip   Reduces the Mana cost of Riptide by $s1%.
 
 https://www.wowhead.com/forever/spell=27797
 =======
@@ -1919,6 +2087,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no r
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 11 mask 0x801001c3,0x41000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=11 mask=0x801001c3,0x41000 target=[1,0]
+aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1323418
 =======
@@ -2020,6 +2189,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=6 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20860
 =======
@@ -2030,6 +2200,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=10 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20865
 =======
@@ -2040,6 +2211,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=16 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20866
 =======
@@ -2050,6 +2222,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=27 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20867
 =======
@@ -2060,6 +2233,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=41 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20868
 =======
@@ -2070,6 +2244,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=55 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20870
 =======
@@ -2080,6 +2255,7 @@ labels    24
 
 effect 1  unrecognised shape
           E_SCRIPT_EFFECT base=72 target=[6,0]
+tooltip   Designer Note:  Effect 1 points = desired threat per second, before misses.
 
 https://www.wowhead.com/forever/spell=20871
 =======
@@ -2105,6 +2281,9 @@ effect 2  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
 effect 3  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   Lightning Bolt and Chain Lightning have a $h% chance to add an additional charge to your active Lightning Shield, up to a maximum of $s1 Charges.
+
+          Earth Shock now releases all Lightning Shield charges above $s2, dealing their damage to the target, and energizing you for $s3% of your maximum mana per charge released.
 
 https://www.wowhead.com/forever/spell=432056
 =======
@@ -2126,6 +2305,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432056 misc=417346 target=[1,0]
+tooltip   Gain the Rolling Thunder ability:
+
+          $@spellicon432056
+          $@spelldesc432056
 
 https://www.wowhead.com/forever/spell=432235
 =======
@@ -2145,6 +2328,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DOT +20% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=22 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increases periodic damage done by your Flame Shock ability by $s1%.
 
 https://www.wowhead.com/forever/spell=1219367
 =======
@@ -2154,6 +2338,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -2 s on family 11 mask 0x0,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=11 mask=0x0,0x1000 target=[1,0]
+tooltip   Reduces the cooldown on your Lava Burst ability by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1219368
 =======
@@ -2164,6 +2349,7 @@ refs      1219370 Undead Slaying
 
 effect 1  a dummy aura holding -2000
           E_APPLY_AURA A_DUMMY base=-2000 target=[1,0]
+tooltip   You gain $1219370s1% increased damage and critical damage done to Undead for $1219370d for each time your Overload triggers from an offensive spell cast, stacking up to $1219370u times.
 
 https://www.wowhead.com/forever/spell=1219369
 =======
@@ -2173,6 +2359,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 100 from family 11 mask 0x400,0x0,0x2000
           E_APPLY_AURA A_DUMMY base=100 family=11 mask=0x400,0x0,0x2000 target=[1,0]
+tooltip   While Static Shock is engraved, the damage done by your Lightning Shield is increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1219373
 =======
@@ -2182,6 +2369,7 @@ duration  permanent
 
 effect 1  SPELLMOD_DAMAGE +100% on family 11 mask 0x400,0x0,0x2000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 family=11 mask=0x400,0x0,0x2000 target=[1,0]
+tooltip   Increases damage done by your Lightning Shield by $s1%.
 
 https://www.wowhead.com/forever/spell=1238149
 =======
@@ -2191,6 +2379,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COOLDOWN -1.5 s on family 11 mask 0x0,0x10,0x4
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 misc=11 family=11 mask=0x0,0x10,0x4 target=[1,0]
+tooltip   Reduces the cooldown on your Lava Lash and Stormstrike abilities by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1219374
 =======
@@ -2201,6 +2390,7 @@ refs      1219375 Undead Slaying
 
 effect 1  a dummy aura holding -2000
           E_APPLY_AURA A_DUMMY base=-2000 target=[1,0]
+tooltip   You gain $1219375s1% increased damage and critical damage done to Undead for $1219375d for each charge of Maelstrom Weapon you earn, stacking up to $1219375u times.
 
 https://www.wowhead.com/forever/spell=1219376
 =======
@@ -2210,6 +2400,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   Your Earth Shield ability no longer loses charges.
 
 https://www.wowhead.com/forever/spell=1219361
 =======
@@ -2220,6 +2411,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 10% chance
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Your Healing Wave Rank 9 and Rank 10 and Lesser Healing Wave Rank 6 spells have a $h% chance to imbue your target with Totemic Power.
 
 https://www.wowhead.com/forever/spell=1219364
 =======
@@ -2229,6 +2421,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   The target of your Spirit of the Alpha ability takes $s1% reduced damage from Undead enemies.
 
 https://www.wowhead.com/forever/spell=1219365
 =======
@@ -2240,6 +2433,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=2 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
+tooltip   Your Earth Shock ability never misses when used as a taunt, and your chance to be Dodged or Parried is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1219382
 =======
@@ -2251,6 +2445,7 @@ effect 1  SPELLMOD_EFFECT1 -10 on family 11 mask 0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=3 family=11 mask=0x0,0x20000 target=[1,0]
 effect 2  SPELLMOD_EFFECT5 +30 on family 11 mask 0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 misc=33 family=11 mask=0x0,0x20000 target=[1,0]
+tooltip   Increases the damage taken reduction from your Shamanistic Rage ability by an additional $s1% and during Shamanistic Rage your attack speed and spellcasting speed are increased by $s2%.
 
 https://www.wowhead.com/forever/spell=1219413
 =======
@@ -2260,6 +2455,7 @@ attrs     passive
 
 effect 1  absorbs 20 every school damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=20 misc=127 target=[1,0]
+tooltip   You take $s1% reduced damage from Undead enemies.
 
 https://www.wowhead.com/forever/spell=1219414
 =======
@@ -2273,6 +2469,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=-2 misc=4 target=[1,0]
 effect 3  +2% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=2 target=[1,0]
+tooltip   Your Menace ability never misses, and your chance to be Dodged or Parried or for your spells to miss is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1219474
 =======
@@ -2282,6 +2479,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 60
           E_APPLY_AURA A_DUMMY base=60 sp=1 target=[1,0]
+tooltip   Your Lava Burst damage is increased by a percentage equal to your spell critical strike chance.
 
 https://www.wowhead.com/forever/spell=1213957
 =======
@@ -2292,6 +2490,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   When your Lava Burst, Chain Lightning, or Lightning Bolt strikes a target afflicted with your Flame Shock Rank 5 or Rank 6, it also deals one pulse of Flame Shock's damage.
 
 https://www.wowhead.com/forever/spell=1226961
 =======
@@ -2305,6 +2504,7 @@ effect 1  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 11 mask 0x0,0x0,0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=11 mask=0x0,0x0,0x8000 target=[1,0]
 effect 2  casts 1233835 Thunder and Lava on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 trigger=1233835 target=[1,0]
+tooltip   Chance to trigger Overload increased by an additional $s1% and Lava Bursts damage is increased by a percentage equal to your spell critical strike chance. When Lightning Bolt or Chain Lightning deal damage, increase the damage dealt by your next Lava Burst cast within $1233835d by $1233835s1%, stacking up to $1233835u times.
 
 https://www.wowhead.com/forever/spell=1226977
 =======
@@ -2316,6 +2516,7 @@ effect 1  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
 effect 2  a dummy aura holding 35
           E_APPLY_AURA A_DUMMY base=35 target=[1,0]
+tooltip   When your Chain Lightning damages fewer than $s1 targets, it deals $s2% increased damage for each target less than $s1.
 
 https://www.wowhead.com/forever/spell=1226978
 =======
@@ -2326,6 +2527,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; 100%
 
 effect 1  a dummy aura holding 9
           E_APPLY_AURA A_DUMMY base=9 target=[1,0]
+tooltip   While Static Shock is active, Lava Lash, Lava Burst, and Stormstrike have a $h% chance to add a charge to your Lightning Shield. If charges exceed $s1, Lightning Shield will immediately deal damage to your target instead of adding charges.
 
 https://www.wowhead.com/forever/spell=1226984
 =======
@@ -2343,6 +2545,7 @@ effect 4  a dummy aura holding 200
           E_APPLY_AURA A_DUMMY base=200 target=[1,0]
 effect 5  SPELLMOD_COST -60% on family 11 mask 0x8000000,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-60 misc=14 family=11 mask=0x8000000,0x40000 target=[1,0]
+tooltip   Reduces the cooldown on your Fire Nova Totem by $s1%, increases its damage by $s4%, and reduces its mana cost by $s5%. Additionally, your Fire Nova Totem now activates instantly on cast.
 
 https://www.wowhead.com/forever/spell=1226986
 =======
@@ -2358,6 +2561,7 @@ effect 3  a dummy aura holding 200
           E_APPLY_AURA A_DUMMY base=200 target=[1,0]
 effect 4  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+tooltip   Maelstrom Weapon can now stack up to ${$m1+5} charges. When using a two-handed weapon, gain $s4 charges at a time. Casts with over $s1 charges increase that spell's damage or healing dealt by $s2% per excess charge. Casts while at ${$m1+5} charges will consume all charges and cast twice.
 
 https://www.wowhead.com/forever/spell=1226997
 =======
@@ -2367,6 +2571,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 25
           E_APPLY_AURA A_DUMMY base=25 target=[1,0]
+tooltip   Heals from your Earth Shield have a $s1% chance to make your next cast time heal instant cast.
 
 https://www.wowhead.com/forever/spell=1227093
 =======
@@ -2377,6 +2582,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Your Healing Wave and Lesser Healing Wave also heal your Earth Shield target for $s1% as much, if that is a different target.
 
 https://www.wowhead.com/forever/spell=1227099
 =======
@@ -2388,6 +2594,7 @@ effect 1  SPELLMOD_JUMP_TARGETS +1 on family 11 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=17 family=11 mask=0x100 target=[1,0]
 effect 2  SPELLMOD_DAMAGE_MULTIPLIER +20% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=20 family=11 mask=0x100 target=[1,0]
+tooltip   Your Chain Heal jumps to $s1 additional targets and its magnitude reduces $s2% less per jump.
 
 https://www.wowhead.com/forever/spell=1227111
 =======
@@ -2398,6 +2605,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 7
           E_APPLY_AURA A_DUMMY base=7 target=[1,0]
+tooltip   Your Shock spells activate your Shield Mastery rune ability, and the effect of Shield Mastery can now stack up to $s1 times.
 
 https://www.wowhead.com/forever/spell=1227153
 =======
@@ -2411,6 +2619,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 2  a dummy aura holding 3
           E_APPLY_AURA A_DUMMY base=3 target=[1,0]
+tooltip   Each time your Lightning Shield deals damage, you heal for $s1% of the damage it dealt, no more than once every $s2 sec.
 
 https://www.wowhead.com/forever/spell=1227159
 =======
@@ -2420,6 +2629,7 @@ attrs     passive, can proc from procs
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Shield Mastery stacks also reduce the cast time of your Lava Burst by $s1% per stack. Lava Burst no longer consumes Maelstrom Weapon charges.
 
 https://www.wowhead.com/forever/spell=1227164
 =======
@@ -2434,6 +2644,7 @@ effect 1  casts 415105 Power Surge on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=14 trigger=415105 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Your Lightning Bolt critical strikes have a $h% chance to reset the cooldown on Lava Burst and Chain Lightning and make the next Lava Burst or Chain Lightning within $415105d instant.
 
 https://www.wowhead.com/forever/spell=457520
 =======
@@ -2445,6 +2656,7 @@ refs      29228 Flame Shock
 
 effect 1  a dummy aura holding 14
           E_APPLY_AURA A_DUMMY base=14 target=[1,0]
+tooltip   Lava Burst now also refreshes the duration of Flame Shock on your target back to $29228d.
 
 https://www.wowhead.com/forever/spell=457524
 =======
@@ -2454,6 +2666,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RADIUS +20 on family 11 mask 0x403e000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=6 family=11 mask=0x403e000 target=[1,0]
+tooltip   The radius of your totems that affect friendly targets is increased to ${$m1+20} yd.
 
 https://www.wowhead.com/forever/spell=457475
 =======
@@ -2465,6 +2678,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +10 on family 11 mask 0x0,0x200
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 sp=1 misc=8 family=11 mask=0x0,0x200 target=[1,0]
 effect 2  +2% spell crit
           E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=2 sp=1 misc=126 target=[1,0]
+tooltip   Your Flurry talent grants an additional $s1% increase to your attack speed.
 
 https://www.wowhead.com/forever/spell=457532
 =======
@@ -2476,6 +2690,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 25% chance
 
 effect 1  a dummy aura holding 35
           E_APPLY_AURA A_DUMMY base=35 target=[1,0]
+tooltip   After casting your Healing Wave, Lesser Healing Wave, or Riptide spell, gives you a $h% chance to gain Mana equal to $s1% of the base cost of the spell.
 
 https://www.wowhead.com/forever/spell=457478
 =======
@@ -2489,6 +2704,7 @@ effect 2  a dummy aura holding 60
           E_APPLY_AURA A_DUMMY base=60 target=[1,0]
 effect 3  SPELLMOD_DAMAGE_MULTIPLIER +100% on family 11 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 sp=1 misc=20 family=11 mask=0x40 target=[1,0]
+tooltip   Your Healing Wave will now jump to additional nearby targets. Each jump reduces the effectiveness of the heal by $s2%, and the spell will jump to up to ${$m1-1} additional targets.
 
 https://www.wowhead.com/forever/spell=457494
 =======
@@ -2498,6 +2714,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT2 -5 on family 11 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=12 family=11 mask=0x8000 target=[1,0]
+tooltip   Your Stoneskin Totem also reduces Physical damage taken by $s1% and your Windwall Totem also reduces Magical damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=457544
 =======
@@ -2508,6 +2725,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC
 
 effect 1  casts 16246 Clearcasting on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=100 sp=1 trigger=16246 perResource=5 target=[1,0]
+tooltip   Your spell critical strikes now have a $h% chance trigger your Elemental Focus talent.
 
 https://www.wowhead.com/forever/spell=467818
 =======
@@ -2517,6 +2735,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT3 +5 on family 11 mask 0x0,0x0,0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=23 perResource=5 family=11 mask=0x0,0x0,0x20000 target=[1,0]
+tooltip   Loyal Beta from your Spirit of the Alpha ability now also increases Fire, Frost, and Nature damage by $s1%.
 
 https://www.wowhead.com/forever/spell=467823
 =======
@@ -2528,6 +2747,7 @@ effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 perResource=5 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 sp=1 perResource=5 target=[1,0]
+tooltip   While Clearcasting is active, you deal $s2% more non-Physical damage.
 
 https://www.wowhead.com/forever/spell=467863
 =======
@@ -2537,6 +2757,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CHANCE_OF_SUCCESS +12% on family 11 mask 0x0,0x0,0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=12 sp=1 misc=18 perResource=5 family=11 mask=0x0,0x0,0x2000 target=[1,0]
+tooltip   Your chance to trigger Static Shock is increased by $m1% (${$m1/2}% while dual-wielding).
 
 https://www.wowhead.com/forever/spell=467877
 =======
@@ -2546,6 +2767,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
+tooltip   Increases the main hand damage done by your Stormstrike by $s1%.
 
 https://www.wowhead.com/forever/spell=467879
 =======
@@ -2557,6 +2779,7 @@ refs      432134 Static Shock
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+tooltip   While Static Shock is engraved, your Lightning Shield now gains a charge each time you hit a target with Lightning Bolt or Chain Lightning, up to a maximum of ${$432134m1+3} charges. In addition, while Static Shock is engraved, your Lightning Shield can now deal critical damage.
 
 https://www.wowhead.com/forever/spell=467882
 =======
@@ -2567,6 +2790,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 perResource=5 target=[1,0]
+tooltip   Your non-periodic damaging and healing critical strikes now have a $h% chance to trigger your Water Shield, but do not consume a charge or trigger its cooldown.
 
 https://www.wowhead.com/forever/spell=467804
 =======
@@ -2577,6 +2801,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+tooltip   Your Chain Lightning now also heals the target of your most recent Earth Shield for $s1% of the damage done.
 
 https://www.wowhead.com/forever/spell=467809
 =======
@@ -2586,6 +2811,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DAMAGE +20% on family 11 mask 0x102
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=11 mask=0x102 target=[1,0]
+tooltip   Increases the healing of Chain Heal and the damage of Chain Lightning by $s1%.
 
 https://www.wowhead.com/forever/spell=467814
 =======
@@ -2597,6 +2823,7 @@ refs      467891 Shield Block
 
 effect 1  casts 467891 Shield Block on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=30 sp=1 trigger=467891 target=[1,0]
+tooltip   Your Flame Shock also grants $467891s1% increased chance to Block for $467891d or until you Block an attack.
 
 https://www.wowhead.com/forever/spell=467889
 =======
@@ -2608,6 +2835,7 @@ refs      467910 Elemental Shield
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   Each time you Block, your Block amount is increased by $s1% of your Spell Damage for $467910d, stacking up to $467910u times.
 
 https://www.wowhead.com/forever/spell=467909
 =======
@@ -2618,6 +2846,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% ch
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   Each time you Block an attack, you have a $h% chance to trigger your Maelstrom Weapon rune.
 
 https://www.wowhead.com/forever/spell=467916
 =======
@@ -2629,6 +2858,7 @@ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x3,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x3,0x1000 target=[1,0]
 effect 2  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 11 mask 0x0,0x0,0x80000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=11 mask=0x0,0x0,0x80000 target=[1,0]
+tooltip   You have a $s1% chance to avoid interruption caused by damage while casting Lightning Bolt, Chain Lightning, or Lava Burst, and a $s2% increased chance to trigger your Elemental Focus talent.
 
 https://www.wowhead.com/forever/spell=1213900
 =======
@@ -2638,6 +2868,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +60% on family 11 mask 0xd1300403,0x1000,0x0,0x40000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 sp=1 misc=15 family=11 mask=0xd1300403,0x1000,0x0,0x40000000 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Fire, Frost, and Nature spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1213902
 =======
@@ -2649,6 +2880,7 @@ effect 1  SPELLMOD_DAMAGE +50% on family 11 mask 0x0,0x10,0x4
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 family=11 mask=0x0,0x10,0x4 target=[1,0]
 effect 2  a dummy effect holding 100 to the caster
           E_DUMMY base=100 target=[1,0]
+tooltip   Increases Stormstrike and Lava Lash damage by $s1%. This effect is increased to $s2% if using a two-handed weapon.
 
 https://www.wowhead.com/forever/spell=1213910
 =======
@@ -2660,6 +2892,7 @@ refs      1213915 Burning
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   Your Stormstrike, Lava Lash and Lava Burst critical strikes cause your target to burn for $s1% of the damage done over $1213915d.
 
 https://www.wowhead.com/forever/spell=1213918
 =======
@@ -2669,6 +2902,7 @@ attrs     passive
 
 effect 1  SPELLMOD_EFFECT3 +25 on family 11 mask 0x0,0x0,0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 misc=23 family=11 mask=0x0,0x0,0x10 target=[1,0]
+tooltip   Your Riptide increases the amount healed by Chain Heal by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=1213810
 =======
@@ -2678,6 +2912,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 11 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=11 mask=0x100 target=[1,0]
+tooltip   Reduces the cast time of Chain Heal by ${$m1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1213894
 =======
@@ -2689,6 +2924,7 @@ refs      1213934 Stormbraced
 
 effect 1  casts 1213934 Stormbraced on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=50 trigger=1213934 target=[1,0]
+tooltip   Damaging a target with Stormstrike, Lava Burst, or Molten Blast also reduces all damage you take by $1213934s1% for $1213934d.
 
 https://www.wowhead.com/forever/spell=1213930
 =======
@@ -2700,6 +2936,7 @@ refs      1213939 Pack Leader
 
 effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   When your Spirit of the Alpha is cast on yourself, it also increases your health by $1213939s1%, your threat generated by $1213939s2%, and all damage you deal by $1213939s3%.
 
 https://www.wowhead.com/forever/spell=1213937
 =======
@@ -2709,6 +2946,7 @@ attrs     passive
 
 effect 1  +7 to skill 95
           E_APPLY_AURA A_MOD_SKILL base=7 misc=95 target=[1,0]
+tooltip   Increased Defense +$s1.
 
 https://www.wowhead.com/forever/spell=468411
 =======
@@ -2718,6 +2956,7 @@ attrs     passive
 
 effect 1  +10% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=10 target=[1,0]
+tooltip   Increases your chance to block attacks with a shield by $s1%.
 
 https://www.wowhead.com/forever/spell=468441
 =======
@@ -2727,6 +2966,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CHANCE_OF_SUCCESS +5% on family 11 mask 0x0,0x0,0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=18 family=11 mask=0x0,0x0,0x80 target=[1,0]
+tooltip   Increases the chance to trigger your Power Surge rune by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=468445
 =======
@@ -2759,6 +2999,8 @@ duration  permanent
 
 effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 11 mask 0x90100003,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=11 mask=0x90100003,0x1000 target=[1,0]
+tooltip   The Global Cooldown of your Shock, Lightning, and Lava Burst spells is reduced by ${$m1/-1000}.1 seconds.
+aura      The Global Cooldown of your offensive spells is reduced by ${$m1/-1000}.1 seconds.
 
 https://www.wowhead.com/forever/spell=1234326
 =======
@@ -2806,6 +3048,7 @@ labels    24
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 11 mask 0x90100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=7 family=11 mask=0x90100000 target=[1,0]
+tooltip   Improves your chance to get a critical strike with all Shock spells by $s1%.
 
 https://www.wowhead.com/forever/spell=22804
 =======
@@ -2815,6 +3058,7 @@ duration  15 s
 
 effect 1  restores 18 mana every 1 s to every ally in the target area (15 ticks)
           E_APPLY_AURA A_PERIODIC_ENERGIZE base=18 period=1000ms radius=40 target=[18,31]
+aura      Regenerating $w1 mana every $t1 sec.
 
 https://www.wowhead.com/forever/spell=433255
 =======
@@ -2826,6 +3070,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  +30% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+aura      Block chance increased by $s1% for next attack.
 
 https://www.wowhead.com/forever/spell=467891
 =======
@@ -2841,6 +3086,9 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_BLOCK_VALUE_PCT base=15 target=[1,0]
 effect 3  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   Each time you Block, you regenerate mana equal to $408525s2% of your maximum mana and you gain Armor equal to $408525s1% of your shield's armor value, stacking up to $s3 times. You also always gain $s1% increased chance to Block and $s2% increased Block value.
+
+          In addition, each time you use a Shock ability, you gain $460200s2 Spell Damage for each point of your defense skill beyond ${$PL*5}. Lasts $460171d.
 
 https://www.wowhead.com/forever/spell=408524
 =======
@@ -2856,6 +3104,8 @@ effect 2  restores 8% of maximum mana to the caster
           E_ENERGIZE_PCT base=8 target=[1,0]
 effect 3  SPELLMOD_CASTING_TIME +0% on family 11 mask 0x0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=10 family=11 mask=0x0,0x1000 target=[1,0]
+tooltip   Increases armor by $s1% of your shield's Armor value for $d, stacking up to $u times.
+aura      Armor increased by $w1.
 
 https://www.wowhead.com/forever/spell=408525
 =======
@@ -2865,6 +3115,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408524 misc=399954 target=[1,0]
+tooltip   Gain the Shield Mastery ability:
+
+          $@spellicon408524
+          $@spelldesc408524
 
 https://www.wowhead.com/forever/spell=409943
 =======
@@ -2895,6 +3149,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  a dummy aura holding 150
           E_APPLY_AURA A_DUMMY base=150 target=[1,0]
+tooltip   Spirit Wolves' attacks heal them and their master for $s1% of damage done
+aura      Converts $s1% damage to health.
 
 https://www.wowhead.com/forever/spell=440593
 =======
@@ -2906,6 +3162,7 @@ attrs     cannot crit
 
 effect 1  51–57 healing to the target
           E_HEAL base=54 variance=0.11111111 target=[25,0]
+tooltip   Spirit Wolves' attacks heal them and their master for a percentage of damage done.
 
 https://www.wowhead.com/forever/spell=440609
 =======
@@ -2921,6 +3178,7 @@ effect 1  0 threat to the target
           E_THREAT base=0 target=[25,0]
 effect 2  unrecognised shape
           E_175 base=0 misc=5 misc2=150 radius=1 target=[65,86]
+tooltip   Leaps behind the target.
 
 https://www.wowhead.com/forever/spell=440605
 =======
@@ -2947,6 +3205,8 @@ effect 1  +60% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=60 sp=1 target=[1,0]
 effect 2  +60% movement speed to the caster's master
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=60 sp=1 target=[27,0]
+tooltip   Removes all movement impairing effects and increases the movement speed of you and your Spirit Wolves by $s1% for $d.
+aura      Movement speed increased by $s1%
 
 https://www.wowhead.com/forever/spell=440591
 =======
@@ -2958,6 +3218,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 12% ch
 
 effect 1  SPELLMOD_CHARGES +6 on family 11 mask 0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 misc=4 family=11 mask=0x400 target=[1,0]
+tooltip   Your Lightning Shield now has ${$m1+3} charges, and your melee attacks have a $h% chance (${$h/2}% chance while dual-wielding) to trigger one of those charges, immediately damaging your target.
 
 https://www.wowhead.com/forever/spell=432134
 =======
@@ -2968,6 +3229,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=432134 misc=417346 target=[1,0]
+tooltip   Gain the Static Shock ability:
+
+          $@spellicon432134
+          $@spelldesc432134
 
 https://www.wowhead.com/forever/spell=432237
 =======
@@ -3033,6 +3298,7 @@ duration  permanent
 
 effect 1  summons creature 14870 to target 41
           E_SUMMON base=480 ppl=3 amplitude=10000000000 misc=14870 misc2=81 radius=3 target=[41,0]
+tooltip   Summons a Stoneclaw Totem TEST.
 
 https://www.wowhead.com/forever/spell=23789
 =======
@@ -3046,6 +3312,7 @@ effect 1  party aura: -4 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-4 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=8072
 =======
@@ -3059,6 +3326,7 @@ effect 1  party aura: -7 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-7 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=8156
 =======
@@ -3072,6 +3340,7 @@ effect 1  party aura: -11 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-11 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=8157
 =======
@@ -3085,6 +3354,7 @@ effect 1  party aura: -16 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-16 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=10403
 =======
@@ -3098,6 +3368,7 @@ effect 1  party aura: -22 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-22 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=10404
 =======
@@ -3111,6 +3382,7 @@ effect 1  party aura: -30 physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_TAKEN base=-30 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% physical damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=1 radius=20 target=[1,0]
+aura      Reduces Physical damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=10405
 =======
@@ -3121,6 +3393,7 @@ labels    24
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 11 mask 0x90100003
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=7 family=11 mask=0x90100003 target=[1,0]
+tooltip   Increases the critical strike chance with your Shock, Lightning Bolt and Chain Lightning spells by $s1%.
 
 https://www.wowhead.com/forever/spell=29005
 =======
@@ -3130,6 +3403,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 11 mask 0x1,0x0,0x0,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=7 family=11 mask=0x1,0x0,0x0,0x1 target=[1,0]
+tooltip   Increases the critical strike chance of your Lightning Bolt spell by $m1%.
 
 https://www.wowhead.com/forever/spell=1309442
 =======
@@ -3145,6 +3419,7 @@ effect 2  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 3  SPELLMOD_DOT +60% on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=60 misc=22 family=11 mask=0x10000000 target=[1,0]
+tooltip   Reduces the cooldown of your Chain Lightning by $s1%, causes your Earthbind Totem to root targets for $440574d when cast, and increases the periodic damage done by your Flame Shock by $s3%.
 
 https://www.wowhead.com/forever/spell=440569
 =======
@@ -3154,6 +3429,7 @@ duration  10 s
 
 effect 1  -10% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=127 target=[1,0]
+aura      Reduces all damage taken by $s1%.
 
 https://www.wowhead.com/forever/spell=1213934
 =======
@@ -3163,6 +3439,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 11 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=11 mask=0x1 target=[1,0]
+tooltip   -$/1000;S1 seconds on the casting time of your Lightning Bolt spell.
 
 https://www.wowhead.com/forever/spell=435983
 =======
@@ -3173,6 +3450,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -0.4 s on family 11 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-400 misc=10 family=11 mask=0x100 target=[1,0]
+tooltip   -$/1000;S1 seconds on the casting time of your Chain Heal spell.
 
 https://www.wowhead.com/forever/spell=26122
 =======
@@ -3185,6 +3463,7 @@ refs      26121 Stormcaller's Wrath
 
 effect 1  casts 26121 Stormcaller's Wrath on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26121 target=[1,0]
+tooltip   Your Lightning Bolt, Chain Lightning, and Shock spells have a 20% chance to grant up to $26121s1 Nature damage to spells for $26121d.
 
 https://www.wowhead.com/forever/spell=26119
 =======
@@ -3198,6 +3477,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 11 mask 0x90100003
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 misc=7 family=11 mask=0x90100003 target=[1,0]
+aura      Your next Lightning Bolt, Chain Lightning, or Shock spell is guaranteed a critical strike.
 
 https://www.wowhead.com/forever/spell=467880
 =======
@@ -3209,6 +3489,7 @@ labels    24
 
 effect 1  raid aura: +7 strength
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=7 radius=30 target=[1,0]
+aura      Increases Strength by $s1.
 
 https://www.wowhead.com/forever/spell=8076
 =======
@@ -3220,6 +3501,7 @@ labels    24
 
 effect 1  raid aura: +14 strength
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=14 radius=30 target=[1,0]
+aura      Increases Strength by $s1.
 
 https://www.wowhead.com/forever/spell=8162
 =======
@@ -3231,6 +3513,7 @@ labels    24
 
 effect 1  raid aura: +25 strength
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=25 radius=30 target=[1,0]
+aura      Increases Strength by $s1.
 
 https://www.wowhead.com/forever/spell=8163
 =======
@@ -3242,6 +3525,7 @@ labels    24
 
 effect 1  raid aura: +42 strength
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=42 radius=30 target=[1,0]
+aura      Increases Strength by $s1.
 
 https://www.wowhead.com/forever/spell=10441
 =======
@@ -3253,6 +3537,7 @@ labels    24
 
 effect 1  raid aura: +53 strength
           E_APPLY_AREA_AURA_RAID A_MOD_STAT base=53 radius=30 target=[1,0]
+aura      Increases Strength by $s1.
 
 https://www.wowhead.com/forever/spell=25362
 =======
@@ -3263,6 +3548,7 @@ attrs     passive
 
 effect 1  SPELLMOD_ALL_EFFECTS +25% on family 11 mask 0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 misc=8 family=11 mask=0x4000 target=[1,0]
+tooltip   Increases the mana gained from your Mana Spring totems by $s1%.
 
 https://www.wowhead.com/forever/spell=29171
 =======
@@ -3275,6 +3561,7 @@ proc      hears PROC_FLAG_KILL; no roll, it fires whenever its condition is met
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=426257
 =======
@@ -3287,6 +3574,8 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x1c0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=10 family=11 mask=0x1c0 target=[1,0]
+tooltip   Reduces the cast time of your next Lesser Healing Wave, Healing Wave, or Chain Heal by $s1%.
+aura      Cast time of your next Lesser Healing Wave, Healing Wave, or Chain Heal spell reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1227088
 =======
@@ -3299,6 +3588,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_F
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=420799
 =======
@@ -3309,6 +3599,8 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Summoned totems grant a boon of their element.
+aura      Summoned totems grant a boon of their element.
 
 https://www.wowhead.com/forever/spell=452466
 =======
@@ -3319,6 +3611,8 @@ proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its cond
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Summoned totems grant a boon of their element.
+aura      Summoned totems grant a boon of their element.
 
 https://www.wowhead.com/forever/spell=469183
 =======
@@ -3331,6 +3625,7 @@ refs      22048 Attack
 
 effect 1  summons creature 13838 to target 44
           E_SUMMON base=5 misc=13838 misc2=63 target=[44,0]
+tooltip   Summons a Testing Totem with $s1 health at your feet for $d that rapidly attacks an enemy within $22048r yards for $22048s1 Fire damage.
 
 https://www.wowhead.com/forever/spell=22047
 =======
@@ -3359,6 +3654,7 @@ duration  120 s
 
 effect 1  SPELLMOD_COST -100% on family 11 mask 0x82fc0,0x10000428,0x10010010
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=11 mask=0x82fc0,0x10000428,0x10010010 target=[1,0]
+aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262315
 =======
@@ -3372,6 +3668,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_DAMAGE +10% on family 11 mask 0x0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 family=11 mask=0x0,0x1000 target=[1,0]
+aura      Damage done by your next Lava Burst increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1233835
 =======
@@ -3390,6 +3687,7 @@ effect 2  SPELLMOD_CRITICAL_CHANCE +25% on family 11 mask 0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=25 sp=1 misc=7 family=11 mask=0x80 target=[1,0]
 effect 3  SPELLMOD_CASTING_TIME -15% on family 11 mask 0x100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 sp=1 misc=10 family=11 mask=0x100 target=[1,0]
+aura      Reduces the cast time of Healing Wave by $s1%, reduces the cast time of Chain Heal by $s3%, and increases the critical strike chance of Lesser Healing Wave by $s2%.
 
 https://www.wowhead.com/forever/spell=432041
 =======
@@ -3402,6 +3700,7 @@ refs      432041 Tidal Waves
 
 effect 1  casts 432041 Tidal Waves on its trigger from family 11 mask 0xc0
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=2 trigger=432041 family=11 mask=0xc0 target=[1,0]
+tooltip   When you cast Chain Heal or Riptide you gain $s1 charges of Tidal Waves, which reduces the cast time of your Healing Wave by $432041s1%, reduces the cast time of your Chain Heal by $432041s3%, and increases the critical effect chance of your Lesser Healing Wave by $432041s2%.
 
 https://www.wowhead.com/forever/spell=432042
 =======
@@ -3411,6 +3710,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 11 mask 0xc0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 misc=7 family=11 mask=0xc0 target=[1,0]
+tooltip   Increases the critical strike chance of your Healing Wave and Lesser Healing Wave spells by $m1%.
 
 https://www.wowhead.com/forever/spell=1309539
 =======
@@ -3421,6 +3721,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -5% on family 11 mask 0x20081018
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-5 misc=14 family=11 mask=0x20081018 target=[1,0]
+tooltip   Reduces the mana cost of your totems by $s1%.
 
 https://www.wowhead.com/forever/spell=1270492
 =======
@@ -3432,6 +3733,7 @@ labels    24
 
 effect 1  SPELLMOD_COOLDOWN -1 s on family 11 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=11 mask=0x40000 target=[1,0]
+tooltip   Reduces the cooldown of Grounding Totem by ${$s1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1249011
 =======
@@ -3441,6 +3743,7 @@ attrs     passive
 
 effect 1  a dummy aura holding 68
           E_APPLY_AURA A_DUMMY base=68 target=[1,0]
+tooltip   Increases the attack power bonus on Windfury Weapon attacks by $s1.
 
 https://www.wowhead.com/forever/spell=470235
 =======
@@ -3452,6 +3755,7 @@ refs      470272 Totem of Conductive Currents
 
 effect 1  casts 470272 Totem of Conductive Currents on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=20 trigger=470272 target=[1,0]
+tooltip   While Frostbrand Weapon is active on your main hand weapon, your Water Shield triggers reduce the cast time of your next Chain Lightning spell within $470272d1 by $470272s1%, and increases its damage by $470272s1%. Stacking up to 5 times.
 
 https://www.wowhead.com/forever/spell=470240
 =======
@@ -3469,6 +3773,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_IGNORE_MELEE_RESET base=0 family=11 mask=0x2 target=[1,0]
 effect 3  SPELLMOD_DAMAGE +20% on family 11 mask 0x2
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 family=11 mask=0x2 target=[1,0]
+aura      Reduces the cast time your next Chain Lightning spell by $s1%, and increases its damage by $s3%.
 
 https://www.wowhead.com/forever/spell=470272
 =======
@@ -3480,6 +3785,7 @@ refs      461300 Totem of Earthen Vitality
 
 effect 1  casts 461300 Totem of Earthen Vitality on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=461300 target=[1,0]
+tooltip   While a Shield is equipped, your melee attacks with Rockbiter Weapon restore $461300s1% of your total mana.
 
 https://www.wowhead.com/forever/spell=461299
 =======
@@ -3488,6 +3794,7 @@ school    nature
 
 effect 1  restores 2% of maximum mana to the caster
           E_ENERGIZE_PCT base=2 target=[1,0]
+tooltip   Restores $s1% of your total mana.
 
 https://www.wowhead.com/forever/spell=461300
 =======
@@ -3501,6 +3808,7 @@ effect 1  a dummy aura holding 1000
           E_APPLY_AURA A_DUMMY base=1000 target=[1,0]
 effect 2  a dummy aura holding 2000
           E_APPLY_AURA A_DUMMY base=2000 target=[1,0]
+tooltip   Fire Nova damage extends the duration of your Flame Shock on the target by ${$s1/1000} sec. Against Beasts, this duration is extended by an additional ${$s2/1000} sec.
 
 https://www.wowhead.com/forever/spell=1308939
 =======
@@ -3510,6 +3818,7 @@ attrs     passive
 
 effect 1  SPELLMOD_RANGE +5 on family 11 mask 0x10000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=5 family=11 mask=0x10000000 target=[1,0]
+tooltip   Increase the range of your Flame Shock spell by $s1 yards.
 
 https://www.wowhead.com/forever/spell=446730
 =======
@@ -3521,6 +3830,7 @@ effect 1  casts 1214293 Totem of Life when the target is hit from family 11 mask
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=200 trigger=1214293 family=11 mask=0x0,0x8 target=[1,0]
 effect 2  a dummy aura holding 40
           E_APPLY_AURA A_DUMMY base=40 target=[1,0]
+tooltip   Your Cure Poison and Cure Disease spells also heal the target for $s1. Your Poison Cleansing Totem and Disease Cleansing Totem also heal your group for $s2 when cast.
 
 https://www.wowhead.com/forever/spell=1214292
 =======
@@ -3530,6 +3840,8 @@ duration  12 s
 
 effect 1  +24 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=24 target=[1,0]
+tooltip   Your Stormstrike spell causes you to gain $w attack power for $d1.
+aura      Attack power increased by $w.
 
 https://www.wowhead.com/forever/spell=461297
 =======
@@ -3542,6 +3854,7 @@ refs      461297 Totem of Raging Fire
 
 effect 1  casts 461297 Totem of Raging Fire on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=24 sp=1 trigger=461297 target=[1,0]
+tooltip   Your Stormstrike spell causes you to gain $461297M1 attack power for $461297d1. (More effective with a two-handed weapon).
 
 https://www.wowhead.com/forever/spell=461298
 =======
@@ -3554,6 +3867,7 @@ effect 1  a dummy aura every 2 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 sp=1 period=2000ms target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   While a Shield is equipped, your melee attacks with Rockbiter Weapon trigger your Maelstrom Weapon rune $470082s1% more often.
 
 https://www.wowhead.com/forever/spell=470081
 =======
@@ -3563,6 +3877,7 @@ duration  3 s
 
 effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 sp=1 perResource=5 target=[1,0]
+tooltip   Increases the frequency of Maelstrom Weapon triggering by $s1%.
 
 https://www.wowhead.com/forever/spell=470082
 =======
@@ -3574,6 +3889,7 @@ effect 1  a dummy aura every 2 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 sp=1 period=2000ms target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   While Rolling Thunder is engraved, Lava Burst casts have a $s1% chance to add an additional charge to your active Lightning Shield.
 
 https://www.wowhead.com/forever/spell=470104
 =======
@@ -3585,6 +3901,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  a dummy aura holding -500
           E_APPLY_AURA A_DUMMY base=-500 target=[1,0]
+tooltip   Shock casts against Undead reduce the remaining cooldown on Stormstrike by ${$s1/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1307208
 =======
@@ -3595,6 +3912,7 @@ labels    24
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +1% on family 11 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 sp=1 misc=7 family=11 mask=0x1 target=[1,0]
+tooltip   Increases the critical strike chance of Lightning Bolt by $s1%.
 
 https://www.wowhead.com/forever/spell=461295
 =======
@@ -3607,6 +3925,7 @@ refs      446219 Cries of Corrupted Ancestry
 
 effect 1  casts 446219 Cries of Corrupted Ancestry on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=446219 target=[1,0]
+tooltip   Flame Shock grants $446219s1 attack power, spell damage, and healing for $446219d1.
 
 https://www.wowhead.com/forever/spell=446220
 =======
@@ -3617,6 +3936,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_CHARGES +1 on family 11 mask 0x0,0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=1 misc=4 family=11 mask=0x0,0x4000 target=[1,0]
+tooltip   Your Elemental Focus talent now has a maximum of ${$s1+1} charges, and is set to ${$s1+1} charges when it triggers.
 
 https://www.wowhead.com/forever/spell=470105
 =======
@@ -3626,6 +3946,7 @@ attrs     passive
 
 effect 1  SPELLMOD_CASTING_TIME -100% on family 11 mask 0x0,0x0,0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=11 mask=0x0,0x0,0x100000 target=[1,0]
+tooltip   The cast time of your Healing Rain spell is reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=461301
 =======
@@ -3636,6 +3957,7 @@ attrs     passive
 
 effect 1  SPELLMOD_COST -12% on family 11 mask 0x20081018
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-12 misc=14 family=11 mask=0x20081018 target=[1,0]
+tooltip   Reduces the mana cost of your totem spells by $s1%.
 
 https://www.wowhead.com/forever/spell=28818
 =======
@@ -3647,6 +3969,7 @@ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; 10% chance
 
 effect 1  a dummy aura from family 11 mask 0x1000
           E_APPLY_AURA A_DUMMY base=0 family=11 mask=0x1000 target=[1,0]
+tooltip   Your Healing Wave and Lesser Healing Wave spells have a chance to imbue your target with Totemic Power.
 
 https://www.wowhead.com/forever/spell=28823
 =======
@@ -3658,6 +3981,7 @@ labels    24
 
 effect 1  party aura: -20% threat
           E_APPLY_AREA_AURA_PARTY A_MOD_THREAT base=-20 misc=127 radius=30 target=[1,0]
+aura      Reduces threat caused by $s1%.
 
 https://www.wowhead.com/forever/spell=25909
 =======
@@ -3692,6 +4016,7 @@ refs      21169 Reincarnation
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   Allows you to resurrect yourself upon death with $21169s1% health and mana.  Usable once per hour.
 
 https://www.wowhead.com/forever/spell=23683
 =======
@@ -3703,6 +4028,7 @@ refs      436365 Two-Handed Mastery
 
 effect 1  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+tooltip   Each time you strike an enemy with a two-handed weapon, you gain $436365s1% attack speed with two-handed weapons, $436365s2% increased Attack Power, and $436365s3% increased chance to hit with spells for $436365d. This effect is lost if you strike an enemy with a one-handed weapon.
 
 https://www.wowhead.com/forever/spell=436364
 =======
@@ -3712,6 +4038,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=436364 misc=399954 target=[1,0]
+tooltip   Gain the Two-Handed Mastery ability:
+
+          $@spellicon436364
+          $@spelldesc436364
 
 https://www.wowhead.com/forever/spell=436367
 =======
@@ -3722,6 +4052,7 @@ range     45 yd
 
 effect 1  277–323 nature damage to the enemy
           E_SCHOOL_DAMAGE base=300 variance=0.15333334 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=468782
 =======
@@ -3734,6 +4065,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  casts 408953 Building Inspiration on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=408953 target=[1,0]
+aura      Filled with inspiration.
 
 https://www.wowhead.com/forever/spell=456223
 =======
@@ -3746,6 +4078,8 @@ effect 1  SPELLMOD_ALL_EFFECTS +9 on family 11 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9 sp=1 misc=8 family=11 mask=0x4000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +7 on family 11 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=7 sp=1 misc=8 family=11 mask=0x2000 target=[1,0]
+tooltip   Increases the periodic effect of your Mana Spring totem by $s1 and your Healing Stream totem by $s2.  Lasts $d.
+aura      Periodic effect of your Mana Sprint totem increased by $s1 and your Healing Stream totem by $s2.
 
 https://www.wowhead.com/forever/spell=25102
 =======
@@ -3756,6 +4090,7 @@ refs      408680 Way of Earth
 
 effect 1  a dummy aura holding 30 every 1 s
           E_APPLY_AURA A_PERIODIC_DUMMY base=30 period=1000ms target=[1,0]
+tooltip   While Rockbiter Weapon is active on your main hand weapon and you have a shield equipped, you deal $408680s1% increased threat, gain $408680s2% increased health, take $408680s4% reduced damage, gain $408680s5% reduced chance to be critically hit by melee attacks, and Earth Shock taunts targets to attack you and has a separate cooldown from other Shock spells but has its range reduced to melee range. However, the range of your Lightning Bolt, Chain Lightning, Chain Heal, Healing Wave, and Lava Burst spells is reduced by $408680s13 yards.
 
 https://www.wowhead.com/forever/spell=408531
 =======
@@ -3789,6 +4124,8 @@ effect 12 replaces an action bar spell with 10414 Earth Shock
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408690 misc=10414 target=[1,0]
 effect 13 SPELLMOD_RANGE -20 on family 11 mask 0x143,0x1000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20 sp=1 misc=5 family=11 mask=0x143,0x1000 target=[1,0]
+tooltip   While Rockbiter Weapon is active on your main hand weapon, you deal $s1% increased threat, gain $s2% increased health, take $s4% reduced damage, gain $s5% reduced chance to be critically hit by melee attacks, and Earth Shock taunts targets to attack you and has a separate cooldown from other Shock spells.
+aura      Dealing $s1% increased threat. Health increased by $s2%. Earth Shock Taunts targets to attack you. $s4% reduced damage taken. $s5% reduced chance to be critically hit by melee attacks.
 
 https://www.wowhead.com/forever/spell=408680
 =======
@@ -3798,6 +4135,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408531 misc=399966 target=[1,0]
+tooltip   Gain the Way of Earth ability:
+
+          $@spellicon408531
+          $@spelldesc408531
 
 https://www.wowhead.com/forever/spell=409955
 =======
@@ -3811,6 +4152,7 @@ effect 1  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_DAMAGE_TAKEN base=-32 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=126 radius=20 target=[1,0]
+aura      Reduces ranged damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=15108
 =======
@@ -3824,6 +4166,7 @@ effect 1  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_DAMAGE_TAKEN base=-50 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=126 radius=20 target=[1,0]
+aura      Reduces ranged damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=15109
 =======
@@ -3837,5 +4180,6 @@ effect 1  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_MOD_RANGED_DAMAGE_TAKEN base=-64 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% holy+fire+nature+frost+shadow+arcane damage taken
           E_APPLY_AREA_AURA_PARTY A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=126 radius=20 target=[1,0]
+aura      Reduces ranged damage taken by $w1.
 
 https://www.wowhead.com/forever/spell=15110

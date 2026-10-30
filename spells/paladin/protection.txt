@@ -12,6 +12,8 @@ effect 1  immune to root to the friendly target
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=7 target=[21,0]
 effect 2  immune to snare to the friendly target
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=11 target=[21,0]
+tooltip   Places a Blessing on the friendly target, granting immunity to movement impairing effects for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Immune to movement impairing effects.
 
 https://www.wowhead.com/forever/spell=1044
 =======
@@ -26,6 +28,8 @@ labels    26
 
 effect 1  +10% to all stats to the friendly target
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[21,0]
+tooltip   Places a Blessing on the friendly target, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Increases stats by $s1%.
 
 https://www.wowhead.com/forever/spell=20217
 =======
@@ -36,6 +40,7 @@ range     30 yd
 
 effect 1  +10% to all stats
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 target=[1,0]
+aura      Increases stats by $s1%.
 
 https://www.wowhead.com/forever/spell=1213408
 =======
@@ -55,6 +60,8 @@ effect 1  immune to physical to the target's raid
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+tooltip   A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to physical attacks.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=1022
 =======
@@ -74,6 +81,8 @@ effect 1  immune to physical to the target's raid
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+tooltip   A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to physical attacks.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=5599
 =======
@@ -93,6 +102,8 @@ effect 1  immune to physical to the target's raid
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[57,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_PACIFY base=0 target=[57,0]
+tooltip   A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to physical attacks.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=10278
 =======
@@ -109,6 +120,8 @@ effect 1  immune to physical to target 38
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[38,0]
 effect 2  unrecognised shape
           E_QUEST_COMPLETE base=0 misc=81573 target=[1,0]
+tooltip   A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for $25771d.
+aura      Immune to physical attacks.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=442948
 =======
@@ -123,6 +136,8 @@ labels    26
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_SPLIT_DAMAGE_FLAT base=45 amplitude=1 misc=127 target=[57,0]
+tooltip   Places a Blessing on the party member, transfering $s1 damage taken per hit to the caster.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Transfers $s1 damage taken per hit to the paladin.
 
 https://www.wowhead.com/forever/spell=6940
 =======
@@ -137,6 +152,8 @@ labels    26
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_SPLIT_DAMAGE_FLAT base=55 amplitude=1 misc=127 target=[57,0]
+tooltip   Places a Blessing on the party member, transfering $s1 damage taken per hit to the caster.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Transfers $s1 damage taken per hit to the paladin.
 
 https://www.wowhead.com/forever/spell=20729
 =======
@@ -155,6 +172,8 @@ effect 3  party aura: +0% interrupt duration
           E_APPLY_AREA_AURA_PARTY A_MECHANIC_DURATION_MOD base=0 sp=1 misc=26 radius=30 target=[1,0]
 effect 4  party aura: +0% silence duration
           E_APPLY_AREA_AURA_PARTY A_MECHANIC_DURATION_MOD base=0 sp=1 misc=9 radius=30 target=[1,0]
+tooltip   Gives a $s1% chance of ignoring spell interruption when damaged to all party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Gives a $s1% chance of ignoring spell interruption when damaged.
 
 https://www.wowhead.com/forever/spell=19746
 =======
@@ -169,6 +188,8 @@ effect 1  party aura: +55 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=55 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=465
 =======
@@ -183,6 +204,8 @@ effect 1  party aura: +275 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=275 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=643
 =======
@@ -197,6 +220,8 @@ effect 1  party aura: +505 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=505 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=1032
 =======
@@ -211,6 +236,8 @@ effect 1  party aura: +160 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=160 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=10290
 =======
@@ -225,6 +252,8 @@ effect 1  party aura: +390 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=390 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=10291
 =======
@@ -239,6 +268,8 @@ effect 1  party aura: +620 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=620 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=10292
 =======
@@ -253,6 +284,8 @@ effect 1  party aura: +735 armor
           E_APPLY_AREA_AURA_PARTY A_MOD_ARMOR_NO_MODS base=735 misc=1 radius=30 target=[1,0]
 effect 2  party aura: +0% healing taken
           E_APPLY_AREA_AURA_PARTY A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.
+aura      Increases armor by $s1.
 
 https://www.wowhead.com/forever/spell=10293
 =======
@@ -270,6 +303,8 @@ effect 2  casts 19753 Divine Intervention to the target's raid
           E_TRIGGER_SPELL base=0 sp=1 trigger=19753 target=[57,0]
 effect 3  unrecognised shape
           E_INSTAKILL base=0 target=[1,0]
+tooltip   The paladin sacrifices $ghimself:herself; to remove the targeted party member from harms way.  Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for $19753d.
+aura      Complete immunity but unable to move.
 
 https://www.wowhead.com/forever/spell=19752
 =======
@@ -291,6 +326,8 @@ effect 2  immune to physical
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
 effect 3  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+tooltip   You are protected from all physical attacks and spells for $d, but during that time you cannot attack or use physical abilities yourself.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to all attacks and spells.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=498
 =======
@@ -312,6 +349,8 @@ effect 2  immune to physical
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
 effect 3  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+tooltip   You are protected from all physical attacks and spells for $d, but during that time you cannot attack or use physical abilities yourself.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to all attacks and spells.  Cannot attack or use physical abilities.
 
 https://www.wowhead.com/forever/spell=5573
 =======
@@ -327,6 +366,8 @@ refs      25771 Forbearance
 
 effect 1  -50% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=127 target=[1,0]
+tooltip   Reduces all damage taken by $s1% for $d.  Once protected, you cannot be targeted by Divine Shield, Divine Protection, or Blessing of Protection again for $25771d.
+aura      Damage taken reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=458312
 =======
@@ -342,6 +383,8 @@ refs      25771 Forbearance
 
 effect 1  -50% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-50 misc=127 target=[1,0]
+tooltip   Reduces all damage taken by $s1% for $d.  Once protected, you cannot be targeted by Divine Shield, Divine Protection, or Blessing of Protection again for $25771d.
+aura      Damage taken reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=458371
 =======
@@ -363,6 +406,8 @@ effect 2  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
 effect 3  -50% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=127 target=[1,0]
+tooltip   Protects the paladin from all damage and spells for $d, but reduces all damage you deal by $s3%.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to all attacks and spells, but reduces all damage you deal by $s3%.
 
 https://www.wowhead.com/forever/spell=642
 =======
@@ -384,6 +429,8 @@ effect 2  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
 effect 3  -50% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-50 misc=127 target=[1,0]
+tooltip   Protects the paladin from all damage and spells for $d, but reduces all damage you deal by $s3%.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Immune to all attacks and spells, but reduces all damage you deal by $s3%.
 
 https://www.wowhead.com/forever/spell=1020
 =======
@@ -398,6 +445,8 @@ effect 1  raid aura: +30 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=4 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Fire resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Fire resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19891
 =======
@@ -412,6 +461,8 @@ effect 1  raid aura: +45 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=4 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Fire resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Fire resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19899
 =======
@@ -426,6 +477,8 @@ effect 1  raid aura: +60 fire resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=4 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Fire resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Fire resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19900
 =======
@@ -440,6 +493,8 @@ effect 1  raid aura: +30 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=16 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Frost resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Frost resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19888
 =======
@@ -454,6 +509,8 @@ effect 1  raid aura: +45 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=16 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Frost resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Frost resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19897
 =======
@@ -468,6 +525,8 @@ effect 1  raid aura: +60 frost resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=16 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Frost resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Frost resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19898
 =======
@@ -482,6 +541,8 @@ labels    26
 
 effect 1  +10% to all stats to target 153
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=10 misc=-1 misc2=31 radius=100 target=[153,0]
+tooltip   Gives all members of the raid or group that share the same class with the target the Greater Blessing of Kings, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.
+aura      Increases stats by $s1%.
 
 https://www.wowhead.com/forever/spell=25898
 =======
@@ -494,6 +555,7 @@ effect 1  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x80
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 sp=1 misc=11 family=10 mask=0x80 target=[1,0]
 effect 2  SPELLMOD_DURATION +3 s on family 10 mask 0x10
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3000 sp=1 misc=1 family=10 mask=0x10 target=[1,0]
+tooltip   Reduces the cooldown of your Blessing of Protection by $/60000;s1 min and increases the duration of your Blessing of Freedom by $/1000;s2 sec.
 
 https://www.wowhead.com/forever/spell=20174
 =======
@@ -510,6 +572,8 @@ labels    26
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=853
 =======
@@ -526,6 +590,8 @@ labels    26
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=5588
 =======
@@ -542,6 +608,8 @@ labels    26
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=5589
 =======
@@ -558,6 +626,8 @@ labels    26
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=10308
 =======
@@ -577,6 +647,7 @@ effect 2  a dummy effect holding 120 to the enemy
           E_DUMMY base=120 chain=3 target=[6,0]
 effect 3  a dummy effect holding 3 to the enemy
           E_DUMMY base=3 chain=4 target=[6,0]
+tooltip   Hammer the current target and up to ${$x1-1} additional nearby targets, causing Holy damage to each equal to $s3 times the damage per second of your main hand weapon. Cooldown shared with Crusader Strike.
 
 https://www.wowhead.com/forever/spell=407632
 =======
@@ -587,6 +658,10 @@ labels    3096, 3100
 
 effect 1  replaces an action bar spell with 417346
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=407632 misc=417346 target=[1,0]
+tooltip   Gain the Hammer of the Righteous ability:
+
+          $@spellicon407632
+          $@spelldesc407632
 
 https://www.wowhead.com/forever/spell=409922
 =======
@@ -608,6 +683,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
+aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 https://www.wowhead.com/forever/spell=20925
 =======
@@ -629,6 +706,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
+aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 https://www.wowhead.com/forever/spell=20927
 =======
@@ -650,6 +729,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
+aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 https://www.wowhead.com/forever/spell=20928
 =======
@@ -675,6 +756,7 @@ effect 2  SPELLMOD_EFFECT3 +30 on family 10 mask 0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=23 family=10 mask=0x20000 target=[1,0]
 effect 3  SPELLMOD_EFFECT4 +30 on family 10 mask 0x20000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=30 sp=1 misc=32 family=10 mask=0x20000 target=[1,0]
+tooltip   Increases the effect of your Concentration Aura by an additional $m1%, and your Concentration Aura also reduces the duration of Silence and Interrupt effects on your party members by $m2%.
 
 https://www.wowhead.com/forever/spell=20254
 =======
@@ -687,6 +769,7 @@ effect 1  SPELLMOD_EFFECT1 +5% on family 10 mask 0x40
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=3 family=10 mask=0x40 target=[1,0]
 effect 2  SPELLMOD_EFFECT2 +2 on family 10 mask 0x4020048
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=12 family=10 mask=0x4020048 target=[1,0]
+tooltip   Increases the armor bonus of your Devotion Aura by $s1%, and increases all healing received by party members affected by your Auras by $m2%.
 
 https://www.wowhead.com/forever/spell=20138
 =======
@@ -697,6 +780,7 @@ labels    26
 
 effect 1  SPELLMOD_COOLDOWN -5 s on family 10 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 sp=1 misc=11 family=10 mask=0x800 target=[1,0]
+tooltip   Decreases the cooldown of your Hammer of Justice spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=20487
 =======
@@ -707,6 +791,7 @@ attrs     passive
 
 effect 1  SPELLMOD_DURATION +0.5 s on family 10 mask 0x800
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=500 misc=1 family=10 mask=0x800 target=[1,0]
+tooltip   Increases the duration of Hammer of Justice by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24188
 =======
@@ -717,6 +802,7 @@ labels    26
 
 effect 1  SPELLMOD_EFFECT2 -6 on family 10 mask 0x1
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6 sp=1 misc=12 family=10 mask=0x1 target=[1,0]
+tooltip   While Righteous Fury is active, all damage taken is reduced by $m1%.
 
 https://www.wowhead.com/forever/spell=20468
 =======
@@ -729,6 +815,8 @@ labels    26
 
 effect 1  +0% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=127 target=[1,0]
+tooltip   Reduces the damage taken from all attacks by $s1% for $d.
+aura      Damage taken reduced by $w1%.
 
 https://www.wowhead.com/forever/spell=1311033
 =======
@@ -743,6 +831,7 @@ effect 1  SPELLMOD_THREAT +30% on family 10 mask 0x0,0x0,0x0,0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 misc=2 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=15 trigger=1311033 target=[1,0]
+tooltip   Increases the threat generated by your Holy Strike ability by $m1%. While Righteous Fury is active, Holy Strike also reduces your damage taken by $m2% for $1311033d.
 
 https://www.wowhead.com/forever/spell=1311034
 =======
@@ -759,6 +848,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 655 (at level 60)
           E_DUMMY base=487 ppl=28 sp=0.18 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=20183
 =======
@@ -773,6 +863,8 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=20232
 =======
@@ -789,6 +881,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 929 (at level 60)
           E_DUMMY base=707 ppl=37 sp=0.2 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=20411
 =======
@@ -805,6 +898,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1196 (at level 60)
           E_DUMMY base=974 ppl=37 sp=0.18 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=20412
 =======
@@ -821,6 +915,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1519 (at level 60)
           E_DUMMY base=1266 ppl=42.3 sp=0.18 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=20413
 =======
@@ -837,6 +932,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 1691 (at level 60)
           E_DUMMY base=1607 ppl=42.3 sp=0.18 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=20414
 =======
@@ -853,6 +949,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 345 (at level 60)
           E_DUMMY base=194.4 ppl=25.2 sp=0.1125 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=1311650
 =======
@@ -869,6 +966,7 @@ effect 2  a dummy effect to the enemy
           E_DUMMY base=0 target=[6,0]
 effect 3  a dummy effect holding 468 (at level 60)
           E_DUMMY base=316.8 ppl=25.2 sp=0.1125 target=[0,0]
+tooltip   Judge the target, dealing Holy damage.
 
 https://www.wowhead.com/forever/spell=1311655
 =======
@@ -881,6 +979,8 @@ labels    26
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_PREVENTS_FLEEING base=0 target=[6,0]
+tooltip   Prevents the target from fleeing.
+aura      Cannot flee.
 
 https://www.wowhead.com/forever/spell=20184
 =======
@@ -917,6 +1017,8 @@ labels    26
 
 effect 1  -30% threat to target 153
           E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 radius=100 target=[153,0]
+tooltip   Gives all members of the raid or group that share the same class with the target a reduction to all threat generated by $s1% for $d.
+aura      Reduces threat generated by $s1%.
 
 https://www.wowhead.com/forever/spell=25895
 =======
@@ -932,6 +1034,7 @@ effect 1  unrecognised shape
           E_REMOVE_AURA_2 base=0 trigger=1038 target=[57,0]
 effect 2  unrecognised shape
           E_REMOVE_AURA_2 base=0 trigger=25895 target=[57,0]
+tooltip   Remove target party or raid member's Salvation or Mass Salvation.
 
 https://www.wowhead.com/forever/spell=1325499
 =======
@@ -951,6 +1054,8 @@ effect 3  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=10 mask=0x0,0x0,0x0,0x40000 target=[1,0]
 effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
+tooltip   Increases the threat generated by your Holy attacks by $s1%.  Lasts $d.
+aura      Increases the threat generated by your Holy attacks by $s1%.$?$w2<0[ Reduces damage taken by $w2%.][]
 
 https://www.wowhead.com/forever/spell=25780
 =======
@@ -978,6 +1083,8 @@ effect 7  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 8  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x400000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 sp=1 misc=12 family=10 mask=0x0,0x0,0x0,0x400000 target=[1,0]
+tooltip   Increases the threat generated by your Holy spells by $s5% and gives you mana when healed by other friendly targets' spells equal to $s4% of the amount healed. Additionally, damage which takes you below $407627s6% health is reduced by $407627s7%. Lasts $d.
+aura      Increases the threat generated by your Holy spells by $w5%.
 
 https://www.wowhead.com/forever/spell=407627
 =======
@@ -990,6 +1097,7 @@ effect 1  +4% stamina
           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=4 misc2=4 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x400000,0x0,0x200100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=10 mask=0x400000,0x0,0x200100 target=[1,0]
+tooltip   Increases your total Stamina by $s1% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by ${$m2/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1224697
 =======
@@ -1004,6 +1112,8 @@ labels    26
 
 effect 1  -30% threat to the target's raid
           E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[57,0]
+tooltip   Reduces all threat generated by target party member by $s1% for $d.
+aura      Reduces threat generated by $s1%.
 
 https://www.wowhead.com/forever/spell=1038
 =======
@@ -1023,6 +1133,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 20183
           E_APPLY_AURA A_DUMMY base=20183 trigger=20231 target=[1,0]
+tooltip   Fills the Paladin with divine fury for $d, causing melee attacks to deal an additional $20231s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $20183s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks cause an additional $20231s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=20163
 =======
@@ -1034,6 +1148,7 @@ labels    26
 
 effect 1  14 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=14 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=20231
 =======
@@ -1045,6 +1160,7 @@ labels    26
 
 effect 1  19 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=19 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=20415
 =======
@@ -1056,6 +1172,7 @@ labels    26
 
 effect 1  25 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=25 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=20416
 =======
@@ -1067,6 +1184,7 @@ labels    26
 
 effect 1  32 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=32 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=20417
 =======
@@ -1078,6 +1196,7 @@ labels    26
 
 effect 1  35 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=35 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=20418
 =======
@@ -1097,6 +1216,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 20411
           E_APPLY_AURA A_DUMMY base=20411 trigger=20411 target=[1,0]
+tooltip   Fills the Paladin with divine fury for $d, causing melee attacks to deal an additional $20415s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $20411s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks cause an additional $20415s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=20419
 =======
@@ -1116,6 +1239,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 20412
           E_APPLY_AURA A_DUMMY base=20412 trigger=20416 target=[1,0]
+tooltip   Fills the Paladin with divine fury for $d, causing melee attacks to deal an additional $20416s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $20412s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks cause an additional $20416s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=20421
 =======
@@ -1135,6 +1262,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 20413
           E_APPLY_AURA A_DUMMY base=20413 trigger=20417 target=[1,0]
+tooltip   Fills the Paladin with divine fury for $d, causing melee attacks to deal an additional $20417s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $20413s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks cause an additional $20417s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=20422
 =======
@@ -1154,6 +1285,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 20414
           E_APPLY_AURA A_DUMMY base=20414 target=[1,0]
+tooltip   Fills the Paladin with divine fury for $d, causing melee attacks to deal an additional $20418s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $20414s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks cause an additional $20418s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=20423
 =======
@@ -1165,6 +1300,7 @@ labels    26
 
 effect 1  6 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=6 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=1311647
 =======
@@ -1184,6 +1320,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 1311650
           E_APPLY_AURA A_DUMMY base=1311650 trigger=1311647 target=[1,0]
+tooltip   Fills you with divine fury for $d, causing melee attacks to deal an additional $1311647s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $1311650s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks inflict an additional $1311647s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1311649
 =======
@@ -1195,6 +1335,7 @@ labels    26
 
 effect 1  9 holy damage to the enemy (+0.1 spell power)
           E_SCHOOL_DAMAGE base=9 sp=0.1 target=[6,0]
+tooltip   Deals additional Holy damage on melee attack.
 
 https://www.wowhead.com/forever/spell=1311654
 =======
@@ -1214,6 +1355,10 @@ effect 2  unrecognised shape
           E_NONE base=50 target=[0,0]
 effect 3  a dummy aura holding 1311655
           E_APPLY_AURA A_DUMMY base=1311655 trigger=1311654 target=[1,0]
+tooltip   Fills you with divine fury for $d, causing melee attacks to inflict an additional $1311654s1 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to $m2% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy inflicts $1311655s1 Holy damage to an enemy and taunts the target to attack you for $20232d.
+aura      Melee attacks inflict an additional $1311654s1 Holy damage.
 
 https://www.wowhead.com/forever/spell=1311656
 =======
@@ -1231,6 +1376,10 @@ effect 1  casts 20170 Stun on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=20170 target=[1,0]
 effect 2  a dummy aura holding 20184
           E_APPLY_AURA A_DUMMY base=20184 index=2 target=[1,0]
+tooltip   Fills the Paladin with the spirit of justice for $d, giving each melee attack a chance to stun for $20170d.  Only one Seal can be active on the Paladin at any one time.
+
+          Unleashing this Seal's energy will judge an enemy for $20184d, preventing them from fleeing.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.
+aura      Melee attacks have a chance to stun for $20170d.
 
 https://www.wowhead.com/forever/spell=20164
 =======
@@ -1245,6 +1394,8 @@ effect 1  raid aura: +30 shadow resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=30 misc=32 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Shadow resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19876
 =======
@@ -1259,6 +1410,8 @@ effect 1  raid aura: +45 shadow resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=45 misc=32 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Shadow resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19895
 =======
@@ -1273,6 +1426,8 @@ effect 1  raid aura: +60 shadow resistance
           E_APPLY_AREA_AURA_RAID A_MOD_RESISTANCE base=60 misc=32 radius=30 target=[1,0]
 effect 2  raid aura: +0% healing taken
           E_APPLY_AREA_AURA_RAID A_MOD_HEALING_PCT base=0 sp=1 radius=30 target=[1,0]
+tooltip   Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.
+aura      Increases Shadow resistance by $s1.
 
 https://www.wowhead.com/forever/spell=19896
 =======
@@ -1288,6 +1443,9 @@ equip     needs a shield
 
 effect 1  179 holy damage to the enemy
           E_SCHOOL_DAMAGE base=179 chain=1 target=[6,0]
+tooltip   Slam the target with your shield, causing Holy damage based on your block value plus an additional ${$m1*$<damagepower>/100}.
+vars      $damagepower=${9.046514+0.676562*$PL+0.019349*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 
 https://www.wowhead.com/forever/spell=440658
 =======
@@ -1297,6 +1455,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440658 misc=417347 target=[1,0]
+tooltip   Gain the Shield of Righteousness ability:
+
+          $@spellicon440658
+          $@spelldesc440658
 
 https://www.wowhead.com/forever/spell=440789
 =======
@@ -1312,6 +1474,8 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  SPELLMOD_COST -100% on family 10 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0x800000 target=[1,0]
+tooltip   Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by $s1%.
+aura      Mana cost of Judgement reduced by $s1%.
 
 https://www.wowhead.com/forever/spell=1310994
 =======
@@ -1326,5 +1490,7 @@ refs      25771 Forbearance
 
 effect 1  absorbs 100 every school damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=100 misc=127 target=[1,0]
+tooltip   When activated, this ability grants you an absorb shield equal to $s1% of your maximum health for $d. Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+aura      Absorbs $w1 damage.
 
 https://www.wowhead.com/forever/spell=1311015

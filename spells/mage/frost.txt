@@ -3,10 +3,11 @@ school    physical
 attrs     passive
 labels    17
 
-effect 1  SPELLMOD_RANGE +10% on family 3 mask 0xa0
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=5 family=3 mask=0xa0 target=[1,0]
+effect 1  SPELLMOD_RANGE +10% on family 3 mask 0x200a0
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=5 family=3 mask=0x200a0 target=[1,0]
 effect 2  SPELLMOD_RADIUS +10% on family 3 mask 0x240
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=3 mask=0x240 target=[1,0]
+tooltip   Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
 
 https://www.wowhead.com/forever/spell=16757
 =======
@@ -27,6 +28,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41261 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279976s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10
 =======
@@ -47,6 +55,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41262 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279977m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279977s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=6141
 =======
@@ -67,6 +82,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41263 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279978m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279978s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=8427
 =======
@@ -87,6 +109,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41264 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279979m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279979s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10185
 =======
@@ -107,6 +136,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41265 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279980m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279980s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10186
 =======
@@ -127,6 +163,13 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=0 misc=41260 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (8 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+tooltip   Ice shards pelt the target area doing ${$1279949m1*$d*$<frostdamage>} Frost damage over $d.
+aura      $1279949s1 Frost damage every $t3 $lsecond:seconds;.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10187
 =======
@@ -141,6 +184,8 @@ attrs     channeled
 
 effect 1  unrecognised shape
           E_PERSISTENT_AREA_AURA A_PERIODIC_DAMAGE base=149 ppl=0.4 sp=0.042 period=1000ms radius=8 target=[28,0]
+tooltip   Ice shards pelt the target area doing $o1 Frost damage over $d.
+aura      $s1 Frost damage every $t1 $lsecond:seconds;.
 
 https://www.wowhead.com/forever/spell=27618
 =======
@@ -222,6 +267,8 @@ effect 1  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
 effect 2  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+tooltip   Movement slowed by $s1% and time between attacks increased by $s2%.
+aura      Movement slowed by $w1% and time between attacks increased by $w2%.
 
 https://www.wowhead.com/forever/spell=6136
 =======
@@ -237,6 +284,7 @@ effect 1  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
 effect 2  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
+aura      Movement slowed by $w1% and time between attacks increased by $w2%.
 
 https://www.wowhead.com/forever/spell=7321
 =======
@@ -250,6 +298,8 @@ labels    17
 
 effect 1  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+tooltip   Chills the target for $d.
+aura      Movement Slowed by $w1%.
 
 https://www.wowhead.com/forever/spell=12484
 =======
@@ -263,6 +313,8 @@ effect 1  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
 effect 2  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[6,0]
+aura      Time between attacks increased by $s1%.
+          Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=15850
 =======
@@ -276,6 +328,8 @@ effect 1  -25% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-25 target=[6,0]
 effect 2  -30% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 mechanic=11 target=[6,0]
+tooltip   Slows the target's movement speed by $s2% and increases the time between their attacks by $s1% for $d.
+aura      Movement slowed by $w2% and the time between attacks is increased by $w1%.
 
 https://www.wowhead.com/forever/spell=16927
 =======
@@ -289,6 +343,8 @@ effect 1  -100% melee haste to the enemy
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-100 target=[6,0]
 effect 2  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[6,0]
+aura      Time between attacks increased by $s1%.
+          Movement speed reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=18101
 =======
@@ -300,6 +356,7 @@ labels    17
 
 effect 1  a dummy effect to the caster
           E_DUMMY base=0 target=[1,0]
+tooltip   Finishes the remaining cooldown on all your other Frost spells.
 
 https://www.wowhead.com/forever/spell=12472
 =======
@@ -317,6 +374,13 @@ effect 1  -40% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
 effect 2  96–106 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=97 ppl=0.8 variance=0.097087376 sp=0.129 radius=10 target=[24,0]
+tooltip   Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d. The first $10161s3 $Ltarget:targets; hit by this cone $Lis:are; slowed by an additional $10161s4% for an additional $10161s5 sec.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=120
 =======
@@ -334,6 +398,13 @@ effect 1  -40% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
 effect 2  142–156 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=144 ppl=1 variance=0.09150327 sp=0.129 radius=10 target=[24,0]
+tooltip   Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d. The first $10161s3 $Ltarget:targets; hit by this cone $Lis:are; slowed by an additional $10161s4% for an additional $10161s5 sec.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=8492
 =======
@@ -351,6 +422,13 @@ effect 1  -40% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
 effect 2  200–220 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=204 ppl=1.2 variance=0.09389672 sp=0.129 radius=10 target=[24,0]
+tooltip   Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d. The first $10161s3 $Ltarget:targets; hit by this cone $Lis:are; slowed by an additional $10161s4% for an additional $10161s5 sec.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10159
 =======
@@ -368,6 +446,13 @@ effect 1  -40% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 radius=10 mechanic=11 target=[24,0]
 effect 2  260–287 frost damage to a cone of enemies in front of the caster (at level 60, +0.129 spell power)
           E_SCHOOL_DAMAGE base=267 ppl=1.3 variance=0.09386282 sp=0.129 radius=10 target=[24,0]
+tooltip   Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d. The first $10161s3 $Ltarget:targets; hit by this cone $Lis:are; slowed by an additional $10161s4% for an additional $10161s5 sec.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10160
 =======
@@ -390,6 +475,13 @@ effect 4  a dummy effect holding -10 to a cone of enemies in front of the caster
           E_DUMMY base=-10 radius=10 target=[24,0]
 effect 5  a dummy effect holding 3 to a cone of enemies in front of the caster
           E_DUMMY base=3 radius=10 target=[24,0]
+tooltip   Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d. The first $10161s3 $Ltarget:targets; hit by this cone $Lis:are; slowed by an additional $10161s4% for an additional $10161s5 sec.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10161
 =======
@@ -403,6 +495,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  386–491 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=438.52307 variance=0.24 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=12557
 =======
@@ -416,6 +510,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  573–737 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=654.86115 variance=0.25 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=12611
 =======
@@ -429,6 +525,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  772–982 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=877.04614 variance=0.24 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=15244
 =======
@@ -442,6 +540,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  538–690 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=613.9323 variance=0.24761905 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=20828
 =======
@@ -454,6 +554,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  772–982 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=877.04614 variance=0.24 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=22746
 =======
@@ -467,6 +569,8 @@ effect 1  -50% movement speed to a cone of enemies in front of the caster
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 radius=10 target=[24,0]
 effect 2  1350–1650 frost damage to a cone of enemies in front of the caster
           E_SCHOOL_DAMAGE base=1500 variance=0.2 sp=1 radius=10 target=[24,0]
+tooltip   Inflicts Frost damage to enemies in a cone in front of the caster, reducing their movement speed for $d.
+aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=30095
 =======
@@ -480,6 +584,7 @@ effect 1  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
 effect 2  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   Gives your Chill effects a $s2% chance to grant you the Fingers of Frost effect, which treats your next $m1 $lspell:spells; cast as if the target were Frozen. Lasts $400669d.
 
 https://www.wowhead.com/forever/spell=400647
 =======
@@ -490,6 +595,8 @@ duration  15 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_ABILITY_IGNORE_AURASTATE base=2 family=3 mask=0x0,0x100000 target=[1,0]
+tooltip   Gives your Chill effects a chance to grant you the Fingers of Frost effect, which treats your next spells cast as if the target were Frozen.  Lasts $d.
+aura      Your next $s1 spells treat the target as if it were Frozen.
 
 https://www.wowhead.com/forever/spell=400669
 =======
@@ -500,6 +607,8 @@ stack     up to 2
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Gives your Chill effects a chance to grant you the Fingers of Frost effect, which treats your next spells cast as if the target were Frozen.  Lasts $d.
+aura      Your spells treat the target as if it were Frozen.
 
 https://www.wowhead.com/forever/spell=400670
 =======
@@ -509,6 +618,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399954
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400647 misc=399954 target=[1,0]
+tooltip   Gain the Fingers of Frost ability:
+
+          $@spellicon400647
+          $@spelldesc400647
 
 https://www.wowhead.com/forever/spell=401741
 =======
@@ -526,6 +639,8 @@ effect 1  +30 armor
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=30 misc=1 target=[1,0]
 effect 2  casts 6136 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+tooltip   Increases Armor by $s1.  If an enemy strikes the caster, they may have their movement slowed by $6136s1% and the time between their attacks increased by $6136s2% for $6136d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=168
 =======
@@ -543,6 +658,8 @@ effect 1  +110 armor
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=110 misc=1 target=[1,0]
 effect 2  casts 6136 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+tooltip   Increases Armor by $s1.  If an enemy strikes the caster, they may have their movement slowed by $6136s1% and the time between their attacks increased by $6136s2% for $6136d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=7300
 =======
@@ -560,6 +677,8 @@ effect 1  +200 armor
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=200 misc=1 target=[1,0]
 effect 2  casts 6136 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+tooltip   Increases Armor by $s1.  If an enemy strikes the caster, they may have their movement slowed by $6136s1% and the time between their attacks increased by $6136s2% for $6136d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=7301
 =======
@@ -576,6 +695,9 @@ effect 1  +732 armor (at level 60)
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=12 ppl=12 misc=1 target=[1,0]
 effect 2  casts 6136 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+tooltip   Encases the caster in a layer of frost that lasts $d. The thick ice increases armor by $s1, slows melee attackers' movement to $6136s2%, and increases the time between their attacks by $6136s1%.
+aura      Armor increased by $s1.
+          Slowing melee attackers' movement and attacks.
 
 https://www.wowhead.com/forever/spell=12544
 =======
@@ -604,6 +726,9 @@ effect 1  +732 armor to the friendly target (at level 60)
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=12 ppl=12 misc=1 target=[21,0]
 effect 2  casts 6136 Chilled on its trigger to the friendly target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[21,0]
+tooltip   Encases an ally in a layer of frost that lasts $d. The thick ice increases armor by $s1, slows melee attackers' movement to $6136s2%, and increases the time between their attacks by $6136s1%.
+aura      Armor increased by $s1.
+          Slowing melee attackers' movement and attacks.
 
 https://www.wowhead.com/forever/spell=15784
 =======
@@ -620,6 +745,9 @@ effect 1  +732 armor (at level 60)
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=12 ppl=12 misc=1 target=[1,0]
 effect 2  casts 18101 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=18101 target=[1,0]
+tooltip   Encases the caster in a layer of frost that lasts $d. The thick ice increases armor by $s1, slows melee attackers' movement to $18101s2%, and increases the time between their attacks by $18101s1%.
+aura      Armor increased by $s1.
+          Slowing melee attackers' movement and attacks.
 
 https://www.wowhead.com/forever/spell=18100
 =======
@@ -632,6 +760,7 @@ effect 1  SPELLMOD_COST -15% on family 3 mask 0xa0000,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-15 misc=14 family=3 mask=0xa0000,0x1000 target=[1,0]
 effect 2  -30% threat
           E_APPLY_AURA A_MOD_THREAT base=-30 misc=16 target=[1,0]
+tooltip   Reduces the mana cost of your Frost spells by $s1% and reduces the threat caused by your Frost spells by $s2%.
 
 https://www.wowhead.com/forever/spell=11160
 =======
@@ -650,6 +779,13 @@ effect 1  21–24 frost damage to every enemy around the caster (at level 60, +0
           E_SCHOOL_DAMAGE base=20 ppl=0.5 variance=0.1 sp=0.029 radius=10 target=[22,15]
 effect 2  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+aura      Frozen in place.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=122
 =======
@@ -667,6 +803,13 @@ effect 1  34–39 frost damage to every enemy around the caster (at level 60, +0
           E_SCHOOL_DAMAGE base=34 ppl=0.5 variance=0.11428571 sp=0.029 radius=10 target=[22,15]
 effect 2  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+aura      Frozen in place.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=865
 =======
@@ -684,6 +827,13 @@ effect 1  52–59 frost damage to every enemy around the caster (at level 60, +0
           E_SCHOOL_DAMAGE base=53 ppl=0.5 variance=0.10909091 sp=0.029 radius=10 target=[22,15]
 effect 2  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+aura      Frozen in place.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=6131
 =======
@@ -701,6 +851,13 @@ effect 1  71–80 frost damage to every enemy around the caster (at level 60, +0
           E_SCHOOL_DAMAGE base=73 ppl=0.5 variance=0.10666667 sp=0.029 radius=10 target=[22,15]
 effect 2  roots to every enemy around the caster
           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+aura      Frozen in place.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10230
 =======
@@ -718,6 +875,8 @@ effect 1  absorbs 162 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=162 misc=16 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+tooltip   Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+aura      Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 https://www.wowhead.com/forever/spell=6143
 =======
@@ -735,6 +894,8 @@ effect 1  absorbs 284 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=284 misc=16 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+tooltip   Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+aura      Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 https://www.wowhead.com/forever/spell=8461
 =======
@@ -752,6 +913,8 @@ effect 1  absorbs 463 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=463 misc=16 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+tooltip   Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+aura      Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 https://www.wowhead.com/forever/spell=8462
 =======
@@ -769,6 +932,8 @@ effect 1  absorbs 668 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=668 misc=16 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+tooltip   Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+aura      Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 https://www.wowhead.com/forever/spell=10177
 =======
@@ -782,6 +947,8 @@ cost      95 mana
 
 effect 1  absorbs 701 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=701.6369 misc=16 target=[1,0]
+tooltip   Surrounds the caster with a shield that lasts $d. and can absorb a fixed amount of Frost damage.
+aura      Shielded against Frost damage.
 
 https://www.wowhead.com/forever/spell=15044
 =======
@@ -799,6 +966,8 @@ effect 1  absorbs 913 frost damage
           E_APPLY_AURA A_SCHOOL_ABSORB base=913 misc=16 target=[1,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 amplitude=1 target=[1,0]
+tooltip   Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+aura      Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 https://www.wowhead.com/forever/spell=28609
 =======
@@ -815,6 +984,8 @@ effect 1  absorbs 330 frost damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=330 misc=16 target=[21,0]
 effect 2  reflects 0% of frost damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+tooltip   Absorbs $s1 Frost damage.  Lasts $d.
+aura      Absorbs Frost damage.
 
 https://www.wowhead.com/forever/spell=412202
 =======
@@ -831,6 +1002,8 @@ effect 1  absorbs 580 frost damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=580 misc=16 target=[21,0]
 effect 2  reflects 0% of frost damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+tooltip   Absorbs $s1 Frost damage.  Lasts $d.
+aura      Absorbs Frost damage.
 
 https://www.wowhead.com/forever/spell=412205
 =======
@@ -847,6 +1020,8 @@ effect 1  absorbs 940 frost damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=940 misc=16 target=[21,0]
 effect 2  reflects 0% of frost damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+tooltip   Absorbs $s1 Frost damage.  Lasts $d.
+aura      Absorbs Frost damage.
 
 https://www.wowhead.com/forever/spell=412207
 =======
@@ -863,6 +1038,8 @@ effect 1  absorbs 1350 frost damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1350 misc=16 target=[21,0]
 effect 2  reflects 0% of frost damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+tooltip   Absorbs $s1 Frost damage.  Lasts $d.
+aura      Absorbs Frost damage.
 
 https://www.wowhead.com/forever/spell=412209
 =======
@@ -879,6 +1056,8 @@ effect 1  absorbs 1840 frost damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1840 misc=16 target=[21,0]
 effect 2  reflects 0% of frost damage to the friendly target
           E_APPLY_AURA A_REFLECT_SPELLS_SCHOOL base=0 amplitude=1 misc=16 target=[21,0]
+tooltip   Absorbs $s1 Frost damage.  Lasts $d.
+aura      Absorbs Frost damage.
 
 https://www.wowhead.com/forever/spell=412210
 =======
@@ -893,6 +1072,7 @@ effect 2  SPELLMOD_EFFECT2 +0 on family 3 mask 0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 misc=12 family=3 mask=0x100 target=[1,0]
 effect 3  SPELLMOD_EFFECT1 +0% on family 3 mask 0x100,0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 misc=3 family=3 mask=0x100,0x1 target=[1,0]
+tooltip   Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by $s1%, gives your Frost Ward a $s2% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by $s3%.
 
 https://www.wowhead.com/forever/spell=11189
 =======
@@ -905,6 +1085,7 @@ refs      12494 Frostbite
 
 effect 1  casts 12494 Frostbite on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 trigger=12494 target=[1,0]
+tooltip   Gives your Chill effects a $s1% chance to Freeze the target for $12494d.
 
 https://www.wowhead.com/forever/spell=11071
 =======
@@ -922,6 +1103,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  18–21 frost damage to the enemy (at level 60, +0.407 spell power)
           E_SCHOOL_DAMAGE base=19 ppl=0.2 variance=0.10526316 sp=0.407 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=116
 =======
@@ -939,6 +1127,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  28–33 frost damage to the enemy (at level 60, +0.489 spell power)
           E_SCHOOL_DAMAGE base=29 ppl=0.3 variance=0.12121212 sp=0.489 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=205
 =======
@@ -956,6 +1151,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  45–51 frost damage to the enemy (at level 60, +0.597 spell power)
           E_SCHOOL_DAMAGE base=46 ppl=0.5 variance=0.11111111 sp=0.597 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=837
 =======
@@ -973,6 +1175,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  69–78 frost damage to the enemy (at level 60, +0.706 spell power)
           E_SCHOOL_DAMAGE base=70 ppl=0.8 variance=0.1025641 sp=0.706 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=7322
 =======
@@ -990,6 +1199,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  104–115 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=104 ppl=1.3 variance=0.09090909 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=8406
 =======
@@ -1007,6 +1223,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  134–147 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=134 ppl=1.7 variance=0.08791209 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=8407
 =======
@@ -1024,6 +1247,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  181–197 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=181 ppl=2 variance=0.08438819 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=8408
 =======
@@ -1041,6 +1271,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  243–264 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=244 ppl=2.3 variance=0.078947365 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10179
 =======
@@ -1058,6 +1295,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  305–332 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=308 ppl=2.6 variance=0.08152174 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10180
 =======
@@ -1075,6 +1319,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  382–413 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=386 ppl=2.9 variance=0.076233186 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=10181
 =======
@@ -1088,6 +1339,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  40–60 frost damage to the enemy
           E_SCHOOL_DAMAGE base=50 variance=0.4 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=13439
 =======
@@ -1105,6 +1358,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  457–493 frost damage to the enemy (at level 60, +0.814 spell power)
           E_SCHOOL_DAMAGE base=475 ppl=3.2 variance=0.07476635 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=25304
 =======
@@ -1120,6 +1380,8 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  39–44 frost damage to the enemy (at level 60, +0.269 spell power)
           E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.12121212 sp=0.269 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy, causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=350025
 =======
@@ -1133,6 +1395,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  34–50 frost damage to the enemy
           E_SCHOOL_DAMAGE base=42 variance=0.4 target=[6,0]
+tooltip   Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=1293790
 =======
@@ -1146,6 +1410,8 @@ effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
 effect 2  74–136 frost damage to the enemy
           E_SCHOOL_DAMAGE base=105 variance=0.6 target=[6,0]
+tooltip   Deal an additional $s2 Frost damage and slow movement speed by $s1% for $d.
+aura      Movement slowed by $s1%.
 
 https://www.wowhead.com/forever/spell=1298416
 =======
@@ -1162,6 +1428,12 @@ refs      440804 Frozen Orb, 440809 Frozen Orb
 
 effect 1  summons creature 220064
           E_SUMMON base=1 misc=220064 misc2=5891 target=[47,0]
+tooltip   Launches an orb of swirling ice which rapidly moves forward over $d. While it is moving, every $440804t sec the orb deals ${$440809m2*$<power>/100*$<frostdamage>} Frost Damage and applies a Chill for $440809s1% movement speed reduction to all enemies it passes through. The first time it damages an enemy, its movement will slow and it will have a 100% chance to trigger the Fingers of Frost rune.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=440802
 =======
@@ -1195,6 +1467,12 @@ effect 2  90 frost damage to every enemy in the target area (+0.129 spell power)
           E_SCHOOL_DAMAGE base=90 sp=0.129 radius=8 target=[16,0]
 effect 3  unrecognised shape
           E_SCRIPT_EFFECT base=0 radius=8 target=[16,0]
+aura      Movement speed reduced by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=440809
 =======
@@ -1215,6 +1493,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 417347
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=440802 misc=417347 target=[1,0]
+tooltip   Gain the Frozen Orb ability:
+
+          $@spellicon440802
+          $@spelldesc440802
 
 https://www.wowhead.com/forever/spell=440859
 =======
@@ -1228,6 +1510,12 @@ labels    3096
 
 effect 1  a dummy effect holding -30 to target 8
           E_DUMMY base=-30 radius=8 mechanic=11 target=[8,0]
+aura      Movement speed reduced by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=460651
 =======
@@ -1247,6 +1535,8 @@ effect 2  casts 7321 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
 effect 3  +6 frost resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=6 misc=16 target=[1,0]
+tooltip   Increases Armor by $s1 and frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=7302
 =======
@@ -1266,6 +1556,8 @@ effect 2  casts 7321 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
 effect 3  +9 frost resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=9 misc=16 target=[1,0]
+tooltip   Increases Armor by $s1 and frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=7320
 =======
@@ -1285,6 +1577,8 @@ effect 2  casts 7321 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
 effect 3  +12 frost resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=12 misc=16 target=[1,0]
+tooltip   Increases Armor by $s1 and frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=10219
 =======
@@ -1304,6 +1598,8 @@ effect 2  casts 7321 Chilled on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=7321 target=[1,0]
 effect 3  +15 frost resistance
           E_APPLY_AURA A_MOD_RESISTANCE base=15 misc=16 target=[1,0]
+tooltip   Increases Armor by $s1 and frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
+aura      Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 https://www.wowhead.com/forever/spell=10220
 =======
@@ -1323,6 +1619,8 @@ effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+aura      Absorbs $w1 damage and increases Frost damage dealt by ${$w2}%.
 
 https://www.wowhead.com/forever/spell=11426
 =======
@@ -1342,6 +1640,8 @@ effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 https://www.wowhead.com/forever/spell=13031
 =======
@@ -1361,6 +1661,8 @@ effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 https://www.wowhead.com/forever/spell=13032
 =======
@@ -1380,6 +1682,8 @@ effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 https://www.wowhead.com/forever/spell=13033
 =======
@@ -1393,6 +1697,8 @@ cost      480 mana
 
 effect 1  absorbs 1058 every school damage (at level 60)
           E_APPLY_AURA A_SCHOOL_ABSORB base=818 ppl=4 misc=127 target=[1,0]
+tooltip   Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.
+aura      Absorbs damage.
 
 https://www.wowhead.com/forever/spell=1213278
 =======
@@ -1413,6 +1719,8 @@ effect 2  immune to physical
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
 effect 3  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+tooltip   You become encased in a block of ice, protecting you from all physical attacks and spells for $d, but during that time you cannot attack, move, or cast spells.
+aura      Immune to all attacks and spells. Cannot attack, move, or use spells.
 
 https://www.wowhead.com/forever/spell=11958
 =======
@@ -1431,6 +1739,8 @@ effect 2  immune to physical
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=1 target=[1,0]
 effect 3  immune to holy+fire+nature+frost+shadow+arcane
           E_APPLY_AURA A_SCHOOL_IMMUNITY base=0 misc=126 target=[1,0]
+tooltip   You become encased in a block of ice, protecting you from all physical attacks and spells for $d, but during that time you cannot attack, move or cast spells.
+aura      Immune to all attacks and spells.  Cannot attack, move or use spells.
 
 https://www.wowhead.com/forever/spell=27619
 =======
@@ -1450,6 +1760,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=400640
 =======
@@ -1459,6 +1770,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=400640 misc=399967 target=[1,0]
+tooltip   Gain the Ice Lance ability:
+
+          $@spellicon400640
+          $@spelldesc400640
 
 https://www.wowhead.com/forever/spell=401732
 =======
@@ -1478,6 +1793,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=1240044
 =======
@@ -1497,6 +1813,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=1240045
 =======
@@ -1516,6 +1833,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=1240046
 =======
@@ -1535,6 +1853,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=1240047
 =======
@@ -1555,6 +1874,7 @@ effect 3  a dummy effect holding 20
           E_DUMMY base=20 target=[0,0]
 effect 4  a dummy effect holding 5
           E_DUMMY base=5 target=[0,0]
+tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 https://www.wowhead.com/forever/spell=1312002
 =======
@@ -1565,6 +1885,7 @@ labels    17
 
 effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +100% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=15 family=3 mask=0x202e0,0x1000 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your Frost spells by $s1%.
 
 https://www.wowhead.com/forever/spell=11207
 =======
@@ -1579,6 +1900,8 @@ effect 1  +20% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_REDUCE_PUSHBACK base=100 sp=1 misc=126 target=[1,0]
+tooltip   Hastens your spellcasting, increasing spell casting speed by $s1% and reduces the pushback suffered from damaging attacks while casting by $s2%. Lasts $d.
+aura      Casting speed of all spells increased by $s1% and pushback suffered from damaging attacks while casting reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=425121
 =======
@@ -1588,6 +1911,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399966
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425121 misc=399966 target=[1,0]
+tooltip   Gain the Icy Veins ability:
+
+          $@spellicon425121
+          $@spelldesc425121
 
 https://www.wowhead.com/forever/spell=425169
 =======
@@ -1603,6 +1930,8 @@ effect 1  +20% cast speed
           E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=20 target=[1,0]
 effect 2  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 3 mask 0x654008b5,0x81100
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=3 mask=0x654008b5,0x81100 target=[1,0]
+tooltip   Hastens your spellcasting, increasing spell casting speed by $s1% and reduces the pushback suffered from damaging attacks while casting by $s2%.  Lasts $d.
+aura      Casting speed of all spells increased by $s1% and reduces pushback suffered by damaging attacks while casting by $s2%.
 
 https://www.wowhead.com/forever/spell=429125
 =======
@@ -1614,6 +1943,7 @@ refs      12484 Chilled
 
 effect 1  a dummy aura holding -40
           E_APPLY_AURA A_DUMMY base=-40 target=[1,0]
+tooltip   Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by $m1% for $12484d.
 
 https://www.wowhead.com/forever/spell=11185
 =======
@@ -1624,6 +1954,7 @@ labels    17
 
 effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x200
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x200 target=[1,0]
+tooltip   Increases the damage dealt by your Cone of Cold spell by $s1%.
 
 https://www.wowhead.com/forever/spell=11190
 =======
@@ -1634,6 +1965,7 @@ labels    17
 
 effect 1  SPELLMOD_COOLDOWN -4 s on family 3 mask 0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=3 mask=0x40 target=[1,0]
+tooltip   Reduces the cooldown of your Frost Nova spell by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=11165
 =======
@@ -1644,6 +1976,7 @@ labels    17
 
 effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 3 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=3 mask=0x20 target=[1,0]
+tooltip   Reduces the casting time of your Frostbolt and Frost Blast spells by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=11070
 =======
@@ -1656,6 +1989,7 @@ effect 1  SPELLMOD_DURATION +33% on family 3 mask 0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=33 misc=1 family=3 mask=0x100000 target=[1,0]
 effect 2  SPELLMOD_EFFECT1 -10 on family 3 mask 0x100000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 misc=3 family=3 mask=0x100000 target=[1,0]
+tooltip   Increases the duration of your Chill effects by $s1% and reduces the target's speed by an additional $s2%.
 
 https://www.wowhead.com/forever/spell=11175
 =======
@@ -1668,6 +2002,7 @@ effect 1  SPELLMOD_DAMAGE +2% on family 3 mask 0x202e0,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 family=3 mask=0x202e0,0x1000 target=[1,0]
 effect 2  SPELLMOD_DOT +2% on family 3 mask 0x80,0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+tooltip   Increases the damage done by your Frost spells by $s1%.
 
 https://www.wowhead.com/forever/spell=11151
 =======
@@ -1678,6 +2013,7 @@ labels    17
 
 effect 1  +6% spell hit
           E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=6 target=[1,0]
+tooltip   Improves your chance to hit with all spells by $s1%.
 
 https://www.wowhead.com/forever/spell=29438
 =======
@@ -1688,6 +2024,7 @@ labels    17
 
 effect 1  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases the critical strike chance of all your spells against Frozen targets by $m1%.
 
 https://www.wowhead.com/forever/spell=11170
 =======
@@ -1705,6 +2042,13 @@ effect 1  -40% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 mechanic=11 target=[6,0]
 effect 2  305–355 frost+arcane damage to the enemy (+0.814 spell power)
           E_SCHOOL_DAMAGE base=330 variance=0.15151516 sp=0.814 target=[6,0]
+tooltip   Launches a bolt of spellfrost at the enemy, causing ${$<power>*$m2/100*$<frostdamage>} to ${$<power>*$M2/100*$<frostdamage>} Spellfrost damage and slowing movement speed by $s1% for $d. This spell will be checked against the lower of the target's Frost and Arcane resists and counts as both Frost and Arcane damage.
+aura      Movement slowed by $w1%.
+vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+          $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+          $frostdamage1=$?s11151[${1.02}][${1.0}]
+          $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+          $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 https://www.wowhead.com/forever/spell=412532
 =======
@@ -1715,6 +2059,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=412532 misc=415449 target=[1,0]
+tooltip   Gain the Spellfrost Bolt ability:
+
+          $@spellicon412532
+          $@spelldesc412532
 
 https://www.wowhead.com/forever/spell=415734
 =======
@@ -1732,6 +2080,7 @@ effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 trigger=12579 target=[1,0]
 effect 3  a dummy aura holding 7
           E_APPLY_AURA A_DUMMY base=7 target=[1,0]
+tooltip   Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
 
 https://www.wowhead.com/forever/spell=11180
 =======
@@ -1748,5 +2097,6 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=5 misc=16 family=3 mask=0x200 target=[6,0]
 effect 2  a dummy aura holding 7 to the enemy
           E_APPLY_AURA A_DUMMY base=7 misc=16 target=[6,0]
+aura      Taking $s1% increased damage and $s2% increased spell power coefficient from the caster's next Cone of Cold spell.
 
 https://www.wowhead.com/forever/spell=12579

@@ -12,6 +12,7 @@ effect 1  summons creature 212157 to target 132
           E_SUMMON base=5 misc=212157 misc2=81 radius=3 target=[132,82]
 effect 2  a dummy effect to the friendly target
           E_DUMMY base=0 target=[21,0]
+tooltip   Summons a Decoy Totem for $d with $s1 health at the feet of the target that will redirect the next melee or ranged attack made against the target to the totem instead. The totem also grants the target immunity to movement impairing effects for $436391d.
 
 https://www.wowhead.com/forever/spell=425874
 =======
@@ -27,6 +28,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_INTERCEPT_MELEE_RANGED_ATTACKS base=0 radius=20 target=[21,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+aura      Will redirect one melee or ranged attack to the Decoy Totem.
 
 https://www.wowhead.com/forever/spell=425876
 =======
@@ -36,6 +38,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=425874 misc=415450 target=[1,0]
+tooltip   Gain the Decoy Totem ability:
+
+          $@spellicon425874
+          $@spelldesc425874
 
 https://www.wowhead.com/forever/spell=425881
 =======
@@ -59,6 +65,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +25% on family 11 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=25 sp=1 misc=8 family=11 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_RADIUS +10% on family 11 mask 0x0,0x1,0x4000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 misc=6 family=11 mask=0x0,0x1,0x4000 target=[1,0]
+tooltip   Increases the health of your Stoneclaw Totem by $m1% and the radius of your Earthbind Totem by $m2%.
 
 https://www.wowhead.com/forever/spell=16043
 =======
@@ -73,6 +80,7 @@ effect 2  SPELLMOD_DAMAGE +5% on family 11 mask 0x1200000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=11 mask=0x1200000 target=[1,0]
 effect 3  SPELLMOD_EFFECT1 +13% on family 11 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=13 misc=3 family=11 mask=0x800000 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Rockbiter Weapon by $m1%, your Windfury Weapon effect by $m3% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by $m2%.
 
 https://www.wowhead.com/forever/spell=16266
 =======
@@ -85,6 +93,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +8% on family 11 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 family=11 mask=0x10000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +8% on family 11 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 misc=8 family=11 mask=0x20000 target=[1,0]
+tooltip   Increases the effect of your Strength of Earth and Grace of Air Totems by $s1%.
 
 https://www.wowhead.com/forever/spell=16259
 =======
@@ -97,6 +106,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +15% on family 11 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=8 family=11 mask=0x10000 target=[1,0]
 effect 2  SPELLMOD_ALL_EFFECTS +15% on family 11 mask 0x20000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 misc=8 family=11 mask=0x20000 target=[1,0]
+tooltip   Increases the effect of your Strength of Earth and Grace of Air Totems by $s1%.
 
 https://www.wowhead.com/forever/spell=16295
 =======
@@ -111,6 +121,7 @@ refs      8185 Fire Resistance
 
 effect 1  summons creature 5927 to target 42
           E_SUMMON base=5 misc=5927 misc2=82 target=[42,0]
+tooltip   Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party or raid members within $8185a1 yards by $8185s1.
 
 https://www.wowhead.com/forever/spell=8184
 =======
@@ -125,6 +136,7 @@ refs      10534 Fire Resistance
 
 effect 1  summons creature 7424 to target 42
           E_SUMMON base=5 misc=7424 misc2=82 target=[42,0]
+tooltip   Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party or raid members within $10534a1 yards by $10534s1.
 
 https://www.wowhead.com/forever/spell=10537
 =======
@@ -139,6 +151,7 @@ refs      10535 Fire Resistance
 
 effect 1  summons creature 7425 to target 42
           E_SUMMON base=5 misc=7425 misc2=82 target=[42,0]
+tooltip   Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party or raid members within $10535a1 yards by $10535s1.
 
 https://www.wowhead.com/forever/spell=10538
 =======
@@ -153,6 +166,9 @@ refs      8230 Flametongue Totem, 8253 Flametongue Totem Proc
 
 effect 1  summons creature 5950 to target 44
           E_SUMMON base=5 misc=5950 misc2=63 target=[44,0]
+tooltip   Summons a Flametongue Totem with $s1 health at the feet of the caster. The totem enchants all party or raid members' main-hand weapons with fire if they are within $8230a1 yards. Each hit causes ${$8253m1/77*$<mult>-1} to ${$8253M1/25*$<mult>} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts $d.
+vars      $mult1=$?s29192[${1.06}][${1.0}]
+          $mult=$?s29193[${1.12}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=8227
 =======
@@ -165,6 +181,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  raid aura: casts nothing on its trigger
           E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=8253 radius=30 target=[1,0]
+aura      Main hand attacks deal an additional ${$8253m1/77} to ${$8253M1/25} Fire damage.
 
 https://www.wowhead.com/forever/spell=8230
 =======
@@ -179,6 +196,9 @@ refs      8250 Flametongue Totem, 8248 Flametongue Totem Proc
 
 effect 1  summons creature 6012 to target 44
           E_SUMMON base=5 misc=6012 misc2=63 target=[44,0]
+tooltip   Summons a Flametongue Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8250a1 yards. Each main hand hit causes  ${$8248m1/77*$<mult>-1} to ${$8248M1/25*$<mult>} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts $d.
+vars      $mult1=$?s29192[${1.06}][${1.0}]
+          $mult=$?s29193[${1.12}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=8249
 =======
@@ -191,6 +211,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  raid aura: casts nothing on its trigger
           E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
+aura      Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
 
 https://www.wowhead.com/forever/spell=8250
 =======
@@ -203,6 +224,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  raid aura: casts nothing on its trigger
           E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=10523 radius=30 target=[1,0]
+aura      Main hand attacks deal an additional ${$10523m1/77} to ${$10523M1/25} Fire damage.
 
 https://www.wowhead.com/forever/spell=10521
 =======
@@ -217,6 +239,9 @@ refs      10521 Flametongue Totem, 10523 Flametongue Totem Proc
 
 effect 1  summons creature 7423 to target 44
           E_SUMMON base=5 misc=7423 misc2=63 target=[44,0]
+tooltip   Summons a Flametongue Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10521a1 yards. Each main hand hit causes  ${$10523m1/77*$<mult>-1} to ${$10523M1/25*$<mult>} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts $d.
+vars      $mult1=$?s29192[${1.06}][${1.0}]
+          $mult=$?s29193[${1.12}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=10526
 =======
@@ -229,6 +254,7 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condi
 
 effect 1  raid aura: casts nothing on its trigger
           E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=16389 radius=30 target=[1,0]
+aura      Main hand attacks deal an additional ${$16389m1/77} to ${$16389M1/25} Fire damage.
 
 https://www.wowhead.com/forever/spell=15036
 =======
@@ -243,6 +269,9 @@ refs      15036 Flametongue Totem, 16389 Flametongue Totem Proc
 
 effect 1  summons creature 10557 to target 44
           E_SUMMON base=5 misc=10557 misc2=63 target=[44,0]
+tooltip   Summons a Flametongue Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $15036a1 yards. Each main hand hit causes ${$16389m1/77*$<mult>-1} to ${$16389M1/25*$<mult>} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts $d.
+vars      $mult1=$?s29192[${1.06}][${1.0}]
+          $mult=$?s29193[${1.12}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=16387
 =======
@@ -257,6 +286,7 @@ refs      8182 Frost Resistance
 
 effect 1  summons creature 5926 to target 44
           E_SUMMON base=5 misc=5926 misc2=63 target=[44,0]
+tooltip   Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $8182s1, if within $8182a1 yards.
 
 https://www.wowhead.com/forever/spell=8181
 =======
@@ -271,6 +301,7 @@ refs      10476 Frost Resistance
 
 effect 1  summons creature 7412 to target 44
           E_SUMMON base=5 misc=7412 misc2=63 target=[44,0]
+tooltip   Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $10476s1, if within $10476a1 yards.
 
 https://www.wowhead.com/forever/spell=10478
 =======
@@ -285,6 +316,7 @@ refs      10477 Frost Resistance
 
 effect 1  summons creature 7413 to target 44
           E_SUMMON base=5 misc=7413 misc2=63 target=[44,0]
+tooltip   Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $10477s1, if within $10477a1 yards.
 
 https://www.wowhead.com/forever/spell=10479
 =======
@@ -301,6 +333,8 @@ effect 1  shifts into form 16
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 misc2=6 target=[1,0]
 effect 2  +40% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
+tooltip   Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.  Only useable outdoors.
+aura      Increases movement speed by $s2%.
 
 https://www.wowhead.com/forever/spell=2645
 =======
@@ -319,6 +353,9 @@ effect 2  +40% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
 effect 3  -10% every school damage taken
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=-10 misc=127 target=[1,0]
+tooltip   Turns the Shaman into a Ghost Wolf, increasing speed by $s2% and decreasing all damage taken by $s3%.
+aura      Increases movement speed by $s2%.
+          Decreases damage taken by $s3%.
 
 https://www.wowhead.com/forever/spell=415233
 =======
@@ -335,6 +372,8 @@ effect 1  shifts into form 16
           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 amplitude=1 misc=16 target=[1,0]
 effect 2  +40% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=40 amplitude=1 target=[1,0]
+tooltip   Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.
+aura      Increases movement speed by $s2%.
 
 https://www.wowhead.com/forever/spell=1238640
 =======
@@ -349,6 +388,7 @@ refs      8836 Grace of Air
 
 effect 1  summons creature 7486 to target 43
           E_SUMMON base=5 misc=7486 misc2=83 target=[43,0]
+tooltip   Summons a Grace of Air Totem with $s1 health at the feet of the caster.  The totem increases the agility of party or raid members within $8836a1 yards by $8836s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8835
 =======
@@ -363,6 +403,7 @@ refs      10626 Grace of Air
 
 effect 1  summons creature 7487 to target 43
           E_SUMMON base=5 misc=7487 misc2=83 target=[43,0]
+tooltip   Summons a Grace of Air Totem with $s1 health at the feet of the caster.  The totem increases the agility of party or raid members within $10626a1 yards by $10626s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=10627
 =======
@@ -377,6 +418,7 @@ refs      25360 Grace of Air
 
 effect 1  summons creature 15463 to target 43
           E_SUMMON base=5 misc=15463 misc2=83 target=[43,0]
+tooltip   Summons a Grace of Air Totem with $s1 health at the feet of the caster.  The totem increases the agility of party or raid members within $25360a1 yards by $25360s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=25359
 =======
@@ -392,6 +434,7 @@ refs      8179 Grounding Totem Passive
 
 effect 1  summons creature 5925 to target 43
           E_SUMMON base=5 misc=5925 misc2=83 target=[43,0]
+tooltip   Summons a Grounding Totem with $s1 health at the feet of the caster that will redirect one harmful spell cast on a nearby party member to itself every $8179t1 seconds.  Will not redirect area of effect spells.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8177
 =======
@@ -405,6 +448,7 @@ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its con
 
 effect 1  unrecognised shape
           E_APPLY_AREA_AURA_PARTY A_SPELL_MAGNET base=0 radius=30 target=[1,0]
+aura      Will redirect one harmful spell to the Grounding Totem.
 
 https://www.wowhead.com/forever/spell=8178
 =======
@@ -417,6 +461,7 @@ effect 1  SPELLMOD_EFFECT1 +10% on family 11 mask 0x8000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=3 family=11 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -1 s on family 11 mask 0x40000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=11 mask=0x40000 target=[1,0]
+tooltip   Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by $m1% and reduces the cooldown of your Grounding Totem by ${$m2/-1000} sec.
 
 https://www.wowhead.com/forever/spell=16258
 =======
@@ -431,6 +476,7 @@ effect 2  replaces an action bar spell with 2645 Ghost Wolf
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1238640 sp=1 misc=2645 target=[1,0]
 effect 3  replaces an action bar spell with 1271481
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1282241 sp=1 misc=1271481 target=[1,0]
+tooltip   Reduces the cast time of your Ghost Wolf spell by ${$m1/-1000}.1 sec, and Ghost Wolf may be used indoors.
 
 https://www.wowhead.com/forever/spell=16262
 =======
@@ -441,6 +487,7 @@ labels    24
 
 effect 1  SPELLMOD_DAMAGE +5% on family 11 mask 0x400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 family=11 mask=0x400 target=[1,0]
+tooltip   Increases the damage done by your Lightning Shield orbs by $m1%.
 
 https://www.wowhead.com/forever/spell=16261
 =======
@@ -457,6 +504,7 @@ effect 2  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 3  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   When you Stormstrike, you have a $m1% chance to gain $1238931s1% mana regeneration while casting spells for $1238931d, and Stormstrike's cooldown has a $m2% chance to reset each time you Dodge or Parry.
 
 https://www.wowhead.com/forever/spell=1223031
 =======
@@ -469,6 +517,7 @@ effect 1  a dummy aura holding 15 from family 11 mask 0x0,0x2
           E_APPLY_AURA A_DUMMY base=15 sp=1 family=11 mask=0x0,0x2 target=[1,0]
 effect 2  a dummy aura holding 6 from family 11 mask 0x0,0x4
           E_APPLY_AURA A_DUMMY base=6 family=11 mask=0x0,0x4 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Windfury Totem by $s1% and increases the damage caused by your Flametongue Totem by $s2%.
 
 https://www.wowhead.com/forever/spell=29192
 =======
@@ -481,6 +530,7 @@ effect 1  a dummy aura holding 30 from family 11 mask 0x0,0x2
           E_APPLY_AURA A_DUMMY base=30 sp=1 family=11 mask=0x0,0x2 target=[1,0]
 effect 2  a dummy aura holding 12 from family 11 mask 0x0,0x4
           E_APPLY_AURA A_DUMMY base=12 family=11 mask=0x0,0x4 target=[1,0]
+tooltip   Increases the melee attack power bonus of your Windfury Totem by $s1% and increases the damage caused by your Flametongue Totem by $s2%.
 
 https://www.wowhead.com/forever/spell=29193
 =======
@@ -498,6 +548,7 @@ effect 1  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 target=[6,0]
+tooltip   You charge your off-hand weapon with lava, instantly dealing $s1% off-hand Weapon damage. Damage is increased by $s2% if your off-hand weapon is enchanted with Flametongue.
 
 https://www.wowhead.com/forever/spell=408507
 =======
@@ -507,6 +558,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 399967
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408507 misc=399967 target=[1,0]
+tooltip   Gain the Lava Lash ability:
+
+          $@spellicon408507
+          $@spelldesc408507
 
 https://www.wowhead.com/forever/spell=409953
 =======
@@ -524,6 +579,8 @@ refs      26364 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26364s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26364m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=324
 =======
@@ -541,6 +598,8 @@ refs      26365 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26365s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26365m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=325
 =======
@@ -558,6 +617,8 @@ refs      26366 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26366s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26366m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=905
 =======
@@ -575,6 +636,8 @@ refs      26367 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26367s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26367m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=945
 =======
@@ -592,6 +655,8 @@ refs      26369 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26369s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26369m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=8134
 =======
@@ -609,6 +674,8 @@ refs      26370 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26370s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26370m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=10431
 =======
@@ -626,6 +693,8 @@ refs      26363 Lightning Shield
 
 effect 1  casts 26545 Lightning Shield on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=1 trigger=26545 target=[1,0]
+tooltip   The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26363s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.
+aura      Causes ${$26363m1/$m1} Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=10432
 =======
@@ -638,6 +707,7 @@ refs      23552 Lightning Shield
 
 effect 1  casts 18350 Dummy Trigger on its trigger from family 11 mask 0xc0
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 sp=1 trigger=18350 family=11 mask=0xc0 target=[1,0]
+tooltip   When you cast a Healing Wave or Lesser Healing Wave, there is a 25% chance the target also receives a free Lightning Shield that causes $23552s1 Nature damage to attacker on hit.
 
 https://www.wowhead.com/forever/spell=23551
 =======
@@ -652,6 +722,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  casts 26545 Lightning Shield on its trigger to the friendly target
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=50 trigger=26545 target=[21,0]
+aura      Causes $s1 Nature damage to attacker on hit.  $n charges.
 
 https://www.wowhead.com/forever/spell=23552
 =======
@@ -664,6 +735,7 @@ labels    24
 
 effect 1  178 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=178 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26363
 =======
@@ -676,6 +748,7 @@ labels    24
 
 effect 1  13 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=13 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26364
 =======
@@ -688,6 +761,7 @@ labels    24
 
 effect 1  24 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=24 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26365
 =======
@@ -700,6 +774,7 @@ labels    24
 
 effect 1  40 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=40 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26366
 =======
@@ -712,6 +787,7 @@ labels    24
 
 effect 1  64 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=64 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26367
 =======
@@ -724,6 +800,7 @@ labels    24
 
 effect 1  96 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=96 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26369
 =======
@@ -736,6 +813,7 @@ labels    24
 
 effect 1  134 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=134 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=26370
 =======
@@ -759,6 +837,7 @@ labels    24
 
 effect 1  50 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=50 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=27635
 =======
@@ -772,6 +851,8 @@ effect 1  +15 mana per 5 s
           E_APPLY_AURA A_MOD_POWER_REGEN base=15 amplitude=1 target=[1,0]
 effect 2  casts 18350 Dummy Trigger every 5 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=18350 target=[1,0]
+tooltip   Restores $s1 mana per 5 sec.
+aura      Restores $s1 mana per 5 sec.
 
 https://www.wowhead.com/forever/spell=28820
 =======
@@ -783,6 +864,7 @@ refs      28820 Lightning Shield
 
 effect 1  casts 28820 Lightning Shield when the target is hit from family 11 mask 0x400
           E_APPLY_AURA A_ADD_TARGET_TRIGGER base=100 trigger=28820 family=11 mask=0x400 target=[1,0]
+tooltip   Your Lightning Shield spell also grants you $28820s1 mana per 5 sec. while active.
 
 https://www.wowhead.com/forever/spell=28821
 =======
@@ -798,6 +880,7 @@ effect 1  13 nature damage to every enemy in the target area (+0.147 spell power
           E_SCHOOL_DAMAGE base=13 sp=0.147 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432143
 =======
@@ -813,6 +896,7 @@ effect 1  29 nature damage to every enemy in the target area (+0.227 spell power
           E_SCHOOL_DAMAGE base=29 sp=0.227 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432144
 =======
@@ -828,6 +912,7 @@ effect 1  51 nature damage to every enemy in the target area (+0.267 spell power
           E_SCHOOL_DAMAGE base=51 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432145
 =======
@@ -843,6 +928,7 @@ effect 1  80 nature damage to every enemy in the target area (+0.267 spell power
           E_SCHOOL_DAMAGE base=80 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432146
 =======
@@ -858,6 +944,7 @@ effect 1  114 nature damage to every enemy in the target area (+0.267 spell powe
           E_SCHOOL_DAMAGE base=114 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432147
 =======
@@ -873,6 +960,7 @@ effect 1  154 nature damage to every enemy in the target area (+0.267 spell powe
           E_SCHOOL_DAMAGE base=154 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432148
 =======
@@ -888,6 +976,7 @@ effect 1  198 nature damage to every enemy in the target area (+0.267 spell powe
           E_SCHOOL_DAMAGE base=198 sp=0.267 radius=8 target=[18,16]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=432149
 =======
@@ -898,6 +987,7 @@ range     100 yd
 
 effect 1  13 nature damage to the enemy (+0.147 spell power)
           E_SCHOOL_DAMAGE base=13 sp=0.147 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470743
 =======
@@ -908,6 +998,7 @@ range     100 yd
 
 effect 1  29 nature damage to the enemy (+0.227 spell power)
           E_SCHOOL_DAMAGE base=29 sp=0.227 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470744
 =======
@@ -918,6 +1009,7 @@ range     100 yd
 
 effect 1  51 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=51 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470745
 =======
@@ -928,6 +1020,7 @@ range     100 yd
 
 effect 1  80 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=80 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470746
 =======
@@ -938,6 +1031,7 @@ range     100 yd
 
 effect 1  114 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=114 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470748
 =======
@@ -948,6 +1042,7 @@ range     100 yd
 
 effect 1  154 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=154 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470749
 =======
@@ -958,6 +1053,7 @@ range     100 yd
 
 effect 1  198 nature damage to the enemy (+0.267 spell power)
           E_SCHOOL_DAMAGE base=198 sp=0.267 target=[6,0]
+tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
 
 https://www.wowhead.com/forever/spell=470753
 =======
@@ -974,6 +1070,7 @@ effect 2  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 target=[1,0]
 effect 3  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+tooltip   When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
 
 https://www.wowhead.com/forever/spell=408498
 =======
@@ -990,6 +1087,8 @@ effect 1  SPELLMOD_CASTING_TIME -20% on family 11 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=10 family=11 mask=0x1 target=[1,0]
 effect 2  SPELLMOD_COST -20% on family 11 mask 0x1
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 misc=14 family=11 mask=0x1 target=[1,0]
+tooltip   Reduces the cast time and Mana cost of your next Lightning Bolt spell.
+aura      Reduces the cast time and Mana cost of your next Lightning Bolt spell by $w1%.
 
 https://www.wowhead.com/forever/spell=408505
 =======
@@ -999,6 +1098,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408498 misc=415449 target=[1,0]
+tooltip   Gain the Maelstrom Weapon ability:
+
+          $@spellicon408498
+          $@spelldesc408498
 
 https://www.wowhead.com/forever/spell=409946
 =======
@@ -1011,6 +1114,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACK_POWER_OF_STAT_PERCENT base=100 misc=3 target=[1,0]
 effect 2  a dummy aura holding 320 (at level 60)
           E_APPLY_AURA A_DUMMY base=20 ppl=5 target=[1,0]
+tooltip   Increases your Attack Power by an amount equal to $m1% of your Intellect.
 
 https://www.wowhead.com/forever/spell=415140
 =======
@@ -1023,6 +1127,8 @@ effect 1  +150 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=150 target=[1,0]
 effect 2  +30 holy+fire+nature+frost+shadow+arcane damage done
           E_APPLY_AURA A_MOD_DAMAGE_DONE base=30 misc=126 target=[1,0]
+aura      Attack Power increased by $w1.
+          Spell damage increased by $w2.
 
 https://www.wowhead.com/forever/spell=415144
 =======
@@ -1035,6 +1141,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=30 sp=1 misc=3 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=30 sp=1 misc=126 misc2=3 target=[1,0]
+tooltip   Increases your spell damage and healing by up to $m2% of your Intellect.
 
 https://www.wowhead.com/forever/spell=30812
 =======
@@ -1049,6 +1156,7 @@ refs      10596 Nature Resistance
 
 effect 1  summons creature 7467 to target 43
           E_SUMMON base=5 misc=7467 misc2=83 target=[43,0]
+tooltip   Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $10596a1 yards by $10596s1.
 
 https://www.wowhead.com/forever/spell=10595
 =======
@@ -1063,6 +1171,7 @@ refs      10598 Nature Resistance
 
 effect 1  summons creature 7468 to target 43
           E_SUMMON base=5 misc=7468 misc2=83 target=[43,0]
+tooltip   Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $10598a1 yards by $10598s1.
 
 https://www.wowhead.com/forever/spell=10600
 =======
@@ -1077,6 +1186,7 @@ refs      10599 Nature Resistance
 
 effect 1  summons creature 7469 to target 43
           E_SUMMON base=5 misc=7469 misc2=83 target=[43,0]
+tooltip   Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $10599a1 yards by $10599s1.
 
 https://www.wowhead.com/forever/spell=10601
 =======
@@ -1090,6 +1200,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_MELEE_RANGED_HASTE_2 base=30 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SCALE base=30 target=[1,0]
+tooltip   Increases your attack speed by $s1% for $d.
+aura      Attack speed increased by $s1%.
 
 https://www.wowhead.com/forever/spell=425336
 =======
@@ -1104,6 +1216,8 @@ effect 1  summons creature 3968 to target 43
           E_SUMMON base=100 misc=3968 misc2=83 radius=100 target=[43,0]
 effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Summons an immobile Sentry Totem with $s1 health at your feet for $d that allows vision of nearby area and warns of enemies that attack it. Right-Click on buff to switch back and forth between totem sight and Shaman sight.
+aura      Allows vision through Sentry Totem.  Right-Click on buff to switch back and forth between totem sight and Shaman sight.
 
 https://www.wowhead.com/forever/spell=6495
 =======
@@ -1114,6 +1228,7 @@ labels    24
 
 effect 1  SPELLMOD_COST -45% on family 11 mask 0x90100400
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-45 misc=14 family=11 mask=0x90100400 target=[1,0]
+tooltip   Reduces the mana cost of your Shock and Lightning Shield spells by $s1%.
 
 https://www.wowhead.com/forever/spell=1223030
 =======
@@ -1128,6 +1243,7 @@ effect 2  SPELLMOD_EFFECT2 +86 on family 11 mask 0x400000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=86 amplitude=1 misc=12 family=11 mask=0x400000 target=[1,0]
 effect 3  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 amplitude=1 target=[1,0]
+tooltip   Gives a chance to parry enemy melee attacks, reduces all threat generated by your attacks by $s1% while Rockbiter Weapon is not active, and increases all threat generated by $s3% while Rockbiter Weapon is active.
 
 https://www.wowhead.com/forever/spell=16268
 =======
@@ -1147,6 +1263,8 @@ effect 2  a dummy aura every 15 s to the friendly target (120 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=15000ms target=[21,0]
 effect 3  absorbs 1000000 every school damage to the friendly target
           E_APPLY_AURA A_SCHOOL_ABSORB base=1000000 misc=127 target=[21,0]
+tooltip   Infuses the target with the spirit of an alpha wolf, increasing all threat generated by the target by $s1% for $d. Limit 1 target. If cast on a target other than self, the Shaman also gains Loyal Beta, increasing Physical damage done by $443320s1% and reducing all threat generated by $443320s2% for $d. A target cannot have both Spirit of the Alpha and Loyal Beta at the same time.
+aura      Increases threat generated by $s1%.
 
 https://www.wowhead.com/forever/spell=408696
 =======
@@ -1156,6 +1274,10 @@ attrs     passive
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408696 misc=415450 target=[1,0]
+tooltip   Gain the Spirit of the Alpha ability:
+
+          $@spellicon408696
+          $@spelldesc408696
 
 https://www.wowhead.com/forever/spell=409951
 =======
@@ -1170,6 +1292,7 @@ refs      8072 Stoneskin
 
 effect 1  summons creature 5873 to target 41
           E_SUMMON base=5 misc=5873 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $8072a1 yards, reducing Physical damage taken by $8072s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8071
 =======
@@ -1184,6 +1307,7 @@ refs      8156 Stoneskin
 
 effect 1  summons creature 5919 to target 41
           E_SUMMON base=5 misc=5919 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $8156a1 yards, reducing Physical damage taken by $8156s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8154
 =======
@@ -1198,6 +1322,7 @@ refs      8157 Stoneskin
 
 effect 1  summons creature 5920 to target 41
           E_SUMMON base=5 misc=5920 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $8157a1 yards, reducing Physical damage taken by $8157s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8155
 =======
@@ -1212,6 +1337,7 @@ refs      10403 Stoneskin
 
 effect 1  summons creature 7366 to target 41
           E_SUMMON base=5 misc=7366 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10403a1 yards, reducing Physical damage taken by $10403s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=10406
 =======
@@ -1226,6 +1352,7 @@ refs      10404 Stoneskin
 
 effect 1  summons creature 7367 to target 41
           E_SUMMON base=5 misc=7367 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10404a1 yards, reducing Physical damage taken by $10404s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=10407
 =======
@@ -1240,6 +1367,7 @@ refs      10405 Stoneskin
 
 effect 1  summons creature 7368 to target 41
           E_SUMMON base=5 misc=7368 misc2=81 target=[41,0]
+tooltip   Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10405a1 yards, reducing Physical damage taken by $10405s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=10408
 =======
@@ -1260,6 +1388,8 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 family=11 mask=0x100003 target=[6,0]
+tooltip   Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
+aura      Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
 
 https://www.wowhead.com/forever/spell=17364
 =======
@@ -1272,6 +1402,7 @@ refs      17364 Stormstrike
 
 effect 1  weapon damage to the enemy
           E_WEAPON_DAMAGE base=0 target=[6,0]
+tooltip   Gives you an extra attack.  In addition, the next 2 sources of Nature damage dealt to the target are increased by $17364s2%.  Lasts $17364d.
 
 https://www.wowhead.com/forever/spell=410156
 =======
@@ -1286,6 +1417,7 @@ refs      8076 Strength of Earth
 
 effect 1  summons creature 5874 to target 41
           E_SUMMON base=5 misc=5874 misc2=81 target=[41,0]
+tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $8076a1 yards by $8076s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8075
 =======
@@ -1300,6 +1432,7 @@ refs      8162 Strength of Earth
 
 effect 1  summons creature 5921 to target 41
           E_SUMMON base=5 misc=5921 misc2=81 target=[41,0]
+tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $8162a1 yards by $8162s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8160
 =======
@@ -1314,6 +1447,7 @@ refs      8163 Strength of Earth
 
 effect 1  summons creature 5922 to target 41
           E_SUMMON base=5 misc=5922 misc2=81 target=[41,0]
+tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $8163a1 yards by $8163s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=8161
 =======
@@ -1328,6 +1462,7 @@ refs      10441 Strength of Earth
 
 effect 1  summons creature 7403 to target 41
           E_SUMMON base=5 misc=7403 misc2=81 target=[41,0]
+tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $10441a1 yards by $10441s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=10442
 =======
@@ -1342,6 +1477,7 @@ refs      25362 Strength of Earth
 
 effect 1  summons creature 15464 to target 41
           E_SUMMON base=5 misc=15464 misc2=81 target=[41,0]
+tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $25362a1 yards by $25362s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=25361
 =======
@@ -1356,6 +1492,7 @@ labels    24
 
 effect 1  summons creature 15214 to target 87
           E_SUMMON base=0 misc=15214 misc2=5878 target=[87,0]
+tooltip   Relocates your active totems to the specified location.
 
 https://www.wowhead.com/forever/spell=437009
 =======
@@ -1370,6 +1507,9 @@ refs      8515 Windfury Totem, 8516 Windfury Totem
 
 effect 1  summons creature 6112 to target 43
           E_SUMMON base=5 misc=6112 misc2=83 target=[43,0]
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8515a1 yards.  Each main hand hit has a 20% chance of granting the attacker $8516s2 extra attack with ${$8516m1*$<mult>} extra melee attack power. Lasts $d.
+vars      $mult1=$?s29192[${1.15}][${1.0}]
+          $mult=$?s29193[${1.30}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=8512
 =======
@@ -1386,6 +1526,8 @@ effect 1  +95 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=95 target=[1,0]
 effect 2  1 extra attacks
           E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
+aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
 
 https://www.wowhead.com/forever/spell=8516
 =======
@@ -1402,6 +1544,8 @@ effect 1  +179 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=179 target=[1,0]
 effect 2  1 extra attacks
           E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
+aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
 
 https://www.wowhead.com/forever/spell=10608
 =======
@@ -1418,6 +1562,8 @@ effect 1  +246 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=246 target=[1,0]
 effect 2  1 extra attacks
           E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
+tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
+aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
 
 https://www.wowhead.com/forever/spell=10610
 =======
@@ -1432,6 +1578,9 @@ refs      10609 Windfury Totem, 10608 Windfury Totem
 
 effect 1  summons creature 7483 to target 43
           E_SUMMON base=5 misc=7483 misc2=83 target=[43,0]
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10609a1 yards. Each main hand hit has a 20% chance of granting the attacker $10608s2 extra attack with ${$10608m1*$<mult>} extra melee attack power. Lasts $d.
+vars      $mult1=$?s29192[${1.15}][${1.0}]
+          $mult=$?s29193[${1.30}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=10613
 =======
@@ -1446,6 +1595,9 @@ refs      10612 Windfury Totem, 10610 Windfury Totem
 
 effect 1  summons creature 7484 to target 43
           E_SUMMON base=5 misc=7484 misc2=83 target=[43,0]
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10612a1 yards. Each main hand hit has a 20% chance of granting the attacker $10610s2 extra attack with ${$10610m1*$<mult>} extra melee attack power. Lasts $d.
+vars      $mult1=$?s29192[${1.15}][${1.0}]
+          $mult=$?s29193[${1.30}][${$<mult1>}]
 
 https://www.wowhead.com/forever/spell=10614
 =======
@@ -1459,6 +1611,7 @@ refs      10610 Windfury Totem
 
 effect 1  summons creature 7484 to target 43
           E_SUMMON base=5 misc=7484 misc2=83 target=[43,0]
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster.  The totem enchants all party members main-hand weapons with wind, if they are within $10611a1 yards.  Each hit has a 20% chance of granting the attacker $10610s2 extra $lattack:attacks; with $10610s1 extra attack power.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=27621
 =======
@@ -1473,6 +1626,7 @@ refs      8233 Windfury Weapon
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=283 target=[0,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 https://www.wowhead.com/forever/spell=8232
 =======
@@ -1502,6 +1656,7 @@ refs      8236 Windfury Weapon
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=284 target=[0,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 https://www.wowhead.com/forever/spell=8235
 =======
@@ -1546,6 +1701,7 @@ refs      10484 Windfury Weapon
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=525 target=[0,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 https://www.wowhead.com/forever/spell=10486
 =======
@@ -1575,6 +1731,7 @@ refs      16361 Windfury Weapon
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=1669 target=[0,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 https://www.wowhead.com/forever/spell=16362
 =======
@@ -1591,6 +1748,7 @@ refs      8233 Windfury Weapon
 
 effect 1  a dummy aura holding 103 (at level 60)
           E_APPLY_AURA A_DUMMY base=46 ppl=7.2 target=[1,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power.  Lasts for 5 minutes.
 
 https://www.wowhead.com/forever/spell=439431
 =======
@@ -1628,6 +1786,7 @@ refs      16361 Windfury Weapon
 
 effect 1  applies temporary enchant 7569
           E_ENCHANT_ITEM_TEMPORARY base=1800 misc=7569 target=[0,0]
+tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power.  Lasts for 1 hour.
 
 https://www.wowhead.com/forever/spell=461636
 =======
@@ -1642,6 +1801,7 @@ refs      15108 Windwall
 
 effect 1  summons creature 9687 to target 43
           E_SUMMON base=5 misc=9687 misc2=83 target=[43,0]
+tooltip   Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15108a1 yards, reducing ranged damage taken by $15108s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=15107
 =======
@@ -1656,6 +1816,7 @@ refs      15109 Windwall
 
 effect 1  summons creature 9688 to target 43
           E_SUMMON base=5 misc=9688 misc2=83 target=[43,0]
+tooltip   Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15109a1 yards, reducing ranged damage taken by $15109s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=15111
 =======
@@ -1670,5 +1831,6 @@ refs      15110 Windwall
 
 effect 1  summons creature 9689 to target 43
           E_SUMMON base=5 misc=9689 misc2=83 target=[43,0]
+tooltip   Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15110a1 yards, reducing ranged damage taken by $15110s1.  Lasts $d.
 
 https://www.wowhead.com/forever/spell=15112

@@ -13,6 +13,10 @@ effect 2  immune to polymorph
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
 effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Shapeshift into Aquatic Form, increasing swim speed by $5421s1% and allowing the druid to breathe underwater.  Also protects the caster from Polymorph effects.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects.  Increases swim speed by $5421s1% and allows underwater breathing.
 
 https://www.wowhead.com/forever/spell=1066
 =======
@@ -28,6 +32,7 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_WATER_BREATHING base=0 target=[1,0]
 effect 3  immune to disarm
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=3 target=[1,0]
+tooltip   Increases swimming speed by $s1% and allow's the druid to breathe underwater.
 
 https://www.wowhead.com/forever/spell=5421
 =======
@@ -46,6 +51,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=5211
 =======
@@ -64,6 +71,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=6798
 =======
@@ -82,6 +91,8 @@ labels    21
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+tooltip   Stuns the target for $d.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=8983
 =======
@@ -103,6 +114,10 @@ effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
 effect 5  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
+tooltip   Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
 
 https://www.wowhead.com/forever/spell=5487
 =======
@@ -153,6 +168,11 @@ effect 3  SPELLMOD_JUMP_TARGETS +3 on family 7 mask 0x0,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 misc=17 family=7 mask=0x0,0x40 target=[1,0]
 effect 4  immune to fear
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[1,0]
+tooltip   $?a5487|a9634|a3025[|CFFFFFFFFReuires Cat Form, Bear Form, Dire Bear Form|R][|CFFFF2020Requires Cat Form, Bear Form, Dire Bear Form|R]
+          Causes your Primal Bite ability to strike up to $s3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by $s1%. Clears and grants immunity to Fear effects for the duration. Lasts $d.
+aura      Combo Point generating abilities gain $s1% increased critical strike chance.
+          Primal Bite hits up to $w3 targets and has no cooldown.
+          Immune to Fear effects.
 
 https://www.wowhead.com/forever/spell=417141
 =======
@@ -163,6 +183,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415449
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=417141 misc=415449 target=[1,0]
+tooltip   Gain the Berserk ability:
+
+          $@spellicon417141
+          $@spelldesc417141
 
 https://www.wowhead.com/forever/spell=424759
 =======
@@ -174,6 +198,12 @@ labels    3096
 
 effect 1  SPELLMOD_COST -50% on family 7 mask 0x0,0x0,0x0,0x8000040
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=14 family=7 mask=0x0,0x0,0x0,0x8000040 target=[1,0]
+tooltip   When activated, this ability causes your Mangle (Bear) ability to hit up to $s3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by $s1%.  Lasts $d. Requires Bear Form, Cat Form, or Dire Bear Form to activate.
+
+          Clears the effect of Fear and makes you immune to Fear for the duration.
+aura      Immune to Fear effects.
+          Rage and energy costs reduced.
+          Mangle hits multiple targets.
 
 https://www.wowhead.com/forever/spell=442211
 =======
@@ -186,6 +216,7 @@ effect 1  SPELLMOD_DURATION +0.5 s on family 7 mask 0x22000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=500 sp=1 misc=1 family=7 mask=0x22000 target=[1,0]
 effect 2  SPELLMOD_COOLDOWN -30 s on family 7 mask 0x2000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30000 sp=1 misc=11 family=7 mask=0x2000 target=[1,0]
+tooltip   Increases the stun duration of your Bash and Pounce abilities by $/1000;S1 sec and reduces the cooldown of Bash by ${$m2/-1000} sec.
 
 https://www.wowhead.com/forever/spell=16940
 =======
@@ -206,6 +237,10 @@ effect 3  casts nothing every 5 s
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 sp=1 period=5000ms target=[1,0]
 effect 4  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Shapeshift into Cat Form, increasing Attack Power by $3025s1 plus Agility.  Also protects the caster from Polymorph effects and allows the use of various cat abilities.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immunity to Polymorph effects.  Increases Attack Power by $3025s1 plus Agility.
 
 https://www.wowhead.com/forever/spell=768
 =======
@@ -246,6 +281,8 @@ labels    21
 
 effect 1  taunts to every enemy around the caster
           E_APPLY_AURA A_MOD_TAUNT base=0 radius=10 target=[22,15]
+tooltip   Forces all nearby enemies to focus attacks on you for $d.
+aura      Taunted.
 
 https://www.wowhead.com/forever/spell=5209
 =======
@@ -265,6 +302,7 @@ effect 2  110% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=1082
 =======
@@ -285,6 +323,7 @@ effect 2  110% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=3029
 =======
@@ -305,6 +344,7 @@ effect 2  110% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=5201
 =======
@@ -325,6 +365,7 @@ effect 2  110% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9849
 =======
@@ -345,6 +386,7 @@ effect 2  110% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9850
 =======
@@ -373,6 +415,7 @@ labels    21
 
 effect 1  -490 threat to the enemy
           E_THREAT base=-480 ppl=-1 target=[6,0]
+tooltip   Cower, causing no damage but lowering your threat a small amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=8998
 =======
@@ -389,6 +432,7 @@ labels    21
 
 effect 1  -790 threat to the enemy
           E_THREAT base=-780 ppl=-1 target=[6,0]
+tooltip   Cower, causing no damage but lowering your threat a medium amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=9000
 =======
@@ -405,6 +449,7 @@ labels    21
 
 effect 1  -1208 threat to the enemy
           E_THREAT base=-1200 ppl=-1 target=[6,0]
+tooltip   Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
 
 https://www.wowhead.com/forever/spell=9892
 =======
@@ -431,6 +476,8 @@ effect 1  -56 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-46 ppl=-1 radius=10 target=[22,15]
 effect 2  16 threat to every enemy around the caster
           E_THREAT base=8 ppl=0.8 radius=10 target=[22,15]
+tooltip   The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
+aura      Decreases melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=99
 =======
@@ -447,6 +494,8 @@ effect 1  -88 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-74 ppl=-1.4 radius=10 target=[22,15]
 effect 2  24 threat to every enemy around the caster
           E_THREAT base=16 ppl=0.8 radius=10 target=[22,15]
+tooltip   The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
+aura      Decreases melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=1735
 =======
@@ -463,6 +512,8 @@ effect 1  -105 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-95 ppl=-1 radius=10 target=[22,15]
 effect 2  34 threat to every enemy around the caster
           E_THREAT base=26 ppl=0.8 radius=10 target=[22,15]
+tooltip   The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
+aura      Decreases melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=9490
 =======
@@ -479,6 +530,8 @@ effect 1  -158 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-144 ppl=-1.4 radius=10 target=[22,15]
 effect 2  42 threat to every enemy around the caster
           E_THREAT base=34 ppl=0.8 radius=10 target=[22,15]
+tooltip   The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
+aura      Decreases melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=9747
 =======
@@ -495,6 +548,8 @@ effect 1  -205 attack power to every enemy around the caster (at level 60)
           E_APPLY_AURA A_MOD_ATTACK_POWER base=-193 ppl=-1.4 radius=10 target=[22,15]
 effect 2  48 threat to every enemy around the caster
           E_THREAT base=42 ppl=0.8 radius=10 target=[22,15]
+tooltip   The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
+aura      Decreases melee attack power by $w1.
 
 https://www.wowhead.com/forever/spell=9898
 =======
@@ -517,6 +572,10 @@ effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
 effect 5  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
+tooltip   Shapeshift into Dire Bear Form, increasing Attack Power by $9635s4, Armor contribution from items by $9635s1%, and Health by $9635s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects.  Increases Attack Power by $9635s4, Armor contribution from items by $9635s1%, and Health by $9635s3.
 
 https://www.wowhead.com/forever/spell=9634
 =======
@@ -558,6 +617,8 @@ effect 3  unrecognised shape
           E_APPLY_AURA A_INTERRUPT_REGEN base=0 target=[1,0]
 effect 4  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Instantly generates ${$m2/10} Rage and another $m1 Rage over $d, but  reduces base armor by 27% in Bear Form and 16% in Dire Bear Form. The druid is considered in combat for the duration.
+aura      Gain ${$w1/10} rage per second. Base armor reduced.
 
 https://www.wowhead.com/forever/spell=5229
 =======
@@ -569,6 +630,8 @@ labels    21
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-26 misc=1 index=1 target=[1,0]
+tooltip   Generates 20 rage over $d$?p456328[][, but reduces base armor by 27% in Bear Form and 16% in Dire Bear Form].  The druid is considered in combat for the duration.
+aura      Gain $/10;s1 rage per second.  Armor reduced.
 
 https://www.wowhead.com/forever/spell=25503
 =======
@@ -581,6 +644,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +8% on family 7 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=8 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +3% on family 7 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x800000 target=[1,0]
+tooltip   Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 https://www.wowhead.com/forever/spell=16858
 =======
@@ -593,6 +657,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +16% on family 7 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=16 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +6% on family 7 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=6 sp=1 family=7 mask=0x800000 target=[1,0]
+tooltip   Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 https://www.wowhead.com/forever/spell=16859
 =======
@@ -605,6 +670,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +24% on family 7 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=24 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +9% on family 7 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=9 sp=1 family=7 mask=0x800000 target=[1,0]
+tooltip   Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 https://www.wowhead.com/forever/spell=16860
 =======
@@ -617,6 +683,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +32% on family 7 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=32 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +12% on family 7 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=12 sp=1 family=7 mask=0x800000 target=[1,0]
+tooltip   Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 https://www.wowhead.com/forever/spell=16861
 =======
@@ -629,6 +696,7 @@ effect 1  SPELLMOD_ALL_EFFECTS +40% on family 7 mask 0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=40 sp=1 misc=8 family=7 mask=0x8 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +15% on family 7 mask 0x800000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=7 mask=0x800000 target=[1,0]
+tooltip   Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 https://www.wowhead.com/forever/spell=16862
 =======
@@ -644,6 +712,7 @@ effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 sp=1 mechanic=26 target=[6,0]
 effect 2  roots to the enemy
           E_APPLY_AURA A_MOD_ROOT base=0 sp=1 mechanic=7 target=[6,0]
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=19675
 =======
@@ -656,6 +725,7 @@ labels    21
 
 effect 1  -50% movement speed to the enemy
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[6,0]
+aura      Dazed.
 
 https://www.wowhead.com/forever/spell=414923
 =======
@@ -684,6 +754,11 @@ effect 1  charges to the enemy
           E_CHARGE base=30 target=[6,0]
 effect 2  casts 19675 Feral Charge to the enemy
           E_TRIGGER_SPELL base=5 sp=1 trigger=19675 target=[6,0]
+tooltip   $?a5487|a9634[|CFFFFFFFFRequires Bear Form, Dire Bear Form|R][|CFFFF2020Requires Bear Form, Dire Bear Form|R]
+          Charge an enemy, immobilizing them and interrupting any spell they are casting for $19675d.
+
+          $@spelltooltip414924
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=1238122
 =======
@@ -712,6 +787,8 @@ effect 1  charges to the enemy
           E_CHARGE base=0 target=[6,0]
 effect 2  casts 19675 Feral Charge to the enemy
           E_TRIGGER_SPELL base=0 sp=1 trigger=19675 target=[6,0]
+tooltip   Charge an enemy, immobilizing them and interrupting any spell they are casting for $19675d.
+aura      Immobilized.
 
 https://www.wowhead.com/forever/spell=16979
 =======
@@ -725,6 +802,7 @@ effect 1  SPELLMOD_EFFECT1 +3 on family 7 mask 0x4000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=3 family=7 mask=0x4000 target=[1,0]
 effect 2  SPELLMOD_DAMAGE +3% on family 7 mask 0x0,0x100000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 family=7 mask=0x0,0x100000 target=[1,0]
+tooltip   Increases damage done by your Swipe ability by $s2% and reduces the chance enemies have to detect you while Prowling as if you were ${$m1/5} $llevel:levels; higher.
 
 https://www.wowhead.com/forever/spell=16947
 =======
@@ -737,6 +815,7 @@ effect 1  +4% dodge chance
           E_APPLY_AURA A_MOD_DODGE_PERCENT base=4 sp=1 target=[1,0]
 effect 2  a dummy aura holding 30
           E_APPLY_AURA A_DUMMY base=30 sp=1 target=[1,0]
+tooltip   Increases your movement speed while in Cat Form by $m2%, and increases your chance to Dodge by $m1%.
 
 https://www.wowhead.com/forever/spell=17002
 =======
@@ -748,6 +827,8 @@ labels    21
 
 effect 1  +0% movement speed
           E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 target=[1,0]
+tooltip   The Druid's movmement speed will increase by $s1%.
+aura      Increases movement speed while in Cat Form by $w1%.
 
 https://www.wowhead.com/forever/spell=24867
 =======
@@ -766,6 +847,12 @@ effect 1  6–38 physical damage to the enemy
           E_SCHOOL_DAMAGE base=22 variance=0.72727275 sp=1 perResource=36 target=[6,0]
 effect 2  a dummy effect holding 100 to the enemy
           E_DUMMY base=100 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 50-66 damage
+             2 points: 86-102 damage
+             3 points: 122-138 damage
+             4 points: 158-174 damage
+             5 points: 194-210 damage
 
 https://www.wowhead.com/forever/spell=22568
 =======
@@ -784,6 +871,12 @@ effect 1  8–56 physical damage to the enemy
           E_SCHOOL_DAMAGE base=32 variance=0.75 sp=1 perResource=59 target=[6,0]
 effect 2  a dummy effect holding 150 to the enemy
           E_DUMMY base=150 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 79-103 damage
+             2 points: 138-162 damage
+             3 points: 197-221 damage
+             4 points: 256-280 damage
+             5 points: 315-339 damage
 
 https://www.wowhead.com/forever/spell=22827
 =======
@@ -802,6 +895,12 @@ effect 1  10–90 physical damage to the enemy
           E_SCHOOL_DAMAGE base=50 variance=0.8 sp=1 perResource=92 target=[6,0]
 effect 2  a dummy effect holding 200 to the enemy
           E_DUMMY base=200 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 122-162 damage
+             2 points: 214-254 damage
+             3 points: 306-346 damage
+             4 points: 398-438 damage
+             5 points: 490-530 damage
 
 https://www.wowhead.com/forever/spell=22828
 =======
@@ -820,6 +919,12 @@ effect 1  20–120 physical damage to the enemy (+0.03 attack power)
           E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 ap=0.03 perResource=128 target=[6,0]
 effect 2  a dummy effect holding 250 to the enemy
           E_DUMMY base=250 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 173-223 damage
+             2 points: 301-351 damage
+             3 points: 429-479 damage
+             4 points: 557-607 damage
+             5 points: 685-735 damage
 
 https://www.wowhead.com/forever/spell=22829
 =======
@@ -850,6 +955,12 @@ effect 1  22–142 physical damage to the enemy
           E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 perResource=147 target=[6,0]
 effect 2  a dummy effect holding 270 to the enemy
           E_DUMMY base=270 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 199-259 damage
+             2 points: 346-406 damage
+             3 points: 493-553 damage
+             4 points: 640-700 damage
+             5 points: 787-847 damage
 
 https://www.wowhead.com/forever/spell=31018
 =======
@@ -862,6 +973,7 @@ effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 7 mask 0x800,0x40
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0x800,0x40 target=[1,0]
 effect 2  SPELLMOD_COST -1 (-0.1 on a rage bar) on family 7 mask 0x1000,0x400
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1 sp=1 misc=14 family=7 mask=0x1000,0x400 target=[1,0]
+tooltip   Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by $/10;s1 Rage or Energy.
 
 https://www.wowhead.com/forever/spell=16934
 =======
@@ -875,6 +987,8 @@ labels    21
 
 effect 1  casts nothing every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=1 period=1000ms target=[1,0]
+tooltip   Converts up to 10 Rage per second into health for $d.  Each point of Rage is converted into $s1% health.
+aura      Converting Rage into health.
 
 https://www.wowhead.com/forever/spell=22842
 =======
@@ -904,6 +1018,8 @@ effect 3  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
 effect 4  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+tooltip   Converts resources into health every second for $d. Up to $s1 Rage, $s2 Energy, or $s3% base Mana is converted per second into up to $s4% health.
+aura      Converting resources into health.
 
 https://www.wowhead.com/forever/spell=428708
 =======
@@ -920,6 +1036,7 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you, but has no effect if the target is already attacking you.
 
 https://www.wowhead.com/forever/spell=6795
 =======
@@ -935,6 +1052,7 @@ effect 1  taunts to the enemy
           E_ATTACK_ME base=0 target=[6,0]
 effect 2  taunts to the enemy
           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+tooltip   Taunts the target to attack you, but has no effect if the target is already attacking you.
 
 https://www.wowhead.com/forever/spell=1218506
 =======
@@ -945,6 +1063,7 @@ labels    21
 
 effect 1  SPELLMOD_COOLDOWN +0 s on family 7 mask 0x0,0x80000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+tooltip   Reduces the cooldown of your Shifting Power spell by ${$m1/-1000} sec.
 
 https://www.wowhead.com/forever/spell=1322670
 =======
@@ -955,6 +1074,7 @@ labels    21
 
 effect 1  SPELLMOD_COST -12 (-1.2 on a rage bar) on family 7 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-12 sp=1 misc=14 family=7 mask=0x8000 target=[1,0]
+tooltip   Reduces the Energy cost of your Shred ability by $s1.
 
 https://www.wowhead.com/forever/spell=16968
 =======
@@ -975,6 +1095,8 @@ effect 1  10 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=3000ms target=[6,0]
 effect 2  a dummy effect holding 10 to the enemy
           E_DUMMY base=10 target=[6,0]
+tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+aura      $w1 damage every $t sec.
 
 https://www.wowhead.com/forever/spell=414644
 =======
@@ -1006,6 +1128,8 @@ effect 1  12 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
 effect 2  a dummy effect holding 10 to the enemy
           E_DUMMY base=10 target=[6,0]
+tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+aura      $w1 damage every $t sec.
 
 https://www.wowhead.com/forever/spell=1235826
 =======
@@ -1026,6 +1150,8 @@ effect 1  15 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=3000ms target=[6,0]
 effect 2  a dummy effect holding 10 to the enemy
           E_DUMMY base=10 target=[6,0]
+tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+aura      $w1 damage every $t sec.
 
 https://www.wowhead.com/forever/spell=1235827
 =======
@@ -1037,6 +1163,7 @@ refs      24932 Leader of the Pack
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+tooltip   While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within $24932a1 yards by $24932s1%.
 
 https://www.wowhead.com/forever/spell=17007
 =======
@@ -1048,6 +1175,7 @@ labels    21
 
 effect 1  raid aura: +3% physical crit
           E_APPLY_AREA_AURA_RAID A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 radius=45 target=[1,0]
+aura      Increases melee and ranged Critical Strike chance by $s1%.
 
 https://www.wowhead.com/forever/spell=24932
 =======
@@ -1062,6 +1190,7 @@ labels    21
 
 effect 1  weapon damage +18 to the enemy
           E_WEAPON_DAMAGE base=18 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=6807
 =======
@@ -1076,6 +1205,7 @@ labels    21
 
 effect 1  weapon damage +27 to the enemy
           E_WEAPON_DAMAGE base=27 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=6808
 =======
@@ -1090,6 +1220,7 @@ labels    21
 
 effect 1  weapon damage +37 to the enemy
           E_WEAPON_DAMAGE base=37 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=6809
 =======
@@ -1104,6 +1235,7 @@ labels    21
 
 effect 1  weapon damage +49 to the enemy
           E_WEAPON_DAMAGE base=49 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=8972
 =======
@@ -1118,6 +1250,7 @@ labels    21
 
 effect 1  weapon damage +71 to the enemy
           E_WEAPON_DAMAGE base=71 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=9745
 =======
@@ -1132,6 +1265,7 @@ labels    21
 
 effect 1  weapon damage +101 to the enemy
           E_WEAPON_DAMAGE base=101 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=9880
 =======
@@ -1146,6 +1280,7 @@ labels    21
 
 effect 1  weapon damage +128 to the enemy
           E_WEAPON_DAMAGE base=128 sp=1 chain=1 target=[6,0]
+tooltip   Increases the druid's next attack by $s1 damage.
 
 https://www.wowhead.com/forever/spell=9881
 =======
@@ -1158,6 +1293,7 @@ effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=25 misc=3 target=[1,0]
+tooltip   Increases the critical strike damage bonus of your melee abilities by $m1% and increases your spell healing by $s2% of your Intellect.
 
 https://www.wowhead.com/forever/spell=1223242
 =======
@@ -1176,6 +1312,7 @@ effect 3  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 4  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases your dodge chance by $m1%, and gives you a $m2% chance to gain ${$417053m1/10} Rage each time you dodge.
 
 https://www.wowhead.com/forever/spell=417051
 =======
@@ -1198,6 +1335,8 @@ effect 2  casts 9007 Pounce Bleed to the enemy
           E_TRIGGER_SPELL base=0 trigger=9007 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Pounce, stunning the target for $d and causing $9007o1 damage over $9007d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=9005
 =======
@@ -1220,6 +1359,8 @@ effect 2  casts 9824 Pounce Bleed to the enemy
           E_TRIGGER_SPELL base=0 trigger=9824 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Pounce, stunning the target for $d and causing $9824o1 damage over $9824d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=9823
 =======
@@ -1242,6 +1383,8 @@ effect 2  casts 9826 Pounce Bleed to the enemy
           E_TRIGGER_SPELL base=0 trigger=9826 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Pounce, stunning the target for $d and causing $9826o1 damage over $9826d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+aura      Stunned.
 
 https://www.wowhead.com/forever/spell=9827
 =======
@@ -1255,6 +1398,7 @@ effect 1  a dummy aura holding 50
           E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
 effect 2  +0 attack power
           E_APPLY_AURA A_MOD_ATTACK_POWER base=0 sp=1 target=[1,0]
+tooltip   Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by $s1% of your level.
 
 https://www.wowhead.com/forever/spell=16972
 =======
@@ -1273,6 +1417,7 @@ effect 1  weapon damage +26 to the enemy
           E_WEAPON_DAMAGE base=26 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
 
 https://www.wowhead.com/forever/spell=407995
 =======
@@ -1291,6 +1436,7 @@ effect 1  weapon damage +38 to the enemy
           E_WEAPON_DAMAGE base=38 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
 
 https://www.wowhead.com/forever/spell=1238069
 =======
@@ -1309,6 +1455,7 @@ effect 1  weapon damage +59 to the enemy
           E_WEAPON_DAMAGE base=59 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
 
 https://www.wowhead.com/forever/spell=1238070
 =======
@@ -1327,6 +1474,7 @@ effect 1  weapon damage +77 to the enemy
           E_WEAPON_DAMAGE base=77 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
 
 https://www.wowhead.com/forever/spell=1238073
 =======
@@ -1341,6 +1489,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=100 ppl=5 target=[1,0]
 effect 2  -40% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-40 target=[1,0]
+tooltip   Allows the Druid to prowl around, but reduces your movement speed by $s2%.  Lasts until cancelled.
+aura      Stealthed.  Movement speed slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=5215
 =======
@@ -1355,6 +1505,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=200 ppl=5 target=[1,0]
 effect 2  -35% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-35 target=[1,0]
+tooltip   Allows the Druid to prowl around, but reduces your movement speed by $s2%.  Lasts until cancelled.
+aura      Stealthed.  Movement speed slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=6783
 =======
@@ -1369,6 +1521,8 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_STEALTH base=300 ppl=5 target=[1,0]
 effect 2  -30% movement speed
           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-30 target=[1,0]
+tooltip   Allows the Druid to prowl around, but reduces your movement speed by $s2%.  Lasts until cancelled.
+aura      Stealthed.  Movement speed slowed by $s2%.
 
 https://www.wowhead.com/forever/spell=9913
 =======
@@ -1389,6 +1543,8 @@ effect 2  16 physical damage every 3 s to the enemy (3 ticks, +0.055 attack powe
           E_APPLY_AURA A_PERIODIC_DAMAGE base=16 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
+aura      Bleeding for $w2 damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1822
 =======
@@ -1409,6 +1565,8 @@ effect 2  21 physical damage every 3 s to the enemy (3 ticks, +0.055 attack powe
           E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
+aura      Bleeding for $w2 damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1823
 =======
@@ -1429,6 +1587,8 @@ effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack powe
           E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
+aura      Bleeding for $w2 damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=1824
 =======
@@ -1449,6 +1609,8 @@ effect 2  34 physical damage every 3 s to the enemy (3 ticks, +0.055 attack powe
           E_APPLY_AURA A_PERIODIC_DAMAGE base=34 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
+aura      Bleeding for $w2 damage every $t2 sec.
 
 https://www.wowhead.com/forever/spell=9904
 =======
@@ -1465,6 +1627,8 @@ effect 1  12–28 physical damage to the enemy
           E_SCHOOL_DAMAGE base=20 variance=0.4 target=[6,0]
 effect 2  12 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+aura      Bleeding for $s2 damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=24331
 =======
@@ -1480,6 +1644,8 @@ effect 1  24–56 physical damage to the enemy
           E_SCHOOL_DAMAGE base=40 variance=0.4 target=[6,0]
 effect 2  24 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=24 period=3000ms target=[6,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+aura      Bleeding for $s2 damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=24332
 =======
@@ -1497,6 +1663,8 @@ effect 1  150–350 physical damage to the enemy
           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
 effect 2  100 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+aura      Bleeding for $s2 damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=27556
 =======
@@ -1513,6 +1681,8 @@ effect 1  150–350 physical damage to the enemy
           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
 effect 2  100 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+aura      Bleeding for $s2 damage every $t2 seconds.
 
 https://www.wowhead.com/forever/spell=27638
 =======
@@ -1532,6 +1702,7 @@ effect 2  350% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=6785
 =======
@@ -1551,6 +1722,7 @@ effect 2  350% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=6787
 =======
@@ -1570,6 +1742,7 @@ effect 2  350% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9866
 =======
@@ -1589,6 +1762,7 @@ effect 2  350% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9867
 =======
@@ -1609,6 +1783,13 @@ effect 1  3 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms perResource=4.4 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=1079
 =======
@@ -1629,6 +1810,13 @@ effect 1  4 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms perResource=7.2 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9492
 =======
@@ -1649,6 +1837,13 @@ effect 1  6 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms perResource=8.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9493
 =======
@@ -1669,6 +1864,13 @@ effect 1  8 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms perResource=12.7 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9752
 =======
@@ -1689,6 +1891,13 @@ effect 1  11 physical damage every 2 s to the enemy (6 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=2000ms perResource=18.2 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9894
 =======
@@ -1709,6 +1918,13 @@ effect 1  15 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power
           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 ap=0.01 period=2000ms perResource=25.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
+             1 point  : ${6*($m1+$b1)} damage over $d.
+             2 points: ${6*($m1+2*$b1)} damage over $d.
+             3 points: ${6*($m1+3*$b1)} damage over $d.
+             4 points: ${6*($m1+4*$b1)} damage over $d.
+             5 points: ${6*($m1+5*$b1)} damage over $d.
+aura      $w1 bleed damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=9896
 =======
@@ -1721,6 +1937,7 @@ effect 1  SPELLMOD_DAMAGE +20% on family 7 mask 0x9800
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=7 mask=0x9800 target=[1,0]
 effect 2  SPELLMOD_DOT +20% on family 7 mask 0x1000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=7 mask=0x1000 target=[0,0]
+tooltip   Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=16998
 =======
@@ -1735,6 +1952,7 @@ labels    21
 
 effect 1  restores 40 energy to the caster
           E_ENERGIZE base=40 sp=1 misc=3 target=[1,0]
+tooltip   Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.
 
 https://www.wowhead.com/forever/spell=1322605
 =======
@@ -1754,6 +1972,7 @@ effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=5221
 =======
@@ -1773,6 +1992,7 @@ effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=6800
 =======
@@ -1792,6 +2012,7 @@ effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=8992
 =======
@@ -1811,6 +2032,7 @@ effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9829
 =======
@@ -1830,6 +2052,7 @@ effect 2  155% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9830
 =======
@@ -1846,6 +2069,7 @@ effect 1  450–1050 physical damage to the enemy
           E_SCHOOL_DAMAGE base=750 variance=0.4 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=1 target=[6,0]
+aura      Armor reduced by $s2%.
 
 https://www.wowhead.com/forever/spell=27555
 =======
@@ -1858,6 +2082,7 @@ effect 1  SPELLMOD_COST -6 (-0.6 on a rage bar) on family 7 mask 0x8000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-6 sp=1 misc=14 family=7 mask=0x8000 target=[1,0]
 effect 2  SPELLMOD_COST -60 (-6 on a rage bar) on family 7 mask 0x0,0x100
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60 sp=1 misc=14 family=7 mask=0x0,0x100 target=[1,0]
+tooltip   Reduces the Energy cost of your Shred ability by $m1 and reduces the Rage cost of your Lacerate ability by ${$m2/-10}.
 
 https://www.wowhead.com/forever/spell=16966
 =======
@@ -1875,6 +2100,7 @@ refs      414621 Skull Bash
 
 effect 1  charges to the enemy
           E_CHARGE base=0 trigger=414621 mechanic=26 target=[6,0]
+tooltip   Charge to a target within 13 yards and bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for $414621d. Shares a cooldown with Feral Charge.
 
 https://www.wowhead.com/forever/spell=410176
 =======
@@ -1887,6 +2113,7 @@ stance    Cat, Bear, Dire Bear
 
 effect 1  interrupts the cast to the enemy
           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+tooltip   You bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for $d.
 
 https://www.wowhead.com/forever/spell=414621
 =======
@@ -1900,6 +2127,10 @@ refs      408025 Survival Instincts, 417051 Natural Reaction
 
 effect 1  +20% healing done
           E_APPLY_AURA A_MOD_HEALING_DONE_PERCENT base=20 misc=126 target=[1,0]
+tooltip   When activated, this grants you $408025s1% of your maximum health and increases all non-Physical healing you deal by $s1% for $d. After the effect expires, the health is lost. Useable in all forms except Moonkin Form.
+
+          In addition, you regenerate $417051s2 rage every time you dodge while in Bear Form or Dire Bear Form, $417051s3 energy while in Cat Form, or $417051s4% of your maximum mana while in any other form.
+aura      Health increased by $408025s1% of maximum.
 
 https://www.wowhead.com/forever/spell=408024
 =======
@@ -1920,6 +2151,10 @@ labels    3096
 
 effect 1  replaces an action bar spell with 415450
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=408024 misc=415450 target=[1,0]
+tooltip   Gain the Survival Instincts ability:
+
+          $@spellicon408024
+          $@spelldesc408024
 
 https://www.wowhead.com/forever/spell=409809
 =======
@@ -1934,6 +2169,7 @@ labels    21
 
 effect 1  36 physical damage to the enemy
           E_SCHOOL_DAMAGE base=36 sp=1 chain=3 target=[6,0]
+tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 https://www.wowhead.com/forever/spell=769
 =======
@@ -1948,6 +2184,7 @@ labels    21
 
 effect 1  18 physical damage to the enemy
           E_SCHOOL_DAMAGE base=18 sp=1 chain=3 target=[6,0]
+tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 https://www.wowhead.com/forever/spell=779
 =======
@@ -1962,6 +2199,7 @@ labels    21
 
 effect 1  25 physical damage to the enemy
           E_SCHOOL_DAMAGE base=25 sp=1 chain=3 target=[6,0]
+tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 https://www.wowhead.com/forever/spell=780
 =======
@@ -1976,6 +2214,7 @@ labels    21
 
 effect 1  60 physical damage to the enemy
           E_SCHOOL_DAMAGE base=60 sp=1 chain=3 target=[6,0]
+tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 https://www.wowhead.com/forever/spell=9754
 =======
@@ -1990,6 +2229,7 @@ labels    21
 
 effect 1  83 physical damage to the enemy (+0.03 attack power)
           E_SCHOOL_DAMAGE base=83 sp=1 ap=0.03 chain=3 target=[6,0]
+tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 https://www.wowhead.com/forever/spell=9908
 =======
@@ -2018,6 +2258,7 @@ effect 1  250% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=250 chain=1000 target=[6,0]
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
+tooltip   Swipe nearby enemies, inflicting $s1% weapon damage and generating $s2 combo $lpoint:points; on your current target.
 
 https://www.wowhead.com/forever/spell=411128
 =======
@@ -2040,6 +2281,7 @@ effect 1  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
 effect 2  a dummy aura holding 180 (at level 60)
           E_APPLY_AURA A_DUMMY base=3 ppl=3 target=[1,0]
+tooltip   While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain $s2 additional base Armor per level and another ${$m1/100}.2 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.
 
 https://www.wowhead.com/forever/spell=16929
 =======
@@ -2053,6 +2295,7 @@ effect 1  unrecognised shape
           E_APPLY_AURA A_673 base=1 misc=1 misc2=95 target=[1,0]
 effect 2  +180 armor
           E_APPLY_AURA A_MOD_RESISTANCE base=180 misc=1 target=[1,0]
+tooltip   While in Bear Form, Dire Bear Form, or Moonkin Form, you gain additional base Armor equal to ${$m1*100}% of your Defense skill.
 
 https://www.wowhead.com/forever/spell=1306459
 =======
@@ -2066,6 +2309,9 @@ refs      417046 King of the Jungle
 
 effect 1  a dummy aura holding 15
           E_APPLY_AURA A_DUMMY base=15 target=[1,0]
+tooltip   $?a768[|CFFFFFFFFRequires Cat Form|R][|CFFFF2020Requires Cat Form|R]
+          Increases Physical damage done by $s1% for $d$?s417046[, and instantly grants $417046s1 Energy][].
+aura      Increases Physical damage done by $s1%.
 
 https://www.wowhead.com/forever/spell=5217
 =======
@@ -2076,6 +2322,7 @@ labels    21
 
 effect 1  restores 60 energy to the caster
           E_ENERGIZE base=60 misc=3 target=[1,0]
+tooltip   Instantly grants you Energy.
 
 https://www.wowhead.com/forever/spell=417045
 =======
@@ -2104,5 +2351,9 @@ effect 2  immune to polymorph
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
 effect 3  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Shapeshift into Travel Form, increasing movement speed by $5419s1%.  Also protects the caster from Polymorph effects.  Only useable outdoors.
+
+          The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+aura      Immune to Polymorph effects.  Movement speed increased by $5419s1%.
 
 https://www.wowhead.com/forever/spell=783
