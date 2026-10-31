@@ -7,8 +7,10 @@ update folder's CHANGES.md, spells.diff and items-changed.diff.
 
 writes <out dir>/1.json, 2.json, ... to post in order, in Discord's markdown. Each class opens with a
 heading and its counts. A spell's ranks collapse into one line ("~ Revenge ×6", linked to the highest
-rank), and each changed field sits below it as subtext, with the old and new value when the field
-moved by one value ("effect 3: `10 → 30`"); text fields share one line. Discord caps an embed's
+rank), and each changed field sits below it as subtext with its values: the one value that moved ("effect 3: `10 → 30`"), the
+whole old and new value of a short field ("sells: `7 silver` → `9 silver`"), or the value of a new or
+removed field ("+ binds: `binds when equipped`"); text fields share one line. A new spell or item shows
+its key values the same way (effects, cost and cooldown; item type, level, stats and effects). Discord caps an embed's
 description at 4096 characters and a message at 6000, so the detail scales with the update: the most
 detailed level whose every entry fits in MESSAGES messages is used (each field on a line, then all of
 an entry's fields on one line, then names alone, then names in a paragraph per class, then the same
@@ -27,7 +29,14 @@ text = open(os.path.join(folder, "CHANGES.md")).read()
 MESSAGES = 3
 EMBED_LIMIT = 3900
 MESSAGE_LIMIT = 5600
-FIELDS_SHOWN = 4
+FIELDS_SHOWN = 6
+# The longest old and new value, together, a detail line shows whole.
+WHOLE_LIMIT = 80
+# What a new spell or item shows below it, in this order.
+ADDED_FIELDS = {
+    "spell": ["effect 1", "effect 2", "effect 3", "cost", "cooldown", "cast", "duration", "range"],
+    "item": ["item", "level", "stats", "weapon", "effect", "binds"],
+}
 COLORS = {"Patch": 0xE67E22, "Hotfix": 0x3498DB}
 ENTRY = re.compile(r"^- (added|removed|changed) (\d+) (.+?)(?: \(Rank \d+\))?(?: · .+)?$")
 MARKS = {"added": "+", "removed": "−", "changed": "~"}
@@ -35,8 +44,9 @@ TEXT_FIELDS = {"tooltip", "aura", "vars", "text"}
 # Fields a reader learns nothing from: the spells a card names, its label ids, its Wowhead link.
 SKIPPED_FIELDS = {"refs", "labels", "https"}
 TWO_WORD_FIELDS = {("stance", "exclude"), ("caster", "aura")}
-# A detail line is Discord's small grey subtext under its spell or item.
-DETAIL = "-# └ "
+# A detail line is Discord's small grey subtext under its spell or item, drawn as a tree: every line
+# but the last branches off, the last closes it.
+BRANCH, LAST = "-# ├ ", "-# └ "
 
 
 def section(name):
@@ -85,38 +95,95 @@ def changed_fields(path):
     return fields
 
 
-def moved_value(field, old, new):
-    """The field's old and new value when exactly one value of it moved, else None. An effect's first
-    line says it in words and the next repeats it as the row's values, so the first line that moved
-    is the one read."""
+def card_fields(path):
+    """Each card's fields from a file of whole cards split by =======: {id: {field: lines}}."""
+    cards = collections.defaultdict(lambda: collections.defaultdict(list))
+    if not os.path.exists(path):
+        return cards
+    card, field = None, None
+    for line in open(path):
+        line = line.rstrip("\n")
+        if not line.strip() or line.startswith("======="):
+            card = None if line.startswith("=======") else card
+            continue
+        if card is None:
+            card = line.split()[0]
+            continue
+        if not line.startswith(" "):
+            field, value = split_field(line)
+        else:
+            value = line.strip()
+        if field not in SKIPPED_FIELDS:
+            cards[card][field].append(value)
+    return cards
+
+
+def summary(card, keys):
+    """A new spell's or item's key values, one line each, the ones too long or unreadable left out."""
+    out = []
+    for key in keys:
+        lines = card.get(key)
+        if key == "effect" and lines:
+            # A recipe's "use: 402265 Learning" line is the same on every recipe; what it teaches is the news.
+            lines = [re.sub(r"\b\d{4,} ", "", line) for line in lines if "402265 Learning" not in line]
+        if key == "range" and lines and lines[0].startswith("50000"):
+            lines = None
+        if lines:
+            value = " · ".join(lines[:2]) if key == "effect" else lines[0]
+            if len(value) <= WHOLE_LIMIT and not unreadable(value):
+                out.append(f"{key}: `{value}`")
+    return out
+
+
+def single_move(a, b):
+    """The one value that moved between two versions of a card line, as "old → new", or None."""
+    ta, tb = a.split(), b.split()
+    if len(ta) != len(tb):
+        return None
+    moved = [(x.strip("(),;"), y.strip("(),;")) for x, y in zip(ta, tb) if x.strip("(),;") != y.strip("(),;")]
+    if len(moved) != 1:
+        return None
+    x, y = moved[0]
+    if "=" in x and x.split("=")[0] == y.split("=")[0]:
+        key = x.split("=")[0]
+        return f"{key} {x[len(key) + 1:]} → {y[len(key) + 1:]}"
+    return f"{x} → {y}"
+
+
+def unreadable(value):
+    # Class masks, flags and the row's enum names say nothing in a chat line.
+    return "0x" in value or bool(re.search(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b", value))
+
+
+def describe(field, old, new):
+    """How one changed field reads below its spell or item, or None for a text field, which only the
+    field's name stands for. A field one value of which moved shows that value; a new or removed field,
+    or a short one that moved in several places, shows its whole value. An effect's first line says it
+    in words and the next repeats it as the row's values, so the words are what is read, unless only
+    the values moved."""
     if field == "name":
         ranks = [re.search(r"\(Rank (\d+)\)$", lines[-1]) for lines in (old, new) if lines]
         if len(ranks) == 2 and all(ranks):
-            return f"rank {ranks[0].group(1)} → {ranks[1].group(1)}"
-        return "renamed"
-    if field in TEXT_FIELDS or len(old) != len(new) or not old:
+            return f"`rank {ranks[0].group(1)} → {ranks[1].group(1)}`"
+        names = [lines[-1].split(" ", 1)[-1] for lines in (old, new) if lines]
+        return f"renamed: `{names[0]} → {names[1]}`" if len(names) == 2 else "renamed"
+    if field in TEXT_FIELDS:
         return None
-    for a, b in zip(old, new):
-        ta, tb = a.split(), b.split()
-        if len(ta) != len(tb):
-            return None
-        moved = [(x.strip("(),;"), y.strip("(),;")) for x, y in zip(ta, tb) if x.strip("(),;") != y.strip("(),;")]
-        if not moved:
-            continue
-        if len(moved) > 1:
-            return None
-        x, y = moved[0]
-        # Class masks, flags and the row's enum names say nothing in a chat line.
-        if "0x" in x + y or re.fullmatch(r"[A-Z0-9_]+", x) and "_" in x:
-            return None
-        if "=" in x and x.split("=")[0] == y.split("=")[0]:
-            key = x.split("=")[0]
-            return f"{key} {x[len(key) + 1:]} → {y[len(key) + 1:]}"
-        return f"{x} → {y}" if len(x) + len(y) <= 40 else None
-    return None
+    if not old or not new:
+        sign, value = ("+", new[0]) if new else ("−", old[0])
+        return f"{sign} {field}: `{value}`" if len(value) <= WHOLE_LIMIT and not unreadable(value) else f"{sign} {field}"
+    a, b = old[0], new[0]
+    if a == b and len(old) > 1 and len(new) > 1:
+        a, b = old[1], new[1]
+    move = single_move(a, b)
+    if move and not unreadable(move):
+        return f"{field}: `{move}`"
+    if len(a) + len(b) <= WHOLE_LIMIT and not unreadable(a + b):
+        return f"{field}: `{a}` → `{b}`"
+    return field
 
 
-def block_for(body, kind_url, diff):
+def block_for(body, kind_url, diff, added_cards):
     """Each spell or item once, its ranks collapsed, in the order CHANGES.md lists them: its linked
     line and, for a changed one, its changed fields."""
     seen = collections.OrderedDict()
@@ -128,14 +195,16 @@ def block_for(body, kind_url, diff):
     for (kind, name), ids in seen.items():
         line = f"{MARKS[kind]} [{name}](https://www.wowhead.com/forever/{kind_url}={ids[-1]})" + (f" ×{len(ids)}" if len(ids) > 1 else "")
         subs = []
+        if kind == "added":
+            card = added_cards.get(ids[-1]) or {field: new for field, (_, new) in diff.get(ids[-1], {}).items()}
+            subs = summary(card, ADDED_FIELDS[kind_url])
         if kind == "changed":
             fields = collections.OrderedDict()
             for i in ids:
                 for field, (old, new) in diff.get(i, {}).items():
-                    fields.setdefault(field, moved_value(field, old, new))
-            subs = [f"{field}: `{value}`" if field != "name" else f"`{value}`" for field, value in fields.items() if value]
-            subs += [field for field, value in fields.items() if not value and field not in TEXT_FIELDS]
-            texts = [field for field, value in fields.items() if not value and field in TEXT_FIELDS]
+                    fields.setdefault(field, describe(field, old, new))
+            subs = [shown for shown in fields.values() if shown]
+            texts = [field for field, shown in fields.items() if not shown]
             if texts:
                 subs.append(", ".join(texts))
         plain = f"{MARKS[kind]} {name}" + (f" ×{len(ids)}" if len(ids) > 1 else "")
@@ -168,11 +237,10 @@ def render(blocks, level):
             continue
         for line, subs, _ in entries:
             if level == 0:
-                line += "".join(f"\n{DETAIL}{sub}" for sub in subs[:FIELDS_SHOWN])
-                if len(subs) > FIELDS_SHOWN:
-                    line += f"\n{DETAIL}{len(subs) - FIELDS_SHOWN} more"
+                shown = subs[:FIELDS_SHOWN] + ([f"{len(subs) - FIELDS_SHOWN} more"] if len(subs) > FIELDS_SHOWN else [])
+                line += "".join(f"\n{LAST if n == len(shown) - 1 else BRANCH}{sub}" for n, sub in enumerate(shown))
             elif level == 1 and subs:
-                line += f"\n{DETAIL}" + " · ".join(subs)
+                line += f"\n{LAST}" + " · ".join(subs)
             pieces.append(("entry", line, head))
     return pieces
 
@@ -210,9 +278,9 @@ blocks = []
 for m in re.finditer(r"^### (.+?): (\d+) added, (\d+) removed, (\d+) changed\n(.*?)(?=^### |\Z)", section("Spells"), re.S | re.M):
     cls, added, removed, changed, body = m.groups()
     counts = ", ".join(f"{n} {word}" for n, word in ((added, "added"), (removed, "removed"), (changed, "changed")) if n != "0")
-    blocks.append((cls, counts, block_for(body, "spell", spell_diff)))
+    blocks.append((cls, counts, block_for(body, "spell", spell_diff, {})))
 items = section("Items")
-item_entries = block_for(items, "item", item_diff)
+item_entries = block_for(items, "item", item_diff, card_fields(os.path.join(folder, "items.txt")))
 if item_entries:
     m = re.match(r"(\d+) added, (\d+) removed, (\d+) changed", items.strip())
     counts = ", ".join(f"{n} {word}" for n, word in zip(m.groups(), ("added", "removed", "changed")) if n != "0") if m else ""
