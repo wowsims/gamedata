@@ -5,8 +5,9 @@ What changes in each WoW Classic Forever build and hotfix, read straight from th
 A scheduled workflow checks Blizzard's CDN and the latest hotfix cache every 30 minutes. When either
 one moves, it exports every class spell and every item, diffs them against the last export, and opens
 and merges a pull request. **Each merged pull request is one update**, and its description lists what
-changed. Each patch and hotfix is also posted to Discord (`scripts/discord_message.py`, through the
-`DISCORD_WEBHOOK_URL` secret).
+changed. Each patch and hotfix is also posted to Discord through the `DISCORD_WEBHOOK_URL` secret:
+`scripts/discord_message.py` lists every spell and item change with its Wowhead link and the fields
+that changed.
 
 ## Layout
 
