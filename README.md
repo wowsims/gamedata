@@ -2,10 +2,13 @@
 
 What changes in each WoW Classic Forever build and hotfix, read straight from the client data.
 
-A scheduled workflow checks Blizzard's CDN and the latest hotfix cache every three hours. When either
+A scheduled workflow checks Blizzard's CDN and the latest hotfix cache every 30 minutes. When either
 one moves, it exports every class spell and every item, diffs them against the last export, and opens
 and merges a pull request. **Each merged pull request is one update**, and its description lists what
-changed.
+changed. Each patch and hotfix is also posted to Discord through the `DISCORD_WEBHOOK_URL` secret:
+`scripts/discord_message.py` lists every spell and item change with its Wowhead link and the fields
+that changed. The repository variable `DISCORD_MARKS` can swap its 🟢 🔴 🟠 markers for three of the
+server's own emoji, as `<:added:id>,<:removed:id>,<:changed:id>`.
 
 ## Layout
 
@@ -71,3 +74,22 @@ cd ../gamedata
 python3 scripts/record_update.py --repo . --export /tmp/export --version <version> --build <build> \
     --product wowf --pushes <pushes.txt from scripts/dbcache_info.py> --hotfixes "<how>" --forever <sha>
 ```
+
+## Discord
+
+After each patch or hotfix merges, the workflow posts it to the Discord channel behind the
+`DISCORD_WEBHOOK_URL` secret, written by `scripts/discord_message.py`. The repository variable
+`DISCORD_MARKS` names the server's emoji for added, removed and changed, in that order
+(`<:i_a:id>,<:i_d:id>,<:i_c:id>`); without it the post uses 🟢 🔴 🟠. The emoji images are in
+`discord/` (`i_a.png`, `i_d.png`, `i_c.png`); a re-upload gives them new ids, so the variable then
+needs the new codes, which Discord prints for `\:i_a:` sent in a channel.
+
+To see a change to the message before it merges, post a recorded update to a test webhook:
+
+```sh
+scripts/discord_test.sh --dry-run                               # print the last update's messages
+scripts/discord_test.sh patches/1.60.1.70707/hotfix-112709+97   # post that update
+```
+
+The script reads the webhook from `DISCORD_WEBHOOK_URL` or `~/.wowsims-discord-webhook`, and the
+emoji from `DISCORD_MARKS` or `~/.wowsims-discord-marks`.
