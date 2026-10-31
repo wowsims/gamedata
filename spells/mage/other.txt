@@ -1353,10 +1353,10 @@ defense   magic
 duration  60 s
 labels    17
 
-effect 1  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
-effect 2  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x202e0,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x202e0,0x1000 target=[1,0]
+effect 2  SPELLMOD_DOT +15% on family 3 mask 0x80,0x1000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
 tooltip   Increases the damage done by your Frost spells by $s1%.
 aura      Increases the damage done by your Frost spells by $w1%.
 
@@ -2707,6 +2707,17 @@ tooltip   Gain the Prayer of Mending ability:
           $@spelldesc401859
 
 https://www.wowhead.com/forever/spell=402832
+=======
+1328613 Predatory Discipline
+school    physical
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+tooltip   Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy.
+
+https://www.wowhead.com/forever/spell=1328613
 =======
 13912 Princess Summons Portal
 school    arcane

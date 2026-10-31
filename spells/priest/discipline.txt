@@ -482,7 +482,7 @@ effect 1  unrecognised shape
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_ATTACKER_RANGED_HIT_CHANCE base=-50 target=[1,0]
 tooltip   Reduces the chance you'll be hit by melee and ranged attacks by $s1% for $d or until you are missed $n times.
-aura      Chance to be hit by melee and ranged attacks reduced by $s1% until you are missed $N times.
+aura      Chance to be hit by melee and ranged attacks reduced by $s~1% until you are missed $N times.
 
 https://www.wowhead.com/forever/spell=2651
 =======
@@ -1909,7 +1909,7 @@ effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
 effect 2  a dummy aura holding -5000
           E_APPLY_AURA A_DUMMY base=-5000 target=[1,0]
-tooltip   Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain $m1% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by ${$m2/-1000} sec.
+tooltip   Your heals from Flash Heal, Lesser Heal, Heal, Greater Heal, and Penance gain $m1% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by ${$m2/-1000} sec.
 
 https://www.wowhead.com/forever/spell=425280
 =======

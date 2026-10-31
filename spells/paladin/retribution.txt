@@ -171,7 +171,9 @@ labels    26
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=100 sp=1 misc=126 misc2=3 target=[1,0]
-tooltip   Increases your spell damage by up to $m1% of your Intellect.
+effect 2  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x0,0x80
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
+tooltip   Increases your spell damage by up to $m1% of your Intellect, and reduces the cast time of your Hammer of Wrath by ${$m2/-1000}.1 sec.
 
 https://www.wowhead.com/forever/spell=1311084
 =======
@@ -712,19 +714,6 @@ effect 2  SPELLMOD_ALL_EFFECTS +33 on family 10 mask 0x20000000
 tooltip   Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.
 
 https://www.wowhead.com/forever/spell=28852
-=======
-1311085 Instrument of Law
-school    physical
-attrs     passive
-labels    26
-
-effect 1  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x0,0x80
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
-effect 2  -20% threat
-          E_APPLY_AURA A_MOD_THREAT base=-20 misc=127 target=[1,0]
-tooltip   Reduces the cast time of your Hammer of Wrath by ${$m1/-1000}.1 sec, and reduces all threat you generate by $m2% while Righteous Fury is not active.
-
-https://www.wowhead.com/forever/spell=1311085
 =======
 20271 Judgement
 school    holy
@@ -1476,14 +1465,15 @@ aura      Melee attack power increased by $s1.  Melee attacks are $s2% faster, b
 
 https://www.wowhead.com/forever/spell=21082
 =======
-1310735 Twist of Light
+1310735 Unsealed Wrath
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met; tooltip says one named ability
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      1311701 Echo of Fury
 
-effect 1  SPELLMOD_COST -20% on family 10 mask 0xa000600,0x26000000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
-tooltip   Reduces the Mana cost of your Seal spells by $s1%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+effect 1  SPELLMOD_COST +0% on family 10 mask 0xa000600,0x26000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
+tooltip   Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.
 
 https://www.wowhead.com/forever/spell=1310735
 =======

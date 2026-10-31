@@ -921,6 +921,17 @@ tooltip   Reduces the cooldown of Rebirth by $/60000;s1 minutes.
 
 https://www.wowhead.com/forever/spell=26106
 =======
+414673 Gift of the Earthmother
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10,0x4000012
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=21 family=7 mask=0x10,0x4000012 target=[1,0]
+tooltip   Reduces the global cooldown by ${$m1/-1000}.1 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells.
+
+https://www.wowhead.com/forever/spell=414673
+=======
 417145 Gore
 school    physical
 icd       0.1 s
@@ -1367,6 +1378,17 @@ effect 1  SPELLMOD_DURATION +2 s on family 7 mask 0x0,0x0,0x200000
 tooltip   Increases the duration of Rip by ${$s1/1000} sec.
 
 https://www.wowhead.com/forever/spell=446212
+=======
+1322670 Improved Shifting Power
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_COOLDOWN +0 s on family 7 mask 0x0,0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
+tooltip   Reduces the cooldown of your Shifting Power spell by ${$m1/-1000} sec.
+
+https://www.wowhead.com/forever/spell=1322670
 =======
 1214285 Improved Shred/Ferocious Bite
 school    physical

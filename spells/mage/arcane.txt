@@ -152,15 +152,15 @@ https://www.wowhead.com/forever/spell=42896
 =======
 400573 Arcane Blast
 school    arcane
-duration  15 s
+duration  18 s
 stack     up to 4
 attrs     suppresses weapon procs
 labels    17
 
 effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=15 misc=126 misc2=3 target=[1,0]
-effect 2  SPELLMOD_COST +175% on family 3 mask 0x20000000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=175 misc=14 family=3 mask=0x20000000 target=[1,0]
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=12 misc=126 misc2=3 target=[1,0]
+effect 2  SPELLMOD_COST +100% on family 3 mask 0x20000000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=14 family=3 mask=0x20000000 target=[1,0]
 tooltip   Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, you gain $s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d.
 aura      Spell damage increased by $s1% of Intellect and mana cost of Arcane Blast increased by $s2%.
 

@@ -1,0 +1,64 @@
+--- 2314 Toughened Leather Armor
++++ 2314 Toughened Leather Armor
+@@ -1,4 +1,6 @@
+ 2314 Toughened Leather Armor
+-item      common, Leather, chest
++item      uncommon, Leather, chest
+ level     ilvl 24, requires level 19
++binds     binds when equipped
++stats     +2 stamina, +7 spirit
+ sells     743 copper
+--- 5684 Libram: Seal of Salvation
++++ 5684 Libram: Seal of Salvation
+@@ -1,8 +1,8 @@
+ 5684 Libram: Seal of Salvation
+ item      common, Book
+ level     ilvl 22, requires level 22
+ classes   paladin, monk
+ effect    use: 402265 Learning (1 charge, consumed)
+-effect    learn: 1038 Salvation
++effect    learn: 1038 ?
+ text      "Teaches Seal of Salvation (Rank 1)."
+ sells     1050 copper
+--- 13484 Recipe: Transmute Earth to Water
++++ 13484 Recipe: Transmute Earth to Water
+@@ -1,7 +1,8 @@
+ 13484 Recipe: Transmute Earth to Water
+ item      uncommon, Alchemy
+ level     ilvl 55
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 17561 Transmute: Earth to Water
+ text      "Teaches you how to transmute Essence of Earth into Essence of Water."
++sells     3000 copper
+--- 250976 Recipe: Minor Spellblasting Potion
++++ 250976 Recipe: Minor Spellblasting Potion
+@@ -1,6 +1,7 @@
+ 250976 Recipe: Minor Spellblasting Potion
+ item      common, Alchemy
+ level     ilvl 1, requires level 1
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1251729 Minor Spellblasting Potion
+ text      "Teaches you how to craft Minor Spellblasting Potion."
++sells     100 copper
+--- 251426 Plans: Prefect's Waistguard
++++ 251426 Plans: Prefect's Waistguard
+@@ -1,8 +1,8 @@
+ 251426 Plans: Prefect's Waistguard
+ item      rare, Blacksmithing
+ level     ilvl 55
+ binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+-effect    equip: 1252323 Prefect's Waistguard
++effect    learn: 1252323 Prefect's Waistguard
+ text      "Teaches you how to craft Prefect's Waistguard."
+ sells     1250 copper
+--- 271871 Gift of Galloping
++++ 271871 Gift of Galloping
+@@ -1,6 +1,5 @@
+ 271871 Gift of Galloping
+ item      epic, Temporary
+ level     ilvl 60, requires level 60
+ binds     binds when picked up
+ effect    use: 1289654 Gift of Galloping (1 charge, consumed)
+-sells     1 copper

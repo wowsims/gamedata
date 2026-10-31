@@ -247,6 +247,28 @@ tooltip   Gain the Beacon of Light ability:
 
 https://www.wowhead.com/forever/spell=409906
 =======
+26650 Blessing of Light
+school    holy
+duration  0.1 s
+range     100 yd
+labels    26
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=26650
+=======
+1328550 Boundless Light
+school    physical
+attrs     passive
+labels    26
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Increases the critical strike chance of your Holy Shock spell by $s1% when cast on allies not affected by your Oath of Light.
+
+https://www.wowhead.com/forever/spell=1328550
+=======
 1226455 Charity
 school    physical
 
@@ -2209,6 +2231,30 @@ aura      Your next Holy Light is instant. If cast on self it will refund $12134
 
 https://www.wowhead.com/forever/spell=1213415
 =======
+1328544 Shieldsworn
+school    physical
+attrs     passive
+labels    26
+refs      1328551 Shieldsworn
+
+effect 1  SPELLMOD_COOLDOWN -4 s on family 10 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+tooltip   Reduces the cooldown of your Holy Strike ability by ${$m1/-1000} sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or triggering their cooldowns, and allowing you to Block spells for $1328551d.
+
+https://www.wowhead.com/forever/spell=1328544
+=======
+1328551 Shieldsworn
+school    physical
+duration  6 s
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ALLOW_BLOCKING_SPELLS base=0 target=[1,0]
+tooltip   Able to Block spells for $d.
+aura      Able to Block spells.
+
+https://www.wowhead.com/forever/spell=1328551
+=======
 440791 Shock and Awe
 school    physical
 attrs     passive
@@ -2261,6 +2307,19 @@ effect 1  unrecognised shape
 aura      Black Value increased by $s1%.
 
 https://www.wowhead.com/forever/spell=1306749
+=======
+1328546 Stoicism
+school    physical
+attrs     passive
+labels    26
+
+effect 1  -20% stun duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=12 target=[1,0]
+effect 2  -20% charm duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=1 target=[1,0]
+tooltip   Reduces the duration of Stun and Charm effects on you by $s1%.
+
+https://www.wowhead.com/forever/spell=1328546
 =======
 1239543 Sunlight
 school    physical
@@ -2378,11 +2437,95 @@ school    shadow
 defense   magic
 duration  120 s
 
-effect 1  SPELLMOD_COST -100% on family 10 mask 0xdf2797d2,0x1000116,0x101,0x20000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0xdf2797d2,0x1000116,0x101,0x20000 target=[1,0]
+effect 1  SPELLMOD_COST -100% on family 10 mask 0xdf2797d3,0x1000116,0x101,0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0xdf2797d3,0x1000116,0x101,0x20000 target=[1,0]
 aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262310
+=======
+1328370 Turn Evil
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 10 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=10 family=10 mask=0x0,0x0,0x100000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -1.5 s on family 10 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=11 family=10 mask=0x0,0x0,0x100000 target=[1,0]
+effect 3  replaces an action bar spell with 2878 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328374 misc=2878 target=[1,0]
+effect 4  replaces an action bar spell with 5627 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328373 misc=5627 target=[1,0]
+effect 5  replaces an action bar spell with 10326 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328372 misc=10326 target=[1,0]
+tooltip   Reduces the cast time of your Turn Undead spell by ${$s1/-1000}.1 sec, its cooldown by ${$s2/-1000} sec, and allows it to affect Demons.
+
+https://www.wowhead.com/forever/spell=1328370
+=======
+1328372 Turn Evil (Rank 3)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  20 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      75 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328372
+=======
+1328373 Turn Evil (Rank 2)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  15 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      50 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328373
+=======
+1328374 Turn Evil (Rank 1)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  10 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      35 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328374
 =======
 429139 Wrath
 school    holy

@@ -1,0 +1,1994 @@
+# druid
+--- 1328618 Ferocious Bite (Rank 1)
++++ 1328618 Ferocious Bite (Rank 1)
+@@ -0,0 +1,23 @@
++1328618 Ferocious Bite (Rank 1)
++school    physical
++defense   melee
++gcd       1 s
++cost      35 energy
++cost      1 combo points
++range     5 yd
++stance    Cat
++attrs     refund on miss
++labels    21
++
++effect 1  4–24 physical damage to the enemy
++          E_SCHOOL_DAMAGE base=14 variance=0.71428573 sp=1 perResource=24 target=[6,0]
++effect 2  a dummy effect holding 60 to the enemy
++          E_DUMMY base=60 sp=1 target=[6,0]
++tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
++             1 point  : 33-43 damage
++             2 points: 57-67 damage
++             3 points: 81-91 damage
++             4 points: 105-115 damage
++             5 points: 129-139 damage
++
++https://www.wowhead.com/forever/spell=1328618
+--- 1328616 Lacerate (Rank 2)
++++ 1328616 Lacerate (Rank 2)
+@@ -0,0 +1,21 @@
++1328616 Lacerate (Rank 2)
++school    physical
++defense   melee
++mechanic  bleed
++duration  15 s
++gcd       1.5 s
++cost      15 rage
++range     5 yd
++stance    Bear, Dire Bear
++stack     up to 5
++attrs     refund on miss, periodic can crit
++labels    21
++
++effect 1  6 physical damage every 3 s to the enemy (5 ticks)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=3000ms target=[6,0]
++effect 2  a dummy effect holding 10 to the enemy
++          E_DUMMY base=10 target=[6,0]
++tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
++aura      $w1 damage every $t sec.
++
++https://www.wowhead.com/forever/spell=1328616
+--- 1328617 Lacerate (Rank 1)
++++ 1328617 Lacerate (Rank 1)
+@@ -0,0 +1,21 @@
++1328617 Lacerate (Rank 1)
++school    physical
++defense   melee
++mechanic  bleed
++duration  15 s
++gcd       1.5 s
++cost      15 rage
++range     5 yd
++stance    Bear, Dire Bear
++stack     up to 5
++attrs     refund on miss, periodic can crit
++labels    21
++
++effect 1  4 physical damage every 3 s to the enemy (5 ticks)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=3000ms target=[6,0]
++effect 2  a dummy effect holding 10 to the enemy
++          E_DUMMY base=10 target=[6,0]
++tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
++aura      $w1 damage every $t sec.
++
++https://www.wowhead.com/forever/spell=1328617
+--- 1328621 Bloom
++++ 1328621 Bloom
+@@ -0,0 +1,12 @@
++1328621 Bloom
++school    physical
++attrs     passive
++labels    21
++
++effect 1  a dummy aura holding 100
++          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
++effect 2  a dummy aura holding 50
++          E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
++tooltip   When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
++
++https://www.wowhead.com/forever/spell=1328621
+--- 1328622 Bloom
++++ 1328622 Bloom
+@@ -0,0 +1,8 @@
++1328622 Bloom
++school    nature
++range     50000 yd
++
++effect 1  1 healing to the caster
++          E_HEAL base=1 target=[1,0]
++
++https://www.wowhead.com/forever/spell=1328622
+--- 24907 Moonkin Aura
++++ 24907 Moonkin Aura
+@@ -1,12 +1,12 @@
+ 24907 Moonkin Aura
+ school    nature
+ duration  permanent
+ stance    Moonkin
+ labels    21
+ 
+-effect 1  raid aura: +3% spell crit
+-          E_APPLY_AREA_AURA_RAID A_MOD_SPELL_CRIT_CHANCE base=3 sp=1 radius=45 target=[1,0]
+-tooltip   Increases spell Critical Strike chance by $s1%.
+-aura      Increases spell Critical Strike chance by $s1%.
++effect 1  raid aura: +3% physical and spell crit
++          E_APPLY_AREA_AURA_RAID A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
++tooltip   Increases Critical Strike chance by $s1%.
++aura      Increases Critical Strike chance by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=24907
+--- 24858 Moonkin Form (Shapeshift)
++++ 24858 Moonkin Form (Shapeshift)
+@@ -1,26 +1,26 @@
+ 24858 Moonkin Form (Shapeshift)
+ school    physical
+ duration  permanent
+ gcd       1.5 s
+ cost      35% of base mana
+ labels    21
+ refs      24905 Moonkin Form (Passive), 24907 Moonkin Aura
+ 
+ effect 1  shifts into Moonkin
+           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=31 misc2=7 target=[1,0]
+ effect 2  immune to polymorph
+           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+ effect 3  casts 24907 Moonkin Aura to the caster
+           E_TRIGGER_SPELL base=0 sp=1 trigger=24907 target=[1,0]
+ effect 4  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+ effect 5  SPELLMOD_CHANCE_OF_SUCCESS +100% on family 7 mask 0x0,0x0,0x0,0x40000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=18 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+ effect 6  SPELLMOD_PROC_COOLDOWN -50% on family 7 mask 0x0,0x0,0x0,0x40000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=38 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+-tooltip   Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their spell Critical Strike chance increased by $24907s1%.  Also protects the caster from Polymorph effects and prevents the use of healing spells.
++tooltip   Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.
+ 
+           The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+ aura      Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
+ 
+ https://www.wowhead.com/forever/spell=24858
+--- 22568 Ferocious Bite (Rank 2)
++++ 22568 Ferocious Bite (Rank 2)
+@@ -1,21 +1,21 @@
+-22568 Ferocious Bite (Rank 1)
++22568 Ferocious Bite (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  6–38 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=22 variance=0.72727275 sp=1 perResource=36 target=[6,0]
+ effect 2  a dummy effect holding 100 to the enemy
+           E_DUMMY base=100 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 50-66 damage
+              2 points: 86-102 damage
+              3 points: 122-138 damage
+              4 points: 158-174 damage
+              5 points: 194-210 damage
+--- 22827 Ferocious Bite (Rank 3)
++++ 22827 Ferocious Bite (Rank 3)
+@@ -1,21 +1,21 @@
+-22827 Ferocious Bite (Rank 2)
++22827 Ferocious Bite (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  8–56 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=32 variance=0.75 sp=1 perResource=59 target=[6,0]
+ effect 2  a dummy effect holding 150 to the enemy
+           E_DUMMY base=150 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 79-103 damage
+              2 points: 138-162 damage
+              3 points: 197-221 damage
+              4 points: 256-280 damage
+              5 points: 315-339 damage
+--- 22828 Ferocious Bite (Rank 4)
++++ 22828 Ferocious Bite (Rank 4)
+@@ -1,21 +1,21 @@
+-22828 Ferocious Bite (Rank 3)
++22828 Ferocious Bite (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  10–90 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=50 variance=0.8 sp=1 perResource=92 target=[6,0]
+ effect 2  a dummy effect holding 200 to the enemy
+           E_DUMMY base=200 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 122-162 damage
+              2 points: 214-254 damage
+              3 points: 306-346 damage
+              4 points: 398-438 damage
+              5 points: 490-530 damage
+--- 22829 Ferocious Bite (Rank 5)
++++ 22829 Ferocious Bite (Rank 5)
+@@ -1,21 +1,21 @@
+-22829 Ferocious Bite (Rank 4)
++22829 Ferocious Bite (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  20–120 physical damage to the enemy (+0.03 attack power)
+           E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 ap=0.03 perResource=128 target=[6,0]
+ effect 2  a dummy effect holding 250 to the enemy
+           E_DUMMY base=250 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 173-223 damage
+              2 points: 301-351 damage
+              3 points: 429-479 damage
+              4 points: 557-607 damage
+              5 points: 685-735 damage
+--- 31018 Ferocious Bite (Rank 6)
++++ 31018 Ferocious Bite (Rank 6)
+@@ -1,21 +1,21 @@
+-31018 Ferocious Bite (Rank 5)
++31018 Ferocious Bite (Rank 6)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  22–142 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 perResource=147 target=[6,0]
+ effect 2  a dummy effect holding 270 to the enemy
+           E_DUMMY base=270 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 199-259 damage
+              2 points: 346-406 damage
+              3 points: 493-553 damage
+              4 points: 640-700 damage
+              5 points: 787-847 damage
+--- 414644 Lacerate (Rank 3)
++++ 414644 Lacerate (Rank 3)
+@@ -1,21 +1,21 @@
+-414644 Lacerate (Rank 1)
++414644 Lacerate (Rank 3)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  15 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ stack     up to 5
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  10 physical damage every 3 s to the enemy (5 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=3000ms target=[6,0]
+ effect 2  a dummy effect holding 10 to the enemy
+           E_DUMMY base=10 target=[6,0]
+ tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+ aura      $w1 damage every $t sec.
+ 
+ https://www.wowhead.com/forever/spell=414644
+--- 1235826 Lacerate (Rank 4)
++++ 1235826 Lacerate (Rank 4)
+@@ -1,21 +1,21 @@
+-1235826 Lacerate (Rank 2)
++1235826 Lacerate (Rank 4)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  15 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ stack     up to 5
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  12 physical damage every 3 s to the enemy (5 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+ effect 2  a dummy effect holding 10 to the enemy
+           E_DUMMY base=10 target=[6,0]
+ tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+ aura      $w1 damage every $t sec.
+ 
+ https://www.wowhead.com/forever/spell=1235826
+--- 1235827 Lacerate (Rank 5)
++++ 1235827 Lacerate (Rank 5)
+@@ -1,21 +1,21 @@
+-1235827 Lacerate (Rank 3)
++1235827 Lacerate (Rank 5)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  15 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ stack     up to 5
+ attrs     refund on miss, periodic can crit
+ labels    21
+ 
+ effect 1  15 physical damage every 3 s to the enemy (5 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=15 period=3000ms target=[6,0]
+ effect 2  a dummy effect holding 10 to the enemy
+           E_DUMMY base=10 target=[6,0]
+ tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+ aura      $w1 damage every $t sec.
+ 
+ https://www.wowhead.com/forever/spell=1235827
+--- 17007 Leader of the Pack
++++ 17007 Leader of the Pack
+@@ -1,11 +1,11 @@
+ 17007 Leader of the Pack
+ school    physical
+ attrs     passive
+ labels    21
+ refs      24932 Leader of the Pack
+ 
+ effect 1  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
+-tooltip   While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within $24932a1 yards by $24932s1%.
++tooltip   While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within $24932a1 yards by $24932s1%.
+ 
+ https://www.wowhead.com/forever/spell=17007
+--- 24932 Leader of the Pack
++++ 24932 Leader of the Pack
+@@ -1,11 +1,11 @@
+ 24932 Leader of the Pack
+ school    physical
+ duration  permanent
+ stance    Cat, Bear, Dire Bear
+ labels    21
+ 
+-effect 1  raid aura: +3% physical crit
+-          E_APPLY_AREA_AURA_RAID A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 radius=45 target=[1,0]
+-aura      Increases melee and ranged Critical Strike chance by $s1%.
++effect 1  raid aura: +3% physical and spell crit
++          E_APPLY_AREA_AURA_RAID A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
++aura      Increases Critical Strike chance by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=24932
+--- 407995 Primal Bite (Rank 1)
++++ 407995 Primal Bite (Rank 1)
+@@ -1,18 +1,18 @@
+ 407995 Primal Bite (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  weapon damage +26 to the enemy
+-          E_WEAPON_DAMAGE base=26 sp=1 target=[6,0]
++effect 1  weapon damage +42 to the enemy
++          E_WEAPON_DAMAGE base=42 sp=1 target=[6,0]
+ effect 2  100% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+ tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=407995
+--- 1238069 Primal Bite (Rank 2)
++++ 1238069 Primal Bite (Rank 2)
+@@ -1,18 +1,18 @@
+ 1238069 Primal Bite (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  weapon damage +38 to the enemy
+-          E_WEAPON_DAMAGE base=38 sp=1 target=[6,0]
++effect 1  weapon damage +62 to the enemy
++          E_WEAPON_DAMAGE base=62 sp=1 target=[6,0]
+ effect 2  100% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+ tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=1238069
+--- 1238070 Primal Bite (Rank 3)
++++ 1238070 Primal Bite (Rank 3)
+@@ -1,18 +1,18 @@
+ 1238070 Primal Bite (Rank 3)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ stance    Bear, Dire Bear
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  weapon damage +59 to the enemy
+-          E_WEAPON_DAMAGE base=59 sp=1 target=[6,0]
++effect 1  weapon damage +77 to the enemy
++          E_WEAPON_DAMAGE base=77 sp=1 target=[6,0]
+ effect 2  100% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+ tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=1238070
+--- 1322605 Shifting Power
++++ 1322605 Shifting Power
+@@ -1,14 +1,14 @@
+ 1322605 Shifting Power
+ school    physical
+-cooldown  16 s
++cooldown  8 s
+ gcd       1 s
+ cost      55% of base mana
+ stance    Cat
+ caster aura 768 Cat Form
+ labels    21
+ 
+ effect 1  restores 40 energy to the caster
+           E_ENERGIZE base=40 sp=1 misc=3 target=[1,0]
+ tooltip   Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.
+ 
+ https://www.wowhead.com/forever/spell=1322605
+--- 17069 Naturalist
++++ 17069 Naturalist
+@@ -1,12 +1,12 @@
+ 17069 Naturalist
+ school    physical
+ attrs     passive
+ labels    21
+ 
+-effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x2000000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x2000000 target=[1,0]
++effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x4000000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x4000000 target=[1,0]
+ effect 2  +100% every school damage done
+           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=100 sp=1 misc=127 target=[1,0]
+-tooltip   Reduces the cast time of your Healing Touch spell by $/1000;S1 sec and increases all damage you deal by $m2%.
++tooltip   Reduces the cast time of your Healing Touch and Wild Growth spells by $/1000;S1 sec and increases all damage you deal by $m2%.
+ 
+ https://www.wowhead.com/forever/spell=17069
+--- 18562 Swiftmend
++++ 18562 Swiftmend
+@@ -1,16 +1,16 @@
+ 18562 Swiftmend
+ school    nature
+ defense   magic
+ cooldown  15 s
+ gcd       1.5 s
+ cost      20% of base mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ labels    21
+ 
+ effect 1  1 healing to the friendly target
+           E_HEAL base=1 target=[21,0]
+-tooltip   Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.
++tooltip   Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
+ 
+ https://www.wowhead.com/forever/spell=18562
+--- 408120 Wild Growth (Rank 1)
++++ 408120 Wild Growth (Rank 1)
+@@ -1,23 +1,24 @@
+ 408120 Wild Growth (Rank 1)
+ school    nature
+ defense   magic
+ duration  7 s
++cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      550 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+ effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 second.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=408120
+--- 1238214 Wild Growth (Rank 2)
++++ 1238214 Wild Growth (Rank 2)
+@@ -1,23 +1,24 @@
+ 1238214 Wild Growth (Rank 2)
+ school    nature
+ defense   magic
+ duration  7 s
++cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      755 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+ effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 sec.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1238214
+--- 1238215 Wild Growth (Rank 3)
++++ 1238215 Wild Growth (Rank 3)
+@@ -1,23 +1,24 @@
+ 1238215 Wild Growth (Rank 3)
+ school    nature
+ defense   magic
+ duration  7 s
++cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      1050 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+ effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 sec.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1238215
+# mage
+--- 1328613 Predatory Discipline
++++ 1328613 Predatory Discipline
+@@ -0,0 +1,10 @@
++1328613 Predatory Discipline
++school    physical
++attrs     passive
++labels    21
++
++effect 1  a dummy aura holding 20
++          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
++tooltip   Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy.
++
++https://www.wowhead.com/forever/spell=1328613
+--- 400573 Arcane Blast
++++ 400573 Arcane Blast
+@@ -1,15 +1,15 @@
+ 400573 Arcane Blast
+ school    arcane
+-duration  15 s
++duration  18 s
+ stack     up to 4
+ attrs     suppresses weapon procs
+ labels    17
+ 
+ effect 1  unrecognised shape
+-          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=15 misc=126 misc2=3 target=[1,0]
+-effect 2  SPELLMOD_COST +175% on family 3 mask 0x20000000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=175 misc=14 family=3 mask=0x20000000 target=[1,0]
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=12 misc=126 misc2=3 target=[1,0]
++effect 2  SPELLMOD_COST +100% on family 3 mask 0x20000000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=14 family=3 mask=0x20000000 target=[1,0]
+ tooltip   Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, you gain $s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d.
+ aura      Spell damage increased by $s1% of Intellect and mana cost of Arcane Blast increased by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=400573
+--- 11426 Ice Barrier (Rank 1)
++++ 11426 Ice Barrier (Rank 1)
+@@ -1,20 +1,20 @@
+ 11426 Ice Barrier (Rank 1)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      305 mana
+ labels    17
+ refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 447 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=431 ppl=2.8 misc=127 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+-effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +5% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +5% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+ aura      Absorbs $w1 damage and increases Frost damage dealt by ${$w2}%.
+ 
+ https://www.wowhead.com/forever/spell=11426
+--- 13031 Ice Barrier (Rank 2)
++++ 13031 Ice Barrier (Rank 2)
+@@ -1,20 +1,20 @@
+ 13031 Ice Barrier (Rank 2)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      360 mana
+ labels    17
+ refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 561 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=542 ppl=3.2 misc=127 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+-effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +5% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +5% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+ aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=13031
+--- 13032 Ice Barrier (Rank 3)
++++ 13032 Ice Barrier (Rank 3)
+@@ -1,20 +1,20 @@
+ 13032 Ice Barrier (Rank 3)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      420 mana
+ labels    17
+ refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 692 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=671 ppl=3.6 misc=127 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+-effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +5% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +5% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+ aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=13032
+--- 13033 Ice Barrier (Rank 4)
++++ 13033 Ice Barrier (Rank 4)
+@@ -1,20 +1,20 @@
+ 13033 Ice Barrier (Rank 4)
+ school    frost
+ defense   magic
+ duration  60 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      480 mana
+ labels    17
+ refs      11189 Frost Warding, 1326891 Frigid Power
+ 
+ effect 1  absorbs 819 every school damage (at level 60)
+           E_APPLY_AURA A_SCHOOL_ABSORB base=811 ppl=4 misc=127 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+-effect 3  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +5% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 3  SPELLMOD_DOT +5% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ tooltip   Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+ aura      Absorbs $w1 damage and increases Frost damage dealt by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=13033
+--- 400640 Ice Lance (Rank 2)
++++ 400640 Ice Lance (Rank 2)
+@@ -1,19 +1,20 @@
+ 400640 Ice Lance (Rank 2)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      55 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  34–41 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=36 ppl=0.4 variance=0.16666667 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=400640
+--- 1240044 Ice Lance (Rank 3)
++++ 1240044 Ice Lance (Rank 3)
+@@ -1,19 +1,20 @@
+ 1240044 Ice Lance (Rank 3)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      70 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  44–52 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=45 ppl=0.5 variance=0.16666667 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=1240044
+--- 1240045 Ice Lance (Rank 4)
++++ 1240045 Ice Lance (Rank 4)
+@@ -1,19 +1,20 @@
+ 1240045 Ice Lance (Rank 4)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      105 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  76–91 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=79 ppl=0.7 variance=0.16666667 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=1240045
+--- 1240046 Ice Lance (Rank 5)
++++ 1240046 Ice Lance (Rank 5)
+@@ -1,19 +1,20 @@
+ 1240046 Ice Lance (Rank 5)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      120 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  95–112 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=98 ppl=0.7 variance=0.16666667 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=1240046
+--- 1240047 Ice Lance (Rank 6)
++++ 1240047 Ice Lance (Rank 6)
+@@ -1,19 +1,20 @@
+ 1240047 Ice Lance (Rank 6)
+ school    frost
+ defense   magic
++cooldown  8 s (category)
+ gcd       1.5 s
+ cost      160 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  136–161 frost damage to the enemy (at level 60, +0.14285715 spell power)
+           E_SCHOOL_DAMAGE base=145 ppl=0.9 variance=0.16666667 sp=0.14285715 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=1240047
+--- 1312002 Ice Lance (Rank 1)
++++ 1312002 Ice Lance (Rank 1)
+@@ -1,20 +1,20 @@
+ 1312002 Ice Lance (Rank 1)
+ school    frost
+ defense   magic
+ cooldown  8 s (category)
+ gcd       1.5 s
+ cost      45 mana
+ range     30 yd
+ labels    17
+ 
+ effect 1  28–33 frost damage to the enemy (at level 60)
+           E_SCHOOL_DAMAGE base=28 ppl=0.35 variance=0.16666667 target=[6,0]
+-effect 2  a dummy effect holding 200
+-          E_DUMMY base=200 target=[0,0]
++effect 2  a dummy effect holding 300
++          E_DUMMY base=300 target=[0,0]
+ effect 3  a dummy effect holding 20
+           E_DUMMY base=20 target=[0,0]
+ effect 4  a dummy effect holding 5
+           E_DUMMY base=5 target=[0,0]
+ tooltip   Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
+ 
+ https://www.wowhead.com/forever/spell=1312002
+--- 12579 Winter's Chill
++++ 12579 Winter's Chill
+@@ -1,16 +1,16 @@
+ 12579 Winter's Chill
+ school    frost
+ defense   magic
+ duration  15 s
+ range     100 yd
+ stack     up to 5
+ labels    17
+ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+-          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=5 misc=16 family=3 mask=0x200 target=[6,0]
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 misc=16 family=3 mask=0x200 target=[6,0]
+ effect 2  a dummy aura holding 7 to the enemy
+           E_APPLY_AURA A_DUMMY base=7 misc=16 target=[6,0]
+ aura      Taking $s1% increased damage and $s2% increased spell power coefficient from the caster's next Cone of Cold spell.
+ 
+ https://www.wowhead.com/forever/spell=12579
+--- 1326891 Frigid Power
++++ 1326891 Frigid Power
+@@ -1,14 +1,14 @@
+ 1326891 Frigid Power
+ school    frost
+ defense   magic
+ duration  60 s
+ labels    17
+ 
+-effect 1  SPELLMOD_DAMAGE +3% on family 3 mask 0x202e0,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 family=3 mask=0x202e0,0x1000 target=[1,0]
+-effect 2  SPELLMOD_DOT +3% on family 3 mask 0x80,0x1000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=3 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
++effect 1  SPELLMOD_DAMAGE +15% on family 3 mask 0x202e0,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 family=3 mask=0x202e0,0x1000 target=[1,0]
++effect 2  SPELLMOD_DOT +15% on family 3 mask 0x80,0x1000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=3 mask=0x80,0x1000 target=[1,0]
+ tooltip   Increases the damage done by your Frost spells by $s1%.
+ aura      Increases the damage done by your Frost spells by $w1%.
+ 
+ https://www.wowhead.com/forever/spell=1326891
+# paladin
+--- 1328548 Oath of Light
++++ 1328548 Oath of Light
+@@ -0,0 +1,20 @@
++1328548 Oath of Light
++school    holy
++defense   magic
++duration  300 s
++gcd       1.5 s
++cost      8% of base mana
++range     40 yd
++targets   up to 1
++labels    26
++
++effect 1  a dummy aura holding 400 every 1.5 s to the friendly target (200 ticks, at level 60)
++          E_APPLY_AURA A_PERIODIC_DUMMY base=0 ppl=6.66667 period=1500ms target=[21,0]
++effect 2  a dummy aura holding 115 to the friendly target (at level 60)
++          E_APPLY_AURA A_DUMMY base=0 ppl=1.91667 target=[21,0]
++effect 3  a dummy aura holding 229 to the friendly target (at level 60)
++          E_APPLY_AURA A_DUMMY base=0 ppl=3.83333 target=[21,0]
++tooltip   Swear an Oath to protect target ally for $d, increasing the healing of your Holy Light on them by up to $s1, your Flash of Light by up to $s2, and your Holy Shock by up to $s3. Only one Oath of Light may be sworn by the Paladin at any one time.
++aura      Receives increased healing from the caster's Holy Light by up to $s1, Flash of Light by up to $s2, and Holy Shock by up to $s3.
++
++https://www.wowhead.com/forever/spell=1328548
+--- 1328550 Boundless Light
++++ 1328550 Boundless Light
+@@ -0,0 +1,10 @@
++1328550 Boundless Light
++school    physical
++attrs     passive
++labels    26
++
++effect 1  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
++tooltip   Increases the critical strike chance of your Holy Shock spell by $s1% when cast on allies not affected by your Oath of Light.
++
++https://www.wowhead.com/forever/spell=1328550
+--- 1328544 Shieldsworn
++++ 1328544 Shieldsworn
+@@ -0,0 +1,11 @@
++1328544 Shieldsworn
++school    physical
++attrs     passive
++labels    26
++refs      1328551 Shieldsworn
++
++effect 1  SPELLMOD_COOLDOWN -4 s on family 10 mask 0x0,0x0,0x0,0x8000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
++tooltip   Reduces the cooldown of your Holy Strike ability by ${$m1/-1000} sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or triggering their cooldowns, and allowing you to Block spells for $1328551d.
++
++https://www.wowhead.com/forever/spell=1328544
+--- 1328551 Shieldsworn
++++ 1328551 Shieldsworn
+@@ -0,0 +1,11 @@
++1328551 Shieldsworn
++school    physical
++duration  6 s
++labels    26
++
++effect 1  unrecognised shape
++          E_APPLY_AURA A_ALLOW_BLOCKING_SPELLS base=0 target=[1,0]
++tooltip   Able to Block spells for $d.
++aura      Able to Block spells.
++
++https://www.wowhead.com/forever/spell=1328551
+--- 1328546 Stoicism
++++ 1328546 Stoicism
+@@ -0,0 +1,12 @@
++1328546 Stoicism
++school    physical
++attrs     passive
++labels    26
++
++effect 1  -20% stun duration
++          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=12 target=[1,0]
++effect 2  -20% charm duration
++          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=1 target=[1,0]
++tooltip   Reduces the duration of Stun and Charm effects on you by $s1%.
++
++https://www.wowhead.com/forever/spell=1328546
+--- 1328370 Turn Evil
++++ 1328370 Turn Evil
+@@ -0,0 +1,17 @@
++1328370 Turn Evil
++school    physical
++attrs     passive
++
++effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 10 mask 0x0,0x0,0x100000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=10 family=10 mask=0x0,0x0,0x100000 target=[1,0]
++effect 2  SPELLMOD_COOLDOWN -1.5 s on family 10 mask 0x0,0x0,0x100000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=11 family=10 mask=0x0,0x0,0x100000 target=[1,0]
++effect 3  replaces an action bar spell with 2878 Turn Undead
++          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328374 misc=2878 target=[1,0]
++effect 4  replaces an action bar spell with 5627 Turn Undead
++          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328373 misc=5627 target=[1,0]
++effect 5  replaces an action bar spell with 10326 Turn Undead
++          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328372 misc=10326 target=[1,0]
++tooltip   Reduces the cast time of your Turn Undead spell by ${$s1/-1000}.1 sec, its cooldown by ${$s2/-1000} sec, and allows it to affect Demons.
++
++https://www.wowhead.com/forever/spell=1328370
+--- 1328372 Turn Evil (Rank 3)
++++ 1328372 Turn Evil (Rank 3)
+@@ -0,0 +1,21 @@
++1328372 Turn Evil (Rank 3)
++school    nature
++defense   magic
++mechanic  mechanic 23
++duration  20 s
++cast      1.5 s
++cooldown  30 s (category)
++gcd       1.5 s
++cost      75 mana
++range     20 yd
++targets   up to 1
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
++
++effect 1  fears to the enemy
++          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
++effect 2  +25% movement speed to the enemy
++          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
++tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
++aura      Compelled to flee.
++
++https://www.wowhead.com/forever/spell=1328372
+--- 1328373 Turn Evil (Rank 2)
++++ 1328373 Turn Evil (Rank 2)
+@@ -0,0 +1,21 @@
++1328373 Turn Evil (Rank 2)
++school    nature
++defense   magic
++mechanic  mechanic 23
++duration  15 s
++cast      1.5 s
++cooldown  30 s (category)
++gcd       1.5 s
++cost      50 mana
++range     20 yd
++targets   up to 1
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
++
++effect 1  fears to the enemy
++          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
++effect 2  +25% movement speed to the enemy
++          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
++tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
++aura      Compelled to flee.
++
++https://www.wowhead.com/forever/spell=1328373
+--- 1328374 Turn Evil (Rank 1)
++++ 1328374 Turn Evil (Rank 1)
+@@ -0,0 +1,21 @@
++1328374 Turn Evil (Rank 1)
++school    nature
++defense   magic
++mechanic  mechanic 23
++duration  10 s
++cast      1.5 s
++cooldown  30 s (category)
++gcd       1.5 s
++cost      35 mana
++range     20 yd
++targets   up to 1
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
++
++effect 1  fears to the enemy
++          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
++effect 2  +25% movement speed to the enemy
++          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
++tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
++aura      Compelled to flee.
++
++https://www.wowhead.com/forever/spell=1328374
+--- 20170 Stun (Rank 1)
++++ 20170 Stun (Rank 1)
+@@ -0,0 +1,12 @@
++20170 Stun (Rank 1)
++school    holy
++defense   magic
++mechanic  mechanic 12
++duration  2 s
++range     100 yd
++
++effect 1  stuns to the enemy
++          E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
++aura      Stunned.
++
++https://www.wowhead.com/forever/spell=20170
+--- 19977 Blessing of Light (Rank 1)
++++ 19977 Blessing of Light (Rank 1)
+@@ -1,17 +0,0 @@
+-19977 Blessing of Light (Rank 1)
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      85 mana
+-range     30 yd
+-labels    26
+-
+-effect 1  a dummy aura holding 210 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=210 target=[21,0]
+-effect 2  a dummy aura holding 60 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=60 target=[21,0]
+-tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+-aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
+-
+-https://www.wowhead.com/forever/spell=19977
+--- 19978 Blessing of Light (Rank 2)
++++ 19978 Blessing of Light (Rank 2)
+@@ -1,17 +0,0 @@
+-19978 Blessing of Light (Rank 2)
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      110 mana
+-range     30 yd
+-labels    26
+-
+-effect 1  a dummy aura holding 300 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=300 target=[21,0]
+-effect 2  a dummy aura holding 85 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=85 target=[21,0]
+-tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+-aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
+-
+-https://www.wowhead.com/forever/spell=19978
+--- 19979 Blessing of Light (Rank 3)
++++ 19979 Blessing of Light (Rank 3)
+@@ -1,17 +0,0 @@
+-19979 Blessing of Light (Rank 3)
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      135 mana
+-range     30 yd
+-labels    26
+-
+-effect 1  a dummy aura holding 400 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=400 target=[21,0]
+-effect 2  a dummy aura holding 115 to the friendly target
+-          E_APPLY_AURA A_DUMMY base=115 target=[21,0]
+-tooltip   Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+-aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
+-
+-https://www.wowhead.com/forever/spell=19979
+--- 25890 Greater Blessing of Light
++++ 25890 Greater Blessing of Light
+@@ -1,17 +0,0 @@
+-25890 Greater Blessing of Light
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      260 mana
+-range     40 yd
+-labels    26
+-
+-effect 1  a dummy aura holding 400 to target 153
+-          E_APPLY_AURA A_DUMMY base=400 radius=100 target=[153,0]
+-effect 2  a dummy aura holding 115 to target 153
+-          E_APPLY_AURA A_DUMMY base=115 radius=100 target=[153,0]
+-tooltip   Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.
+-aura      Receives up to $s1 extra healing from Holy Light spells, and up to $s2 extra healing from Flash of Light spells.
+-
+-https://www.wowhead.com/forever/spell=25890
+--- 25895 Mass Salvation
++++ 25895 Mass Salvation
+@@ -1,15 +0,0 @@
+-25895 Mass Salvation
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      16% of base mana
+-range     40 yd
+-labels    26
+-
+-effect 1  -30% threat to target 153
+-          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 radius=100 target=[153,0]
+-tooltip   Gives all members of the raid or group that share the same class with the target a reduction to all threat generated by $s1% for $d.
+-aura      Reduces threat generated by $s1%.
+-
+-https://www.wowhead.com/forever/spell=25895
+--- 1325499 Revoke
++++ 1325499 Revoke
+@@ -1,15 +0,0 @@
+-1325499 Revoke
+-school    holy
+-defense   magic
+-gcd       1.5 s
+-range     40 yd
+-attrs     suppresses weapon procs
+-labels    26
+-
+-effect 1  unrecognised shape
+-          E_REMOVE_AURA_2 base=0 trigger=1038 target=[57,0]
+-effect 2  unrecognised shape
+-          E_REMOVE_AURA_2 base=0 trigger=25895 target=[57,0]
+-tooltip   Remove target party or raid member's Salvation or Mass Salvation.
+-
+-https://www.wowhead.com/forever/spell=1325499
+--- 1038 Salvation
++++ 1038 Salvation
+@@ -1,15 +0,0 @@
+-1038 Salvation
+-school    holy
+-defense   magic
+-duration  3600 s
+-gcd       1.5 s
+-cost      8% of base mana
+-range     30 yd
+-labels    26
+-
+-effect 1  -30% threat to the target's raid
+-          E_APPLY_AURA A_MOD_THREAT base=-30 misc=127 target=[57,0]
+-tooltip   Reduces all threat generated by target party member by $s1% for $d.
+-aura      Reduces threat generated by $s1%.
+-
+-https://www.wowhead.com/forever/spell=1038
+--- 1311085 Instrument of Law
++++ 1311085 Instrument of Law
+@@ -1,12 +0,0 @@
+-1311085 Instrument of Law
+-school    physical
+-attrs     passive
+-labels    26
+-
+-effect 1  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x0,0x80
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
+-effect 2  -20% threat
+-          E_APPLY_AURA A_MOD_THREAT base=-20 misc=127 target=[1,0]
+-tooltip   Reduces the cast time of your Hammer of Wrath by ${$m1/-1000}.1 sec, and reduces all threat you generate by $m2% while Righteous Fury is not active.
+-
+-https://www.wowhead.com/forever/spell=1311085
+--- 1310904 Divine Precision
++++ 1310904 Divine Precision
+@@ -1,10 +1,12 @@
+ 1310904 Divine Precision
+ school    physical
+ attrs     passive
+ labels    26
+ 
+-effect 1  SPELLMOD_RESIST_MISS_CHANCE +18% on family 10 mask 0x200824,0x200000,0x40102000,0x4008000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=18 misc=16 family=10 mask=0x200824,0x200000,0x40102000,0x4008000 target=[1,0]
+-tooltip   Improves your chance to hit with Holy spells by $s1%.
++effect 1  SPELLMOD_RESIST_MISS_CHANCE +8% on family 10 mask 0x200824,0x200000,0x102000,0x4008000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=8 misc=16 family=10 mask=0x200824,0x200000,0x102000,0x4008000 target=[1,0]
++effect 2  -20% silence duration
++          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 misc=9 target=[1,0]
++tooltip   Improves your chance to hit with Holy spells by $s1%, and reduces the duration of Silence effects on you by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1310904
+--- 5923 Holy Power
++++ 5923 Holy Power
+@@ -1,12 +1,10 @@
+ 5923 Holy Power
+ school    physical
+ attrs     passive
+ labels    26
+ 
+-effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 10 mask 0x200e428,0x20200a80,0x2040,0x4000000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 sp=1 misc=7 family=10 mask=0x200e428,0x20200a80,0x2040,0x4000000 target=[1,0]
+-effect 2  SPELLMOD_CRITICAL_CHANCE +15% on family 10 mask 0x200000,0x0,0x0,0x8000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=7 family=10 mask=0x200000,0x0,0x0,0x8000 target=[1,0]
+-tooltip   Increases the critical strike chance of your Holy Shock and Holy Strike spells by $m2%, and all other spells by $m1%.
++effect 1  unrecognised shape
++          E_APPLY_AURA A_MOD_CRITICAL_HEALING_AMOUNT base=0 sp=1 misc=2 target=[1,0]
++tooltip   Increases the critical strike healing bonus of your Holy spells by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=5923
+--- 1310911 Light's Vigil (Rank 1)
++++ 1310911 Light's Vigil (Rank 1)
+@@ -1,18 +1,18 @@
+ 1310911 Light's Vigil (Rank 1)
+ school    holy
+ defense   magic
+ cast      1.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      730 mana
+-range     20 yd
++range     40 yd
+ labels    26
+-refs      1310909 Light's Vigil, 1310914 Light's Vigil, 1310912 Light's Vigil
++refs      1310909 Light's Vigil, 1310912 Light's Vigil
+ 
+-effect 1  a dummy effect to the target
+-          E_DUMMY base=0 target=[25,0]
+-effect 2  a dummy effect holding 75 to the target
+-          E_DUMMY base=75 target=[25,0]
+-tooltip   Applies Light's Vigil to the target for $1310909d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1310914s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1310912s1. You may only have one Light's Vigil active per party.
++effect 1  a dummy effect to the friendly target
++          E_DUMMY base=0 target=[21,0]
++effect 2  a dummy effect holding 75 to the friendly target
++          E_DUMMY base=75 target=[21,0]
++tooltip   Applies Light's Vigil to a friendly target for $1310909d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1310912s1. Only one Vigil per Paladin may be active in each party.
+ 
+ https://www.wowhead.com/forever/spell=1310911
+--- 1311590 Light's Vigil (Rank 2)
++++ 1311590 Light's Vigil (Rank 2)
+@@ -1,18 +1,18 @@
+ 1311590 Light's Vigil (Rank 2)
+ school    holy
+ defense   magic
+ cast      1.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      1000 mana
+-range     20 yd
++range     40 yd
+ labels    26
+-refs      1311593 Light's Vigil, 1311592 Light's Vigil, 1311591 Light's Vigil
++refs      1311593 Light's Vigil, 1311591 Light's Vigil
+ 
+-effect 1  a dummy effect to the target
+-          E_DUMMY base=0 target=[25,0]
+-effect 2  a dummy effect holding 75 to the target
+-          E_DUMMY base=75 target=[25,0]
+-tooltip   Applies Light's Vigil to the target for $1311593d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1311592s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1311591s1. You may only have one Light's Vigil active per party.
++effect 1  a dummy effect to the friendly target
++          E_DUMMY base=0 target=[21,0]
++effect 2  a dummy effect holding 75 to the friendly target
++          E_DUMMY base=75 target=[21,0]
++tooltip   Applies Light's Vigil to a friendly target for $1311593d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1311591s1. Only one Vigil per Paladin may be active in each party.
+ 
+ https://www.wowhead.com/forever/spell=1311590
+--- 1311595 Light's Vigil (Rank 3)
++++ 1311595 Light's Vigil (Rank 3)
+@@ -1,18 +1,18 @@
+ 1311595 Light's Vigil (Rank 3)
+ school    holy
+ defense   magic
+ cast      1.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      1340 mana
+-range     20 yd
++range     40 yd
+ labels    26
+-refs      1311597 Light's Vigil, 1311598 Light's Vigil, 1311596 Light's Vigil
++refs      1311597 Light's Vigil, 1311596 Light's Vigil
+ 
+-effect 1  a dummy effect to the target
+-          E_DUMMY base=0 target=[25,0]
+-effect 2  a dummy effect holding 75 to the target
+-          E_DUMMY base=75 target=[25,0]
+-tooltip   Applies Light's Vigil to the target for $1311597d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1311598s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1311596s1. You may only have one Light's Vigil active per party.
++effect 1  a dummy effect to the friendly target
++          E_DUMMY base=0 target=[21,0]
++effect 2  a dummy effect holding 75 to the friendly target
++          E_DUMMY base=75 target=[21,0]
++tooltip   Applies Light's Vigil to a friendly target for $1311597d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1311596s1. Only one Vigil per Paladin may be active in each party.
+ 
+ https://www.wowhead.com/forever/spell=1311595
+--- 20293 Seal of Righteousness (Rank 8)
++++ 20293 Seal of Righteousness (Rank 8)
+@@ -1,25 +1,23 @@
+ 20293 Seal of Righteousness (Rank 8)
+ school    holy
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ cost      200 mana
+ labels    26, 1203
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+-refs      20286 Judgement of Righteousness, 20224 Improved Seals
++refs      20286 Judgement of Righteousness
+ 
+ effect 1  a dummy aura holding 1880 (at level 60)
+           E_APPLY_AURA A_DUMMY base=1786 ppl=47 target=[1,0]
+ effect 2  a dummy aura holding 20286
+           E_APPLY_AURA A_DUMMY base=20286 index=2 target=[1,0]
+ tooltip   Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
+ 
+           Unleashing this Seal's energy will cause $20286s1 Holy damage to an enemy.
+-
+-          $20224s1
+ aura      Melee attacks cause an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.
+ vars      $2h=${0.12*$SPH}
+           $1h=${0.0765*$SPH}
+           $mult=${$20224s1/100+1}
+ 
+ https://www.wowhead.com/forever/spell=20293
+--- 1262310 The Quick and the Dead
++++ 1262310 The Quick and the Dead
+@@ -1,10 +1,10 @@
+ 1262310 The Quick and the Dead
+ school    shadow
+ defense   magic
+ duration  120 s
+ 
+-effect 1  SPELLMOD_COST -100% on family 10 mask 0xdf2797d2,0x1000116,0x101,0x20000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0xdf2797d2,0x1000116,0x101,0x20000 target=[1,0]
++effect 1  SPELLMOD_COST -100% on family 10 mask 0xdf2797d3,0x1000116,0x101,0x20000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0xdf2797d3,0x1000116,0x101,0x20000 target=[1,0]
+ aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
+ 
+ https://www.wowhead.com/forever/spell=1262310
+--- 20925 Holy Shield (Rank 1)
++++ 20925 Holy Shield (Rank 1)
+@@ -1,22 +1,22 @@
+ 20925 Holy Shield (Rank 1)
+ school    holy
+ defense   magic
+ duration  10 s
+ cooldown  10 s (category)
+ gcd       1.5 s
+-cost      150 mana
++cost      100 mana
+ equip     needs a shield
+ charges   4
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  +30% block chance
+           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+ effect 2  unrecognised shape
+-          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
++          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=75 sp=0.08 target=[1,0]
+ effect 3  a dummy aura holding 1
+           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+ tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
+ aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
+ 
+ https://www.wowhead.com/forever/spell=20925
+--- 20927 Holy Shield (Rank 2)
++++ 20927 Holy Shield (Rank 2)
+@@ -1,22 +1,22 @@
+ 20927 Holy Shield (Rank 2)
+ school    holy
+ defense   magic
+ duration  10 s
+ cooldown  10 s (category)
+ gcd       1.5 s
+-cost      195 mana
++cost      150 mana
+ equip     needs a shield
+ charges   4
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  +30% block chance
+           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+ effect 2  unrecognised shape
+-          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
++          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
+ effect 3  a dummy aura holding 1
+           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+ tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
+ aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
+ 
+ https://www.wowhead.com/forever/spell=20927
+--- 20928 Holy Shield (Rank 3)
++++ 20928 Holy Shield (Rank 3)
+@@ -1,22 +1,22 @@
+ 20928 Holy Shield (Rank 3)
+ school    holy
+ defense   magic
+ duration  10 s
+ cooldown  10 s (category)
+ gcd       1.5 s
+-cost      240 mana
++cost      195 mana
+ equip     needs a shield
+ charges   4
+ labels    26
+-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  +30% block chance
+           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+ effect 2  unrecognised shape
+-          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
++          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
+ effect 3  a dummy aura holding 1
+           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+ tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
+ aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
+ 
+ https://www.wowhead.com/forever/spell=20928
+--- 456544 Holy Shield
++++ 456544 Holy Shield
+@@ -1,10 +1,10 @@
+ 456544 Holy Shield
+ school    holy
+ defense   magic
+ range     100 yd
+ labels    26
+ 
+-effect 1  1 holy damage to the enemy (+0.05 spell power)
+-          E_SCHOOL_DAMAGE base=1 sp=0.05 target=[6,0]
++effect 1  0 holy damage to the enemy (+0.08 spell power)
++          E_SCHOOL_DAMAGE base=0 sp=0.08 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=456544
+--- 1311033 Iron Creed
++++ 1311033 Iron Creed
+@@ -1,13 +1,12 @@
+ 1311033 Iron Creed
+ school    physical
+ defense   melee
+ duration  6 s
+-caster aura 25780 Righteous Fury
+ labels    26
+ 
+ effect 1  +0% every school damage taken
+           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 misc=127 target=[1,0]
+ tooltip   Reduces the damage taken from all attacks by $s1% for $d.
+ aura      Damage taken reduced by $w1%.
+ 
+ https://www.wowhead.com/forever/spell=1311033
+--- 20232 Judgement of Fury
++++ 20232 Judgement of Fury
+@@ -1,15 +1,15 @@
+ 20232 Judgement of Fury
+ school    holy
+ defense   magic
+-duration  4 s
++duration  3 s
+ range     100 yd
+ labels    26
+ 
+ effect 1  taunts to the enemy
+           E_ATTACK_ME base=0 target=[6,0]
+ effect 2  taunts to the enemy
+           E_APPLY_AURA A_MOD_TAUNT base=0 target=[6,0]
+ tooltip   Taunts the target to attack you.
+ aura      Taunted.
+ 
+ https://www.wowhead.com/forever/spell=20232
+--- 25780 Righteous Fury
++++ 25780 Righteous Fury
+@@ -1,20 +1,22 @@
+ 25780 Righteous Fury
+ school    holy
+ defense   magic
+ duration  1800 s
+ gcd       1.5 s
+ cost      30% of base mana
+ labels    26
+ 
+ effect 1  +90% threat
+           E_APPLY_AURA A_MOD_THREAT base=90 sp=1 misc=2 target=[1,0]
+ effect 2  +0% every school damage taken
+           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=0 sp=1 misc=127 target=[1,0]
+-effect 3  SPELLMOD_EFFECT2 -100% on family 10 mask 0x0,0x0,0x0,0x40000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=12 family=10 mask=0x0,0x0,0x0,0x40000 target=[1,0]
++effect 3  SPELLMOD_EFFECT3 -100% on family 10 mask 0x0,0x0,0x0,0x40000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=23 family=10 mask=0x0,0x0,0x0,0x40000 target=[1,0]
+ effect 4  unrecognised shape
+           E_APPLY_AURA A_668 base=0 target=[1,0]
+-tooltip   Increases the threat generated by your Holy attacks by $s1%.  Lasts $d.
+-aura      Increases the threat generated by your Holy attacks by $s1%.$?$w2<0[ Reduces damage taken by $w2%.][]
++effect 5  +33% threat
++          E_APPLY_AURA A_MOD_THREAT base=33 sp=1 misc=127 target=[1,0]
++tooltip   Increases all threat generated by $s5%, and all threat generated by your Holy attacks by an additional $s1%.  Lasts $d.
++aura      Increases all threat generated by $w5%, and all threat generated by your Holy attacks by an additional $w1%.$?$w2<0[ Reduces damage taken by $w2%.][]
+ 
+ https://www.wowhead.com/forever/spell=25780
+--- 1224697 Sacred Duty
++++ 1224697 Sacred Duty
+@@ -1,12 +1,12 @@
+ 1224697 Sacred Duty
+ school    physical
+ attrs     passive
+ labels    26
+ 
+-effect 1  +4% stamina
+-          E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=4 misc2=4 target=[1,0]
++effect 1  SPELLMOD_DURATION -10 s on family 10 mask 0x0,0x0,0x80
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10000 misc=1 family=10 mask=0x0,0x0,0x80 target=[1,0]
+ effect 2  SPELLMOD_COOLDOWN -60 s on family 10 mask 0x400000,0x0,0x200100
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-60000 misc=11 family=10 mask=0x400000,0x0,0x200100 target=[1,0]
+-tooltip   Increases your total Stamina by $s1% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by ${$m2/-1000} sec.
++tooltip   Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by ${$m2/-1000} sec, and reduces the duration of Forbearance by ${$m1/-1000} sec.
+ 
+ https://www.wowhead.com/forever/spell=1224697
+--- 1310994 Swift Judgement
++++ 1310994 Swift Judgement
+@@ -1,16 +1,12 @@
+ 1310994 Swift Judgement
+-school    physical
+-defense   magic
+-duration  permanent
++school    holy
+ cooldown  60 s
+-charges   1
+-attrs     can proc from procs
++range     10 yd
++attrs     not a proc
+ labels    26
+-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says one named ability
+ 
+-effect 1  SPELLMOD_COST -100% on family 10 mask 0x800000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=10 mask=0x800000 target=[1,0]
+-tooltip   Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by $s1%.
+-aura      Mana cost of Judgement reduced by $s1%.
++effect 1  unrecognised shape
++          E_SCRIPT_EFFECT base=0 target=[6,0]
++tooltip   Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.
+ 
+ https://www.wowhead.com/forever/spell=1310994
+--- 1311015 Templar's Bulwark
++++ 1311015 Templar's Bulwark
+@@ -1,15 +1,16 @@
+ 1311015 Templar's Bulwark
+ school    holy
++defense   magic
+ duration  8 s
+ cooldown  300 s
+ cost      110 mana
+ excluded caster aura 25771 Forbearance
+ labels    26
+ refs      25771 Forbearance
+ 
+ effect 1  absorbs 100 every school damage
+           E_APPLY_AURA A_SCHOOL_ABSORB base=100 misc=127 target=[1,0]
+ tooltip   When activated, this ability grants you an absorb shield equal to $s1% of your maximum health for $d. Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.
+ aura      Absorbs $w1 damage.
+ 
+ https://www.wowhead.com/forever/spell=1311015
+--- 1311084 Champion of the Light
++++ 1311084 Champion of the Light
+@@ -1,10 +1,12 @@
+ 1311084 Champion of the Light
+ school    physical
+ attrs     passive
+ labels    26
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT base=100 sp=1 misc=126 misc2=3 target=[1,0]
+-tooltip   Increases your spell damage by up to $m1% of your Intellect.
++effect 2  SPELLMOD_CASTING_TIME -1 s on family 10 mask 0x0,0x80
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 sp=1 misc=10 family=10 mask=0x0,0x80 target=[1,0]
++tooltip   Increases your spell damage by up to $m1% of your Intellect, and reduces the cast time of your Hammer of Wrath by ${$m2/-1000}.1 sec.
+ 
+ https://www.wowhead.com/forever/spell=1311084
+--- 1310735 Unsealed Wrath
++++ 1310735 Unsealed Wrath
+@@ -1,10 +1,11 @@
+-1310735 Twist of Light
++1310735 Unsealed Wrath
+ school    physical
+ attrs     passive
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met; tooltip says one named ability
++proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
++refs      1311701 Echo of Fury
+ 
+-effect 1  SPELLMOD_COST -20% on family 10 mask 0xa000600,0x26000000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-20 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
+-tooltip   Reduces the Mana cost of your Seal spells by $s1%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.
++effect 1  SPELLMOD_COST +0% on family 10 mask 0xa000600,0x26000000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
++tooltip   Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.
+ 
+ https://www.wowhead.com/forever/spell=1310735
+# priest
+--- 1328569 Holy Binding
++++ 1328569 Holy Binding
+@@ -0,0 +1,12 @@
++1328569 Holy Binding
++school    physical
++stance exclude Shadowform
++attrs     passive
++labels    18
++proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
++
++effect 1  a dummy aura holding 50
++          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
++tooltip   Each time you heal a target other than yourself with Flash Heal, you are healed for $s1% as much. This healing generates no threat.
++
++https://www.wowhead.com/forever/spell=1328569
+--- 1328570 Holy Binding
++++ 1328570 Holy Binding
+@@ -0,0 +1,9 @@
++1328570 Holy Binding
++school    holy
++attrs     cannot crit
++labels    18
++
++effect 1  1 healing to the caster
++          E_HEAL base=1 target=[1,0]
++
++https://www.wowhead.com/forever/spell=1328570
+--- 2651 Elune's Grace
++++ 2651 Elune's Grace
+@@ -1,20 +1,20 @@
+ 2651 Elune's Grace
+ school    holy
+ defense   magic
+ duration  15 s
+ cooldown  300 s (category)
+ gcd       1.5 s
+ cost      3% of base mana
+ stance    Shadowform
+ charges   3
+ labels    18
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_MOD_ATTACKER_MELEE_HIT_CHANCE base=-50 target=[1,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_ATTACKER_RANGED_HIT_CHANCE base=-50 target=[1,0]
+ tooltip   Reduces the chance you'll be hit by melee and ranged attacks by $s1% for $d or until you are missed $n times.
+-aura      Chance to be hit by melee and ranged attacks reduced by $s1% until you are missed $N times.
++aura      Chance to be hit by melee and ranged attacks reduced by $s~1% until you are missed $N times.
+ 
+ https://www.wowhead.com/forever/spell=2651
+--- 425280 Renewed Hope
++++ 425280 Renewed Hope
+@@ -1,13 +1,13 @@
+ 425280 Renewed Hope
+ school    physical
+ attrs     passive, can proc from procs
+ labels    18
+ proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, heals count
+ 
+ effect 1  a dummy aura holding 10
+           E_APPLY_AURA A_DUMMY base=10 target=[1,0]
+ effect 2  a dummy aura holding -5000
+           E_APPLY_AURA A_DUMMY base=-5000 target=[1,0]
+-tooltip   Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain $m1% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by ${$m2/-1000} sec.
++tooltip   Your heals from Flash Heal, Lesser Heal, Heal, Greater Heal, and Penance gain $m1% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by ${$m2/-1000} sec.
+ 
+ https://www.wowhead.com/forever/spell=425280
+--- 552 Abolish Disease
++++ 552 Abolish Disease
+@@ -1,19 +1,19 @@
+ 552 Abolish Disease
+ school    holy
+ defense   magic
+ duration  20 s
+ gcd       1.5 s
+ cost      15% of base mana
+ range     30 yd
+-stance exclude Shadowform
++stance    Shadowform
+ labels    18
+ refs      10872 Abolish Disease Effect
+ 
+ effect 1  casts 10872 Abolish Disease Effect every 5 s to the friendly target (4 ticks)
+           E_APPLY_AURA A_PERIODIC_TRIGGER_SPELL base=0 period=5000ms trigger=10872 target=[21,0]
+ effect 2  dispels 1 disease effect to the friendly target
+           E_DISPEL base=1 misc=3 target=[21,0]
+ tooltip   Attempts to cure $s2 disease effect on the target, and $10872s1 more disease effect every $t1 seconds for $d.
+ aura      Attempts to dispel $10872s1 disease every $t1 seconds.
+ 
+ https://www.wowhead.com/forever/spell=552
+--- 528 Cure Disease
++++ 528 Cure Disease
+@@ -1,14 +1,14 @@
+ 528 Cure Disease
+ school    holy
+ defense   magic
+ gcd       1.5 s
+ cost      15% of base mana
+ range     30 yd
+-stance exclude Shadowform
++stance    Shadowform
+ labels    18
+ 
+ effect 1  dispels 1 disease effect to the friendly target
+           E_DISPEL base=1 misc=3 target=[21,0]
+ tooltip   Removes $s1 $ldisease:diseases; from the friendly target.
+ 
+ https://www.wowhead.com/forever/spell=528
+--- 15007 Resurrection Sickness
++++ 15007 Resurrection Sickness
+@@ -1,13 +1,13 @@
+ 15007 Resurrection Sickness
+ school    physical
+-duration  600 s
++duration  60 s
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_MOD_PERCENT_STAT base=-75 misc=-1 target=[1,0]
+ effect 2  -75% every school damage done
+           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=-75 misc=127 target=[1,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=127 target=[1,0]
+ aura      Decreases all attributes by $s1%, all damage caused by $s2%, armor and resistance by $s3%.
+ 
+ https://www.wowhead.com/forever/spell=15007
+--- 1309595 Shadow Word: Death (Rank 1)
++++ 1309595 Shadow Word: Death (Rank 1)
+@@ -1,19 +1,19 @@
+ 1309595 Shadow Word: Death (Rank 1)
+ school    shadow
+ defense   magic
+ cooldown  18 s (category)
+ gcd       1.5 s
+ cost      175 mana
+ range     30 yd
+ stance    Shadowform
+ labels    18
+ 
+ effect 1  293–312 shadow damage to the enemy (at level 60, +0.429 spell power)
+           E_SCHOOL_DAMAGE base=295 ppl=1.5 variance=0.0605 sp=0.429 target=[6,0]
+ effect 2  unrecognised shape
+           E_SCRIPT_EFFECT base=150 target=[6,0]
+-effect 3  a dummy effect holding 10
+-          E_DUMMY base=10 target=[0,0]
++effect 3  a dummy effect holding 30
++          E_DUMMY base=30 target=[0,0]
+ tooltip   A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.
+ 
+ https://www.wowhead.com/forever/spell=1309595
+--- 1309633 Shadow Word: Death (Rank 2)
++++ 1309633 Shadow Word: Death (Rank 2)
+@@ -1,19 +1,19 @@
+ 1309633 Shadow Word: Death (Rank 2)
+ school    shadow
+ defense   magic
+ cooldown  18 s (category)
+ gcd       1.5 s
+ cost      205 mana
+ range     30 yd
+ stance    Shadowform
+ labels    18
+ 
+ effect 1  368–391 shadow damage to the enemy (at level 60, +0.429 spell power)
+           E_SCHOOL_DAMAGE base=370 ppl=1.9 variance=0.0605 sp=0.429 target=[6,0]
+ effect 2  unrecognised shape
+           E_SCRIPT_EFFECT base=150 target=[6,0]
+-effect 3  a dummy effect holding 10
+-          E_DUMMY base=10 target=[0,0]
++effect 3  a dummy effect holding 30
++          E_DUMMY base=30 target=[0,0]
+ tooltip   A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.
+ 
+ https://www.wowhead.com/forever/spell=1309633
+--- 1309635 Shadow Word: Death (Rank 3)
++++ 1309635 Shadow Word: Death (Rank 3)
+@@ -1,19 +1,19 @@
+ 1309635 Shadow Word: Death (Rank 3)
+ school    shadow
+ defense   magic
+ cooldown  18 s (category)
+ gcd       1.5 s
+ cost      250 mana
+ range     30 yd
+ stance    Shadowform
+ labels    18
+ 
+ effect 1  402–426 shadow damage to the enemy (at level 60, +0.429 spell power)
+           E_SCHOOL_DAMAGE base=403 ppl=2.2 variance=0.0605 sp=0.429 target=[6,0]
+ effect 2  unrecognised shape
+           E_SCRIPT_EFFECT base=150 target=[6,0]
+-effect 3  a dummy effect holding 10
+-          E_DUMMY base=10 target=[0,0]
++effect 3  a dummy effect holding 30
++          E_DUMMY base=30 target=[0,0]
+ tooltip   A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.
+ 
+ https://www.wowhead.com/forever/spell=1309635
+--- 1309636 Shadow Word: Death (Rank 4)
++++ 1309636 Shadow Word: Death (Rank 4)
+@@ -1,19 +1,19 @@
+ 1309636 Shadow Word: Death (Rank 4)
+ school    shadow
+ defense   magic
+ cooldown  18 s (category)
+ gcd       1.5 s
+ cost      340 mana
+ range     30 yd
+ stance    Shadowform
+ labels    18
+ 
+ effect 1  444–472 shadow damage to the enemy (at level 60, +0.429 spell power)
+           E_SCHOOL_DAMAGE base=448 ppl=2.5 variance=0.0605 sp=0.429 target=[6,0]
+ effect 2  unrecognised shape
+           E_SCRIPT_EFFECT base=150 target=[6,0]
+-effect 3  a dummy effect holding 10
+-          E_DUMMY base=10 target=[0,0]
++effect 3  a dummy effect holding 30
++          E_DUMMY base=30 target=[0,0]
+ tooltip   A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.
+ 
+ https://www.wowhead.com/forever/spell=1309636
+# rogue
+--- 2764 Throw
++++ 2764 Throw
+@@ -1,13 +1,12 @@
+ 2764 Throw
+ school    physical
+ defense   ranged
+-cast      0.5 s
+ range     8-30 yd
+ equip     needs a thrown
+ labels    20, 23, 25
+ 
+ effect 1  weapon damage to the enemy
+           E_WEAPON_DAMAGE base=0 sp=1 target=[6,0]
+ tooltip   Hurl a thrown weapon at the target.
+ 
+ https://www.wowhead.com/forever/spell=2764
+# warlock
+--- 403511 Improved Drains
++++ 403511 Improved Drains
+@@ -1,10 +1,12 @@
+ 403511 Improved Drains
+ school    physical
+ attrs     passive
+ labels    19
+ 
+-effect 1  SPELLMOD_DOT +20% on family 5 mask 0x4008,0x40000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=5 mask=0x4008,0x40000 target=[1,0]
+-tooltip   Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by $m1%.
++effect 1  SPELLMOD_DOT +20% on family 5 mask 0x4008
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=22 family=5 mask=0x4008 target=[1,0]
++effect 2  SPELLMOD_EFFECT1 +20% on family 5 mask 0x10
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 misc=3 family=5 mask=0x10 target=[1,0]
++tooltip   Increases Health drained, damage done, or Mana drained by your Drain Life, Drain Soul, and Drain Mana spells by $m1%.
+ 
+ https://www.wowhead.com/forever/spell=403511
+# warrior
+--- 2457 Battle Stance
++++ 2457 Battle Stance
+@@ -1,12 +1,13 @@
+ 2457 Battle Stance
+ school    physical
+ defense   melee
+ duration  permanent
+ cooldown  1 s (category)
+ labels    25
+ 
+ effect 1  shifts into Battle
+           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=17 target=[1,0]
+ tooltip   A balanced combat stance.
++aura      A balanced combat stance.
+ 
+ https://www.wowhead.com/forever/spell=2457
+--- 2458 Berserker Stance
++++ 2458 Berserker Stance
+@@ -1,13 +1,14 @@
+ 2458 Berserker Stance
+ school    physical
+ defense   melee
+ duration  permanent
+ cooldown  1 s (category)
+ labels    25
+ refs      7381 Berserker Stance Passive
+ 
+ effect 1  shifts into Berserker
+           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=19 target=[1,0]
+ tooltip   An aggressive stance. Critical strike chance increased by $7381s1% and all damage taken is increased by $7381s2%.
++aura      An aggressive stance. Critical strike chance increased by $7381s1% and all damage taken is increased by $7381s2%.
+ 
+ https://www.wowhead.com/forever/spell=2458
+--- 71 Defensive Stance
++++ 71 Defensive Stance
+@@ -1,14 +1,15 @@
+ 71 Defensive Stance
+ school    physical
+ duration  permanent
+ cooldown  1 s (category)
+ labels    25
+ refs      7376 Defensive Stance Passive, 12792 Defiance
+ 
+ effect 1  shifts into Defensive
+           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=18 target=[1,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_668 base=0 target=[1,0]
+ tooltip   A defensive combat stance.  Decreases damage taken by $7376s1% and damage caused by $7376s2%.  Increases all threat generated by $?a12792[${($7376s3+100)*($12792s1/100+1)-100)}.1%][$7376s3%].
++aura      A defensive combat stance.  Decreases damage taken by $7376s1% and damage caused by $7376s2%.  Increases all threat generated by $?a12792[${($7376s3+100)*($12792s1/100+1)-100)}.1%][$7376s3%].
+ 
+ https://www.wowhead.com/forever/spell=71
