@@ -832,7 +832,7 @@ aura      Increases movement speed while in Cat Form by $w1%.
 
 https://www.wowhead.com/forever/spell=24867
 =======
-22568 Ferocious Bite (Rank 1)
+22568 Ferocious Bite (Rank 2)
 school    physical
 defense   melee
 gcd       1 s
@@ -856,7 +856,7 @@ tooltip   Finishing move that causes damage per combo point and converts each ex
 
 https://www.wowhead.com/forever/spell=22568
 =======
-22827 Ferocious Bite (Rank 2)
+22827 Ferocious Bite (Rank 3)
 school    physical
 defense   melee
 gcd       1 s
@@ -880,7 +880,7 @@ tooltip   Finishing move that causes damage per combo point and converts each ex
 
 https://www.wowhead.com/forever/spell=22827
 =======
-22828 Ferocious Bite (Rank 3)
+22828 Ferocious Bite (Rank 4)
 school    physical
 defense   melee
 gcd       1 s
@@ -904,7 +904,7 @@ tooltip   Finishing move that causes damage per combo point and converts each ex
 
 https://www.wowhead.com/forever/spell=22828
 =======
-22829 Ferocious Bite (Rank 4)
+22829 Ferocious Bite (Rank 5)
 school    physical
 defense   melee
 gcd       1 s
@@ -940,7 +940,7 @@ effect 1  1500–2500 physical damage to the enemy
 
 https://www.wowhead.com/forever/spell=27557
 =======
-31018 Ferocious Bite (Rank 5)
+31018 Ferocious Bite (Rank 6)
 school    physical
 defense   melee
 gcd       1 s
@@ -963,6 +963,30 @@ tooltip   Finishing move that causes damage per combo point and converts each ex
              5 points: 787-847 damage
 
 https://www.wowhead.com/forever/spell=31018
+=======
+1328618 Ferocious Bite (Rank 1)
+school    physical
+defense   melee
+gcd       1 s
+cost      35 energy
+cost      1 combo points
+range     5 yd
+stance    Cat
+attrs     refund on miss
+labels    21
+
+effect 1  4–24 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=14 variance=0.71428573 sp=1 perResource=24 target=[6,0]
+effect 2  a dummy effect holding 60 to the enemy
+          E_DUMMY base=60 sp=1 target=[6,0]
+tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+             1 point  : 33-43 damage
+             2 points: 57-67 damage
+             3 points: 81-91 damage
+             4 points: 105-115 damage
+             5 points: 129-139 damage
+
+https://www.wowhead.com/forever/spell=1328618
 =======
 16934 Ferocity
 school    physical
@@ -1023,6 +1047,20 @@ aura      Converting resources into health.
 
 https://www.wowhead.com/forever/spell=428708
 =======
+17056 Furor
+school    physical
+attrs     passive
+labels    21
+refs      17057 Furor
+
+effect 1  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+effect 2  a dummy aura holding 20
+          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
+tooltip   Gives you a $m1% chance to gain $/10;17057s1 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores ${100*($m2/100)}% of the Energy you had when last in Cat Form, plus ${10*($m2/100)} Energy per second spent outside Bear Form or Dire Bear Form, up to ${100*($m2/100)} Energy.
+
+https://www.wowhead.com/forever/spell=17056
+=======
 6795 Growl
 school    physical
 defense   magic
@@ -1056,17 +1094,6 @@ tooltip   Taunts the target to attack you, but has no effect if the target is al
 
 https://www.wowhead.com/forever/spell=1218506
 =======
-1322670 Improved Shifting Power
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_COOLDOWN +0 s on family 7 mask 0x0,0x80000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=11 family=7 mask=0x0,0x80000000 target=[1,0]
-tooltip   Reduces the cooldown of your Shifting Power spell by ${$m1/-1000} sec.
-
-https://www.wowhead.com/forever/spell=1322670
-=======
 16968 Improved Shred (Rank 2)
 school    physical
 attrs     passive
@@ -1078,7 +1105,7 @@ tooltip   Reduces the Energy cost of your Shred ability by $s1.
 
 https://www.wowhead.com/forever/spell=16968
 =======
-414644 Lacerate (Rank 1)
+414644 Lacerate (Rank 3)
 school    physical
 defense   melee
 mechanic  bleed
@@ -1111,7 +1138,7 @@ effect 1  20% weapon damage to the enemy
 
 https://www.wowhead.com/forever/spell=414647
 =======
-1235826 Lacerate (Rank 2)
+1235826 Lacerate (Rank 4)
 school    physical
 defense   melee
 mechanic  bleed
@@ -1133,7 +1160,7 @@ aura      $w1 damage every $t sec.
 
 https://www.wowhead.com/forever/spell=1235826
 =======
-1235827 Lacerate (Rank 3)
+1235827 Lacerate (Rank 5)
 school    physical
 defense   melee
 mechanic  bleed
@@ -1155,6 +1182,50 @@ aura      $w1 damage every $t sec.
 
 https://www.wowhead.com/forever/spell=1235827
 =======
+1328616 Lacerate (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+stack     up to 5
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  6 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=3000ms target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+aura      $w1 damage every $t sec.
+
+https://www.wowhead.com/forever/spell=1328616
+=======
+1328617 Lacerate (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  15 s
+gcd       1.5 s
+cost      15 rage
+range     5 yd
+stance    Bear, Dire Bear
+stack     up to 5
+attrs     refund on miss, periodic can crit
+labels    21
+
+effect 1  4 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=3000ms target=[6,0]
+effect 2  a dummy effect holding 10 to the enemy
+          E_DUMMY base=10 target=[6,0]
+tooltip   Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
+aura      $w1 damage every $t sec.
+
+https://www.wowhead.com/forever/spell=1328617
+=======
 17007 Leader of the Pack
 school    physical
 attrs     passive
@@ -1163,7 +1234,7 @@ refs      24932 Leader of the Pack
 
 effect 1  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 sp=1 target=[1,0]
-tooltip   While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within $24932a1 yards by $24932s1%.
+tooltip   While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within $24932a1 yards by $24932s1%.
 
 https://www.wowhead.com/forever/spell=17007
 =======
@@ -1173,9 +1244,9 @@ duration  permanent
 stance    Cat, Bear, Dire Bear
 labels    21
 
-effect 1  raid aura: +3% physical crit
-          E_APPLY_AREA_AURA_RAID A_MOD_WEAPON_CRIT_PERCENT base=3 sp=1 radius=45 target=[1,0]
-aura      Increases melee and ranged Critical Strike chance by $s1%.
+effect 1  raid aura: +3% physical and spell crit
+          E_APPLY_AREA_AURA_RAID A_MOD_CRIT_PCT base=3 sp=1 radius=45 target=[1,0]
+aura      Increases Critical Strike chance by $s1%.
 
 https://www.wowhead.com/forever/spell=24932
 =======
@@ -1413,8 +1484,8 @@ stance    Bear, Dire Bear
 attrs     refund on miss
 labels    21
 
-effect 1  weapon damage +26 to the enemy
-          E_WEAPON_DAMAGE base=26 sp=1 target=[6,0]
+effect 1  weapon damage +42 to the enemy
+          E_WEAPON_DAMAGE base=42 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
 tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
@@ -1432,8 +1503,8 @@ stance    Bear, Dire Bear
 attrs     refund on miss
 labels    21
 
-effect 1  weapon damage +38 to the enemy
-          E_WEAPON_DAMAGE base=38 sp=1 target=[6,0]
+effect 1  weapon damage +62 to the enemy
+          E_WEAPON_DAMAGE base=62 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
 tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
@@ -1451,8 +1522,8 @@ stance    Bear, Dire Bear
 attrs     refund on miss
 labels    21
 
-effect 1  weapon damage +59 to the enemy
-          E_WEAPON_DAMAGE base=59 sp=1 target=[6,0]
+effect 1  weapon damage +77 to the enemy
+          E_WEAPON_DAMAGE base=77 sp=1 target=[6,0]
 effect 2  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
 tooltip   Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
@@ -1943,7 +2014,7 @@ https://www.wowhead.com/forever/spell=16998
 =======
 1322605 Shifting Power
 school    physical
-cooldown  16 s
+cooldown  8 s
 gcd       1 s
 cost      55% of base mana
 stance    Cat

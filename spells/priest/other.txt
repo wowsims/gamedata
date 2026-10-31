@@ -897,6 +897,29 @@ aura      The hand has opened for you
 
 https://www.wowhead.com/forever/spell=420878
 =======
+1328569 Holy Binding
+school    physical
+stance exclude Shadowform
+attrs     passive
+labels    18
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says heals count
+
+effect 1  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
+tooltip   Each time you heal a target other than yourself with Flash Heal, you are healed for $s1% as much. This healing generates no threat.
+
+https://www.wowhead.com/forever/spell=1328569
+=======
+1328570 Holy Binding
+school    holy
+attrs     cannot crit
+labels    18
+
+effect 1  1 healing to the caster
+          E_HEAL base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1328570
+=======
 16873 Holy Word: Fortitude (Rank 6)
 school    holy
 defense   magic
@@ -1424,7 +1447,7 @@ https://www.wowhead.com/forever/spell=28808
 =======
 15007 Resurrection Sickness
 school    physical
-duration  600 s
+duration  60 s
 
 effect 1  unrecognised shape
           E_APPLY_AURA A_MOD_PERCENT_STAT base=-75 misc=-1 target=[1,0]

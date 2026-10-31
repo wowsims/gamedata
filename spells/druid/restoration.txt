@@ -18,6 +18,28 @@ aura      Attempts to cure $3137s1 poison every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=2893
 =======
+1328621 Bloom
+school    physical
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[1,0]
+effect 2  a dummy aura holding 50
+          E_APPLY_AURA A_DUMMY base=50 sp=1 target=[1,0]
+tooltip   When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
+
+https://www.wowhead.com/forever/spell=1328621
+=======
+1328622 Bloom
+school    nature
+range     50000 yd
+
+effect 1  1 healing to the caster
+          E_HEAL base=1 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1328622
+=======
 8946 Cure Poison
 school    nature
 defense   magic
@@ -136,20 +158,6 @@ tooltip   Your Rejuvenation and Regrowth spells can now be active on targets aff
 
 https://www.wowhead.com/forever/spell=417123
 =======
-17056 Furor
-school    physical
-attrs     passive
-labels    21
-refs      17057 Furor
-
-effect 1  a dummy aura holding 20
-          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
-effect 2  a dummy aura holding 20
-          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
-tooltip   Gives you a $m1% chance to gain $/10;17057s1 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores ${100*($m2/100)}% of the Energy you had when last in Cat Form, plus ${10*($m2/100)} Energy per second spent outside Bear Form or Dire Bear Form, up to ${100*($m2/100)} Energy.
-
-https://www.wowhead.com/forever/spell=17056
-=======
 17104 Gift of Nature
 school    physical
 attrs     passive
@@ -162,17 +170,6 @@ effect 2  SPELLMOD_DOT +2% on family 7 mask 0x50,0x4000000
 tooltip   Increases the effect of all your healing spells by $s1%.
 
 https://www.wowhead.com/forever/spell=17104
-=======
-414673 Gift of the Earthmother
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 7 mask 0x10,0x4000012
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=21 family=7 mask=0x10,0x4000012 target=[1,0]
-tooltip   Reduces the global cooldown by ${$m1/-1000}.1 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells.
-
-https://www.wowhead.com/forever/spell=414673
 =======
 21849 Gift of the Wild (Rank 1)
 school    nature
@@ -977,11 +974,11 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x2000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x2000000 target=[1,0]
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x20,0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x20,0x4000000 target=[1,0]
 effect 2  +100% every school damage done
           E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=100 sp=1 misc=127 target=[1,0]
-tooltip   Reduces the cast time of your Healing Touch spell by $/1000;S1 sec and increases all damage you deal by $m2%.
+tooltip   Reduces the cast time of your Healing Touch and Wild Growth spells by $/1000;S1 sec and increases all damage you deal by $m2%.
 
 https://www.wowhead.com/forever/spell=17069
 =======
@@ -2074,7 +2071,7 @@ labels    21
 
 effect 1  1 healing to the friendly target
           E_HEAL base=1 target=[21,0]
-tooltip   Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.
+tooltip   Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
 
 https://www.wowhead.com/forever/spell=18562
 =======
@@ -2213,6 +2210,7 @@ https://www.wowhead.com/forever/spell=1253568
 school    nature
 defense   magic
 duration  7 s
+cast      3 s
 cooldown  6 s
 gcd       1.5 s
 cost      550 mana
@@ -2250,6 +2248,7 @@ https://www.wowhead.com/forever/spell=409810
 school    nature
 defense   magic
 duration  7 s
+cast      3 s
 cooldown  6 s
 gcd       1.5 s
 cost      755 mana
@@ -2274,6 +2273,7 @@ https://www.wowhead.com/forever/spell=1238214
 school    nature
 defense   magic
 duration  7 s
+cast      3 s
 cooldown  6 s
 gcd       1.5 s
 cost      1050 mana
