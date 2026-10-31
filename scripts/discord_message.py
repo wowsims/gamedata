@@ -27,7 +27,7 @@ import sys
 folder, title, pr_url, changes_url, out_dir = sys.argv[1:6]
 text = open(os.path.join(folder, "CHANGES.md")).read()
 
-MESSAGES = 3
+MESSAGES = 4
 EMBED_LIMIT = 3900
 MESSAGE_LIMIT = 5600
 FIELDS_SHOWN = 6
@@ -41,8 +41,10 @@ ADDED_FIELDS = {
 COLORS = {"Patch": 0xE67E22, "Hotfix": 0x3498DB}
 ENTRY = re.compile(r"^- (added|removed|changed) (\d+) (.+?)(?: \(Rank \d+\))?(?: · .+)?$")
 # Discord colors no text in an embed outside code blocks, where links stop working, so the kind of
-# change is a colored marker.
-MARKS = {"added": "🟢", "removed": "🔴", "changed": "🟠"}
+# change is a colored marker. DISCORD_MARKS can name three of the server's own emoji instead, as
+# "<:added:id>,<:removed:id>,<:changed:id>", since Discord draws Unicode emoji in an embed flat.
+MARKS = dict(zip(("added", "removed", "changed"),
+                 (os.environ.get("DISCORD_MARKS") or "🟢,🔴,🟠").split(",")))
 TEXT_FIELDS = {"tooltip", "aura", "vars", "text"}
 # Fields a reader learns nothing from: the spells a card names, its label ids, its Wowhead link.
 SKIPPED_FIELDS = {"refs", "labels", "https"}

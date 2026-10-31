@@ -225,6 +225,7 @@ jobs:
                   TITLE: ${{ steps.record.outputs.title }}
                   FOLDER: ${{ steps.record.outputs.folder }}
                   PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+                  DISCORD_MARKS: ${{ vars.DISCORD_MARKS }}
               run: |
                   if [ -z "$DISCORD_WEBHOOK_URL" ]; then
                       echo "No DISCORD_WEBHOOK_URL secret, nothing posted."

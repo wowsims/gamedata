@@ -7,7 +7,8 @@ one moves, it exports every class spell and every item, diffs them against the l
 and merges a pull request. **Each merged pull request is one update**, and its description lists what
 changed. Each patch and hotfix is also posted to Discord through the `DISCORD_WEBHOOK_URL` secret:
 `scripts/discord_message.py` lists every spell and item change with its Wowhead link and the fields
-that changed.
+that changed. The repository variable `DISCORD_MARKS` can swap its 🟢 🔴 🟠 markers for three of the
+server's own emoji, as `<:added:id>,<:removed:id>,<:changed:id>`.
 
 ## Layout
 
