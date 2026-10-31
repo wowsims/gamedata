@@ -10,10 +10,14 @@ name: Update game data
 # every class spell with tools/spelldata (split per spec by scripts/split_spells.py) and every item
 # with scripts/export_items.py, and writes
 # the difference to patches/<version>/<patch | hotfix-N>/. The pull request carries CHANGES.md as
-# its body and is merged straight away, so the list of merged pull requests is the changelog.
+# its body and is merged straight away, so the list of merged pull requests is the changelog. A merged
+# patch or hotfix is posted to Discord through the DISCORD_WEBHOOK_URL secret; a resync is not.
+#
+# A run that finds nothing new stops after the version check and the hotfix cache download (about
+# 10 seconds), so checking every 30 minutes costs little.
 on:
     schedule:
-        - cron: '17 */3 * * *'
+        - cron: '7,37 * * * *'
     workflow_dispatch:
         inputs:
             forever_ref:
@@ -159,18 +163,30 @@ jobs:
             # -everyClassSpell roots the store at every class spell, not only what the sim reaches,
             # and -unchecked skips type-checking the class packages against it: the store is thrown
             # away after the dump, and the dump compiling against it is the check that matters.
+            # When forever already took later hotfixes than raidbots' newest cache holds, gen_spelldata
+            # refuses the database. Nothing is recorded then, and a later run retries once the cache
+            # catches up.
             - name: Export class spells and items 📜
               if: steps.moved.outputs.run == 'true'
+              id: export
               run: |
                   export_dir="$RUNNER_TEMP/export"
                   mkdir -p "$export_dir/items"
-                  (cd forever && go run ./tools/database/gen_spelldata -everyClassSpell -unchecked)
+                  if ! (cd forever && go run ./tools/database/gen_spelldata -everyClassSpell -unchecked) 2> "$RUNNER_TEMP/gen.err"; then
+                      cat "$RUNNER_TEMP/gen.err" >&2
+                      if grep -q "the committed inputs hold later hotfixes" "$RUNNER_TEMP/gen.err"; then
+                          echo "::notice::wowsims/forever holds later hotfixes than the newest raidbots cache; nothing recorded, a later run retries."
+                          echo "behind=true" >> "$GITHUB_OUTPUT"
+                          exit 0
+                      fi
+                      exit 1
+                  fi
                   (cd forever && go run ./tools/spelldata -dump "$RUNNER_TEMP/dump")
                   python3 gamedata/scripts/split_spells.py forever forever/tools/database/wowsims.db "$RUNNER_TEMP/dump" "$export_dir/spells"
                   python3 gamedata/scripts/export_items.py forever/tools/database/wowsims.db "$export_dir/items/items.txt"
 
             - name: Record the update 📝
-              if: steps.moved.outputs.run == 'true'
+              if: steps.moved.outputs.run == 'true' && steps.export.outputs.behind != 'true'
               id: record
               env:
                   VERSION: ${{ steps.build.outputs.version }}
@@ -183,7 +199,7 @@ jobs:
                       --forever "$sha" --body "$RUNNER_TEMP/body.md" >> "$GITHUB_OUTPUT"
 
             - name: Create Pull Request 🚀
-              if: steps.moved.outputs.run == 'true'
+              if: steps.moved.outputs.run == 'true' && steps.export.outputs.behind != 'true'
               id: pr
               uses: peter-evans/create-pull-request@v7
               with:
@@ -200,3 +216,20 @@ jobs:
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
+
+            # After the merge, so the links reach main. Without the secret (a fork) the step says so and passes.
+            - name: Post to Discord 📣
+              if: steps.pr.outputs.pull-request-number != '' && !startsWith(steps.record.outputs.title, 'Resync')
+              env:
+                  DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                  TITLE: ${{ steps.record.outputs.title }}
+                  FOLDER: ${{ steps.record.outputs.folder }}
+                  PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+              run: |
+                  if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+                      echo "No DISCORD_WEBHOOK_URL secret, nothing posted."
+                      exit 0
+                  fi
+                  python3 gamedata/scripts/discord_message.py "gamedata/$FOLDER/CHANGES.md" "$TITLE" "$PR_URL" \
+                      "https://github.com/$GITHUB_REPOSITORY/blob/main/$FOLDER/CHANGES.md" > "$RUNNER_TEMP/discord.json"
+                  curl -fsS -H 'Content-Type: application/json' --data-binary @"$RUNNER_TEMP/discord.json" "$DISCORD_WEBHOOK_URL"
