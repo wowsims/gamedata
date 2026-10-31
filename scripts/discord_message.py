@@ -7,7 +7,8 @@ update folder's CHANGES.md, spells.diff and items-changed.diff.
 
 writes <out dir>/1.json, 2.json, ... to post in order, in Discord's markdown. Each class opens with a
 heading and its counts. A spell's ranks collapse into one line ("~ Revenge ×6", linked to the highest
-rank), and each changed field sits below it as subtext with its values: the one value that moved ("effect 3: `10 → 30`"), the
+rank, marked 🟢 added, 🔴 removed or 🟠 changed), and each changed field sits below it, indented as a
+tree, with its values: the one value that moved ("effect 3: `10 → 30`"), the
 whole old and new value of a short field ("sells: `7 silver` → `9 silver`"), or the value of a new or
 removed field ("+ binds: `binds when equipped`"); text fields share one line. A new spell or item shows
 its key values the same way (effects, cost and cooldown; item type, level, stats and effects). Discord caps an embed's
@@ -39,14 +40,16 @@ ADDED_FIELDS = {
 }
 COLORS = {"Patch": 0xE67E22, "Hotfix": 0x3498DB}
 ENTRY = re.compile(r"^- (added|removed|changed) (\d+) (.+?)(?: \(Rank \d+\))?(?: · .+)?$")
-MARKS = {"added": "+", "removed": "−", "changed": "~"}
+# Discord colors no text in an embed outside code blocks, where links stop working, so the kind of
+# change is a colored marker.
+MARKS = {"added": "🟢", "removed": "🔴", "changed": "🟠"}
 TEXT_FIELDS = {"tooltip", "aura", "vars", "text"}
 # Fields a reader learns nothing from: the spells a card names, its label ids, its Wowhead link.
 SKIPPED_FIELDS = {"refs", "labels", "https"}
 TWO_WORD_FIELDS = {("stance", "exclude"), ("caster", "aura")}
-# A detail line is Discord's small grey subtext under its spell or item, drawn as a tree: every line
-# but the last branches off, the last closes it.
-BRANCH, LAST = "-# ├ ", "-# └ "
+# A detail line sits under its spell or item, drawn as a tree: every line but the last branches off,
+# the last closes it. Discord trims leading spaces in an embed, so the indent is an em space.
+BRANCH, LAST = "\u2003├ ", "\u2003└ "
 
 
 def section(name):
@@ -130,6 +133,7 @@ def summary(card, keys):
             lines = None
         if lines:
             value = " · ".join(lines[:2]) if key == "effect" else lines[0]
+            value = re.sub(r" \(at level \d+\)", "", value)
             if len(value) <= WHOLE_LIMIT and not unreadable(value):
                 out.append(f"{key}: `{value}`")
     return out
@@ -151,8 +155,8 @@ def single_move(a, b):
 
 
 def unreadable(value):
-    # Class masks, flags and the row's enum names say nothing in a chat line.
-    return "0x" in value or bool(re.search(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b", value))
+    # Class masks, flags, the row's enum names and the card's "unrecognised shape" say nothing in a chat line.
+    return "0x" in value or "unrecognised shape" in value or bool(re.search(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b", value))
 
 
 def describe(field, old, new):
@@ -172,7 +176,7 @@ def describe(field, old, new):
     if not old or not new:
         sign, value = ("+", new[0]) if new else ("−", old[0])
         return f"{sign} {field}: `{value}`" if len(value) <= WHOLE_LIMIT and not unreadable(value) else f"{sign} {field}"
-    a, b = old[0], new[0]
+    a, b = (re.sub(r" \(at level \d+\)", "", v) for v in (old[0], new[0]))
     if a == b and len(old) > 1 and len(new) > 1:
         a, b = old[1], new[1]
     move = single_move(a, b)
@@ -314,7 +318,7 @@ for n, embeds in enumerate(messages, 1):
                 {"name": "Build", "value": header("Build")[:1024], "inline": True},
                 {"name": "Hotfixes", "value": header("Hotfixes")[:1024], "inline": True},
             ]
-            embed["footer"] = {"text": "+ added   − removed   ~ changed   ×N ranks"}
+            embed["footer"] = {"text": "🟢 added   🔴 removed   🟠 changed   ×N ranks"}
         out.append(embed)
     message = {"username": "WoWSims Game Data", "allowed_mentions": {"parse": []}, "embeds": out}
     with open(os.path.join(out_dir, f"{n}.json"), "w") as f:
