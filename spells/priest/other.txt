@@ -156,10 +156,10 @@ cost      60 mana
 range     20 yd
 attrs     channeled
 
-effect 1  11693.948 shadow damage every 1 s to the target (3 ticks, +0.1 spell power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=11693.948 sp=0.1 period=1000ms target=[25,0]
-effect 2  -50% movement speed to the target
-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[25,0]
+effect 1  11693.948 shadow damage every 1 s to target 38 (3 ticks, +0.1 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11693.948 sp=0.1 period=1000ms target=[38,0]
+effect 2  -50% movement speed to target 38
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[38,0]
 tooltip   Inflicts Shadow damage to an enemy and reduces its movement speed for $d.
 aura      Shadow damage inflicted over $d.
           Reduced movement speed.
@@ -176,6 +176,120 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 6 mask 0x9541e80
 tooltip   Increases the critical effect chance of your Holy spells by $s1%.
 
 https://www.wowhead.com/forever/spell=23236
+=======
+401937 Binding Heal (Rank 1)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      155 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  236–285 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[21,0]
+effect 2  236–285 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=247 ppl=2.2 variance=0.195804 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heals a friendly target and the caster for $s1. Low threat.
+
+https://www.wowhead.com/forever/spell=401937
+=======
+1240770 Binding Heal (Rank 2)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      185 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  295–354 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=312 ppl=2.5 variance=0.183333 sp=0.429 amplitude=1 target=[21,0]
+effect 2  294–352 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=312 ppl=2.2 variance=0.183333 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
+
+https://www.wowhead.com/forever/spell=1240770
+=======
+1240771 Binding Heal (Rank 3)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      215 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  363–431 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[21,0]
+effect 2  363–431 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=383 ppl=2.8 variance=0.177677 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
+
+https://www.wowhead.com/forever/spell=1240771
+=======
+1240772 Binding Heal (Rank 4)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      265 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  479–568 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[21,0]
+effect 2  479–568 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=507 ppl=3.3 variance=0.17284 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
+
+https://www.wowhead.com/forever/spell=1240772
+=======
+1240773 Binding Heal (Rank 5)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      315 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  607–718 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=644.0001 ppl=3.7 variance=0.17045482 sp=0.429 amplitude=1 target=[21,0]
+effect 2  607–718 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=644 ppl=3.7 variance=0.170455 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
+
+https://www.wowhead.com/forever/spell=1240773
+=======
+1240774 Binding Heal (Rank 6)
+school    holy
+defense   magic
+cast      1.5 s
+gcd       1.5 s
+cost      380 mana
+range     40 yd
+stance    Spirit of Redemption
+stance exclude Shadowform
+labels    18
+
+effect 1  773–910 healing to the friendly target (at level 60, +0.429 spell power)
+          E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[21,0]
+effect 2  773–910 healing to the caster (at level 60, +0.429 spell power)
+          E_HEAL base=825 ppl=4.2 variance=0.164972 sp=0.429 amplitude=1 target=[1,0]
+tooltip   Heal yourself and a friendly target for $s1. This causes low threat.
+
+https://www.wowhead.com/forever/spell=1240774
 =======
 402368 Black
 school    shadow

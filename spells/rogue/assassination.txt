@@ -313,18 +313,6 @@ aura      Critical strike chance of your next Sinister Strike, Backstab, Ambush,
 
 https://www.wowhead.com/forever/spell=14177
 =======
-1310709 Coup de Grace
-school    physical
-range     100 yd
-attrs     passive
-labels    20
-
-effect 1  SPELLMOD_EFFECT2 +2 on family 8 mask 0x10000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=12 family=8 mask=0x10000 target=[1,0]
-tooltip   Increases the damage of your Eviscerate ability against targets afflicted with your Deadly Poison by $m1% per application.
-
-https://www.wowhead.com/forever/spell=1310709
-=======
 2098 Eviscerate (Rank 1)
 school    physical
 defense   melee
@@ -1184,7 +1172,7 @@ tooltip   Instantly attacks with both weapons for $<percent>% weapon damage plus
 
 https://www.wowhead.com/forever/spell=1329
 =======
-399956 Mutilate (Rank 2)
+399956 Mutilate (Rank 1)
 school    physical
 defense   melee
 gcd       1 s
@@ -1207,7 +1195,7 @@ tooltip   Instantly attacks with both weapons for $399960s2% weapon damage plus 
 
 https://www.wowhead.com/forever/spell=399956
 =======
-399960 Mutilate (Rank 2)
+399960 Mutilate (Rank 1)
 school    physical
 defense   melee
 range     5 yd
@@ -1215,14 +1203,14 @@ equip     needs a dagger in the main hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +33 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=33 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +44 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=44 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=399960
 =======
-399961 Mutilate (Rank 2)
+399961 Mutilate (Rank 1)
 school    physical
 defense   melee
 range     5 yd
@@ -1230,10 +1218,10 @@ equip     needs a dagger in the off hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +33 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=33 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +44 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=44 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=399961
 =======
@@ -1250,7 +1238,7 @@ tooltip   Gain the Mutilate ability:
 
 https://www.wowhead.com/forever/spell=399962
 =======
-1241582 Mutilate (Rank 3)
+1241582 Mutilate (Rank 2)
 school    physical
 defense   melee
 gcd       1 s
@@ -1273,7 +1261,7 @@ tooltip   Instantly attacks with both weapons for $1241585s2% weapon damage plus
 
 https://www.wowhead.com/forever/spell=1241582
 =======
-1241584 Mutilate (Rank 4)
+1241584 Mutilate (Rank 3)
 school    physical
 defense   melee
 gcd       1 s
@@ -1296,7 +1284,7 @@ tooltip   Instantly attacks with both weapons for $1241586s2% weapon damage plus
 
 https://www.wowhead.com/forever/spell=1241584
 =======
-1241585 Mutilate (Rank 3)
+1241585 Mutilate (Rank 2)
 school    physical
 defense   melee
 range     5 yd
@@ -1304,14 +1292,14 @@ equip     needs a dagger in the main hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +48 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=48 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +63 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=63 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1241585
 =======
-1241586 Mutilate (Rank 4)
+1241586 Mutilate (Rank 3)
 school    physical
 defense   melee
 range     5 yd
@@ -1319,14 +1307,14 @@ equip     needs a dagger in the main hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +67 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=67 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +88 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=88 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1241586
 =======
-1241588 Mutilate (Rank 3)
+1241588 Mutilate (Rank 2)
 school    physical
 defense   melee
 range     5 yd
@@ -1334,14 +1322,14 @@ equip     needs a dagger in the off hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +48 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=48 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +63 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=63 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1241588
 =======
-1241590 Mutilate (Rank 4)
+1241590 Mutilate (Rank 3)
 school    physical
 defense   melee
 range     5 yd
@@ -1349,65 +1337,12 @@ equip     needs a dagger in the off hand
 attrs     not a proc
 labels    20
 
-effect 1  normalised weapon damage +67 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=67 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 1  normalised weapon damage +88 to the enemy
+          E_NORMALIZED_WEAPON_DMG base=88 sp=1 target=[6,0]
+effect 2  90% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=1241590
-=======
-1310705 Mutilate (Rank 1)
-school    physical
-defense   melee
-range     5 yd
-equip     needs a dagger in the off hand
-attrs     not a proc
-labels    20
-
-effect 1  normalised weapon damage +23 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=23 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1310705
-=======
-1310706 Mutilate (Rank 1)
-school    physical
-defense   melee
-range     5 yd
-equip     needs a dagger in the main hand
-attrs     not a proc
-labels    20
-
-effect 1  normalised weapon damage +23 to the enemy
-          E_NORMALIZED_WEAPON_DMG base=23 sp=1 target=[6,0]
-effect 2  75% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
-
-https://www.wowhead.com/forever/spell=1310706
-=======
-1310707 Mutilate (Rank 1)
-school    physical
-defense   melee
-gcd       1 s
-cost      60 energy
-range     5 yd
-equip     needs a dagger in the main hand or off hand
-attrs     refund on miss
-labels    20
-refs      1310706 Mutilate
-
-effect 1  restores 2 combo points to the caster
-          E_ENERGIZE base=2 misc=4 target=[1,0]
-effect 2  casts 1310706 Mutilate to the enemy
-          E_TRIGGER_SPELL base=0 trigger=1310706 target=[6,0]
-effect 3  casts 1310705 Mutilate to the enemy
-          E_TRIGGER_SPELL base=0 trigger=1310705 target=[6,0]
-effect 4  a dummy effect holding 20 to the caster
-          E_DUMMY base=20 target=[1,0]
-tooltip   Instantly attacks with both weapons for $1310706s2% weapon damage plus an additional ${$1310706m1*$1310706m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
-
-https://www.wowhead.com/forever/spell=1310707
 =======
 14179 Relentless Strikes
 school    physical
@@ -1441,12 +1376,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=1943
 =======
@@ -1470,12 +1406,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=8639
 =======
@@ -1499,12 +1436,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=8640
 =======
@@ -1528,12 +1466,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=11273
 =======
@@ -1557,12 +1496,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=11274
 =======
@@ -1586,12 +1526,13 @@ effect 2  a dummy effect to the caster
 effect 3  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
-             1 point  : ${($m1+$b1)*4} damage over 8 secs
-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
+             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
+             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
+             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
+             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
+             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
 aura      $w1 damage every $t1 seconds.
+vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
 
 https://www.wowhead.com/forever/spell=11275
 =======
@@ -1740,31 +1681,31 @@ https://www.wowhead.com/forever/spell=6774
 1310703 Venom
 school    physical
 duration  6 s
-gcd       1 s
-cost      25 energy
-cost      1 combo points
-range     100 yd
-equip     needs a melee weapon
-attrs     refund on miss
 labels    20
 
-effect 1  a dummy effect to the enemy
-          E_DUMMY base=0 sp=1 target=[6,0]
-effect 2  SPELLMOD_DAMAGE +30% on family 8 mask 0x2000,0x8
+effect 1  SPELLMOD_DAMAGE +30% on family 8 mask 0x2000,0x8
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 family=8 mask=0x2000,0x8 target=[1,0]
-effect 3  SPELLMOD_DOT +30% on family 8 mask 0x10000
+effect 2  SPELLMOD_DOT +30% on family 8 mask 0x10000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=8 mask=0x10000 target=[1,0]
-effect 4  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 8 mask 0x1001e000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=8 mask=0x1001e000 target=[1,0]
-tooltip   Finishing move that increases the damage of your Poisons by $m2% and your chance to apply Poisons by $m4%. Lasts longer per combo point:
-             1 point  : 9 sec
-             2 points: 12 sec
-             3 points: 15 sec
-             4 points: 18 sec
-             5 points: 21 sec
-aura      Poison damage increased by $w2% and chance to apply poisons increased by $w4%.
+effect 3  SPELLMOD_CHANCE_OF_SUCCESS +20% on family 8 mask 0x1001e000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=18 family=8 mask=0x1001e000 target=[1,0]
+tooltip   Increases the damage of your Poisons by $m1% and your chance to apply Poisons by $m3%.
+aura      Increases the damage of your Poisons by $w1% and your chance to apply Poisons by $w3%.
 
 https://www.wowhead.com/forever/spell=1310703
+=======
+1329328 Venom
+school    physical
+equip     needs a melee weapon
+attrs     passive
+labels    20
+refs      1310703 Venom
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 trigger=1310703 target=[1,0]
+tooltip   Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
+
+https://www.wowhead.com/forever/spell=1329328
 =======
 14983 Vigor
 school    physical

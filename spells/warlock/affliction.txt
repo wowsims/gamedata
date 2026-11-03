@@ -1710,8 +1710,8 @@ range     30 yd
 attrs     channeled, periodic can crit
 labels    19
 
-effect 1  36 shadow damage every 1 s to the enemy (6 ticks, +0.143 spell power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=36 sp=0.143 period=1000ms amplitude=1 target=[6,0]
+effect 1  86 shadow damage every 1 s to the enemy (6 ticks, at level 60, +0.286 spell power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=36 ppl=2.5 sp=0.286 period=1000ms amplitude=1 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x402 target=[6,0]
 tooltip   Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.

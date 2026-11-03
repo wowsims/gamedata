@@ -261,9 +261,9 @@ labels    25
 
 effect 1  SPELLMOD_RADIUS +50% on family 4 mask 0xf0000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=6 family=4 mask=0xf0000 target=[1,0]
-effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000 target=[1,0]
-tooltip   Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.
+effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000,0x20
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000,0x20 target=[1,0]
+tooltip   Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 https://www.wowhead.com/forever/spell=12321
 =======
@@ -926,6 +926,30 @@ tooltip   Decreases the cooldown of Intimidating Shout by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=24456
 =======
+24431 Improved Whirlwind
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x80000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x80000000 target=[1,0]
+tooltip   Decrease the rage cost of Whirlwind by $/10;s1.
+
+https://www.wowhead.com/forever/spell=24431
+=======
+1310315 Improved Whirlwind
+school    physical
+attrs     passive
+labels    25
+
+effect 1  SPELLMOD_COOLDOWN -2 s on family 4 mask 0x0,0x4
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=4 mask=0x0,0x4 target=[1,0]
+effect 2  a dummy aura holding 30
+          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
+tooltip   Reduces the cooldown of your Whirlwind ability by ${$m1/-1000} sec and increases the damage it deals to the closest enemy by $s2%.
+
+https://www.wowhead.com/forever/spell=1310315
+=======
 20252 Intercept (Rank 1)
 school    physical
 cooldown  30 s (category)
@@ -1236,18 +1260,35 @@ tooltip   A ferocious strike that deals $s1% weapon damage, but can only be used
 
 https://www.wowhead.com/forever/spell=402911
 =======
-1310315 Raging Blows
+1329554 Reckless Swings
 school    physical
-attrs     passive
 labels    25
 
-effect 1  a dummy aura holding 100
-          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
-effect 2  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x400000,0x4
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x400000,0x4 target=[1,0]
-tooltip   Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.
+effect 1  restores 5 rage to the caster
+          E_ENERGIZE base=50 misc=1 target=[1,0]
+effect 2  a dummy effect holding 1 to the caster
+          E_DUMMY base=1 target=[1,0]
+tooltip   ${$s1/10} Rage generated.
 
-https://www.wowhead.com/forever/spell=1310315
+https://www.wowhead.com/forever/spell=1329554
+=======
+1329555 Reckless Swings
+school    physical
+duration  8 s
+cooldown  15 s
+gcd       1 s
+cost      25% of base health
+charges   4
+labels    25
+proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+refs      1329554 Reckless Swings
+
+effect 1  casts 1329554 Reckless Swings on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1329554 target=[1,0]
+tooltip   Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.
+aura      Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.
+
+https://www.wowhead.com/forever/spell=1329555
 =======
 1719 Recklessness
 school    physical
@@ -1290,7 +1331,7 @@ https://www.wowhead.com/forever/spell=13847
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1308,7 +1349,7 @@ https://www.wowhead.com/forever/spell=1464
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1326,7 +1367,7 @@ https://www.wowhead.com/forever/spell=8820
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1344,7 +1385,7 @@ https://www.wowhead.com/forever/spell=11604
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1414,7 +1455,7 @@ https://www.wowhead.com/forever/spell=462897
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1432,7 +1473,7 @@ https://www.wowhead.com/forever/spell=1240193
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1450,7 +1491,7 @@ https://www.wowhead.com/forever/spell=1310196
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1468,7 +1509,7 @@ https://www.wowhead.com/forever/spell=1310197
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1486,7 +1527,7 @@ https://www.wowhead.com/forever/spell=1310198
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd
@@ -1504,7 +1545,7 @@ https://www.wowhead.com/forever/spell=1310199
 school    physical
 defense   melee
 cast      1.5 s
-cooldown  18 s (category)
+cooldown  15 s (category)
 gcd       1.5 s
 cost      15 rage
 range     5 yd

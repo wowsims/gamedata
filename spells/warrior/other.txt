@@ -1185,17 +1185,6 @@ tooltip   Reduces the cooldown of your Inner Rage ability by $/60000;s1 mins.
 
 https://www.wowhead.com/forever/spell=12866
 =======
-24431 Improved Whirlwind
-school    physical
-attrs     passive
-labels    25
-
-effect 1  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x80000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 sp=1 misc=14 family=4 mask=0x80000000 target=[1,0]
-tooltip   Decrease the rage cost of Whirlwind by $/10;s1.
-
-https://www.wowhead.com/forever/spell=24431
-=======
 18328 Incapacitating Shout
 school    physical
 mechanic  mechanic 11

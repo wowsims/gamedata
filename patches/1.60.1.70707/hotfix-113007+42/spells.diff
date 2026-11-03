@@ -1,0 +1,1774 @@
+# druid
+--- 1328827 Poised
++++ 1328827 Poised
+@@ -0,0 +1,14 @@
++1328827 Poised
++school    physical
++duration  permanent
++charges   1
++attrs     can proc from procs
++labels    21
++proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
++
++effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 7 mask 0x839000,0x20000000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=7 mask=0x839000,0x20000000 target=[1,0]
++tooltip   Energy cost of the next ability performed is reduced by $s1.
++aura      Energy cost of the next ability performed is reduced by $s1.
++
++https://www.wowhead.com/forever/spell=1328827
+# mage
+--- 400588 Missile Barrage
++++ 400588 Missile Barrage
+@@ -1,14 +1,14 @@
+ 400588 Missile Barrage
+ school    physical
+ attrs     passive
+ labels    17
+ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 40% chance, from effect 1; tooltip says one named ability
+ refs      400589 Missile Barrage
+ 
+ effect 1  casts 400589 Missile Barrage on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=400589 target=[1,0]
+ effect 2  a dummy aura holding 5
+           E_APPLY_AURA A_DUMMY base=5 trigger=400589 target=[1,0]
+-tooltip   Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
++tooltip   Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
+ 
+ https://www.wowhead.com/forever/spell=400588
+# priest
+--- 27640 Baron Rivendare's Soul Drain
++++ 27640 Baron Rivendare's Soul Drain
+@@ -1,18 +1,18 @@
+ 27640 Baron Rivendare's Soul Drain
+ school    shadow
+ defense   magic
+ mechanic  mechanic 11
+ duration  3 s
+ cost      60 mana
+ range     20 yd
+ attrs     channeled
+ 
+-effect 1  11693.948 shadow damage every 1 s to the target (3 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=11693.948 sp=0.1 period=1000ms target=[25,0]
+-effect 2  -50% movement speed to the target
+-          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[25,0]
++effect 1  11693.948 shadow damage every 1 s to target 38 (3 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=11693.948 sp=0.1 period=1000ms target=[38,0]
++effect 2  -50% movement speed to target 38
++          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 target=[38,0]
+ tooltip   Inflicts Shadow damage to an enemy and reduces its movement speed for $d.
+ aura      Shadow damage inflicted over $d.
+           Reduced movement speed.
+ 
+ https://www.wowhead.com/forever/spell=27640
+# rogue
+--- 1329328 Venom
++++ 1329328 Venom
+@@ -0,0 +1,12 @@
++1329328 Venom
++school    physical
++equip     needs a melee weapon
++attrs     passive
++labels    20
++refs      1310703 Venom
++
++effect 1  a dummy aura holding 100
++          E_APPLY_AURA A_DUMMY base=100 sp=1 trigger=1310703 target=[1,0]
++tooltip   Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
++
++https://www.wowhead.com/forever/spell=1329328
+--- 1329283 Shank
++++ 1329283 Shank
+@@ -0,0 +1,20 @@
++1329283 Shank
++school    physical
++defense   melee
++cooldown  10 s
++gcd       1 s
++cost      5 energy
++range     5 yd
++equip     needs a melee weapon in the off hand
++attrs     refund on miss, suppresses weapon procs
++refs      1310703 Venom, 1329286 Boot Knife
++
++effect 1  50% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
++effect 2  restores 15 energy to the caster
++          E_ENERGIZE base=15 misc=3 target=[1,0]
++effect 3  restores 0 combo points to the caster
++          E_ENERGIZE base=0 misc=4 target=[1,0]
++tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
++
++https://www.wowhead.com/forever/spell=1329283
+--- 1329549 Shank
++++ 1329549 Shank
+@@ -0,0 +1,20 @@
++1329549 Shank
++school    physical
++defense   melee
++cooldown  10 s
++gcd       1 s
++cost      5 energy
++range     5 yd
++equip     needs a melee weapon in the off hand
++attrs     refund on miss, suppresses weapon procs
++refs      1310703 Venom, 1329286 Boot Knife
++
++effect 1  50% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
++effect 2  restores 25 energy to the caster
++          E_ENERGIZE base=25 misc=3 target=[1,0]
++effect 3  restores 0 combo points to the caster
++          E_ENERGIZE base=0 misc=4 target=[1,0]
++tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
++
++https://www.wowhead.com/forever/spell=1329549
+--- 1329256 Blood Splatter
++++ 1329256 Blood Splatter
+@@ -0,0 +1,12 @@
++1329256 Blood Splatter
++school    physical
++attrs     passive
++labels    20
++
++effect 1  SPELLMOD_DURATION +6 s on family 8 mask 0x100000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 sp=1 misc=1 family=8 mask=0x100000 target=[1,0]
++effect 2  SPELLMOD_DURATION +9 s on family 8 mask 0x100
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=8 mask=0x100 target=[1,0]
++tooltip   Increases the duration of your Rupture ability by ${$s1/1000} sec and your Garrote ability by ${$s2/1000} sec.
++
++https://www.wowhead.com/forever/spell=1329256
+--- 1329286 Boot Knife
++++ 1329286 Boot Knife
+@@ -0,0 +1,12 @@
++1329286 Boot Knife
++school    physical
++attrs     passive
++labels    20
++
++effect 1  a dummy aura holding 100
++          E_APPLY_AURA A_DUMMY base=100 sp=1 trigger=1329285 target=[1,0]
++effect 2  a dummy aura holding 2
++          E_APPLY_AURA A_DUMMY base=2 sp=1 trigger=1329285 target=[1,0]
++tooltip   Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
++
++https://www.wowhead.com/forever/spell=1329286
+--- 1329265 Composure
++++ 1329265 Composure
+@@ -0,0 +1,10 @@
++1329265 Composure
++school    physical
++attrs     passive
++labels    20
++
++effect 1  SPELLMOD_EFFECT1 +0 on family 8 mask 0x0,0x10
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=3 family=8 mask=0x0,0x10 target=[1,0]
++tooltip   Increases the Energy cost reduction of your Poised ability by $s1.
++
++https://www.wowhead.com/forever/spell=1329265
+--- 1329552 Counterspell - Silenced
++++ 1329552 Counterspell - Silenced
+@@ -0,0 +1,14 @@
++1329552 Counterspell - Silenced
++school    arcane
++defense   magic
++mechanic  mechanic 9
++duration  2 s
++range     50000 yd
++stance    Shadowform
++labels    17
++
++effect 1  silences to the enemy
++          E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]
++aura      Silenced.
++
++https://www.wowhead.com/forever/spell=1329552
+--- 1329284 Flash of Steel
++++ 1329284 Flash of Steel
+@@ -0,0 +1,12 @@
++1329284 Flash of Steel
++school    physical
++attrs     passive
++labels    20
++
++effect 1  SPELLMOD_EFFECT2 +15 on family 8 mask 0x20000000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=12 family=8 mask=0x20000000 target=[1,0]
++effect 2  SPELLMOD_COOLDOWN -2.5 s on family 8 mask 0x20000000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2500 sp=1 misc=11 family=8 mask=0x20000000 target=[1,0]
++tooltip   Increases the Energy generated by your Shank ability by $s1 and reduces its cooldown by ${$s2/-1000}.1 sec.
++
++https://www.wowhead.com/forever/spell=1329284
+--- 1329326 Ghostly Strike
++++ 1329326 Ghostly Strike
+@@ -0,0 +1,15 @@
++1329326 Ghostly Strike
++school    physical
++defense   melee
++duration  7 s
++equip     needs a melee weapon
++charges   1
++labels    20
++proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; no roll, it fires whenever its condition is met
++
++effect 1  unrecognised shape
++          E_APPLY_AREA_AURA_PARTY A_MOD_IGNORE_SHAPESHIFT base=0 sp=1 family=8 mask=0x300 target=[1,0]
++tooltip   Next Ambush or Garrote does not require Stealth.
++aura      Next Ambush or Garrote does not require Stealth.
++
++https://www.wowhead.com/forever/spell=1329326
+--- 1328825 Poised (Passive)
++++ 1328825 Poised (Passive)
+@@ -0,0 +1,11 @@
++1328825 Poised (Passive)
++school    physical
++attrs     passive
++labels    20
++refs      1328826 Poised
++
++effect 1  a dummy aura holding 10
++          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
++tooltip   While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
++
++https://www.wowhead.com/forever/spell=1328825
+--- 1328826 Poised
++++ 1328826 Poised
+@@ -0,0 +1,14 @@
++1328826 Poised
++school    physical
++duration  permanent
++charges   1
++attrs     can proc from procs
++labels    20
++proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
++
++effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0xf3e179e,0x200900,0x4000000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0xf3e179e,0x200900,0x4000000 target=[1,0]
++tooltip   Energy cost of the next ability performed is reduced by $s1.
++aura      Energy cost of the next ability performed is reduced by $s1.
++
++https://www.wowhead.com/forever/spell=1328826
+--- 1329282 Quick Getaway
++++ 1329282 Quick Getaway
+@@ -0,0 +1,11 @@
++1329282 Quick Getaway
++school    physical
++duration  3 s
++labels    20
++
++effect 1  +0% movement speed
++          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 target=[1,0]
++tooltip   Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
++aura      Movement speed increased by $w1%.
++
++https://www.wowhead.com/forever/spell=1329282
+--- 1310709 Coup de Grace
++++ 1310709 Coup de Grace
+@@ -1,11 +0,0 @@
+-1310709 Coup de Grace
+-school    physical
+-range     100 yd
+-attrs     passive
+-labels    20
+-
+-effect 1  SPELLMOD_EFFECT2 +2 on family 8 mask 0x10000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=12 family=8 mask=0x10000 target=[1,0]
+-tooltip   Increases the damage of your Eviscerate ability against targets afflicted with your Deadly Poison by $m1% per application.
+-
+-https://www.wowhead.com/forever/spell=1310709
+--- 1310705 Mutilate (Rank 1)
++++ 1310705 Mutilate (Rank 1)
+@@ -1,14 +0,0 @@
+-1310705 Mutilate (Rank 1)
+-school    physical
+-defense   melee
+-range     5 yd
+-equip     needs a dagger in the off hand
+-attrs     not a proc
+-labels    20
+-
+-effect 1  normalised weapon damage +23 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=23 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+-
+-https://www.wowhead.com/forever/spell=1310705
+--- 1310706 Mutilate (Rank 1)
++++ 1310706 Mutilate (Rank 1)
+@@ -1,14 +0,0 @@
+-1310706 Mutilate (Rank 1)
+-school    physical
+-defense   melee
+-range     5 yd
+-equip     needs a dagger in the main hand
+-attrs     not a proc
+-labels    20
+-
+-effect 1  normalised weapon damage +23 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=23 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+-
+-https://www.wowhead.com/forever/spell=1310706
+--- 1310707 Mutilate (Rank 1)
++++ 1310707 Mutilate (Rank 1)
+@@ -1,22 +0,0 @@
+-1310707 Mutilate (Rank 1)
+-school    physical
+-defense   melee
+-gcd       1 s
+-cost      60 energy
+-range     5 yd
+-equip     needs a dagger in the main hand or off hand
+-attrs     refund on miss
+-labels    20
+-refs      1310706 Mutilate
+-
+-effect 1  restores 2 combo points to the caster
+-          E_ENERGIZE base=2 misc=4 target=[1,0]
+-effect 2  casts 1310706 Mutilate to the enemy
+-          E_TRIGGER_SPELL base=0 trigger=1310706 target=[6,0]
+-effect 3  casts 1310705 Mutilate to the enemy
+-          E_TRIGGER_SPELL base=0 trigger=1310705 target=[6,0]
+-effect 4  a dummy effect holding 20 to the caster
+-          E_DUMMY base=20 target=[1,0]
+-tooltip   Instantly attacks with both weapons for $1310706s2% weapon damage plus an additional ${$1310706m1*$1310706m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+-
+-https://www.wowhead.com/forever/spell=1310707
+--- 399956 Mutilate (Rank 1)
++++ 399956 Mutilate (Rank 1)
+@@ -1,21 +1,21 @@
+-399956 Mutilate (Rank 2)
++399956 Mutilate (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+ attrs     refund on miss
+ labels    20
+ refs      399960 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 399960 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=399960 target=[6,0]
+ effect 3  casts 399961 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=399961 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $399960s2% weapon damage plus an additional ${$399960m1*$399960m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+--- 399960 Mutilate (Rank 1)
++++ 399960 Mutilate (Rank 1)
+@@ -1,14 +1,14 @@
+-399960 Mutilate (Rank 2)
++399960 Mutilate (Rank 1)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the main hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +33 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=33 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +44 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=44 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=399960
+--- 399961 Mutilate (Rank 1)
++++ 399961 Mutilate (Rank 1)
+@@ -1,14 +1,14 @@
+-399961 Mutilate (Rank 2)
++399961 Mutilate (Rank 1)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the off hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +33 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=33 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +44 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=44 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=399961
+--- 1241582 Mutilate (Rank 2)
++++ 1241582 Mutilate (Rank 2)
+@@ -1,21 +1,21 @@
+-1241582 Mutilate (Rank 3)
++1241582 Mutilate (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+ attrs     refund on miss
+ labels    20
+ refs      1241585 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 1241585 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241585 target=[6,0]
+ effect 3  casts 1241588 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241588 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+--- 1241584 Mutilate (Rank 3)
++++ 1241584 Mutilate (Rank 3)
+@@ -1,21 +1,21 @@
+-1241584 Mutilate (Rank 4)
++1241584 Mutilate (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+ attrs     refund on miss
+ labels    20
+ refs      1241586 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 1241586 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241586 target=[6,0]
+ effect 3  casts 1241590 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241590 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $1241586s2% weapon damage plus an additional ${$1241586m1*$1241586m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+--- 1241585 Mutilate (Rank 2)
++++ 1241585 Mutilate (Rank 2)
+@@ -1,14 +1,14 @@
+-1241585 Mutilate (Rank 3)
++1241585 Mutilate (Rank 2)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the main hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +48 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=48 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +63 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=63 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1241585
+--- 1241586 Mutilate (Rank 3)
++++ 1241586 Mutilate (Rank 3)
+@@ -1,14 +1,14 @@
+-1241586 Mutilate (Rank 4)
++1241586 Mutilate (Rank 3)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the main hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +67 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=67 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +88 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=88 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1241586
+--- 1241588 Mutilate (Rank 2)
++++ 1241588 Mutilate (Rank 2)
+@@ -1,14 +1,14 @@
+-1241588 Mutilate (Rank 3)
++1241588 Mutilate (Rank 2)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the off hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +48 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=48 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +63 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=63 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1241588
+--- 1241590 Mutilate (Rank 3)
++++ 1241590 Mutilate (Rank 3)
+@@ -1,14 +1,14 @@
+-1241590 Mutilate (Rank 4)
++1241590 Mutilate (Rank 3)
+ school    physical
+ defense   melee
+ range     5 yd
+ equip     needs a dagger in the off hand
+ attrs     not a proc
+ labels    20
+ 
+-effect 1  normalised weapon damage +67 to the enemy
+-          E_NORMALIZED_WEAPON_DMG base=67 sp=1 target=[6,0]
+-effect 2  75% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 1  normalised weapon damage +88 to the enemy
++          E_NORMALIZED_WEAPON_DMG base=88 sp=1 target=[6,0]
++effect 2  90% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=90 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=1241590
+--- 1943 Rupture (Rank 1)
++++ 1943 Rupture (Rank 1)
+@@ -1,28 +1,29 @@
+ 1943 Rupture (Rank 1)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  5 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=2000ms perResource=1.18 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=1943
+--- 8639 Rupture (Rank 2)
++++ 8639 Rupture (Rank 2)
+@@ -1,28 +1,29 @@
+ 8639 Rupture (Rank 2)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  7 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 period=2000ms perResource=1.78 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=8639
+--- 8640 Rupture (Rank 3)
++++ 8640 Rupture (Rank 3)
+@@ -1,28 +1,29 @@
+ 8640 Rupture (Rank 3)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  11 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=2000ms perResource=2.37 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=8640
+--- 11273 Rupture (Rank 4)
++++ 11273 Rupture (Rank 4)
+@@ -1,28 +1,29 @@
+ 11273 Rupture (Rank 4)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  16 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=16 period=2000ms perResource=2.96 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=11273
+--- 11274 Rupture (Rank 5)
++++ 11274 Rupture (Rank 5)
+@@ -1,28 +1,29 @@
+ 11274 Rupture (Rank 5)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  22 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=22 period=2000ms perResource=4.14 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=11274
+--- 11275 Rupture (Rank 6)
++++ 11275 Rupture (Rank 6)
+@@ -1,28 +1,29 @@
+ 11275 Rupture (Rank 6)
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  6 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss, periodic can crit
+ labels    20
+ 
+ effect 1  35 physical damage every 2 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=35 period=2000ms perResource=4.73 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
+-             1 point  : ${($m1+$b1)*4} damage over 8 secs
+-             2 points: ${($m1+$b1*2)*5} damage over 10 secs
+-             3 points: ${($m1+$b1*3)*6} damage over 12 secs
+-             4 points: ${($m1+$b1*4)*7} damage over 14 secs
+-             5 points: ${($m1+$b1*5)*8} damage over 16 secs
++             1 point  : ${($m1+$b1)*(4+$<bloodS>/2)} damage over ${(8+$<bloodS>)} secs
++             2 points: ${($m1+$b1*2)*(5+$<bloodS>/2)} damage over ${(10+$<bloodS>)} secs
++             3 points: ${($m1+$b1*3)*(6+$<bloodS>/2)} damage over ${(12+$<bloodS>)} secs
++             4 points: ${($m1+$b1*4)*(7+$<bloodS>/2)} damage over ${(14+$<bloodS>)} secs
++             5 points: ${($m1+$b1*5)*(8+$<bloodS>/2)} damage over ${(16+$<bloodS>)} secs
+ aura      $w1 damage every $t1 seconds.
++vars      $bloodS=$?s1329256[${$1329256m1/1000}][${0}]
+ 
+ https://www.wowhead.com/forever/spell=11275
+--- 1310703 Venom
++++ 1310703 Venom
+@@ -1,28 +1,15 @@
+ 1310703 Venom
+ school    physical
+ duration  6 s
+-gcd       1 s
+-cost      25 energy
+-cost      1 combo points
+-range     100 yd
+-equip     needs a melee weapon
+-attrs     refund on miss
+ labels    20
+ 
+-effect 1  a dummy effect to the enemy
+-          E_DUMMY base=0 sp=1 target=[6,0]
+-effect 2  SPELLMOD_DAMAGE +30% on family 8 mask 0x2000,0x8
++effect 1  SPELLMOD_DAMAGE +30% on family 8 mask 0x2000,0x8
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 family=8 mask=0x2000,0x8 target=[1,0]
+-effect 3  SPELLMOD_DOT +30% on family 8 mask 0x10000
++effect 2  SPELLMOD_DOT +30% on family 8 mask 0x10000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=30 sp=1 misc=22 family=8 mask=0x10000 target=[1,0]
+-effect 4  SPELLMOD_CHANCE_OF_SUCCESS +10% on family 8 mask 0x1001e000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=10 misc=18 family=8 mask=0x1001e000 target=[1,0]
+-tooltip   Finishing move that increases the damage of your Poisons by $m2% and your chance to apply Poisons by $m4%. Lasts longer per combo point:
+-             1 point  : 9 sec
+-             2 points: 12 sec
+-             3 points: 15 sec
+-             4 points: 18 sec
+-             5 points: 21 sec
+-aura      Poison damage increased by $w2% and chance to apply poisons increased by $w4%.
++effect 3  SPELLMOD_CHANCE_OF_SUCCESS +20% on family 8 mask 0x1001e000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=18 family=8 mask=0x1001e000 target=[1,0]
++tooltip   Increases the damage of your Poisons by $m1% and your chance to apply Poisons by $m3%.
++aura      Increases the damage of your Poisons by $w1% and your chance to apply Poisons by $w3%.
+ 
+ https://www.wowhead.com/forever/spell=1310703
+--- 18427 Aggression
++++ 18427 Aggression
+@@ -1,10 +1,10 @@
+ 18427 Aggression
+ school    physical
+ attrs     passive
+ labels    20
+ 
+-effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20006
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20006 target=[1,0]
+-tooltip   Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by $s1%.
++effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20002
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20002 target=[1,0]
++tooltip   Increases the damage of your Sinister Strike and Eviscerate abilities by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=18427
+--- 14162 Coup de Grace
++++ 14162 Coup de Grace
+@@ -1,10 +1,12 @@
+-14162 Improved Eviscerate
++14162 Coup de Grace
+ school    physical
+ attrs     passive
+ labels    20
+ 
+ effect 1  SPELLMOD_DAMAGE +20% on family 8 mask 0x20000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x20000 target=[1,0]
+-tooltip   Increases the damage done by your Eviscerate ability by $m1%.
++effect 2  SPELLMOD_DAMAGE +20% on family 8 mask 0x0,0x0,0x4
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x0,0x0,0x4 target=[1,0]
++tooltip   Increases the damage done by your Eviscerate ability by $m1%, and the damage and storage rate of your Death Mark ability by $m2%.
+ 
+ https://www.wowhead.com/forever/spell=14162
+--- 13732 Efficient Strikes
++++ 13732 Efficient Strikes
+@@ -1,10 +1,10 @@
+-13732 Improved Sinister Strike
++13732 Efficient Strikes
+ school    physical
+ attrs     passive
+ labels    20
+ 
+-effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2 target=[1,0]
+-tooltip   Reduces the Energy cost of your Sinister Strike ability by $s1.
++effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2000002
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2000002 target=[1,0]
++tooltip   Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by $s1.
+ 
+ https://www.wowhead.com/forever/spell=13732
+--- 1310711 Flawless Execution
++++ 1310711 Flawless Execution
+@@ -1,10 +1,10 @@
+ 1310711 Flawless Execution
+ school    physical
+ attrs     passive
+ labels    20
+ 
+-effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0x20000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
++effect 1  SPELLMOD_COST -15 (-1.5 on a rage bar) on family 8 mask 0x20000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
+ tooltip   Reduces the Energy cost of your Eviscerate ability by $m1.
+ 
+ https://www.wowhead.com/forever/spell=1310711
+--- 11356 Deadly Poison IV (Rank 4)
++++ 11356 Deadly Poison IV (Rank 4)
+@@ -1,17 +1,17 @@
+ 11356 Deadly Poison IV (Rank 4)
+ school    physical
+ cast      3 s
+ equip     needs a melee weapon
+ labels    20
+ refs      11354 Deadly Poison IV
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=627 target=[0,0]
+ effect 2  a dummy effect
+           E_DUMMY base=0 target=[0,0]
+-effect 3  a dummy effect holding 160
+-          E_DUMMY base=160 target=[0,0]
++effect 3  a dummy effect holding 240
++          E_DUMMY base=240 target=[0,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
+           Each strike has a $h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=11356
+--- 11358 Deadly Poison IV (Rank 4)
++++ 11358 Deadly Poison IV (Rank 4)
+@@ -1,15 +1,15 @@
+ 11358 Deadly Poison IV (Rank 4)
+ school    physical
+ cast      3 s
+ refs      11356 Deadly Poison IV, 11354 Deadly Poison IV
+ 
+ effect 1  creates item 0 to the caster
+           E_CREATE_ITEM base=1 target=[1,0]
+ effect 2  a dummy effect holding 1800 to the caster
+           E_DUMMY base=1800 target=[1,0]
+-effect 3  a dummy effect holding 160 to the caster
+-          E_DUMMY base=160 target=[1,0]
++effect 3  a dummy effect holding 240 to the caster
++          E_DUMMY base=240 target=[1,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
+           Each strike has a $11356h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=11358
+--- 25347 Deadly Poison V (Rank 5)
++++ 25347 Deadly Poison V (Rank 5)
+@@ -1,15 +1,15 @@
+ 25347 Deadly Poison V (Rank 5)
+ school    physical
+ cast      3 s
+ refs      11356 Deadly Poison IV, 25349 Deadly Poison V
+ 
+ effect 1  creates item 0 to the caster
+           E_CREATE_ITEM base=1 target=[1,0]
+ effect 2  a dummy effect holding 1800 to the caster
+           E_DUMMY base=1800 target=[1,0]
+-effect 3  a dummy effect holding 180 to the caster
+-          E_DUMMY base=180 target=[1,0]
++effect 3  a dummy effect holding 240 to the caster
++          E_DUMMY base=240 target=[1,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
+           Each strike has a $11356h% chance of poisoning the enemy for $25349o1 Nature damage over $25349d.  Stacks up to $25349u times on a single target.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=25347
+--- 25351 Deadly Poison V (Rank 5)
++++ 25351 Deadly Poison V (Rank 5)
+@@ -1,17 +1,17 @@
+ 25351 Deadly Poison V (Rank 5)
+ school    physical
+ cast      3 s
+ equip     needs a melee weapon
+ labels    20
+ refs      25349 Deadly Poison V
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=2630 target=[0,0]
+ effect 2  a dummy effect
+           E_DUMMY base=0 target=[0,0]
+-effect 3  a dummy effect holding 180
+-          E_DUMMY base=180 target=[0,0]
++effect 3  a dummy effect holding 240
++          E_DUMMY base=240 target=[0,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
+           Each strike has a $h% chance of poisoning the enemy for $25349o1 Nature damage over $25349d.  Stacks up to $25349u times on a single target.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=25351
+--- 11340 Instant Poison VI (Rank 6)
++++ 11340 Instant Poison VI (Rank 6)
+@@ -1,15 +1,15 @@
+ 11340 Instant Poison VI (Rank 6)
+ school    physical
+ cast      3 s
+ equip     needs a melee weapon
+ labels    20
+ refs      11337 Instant Poison VI
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=625 target=[0,0]
+-effect 2  a dummy effect holding 175
+-          E_DUMMY base=175 target=[0,0]
++effect 2  a dummy effect holding 250
++          E_DUMMY base=250 target=[0,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
+           Each strike has a $h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m2 charges.
+ 
+ https://www.wowhead.com/forever/spell=11340
+--- 11343 Instant Poison VI (Rank 6)
++++ 11343 Instant Poison VI (Rank 6)
+@@ -1,15 +1,15 @@
+ 11343 Instant Poison VI (Rank 6)
+ school    physical
+ cast      3 s
+ refs      11340 Instant Poison VI, 11337 Instant Poison VI
+ 
+ effect 1  creates item 0 to the caster
+           E_CREATE_ITEM base=1 target=[1,0]
+ effect 2  a dummy effect holding 1800 to the caster
+           E_DUMMY base=1800 target=[1,0]
+-effect 3  a dummy effect holding 175 to the caster
+-          E_DUMMY base=175 target=[1,0]
++effect 3  a dummy effect holding 250 to the caster
++          E_DUMMY base=250 target=[1,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
+           Each strike has a $11340h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=11343
+--- 11399 Mind-numbing Poison III (Rank 3)
++++ 11399 Mind-numbing Poison III (Rank 3)
+@@ -1,15 +1,15 @@
+ 11399 Mind-numbing Poison III (Rank 3)
+ school    physical
+ cast      3 s
+ equip     needs a melee weapon
+ labels    20
+ refs      11398 Mind-numbing Poison III
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=643 target=[0,0]
+-effect 2  a dummy effect holding 150
+-          E_DUMMY base=150 target=[0,0]
++effect 2  a dummy effect holding 225
++          E_DUMMY base=225 target=[0,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
+           Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m2 charges.
+ 
+ https://www.wowhead.com/forever/spell=11399
+--- 11400 Mind-numbing Poison III (Rank 3)
++++ 11400 Mind-numbing Poison III (Rank 3)
+@@ -1,15 +1,15 @@
+ 11400 Mind-numbing Poison III (Rank 3)
+ school    physical
+ cast      3 s
+ refs      11399 Mind-numbing Poison III, 11398 Mind-numbing Poison III
+ 
+ effect 1  creates item 0 to the caster
+           E_CREATE_ITEM base=1 target=[1,0]
+ effect 2  a dummy effect holding 1800 to the caster
+           E_DUMMY base=1800 target=[1,0]
+-effect 3  a dummy effect holding 150 to the caster
+-          E_DUMMY base=150 target=[1,0]
++effect 3  a dummy effect holding 225 to the caster
++          E_DUMMY base=225 target=[1,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
+           Each strike has a $11399h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=11400
+--- 13227 Wound Poison (Rank 4)
++++ 13227 Wound Poison (Rank 4)
+@@ -1,15 +1,15 @@
+ 13227 Wound Poison (Rank 4)
+ school    physical
+ cast      3 s
+ equip     needs a melee weapon
+ labels    20
+ refs      13224 Wound Poison
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=706 target=[0,0]
+-effect 2  a dummy effect holding 160
+-          E_DUMMY base=160 target=[0,0]
++effect 2  a dummy effect holding 240
++          E_DUMMY base=240 target=[0,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
+           Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m2 charges.
+ 
+ https://www.wowhead.com/forever/spell=13227
+--- 13230 Wound Poison IV (Rank 4)
++++ 13230 Wound Poison IV (Rank 4)
+@@ -1,15 +1,15 @@
+ 13230 Wound Poison IV (Rank 4)
+ school    physical
+ cast      3 s
+ refs      13227 Wound Poison, 13224 Wound Poison
+ 
+ effect 1  creates item 0 to the caster
+           E_CREATE_ITEM base=1 target=[1,0]
+ effect 2  a dummy effect holding 1800 to the caster
+           E_DUMMY base=1800 target=[1,0]
+-effect 3  a dummy effect holding 160 to the caster
+-          E_DUMMY base=160 target=[1,0]
++effect 3  a dummy effect holding 240 to the caster
++          E_DUMMY base=240 target=[1,0]
+ tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
+           Each strike has a $13227h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m3 charges.
+ 
+ https://www.wowhead.com/forever/spell=13230
+--- 1316709 Death Mark (Rank 1)
++++ 1316709 Death Mark (Rank 1)
+@@ -1,29 +1,30 @@
+ 1316709 Death Mark (Rank 1)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  10 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+-range     25 yd
++range     20 yd
+ attrs     refund on miss, cannot crit, suppresses weapon procs
+ labels    20
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+ effect 2  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+-             1 point  : ${1*$<ratio>}% stored, ${63+(1*102)+1*$<maxAP>*$<attackP>} cap before critical strike.
+-             2 points: ${2*$<ratio>}% stored, ${63+(2*102)+2*$<maxAP>*$<attackP>} damage cap.
+-             3 points: ${3*$<ratio>}% stored, ${63+(3*102)+3*$<maxAP>*$<attackP>} damage cap.
+-             4 points: ${4*$<ratio>}% stored, ${63+(4*102)+4*$<maxAP>*$<attackP>} damage cap.
+-             5 points: ${5*$<ratio>}% stored, ${63+(5*102)+5*$<maxAP>*$<attackP>} damage cap.
++tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
++             1 point  : ${1*$<ratio>}% stored, ${((63+(1*102)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             2 points: ${2*$<ratio>}% stored, ${((63+(2*102)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             3 points: ${3*$<ratio>}% stored, ${((63+(3*102)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             4 points: ${4*$<ratio>}% stored, ${((63+(4*102)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             5 points: ${5*$<ratio>}% stored, ${((63+(5*102)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+ aura      Marked for Death. Taking $w1 damage after $d.
+ vars      $ratio=${12}
+           $maxAP=${0.04}
+           $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
++          $coup=$?s14162[${$14162s1/100+1}][${1}]
+ 
+ https://www.wowhead.com/forever/spell=1316709
+--- 1325756 Death Mark (Rank 2)
++++ 1325756 Death Mark (Rank 2)
+@@ -1,29 +1,30 @@
+ 1325756 Death Mark (Rank 2)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  10 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+-range     25 yd
++range     20 yd
+ attrs     refund on miss, cannot crit, suppresses weapon procs
+ labels    20
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+ effect 2  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power:
+-             1 point  : ${1*$<ratio>}% of damage stored, ${1*$<maxAP>}% Attack Power max.
+-             2 points: ${2*$<ratio>}% of damage stored, ${2*$<maxAP>}% of Attack Power max.
+-             3 points: ${3*$<ratio>}% of damage stored, ${3*$<maxAP>}% of Attack Power max.
+-             4 points: ${4*$<ratio>}% of damage stored, ${4*$<maxAP>}% of Attack Power max.
+-             5 points: ${5*$<ratio>}% of damage stored, ${5*$<maxAP>}% of Attack Power max.
++tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
++             1 point  : ${1*$<ratio>}% stored, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             2 points: ${2*$<ratio>}% stored, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             3 points: ${3*$<ratio>}% stored, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             4 points: ${4*$<ratio>}% stored, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             5 points: ${5*$<ratio>}% stored, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+ aura      Marked for Death. Taking $w1 damage after $d.
+ vars      $ratio=${12}
+           $maxAP=${0.04}
+           $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
++          $coup=$?s14162[${$14162s1/100+1}][${1}]
+ 
+ https://www.wowhead.com/forever/spell=1325756
+--- 1325757 Death Mark (Rank 3)
++++ 1325757 Death Mark (Rank 3)
+@@ -1,29 +1,30 @@
+ 1325757 Death Mark (Rank 3)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  10 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+-range     25 yd
++range     20 yd
+ attrs     refund on miss, cannot crit, suppresses weapon procs
+ labels    20
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+ effect 2  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power:
+-             1 point  : ${1*$<ratio>}% of damage stored, ${1*$<maxAP>}% Attack Power max.
+-             2 points: ${2*$<ratio>}% of damage stored, ${2*$<maxAP>}% of Attack Power max.
+-             3 points: ${3*$<ratio>}% of damage stored, ${3*$<maxAP>}% of Attack Power max.
+-             4 points: ${4*$<ratio>}% of damage stored, ${4*$<maxAP>}% of Attack Power max.
+-             5 points: ${5*$<ratio>}% of damage stored, ${5*$<maxAP>}% of Attack Power max.
++tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
++             1 point  : ${1*$<ratio>}% stored, ${((138+(1*217)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             2 points: ${2*$<ratio>}% stored, ${((138+(2*217)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             3 points: ${3*$<ratio>}% stored, ${((138+(3*217)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             4 points: ${4*$<ratio>}% stored, ${((138+(4*217)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             5 points: ${5*$<ratio>}% stored, ${((138+(5*217)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+ aura      Marked for Death. Taking $w1 damage after $d.
+ vars      $ratio=${12}
+           $maxAP=${0.04}
+           $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
++          $coup=$?s14162[${$14162s1/100+1}][${1}]
+ 
+ https://www.wowhead.com/forever/spell=1325757
+--- 1325758 Death Mark (Rank 4)
++++ 1325758 Death Mark (Rank 4)
+@@ -1,29 +1,30 @@
+ 1325758 Death Mark (Rank 4)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  10 s
+ gcd       1 s
+ cost      25 energy
+ cost      1 combo points
+-range     25 yd
++range     20 yd
+ attrs     refund on miss, cannot crit, suppresses weapon procs
+ labels    20
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+ effect 2  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+-             1 point  : ${1*$<ratio>}% stored, ${156+(1*245)+1*$<maxAP>*$<attackP>} damage cap.
+-             2 points: ${2*$<ratio>}% stored, ${156+(2*245)+2*$<maxAP>*$<attackP>} damage cap.
+-             3 points: ${3*$<ratio>}% stored, ${156+(3*245)+3*$<maxAP>*$<attackP>} damage cap.
+-             4 points: ${4*$<ratio>}% stored, ${156+(4*245)+4*$<maxAP>*$<attackP>} damage cap.
+-             5 points: ${5*$<ratio>}% stored, ${156+(5*245)+5*$<maxAP>*$<attackP>} damage cap.
++tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
++             1 point  : ${1*$<ratio>}% stored, ${((156+(1*245)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             2 points: ${2*$<ratio>}% stored, ${((156+(2*245)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             3 points: ${3*$<ratio>}% stored, ${((156+(3*245)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             4 points: ${4*$<ratio>}% stored, ${((156+(4*245)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
++             5 points: ${5*$<ratio>}% stored, ${((156+(5*245)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+ aura      Marked for Death. Taking $w1 damage after $d.
+ vars      $ratio=${12}
+           $maxAP=${0.04}
+           $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
++          $coup=$?s14162[${$14162s1/100+1}][${1}]
+ 
+ https://www.wowhead.com/forever/spell=1325758
+--- 14278 Ghostly Strike
++++ 14278 Ghostly Strike
+@@ -1,24 +1,29 @@
+ 14278 Ghostly Strike
+ school    physical
+ defense   melee
+ duration  7 s
+ cooldown  20 s
+ gcd       1 s
+ cost      40 energy
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
++refs      1329326 Ghostly Strike
+ 
+ effect 1  125% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=125 sp=1 target=[6,0]
+ effect 2  +15% dodge chance
+           E_APPLY_AURA A_MOD_DODGE_PERCENT base=15 sp=1 target=[1,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ effect 4  a dummy effect holding 180 to the enemy
+           E_DUMMY base=180 sp=1 target=[6,0]
+-tooltip   A strike that deals $s1% ($m4% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by $s2% for $d.  Awards $s3 combo $lpoint:points;.
++effect 5  normalised weapon damage to the enemy
++          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
++effect 6  casts 1329326 Ghostly Strike to the caster
++          E_TRIGGER_SPELL base=0 trigger=1329326 target=[1,0]
++tooltip   A strike that deals $s1% ($m4% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by $s2% for $d, and causes your next Ambush or Garrote cast within $1329326d to not require Stealth.  Awards $s3 combo $lpoint:points;.
+ aura      Dodge chance increased by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=14278
+--- 16511 Hemorrhage
++++ 16511 Hemorrhage
+@@ -1,26 +1,26 @@
+ 16511 Hemorrhage
+ school    physical
+ defense   melee
+ duration  15 s
+ gcd       1 s
+ cost      35 energy
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  normalised weapon damage to the enemy
+           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+ effect 2  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ effect 3  unrecognised shape
+-          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=15 family=8 mask=0x100000 target=[6,0]
++          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=15 family=8 mask=0x100100 target=[6,0]
+ effect 4  100% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
+ effect 5  a dummy effect holding 145 to the enemy
+           E_DUMMY base=145 sp=1 target=[6,0]
+-tooltip   An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.
+-aura      Taking $w3% increased Rupture damage from the caster.
++tooltip   An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture and Garrote damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.
++aura      Taking $w3% increased Rupture and Garrote damage from the caster.
+ 
+ https://www.wowhead.com/forever/spell=16511
+--- 1310728 Quick Getaway
++++ 1310728 Quick Getaway
+@@ -1,12 +1,14 @@
+-1310728 Quietus
++1310728 Quick Getaway
+ school    physical
+ attrs     passive
+ labels    20
++proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
++refs      1329282 Quick Getaway
+ 
+-effect 1  a dummy aura holding 10
+-          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+-effect 2  a dummy aura holding 35
+-          E_APPLY_AURA A_DUMMY base=35 sp=1 target=[1,0]
+-tooltip   Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause $m1% more damage against targets below $m2% health.
++effect 1  a dummy aura holding 1
++          E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
++effect 2  unrecognised shape
++          E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=35 sp=1 trigger=1329282 target=[1,0]
++tooltip   Increases the maximum number of targets you may have Sapped by $s1, and increases your movement speed by $s2% for $1329282d after Sapping a target.
+ 
+ https://www.wowhead.com/forever/spell=1310728
+--- 2070 Sap (Rank 2)
++++ 2070 Sap (Rank 2)
+@@ -1,20 +1,20 @@
+ 2070 Sap (Rank 2)
+ school    physical
+ defense   melee
+ mechanic  mechanic 30
+ duration  35 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
++tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
+ aura      Incapacitated.
+ 
+ https://www.wowhead.com/forever/spell=2070
+--- 6770 Sap (Rank 1)
++++ 6770 Sap (Rank 1)
+@@ -1,20 +1,20 @@
+ 6770 Sap (Rank 1)
+ school    physical
+ defense   melee
+ mechanic  mechanic 30
+ duration  25 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
++tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
+ aura      Incapacitated.
+ 
+ https://www.wowhead.com/forever/spell=6770
+--- 11297 Sap (Rank 3)
++++ 11297 Sap (Rank 3)
+@@ -1,20 +1,20 @@
+ 11297 Sap (Rank 3)
+ school    physical
+ defense   melee
+ mechanic  mechanic 30
+ duration  45 s
+ gcd       1 s
+ cost      65 energy
+ range     5 yd
+ stance    Stealth
+ equip     needs a melee weapon
+ targets   up to 1
+ attrs     refund on miss, suppresses weapon procs
+ labels    20
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
++tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
+ aura      Incapacitated.
+ 
+ https://www.wowhead.com/forever/spell=11297
+--- 1310721 Thousand Cuts
++++ 1310721 Thousand Cuts
+@@ -1,13 +1,13 @@
+ 1310721 Thousand Cuts
+ school    physical
+ icd       1.9 s
+ attrs     passive
+ labels    20
+ proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says one named ability
+ refs      1310723 Thousand Cuts
+ 
+ effect 1  casts 1310723 Thousand Cuts on its trigger
+-          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 sp=1 trigger=1310723 target=[1,0]
++          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=1310723 target=[1,0]
+ tooltip   When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within $1310723d is reduced by $1310723s1, stacking up to $1310723u times.
+ 
+ https://www.wowhead.com/forever/spell=1310721
+# warlock
+--- 1316697 Wrack (Rank 1)
++++ 1316697 Wrack (Rank 1)
+@@ -1,18 +1,18 @@
+ 1316697 Wrack (Rank 1)
+ school    shadow
+ defense   magic
+ duration  6 s
+ gcd       1.5 s
+ cost      200 mana
+ range     30 yd
+ attrs     channeled, periodic can crit
+ labels    19
+ 
+-effect 1  36 shadow damage every 1 s to the enemy (6 ticks, +0.143 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=36 sp=0.143 period=1000ms amplitude=1 target=[6,0]
++effect 1  86 shadow damage every 1 s to the enemy (6 ticks, at level 60, +0.286 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=36 ppl=2.5 sp=0.286 period=1000ms amplitude=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=10 family=5 mask=0x402 target=[6,0]
+ tooltip   Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.
+ aura      Inflicts $s1 Shadow damage every $t1 sec and increases damage taken from the caster's other Shadow damage over time effects by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1316697
+# warrior
+--- 1329554 Reckless Swings
++++ 1329554 Reckless Swings
+@@ -0,0 +1,11 @@
++1329554 Reckless Swings
++school    physical
++labels    25
++
++effect 1  restores 5 rage to the caster
++          E_ENERGIZE base=50 misc=1 target=[1,0]
++effect 2  a dummy effect holding 1 to the caster
++          E_DUMMY base=1 target=[1,0]
++tooltip   ${$s1/10} Rage generated.
++
++https://www.wowhead.com/forever/spell=1329554
+--- 1329555 Reckless Swings
++++ 1329555 Reckless Swings
+@@ -0,0 +1,17 @@
++1329555 Reckless Swings
++school    physical
++duration  8 s
++cooldown  15 s
++gcd       1 s
++cost      25% of base health
++charges   4
++labels    25
++proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
++refs      1329554 Reckless Swings
++
++effect 1  casts 1329554 Reckless Swings on its trigger
++          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1329554 target=[1,0]
++tooltip   Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.
++aura      Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.
++
++https://www.wowhead.com/forever/spell=1329555
+--- 12862 Improved Slam
++++ 12862 Improved Slam
+@@ -1,24 +1,24 @@
+ 12862 Improved Slam
+ school    physical
+ attrs     passive
+ labels    25
+ 
+ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 4 mask 0x200000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=4 mask=0x200000 target=[1,0]
+ effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 4 mask 0x200000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=4 mask=0x200000 target=[1,0]
+-effect 3  SPELLMOD_COOLDOWN -3 s on family 4 mask 0x200000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=4 mask=0x200000 target=[1,0]
++effect 3  SPELLMOD_COOLDOWN -5 s on family 4 mask 0x200000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 misc=11 family=4 mask=0x200000 target=[1,0]
+ effect 4  replaces an action bar spell with 1240193 Slam
+           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310196 misc=1240193 target=[1,0]
+ effect 5  replaces an action bar spell with 1464 Slam
+           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310197 misc=1464 target=[1,0]
+ effect 6  replaces an action bar spell with 8820 Slam
+           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310198 misc=8820 target=[1,0]
+ effect 7  replaces an action bar spell with 11604 Slam
+           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310199 misc=11604 target=[1,0]
+ effect 8  replaces an action bar spell with 11605 Slam
+           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310200 misc=11605 target=[1,0]
+-tooltip   Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.
++tooltip   Reduces the cooldown of your Slam ability by ${$m3/-1000}.1 sec, the cast time and global cooldown by ${$m1/-1000}.2 sec, and Slam no longer interrupts or delays your melee swing.
+ 
+ https://www.wowhead.com/forever/spell=12862
+--- 1310222 Spearing Strike
++++ 1310222 Spearing Strike
+@@ -1,21 +1,21 @@
+ 1310222 Spearing Strike
+ school    physical
+ defense   melee
+ cooldown  20 s
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  normalised weapon damage to the enemy
+           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+-effect 2  40% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=40 sp=1 target=[6,0]
+-effect 3  a dummy effect holding 2 to the enemy
+-          E_DUMMY base=2 sp=1 target=[6,0]
++effect 2  75% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
++effect 3  a dummy effect holding 1 to the enemy
++          E_DUMMY base=1 sp=1 target=[6,0]
+ tooltip   A brutal attack that deals $s2% weapon damage. Deals an additional ${$s2*$s3}% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.
+ 
+ https://www.wowhead.com/forever/spell=1310222
+--- 12321 Booming Voice
++++ 12321 Booming Voice
+@@ -1,12 +1,12 @@
+ 12321 Booming Voice
+ school    physical
+ attrs     passive
+ labels    25
+ 
+ effect 1  SPELLMOD_RADIUS +50% on family 4 mask 0xf0000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=50 misc=6 family=4 mask=0xf0000 target=[1,0]
+-effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000 target=[1,0]
+-tooltip   Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.
++effect 2  SPELLMOD_COST -25% on family 4 mask 0xf0000,0x20
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-25 misc=14 family=4 mask=0xf0000,0x20 target=[1,0]
++tooltip   Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=12321
+--- 1310315 Improved Whirlwind
++++ 1310315 Improved Whirlwind
+@@ -1,12 +1,12 @@
+-1310315 Raging Blows
++1310315 Improved Whirlwind
+ school    physical
+ attrs     passive
+ labels    25
+ 
+-effect 1  a dummy aura holding 100
+-          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+-effect 2  SPELLMOD_COST -30 (-3 on a rage bar) on family 4 mask 0x400000,0x4
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-30 misc=14 family=4 mask=0x400000,0x4 target=[1,0]
+-tooltip   Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.
++effect 1  SPELLMOD_COOLDOWN -2 s on family 4 mask 0x0,0x4
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2000 misc=11 family=4 mask=0x0,0x4 target=[1,0]
++effect 2  a dummy aura holding 30
++          E_APPLY_AURA A_DUMMY base=30 target=[1,0]
++tooltip   Reduces the cooldown of your Whirlwind ability by ${$m1/-1000} sec and increases the damage it deals to the closest enemy by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1310315
+--- 1464 Slam (Rank 2)
++++ 1464 Slam (Rank 2)
+@@ -1,17 +1,17 @@
+ 1464 Slam (Rank 2)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +32 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1464
+--- 8820 Slam (Rank 3)
++++ 8820 Slam (Rank 3)
+@@ -1,17 +1,17 @@
+ 8820 Slam (Rank 3)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +43 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=43 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=8820
+--- 11604 Slam (Rank 4)
++++ 11604 Slam (Rank 4)
+@@ -1,17 +1,17 @@
+ 11604 Slam (Rank 4)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +68 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=68 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=11604
+--- 11605 Slam (Rank 5)
++++ 11605 Slam (Rank 5)
+@@ -1,17 +1,17 @@
+ 11605 Slam (Rank 5)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +87 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=87 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=11605
+--- 1240193 Slam (Rank 1)
++++ 1240193 Slam (Rank 1)
+@@ -1,17 +1,17 @@
+ 1240193 Slam (Rank 1)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +16 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=16 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1240193
+--- 1310196 Slam (Rank 1)
++++ 1310196 Slam (Rank 1)
+@@ -1,17 +1,17 @@
+ 1310196 Slam (Rank 1)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +16 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=16 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1310196
+--- 1310197 Slam (Rank 2)
++++ 1310197 Slam (Rank 2)
+@@ -1,17 +1,17 @@
+ 1310197 Slam (Rank 2)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +32 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=32 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1310197
+--- 1310198 Slam (Rank 3)
++++ 1310198 Slam (Rank 3)
+@@ -1,17 +1,17 @@
+ 1310198 Slam (Rank 3)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +43 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=43 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1310198
+--- 1310199 Slam (Rank 4)
++++ 1310199 Slam (Rank 4)
+@@ -1,17 +1,17 @@
+ 1310199 Slam (Rank 4)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +68 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=68 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1310199
+--- 1310200 Slam (Rank 5)
++++ 1310200 Slam (Rank 5)
+@@ -1,17 +1,17 @@
+ 1310200 Slam (Rank 5)
+ school    physical
+ defense   melee
+ cast      1.5 s
+-cooldown  18 s (category)
++cooldown  15 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  weapon damage in the weapon's own school +87 to the enemy
+           E_WEAPON_DAMAGE_NOSCHOOL base=87 sp=1 target=[6,0]
+ tooltip   Slams the opponent, causing weapon damage plus $s1.
+ 
+ https://www.wowhead.com/forever/spell=1310200

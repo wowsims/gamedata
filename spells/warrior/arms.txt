@@ -832,8 +832,8 @@ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=4 mask=0x200000 target=[1,0]
 effect 2  SPELLMOD_GLOBAL_COOLDOWN -0.5 s on family 4 mask 0x200000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=21 family=4 mask=0x200000 target=[1,0]
-effect 3  SPELLMOD_COOLDOWN -3 s on family 4 mask 0x200000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3000 misc=11 family=4 mask=0x200000 target=[1,0]
+effect 3  SPELLMOD_COOLDOWN -5 s on family 4 mask 0x200000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5000 misc=11 family=4 mask=0x200000 target=[1,0]
 effect 4  replaces an action bar spell with 1240193 Slam
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310196 misc=1240193 target=[1,0]
 effect 5  replaces an action bar spell with 1464 Slam
@@ -844,7 +844,7 @@ effect 7  replaces an action bar spell with 11604 Slam
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310199 misc=11604 target=[1,0]
 effect 8  replaces an action bar spell with 11605 Slam
           E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1310200 misc=11605 target=[1,0]
-tooltip   Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.
+tooltip   Reduces the cooldown of your Slam ability by ${$m3/-1000}.1 sec, the cast time and global cooldown by ${$m1/-1000}.2 sec, and Slam no longer interrupts or delays your melee swing.
 
 https://www.wowhead.com/forever/spell=12862
 =======
@@ -1533,10 +1533,10 @@ labels    25
 
 effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
-effect 2  40% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=40 sp=1 target=[6,0]
-effect 3  a dummy effect holding 2 to the enemy
-          E_DUMMY base=2 sp=1 target=[6,0]
+effect 2  75% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=75 sp=1 target=[6,0]
+effect 3  a dummy effect holding 1 to the enemy
+          E_DUMMY base=1 sp=1 target=[6,0]
 tooltip   A brutal attack that deals $s2% weapon damage. Deals an additional ${$s2*$s3}% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.
 
 https://www.wowhead.com/forever/spell=1310222
