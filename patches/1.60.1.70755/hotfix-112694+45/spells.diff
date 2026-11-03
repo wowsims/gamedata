@@ -1,0 +1,1032 @@
+# mage
+--- 16757 Arctic Reach
++++ 16757 Arctic Reach
+@@ -1,12 +1,12 @@
+ 16757 Arctic Reach
+ school    physical
+ attrs     passive
+ labels    17
+ 
+ effect 1  SPELLMOD_RANGE +10% on family 3 mask 0x200a0
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=5 family=3 mask=0x200a0 target=[1,0]
+ effect 2  SPELLMOD_RADIUS +10% on family 3 mask 0x240
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=3 mask=0x240 target=[1,0]
+-tooltip   Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
++tooltip   Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=16757
+--- 11070 Improved Frostbolt
++++ 11070 Improved Frostbolt
+@@ -1,10 +1,10 @@
+ 11070 Improved Frostbolt
+ school    physical
+ attrs     passive
+ labels    17
+ 
+ effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 3 mask 0x20
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=3 mask=0x20 target=[1,0]
+-tooltip   Reduces the casting time of your Frostbolt and Frost Blast spells by $/1000;S1 sec.
++tooltip   Reduces the casting time of your Frostbolt spell by $/1000;S1 sec.
+ 
+ https://www.wowhead.com/forever/spell=11070
+--- 11180 Winter's Chill
++++ 11180 Winter's Chill
+@@ -1,17 +1,17 @@
+ 11180 Winter's Chill
+ school    physical
+ charges   1
+ attrs     passive
+ labels    17
+ proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 0% chance, from effect 2
+ refs      12579 Winter's Chill
+ 
+ effect 1  casts 12579 Winter's Chill on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=5 trigger=12579 target=[1,0]
+ effect 2  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 trigger=12579 target=[1,0]
+ effect 3  a dummy aura holding 7
+           E_APPLY_AURA A_DUMMY base=7 target=[1,0]
+-tooltip   Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
++tooltip   Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
+ 
+ https://www.wowhead.com/forever/spell=11180
+# paladin
+--- 1239570 Holy Shield (Rank 4)
++++ 1239570 Holy Shield (Rank 4)
+@@ -1,20 +1,22 @@
+ 1239570 Holy Shield (Rank 4)
++school    holy
+ defense   magic
++duration  10 s
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      240 mana
+ equip     needs a shield
+ charges   4
+ labels    26
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  +30% block chance
+           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
+ effect 3  a dummy aura holding 1
+           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+ tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
+ aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
+ 
+ https://www.wowhead.com/forever/spell=1239570
+# shaman
+--- 16038 Call of Flame
++++ 16038 Call of Flame
+@@ -1,14 +1,14 @@
+ 16038 Call of Flame
+ school    physical
+ attrs     passive
+ labels    24
+ 
+ effect 1  SPELLMOD_DAMAGE +15% on family 11 mask 0x50000000,0x1000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 family=11 mask=0x50000000,0x1000 target=[1,0]
+ effect 2  SPELLMOD_DOT +15% on family 11 mask 0x10000000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=15 sp=1 misc=22 family=11 mask=0x10000000 target=[1,0]
+ effect 3  SPELLMOD_DURATION +9 s on family 11 mask 0x10000000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=11 mask=0x10000000 target=[1,0]
+-tooltip   Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by $m1%, as well as increases the duration of your Flame Shock spell by ${$m3/1000} sec.
++tooltip   Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by $m1%, as well as increases the duration of your Flame Shock spell by ${$m3/1000} sec.
+ 
+ https://www.wowhead.com/forever/spell=16038
+--- 16120 Call of Thunder
++++ 16120 Call of Thunder
+@@ -1,10 +1,10 @@
+ 16120 Call of Thunder
+ school    physical
+ attrs     passive
+ labels    24
+ 
+-effect 1  SPELLMOD_CRITICAL_CHANCE +3% on family 11 mask 0x3
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=3 sp=1 misc=7 family=11 mask=0x3 target=[1,0]
++effect 1  SPELLMOD_CRITICAL_CHANCE +5% on family 11 mask 0x3
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=7 family=11 mask=0x3 target=[1,0]
+ tooltip   Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=16120
+--- 421 Chain Lightning (Rank 1)
++++ 421 Chain Lightning (Rank 1)
+@@ -1,15 +1,15 @@
+ 421 Chain Lightning (Rank 1)
+ school    nature
+ defense   magic
+ cast      2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      145 mana
++cost      245 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  85–97 nature damage to the enemy (at level 60, +0.571 spell power)
+-          E_SCHOOL_DAMAGE base=88 ppl=0.6 variance=0.12745099 sp=0.571 chain=3 target=[6,0]
++effect 1  208–236 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=215 ppl=1.4 variance=0.12745099 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=421
+--- 930 Chain Lightning (Rank 2)
++++ 930 Chain Lightning (Rank 2)
+@@ -1,15 +1,15 @@
+ 930 Chain Lightning (Rank 2)
+ school    nature
+ defense   magic
+ cast      2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      200 mana
++cost      360 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  97–109 nature damage to the enemy (at level 60, +0.571 spell power)
+-          E_SCHOOL_DAMAGE base=100 ppl=0.6 variance=0.11564626 sp=0.571 chain=3 target=[6,0]
++effect 1  339–379 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=348 ppl=2.2 variance=0.11564626 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=930
+--- 2860 Chain Lightning (Rank 3)
++++ 2860 Chain Lightning (Rank 3)
+@@ -1,15 +1,15 @@
+ 2860 Chain Lightning (Rank 3)
+ school    nature
+ defense   magic
+ cast      2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      250 mana
++cost      425 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  109–122 nature damage to the enemy (at level 60, +0.517 spell power)
+-          E_SCHOOL_DAMAGE base=112 ppl=0.7 variance=0.11471321 sp=0.517 chain=3 target=[6,0]
++effect 1  416–467 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=428 ppl=2.7 variance=0.11471321 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=2860
+--- 10605 Chain Lightning (Rank 4)
++++ 10605 Chain Lightning (Rank 4)
+@@ -1,15 +1,15 @@
+ 10605 Chain Lightning (Rank 4)
+ school    nature
+ defense   magic
+ cast      2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      315 mana
++cost      495 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  119–134 nature damage to the enemy (at level 60, +0.571 spell power)
+-          E_SCHOOL_DAMAGE base=123 ppl=0.8 variance=0.11111111 sp=0.571 chain=3 target=[6,0]
++effect 1  495–552 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=510 ppl=3.3 variance=0.11111111 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=10605
+--- 16039 Convection
++++ 16039 Convection
+@@ -1,10 +1,10 @@
+ 16039 Convection
+ school    physical
+ attrs     passive
+ labels    24
+ 
+ effect 1  SPELLMOD_COST -2% on family 11 mask 0x90100003,0x1000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-2 sp=1 misc=14 family=11 mask=0x90100003,0x1000 target=[1,0]
+-tooltip   Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by $m1%.
++tooltip   Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by $m1%.
+ 
+ https://www.wowhead.com/forever/spell=16039
+--- 8042 Earth Shock (Rank 1)
++++ 8042 Earth Shock (Rank 1)
+@@ -1,17 +1,17 @@
+ 8042 Earth Shock (Rank 1)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      30 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  19–22 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=18 ppl=0.5 variance=0.11111111 sp=0.386 target=[6,0]
++effect 1  21–24 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=20 ppl=0.5 variance=0.11111111 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=8042
+--- 8044 Earth Shock (Rank 2)
++++ 8044 Earth Shock (Rank 2)
+@@ -1,17 +1,17 @@
+ 8044 Earth Shock (Rank 2)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      50 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  35–38 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=33 ppl=0.7 variance=0.060606062 sp=0.386 target=[6,0]
++effect 1  38–41 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=36 ppl=0.7 variance=0.060606062 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=8044
+--- 8045 Earth Shock (Rank 3)
++++ 8045 Earth Shock (Rank 3)
+@@ -1,17 +1,17 @@
+ 8045 Earth Shock (Rank 3)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      85 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  51–56 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=49 ppl=0.9 variance=0.06451613 sp=0.386 target=[6,0]
++effect 1  69–74 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=67 ppl=0.9 variance=0.06451613 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=8045
+--- 8046 Earth Shock (Rank 4)
++++ 8046 Earth Shock (Rank 4)
+@@ -1,17 +1,17 @@
+ 8046 Earth Shock (Rank 4)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      145 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  83–90 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=81 ppl=1.1 variance=0.06504065 sp=0.386 target=[6,0]
++effect 1  131–140 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=130 ppl=1.1 variance=0.06504065 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=8046
+--- 10412 Earth Shock (Rank 5)
++++ 10412 Earth Shock (Rank 5)
+@@ -1,17 +1,17 @@
+ 10412 Earth Shock (Rank 5)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      240 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  134–143 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=132 ppl=1.3 variance=0.060344826 sp=0.386 target=[6,0]
++effect 1  241–256 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=242 ppl=1.3 variance=0.060344826 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=10412
+--- 10413 Earth Shock (Rank 6)
++++ 10413 Earth Shock (Rank 6)
+@@ -1,17 +1,17 @@
+ 10413 Earth Shock (Rank 6)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      345 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  207–219 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=205 ppl=1.6 variance=0.05945946 sp=0.386 target=[6,0]
++effect 1  380–402 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=383 ppl=1.6 variance=0.05945946 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=10413
+--- 10414 Earth Shock (Rank 7)
++++ 10414 Earth Shock (Rank 7)
+@@ -1,17 +1,17 @@
+ 10414 Earth Shock (Rank 7)
+ school    nature
+ defense   magic
+ duration  2 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      450 mana
+ range     20 yd
+ labels    24
+ 
+-effect 1  293–309 nature damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=301 ppl=1.9 variance=0.0527307 sp=0.386 target=[6,0]
++effect 1  517–545 nature damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=531 ppl=3.4 variance=0.0527307 sp=0.386 target=[6,0]
+ effect 2  interrupts the cast to the enemy
+           E_INTERRUPT_CAST base=0 mechanic=26 target=[6,0]
+ tooltip   Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=10414
+--- 16578 Elemental Alacrity
++++ 16578 Elemental Alacrity
+@@ -1,10 +1,10 @@
+ 16578 Elemental Alacrity
+ school    physical
+ attrs     passive
+ labels    24
+ 
+ effect 1  SPELLMOD_CASTING_TIME -0.2 s on family 11 mask 0x3,0x1000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-200 sp=1 misc=10 family=11 mask=0x3,0x1000 target=[1,0]
+-tooltip   Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ${$m1/-1000}.2 sec.
++tooltip   Reduces the cast time of your Lightning Bolt and Chain Lightning spells by ${$m1/-1000}.2 sec.
+ 
+ https://www.wowhead.com/forever/spell=16578
+--- 28999 Elemental Reach
++++ 28999 Elemental Reach
+@@ -1,14 +1,14 @@
+ 28999 Elemental Reach
+ school    physical
+ attrs     passive
+ labels    24
+ 
+ effect 1  SPELLMOD_RANGE +6 on family 11 mask 0x3,0x41000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6 sp=1 misc=5 family=11 mask=0x3,0x41000 target=[1,0]
+ effect 2  a dummy aura holding 15
+           E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
+-effect 3  SPELLMOD_COOLDOWN -20 s on family 11 mask 0x0,0x0,0x0,0x80
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-20000 sp=1 misc=11 family=11 mask=0x0,0x0,0x0,0x80 target=[1,0]
+-tooltip   Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by $m1 yards and reduces the cooldown of Totemic Projection by ${$m3/-1000} sec.
++effect 3  a dummy aura holding -20000
++          E_APPLY_AURA A_DUMMY base=-20000 sp=1 target=[1,0]
++tooltip   Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by $m1 yards.
+ 
+ https://www.wowhead.com/forever/spell=28999
+--- 29062 Eye of the Storm
++++ 29062 Eye of the Storm
+@@ -1,10 +1,10 @@
+ 29062 Eye of the Storm
+ school    physical
+ attrs     passive
+ labels    24
+ 
+ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 11 mask 0x3,0x1000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=11 mask=0x3,0x1000 target=[1,0]
+-tooltip   Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage.
++tooltip   Gives your Lightning Bolt and Chain Lightning spells a $m1% chance to not lose casting time when you take damage.
+ 
+ https://www.wowhead.com/forever/spell=29062
+--- 8050 Flame Shock (Rank 1)
++++ 8050 Flame Shock (Rank 1)
+@@ -1,21 +1,21 @@
+ 8050 Flame Shock (Rank 1)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      55 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  24 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=20 ppl=0.8 sp=0.214 target=[6,0]
++effect 1  29 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=25 ppl=0.8 sp=0.214 target=[6,0]
+ effect 2  7 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=7 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=8050
+--- 8052 Flame Shock (Rank 2)
++++ 8052 Flame Shock (Rank 2)
+@@ -1,21 +1,21 @@
+ 8052 Flame Shock (Rank 2)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      95 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  38 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=33 ppl=1 sp=0.214 target=[6,0]
+-effect 2  8 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 sp=0.1 period=3000ms target=[6,0]
++effect 1  56 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=51 ppl=1 sp=0.214 target=[6,0]
++effect 2  12 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=12 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=8052
+--- 8053 Flame Shock (Rank 3)
++++ 8053 Flame Shock (Rank 3)
+@@ -1,21 +1,21 @@
+ 8053 Flame Shock (Rank 3)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      160 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  49 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=43 ppl=1.2 sp=0.214 target=[6,0]
+-effect 2  14 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 sp=0.1 period=3000ms target=[6,0]
++effect 1  101 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=95 ppl=1.2 sp=0.214 target=[6,0]
++effect 2  24 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=24 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=8053
+--- 10447 Flame Shock (Rank 4)
++++ 10447 Flame Shock (Rank 4)
+@@ -1,21 +1,21 @@
+ 10447 Flame Shock (Rank 4)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      250 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  89 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=82 ppl=1.4 sp=0.214 target=[6,0]
+-effect 2  21 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 sp=0.1 period=3000ms target=[6,0]
++effect 1  171 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=164 ppl=1.4 sp=0.214 target=[6,0]
++effect 2  42 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=42 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=10447
+--- 10448 Flame Shock (Rank 5)
++++ 10448 Flame Shock (Rank 5)
+@@ -1,21 +1,21 @@
+ 10448 Flame Shock (Rank 5)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      345 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  136.5 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=128 ppl=1.7 sp=0.214 target=[6,0]
+-effect 2  34 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 sp=0.1 period=3000ms target=[6,0]
++effect 1  253.5 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=245 ppl=1.7 sp=0.214 target=[6,0]
++effect 2  64 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=64 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=10448
+--- 29228 Flame Shock (Rank 6)
++++ 29228 Flame Shock (Rank 6)
+@@ -1,21 +1,21 @@
+ 29228 Flame Shock (Rank 6)
+ school    fire
+ defense   magic
+ duration  12 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      410 mana
+ range     20 yd
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  166 fire damage to the enemy (at level 60, +0.214 spell power)
+-          E_SCHOOL_DAMAGE base=166 ppl=2.1 sp=0.214 target=[6,0]
+-effect 2  44 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=44 sp=0.1 period=3000ms target=[6,0]
++effect 1  292 fire damage to the enemy (at level 60, +0.214 spell power)
++          E_SCHOOL_DAMAGE base=292 ppl=3.8 sp=0.214 target=[6,0]
++effect 2  80 fire damage every 3 s to the enemy (4 ticks, +0.1 spell power)
++          E_APPLY_AURA A_PERIODIC_DAMAGE base=80 sp=0.1 period=3000ms target=[6,0]
+ effect 3  a dummy aura to the enemy
+           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+ tooltip   Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.
+ aura      $s2 Fire damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=29228
+--- 8056 Frost Shock (Rank 1)
++++ 8056 Frost Shock (Rank 1)
+@@ -1,18 +1,18 @@
+ 8056 Frost Shock (Rank 1)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      115 mana
+ range     20 yd
+ labels    24
+ 
+ effect 1  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+-effect 2  68–73 frost damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=66 ppl=0.9 variance=0.06521739 sp=0.386 target=[6,0]
++effect 2  99–106 frost damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=98 ppl=0.9 variance=0.06521739 sp=0.386 target=[6,0]
+ tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+ aura      Movement slowed by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=8056
+--- 8058 Frost Shock (Rank 2)
++++ 8058 Frost Shock (Rank 2)
+@@ -1,18 +1,18 @@
+ 8058 Frost Shock (Rank 2)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      225 mana
+ range     20 yd
+ labels    24
+ 
+ effect 1  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+-effect 2  126–135 frost damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=124 ppl=1.3 variance=0.065727696 sp=0.386 target=[6,0]
++effect 2  221–236 frost damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=222 ppl=1.3 variance=0.065727696 sp=0.386 target=[6,0]
+ tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+ aura      Movement slowed by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=8058
+--- 10472 Frost Shock (Rank 3)
++++ 10472 Frost Shock (Rank 3)
+@@ -1,18 +1,18 @@
+ 10472 Frost Shock (Rank 3)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      325 mana
+ range     20 yd
+ labels    24
+ 
+ effect 1  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+-effect 2  190–201 frost damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=188 ppl=1.5 variance=0.058309037 sp=0.386 target=[6,0]
++effect 2  352–373 frost damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=355 ppl=1.5 variance=0.058309037 sp=0.386 target=[6,0]
+ tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+ aura      Movement slowed by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=10472
+--- 10473 Frost Shock (Rank 4)
++++ 10473 Frost Shock (Rank 4)
+@@ -1,18 +1,18 @@
+ 10473 Frost Shock (Rank 4)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      430 mana
+ range     20 yd
+ labels    24
+ 
+ effect 1  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+-effect 2  278–295 frost damage to the enemy (at level 60, +0.386 spell power)
+-          E_SCHOOL_DAMAGE base=283 ppl=1.8 variance=0.056 sp=0.386 target=[6,0]
++effect 2  495–524 frost damage to the enemy (at level 60, +0.386 spell power)
++          E_SCHOOL_DAMAGE base=506 ppl=1.8 variance=0.056 sp=0.386 target=[6,0]
+ tooltip   Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
+ aura      Movement slowed by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=10473
+--- 403 Lightning Bolt (Rank 1)
++++ 403 Lightning Bolt (Rank 1)
+@@ -1,14 +1,14 @@
+ 403 Lightning Bolt (Rank 1)
+ school    nature
+ defense   magic
+ cast      1.5 s
+ gcd       1.5 s
+ cost      15 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  14–17 nature damage to the enemy (at level 60, +0.429 spell power)
+-          E_SCHOOL_DAMAGE base=15 ppl=0.1 variance=0.14285715 sp=0.429 target=[6,0]
++effect 1  15–18 nature damage to the enemy (at level 60, +0.429 spell power)
++          E_SCHOOL_DAMAGE base=16 ppl=0.1 variance=0.14285715 sp=0.429 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=403
+--- 529 Lightning Bolt (Rank 2)
++++ 529 Lightning Bolt (Rank 2)
+@@ -1,14 +1,14 @@
+ 529 Lightning Bolt (Rank 2)
+ school    nature
+ defense   magic
+ cast      2 s
+ gcd       1.5 s
+ cost      30 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  25–30 nature damage to the enemy (at level 60, +0.571 spell power)
+-          E_SCHOOL_DAMAGE base=27 ppl=0.1 variance=0.14285715 sp=0.571 target=[6,0]
++effect 1  28–33 nature damage to the enemy (at level 60, +0.571 spell power)
++          E_SCHOOL_DAMAGE base=30 ppl=0.1 variance=0.14285715 sp=0.571 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=529
+--- 548 Lightning Bolt (Rank 3)
++++ 548 Lightning Bolt (Rank 3)
+@@ -1,14 +1,14 @@
+ 548 Lightning Bolt (Rank 3)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      45 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  42–51 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=45 ppl=0.3 variance=0.1632653 sp=0.714 target=[6,0]
++effect 1  49–58 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=52 ppl=0.3 variance=0.1632653 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=548
+--- 915 Lightning Bolt (Rank 4)
++++ 915 Lightning Bolt (Rank 4)
+@@ -1,14 +1,14 @@
+ 915 Lightning Bolt (Rank 4)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      60 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  59–67 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=61 ppl=0.4 variance=0.13483146 sp=0.714 target=[6,0]
++effect 1  70–81 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=73 ppl=0.5 variance=0.13483146 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=915
+--- 943 Lightning Bolt (Rank 5)
++++ 943 Lightning Bolt (Rank 5)
+@@ -1,14 +1,14 @@
+ 943 Lightning Bolt (Rank 5)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      85 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  78–91 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=82 ppl=0.5 variance=0.13432837 sp=0.714 target=[6,0]
++effect 1  105–120 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=109 ppl=0.7 variance=0.13432837 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=943
+--- 6041 Lightning Bolt (Rank 6)
++++ 6041 Lightning Bolt (Rank 6)
+@@ -1,14 +1,14 @@
+ 6041 Lightning Bolt (Rank 6)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      110 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  108–122 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=111 ppl=0.8 variance=0.12021858 sp=0.714 target=[6,0]
++effect 1  144–162 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=148 ppl=1 variance=0.12021858 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=6041
+--- 10391 Lightning Bolt (Rank 7)
++++ 10391 Lightning Bolt (Rank 7)
+@@ -1,14 +1,14 @@
+ 10391 Lightning Bolt (Rank 7)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      135 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  142–160 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=147 ppl=0.8 variance=0.11618257 sp=0.714 target=[6,0]
++effect 1  188–210 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=194 ppl=1 variance=0.11618257 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=10391
+--- 10392 Lightning Bolt (Rank 8)
++++ 10392 Lightning Bolt (Rank 8)
+@@ -1,14 +1,14 @@
+ 10392 Lightning Bolt (Rank 8)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      160 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  158–176 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=162 ppl=1 variance=0.11371238 sp=0.714 target=[6,0]
++effect 1  233–262 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=240 ppl=1.5 variance=0.11371238 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=10392
+--- 15207 Lightning Bolt (Rank 9)
++++ 15207 Lightning Bolt (Rank 9)
+@@ -1,14 +1,14 @@
+ 15207 Lightning Bolt (Rank 9)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      190 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  173–193 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=178 ppl=1 variance=0.11413044 sp=0.714 target=[6,0]
++effect 1  286–320 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=295 ppl=1.6 variance=0.11413044 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=15207
+--- 15208 Lightning Bolt (Rank 10)
++++ 15208 Lightning Bolt (Rank 10)
+@@ -1,14 +1,14 @@
+ 15208 Lightning Bolt (Rank 10)
+ school    nature
+ defense   magic
+ cast      2.5 s
+ gcd       1.5 s
+ cost      220 mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  189–212 nature damage to the enemy (at level 60, +0.714 spell power)
+-          E_SCHOOL_DAMAGE base=196 ppl=1.2 variance=0.10835215 sp=0.714 target=[6,0]
++effect 1  342–381 nature damage to the enemy (at level 60, +0.714 spell power)
++          E_SCHOOL_DAMAGE base=353 ppl=2.1 variance=0.10835215 sp=0.714 target=[6,0]
+ tooltip   Casts a bolt of lightning at the target for $s1 Nature damage.
+ 
+ https://www.wowhead.com/forever/spell=15208
+--- 16166 Lightning Mastery
++++ 16166 Lightning Mastery
+@@ -1,16 +1,16 @@
+-16166 Elemental Mastery
++16166 Lightning Mastery
+ school    nature
+ defense   magic
+ duration  15 s
+ cooldown  180 s
+ charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says one named ability
+ 
+ effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 11 mask 0x1,0x1000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 misc=10 family=11 mask=0x1,0x1000 target=[1,0]
+ effect 2  SPELLMOD_COOLDOWN -100% on family 11 mask 0x2
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=11 family=11 mask=0x2 target=[1,0]
+-tooltip   Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by ${$m1/-1000}.1 sec, and removing the cooldown from Chain Lightning. Lasts $d.
+-aura      Lightning Bolt and Lava Burst cast time reduced by ${$m1/-1000}.1 sec and Chain Lightning has no cooldown.
++tooltip   Gain mastery over Lightning, reducing the cast time of your Lightning Bolt spell by ${$m1/-1000}.1 sec, and removing the cooldown from your Chain Lightning spell. Lasts $d.
++aura      Lightning Bolt cast time reduced by ${$m1/-1000}.1 sec and Chain Lightning has no cooldown.
+ 
+ https://www.wowhead.com/forever/spell=16166
+--- 17364 Stormstrike
++++ 17364 Stormstrike
+@@ -1,21 +1,23 @@
+ 17364 Stormstrike
+ school    physical
+ defense   melee
+ duration  12 s
+-cooldown  8 s
++cooldown  6 s
+ gcd       1.5 s
+ cost      8% of base mana
+ range     5 yd
+ charges   1
+ attrs     can proc from procs
+ labels    24
+ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  normalised weapon damage to the enemy
+           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 family=11 mask=0x100003 target=[6,0]
+-tooltip   Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
++effect 3  150% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=150 target=[6,0]
++tooltip   Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
+ aura      Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=17364
+--- 437009 Totemic Call
++++ 437009 Totemic Call
+@@ -1,14 +1,14 @@
+-437009 Totemic Projection
++437009 Totemic Call
+ school    nature
+ duration  1 s
+-cooldown  60 s
++cooldown  30 s
+ gcd       1.5 s
+ cost      25% of base mana
+ range     30 yd
+ labels    24
+ 
+-effect 1  summons creature 15214 to target 87
+-          E_SUMMON base=0 misc=15214 misc2=5878 target=[87,0]
+-tooltip   Relocates your active totems to the specified location.
++effect 1  summons creature 15214
++          E_SUMMON base=0 misc=15214 misc2=5878 target=[18,0]
++tooltip   Relocates your active totems to your location.
+ 
+ https://www.wowhead.com/forever/spell=437009
+--- 408521 Riptide (Rank 1)
++++ 408521 Riptide (Rank 1)
+@@ -1,25 +1,25 @@
+ 408521 Riptide (Rank 1)
+ school    nature
+ defense   magic
+ duration  15 s
+-cooldown  6 s (category)
++cooldown  12 s (category)
+ gcd       1.5 s
+-cost      245 mana
++cost      150 mana
+ range     40 yd
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  485–534 healing to the friendly target (at level 60, +0.214 spell power)
+-          E_HEAL base=480 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
++effect 1  a dummy effect holding 29.5 to the friendly target (at level 60)
++          E_DUMMY base=0 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
+ effect 2  89 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=89 sp=0.1 period=3000ms target=[21,0]
+ effect 3  a dummy aura holding 25 to the friendly target
+           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
++tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+ aura      Heals $w2 every $t2 sec.
+           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+ vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+           $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=408521
+--- 1239242 Riptide (Rank 2)
++++ 1239242 Riptide (Rank 2)
+@@ -1,25 +1,25 @@
+ 1239242 Riptide (Rank 2)
+ school    nature
+ defense   magic
+ duration  15 s
+-cooldown  6 s (category)
++cooldown  12 s (category)
+ gcd       1.5 s
+-cost      300 mana
++cost      180 mana
+ range     40 yd
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  614–677 healing to the friendly target (at level 60, +0.214 spell power)
+-          E_HEAL base=612 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
++effect 1  a dummy effect holding 33.5 to the friendly target (at level 60)
++          E_DUMMY base=0 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
+ effect 2  115 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=115 sp=0.1 period=3000ms target=[21,0]
+ effect 3  a dummy aura holding 25 to the friendly target
+           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
++tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+ aura      Heals $w2 every $t2 sec.
+           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+ vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+           $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1239242
+--- 1239243 Riptide (Rank 3)
++++ 1239243 Riptide (Rank 3)
+@@ -1,25 +1,25 @@
+ 1239243 Riptide (Rank 3)
+ school    nature
+ defense   magic
+ duration  15 s
+-cooldown  6 s (category)
++cooldown  12 s (category)
+ gcd       1.5 s
+-cost      385 mana
++cost      230 mana
+ range     40 yd
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    24
+ 
+-effect 1  799–883 healing to the friendly target (at level 60, +0.214 spell power)
+-          E_HEAL base=841 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
++effect 1  a dummy effect to the friendly target (at level 60)
++          E_DUMMY base=0 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
+ effect 2  161 healing every 3 s to the friendly target (5 ticks, at level 60, +0.1 spell power)
+           E_APPLY_AURA A_PERIODIC_HEAL base=161 ppl=3.7 sp=0.1 period=3000ms target=[21,0]
+ effect 3  a dummy aura holding 25 to the friendly target
+           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
+-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
++tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+ aura      Heals $w2 every $t2 sec.
+           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
+ vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
+           $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1239243

@@ -1000,21 +1000,21 @@ https://www.wowhead.com/forever/spell=16187
 school    nature
 defense   magic
 duration  15 s
-cooldown  6 s (category)
+cooldown  12 s (category)
 gcd       1.5 s
-cost      245 mana
+cost      150 mana
 range     40 yd
 stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  485–534 healing to the friendly target (at level 60, +0.214 spell power)
-          E_HEAL base=480 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
+effect 1  a dummy effect holding 29.5 to the friendly target (at level 60)
+          E_DUMMY base=0 ppl=3.7 variance=0.1 sp=0.214 target=[21,0]
 effect 2  89 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=89 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 aura      Heals $w2 every $t2 sec.
           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
@@ -1040,21 +1040,21 @@ https://www.wowhead.com/forever/spell=409954
 school    nature
 defense   magic
 duration  15 s
-cooldown  6 s (category)
+cooldown  12 s (category)
 gcd       1.5 s
-cost      300 mana
+cost      180 mana
 range     40 yd
 stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  614–677 healing to the friendly target (at level 60, +0.214 spell power)
-          E_HEAL base=612 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
+effect 1  a dummy effect holding 33.5 to the friendly target (at level 60)
+          E_DUMMY base=0 ppl=4.2 variance=0.1 sp=0.214 target=[21,0]
 effect 2  115 healing every 3 s to the friendly target (5 ticks, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=115 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 aura      Heals $w2 every $t2 sec.
           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
@@ -1066,21 +1066,21 @@ https://www.wowhead.com/forever/spell=1239242
 school    nature
 defense   magic
 duration  15 s
-cooldown  6 s (category)
+cooldown  12 s (category)
 gcd       1.5 s
-cost      385 mana
+cost      230 mana
 range     40 yd
 stance exclude Moonkin
 attrs     periodic can crit
 labels    24
 
-effect 1  799–883 healing to the friendly target (at level 60, +0.214 spell power)
-          E_HEAL base=841 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
+effect 1  a dummy effect to the friendly target (at level 60)
+          E_DUMMY base=0 ppl=4.9 variance=0.1 sp=0.214 target=[21,0]
 effect 2  161 healing every 3 s to the friendly target (5 ticks, at level 60, +0.1 spell power)
           E_APPLY_AURA A_PERIODIC_HEAL base=161 ppl=3.7 sp=0.1 period=3000ms target=[21,0]
 effect 3  a dummy aura holding 25 to the friendly target
           E_APPLY_AURA A_DUMMY base=25 target=[21,0]
-tooltip   Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+tooltip   Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 aura      Heals $w2 every $t2 sec.
           Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 vars      $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
