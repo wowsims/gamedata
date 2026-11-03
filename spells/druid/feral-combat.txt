@@ -951,8 +951,8 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  22–142 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 perResource=147 target=[6,0]
+effect 1  22–142 physical damage to the enemy (+0.03 attack power)
+          E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 ap=0.03 perResource=147 target=[6,0]
 effect 2  a dummy effect holding 270 to the enemy
           E_DUMMY base=270 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.

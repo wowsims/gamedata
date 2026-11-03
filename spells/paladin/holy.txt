@@ -94,6 +94,17 @@ aura      Restores $s1 mana every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=25290
 =======
+1328550 Boundless Light
+school    physical
+attrs     passive
+labels    26
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+tooltip   Increases the critical strike chance of your Holy Shock spell by $s1% when cast on allies not affected by your Oath of Light.
+
+https://www.wowhead.com/forever/spell=1328550
+=======
 4987 Cleanse
 school    holy
 defense   magic
@@ -801,6 +812,17 @@ effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x6000,0x10000
 tooltip   Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by $s1%.
 
 https://www.wowhead.com/forever/spell=20237
+=======
+1237268 Holy Conduit
+school    physical
+attrs     passive
+labels    26
+
+effect 1  SPELLMOD_COST -40% on family 10 mask 0x20,0x200080,0x40002000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=10 mask=0x20,0x200080,0x40002000 target=[1,0]
+tooltip   Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by $m1%.
+
+https://www.wowhead.com/forever/spell=1237268
 =======
 635 Holy Light (Rank 1)
 school    holy
@@ -2861,7 +2883,7 @@ duration  30 s
 gcd       1.5 s
 cost      135 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
 refs      20168 Seal of Wisdom, 20186 Judgement of Wisdom, 20268 Judgement of Wisdom
 
 effect 1  casts 20168 Seal of Wisdom on its trigger
@@ -2912,7 +2934,7 @@ duration  30 s
 gcd       1.5 s
 cost      170 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
 refs      20350 Seal of Wisdom, 20354 Judgement of Wisdom, 20352 Judgement of Wisdom
 
 effect 1  casts 20350 Seal of Wisdom on its trigger
@@ -2933,7 +2955,7 @@ duration  30 s
 gcd       1.5 s
 cost      200 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
 refs      20351 Seal of Wisdom, 20355 Judgement of Wisdom, 20353 Judgement of Wisdom
 
 effect 1  casts 20351 Seal of Wisdom on its trigger
