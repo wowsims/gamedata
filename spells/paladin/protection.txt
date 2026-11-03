@@ -745,6 +745,27 @@ effect 1  0 holy damage to the enemy (+0.08 spell power)
 
 https://www.wowhead.com/forever/spell=456544
 =======
+1239570 Holy Shield (Rank 4)
+defense   magic
+cooldown  10 s (category)
+gcd       1.5 s
+cost      240 mana
+equip     needs a shield
+charges   4
+labels    26
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  +30% block chance
+          E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
+effect 3  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 target=[1,0]
+tooltip   Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
+aura      Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
+
+https://www.wowhead.com/forever/spell=1239570
+=======
 20254 Improved Concentration Aura
 school    physical
 attrs     passive

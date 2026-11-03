@@ -450,6 +450,27 @@ tooltip   Gain the Cobra Strikes ability:
 
 https://www.wowhead.com/forever/spell=425755
 =======
+20576 Command (Racial Passive)
+school    physical
+attrs     passive
+labels    23
+
+effect 1  SPELLMOD_ALL_EFFECTS +5 on family 9 mask 0x2000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=8 family=9 mask=0x2000000 target=[1,0]
+tooltip   Damage dealt by Hunter and Warlock pets increased by $s1%.
+
+https://www.wowhead.com/forever/spell=20576
+=======
+21563 Command (Racial Passive)
+school    physical
+attrs     passive
+
+effect 1  unrecognised shape
+          E_APPLY_AURA base=5 sp=1 target=[1,0]
+tooltip   Damage dealt by Hunter and Warlock pets increased by $s1%.
+
+https://www.wowhead.com/forever/spell=21563
+=======
 23158 Concussive Shot Cooldown Reduction
 school    physical
 duration  permanent
