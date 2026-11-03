@@ -1415,6 +1415,43 @@ tooltip   Gain the Shield of Righteousness ability:
 
 https://www.wowhead.com/forever/spell=440789
 =======
+1328544 Shieldsworn
+school    physical
+attrs     passive
+labels    26
+refs      1328551 Shieldsworn
+
+effect 1  SPELLMOD_COOLDOWN -4 s on family 10 mask 0x0,0x0,0x0,0x8000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-4000 misc=11 family=10 mask=0x0,0x0,0x0,0x8000 target=[1,0]
+tooltip   Reduces the cooldown of your Holy Strike ability by ${$m1/-1000} sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or triggering their cooldowns, and allowing you to Block spells for $1328551d.
+
+https://www.wowhead.com/forever/spell=1328544
+=======
+1328551 Shieldsworn
+school    physical
+duration  6 s
+labels    26
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_ALLOW_BLOCKING_SPELLS base=0 target=[1,0]
+tooltip   Able to Block spells for $d.
+aura      Able to Block spells.
+
+https://www.wowhead.com/forever/spell=1328551
+=======
+1328546 Stoicism
+school    physical
+attrs     passive
+labels    26
+
+effect 1  -20% stun duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=12 target=[1,0]
+effect 2  -20% charm duration
+          E_APPLY_AURA A_MECHANIC_DURATION_MOD base=-20 sp=1 misc=1 target=[1,0]
+tooltip   Reduces the duration of Stun and Charm effects on you by $s1%.
+
+https://www.wowhead.com/forever/spell=1328546
+=======
 20170 Stun (Rank 1)
 school    holy
 defense   magic

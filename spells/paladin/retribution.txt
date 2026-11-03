@@ -404,17 +404,6 @@ aura      Increases melee attack power by $s1.
 
 https://www.wowhead.com/forever/spell=25916
 =======
-1237268 Holy Conduit
-school    physical
-attrs     passive
-labels    26
-
-effect 1  SPELLMOD_COST -40% on family 10 mask 0x20,0x200080,0x40002000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-40 sp=1 misc=14 family=10 mask=0x20,0x200080,0x40002000 target=[1,0]
-tooltip   Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by $m1%.
-
-https://www.wowhead.com/forever/spell=1237268
-=======
 678 Holy Strike (Rank 2)
 school    holy
 defense   melee
@@ -1464,6 +1453,90 @@ tooltip   Fills the Paladin with the spirit of a crusader for $d, granting $s1 m
 aura      Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 https://www.wowhead.com/forever/spell=21082
+=======
+1328370 Turn Evil
+school    physical
+attrs     passive
+
+effect 1  SPELLMOD_CASTING_TIME -1.5 s on family 10 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=10 family=10 mask=0x0,0x0,0x100000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -1.5 s on family 10 mask 0x0,0x0,0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1500 sp=1 misc=11 family=10 mask=0x0,0x0,0x100000 target=[1,0]
+effect 3  replaces an action bar spell with 2878 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328374 misc=2878 target=[1,0]
+effect 4  replaces an action bar spell with 5627 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328373 misc=5627 target=[1,0]
+effect 5  replaces an action bar spell with 10326 Turn Undead
+          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=1328372 misc=10326 target=[1,0]
+tooltip   Reduces the cast time of your Turn Undead spell by ${$s1/-1000}.1 sec, its cooldown by ${$s2/-1000} sec, and allows it to affect Demons.
+
+https://www.wowhead.com/forever/spell=1328370
+=======
+1328372 Turn Evil (Rank 3)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  20 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      75 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328372
+=======
+1328373 Turn Evil (Rank 2)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  15 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      50 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328373
+=======
+1328374 Turn Evil (Rank 1)
+school    nature
+defense   magic
+mechanic  mechanic 23
+duration  10 s
+cast      1.5 s
+cooldown  30 s (category)
+gcd       1.5 s
+cost      35 mana
+range     20 yd
+targets   up to 1
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  fears to the enemy
+          E_APPLY_AURA A_MOD_FEAR base=0 target=[6,0]
+effect 2  +25% movement speed to the enemy
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=25 target=[6,0]
+tooltip   The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
+aura      Compelled to flee.
+
+https://www.wowhead.com/forever/spell=1328374
 =======
 1310735 Unsealed Wrath
 school    physical
