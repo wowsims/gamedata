@@ -115,6 +115,19 @@ aura      Increases damage taken by $s1.
 
 https://www.wowhead.com/forever/spell=449927
 =======
+1329256 Blood Splatter
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DURATION +6 s on family 8 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 sp=1 misc=1 family=8 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_DURATION +9 s on family 8 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=8 mask=0x100 target=[1,0]
+tooltip   Increases the duration of your Rupture ability by ${$s1/1000} sec and your Garrote ability by ${$s2/1000} sec.
+
+https://www.wowhead.com/forever/spell=1329256
+=======
 436564 Blunderbuss
 school    physical
 defense   ranged
@@ -181,6 +194,19 @@ effect 2  SPELLMOD_COST -3 (-0.3 on a rage bar) on family 8 mask 0x4,0x200000
 tooltip   Reduces the Energy cost of your Sinister Strike ability by $s1 and your Backstab ability by $s2.
 
 https://www.wowhead.com/forever/spell=28081
+=======
+1329286 Boot Knife
+school    physical
+attrs     passive
+labels    20
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 trigger=1329285 target=[1,0]
+effect 2  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 sp=1 trigger=1329285 target=[1,0]
+tooltip   Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
+
+https://www.wowhead.com/forever/spell=1329286
 =======
 415460 Burnout
 school    physical
@@ -319,6 +345,17 @@ tooltip   Casts a spell when you do something.
 
 https://www.wowhead.com/forever/spell=26376
 =======
+1329265 Composure
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_EFFECT1 +0 on family 8 mask 0x0,0x10
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=0 sp=1 misc=3 family=8 mask=0x0,0x10 target=[1,0]
+tooltip   Increases the Energy cost reduction of your Poised ability by $s1.
+
+https://www.wowhead.com/forever/spell=1329265
+=======
 25348 Copy of Deadly Poison IV (Rank 4)
 school    nature
 defense   magic
@@ -346,6 +383,21 @@ effect 1  silences to the enemy
 aura      Silenced.
 
 https://www.wowhead.com/forever/spell=18469
+=======
+1329552 Counterspell - Silenced
+school    arcane
+defense   magic
+mechanic  mechanic 9
+duration  2 s
+range     50000 yd
+stance    Shadowform
+labels    17
+
+effect 1  silences to the enemy
+          E_APPLY_AURA A_MOD_SILENCE base=1 misc=126 target=[6,0]
+aura      Silenced.
+
+https://www.wowhead.com/forever/spell=1329552
 =======
 1231424 Coup
 school    physical
@@ -782,8 +834,8 @@ effect 1  unrecognised shape
           E_360 base=1800 misc=627 target=[0,0]
 effect 2  a dummy effect
           E_DUMMY base=0 target=[0,0]
-effect 3  a dummy effect holding 160
-          E_DUMMY base=160 target=[0,0]
+effect 3  a dummy effect holding 240
+          E_DUMMY base=240 target=[0,0]
 tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
           Each strike has a $h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
 
@@ -798,8 +850,8 @@ effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
 effect 2  a dummy effect holding 1800 to the caster
           E_DUMMY base=1800 target=[1,0]
-effect 3  a dummy effect holding 160 to the caster
-          E_DUMMY base=160 target=[1,0]
+effect 3  a dummy effect holding 240 to the caster
+          E_DUMMY base=240 target=[1,0]
 tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
           Each strike has a $11356h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
 
@@ -829,8 +881,8 @@ effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
 effect 2  a dummy effect holding 1800 to the caster
           E_DUMMY base=1800 target=[1,0]
-effect 3  a dummy effect holding 180 to the caster
-          E_DUMMY base=180 target=[1,0]
+effect 3  a dummy effect holding 240 to the caster
+          E_DUMMY base=240 target=[1,0]
 tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
           Each strike has a $11356h% chance of poisoning the enemy for $25349o1 Nature damage over $25349d.  Stacks up to $25349u times on a single target.  $m3 charges.
 
@@ -863,8 +915,8 @@ effect 1  unrecognised shape
           E_360 base=1800 misc=2630 target=[0,0]
 effect 2  a dummy effect
           E_DUMMY base=0 target=[0,0]
-effect 3  a dummy effect holding 180
-          E_DUMMY base=180 target=[0,0]
+effect 3  a dummy effect holding 240
+          E_DUMMY base=240 target=[0,0]
 tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
           Each strike has a $h% chance of poisoning the enemy for $25349o1 Nature damage over $25349d.  Stacks up to $25349u times on a single target.  $m3 charges.
 
@@ -885,126 +937,6 @@ tooltip   Target takes $s1 Nature damage every $t1 seconds.
 aura      Target takes $s1 Nature damage every $t1 seconds.
 
 https://www.wowhead.com/forever/spell=434316
-=======
-1316709 Death Mark (Rank 1)
-school    physical
-defense   melee
-duration  6 s
-cooldown  10 s
-gcd       1 s
-cost      25 energy
-cost      1 combo points
-range     25 yd
-attrs     refund on miss, cannot crit, suppresses weapon procs
-labels    20
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
-
-effect 1  0 physical damage every 6 s to the enemy (1 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
-effect 2  a dummy aura to the enemy
-          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
-             1 point  : ${1*$<ratio>}% stored, ${63+(1*102)+1*$<maxAP>*$<attackP>} cap before critical strike.
-             2 points: ${2*$<ratio>}% stored, ${63+(2*102)+2*$<maxAP>*$<attackP>} damage cap.
-             3 points: ${3*$<ratio>}% stored, ${63+(3*102)+3*$<maxAP>*$<attackP>} damage cap.
-             4 points: ${4*$<ratio>}% stored, ${63+(4*102)+4*$<maxAP>*$<attackP>} damage cap.
-             5 points: ${5*$<ratio>}% stored, ${63+(5*102)+5*$<maxAP>*$<attackP>} damage cap.
-aura      Marked for Death. Taking $w1 damage after $d.
-vars      $ratio=${12}
-          $maxAP=${0.04}
-          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
-
-https://www.wowhead.com/forever/spell=1316709
-=======
-1325756 Death Mark (Rank 2)
-school    physical
-defense   melee
-duration  6 s
-cooldown  10 s
-gcd       1 s
-cost      25 energy
-cost      1 combo points
-range     25 yd
-attrs     refund on miss, cannot crit, suppresses weapon procs
-labels    20
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
-
-effect 1  0 physical damage every 6 s to the enemy (1 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
-effect 2  a dummy aura to the enemy
-          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power:
-             1 point  : ${1*$<ratio>}% of damage stored, ${1*$<maxAP>}% Attack Power max.
-             2 points: ${2*$<ratio>}% of damage stored, ${2*$<maxAP>}% of Attack Power max.
-             3 points: ${3*$<ratio>}% of damage stored, ${3*$<maxAP>}% of Attack Power max.
-             4 points: ${4*$<ratio>}% of damage stored, ${4*$<maxAP>}% of Attack Power max.
-             5 points: ${5*$<ratio>}% of damage stored, ${5*$<maxAP>}% of Attack Power max.
-aura      Marked for Death. Taking $w1 damage after $d.
-vars      $ratio=${12}
-          $maxAP=${0.04}
-          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
-
-https://www.wowhead.com/forever/spell=1325756
-=======
-1325757 Death Mark (Rank 3)
-school    physical
-defense   melee
-duration  6 s
-cooldown  10 s
-gcd       1 s
-cost      25 energy
-cost      1 combo points
-range     25 yd
-attrs     refund on miss, cannot crit, suppresses weapon procs
-labels    20
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
-
-effect 1  0 physical damage every 6 s to the enemy (1 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
-effect 2  a dummy aura to the enemy
-          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power:
-             1 point  : ${1*$<ratio>}% of damage stored, ${1*$<maxAP>}% Attack Power max.
-             2 points: ${2*$<ratio>}% of damage stored, ${2*$<maxAP>}% of Attack Power max.
-             3 points: ${3*$<ratio>}% of damage stored, ${3*$<maxAP>}% of Attack Power max.
-             4 points: ${4*$<ratio>}% of damage stored, ${4*$<maxAP>}% of Attack Power max.
-             5 points: ${5*$<ratio>}% of damage stored, ${5*$<maxAP>}% of Attack Power max.
-aura      Marked for Death. Taking $w1 damage after $d.
-vars      $ratio=${12}
-          $maxAP=${0.04}
-          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
-
-https://www.wowhead.com/forever/spell=1325757
-=======
-1325758 Death Mark (Rank 4)
-school    physical
-defense   melee
-duration  6 s
-cooldown  10 s
-gcd       1 s
-cost      25 energy
-cost      1 combo points
-range     25 yd
-attrs     refund on miss, cannot crit, suppresses weapon procs
-labels    20
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
-
-effect 1  0 physical damage every 6 s to the enemy (1 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
-effect 2  a dummy aura to the enemy
-          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
-tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
-             1 point  : ${1*$<ratio>}% stored, ${156+(1*245)+1*$<maxAP>*$<attackP>} damage cap.
-             2 points: ${2*$<ratio>}% stored, ${156+(2*245)+2*$<maxAP>*$<attackP>} damage cap.
-             3 points: ${3*$<ratio>}% stored, ${156+(3*245)+3*$<maxAP>*$<attackP>} damage cap.
-             4 points: ${4*$<ratio>}% stored, ${156+(4*245)+4*$<maxAP>*$<attackP>} damage cap.
-             5 points: ${5*$<ratio>}% stored, ${156+(5*245)+5*$<maxAP>*$<attackP>} damage cap.
-aura      Marked for Death. Taking $w1 damage after $d.
-vars      $ratio=${12}
-          $maxAP=${0.04}
-          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
-
-https://www.wowhead.com/forever/spell=1325758
 =======
 26112 Deathdealer Evasion Bonus
 school    physical
@@ -1229,6 +1161,19 @@ effect 3  SPELLMOD_RANGE +5 on family 8 mask 0x1000
 tooltip   Increases your effective stealth level by 3. Increases the range of Disarm Trap and Pickpocket by $s2 yards, and the range of Distract by $s3 yards.
 
 https://www.wowhead.com/forever/spell=443632
+=======
+1329284 Flash of Steel
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_EFFECT2 +15 on family 8 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=15 sp=1 misc=12 family=8 mask=0x20000000 target=[1,0]
+effect 2  SPELLMOD_COOLDOWN -2.5 s on family 8 mask 0x20000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2500 sp=1 misc=11 family=8 mask=0x20000000 target=[1,0]
+tooltip   Increases the Energy generated by your Shank ability by $s1 and reduces its cooldown by ${$s2/-1000}.1 sec.
+
+https://www.wowhead.com/forever/spell=1329284
 =======
 1234071 Flurry of Blades
 school    physical
@@ -1688,8 +1633,8 @@ refs      11337 Instant Poison VI
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=625 target=[0,0]
-effect 2  a dummy effect holding 175
-          E_DUMMY base=175 target=[0,0]
+effect 2  a dummy effect holding 250
+          E_DUMMY base=250 target=[0,0]
 tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
           Each strike has a $h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m2 charges.
 
@@ -1704,8 +1649,8 @@ effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
 effect 2  a dummy effect holding 1800 to the caster
           E_DUMMY base=1800 target=[1,0]
-effect 3  a dummy effect holding 175 to the caster
-          E_DUMMY base=175 target=[1,0]
+effect 3  a dummy effect holding 250 to the caster
+          E_DUMMY base=250 target=[1,0]
 tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
           Each strike has a $11340h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m3 charges.
 
@@ -1939,8 +1884,8 @@ refs      11398 Mind-numbing Poison III
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=643 target=[0,0]
-effect 2  a dummy effect holding 150
-          E_DUMMY base=150 target=[0,0]
+effect 2  a dummy effect holding 225
+          E_DUMMY base=225 target=[0,0]
 tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
           Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m2 charges.
 
@@ -1955,8 +1900,8 @@ effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
 effect 2  a dummy effect holding 1800 to the caster
           E_DUMMY base=1800 target=[1,0]
-effect 3  a dummy effect holding 150 to the caster
-          E_DUMMY base=150 target=[1,0]
+effect 3  a dummy effect holding 225 to the caster
+          E_DUMMY base=225 target=[1,0]
 tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
           Each strike has a $11399h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m3 charges.
 
@@ -3219,8 +3164,8 @@ refs      13224 Wound Poison
 
 effect 1  unrecognised shape
           E_360 base=1800 misc=706 target=[0,0]
-effect 2  a dummy effect holding 160
-          E_DUMMY base=160 target=[0,0]
+effect 2  a dummy effect holding 240
+          E_DUMMY base=240 target=[0,0]
 tooltip   Coats a weapon with poison that lasts for ${$m1/60} minutes.
           Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m2 charges.
 
@@ -3267,8 +3212,8 @@ effect 1  creates item 0 to the caster
           E_CREATE_ITEM base=1 target=[1,0]
 effect 2  a dummy effect holding 1800 to the caster
           E_DUMMY base=1800 target=[1,0]
-effect 3  a dummy effect holding 160 to the caster
-          E_DUMMY base=160 target=[1,0]
+effect 3  a dummy effect holding 240 to the caster
+          E_DUMMY base=240 target=[1,0]
 tooltip   Coats a weapon with poison that lasts for ${$m2/60} minutes.
           Each strike has a $13227h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m3 charges.
 

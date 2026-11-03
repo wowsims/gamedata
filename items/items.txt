@@ -32567,6 +32567,13 @@ binds     binds when equipped
 stats     +10 strength, +10 stamina
 sells     4632 copper
 =======
+8134 Myrmidon's Defender
+item      uncommon, Shield, shield
+level     ilvl 51, requires level 46
+binds     binds when equipped
+stats     +2 stamina, +2 agility, +11 spirit
+sells     15993 copper
+=======
 8136 Gargantuan Tumor
 item      common, Quest
 level     ilvl 1, requires level 1
@@ -48592,6 +48599,13 @@ level     ilvl 56, requires level 51
 binds     binds when equipped
 stats     +27 agility, +11 spirit
 sells     25065 copper
+=======
+13131 Sparkleshell Mantle
+item      rare, Mail, shoulders
+level     ilvl 29, requires level 24
+binds     binds when equipped
+stats     +10 stamina, +4 agility
+sells     2312 copper
 =======
 13140 Blood Red Key
 item      common, Quest
@@ -132744,6 +132758,7 @@ classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, w
 item      common, Junk
 level     ilvl 1
 binds     binds when picked up
+unique    yes
 sells     170 copper
 =======
 281348 Parchment of Chaos
@@ -132761,7 +132776,7 @@ unique    yes
 sells     170 copper
 =======
 281350 Keystone Fragment
-item      uncommon, Junk
+item      uncommon, Key
 level     ilvl 1
 binds     binds when picked up
 unique    yes
@@ -132769,7 +132784,7 @@ effect    use: 3366 Opening
 sells     170 copper
 =======
 281352 Ancient Runestone
-item      common, Junk
+item      common, Key
 level     ilvl 1
 binds     binds when picked up
 unique    yes
@@ -132791,9 +132806,10 @@ effect    use: 3366 Opening
 sells     170 copper
 =======
 281359 Dormant Runestone
-item      common, Junk
+item      common, Key
 level     ilvl 1
 binds     binds when picked up
+unique    yes
 sells     170 copper
 =======
 281371 Elemental Attractor
@@ -134454,7 +134470,7 @@ item      common, Miscellaneous, held in off hand
 level     ilvl 17, requires level 2
 binds     binds when picked up
 unique    yes
-sells     38 copper
+sells     170 copper
 =======
 287416 Truskis' Cheesecake Slice
 item      common, Food & Drink
@@ -134669,13 +134685,6 @@ level     ilvl 1, requires level 35
 binds     quest item
 unique    yes
 text      "An old key."
-=======
-288185 Adventurer's Tent
-item      common, Other
-level     ilvl 1, requires level 1
-binds     binds when picked up
-effect    use: 1325145 Adventurer's Tent (900 s cooldown)
-sells     750000 copper
 =======
 288336 Blue Firework
 item      common, Other

@@ -2225,7 +2225,7 @@ effect 1  casts 400589 Missile Barrage on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=40 trigger=400589 target=[1,0]
 effect 2  a dummy aura holding 5
           E_APPLY_AURA A_DUMMY base=5 trigger=400589 target=[1,0]
-tooltip   Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
+tooltip   Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
 
 https://www.wowhead.com/forever/spell=400588
 =======

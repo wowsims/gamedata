@@ -17,9 +17,9 @@ school    physical
 attrs     passive
 labels    20
 
-effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20006
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20006 target=[1,0]
-tooltip   Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by $s1%.
+effect 1  SPELLMOD_DAMAGE +2% on family 8 mask 0x20002
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=8 mask=0x20002 target=[1,0]
+tooltip   Increases the damage of your Sinister Strike and Eviscerate abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=18427
 =======
@@ -487,6 +487,19 @@ aura      Attack speed increased by $s1%.  Weapon attacks strike an additional n
 
 https://www.wowhead.com/forever/spell=13877
 =======
+14162 Coup de Grace
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DAMAGE +20% on family 8 mask 0x20000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x20000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +20% on family 8 mask 0x0,0x0,0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x0,0x0,0x4 target=[1,0]
+tooltip   Increases the damage done by your Eviscerate ability by $m1%, and the damage and storage rate of your Death Mark ability by $m2%.
+
+https://www.wowhead.com/forever/spell=14162
+=======
 13715 Dual Wield Specialization
 school    physical
 attrs     passive
@@ -552,6 +565,17 @@ effect 1  +10% physical hit
 tooltip   Increases your chance to hit while dual wielding by an additional $s1%.
 
 https://www.wowhead.com/forever/spell=30821
+=======
+13732 Efficient Strikes
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2000002
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2000002 target=[1,0]
+tooltip   Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by $s1.
+
+https://www.wowhead.com/forever/spell=13732
 =======
 13742 Endurance
 school    physical
@@ -673,8 +697,8 @@ school    physical
 attrs     passive
 labels    20
 
-effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0x20000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
+effect 1  SPELLMOD_COST -15 (-1.5 on a rage bar) on family 8 mask 0x20000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-15 sp=1 misc=14 family=8 mask=0x20000 target=[1,0]
 tooltip   Reduces the Energy cost of your Eviscerate ability by $m1.
 
 https://www.wowhead.com/forever/spell=1310711
@@ -799,17 +823,6 @@ aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=11286
 =======
-14162 Improved Eviscerate
-school    physical
-attrs     passive
-labels    20
-
-effect 1  SPELLMOD_DAMAGE +20% on family 8 mask 0x20000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 sp=1 family=8 mask=0x20000 target=[1,0]
-tooltip   Increases the damage done by your Eviscerate ability by $m1%.
-
-https://www.wowhead.com/forever/spell=14162
-=======
 13754 Improved Kick
 school    physical
 attrs     passive
@@ -833,17 +846,6 @@ effect 1  SPELLMOD_COOLDOWN -0.5 s on family 8 mask 0x10
 tooltip   Decreases the cooldown of Kick by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=24434
-=======
-13732 Improved Sinister Strike
-school    physical
-attrs     passive
-labels    20
-
-effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x2
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 sp=1 misc=14 family=8 mask=0x2 target=[1,0]
-tooltip   Reduces the Energy cost of your Sinister Strike ability by $s1.
-
-https://www.wowhead.com/forever/spell=13732
 =======
 13743 Improved Sprint
 school    physical
@@ -1184,6 +1186,48 @@ tooltip   Gain the Saber Slash ability:
           $@spelldesc424785
 
 https://www.wowhead.com/forever/spell=424979
+=======
+1329283 Shank
+school    physical
+defense   melee
+cooldown  10 s
+gcd       1 s
+cost      5 energy
+range     5 yd
+equip     needs a melee weapon in the off hand
+attrs     refund on miss, suppresses weapon procs
+refs      1310703 Venom, 1329286 Boot Knife
+
+effect 1  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 2  restores 15 energy to the caster
+          E_ENERGIZE base=15 misc=3 target=[1,0]
+effect 3  restores 0 combo points to the caster
+          E_ENERGIZE base=0 misc=4 target=[1,0]
+tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
+
+https://www.wowhead.com/forever/spell=1329283
+=======
+1329549 Shank
+school    physical
+defense   melee
+cooldown  10 s
+gcd       1 s
+cost      5 energy
+range     5 yd
+equip     needs a melee weapon in the off hand
+attrs     refund on miss, suppresses weapon procs
+refs      1310703 Venom, 1329286 Boot Knife
+
+effect 1  50% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+effect 2  restores 25 energy to the caster
+          E_ENERGIZE base=25 misc=3 target=[1,0]
+effect 3  restores 0 combo points to the caster
+          E_ENERGIZE base=0 misc=4 target=[1,0]
+tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
+
+https://www.wowhead.com/forever/spell=1329549
 =======
 5938 Shiv
 school    physical

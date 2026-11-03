@@ -100,6 +100,130 @@ aura      Ambush, Backstab, and Garrote have no positional requirement.
 
 https://www.wowhead.com/forever/spell=1241810
 =======
+1316709 Death Mark (Rank 1)
+school    physical
+defense   melee
+duration  6 s
+cooldown  10 s
+gcd       1 s
+cost      25 energy
+cost      1 combo points
+range     20 yd
+attrs     refund on miss, cannot crit, suppresses weapon procs
+labels    20
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+             1 point  : ${1*$<ratio>}% stored, ${((63+(1*102)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             2 points: ${2*$<ratio>}% stored, ${((63+(2*102)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             3 points: ${3*$<ratio>}% stored, ${((63+(3*102)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             4 points: ${4*$<ratio>}% stored, ${((63+(4*102)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             5 points: ${5*$<ratio>}% stored, ${((63+(5*102)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+aura      Marked for Death. Taking $w1 damage after $d.
+vars      $ratio=${12}
+          $maxAP=${0.04}
+          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
+          $coup=$?s14162[${$14162s1/100+1}][${1}]
+
+https://www.wowhead.com/forever/spell=1316709
+=======
+1325756 Death Mark (Rank 2)
+school    physical
+defense   melee
+duration  6 s
+cooldown  10 s
+gcd       1 s
+cost      25 energy
+cost      1 combo points
+range     20 yd
+attrs     refund on miss, cannot crit, suppresses weapon procs
+labels    20
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+             1 point  : ${1*$<ratio>}% stored, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             2 points: ${2*$<ratio>}% stored, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             3 points: ${3*$<ratio>}% stored, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             4 points: ${4*$<ratio>}% stored, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             5 points: ${5*$<ratio>}% stored, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+aura      Marked for Death. Taking $w1 damage after $d.
+vars      $ratio=${12}
+          $maxAP=${0.04}
+          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
+          $coup=$?s14162[${$14162s1/100+1}][${1}]
+
+https://www.wowhead.com/forever/spell=1325756
+=======
+1325757 Death Mark (Rank 3)
+school    physical
+defense   melee
+duration  6 s
+cooldown  10 s
+gcd       1 s
+cost      25 energy
+cost      1 combo points
+range     20 yd
+attrs     refund on miss, cannot crit, suppresses weapon procs
+labels    20
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+             1 point  : ${1*$<ratio>}% stored, ${((138+(1*217)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             2 points: ${2*$<ratio>}% stored, ${((138+(2*217)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             3 points: ${3*$<ratio>}% stored, ${((138+(3*217)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             4 points: ${4*$<ratio>}% stored, ${((138+(4*217)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             5 points: ${5*$<ratio>}% stored, ${((138+(5*217)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+aura      Marked for Death. Taking $w1 damage after $d.
+vars      $ratio=${12}
+          $maxAP=${0.04}
+          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
+          $coup=$?s14162[${$14162s1/100+1}][${1}]
+
+https://www.wowhead.com/forever/spell=1325757
+=======
+1325758 Death Mark (Rank 4)
+school    physical
+defense   melee
+duration  6 s
+cooldown  10 s
+gcd       1 s
+cost      25 energy
+cost      1 combo points
+range     20 yd
+attrs     refund on miss, cannot crit, suppresses weapon procs
+labels    20
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HELPFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HELPFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+
+effect 1  0 physical damage every 6 s to the enemy (1 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=0 period=6000ms target=[6,0]
+effect 2  a dummy aura to the enemy
+          E_APPLY_AURA A_DUMMY base=0 target=[6,0]
+tooltip   Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:
+             1 point  : ${1*$<ratio>}% stored, ${((156+(1*245)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             2 points: ${2*$<ratio>}% stored, ${((156+(2*245)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             3 points: ${3*$<ratio>}% stored, ${((156+(3*245)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             4 points: ${4*$<ratio>}% stored, ${((156+(4*245)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+             5 points: ${5*$<ratio>}% stored, ${((156+(5*245)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap
+aura      Marked for Death. Taking $w1 damage after $d.
+vars      $ratio=${12}
+          $maxAP=${0.04}
+          $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
+          $coup=$?s14162[${$14162s1/100+1}][${1}]
+
+https://www.wowhead.com/forever/spell=1325758
+=======
 14082 Dirty Deeds
 school    physical
 attrs     passive
@@ -176,6 +300,7 @@ range     5 yd
 equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    20
+refs      1329326 Ghostly Strike
 
 effect 1  125% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=125 sp=1 target=[6,0]
@@ -185,10 +310,30 @@ effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 4  a dummy effect holding 180 to the enemy
           E_DUMMY base=180 sp=1 target=[6,0]
-tooltip   A strike that deals $s1% ($m4% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by $s2% for $d.  Awards $s3 combo $lpoint:points;.
+effect 5  normalised weapon damage to the enemy
+          E_NORMALIZED_WEAPON_DMG base=0 sp=1 target=[6,0]
+effect 6  casts 1329326 Ghostly Strike to the caster
+          E_TRIGGER_SPELL base=0 trigger=1329326 target=[1,0]
+tooltip   A strike that deals $s1% ($m4% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by $s2% for $d, and causes your next Ambush or Garrote cast within $1329326d to not require Stealth.  Awards $s3 combo $lpoint:points;.
 aura      Dodge chance increased by $s2%.
 
 https://www.wowhead.com/forever/spell=14278
+=======
+1329326 Ghostly Strike
+school    physical
+defense   melee
+duration  7 s
+equip     needs a melee weapon
+charges   1
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AREA_AURA_PARTY A_MOD_IGNORE_SHAPESHIFT base=0 sp=1 family=8 mask=0x300 target=[1,0]
+tooltip   Next Ambush or Garrote does not require Stealth.
+aura      Next Ambush or Garrote does not require Stealth.
+
+https://www.wowhead.com/forever/spell=1329326
 =======
 16511 Hemorrhage
 school    physical
@@ -207,13 +352,13 @@ effect 1  normalised weapon damage to the enemy
 effect 2  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 effect 3  unrecognised shape
-          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=15 family=8 mask=0x100000 target=[6,0]
+          E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=15 family=8 mask=0x100100 target=[6,0]
 effect 4  100% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=100 sp=1 target=[6,0]
 effect 5  a dummy effect holding 145 to the enemy
           E_DUMMY base=145 sp=1 target=[6,0]
-tooltip   An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.
-aura      Taking $w3% increased Rupture damage from the caster.
+tooltip   An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture and Garrote damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.
+aura      Taking $w3% increased Rupture and Garrote damage from the caster.
 
 https://www.wowhead.com/forever/spell=16511
 =======
@@ -314,6 +459,33 @@ tooltip   Pick the target's pocket.
 
 https://www.wowhead.com/forever/spell=921
 =======
+1328825 Poised (Passive)
+school    physical
+attrs     passive
+labels    20
+refs      1328826 Poised
+
+effect 1  a dummy aura holding 10
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+tooltip   While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
+
+https://www.wowhead.com/forever/spell=1328825
+=======
+1328826 Poised
+school    physical
+duration  permanent
+charges   1
+attrs     can proc from procs
+labels    20
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  SPELLMOD_COST -10 (-1 on a rage bar) on family 8 mask 0xf3e179e,0x200900,0x4000000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=14 family=8 mask=0xf3e179e,0x200900,0x4000000 target=[1,0]
+tooltip   Energy cost of the next ability performed is reduced by $s1.
+aura      Energy cost of the next ability performed is reduced by $s1.
+
+https://www.wowhead.com/forever/spell=1328826
+=======
 14183 Premeditation
 school    physical
 duration  20 s
@@ -344,18 +516,32 @@ tooltip   When activated, this ability immediately finishes the cooldown on your
 
 https://www.wowhead.com/forever/spell=14185
 =======
-1310728 Quietus
+1310728 Quick Getaway
 school    physical
 attrs     passive
 labels    20
+proc      hears PROC_FLAG_2_CAST_SUCCESSFUL; no roll, it fires whenever its condition is met
+refs      1329282 Quick Getaway
 
-effect 1  a dummy aura holding 10
-          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
-effect 2  a dummy aura holding 35
-          E_APPLY_AURA A_DUMMY base=35 sp=1 target=[1,0]
-tooltip   Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause $m1% more damage against targets below $m2% health.
+effect 1  a dummy aura holding 1
+          E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+effect 2  unrecognised shape
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL_WITH_VALUE base=35 sp=1 trigger=1329282 target=[1,0]
+tooltip   Increases the maximum number of targets you may have Sapped by $s1, and increases your movement speed by $s2% for $1329282d after Sapping a target.
 
 https://www.wowhead.com/forever/spell=1310728
+=======
+1329282 Quick Getaway
+school    physical
+duration  3 s
+labels    20
+
+effect 1  +0% movement speed
+          E_APPLY_AURA A_MOD_INCREASE_SPEED base=0 target=[1,0]
+tooltip   Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
+aura      Movement speed increased by $w1%.
+
+https://www.wowhead.com/forever/spell=1329282
 =======
 438040 Redirect
 school    physical
@@ -400,7 +586,7 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
 aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=2070
@@ -421,7 +607,7 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
 aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=6770
@@ -442,7 +628,7 @@ labels    20
 
 effect 1  stuns to the enemy
           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
-tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+tooltip   Incapacitates the target for up to $d. Only works on Humanoids that are not in combat.  Any damage taken will break the effect. Only $?s1310728[${2}][${1}] $ltarget:targets; may be sapped at a time. Does not break Stealth.
 aura      Incapacitated.
 
 https://www.wowhead.com/forever/spell=11297
@@ -709,7 +895,7 @@ proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its 
 refs      1310723 Thousand Cuts
 
 effect 1  casts 1310723 Thousand Cuts on its trigger
-          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=3 sp=1 trigger=1310723 target=[1,0]
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=1310723 target=[1,0]
 tooltip   When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within $1310723d is reduced by $1310723s1, stacking up to $1310723u times.
 
 https://www.wowhead.com/forever/spell=1310721
