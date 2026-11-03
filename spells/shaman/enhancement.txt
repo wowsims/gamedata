@@ -1375,7 +1375,7 @@ https://www.wowhead.com/forever/spell=10408
 school    physical
 defense   melee
 duration  12 s
-cooldown  8 s
+cooldown  6 s
 gcd       1.5 s
 cost      8% of base mana
 range     5 yd
@@ -1388,7 +1388,9 @@ effect 1  normalised weapon damage to the enemy
           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 family=11 mask=0x100003 target=[6,0]
-tooltip   Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
+effect 3  150% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=150 target=[6,0]
+tooltip   Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
 aura      Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
 
 https://www.wowhead.com/forever/spell=17364
@@ -1481,18 +1483,18 @@ tooltip   Summons a Strength of Earth Totem with $s1 health at the feet of the c
 
 https://www.wowhead.com/forever/spell=25361
 =======
-437009 Totemic Projection
+437009 Totemic Call
 school    nature
 duration  1 s
-cooldown  60 s
+cooldown  30 s
 gcd       1.5 s
 cost      25% of base mana
 range     30 yd
 labels    24
 
-effect 1  summons creature 15214 to target 87
-          E_SUMMON base=0 misc=15214 misc2=5878 target=[87,0]
-tooltip   Relocates your active totems to the specified location.
+effect 1  summons creature 15214
+          E_SUMMON base=0 misc=15214 misc2=5878 target=[18,0]
+tooltip   Relocates your active totems to your location.
 
 https://www.wowhead.com/forever/spell=437009
 =======

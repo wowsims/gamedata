@@ -7,7 +7,7 @@ effect 1  SPELLMOD_RANGE +10% on family 3 mask 0x200a0
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=5 family=3 mask=0x200a0 target=[1,0]
 effect 2  SPELLMOD_RADIUS +10% on family 3 mask 0x240
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=10 sp=1 misc=6 family=3 mask=0x240 target=[1,0]
-tooltip   Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
+tooltip   Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
 
 https://www.wowhead.com/forever/spell=16757
 =======
@@ -1981,7 +1981,7 @@ labels    17
 
 effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 3 mask 0x20
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 misc=10 family=3 mask=0x20 target=[1,0]
-tooltip   Reduces the casting time of your Frostbolt and Frost Blast spells by $/1000;S1 sec.
+tooltip   Reduces the casting time of your Frostbolt spell by $/1000;S1 sec.
 
 https://www.wowhead.com/forever/spell=11070
 =======
@@ -2085,7 +2085,7 @@ effect 2  a dummy aura
           E_APPLY_AURA A_DUMMY base=0 trigger=12579 target=[1,0]
 effect 3  a dummy aura holding 7
           E_APPLY_AURA A_DUMMY base=7 target=[1,0]
-tooltip   Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
+tooltip   Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
 
 https://www.wowhead.com/forever/spell=11180
 =======
