@@ -218,6 +218,8 @@ jobs:
               run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
 
             # After the merge, so the links reach main. Without the secret (a fork) the step says so and passes.
+            # create-pull-request leaves the checkout on main as it was before the update, so the update
+            # folder is read from the merged main.
             - name: Post to Discord 📣
               if: steps.pr.outputs.pull-request-number != '' && !startsWith(steps.record.outputs.title, 'Resync')
               env:
@@ -231,6 +233,7 @@ jobs:
                       echo "No DISCORD_WEBHOOK_URL secret, nothing posted."
                       exit 0
                   fi
+                  git -C gamedata pull --ff-only origin main
                   python3 gamedata/scripts/discord_message.py "gamedata/$FOLDER" "$TITLE" "$PR_URL" \
                       "https://github.com/$GITHUB_REPOSITORY/blob/main/$FOLDER/CHANGES.md" "$RUNNER_TEMP/discord"
                   for message in $(ls "$RUNNER_TEMP/discord" | sort -n); do
