@@ -915,8 +915,8 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  25–149 physical damage to the enemy (+0.03 attack power)
-          E_SCHOOL_DAMAGE base=87 variance=0.71428573 sp=1 ap=0.03 perResource=160 target=[6,0]
+effect 1  25–149 physical damage to the enemy (+0.0375 attack power)
+          E_SCHOOL_DAMAGE base=87 variance=0.71428573 sp=1 ap=0.0375 perResource=160 target=[6,0]
 effect 2  a dummy effect holding 310 to the enemy
           E_DUMMY base=310 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
@@ -951,8 +951,8 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  27–177 physical damage to the enemy (+0.03 attack power)
-          E_SCHOOL_DAMAGE base=102 variance=0.73170733 sp=1 ap=0.03 perResource=181 target=[6,0]
+effect 1  27–177 physical damage to the enemy (+0.0375 attack power)
+          E_SCHOOL_DAMAGE base=102 variance=0.73170733 sp=1 ap=0.0375 perResource=181 target=[6,0]
 effect 2  a dummy effect holding 330 to the enemy
           E_DUMMY base=330 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
@@ -1610,8 +1610,8 @@ labels    21
 
 effect 1  27 physical damage to the enemy
           E_SCHOOL_DAMAGE base=27 target=[6,0]
-effect 2  20 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=20 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 2  20 physical damage every 3 s to the enemy (3 ticks, +0.06875 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=20 ap=0.06875 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1632,8 +1632,8 @@ labels    21
 
 effect 1  39 physical damage to the enemy
           E_SCHOOL_DAMAGE base=39 target=[6,0]
-effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.06875 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.06875 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1654,8 +1654,8 @@ labels    21
 
 effect 1  56 physical damage to the enemy
           E_SCHOOL_DAMAGE base=56 target=[6,0]
-effect 2  32 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=32 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 2  32 physical damage every 3 s to the enemy (3 ticks, +0.06875 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=32 ap=0.06875 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1676,8 +1676,8 @@ labels    21
 
 effect 1  76 physical damage to the enemy
           E_SCHOOL_DAMAGE base=76 target=[6,0]
-effect 2  42 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=42 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 2  42 physical damage every 3 s to the enemy (3 ticks, +0.06875 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=42 ap=0.06875 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1985,8 +1985,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  19 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 ap=0.01 period=2000ms perResource=31.9 target=[6,0]
+effect 1  19 physical damage every 2 s to the enemy (6 ticks, +0.0125 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 ap=0.0125 period=2000ms perResource=31.9 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
