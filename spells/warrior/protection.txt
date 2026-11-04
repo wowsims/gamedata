@@ -438,8 +438,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  19–25 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 ap=0.25 target=[6,0]
+effect 1  19–25 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -461,8 +461,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  27–41 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 ap=0.25 target=[6,0]
+effect 1  27–41 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -484,8 +484,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  38–58 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 ap=0.25 target=[6,0]
+effect 1  38–58 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -507,8 +507,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  65–99 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 ap=0.25 target=[6,0]
+effect 1  65–99 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -530,8 +530,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  97–145 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 ap=0.25 target=[6,0]
+effect 1  97–145 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -553,8 +553,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  122–184 physical damage to the enemy (+0.25 attack power)
-          E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 ap=0.25 target=[6,0]
+effect 1  122–184 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
 
@@ -802,8 +802,8 @@ labels    25
 
 effect 1  -90 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-90 misc=1 target=[6,0]
-effect 2  34 threat to the enemy (+0.05 attack power)
-          E_THREAT base=34 ap=0.05 target=[6,0]
+effect 2  34 threat to the enemy
+          E_THREAT base=34 target=[6,0]
 tooltip   Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.
 aura      Armor decreased by $s1.
 
@@ -823,8 +823,8 @@ labels    25
 
 effect 1  -180 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-180 misc=1 target=[6,0]
-effect 2  75 threat to the enemy (+0.05 attack power)
-          E_THREAT base=75 ap=0.05 target=[6,0]
+effect 2  75 threat to the enemy
+          E_THREAT base=75 target=[6,0]
 tooltip   Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.
 aura      Armor decreased by $s1.
 
@@ -844,8 +844,8 @@ labels    25
 
 effect 1  -270 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-270 misc=1 target=[6,0]
-effect 2  117 threat to the enemy (+0.05 attack power)
-          E_THREAT base=117 ap=0.05 target=[6,0]
+effect 2  117 threat to the enemy
+          E_THREAT base=117 target=[6,0]
 tooltip   Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.
 aura      Armor decreased by $s1.
 
@@ -865,8 +865,8 @@ labels    25
 
 effect 1  -360 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-360 misc=1 target=[6,0]
-effect 2  158 threat to the enemy (+0.05 attack power)
-          E_THREAT base=158 ap=0.05 target=[6,0]
+effect 2  158 threat to the enemy
+          E_THREAT base=158 target=[6,0]
 tooltip   Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.
 aura      Armor decreased by $s1.
 
@@ -886,8 +886,8 @@ labels    25
 
 effect 1  -450 armor to the enemy
           E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=-450 misc=1 target=[6,0]
-effect 2  206 threat to the enemy (+0.05 attack power)
-          E_THREAT base=206 ap=0.05 target=[6,0]
+effect 2  206 threat to the enemy
+          E_THREAT base=206 target=[6,0]
 tooltip   Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.
 aura      Armor decreased by $s1.
 
