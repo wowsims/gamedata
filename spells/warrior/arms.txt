@@ -1294,8 +1294,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  5 physical damage every 3 s to the enemy (3 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 ap=0.02 period=3000ms target=[6,0]
+effect 1  5 physical damage every 3 s to the enemy (3 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1314,8 +1314,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  7 physical damage every 3 s to the enemy (4 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 ap=0.02 period=3000ms target=[6,0]
+effect 1  7 physical damage every 3 s to the enemy (4 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=7 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1334,8 +1334,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  9 physical damage every 3 s to the enemy (5 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 ap=0.02 period=3000ms target=[6,0]
+effect 1  9 physical damage every 3 s to the enemy (5 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=9 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1354,8 +1354,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  11 physical damage every 3 s to the enemy (6 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 ap=0.02 period=3000ms target=[6,0]
+effect 1  11 physical damage every 3 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1374,8 +1374,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  14 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 ap=0.02 period=3000ms target=[6,0]
+effect 1  14 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1394,8 +1394,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  18 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 ap=0.02 period=3000ms target=[6,0]
+effect 1  18 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=18 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 seconds.
 
@@ -1414,8 +1414,8 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss, periodic can crit
 labels    25
 
-effect 1  21 physical damage every 3 s to the enemy (7 ticks, +0.02 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.02 period=3000ms target=[6,0]
+effect 1  21 physical damage every 3 s to the enemy (7 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 period=3000ms target=[6,0]
 tooltip   Wounds the target causing them to bleed for $o1 damage over $d.
 aura      Bleeding for $w1 damage every $t1 sec.
 
@@ -1581,8 +1581,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  10 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=10 ap=0.07 radius=8 target=[22,15]
+effect 1  10 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=10 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
@@ -1601,8 +1601,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  23 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=23 ap=0.07 radius=8 target=[22,15]
+effect 1  23 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=23 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies with thunder increasing, the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
@@ -1621,8 +1621,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  37 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=37 ap=0.07 radius=8 target=[22,15]
+effect 1  37 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=37 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
@@ -1641,8 +1641,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  55 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=55 ap=0.07 radius=8 target=[22,15]
+effect 1  55 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=55 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
@@ -1661,8 +1661,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  82 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=82 ap=0.07 radius=8 target=[22,15]
+effect 1  82 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=82 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.
@@ -1681,8 +1681,8 @@ stance    Battle, Defensive
 targets   up to 4
 labels    25
 
-effect 1  103 physical damage to every enemy around the caster (+0.07 attack power)
-          E_SCHOOL_DAMAGE base=103 ap=0.07 radius=8 target=[22,15]
+effect 1  103 physical damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=103 radius=8 target=[22,15]
 effect 2  -20% melee haste to every enemy around the caster
           E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=-20 radius=8 target=[22,15]
 tooltip   Blasts nearby enemies with thunder, increasing the time between their attacks by $s2% for $d and doing $s1 damage to them. Will affect up to $i targets.

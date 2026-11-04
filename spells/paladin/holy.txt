@@ -1551,7 +1551,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20267 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
@@ -1611,7 +1611,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20341 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
@@ -1627,7 +1627,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20342 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
@@ -1643,7 +1643,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says heals count
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20343 Judgement of Light
 
 effect 1  casts 5373 Judgement of Light Intermediate on its trigger to the enemy
@@ -1804,7 +1804,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
 refs      20268 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
@@ -1820,7 +1820,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
 refs      20352 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
@@ -1836,7 +1836,7 @@ defense   melee
 duration  40 s
 range     100 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; 50% chance
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no stated chance, the rate has to come from an override
 refs      20353 Judgement of Wisdom
 
 effect 1  casts 1826 Judgement of Wisdom Intermediate on its trigger to the enemy
@@ -2449,7 +2449,7 @@ duration  30 s
 gcd       1.5 s
 cost      110 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20167 Seal of Light, 20185 Judgement of Light, 20267 Judgement of Light
 
 effect 1  casts 20167 Seal of Light on its trigger
@@ -2510,7 +2510,7 @@ duration  30 s
 gcd       1.5 s
 cost      140 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20333 Seal of Light, 20344 Judgement of Light, 20341 Judgement of Light
 
 effect 1  casts 20333 Seal of Light on its trigger
@@ -2531,7 +2531,7 @@ duration  30 s
 gcd       1.5 s
 cost      180 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20334 Seal of Light, 20345 Judgement of Light, 20342 Judgement of Light
 
 effect 1  casts 20334 Seal of Light on its trigger
@@ -2552,7 +2552,7 @@ duration  30 s
 gcd       1.5 s
 cost      210 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute; tooltip says heals count
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override; tooltip says heals count
 refs      20340 Seal of Light, 20346 Judgement of Light, 20343 Judgement of Light
 
 effect 1  casts 20340 Seal of Light on its trigger
@@ -2883,7 +2883,7 @@ duration  30 s
 gcd       1.5 s
 cost      135 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
 refs      20168 Seal of Wisdom, 20186 Judgement of Wisdom, 20268 Judgement of Wisdom
 
 effect 1  casts 20168 Seal of Wisdom on its trigger
@@ -2934,7 +2934,7 @@ duration  30 s
 gcd       1.5 s
 cost      170 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
 refs      20350 Seal of Wisdom, 20354 Judgement of Wisdom, 20352 Judgement of Wisdom
 
 effect 1  casts 20350 Seal of Wisdom on its trigger
@@ -2955,7 +2955,7 @@ duration  30 s
 gcd       1.5 s
 cost      200 mana
 labels    26, 1203
-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 15 procs per minute
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no stated chance, the rate has to come from an override
 refs      20351 Seal of Wisdom, 20355 Judgement of Wisdom, 20353 Judgement of Wisdom
 
 effect 1  casts 20351 Seal of Wisdom on its trigger
