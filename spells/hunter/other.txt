@@ -4254,6 +4254,54 @@ effect 1  a dummy aura holding 1 to the target
 
 https://www.wowhead.com/forever/spell=447138
 =======
+1328676 [DNT] Hunter Pet Scaling (Old Testing Backup)
+school    physical
+duration  permanent
+icd       2 s
+labels    23
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_MOD_MAX_HEALTH base=0 target=[1,0]
+effect 2  +0 attack power
+          E_APPLY_AURA A_MOD_ATTACK_POWER base=0 target=[1,0]
+effect 3  +0 holy+fire+nature+frost+shadow+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_DONE base=0 misc=126 target=[1,0]
+effect 4  +0 fire resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=4 target=[1,0]
+effect 5  +0 frost resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=16 target=[1,0]
+effect 6  +0 nature resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=8 target=[1,0]
+effect 7  +0 shadow resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=32 target=[1,0]
+effect 8  +0 arcane resistance
+          E_APPLY_AURA A_MOD_RESISTANCE base=0 misc=64 target=[1,0]
+effect 9  +0 armor
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=0 misc=1 target=[1,0]
+effect 10 +0% physical hit
+          E_APPLY_AURA A_MOD_HIT_CHANCE base=0 target=[1,0]
+effect 11 +0% spell hit
+          E_APPLY_AURA A_MOD_SPELL_HIT_CHANCE base=0 target=[1,0]
+effect 12 +0% melee haste
+          E_APPLY_AURA A_MOD_MELEE_HASTE_3 base=0 target=[1,0]
+effect 13 +0% cast speed
+          E_APPLY_AURA A_MOD_CASTING_SPEED_NOT_STACK base=0 target=[1,0]
+effect 14 +0% physical crit
+          E_APPLY_AURA A_MOD_WEAPON_CRIT_PERCENT base=0 target=[1,0]
+effect 15 +0% spell crit
+          E_APPLY_AURA A_MOD_SPELL_CRIT_CHANCE base=0 target=[1,0]
+effect 16 unrecognised shape
+          E_APPLY_AURA A_MOD_MAX_POWER base=50 misc=2 target=[1,0]
+effect 17 unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=0 misc=4 target=[1,0]
+effect 18 unrecognised shape
+          E_APPLY_AURA A_MOD_COMBAT_RESULT_CHANCE2 base=0 misc=2 target=[1,0]
+effect 19 +0% dodge chance
+          E_APPLY_AURA A_MOD_DODGE_PERCENT base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1328676
+=======
 447036 [DNT] Stormcrow Nest
 school    physical
 duration  permanent
