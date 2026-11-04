@@ -33,6 +33,19 @@ aura      Confused.
 
 https://www.wowhead.com/forever/spell=21060
 =======
+1329286 Boot Knife
+school    physical
+attrs     passive
+labels    20
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 sp=1 trigger=1329285 target=[1,0]
+effect 2  a dummy aura holding 2
+          E_APPLY_AURA A_DUMMY base=2 sp=1 trigger=1329285 target=[1,0]
+tooltip   Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
+
+https://www.wowhead.com/forever/spell=1329286
+=======
 13975 Camouflage
 school    physical
 attrs     passive
@@ -45,60 +58,6 @@ effect 2  SPELLMOD_COOLDOWN -6 s on family 8 mask 0x400000
 tooltip   Reduces your speed penalty from your Stealth ability by $s1% and reduces its cooldown by $/1000;s2 sec.
 
 https://www.wowhead.com/forever/spell=13975
-=======
-424980 Cutthroat
-school    physical
-attrs     passive
-
-effect 1  replaces an action bar spell with 399967
-          E_APPLY_AURA A_OVERRIDE_ACTIONBAR_SPELLS base=462708 misc=399967 target=[1,0]
-effect 2  a dummy effect holding 15
-          E_DUMMY base=15 target=[0,0]
-tooltip   Gain the Cutthroat ability:
-
-          $@spellicon462708
-          $@spelldesc462708
-
-https://www.wowhead.com/forever/spell=424980
-=======
-462707 Cutthroat
-school    physical
-defense   melee
-duration  10 s
-charges   1
-labels    20
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC, PROC_FLAG_DEAL_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
-
-effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_IGNORE_SHAPESHIFT base=20 family=8 mask=0x200 target=[1,0]
-aura      Next Ambush does not require Stealth.
-
-https://www.wowhead.com/forever/spell=462707
-=======
-462708 Cutthroat
-school    physical
-attrs     passive
-labels    20
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY; 15% chance, from effect 1; tooltip says one named ability
-refs      462707 Cutthroat
-
-effect 1  a dummy aura holding 15
-          E_APPLY_AURA A_DUMMY base=15 sp=1 target=[1,0]
-tooltip   Your Backstab has a $m1% chance to cause your next Ambush within $462707d to not require Stealth.
-
-https://www.wowhead.com/forever/spell=462708
-=======
-1241810 Cutthroat
-school    physical
-defense   melee
-duration  permanent
-labels    20
-
-effect 1  a dummy aura holding 20
-          E_APPLY_AURA A_DUMMY base=20 target=[1,0]
-aura      Ambush, Backstab, and Garrote have no positional requirement.
-
-https://www.wowhead.com/forever/spell=1241810
 =======
 1316709 Death Mark (Rank 1)
 school    physical
@@ -372,18 +331,6 @@ effect 1  SPELLMOD_CRITICAL_CHANCE +45% on family 8 mask 0x200
 tooltip   Increases the critical strike chance of your Ambush ability by $s1%.
 
 https://www.wowhead.com/forever/spell=14079
-=======
-14084 Improved Distract
-school    physical
-attrs     passive
-
-effect 1  SPELLMOD_RADIUS +5 on family 8 mask 0x1000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=6 family=8 mask=0x1000 target=[1,0]
-effect 2  SPELLMOD_EFFECT2 -10 on family 8 mask 0x1000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-10 sp=1 misc=12 family=8 mask=0x1000 target=[1,0]
-tooltip   Increases the radius of your Distract ability by $s1 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional ${$m2/-5} $Llevel:levels; lower.
-
-https://www.wowhead.com/forever/spell=14084
 =======
 14076 Improved Sap (Rank 1)
 school    physical
@@ -885,33 +832,6 @@ effect 1  a dummy aura
 aura      Stealthed.
 
 https://www.wowhead.com/forever/spell=1326175
-=======
-1310721 Thousand Cuts
-school    physical
-icd       1.9 s
-attrs     passive
-labels    20
-proc      hears PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says one named ability
-refs      1310723 Thousand Cuts
-
-effect 1  casts 1310723 Thousand Cuts on its trigger
-          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=1310723 target=[1,0]
-tooltip   When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within $1310723d is reduced by $1310723s1, stacking up to $1310723u times.
-
-https://www.wowhead.com/forever/spell=1310721
-=======
-1310723 Thousand Cuts
-school    physical
-duration  10 s
-stack     up to 5
-labels    20
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY; no roll, it fires whenever its condition is met
-
-effect 1  SPELLMOD_COST -3 (-0.3 on a rage bar) on family 8 mask 0x2000004
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-3 sp=1 misc=14 family=8 mask=0x2000004 target=[1,0]
-aura      Energy cost of Hemorrhage and Backstab reduced by $m1.
-
-https://www.wowhead.com/forever/spell=1310723
 =======
 1856 Vanish (Rank 1)
 school    physical
