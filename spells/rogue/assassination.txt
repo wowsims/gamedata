@@ -255,6 +255,19 @@ tooltip   Ambush the target, causing $s2% weapon damage plus 290 to the target. 
 
 https://www.wowhead.com/forever/spell=462723
 =======
+1329256 Blood Splatter
+school    physical
+attrs     passive
+labels    20
+
+effect 1  SPELLMOD_DURATION +6 s on family 8 mask 0x100000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=6000 sp=1 misc=1 family=8 mask=0x100000 target=[1,0]
+effect 2  SPELLMOD_DURATION +9 s on family 8 mask 0x100
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=9000 sp=1 misc=1 family=8 mask=0x100 target=[1,0]
+tooltip   Increases the duration of your Rupture ability by ${$s1/1000} sec and your Garrote ability by ${$s2/1000} sec.
+
+https://www.wowhead.com/forever/spell=1329256
+=======
 1833 Cheap Shot
 school    physical
 defense   melee
