@@ -298,8 +298,8 @@ labels    21
 
 effect 1  weapon damage +27 to the enemy
           E_WEAPON_DAMAGE base=27 sp=1 target=[6,0]
-effect 2  110% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -319,8 +319,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% ch
 
 effect 1  weapon damage +39 to the enemy
           E_WEAPON_DAMAGE base=39 sp=1 target=[6,0]
-effect 2  110% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -340,8 +340,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% ch
 
 effect 1  weapon damage +57 to the enemy
           E_WEAPON_DAMAGE base=57 sp=1 target=[6,0]
-effect 2  110% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -361,8 +361,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% ch
 
 effect 1  weapon damage +88 to the enemy
           E_WEAPON_DAMAGE base=88 sp=1 target=[6,0]
-effect 2  110% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -382,8 +382,8 @@ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 40% ch
 
 effect 1  weapon damage +115 to the enemy
           E_WEAPON_DAMAGE base=115 sp=1 target=[6,0]
-effect 2  110% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=110 target=[6,0]
+effect 2  140% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=140 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -843,16 +843,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  6–38 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=22 variance=0.72727275 sp=1 perResource=36 target=[6,0]
-effect 2  a dummy effect holding 100 to the enemy
-          E_DUMMY base=100 sp=1 target=[6,0]
+effect 1  7–47 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=27 variance=0.72727275 sp=1 perResource=45 target=[6,0]
+effect 2  a dummy effect holding 120 to the enemy
+          E_DUMMY base=120 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 50-66 damage
-             2 points: 86-102 damage
-             3 points: 122-138 damage
-             4 points: 158-174 damage
-             5 points: 194-210 damage
+             1 point  : 62-82 damage
+             2 points: 107-127 damage
+             3 points: 152-177 damage
+             4 points: 197-217 damage
+             5 points: 242-262 damage
 
 https://www.wowhead.com/forever/spell=22568
 =======
@@ -867,16 +867,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  8–56 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=32 variance=0.75 sp=1 perResource=59 target=[6,0]
-effect 2  a dummy effect holding 150 to the enemy
-          E_DUMMY base=150 sp=1 target=[6,0]
+effect 1  10–70 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=40 variance=0.75 sp=1 perResource=74 target=[6,0]
+effect 2  a dummy effect holding 180 to the enemy
+          E_DUMMY base=180 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 79-103 damage
-             2 points: 138-162 damage
-             3 points: 197-221 damage
-             4 points: 256-280 damage
-             5 points: 315-339 damage
+             1 point  : 99-129 damage
+             2 points: 173-203 damage
+             3 points: 247-277 damage
+             4 points: 321-351 damage
+             5 points: 395-425 damage
 
 https://www.wowhead.com/forever/spell=22827
 =======
@@ -891,16 +891,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  10–90 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=50 variance=0.8 sp=1 perResource=92 target=[6,0]
-effect 2  a dummy effect holding 200 to the enemy
-          E_DUMMY base=200 sp=1 target=[6,0]
+effect 1  12–112 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=62 variance=0.8 sp=1 perResource=115 target=[6,0]
+effect 2  a dummy effect holding 250 to the enemy
+          E_DUMMY base=250 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 122-162 damage
-             2 points: 214-254 damage
-             3 points: 306-346 damage
-             4 points: 398-438 damage
-             5 points: 490-530 damage
+             1 point  : 152-202 damage
+             2 points: 267-317 damage
+             3 points: 382-432 damage
+             4 points: 497-547 damage
+             5 points: 612-662 damage
 
 https://www.wowhead.com/forever/spell=22828
 =======
@@ -915,16 +915,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  20–120 physical damage to the enemy (+0.03 attack power)
-          E_SCHOOL_DAMAGE base=70 variance=0.71428573 sp=1 ap=0.03 perResource=128 target=[6,0]
-effect 2  a dummy effect holding 250 to the enemy
-          E_DUMMY base=250 sp=1 target=[6,0]
+effect 1  25–149 physical damage to the enemy (+0.03 attack power)
+          E_SCHOOL_DAMAGE base=87 variance=0.71428573 sp=1 ap=0.03 perResource=160 target=[6,0]
+effect 2  a dummy effect holding 310 to the enemy
+          E_DUMMY base=310 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 173-223 damage
-             2 points: 301-351 damage
-             3 points: 429-479 damage
-             4 points: 557-607 damage
-             5 points: 685-735 damage
+             1 point  : 215-279 damage
+             2 points: 375-439 damage
+             3 points: 535-599 damage
+             4 points: 695-759 damage
+             5 points: 855-919 damage
 
 https://www.wowhead.com/forever/spell=22829
 =======
@@ -951,16 +951,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  22–142 physical damage to the enemy (+0.03 attack power)
-          E_SCHOOL_DAMAGE base=82 variance=0.73170733 sp=1 ap=0.03 perResource=147 target=[6,0]
-effect 2  a dummy effect holding 270 to the enemy
-          E_DUMMY base=270 sp=1 target=[6,0]
+effect 1  27–177 physical damage to the enemy (+0.03 attack power)
+          E_SCHOOL_DAMAGE base=102 variance=0.73170733 sp=1 ap=0.03 perResource=181 target=[6,0]
+effect 2  a dummy effect holding 330 to the enemy
+          E_DUMMY base=330 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 199-259 damage
-             2 points: 346-406 damage
-             3 points: 493-553 damage
-             4 points: 640-700 damage
-             5 points: 787-847 damage
+             1 point  : 245-321 damage
+             2 points: 426-502 damage
+             3 points: 607-683 damage
+             4 points: 788-864 damage
+             5 points: 969-1045 damage
 
 https://www.wowhead.com/forever/spell=31018
 =======
@@ -975,16 +975,16 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  4–24 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=14 variance=0.71428573 sp=1 perResource=24 target=[6,0]
-effect 2  a dummy effect holding 60 to the enemy
-          E_DUMMY base=60 sp=1 target=[6,0]
+effect 1  5–29 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=17 variance=0.71428573 sp=1 perResource=30 target=[6,0]
+effect 2  a dummy effect holding 70 to the enemy
+          E_DUMMY base=70 sp=1 target=[6,0]
 tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-             1 point  : 33-43 damage
-             2 points: 57-67 damage
-             3 points: 81-91 damage
-             4 points: 105-115 damage
-             5 points: 129-139 damage
+             1 point  : 40-54 damage
+             2 points: 70-84 damage
+             3 points: 100-114 damage
+             4 points: 130-144 damage
+             5 points: 160-174 damage
 
 https://www.wowhead.com/forever/spell=1328618
 =======
@@ -1608,10 +1608,10 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  23 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=23 target=[6,0]
-effect 2  16 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=16 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 1  27 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=27 target=[6,0]
+effect 2  20 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=20 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1630,10 +1630,10 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  31 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=31 target=[6,0]
-effect 2  21 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=21 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 1  39 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=39 target=[6,0]
+effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1652,10 +1652,10 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  45 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=45 target=[6,0]
-effect 2  26 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=26 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 1  56 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=56 target=[6,0]
+effect 2  32 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=32 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1674,10 +1674,10 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  61 physical damage to the enemy
-          E_SCHOOL_DAMAGE base=61 target=[6,0]
-effect 2  34 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=34 ap=0.055 period=3000ms mechanic=15 target=[6,0]
+effect 1  76 physical damage to the enemy
+          E_SCHOOL_DAMAGE base=76 target=[6,0]
+effect 2  42 physical damage every 3 s to the enemy (3 ticks, +0.055 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=42 ap=0.055 period=3000ms mechanic=15 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.
@@ -1769,8 +1769,8 @@ labels    21
 
 effect 1  weapon damage +42 to the enemy
           E_WEAPON_DAMAGE base=42 sp=1 amplitude=1 target=[6,0]
-effect 2  350% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 2  435% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -1789,8 +1789,8 @@ labels    21
 
 effect 1  weapon damage +62 to the enemy
           E_WEAPON_DAMAGE base=62 sp=1 amplitude=1 target=[6,0]
-effect 2  350% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 2  435% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -1809,8 +1809,8 @@ labels    21
 
 effect 1  weapon damage +78 to the enemy
           E_WEAPON_DAMAGE base=78 sp=1 amplitude=1 target=[6,0]
-effect 2  350% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 2  435% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -1829,8 +1829,8 @@ labels    21
 
 effect 1  weapon damage +98 to the enemy
           E_WEAPON_DAMAGE base=98 sp=1 amplitude=1 target=[6,0]
-effect 2  350% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=350 sp=1 target=[6,0]
+effect 2  435% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -1850,8 +1850,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  3 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=3 period=2000ms perResource=4.4 target=[6,0]
+effect 1  4 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms perResource=5.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -1877,8 +1877,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  4 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=4 period=2000ms perResource=7.2 target=[6,0]
+effect 1  5 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=5 period=2000ms perResource=9 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -1904,8 +1904,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  6 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=6 period=2000ms perResource=8.5 target=[6,0]
+effect 1  8 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms perResource=10.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -1931,8 +1931,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  8 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=8 period=2000ms perResource=12.7 target=[6,0]
+effect 1  10 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=10 period=2000ms perResource=15.8 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -1958,8 +1958,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  11 physical damage every 2 s to the enemy (6 ticks)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=11 period=2000ms perResource=18.2 target=[6,0]
+effect 1  14 physical damage every 2 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=14 period=2000ms perResource=22.5 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -1985,8 +1985,8 @@ stance    Cat
 attrs     refund on miss, periodic can crit
 labels    21
 
-effect 1  15 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power)
-          E_APPLY_AURA A_PERIODIC_DAMAGE base=15 ap=0.01 period=2000ms perResource=25.5 target=[6,0]
+effect 1  19 physical damage every 2 s to the enemy (6 ticks, +0.01 attack power)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 ap=0.01 period=2000ms perResource=31.9 target=[6,0]
 effect 2  a dummy aura to the enemy
           E_APPLY_AURA A_DUMMY base=0 target=[6,0]
 tooltip   Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -2039,8 +2039,8 @@ labels    21
 
 effect 1  weapon damage +22 to the enemy
           E_WEAPON_DAMAGE base=22 sp=1 target=[6,0]
-effect 2  155% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
@@ -2059,8 +2059,8 @@ labels    21
 
 effect 1  weapon damage +32 to the enemy
           E_WEAPON_DAMAGE base=32 sp=1 target=[6,0]
-effect 2  155% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
@@ -2079,8 +2079,8 @@ labels    21
 
 effect 1  weapon damage +44 to the enemy
           E_WEAPON_DAMAGE base=44 sp=1 target=[6,0]
-effect 2  155% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
@@ -2099,8 +2099,8 @@ labels    21
 
 effect 1  weapon damage +64 to the enemy
           E_WEAPON_DAMAGE base=64 sp=1 target=[6,0]
-effect 2  155% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
@@ -2119,8 +2119,8 @@ labels    21
 
 effect 1  weapon damage +80 to the enemy
           E_WEAPON_DAMAGE base=80 sp=1 target=[6,0]
-effect 2  155% weapon damage to the enemy
-          E_WEAPON_PERCENT_DAMAGE base=155 sp=1 target=[6,0]
+effect 2  200% weapon damage to the enemy
+          E_WEAPON_PERCENT_DAMAGE base=200 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
 tooltip   Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
