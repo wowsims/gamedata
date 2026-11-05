@@ -1,0 +1,179 @@
+# hunter
+--- 1283679 Shoot
++++ 1283679 Shoot
+@@ -0,0 +1,11 @@
++1283679 Shoot
++school    physical
++defense   ranged
++range     5-30 yd
++equip     needs a bow, gun or crossbow
++
++effect 1  9–17 physical damage to the enemy
++          E_SCHOOL_DAMAGE base=13 variance=0.2857143 sp=1 target=[6,0]
++tooltip   Shoots at an enemy, inflicting Physical damage.
++
++https://www.wowhead.com/forever/spell=1283679
+# mage
+--- 1291176 Blast Wave
++++ 1291176 Blast Wave
+@@ -0,0 +1,13 @@
++1291176 Blast Wave
++school    fire
++defense   magic
++duration  2 s
++
++effect 1  14–16 fire damage to every enemy around the caster
++          E_SCHOOL_DAMAGE base=15 variance=0.14933333 sp=1 radius=45 target=[22,15]
++effect 2  -10% movement speed to every enemy around the caster
++          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-10 radius=45 target=[22,15]
++tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
++aura      Reduced movement speed.
++
++https://www.wowhead.com/forever/spell=1291176
+--- 1283419 Frost Armor
++++ 1283419 Frost Armor
+@@ -0,0 +1,18 @@
++1283419 Frost Armor
++school    frost
++defense   magic
++duration  1800 s
++cooldown  10 s
++cost      10 mana
++proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
++refs      6136 Chilled
++
++effect 1  +732 armor (at level 60)
++          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=12 ppl=12 misc=1 target=[1,0]
++effect 2  casts 6136 Chilled on its trigger
++          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
++tooltip   Encases the caster in a layer of frost that lasts $d. The thick ice increases armor by $s1, slows melee attackers' movement to $6136s2%, and increases the time between their attacks by $6136s1%.
++aura      Armor increased by $s1.
++          Slowing melee attackers' movement and attacks.
++
++https://www.wowhead.com/forever/spell=1283419
+--- 1321337 DNT
++++ 1321337 DNT
+@@ -1,11 +1,13 @@
+ 1321337 DNT
+ school    arcane
+ defense   magic
+ gcd       1.5 s
+ range     15 yd
+ 
+ effect 1  unrecognised shape
+-          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
++          E_TELEPORT_UNITS base=0 amplitude=1 target=[25,17]
++effect 2  unrecognised shape
++          E_SCRIPT_EFFECT base=0 sp=1 target=[25,0]
+ tooltip   Teleports you to Orgrimmar.
+ 
+ https://www.wowhead.com/forever/spell=1321337
+# shaman
+--- 421 Chain Lightning (Rank 1)
++++ 421 Chain Lightning (Rank 1)
+@@ -1,15 +1,15 @@
+ 421 Chain Lightning (Rank 1)
+ school    nature
+ defense   magic
+-cast      2 s
++cast      2.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      245 mana
+ range     30 yd
+ labels    24
+ 
+ effect 1  208–236 nature damage to the enemy (at level 60, +0.714 spell power)
+           E_SCHOOL_DAMAGE base=215 ppl=1.4 variance=0.12745099 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=421
+--- 930 Chain Lightning (Rank 2)
++++ 930 Chain Lightning (Rank 2)
+@@ -1,15 +1,15 @@
+ 930 Chain Lightning (Rank 2)
+ school    nature
+ defense   magic
+-cast      2 s
++cast      2.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      360 mana
+ range     30 yd
+ labels    24
+ 
+ effect 1  339–379 nature damage to the enemy (at level 60, +0.714 spell power)
+           E_SCHOOL_DAMAGE base=348 ppl=2.2 variance=0.11564626 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=930
+--- 2860 Chain Lightning (Rank 3)
++++ 2860 Chain Lightning (Rank 3)
+@@ -1,15 +1,15 @@
+ 2860 Chain Lightning (Rank 3)
+ school    nature
+ defense   magic
+-cast      2 s
++cast      2.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      425 mana
+ range     30 yd
+ labels    24
+ 
+ effect 1  416–467 nature damage to the enemy (at level 60, +0.714 spell power)
+           E_SCHOOL_DAMAGE base=428 ppl=2.7 variance=0.11471321 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=2860
+--- 10605 Chain Lightning (Rank 4)
++++ 10605 Chain Lightning (Rank 4)
+@@ -1,15 +1,15 @@
+ 10605 Chain Lightning (Rank 4)
+ school    nature
+ defense   magic
+-cast      2 s
++cast      2.5 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      495 mana
+ range     30 yd
+ labels    24
+ 
+ effect 1  495–552 nature damage to the enemy (at level 60, +0.714 spell power)
+           E_SCHOOL_DAMAGE base=510 ppl=3.3 variance=0.11111111 sp=0.714 chain=3 target=[6,0]
+ tooltip   Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
+ 
+ https://www.wowhead.com/forever/spell=10605
+# warrior
+--- 1283073 Charge
++++ 1283073 Charge
+@@ -0,0 +1,12 @@
++1283073 Charge
++school    physical
++defense   melee
++range     8-25 yd
++
++effect 1  charges to the enemy
++          E_CHARGE base=0 target=[6,0]
++effect 2  weapon damage +20 to the enemy
++          E_WEAPON_DAMAGE base=20 sp=1 target=[6,0]
++tooltip   Charges an enemy, inflicting normal damage plus $s3.
++
++https://www.wowhead.com/forever/spell=1283073
+--- 1283407 Shield Charge
++++ 1283407 Shield Charge
+@@ -0,0 +1,13 @@
++1283407 Shield Charge
++school    physical
++range     8-25 yd
++
++effect 1  charges to the enemy
++          E_CHARGE base=0 target=[6,0]
++effect 2  unrecognised shape
++          E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
++effect 3  weapon damage +20 to the enemy
++          E_WEAPON_DAMAGE base=20 sp=1 target=[6,0]
++tooltip   Charges an enemy, knocking it back and inflicting normal damage plus $s3.
++
++https://www.wowhead.com/forever/spell=1283407

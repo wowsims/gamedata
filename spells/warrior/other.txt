@@ -2063,6 +2063,20 @@ tooltip   Charges an enemy, knocking it back and inflicting normal damage plus $
 
 https://www.wowhead.com/forever/spell=19131
 =======
+1283407 Shield Charge
+school    physical
+range     8-25 yd
+
+effect 1  charges to the enemy
+          E_CHARGE base=0 target=[6,0]
+effect 2  unrecognised shape
+          E_KNOCK_BACK base=75 sp=1 misc=150 target=[6,0]
+effect 3  weapon damage +20 to the enemy
+          E_WEAPON_DAMAGE base=20 sp=1 target=[6,0]
+tooltip   Charges an enemy, knocking it back and inflicting normal damage plus $s3.
+
+https://www.wowhead.com/forever/spell=1283407
+=======
 427069 Shield Mastery
 school    physical
 attrs     passive
