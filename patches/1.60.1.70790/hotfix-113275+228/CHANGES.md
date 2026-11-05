@@ -1,0 +1,491 @@
+# Hotfix: 1.60.1.70790, hotfix pushes 113275, 113357, 113495, 113593, 113651 and 224 more
+
+- Build: 1.60.1.70790 (`wowf` on Blizzard's CDN)
+- Hotfixes: applied, 3488 pushes (50680 entries)
+- Previous: 1.60.1.70790 with 3273 hotfix pushes (2026-11-05)
+- Exported by wowsims/forever@df3746362c2f on 2026-11-05
+
+## Hotfix pushes
+
+- 113275: 5 entries
+- 113357: 45 entries (was 39)
+- 113495: 1 entries
+- 113593: 9 entries
+- 113651: 2 entries
+- 16777969: 6 entries
+- 16778101: 6 entries
+- 16778104: 6 entries
+- 16778108: 6 entries
+- 16778136: 6 entries
+- 16778148: 6 entries
+- 16778292: 6 entries
+- 16778371: 6 entries
+- 16778431: 6 entries
+- 16778434: 6 entries
+- 16778480: 6 entries
+- 16778620: 6 entries
+- 16778622: 6 entries
+- 16778674: 6 entries
+- 16778675: 6 entries
+- 16778676: 6 entries
+- 16778677: 6 entries
+- 16778699: 6 entries
+- 16778705: 6 entries
+- 16778707: 6 entries
+- 16778776: 6 entries
+- 16779154: 6 entries
+- 16779190: 6 entries
+- 16779229: 6 entries
+- 16779231: 6 entries
+- 16779233: 6 entries
+- 16779234: 6 entries
+- 16779237: 6 entries
+- 16779250: 6 entries
+- 16779251: 6 entries
+- 16779274: 6 entries
+- 16779391: 6 entries
+- 16779448: 6 entries
+- 16779487: 6 entries
+- 16779783: 6 entries
+- 16779838: 6 entries
+- 16780157: 6 entries
+- 16780158: 6 entries
+- 16780238: 6 entries
+- 16780290: 6 entries
+- 16780292: 6 entries
+- 16780294: 6 entries
+- 16780410: 6 entries
+- 16780420: 6 entries
+- 16780446: 6 entries
+- 16780608: 6 entries
+- 16780645: 6 entries
+- 16780778: 6 entries
+- 16781307: 6 entries
+- 16781660: 6 entries
+- 16781662: 6 entries
+- 16781663: 6 entries
+- 16781664: 6 entries
+- 16781670: 6 entries
+- 16781679: 6 entries
+- 16781680: 6 entries
+- 16781681: 6 entries
+- 16781690: 6 entries
+- 16782470: 6 entries
+- 16782965: 6 entries
+- 16783159: 6 entries
+- 16783415: 6 entries
+- 16783420: 6 entries
+- 16783530: 6 entries
+- 16783535: 6 entries
+- 16783537: 6 entries
+- 16783539: 6 entries
+- 16783540: 6 entries
+- 16783557: 6 entries
+- 16783608: 6 entries
+- 16783643: 6 entries
+- 16783849: 6 entries
+- 16784118: 6 entries
+- 16784119: 6 entries
+- 16784121: 6 entries
+- 16784122: 6 entries
+- 16784124: 6 entries
+- 16784125: 6 entries
+- 16784126: 6 entries
+- 16784754: 6 entries
+- 16785323: 6 entries
+- 16785334: 6 entries
+- 16785337: 6 entries
+- 16785341: 6 entries
+- 16785468: 6 entries
+- 16785491: 6 entries
+- 16785524: 6 entries
+- 16786820: 6 entries
+- 16786821: 6 entries
+- 16786839: 6 entries
+- 16786840: 6 entries
+- 16786841: 6 entries
+- 16787158: 6 entries
+- 16787329: 6 entries
+- 16787355: 6 entries
+- 16787358: 6 entries
+- 16787375: 6 entries
+- 16787395: 6 entries
+- 16787397: 6 entries
+- 16787431: 6 entries
+- 16787450: 6 entries
+- 16787484: 6 entries
+- 16787498: 6 entries
+- 16787579: 6 entries
+- 16787581: 6 entries
+- 16789190: 6 entries
+- 16789233: 6 entries
+- 16790236: 6 entries
+- 16790246: 6 entries
+- 16791379: 6 entries
+- 16791403: 6 entries
+- 16791431: 6 entries
+- 16791438: 6 entries
+- 16791470: 6 entries
+- 16791480: 6 entries
+- 16791510: 6 entries
+- 16791522: 6 entries
+- 16791535: 6 entries
+- 16791542: 6 entries
+- 16791643: 6 entries
+- 16791659: 6 entries
+- 16791798: 6 entries
+- 16791811: 6 entries
+- 16791869: 6 entries
+- 16791874: 6 entries
+- 16791893: 6 entries
+- 16791972: 6 entries
+- 16791998: 6 entries
+- 16792006: 6 entries
+- 16792009: 6 entries
+- 16792023: 6 entries
+- 16792057: 6 entries
+- 16792059: 6 entries
+- 16792078: 6 entries
+- 16792131: 6 entries
+- 16792161: 6 entries
+- 16792175: 6 entries
+- 16792183: 6 entries
+- 16792191: 6 entries
+- 16792198: 6 entries
+- 16792341: 6 entries
+- 16792361: 6 entries
+- 16792363: 6 entries
+- 16792372: 6 entries
+- 16792393: 6 entries
+- 16792394: 6 entries
+- 16792570: 6 entries
+- 16792571: 6 entries
+- 16792591: 6 entries
+- 16792611: 6 entries
+- 16792731: 6 entries
+- 16792736: 6 entries
+- 16792737: 6 entries
+- 16792740: 6 entries
+- 16792744: 6 entries
+- 16792745: 6 entries
+- 16792753: 6 entries
+- 16792762: 6 entries
+- 16792764: 6 entries
+- 16792766: 6 entries
+- 16792767: 6 entries
+- 16792777: 6 entries
+- 16792787: 6 entries
+- 16792800: 6 entries
+- 16792826: 6 entries
+- 16792833: 6 entries
+- 16792854: 6 entries
+- 16792856: 6 entries
+- 16792874: 6 entries
+- 16792891: 6 entries
+- 16794102: 6 entries
+- 16794103: 6 entries
+- 16794910: 6 entries
+- 16794911: 6 entries
+- 16990778: 6 entries
+- 17044585: 6 entries
+- 17047252: 6 entries
+- 17047259: 6 entries
+- 17050239: 6 entries
+- 17050240: 6 entries
+- 17050242: 6 entries
+- 17050244: 6 entries
+- 17050246: 6 entries
+- 17050672: 6 entries
+- 17050859: 6 entries
+- 17050862: 6 entries
+- 17050863: 6 entries
+- 17051021: 6 entries
+- 17051022: 6 entries
+- 17051023: 6 entries
+- 17051024: 6 entries
+- 17051025: 6 entries
+- 17051026: 6 entries
+- 17051033: 6 entries
+- 17051035: 6 entries
+- 17051040: 6 entries
+- 17051041: 6 entries
+- 17051045: 6 entries
+- 17051055: 6 entries
+- 17051056: 6 entries
+- 17051057: 6 entries
+- 17051058: 6 entries
+- 17051059: 6 entries
+- 17051062: 6 entries
+- 17051308: 6 entries
+- 17056604: 6 entries
+- 17057051: 6 entries
+- 17057052: 6 entries
+- 17057063: 6 entries
+- 17057064: 6 entries
+- 17058021: 6 entries
+- 17059858: 6 entries
+- 17059870: 6 entries
+- 17059871: 6 entries
+- 17059874: 6 entries
+- 17059937: 6 entries
+- 17061615: 6 entries
+- 17061617: 6 entries
+- 17061884: 6 entries
+- 17061916: 6 entries
+- 17062554: 6 entries
+- 17062560: 6 entries
+- 17063757: 6 entries
+- 17064283: 6 entries
+
+## Spells
+
+No class spell changed.
+
+## Items
+
+224 added, 7 removed, 7 changed.
+
+- added 753 Dragonmaw Shortsword
+- added 885 Black Metal Axe
+- added 888 Naga Battle Gloves
+- added 892 Gnoll Casting Gloves
+- added 920 Wicked Spiked Mace
+- added 932 Fel Steed Saddlebags
+- added 1076 Defias Renegade Ring
+- added 1155 Rod of the Sleepwalker
+- added 1215 Support Girdle
+- added 1218 Heavy Gnoll War Club
+- added 1264 Headbasher
+- added 1404 Tidal Charm
+- added 1406 Pearl-encrusted Spear
+- added 1458 Shadowhide Maul
+- added 1459 Shadowhide Scalper
+- added 1460 Shadowhide Two-handed Sword
+- added 1461 Slayer's Battle Axe
+- added 1483 Face Smasher
+- added 1489 Gloomshroud Armor
+- added 1491 Ring of Precision
+- added 1560 Bluegill Sandals
+- added 1938 Block Mallet
+- added 1974 Mindthrust Bracers
+- added 2013 Cryptbone Staff
+- added 2015 Black Metal War Axe
+- added 2017 Glowing Leather Bracers
+- added 2018 Skeletal Longsword
+- added 2021 Green Carapace Shield
+- added 2034 Scholarly Robes
+- added 2035 Sword of the Night Sky
+- added 2058 Kazon's Maul
+- added 2175 Shadowhide Battle Axe
+- added 2232 Dark Runner Boots
+- added 2271 Staff of the Blessed Seer
+- added 2567 Evocator's Blade
+- added 2622 Nimar's Tribal Headdress
+- added 2941 Prison Shank
+- added 2942 Iron Knuckles
+- added 3022 Bluegill Breeches
+- added 3074 Smoldering Gloves
+- added 3076 Smoldering Boots
+- added 3078 Naga Heartpiercer
+- added 3194 Black Malice
+- added 3204 Deepwood Bracers
+- added 3230 Black Wolf Bracers
+- added 3392 Ringed Helm
+- added 3429 Guardsman Belt
+- added 3562 Belt of Vindication
+- added 4091 Widowmaker
+- added 4444 Black Husk Shield
+- added 4446 Blackvenom Blade
+- added 4447 Cloak of Night
+- added 4448 Husk of Naraxis
+- added 4454 Talon of Vultros
+- added 4463 Beaded Raptor Collar
+- added 4464 Trouncing Boots
+- added 4465 Bonefist Gauntlets
+- added 4474 Ravenwood Bow
+- added 5254 Rugged Spaulders
+- added 5749 Scythe Axe
+- added 5943 Rift Bracers
+- added 6199 Black Widow Band
+- added 6204 Tribal Worg Helm
+- added 6314 Wolfmaster Cape
+- added 6319 Girdle of the Blindwatcher
+- added 6321 Silverlaine's Family Seal
+- added 6323 Baron's Scepter
+- added 6324 Robes of Arugal
+- added 6341 Eerie Stable Lantern
+- added 6392 Belt of Arugal
+- added 6427 Mistscape Robe
+- added 6633 Butcher's Slicer
+- added 6902 Bands of Serra'kis
+- added 6903 Gaze Dreamer Pants
+- added 6905 Reef Axe
+- added 6906 Algae Fists
+- added 6908 Ghamoo-ra's Bind
+- added 6909 Strike of the Hydra
+- added 6910 Leech Pants
+- added 7538 Champion's Armor
+- added 8107 Hibernal Boots
+- added 8118 Heraldic Bracers
+- added 8121 Heraldic Gloves
+- added 8125 Myrmidon's Bracers
+- added 8252 Imperial Red Robe
+- added 8275 Ebonhold Buckler
+- added 8308 Hero's Band
+- added 9604 Mechanic's Pipehammer
+- added 9605 Repairman's Cape
+- added 9623 Civinad Robes
+- added 9624 Triprunner Dungarees
+- added 9625 Dual Reinforced Leggings
+- added 9942 Abjurer's Pants
+- added 10113 Wanderer's Shoulders
+- added 10139 High Councillor's Circlet
+- added 10142 High Councillor's Mantle
+- added 10159 Mercurial Cloak
+- added 10179 Mystical Boots
+- added 10181 Mystical Armor
+- added 10215 Elegant Robes
+- added 10234 Engraved Boots
+- added 10268 Masterwork Gauntlets
+- added 10282 Emerald Vambraces
+- added 10363 Engraved Wall
+- added 10365 Emerald Shield
+- added 11974 Aquamarine Ring
+- added 12017 Prismatic Band
+- added 13020 Skystriker Bow
+- added 13030 Basilisk Bone
+- added 14163 Pagan Wraps
+- added 14187 Raincaller Cuffs
+- added 14215 Vital Tunic
+- added 14222 Geomancer's Gloves
+- added 14254 Lunar Raiment
+- added 14264 Bloodwoven Pants
+- added 14294 Arachnidian Gloves
+- added 14306 Bonecaster's Vest
+- added 14319 Resplendent Boots
+- added 14326 Resplendent Robes
+- added 14427 Windchaser Wraps
+- added 14443 Venomshroud Mantle
+- added 14582 Dokebi Cape
+- added 14595 Hawkeye's Breeches
+- added 14653 Scorpashi Slippers
+- added 14658 Scorpashi Skullcap
+- added 14677 Pridelord Pants
+- added 14756 Slayer's Slippers
+- added 14782 Khan's Gloves
+- added 14790 Protector Buckler
+- added 14793 Protector Waistband
+- added 14807 Bloodlust Bracelets
+- added 14841 Tyrant's Epaulets
+- added 14843 Tyrant's Helm
+- added 14862 Warleader's Breastplate
+- added 14915 Jade Breastplate
+- added 14945 Warbringer's Legguards
+- added 14959 High Chief's Gauntlets
+- added 14967 Glorious Gauntlets
+- added 14975 Exalted Harness
+- added 14982 Exalted Shield
+- added 15125 Robust Gloves
+- added 15145 Ghostwalker Buckler
+- added 15147 Ghostwalker Cloak
+- added 15156 Nocturnal Cap
+- added 15177 Potent Shoulders
+- added 15178 Potent Belt
+- added 15354 Headhunter's Cloak
+- added 15355 Headhunter's Mitts
+- added 15375 Wolf Rider's Shoulder Pads
+- added 15395 Jadefire Epaulets
+- added 15515 Spiked Chain Belt
+- added 15520 Spiked Chain Gauntlets
+- added 15521 Spiked Chain Leggings
+- added 15524 Sentry's Surcoat
+- added 15528 Sentry's Sash
+- added 15529 Sentry's Leggings
+- added 15537 Wicked Chain Cloak
+- added 15546 Thick Scale Breastplate
+- added 15548 Thick Scale Gauntlets
+- added 15550 Thick Scale Crown
+- added 15551 Thick Scale Legguards
+- added 15561 Pillager's Leggings
+- added 15571 Marauder's Belt
+- added 15584 Sparkleshell Shield
+- added 15610 Bonelink Bracers
+- added 15617 Bonelink Epaulets
+- added 15638 Formidable Shoulder Pads
+- added 15640 Ironhide Breastplate
+- added 15658 Impenetrable Sabatons
+- added 15675 Magnificent Guard
+- added 16886 Outlaw Sabre
+- added 16887 Witch's Finger
+- added 17694 Band of the Fist
+- added 17695 Chestnut Mantle
+- added 213562 Bug Catching Net
+- added 267369 Wolfsbane
+- added 270036 Magistrate's Pantaloons
+- added 270043 Dreamer's Chestguard
+- added 273023 Saltscale Girdle
+- added 273024 Glinteye Slippers
+- added 273026 Garb of Florid Feathers
+- added 273028 Reliquary Mantle
+- added 273030 Ring of Power Regulation
+- added 273456 Cell Keeper's Claws
+- added 273643 Worgenbane Talisman
+- added 273646 Half-Eaten Boots
+- added 273647 Worgpelt Leggings
+- added 273805 Blackrock Harness
+- added 273806 Dark Horde Band
+- added 273807 Demolition Girdle
+- added 273808 Bridgebreaker Bindings
+- added 273809 Hamhock's Cleaver
+- added 273810 Ogre Grips
+- added 273817 Graverobber's Shovel
+- added 273819 Boneslicer
+- added 273824 Defias Jailbreakers
+- added 273825 Red Wool Cloak
+- added 273829 Concealed Hand Crossbow
+- added 273839 Spiked Shell Band
+- added 273840 Cursed Murloc Eye
+- added 273841 Twilight Maul
+- added 273842 Treacherous Treads
+- added 273843 Fallenroot Longbow
+- added 273846 Twilight Lord Girdle
+- added 274092 Sharpened Cutlery
+- added 279388 Brewer's Bracers
+- added 279835 Vine Pruner's Cloak
+- added 279836 Thorn Protecting Girdle
+- added 279847 Unstable Power Core
+- added 279848 Construct Cloak
+- added 280805 Serrated Raptor Claw
+- added 282642 Feather-Stitched Moccasins
+- added 282654 Gnawed Bone
+- added 282655 Bog Pickers
+- added 282658 Dragonmaw Battle Shroud
+- added 282721 Gnoll Shaman's Staff
+- added 284399 Seared Grove Shoulderpads
+- added 284401 Sorrow's Shroud
+- added 284668 Apothecary's Concoction
+- added 284700 Den Guardian's Crusher
+- added 285338 Kodohide Legguards
+- added 285344 Guard Captain's Barrier
+- added 286541 Bael'dun Tankard
+- added 287067 Dragonmaw Skinflayer
+- removed 289081 Noggenfogger Elixir
+- removed 289292 Hammer of Bestial Fury
+- removed 289294 Thunderfury, Blessed Blade of the Windseeker
+- removed 289295 Sulfuras, Hand of Ragnaros
+- removed 289296 Benediction
+- removed 289297 Anathema
+- removed 289303 Rhok'delar, Longbow of the Ancient Keepers
+- changed 288900 Earthshaker
+- changed 288926 Choker of the Fire Lord
+- changed 288927 Quick Strike Ring
+- changed 288928 Heavy Dark Iron Ring
+- changed 288929 Band of Sulfuras
+- changed 288930 Cauterizing Band
+- changed 288931 Ring of Spell Power
+
+## Files
+
+- [`items-changed.diff`](items-changed.diff)
+- [`items-removed.txt`](items-removed.txt)
+- [`items.txt`](items.txt)

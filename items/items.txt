@@ -782,6 +782,14 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 =======
+753 Dragonmaw Shortsword
+item      uncommon, Sword, one-hand
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +4 stamina
+weapon    22 - 42 damage, speed 2.20, 14.5 dps
+sells     3842 copper
+=======
 755 Melted Candle
 item      poor, Junk
 level     ilvl 1
@@ -1310,10 +1318,25 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 =======
+885 Black Metal Axe
+item      uncommon, Axe, main hand
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +2 stamina, +2 strength
+weapon    18 - 34 damage, speed 2.10, 12.4 dps
+sells     2300 copper
+=======
 887 Pound of Flesh
 item      poor, Junk
 level     ilvl 25
 sells     82 copper
+=======
+888 Naga Battle Gloves
+item      rare, Leather, hands
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +15 healing, +4 stamina, +4 strength, +5 spell damage
+sells     1020 copper
 =======
 889 A Dusty Unsent Letter
 item      common, Quest
@@ -1329,6 +1352,13 @@ binds     binds when equipped
 stats     +10 intellect, +6 stamina
 weapon    55 - 84 damage, speed 3.40, 20.4 dps
 sells     3517 copper
+=======
+892 Gnoll Casting Gloves
+item      uncommon, Cloth, hands
+level     ilvl 22, requires level 17
+binds     binds when equipped
+stats     +6 spell power
+sells     369 copper
 =======
 893 Dire Wolf Fang
 item      poor, Junk
@@ -1440,6 +1470,14 @@ binds     binds when picked up
 unique    yes
 sells     1250 copper
 =======
+920 Wicked Spiked Mace
+item      uncommon, Mace, main hand
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +4 agility
+weapon    22 - 42 damage, speed 2.50, 12.8 dps
+sells     2821 copper
+=======
 921 A Faded Journal Page
 item      common, Quest
 level     ilvl 1
@@ -1504,6 +1542,13 @@ sells     2500 copper
 item      common, Bag, bag
 level     ilvl 25
 sells     2500 copper
+=======
+932 Fel Steed Saddlebags
+item      uncommon, Bag, bag
+level     ilvl 25
+binds     binds when picked up
+unique    yes
+sells     637 copper
 =======
 933 Large Rucksack
 item      common, Bag, bag
@@ -2120,6 +2165,13 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 =======
+1076 Defias Renegade Ring
+item      rare, Miscellaneous, finger
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +6 stamina, +4 agility
+sells     1472 copper
+=======
 1077 Defias Mage Ring
 item      uncommon, Miscellaneous, finger
 level     ilvl 26, requires level 21
@@ -2555,6 +2607,15 @@ level     ilvl 14
 binds     binds when picked up
 sells     102 copper
 =======
+1155 Rod of the Sleepwalker
+item      rare, Staff, two-hand
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +11 spirit
+weapon    53 - 80 damage, speed 2.80, 23.8 dps
+effect    equip: 1292652 Resist Sleep 05
+sells     6125 copper
+=======
 1156 Lavishly Jeweled Ring
 item      rare, Miscellaneous, finger
 level     ilvl 22, requires level 17
@@ -2867,10 +2928,25 @@ stats     +2 strength
 weapon    16 - 30 damage, speed 2.40, 9.6 dps
 sells     930 copper
 =======
+1215 Support Girdle
+item      uncommon, Leather, waist
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +5 strength, +4 stamina
+sells     469 copper
+=======
 1217 Unknown Reward
 item      common, Quest
 level     ilvl 1
 text      "It is not known what the reward will be..."
+=======
+1218 Heavy Gnoll War Club
+item      uncommon, Mace, two-hand
+level     ilvl 21, requires level 16
+binds     binds when equipped
+stats     +10 strength, +-10 agility
+weapon    40 - 61 damage, speed 3.70, 13.6 dps
+sells     2064 copper
 =======
 1219 Redridge Machete
 item      uncommon, Sword, main hand
@@ -3076,6 +3152,14 @@ level     ilvl 15
 binds     binds when picked up
 effect    use: 5257 Thunderbrew (5 charges, consumed, 1 s shared cooldown)
 sells     111 copper
+=======
+1264 Headbasher
+item      rare, Mace, two-hand
+level     ilvl 29
+binds     binds when picked up
+stats     +9 strength, +5 stamina, +10 intellect
+weapon    43 - 66 damage, speed 2.30, 23.7 dps
+sells     6125 copper
 =======
 1265 Scorpion Sting
 item      rare, Sword, one-hand
@@ -3737,6 +3821,13 @@ unique    yes
 effect    use: 834 Lesser Armor (10 charges, consumed, 30 s cooldown, 30 s shared cooldown)
 sells     175 copper
 =======
+1404 Tidal Charm
+item      uncommon, Miscellaneous, trinket
+level     ilvl 41, requires level 36
+binds     binds when picked up
+effect    use: 835 Tidal Charm (900 s cooldown, 900 s shared cooldown)
+sells     10306 copper
+=======
 1405 Foamspittle Staff
 item      uncommon, Staff, two-hand
 level     ilvl 17, requires level 12
@@ -3744,6 +3835,14 @@ binds     binds when equipped
 stats     +5 spirit
 weapon    29 - 44 damage, speed 3.20, 11.4 dps
 sells     1184 copper
+=======
+1406 Pearl-encrusted Spear
+item      uncommon, Polearm, two-hand
+level     ilvl 21, requires level 20
+binds     binds when equipped
+stats     +3 stamina, +6 agility
+weapon    35 - 53 damage, speed 3.20, 13.8 dps
+sells     2079 copper
 =======
 1407 Solomon's Plea to Westfall
 item      common, Quest
@@ -3982,6 +4081,38 @@ stats     +3 stamina
 weapon    17 - 32 damage, speed 2.20, 11.1 dps
 sells     1850 copper
 =======
+1458 Shadowhide Maul
+item      uncommon, Mace, two-hand
+level     ilvl 23, requires level 18
+binds     binds when equipped
+stats     +6 strength, +3 stamina
+weapon    36 - 55 damage, speed 3.00, 15.2 dps
+sells     2623 copper
+=======
+1459 Shadowhide Scalper
+item      uncommon, Axe, main hand
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +3 strength
+weapon    25 - 47 damage, speed 2.90, 12.4 dps
+sells     2380 copper
+=======
+1460 Shadowhide Two-handed Sword
+item      uncommon, Sword, two-hand
+level     ilvl 20, requires level 15
+binds     binds when equipped
+stats     +4 strength, +4 stamina
+weapon    30 - 46 damage, speed 2.90, 13.1 dps
+sells     1768 copper
+=======
+1461 Slayer's Battle Axe
+item      uncommon, Axe, two-hand
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +6 strength, +5 agility
+weapon    39 - 59 damage, speed 2.90, 16.9 dps
+sells     3387 copper
+=======
 1462 Ring of the Shadow
 item      uncommon, Miscellaneous, finger
 level     ilvl 25, requires level 20
@@ -4078,6 +4209,14 @@ stats     +2 strength
 weapon    9 - 18 damage, speed 1.60, 8.4 dps
 sells     954 copper
 =======
+1483 Face Smasher
+item      rare, Mace, one-hand
+level     ilvl 21, requires level 16
+binds     binds when equipped
+stats     +3 strength, +3 stamina
+weapon    25 - 48 damage, speed 2.60, 14 dps
+sells     1963 copper
+=======
 1485 Pitchfork
 item      poor, Polearm, two-hand
 level     ilvl 25, requires level 20
@@ -4088,6 +4227,21 @@ sells     1410 copper
 item      common, Food & Drink
 level     ilvl 35, requires level 25
 effect    use: 1127 Food (1 charge, consumed)
+=======
+1489 Gloomshroud Armor
+item      rare, Leather, chest
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +8 spirit, +5 strength, +8 stamina
+effect    equip: 1292160 Gloomshroud
+sells     1629 copper
+=======
+1491 Ring of Precision
+item      rare, Miscellaneous, finger
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +6 agility, +3 spirit
+sells     1620 copper
 =======
 1492 Deprecated Recipe: Murloc Fin Soup
 item      common, Book
@@ -4336,6 +4490,13 @@ effect    use: 402265 Learning (1 charge, consumed)
 effect    learn: 5144 Arcane Missiles
 text      "Teaches Arcane Missiles (Rank 2)."
 sells     325 copper
+=======
+1560 Bluegill Sandals
+item      uncommon, Cloth, feet
+level     ilvl 21, requires level 16
+binds     binds when equipped
+stats     +4 spirit, +2 intellect
+sells     513 copper
 =======
 1561 Harvester's Robe
 item      uncommon, Cloth, chest
@@ -5749,6 +5910,14 @@ stats     +3 agility, +3 stamina
 weapon    24 - 46 damage, speed 2.30, 15.2 dps
 sells     2551 copper
 =======
+1938 Block Mallet
+item      uncommon, Mace, main hand
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +3 stamina
+weapon    15 - 29 damage, speed 1.80, 12.2 dps
+sells     1962 copper
+=======
 1939 Skin of Sweet Rum
 item      common, Quest
 level     ilvl 1
@@ -5918,6 +6087,13 @@ binds     binds when used
 effect    use: 16739 Orb of Deception (1800 s cooldown)
 sells     4618 copper
 =======
+1974 Mindthrust Bracers
+item      rare, Cloth, wrists
+level     ilvl 22, requires level 17
+binds     binds when equipped
+stats     +5 intellect, +1 stamina, +3 mana per 5 sec
+sells     451 copper
+=======
 1977 20-slot Bag
 item      common, Bag, bag
 level     ilvl 1
@@ -6061,6 +6237,37 @@ unique    yes
 effect    use: 689 Drain Life (60 s cooldown, 30 s shared cooldown)
 sells     1300 copper
 =======
+2013 Cryptbone Staff
+item      uncommon, Staff, two-hand
+level     ilvl 26, requires level 21
+binds     binds when equipped
+stats     +4 strength, +6 intellect, +4 spirit
+weapon    40 - 61 damage, speed 2.90, 17.4 dps
+sells     3644 copper
+=======
+2015 Black Metal War Axe
+item      uncommon, Axe, two-hand
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +10 strength
+weapon    44 - 66 damage, speed 2.90, 19 dps
+sells     4443 copper
+=======
+2017 Glowing Leather Bracers
+item      uncommon, Leather, wrists
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +5 stamina, +2 agility
+sells     895 copper
+=======
+2018 Skeletal Longsword
+item      uncommon, Sword, main hand
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +4 stamina
+weapon    21 - 40 damage, speed 2.20, 13.9 dps
+sells     3269 copper
+=======
 2020 Hollowfang Blade
 item      uncommon, Dagger, one-hand
 level     ilvl 18, requires level 13
@@ -6068,6 +6275,13 @@ binds     binds when equipped
 stats     +2 strength
 weapon    8 - 17 damage, speed 1.40, 8.9 dps
 sells     1049 copper
+=======
+2021 Green Carapace Shield
+item      uncommon, Shield, shield
+level     ilvl 21, requires level 16
+binds     binds when equipped
+stats     +4 nature resistance
+sells     1025 copper
 =======
 2023 Monster - Spear, Rusty
 item      poor, Polearm, two-hand
@@ -6130,6 +6344,21 @@ level     ilvl 28
 binds     binds when picked up
 stats     +3 agility, +5 stamina, +4 spirit
 sells     1675 copper
+=======
+2034 Scholarly Robes
+item      rare, Cloth, chest
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +3 spell power, +12 spirit
+sells     1035 copper
+=======
+2035 Sword of the Night Sky
+item      uncommon, Sword, main hand
+level     ilvl 26, requires level 21
+binds     binds when equipped
+stats     +3 agility, +3 strength
+weapon    16 - 30 damage, speed 1.70, 13.5 dps
+sells     2300 copper
 =======
 2036 Dusty Mining Gloves
 item      uncommon, Leather, hands
@@ -6245,6 +6474,14 @@ item      common, Sword, main hand
 level     ilvl 4, requires level 1
 weapon    2 - 4 damage, speed 2.00, 1.5 dps
 sells     16 copper
+=======
+2058 Kazon's Maul
+item      uncommon, Mace, two-hand
+level     ilvl 29, requires level 24
+binds     binds when equipped
+stats     +9 strength, +4 stamina
+weapon    55 - 83 damage, speed 3.50, 19.7 dps
+sells     4197 copper
 =======
 2059 Sentry Cloak
 item      rare, Cloth, back
@@ -6768,6 +7005,14 @@ level     ilvl 5
 binds     binds when picked up
 sells     6 copper
 =======
+2175 Shadowhide Battle Axe
+item      uncommon, Axe, two-hand
+level     ilvl 23, requires level 18
+binds     binds when equipped
+stats     +6 strength, +3 stamina
+weapon    39 - 59 damage, speed 3.20, 15.3 dps
+sells     2683 copper
+=======
 2176 Monster - Staff, Ornate Priest Staff
 item      poor, Staff, two-hand
 level     ilvl 1, requires level 1
@@ -7052,6 +7297,13 @@ binds     binds when picked up
 stats     +23 fire damage
 sells     4386 copper
 =======
+2232 Dark Runner Boots
+item      uncommon, Cloth, feet
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +5 stamina, +3 spirit
+sells     812 copper
+=======
 2235 Brackclaw
 item      uncommon, Dagger, one-hand
 level     ilvl 21, requires level 16
@@ -7207,6 +7459,14 @@ item      common, Sword, main hand
 level     ilvl 10, requires level 5
 weapon    6 - 12 damage, speed 2.00, 4.5 dps
 sells     146 copper
+=======
+2271 Staff of the Blessed Seer
+item      rare, Staff, two-hand
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +10 spirit, +9 stamina
+weapon    50 - 76 damage, speed 3.00, 21 dps
+sells     4072 copper
 =======
 2274 Sapper's Gloves
 item      uncommon, Mail, hands
@@ -8524,6 +8784,14 @@ binds     binds when equipped
 stats     +6 fire resistance, +13 fire damage
 sells     3113 copper
 =======
+2567 Evocator's Blade
+item      rare, Dagger, main hand
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +2 intellect, +5 spirit
+weapon    18 - 34 damage, speed 1.60, 16.2 dps
+sells     3258 copper
+=======
 2568 Brown Linen Vest
 item      common, Cloth, chest
 level     ilvl 8, requires level 3
@@ -8814,6 +9082,13 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+2622 Nimar's Tribal Headdress
+item      uncommon, Cloth, head
+level     ilvl 39, requires level 34
+binds     binds when equipped
+stats     +6 stamina, +7 intellect, +11 spirit
+sells     2603 copper
 =======
 2625 Menethil Statuette
 item      common, Quest
@@ -10473,6 +10748,22 @@ item      poor, Junk
 level     ilvl 1
 sells     43 copper
 =======
+2941 Prison Shank
+item      rare, Dagger, one-hand
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +6 agility, +2 stamina
+weapon    22 - 42 damage, speed 1.80, 17.8 dps
+sells     4455 copper
+=======
+2942 Iron Knuckles
+item      rare, Fist Weapon, one-hand
+level     ilvl 28, requires level 23
+binds     binds when picked up
+weapon    21 - 39 damage, speed 1.70, 17.6 dps
+effect    chance on hit: 13491 Pummel
+sells     4455 copper
+=======
 2943 Eye of Paleth
 item      uncommon, Miscellaneous, held in off hand
 level     ilvl 31
@@ -10960,6 +11251,13 @@ stats     +1 agility
 weapon    23 - 45 damage, speed 2.70, 12.6 dps
 sells     2421 copper
 =======
+3022 Bluegill Breeches
+item      uncommon, Leather, legs
+level     ilvl 23, requires level 18
+binds     binds when equipped
+stats     +8 agility
+sells     1085 copper
+=======
 3023 Large Bore Blunderbuss
 item      common, Gun, ranged
 level     ilvl 21, requires level 16
@@ -11250,11 +11548,33 @@ binds     binds when picked up
 weapon    6 - 12 damage, speed 1.70, 5.3 dps
 sells     231 copper
 =======
+3074 Smoldering Gloves
+item      uncommon, Cloth, hands
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +3 stamina, +5 spirit
+sells     476 copper
+=======
+3076 Smoldering Boots
+item      uncommon, Cloth, feet
+level     ilvl 23, requires level 18
+binds     binds when equipped
+stats     +6 spirit
+sells     636 copper
+=======
 3077 Deprecated Stonecloth Cowl
 item      poor, Cloth, head
 level     ilvl 26, requires level 21
 binds     binds when equipped
 sells     368 copper
+=======
+3078 Naga Heartpiercer
+item      rare, Bow, ranged
+level     ilvl 27, requires level 22
+binds     binds when picked up
+weapon    22 - 42 damage, speed 2.40, 13.3 dps
+effect    chance on hit: 1292647 Pierce Heart
+sells     3037 copper
 =======
 3079 Skorn's Rifle
 item      uncommon, Gun, ranged
@@ -12023,6 +12343,15 @@ binds     binds when equipped
 weapon    38 - 58 damage, speed 3.50, 13.7 dps
 sells     2072 copper
 =======
+3194 Black Malice
+item      rare, Mace, two-hand
+level     ilvl 21, requires level 16
+binds     binds when equipped
+stats     +2 shadow resistance
+weapon    48 - 73 damage, speed 3.30, 18.3 dps
+effect    chance on hit: 1292155 Shadow Bolt
+sells     2454 copper
+=======
 3195 Barbaric Battle Axe
 item      uncommon, Axe, two-hand
 level     ilvl 18, requires level 13
@@ -12084,6 +12413,13 @@ binds     binds when equipped
 stats     +10 strength, +10 stamina
 weapon    44 - 66 damage, speed 2.40, 22.9 dps
 sells     5436 copper
+=======
+3204 Deepwood Bracers
+item      uncommon, Leather, wrists
+level     ilvl 26, requires level 21
+binds     binds when equipped
+stats     +5 stamina, +1 spirit
+sells     751 copper
 =======
 3205 Inscribed Leather Bracers
 item      uncommon, Leather, wrists
@@ -12242,6 +12578,13 @@ level     ilvl 25, requires level 20
 binds     binds when equipped
 stats     +2 spirit, +5 intellect
 sells     424 copper
+=======
+3230 Black Wolf Bracers
+item      rare, Leather, wrists
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +7 stamina, +4 attack power, +20 armor
+sells     1020 copper
 =======
 3231 Cutthroat Pauldrons
 item      uncommon, Mail, shoulders
@@ -13152,6 +13495,13 @@ level     ilvl 30, requires level 20
 effect    use: 3164 Strength (1 charge, consumed, 3 s shared cooldown)
 sells     20 copper
 =======
+3392 Ringed Helm
+item      uncommon, Leather, head
+level     ilvl 31, requires level 26
+binds     binds when equipped
+stats     +9 stamina, +8 spirit
+sells     1663 copper
+=======
 3393 Recipe: Minor Magic Resistance Potion
 item      common, Alchemy
 level     ilvl 22
@@ -13321,6 +13671,13 @@ sells     1500 copper
 item      common, Miscellaneous, shirt
 level     ilvl 20
 sells     100 copper
+=======
+3429 Guardsman Belt
+item      uncommon, Leather, waist
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +4 stamina, +4 agility
+sells     586 copper
 =======
 3430 Sniper Rifle
 item      uncommon, Gun, ranged
@@ -14101,6 +14458,13 @@ level     ilvl 26
 binds     binds when picked up
 stats     +5 stamina
 sells     895 copper
+=======
+3562 Belt of Vindication
+item      rare, Leather, waist
+level     ilvl 29
+binds     binds when picked up
+stats     +3 stamina, +7 agility
+sells     1234 copper
 =======
 3563 Seafarer's Pantaloons
 item      uncommon, Cloth, legs
@@ -17216,6 +17580,15 @@ binds     binds when equipped
 weapon    36 - 67 damage, speed 2.30, 22.4 dps
 sells     15060 copper
 =======
+4091 Widowmaker
+item      rare, Dagger, one-hand
+level     ilvl 47, requires level 42
+binds     binds when equipped
+unique    yes
+stats     +8 agility, +7 strength
+weapon    42 - 78 damage, speed 1.90, 31.6 dps
+sells     22479 copper
+=======
 4092 Prismatic Basilisk Scale
 item      poor, Junk
 level     ilvl 1
@@ -19664,6 +20037,14 @@ binds     binds when picked up
 stats     +7 strength, +7 spirit
 sells     3472 copper
 =======
+4444 Black Husk Shield
+item      uncommon, Shield, shield
+level     ilvl 26, requires level 21
+binds     binds when equipped
+stats     +4 spirit, +3 stamina
+effect    use: 14253 Abolish Poison (5 charges, 300 s cooldown)
+sells     1490 copper
+=======
 4445 Flesh Carver
 item      uncommon, Axe, main hand
 level     ilvl 25, requires level 20
@@ -19671,6 +20052,29 @@ binds     binds when equipped
 stats     +3 agility, +3 stamina
 weapon    20 - 39 damage, speed 2.30, 12.8 dps
 sells     2068 copper
+=======
+4446 Blackvenom Blade
+item      rare, Dagger, one-hand
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +1 agility
+weapon    22 - 42 damage, speed 1.80, 17.8 dps
+effect    chance on hit: 13518 Poison
+sells     3594 copper
+=======
+4447 Cloak of Night
+item      uncommon, Cloth, back
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +6 agility
+sells     901 copper
+=======
+4448 Husk of Naraxis
+item      uncommon, Mail, chest
+level     ilvl 29, requires level 24
+binds     binds when equipped
+stats     +6 strength, +8 stamina
+sells     1991 copper
 =======
 4450 Sigil Fragment
 item      common, Quest
@@ -19693,6 +20097,15 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+4454 Talon of Vultros
+item      rare, Dagger, one-hand
+level     ilvl 28, requires level 23
+binds     binds when equipped
+unique    yes
+stats     +6 agility, +3 spirit
+weapon    24 - 46 damage, speed 2.00, 17.5 dps
+sells     3800 copper
 =======
 4455 Raptor Hide Harness
 item      uncommon, Leather, chest
@@ -19734,6 +20147,27 @@ sells     175 copper
 item      common, Leather
 level     ilvl 30
 sells     208 copper
+=======
+4463 Beaded Raptor Collar
+item      uncommon, Cloth, waist
+level     ilvl 33, requires level 28
+binds     binds when equipped
+stats     +6 strength, +6 stamina
+sells     953 copper
+=======
+4464 Trouncing Boots
+item      uncommon, Mail, feet
+level     ilvl 34, requires level 29
+binds     binds when equipped
+stats     +7 strength, +7 agility
+sells     2380 copper
+=======
+4465 Bonefist Gauntlets
+item      uncommon, Mail, hands
+level     ilvl 34, requires level 29
+binds     binds when equipped
+stats     +9 strength, +3 stamina
+sells     1585 copper
 =======
 4466 Sigil of Trollbane
 item      common, Quest
@@ -19782,6 +20216,14 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+4474 Ravenwood Bow
+item      uncommon, Bow, ranged
+level     ilvl 34, requires level 29
+binds     binds when equipped
+stats     +3 intellect, +3 agility
+weapon    21 - 40 damage, speed 2.20, 13.9 dps
+sells     4207 copper
 =======
 4475 Deprecated The Southern Kingdoms
 item      common, Junk
@@ -24385,6 +24827,13 @@ stats     +4 intellect, +3 spirit
 weapon    46 - 85 damage, speed 2.00, 32.8 dps
 sells     7952 copper
 =======
+5254 Rugged Spaulders
+item      rare, Leather, shoulders
+level     ilvl 22, requires level 17
+binds     binds when picked up
+stats     +2 fire resistance, +2 arcane resistance, +2 nature resistance, +2 shadow resistance, +2 frost resistance, +20 armor
+sells     849 copper
+=======
 5258 Monster - Bow, Black
 item      poor, Bow, ranged
 level     ilvl 1, requires level 1
@@ -27394,6 +27843,14 @@ level     ilvl 1, requires level 1
 weapon    1 - 2 damage, speed 2.00, 0.8 dps
 sells     2 copper
 =======
+5749 Scythe Axe
+item      uncommon, Axe, two-hand
+level     ilvl 25, requires level 20
+binds     binds when equipped
+stats     +3 stamina, +7 agility
+weapon    48 - 73 damage, speed 3.60, 16.8 dps
+sells     2664 copper
+=======
 5750 Warchief's Girdle
 item      uncommon, Mail, waist
 level     ilvl 25, requires level 20
@@ -28284,6 +28741,13 @@ item      common, Quest
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+5943 Rift Bracers
+item      uncommon, Mail, wrists
+level     ilvl 25, requires level 20
+binds     binds when picked up
+stats     +4 stamina, +2 spell power
+sells     840 copper
 =======
 5944 Greaves of the People's Militia
 item      uncommon, Mail, feet
@@ -29282,6 +29746,14 @@ binds     binds when equipped
 stats     +8 stamina
 sells     929 copper
 =======
+6199 Black Widow Band
+item      uncommon, Miscellaneous, finger
+level     ilvl 26, requires level 21
+binds     binds when equipped
+unique    yes
+stats     +-5 stamina, +7 intellect
+sells     650 copper
+=======
 6200 Garneg's War Belt
 item      uncommon, Mail, waist
 level     ilvl 31, requires level 26
@@ -29309,6 +29781,13 @@ level     ilvl 13, requires level 8
 binds     binds when equipped
 stats     +1 strength
 sells     121 copper
+=======
+6204 Tribal Worg Helm
+item      uncommon, Leather, head
+level     ilvl 34, requires level 29
+binds     binds when equipped
+stats     +8 agility, +6 intellect, +6 spirit
+sells     2065 copper
 =======
 6205 Burrowing Shovel
 item      uncommon, Mace, two-hand
@@ -29933,6 +30412,13 @@ level     ilvl 1
 binds     quest item
 unique    yes
 =======
+6314 Wolfmaster Cape
+item      rare, Cloth, back
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +3 stamina, +9 stat 131, +10 attack power
+sells     1215 copper
+=======
 6316 Loch Frenzy Delight
 item      common, Food & Drink
 level     ilvl 15, requires level 5
@@ -29953,6 +30439,14 @@ stats     +5 stamina, +12 spirit
 weapon    50 - 76 damage, speed 2.90, 21.7 dps
 sells     4602 copper
 =======
+6319 Girdle of the Blindwatcher
+item      rare, Leather, waist
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +5 stamina, +7 spell power
+effect    equip: 1292149 Stealth Detection 05
+sells     927 copper
+=======
 6320 Commander's Crest
 item      rare, Shield, shield
 level     ilvl 26, requires level 21
@@ -29960,11 +30454,35 @@ binds     binds when picked up
 stats     +4 health per 5 sec, +3 stamina, +5 strength
 sells     2356 copper
 =======
+6321 Silverlaine's Family Seal
+item      rare, Miscellaneous, finger
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +5 strength, +2 stamina
+effect    equip: 1292121 Lord of Shadowfang Keep
+sells     1472 copper
+=======
 6322 Monster - Staff, Arugal
 item      poor, Staff, two-hand
 level     ilvl 1, requires level 1
 weapon    1 - 2 damage, speed 2.00, 0.8 dps
 sells     4 copper
+=======
+6323 Baron's Scepter
+item      rare, Mace, main hand
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +3 stamina, +2 strength
+weapon    28 - 52 damage, speed 2.40, 16.7 dps
+effect    equip: 1292142 Benevolence
+sells     3681 copper
+=======
+6324 Robes of Arugal
+item      rare, Cloth, chest
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +6 spirit, +5 stamina, +8 shadow resistance, +18 healing, +6 spell damage
+sells     1782 copper
 =======
 6325 Recipe: Brilliant Smallfish
 item      common, Cooking
@@ -30065,6 +30583,13 @@ level     ilvl 27, requires level 22
 binds     binds when picked up
 stats     +4 agility, +6 stamina
 sells     1215 copper
+=======
+6341 Eerie Stable Lantern
+item      rare, Miscellaneous, held in off hand
+level     ilvl 21, requires level 19
+binds     binds when picked up
+stats     +4 stamina, +4 shadow resistance
+sells     785 copper
 =======
 6342 Formula: Enchant Chest - Minor Intellect
 item      uncommon, Enchanting
@@ -30387,6 +30912,13 @@ effect    learn: 7893 Stylish Green Shirt
 text      "Teaches you how to sew a Stylish Green Shirt."
 sells     150 copper
 =======
+6392 Belt of Arugal
+item      rare, Cloth, waist
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +3 intellect, +5 spirit, +2 agility, +9 spell power
+sells     891 copper
+=======
 6393 Silver-thread Gloves
 item      uncommon, Cloth, hands
 level     ilvl 28, requires level 23
@@ -30626,6 +31158,13 @@ level     ilvl 43, requires level 38
 binds     binds when equipped
 stats     +8 stamina, +3 spirit
 sells     4162 copper
+=======
+6427 Mistscape Robe
+item      uncommon, Cloth, chest
+level     ilvl 46, requires level 41
+binds     binds when equipped
+stats     +3 stamina, +18 spirit
+sells     7016 copper
 =======
 6428 Mistscape Gloves
 item      uncommon, Cloth, hands
@@ -31837,6 +32376,14 @@ binds     binds when picked up
 stats     +5 stamina, +3 spell power
 sells     589 copper
 =======
+6633 Butcher's Slicer
+item      rare, Sword, one-hand
+level     ilvl 23, requires level 18
+binds     binds when picked up
+stats     +3 stamina, +6 attack power
+weapon    30 - 57 damage, speed 2.90, 15 dps
+sells     2551 copper
+=======
 6634 Ritual Salve
 item      common, Quest
 level     ilvl 1
@@ -32901,6 +33448,35 @@ classes   warlock
 stats     +10 stamina, +17 intellect
 sells     4685 copper
 =======
+6902 Bands of Serra'kis
+item      rare, Leather, wrists
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +6 strength, +3 stamina
+sells     1020 copper
+=======
+6903 Gaze Dreamer Pants
+item      rare, Cloth, legs
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +12 spell power, +9 spirit
+sells     1782 copper
+=======
+6905 Reef Axe
+item      rare, Axe, two-hand
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +8 strength, +24 healing, +8 spell damage
+weapon    59 - 89 damage, speed 3.30, 22.4 dps
+sells     5062 copper
+=======
+6906 Algae Fists
+item      rare, Mail, hands
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +8 strength, +5 stamina, +5 nature resistance
+sells     1336 copper
+=======
 6907 Tortoise Armor
 item      rare, Mail, chest
 level     ilvl 27, requires level 22
@@ -32908,6 +33484,28 @@ binds     binds when picked up
 stats     +40 armor
 effect    equip: 1292692 Spell Damage Reduction 05
 sells     2430 copper
+=======
+6908 Ghamoo-ra's Bind
+item      rare, Cloth, waist
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +7 stamina, +8 spell power
+sells     810 copper
+=======
+6909 Strike of the Hydra
+item      rare, Sword, two-hand
+level     ilvl 31, requires level 26
+binds     binds when picked up
+weapon    67 - 102 damage, speed 3.30, 25.6 dps
+effect    chance on hit: 1292657 Corrosive Poison
+sells     7412 copper
+=======
+6910 Leech Pants
+item      rare, Cloth, legs
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +5 spell power, +5 stamina, +5 mana per 5 sec, +5 health per 5 sec
+sells     1960 copper
 =======
 6912 Heartswood
 item      common, Quest
@@ -35418,6 +36016,12 @@ level     ilvl 49, requires level 44
 binds     binds when equipped
 sells     14012 copper
 =======
+7538 Champion's Armor
+item      uncommon, Mail, chest
+level     ilvl 48, requires level 43
+binds     binds when equipped
+sells     12322 copper
+=======
 7540 Champion's Helmet
 item      uncommon, Mail, head
 level     ilvl 47, requires level 42
@@ -36895,6 +37499,13 @@ binds     binds when equipped
 stats     +4 stamina, +20 spirit
 sells     10438 copper
 =======
+8107 Hibernal Boots
+item      uncommon, Cloth, feet
+level     ilvl 47, requires level 42
+binds     binds when equipped
+stats     +11 stamina, +7 intellect
+sells     5938 copper
+=======
 8108 Hibernal Bracers
 item      uncommon, Cloth, wrists
 level     ilvl 47, requires level 42
@@ -36958,6 +37569,13 @@ binds     binds when equipped
 stats     +10 strength, +10 stamina
 sells     4632 copper
 =======
+8118 Heraldic Bracers
+item      uncommon, Leather, wrists
+level     ilvl 46, requires level 41
+binds     binds when equipped
+stats     +5 stamina, +8 agility
+sells     4436 copper
+=======
 8119 Heraldic Breastplate
 item      uncommon, Leather, chest
 level     ilvl 51, requires level 46
@@ -36971,6 +37589,13 @@ level     ilvl 45, requires level 40
 binds     binds when equipped
 stats     +9 stamina, +4 agility
 sells     6207 copper
+=======
+8121 Heraldic Gloves
+item      uncommon, Leather, hands
+level     ilvl 47, requires level 42
+binds     binds when equipped
+stats     +10 strength, +10 agility
+sells     4843 copper
 =======
 8122 Heraldic Headpiece
 item      uncommon, Leather, head
@@ -36992,6 +37617,13 @@ level     ilvl 48, requires level 43
 binds     binds when equipped
 stats     +10 spirit, +10 intellect
 sells     7932 copper
+=======
+8125 Myrmidon's Bracers
+item      uncommon, Mail, wrists
+level     ilvl 48, requires level 43
+binds     binds when equipped
+stats     +5 agility, +5 intellect, +5 spirit
+sells     6367 copper
 =======
 8126 Myrmidon's Breastplate
 item      uncommon, Mail, chest
@@ -37620,6 +38252,13 @@ binds     binds when equipped
 stats     +15 agility, +15 intellect
 sells     12080 copper
 =======
+8252 Imperial Red Robe
+item      uncommon, Cloth, chest
+level     ilvl 56, requires level 51
+binds     binds when equipped
+stats     +6 stamina, +21 spirit
+sells     13622 copper
+=======
 8253 Imperial Red Sash
 item      uncommon, Cloth, waist
 level     ilvl 51, requires level 46
@@ -37773,6 +38412,13 @@ level     ilvl 51, requires level 46
 binds     binds when equipped
 stats     +20 strength, +3 spirit
 sells     10251 copper
+=======
+8275 Ebonhold Buckler
+item      uncommon, Shield, shield
+level     ilvl 56, requires level 51
+binds     binds when equipped
+stats     +4 stamina, +12 spirit
+sells     22028 copper
 =======
 8279 Valorous Helm
 item      uncommon, Plate, head
@@ -37934,6 +38580,13 @@ level     ilvl 59, requires level 54
 binds     binds when equipped
 stats     +13 spirit, +13 stamina
 sells     11787 copper
+=======
+8308 Hero's Band
+item      uncommon, Mail, head
+level     ilvl 60, requires level 55
+binds     binds when equipped
+stats     +9 agility, +14 stamina, +17 spirit
+sells     18703 copper
 =======
 8309 Hero's Leggings
 item      uncommon, Mail, legs
@@ -44123,6 +44776,21 @@ stats     +1 stamina
 weapon    14 - 22 damage, speed 2.60, 6.9 dps
 sells     302 copper
 =======
+9604 Mechanic's Pipehammer
+item      uncommon, Mace, two-hand
+level     ilvl 32
+binds     binds when picked up
+stats     +12 intellect
+weapon    48 - 73 damage, speed 2.80, 21.6 dps
+sells     8153 copper
+=======
+9605 Repairman's Cape
+item      uncommon, Cloth, back
+level     ilvl 32
+binds     binds when picked up
+stats     +3 intellect, +5 spirit, +6 healing, +2 spell damage
+sells     1956 copper
+=======
 9606 Treant Muisek Vessel
 item      common, Quest
 level     ilvl 1
@@ -44188,6 +44856,27 @@ level     ilvl 35
 binds     binds when picked up
 stats     +3 stamina, +7 spell power
 sells     5665 copper
+=======
+9623 Civinad Robes
+item      rare, Cloth, chest
+level     ilvl 37
+binds     binds when picked up
+stats     +12 spirit, +7 stamina, +26 healing, +9 spell damage
+sells     4202 copper
+=======
+9624 Triprunner Dungarees
+item      rare, Leather, legs
+level     ilvl 37
+binds     binds when picked up
+stats     +6 stamina, +18 agility, +3 strength
+sells     5252 copper
+=======
+9625 Dual Reinforced Leggings
+item      rare, Mail, legs
+level     ilvl 37
+binds     binds when picked up
+stats     +120 armor, +12 strength, +5 defense rating
+sells     6303 copper
 =======
 9628 Neeru's Herb Pouch
 item      common, Quest
@@ -45778,6 +46467,12 @@ level     ilvl 49, requires level 44
 binds     binds when equipped
 sells     6523 copper
 =======
+9942 Abjurer's Pants
+item      uncommon, Cloth, legs
+level     ilvl 50, requires level 45
+binds     binds when equipped
+sells     9341 copper
+=======
 9943 Abjurer's Robe
 item      uncommon, Cloth, chest
 level     ilvl 53, requires level 48
@@ -46613,6 +47308,12 @@ level     ilvl 57, requires level 52
 binds     binds when equipped
 sells     13444 copper
 =======
+10113 Wanderer's Shoulders
+item      uncommon, Leather, shoulders
+level     ilvl 57, requires level 52
+binds     binds when equipped
+sells     13541 copper
+=======
 10118 Ornate Breastplate
 item      uncommon, Mail, chest
 level     ilvl 58, requires level 53
@@ -46703,6 +47404,12 @@ level     ilvl 59, requires level 54
 binds     binds when equipped
 sells     12274 copper
 =======
+10139 High Councillor's Circlet
+item      uncommon, Cloth, head
+level     ilvl 62, requires level 57
+binds     binds when equipped
+sells     14258 copper
+=======
 10140 High Councillor's Gloves
 item      uncommon, Cloth, hands
 level     ilvl 61, requires level 56
@@ -46714,6 +47421,12 @@ item      uncommon, Cloth, legs
 level     ilvl 63, requires level 58
 binds     binds when equipped
 sells     20103 copper
+=======
+10142 High Councillor's Mantle
+item      uncommon, Cloth, shoulders
+level     ilvl 62, requires level 57
+binds     binds when equipped
+sells     13401 copper
 =======
 10143 High Councillor's Robe
 item      uncommon, Cloth, chest
@@ -46810,6 +47523,12 @@ item      uncommon, Shield, shield
 level     ilvl 64, requires level 59
 binds     binds when equipped
 sells     31040 copper
+=======
+10159 Mercurial Cloak
+item      uncommon, Cloth, back
+level     ilvl 59, requires level 54
+binds     binds when equipped
+sells     11444 copper
 =======
 10161 Mercurial Gauntlets
 item      uncommon, Mail, hands
@@ -46913,11 +47632,23 @@ level     ilvl 58, requires level 53
 binds     binds when equipped
 sells     14475 copper
 =======
+10179 Mystical Boots
+item      uncommon, Cloth, feet
+level     ilvl 54, requires level 49
+binds     binds when equipped
+sells     8632 copper
+=======
 10180 Mystical Belt
 item      uncommon, Cloth, waist
 level     ilvl 52, requires level 47
 binds     binds when equipped
 sells     5141 copper
+=======
+10181 Mystical Armor
+item      uncommon, Cloth, chest
+level     ilvl 58, requires level 53
+binds     binds when equipped
+sells     14640 copper
 =======
 10182 Swashbuckler's Breastplate
 item      uncommon, Leather, chest
@@ -47093,6 +47824,12 @@ level     ilvl 58, requires level 53
 binds     binds when equipped
 sells     7850 copper
 =======
+10215 Elegant Robes
+item      uncommon, Cloth, chest
+level     ilvl 62, requires level 57
+binds     binds when equipped
+sells     17387 copper
+=======
 10217 Elegant Leggings
 item      uncommon, Cloth, legs
 level     ilvl 61, requires level 56
@@ -47176,6 +47913,12 @@ item      uncommon, Mail, waist
 level     ilvl 57, requires level 52
 binds     binds when equipped
 sells     11106 copper
+=======
+10234 Engraved Boots
+item      uncommon, Mail, feet
+level     ilvl 58, requires level 53
+binds     binds when equipped
+sells     17801 copper
 =======
 10235 Engraved Helm
 item      uncommon, Mail, head
@@ -47369,6 +48112,12 @@ level     ilvl 61, requires level 56
 binds     binds when equipped
 sells     13337 copper
 =======
+10268 Masterwork Gauntlets
+item      uncommon, Mail, hands
+level     ilvl 63, requires level 58
+binds     binds when equipped
+sells     14758 copper
+=======
 10269 Masterwork Girdle
 item      uncommon, Mail, waist
 level     ilvl 62, requires level 57
@@ -47416,6 +48165,12 @@ item      uncommon, Plate, legs
 level     ilvl 59, requires level 54
 binds     binds when equipped
 sells     15723 copper
+=======
+10282 Emerald Vambraces
+item      uncommon, Plate, wrists
+level     ilvl 56, requires level 51
+binds     binds when equipped
+sells     6712 copper
 =======
 10283 Wolf Heart Samples
 item      common, Quest
@@ -47664,6 +48419,18 @@ item      uncommon, Shield, shield
 level     ilvl 58, requires level 53
 binds     binds when equipped
 sells     24760 copper
+=======
+10363 Engraved Wall
+item      uncommon, Shield, shield
+level     ilvl 60, requires level 55
+binds     binds when equipped
+sells     27396 copper
+=======
+10365 Emerald Shield
+item      uncommon, Shield, shield
+level     ilvl 59, requires level 54
+binds     binds when equipped
+sells     26276 copper
 =======
 10366 Demon Guard
 item      uncommon, Shield, shield
@@ -52292,6 +53059,12 @@ level     ilvl 43, requires level 38
 binds     binds when equipped
 sells     3971 copper
 =======
+11974 Aquamarine Ring
+item      uncommon, Miscellaneous, finger
+level     ilvl 46, requires level 41
+binds     binds when equipped
+sells     4971 copper
+=======
 11975 Topaz Ring
 item      uncommon, Miscellaneous, finger
 level     ilvl 49, requires level 44
@@ -52525,6 +53298,12 @@ item      uncommon, Miscellaneous, finger
 level     ilvl 61, requires level 56
 binds     binds when equipped
 sells     7781 copper
+=======
+12017 Prismatic Band
+item      uncommon, Miscellaneous, finger
+level     ilvl 65, requires level 60
+binds     binds when equipped
+sells     8963 copper
 =======
 12018 Conservator Helm
 item      rare, Mail, head
@@ -56289,6 +57068,14 @@ stats     +12 stat 125, +4 intellect
 weapon    20 - 38 damage, speed 1.80, 16.1 dps
 sells     4765 copper
 =======
+13020 Skystriker Bow
+item      rare, Bow, ranged
+level     ilvl 39, requires level 34
+binds     binds when equipped
+stats     +5 agility, +5 intellect
+weapon    30 - 57 damage, speed 2.10, 20.7 dps
+sells     8985 copper
+=======
 13022 Gryphonwing Long Bow
 item      rare, Bow, ranged
 level     ilvl 55, requires level 50
@@ -56335,6 +57122,13 @@ level     ilvl 43, requires level 38
 binds     binds when equipped
 stats     +5 stamina, +17 shadow damage
 sells     5613 copper
+=======
+13030 Basilisk Bone
+item      rare, Miscellaneous, held in off hand
+level     ilvl 51, requires level 46
+binds     binds when equipped
+stats     +6 fire resistance, +6 nature resistance, +6 frost resistance, +6 shadow resistance, +6 arcane resistance
+sells     13113 copper
 =======
 13031 Orb of Mistmantle
 item      rare, Miscellaneous, held in off hand
@@ -60434,6 +61228,12 @@ level     ilvl 23, requires level 18
 binds     binds when equipped
 sells     445 copper
 =======
+14163 Pagan Wraps
+item      uncommon, Cloth, chest
+level     ilvl 26, requires level 21
+binds     binds when equipped
+sells     1168 copper
+=======
 14164 Pagan Belt
 item      uncommon, Cloth, waist
 level     ilvl 21, requires level 16
@@ -60564,6 +61364,12 @@ level     ilvl 29, requires level 24
 binds     binds when equipped
 sells     1179 copper
 =======
+14187 Raincaller Cuffs
+item      uncommon, Cloth, wrists
+level     ilvl 28, requires level 23
+binds     binds when equipped
+sells     717 copper
+=======
 14188 Raincaller Cloak
 item      uncommon, Cloth, back
 level     ilvl 27, requires level 22
@@ -60690,6 +61496,12 @@ level     ilvl 37, requires level 32
 binds     binds when equipped
 sells     3553 copper
 =======
+14215 Vital Tunic
+item      uncommon, Cloth, chest
+level     ilvl 37, requires level 32
+binds     binds when equipped
+sells     3579 copper
+=======
 14217 Geomancer's Cord
 item      uncommon, Cloth, waist
 level     ilvl 36, requires level 31
@@ -60719,6 +61531,12 @@ item      uncommon, Cloth, wrists
 level     ilvl 35, requires level 30
 binds     binds when equipped
 sells     1510 copper
+=======
+14222 Geomancer's Gloves
+item      uncommon, Cloth, hands
+level     ilvl 37, requires level 32
+binds     binds when equipped
+sells     1834 copper
 =======
 14223 Geomancer's Spaulders
 item      uncommon, Cloth, shoulders
@@ -60845,6 +61663,12 @@ level     ilvl 43, requires level 38
 binds     binds when equipped
 sells     2819 copper
 =======
+14254 Lunar Raiment
+item      uncommon, Cloth, chest
+level     ilvl 47, requires level 42
+binds     binds when equipped
+sells     7698 copper
+=======
 14255 Lunar Belt
 item      uncommon, Cloth, waist
 level     ilvl 42, requires level 36
@@ -60891,6 +61715,12 @@ item      uncommon, Cloth, head
 level     ilvl 48, requires level 43
 binds     binds when equipped
 sells     5987 copper
+=======
+14264 Bloodwoven Pants
+item      uncommon, Cloth, legs
+level     ilvl 48, requires level 43
+binds     binds when equipped
+sells     8013 copper
 =======
 14265 Bloodwoven Wraps
 item      uncommon, Cloth, chest
@@ -61048,6 +61878,12 @@ level     ilvl 55, requires level 50
 binds     binds when equipped
 sells     9857 copper
 =======
+14294 Arachnidian Gloves
+item      uncommon, Cloth, hands
+level     ilvl 51, requires level 46
+binds     binds when equipped
+sells     5223 copper
+=======
 14296 Arachnidian Pauldrons
 item      uncommon, Cloth, shoulders
 level     ilvl 52, requires level 47
@@ -61107,6 +61943,12 @@ item      uncommon, Cloth, legs
 level     ilvl 57, requires level 52
 binds     binds when equipped
 sells     14349 copper
+=======
+14306 Bonecaster's Vest
+item      uncommon, Cloth, chest
+level     ilvl 60, requires level 55
+binds     binds when equipped
+sells     16830 copper
 =======
 14307 Bonecaster's Crown
 item      uncommon, Cloth, head
@@ -61168,6 +62010,12 @@ level     ilvl 63, requires level 58
 binds     binds when equipped
 sells     18408 copper
 =======
+14319 Resplendent Boots
+item      uncommon, Cloth, feet
+level     ilvl 59, requires level 54
+binds     binds when equipped
+sells     11401 copper
+=======
 14320 Resplendent Bracelets
 item      uncommon, Cloth, wrists
 level     ilvl 57, requires level 52
@@ -61197,6 +62045,12 @@ item      uncommon, Cloth, shoulders
 level     ilvl 61, requires level 56
 binds     binds when equipped
 sells     13204 copper
+=======
+14326 Resplendent Robes
+item      uncommon, Cloth, chest
+level     ilvl 63, requires level 58
+binds     binds when equipped
+sells     19479 copper
 =======
 14327 Resplendent Belt
 item      uncommon, Cloth, waist
@@ -61657,6 +62511,13 @@ binds     binds when equipped
 stats     +8 stamina, +8 spirit
 sells     2125 copper
 =======
+14427 Windchaser Wraps
+item      uncommon, Cloth, chest
+level     ilvl 49, requires level 44
+binds     binds when equipped
+stats     +10 stamina, +17 spirit
+sells     9124 copper
+=======
 14428 Windchaser Footpads
 item      uncommon, Cloth, feet
 level     ilvl 44, requires level 39
@@ -61754,6 +62615,13 @@ level     ilvl 49, requires level 44
 binds     binds when equipped
 stats     +12 spirit, +6 intellect, +3 nature resistance
 sells     4481 copper
+=======
+14443 Venomshroud Mantle
+item      uncommon, Cloth, shoulders
+level     ilvl 49, requires level 44
+binds     binds when equipped
+stats     +12 intellect, +4 stamina, +4 nature resistance
+sells     6745 copper
 =======
 14444 Venomshroud Leggings
 item      uncommon, Cloth, legs
@@ -62496,6 +63364,13 @@ binds     binds when equipped
 stats     +4 spirit, +3 intellect
 sells     818 copper
 =======
+14582 Dokebi Cape
+item      uncommon, Cloth, back
+level     ilvl 28, requires level 23
+binds     binds when equipped
+stats     +5 stamina, +2 intellect
+sells     1088 copper
+=======
 14583 Dokebi Gloves
 item      uncommon, Leather, hands
 level     ilvl 32, requires level 27
@@ -62557,6 +63432,13 @@ level     ilvl 35, requires level 30
 binds     binds when equipped
 stats     +7 agility, +3 strength
 sells     2210 copper
+=======
+14595 Hawkeye's Breeches
+item      uncommon, Leather, legs
+level     ilvl 38, requires level 33
+binds     binds when equipped
+stats     +14 agility, +3 stamina
+sells     4500 copper
 =======
 14596 Hawkeye's Epaulets
 item      uncommon, Leather, shoulders
@@ -62785,6 +63667,13 @@ binds     binds when equipped
 stats     +10 agility, +7 stamina, +4 strength
 sells     4215 copper
 =======
+14653 Scorpashi Slippers
+item      uncommon, Leather, feet
+level     ilvl 46, requires level 41
+binds     binds when equipped
+stats     +3 stamina, +13 agility
+sells     6854 copper
+=======
 14654 Scorpashi Wristbands
 item      uncommon, Leather, wrists
 level     ilvl 44, requires level 39
@@ -62812,6 +63701,13 @@ level     ilvl 46, requires level 41
 binds     binds when equipped
 stats     +12 spirit, +4 agility
 sells     4195 copper
+=======
+14658 Scorpashi Skullcap
+item      uncommon, Leather, head
+level     ilvl 49, requires level 44
+binds     binds when equipped
+stats     +14 agility, +13 stamina, +3 strength
+sells     7884 copper
 =======
 14659 Scorpashi Leggings
 item      uncommon, Leather, legs
@@ -62910,6 +63806,13 @@ level     ilvl 58, requires level 53
 binds     binds when equipped
 stats     +17 agility, +14 stamina, +6 spirit
 sells     13841 copper
+=======
+14677 Pridelord Pants
+item      uncommon, Leather, legs
+level     ilvl 58, requires level 53
+binds     binds when equipped
+stats     +23 agility, +4 stamina, +3 strength
+sells     18524 copper
 =======
 14678 Pridelord Pauldrons
 item      uncommon, Leather, shoulders
@@ -63155,6 +64058,13 @@ binds     binds when equipped
 stats     +6 strength, +4 stamina
 sells     1118 copper
 =======
+14756 Slayer's Slippers
+item      uncommon, Mail, feet
+level     ilvl 29, requires level 24
+binds     binds when equipped
+stats     +6 strength, +4 spirit
+sells     1860 copper
+=======
 14757 Slayer's Pants
 item      uncommon, Mail, legs
 level     ilvl 32, requires level 27
@@ -63288,6 +64198,13 @@ binds     binds when equipped
 stats     +4 strength, +8 stamina, +1 spirit
 sells     4617 copper
 =======
+14782 Khan's Gloves
+item      uncommon, Mail, hands
+level     ilvl 45, requires level 40
+binds     binds when equipped
+stats     +10 stamina, +7 spirit, +4 intellect
+sells     5004 copper
+=======
 14783 Khan's Belt
 item      uncommon, Mail, waist
 level     ilvl 46, requires level 41
@@ -63330,6 +64247,13 @@ binds     binds when equipped
 stats     +21 stamina, +4 spirit, +4 strength
 sells     17541 copper
 =======
+14790 Protector Buckler
+item      uncommon, Shield, shield
+level     ilvl 54, requires level 49
+binds     binds when equipped
+stats     +3 agility, +5 spirit, +10 intellect
+sells     18781 copper
+=======
 14791 Protector Cape
 item      uncommon, Cloth, back
 level     ilvl 48, requires level 43
@@ -63343,6 +64267,13 @@ level     ilvl 50, requires level 45
 binds     binds when equipped
 stats     +15 spirit, +4 agility
 sells     6960 copper
+=======
+14793 Protector Waistband
+item      uncommon, Mail, waist
+level     ilvl 50, requires level 45
+binds     binds when equipped
+stats     +10 agility, +10 stamina, +4 spirit
+sells     6985 copper
 =======
 14794 Protector Ankleguards
 item      uncommon, Mail, feet
@@ -63413,6 +64344,13 @@ level     ilvl 57, requires level 52
 binds     binds when equipped
 stats     +9 stamina, +14 intellect
 sells     15560 copper
+=======
+14807 Bloodlust Bracelets
+item      uncommon, Mail, wrists
+level     ilvl 53, requires level 48
+binds     binds when equipped
+stats     +11 agility, +5 spirit
+sells     8211 copper
 =======
 14808 Warstrike Belt
 item      uncommon, Mail, waist
@@ -63575,6 +64513,20 @@ binds     binds when equipped
 stats     +19 strength, +4 spirit
 sells     7925 copper
 =======
+14841 Tyrant's Epaulets
+item      uncommon, Plate, shoulders
+level     ilvl 44, requires level 40
+binds     binds when equipped
+stats     +12 stamina, +4 agility
+sells     4284 copper
+=======
+14843 Tyrant's Helm
+item      uncommon, Plate, head
+level     ilvl 46, requires level 41
+binds     binds when equipped
+stats     +16 stamina, +5 strength, +4 agility
+sells     5036 copper
+=======
 14845 Monster - Staff, Wooden Handle Rounded Head Low Yellow Glow
 item      poor, Staff, two-hand
 level     ilvl 1, requires level 1
@@ -63629,6 +64581,13 @@ level     ilvl 57, requires level 52
 binds     binds when equipped
 stats     +21 spirit, +10 stamina
 sells     14820 copper
+=======
+14862 Warleader's Breastplate
+item      uncommon, Plate, chest
+level     ilvl 63, requires level 58
+binds     binds when equipped
+stats     +25 stamina, +8 strength
+sells     18339 copper
 =======
 14863 Warleader's Gauntlets
 item      uncommon, Plate, hands
@@ -63880,6 +64839,12 @@ level     ilvl 49, requires level 44
 binds     binds when equipped
 sells     6697 copper
 =======
+14915 Jade Breastplate
+item      uncommon, Plate, chest
+level     ilvl 53, requires level 48
+binds     binds when equipped
+sells     11569 copper
+=======
 14919 Jade Circlet
 item      uncommon, Plate, head
 level     ilvl 52, requires level 47
@@ -63970,6 +64935,12 @@ level     ilvl 42, requires level 40
 binds     binds when equipped
 sells     2515 copper
 =======
+14945 Warbringer's Legguards
+item      uncommon, Plate, legs
+level     ilvl 45, requires level 40
+binds     binds when equipped
+sells     6432 copper
+=======
 14952 Bloodforged Helmet
 item      uncommon, Plate, head
 level     ilvl 50, requires level 45
@@ -63994,6 +64965,12 @@ level     ilvl 56, requires level 51
 binds     binds when equipped
 sells     12938 copper
 =======
+14959 High Chief's Gauntlets
+item      uncommon, Plate, hands
+level     ilvl 52, requires level 47
+binds     binds when equipped
+sells     5143 copper
+=======
 14964 High Chief's Shield
 item      uncommon, Shield, shield
 level     ilvl 56, requires level 51
@@ -64005,6 +64982,12 @@ item      uncommon, Plate, chest
 level     ilvl 61, requires level 56
 binds     binds when equipped
 sells     17801 copper
+=======
+14967 Glorious Gauntlets
+item      uncommon, Plate, hands
+level     ilvl 56, requires level 51
+binds     binds when equipped
+sells     6867 copper
 =======
 14971 Glorious Shoulder Pads
 item      uncommon, Plate, shoulders
@@ -64023,6 +65006,12 @@ item      uncommon, Shield, shield
 level     ilvl 60, requires level 55
 binds     binds when equipped
 sells     27810 copper
+=======
+14975 Exalted Harness
+item      uncommon, Plate, chest
+level     ilvl 65, requires level 60
+binds     binds when equipped
+sells     20219 copper
 =======
 14976 Exalted Gauntlets
 item      uncommon, Plate, hands
@@ -64059,6 +65048,12 @@ item      uncommon, Plate, shoulders
 level     ilvl 62, requires level 57
 binds     binds when equipped
 sells     13764 copper
+=======
+14982 Exalted Shield
+item      uncommon, Shield, shield
+level     ilvl 65, requires level 60
+binds     binds when equipped
+sells     34119 copper
 =======
 15002 Nimboya's Pike
 item      common, Quest
@@ -64695,6 +65690,12 @@ level     ilvl 25, requires level 20
 binds     binds when equipped
 sells     847 copper
 =======
+15125 Robust Gloves
+item      uncommon, Leather, hands
+level     ilvl 29, requires level 24
+binds     binds when equipped
+sells     990 copper
+=======
 15126 Robust Leggings
 item      uncommon, Leather, legs
 level     ilvl 29, requires level 24
@@ -64770,11 +65771,23 @@ level     ilvl 37, requires level 32
 binds     binds when equipped
 sells     4232 copper
 =======
+15145 Ghostwalker Buckler
+item      uncommon, Shield, shield
+level     ilvl 36, requires level 31
+binds     binds when equipped
+sells     4943 copper
+=======
 15146 Ghostwalker Crown
 item      uncommon, Leather, head
 level     ilvl 39, requires level 34
 binds     binds when equipped
 sells     3730 copper
+=======
+15147 Ghostwalker Cloak
+item      uncommon, Cloth, back
+level     ilvl 33, requires level 28
+binds     binds when equipped
+sells     1753 copper
 =======
 15148 Ghostwalker Belt
 item      uncommon, Leather, waist
@@ -64811,6 +65824,12 @@ item      uncommon, Leather, hands
 level     ilvl 39, requires level 34
 binds     binds when equipped
 sells     2571 copper
+=======
+15156 Nocturnal Cap
+item      uncommon, Leather, head
+level     ilvl 43, requires level 38
+binds     binds when equipped
+sells     5266 copper
 =======
 15157 Nocturnal Leggings
 item      uncommon, Leather, legs
@@ -64913,6 +65932,18 @@ item      uncommon, Leather, legs
 level     ilvl 50, requires level 45
 binds     binds when equipped
 sells     12121 copper
+=======
+15177 Potent Shoulders
+item      uncommon, Leather, shoulders
+level     ilvl 49, requires level 44
+binds     binds when equipped
+sells     8525 copper
+=======
+15178 Potent Belt
+item      uncommon, Leather, waist
+level     ilvl 47, requires level 42
+binds     binds when equipped
+sells     4935 copper
 =======
 15179 Praetorian Padded Armor
 item      uncommon, Leather, chest
@@ -66003,6 +67034,18 @@ level     ilvl 38, requires level 33
 binds     binds when equipped
 sells     3467 copper
 =======
+15354 Headhunter's Cloak
+item      uncommon, Cloth, back
+level     ilvl 32, requires level 27
+binds     binds when equipped
+sells     1600 copper
+=======
+15355 Headhunter's Mitts
+item      uncommon, Leather, hands
+level     ilvl 34, requires level 29
+binds     binds when equipped
+sells     1620 copper
+=======
 15356 Headhunter's Armor
 item      uncommon, Leather, chest
 level     ilvl 36, requires level 31
@@ -66080,6 +67123,12 @@ item      uncommon, Leather, legs
 level     ilvl 44, requires level 39
 binds     binds when equipped
 sells     7363 copper
+=======
+15375 Wolf Rider's Shoulder Pads
+item      uncommon, Leather, shoulders
+level     ilvl 43, requires level 38
+binds     binds when equipped
+sells     5132 copper
 =======
 15376 Wolf Rider's Padded Armor
 item      uncommon, Leather, chest
@@ -66182,6 +67231,12 @@ item      uncommon, Leather, legs
 level     ilvl 54, requires level 49
 binds     binds when equipped
 sells     14615 copper
+=======
+15395 Jadefire Epaulets
+item      uncommon, Leather, shoulders
+level     ilvl 53, requires level 48
+binds     binds when equipped
+sells     10379 copper
 =======
 15396 Curvewood Dagger
 item      uncommon, Dagger, one-hand
@@ -66875,6 +67930,12 @@ level     ilvl 26, requires level 21
 binds     binds when equipped
 sells     1902 copper
 =======
+15515 Spiked Chain Belt
+item      uncommon, Mail, waist
+level     ilvl 25, requires level 20
+binds     binds when equipped
+sells     844 copper
+=======
 15516 Spiked Chain Slippers
 item      uncommon, Mail, feet
 level     ilvl 27, requires level 22
@@ -66899,6 +67960,18 @@ level     ilvl 23, requires level 18
 binds     binds when equipped
 sells     607 copper
 =======
+15520 Spiked Chain Gauntlets
+item      uncommon, Mail, hands
+level     ilvl 26, requires level 21
+binds     binds when equipped
+sells     879 copper
+=======
+15521 Spiked Chain Leggings
+item      uncommon, Mail, legs
+level     ilvl 27, requires level 22
+binds     binds when equipped
+sells     1942 copper
+=======
 15522 Spiked Chain Shield
 item      uncommon, Shield, shield
 level     ilvl 29, requires level 24
@@ -66910,6 +67983,12 @@ item      uncommon, Mail, shoulders
 level     ilvl 27, requires level 22
 binds     binds when equipped
 sells     1474 copper
+=======
+15524 Sentry's Surcoat
+item      uncommon, Mail, chest
+level     ilvl 31, requires level 26
+binds     binds when equipped
+sells     2876 copper
 =======
 15525 Sentry's Slippers
 item      uncommon, Mail, feet
@@ -66928,6 +68007,18 @@ item      uncommon, Mail, hands
 level     ilvl 27, requires level 22
 binds     binds when equipped
 sells     1020 copper
+=======
+15528 Sentry's Sash
+item      uncommon, Mail, waist
+level     ilvl 26, requires level 21
+binds     binds when equipped
+sells     930 copper
+=======
+15529 Sentry's Leggings
+item      uncommon, Mail, legs
+level     ilvl 29, requires level 24
+binds     binds when equipped
+sells     2487 copper
 =======
 15531 Sentry's Shoulderguards
 item      uncommon, Mail, shoulders
@@ -66959,6 +68050,12 @@ level     ilvl 34, requires level 29
 binds     binds when equipped
 sells     4107 copper
 =======
+15537 Wicked Chain Cloak
+item      uncommon, Cloth, back
+level     ilvl 28, requires level 23
+binds     binds when equipped
+sells     1163 copper
+=======
 15539 Wicked Chain Waistband
 item      uncommon, Mail, waist
 level     ilvl 30, requires level 25
@@ -66989,17 +68086,41 @@ level     ilvl 32, requires level 27
 binds     binds when equipped
 sells     2448 copper
 =======
+15546 Thick Scale Breastplate
+item      uncommon, Mail, chest
+level     ilvl 36, requires level 31
+binds     binds when equipped
+sells     4793 copper
+=======
 15547 Thick Scale Cloak
 item      uncommon, Cloth, back
 level     ilvl 29, requires level 24
 binds     binds when equipped
 sells     1234 copper
 =======
+15548 Thick Scale Gauntlets
+item      uncommon, Mail, hands
+level     ilvl 32, requires level 27
+binds     binds when equipped
+sells     1649 copper
+=======
 15549 Thick Scale Belt
 item      uncommon, Mail, waist
 level     ilvl 31, requires level 26
 binds     binds when equipped
 sells     1504 copper
+=======
+15550 Thick Scale Crown
+item      uncommon, Mail, head
+level     ilvl 35, requires level 30
+binds     binds when equipped
+sells     3316 copper
+=======
+15551 Thick Scale Legguards
+item      uncommon, Mail, legs
+level     ilvl 35, requires level 30
+binds     binds when equipped
+sells     4438 copper
 =======
 15552 Thick Scale Shield
 item      uncommon, Shield, shield
@@ -67037,6 +68158,12 @@ level     ilvl 34, requires level 29
 binds     binds when equipped
 sells     1937 copper
 =======
+15561 Pillager's Leggings
+item      uncommon, Mail, legs
+level     ilvl 36, requires level 31
+binds     binds when equipped
+sells     4705 copper
+=======
 15564 Rugged Armor Kit
 item      common, Permanent
 level     ilvl 50, requires level 40
@@ -67066,6 +68193,12 @@ item      uncommon, Shield, shield
 level     ilvl 40, requires level 35
 binds     binds when equipped
 sells     7162 copper
+=======
+15571 Marauder's Belt
+item      uncommon, Mail, waist
+level     ilvl 35, requires level 30
+binds     binds when equipped
+sells     2218 copper
 =======
 15573 Marauder's Leggings
 item      uncommon, Mail, legs
@@ -67114,6 +68247,12 @@ item      uncommon, Mail, shoulders
 level     ilvl 41, requires level 36
 binds     binds when equipped
 sells     5344 copper
+=======
+15584 Sparkleshell Shield
+item      uncommon, Shield, shield
+level     ilvl 41, requires level 36
+binds     binds when equipped
+sells     7594 copper
 =======
 15585 Pardoc Grips
 item      uncommon, Cloth, hands
@@ -67213,6 +68352,12 @@ level     ilvl 44, requires level 39
 binds     binds when equipped
 sells     7035 copper
 =======
+15610 Bonelink Bracers
+item      uncommon, Mail, wrists
+level     ilvl 43, requires level 38
+binds     binds when equipped
+sells     4354 copper
+=======
 15612 Bonelink Gauntlets
 item      uncommon, Mail, hands
 level     ilvl 44, requires level 39
@@ -67236,6 +68381,12 @@ item      uncommon, Mail, head
 level     ilvl 46, requires level 41
 binds     binds when equipped
 sells     7584 copper
+=======
+15617 Bonelink Epaulets
+item      uncommon, Mail, shoulders
+level     ilvl 45, requires level 40
+binds     binds when equipped
+sells     7107 copper
 =======
 15618 Bonelink Wall Shield
 item      uncommon, Shield, shield
@@ -67303,11 +68454,23 @@ level     ilvl 51, requires level 46
 binds     binds when equipped
 sells     14557 copper
 =======
+15638 Formidable Shoulder Pads
+item      uncommon, Mail, shoulders
+level     ilvl 49, requires level 44
+binds     binds when equipped
+sells     9614 copper
+=======
 15639 Ironhide Bracers
 item      uncommon, Mail, wrists
 level     ilvl 50, requires level 45
 binds     binds when equipped
 sells     7040 copper
+=======
+15640 Ironhide Breastplate
+item      uncommon, Mail, chest
+level     ilvl 56, requires level 51
+binds     binds when equipped
+sells     20233 copper
 =======
 15642 Ironhide Greaves
 item      uncommon, Mail, feet
@@ -67387,6 +68550,12 @@ level     ilvl 57, requires level 52
 binds     binds when equipped
 sells     22625 copper
 =======
+15658 Impenetrable Sabatons
+item      uncommon, Mail, feet
+level     ilvl 59, requires level 54
+binds     binds when equipped
+sells     17850 copper
+=======
 15660 Impenetrable Breastplate
 item      uncommon, Mail, chest
 level     ilvl 61, requires level 56
@@ -67464,6 +68633,12 @@ item      uncommon, Mail, feet
 level     ilvl 60, requires level 55
 binds     binds when equipped
 sells     18464 copper
+=======
+15675 Magnificent Guard
+item      uncommon, Shield, shield
+level     ilvl 62, requires level 57
+binds     binds when equipped
+sells     28932 copper
 =======
 15676 Magnificent Leggings
 item      uncommon, Mail, legs
@@ -73608,6 +74783,21 @@ level     ilvl 40
 item      common, Junk
 level     ilvl 50
 =======
+16886 Outlaw Sabre
+item      rare, Sword, one-hand
+level     ilvl 32
+binds     binds when picked up
+stats     +16 attack power
+weapon    38 - 72 damage, speed 2.70, 20.4 dps
+sells     6522 copper
+=======
+16887 Witch's Finger
+item      rare, Miscellaneous, held in off hand
+level     ilvl 32
+binds     binds when picked up
+stats     +8 intellect, +4 stamina
+sells     2609 copper
+=======
 16888 Dull Drakefire Amulet
 item      common, Quest
 level     ilvl 1
@@ -75653,6 +76843,20 @@ level     ilvl 1
 binds     quest item
 unique    yes
 effect    use: 21884 Collect Orange Crystal Liquid (1 charge, consumed)
+=======
+17694 Band of the Fist
+item      uncommon, Miscellaneous, finger
+level     ilvl 28
+binds     binds when picked up
+stats     +4 agility, +4 strength
+sells     1782 copper
+=======
+17695 Chestnut Mantle
+item      uncommon, Cloth, shoulders
+level     ilvl 28
+binds     binds when picked up
+stats     +5 spell power, +3 stamina
+sells     1336 copper
 =======
 17696 Filled Cerulean Vial
 item      common, Quest
@@ -104416,6 +105620,12 @@ level     ilvl 1, requires level 1
 effect    use: 434827 Cleanse Corruption (1 charge, consumed)
 text      "A potent salve capable of cleansing deep corruption."
 =======
+213562 Bug Catching Net
+item      common, Junk
+level     ilvl 1, requires level 1
+binds     binds when picked up
+effect    use: 434957 Collect Specimen
+=======
 213563 Field Guide
 item      common, Junk
 level     ilvl 1, requires level 1
@@ -127280,6 +128490,16 @@ level     ilvl 1
 binds     quest item
 unique    yes
 =======
+267369 Wolfsbane
+item      rare, Sword, two-hand
+level     ilvl 31
+binds     binds when picked up
+classes   paladin
+stats     +9 stamina, +10 intellect
+weapon    69 - 105 damage, speed 3.40, 25.6 dps
+effect    chance on hit: 1282503 Blazewind Blast
+sells     7459 copper
+=======
 267412 Fenris Isle Key
 item      common, Key
 level     ilvl 1
@@ -128396,6 +129616,13 @@ binds     binds when picked up
 stats     +8 intellect, +5 stamina
 sells     1644 copper
 =======
+270036 Magistrate's Pantaloons
+item      rare, Cloth, legs
+level     ilvl 29
+binds     binds when picked up
+stats     +13 intellect, +7 spell power
+sells     1920 copper
+=======
 270037 Smouldering Leggings
 item      uncommon, Leather, legs
 level     ilvl 28
@@ -128416,6 +129643,13 @@ level     ilvl 29
 binds     binds when picked up
 stats     +7 spell power, +3 intellect
 sells     1484 copper
+=======
+270043 Dreamer's Chestguard
+item      rare, Leather, chest
+level     ilvl 32
+binds     binds when picked up
+stats     +10 strength, +5 stamina, +11 spirit
+sells     3365 copper
 =======
 270044 Darkshire Shoulderguards
 item      uncommon, Leather, shoulders
@@ -134295,6 +135529,34 @@ level     ilvl 1
 binds     quest item
 effect    use: 1291549 Gather Toxin (10 s cooldown)
 =======
+273023 Saltscale Girdle
+item      rare, Mail, waist
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +9 strength, +9 intellect
+sells     1717 copper
+=======
+273024 Glinteye Slippers
+item      rare, Cloth, feet
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +7 spell power, +6 spirit, +9 stamina
+sells     1723 copper
+=======
+273026 Garb of Florid Feathers
+item      rare, Leather, chest
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +9 agility, +15 intellect
+sells     2894 copper
+=======
+273028 Reliquary Mantle
+item      rare, Mail, shoulders
+level     ilvl 33, requires level 28
+binds     binds when picked up
+stats     +12 stamina, +4 hit rating
+sells     667 copper
+=======
 273029 Golemsight Long Gun
 item      rare, Gun, ranged
 level     ilvl 33, requires level 28
@@ -134302,6 +135564,13 @@ binds     binds when picked up
 stats     +6 agility
 weapon    29 - 54 damage, speed 2.50, 16.6 dps
 sells     4729 copper
+=======
+273030 Ring of Power Regulation
+item      rare, Miscellaneous, finger
+level     ilvl 33, requires level 28
+binds     binds when picked up
+stats     +6 spell power, +3 mana per 5 sec
+sells     2413 copper
 =======
 273050 Blackmaw Pouch
 item      common, Junk
@@ -135663,6 +136932,14 @@ item      common, Permanent
 level     ilvl 1, requires level 1
 tag       PTR Only
 =======
+273456 Cell Keeper's Claws
+item      rare, Fist Weapon, main hand
+level     ilvl 22, requires level 17
+binds     binds when picked up
+stats     +2 agility, +6 stat 125, +6 attack power
+weapon    25 - 48 damage, speed 2.50, 14.6 dps
+sells     2188 copper
+=======
 273457 Sorcerer Collar
 item      rare, Miscellaneous, neck
 level     ilvl 22, requires level 17
@@ -136755,12 +138032,34 @@ binds     quest item
 unique    yes
 text      "Engraved inside the band is a name. Though difficult to read, the initial T and Belle are legible."
 =======
+273643 Worgenbane Talisman
+item      rare, Miscellaneous, trinket
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +2 mana per 5 sec
+effect    use: 1292252 Worgenbane (300 s cooldown)
+sells     1433 copper
+=======
 273645 Blindwatcher's Sight
 item      rare, Cloth, head
 level     ilvl 26, requires level 21
 binds     binds when picked up
 effect    equip: 1292268 Resist Disorient 07
 sells     1082 copper
+=======
+273646 Half-Eaten Boots
+item      rare, Mail, feet
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +-100 armor, +8 strength, +10 nature resistance
+sells     1801 copper
+=======
+273647 Worgpelt Leggings
+item      rare, Leather, legs
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +10 agility, +5 strength, +7 fire resistance
+sells     1818 copper
 =======
 273654 Crystal Thread Cloak
 item      uncommon, Cloth, back
@@ -136832,6 +138131,49 @@ binds     binds when picked up
 stats     +10 attack power, +9 spirit
 sells     1424 copper
 =======
+273805 Blackrock Harness
+item      rare, Leather, chest
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +8 stamina, +4 defense rating, +14 attack power
+sells     1900 copper
+=======
+273806 Dark Horde Band
+item      rare, Miscellaneous, finger
+level     ilvl 26, requires level 21
+binds     binds when picked up
+stats     +6 spell power, +6 stamina
+sells     1525 copper
+=======
+273807 Demolition Girdle
+item      rare, Leather, waist
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +8 strength, +9 spell damage
+sells     1284 copper
+=======
+273808 Bridgebreaker Bindings
+item      rare, Cloth, wrists
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +7 fire resistance, +9 healing, +3 spell damage
+sells     1022 copper
+=======
+273809 Hamhock's Cleaver
+item      rare, Axe, main hand
+level     ilvl 30, requires level 25
+binds     binds when picked up
+stats     +4 strength, +9 stat 125, +8 attack power
+weapon    29 - 54 damage, speed 2.20, 18.9 dps
+sells     5644 copper
+=======
+273810 Ogre Grips
+item      rare, Mail, hands
+level     ilvl 30, requires level 25
+binds     binds when picked up
+stats     +10 stamina, +4 strength
+sells     1537 copper
+=======
 273811 Repurposed Rack
 item      rare, Shield, shield
 level     ilvl 30, requires level 25
@@ -136868,6 +138210,25 @@ level     ilvl 10
 binds     binds when picked up
 sells     55 copper
 =======
+273817 Graverobber's Shovel
+item      rare, Mace, two-hand
+level     ilvl 28, requires level 23
+binds     binds when picked up
+unique    yes
+stats     +10 stamina
+weapon    68 - 102 damage, speed 3.70, 23 dps
+effect    equip: 1319047 Graverobber's Shovel
+effect    use: 1292560 Dig (20 charges, 120 s cooldown)
+sells     5584 copper
+=======
+273819 Boneslicer
+item      rare, Polearm, two-hand
+level     ilvl 28, requires level 23
+binds     binds when picked up
+weapon    36 - 55 damage, speed 2.00, 22.8 dps
+effect    chance on hit: 1292573 Wound
+sells     5625 copper
+=======
 273820 Nightskulker Ring
 item      rare, Miscellaneous, finger
 level     ilvl 28, requires level 23
@@ -136882,6 +138243,21 @@ level     ilvl 1, requires level 1
 weapon    1 - 1 damage, speed 1.40, 0.7 dps
 sells     3 copper
 =======
+273824 Defias Jailbreakers
+item      rare, Leather, hands
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +7 stamina, +6 agility
+effect    equip: 1292581 Lockpicking 04
+sells     1536 copper
+=======
+273825 Red Wool Cloak
+item      rare, Cloth, back
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +3 mana per 5 sec, +9 healing, +3 spell damage
+sells     1836 copper
+=======
 273827 Debt Collector
 item      rare, Sword, main hand
 level     ilvl 31, requires level 26
@@ -136891,11 +138267,66 @@ weapon    31 - 59 damage, speed 2.30, 19.6 dps
 effect    equip: 1292594 Debt Collection
 sells     6164 copper
 =======
+273829 Concealed Hand Crossbow
+item      rare, Crossbow, ranged
+level     ilvl 31, requires level 26
+binds     binds when picked up
+stats     +12 ranged attack power
+weapon    24 - 37 damage, speed 2.00, 15.2 dps
+sells     4656 copper
+=======
+273839 Spiked Shell Band
+item      rare, Miscellaneous, finger
+level     ilvl 27, requires level 22
+binds     binds when picked up
+stats     +5 stamina
+effect    equip: 1292670 Spiked Shell
+sells     1636 copper
+=======
+273840 Cursed Murloc Eye
+item      rare, Miscellaneous, trinket
+level     ilvl 29, requires level 24
+binds     binds when picked up
+effect    equip: 1292674 Cursed Murloc Eye
+sells     1987 copper
+=======
+273841 Twilight Maul
+item      rare, Mace, two-hand
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +12 spell power
+weapon    60 - 91 damage, speed 3.30, 22.9 dps
+effect    chance on hit: 1292679 Lightning Bolt
+sells     5666 copper
+=======
+273842 Treacherous Treads
+item      rare, Mail, feet
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +7 stamina, +5 strength
+effect    equip: 1292683 Increase Threat All 01
+sells     2056 copper
+=======
+273843 Fallenroot Longbow
+item      rare, Bow, ranged
+level     ilvl 28, requires level 23
+binds     binds when picked up
+stats     +2 agility, +4 stamina
+weapon    21 - 40 damage, speed 2.20, 13.9 dps
+sells     3424 copper
+=======
 273845 Faintly Glowing Staff
 item      common, Quest
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+273846 Twilight Lord Girdle
+item      rare, Mail, waist
+level     ilvl 30, requires level 25
+binds     binds when picked up
+stats     +8 strength, +5 shadow resistance, +6 block value
+sells     1675 copper
 =======
 273852 Glowing Crystal
 item      common, Quest
@@ -138212,6 +139643,14 @@ item      common, Quest
 level     ilvl 1
 unique    yes
 text      "A few nonsensical letters and numbers are scribbled onto the parchment."
+=======
+274092 Sharpened Cutlery
+item      rare, Thrown, thrown
+level     ilvl 26, requires level 19
+binds     binds when picked up
+stats     +1 weapon damage
+weapon    18 - 35 damage, speed 1.80, 14.7 dps
+sells     2761 copper
 =======
 274093 Glowing Kaleidoscope
 item      rare, Key
@@ -145438,6 +146877,13 @@ binds     quest item
 unique    yes
 effect    use: 1306693 Instructions (1 charge, consumed)
 =======
+279388 Brewer's Bracers
+item      uncommon, Mail, wrists
+level     ilvl 25
+binds     binds when picked up
+stats     +4 strength, +2 stamina
+sells     528 copper
+=======
 279389 Sack of Homebrew Hops
 item      common, Quest
 level     ilvl 1
@@ -145597,6 +147043,32 @@ binds     quest item
 item      common, Quest
 level     ilvl 1, requires level 1
 binds     quest item
+=======
+279835 Vine Pruner's Cloak
+item      uncommon, Cloth, back
+level     ilvl 36, requires level 1
+binds     binds when picked up
+stats     +6 stamina, +5 stat 134, +5 spell power
+sells     2832 copper
+=======
+279836 Thorn Protecting Girdle
+item      uncommon, Mail, waist
+level     ilvl 36, requires level 1
+binds     binds when picked up
+stats     +8 stamina, +9 stat 126, +12 attack power
+=======
+279847 Unstable Power Core
+item      uncommon, Wand, ranged
+level     ilvl 36, requires level 1
+binds     binds when picked up
+stats     +4 stamina
+weapon    35 - 66 damage, speed 1.70, 29.7 dps
+=======
+279848 Construct Cloak
+item      uncommon, Cloth, back
+level     ilvl 36, requires level 1
+binds     binds when picked up
+stats     +5 strength, +5 spirit
 =======
 279849 Runebound Gloves
 item      uncommon, Leather, hands
@@ -146558,6 +148030,15 @@ effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 10705 Summon Eagle Owl
 text      "Teaches you how to summon this companion."
 sells     1250 copper
+=======
+280805 Serrated Raptor Claw
+item      uncommon, Dagger, one-hand
+level     ilvl 33, requires level 1
+binds     binds when picked up
+stats     +3 agility, +6 attack power
+weapon    19 - 36 damage, speed 1.60, 17.2 dps
+text      "Some claws are better for killing than cooking."
+sells     7439 copper
 =======
 280806 Stolen Explosives
 item      common, Quest
@@ -148116,6 +149597,35 @@ weapon    25 - 48 damage, speed 2.60, 14 dps
 text      "Ogres will crush you with anything."
 sells     2589 copper
 =======
+282642 Feather-Stitched Moccasins
+item      uncommon, Leather, feet
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +5 intellect, +5 spell damage
+sells     279 copper
+=======
+282654 Gnawed Bone
+item      uncommon, Miscellaneous, held in off hand
+level     ilvl 26, requires level 21
+binds     binds when equipped
+unique    yes
+stats     +3 stamina, +3 spirit
+sells     625 copper
+=======
+282655 Bog Pickers
+item      uncommon, Cloth, hands
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +5 stamina, +5 stat 112
+sells     171 copper
+=======
+282658 Dragonmaw Battle Shroud
+item      uncommon, Cloth, back
+level     ilvl 32, requires level 27
+binds     binds when equipped
+stats     +7 strength, +1 spirit
+sells     292 copper
+=======
 282719 Monster - Bow, Skyborne (Gray)
 item      common, Bow, ranged
 level     ilvl 1, requires level 1
@@ -148129,6 +149639,14 @@ binds     binds when picked up
 unique    yes
 effect    use: 1314364 Summon Spider (5 charges, consumed, 1800 s cooldown, 600 s shared cooldown)
 sells     1081 copper
+=======
+282721 Gnoll Shaman's Staff
+item      uncommon, Staff, two-hand
+level     ilvl 30, requires level 25
+binds     binds when equipped
+stats     +7 strength, +3 mana per 5 sec
+weapon    58 - 88 damage, speed 3.60, 20.3 dps
+sells     1855 copper
 =======
 283259 Bearhide Vicegrips
 item      uncommon, Leather, hands
@@ -148362,11 +149880,25 @@ weapon    18 - 35 damage, speed 1.70, 15.6 dps
 effect    chance on hit: 1316039 Fire Blast
 sells     2 copper
 =======
+284399 Seared Grove Shoulderpads
+item      rare, Cloth, shoulders
+level     ilvl 30, requires level 25
+binds     binds when picked up
+stats     +8 stamina, +7 crit rating, +3 intellect
+sells     1818 copper
+=======
 284400 Foreman's Helm
 item      rare, Mail, head
 level     ilvl 26, requires level 21
 binds     binds when picked up
 stats     +5 stat 113, +9 stamina, +8 strength
+sells     2658 copper
+=======
+284401 Sorrow's Shroud
+item      rare, Cloth, head
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +11 stamina, +3 mana per 5 sec, +16 healing, +5 spell power
 sells     2658 copper
 =======
 284583 Coin Pouch
@@ -148404,6 +149936,21 @@ effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 1316778 Summon Minimule
 text      "Teaches you how to summon this companion."
 sells     1250 copper
+=======
+284668 Apothecary's Concoction
+item      uncommon, Miscellaneous, held in off hand
+level     ilvl 24, requires level 19
+binds     binds when equipped
+stats     +-5 stamina, +2 mana per 5 sec, +5 health per 5 sec
+sells     13815 copper
+=======
+284700 Den Guardian's Crusher
+item      uncommon, Mace, two-hand
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +20 attack power
+weapon    42 - 64 damage, speed 2.90, 18.3 dps
+sells     1470 copper
 =======
 284704 Frostbitten Staff
 item      uncommon, Staff, two-hand
@@ -148818,12 +150365,26 @@ weapon    50 - 76 damage, speed 3.10, 20.3 dps
 effect    chance on hit: 1318250 Puncture
 sells     2822 copper
 =======
+285338 Kodohide Legguards
+item      rare, Leather, legs
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +4 strength, +11 intellect, +10 spell power
+sells     6314 copper
+=======
 285339 Centaur War Chain
 item      rare, Mail, waist
 level     ilvl 19, requires level 14
 binds     binds when picked up
 stats     +3 strength, +6 stamina
 sells     312 copper
+=======
+285344 Guard Captain's Barrier
+item      rare, Shield, shield
+level     ilvl 29, requires level 24
+binds     binds when picked up
+stats     +6 strength, +4 defense rating
+sells     2 copper
 =======
 285345 Feather Padded Treads
 item      rare, Cloth, feet
@@ -149625,6 +151186,14 @@ stats     +8 stamina, +10 strength, +6 spell power
 weapon    56 - 105 damage, speed 3.60, 22.4 dps
 sells     3 copper
 =======
+286541 Bael'dun Tankard
+item      uncommon, Miscellaneous, held in off hand
+level     ilvl 27, requires level 22
+binds     binds when equipped
+stats     +4 spirit, +3 stamina
+effect    use: 1133 Drink (600 s cooldown)
+sells     2 copper
+=======
 286569 Firebird Leggings
 item      uncommon, Cloth, legs
 level     ilvl 48, requires level 43
@@ -149901,6 +151470,14 @@ binds     binds when picked up
 stats     +1 agility, +4 stat 131
 weapon    11 - 22 damage, speed 1.60, 10.3 dps
 sells     1594 copper
+=======
+287067 Dragonmaw Skinflayer
+item      uncommon, Thrown, thrown
+level     ilvl 32, requires level 1
+binds     binds when picked up
+stats     +3 spirit, +3 strength
+weapon    18 - 35 damage, speed 1.80, 14.7 dps
+sells     4076 copper
 =======
 287070 Skypierce Javelin
 item      rare, Thrown, thrown
@@ -150181,64 +151758,57 @@ sells     25 copper
 =======
 288900 Earthshaker
 item      epic, Mace, two-hand
-level     ilvl 30, requires level 1
-binds     binds when equipped
-stats     +11 attack power
-weapon    87 - 132 damage, speed 3.50, 31.3 dps
+level     ilvl 10, requires level 1
+binds     binds when picked up
+stats     +4 attack power
+weapon    40 - 61 damage, speed 3.50, 14.4 dps
 effect    chance on hit: 21152 Earthshaker
 sells     113631 copper
 =======
 288926 Choker of the Fire Lord
 item      epic, Miscellaneous, neck
-level     ilvl 30, requires level 1
-binds     binds when equipped
-stats     +3 intellect, +3 stamina, +15 spell power
+level     ilvl 10, requires level 1
+binds     binds when picked up
+stats     +1 intellect, +1 stamina, +6 spell power
 sells     89135 copper
 =======
 288927 Quick Strike Ring
 item      epic, Miscellaneous, finger
-level     ilvl 30, requires level 1
-binds     binds when equipped
+level     ilvl 10, requires level 1
+binds     binds when picked up
 unique    yes
-stats     +4 stamina, +2 strength, +6 crit rating, +14 attack power
+stats     +1 stamina, +1 strength, +2 crit rating, +5 attack power
 sells     64030 copper
 =======
 288928 Heavy Dark Iron Ring
 item      epic, Miscellaneous, finger
-level     ilvl 30, requires level 1
-binds     binds when equipped
+level     ilvl 10, requires level 1
+binds     binds when picked up
 unique    yes
-stats     +10 stamina, +53 armor, +2 defense rating
+stats     +4 stamina, +20 armor, +1 defense rating
 sells     53364 copper
 =======
 288929 Band of Sulfuras
 item      epic, Miscellaneous, finger
-level     ilvl 30, requires level 1
-binds     binds when equipped
+level     ilvl 10, requires level 1
+binds     binds when picked up
 unique    yes
-stats     +10 intellect, +4 spirit, +6 stamina
+stats     +4 intellect, +2 spirit, +2 stamina
 sells     79853 copper
 =======
 288930 Cauterizing Band
 item      epic, Miscellaneous, finger
-level     ilvl 30, requires level 1
-binds     binds when equipped
-stats     +5 intellect, +4 stamina, +21 healing, +7 spell damage
+level     ilvl 10, requires level 1
+binds     binds when picked up
+stats     +2 intellect, +2 stamina, +8 healing, +3 spell damage
 sells     60256 copper
 =======
 288931 Ring of Spell Power
 item      epic, Miscellaneous, finger
-level     ilvl 30, requires level 1
-binds     binds when equipped
-stats     +16 spell power
+level     ilvl 10, requires level 1
+binds     binds when picked up
+stats     +6 spell power
 sells     91453 copper
-=======
-289081 Noggenfogger Elixir
-item      common, Elixirs
-level     ilvl 30, requires level 1
-binds     binds when equipped
-effect    use: 16589 Noggenfogger Elixir (1 charge, consumed, 3 s cooldown)
-sells     175 copper
 =======
 289082 Elixir of Endless Intellect
 item      common, Elixirs
@@ -150275,66 +151845,6 @@ item      common, Scrolls
 level     ilvl 30, requires level 1
 effect    use: 1327754 Scroll of Endless Fortitude (1 charge, consumed, 3 s shared cooldown)
 sells     100 copper
-=======
-289292 Hammer of Bestial Fury
-item      epic, Mace, main hand
-level     ilvl 35, requires level 1
-binds     binds when equipped
-unique    yes
-stats     +7 strength, +6 stamina, +47 armor
-weapon    37 - 69 damage, speed 1.90, 27.9 dps
-sells     109327 copper
-=======
-289294 Thunderfury, Blessed Blade of the Windseeker
-item      legendary, Sword, one-hand
-level     ilvl 45, requires level 1
-binds     binds when picked up
-unique    yes
-stats     +3 agility, +5 stamina, +5 fire resistance, +5 nature resistance
-weapon    45 - 84 damage, speed 1.90, 33.9 dps
-effect    chance on hit: 21992 Thunderfury
-sells     255355 copper
-=======
-289295 Sulfuras, Hand of Ragnaros
-item      legendary, Mace, two-hand
-level     ilvl 45, requires level 1
-binds     binds when picked up
-unique    yes
-stats     +8 strength, +8 stamina, +19 fire resistance
-weapon    122 - 205 damage, speed 3.70, 44.2 dps
-effect    chance on hit: 21162 Fireball
-effect    equip: 21142 Immolation
-sells     332623 copper
-=======
-289296 Benediction
-item      epic, Staff, two-hand
-level     ilvl 40, requires level 1
-binds     binds when equipped
-unique    yes
-classes   priest
-stats     +18 intellect, +6 stamina, +7 spirit, +12 shadow resistance
-weapon    97 - 146 damage, speed 3.00, 40.5 dps
-effect    use: 1327991 Call Anathema (60 s shared cooldown)
-effect    equip: 23236 Benediction
-=======
-289297 Anathema
-item      epic, Staff, two-hand
-level     ilvl 40, requires level 1
-binds     binds when equipped
-unique    yes
-classes   priest
-stats     +18 intellect, +13 stamina, +12 shadow resistance, +4 mana per 5 sec, +40 shadow damage
-weapon    97 - 146 damage, speed 3.00, 40.5 dps
-effect    use: 1327993 Call Benediction (60 s shared cooldown)
-=======
-289303 Rhok'delar, Longbow of the Ancient Keepers
-item      epic, Bow, ranged
-level     ilvl 40, requires level 1
-binds     binds when equipped
-unique    yes
-classes   hunter
-stats     +8 crit rating, +10 ranged attack power
-weapon    49 - 91 damage, speed 2.90, 24.1 dps
 =======
 289321 Elixir of Endless Mana
 item      common, Elixirs
