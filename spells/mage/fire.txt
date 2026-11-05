@@ -372,6 +372,20 @@ aura      Reduced movement speed.
 
 https://www.wowhead.com/forever/spell=1235318
 =======
+1291176 Blast Wave
+school    fire
+defense   magic
+duration  2 s
+
+effect 1  14–16 fire damage to every enemy around the caster
+          E_SCHOOL_DAMAGE base=15 variance=0.14933333 sp=1 radius=45 target=[22,15]
+effect 2  -10% movement speed to every enemy around the caster
+          E_APPLY_AURA A_MOD_DECREASE_SPEED base=-10 radius=45 target=[22,15]
+tooltip   Unleashes a wave of flame, inflicting Fire damage to nearby enemies and reducing their movement speed for $d.
+aura      Reduced movement speed.
+
+https://www.wowhead.com/forever/spell=1291176
+=======
 11083 Burning Soul
 school    fire
 attrs     passive

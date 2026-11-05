@@ -751,6 +751,25 @@ aura      Armor increased by $s1.
 
 https://www.wowhead.com/forever/spell=18100
 =======
+1283419 Frost Armor
+school    frost
+defense   magic
+duration  1800 s
+cooldown  10 s
+cost      10 mana
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met
+refs      6136 Chilled
+
+effect 1  +732 armor (at level 60)
+          E_APPLY_AURA A_MOD_ARMOR_NO_MODS base=12 ppl=12 misc=1 target=[1,0]
+effect 2  casts 6136 Chilled on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=6136 target=[1,0]
+tooltip   Encases the caster in a layer of frost that lasts $d. The thick ice increases armor by $s1, slows melee attackers' movement to $6136s2%, and increases the time between their attacks by $6136s1%.
+aura      Armor increased by $s1.
+          Slowing melee attackers' movement and attacks.
+
+https://www.wowhead.com/forever/spell=1283419
+=======
 11160 Frost Channeling
 school    frost
 attrs     passive

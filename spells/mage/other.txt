@@ -666,7 +666,9 @@ gcd       1.5 s
 range     15 yd
 
 effect 1  unrecognised shape
-          E_TELEPORT_UNITS base=0 amplitude=1 target=[1,17]
+          E_TELEPORT_UNITS base=0 amplitude=1 target=[25,17]
+effect 2  unrecognised shape
+          E_SCRIPT_EFFECT base=0 sp=1 target=[25,0]
 tooltip   Teleports you to Orgrimmar.
 
 https://www.wowhead.com/forever/spell=1321337
