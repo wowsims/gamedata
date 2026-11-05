@@ -1,0 +1,222 @@
+# Hotfix: 1.60.1.70790, hotfix pushes 113152, 113660, 16778113, 16778127, 16778698 and 96 more
+
+- Build: 1.60.1.70790 (`wowf` on Blizzard's CDN)
+- Hotfixes: applied, 3606 pushes (51929 entries)
+- Previous: 1.60.1.70790 with 3505 hotfix pushes (2026-11-05)
+- Exported by wowsims/forever@df3746362c2f on 2026-11-05
+
+## Hotfix pushes
+
+- 113152: 1 entries
+- 113660: 7 entries
+- 16778113: 6 entries
+- 16778127: 6 entries
+- 16778698: 6 entries
+- 16778702: 6 entries
+- 16778932: 6 entries
+- 16779151: 6 entries
+- 16779443: 6 entries
+- 16779450: 6 entries
+- 16780269: 6 entries
+- 16780289: 6 entries
+- 16781413: 6 entries
+- 16781665: 6 entries
+- 16783414: 6 entries
+- 16783531: 6 entries
+- 16783941: 6 entries
+- 16783958: 6 entries
+- 16784117: 6 entries
+- 16784120: 6 entries
+- 16784127: 6 entries
+- 16784734: 6 entries
+- 16784747: 6 entries
+- 16784962: 6 entries
+- 16784963: 6 entries
+- 16784965: 6 entries
+- 16785515: 6 entries
+- 16786664: 6 entries
+- 16786675: 6 entries
+- 16786751: 6 entries
+- 16786752: 6 entries
+- 16786754: 6 entries
+- 16787179: 6 entries
+- 16787341: 6 entries
+- 16787376: 6 entries
+- 16787418: 6 entries
+- 16787448: 6 entries
+- 16787487: 6 entries
+- 16787586: 6 entries
+- 16787591: 6 entries
+- 16788337: 6 entries
+- 16791418: 6 entries
+- 16791425: 6 entries
+- 16791447: 6 entries
+- 16791450: 6 entries
+- 16791525: 6 entries
+- 16791613: 6 entries
+- 16791629: 6 entries
+- 16791641: 6 entries
+- 16791653: 6 entries
+- 16791675: 6 entries
+- 16791810: 6 entries
+- 16791818: 6 entries
+- 16791891: 6 entries
+- 16791966: 6 entries
+- 16791974: 6 entries
+- 16792048: 6 entries
+- 16792074: 6 entries
+- 16792084: 6 entries
+- 16792132: 6 entries
+- 16792140: 6 entries
+- 16792165: 6 entries
+- 16792190: 6 entries
+- 16792337: 6 entries
+- 16792339: 6 entries
+- 16792374: 6 entries
+- 16792558: 6 entries
+- 16792567: 6 entries
+- 16792589: 6 entries
+- 16792822: 6 entries
+- 16792835: 6 entries
+- 16792875: 6 entries
+- 16793159: 6 entries
+- 16794724: 6 entries
+- 17047258: 6 entries
+- 17050238: 6 entries
+- 17050241: 6 entries
+- 17050243: 6 entries
+- 17050252: 6 entries
+- 17050253: 6 entries
+- 17050254: 6 entries
+- 17050260: 6 entries
+- 17050267: 6 entries
+- 17050268: 6 entries
+- 17051300: 6 entries
+- 17057053: 6 entries
+- 17057054: 6 entries
+- 17057055: 6 entries
+- 17057056: 6 entries
+- 17057057: 6 entries
+- 17057058: 6 entries
+- 17057059: 6 entries
+- 17057060: 6 entries
+- 17059869: 6 entries
+- 17059933: 6 entries
+- 17062408: 6 entries
+- 17064203: 6 entries
+- 17064204: 6 entries
+- 17064205: 6 entries
+- 17064282: 6 entries
+- 17064284: 6 entries
+
+## Spells
+
+No class spell changed.
+
+## Items
+
+99 added, 0 removed, 0 changed.
+
+- added 897 Madwolf Bracers
+- added 911 Ironwood Treebranch
+- added 1482 Shadowfang
+- added 1486 Tree Bark Jacket
+- added 1716 Robe of the Magi
+- added 1935 Assassin's Blade
+- added 2227 Heavy Ogre War Axe
+- added 2234 Nightwalker Armor
+- added 3053 Humbert's Chestpiece
+- added 3073 Smoldering Pants
+- added 4197 Berylline Pads
+- added 4449 Naraxis' Fang
+- added 6198 Jurassic Wristguards
+- added 6315 Steelarrow Crossbow
+- added 6725 Marbled Buckler
+- added 6742 Stonefist Girdle
+- added 6901 Glowing Thresher Cape
+- added 6904 Bite of Serra'kis
+- added 6911 Moss Cinch
+- added 7518 Gossamer Robe
+- added 7531 Cabalist Boots
+- added 7746 Explorers' League Commendation
+- added 7747 Vile Protector
+- added 7749 Omega Orb
+- added 8299 Traveler's Helm
+- added 9448 Spidertank Oilrag
+- added 9459 Thermaplugg's Left Arm
+- added 9535 Fire-welded Bracers
+- added 9536 Fairywing Mantle
+- added 9538 Talvash's Gold Ring
+- added 9963 Warmonger's Circlet
+- added 10125 Ornate Pauldrons
+- added 10160 Mercurial Circlet
+- added 10202 Overlord's Vambraces
+- added 10232 Engraved Gauntlets
+- added 10271 Masterwork Shield
+- added 10370 Imbued Plate Girdle
+- added 10375 Imbued Plate Vambraces
+- added 11121 Darkwater Talwar
+- added 14202 Thistlefur Jerkin
+- added 14209 Vital Sash
+- added 14231 Embersilk Mitts
+- added 14234 Embersilk Robes
+- added 14309 Celestial Belt
+- added 14397 Resilient Mantle
+- added 14413 Stonecloth Robe
+- added 14425 Silksand Wraps
+- added 14437 Venomshroud Vest
+- added 14459 Elunarian Cloak
+- added 14594 Hawkeye's Gloves
+- added 14602 Warden's Cloak
+- added 14675 Pridelord Gloves
+- added 14750 Slayer's Cuffs
+- added 14758 Slayer's Shoulder Pads
+- added 14832 Symbolic Vambraces
+- added 14858 Vanguard Headdress
+- added 14868 Warleader's Shoulders
+- added 14916 Jade Deflector
+- added 14924 Lofty Breastplate
+- added 14949 Bloodforged Gauntlets
+- added 14974 Glorious Bindings
+- added 15121 Robust Boots
+- added 15123 Robust Buckler
+- added 15158 Nocturnal Shoulder Pads
+- added 15342 Pathfinder Guard
+- added 15351 Headhunter's Bands
+- added 15373 Wolf Rider's Headgear
+- added 15606 Ancient Belt
+- added 15619 Gryphon Mail Belt
+- added 15659 Impenetrable Bindings
+- added 15943 Imbued Shield
+- added 17508 Forcestone Buckler
+- added 270042 Technician's Bracers
+- added 273022 Supple Bellyskin Leggings
+- added 273025 Raptorclaw Greaves
+- added 273027 Raptor's Gaze
+- added 273036 Graveweave Bindings
+- added 273037 Felbough Arm
+- added 273038 Garb of Fallen Felbark
+- added 273044 Violet Sorcerer's Robes
+- added 273051 Violet Sorcerer's Mantle
+- added 273052 Ponderous Orb
+- added 274084 Quilboar Blaster
+- added 279837 Fallen Guard's Pendant
+- added 279838 Arcane Infused Rod
+- added 279839 Spellguard Pauldrons
+- added 279840 Renewing Footpads
+- added 279841 Defender of Dalaran
+- added 279842 Battle Spaulders
+- added 279843 Enchanted Sandals
+- added 279844 Striking Staff
+- added 282653 Dissolved Locket
+- added 282717 Durable Bearhide Pauldrons
+- added 285192 Kobold Firestarter
+- added 286987 Violet Sorcerer's Sandals
+- added 286988 Violet Sorcerer's Leggings
+- added 286989 Violet Sorcerer's Wraps
+- added 287066 Wizlo's Tuning Wrench
+- added 287068 Excavated Dagger
+
+## Files
+
+- [`items.txt`](items.txt)
