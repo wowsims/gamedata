@@ -252,8 +252,8 @@ labels    19
 
 effect 1  SPELLMOD_ALL_EFFECTS +5 on family 5 mask 0x4000000
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=8 family=5 mask=0x4000000 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +5% on family 5 mask 0x3000
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=5 mask=0x3000 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +0% on family 5 mask 0x3000
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 family=5 mask=0x3000 target=[1,0]
 tooltip   Damage dealt by Hunter and Warlock pets increased by $s1%.
 
 https://www.wowhead.com/forever/spell=20575

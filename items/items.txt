@@ -37339,6 +37339,13 @@ binds     binds when picked up
 stats     +14 spell power
 sells     4202 copper
 =======
+7691 Embalmed Shroud
+item      rare, Cloth, head
+level     ilvl 35, requires level 30
+binds     binds when picked up
+stats     +12 spirit, +7 stamina, +24 healing, +8 spell damage
+sells     2604 copper
+=======
 7706 Monster - Mace2H, Special NPC (Mograine)
 item      poor, Mace, one-hand
 level     ilvl 1, requires level 1
@@ -59446,6 +59453,13 @@ binds     binds when equipped
 stats     +22 strength, +6 defense rating
 sells     8024 copper
 =======
+13075 Direwing Legguards
+item      rare, Plate, legs
+level     ilvl 63, requires level 58
+binds     binds when equipped
+stats     +15 strength, +16 stamina, +16 spirit, +15 agility
+sells     22090 copper
+=======
 13076 Giantslayer Bracers
 item      rare, Plate, wrists
 level     ilvl 48, requires level 43
@@ -67679,6 +67693,12 @@ level     ilvl 42, requires level 40
 binds     binds when equipped
 sells     2515 copper
 =======
+14944 Warbringer's Crown
+item      uncommon, Plate, head
+level     ilvl 45, requires level 40
+binds     binds when equipped
+sells     4806 copper
+=======
 14945 Warbringer's Legguards
 item      uncommon, Plate, legs
 level     ilvl 45, requires level 40
@@ -71255,6 +71275,12 @@ item      uncommon, Mail, waist
 level     ilvl 35, requires level 30
 binds     binds when equipped
 sells     2218 copper
+=======
+15572 Marauder's Circlet
+item      uncommon, Mail, head
+level     ilvl 39, requires level 34
+binds     binds when equipped
+sells     4714 copper
 =======
 15573 Marauder's Leggings
 item      uncommon, Mail, legs
@@ -153651,6 +153677,13 @@ level     ilvl 50
 text      "Consumed, never to return."
 sells     604 copper
 =======
+282560 Earth-Infused Rockguards
+item      rare, Mail, shoulders
+level     ilvl 47, requires level 42
+binds     binds when picked up
+stats     +10 intellect, +13 stamina, +8 spell power
+sells     1449 copper
+=======
 282561 Siegebreaker's Blaster
 item      rare, Gun, ranged
 level     ilvl 42, requires level 37
@@ -156194,57 +156227,64 @@ sells     25 copper
 =======
 288900 Earthshaker
 item      epic, Mace, two-hand
-level     ilvl 10, requires level 1
-binds     binds when picked up
-stats     +4 attack power
-weapon    40 - 61 damage, speed 3.50, 14.4 dps
+level     ilvl 30, requires level 1
+binds     binds when equipped
+stats     +11 attack power
+weapon    87 - 132 damage, speed 3.50, 31.3 dps
 effect    chance on hit: 21152 Earthshaker
 sells     113631 copper
 =======
 288926 Choker of the Fire Lord
 item      epic, Miscellaneous, neck
-level     ilvl 10, requires level 1
-binds     binds when picked up
-stats     +1 intellect, +1 stamina, +6 spell power
+level     ilvl 30, requires level 1
+binds     binds when equipped
+stats     +3 intellect, +3 stamina, +15 spell power
 sells     89135 copper
 =======
 288927 Quick Strike Ring
 item      epic, Miscellaneous, finger
-level     ilvl 10, requires level 1
-binds     binds when picked up
+level     ilvl 30, requires level 1
+binds     binds when equipped
 unique    yes
-stats     +1 stamina, +1 strength, +2 crit rating, +5 attack power
+stats     +4 stamina, +2 strength, +6 crit rating, +14 attack power
 sells     64030 copper
 =======
 288928 Heavy Dark Iron Ring
 item      epic, Miscellaneous, finger
-level     ilvl 10, requires level 1
-binds     binds when picked up
+level     ilvl 30, requires level 1
+binds     binds when equipped
 unique    yes
-stats     +4 stamina, +20 armor, +1 defense rating
+stats     +10 stamina, +53 armor, +2 defense rating
 sells     53364 copper
 =======
 288929 Band of Sulfuras
 item      epic, Miscellaneous, finger
-level     ilvl 10, requires level 1
-binds     binds when picked up
+level     ilvl 30, requires level 1
+binds     binds when equipped
 unique    yes
-stats     +4 intellect, +2 spirit, +2 stamina
+stats     +10 intellect, +4 spirit, +6 stamina
 sells     79853 copper
 =======
 288930 Cauterizing Band
 item      epic, Miscellaneous, finger
-level     ilvl 10, requires level 1
-binds     binds when picked up
-stats     +2 intellect, +2 stamina, +8 healing, +3 spell damage
+level     ilvl 30, requires level 1
+binds     binds when equipped
+stats     +5 intellect, +4 stamina, +21 healing, +7 spell damage
 sells     60256 copper
 =======
 288931 Ring of Spell Power
 item      epic, Miscellaneous, finger
-level     ilvl 10, requires level 1
-binds     binds when picked up
-stats     +6 spell power
+level     ilvl 30, requires level 1
+binds     binds when equipped
+stats     +16 spell power
 sells     91453 copper
+=======
+289081 Noggenfogger Elixir
+item      common, Elixirs
+level     ilvl 30, requires level 1
+binds     binds when equipped
+effect    use: 16589 Noggenfogger Elixir (1 charge, consumed, 3 s cooldown)
+sells     175 copper
 =======
 289082 Elixir of Endless Intellect
 item      common, Elixirs
@@ -156281,6 +156321,66 @@ item      common, Scrolls
 level     ilvl 30, requires level 1
 effect    use: 1327754 Scroll of Endless Fortitude (1 charge, consumed, 3 s shared cooldown)
 sells     100 copper
+=======
+289292 Hammer of Bestial Fury
+item      epic, Mace, main hand
+level     ilvl 35, requires level 1
+binds     binds when equipped
+unique    yes
+stats     +7 strength, +6 stamina, +47 armor
+weapon    37 - 69 damage, speed 1.90, 27.9 dps
+sells     109327 copper
+=======
+289294 Thunderfury, Blessed Blade of the Windseeker
+item      legendary, Sword, one-hand
+level     ilvl 45, requires level 1
+binds     binds when picked up
+unique    yes
+stats     +3 agility, +5 stamina, +5 fire resistance, +5 nature resistance
+weapon    45 - 84 damage, speed 1.90, 33.9 dps
+effect    chance on hit: 21992 Thunderfury
+sells     255355 copper
+=======
+289295 Sulfuras, Hand of Ragnaros
+item      legendary, Mace, two-hand
+level     ilvl 45, requires level 1
+binds     binds when picked up
+unique    yes
+stats     +8 strength, +8 stamina, +19 fire resistance
+weapon    122 - 205 damage, speed 3.70, 44.2 dps
+effect    chance on hit: 21162 Fireball
+effect    equip: 21142 Immolation
+sells     332623 copper
+=======
+289296 Benediction
+item      epic, Staff, two-hand
+level     ilvl 40, requires level 1
+binds     binds when equipped
+unique    yes
+classes   priest
+stats     +18 intellect, +6 stamina, +7 spirit, +12 shadow resistance
+weapon    97 - 146 damage, speed 3.00, 40.5 dps
+effect    use: 1327991 Call Anathema (60 s shared cooldown)
+effect    equip: 23236 Benediction
+=======
+289297 Anathema
+item      epic, Staff, two-hand
+level     ilvl 40, requires level 1
+binds     binds when equipped
+unique    yes
+classes   priest
+stats     +18 intellect, +13 stamina, +12 shadow resistance, +4 mana per 5 sec, +40 shadow damage
+weapon    97 - 146 damage, speed 3.00, 40.5 dps
+effect    use: 1327993 Call Benediction (60 s shared cooldown)
+=======
+289303 Rhok'delar, Longbow of the Ancient Keepers
+item      epic, Bow, ranged
+level     ilvl 40, requires level 1
+binds     binds when equipped
+unique    yes
+classes   hunter
+stats     +8 crit rating, +10 ranged attack power
+weapon    49 - 91 damage, speed 2.90, 24.1 dps
 =======
 289321 Elixir of Endless Mana
 item      common, Elixirs

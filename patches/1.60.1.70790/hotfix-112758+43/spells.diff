@@ -1,0 +1,344 @@
+# druid
+--- 467 Thorns (Rank 1)
++++ 467 Thorns (Rank 1)
+@@ -1,16 +1,16 @@
+ 467 Thorns (Rank 1)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      35 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  3 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=3 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=467
+--- 782 Thorns (Rank 2)
++++ 782 Thorns (Rank 2)
+@@ -1,16 +1,16 @@
+ 782 Thorns (Rank 2)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      60 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  6 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=6 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=782
+--- 1075 Thorns (Rank 3)
++++ 1075 Thorns (Rank 3)
+@@ -1,16 +1,16 @@
+ 1075 Thorns (Rank 3)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      105 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  9 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=9 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=1075
+--- 8914 Thorns (Rank 4)
++++ 8914 Thorns (Rank 4)
+@@ -1,16 +1,16 @@
+ 8914 Thorns (Rank 4)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      170 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  12 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=12 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=8914
+--- 9756 Thorns (Rank 5)
++++ 9756 Thorns (Rank 5)
+@@ -1,16 +1,16 @@
+ 9756 Thorns (Rank 5)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      240 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  15 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=15 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=9756
+--- 9910 Thorns (Rank 6)
++++ 9910 Thorns (Rank 6)
+@@ -1,16 +1,16 @@
+ 9910 Thorns (Rank 6)
+ school    nature
+ defense   magic
+ duration  600 s
+ gcd       1.5 s
+ cost      320 mana
+ range     30 yd
+ stance    Tree of Life, Moonkin
+ labels    21
+ 
+ effect 1  18 nature damage back to melee attackers to the friendly target
+           E_APPLY_AURA A_DAMAGE_SHIELD base=18 target=[21,0]
+-tooltip   Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
++tooltip   Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
+ aura      Causes $w1 Nature damage to attackers.
+ 
+ https://www.wowhead.com/forever/spell=9910
+--- 5487 Bear Form (Shapeshift)
++++ 5487 Bear Form (Shapeshift)
+@@ -1,24 +1,24 @@
+ 5487 Bear Form (Shapeshift)
+ school    physical
+ duration  permanent
+ gcd       1.5 s
+ cost      55% of base mana
+ labels    21
+ refs      1178 Bear Form (Passive)
+ 
+ effect 1  shifts into Bear
+           E_APPLY_AURA A_MOD_SHAPESHIFT base=0 misc=5 misc2=7 target=[1,0]
+ effect 2  immune to polymorph
+           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=17 target=[1,0]
+ effect 3  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+ effect 4  unrecognised shape
+           E_APPLY_AURA A_668 base=0 target=[1,0]
+ effect 5  unrecognised shape
+           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
+-tooltip   Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
++tooltip   Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+ 
+           The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+ aura      Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
+ 
+ https://www.wowhead.com/forever/spell=5487
+--- 6785 Ravage (Rank 1)
++++ 6785 Ravage (Rank 1)
+@@ -1,20 +1,20 @@
+ 6785 Ravage (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
+ excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +42 to the enemy
+           E_WEAPON_DAMAGE base=42 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+-tooltip   Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
++tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=6785
+--- 6787 Ravage (Rank 2)
++++ 6787 Ravage (Rank 2)
+@@ -1,20 +1,20 @@
+ 6787 Ravage (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
+ excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +62 to the enemy
+           E_WEAPON_DAMAGE base=62 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+-tooltip   Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
++tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=6787
+--- 9866 Ravage (Rank 3)
++++ 9866 Ravage (Rank 3)
+@@ -1,20 +1,20 @@
+ 9866 Ravage (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
+ excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +78 to the enemy
+           E_WEAPON_DAMAGE base=78 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+-tooltip   Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
++tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=9866
+--- 9867 Ravage (Rank 4)
++++ 9867 Ravage (Rank 4)
+@@ -1,20 +1,20 @@
+ 9867 Ravage (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
+ excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +98 to the enemy
+           E_WEAPON_DAMAGE base=98 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+-tooltip   Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
++tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=9867
+--- 1328622 Bloom
++++ 1328622 Bloom
+@@ -1,8 +1,8 @@
+ 1328622 Bloom
+ school    nature
+ range     50000 yd
+ 
+-effect 1  1 healing to the caster
+-          E_HEAL base=1 target=[1,0]
++effect 1  1 healing to the friendly target
++          E_HEAL base=1 target=[21,0]
+ 
+ https://www.wowhead.com/forever/spell=1328622
+# rogue
+--- 1329283 Shank (Rank 1)
++++ 1329283 Shank (Rank 1)
+@@ -1,20 +1,20 @@
+-1329283 Shank
++1329283 Shank (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  10 s
+ gcd       1 s
+ cost      5 energy
+ range     5 yd
+ equip     needs a melee weapon in the off hand
+ attrs     refund on miss, suppresses weapon procs
+ refs      1310703 Venom, 1329286 Boot Knife
+ 
+ effect 1  50% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+ effect 2  restores 15 energy to the caster
+           E_ENERGIZE base=15 misc=3 target=[1,0]
+ effect 3  restores 0 combo points to the caster
+           E_ENERGIZE base=0 misc=4 target=[1,0]
+-tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
++tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
+ 
+ https://www.wowhead.com/forever/spell=1329283
+--- 1329549 Shank (Rank 2)
++++ 1329549 Shank (Rank 2)
+@@ -1,20 +1,20 @@
+-1329549 Shank
++1329549 Shank (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  10 s
+ gcd       1 s
+ cost      5 energy
+ range     5 yd
+ equip     needs a melee weapon in the off hand
+ attrs     refund on miss, suppresses weapon procs
+ refs      1310703 Venom, 1329286 Boot Knife
+ 
+ effect 1  50% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+ effect 2  restores 25 energy to the caster
+           E_ENERGIZE base=25 misc=3 target=[1,0]
+ effect 3  restores 0 combo points to the caster
+           E_ENERGIZE base=0 misc=4 target=[1,0]
+-tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
++tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
+ 
+ https://www.wowhead.com/forever/spell=1329549
+# warlock
+--- 20575 Command (Racial Passive)
++++ 20575 Command (Racial Passive)
+@@ -1,12 +1,12 @@
+ 20575 Command (Racial Passive)
+ school    physical
+ attrs     passive
+ labels    19
+ 
+ effect 1  SPELLMOD_ALL_EFFECTS +5 on family 5 mask 0x4000000
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 sp=1 misc=8 family=5 mask=0x4000000 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +5% on family 5 mask 0x3000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=5 family=5 mask=0x3000 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +0% on family 5 mask 0x3000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 family=5 mask=0x3000 target=[1,0]
+ tooltip   Damage dealt by Hunter and Warlock pets increased by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=20575
+# warrior
+--- 1323967 Gore Drinker
++++ 1323967 Gore Drinker
+@@ -1,12 +1,12 @@
+ 1323967 Gore Drinker
+ school    physical
+ attrs     passive, can proc from procs
+ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  a dummy aura holding 3
+           E_APPLY_AURA A_DUMMY base=3 sp=1 target=[1,0]
+ effect 2  a dummy aura holding 1
+           E_APPLY_AURA A_DUMMY base=1 sp=1 target=[1,0]
+-tooltip   Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
++tooltip   Your Enrage, Berserker Rage, Bloodrage, Death Wish, Reckless Swings, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
+ 
+ https://www.wowhead.com/forever/spell=1323967
