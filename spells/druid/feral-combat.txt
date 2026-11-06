@@ -114,7 +114,7 @@ effect 4  unrecognised shape
           E_APPLY_AURA A_668 base=0 target=[1,0]
 effect 5  unrecognised shape
           E_APPLY_AURA A_MOD_POWER_REGEN_PERCENT base=-100 misc=3 target=[1,0]
-tooltip   Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+tooltip   Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
           The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 aura      Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
@@ -1777,7 +1777,7 @@ effect 2  435% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
-tooltip   Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=6785
 =======
@@ -1798,7 +1798,7 @@ effect 2  435% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
-tooltip   Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=6787
 =======
@@ -1819,7 +1819,7 @@ effect 2  435% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
-tooltip   Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9866
 =======
@@ -1840,7 +1840,7 @@ effect 2  435% weapon damage to the enemy
           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
 effect 3  restores 1 combo point to the caster
           E_ENERGIZE base=1 misc=4 target=[1,0]
-tooltip   Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+tooltip   Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 https://www.wowhead.com/forever/spell=9867
 =======
