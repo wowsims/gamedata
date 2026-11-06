@@ -1,0 +1,174 @@
+# druid
+--- 9005 Pounce (Rank 1)
++++ 9005 Pounce (Rank 1)
+@@ -1,23 +1,24 @@
+ 9005 Pounce (Rank 1)
+ school    physical
+ defense   melee
+ mechanic  mechanic 12
+ duration  2 s
+ gcd       1 s
+ cost      50 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ refs      9007 Pounce Bleed
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ effect 2  casts 9007 Pounce Bleed to the enemy
+           E_TRIGGER_SPELL base=0 trigger=9007 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Pounce, stunning the target for $d and causing $9007o1 damage over $9007d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ aura      Stunned.
+ 
+ https://www.wowhead.com/forever/spell=9005
+--- 9823 Pounce (Rank 2)
++++ 9823 Pounce (Rank 2)
+@@ -1,23 +1,24 @@
+ 9823 Pounce (Rank 2)
+ school    physical
+ defense   melee
+ mechanic  mechanic 12
+ duration  2 s
+ gcd       1 s
+ cost      50 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ refs      9824 Pounce Bleed
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ effect 2  casts 9824 Pounce Bleed to the enemy
+           E_TRIGGER_SPELL base=0 trigger=9824 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Pounce, stunning the target for $d and causing $9824o1 damage over $9824d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ aura      Stunned.
+ 
+ https://www.wowhead.com/forever/spell=9823
+--- 9827 Pounce (Rank 3)
++++ 9827 Pounce (Rank 3)
+@@ -1,23 +1,24 @@
+ 9827 Pounce (Rank 3)
+ school    physical
+ defense   melee
+ mechanic  mechanic 12
+ duration  2 s
+ gcd       1 s
+ cost      50 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ refs      9826 Pounce Bleed
+ 
+ effect 1  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 target=[6,0]
+ effect 2  casts 9826 Pounce Bleed to the enemy
+           E_TRIGGER_SPELL base=0 trigger=9826 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Pounce, stunning the target for $d and causing $9826o1 damage over $9826d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ aura      Stunned.
+ 
+ https://www.wowhead.com/forever/spell=9827
+--- 6785 Ravage (Rank 1)
++++ 6785 Ravage (Rank 1)
+@@ -1,19 +1,20 @@
+ 6785 Ravage (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +42 to the enemy
+           E_WEAPON_DAMAGE base=42 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=6785
+--- 6787 Ravage (Rank 2)
++++ 6787 Ravage (Rank 2)
+@@ -1,19 +1,20 @@
+ 6787 Ravage (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +62 to the enemy
+           E_WEAPON_DAMAGE base=62 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=6787
+--- 9866 Ravage (Rank 3)
++++ 9866 Ravage (Rank 3)
+@@ -1,19 +1,20 @@
+ 9866 Ravage (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +78 to the enemy
+           E_WEAPON_DAMAGE base=78 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=9866
+--- 9867 Ravage (Rank 4)
++++ 9867 Ravage (Rank 4)
+@@ -1,19 +1,20 @@
+ 9867 Ravage (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ stance    Cat
++excluded caster aura 20580 Shadowmeld
+ attrs     refund on miss
+ labels    21
+ 
+ effect 1  weapon damage +98 to the enemy
+           E_WEAPON_DAMAGE base=98 sp=1 amplitude=1 target=[6,0]
+ effect 2  435% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=435 sp=1 target=[6,0]
+ effect 3  restores 1 combo point to the caster
+           E_ENERGIZE base=1 misc=4 target=[1,0]
+ tooltip   Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+ 
+ https://www.wowhead.com/forever/spell=9867
