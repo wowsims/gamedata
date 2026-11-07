@@ -679,7 +679,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  +30% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
-effect 2  unrecognised shape
+effect 2  deals 75 holy damage to the attacker on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=75 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
@@ -702,7 +702,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  +30% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
-effect 2  unrecognised shape
+effect 2  deals 110 holy damage to the attacker on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=110 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
@@ -725,7 +725,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  +30% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
-effect 2  unrecognised shape
+effect 2  deals 153 holy damage to the attacker on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=153 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]
@@ -759,7 +759,7 @@ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_F
 
 effect 1  +30% block chance
           E_APPLY_AURA A_MOD_BLOCK_PERCENT base=30 target=[1,0]
-effect 2  unrecognised shape
+effect 2  deals 221 holy damage to the attacker on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_DAMAGE base=221 sp=0.08 target=[1,0]
 effect 3  a dummy aura holding 1
           E_APPLY_AURA A_DUMMY base=1 target=[1,0]

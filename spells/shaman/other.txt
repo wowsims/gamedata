@@ -2953,7 +2953,7 @@ https://www.wowhead.com/forever/spell=467889
 467909 S03 - Item - T2 - Shaman - Tank 4P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says an outcome the mask has no bit for
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a block
 refs      467910 Elemental Shield
 
 effect 1  a dummy aura holding 10
@@ -2965,7 +2965,7 @@ https://www.wowhead.com/forever/spell=467909
 467916 S03 - Item - T2 - Shaman - Tank 6P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says an outcome the mask has no bit for
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 50% chance; tooltip says on a block
 
 effect 1  a dummy aura holding 10
           E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
@@ -3200,7 +3200,7 @@ https://www.wowhead.com/forever/spell=467891
 408524 Shield Mastery
 school    physical
 attrs     passive, can proc from procs
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says an outcome the mask has no bit for
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says on a block
 refs      408525 Shield Mastery, 460200 Defender's Resolve, 460171 Defender's Resolve
 
 effect 1  +10% block chance
