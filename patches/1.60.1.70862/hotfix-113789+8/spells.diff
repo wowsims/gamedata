@@ -1,0 +1,23 @@
+# priest
+--- 6346 Fear Ward
++++ 6346 Fear Ward
+@@ -1,19 +1,18 @@
+ 6346 Fear Ward
+ school    holy
+ defense   magic
+ duration  180 s
+ cooldown  180 s
+ gcd       1.5 s
+ cost      100 mana
+ range     30 yd
+-stance    Shadowform
+ charges   1
+ labels    18
+ proc      hears PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  immune to fear to the friendly target
+           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[21,0]
+ tooltip   Wards the friendly target against Fear.  The next Fear effect used against the target will fail, using up the ward.  Lasts $d.
+ aura      Warded against Fear.
+ 
+ https://www.wowhead.com/forever/spell=6346
