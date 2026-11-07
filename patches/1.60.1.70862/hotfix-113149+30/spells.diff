@@ -1,0 +1,16 @@
+# paladin
+--- 1310735 Unsealed Wrath
++++ 1310735 Unsealed Wrath
+@@ -1,11 +1,12 @@
+ 1310735 Unsealed Wrath
+ school    physical
++equip     needs a weapon
+ attrs     passive
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+ refs      1311701 Echo of Fury
+ 
+ effect 1  SPELLMOD_COST +0% on family 10 mask 0xa000600,0x26000000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=0 sp=1 misc=14 family=10 mask=0xa000600,0x26000000 target=[1,0]
+ tooltip   Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.
+ 
+ https://www.wowhead.com/forever/spell=1310735
