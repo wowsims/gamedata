@@ -62251,6 +62251,15 @@ level     ilvl 1
 binds     binds when picked up
 unique    yes
 =======
+13544 Spectral Essence
+item      uncommon, Miscellaneous, trinket
+level     ilvl 60
+binds     binds when picked up
+effect    equip: 17623 Visions of the Past
+effect    use: 1298497 Restore Essence (300 s cooldown, 60 s shared cooldown)
+text      "Allows communication with the deceased of Caer Darrow."
+sells     16580 copper
+=======
 13545 Shellfish
 item      common, Quest
 level     ilvl 1
@@ -64024,6 +64033,13 @@ effect    learn: 18247 Baked Salmon
 text      "Teaches you how to cook Baked Salmon."
 sells     5000 copper
 =======
+13957 Gargoyle Slashers
+item      rare, Leather, hands
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +18 stat 128, +10 strength, +12 stamina, +14 crit rating
+sells     12427 copper
+=======
 13958 Wyrmthalak's Shackles
 item      rare, Cloth, wrists
 level     ilvl 60
@@ -64085,6 +64101,14 @@ effect    equip: 1318956 Increased Critical 1 - Spell
 effect    use: 1287840 Eye of the Beast (300 s cooldown, 20 s shared cooldown)
 effect    equip: 1318846 Eye of the Beast
 sells     23033 copper
+=======
+14023 Barov Peasant Caller
+item      rare, Miscellaneous, trinket
+level     ilvl 62
+binds     binds when picked up
+effect    use: 18308 Death by Peasant (360 s cooldown, 20 s shared cooldown)
+effect    equip: 1298508 Barov Peasant Caller
+sells     8991 copper
 =======
 14025 Mystic's Belt
 item      uncommon, Cloth, waist
@@ -74150,6 +74174,21 @@ level     ilvl 56
 binds     binds when picked up
 stats     +6 agility, +6 intellect, +6 spirit, +7 stamina
 sells     9574 copper
+=======
+15805 Penelope's Rose
+item      rare, Miscellaneous, held in off hand
+level     ilvl 61
+binds     binds when picked up
+stats     +11 intellect, +10 spirit, +22 healing, +7 spell damage
+sells     20891 copper
+=======
+15806 Mirah's Song
+item      rare, Sword, one-hand
+level     ilvl 61
+binds     binds when picked up
+stats     +9 agility, +9 strength, +8 health per 5 sec
+weapon    50 - 94 damage, speed 1.80, 40 dps
+sells     52229 copper
 =======
 15807 Light Crossbow
 item      common, Crossbow, ranged
@@ -156289,6 +156328,14 @@ binds     binds when picked up
 unique    yes
 text      "The last remnant of the ancient elemental defender of a Highborne city."
 =======
+282702 Molok's Masher
+item      uncommon, Mace, two-hand
+level     ilvl 41, requires level 36
+binds     binds when equipped
+stats     +17 stamina
+weapon    89 - 134 damage, speed 3.70, 30.1 dps
+sells     1408 copper
+=======
 282703 Needletooth's Needletooth
 item      uncommon, Dagger, one-hand
 level     ilvl 37, requires level 32
@@ -156735,6 +156782,13 @@ binds     binds when picked up
 stats     +12 stamina, +100 armor
 weapon    67 - 102 damage, speed 3.30, 25.6 dps
 sells     922 copper
+=======
+284573 Ursol'lok's Paws
+item      uncommon, Leather, hands
+level     ilvl 33, requires level 28
+binds     binds when equipped
+stats     +6 stamina, +18 stat 131
+sells     505 copper
 =======
 284583 Coin Pouch
 item      common, Other
