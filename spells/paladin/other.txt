@@ -1848,7 +1848,7 @@ https://www.wowhead.com/forever/spell=456536
 school    physical
 icd       3.5 s
 attrs     passive
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says heals count, an outcome the mask has no bit for
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY; no roll, it fires whenever its condition is met; tooltip says heals count, on a block
 refs      456540 Bastion of Light
 
 effect 1  casts 456540 Bastion of Light on its trigger
@@ -1946,7 +1946,7 @@ https://www.wowhead.com/forever/spell=467532
 467536 S03 - Item - T2 - Paladin - Protection 6P Bonus
 school    physical
 attrs     passive
-proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 20% chance, from effect 1; tooltip says an outcome the mask has no bit for
+proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY; 20% chance, from effect 1; tooltip says on a block
 
 effect 1  a dummy aura holding 20
           E_APPLY_AURA A_DUMMY base=20 sp=1 target=[1,0]
