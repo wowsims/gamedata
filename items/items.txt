@@ -1334,6 +1334,14 @@ weapon    116 - 175 damage, speed 3.60, 40.4 dps
 effect    chance on hit: 18796 Fireball
 sells     21528 copper
 =======
+871 Flurry Axe
+item      epic, Axe, one-hand
+level     ilvl 47, requires level 42
+binds     binds when equipped
+weapon    37 - 69 damage, speed 1.50, 35.3 dps
+effect    chance on hit: 18797 Flurry Axe
+sells     29627 copper
+=======
 872 Rockslicer
 item      rare, Axe, two-hand
 level     ilvl 23, requires level 18
@@ -82392,6 +82400,14 @@ effect    learn: 21923 Elixir of Frost Power
 text      "Teaches you how to make an Elixir of Frost Power."
 sells     500 copper
 =======
+17710 Charstone Dirk
+item      rare, Dagger, main hand
+level     ilvl 54, requires level 49
+binds     binds when picked up
+stats     +11 intellect, +2 mana per 5 sec
+weapon    40 - 75 damage, speed 1.60, 35.9 dps
+sells     35737 copper
+=======
 17711 Elemental Rockridge Leggings
 item      rare, Plate, legs
 level     ilvl 54, requires level 49
@@ -82440,6 +82456,14 @@ level     ilvl 53, requires level 48
 binds     binds when picked up
 stats     +10 intellect, +13 healing, +4 mana per 5 sec, +5 spell damage
 sells     21577 copper
+=======
+17719 Inventor's Focal Sword
+item      rare, Sword, main hand
+level     ilvl 53, requires level 48
+binds     binds when picked up
+stats     +14 crit rating
+weapon    54 - 101 damage, speed 2.20, 35.2 dps
+sells     33714 copper
 =======
 17720 Schematic: Snowmaster 9000
 item      uncommon, Engineering
@@ -82553,6 +82577,13 @@ item      common, Junk
 level     ilvl 1
 binds     quest item
 unique    yes
+=======
+17736 Rockgrip Gauntlets
+item      rare, Mail, hands
+level     ilvl 53, requires level 48
+binds     binds when picked up
+stats     +11 intellect, +10 stamina, +28 attack power
+sells     10114 copper
 =======
 17737 Cloud Stone
 item      rare, Miscellaneous, held in off hand
@@ -91113,6 +91144,17 @@ binds     binds when picked up
 stats     +6 nature resistance, +20 shadow damage
 text      "Some secrets are best left unknown."
 =======
+19990 Blessed Prayer Beads
+item      rare, Miscellaneous, trinket
+level     ilvl 52
+binds     binds when picked up
+unique    yes
+classes   priest
+stats     +7 shadow resistance, +11 healing, +4 spell damage
+effect    use: 24354 Prayer Beads Blessing (300 s cooldown)
+text      "A friend in need is a friend without beads."
+sells     12722 copper
+=======
 19994 Harvest Fruit
 item      common, Food & Drink
 level     ilvl 55
@@ -91200,6 +91242,15 @@ weapon    48 - 90 damage, speed 2.00, 34.5 dps
 effect    equip: 24362 Increased 1H Fist Weapons
 text      "The claws hum with primal energy."
 sells     31828 copper
+=======
+20006 Circle of Hope
+item      rare, Miscellaneous, finger
+level     ilvl 52
+binds     binds when picked up
+unique    yes
+stats     +6 shadow resistance, +21 holy damage
+text      "Forged from pure light."
+sells     12722 copper
 =======
 20007 Mageblood Elixir
 item      common, Elixirs
@@ -91719,6 +91770,15 @@ binds     binds when picked up
 unique    yes
 effect    use: 24383 Swiftness of Zanza (1 charge, consumed, 3 s shared cooldown)
 text      "Blessed with the mojo of Zanza!"
+=======
+20082 Woestave
+item      rare, Wand, ranged
+level     ilvl 52
+binds     binds when picked up
+stats     +3 stamina, +11 shadow damage
+weapon    68 - 127 damage, speed 1.90, 51.3 dps
+text      "Woe to those who oppose."
+sells     23854 copper
 =======
 20084 Hunting Net
 item      rare, Junk, trinket
@@ -157749,6 +157809,13 @@ level     ilvl 53, requires level 48
 binds     binds when equipped
 stats     +10 stamina, +4 defense rating
 sells     1472 copper
+=======
+284043 Dissolved Link Legguards
+item      uncommon, Mail, legs
+level     ilvl 51, requires level 46
+binds     binds when equipped
+stats     +11 intellect, +17 strength
+sells     1221 copper
 =======
 284046 Witherheart's Stabber
 item      uncommon, Dagger, one-hand
