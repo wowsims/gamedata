@@ -843,7 +843,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  7–47 physical damage to the enemy
+effect 1  17–37 physical damage to the enemy
           E_SCHOOL_DAMAGE base=27 variance=0.72727275 sp=1 perResource=45 target=[6,0]
 effect 2  a dummy effect holding 120 to the enemy
           E_DUMMY base=120 sp=1 target=[6,0]
@@ -867,7 +867,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  10–70 physical damage to the enemy
+effect 1  25–55 physical damage to the enemy
           E_SCHOOL_DAMAGE base=40 variance=0.75 sp=1 perResource=74 target=[6,0]
 effect 2  a dummy effect holding 180 to the enemy
           E_DUMMY base=180 sp=1 target=[6,0]
@@ -891,7 +891,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  12–112 physical damage to the enemy
+effect 1  37–87 physical damage to the enemy
           E_SCHOOL_DAMAGE base=62 variance=0.8 sp=1 perResource=115 target=[6,0]
 effect 2  a dummy effect holding 250 to the enemy
           E_DUMMY base=250 sp=1 target=[6,0]
@@ -915,7 +915,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  25–149 physical damage to the enemy
+effect 1  56–118 physical damage to the enemy
           E_SCHOOL_DAMAGE base=87 variance=0.71428573 sp=1 perResource=160 target=[6,0]
 effect 2  a dummy effect holding 310 to the enemy
           E_DUMMY base=310 sp=1 target=[6,0]
@@ -935,7 +935,7 @@ gcd       1 s
 range     5 yd
 stance    form 15
 
-effect 1  1500–2500 physical damage to the enemy
+effect 1  1750–2250 physical damage to the enemy
           E_SCHOOL_DAMAGE base=2000 variance=0.25 sp=1 target=[6,0]
 
 https://www.wowhead.com/forever/spell=27557
@@ -951,7 +951,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  27–177 physical damage to the enemy
+effect 1  65–139 physical damage to the enemy
           E_SCHOOL_DAMAGE base=102 variance=0.73170733 sp=1 perResource=181 target=[6,0]
 effect 2  a dummy effect holding 330 to the enemy
           E_DUMMY base=330 sp=1 target=[6,0]
@@ -975,7 +975,7 @@ stance    Cat
 attrs     refund on miss
 labels    21
 
-effect 1  5–29 physical damage to the enemy
+effect 1  11–23 physical damage to the enemy
           E_SCHOOL_DAMAGE base=17 variance=0.71428573 sp=1 perResource=30 target=[6,0]
 effect 2  a dummy effect holding 70 to the enemy
           E_DUMMY base=70 sp=1 target=[6,0]
@@ -1697,7 +1697,7 @@ gcd       1 s
 range     5 yd
 stance    Cat
 
-effect 1  12–28 physical damage to the enemy
+effect 1  16–24 physical damage to the enemy
           E_SCHOOL_DAMAGE base=20 variance=0.4 target=[6,0]
 effect 2  12 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
@@ -1714,7 +1714,7 @@ duration  9 s
 gcd       1 s
 range     5 yd
 
-effect 1  24–56 physical damage to the enemy
+effect 1  32–48 physical damage to the enemy
           E_SCHOOL_DAMAGE base=40 variance=0.4 target=[6,0]
 effect 2  24 physical damage every 3 s to the enemy (3 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=24 period=3000ms target=[6,0]
@@ -1733,7 +1733,7 @@ range     5 yd
 stance    form 15
 stack     up to 100
 
-effect 1  150–350 physical damage to the enemy
+effect 1  200–300 physical damage to the enemy
           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
 effect 2  100 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
@@ -1751,7 +1751,7 @@ gcd       1 s
 range     5 yd
 stack     up to 100
 
-effect 1  150–350 physical damage to the enemy
+effect 1  200–300 physical damage to the enemy
           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
 effect 2  100 physical damage every 3 s to the enemy (5 ticks)
           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
@@ -2143,7 +2143,7 @@ gcd       1 s
 range     5 yd
 stance    form 15
 
-effect 1  450–1050 physical damage to the enemy
+effect 1  600–900 physical damage to the enemy
           E_SCHOOL_DAMAGE base=750 variance=0.4 target=[6,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=1 target=[6,0]
@@ -2318,7 +2318,7 @@ gcd       1.5 s
 range     5 yd
 stance    form 14
 
-effect 1  750–1250 physical damage to the enemy
+effect 1  875–1125 physical damage to the enemy
           E_SCHOOL_DAMAGE base=1000 variance=0.25 sp=1 chain=3 target=[6,0]
 
 https://www.wowhead.com/forever/spell=27554

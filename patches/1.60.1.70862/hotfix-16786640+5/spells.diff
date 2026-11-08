@@ -1,0 +1,2112 @@
+# druid
+--- 22568 Ferocious Bite (Rank 2)
++++ 22568 Ferocious Bite (Rank 2)
+@@ -1,23 +1,23 @@
+ 22568 Ferocious Bite (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  7–47 physical damage to the enemy
++effect 1  17–37 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=27 variance=0.72727275 sp=1 perResource=45 target=[6,0]
+ effect 2  a dummy effect holding 120 to the enemy
+           E_DUMMY base=120 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 62-82 damage
+              2 points: 107-127 damage
+              3 points: 152-177 damage
+              4 points: 197-217 damage
+              5 points: 242-262 damage
+ 
+ https://www.wowhead.com/forever/spell=22568
+--- 22827 Ferocious Bite (Rank 3)
++++ 22827 Ferocious Bite (Rank 3)
+@@ -1,23 +1,23 @@
+ 22827 Ferocious Bite (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  10–70 physical damage to the enemy
++effect 1  25–55 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=40 variance=0.75 sp=1 perResource=74 target=[6,0]
+ effect 2  a dummy effect holding 180 to the enemy
+           E_DUMMY base=180 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 99-129 damage
+              2 points: 173-203 damage
+              3 points: 247-277 damage
+              4 points: 321-351 damage
+              5 points: 395-425 damage
+ 
+ https://www.wowhead.com/forever/spell=22827
+--- 22828 Ferocious Bite (Rank 4)
++++ 22828 Ferocious Bite (Rank 4)
+@@ -1,23 +1,23 @@
+ 22828 Ferocious Bite (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  12–112 physical damage to the enemy
++effect 1  37–87 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=62 variance=0.8 sp=1 perResource=115 target=[6,0]
+ effect 2  a dummy effect holding 250 to the enemy
+           E_DUMMY base=250 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 152-202 damage
+              2 points: 267-317 damage
+              3 points: 382-432 damage
+              4 points: 497-547 damage
+              5 points: 612-662 damage
+ 
+ https://www.wowhead.com/forever/spell=22828
+--- 22829 Ferocious Bite (Rank 5)
++++ 22829 Ferocious Bite (Rank 5)
+@@ -1,23 +1,23 @@
+ 22829 Ferocious Bite (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  25–149 physical damage to the enemy
++effect 1  56–118 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=87 variance=0.71428573 sp=1 perResource=160 target=[6,0]
+ effect 2  a dummy effect holding 310 to the enemy
+           E_DUMMY base=310 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 215-279 damage
+              2 points: 375-439 damage
+              3 points: 535-599 damage
+              4 points: 695-759 damage
+              5 points: 855-919 damage
+ 
+ https://www.wowhead.com/forever/spell=22829
+--- 27557 Ferocious Bite
++++ 27557 Ferocious Bite
+@@ -1,11 +1,11 @@
+ 27557 Ferocious Bite
+ school    physical
+ defense   melee
+ gcd       1 s
+ range     5 yd
+ stance    form 15
+ 
+-effect 1  1500–2500 physical damage to the enemy
++effect 1  1750–2250 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=2000 variance=0.25 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=27557
+--- 31018 Ferocious Bite (Rank 6)
++++ 31018 Ferocious Bite (Rank 6)
+@@ -1,23 +1,23 @@
+ 31018 Ferocious Bite (Rank 6)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  27–177 physical damage to the enemy
++effect 1  65–139 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=102 variance=0.73170733 sp=1 perResource=181 target=[6,0]
+ effect 2  a dummy effect holding 330 to the enemy
+           E_DUMMY base=330 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 245-321 damage
+              2 points: 426-502 damage
+              3 points: 607-683 damage
+              4 points: 788-864 damage
+              5 points: 969-1045 damage
+ 
+ https://www.wowhead.com/forever/spell=31018
+--- 1328618 Ferocious Bite (Rank 1)
++++ 1328618 Ferocious Bite (Rank 1)
+@@ -1,23 +1,23 @@
+ 1328618 Ferocious Bite (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ stance    Cat
+ attrs     refund on miss
+ labels    21
+ 
+-effect 1  5–29 physical damage to the enemy
++effect 1  11–23 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=17 variance=0.71428573 sp=1 perResource=30 target=[6,0]
+ effect 2  a dummy effect holding 70 to the enemy
+           E_DUMMY base=70 sp=1 target=[6,0]
+ tooltip   Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
+              1 point  : 40-54 damage
+              2 points: 70-84 damage
+              3 points: 100-114 damage
+              4 points: 130-144 damage
+              5 points: 160-174 damage
+ 
+ https://www.wowhead.com/forever/spell=1328618
+--- 24331 Rake
++++ 24331 Rake
+@@ -1,17 +1,17 @@
+ 24331 Rake
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  9 s
+ gcd       1 s
+ range     5 yd
+ stance    Cat
+ 
+-effect 1  12–28 physical damage to the enemy
++effect 1  16–24 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=20 variance=0.4 target=[6,0]
+ effect 2  12 physical damage every 3 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=12 period=3000ms target=[6,0]
+ tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+ aura      Bleeding for $s2 damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=24331
+--- 24332 Rake
++++ 24332 Rake
+@@ -1,16 +1,16 @@
+ 24332 Rake
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  9 s
+ gcd       1 s
+ range     5 yd
+ 
+-effect 1  24–56 physical damage to the enemy
++effect 1  32–48 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=40 variance=0.4 target=[6,0]
+ effect 2  24 physical damage every 3 s to the enemy (3 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=24 period=3000ms target=[6,0]
+ tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+ aura      Bleeding for $s2 damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=24332
+--- 27556 Rake
++++ 27556 Rake
+@@ -1,18 +1,18 @@
+ 27556 Rake
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  15 s
+ gcd       1 s
+ range     5 yd
+ stance    form 15
+ stack     up to 100
+ 
+-effect 1  150–350 physical damage to the enemy
++effect 1  200–300 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
+ effect 2  100 physical damage every 3 s to the enemy (5 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+ tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+ aura      Bleeding for $s2 damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=27556
+--- 27638 Rake
++++ 27638 Rake
+@@ -1,17 +1,17 @@
+ 27638 Rake
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  15 s
+ gcd       1 s
+ range     5 yd
+ stack     up to 100
+ 
+-effect 1  150–350 physical damage to the enemy
++effect 1  200–300 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=250 variance=0.4 target=[6,0]
+ effect 2  100 physical damage every 3 s to the enemy (5 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=100 period=3000ms target=[6,0]
+ tooltip   Rake the target for $s1 damage and an additional $o2 damage over $d.
+ aura      Bleeding for $s2 damage every $t2 seconds.
+ 
+ https://www.wowhead.com/forever/spell=27638
+--- 27555 Shred
++++ 27555 Shred
+@@ -1,16 +1,16 @@
+ 27555 Shred
+ school    physical
+ defense   melee
+ mechanic  bleed
+ duration  10 s
+ gcd       1 s
+ range     5 yd
+ stance    form 15
+ 
+-effect 1  450–1050 physical damage to the enemy
++effect 1  600–900 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=750 variance=0.4 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_RESISTANCE_PCT base=-75 misc=1 target=[6,0]
+ aura      Armor reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=27555
+--- 27554 Swipe
++++ 27554 Swipe
+@@ -1,11 +1,11 @@
+ 27554 Swipe
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ range     5 yd
+ stance    form 14
+ 
+-effect 1  750–1250 physical damage to the enemy
++effect 1  875–1125 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1000 variance=0.25 sp=1 chain=3 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=27554
+# hunter
+--- 1236188 Aimed Shot (Rank 6)
++++ 1236188 Aimed Shot (Rank 6)
+@@ -1,14 +1,14 @@
+ 1236188 Aimed Shot (Rank 6)
+ school    physical
+ defense   ranged
+ cast      3 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ range     100 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  1274–1726 physical damage to the enemy
++effect 1  1387–1613 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
+ tooltip   An aimed shot that increases ranged damage by $s1.
+ 
+ https://www.wowhead.com/forever/spell=1236188
+--- 1294124 Aimed Shot
++++ 1294124 Aimed Shot
+@@ -1,14 +1,14 @@
+ 1294124 Aimed Shot
+ school    physical
+ defense   ranged
+ cast      3 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+ range     100 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  1274–1726 physical damage to the enemy
++effect 1  1387–1613 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1500 variance=0.15066667 target=[6,0]
+ tooltip   An aimed shot that increases ranged damage by $s1.
+ 
+ https://www.wowhead.com/forever/spell=1294124
+--- 19767 Aynasha's Bow
++++ 19767 Aynasha's Bow
+@@ -1,11 +1,11 @@
+ 19767 Aynasha's Bow
+ school    physical
+ defense   ranged
+ range     30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=19767
+--- 28317 Copy of Shoot
++++ 28317 Copy of Shoot
+@@ -1,11 +1,11 @@
+ 28317 Copy of Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=28317
+--- 6660 Shoot
++++ 6660 Shoot
+@@ -1,11 +1,11 @@
+ 6660 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=6660
+--- 15547 Shoot
++++ 15547 Shoot
+@@ -1,11 +1,11 @@
+ 15547 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  263–474 physical damage to the enemy
++effect 1  316–421 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=15547
+--- 15620 Shoot
++++ 15620 Shoot
+@@ -1,11 +1,11 @@
+ 15620 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  351–631 physical damage to the enemy
++effect 1  421–561 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=15620
+--- 16100 Shoot
++++ 16100 Shoot
+@@ -1,11 +1,11 @@
+ 16100 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  690–1275 physical damage to the enemy
++effect 1  836–1128 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=982.29175 variance=0.29761904 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=16100
+--- 16496 Shoot
++++ 16496 Shoot
+@@ -1,11 +1,11 @@
+ 16496 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  1041–1906 physical damage to the enemy
++effect 1  1257–1690 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=16496
+--- 17353 Shoot
++++ 17353 Shoot
+@@ -1,11 +1,11 @@
+ 17353 Shoot
+ school    physical
+ defense   ranged
+ range     100 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  88–158 physical damage to the enemy
++effect 1  105–140 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=122.78647 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=17353
+--- 18561 Shoot
++++ 18561 Shoot
+@@ -1,11 +1,11 @@
+ 18561 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=18561
+--- 20463 Shoot
++++ 20463 Shoot
+@@ -1,11 +1,11 @@
+ 20463 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  1719–3192 physical damage to the enemy
++effect 1  2087–2824 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=2455.7292 variance=0.3 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=20463
+--- 22121 Shoot
++++ 22121 Shoot
+@@ -1,11 +1,11 @@
+ 22121 Shoot
+ school    physical
+ defense   ranged
+ range     80 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  439–789 physical damage to the enemy
++effect 1  526–702 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=22121
+--- 22411 Shoot
++++ 22411 Shoot
+@@ -1,11 +1,11 @@
+ 22411 Shoot
+ school    physical
+ defense   ranged
+ range     80 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=22411
+--- 22907 Shoot
++++ 22907 Shoot
+@@ -1,11 +1,11 @@
+ 22907 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  1041–1906 physical damage to the enemy
++effect 1  1257–1690 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1473.4375 variance=0.2936508 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=22907
+--- 23073 Shoot
++++ 23073 Shoot
+@@ -1,11 +1,11 @@
+ 23073 Shoot
+ school    physical
+ defense   ranged
+ range     60 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  146–263 physical damage to the enemy
++effect 1  175–234 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=204.64412 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=23073
+--- 23337 Shoot
++++ 23337 Shoot
+@@ -1,12 +1,12 @@
+ 23337 Shoot
+ school    physical
+ range     50 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  263–474 physical damage to the enemy
++effect 1  316–421 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+ effect 2  unrecognised shape
+           E_KNOCK_BACK base=100 sp=1 misc=100 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=23337
+--- 1213272 Shoot
++++ 1213272 Shoot
+@@ -1,11 +1,11 @@
+ 1213272 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=1213272
+--- 1283679 Shoot
++++ 1283679 Shoot
+@@ -1,11 +1,11 @@
+ 1283679 Shoot
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  9–17 physical damage to the enemy
++effect 1  11–15 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=13 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=1283679
+--- 1306284 Shoot
++++ 1306284 Shoot
+@@ -1,11 +1,11 @@
+ 1306284 Shoot
+ school    physical
+ defense   ranged
+ range     50 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  215–387 physical damage to the enemy
++effect 1  258–344 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=300.9323 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=1306284
+--- 25200 Shoot Silithus Rifleman Long Range
++++ 25200 Shoot Silithus Rifleman Long Range
+@@ -1,11 +1,11 @@
+ 25200 Shoot Silithus Rifleman Long Range
+ school    physical
+ defense   ranged
+ range     40 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=25200
+--- 26282 Shoot Tauren Rifleman
++++ 26282 Shoot Tauren Rifleman
+@@ -1,11 +1,11 @@
+ 26282 Shoot Tauren Rifleman
+ school    physical
+ defense   ranged
+ range     60 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  409–760 physical damage to the enemy
++effect 1  497–672 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=584.69745 variance=0.3 sp=1 target=[6,0]
+ tooltip   Shoots at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=26282
+--- 10277 Throw
++++ 10277 Throw
+@@ -1,11 +1,11 @@
+ 10277 Throw
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a thrown
+ 
+-effect 1  175–316 physical damage to the enemy
++effect 1  210–281 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=245.57294 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=10277
+--- 15607 Throw
++++ 15607 Throw
+@@ -1,11 +1,11 @@
+ 15607 Throw
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a thrown
+ 
+-effect 1  263–474 physical damage to the enemy
++effect 1  316–421 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=368.35938 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=15607
+--- 15795 Throw
++++ 15795 Throw
+@@ -1,11 +1,11 @@
+ 15795 Throw
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a thrown
+ 
+-effect 1  351–631 physical damage to the enemy
++effect 1  421–561 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=491.14587 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=15795
+--- 16000 Throw
++++ 16000 Throw
+@@ -1,11 +1,11 @@
+ 16000 Throw
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a thrown
+ 
+-effect 1  439–789 physical damage to the enemy
++effect 1  526–702 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=613.9323 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=16000
+--- 19785 Throw
++++ 19785 Throw
+@@ -1,11 +1,11 @@
+ 19785 Throw
+ school    physical
+ defense   ranged
+ range     8-40 yd
+ equip     needs a thrown
+ 
+-effect 1  1750–3250 physical damage to the enemy
++effect 1  2125–2875 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=2500 variance=0.3 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=19785
+--- 22887 Throw
++++ 22887 Throw
+@@ -1,11 +1,11 @@
+ 22887 Throw
+ school    physical
+ defense   ranged
+ range     5-30 yd
+ equip     needs a thrown
+ 
+-effect 1  865–1590 physical damage to the enemy
++effect 1  1047–1409 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=1227.8646 variance=0.2952381 sp=1 target=[6,0]
+ tooltip   Throws a weapon at an enemy, inflicting Physical damage.
+ 
+ https://www.wowhead.com/forever/spell=22887
+--- 17253 Bite (Rank 1)
++++ 17253 Bite (Rank 1)
+@@ -1,14 +1,14 @@
+ 17253 Bite (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  6–10 physical damage to the enemy
++effect 1  7–9 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=8 variance=0.25 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17253
+--- 17255 Bite (Rank 2)
++++ 17255 Bite (Rank 2)
+@@ -1,14 +1,14 @@
+ 17255 Bite (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  15–19 physical damage to the enemy
++effect 1  16–18 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=17 variance=0.11764706 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17255
+--- 17256 Bite (Rank 3)
++++ 17256 Bite (Rank 3)
+@@ -1,14 +1,14 @@
+ 17256 Bite (Rank 3)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  22–30 physical damage to the enemy
++effect 1  24–28 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=26 variance=0.15384616 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17256
+--- 17257 Bite (Rank 4)
++++ 17257 Bite (Rank 4)
+@@ -1,14 +1,14 @@
+ 17257 Bite (Rank 4)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  28–40 physical damage to the enemy
++effect 1  31–37 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=34 variance=0.1764706 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17257
+--- 17258 Bite (Rank 5)
++++ 17258 Bite (Rank 5)
+@@ -1,14 +1,14 @@
+ 17258 Bite (Rank 5)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  36–52 physical damage to the enemy
++effect 1  40–48 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=44 variance=0.18181819 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17258
+--- 17259 Bite (Rank 6)
++++ 17259 Bite (Rank 6)
+@@ -1,14 +1,14 @@
+ 17259 Bite (Rank 6)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  44–64 physical damage to the enemy
++effect 1  49–59 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=54 variance=0.18518518 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17259
+--- 17260 Bite (Rank 7)
++++ 17260 Bite (Rank 7)
+@@ -1,14 +1,14 @@
+ 17260 Bite (Rank 7)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  59–87 physical damage to the enemy
++effect 1  66–80 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=73 variance=0.19178082 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17260
+--- 17261 Bite (Rank 8)
++++ 17261 Bite (Rank 8)
+@@ -1,14 +1,14 @@
+ 17261 Bite (Rank 8)
+ school    physical
+ defense   melee
+ cooldown  10 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  72–108 physical damage to the enemy
++effect 1  81–99 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=90 variance=0.2 sp=1 target=[6,0]
+ tooltip   Bite the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=17261
+--- 3009 Claw (Rank 8)
++++ 3009 Claw (Rank 8)
+@@ -1,13 +1,13 @@
+ 3009 Claw (Rank 8)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  35–67 physical damage to the enemy
++effect 1  43–59 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=51 variance=0.3137255 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=3009
+--- 3010 Claw (Rank 7)
++++ 3010 Claw (Rank 7)
+@@ -1,13 +1,13 @@
+ 3010 Claw (Rank 7)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  28–56 physical damage to the enemy
++effect 1  35–49 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=42 variance=0.33333334 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=3010
+--- 16827 Claw (Rank 1)
++++ 16827 Claw (Rank 1)
+@@ -1,13 +1,13 @@
+ 16827 Claw (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  3–7 physical damage to the enemy
++effect 1  4–6 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=5 variance=0.4 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16827
+--- 16828 Claw (Rank 2)
++++ 16828 Claw (Rank 2)
+@@ -1,13 +1,13 @@
+ 16828 Claw (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  6–14 physical damage to the enemy
++effect 1  8–12 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=10 variance=0.4 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16828
+--- 16829 Claw (Rank 3)
++++ 16829 Claw (Rank 3)
+@@ -1,13 +1,13 @@
+ 16829 Claw (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  10–18 physical damage to the enemy
++effect 1  12–16 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=14 variance=0.2857143 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16829
+--- 16830 Claw (Rank 4)
++++ 16830 Claw (Rank 4)
+@@ -1,13 +1,13 @@
+ 16830 Claw (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  13–25 physical damage to the enemy
++effect 1  16–22 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=19 variance=0.31578946 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16830
+--- 16831 Claw (Rank 5)
++++ 16831 Claw (Rank 5)
+@@ -1,13 +1,13 @@
+ 16831 Claw (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  17–33 physical damage to the enemy
++effect 1  21–29 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=25 variance=0.32 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16831
+--- 16832 Claw (Rank 6)
++++ 16832 Claw (Rank 6)
+@@ -1,13 +1,13 @@
+ 16832 Claw (Rank 6)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      25 focus
+ range     5 yd
+ labels    23
+ 
+-effect 1  21–41 physical damage to the enemy
++effect 1  26–36 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=31 variance=0.32258064 sp=1 target=[6,0]
+ tooltip   Claw the enemy, causing $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=16832
+--- 1264758 Dismember (Rank 1)
++++ 1264758 Dismember (Rank 1)
+@@ -1,20 +1,20 @@
+ 1264758 Dismember (Rank 1)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  15 s
+ cooldown  15 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  10–14 physical damage to the enemy
++effect 1  11–13 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=12 variance=0.1388889 target=[6,0]
+ effect 2  -25% healing taken to the enemy
+           E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
+ tooltip   Viciously bites enemy appendages for $s1 damage and reduces the effectiveness of any healing by $s2% for $d.
+ aura      Healing effects reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1264758
+--- 1264927 Dismember (Rank 2)
++++ 1264927 Dismember (Rank 2)
+@@ -1,20 +1,20 @@
+ 1264927 Dismember (Rank 2)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  15 s
+ cooldown  15 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  16–22 physical damage to the enemy
++effect 1  18–20 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=19 variance=0.1388889 target=[6,0]
+ effect 2  -25% healing taken to the enemy
+           E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
+ tooltip   Viciously bites enemy appendages for $s1 damage and reduces the effectiveness of any healing by $s2% for $d.
+ aura      Healing effects reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1264927
+--- 1264929 Dismember (Rank 3)
++++ 1264929 Dismember (Rank 3)
+@@ -1,20 +1,20 @@
+ 1264929 Dismember (Rank 3)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  15 s
+ cooldown  15 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  24–32 physical damage to the enemy
++effect 1  26–30 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=28 variance=0.1388889 target=[6,0]
+ effect 2  -25% healing taken to the enemy
+           E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
+ tooltip   Viciously bites enemy appendages for $s1 damage and reduces the effectiveness of any healing by $s2% for $d.
+ aura      Healing effects reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1264929
+--- 1264930 Dismember (Rank 4)
++++ 1264930 Dismember (Rank 4)
+@@ -1,20 +1,20 @@
+ 1264930 Dismember (Rank 4)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  15 s
+ cooldown  15 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  36–48 physical damage to the enemy
++effect 1  39–45 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=42 variance=0.1388889 target=[6,0]
+ effect 2  -25% healing taken to the enemy
+           E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
+ tooltip   Viciously bites enemy appendages for $s1 damage and reduces the effectiveness of any healing by $s2% for $d.
+ aura      Healing effects reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1264930
+--- 1264933 Dismember (Rank 5)
++++ 1264933 Dismember (Rank 5)
+@@ -1,20 +1,20 @@
+ 1264933 Dismember (Rank 5)
+ school    physical
+ defense   melee
+ duration  6 s
+ cooldown  15 s
+ cooldown  15 s (category)
+ gcd       1.5 s
+ cost      35 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  46–62 physical damage to the enemy
++effect 1  50–58 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=54 variance=0.1388889 target=[6,0]
+ effect 2  -25% healing taken to the enemy
+           E_APPLY_AURA A_MOD_HEALING_PCT base=-25 misc=127 target=[6,0]
+ tooltip   Viciously bites enemy appendages for $s1 damage and reduces the effectiveness of any healing by $s2% for $d.
+ aura      Healing effects reduced by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=1264933
+--- 1265054 Mine! (Rank 1)
++++ 1265054 Mine! (Rank 1)
+@@ -1,20 +1,20 @@
+ 1265054 Mine! (Rank 1)
+ school    physical
+ defense   melee
+ duration  3 s
+ cooldown  90 s
+ cooldown  90 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  9–13 physical damage to the enemy
++effect 1  10–12 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=11 variance=0.1388889 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_DISARM base=0 mechanic=3 target=[6,0]
+ tooltip   Grabs an enemy's weapon with its talons, causing $s1 damage and disarming them for $d.
+ aura      Disarmed.
+ 
+ https://www.wowhead.com/forever/spell=1265054
+--- 1265055 Mine! (Rank 2)
++++ 1265055 Mine! (Rank 2)
+@@ -1,20 +1,20 @@
+ 1265055 Mine! (Rank 2)
+ school    physical
+ defense   melee
+ duration  3 s
+ cooldown  90 s
+ cooldown  90 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  13–17 physical damage to the enemy
++effect 1  14–16 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=15 variance=0.1388889 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_DISARM base=0 mechanic=3 target=[6,0]
+ tooltip   Grabs an enemy's weapon with its talons, causing $s1 damage and disarming them for $d.
+ aura      Disarmed.
+ 
+ https://www.wowhead.com/forever/spell=1265055
+--- 1265056 Mine! (Rank 3)
++++ 1265056 Mine! (Rank 3)
+@@ -1,20 +1,20 @@
+ 1265056 Mine! (Rank 3)
+ school    physical
+ defense   melee
+ duration  3 s
+ cooldown  90 s
+ cooldown  90 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  19–25 physical damage to the enemy
++effect 1  20–24 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=22 variance=0.1388889 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_DISARM base=0 mechanic=3 target=[6,0]
+ tooltip   Grabs an enemy's weapon with its talons, causing $s1 damage and disarming them for $d.
+ aura      Disarmed.
+ 
+ https://www.wowhead.com/forever/spell=1265056
+--- 1265057 Mine! (Rank 4)
++++ 1265057 Mine! (Rank 4)
+@@ -1,20 +1,20 @@
+ 1265057 Mine! (Rank 4)
+ school    physical
+ defense   melee
+ duration  3 s
+ cooldown  90 s
+ cooldown  90 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  30–40 physical damage to the enemy
++effect 1  33–37 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=35 variance=0.1388889 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_DISARM base=0 mechanic=3 target=[6,0]
+ tooltip   Grabs an enemy's weapon with its talons, causing $s1 damage and disarming them for $d.
+ aura      Disarmed.
+ 
+ https://www.wowhead.com/forever/spell=1265057
+--- 1265058 Mine! (Rank 5)
++++ 1265058 Mine! (Rank 5)
+@@ -1,20 +1,20 @@
+ 1265058 Mine! (Rank 5)
+ school    physical
+ defense   melee
+ duration  3 s
+ cooldown  90 s
+ cooldown  90 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  38–50 physical damage to the enemy
++effect 1  41–47 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=44 variance=0.1388889 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_DISARM base=0 mechanic=3 target=[6,0]
+ tooltip   Grabs an enemy's weapon with its talons, causing $s1 damage and disarming them for $d.
+ aura      Disarmed.
+ 
+ https://www.wowhead.com/forever/spell=1265058
+--- 1264735 Pinch (Rank 1)
++++ 1264735 Pinch (Rank 1)
+@@ -1,20 +1,20 @@
+ 1264735 Pinch (Rank 1)
+ school    physical
+ defense   melee
+ duration  9 s
+ cooldown  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      50 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  17–23 physical damage to the enemy
++effect 1  19–21 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=20 variance=0.1388889 target=[6,0]
+ effect 2  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+ tooltip   Pinches an enemy's legs for $s1 damage and reduces movement speed by $s2% for $d.
+ aura      Movement slowed by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=1264735
+--- 1264736 Pinch (Rank 2)
++++ 1264736 Pinch (Rank 2)
+@@ -1,20 +1,20 @@
+ 1264736 Pinch (Rank 2)
+ school    physical
+ defense   melee
+ duration  9 s
+ cooldown  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      50 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  29–39 physical damage to the enemy
++effect 1  32–36 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=34 variance=0.1388889 target=[6,0]
+ effect 2  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+ tooltip   Pinches an enemy's legs for $s1 damage and reduces movement speed by $s2% for $d.
+ aura      Movement slowed by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=1264736
+--- 1264739 Pinch (Rank 3)
++++ 1264739 Pinch (Rank 3)
+@@ -1,20 +1,20 @@
+ 1264739 Pinch (Rank 3)
+ school    physical
+ defense   melee
+ duration  9 s
+ cooldown  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      50 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  38–50 physical damage to the enemy
++effect 1  41–47 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=44 variance=0.1388889 target=[6,0]
+ effect 2  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+ tooltip   Pinches an enemy's legs for $s1 damage and reduces movement speed by $s2% for $d.
+ aura      Movement slowed by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=1264739
+--- 1264741 Pinch (Rank 4)
++++ 1264741 Pinch (Rank 4)
+@@ -1,20 +1,20 @@
+ 1264741 Pinch (Rank 4)
+ school    physical
+ defense   melee
+ duration  9 s
+ cooldown  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      50 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  63–83 physical damage to the enemy
++effect 1  68–78 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=73 variance=0.1388889 target=[6,0]
+ effect 2  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+ tooltip   Pinches an enemy's legs for $s1 damage and reduces movement speed by $s2% for $d.
+ aura      Movement slowed by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=1264741
+--- 1264742 Pinch (Rank 5)
++++ 1264742 Pinch (Rank 5)
+@@ -1,20 +1,20 @@
+ 1264742 Pinch (Rank 5)
+ school    physical
+ defense   melee
+ duration  9 s
+ cooldown  30 s
+ cooldown  30 s (category)
+ gcd       1.5 s
+ cost      50 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  82–108 physical damage to the enemy
++effect 1  88–102 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=95 variance=0.1388889 target=[6,0]
+ effect 2  -50% movement speed to the enemy
+           E_APPLY_AURA A_MOD_DECREASE_SPEED base=-50 mechanic=11 target=[6,0]
+ tooltip   Pinches an enemy's legs for $s1 damage and reduces movement speed by $s2% for $d.
+ aura      Movement slowed by $w2%.
+ 
+ https://www.wowhead.com/forever/spell=1264742
+--- 1264494 Swipe (Rank 1)
++++ 1264494 Swipe (Rank 1)
+@@ -1,16 +1,16 @@
+ 1264494 Swipe (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  5 s
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  3–5 physical damage to the enemy
++effect 1  4–4 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=4 variance=0.1388889 chain=3 target=[6,0]
+ tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=1264494
+--- 1264498 Swipe (Rank 3)
++++ 1264498 Swipe (Rank 3)
+@@ -1,16 +1,16 @@
+ 1264498 Swipe (Rank 3)
+ school    physical
+ defense   melee
+ cooldown  5 s
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  10–14 physical damage to the enemy
++effect 1  11–13 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=12 variance=0.1388889 chain=3 target=[6,0]
+ tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=1264498
+--- 1264501 Swipe (Rank 4)
++++ 1264501 Swipe (Rank 4)
+@@ -1,16 +1,16 @@
+ 1264501 Swipe (Rank 4)
+ school    physical
+ defense   melee
+ cooldown  5 s
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  15–19 physical damage to the enemy
++effect 1  16–18 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=17 variance=0.1388889 chain=3 target=[6,0]
+ tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=1264501
+--- 1264502 Swipe (Rank 5)
++++ 1264502 Swipe (Rank 5)
+@@ -1,16 +1,16 @@
+ 1264502 Swipe (Rank 5)
+ school    physical
+ defense   melee
+ cooldown  5 s
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      20 focus
+ range     5 yd
+ targets   up to 4
+ labels    23
+ 
+-effect 1  18–24 physical damage to the enemy
++effect 1  20–22 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=21 variance=0.1388889 chain=3 target=[6,0]
+ tooltip   Swipe $x1 nearby enemies, inflicting $s1 damage.
+ 
+ https://www.wowhead.com/forever/spell=1264502
+# mage
+--- 31378 Worm Blast
++++ 31378 Worm Blast
+@@ -1,10 +1,10 @@
+ 31378 Worm Blast
+ school    physical
+ defense   ranged
+ range     100 yd
+ 
+-effect 1  600–1000 physical damage to the enemy
++effect 1  700–900 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=800 variance=0.25 target=[6,0]
+ tooltip   Inflicts Physical damage to an enemy.
+ 
+ https://www.wowhead.com/forever/spell=31378
+# rogue
+--- 2098 Eviscerate (Rank 1)
++++ 2098 Eviscerate (Rank 1)
+@@ -1,26 +1,26 @@
+ 2098 Eviscerate (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  -1–7 physical damage to the enemy
++effect 1  1–5 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=3 variance=1.3333334 sp=1 perResource=5 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=2098
+--- 6760 Eviscerate (Rank 2)
++++ 6760 Eviscerate (Rank 2)
+@@ -1,26 +1,26 @@
+ 6760 Eviscerate (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  -1–15 physical damage to the enemy
++effect 1  3–11 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=7 variance=1.1428572 sp=1 perResource=11 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=6760
+--- 6761 Eviscerate (Rank 3)
++++ 6761 Eviscerate (Rank 3)
+@@ -1,26 +1,26 @@
+ 6761 Eviscerate (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  -1–27 physical damage to the enemy
++effect 1  6–20 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=13 variance=1.0769231 sp=1 perResource=19 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=6761
+--- 6762 Eviscerate (Rank 4)
++++ 6762 Eviscerate (Rank 4)
+@@ -1,26 +1,26 @@
+ 6762 Eviscerate (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–40 physical damage to the enemy
++effect 1  10–30 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=20 variance=1 sp=1 perResource=31 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=6762
+--- 8623 Eviscerate (Rank 5)
++++ 8623 Eviscerate (Rank 5)
+@@ -1,26 +1,26 @@
+ 8623 Eviscerate (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–60 physical damage to the enemy
++effect 1  15–45 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=30 variance=1 sp=1 perResource=45 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=8623
+--- 8624 Eviscerate (Rank 6)
++++ 8624 Eviscerate (Rank 6)
+@@ -1,26 +1,26 @@
+ 8624 Eviscerate (Rank 6)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–88 physical damage to the enemy
++effect 1  22–66 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=44 variance=1 sp=1 perResource=71 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=8624
+--- 11299 Eviscerate (Rank 7)
++++ 11299 Eviscerate (Rank 7)
+@@ -1,26 +1,26 @@
+ 11299 Eviscerate (Rank 7)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–136 physical damage to the enemy
++effect 1  34–102 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=68 variance=1 sp=1 perResource=110 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=11299
+--- 11300 Eviscerate (Rank 8)
++++ 11300 Eviscerate (Rank 8)
+@@ -1,26 +1,26 @@
+ 11300 Eviscerate (Rank 8)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–192 physical damage to the enemy
++effect 1  48–144 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=96 variance=1 sp=1 perResource=151 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=11300
+--- 31016 Eviscerate (Rank 9)
++++ 31016 Eviscerate (Rank 9)
+@@ -1,26 +1,26 @@
+ 31016 Eviscerate (Rank 9)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     5 yd
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    20
+ 
+-effect 1  0–216 physical damage to the enemy
++effect 1  54–162 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=108 variance=1 sp=1 perResource=170 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ tooltip   Finishing move that causes damage per combo point, increased by Attack Power:
+              1 point  : ${$m1+(1*$b1*$<mult>)}-${$M1+(1*$b1*$<mult>)} damage
+              2 points: ${$m1+(2*$b1*$<mult>)}-${$M1+(2*$b1*$<mult>)} damage
+              3 points: ${$m1+(3*$b1*$<mult>)}-${$M1+(3*$b1*$<mult>)} damage
+              4 points: ${$m1+(4*$b1*$<mult>)}-${$M1+(4*$b1*$<mult>)} damage
+              5 points: ${$m1+(5*$b1*$<mult>)}-${$M1+(5*$b1*$<mult>)} damage
+ vars      $impE=$?s14162[${$14162m1/100+1}][${1}]
+           $agg=$?s18427[${$18427m1/100+1}][${1}]
+           $mult=${$<impE>*$<agg>}
+ 
+ https://www.wowhead.com/forever/spell=31016
+--- 400009 Between the Eyes
++++ 400009 Between the Eyes
+@@ -1,32 +1,32 @@
+ 400009 Between the Eyes
+ school    physical
+ defense   ranged
+ mechanic  mechanic 12
+ cast      -1000 s
+ cooldown  20 s (category)
+ gcd       1 s
+ cost      35 energy
+ cost      1 combo points
+ range     20 yd
+ equip     needs a bow, gun or crossbow
+ 
+-effect 1  39–95 physical damage to the enemy
++effect 1  53–81 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=67 variance=0.41791046 sp=1 target=[6,0]
+ effect 2  a dummy effect to the caster
+           E_DUMMY base=0 target=[1,0]
+ effect 3  stuns to the enemy
+           E_APPLY_AURA A_MOD_STUN base=0 mechanic=12 target=[6,0]
+ tooltip   Ranged Finishing move that causes damage per combo point, increased by Attack Power, and Stuns the target:
+ 
+              1 point:   ${$m1/100*($<base>+$<percombo>)} to ${$M1/100*($<base>+$<percombo>)} damage, 1 sec Stun
+              2 points: ${$m1/100*($<base>+$<percombo>*2)} to ${$M1/100*($<base>+$<percombo>*2)} damage, 2 sec Stun
+              3 points: ${$m1/100*($<base>+$<percombo>*3)} to ${$M1/100*($<base>+$<percombo>*3)} damage, 3 sec Stun
+              4 points: ${$m1/100*($<base>+$<percombo>*4)} to ${$M1/100*($<base>+$<percombo>*4)} damage, 4 sec Stun
+              5 points: ${$m1/100*($<base>+$<percombo>*5)} to ${$M1/100*($<base>+$<percombo>*5)} damage, 5 sec Stun
+ 
+           Cooldown shared with Kidney Shot.
+ aura      Stunned.
+ vars      $base=${5.741530-0.255683*$PL+0.032656*$PL*$PL}
+           $percombo=${8.740728-0.415787*$PL+0.051973*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=400009
+--- 436564 Blunderbuss
++++ 436564 Blunderbuss
+@@ -1,19 +1,19 @@
+ 436564 Blunderbuss
+ school    physical
+ defense   ranged
+ cooldown  15 s
+ gcd       1 s
+ cost      20 energy
+ targets   up to 4
+ 
+-effect 1  144–336 physical damage to a cone of enemies in front of the caster
++effect 1  192–288 physical damage to a cone of enemies in front of the caster
+           E_SCHOOL_DAMAGE base=240 variance=0.4 radius=10 target=[24,0]
+ effect 2  a dummy effect holding 48 to a cone of enemies in front of the caster
+           E_DUMMY base=48 radius=10 target=[24,0]
+ effect 3  a dummy effect holding 10 to a cone of enemies in front of the caster
+           E_DUMMY base=10 radius=10 target=[24,0]
+ tooltip   Fire a musket blast at up to $i enemies in a cone in front of you for ${$<base>*$m1/100+$m2/100*$AP} to ${$<base>*$M1/100+$m2/100*$AP} Physical damage.
+ vars      $base=${5.741530-0.255683*$PL+0.032656*$PL*$PL}
+           $percombo=${8.740728-0.415787*$PL+0.051973*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=436564
+# warrior
+--- 438540 Charge
++++ 438540 Charge
+@@ -1,12 +1,12 @@
+ 438540 Charge
+ school    physical
+ defense   melee
+ range     45 yd
+ 
+-effect 1  600–900 physical damage to the caster
++effect 1  675–825 physical damage to the caster
+           E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
+ effect 2  unrecognised shape
+           E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 radius=10 target=[87,16]
+ tooltip   Charges an enemy, inflicting normal damage.
+ 
+ https://www.wowhead.com/forever/spell=438540
+--- 429765 Quick Strike
++++ 429765 Quick Strike
+@@ -1,14 +1,14 @@
+ 429765 Quick Strike
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the two-handed weapon or main hand
+ attrs     refund on miss
+ 
+-effect 1  25–45 physical damage to the enemy
++effect 1  30–40 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=35 variance=0.2857143 target=[6,0]
+ tooltip   A reckless instant melee attack with your two-handed weapon dealing ${$AP*$m1/100} to ${$AP*$M1/100} physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.
+ 
+ https://www.wowhead.com/forever/spell=429765
+--- 1232702 Shockwave
++++ 1232702 Shockwave
+@@ -1,21 +1,21 @@
+ 1232702 Shockwave
+ school    physical
+ defense   ranged
+ duration  2 s
+ cooldown  20 s (category)
+ gcd       1.5 s
+ cost      15 rage
+ range     30 yd
+ stance    Defensive
+ equip     needs a shield
+ 
+ effect 1  stuns to target 104
+           E_APPLY_AURA A_MOD_STUN base=0 radius=10 mechanic=12 target=[104,0]
+-effect 2  1424–1576 physical damage to target 104
++effect 2  1462–1538 physical damage to target 104
+           E_SCHOOL_DAMAGE base=1500 variance=0.050666668 radius=10 target=[104,0]
+ effect 3  a dummy effect holding 50
+           E_DUMMY base=50 target=[0,0]
+ tooltip   Sends a wave of force in front of the warrior, causing Physical damage and stunning all enemy targets within $a1 yards in a frontal cone for $d.
+ aura      Stunned.
+ 
+ https://www.wowhead.com/forever/spell=1232702
+--- 464250 Surge
++++ 464250 Surge
+@@ -1,14 +1,14 @@
+ 464250 Surge
+ school    physical
+ defense   magic
+ range     40 yd
+ 
+ effect 1  charges
+           E_CHARGE base=0 target=[53,0]
+ effect 2  unrecognised shape
+           E_KNOCK_BACK base=100 variance=0.2 sp=1 misc=50 radius=10 target=[53,16]
+-effect 3  270–630 physical damage to every enemy in the target area
++effect 3  360–540 physical damage to every enemy in the target area
+           E_SCHOOL_DAMAGE base=450 variance=0.4 sp=1 radius=10 target=[53,16]
+ tooltip   Charges an enemy, inflicting $s3 damage to the target and any of its nearby allies, as well as knocking them all back.
+ 
+ https://www.wowhead.com/forever/spell=464250
+--- 6572 Revenge (Rank 1)
++++ 6572 Revenge (Rank 1)
+@@ -1,22 +1,22 @@
+ 6572 Revenge (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  19–25 physical damage to the enemy
++effect 1  20–24 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=6572
+--- 6574 Revenge (Rank 2)
++++ 6574 Revenge (Rank 2)
+@@ -1,22 +1,22 @@
+ 6574 Revenge (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  27–41 physical damage to the enemy
++effect 1  31–37 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=6574
+--- 7379 Revenge (Rank 3)
++++ 7379 Revenge (Rank 3)
+@@ -1,22 +1,22 @@
+ 7379 Revenge (Rank 3)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  38–58 physical damage to the enemy
++effect 1  43–53 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=7379
+--- 11600 Revenge (Rank 4)
++++ 11600 Revenge (Rank 4)
+@@ -1,22 +1,22 @@
+ 11600 Revenge (Rank 4)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  65–99 physical damage to the enemy
++effect 1  73–91 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=11600
+--- 11601 Revenge (Rank 5)
++++ 11601 Revenge (Rank 5)
+@@ -1,22 +1,22 @@
+ 11601 Revenge (Rank 5)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  97–145 physical damage to the enemy
++effect 1  109–133 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=11601
+--- 25288 Revenge (Rank 6)
++++ 25288 Revenge (Rank 6)
+@@ -1,22 +1,22 @@
+ 25288 Revenge (Rank 6)
+ school    physical
+ defense   melee
+ cooldown  5 s (category)
+ gcd       1.5 s
+ cost      5 rage
+ range     5 yd
+ stance    Defensive
+ equip     needs a melee weapon in the main hand
+ attrs     refund on miss
+ labels    25
+ 
+-effect 1  122–184 physical damage to the enemy
++effect 1  138–168 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 target=[6,0]
+ tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+ vars      $APR=$?a71[${0.225}][${0.25}]
+ 
+           $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+ 
+           $APRatio=${$<APR>*$<ImpRevenge>}
+ 
+ https://www.wowhead.com/forever/spell=25288
+--- 23922 Shield Slam (Rank 1)
++++ 23922 Shield Slam (Rank 1)
+@@ -1,18 +1,18 @@
+ 23922 Shield Slam (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ equip     needs a shield
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  dispels 1 magic effect to the enemy
+           E_DISPEL base=1 misc=1 target=[6,0]
+-effect 2  411–449 physical damage to the enemy
++effect 2  421–439 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=430 variance=0.04347826 sp=1 target=[6,0]
+ tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=23922
+--- 23923 Shield Slam (Rank 2)
++++ 23923 Shield Slam (Rank 2)
+@@ -1,18 +1,18 @@
+ 23923 Shield Slam (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ equip     needs a shield
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  dispels 1 magic effect to the enemy
+           E_DISPEL base=1 misc=1 target=[6,0]
+-effect 2  483–527 physical damage to the enemy
++effect 2  494–516 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=505 variance=0.044444446 sp=1 target=[6,0]
+ tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=23923
+--- 23924 Shield Slam (Rank 3)
++++ 23924 Shield Slam (Rank 3)
+@@ -1,18 +1,18 @@
+ 23924 Shield Slam (Rank 3)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ equip     needs a shield
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  dispels 1 magic effect to the enemy
+           E_DISPEL base=1 misc=1 target=[6,0]
+-effect 2  554–606 physical damage to the enemy
++effect 2  567–593 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=580 variance=0.045161292 sp=1 target=[6,0]
+ tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=23924
+--- 23925 Shield Slam (Rank 4)
++++ 23925 Shield Slam (Rank 4)
+@@ -1,18 +1,18 @@
+ 23925 Shield Slam (Rank 4)
+ school    physical
+ defense   melee
+ cooldown  6 s (category)
+ gcd       1.5 s
+ cost      20 rage
+ range     5 yd
+ equip     needs a shield
+ attrs     refund on miss
+ labels    25
+ 
+ effect 1  dispels 1 magic effect to the enemy
+           E_DISPEL base=1 misc=1 target=[6,0]
+-effect 2  625–685 physical damage to the enemy
++effect 2  640–670 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=655 variance=0.045714285 sp=1 target=[6,0]
+ tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
+ 
+ https://www.wowhead.com/forever/spell=23925

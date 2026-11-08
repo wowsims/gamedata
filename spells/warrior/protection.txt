@@ -438,7 +438,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  19–25 physical damage to the enemy
+effect 1  20–24 physical damage to the enemy
           E_SCHOOL_DAMAGE base=22 variance=0.15384616 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -461,7 +461,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  27–41 physical damage to the enemy
+effect 1  31–37 physical damage to the enemy
           E_SCHOOL_DAMAGE base=34 variance=0.2 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -484,7 +484,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  38–58 physical damage to the enemy
+effect 1  43–53 physical damage to the enemy
           E_SCHOOL_DAMAGE base=48 variance=0.21428572 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -507,7 +507,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  65–99 physical damage to the enemy
+effect 1  73–91 physical damage to the enemy
           E_SCHOOL_DAMAGE base=82 variance=0.20833333 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -530,7 +530,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  97–145 physical damage to the enemy
+effect 1  109–133 physical damage to the enemy
           E_SCHOOL_DAMAGE base=121 variance=0.1971831 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -553,7 +553,7 @@ equip     needs a melee weapon in the main hand
 attrs     refund on miss
 labels    25
 
-effect 1  122–184 physical damage to the enemy
+effect 1  138–168 physical damage to the enemy
           E_SCHOOL_DAMAGE base=153 variance=0.2 sp=1 target=[6,0]
 tooltip   Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 vars      $APR=$?a71[${0.225}][${0.25}]
@@ -669,7 +669,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  411–449 physical damage to the enemy
+effect 2  421–439 physical damage to the enemy
           E_SCHOOL_DAMAGE base=430 variance=0.04347826 sp=1 target=[6,0]
 tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
 
@@ -688,7 +688,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  483–527 physical damage to the enemy
+effect 2  494–516 physical damage to the enemy
           E_SCHOOL_DAMAGE base=505 variance=0.044444446 sp=1 target=[6,0]
 tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
 
@@ -707,7 +707,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  554–606 physical damage to the enemy
+effect 2  567–593 physical damage to the enemy
           E_SCHOOL_DAMAGE base=580 variance=0.045161292 sp=1 target=[6,0]
 tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
 
@@ -726,7 +726,7 @@ labels    25
 
 effect 1  dispels 1 magic effect to the enemy
           E_DISPEL base=1 misc=1 target=[6,0]
-effect 2  625–685 physical damage to the enemy
+effect 2  640–670 physical damage to the enemy
           E_SCHOOL_DAMAGE base=655 variance=0.045714285 sp=1 target=[6,0]
 tooltip   Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
 
