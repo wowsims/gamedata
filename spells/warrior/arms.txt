@@ -250,7 +250,7 @@ school    physical
 defense   melee
 range     45 yd
 
-effect 1  600–900 physical damage to the caster
+effect 1  675–825 physical damage to the caster
           E_SCHOOL_DAMAGE base=750 variance=0.2 target=[1,0]
 effect 2  unrecognised shape
           E_KNOCK_BACK_DEST base=150 variance=0.25333333 misc=110 radius=10 target=[87,16]
@@ -1288,7 +1288,7 @@ range     5 yd
 equip     needs a two-handed axe, two-handed mace, polearm, two-handed sword or staff in the two-handed weapon or main hand
 attrs     refund on miss
 
-effect 1  25–45 physical damage to the enemy
+effect 1  30–40 physical damage to the enemy
           E_SCHOOL_DAMAGE base=35 variance=0.2857143 target=[6,0]
 tooltip   A reckless instant melee attack with your two-handed weapon dealing ${$AP*$m1/100} to ${$AP*$M1/100} physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.
 
@@ -1523,7 +1523,7 @@ equip     needs a shield
 
 effect 1  stuns to target 104
           E_APPLY_AURA A_MOD_STUN base=0 radius=10 mechanic=12 target=[104,0]
-effect 2  1424–1576 physical damage to target 104
+effect 2  1462–1538 physical damage to target 104
           E_SCHOOL_DAMAGE base=1500 variance=0.050666668 radius=10 target=[104,0]
 effect 3  a dummy effect holding 50
           E_DUMMY base=50 target=[0,0]
