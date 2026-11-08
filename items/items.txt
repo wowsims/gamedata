@@ -91415,6 +91415,35 @@ classes   mage
 stats     +24 intellect, +23 stamina, +10 hit rating, +27 spell power
 set       Illusionist's Attire
 =======
+20035 Glacial Spike
+item      rare, Dagger, main hand
+level     ilvl 52
+binds     binds when picked up
+stats     +4 intellect
+weapon    31 - 59 damage, speed 1.30, 34.6 dps
+effect    equip: 24392 Frosty Zap
+text      "Diabolical runes adorn the blade."
+sells     31806 copper
+=======
+20036 Fire Ruby
+item      rare, Miscellaneous, trinket
+level     ilvl 52
+binds     binds when picked up
+unique    yes
+classes   mage
+stats     +14 fire damage
+effect    use: 24389 Chaos Fire (300 s cooldown, 10 s shared cooldown)
+text      "Unpredictability leads to both victory and death."
+sells     12722 copper
+=======
+20037 Arcane Crystal Pendant
+item      rare, Miscellaneous, neck
+level     ilvl 52
+binds     binds when picked up
+stats     +6 intellect, +16 spell power
+text      "Arcane crystals are best utilized for the purposes of a mage."
+sells     12722 copper
+=======
 20039 Dark Iron Boots
 item      epic, Plate, feet
 level     ilvl 70, requires level 60
@@ -92160,6 +92189,17 @@ unique    yes
 stats     +6 strength, +6 stamina, +6 agility
 effect    equip: 23990 Item - Minor Run Speed
 sells     3137 copper
+=======
+20130 Diamond Flask
+item      rare, Miscellaneous, trinket
+level     ilvl 52
+binds     binds when picked up
+unique    yes
+classes   warrior
+effect    use: 363881 CHUG! CHUG! CHUG! CHUG! (360 s cooldown, 60 s shared cooldown)
+effect    equip: 1318073 Diamond Flask
+text      "Served on the rocks."
+sells     12722 copper
 =======
 20131 Battle Tabard of the Defilers
 item      common, Miscellaneous, tabard
@@ -94639,6 +94679,14 @@ binds     binds when picked up
 effect    use: 24869 Food (1 charge, consumed)
 text      "Crisp, delicious and hopefully worm-free"
 =======
+20517 Razorsteel Shoulders
+item      rare, Plate, shoulders
+level     ilvl 52
+binds     binds when picked up
+stats     +10 strength, +10 stamina, +10 hit rating
+effect    equip: 1300680 Razorsteel
+sells     16666 copper
+=======
 20518 Scroll: Create Crest of Beckoning
 item      common, Quest
 level     ilvl 1
@@ -94655,6 +94703,13 @@ item      uncommon, Other
 level     ilvl 55
 effect    use: 27869 Dark Rune (1 charge, consumed, 120 s shared cooldown)
 sells     2000 copper
+=======
+20521 Fury Visor
+item      rare, Plate, head
+level     ilvl 52
+binds     binds when picked up
+stats     +18 strength, +14 crit rating, +10 hit rating, +9 spirit
+sells     16666 copper
 =======
 20522 Feral Staff
 item      rare, Staff, two-hand
@@ -159747,6 +159802,14 @@ level     ilvl 51, requires level 46
 binds     binds when equipped
 stats     +10 strength, +5 spell power
 sells     292 copper
+=======
+286616 Matriarch's Prowlers
+item      uncommon, Leather, feet
+level     ilvl 52, requires level 47
+binds     binds when equipped
+stats     +11 agility
+effect    equip: 1320726 Increased Feral Combat
+sells     279 copper
 =======
 286619 Big Basher's Belt
 item      uncommon, Leather, waist
