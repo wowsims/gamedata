@@ -339,7 +339,6 @@ school    holy
 duration  0.6 s
 range     50000 yd
 labels    26
-proc      hears PROC_FLAG_TAKE_MELEE_SWING; no roll, it fires whenever its condition is met
 
 effect 1  a dummy aura to target 87
           E_APPLY_AURA A_DUMMY base=0 sp=0.042 radius=8 target=[87,16]
