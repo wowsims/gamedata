@@ -1360,8 +1360,8 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540 target=[1,0]
+effect 1  SPELLMOD_CRIT_DAMAGE_BONUS +20% on family 7 mask 0x839800,0x540,0x0,0x88
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=20 misc=15 family=7 mask=0x839800,0x540,0x0,0x88 target=[1,0]
 effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_SPELL_HEALING_OF_STAT_PERCENT base=25 misc=3 target=[1,0]
 tooltip   Increases the critical strike damage bonus of your melee abilities by $m1% and increases your spell healing by $s2% of your Intellect.
@@ -1461,6 +1461,48 @@ tooltip   Pounce, stunning the target for $d and causing $9826o1 damage over $98
 aura      Stunned.
 
 https://www.wowhead.com/forever/spell=9827
+=======
+9007 Pounce Bleed (Rank 1)
+school    physical
+defense   melee
+mechanic  bleed
+duration  18 s
+range     5 yd
+attrs     periodic can crit
+
+effect 1  19 physical damage every 3 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=19 period=3000ms mechanic=15 target=[6,0]
+aura      Bleeding for $w1 damage every $t1 sec.
+
+https://www.wowhead.com/forever/spell=9007
+=======
+9824 Pounce Bleed (Rank 2)
+school    physical
+defense   melee
+mechanic  bleed
+duration  18 s
+range     5 yd
+attrs     periodic can crit
+
+effect 1  25 physical damage every 3 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=25 period=3000ms mechanic=15 target=[6,0]
+aura      Bleeding for $w1 damage every $t1 sec.
+
+https://www.wowhead.com/forever/spell=9824
+=======
+9826 Pounce Bleed (Rank 3)
+school    physical
+defense   melee
+mechanic  bleed
+duration  18 s
+range     5 yd
+attrs     periodic can crit
+
+effect 1  31 physical damage every 3 s to the enemy (6 ticks)
+          E_APPLY_AURA A_PERIODIC_DAMAGE base=31 period=3000ms mechanic=15 target=[6,0]
+aura      Bleeding for $w1 damage every $t1 sec.
+
+https://www.wowhead.com/forever/spell=9826
 =======
 16972 Predatory Strikes
 school    physical
