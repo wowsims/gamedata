@@ -1,0 +1,18 @@
+# warrior
+--- 1283073 Charge
++++ 1283073 Charge
+@@ -1,12 +1,12 @@
+ 1283073 Charge
+ school    physical
+ defense   melee
+ range     8-25 yd
+ 
+ effect 1  charges to the enemy
+           E_CHARGE base=0 target=[6,0]
+-effect 2  weapon damage +20 to the enemy
+-          E_WEAPON_DAMAGE base=20 sp=1 target=[6,0]
++effect 2  weapon damage +10 to the enemy
++          E_WEAPON_DAMAGE base=10 sp=1 target=[6,0]
+ tooltip   Charges an enemy, inflicting normal damage plus $s3.
+ 
+ https://www.wowhead.com/forever/spell=1283073
