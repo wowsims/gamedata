@@ -1,0 +1,90 @@
+# warlock
+--- 6789 Death Coil (Rank 1)
++++ 6789 Death Coil (Rank 1)
+@@ -1,18 +1,18 @@
+ 6789 Death Coil (Rank 1)
+ school    shadow
+ defense   magic
+ duration  3 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      435 mana
+ range     30 yd
+ labels    19
+ 
+-effect 1  unrecognised shape
++effect 1  leeches 285.2 shadow damage to the enemy (at level 60, +0.214 spell power)
+           E_HEALTH_LEECH base=272 ppl=2.2 sp=0.214 amplitude=1 target=[6,0]
+ effect 2  fears to the enemy
+           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+ tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+ aura      Horrified.
+ 
+ https://www.wowhead.com/forever/spell=6789
+--- 17925 Death Coil (Rank 2)
++++ 17925 Death Coil (Rank 2)
+@@ -1,18 +1,18 @@
+ 17925 Death Coil (Rank 2)
+ school    shadow
+ defense   magic
+ duration  3 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      525 mana
+ range     30 yd
+ labels    19
+ 
+-effect 1  unrecognised shape
++effect 1  leeches 374.6 shadow damage to the enemy (at level 60, +0.214 spell power)
+           E_HEALTH_LEECH base=359 ppl=2.6 sp=0.214 amplitude=1 target=[6,0]
+ effect 2  fears to the enemy
+           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+ tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+ aura      Horrified.
+ 
+ https://www.wowhead.com/forever/spell=17925
+--- 17926 Death Coil (Rank 3)
++++ 17926 Death Coil (Rank 3)
+@@ -1,18 +1,18 @@
+ 17926 Death Coil (Rank 3)
+ school    shadow
+ defense   magic
+ duration  3 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      600 mana
+ range     30 yd
+ labels    19
+ 
+-effect 1  unrecognised shape
++effect 1  leeches 460 shadow damage to the enemy (at level 60, +0.214 spell power)
+           E_HEALTH_LEECH base=454 ppl=3 sp=0.214 amplitude=1 target=[6,0]
+ effect 2  fears to the enemy
+           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+ tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+ aura      Horrified.
+ 
+ https://www.wowhead.com/forever/spell=17926
+--- 28412 Death Coil
++++ 28412 Death Coil
+@@ -1,19 +1,19 @@
+ 28412 Death Coil
+ school    shadow
+ defense   magic
+ duration  3 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      565 mana
+ range     30 yd
+ 
+-effect 1  unrecognised shape
++effect 1  leeches 1100 shadow damage to the enemy (at level 60, +0.214 spell power)
+           E_HEALTH_LEECH base=920 ppl=3 sp=0.214 amplitude=1 target=[6,0]
+ effect 2  fears to the enemy
+           E_APPLY_AURA A_MOD_FEAR base=0 sp=1 mechanic=24 target=[6,0]
+ effect 3  unrecognised shape
+           E_SCRIPT_EFFECT base=0 target=[0,0]
+ tooltip   Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
+ aura      Horrified.
+ 
+ https://www.wowhead.com/forever/spell=28412
