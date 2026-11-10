@@ -1826,9 +1826,9 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_COST -2 (-0.2 on a rage bar) on family 7 mask 0x1000,0x400
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2 sp=1 misc=14 family=7 mask=0x1000,0x400 target=[1,0]
-tooltip   Reduces the energy cost of Claw, Rake, and Mangle by $s1.
+effect 1  SPELLMOD_COST -2 (-0.2 on a rage bar) on family 7 mask 0x1000
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-2 sp=1 misc=14 family=7 mask=0x1000 target=[1,0]
+tooltip   Reduces the energy cost of Claw and Rake by $s1.
 
 https://www.wowhead.com/forever/spell=27851
 =======
