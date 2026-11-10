@@ -55542,6 +55542,7 @@ item      common, Junk
 level     ilvl 47
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 15067 Summon Sprite Darter Hatchling
+text      "Teaches you how to summon this companion."
 sells     500 copper
 =======
 11475 Wine-stained Cloak
@@ -59577,6 +59578,14 @@ sells     1500 copper
 item      common, Quest
 level     ilvl 1
 binds     quest item
+=======
+12531 Searing Needle
+item      rare, Dagger, one-hand
+level     ilvl 51, requires level 46
+binds     binds when equipped
+weapon    42 - 80 damage, speed 1.80, 33.9 dps
+effect    chance on hit: 16454 Searing Blast
+sells     28883 copper
 =======
 12533 Roughshod Pike
 item      common, Other
@@ -69200,6 +69209,13 @@ level     ilvl 49, requires level 44
 binds     binds when equipped
 stats     +1 stat 93, +1 stat 96, +1 stat 103, +10 expertise rating, +1 weapon damage
 sells     10601 copper
+=======
+14552 Stockade Pauldrons
+item      epic, Plate, shoulders
+level     ilvl 55, requires level 50
+binds     binds when equipped
+stats     +20 stamina, +12 spell power, +10 defense rating
+sells     15378 copper
 =======
 14558 Lady Maye's Pendant
 item      epic, Miscellaneous, neck
@@ -85834,12 +85850,26 @@ binds     binds when picked up
 stats     +16 stamina, +19 shadow damage, +4 mana per 5 sec
 sells     7215 copper
 =======
+18307 Riptide Shoes
+item      rare, Cloth, feet
+level     ilvl 58, requires level 53
+binds     binds when picked up
+stats     +9 intellect, +24 frost damage, +10 frost resistance
+sells     11163 copper
+=======
 18309 Gloves of Restoration
 item      rare, Leather, hands
 level     ilvl 59, requires level 54
 binds     binds when picked up
 stats     +13 stamina, +12 intellect, +31 healing, +10 spell damage
 sells     11296 copper
+=======
+18314 Ring of Demonic Guile
+item      rare, Miscellaneous, finger
+level     ilvl 59, requires level 54
+binds     binds when picked up
+stats     +10 intellect, +4 mana per 5 sec, +10 hit rating
+sells     12100 copper
 =======
 18315 Ring of Demonic Potency
 item      rare, Miscellaneous, finger
@@ -85869,12 +85899,28 @@ binds     binds when picked up
 stats     +14 intellect, +14 stamina, +20 healing, +7 spell damage
 sells     22057 copper
 =======
+18319 Fervent Helm
+item      rare, Mail, head
+level     ilvl 58, requires level 53
+binds     binds when picked up
+stats     +14 stamina, +12 health per 5 sec, +15 parry rating
+sells     20989 copper
+=======
 18320 Demondash Spaulders
 item      rare, Mail, shoulders
 level     ilvl 58, requires level 53
 binds     binds when picked up
 stats     +14 agility, +14 stamina, +9 strength
 sells     21157 copper
+=======
+18321 Energetic Rod
+item      rare, Mace, main hand
+level     ilvl 59, requires level 54
+binds     binds when picked up
+stats     +5 intellect
+weapon    62 - 116 damage, speed 2.30, 38.7 dps
+effect    equip: 1302190 Demonic Energy
+sells     49320 copper
 =======
 18323 Satyr's Bow
 item      rare, Bow, ranged
@@ -85892,6 +85938,13 @@ stats     +23 strength, +14 crit rating
 weapon    123 - 185 damage, speed 3.10, 49.7 dps
 effect    chance on hit: 1302166 Waveslicer
 sells     55189 copper
+=======
+18325 Felhide Cap
+item      rare, Leather, head
+level     ilvl 58, requires level 53
+binds     binds when picked up
+stats     +21 agility, +14 stamina, +10 fire resistance, +9 shadow resistance, +8 arcane resistance
+sells     16137 copper
 =======
 18329 Arcanum of Rapidity
 item      uncommon, Quest
@@ -85940,6 +85993,13 @@ binds     quest item
 unique    yes
 text      "This gauntlet looks as though it once was imbued with potent magic."
 =======
+18352 Petrified Bark Shield
+item      rare, Shield, shield
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +24 block value, +10 nature resistance
+sells     28072 copper
+=======
 18353 Stoneflower Staff
 item      rare, Staff, two-hand
 level     ilvl 61, requires level 56
@@ -85947,6 +86007,15 @@ binds     binds when picked up
 stats     +24 intellect, +14 crit rating, +110 armor, +18 health per 5 sec
 weapon    125 - 188 damage, speed 3.00, 52.2 dps
 sells     55030 copper
+=======
+18354 Pimgib's Collar
+item      rare, Miscellaneous, trinket
+level     ilvl 60, requires level 55
+binds     binds when picked up
+classes   warlock, monk
+stats     +14 fire damage
+effect    equip: 22855 Pimgib's Collar
+sells     17466 copper
 =======
 18355 Ferra's Collar
 item      rare, Miscellaneous, trinket
@@ -86052,12 +86121,35 @@ binds     binds when picked up
 stats     +10 stamina, +20 healing, +10 spirit, +14 crit rating, +7 spell damage
 sells     9948 copper
 =======
+18370 Vigilance Charm
+item      rare, Miscellaneous, trinket
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +10 strength
+effect    use: 1302264 Vigilant (360 s cooldown, 20 s shared cooldown)
+sells     21612 copper
+=======
+18371 Mindtap Talisman
+item      rare, Miscellaneous, trinket
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +6 mana per 5 sec
+effect    use: 1302205 Mindtap (420 s cooldown, 10 s shared cooldown)
+sells     20737 copper
+=======
 18374 Flamescarred Shoulders
 item      rare, Leather, shoulders
 level     ilvl 62, requires level 57
 binds     binds when picked up
 stats     +12 agility, +11 strength, +10 stamina, +10 fire resistance
 sells     21418 copper
+=======
+18377 Quickdraw Gloves
+item      rare, Leather, hands
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +8 agility, +7 strength, +10 stamina, +6 dodge rating, +7 defense rating, +9 intellect
+sells     13076 copper
 =======
 18379 Odious Greaves
 item      rare, Mail, feet
@@ -86073,6 +86165,13 @@ binds     binds when picked up
 stats     +15 strength, +20 stamina, +9 intellect, +14 crit rating, +8 arcane resistance
 sells     21135 copper
 =======
+18382 Fluctuating Cloak
+item      rare, Cloth, back
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +15 health per 5 sec
+sells     15971 copper
+=======
 18383 Force Imbued Gauntlets
 item      rare, Plate, hands
 level     ilvl 61, requires level 56
@@ -86080,6 +86179,22 @@ binds     binds when picked up
 stats     +14 stamina, +80 armor, +7 defense rating
 effect    equip: 1302248 Add Arcane Dam - Weap 02
 sells     10179 copper
+=======
+18386 Padre's Trousers
+item      rare, Cloth, legs
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +20 intellect, +7 mana per 5 sec, +37 healing, +12 spell damage
+sells     20588 copper
+=======
+18388 Stoneshatter
+item      rare, Crossbow, ranged
+level     ilvl 62, requires level 57
+binds     binds when picked up
+weapon    73 - 111 damage, speed 2.90, 31.7 dps
+effect    equip: 1294769 Increased Hit Chance - Ranged - 01
+effect    chance on hit: 1302279 Stoneshatter
+sells     41928 copper
 =======
 18389 Cloak of the Cosmos
 item      rare, Cloth, back
@@ -86456,6 +86571,20 @@ classes   hunter
 stats     +14 stamina, +6 intellect
 sells     4301 copper
 =======
+18450 Robe of Combustion
+item      uncommon, Cloth, chest
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +17 intellect, +26 fire damage
+sells     15814 copper
+=======
+18451 Hyena Hide Belt
+item      uncommon, Leather, waist
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +13 stamina, +22 attack power, +70 armor
+sells     9884 copper
+=======
 18452 Sergeant Major's Leather Armsplints
 item      rare, Leather, wrists
 level     ilvl 63, requires level 58
@@ -86510,6 +86639,13 @@ classes   priest, mage, warlock
 stats     +14 stamina, +6 intellect
 sells     2674 copper
 =======
+18458 Modest Armguards
+item      uncommon, Mail, wrists
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +10 intellect, +12 spell power
+sells     12212 copper
+=======
 18461 Sergeant's Cloak
 item      rare, Cloth, back
 level     ilvl 63, requires level 58
@@ -86517,6 +86653,14 @@ binds     binds when picked up
 unique    yes
 stats     +17 stamina, +70 armor
 sells     8577 copper
+=======
+18462 Jagged Bone Fist
+item      uncommon, Fist Weapon, one-hand
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +8 strength, +7 stamina
+weapon    45 - 84 damage, speed 1.80, 35.8 dps
+sells     41319 copper
 =======
 18463 Ogre Pocket Knife
 item      uncommon, Sword, one-hand
@@ -86533,6 +86677,16 @@ level     ilvl 60, requires level 55
 binds     binds when picked up
 stats     +12 stamina, +8 strength
 sells     29135 copper
+=======
+18467 Royal Seal of Eldre'Thalas
+item      rare, Miscellaneous, trinket
+level     ilvl 62
+binds     binds when picked up
+unique    yes
+classes   warlock
+stats     +15 nature resistance
+effect    equip: 1318479 Royal Seal of Eldre'Thalas
+text      "Blessed by the Shen'dralar Ancients."
 =======
 18475 Oddly Magical Belt
 item      uncommon, Cloth, waist
@@ -86628,6 +86782,13 @@ binds     binds when picked up
 unique    yes
 effect    use: 22905 Place Unfired Blade (1 charge, consumed)
 =======
+18490 Insightful Hood
+item      rare, Leather, head
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +15 intellect, +9 spirit, +12 stamina, +14 crit rating, +24 healing, +8 spell damage
+sells     18655 copper
+=======
 18491 Lorespinner
 item      rare, Dagger, main hand
 level     ilvl 57
@@ -86677,6 +86838,13 @@ binds     binds when picked up
 stats     +23 stamina, +15 parry rating, +36 stat 125, +24 attack power
 weapon    123 - 185 damage, speed 2.90, 53.1 dps
 sells     70127 copper
+=======
+18503 Kromcrush's Chestplate
+item      rare, Plate, chest
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +16 strength, +16 stamina, +130 armor, +10 defense rating
+sells     22521 copper
 =======
 18504 Girdle of Insight
 item      rare, Leather, waist
@@ -86789,6 +86957,13 @@ effect    learn: 22928 Shifting Cloak
 text      "Teaches you how to craft a Shifting Cloak."
 sells     40000 copper
 =======
+18521 Grimy Metal Boots
+item      rare, Plate, feet
+level     ilvl 63, requires level 58
+binds     binds when picked up
+stats     +17 strength, +100 armor, +12 dodge rating, +7 stamina
+sells     17606 copper
+=======
 18522 Band of the Ogre King
 item      rare, Miscellaneous, finger
 level     ilvl 63, requires level 58
@@ -86823,6 +86998,13 @@ level     ilvl 63, requires level 58
 binds     binds when picked up
 stats     +16 intellect, +11 spirit, +12 stamina, +14 crit rating, +4 spell penetration
 sells     17924 copper
+=======
+18527 Harmonious Gauntlets
+item      rare, Mail, hands
+level     ilvl 63, requires level 58
+binds     binds when picked up
+stats     +10 intellect, +10 spirit, +10 stamina, +33 healing, +11 spell damage
+sells     17988 copper
 =======
 18528 Cyclone Spaulders
 item      rare, Leather, shoulders
@@ -89139,12 +89321,14 @@ item      common, Junk
 level     ilvl 20
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 23530 Summon Tiny Red Dragon
+text      "Teaches you how to summon this companion."
 =======
 19055 Green Dragon Orb
 item      common, Junk
 level     ilvl 20
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 23531 Summon Tiny Green Dragon
+text      "Teaches you how to summon this companion."
 =======
 19056 Argent Boots
 item      rare, Cloth, feet
@@ -96345,6 +96529,7 @@ level     ilvl 20
 unique    yes
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 24696 Summon Murky
+text      "Teaches you how to summon this companion."
 =======
 20372 Test Staff 77 epic
 item      epic, Staff, two-hand
@@ -103982,6 +104167,7 @@ level     ilvl 20
 unique    yes
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 27241 Summon Gurky
+text      "Teaches you how to summon this companion."
 =======
 22115 Extra-Dimensional Ghost Revealer
 item      common, Quest
@@ -104705,6 +104891,15 @@ binds     binds when picked up
 classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
 stats     +11 intellect, +9 stamina, +7 spirit, +16 spell power
 sells     8236 copper
+=======
+22257 Bloodclot Band
+item      rare, Miscellaneous, finger
+level     ilvl 57, requires level 52
+binds     binds when picked up
+classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
+stats     +8 intellect, +8 stamina, +6 spirit, +15 healing, +5 spell damage
+effect    equip: 1300755 Resist Bleed 10
+sells     36127 copper
 =======
 22259 Unbestowed Friendship Bracelet
 item      common, Other
@@ -107130,6 +107325,7 @@ level     ilvl 1
 unique    yes
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 28487 Summon Terky
+text      "Teaches you how to summon this companion."
 =======
 22781 Polar Bear Collar
 item      common, Junk
@@ -107137,6 +107333,7 @@ level     ilvl 1
 unique    yes
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 28505 Summon Poley
+text      "Teaches you how to summon this companion."
 =======
 22805 Naxxramas Sword 1H 1 [PH]
 item      epic, Sword, one-hand
@@ -109374,6 +109571,7 @@ item      common, Junk
 level     ilvl 1
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 30152 Summon White Tiger Cub
+text      "Teaches you how to summon this companion."
 sells     1250 copper
 =======
 23713 Hippogryph Hatchling
@@ -109381,6 +109579,7 @@ item      common, Junk
 level     ilvl 1
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 30156 Summon Hippogryph Hatchling
+text      "Teaches you how to summon this companion."
 sells     1250 copper
 =======
 23714 Perpetual Purple Firework
@@ -138069,6 +138268,7 @@ item      common, Junk
 level     ilvl 20
 effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 1283932 Summon Uber Diablo
+text      "Teaches you how to summon this companion."
 =======
 268880 "Secret" Bait
 item      common, Other
@@ -158615,6 +158815,13 @@ stats     +9 spirit, +6 stamina, +6 hit rating
 weapon    58 - 108 damage, speed 2.20, 37.7 dps
 sells     48438 copper
 =======
+280078 Apprentice's Protective Treads
+item      rare, Leather, feet
+level     ilvl 57, requires level 52
+binds     binds when picked up
+stats     +11 agility, +12 stamina, +14 crit rating
+sells     18282 copper
+=======
 280079 Lunarlight Robe
 item      rare, Leather, chest
 level     ilvl 57, requires level 52
@@ -158630,6 +158837,13 @@ stats     +17 stamina
 weapon    121 - 182 damage, speed 3.10, 48.9 dps
 effect    equip: 1309550 Claymore of Two Moons
 sells     61238 copper
+=======
+280084 Furbolg Rib Protector
+item      rare, Mail, chest
+level     ilvl 57, requires level 52
+binds     binds when picked up
+stats     +20 agility, +15 hit rating, +15 stamina
+sells     30624 copper
 =======
 280085 Tunnelweb Pincer
 item      rare, Dagger, one-hand
@@ -163359,6 +163573,14 @@ level     ilvl 1, requires level 1
 effect    use: 1320093 Blooming Heart
 sells     50 copper
 =======
+286408 Sword of Mourning
+item      rare, Sword, two-hand
+level     ilvl 58
+binds     binds when picked up
+stats     +22 strength, +18 spell power, +14 crit rating
+weapon    135 - 203 damage, speed 3.40, 49.7 dps
+sells     44863 copper
+=======
 286411 Plant Stem
 item      poor, Junk
 level     ilvl 1, requires level 1
@@ -164141,11 +164363,25 @@ stats     +21 stamina, +21 intellect
 weapon    89 - 134 damage, speed 2.40, 46.5 dps
 effect    equip: 1324981 Disenchanter
 =======
+287026 Escape Plan
+item      rare, Gun, ranged
+level     ilvl 54, requires level 49
+binds     binds when equipped
+stats     +11 agility
+weapon    78 - 78 damage, speed 2.80, 27.9 dps
+effect    use: 13534 Disarm (900 s cooldown)
+=======
 287028 Tormented Cuffs
 item      rare, Cloth, wrists
 level     ilvl 58, requires level 53
 binds     binds when equipped
 stats     +13 stamina, +14 health per 5 sec, +9 spell power
+=======
+287030 Blackmaw Bindings
+item      rare, Mail, wrists
+level     ilvl 59, requires level 54
+binds     binds when equipped
+stats     +14 agility, +6 spirit, +10 spell power
 =======
 287032 Den Champion's Binding
 item      rare, Plate, waist
