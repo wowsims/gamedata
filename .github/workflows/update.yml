@@ -121,7 +121,8 @@ jobs:
               if: steps.moved.outputs.run == 'true'
               uses: actions/setup-go@v6
               with:
-                  go-version: 1.25.x
+                  # Its toolchain line, so the Go version follows forever's; GOTOOLCHAIN=local runs no other.
+                  go-version-file: forever/go.mod
                   cache-dependency-path: forever/go.sum
 
             - name: Install Protoc
