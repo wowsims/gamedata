@@ -1751,6 +1751,26 @@ aura      Your next Energy ability has its Energy cost reduced by $s1.
 
 https://www.wowhead.com/forever/spell=1328827
 =======
+1330763 Poised
+school    physical
+duration  permanent
+labels    21
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1330763
+=======
+1330765 Poised
+school    physical
+duration  permanent
+labels    21
+
+effect 1  a dummy aura every 0.5 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=500ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1330765
+=======
 21163 Polished Armor (Rank 1)
 school    physical
 duration  1800 s

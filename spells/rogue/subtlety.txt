@@ -410,10 +410,11 @@ https://www.wowhead.com/forever/spell=921
 school    physical
 attrs     passive
 labels    20
+proc      hears PROC_FLAG_ENTER_COMBAT; no roll, it fires whenever its condition is met
 refs      1328826 Poised
 
-effect 1  a dummy aura holding 10
-          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
+effect 1  casts 1330741 Poised on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=1330741 target=[1,0]
 tooltip   While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 https://www.wowhead.com/forever/spell=1328825
@@ -432,6 +433,26 @@ tooltip   Energy cost of the next ability performed is reduced by $s1.
 aura      Your next Energy ability has its Energy cost reduced by $s1.
 
 https://www.wowhead.com/forever/spell=1328826
+=======
+1330741 Poised
+school    physical
+duration  permanent
+labels    20
+
+effect 1  a dummy aura
+          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+
+https://www.wowhead.com/forever/spell=1330741
+=======
+1330746 Poised
+school    physical
+duration  permanent
+labels    20
+
+effect 1  a dummy aura every 0.5 s
+          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=500ms target=[1,0]
+
+https://www.wowhead.com/forever/spell=1330746
 =======
 14183 Premeditation
 school    physical

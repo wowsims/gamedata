@@ -1,0 +1,354 @@
+# druid
+--- 1330763 Poised
++++ 1330763 Poised
+@@ -0,0 +1,9 @@
++1330763 Poised
++school    physical
++duration  permanent
++labels    21
++
++effect 1  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
++
++https://www.wowhead.com/forever/spell=1330763
+--- 1330765 Poised
++++ 1330765 Poised
+@@ -0,0 +1,9 @@
++1330765 Poised
++school    physical
++duration  permanent
++labels    21
++
++effect 1  a dummy aura every 0.5 s
++          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=500ms target=[1,0]
++
++https://www.wowhead.com/forever/spell=1330765
+--- 17116 Nature's Swiftness
++++ 17116 Nature's Swiftness
+@@ -1,17 +1,17 @@
+ 17116 Nature's Swiftness
+ school    physical
+ defense   magic
+ duration  permanent
+ cooldown  180 s
+ stance    Tree of Life
+ stance exclude Moonkin
+ charges   1
+ labels    21
+ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+-effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x1000261,0x2000000,0x2000000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x1000261,0x2000000,0x2000000 target=[1,0]
++effect 1  SPELLMOD_CASTING_TIME -100% on family 7 mask 0x1000261,0x6000000,0x2000000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=10 family=7 mask=0x1000261,0x6000000,0x2000000 target=[1,0]
+ tooltip   When activated, your next Nature spell becomes an instant cast spell.
+ aura      Your next Nature spell will be an instant cast spell.
+ 
+ https://www.wowhead.com/forever/spell=17116
+# hunter
+--- 1293241 Summon Hawk (Rank 1)
++++ 1293241 Summon Hawk (Rank 1)
+@@ -1,22 +1,22 @@
+ 1293241 Summon Hawk (Rank 1)
+ school    physical
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      80 mana
++cost      11% of base mana
+ range     35 yd
+ labels    23
+ refs      1293248 Summon Hawk
+ 
+ effect 1  32 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=32 target=[6,0]
+ effect 2  unrecognised shape
+           E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+ effect 3  a dummy effect holding 2 to the enemy
+           E_DUMMY base=2 target=[6,0]
+ effect 4  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ tooltip   Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+ 
+ https://www.wowhead.com/forever/spell=1293241
+--- 1293525 Summon Hawk (Rank 2)
++++ 1293525 Summon Hawk (Rank 2)
+@@ -1,22 +1,22 @@
+ 1293525 Summon Hawk (Rank 2)
+ school    physical
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      105 mana
++cost      11% of base mana
+ range     35 yd
+ labels    23
+ refs      1293248 Summon Hawk
+ 
+ effect 1  47 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=47 target=[6,0]
+ effect 2  unrecognised shape
+           E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+ effect 3  a dummy effect holding 2 to the enemy
+           E_DUMMY base=2 target=[6,0]
+ effect 4  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ tooltip   Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+ 
+ https://www.wowhead.com/forever/spell=1293525
+--- 1293526 Summon Hawk (Rank 3)
++++ 1293526 Summon Hawk (Rank 3)
+@@ -1,22 +1,22 @@
+ 1293526 Summon Hawk (Rank 3)
+ school    physical
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      135 mana
++cost      11% of base mana
+ range     35 yd
+ labels    23
+ refs      1293248 Summon Hawk
+ 
+ effect 1  85 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=85 target=[6,0]
+ effect 2  unrecognised shape
+           E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+ effect 3  a dummy effect holding 2 to the enemy
+           E_DUMMY base=2 target=[6,0]
+ effect 4  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ tooltip   Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+ 
+ https://www.wowhead.com/forever/spell=1293526
+--- 1293527 Summon Hawk (Rank 4)
++++ 1293527 Summon Hawk (Rank 4)
+@@ -1,22 +1,22 @@
+ 1293527 Summon Hawk (Rank 4)
+ school    physical
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      190 mana
++cost      11% of base mana
+ range     35 yd
+ labels    23
+ refs      1293248 Summon Hawk
+ 
+ effect 1  108 physical damage to the enemy
+           E_SCHOOL_DAMAGE base=108 target=[6,0]
+ effect 2  unrecognised shape
+           E_TRIGGER_MISSILE base=0 trigger=1312639 target=[6,0]
+ effect 3  a dummy effect holding 2 to the enemy
+           E_DUMMY base=2 target=[6,0]
+ effect 4  a dummy effect holding 5 to the enemy
+           E_DUMMY base=5 target=[6,0]
+ tooltip   Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+ 
+ https://www.wowhead.com/forever/spell=1293527
+--- 3044 Arcane Shot (Rank 1)
++++ 3044 Arcane Shot (Rank 1)
+@@ -1,16 +1,16 @@
+ 3044 Arcane Shot (Rank 1)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      25 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  25 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=25 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=3044
+--- 14281 Arcane Shot (Rank 2)
++++ 14281 Arcane Shot (Rank 2)
+@@ -1,16 +1,16 @@
+ 14281 Arcane Shot (Rank 2)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      35 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  35 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=35 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14281
+--- 14282 Arcane Shot (Rank 3)
++++ 14282 Arcane Shot (Rank 3)
+@@ -1,16 +1,16 @@
+ 14282 Arcane Shot (Rank 3)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      50 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  50 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=50 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14282
+--- 14283 Arcane Shot (Rank 4)
++++ 14283 Arcane Shot (Rank 4)
+@@ -1,16 +1,16 @@
+ 14283 Arcane Shot (Rank 4)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      80 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  85 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=85 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14283
+--- 14284 Arcane Shot (Rank 5)
++++ 14284 Arcane Shot (Rank 5)
+@@ -1,16 +1,16 @@
+ 14284 Arcane Shot (Rank 5)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      105 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  120 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=120 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14284
+--- 14285 Arcane Shot (Rank 6)
++++ 14285 Arcane Shot (Rank 6)
+@@ -1,16 +1,16 @@
+ 14285 Arcane Shot (Rank 6)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      135 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  175 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=175 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14285
+--- 14286 Arcane Shot (Rank 7)
++++ 14286 Arcane Shot (Rank 7)
+@@ -1,16 +1,16 @@
+ 14286 Arcane Shot (Rank 7)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      160 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  220 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=220 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14286
+--- 14287 Arcane Shot (Rank 8)
++++ 14287 Arcane Shot (Rank 8)
+@@ -1,16 +1,16 @@
+ 14287 Arcane Shot (Rank 8)
+ school    arcane
+ defense   ranged
+ cast      -1000 s
+ cooldown  6 s (category)
+ gcd       1.5 s
+-cost      190 mana
++cost      11% of base mana
+ range     8-35 yd
+ equip     needs a bow, gun or crossbow
+ labels    23
+ 
+ effect 1  280 arcane damage to the enemy
+           E_SCHOOL_DAMAGE base=280 target=[6,0]
+ tooltip   An instant shot that causes $s1 Arcane damage.
+ 
+ https://www.wowhead.com/forever/spell=14287
+# rogue
+--- 1330741 Poised
++++ 1330741 Poised
+@@ -0,0 +1,9 @@
++1330741 Poised
++school    physical
++duration  permanent
++labels    20
++
++effect 1  a dummy aura
++          E_APPLY_AURA A_DUMMY base=0 target=[1,0]
++
++https://www.wowhead.com/forever/spell=1330741
+--- 1330746 Poised
++++ 1330746 Poised
+@@ -0,0 +1,9 @@
++1330746 Poised
++school    physical
++duration  permanent
++labels    20
++
++effect 1  a dummy aura every 0.5 s
++          E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=500ms target=[1,0]
++
++https://www.wowhead.com/forever/spell=1330746
+--- 1328825 Poised (Passive)
++++ 1328825 Poised (Passive)
+@@ -1,11 +1,12 @@
+ 1328825 Poised (Passive)
+ school    physical
+ attrs     passive
+ labels    20
++proc      hears PROC_FLAG_ENTER_COMBAT; no roll, it fires whenever its condition is met
+ refs      1328826 Poised
+ 
+-effect 1  a dummy aura holding 10
+-          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[1,0]
++effect 1  casts 1330741 Poised on its trigger
++          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=10 sp=1 trigger=1330741 target=[1,0]
+ tooltip   While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
+ 
+ https://www.wowhead.com/forever/spell=1328825

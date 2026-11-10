@@ -1340,7 +1340,7 @@ item      epic, Leather, hands
 level     ilvl 42, requires level 37
 binds     binds when equipped
 stats     +14 crit rating, +10 attack power
-effect    chance on hit: 1325229 Gloves of Holy Might
+effect    equip: 1330855 Gloves of Holy Might
 sells     5344 copper
 =======
 868 Ardent Custodian
@@ -159664,7 +159664,7 @@ sells     17766 copper
 item      rare, Wand, ranged
 level     ilvl 63, requires level 58
 binds     binds when picked up
-stats     +7 nature damage, +7 crit rating, +4 spirit
+stats     +7 arcane damage, +7 crit rating, +4 spirit
 weapon    76 - 142 damage, speed 1.70, 64.1 dps
 sells     38265 copper
 =======
@@ -160299,8 +160299,8 @@ binds     binds when picked up
 item      rare, Mace, two-hand
 level     ilvl 40, requires level 1
 binds     binds when picked up
-stats     +12 intellect, +15 stamina
-weapon    91 - 137 damage, speed 3.20, 35.6 dps
+stats     +16 strength, +15 stamina
+weapon    102 - 154 damage, speed 3.60, 35.6 dps
 effect    equip: 1309422 Rage of Earth
 =======
 280605 Tidebringer's Claw
@@ -161382,6 +161382,14 @@ level     ilvl 60, requires level 1
 binds     binds when picked up
 stats     +115 armor, +26 stamina, +23 attack power
 weapon    135 - 204 damage, speed 3.30, 51.4 dps
+=======
+281598 Rusthowl's Worn Collar
+item      uncommon, Miscellaneous, neck
+level     ilvl 57, requires level 52
+binds     binds when equipped
+stats     +12 stamina
+effect    equip: 1311895 Hyjal Speed
+sells     5396 copper
 =======
 281600 Wail of Death
 item      uncommon, Wand, ranged
@@ -162959,6 +162967,7 @@ sells     500 copper
 item      rare, Leather, chest
 level     ilvl 58, requires level 53
 binds     binds when picked up
+stats     +16 intellect, +18 spirit, +20 spell power
 sells     9135 copper
 =======
 284218 Slime-Coated Gloves
@@ -164822,6 +164831,14 @@ binds     binds when equipped
 stats     +10 strength, +5 spell power
 sells     292 copper
 =======
+286597 Calm Air Band
+item      uncommon, Miscellaneous, finger
+level     ilvl 60, requires level 55
+binds     binds when equipped
+unique    yes
+stats     +11 spirit, +19 healing, +6 spell damage
+sells     2164 copper
+=======
 286604 Spawn of Grubthor
 item      uncommon, Pet
 level     ilvl 60, requires level 50
@@ -164830,6 +164847,13 @@ effect    use: 55884 Learning (1 charge, consumed)
 effect    learn: 1320758 Summon Spawn of Grubthor
 text      "Teaches you how to summon this companion."
 sells     500 copper
+=======
+286609 Krellack's Carapace
+item      uncommon, Shield, shield
+level     ilvl 58, requires level 53
+binds     binds when equipped
+stats     +6 spirit, +7 defense rating
+sells     1308 copper
 =======
 286613 King Mosh's Tooth
 item      rare, Dagger, one-hand
@@ -164938,7 +164962,7 @@ item      epic, Mount
 level     ilvl 60, requires level 60
 binds     binds when picked up
 effect    use: 55884 Learning (1 charge, consumed, 3 s shared cooldown)
-effect    learn: 1321200 Verdant Sea Turtle
+effect    learn: 1321200 ?
 text      "Teaches you how to summon this mount."
 =======
 286727 Crimson Rooster
@@ -164946,7 +164970,7 @@ item      epic, Mount
 level     ilvl 60, requires level 60
 binds     binds when picked up
 effect    use: 55884 Learning (1 charge, consumed, 3 s shared cooldown)
-effect    learn: 1321221 Crimson Rooster
+effect    learn: 1321221 ?
 text      "Teaches you how to summon this mount."
 =======
 286728 Kolkar Hammer
@@ -165107,7 +165131,7 @@ item      epic, Mount
 level     ilvl 60, requires level 60
 binds     binds when picked up
 effect    use: 55884 Learning (1 charge, consumed, 3 s shared cooldown)
-effect    learn: 1321233 Spectral Wolf Pack
+effect    learn: 1321233 ?
 text      "Teaches you how to summon this mount."
 =======
 286977 Sword of the Fallen
@@ -165747,7 +165771,7 @@ sells     200 copper
 item      common, Food & Drink
 level     ilvl 55, requires level 1
 binds     binds when picked up
-effect    use: 1137 Drink (1 charge, consumed, 1 s shared cooldown)
+effect    use: 1330734 Drink (1 charge, consumed, 1 s shared cooldown)
 sells     200 copper
 =======
 287966 Minor Healing Potion
