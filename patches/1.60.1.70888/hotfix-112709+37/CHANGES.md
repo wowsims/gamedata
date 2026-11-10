@@ -1,0 +1,198 @@
+# Hotfix: 1.60.1.70888, hotfix pushes 112709, 112731, 112758, 112864, 112900 and 33 more
+
+- Build: 1.60.1.70888 (`wowf` on Blizzard's CDN)
+- Hotfixes: applied, 5587 pushes (68223 entries)
+- Previous: 1.60.1.70888 with 5558 hotfix pushes (2026-11-10)
+- Exported by wowsims/forever@5f766b07af5f on 2026-11-10
+
+## Hotfix pushes
+
+- 112709: 452 entries (was 420)
+- 112731: 2 entries
+- 112758: 462 entries (was 442)
+- 112864: 2045 entries (was 1988)
+- 112900: 47 entries (was 10)
+- 113019: 30 entries (was 29)
+- 113149: 570 entries
+- 113153: 12 entries
+- 113175: 2 entries
+- 113195: 1 entries
+- 113203: 2 entries
+- 113205: 1 entries
+- 113251: 1 entries
+- 113281: 2 entries
+- 113288: 2 entries
+- 113357: 36 entries (was 40)
+- 113411: 5 entries
+- 113454: 2 entries
+- 113623: 15 entries
+- 113658: 4 entries
+- 113681: 1 entries
+- 113700: 1 entries
+- 113737: 1 entries
+- 113766: 33 entries
+- 113807: 5 entries
+- 113845: 696 entries
+- 113860: 3 entries
+- 113904: 1 entries
+- 16778896: 6 entries
+- 16786728: 6 entries
+- 16792627: 6 entries
+- 16792629: 6 entries
+- 16792634: 6 entries
+- 16792637: 6 entries
+- 16793274: 6 entries
+- 17049707: 6 entries
+- 17057245: 6 entries
+- 17064260: 6 entries
+
+## Spells
+
+### Druid: 0 added, 0 removed, 1 changed
+- changed 27851 Reduced Claw and Rake Cost · other
+
+### Warlock: 0 added, 0 removed, 7 changed
+- changed 17804 Soul Siphon · affliction
+- changed 1316697 Wrack (Rank 1) · affliction
+- changed 1225228 Bane of Havoc · destruction
+- changed 3110 Firebolt (Rank 1) · pets
+- changed 7799 Firebolt (Rank 2) · pets
+- changed 7800 Firebolt (Rank 3) · pets
+- changed 7801 Firebolt (Rank 4) · pets
+
+## Items
+
+10 added, 0 removed, 116 changed.
+
+- added 1680 Headchopper
+- added 9512 Blackmetal Cape
+- added 15411 Mark of Fordring
+- added 15413 Ornate Adamantium Breastplate
+- added 15418 Shimmering Platinum Warhammer
+- added 15421 Shroud of the Exile
+- added 16058 Fordring's Seal
+- added 272491 Premier Chain Headguard
+- added 280029 Cinderedge Crescent
+- added 287044 Predator's Shroud
+- changed 250482 Glowing Copper Boots
+- changed 250488 Veteran's Chain Shirt
+- changed 250489 Guard's Chain Shirt
+- changed 250490 Protector's Chain Shirt
+- changed 250491 Acolyte's Chain Shirt
+- changed 250492 Crusader's Chain Shirt
+- changed 250493 Veteran's Chain Leggings
+- changed 250494 Guard's Chain Leggings
+- changed 250495 Protector's Chain Leggings
+- changed 250496 Acolyte's Chain Leggings
+- changed 250497 Crusader's Chain Leggings
+- changed 250498 Veteran's Chain Helm
+- changed 250499 Guard's Chain Helm
+- changed 250500 Protector's Chain Helm
+- changed 250501 Acolyte's Chain Helm
+- changed 250502 Crusader's Chain Helm
+- changed 250546 Officer's Boots
+- changed 250547 Sentinel's Boots
+- changed 250548 Warder's Boots
+- changed 250549 Prefect's Boots
+- changed 250550 Justicar's Boots
+- changed 250551 Officer's Gloves
+- changed 250552 Sentinel's Gloves
+- changed 250553 Warder's Gloves
+- changed 250554 Prefect's Gloves
+- changed 250555 Justicar's Gloves
+- changed 250556 Officer's Belt
+- changed 250557 Sentinel's Belt
+- changed 250558 Warder's Belt
+- changed 250559 Prefect's Belt
+- changed 250560 Justicar's Belt
+- changed 250620 Gemmed Copper Boots
+- changed 250621 Strange Copper Boots
+- changed 252424 Black Whelp Slippers
+- changed 252425 Dark Leather Boots
+- changed 252426 Murloc Scale Shoes
+- changed 252427 Moonglow Boots
+- changed 252434 Defender's Leather Armor
+- changed 252435 Totemic Leather Armor
+- changed 252445 Defender's Leather Pants
+- changed 252446 Totemic Leather Pants
+- changed 252455 Defender's Leather Helm
+- changed 252456 Totemic Leather Helm
+- changed 252459 Prowler's Leather Belt
+- changed 252460 Warden's Leather Belt
+- changed 252461 Skirmisher's Leather Belt
+- changed 252465 Prowler's Leather Shoes
+- changed 252466 Warden's Leather Shoes
+- changed 252490 Brawler's Leather Armor
+- changed 252491 Trapper's Leather Armor
+- changed 252492 Stormrider's Leather Armor
+- changed 252493 Wisdom's Leather Armor
+- changed 252500 Brawler's Leather Pants
+- changed 252501 Trapper's Leather Pants
+- changed 252502 Stormrider's Leather Pants
+- changed 252503 Wisdom's Leather Pants
+- changed 252512 Brawler's Leather Helm
+- changed 252513 Trapper's Leather Helm
+- changed 252514 Stormrider's Leather Helm
+- changed 252515 Wisdom's Leather Helm
+- changed 252520 Skulker's Leather Belt
+- changed 252521 Stalker's Leather Belt
+- changed 252522 Skycaller's Leather Belt
+- changed 252523 Mender's Leather Belt
+- changed 252531 Skulker's Leather Shoes
+- changed 252532 Skycaller's Leather Shoes
+- changed 252533 Mender's Leather Shoes
+- changed 252547 Prowler's Leather Gauntlets
+- changed 252548 Skulker's Leather Gauntlets
+- changed 252549 Warden's Leather Gauntlets
+- changed 252550 Skycaller's Leather Gauntlets
+- changed 252551 Mender's Leather Gauntlets
+- changed 252562 Stalker's Mail Boots
+- changed 252563 Skycaller's Mail Boots
+- changed 252564 Skirmisher's Mail Boots
+- changed 252565 Mender's Mail Boots
+- changed 252584 Stalker's Mail Gauntlets
+- changed 252585 Skycaller's Mail Gauntlets
+- changed 252586 Skirmisher's Mail Gauntlets
+- changed 252587 Mender's Mail Gauntlets
+- changed 253901 Filigreed Pristine Gown
+- changed 253903 Filigreed Silky Gown
+- changed 253905 Filigreed Flame Gown
+- changed 253907 Filigreed Shadow Gown
+- changed 253909 Filigreed Pearly Gown
+- changed 253911 Filigreed Shining Gown
+- changed 253937 Filigreed Pristine Leggings
+- changed 253939 Filigreed Silky Leggings
+- changed 253941 Filigreed Flame Leggings
+- changed 253943 Filigreed Shadow Leggings
+- changed 253945 Filigreed Pearly Leggings
+- changed 253947 Filigreed Shining Leggings
+- changed 253975 Filigreed Pristine Circlet
+- changed 253977 Filigreed Silky Circlet
+- changed 253979 Filigreed Flame Circlet
+- changed 253981 Filigreed Shadow Circlet
+- changed 253983 Filigreed Pearly Circlet
+- changed 253985 Filigreed Shining Circlet
+- changed 254001 Gilded Slippers
+- changed 254003 Frothing Slippers
+- changed 254005 Fiery Slippers
+- changed 254007 Black Slippers
+- changed 254009 Golden Slippers
+- changed 254011 Radiant Slippers
+- changed 254037 Gilded Cord
+- changed 254039 Frothing Cord
+- changed 254041 Fiery Cord
+- changed 254043 Black Cord
+- changed 254045 Golden Cord
+- changed 254047 Radiant Cord
+- changed 254095 Gilded Gloves
+- changed 254097 Frothing Gloves
+- changed 254099 Fiery Gloves
+- changed 254101 Black Gloves
+- changed 254103 Golden Gloves
+- changed 254105 Radiant Gloves
+
+## Files
+
+- [`items-changed.diff`](items-changed.diff)
+- [`items.txt`](items.txt)
+- [`spells.diff`](spells.diff)
