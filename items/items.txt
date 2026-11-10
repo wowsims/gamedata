@@ -52752,6 +52752,15 @@ stats     +3 strength, +14 attack power
 weapon    36 - 67 damage, speed 2.10, 24.5 dps
 sells     17249 copper
 =======
+10625 Stealthblade
+item      rare, Dagger, main hand
+level     ilvl 49, requires level 44
+binds     binds when equipped
+weapon    32 - 60 damage, speed 1.40, 32.9 dps
+effect    equip: 27037 Stealth 08
+effect    use: 1300180 Stealth (1800 s cooldown)
+sells     27366 copper
+=======
 10627 Bludgeon of the Grinning Dog
 item      rare, Staff, two-hand
 level     ilvl 47, requires level 42
@@ -52759,6 +52768,15 @@ binds     binds when equipped
 weapon    112 - 168 damage, speed 3.40, 41.2 dps
 effect    chance on hit: 1300209 Bludgeon
 sells     26974 copper
+=======
+10628 Deathblow
+item      rare, Sword, two-hand
+level     ilvl 48, requires level 43
+binds     binds when equipped
+classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, druid
+weapon    94 - 141 damage, speed 2.80, 42 dps
+effect    chance on hit: 1300185 Fatal Wound
+sells     29245 copper
 =======
 10629 Mistwalker Boots
 item      rare, Cloth, feet
@@ -59612,6 +59630,13 @@ level     ilvl 1, requires level 1
 weapon    2 - 4 damage, speed 3.30, 0.9 dps
 sells     2 copper
 =======
+12462 Embrace of the Wind Serpent
+item      epic, Cloth, chest
+level     ilvl 55, requires level 50
+binds     binds when picked up
+stats     +30 spirit, +10 intellect, +33 healing, +10 nature resistance, +11 spell damage
+sells     20274 copper
+=======
 12463 Drakefang Butcher
 item      rare, Sword, two-hand
 level     ilvl 53, requires level 48
@@ -62066,6 +62091,14 @@ binds     binds when equipped
 stats     +11 stamina, +5 agility
 weapon    46 - 87 damage, speed 1.90, 35 dps
 sells     34705 copper
+=======
+13015 Serathil
+item      rare, Axe, one-hand
+level     ilvl 61, requires level 56
+binds     binds when equipped
+stats     +9 strength, +100 armor
+weapon    53 - 99 damage, speed 1.90, 40 dps
+sells     53957 copper
 =======
 13016 Killmaim
 item      rare, Axe, two-hand
@@ -64853,6 +64886,13 @@ level     ilvl 62, requires level 57
 binds     binds when picked up
 stats     +20 fire resistance, +12 stamina, +5 defense rating
 sells     10897 copper
+=======
+13527 Lavawalker Greaves
+item      rare, Plate, feet
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +20 fire resistance, +12 strength, +5 hit rating
+sells     13149 copper
 =======
 13528 Twilight Void Bracers
 item      rare, Mail, wrists
@@ -69502,6 +69542,13 @@ effect    use: 402265 Learning (1 charge, consumed)
 effect    learn: 18447 Mooncloth Vest
 text      "Teaches you how to sew a Mooncloth Vest."
 sells     7500 copper
+=======
+14502 Frostbite Girdle
+item      rare, Leather, waist
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +3 strength, +15 agility, +15 stamina, +10 frost resistance
+sells     13051 copper
 =======
 14503 Death's Clutch
 item      rare, Leather, shoulders
@@ -86612,6 +86659,14 @@ binds     binds when picked up
 stats     +21 agility, +14 stamina, +10 fire resistance, +9 shadow resistance, +8 arcane resistance
 sells     16137 copper
 =======
+18326 Razor Gauntlets
+item      rare, Plate, hands
+level     ilvl 59, requires level 54
+binds     binds when picked up
+stats     +9 strength
+effect    equip: 1302193 Razor Gauntlets
+sells     9036 copper
+=======
 18327 Whipvine Cord
 item      rare, Cloth, waist
 level     ilvl 59, requires level 54
@@ -86673,6 +86728,14 @@ binds     binds when equipped
 stats     +7 intellect, +7 spirit, +11 arcane damage
 sells     8103 copper
 =======
+18338 Wand of Arcane Potency
+item      rare, Wand, ranged
+level     ilvl 59, requires level 54
+binds     binds when equipped
+stats     +16 arcane damage
+weapon    65 - 122 damage, speed 1.60, 58.4 dps
+sells     36595 copper
+=======
 18340 Eidolon Talisman
 item      rare, Miscellaneous, neck
 level     ilvl 59, requires level 54
@@ -86687,6 +86750,28 @@ level     ilvl 59, requires level 59
 binds     binds when equipped
 stats     +9 stamina, +10 nature resistance
 sells     14615 copper
+=======
+18344 Stonebark Gauntlets
+item      rare, Leather, hands
+level     ilvl 59, requires level 54
+binds     binds when equipped
+stats     +14 agility, +10 stamina, +15 nature resistance
+sells     11587 copper
+=======
+18345 Murmuring Ring
+item      rare, Miscellaneous, finger
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +13 intellect
+effect    equip: 19786 Resist Silence 07
+sells     14727 copper
+=======
+18346 Threadbare Trousers
+item      rare, Cloth, legs
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +18 stamina, +23 stat 136, +23 spell power
+sells     16345 copper
 =======
 18347 Well Balanced Axe
 item      rare, Axe, one-hand
@@ -86970,6 +87055,13 @@ level     ilvl 61, requires level 57
 binds     binds when picked up
 stats     +19 spirit, +29 healing, +12 stamina, +14 crit rating, +10 spell damage
 sells     26811 copper
+=======
+18391 Eyestalk Cord
+item      rare, Leather, waist
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +18 intellect, +9 stamina, +31 healing, +10 spell damage
+sells     13076 copper
 =======
 18392 Distracting Dagger
 item      rare, Dagger, off hand
@@ -87436,6 +87528,13 @@ binds     binds when picked up
 stats     +10 intellect, +12 spell power
 sells     12212 copper
 =======
+18459 Gallant's Wristguards
+item      uncommon, Plate, wrists
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +10 intellect, +22 healing, +7 spell damage
+sells     7907 copper
+=======
 18460 Unsophisticated Hand Cannon
 item      uncommon, Gun, ranged
 level     ilvl 60, requires level 55
@@ -87475,6 +87574,15 @@ level     ilvl 60, requires level 55
 binds     binds when picked up
 stats     +12 stamina, +8 strength
 sells     29135 copper
+=======
+18465 Royal Seal of Eldre'Thalas
+item      rare, Miscellaneous, trinket
+level     ilvl 62
+binds     binds when picked up
+unique    yes
+classes   rogue
+stats     +15 nature resistance, +45 stat 125, +10 hit rating
+text      "Blessed by the Shen'dralar Ancients."
 =======
 18466 Royal Seal of Eldre'Thalas
 item      rare, Miscellaneous, trinket
@@ -87617,6 +87725,20 @@ level     ilvl 63, requires level 58
 binds     binds when picked up
 stats     +15 stamina, +7 defense rating
 sells     16770 copper
+=======
+18496 Heliotrope Cloak
+item      rare, Cloth, back
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +10 intellect, +14 crit rating
+sells     14233 copper
+=======
+18497 Sublime Wristguards
+item      rare, Cloth, wrists
+level     ilvl 60, requires level 55
+binds     binds when picked up
+stats     +10 intellect, +6 spirit, +6 stamina, +12 spell power
+sells     9488 copper
 =======
 18499 Barrier Shield
 item      rare, Shield, shield
@@ -88538,6 +88660,13 @@ binds     binds when picked up
 stats     +12 strength, +11 stamina, +70 armor
 sells     16460 copper
 =======
+18690 Wraithplate Leggings
+item      rare, Plate, legs
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +20 stamina, +180 armor, +18 parry rating
+sells     22026 copper
+=======
 18693 Shivery Handwraps
 item      rare, Cloth, hands
 level     ilvl 62, requires level 57
@@ -88558,6 +88687,13 @@ level     ilvl 62, requires level 57
 binds     binds when picked up
 stats     +16 intellect, +6 stamina, +2 spell penetration
 sells     34450 copper
+=======
+18696 Intricately Runed Shield
+item      rare, Shield, shield
+level     ilvl 62, requires level 57
+binds     binds when picked up
+stats     +8 stamina, +23 block value, +6 spell power
+sells     33476 copper
 =======
 18700 Malefic Bracers
 item      rare, Leather, wrists
@@ -158805,6 +158941,12 @@ item      poor, Leather, hands
 level     ilvl 1, requires level 1
 binds     binds when picked up
 =======
+279471 Alcaz Operative Insignia
+item      rare, Other
+level     ilvl 1, requires level 1
+binds     binds when picked up
+effect    use: 1306800 Alcaz Operative
+=======
 279472 Pristine Pesterhide Pelt
 item      common, Quest
 level     ilvl 30
@@ -159682,6 +159824,13 @@ binds     binds when picked up
 stats     +16 attack power, +5 stamina, +2 weapon damage
 weapon    52 - 97 damage, speed 1.80, 41.4 dps
 sells     51209 copper
+=======
+280013 Frostfang Mail Vest
+item      rare, Mail, chest
+level     ilvl 63, requires level 58
+binds     binds when picked up
+stats     +40 healing, +8 mana per 5 sec, +17 stamina, +13 spell damage
+sells     30833 copper
 =======
 280014 Raptorscale Bulwark
 item      rare, Shield, shield
@@ -162946,6 +163095,13 @@ binds     binds when picked up
 stats     +9 spirit, +5 hit rating, +14 strength
 set       Rider of the Plaguelands
 sells     1472 copper
+=======
+284104 Cultist's Cuffs
+item      uncommon, Cloth, wrists
+level     ilvl 58, requires level 53
+binds     binds when equipped
+stats     +8 spirit, +12 spell power
+sells     433 copper
 =======
 284105 Wildhammer Soldier's Spaulders
 item      uncommon, Leather, shoulders
