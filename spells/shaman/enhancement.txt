@@ -210,7 +210,7 @@ labels    24
 proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
 
 effect 1  raid aura: casts nothing on its trigger
-          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
+          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=8248 radius=30 target=[1,0]
 aura      Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
 
 https://www.wowhead.com/forever/spell=8250
