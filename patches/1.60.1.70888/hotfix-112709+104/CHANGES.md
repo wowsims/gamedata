@@ -1,0 +1,214 @@
+# Hotfix: 1.60.1.70888, hotfix pushes 112709, 112864, 113357, 113672, 113852 and 100 more
+
+- Build: 1.60.1.70888 (`wowf` on Blizzard's CDN)
+- Hotfixes: applied, 5732 pushes (87496 entries)
+- Previous: 1.60.1.70888 with 5634 hotfix pushes (2026-11-10)
+- Exported by wowsims/forever@ff9babba5238 on 2026-11-11
+
+## Hotfix pushes
+
+- 112709: 436 entries (was 452)
+- 112864: 1947 entries (was 2045)
+- 113357: 28 entries (was 37)
+- 113672: 16485 entries
+- 113852: 5 entries
+- 113870: 9 entries
+- 113876: 6 entries
+- 113878: 1 entries
+- 113889: 3 entries
+- 113895: 16 entries
+- 113912: 7 entries
+- 113914: 53 entries
+- 113922: 16 entries
+- 113924: 1 entries
+- 113927: 2 entries
+- 113928: 23 entries
+- 113931: 32 entries
+- 113935: 1 entries
+- 113937: 6 entries
+- 113939: 3 entries
+- 113940: 6 entries
+- 113942: 16 entries
+- 113944: 6 entries
+- 113946: 1422 entries
+- 16778659: 6 entries
+- 16779315: 6 entries
+- 16786700: 6 entries
+- 16787842: 6 entries
+- 16788900: 6 entries
+- 16789799: 6 entries
+- 16789803: 6 entries
+- 16789805: 6 entries
+- 16789806: 6 entries
+- 16789818: 6 entries
+- 16789820: 6 entries
+- 16789822: 6 entries
+- 16789837: 6 entries
+- 16789925: 6 entries
+- 16790087: 6 entries
+- 16790121: 6 entries
+- 16790142: 6 entries
+- 16790143: 6 entries
+- 16790146: 6 entries
+- 16790152: 6 entries
+- 16790168: 6 entries
+- 16790176: 6 entries
+- 16790181: 6 entries
+- 16790182: 6 entries
+- 16790183: 6 entries
+- 16790222: 6 entries
+- 16790357: 6 entries
+- 16790358: 6 entries
+- 16790414: 6 entries
+- 16790469: 6 entries
+- 16790477: 6 entries
+- 16790565: 6 entries
+- 16790577: 6 entries
+- 16790584: 6 entries
+- 16790610: 6 entries
+- 16790613: 6 entries
+- 16790614: 6 entries
+- 16790620: 6 entries
+- 16790718: 6 entries
+- 16790721: 6 entries
+- 16790724: 6 entries
+- 16790731: 6 entries
+- 16790754: 6 entries
+- 16790755: 6 entries
+- 16791154: 6 entries
+- 16791168: 6 entries
+- 16791169: 6 entries
+- 16791747: 6 entries
+- 16791764: 6 entries
+- 16791769: 6 entries
+- 16795264: 6 entries
+- 16795319: 6 entries
+- 16795320: 6 entries
+- 16795514: 6 entries
+- 16795529: 6 entries
+- 16795544: 6 entries
+- 16795555: 6 entries
+- 16795592: 6 entries
+- 16795594: 6 entries
+- 16795601: 6 entries
+- 16795613: 6 entries
+- 16795641: 6 entries
+- 16795688: 6 entries
+- 16795700: 6 entries
+- 16795709: 6 entries
+- 16795736: 6 entries
+- 16795897: 6 entries
+- 16795915: 6 entries
+- 16795936: 6 entries
+- 16795937: 6 entries
+- 16795950: 6 entries
+- 16795959: 6 entries
+- 16799441: 6 entries
+- 16799483: 6 entries
+- 16799484: 6 entries
+- 17003913: 6 entries
+- 17057299: 6 entries
+- 17059923: 6 entries
+- 17061482: 6 entries
+- 17064259: 6 entries
+- 17064261: 6 entries
+
+## Spells
+
+No class spell changed.
+
+## Items
+
+81 added, 2 removed, 2 changed.
+
+- added 1443 Jeweled Amulet of Cainwyn
+- added 2099 Dwarven Hand Cannon
+- added 9484 Spellshock Leggings
+- added 10626 Ragehammer
+- added 11684 Ironfoe
+- added 12583 Blackhand Doomsaw
+- added 12587 Eye of Rend
+- added 12589 Dustfeather Sash
+- added 12590 Felstriker
+- added 12602 Draconian Deflector
+- added 12604 Starfire Tiara
+- added 12606 Crystallized Girdle
+- added 12621 Demonfork
+- added 12709 Pip's Skinner
+- added 12871 Chromatic Carapace
+- added 12905 Wildfire Cape
+- added 12926 Flaming Band
+- added 12927 Truestrike Shoulders
+- added 12930 Briarwood Reed
+- added 12936 Battleborn Armbraces
+- added 12952 Gyth's Skull
+- added 12960 Tribal War Feathers
+- added 12965 Spiritshroud Leggings
+- added 12966 Blackmist Armguards
+- added 12967 Bloodmoon Cloak
+- added 13006 Mass of McGowan
+- added 13141 Tooth of Gnarr
+- added 13142 Brigam Girdle
+- added 13198 Hurd Smasher
+- added 13253 Hands of Power
+- added 13261 Globe of D'sak
+- added 13349 Scepter of the Unholy
+- added 13361 Skullforge Reaver
+- added 13368 Bonescraper
+- added 13394 Skul's Cold Embrace
+- added 13397 Stoneskin Gargoyle Cape
+- added 13398 Boots of the Shrieker
+- added 13404 Mask of the Unforgiven
+- added 13502 Handcrafted Mastersmith Girdle
+- added 13505 Runeblade of Baron Rivendare
+- added 13508 Eye of Arachnida
+- added 13515 Ramstein's Lightning Bolts
+- added 13538 Windshrieker Pauldrons
+- added 13539 Banshee's Touch
+- added 13938 Bonecreeper Stylus
+- added 13952 Iceblade Hacker
+- added 13953 Silent Fang
+- added 14531 Frightskull Shaft
+- added 14548 Royal Cap Spaulders
+- added 14553 Sash of Mercy
+- added 18048 Mastersmith's Hammer
+- added 18103 Band of Rumination
+- added 18104 Feralsurge Girdle
+- added 18298 Unbridled Leggings
+- added 18313 Helm of Awareness
+- added 18328 Shadewood Cloak
+- added 18339 Eidolon Cloak
+- added 18376 Timeworn Mace
+- added 18378 Silvermoon Leggings
+- added 18385 Robe of Everlasting Night
+- added 18397 Elder Magus Pendant
+- added 18425 Kreeg's Mug
+- added 18472 Royal Seal of Eldre'Thalas
+- added 18484 Cho'Rush's Blade
+- added 18493 Bulky Iron Spaulders
+- added 18520 Barbarous Blade
+- added 18681 Burial Shawl
+- added 18699 Icy Tomb Spaulders
+- added 18720 Shroud of the Nathrezim
+- added 18721 Barrage Girdle
+- added 18734 Pale Moon Cloak
+- added 18743 Gracious Cape
+- added 22225 Dragonskin Cowl
+- added 22267 Spellweaver's Turban
+- added 22268 Draconic Infused Emblem
+- added 226697 Red Bag
+- added 280083 Truesight Rifle
+- added 282707 Arcanum of Binding
+- added 284266 Wintersaber Hide Lined Gloves
+- added 287043 Predaceous Band
+- added 287045 Ancient Mattock
+- removed 190325 Monster - Incubus Whip Mace1H
+- removed 217336 Monster - Incubus Whip Mace1H
+- changed 253711 Goliath's Wristguards
+- changed 254013 Earthen Silk Slippers
+
+## Files
+
+- [`items-changed.diff`](items-changed.diff)
+- [`items-removed.txt`](items-removed.txt)
+- [`items.txt`](items.txt)
