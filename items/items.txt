@@ -103907,15 +103907,15 @@ text      "Use before 2010"
 21546 Elixir of Holy Power
 item      common, Elixirs
 level     ilvl 50, requires level 40
-effect    use: 1310077 Greater Firepower (1 charge, consumed, 3 s shared cooldown)
+effect    use: 1310077 Holy Power (1 charge, consumed, 3 s shared cooldown)
 sells     35 copper
 =======
-21547 Recipe: Elixir of Greater Firepower
+21547 Recipe: Elixir of Holy Power
 item      uncommon, Alchemy
 level     ilvl 50
 effect    use: 402265 Learning (1 charge, consumed)
 effect    learn: 26277 Elixir of Holy Power
-text      "Teaches you how to make an Elixir of Greater Firepower."
+text      "Teaches you how to craft Elixir of Holy Power."
 sells     2500 copper
 =======
 21548 Pattern: Stormshroud Gloves
@@ -166822,6 +166822,12 @@ level     ilvl 59, requires level 54
 binds     binds when equipped
 stats     +9 stamina, +5 hit rating
 weapon    111 - 111 damage, speed 1.90, 58.4 dps
+=======
+287038 Naturopathy Footpads
+item      rare, Cloth, feet
+level     ilvl 59, requires level 54
+binds     binds when equipped
+stats     +17 spirit, +18 health per 5 sec, +22 healing, +7 spell damage
 =======
 287043 Predaceous Band
 item      rare, Miscellaneous, finger
