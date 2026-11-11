@@ -1,0 +1,15 @@
+# priest
+--- 14913 Twilight Focus
++++ 14913 Twilight Focus
+@@ -1,11 +1,10 @@
+ 14913 Twilight Focus
+ school    physical
+-stance exclude Shadowform
+ attrs     passive
+ labels    18
+ 
+ effect 1  SPELLMOD_NOT_LOSE_CASTING_TIME +70% on family 6 mask 0xb63e90,0x818004,0x80,0x40100000
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=70 misc=9 family=6 mask=0xb63e90,0x818004,0x80,0x40100000 target=[1,0]
+ tooltip   Gives your spells a $s1% chance to not lose casting time when you take damage.
+ 
+ https://www.wowhead.com/forever/spell=14913
