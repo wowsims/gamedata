@@ -1,0 +1,157 @@
+# hunter
+--- 1510 Volley (Rank 1)
++++ 1510 Volley (Rank 1)
+@@ -1,21 +1,21 @@
+ 1510 Volley (Rank 1)
+ school    arcane
+ defense   ranged
+ duration  6 s
+ gcd       1.5 s
+ cost      350 mana
+ range     35 yd
+ equip     needs a bow, gun or crossbow
+-attrs     channeled
++attrs     channeled, suppresses weapon procs
+ labels    23
+ refs      1279721 Volley
+ 
+ effect 1  a dummy effect holding 6 to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=0 misc=41245 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (6 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+ tooltip   Continuously fires a volley of ammo at the target area, causing $1279721s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
+ 
+ https://www.wowhead.com/forever/spell=1510
+--- 14294 Volley (Rank 2)
++++ 14294 Volley (Rank 2)
+@@ -1,21 +1,21 @@
+ 14294 Volley (Rank 2)
+ school    arcane
+ defense   ranged
+ duration  6 s
+ gcd       1.5 s
+ cost      420 mana
+ range     35 yd
+ equip     needs a bow, gun or crossbow
+-attrs     channeled
++attrs     channeled, suppresses weapon procs
+ labels    23
+ refs      1279719 Volley
+ 
+ effect 1  a dummy effect holding 3 to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=0 misc=41244 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (6 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+ tooltip   Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
+ 
+ https://www.wowhead.com/forever/spell=14294
+--- 14295 Volley (Rank 3)
++++ 14295 Volley (Rank 3)
+@@ -1,21 +1,21 @@
+ 14295 Volley (Rank 3)
+ school    arcane
+ defense   ranged
+ duration  6 s
+ gcd       1.5 s
+ cost      490 mana
+ range     35 yd
+ equip     needs a bow, gun or crossbow
+-attrs     channeled
++attrs     channeled, suppresses weapon procs
+ labels    23
+ refs      1279715 Volley
+ 
+ effect 1  a dummy effect to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=0 misc=41242 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (6 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+ tooltip   Continuously fires a volley of ammo at the target area, causing $1279715s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
+ 
+ https://www.wowhead.com/forever/spell=14295
+--- 1279715 Volley (Rank 3)
++++ 1279715 Volley (Rank 3)
+@@ -1,10 +1,11 @@
+ 1279715 Volley (Rank 3)
+ school    arcane
+ defense   ranged
+ range     50000 yd
++attrs     suppresses weapon procs
+ labels    23
+ 
+ effect 1  112 arcane damage to target 87
+           E_SCHOOL_DAMAGE base=112 radius=8 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279715
+--- 1279719 Volley (Rank 2)
++++ 1279719 Volley (Rank 2)
+@@ -1,10 +1,11 @@
+ 1279719 Volley (Rank 2)
+ school    arcane
+ defense   ranged
+ range     50000 yd
++attrs     suppresses weapon procs
+ labels    23
+ 
+ effect 1  91 arcane damage to target 87
+           E_SCHOOL_DAMAGE base=91 radius=8 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279719
+--- 1279721 Volley (Rank 1)
++++ 1279721 Volley (Rank 1)
+@@ -1,10 +1,11 @@
+ 1279721 Volley (Rank 1)
+ school    arcane
+ defense   ranged
+ range     50000 yd
++attrs     suppresses weapon procs
+ labels    23
+ 
+ effect 1  70 arcane damage to target 87
+           E_SCHOOL_DAMAGE base=70 radius=8 target=[87,16]
+ 
+ https://www.wowhead.com/forever/spell=1279721
+# priest
+--- 1277455 Confounding Flash
++++ 1277455 Confounding Flash
+@@ -1,18 +1,17 @@
+ 1277455 Confounding Flash
+ school    holy
+ defense   magic
+ mechanic  mechanic 2
+ duration  3 s
+ cast      0.5 s
+ cooldown  120 s
+ cost      3% of base mana
+-stance exclude Shadowform
+ targets   up to 5
+ labels    18
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_MOD_CONFUSE base=0 amplitude=1 radius=8 target=[18,16]
+ tooltip   Confuses up to $i enemies within $a1 yds for $d. Any damage taken will break the effect.
+ aura      Confused.
+ 
+ https://www.wowhead.com/forever/spell=1277455
+# shaman
+--- 8250 Flametongue Totem (Rank 2)
++++ 8250 Flametongue Totem (Rank 2)
+@@ -1,12 +1,12 @@
+ 8250 Flametongue Totem (Rank 2)
+ school    fire
+ defense   magic
+ attrs     passive
+ labels    24
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+ 
+ effect 1  raid aura: casts nothing on its trigger
+-          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=0 radius=30 target=[1,0]
++          E_APPLY_AREA_AURA_RAID A_PROC_TRIGGER_SPELL base=8248 radius=30 target=[1,0]
+ aura      Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
+ 
+ https://www.wowhead.com/forever/spell=8250

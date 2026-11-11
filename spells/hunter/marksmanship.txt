@@ -1659,7 +1659,7 @@ gcd       1.5 s
 cost      350 mana
 range     35 yd
 equip     needs a bow, gun or crossbow
-attrs     channeled
+attrs     channeled, suppresses weapon procs
 labels    23
 refs      1279721 Volley
 
@@ -1681,7 +1681,7 @@ gcd       1.5 s
 cost      420 mana
 range     35 yd
 equip     needs a bow, gun or crossbow
-attrs     channeled
+attrs     channeled, suppresses weapon procs
 labels    23
 refs      1279719 Volley
 
@@ -1703,7 +1703,7 @@ gcd       1.5 s
 cost      490 mana
 range     35 yd
 equip     needs a bow, gun or crossbow
-attrs     channeled
+attrs     channeled, suppresses weapon procs
 labels    23
 refs      1279715 Volley
 
@@ -1737,6 +1737,7 @@ https://www.wowhead.com/forever/spell=22908
 school    arcane
 defense   ranged
 range     50000 yd
+attrs     suppresses weapon procs
 labels    23
 
 effect 1  112 arcane damage to target 87
@@ -1748,6 +1749,7 @@ https://www.wowhead.com/forever/spell=1279715
 school    arcane
 defense   ranged
 range     50000 yd
+attrs     suppresses weapon procs
 labels    23
 
 effect 1  91 arcane damage to target 87
@@ -1759,6 +1761,7 @@ https://www.wowhead.com/forever/spell=1279719
 school    arcane
 defense   ranged
 range     50000 yd
+attrs     suppresses weapon procs
 labels    23
 
 effect 1  70 arcane damage to target 87
