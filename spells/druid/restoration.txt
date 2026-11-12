@@ -2220,8 +2220,8 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    21
 
-effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.066 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -2258,8 +2258,8 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    21
 
-effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.066 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -2283,8 +2283,8 @@ stance exclude Moonkin
 attrs     periodic can crit
 labels    21
 
-effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
-          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms radius=43.5 target=[132,31]
+effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
+          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.066 period=1000ms radius=43.5 target=[132,31]
 effect 2  a dummy aura holding 5 to target 132
           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
 tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
