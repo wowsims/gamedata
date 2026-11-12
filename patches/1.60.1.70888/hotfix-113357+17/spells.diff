@@ -1,0 +1,202 @@
+# druid
+--- 408120 Wild Growth (Rank 1)
++++ 408120 Wild Growth (Rank 1)
+@@ -1,24 +1,24 @@
+ 408120 Wild Growth (Rank 1)
+ school    nature
+ defense   magic
+ duration  7 s
+ cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      550 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+-effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+-          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.033 period=1000ms radius=43.5 target=[132,31]
++effect 1  48 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
++          E_APPLY_AURA A_PERIODIC_HEAL base=40 ppl=1 sp=0.066 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 second.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=408120
+--- 1238214 Wild Growth (Rank 2)
++++ 1238214 Wild Growth (Rank 2)
+@@ -1,24 +1,24 @@
+ 1238214 Wild Growth (Rank 2)
+ school    nature
+ defense   magic
+ duration  7 s
+ cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      755 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+-effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+-          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.033 period=1000ms radius=43.5 target=[132,31]
++effect 1  70.4 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
++          E_APPLY_AURA A_PERIODIC_HEAL base=60 ppl=1.3 sp=0.066 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 sec.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1238214
+--- 1238215 Wild Growth (Rank 3)
++++ 1238215 Wild Growth (Rank 3)
+@@ -1,24 +1,24 @@
+ 1238215 Wild Growth (Rank 3)
+ school    nature
+ defense   magic
+ duration  7 s
+ cast      3 s
+ cooldown  6 s
+ gcd       1.5 s
+ cost      1050 mana
+ range     40 yd
+ stance    Tree of Life
+ stance exclude Moonkin
+ attrs     periodic can crit
+ labels    21
+ 
+-effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.033 spell power)
+-          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.033 period=1000ms radius=43.5 target=[132,31]
++effect 1  97 healing every 1 s to target 132 (7 ticks, at level 60, +0.066 spell power)
++          E_APPLY_AURA A_PERIODIC_HEAL base=97 ppl=1.6 sp=0.066 period=1000ms radius=43.5 target=[132,31]
+ effect 2  a dummy aura holding 5 to target 132
+           E_APPLY_AURA A_DUMMY base=5 radius=15 target=[132,31]
+ tooltip   Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+ aura      Heals $w1 damage every $t1 sec.
+ vars      $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
+           $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
+ 
+ https://www.wowhead.com/forever/spell=1238215
+# mage
+--- 865 Frost Nova (Rank 2)
++++ 865 Frost Nova (Rank 2)
+@@ -1,23 +1,24 @@
+ 865 Frost Nova (Rank 2)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  25 s (category)
+ gcd       1.5 s
+ cost      85 mana
++attrs     can proc from procs
+ labels    17
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  34–39 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+           E_SCHOOL_DAMAGE base=34 ppl=0.5 variance=0.11428571 sp=0.029 radius=10 target=[22,15]
+ effect 2  roots to every enemy around the caster
+           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+ tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+ aura      Frozen in place.
+ vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+           $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+           $frostdamage1=$?s11151[${1.02}][${1.0}]
+           $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+           $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
+ 
+ https://www.wowhead.com/forever/spell=865
+--- 6131 Frost Nova (Rank 3)
++++ 6131 Frost Nova (Rank 3)
+@@ -1,23 +1,24 @@
+ 6131 Frost Nova (Rank 3)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  25 s (category)
+ gcd       1.5 s
+ cost      115 mana
++attrs     can proc from procs
+ labels    17
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  52–59 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+           E_SCHOOL_DAMAGE base=53 ppl=0.5 variance=0.10909091 sp=0.029 radius=10 target=[22,15]
+ effect 2  roots to every enemy around the caster
+           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+ tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+ aura      Frozen in place.
+ vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+           $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+           $frostdamage1=$?s11151[${1.02}][${1.0}]
+           $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+           $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
+ 
+ https://www.wowhead.com/forever/spell=6131
+--- 10230 Frost Nova (Rank 4)
++++ 10230 Frost Nova (Rank 4)
+@@ -1,23 +1,24 @@
+ 10230 Frost Nova (Rank 4)
+ school    frost
+ defense   magic
+ duration  8 s
+ cooldown  25 s (category)
+ gcd       1.5 s
+ cost      145 mana
++attrs     can proc from procs
+ labels    17
+ proc      hears PROC_FLAG_TAKE_MELEE_SWING, PROC_FLAG_TAKE_MELEE_ABILITY, PROC_FLAG_TAKE_RANGED_ATTACK, PROC_FLAG_TAKE_RANGED_ABILITY, PROC_FLAG_TAKE_HARMFUL_ABILITY, PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  71–80 frost damage to every enemy around the caster (at level 60, +0.029 spell power)
+           E_SCHOOL_DAMAGE base=73 ppl=0.5 variance=0.10666667 sp=0.029 radius=10 target=[22,15]
+ effect 2  roots to every enemy around the caster
+           E_APPLY_AURA A_MOD_ROOT base=0 radius=10 mechanic=7 target=[22,15]
+ tooltip   Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
+ aura      Frozen in place.
+ vars      $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
+           $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
+           $frostdamage1=$?s11151[${1.02}][${1.0}]
+           $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
+           $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
+ 
+ https://www.wowhead.com/forever/spell=10230
+# priest
+--- 1262650 Reagent Economy
++++ 1262650 Reagent Economy
+@@ -1,12 +1,12 @@
+ 1262650 Reagent Economy
+ school    shadow
+ defense   magic
+ duration  permanent
+ cooldown  300 s
+ charges   1
+ proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+-          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=6 mask=0x128 target=[1,0]
++          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=6 mask=0x108,0x400000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262650
+--- 1262312 The Quick and the Dead
++++ 1262312 The Quick and the Dead
+@@ -1,10 +1,10 @@
+ 1262312 The Quick and the Dead
+ school    shadow
+ defense   magic
+ duration  120 s
+ 
+-effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62810025,0x1,0x100000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62810025,0x1,0x100000 target=[1,0]
++effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62c10025,0x1,0x100000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62c10025,0x1,0x100000 target=[1,0]
+ aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
+ 
+ https://www.wowhead.com/forever/spell=1262312
