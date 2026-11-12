@@ -1,0 +1,124 @@
+# shaman
+--- 408498 Maelstrom Weapon
++++ 408498 Maelstrom Weapon
+@@ -1,16 +1,16 @@
+ 408498 Maelstrom Weapon
+ school    nature
+ attrs     passive, can proc from procs
+ labels    24
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says damaging spells only
+ refs      408505 Maelstrom Weapon
+ 
+ effect 1  a dummy aura holding 20
+           E_APPLY_AURA A_DUMMY base=20 target=[1,0]
+-effect 2  a dummy aura holding 50
+-          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
++effect 2  a dummy aura holding 2
++          E_APPLY_AURA A_DUMMY base=2 target=[1,0]
+ effect 3  a dummy aura holding 5
+           E_APPLY_AURA A_DUMMY base=5 target=[1,0]
+-tooltip   When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
++tooltip   When you deal damage with a melee attack, you have a ${($mws*$s2/60)*100}% chance (based on weapon speed) to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
+ 
+ https://www.wowhead.com/forever/spell=408498
+--- 17364 Stormstrike
++++ 17364 Stormstrike
+@@ -1,23 +1,23 @@
+ 17364 Stormstrike
+ school    physical
+ defense   melee
+ duration  12 s
+-cooldown  6 s
++cooldown  8 s
+ gcd       1.5 s
+ cost      8% of base mana
+ range     5 yd
+ charges   1
+ attrs     can proc from procs
+ labels    24
+ proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  normalised weapon damage to the enemy
+           E_NORMALIZED_WEAPON_DMG base=0 target=[6,0]
+ effect 2  unrecognised shape
+           E_APPLY_AURA A_MOD_SPELL_DAMAGE_FROM_CASTER base=20 family=11 mask=0x100003 target=[6,0]
+-effect 3  150% weapon damage to the enemy
+-          E_WEAPON_PERCENT_DAMAGE base=150 target=[6,0]
++effect 3  100% weapon damage to the enemy
++          E_WEAPON_PERCENT_DAMAGE base=100 target=[6,0]
+ tooltip   Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
+ aura      Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
+ 
+ https://www.wowhead.com/forever/spell=17364
+--- 8232 Windfury Weapon (Rank 1)
++++ 8232 Windfury Weapon (Rank 1)
+@@ -1,14 +1,14 @@
+ 8232 Windfury Weapon (Rank 1)
+ school    nature
+ defense   magic
+ gcd       1.5 s
+ cost      90 mana
+ equip     needs a melee weapon
+ labels    24
+ refs      8233 Windfury Weapon
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=283 target=[0,0]
+-tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
++tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. Lasts for 60 minutes.
+ 
+ https://www.wowhead.com/forever/spell=8232
+--- 8235 Windfury Weapon (Rank 2)
++++ 8235 Windfury Weapon (Rank 2)
+@@ -1,14 +1,14 @@
+ 8235 Windfury Weapon (Rank 2)
+ school    nature
+ defense   magic
+ gcd       1.5 s
+ cost      115 mana
+ equip     needs a melee weapon
+ labels    24
+ refs      8236 Windfury Weapon
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=284 target=[0,0]
+-tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
++tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. Lasts for 60 minutes.
+ 
+ https://www.wowhead.com/forever/spell=8235
+--- 10486 Windfury Weapon (Rank 3)
++++ 10486 Windfury Weapon (Rank 3)
+@@ -1,14 +1,14 @@
+ 10486 Windfury Weapon (Rank 3)
+ school    nature
+ defense   magic
+ gcd       1.5 s
+ cost      140 mana
+ equip     needs a melee weapon
+ labels    24
+ refs      10484 Windfury Weapon
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=525 target=[0,0]
+-tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
++tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. Lasts for 60 minutes.
+ 
+ https://www.wowhead.com/forever/spell=10486
+--- 16362 Windfury Weapon (Rank 4)
++++ 16362 Windfury Weapon (Rank 4)
+@@ -1,14 +1,14 @@
+ 16362 Windfury Weapon (Rank 4)
+ school    nature
+ defense   magic
+ gcd       1.5 s
+ cost      165 mana
+ equip     needs a melee weapon
+ labels    24
+ refs      16361 Windfury Weapon
+ 
+ effect 1  unrecognised shape
+           E_360 base=1800 misc=1669 target=[0,0]
+-tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
++tooltip   Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. Lasts for 60 minutes.
+ 
+ https://www.wowhead.com/forever/spell=16362
