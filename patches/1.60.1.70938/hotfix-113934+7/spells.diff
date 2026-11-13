@@ -1,0 +1,50 @@
+# mage
+--- 18949 Atal'ai Poison
++++ 18949 Atal'ai Poison
+@@ -1,12 +1,14 @@
+ 18949 Atal'ai Poison
+ school    nature
+ defense   magic
+ duration  30 s
+ gcd       1.5 s
+ range     100 yd
+ 
+ effect 1  40 nature damage every 3 s to every enemy around the caster (10 ticks)
+           E_APPLY_AURA A_PERIODIC_DAMAGE base=40 sp=1 period=3000ms radius=10 target=[22,15]
++effect 2  unrecognised shape
++          E_SEND_EVENT base=0 misc=108849 target=[0,0]
+ aura      $s1 Nature damage inflicted every $t1 sec.
+ 
+ https://www.wowhead.com/forever/spell=18949
+--- 18948 Dark Energy
++++ 18948 Dark Energy
+@@ -1,12 +1,14 @@
+ 18948 Dark Energy
+ school    shadow
+ defense   magic
+ duration  300 s
+ gcd       1.5 s
+ range     100 yd
+ 
+ effect 1  -50% strength to every enemy around the caster
+           E_APPLY_AURA A_MOD_TOTAL_STAT_PERCENTAGE base=-50 sp=1 misc2=1 radius=10 target=[22,15]
++effect 2  unrecognised shape
++          E_SEND_EVENT base=0 misc=108849 target=[0,0]
+ aura      Strength reduced by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=18948
+--- 12354 Flame of Hakkar
++++ 12354 Flame of Hakkar
+@@ -1,10 +1,12 @@
+ 12354 Flame of Hakkar
+ school    fire
+ defense   magic
+ gcd       1.5 s
+ range     100 yd
+ 
+ effect 1  213–287 fire damage to every enemy around the caster
+           E_SCHOOL_DAMAGE base=250 variance=0.296 sp=1 radius=10 target=[22,15]
++effect 2  unrecognised shape
++          E_SEND_EVENT base=0 misc=108849 target=[0,0]
+ 
+ https://www.wowhead.com/forever/spell=12354
