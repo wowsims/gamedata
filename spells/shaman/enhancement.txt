@@ -1505,11 +1505,11 @@ duration  300 s
 gcd       1 s
 cost      115 mana
 labels    24
-refs      8515 Windfury Totem, 8516 Windfury Totem
+refs      8515 Windfury Totem
 
 effect 1  summons creature 6112 to target 43
           E_SUMMON base=5 misc=6112 misc2=83 target=[43,0]
-tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8515a1 yards.  Each main hand hit has a 20% chance of granting the attacker $8516s2 extra attack with ${$8516m1*$<mult>} extra melee attack power. Lasts $d.
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8515a1 yards.  Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$8515m2*$<mult>} extra melee attack power. Lasts $d.
 vars      $mult1=$?s29192[${1.15}][${1.0}]
           $mult=$?s29193[${1.30}][${$<mult1>}]
 
@@ -1518,54 +1518,36 @@ https://www.wowhead.com/forever/spell=8512
 8516 Windfury Totem (Rank 1)
 school    physical
 defense   melee
-duration  1 s
 range     100 yd
-charges   2
+attrs     not a proc
 labels    24
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
 
-effect 1  +95 attack power
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=95 target=[1,0]
-effect 2  1 extra attacks
-          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
-tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
-aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=8516
 =======
 10608 Windfury Totem (Rank 2)
 school    physical
 defense   melee
-duration  1 s
 range     100 yd
-charges   2
+attrs     not a proc
 labels    24
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
 
-effect 1  +179 attack power
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=179 target=[1,0]
-effect 2  1 extra attacks
-          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
-tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
-aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10608
 =======
 10610 Windfury Totem (Rank 3)
 school    physical
 defense   melee
-duration  1 s
 range     100 yd
-charges   2
+attrs     not a proc
 labels    24
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; 20% chance
 
-effect 1  +246 attack power
-          E_APPLY_AURA A_MOD_ATTACK_POWER base=246 target=[1,0]
-effect 2  1 extra attacks
-          E_ADD_EXTRA_ATTACKS base=1 target=[1,0]
-tooltip   Attack Power increased by $s1. Granted $s2 Extra Attack.
-aura      Attack Power increased by $s1. Granted $s2 Extra Attack.
+effect 1  weapon damage to the enemy
+          E_WEAPON_DAMAGE base=0 target=[6,0]
 
 https://www.wowhead.com/forever/spell=10610
 =======
@@ -1576,11 +1558,11 @@ duration  300 s
 gcd       1 s
 cost      175 mana
 labels    24
-refs      10609 Windfury Totem, 10608 Windfury Totem
+refs      10609 Windfury Totem
 
 effect 1  summons creature 7483 to target 43
           E_SUMMON base=5 misc=7483 misc2=83 target=[43,0]
-tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10609a1 yards. Each main hand hit has a 20% chance of granting the attacker $10608s2 extra attack with ${$10608m1*$<mult>} extra melee attack power. Lasts $d.
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10609a1 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$10609m2*$<mult>} extra melee attack power. Lasts $d.
 vars      $mult1=$?s29192[${1.15}][${1.0}]
           $mult=$?s29193[${1.30}][${$<mult1>}]
 
@@ -1593,11 +1575,11 @@ duration  300 s
 gcd       1 s
 cost      250 mana
 labels    24
-refs      10612 Windfury Totem, 10610 Windfury Totem
+refs      10612 Windfury Totem
 
 effect 1  summons creature 7484 to target 43
           E_SUMMON base=5 misc=7484 misc2=83 target=[43,0]
-tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10612a1 yards. Each main hand hit has a 20% chance of granting the attacker $10610s2 extra attack with ${$10610m1*$<mult>} extra melee attack power. Lasts $d.
+tooltip   Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10612a1 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$10612m2*$<mult>} extra melee attack power. Lasts $d.
 vars      $mult1=$?s29192[${1.15}][${1.0}]
           $mult=$?s29193[${1.30}][${$<mult1>}]
 
