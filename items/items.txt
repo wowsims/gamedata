@@ -118426,6 +118426,11 @@ level     ilvl 30
 binds     quest item
 effect    use: 440505 Invisibility (120 s cooldown)
 =======
+217716 Vile Concoction
+item      common, Other
+level     ilvl 1, requires level 1
+effect    use: 440827 Throw Concoction
+=======
 217717 Hollow Emblem
 item      common, Junk
 level     ilvl 1
@@ -118460,6 +118465,13 @@ level     ilvl 1
 binds     binds when picked up
 unique    yes
 effect    use: 440829 Combine Offerings
+=======
+217727 Ward of the Dead
+item      common, Miscellaneous, trinket
+level     ilvl 1
+binds     binds when picked up
+unique    yes
+effect    equip: 440841 Ward of the Dead
 =======
 217736 Rune of the Coterie
 item      uncommon, Other
@@ -145129,7 +145141,7 @@ item      rare, Miscellaneous, finger
 level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
-stats     +14 intellect, +10 hit rating, +8 spirit
+stats     +14 intellect, +10 hit rating, +9 spell power
 sells     23961 copper
 =======
 272407 Blessed Band of Light
@@ -145137,7 +145149,7 @@ item      rare, Miscellaneous, finger
 level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
-stats     +31 healing, +10 spell damage, +10 stamina, +8 spirit, +10 hit rating
+stats     +31 healing, +10 spell damage, +10 stamina, +8 spirit
 sells     23961 copper
 =======
 272408 Cutthroat's Signet
