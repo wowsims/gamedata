@@ -129,6 +129,8 @@ effect 1  immune to fear
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=5 target=[1,0]
 effect 2  immune to knockout
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=14 target=[1,0]
+effect 3  immune to sapped
+          E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=30 target=[1,0]
 tooltip   The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.
 aura      Immune to Fear and Incapacitate effects.  Generating extra rage when taking damage.
 
