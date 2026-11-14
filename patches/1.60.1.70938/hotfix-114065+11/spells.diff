@@ -1,0 +1,15 @@
+# hunter
+--- 1301252 1.60.0 - Item - Tier 1 - Hunter 5P Bonus - Aimed and Multi-Shot
++++ 1301252 1.60.0 - Item - Tier 1 - Hunter 5P Bonus - Aimed and Multi-Shot
+@@ -1,9 +1,9 @@
+ 1301252 1.60.0 - Item - Tier 1 - Hunter 5P Bonus - Aimed and Multi-Shot
+ school    physical
+ attrs     passive
+ 
+-effect 1  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x20000
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=9 mask=0x20000 target=[1,0]
++effect 1  SPELLMOD_COOLDOWN -1 s on family 9 mask 0x21000
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-1000 misc=11 family=9 mask=0x21000 target=[1,0]
+ tooltip   Reduces the cooldown of your Aimed Shot and Multi-Shot abilities by ${$m1/-1000} sec.
+ 
+ https://www.wowhead.com/forever/spell=1301252
