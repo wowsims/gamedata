@@ -1,0 +1,128 @@
+# druid
+--- 1262636 Reagent Economy
++++ 1262636 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262636 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=7 mask=0x10040000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262636
+# mage
+--- 1262638 Reagent Economy
++++ 1262638 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262638 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=3 mask=0x400,0x0,0x0,0x18000000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262638
+# paladin
+--- 1262647 Reagent Economy
++++ 1262647 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262647 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=10 mask=0x11010192,0x0,0x410000,0x200040 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262647
+# priest
+--- 1262650 Reagent Economy
++++ 1262650 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262650 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=6 mask=0x108,0x400000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262650
+# rogue
+--- 1301708 1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Eviscerate and Death Mark
++++ 1301708 1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Eviscerate and Death Mark
+@@ -1,9 +1,9 @@
+-1301708 1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
++1301708 1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Eviscerate and Death Mark
+ school    physical
+ attrs     passive
+ 
+-effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x20000,0x8
+-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=14 family=8 mask=0x20000,0x8 target=[1,0]
+-tooltip   Reduces the cost of your Envenom and Eviscerate abilities by $s1 Energy.
++effect 1  SPELLMOD_COST -5 (-0.5 on a rage bar) on family 8 mask 0x20000,0x0,0x4
++          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-5 misc=14 family=8 mask=0x20000,0x0,0x4 target=[1,0]
++tooltip   Reduces the cost of your Eviscerate and Death Mark abilities by $s1 Energy.
+ 
+ https://www.wowhead.com/forever/spell=1301708
+--- 1262662 Reagent Economy
++++ 1262662 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262662 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=8 mask=0x0,0x0,0x10 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262662
+# shaman
+--- 1262643 Reagent Economy
++++ 1262643 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262643 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=11 mask=0x200 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262643
+# warlock
+--- 1262654 Reagent Economy
++++ 1262654 Reagent Economy
+@@ -1,12 +1,8 @@
+ 1262654 Reagent Economy
+ school    shadow
+-defense   magic
+ duration  permanent
+-cooldown  300 s
+-charges   1
+-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=5 mask=0x0,0x0,0x1,0x4000000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262654
