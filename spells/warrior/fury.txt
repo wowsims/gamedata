@@ -1282,7 +1282,7 @@ gcd       1 s
 cost      25% of base health
 charges   4
 labels    25
-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
 refs      1329554 Reckless Swings
 
 effect 1  casts 1329554 Reckless Swings on its trigger

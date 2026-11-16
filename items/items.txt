@@ -88095,8 +88095,7 @@ sells     14744 copper
 item      epic, Miscellaneous, trinket
 level     ilvl 65
 binds     binds when picked up
-stats     +20 fire resistance, +9 health per 5 sec
-effect    use: 1287808 Blood of the Broodmother (300 s cooldown, 15 s shared cooldown)
+stats     +25 fire resistance, +8 defense rating, +15 parry rating, +12 health per 5 sec
 sells     46030 copper
 =======
 18407 Felcloth Gloves
@@ -92956,7 +92955,7 @@ sells     10 copper
 =======
 19287 Darkmoon Card: Heroism
 item      epic, Miscellaneous, trinket
-level     ilvl 66, requires level 60
+level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
 effect    equip: 23689 Heroism
@@ -92964,7 +92963,7 @@ sells     100000 copper
 =======
 19288 Darkmoon Card: Blue Dragon
 item      epic, Miscellaneous, trinket
-level     ilvl 66, requires level 60
+level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
 effect    equip: 23688 Aura of the Blue Dragon
@@ -92972,7 +92971,7 @@ sells     100000 copper
 =======
 19289 Darkmoon Card: Maelstrom
 item      epic, Miscellaneous, trinket
-level     ilvl 66, requires level 60
+level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
 effect    equip: 23686 Lightning Strike
@@ -92980,7 +92979,7 @@ sells     100000 copper
 =======
 19290 Darkmoon Card: Twisting Nether
 item      epic, Miscellaneous, trinket
-level     ilvl 66, requires level 60
+level     ilvl 65, requires level 60
 binds     binds when picked up
 unique    yes
 effect    equip: 23701 Twisting Nether
@@ -108668,6 +108667,13 @@ stats     +17 stamina, +18 intellect, +33 healing, +4 mana per 5 sec
 set       The Earthshatterer
 sells     80127 copper
 =======
+22472 Boots of Ferocity
+item      rare, Leather, feet
+level     ilvl 61, requires level 56
+binds     binds when picked up
+stats     +9 agility, +13 stamina, +12 strength, +6 defense rating
+sells     20193 copper
+=======
 22476 Bonescythe Breastplate
 item      epic, Leather, chest
 level     ilvl 92, requires level 60
@@ -114225,13 +114231,13 @@ effect    use: 418599 Dig Up Treasure (1 charge, consumed)
 text      "Beneath the bridge from Kharanos to Ironforge."
 =======
 208222 Old Guard Retaliator
-item      uncommon, Axe, two-hand
+item      rare, Axe, two-hand
 level     ilvl 57
 binds     binds when picked up
 unique    yes
 classes   warrior
-stats     +5 strength, +5 agility, +8 stamina
-weapon    131 - 197 damage, speed 3.70, 44.3 dps
+stats     +6 stamina, +2 stat 90
+weapon    145 - 218 damage, speed 3.70, 49.1 dps
 effect    equip: 418509 Primal Bloodthirst
 text      "The previous owner immaculately cared for this weapon."
 sells     81041 copper
@@ -169387,6 +169393,7 @@ effect    use: 1328948 Enchant Boots - Speed (1 charge, consumed)
 289560 Formula: Enchant Boots - Speed
 item      uncommon, Enchanting
 level     ilvl 50
+binds     binds when picked up
 effect    use: 402265 Learning (1 charge, consumed)
 effect    learn: 1328948 Enchant Boots - Speed
 text      "Teaches you how to permanently enchant boots to increase movement speed by 8%."
