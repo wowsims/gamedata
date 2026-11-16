@@ -1,0 +1,40 @@
+# druid
+--- 1223081 Genesis
++++ 1223081 Genesis
+@@ -1,12 +1,12 @@
+ 1223081 Genesis
+ school    physical
+ attrs     passive
+ labels    21
+ 
+-effect 1  SPELLMOD_DOT +1% on family 7 mask 0x220252,0x4000100,0x200000,0x40000000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x220252,0x4000100,0x200000,0x40000000 target=[1,0]
++effect 1  SPELLMOD_DOT +1% on family 7 mask 0x220252,0x4000100,0x200000,0x40000080
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x220252,0x4000100,0x200000,0x40000080 target=[1,0]
+ effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x0,0x2
+           E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x0,0x2 target=[1,0]
+ tooltip   Increases the periodic damage and healing done by your spells and abilities by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=1223081
+# warrior
+--- 1329555 Reckless Swings
++++ 1329555 Reckless Swings
+@@ -1,17 +1,17 @@
+ 1329555 Reckless Swings
+ school    physical
+ duration  8 s
+ cooldown  15 s
+ gcd       1 s
+ cost      25% of base health
+ charges   4
+ labels    25
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; no roll, it fires whenever its condition is met
+ refs      1329554 Reckless Swings
+ 
+ effect 1  casts 1329554 Reckless Swings on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1329554 target=[1,0]
+ tooltip   Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.
+ aura      Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.
+ 
+ https://www.wowhead.com/forever/spell=1329555

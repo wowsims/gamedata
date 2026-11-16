@@ -1,0 +1,83 @@
+--- 18406 Onyxia Blood Talisman
++++ 18406 Onyxia Blood Talisman
+@@ -1,7 +1,6 @@
+ 18406 Onyxia Blood Talisman
+ item      epic, Miscellaneous, trinket
+ level     ilvl 65
+ binds     binds when picked up
+-stats     +20 fire resistance, +9 health per 5 sec
+-effect    use: 1287808 Blood of the Broodmother (300 s cooldown, 15 s shared cooldown)
++stats     +25 fire resistance, +8 defense rating, +15 parry rating, +12 health per 5 sec
+ sells     46030 copper
+--- 19287 Darkmoon Card: Heroism
++++ 19287 Darkmoon Card: Heroism
+@@ -1,7 +1,7 @@
+ 19287 Darkmoon Card: Heroism
+ item      epic, Miscellaneous, trinket
+-level     ilvl 66, requires level 60
++level     ilvl 65, requires level 60
+ binds     binds when picked up
+ unique    yes
+ effect    equip: 23689 Heroism
+ sells     100000 copper
+--- 19288 Darkmoon Card: Blue Dragon
++++ 19288 Darkmoon Card: Blue Dragon
+@@ -1,7 +1,7 @@
+ 19288 Darkmoon Card: Blue Dragon
+ item      epic, Miscellaneous, trinket
+-level     ilvl 66, requires level 60
++level     ilvl 65, requires level 60
+ binds     binds when picked up
+ unique    yes
+ effect    equip: 23688 Aura of the Blue Dragon
+ sells     100000 copper
+--- 19289 Darkmoon Card: Maelstrom
++++ 19289 Darkmoon Card: Maelstrom
+@@ -1,7 +1,7 @@
+ 19289 Darkmoon Card: Maelstrom
+ item      epic, Miscellaneous, trinket
+-level     ilvl 66, requires level 60
++level     ilvl 65, requires level 60
+ binds     binds when picked up
+ unique    yes
+ effect    equip: 23686 Lightning Strike
+ sells     100000 copper
+--- 19290 Darkmoon Card: Twisting Nether
++++ 19290 Darkmoon Card: Twisting Nether
+@@ -1,7 +1,7 @@
+ 19290 Darkmoon Card: Twisting Nether
+ item      epic, Miscellaneous, trinket
+-level     ilvl 66, requires level 60
++level     ilvl 65, requires level 60
+ binds     binds when picked up
+ unique    yes
+ effect    equip: 23701 Twisting Nether
+ sells     100000 copper
+--- 208222 Old Guard Retaliator
++++ 208222 Old Guard Retaliator
+@@ -1,11 +1,11 @@
+ 208222 Old Guard Retaliator
+-item      uncommon, Axe, two-hand
++item      rare, Axe, two-hand
+ level     ilvl 57
+ binds     binds when picked up
+ unique    yes
+ classes   warrior
+-stats     +5 strength, +5 agility, +8 stamina
+-weapon    131 - 197 damage, speed 3.70, 44.3 dps
++stats     +6 stamina, +2 stat 90
++weapon    145 - 218 damage, speed 3.70, 49.1 dps
+ effect    equip: 418509 Primal Bloodthirst
+ text      "The previous owner immaculately cared for this weapon."
+ sells     81041 copper
+--- 289560 Formula: Enchant Boots - Speed
++++ 289560 Formula: Enchant Boots - Speed
+@@ -1,7 +1,8 @@
+ 289560 Formula: Enchant Boots - Speed
+ item      uncommon, Enchanting
+ level     ilvl 50
++binds     binds when picked up
+ effect    use: 402265 Learning (1 charge, consumed)
+ effect    learn: 1328948 Enchant Boots - Speed
+ text      "Teaches you how to permanently enchant boots to increase movement speed by 8%."
+ sells     1550 copper
