@@ -1,0 +1,129 @@
+--- 226985 Soulforge Wristguards
++++ 226985 Soulforge Wristguards
+@@ -1,8 +1,8 @@
+ 226985 Soulforge Wristguards
+ item      rare, Plate, wrists
+ level     ilvl 65
+ binds     binds when picked up
+ classes   paladin
+-stats     +16 stamina, +8 strength, +5 intellect, +3 defense rating
++stats     +16 stamina, +8 intellect, +6 spell power, +3 defense rating
+ set       Soulforge Armor
+ sells     22263 copper
+--- 226986 Soulforge Waistguard
++++ 226986 Soulforge Waistguard
+@@ -1,8 +1,8 @@
+ 226986 Soulforge Waistguard
+ item      rare, Plate, waist
+ level     ilvl 65
+ binds     binds when picked up
+ classes   paladin
+-stats     +13 strength, +10 intellect, +18 stamina, +3 defense rating
++stats     +13 intellect, +12 spell power, +18 stamina, +3 defense rating
+ set       Soulforge Armor
+ sells     22344 copper
+--- 226987 Soulforge Pauldrons
++++ 226987 Soulforge Pauldrons
+@@ -1,8 +1,8 @@
+ 226987 Soulforge Pauldrons
+ item      rare, Plate, shoulders
+ level     ilvl 65
+ binds     binds when picked up
+ classes   paladin
+-stats     +18 stamina, +12 strength, +5 defense rating, +8 intellect, +5 block rating
++stats     +18 stamina, +12 intellect, +5 defense rating, +9 spell power, +5 block rating
+ set       Soulforge Armor
+ sells     33385 copper
+--- 226988 Soulforge Legguards
++++ 226988 Soulforge Legguards
+@@ -1,8 +1,8 @@
+ 226988 Soulforge Legguards
+ item      rare, Plate, legs
+ level     ilvl 66
+ binds     binds when picked up
+ classes   paladin
+-stats     +24 stamina, +16 strength, +9 defense rating, +14 intellect, +14 block value
++stats     +24 stamina, +16 intellect, +9 defense rating, +16 spell power, +14 block value
+ set       Soulforge Armor
+ sells     47002 copper
+--- 226989 Soulforge Faceguard
++++ 226989 Soulforge Faceguard
+@@ -1,8 +1,8 @@
+ 226989 Soulforge Faceguard
+ item      epic, Plate, head
+ level     ilvl 60
+ binds     binds when picked up
+ classes   paladin
+-stats     +33 stamina, +18 strength, +11 intellect, +4 defense rating
++stats     +33 stamina, +18 intellect, +13 spell power, +4 defense rating
+ set       Soulforge Armor
+ sells     35135 copper
+--- 226990 Soulforge Handguards
++++ 226990 Soulforge Handguards
+@@ -1,8 +1,8 @@
+ 226990 Soulforge Handguards
+ item      epic, Plate, hands
+ level     ilvl 55
+ binds     binds when picked up
+ classes   paladin
+-stats     +15 stamina, +11 strength, +10 intellect, +5 defense rating, +12 parry rating
++stats     +15 stamina, +11 intellect, +12 spell power, +5 defense rating, +12 parry rating
+ set       Soulforge Armor
+ sells     18038 copper
+--- 226991 Soulforge Sabatons
++++ 226991 Soulforge Sabatons
+@@ -1,8 +1,8 @@
+ 226991 Soulforge Sabatons
+ item      epic, Plate, feet
+ level     ilvl 60
+ binds     binds when picked up
+ classes   paladin
+-stats     +26 stamina, +12 strength, +7 intellect, +3 defense rating
++stats     +26 stamina, +12 intellect, +8 spell power, +3 defense rating
+ set       Soulforge Armor
+ sells     35389 copper
+--- 226992 Soulforge Chestguards
++++ 226992 Soulforge Chestguards
+@@ -1,8 +1,8 @@
+ 226992 Soulforge Chestguards
+ item      epic, Plate, chest
+ level     ilvl 60
+ binds     binds when picked up
+ classes   paladin
+-stats     +29 stamina, +18 strength, +12 intellect, +5 defense rating, +12 expertise rating
++stats     +29 stamina, +18 intellect, +14 spell power, +5 defense rating, +12 expertise rating
+ set       Soulforge Armor
+ sells     47447 copper
+--- 284097 Everstaring Abomination Eye
++++ 284097 Everstaring Abomination Eye
+@@ -1,7 +1,7 @@
+ 284097 Everstaring Abomination Eye
+ item      rare, Miscellaneous, neck
+ level     ilvl 60, requires level 55
+ binds     binds when picked up
+-stats     +13 stamina, +14 spirit, +10 hit rating
++stats     +13 stamina, +6 spirit, +10 hit rating
+ text      "It never stops watching."
+ sells     6257 copper
+--- 284262 Howling Hide
++++ 284262 Howling Hide
+@@ -1,7 +1,7 @@
+ 284262 Howling Hide
+ item      uncommon, Cloth, back
+ level     ilvl 57, requires level 52
+ binds     binds when equipped
+ stats     +12 strength
+-effect    chance on hit: 1315767 Howler's Cry
++effect    equip: 1330916 Howler's Cry
+ sells     9815 copper
+--- 287026 Escape Plan
++++ 287026 Escape Plan
+@@ -1,7 +1,7 @@
+ 287026 Escape Plan
+ item      rare, Gun, ranged
+ level     ilvl 54, requires level 49
+ binds     binds when equipped
+ stats     +11 agility
+-weapon    78 - 78 damage, speed 2.80, 27.9 dps
++weapon    54 - 102 damage, speed 2.80, 27.9 dps
+ effect    use: 13534 Disarm (900 s cooldown)

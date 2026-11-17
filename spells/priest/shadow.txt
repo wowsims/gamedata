@@ -2680,9 +2680,11 @@ attrs     can proc from procs
 labels    18
 proc      hears PROC_FLAG_TAKE_HARMFUL_SPELL, PROC_FLAG_TAKE_HARMFUL_PERIODIC, PROC_FLAG_TAKE_HELPFUL_PERIODIC; no roll, it fires whenever its condition is met; tooltip says heals count
 
-effect 1  a dummy aura holding 20 to the enemy
-          E_APPLY_AURA A_DUMMY base=20 sp=1 target=[6,0]
-tooltip   Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d.
+effect 1  a dummy aura holding 10 to the enemy
+          E_APPLY_AURA A_DUMMY base=10 sp=1 target=[6,0]
+effect 2  a dummy aura holding 100 to the enemy
+          E_APPLY_AURA A_DUMMY base=100 sp=1 target=[6,0]
+tooltip   Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.
 aura      $w1% of Shadow spell damage caused by casting priest heals the priest's group.
 
 https://www.wowhead.com/forever/spell=15286
