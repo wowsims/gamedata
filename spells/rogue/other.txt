@@ -1165,20 +1165,6 @@ tooltip   Gain the Fan of Knives ability:
 
 https://www.wowhead.com/forever/spell=436608
 =======
-443632 Filcher's Cowl
-school    physical
-duration  permanent
-
-effect 1  unrecognised shape
-          E_APPLY_AURA A_MOD_STEALTH_LEVEL base=15 target=[1,0]
-effect 2  SPELLMOD_RANGE +2 on family 8 mask 0x80000000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 misc=5 family=8 mask=0x80000000 target=[1,0]
-effect 3  SPELLMOD_RANGE +5 on family 8 mask 0x1000
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=5 family=8 mask=0x1000 target=[1,0]
-tooltip   Increases your effective stealth level by 3. Increases the range of Disarm Trap and Pickpocket by $s2 yards, and the range of Distract by $s3 yards.
-
-https://www.wowhead.com/forever/spell=443632
-=======
 1234071 Flurry of Blades
 school    physical
 duration  15 s
