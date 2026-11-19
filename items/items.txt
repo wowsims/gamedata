@@ -118741,13 +118741,6 @@ effect    learn: 429242 Engrave Bracers - Light's Grace
 effect    use: 402265 Learning (1 charge, consumed)
 text      "Teaches you a new Engraving ability."
 =======
-219343 Filcher's Cowl
-item      rare, Cloth, back
-level     ilvl 50, requires level 50
-binds     binds when picked up
-stats     +11 agility, +7 spirit
-effect    equip: 443632 Filcher's Cowl
-=======
 219345 Infernal Lasso
 item      rare, Miscellaneous, trinket
 level     ilvl 50, requires level 50
@@ -156317,6 +156310,7 @@ sells     17157 copper
 274964 Mote of Unstable Magic
 item      common, Other
 level     ilvl 1
+binds     binds when picked up
 classes   warrior, paladin, hunter, rogue, priest, death knight, shaman, mage, warlock, monk, druid
 sells     200 copper
 =======
@@ -170193,3 +170187,8 @@ item      common, Device
 level     ilvl 20
 binds     binds when picked up
 effect    use: 1331725 Camper's Lure (1 charge, consumed)
+=======
+291874 Ruined Herb Seeds
+item      poor, Junk
+level     ilvl 1
+sells     1 copper
