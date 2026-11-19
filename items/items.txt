@@ -34543,7 +34543,7 @@ unique    yes
 text      "By the hand of Khadgar"
 =======
 6786 Simple Dress
-item      common, Miscellaneous, chest
+item      common, Cloth, chest
 level     ilvl 10
 sells     59 copper
 =======
@@ -49969,7 +49969,7 @@ level     ilvl 40
 sells     1500 copper
 =======
 10053 Simple Black Dress
-item      common, Miscellaneous, chest
+item      common, Cloth, chest
 level     ilvl 47
 sells     4499 copper
 =======
@@ -118740,6 +118740,13 @@ classes   paladin
 effect    learn: 429242 Engrave Bracers - Light's Grace
 effect    use: 402265 Learning (1 charge, consumed)
 text      "Teaches you a new Engraving ability."
+=======
+219343 Filcher's Cowl
+item      rare, Cloth, back
+level     ilvl 50, requires level 50
+binds     binds when picked up
+stats     +11 agility, +7 spirit
+effect    equip: 443632 Filcher's Cowl
 =======
 219345 Infernal Lasso
 item      rare, Miscellaneous, trinket
