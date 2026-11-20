@@ -1,0 +1,45 @@
+# rogue
+--- 1329283 Shank (Rank 1)
++++ 1329283 Shank (Rank 1)
+@@ -1,18 +1,18 @@
+ 1329283 Shank (Rank 1)
+ school    physical
+ defense   melee
+ cooldown  10 s
+ gcd       1 s
+ cost      5 energy
+ range     5 yd
+ equip     needs a melee weapon in the off hand
+-attrs     refund on miss, suppresses weapon procs
++attrs     refund on miss
+ refs      1310703 Venom, 1329286 Boot Knife, 1329285 Boot Knife
+ 
+ effect 1  50% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+ effect 2  restores 15 energy to the caster
+           E_ENERGIZE base=15 misc=3 target=[1,0]
+ tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss.
+ 
+ https://www.wowhead.com/forever/spell=1329283
+--- 1329549 Shank (Rank 2)
++++ 1329549 Shank (Rank 2)
+@@ -1,18 +1,18 @@
+ 1329549 Shank (Rank 2)
+ school    physical
+ defense   melee
+ cooldown  10 s
+ gcd       1 s
+ cost      5 energy
+ range     5 yd
+ equip     needs a melee weapon in the off hand
+-attrs     refund on miss, suppresses weapon procs
++attrs     refund on miss
+ refs      1310703 Venom, 1329286 Boot Knife, 1329285 Boot Knife
+ 
+ effect 1  50% weapon damage to the enemy
+           E_WEAPON_PERCENT_DAMAGE base=50 sp=1 target=[6,0]
+ effect 2  restores 25 energy to the caster
+           E_ENERGIZE base=25 misc=3 target=[1,0]
+ tooltip   Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss.
+ 
+ https://www.wowhead.com/forever/spell=1329549
