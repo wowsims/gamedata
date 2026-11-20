@@ -1,0 +1,374 @@
+# paladin
+--- 20271 Judgement
++++ 20271 Judgement
+@@ -1,13 +1,13 @@
+ 20271 Judgement
+ school    holy
+ cooldown  10 s
+ cost      6% of base mana
+ range     10 yd
+-attrs     not a proc
++attrs     not a proc, suppresses weapon procs
+ labels    26
+ 
+ effect 1  unrecognised shape
+           E_SCRIPT_EFFECT base=0 target=[6,0]
+ tooltip   Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect.
+ 
+ https://www.wowhead.com/forever/spell=20271
+# priest
+--- 1277331 Chastise (Rank 1)
++++ 1277331 Chastise (Rank 1)
+@@ -1,20 +1,19 @@
+ 1277331 Chastise (Rank 1)
+ school    holy
+ defense   magic
+ duration  2 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      50 mana
+ range     20 yd
+-stance exclude Shadowform
+ targets   up to 1
+ labels    18
+ 
+ effect 1  43–49 holy damage to the enemy (+0.143 spell power)
+           E_SCHOOL_DAMAGE base=46 variance=0.12 sp=0.143 target=[6,0]
+ effect 2  roots to the enemy
+           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+ tooltip   Chastise the target, causing $s1 Holy damage and immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+ aura      Immobilized.
+ 
+ https://www.wowhead.com/forever/spell=1277331
+--- 1277332 Chastise (Rank 2)
++++ 1277332 Chastise (Rank 2)
+@@ -1,20 +1,19 @@
+ 1277332 Chastise (Rank 2)
+ school    holy
+ defense   magic
+ duration  2 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      100 mana
+ range     20 yd
+-stance exclude Shadowform
+ targets   up to 1
+ labels    18
+ 
+ effect 1  87–99 holy damage to the enemy (+0.143 spell power)
+           E_SCHOOL_DAMAGE base=93 variance=0.12 sp=0.143 target=[6,0]
+ effect 2  roots to the enemy
+           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+ tooltip   Chastise the target, causing $s1 Holy damage and immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+ aura      Immobilized.
+ 
+ https://www.wowhead.com/forever/spell=1277332
+--- 1277333 Chastise (Rank 3)
++++ 1277333 Chastise (Rank 3)
+@@ -1,20 +1,19 @@
+ 1277333 Chastise (Rank 3)
+ school    holy
+ defense   magic
+ duration  2 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      135 mana
+ range     20 yd
+-stance exclude Shadowform
+ targets   up to 1
+ labels    18
+ 
+ effect 1  132–148 holy damage to the enemy (+0.143 spell power)
+           E_SCHOOL_DAMAGE base=140 variance=0.12 sp=0.143 target=[6,0]
+ effect 2  roots to the enemy
+           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+ tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+ aura      Immobilized.
+ 
+ https://www.wowhead.com/forever/spell=1277333
+--- 1277334 Chastise (Rank 4)
++++ 1277334 Chastise (Rank 4)
+@@ -1,20 +1,19 @@
+ 1277334 Chastise (Rank 4)
+ school    holy
+ defense   magic
+ duration  2 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      180 mana
+ range     20 yd
+-stance exclude Shadowform
+ targets   up to 1
+ labels    18
+ 
+ effect 1  201–227 holy damage to the enemy (+0.143 spell power)
+           E_SCHOOL_DAMAGE base=214 variance=0.12 sp=0.143 target=[6,0]
+ effect 2  roots to the enemy
+           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+ tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+ aura      Immobilized.
+ 
+ https://www.wowhead.com/forever/spell=1277334
+--- 1277335 Chastise (Rank 5)
++++ 1277335 Chastise (Rank 5)
+@@ -1,20 +1,19 @@
+ 1277335 Chastise (Rank 5)
+ school    holy
+ defense   magic
+ duration  2 s
+ cooldown  120 s (category)
+ gcd       1.5 s
+ cost      225 mana
+ range     20 yd
+-stance exclude Shadowform
+ targets   up to 1
+ labels    18
+ 
+ effect 1  272–306 holy damage to the enemy (+0.143 spell power)
+           E_SCHOOL_DAMAGE base=289 variance=0.12 sp=0.143 target=[6,0]
+ effect 2  roots to the enemy
+           E_APPLY_AURA A_MOD_ROOT base=0 mechanic=7 target=[6,0]
+ tooltip   Chastise the target, causing $s1 Holy damage and Immobilizing them for up to $d. Only works against Humanoids. This spell causes very low threat.
+ aura      Immobilized.
+ 
+ https://www.wowhead.com/forever/spell=1277335
+--- 2096 Mind Vision (Rank 1)
++++ 2096 Mind Vision (Rank 1)
+@@ -1,21 +1,21 @@
+ 2096 Mind Vision (Rank 1)
+ school    shadow
+ defense   magic
+ duration  60 s
+ gcd       1.5 s
+ cost      65 mana
+ range     100 yd
+ stance    Shadowform
+-attrs     channeled
++attrs     channeled, suppresses weapon procs
+ labels    18
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_BIND_SIGHT base=0 radius=100 target=[25,0]
+ effect 2  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_MOD_STALKED base=0 target=[25,0]
+ tooltip   Allows the caster to see through the target's eyes for $d.
+ aura      Sight granted through target's eyes.
+ 
+ https://www.wowhead.com/forever/spell=2096
+--- 10909 Mind Vision (Rank 2)
++++ 10909 Mind Vision (Rank 2)
+@@ -1,21 +1,21 @@
+ 10909 Mind Vision (Rank 2)
+ school    shadow
+ defense   magic
+ duration  60 s
+ gcd       1.5 s
+ cost      150 mana
+ range     50000 yd
+ stance    Shadowform
+-attrs     channeled
++attrs     channeled, suppresses weapon procs
+ labels    18
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_BIND_SIGHT base=0 radius=100 target=[25,0]
+ effect 2  a dummy aura
+           E_APPLY_AURA A_DUMMY base=0 target=[1,0]
+ effect 3  unrecognised shape
+           E_APPLY_AURA A_MOD_STALKED base=0 target=[25,0]
+ tooltip   Allows the caster to see through the target's eyes for $d.  Will not work if the target is in another instance or on another continent.
+ aura      Sight granted through target's eyes.
+ 
+ https://www.wowhead.com/forever/spell=10909
+# rogue
+--- 399956 Mutilate (Rank 1)
++++ 399956 Mutilate (Rank 1)
+@@ -1,22 +1,22 @@
+ 399956 Mutilate (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    20
+ refs      399960 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 399960 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=399960 target=[6,0]
+ effect 3  casts 399961 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=399961 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $399960s2% weapon damage plus an additional ${$399960m1*$399960m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+ https://www.wowhead.com/forever/spell=399956
+--- 1241582 Mutilate (Rank 2)
++++ 1241582 Mutilate (Rank 2)
+@@ -1,22 +1,22 @@
+ 1241582 Mutilate (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    20
+ refs      1241585 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 1241585 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241585 target=[6,0]
+ effect 3  casts 1241588 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241588 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+ https://www.wowhead.com/forever/spell=1241582
+--- 1241584 Mutilate (Rank 3)
++++ 1241584 Mutilate (Rank 3)
+@@ -1,22 +1,22 @@
+ 1241584 Mutilate (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1 s
+ cost      60 energy
+ range     5 yd
+ equip     needs a dagger in the main hand or off hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    20
+ refs      1241586 Mutilate
+ 
+ effect 1  restores 2 combo points to the caster
+           E_ENERGIZE base=2 misc=4 target=[1,0]
+ effect 2  casts 1241586 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241586 target=[6,0]
+ effect 3  casts 1241590 Mutilate to the enemy
+           E_TRIGGER_SPELL base=0 trigger=1241590 target=[6,0]
+ effect 4  a dummy effect holding 20 to the caster
+           E_DUMMY base=20 target=[1,0]
+ tooltip   Instantly attacks with both weapons for $1241586s2% weapon damage plus an additional ${$1241586m1*$1241586m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
+ 
+ https://www.wowhead.com/forever/spell=1241584
+# warrior
+--- 5308 Execute (Rank 1)
++++ 5308 Execute (Rank 1)
+@@ -1,18 +1,18 @@
+ 5308 Execute (Rank 1)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle, Berserker
+ equip     needs a melee weapon in the main hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    25
+ 
+ effect 1  a dummy effect holding 125 to the enemy
+           E_DUMMY base=125 sp=1 target=[6,0]
+ effect 2  casts 26651 Execute to the caster
+           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+ tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
+ 
+ https://www.wowhead.com/forever/spell=5308
+--- 20658 Execute (Rank 2)
++++ 20658 Execute (Rank 2)
+@@ -1,18 +1,18 @@
+ 20658 Execute (Rank 2)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle, Berserker
+ equip     needs a melee weapon in the main hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    25
+ 
+ effect 1  a dummy effect holding 200 to the enemy
+           E_DUMMY base=200 sp=1 target=[6,0]
+ effect 2  casts 26651 Execute to the caster
+           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+ tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
+ 
+ https://www.wowhead.com/forever/spell=20658
+--- 20660 Execute (Rank 3)
++++ 20660 Execute (Rank 3)
+@@ -1,18 +1,18 @@
+ 20660 Execute (Rank 3)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle, Berserker
+ equip     needs a melee weapon in the main hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    25
+ 
+ effect 1  a dummy effect holding 325 to the enemy
+           E_DUMMY base=325 sp=1 target=[6,0]
+ effect 2  casts 26651 Execute to the caster
+           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+ tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
+ 
+ https://www.wowhead.com/forever/spell=20660
+--- 20661 Execute (Rank 4)
++++ 20661 Execute (Rank 4)
+@@ -1,18 +1,18 @@
+ 20661 Execute (Rank 4)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle, Berserker
+ equip     needs a melee weapon in the main hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    25
+ 
+ effect 1  a dummy effect holding 450 to the enemy
+           E_DUMMY base=450 sp=1 target=[6,0]
+ effect 2  casts 26651 Execute to the caster
+           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+ tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
+ 
+ https://www.wowhead.com/forever/spell=20661
+--- 20662 Execute (Rank 5)
++++ 20662 Execute (Rank 5)
+@@ -1,18 +1,18 @@
+ 20662 Execute (Rank 5)
+ school    physical
+ defense   melee
+ gcd       1.5 s
+ cost      15 rage
+ range     5 yd
+ stance    Battle, Berserker
+ equip     needs a melee weapon in the main hand
+-attrs     refund on miss
++attrs     refund on miss, suppresses weapon procs
+ labels    25
+ 
+ effect 1  a dummy effect holding 600 to the enemy
+           E_DUMMY base=600 sp=1 target=[6,0]
+ effect 2  casts 26651 Execute to the caster
+           E_TRIGGER_SPELL base=0 trigger=26651 target=[1,0]
+ tooltip   Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
+ 
+ https://www.wowhead.com/forever/spell=20662
