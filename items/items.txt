@@ -118740,12 +118740,6 @@ effect    learn: 429242 Engrave Bracers - Light's Grace
 effect    use: 402265 Learning (1 charge, consumed)
 text      "Teaches you a new Engraving ability."
 =======
-219326 Seed of Renewal
-item      rare, Miscellaneous, trinket
-level     ilvl 50
-binds     binds when picked up
-effect    equip: 443278 Seed of Renewal
-=======
 219343 Filcher's Cowl
 item      rare, Cloth, back
 level     ilvl 50, requires level 50
@@ -152712,613 +152706,681 @@ unique    yes
 =======
 273884 Grovekeeper Trousers
 item      epic, Leather, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +20 stamina, +19 intellect, +21 spell power, +13 spirit, +9 nature resistance
 set       Grovekeeper Eclipse
 sells     33238 copper
 =======
 273885 Grovekeeper Grips
 item      epic, Leather, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +15 stamina, +14 intellect, +20 spell power, +7 nature resistance
 set       Grovekeeper Eclipse
 sells     16817 copper
 =======
 273886 Grovekeeper Shoulderpads
 item      epic, Leather, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +16 intellect, +13 spell power, +7 nature resistance, +5 spell penetration
 set       Grovekeeper Eclipse
 sells     25189 copper
 =======
 273887 Grovekeeper Stompers
 item      epic, Leather, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +12 intellect, +11 spirit, +13 spell power, +9 hit rating, +7 nature resistance
 set       Grovekeeper Eclipse
 sells     25283 copper
 =======
 273888 Grovekeeper Kilt
 item      epic, Leather, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +19 stamina, +16 agility, +30 attack power, +14 hit rating, +12 intellect, +9 nature resistance
 set       Grovekeeper Ferocity
 sells     33750 copper
 =======
 273889 Grovekeeper Mitts
 item      epic, Leather, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +15 stamina, +14 agility, +12 strength, +11 intellect, +7 nature resistance
 set       Grovekeeper Ferocity
 sells     17075 copper
 =======
 273890 Grovekeeper Mantle
 item      epic, Leather, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +12 agility, +11 strength, +11 intellect, +9 expertise rating, +7 nature resistance
 set       Grovekeeper Ferocity
 sells     25574 copper
 =======
 273891 Grovekeeper Sandals
 item      epic, Leather, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +18 agility, +11 strength, +7 nature resistance, +7 intellect
 set       Grovekeeper Ferocity
 sells     25668 copper
 =======
 273892 Grovekeeper Legguards
 item      epic, Leather, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +20 stamina, +19 intellect, +16 spirit, +33 healing, +9 nature resistance, +11 spell damage
 set       Grovekeeper Raiment
 sells     34262 copper
 =======
 273893 Grovekeeper Handguards
 item      epic, Leather, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +15 stamina, +13 intellect, +7 spirit, +14 crit rating, +7 nature resistance, +14 healing, +5 spell damage
 set       Grovekeeper Raiment
 sells     17333 copper
 =======
 273894 Grovekeeper Pauldrons
 item      epic, Leather, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +12 intellect, +11 spirit, +24 healing, +4 mana per 5 sec, +7 nature resistance, +8 spell damage
 set       Grovekeeper Raiment
 sells     25959 copper
 =======
 273895 Grovekeeper Boots
 item      epic, Leather, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +21 intellect, +24 healing, +7 nature resistance, +8 spell damage
 set       Grovekeeper Raiment
 sells     26053 copper
 =======
 273896 Grovekeeper Leggings
 item      epic, Leather, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +22 stamina, +19 strength, +7 defense rating, +15 expertise rating, +9 nature resistance
 set       Grovekeeper Rage
 sells     35696 copper
 =======
 273897 Grovekeeper Gauntlets
 item      epic, Leather, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +14 stamina, +21 strength, +7 defense rating, +7 nature resistance
 set       Grovekeeper Rage
 sells     18056 copper
 =======
 273898 Grovekeeper Spaulders
 item      epic, Leather, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +17 stamina, +11 strength, +7 defense rating, +11 hit rating, +7 nature resistance
 set       Grovekeeper Rage
 sells     27037 copper
 =======
 273899 Grovekeeper Treads
 item      epic, Leather, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   druid
+stats     +16 stamina, +13 strength, +7 defense rating, +12 dodge rating, +7 nature resistance
 set       Grovekeeper Rage
 sells     27132 copper
 =======
 273900 Wildstalker's Legguards
 item      epic, Mail, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   hunter
+stats     +20 agility, +18 intellect, +18 stamina, +14 crit rating, +9 nature resistance
 set       Wildstalker Armor
 sells     43450 copper
 =======
 273901 Wildstalker's Gauntlets
 item      epic, Mail, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   hunter
+stats     +13 agility, +12 intellect, +7 spirit, +11 stamina, +14 crit rating, +7 nature resistance
 set       Wildstalker Armor
 sells     21802 copper
 =======
 273902 Wildstalker's Spaulders
 item      epic, Mail, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   hunter
+stats     +17 stamina, +11 intellect, +9 spirit, +7 nature resistance, +16 agility
 set       Wildstalker Armor
 sells     32962 copper
 =======
 273903 Wildstalker's Greaves
 item      epic, Mail, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   hunter
+stats     +11 stamina, +10 intellect, +12 spirit, +15 agility, +7 nature resistance, +9 hit rating
 set       Wildstalker Armor
 sells     29928 copper
 =======
 273904 Manaflare Pants
 item      epic, Cloth, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   mage
+stats     +16 stamina, +19 intellect, +20 spell power, +5 spell penetration, +9 nature resistance, +9 spirit
 set       Manaflare Regalia
 sells     26588 copper
 =======
 273905 Manaflare Gloves
 item      epic, Cloth, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   mage
+stats     +12 stamina, +14 intellect, +10 spirit, +13 spell power, +7 nature resistance, +9 hit rating
 set       Manaflare Regalia
 sells     13345 copper
 =======
 273906 Manaflare Mantle
 item      epic, Cloth, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   mage
+stats     +14 stamina, +12 intellect, +13 spell power, +4 spell penetration, +9 hit rating, +7 nature resistance
 set       Manaflare Regalia
 sells     20093 copper
 =======
 273907 Manaflare Boots
 item      epic, Cloth, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   mage
+stats     +14 stamina, +11 intellect, +25 spell power, +7 nature resistance
 set       Manaflare Regalia
 sells     20170 copper
 =======
 273908 Justice Leggings
 item      epic, Plate, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +19 stamina, +18 strength, +17 intellect, +14 crit rating, +9 nature resistance, +8 spell power
 set       Justice Battlegear
 sells     47245 copper
 =======
 273909 Justice Gauntlets
 item      epic, Plate, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +14 stamina, +12 strength, +11 intellect, +9 hit rating, +13 spell power, +7 nature resistance
 set       Justice Battlegear
 sells     23848 copper
 =======
 273910 Justice Spaulders
 item      epic, Plate, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +11 stamina, +15 strength, +11 intellect, +7 nature resistance, +9 hit rating, +10 spell power
 set       Justice Battlegear
 sells     35633 copper
 =======
 273911 Justice Greaves
 item      epic, Plate, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +10 stamina, +14 strength, +14 crit rating, +11 spell power, +9 intellect
 set       Justice Battlegear
 sells     35768 copper
 =======
 273912 Justice Legplates
 item      epic, Plate, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +19 stamina, +16 intellect, +13 spirit, +31 healing, +14 crit rating, +9 nature resistance, +10 spell damage
 set       Justice Armor
 sells     49254 copper
 =======
 273913 Justice Gloves
 item      epic, Plate, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +14 stamina, +21 intellect, +24 healing, +7 nature resistance, +8 spell damage
 set       Justice Armor
 sells     24858 copper
 =======
 273914 Justice Epaulets
 item      epic, Plate, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +14 stamina, +10 intellect, +20 healing, +14 crit rating, +7 nature resistance, +6 spell damage, +9 spirit
 set       Justice Armor
 sells     37136 copper
 =======
 273915 Justice Treads
 item      epic, Plate, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +13 stamina, +11 intellect, +18 healing, +5 mana per 5 sec, +14 crit rating, +7 nature resistance, +6 spell damage
 set       Justice Armor
 sells     37271 copper
 =======
 273916 Justice Legguards
 item      epic, Plate, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +23 stamina, +21 intellect, +12 hit rating, +7 defense rating, +9 nature resistance, +11 spell power
 set       Justice Battleplate
 sells     49970 copper
 =======
 273917 Justice Handguards
 item      epic, Plate, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +18 stamina, +13 intellect, +5 defense rating, +7 nature resistance, +18 spell power
 set       Justice Battleplate
 sells     25216 copper
 =======
 273918 Justice Pauldrons
 item      epic, Plate, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +19 stamina, +11 block value, +13 intellect, +7 nature resistance, +11 spell power, +5 defense rating
 set       Justice Battleplate
 sells     37673 copper
 =======
 273919 Justice Sabatons
 item      epic, Plate, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   paladin
+stats     +19 stamina, +13 intellect, +11 spell power, +7 expertise rating, +5 defense rating, +7 nature resistance
 set       Justice Battleplate
 sells     37808 copper
 =======
 273920 Pants of Conviction
 item      epic, Cloth, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +20 stamina, +18 intellect, +10 spirit, +14 crit rating, +9 nature resistance, +15 spell power
 set       Raiments of Conviction
 sells     28964 copper
 =======
 273921 Gloves of Conviction
 item      epic, Cloth, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +15 stamina, +11 intellect, +11 spell power, +5 spell penetration, +7 nature resistance
 set       Raiments of Conviction
 sells     14532 copper
 =======
 273922 Mantle of Conviction
 item      epic, Cloth, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +14 stamina, +16 intellect, +13 spell power, +7 nature resistance, +9 hit rating
 set       Raiments of Conviction
 sells     21875 copper
 =======
 273923 Treads of Conviction
 item      epic, Cloth, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +14 stamina, +12 intellect, +11 spirit, +13 spell power, +9 hit rating, +7 nature resistance
 set       Raiments of Conviction
 sells     19861 copper
 =======
 273924 Leggings of Conviction
 item      epic, Cloth, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +19 stamina, +16 intellect, +20 spirit, +33 healing, +9 nature resistance, +11 spell damage
 set       Vestments of Conviction
 sells     26585 copper
 =======
 273925 Handguards of Conviction
 item      epic, Cloth, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +14 stamina, +12 intellect, +11 spirit, +5 mana per 5 sec, +20 healing, +7 nature resistance, +6 spell damage
 set       Vestments of Conviction
 sells     13342 copper
 =======
 273926 Pauldrons of Conviction
 item      epic, Cloth, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +15 stamina, +11 intellect, +13 spirit, +7 nature resistance, +32 healing, +11 spell damage
 set       Vestments of Conviction
 sells     20091 copper
 =======
 273927 Boots of Conviction
 item      epic, Cloth, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   priest
+stats     +14 stamina, +21 intellect, +24 healing, +7 nature resistance, +8 spell damage
 set       Vestments of Conviction
 sells     20168 copper
 =======
 273928 Grimstitch Pants
 item      epic, Leather, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   rogue
+stats     +19 stamina, +19 agility, +16 strength, +15 hit rating, +9 nature resistance
 set       Grimstitch Armor
 sells     34666 copper
 =======
 273929 Grimstitch Gloves
 item      epic, Leather, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   rogue
+stats     +15 stamina, +13 agility, +10 strength, +14 crit rating, +7 nature resistance
 set       Grimstitch Armor
 sells     17534 copper
 =======
 273930 Grimstitch Spaulders
 item      epic, Leather, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   rogue
+stats     +16 stamina, +16 agility, +9 strength, +14 crit rating, +7 nature resistance
 set       Grimstitch Armor
 sells     26260 copper
 =======
 273931 Grimstitch Boots
 item      epic, Leather, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   rogue
+stats     +14 stamina, +21 agility, +11 hit rating, +7 nature resistance
 set       Grimstitch Armor
 sells     26357 copper
 =======
 273932 Spiritcaller Leggings
 item      epic, Mail, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +19 stamina, +16 strength, +15 intellect, +14 agility, +12 expertise rating, +9 nature resistance
 set       The Spiritcaller's Rage
 sells     42209 copper
 =======
 273933 Spiritcaller Grips
 item      epic, Mail, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +15 stamina, +13 strength, +10 intellect, +14 crit rating, +7 nature resistance
 set       The Spiritcaller's Rage
 sells     21182 copper
 =======
 273934 Spiritcaller Spaulders
 item      epic, Mail, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +14 stamina, +21 strength, +11 intellect, +7 nature resistance
 set       The Spiritcaller's Rage
 sells     32030 copper
 =======
 273935 Spiritcaller Treads
 item      epic, Mail, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +14 stamina, +12 strength, +11 intellect, +11 agility, +9 hit rating, +7 nature resistance
 set       The Spiritcaller's Rage
 sells     32147 copper
 =======
 273936 Spiritcaller Pants
 item      epic, Mail, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +20 stamina, +19 intellect, +12 spirit, +14 crit rating, +9 nature resistance, +22 healing, +7 spell damage
 set       The Spiritcaller
 sells     42823 copper
 =======
 273937 Spiritcaller Gauntlets
 item      epic, Mail, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +14 stamina, +21 intellect, +24 healing, +7 nature resistance, +8 spell damage
 set       The Spiritcaller
 sells     21489 copper
 =======
 273938 Spiritcaller Epaulets
 item      epic, Mail, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +15 stamina, +14 intellect, +12 spirit, +24 healing, +7 nature resistance, +8 spell damage
 set       The Spiritcaller
 sells     32493 copper
 =======
 273939 Spiritcaller Greaves
 item      epic, Mail, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   shaman
+stats     +14 stamina, +12 intellect, +11 spirit, +34 healing, +11 spell damage, +7 nature resistance
 set       The Spiritcaller
 sells     32609 copper
 =======
 273940 Demonheart Leggings
 item      epic, Cloth, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warlock
+stats     +16 stamina, +19 intellect, +10 spirit, +11 hit rating, +9 nature resistance, +20 spell power
 set       Demonheart Raiment
 sells     28958 copper
 =======
 273941 Demonheart Gloves
 item      epic, Cloth, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warlock
+stats     +15 stamina, +13 intellect, +14 crit rating, +13 spell power, +7 nature resistance
 set       Demonheart Raiment
 sells     14530 copper
 =======
 273942 Demonheart Spaulders
 item      epic, Cloth, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warlock
+stats     +13 stamina, +11 intellect, +13 spell power, +14 crit rating, +9 hit rating, +7 nature resistance
 set       Demonheart Raiment
 sells     21873 copper
 =======
 273943 Demonheart Boots
 item      epic, Cloth, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warlock
+stats     +19 stamina, +15 intellect, +16 spell power, +7 nature resistance
 set       Demonheart Raiment
 sells     19859 copper
 =======
 273944 Legplates of Glory
 item      epic, Plate, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +23 stamina, +22 strength, +9 hit rating, +15 agility, +9 nature resistance
 set       Battlegear of Glory
 sells     47806 copper
 =======
 273945 Gauntlets of Glory
 item      epic, Plate, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +14 stamina, +15 strength, +12 agility, +11 expertise rating, +7 nature resistance
 set       Battlegear of Glory
 sells     24130 copper
 =======
 273946 Shoulders of Glory
 item      epic, Plate, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +16 stamina, +16 strength, +11 agility, +9 expertise rating, +7 nature resistance
 set       Battlegear of Glory
 sells     36056 copper
 =======
 273947 Greaves of Glory
 item      epic, Plate, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +13 stamina, +21 strength, +14 crit rating, +7 nature resistance
 set       Battlegear of Glory
 sells     36187 copper
 =======
 273948 Legguards of Glory
 item      epic, Plate, legs
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +20 stamina, +19 strength, +10 defense rating, +15 parry rating, +9 nature resistance
 set       Battleplate of Glory
 sells     48523 copper
 =======
 273949 Handguards of Glory
 item      epic, Plate, hands
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +20 stamina, +14 strength, +8 defense rating, +6 agility, +7 nature resistance
 set       Battleplate of Glory
 sells     24490 copper
 =======
 273950 Pauldrons of Glory
 item      epic, Plate, shoulders
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +21 stamina, +13 strength, +7 defense rating, +6 nature resistance, +9 expertise rating
 set       Battleplate of Glory
 sells     36593 copper
 =======
 273951 Sabatons of Glory
 item      epic, Plate, feet
-level     ilvl 61, requires level 60
+level     ilvl 60, requires level 60
 tag       Crafted
 binds     binds when equipped
 classes   warrior
+stats     +20 stamina, +13 strength, +8 defense rating, +7 expertise rating, +7 nature resistance
 set       Battleplate of Glory
 sells     36724 copper
 =======
