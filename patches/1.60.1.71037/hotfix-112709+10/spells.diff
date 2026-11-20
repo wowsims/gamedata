@@ -1,0 +1,46 @@
+# paladin
+--- 25752 Judgement of Light
++++ 25752 Judgement of Light
+@@ -1,11 +1,11 @@
+ 25752 Judgement of Light
+ school    holy
+-duration  10 s
++duration  40 s
+ range     100 yd
+ labels    26
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+ 
+ effect 1  casts 25753 Judgement of Light on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=25753 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=25752
+--- 25757 Judgement of Wisdom
++++ 25757 Judgement of Wisdom
+@@ -1,11 +1,11 @@
+ 25757 Judgement of Wisdom
+ school    holy
+-duration  10 s
++duration  40 s
+ range     100 yd
+ labels    26
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+ 
+ effect 1  casts 25758 Judgement of Wisdom on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=25758 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=25757
+--- 25945 Judgement of Justice
++++ 25945 Judgement of Justice
+@@ -1,11 +1,11 @@
+ 25945 Judgement of Justice
+ school    holy
+-duration  10 s
++duration  40 s
+ range     100 yd
+ labels    26
+ proc      hears PROC_FLAG_DEAL_MELEE_SWING; no roll, it fires whenever its condition is met
+ 
+ effect 1  casts 25944 Judgement of Justice on its trigger
+           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=25944 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=25945
