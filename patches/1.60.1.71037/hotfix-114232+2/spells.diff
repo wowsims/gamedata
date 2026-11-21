@@ -1,0 +1,128 @@
+# mage
+--- 16785 Flamebreak
++++ 16785 Flamebreak
+@@ -1,11 +0,0 @@
+-16785 Flamebreak
+-school    fire
+-defense   magic
+-
+-effect 1  1356–1567 fire damage to every enemy around the caster
+-          E_SCHOOL_DAMAGE base=1461.7435 variance=0.144 radius=10 target=[22,15]
+-effect 2  unrecognised shape
+-          E_KNOCK_BACK base=100 sp=1 misc=200 radius=10 target=[22,15]
+-tooltip   Inflicts Fire damage to nearby enemies, knocking them back.
+-
+-https://www.wowhead.com/forever/spell=16785
+# priest
+--- 17140 Holy Fire
++++ 17140 Holy Fire
+@@ -1,17 +0,0 @@
+-17140 Holy Fire
+-school    fire
+-defense   magic
+-duration  8 s
+-cast      5 s
+-gcd       1.5 s
+-cost      115 mana
+-range     30 yd
+-
+-effect 1  596–748 fire damage to the enemy (+0.343 spell power)
+-          E_SCHOOL_DAMAGE base=672.40204 variance=0.22608696 sp=0.343 target=[6,0]
+-effect 2  40.92882 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=40.92882 sp=0.027 period=2000ms target=[6,0]
+-tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+-aura      Fire damage inflicted every $t2 sec.
+-
+-https://www.wowhead.com/forever/spell=17140
+--- 17141 Holy Fire
++++ 17141 Holy Fire
+@@ -1,17 +0,0 @@
+-17141 Holy Fire
+-school    fire
+-defense   magic
+-duration  8 s
+-cast      5 s
+-gcd       1.5 s
+-cost      115 mana
+-range     30 yd
+-
+-effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
+-          E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
+-effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+-tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+-aura      Fire damage inflicted every $t2 sec.
+-
+-https://www.wowhead.com/forever/spell=17141
+--- 17142 Holy Fire
++++ 17142 Holy Fire
+@@ -1,17 +0,0 @@
+-17142 Holy Fire
+-school    fire
+-defense   magic
+-duration  8 s
+-cast      5 s
+-gcd       1.5 s
+-cost      115 mana
+-range     30 yd
+-
+-effect 1  1777–2257 fire damage to the enemy (+0.343 spell power)
+-          E_SCHOOL_DAMAGE base=2017.206 variance=0.23768117 sp=0.343 target=[6,0]
+-effect 2  122.78647 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=122.78647 sp=0.027 period=2000ms target=[6,0]
+-tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+-aura      Fire damage inflicted every $t2 sec.
+-
+-https://www.wowhead.com/forever/spell=17142
+--- 18165 Holy Fire
++++ 18165 Holy Fire
+@@ -1,14 +0,0 @@
+-18165 Holy Fire
+-school    fire
+-defense   magic
+-duration  8 s
+-range     30 yd
+-
+-effect 1  1187–1503 fire damage to the enemy (+0.343 spell power)
+-          E_SCHOOL_DAMAGE base=1344.8041 variance=0.2347826 sp=0.343 target=[6,0]
+-effect 2  81.85764 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=81.85764 sp=0.027 period=2000ms target=[6,0]
+-tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+-aura      Fire damage inflicted every $t2 sec.
+-
+-https://www.wowhead.com/forever/spell=18165
+--- 18167 Holy Fire
++++ 18167 Holy Fire
+@@ -1,12 +0,0 @@
+-18167 Holy Fire
+-school    fire
+-defense   magic
+-duration  permanent
+-range     30 yd
+-attrs     passive
+-proc      hears PROC_FLAG_DEAL_MELEE_SWING, PROC_FLAG_DEAL_MELEE_ABILITY; 10% chance
+-
+-effect 1  casts 18165 Holy Fire on its trigger
+-          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 sp=1 trigger=18165 target=[1,0]
+-
+-https://www.wowhead.com/forever/spell=18167
+--- 23860 Holy Fire
++++ 23860 Holy Fire
+@@ -1,17 +0,0 @@
+-23860 Holy Fire
+-school    fire
+-defense   magic
+-duration  8 s
+-cast      3.5 s
+-gcd       1.5 s
+-cost      115 mana
+-range     30 yd
+-
+-effect 1  2203–2797 fire damage to the enemy (+0.343 spell power)
+-          E_SCHOOL_DAMAGE base=2500 variance=0.2376 sp=0.343 target=[6,0]
+-effect 2  125 fire damage every 2 s to the enemy (4 ticks, +0.027 spell power)
+-          E_APPLY_AURA A_PERIODIC_DAMAGE base=125 sp=0.027 period=2000ms target=[6,0]
+-tooltip   Consumes an enemy in flames, burning it and inflicting additional Fire damage every $t2 sec. over $d.
+-aura      Fire damage inflicted every $t2 sec.
+-
+-https://www.wowhead.com/forever/spell=23860
