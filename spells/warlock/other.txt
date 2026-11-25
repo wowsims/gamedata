@@ -1740,7 +1740,7 @@ school    physical
 duration  15 s
 stack     up to 1
 charges   1
-proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
+proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
 
 effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x841e9,0x840040
           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x841e9,0x840040 target=[1,0]

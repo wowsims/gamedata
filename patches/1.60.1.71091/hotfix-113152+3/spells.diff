@@ -1,0 +1,34 @@
+# priest
+--- 1323377 Revelation
++++ 1323377 Revelation
+@@ -1,12 +1,12 @@
+ 1323377 Revelation
+ school    physical
+ duration  15 s
+ stack     up to 1
+ charges   1
+-proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 6 mask 0x9a43e90,0x818016,0x80
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=6 mask=0x9a43e90,0x818016,0x80 target=[1,0]
+ aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=1323377
+# warlock
+--- 1323392 Revelation
++++ 1323392 Revelation
+@@ -1,12 +1,12 @@
+ 1323392 Revelation
+ school    physical
+ duration  15 s
+ stack     up to 1
+ charges   1
+-proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met
++proc      hears PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_PERIODIC; no roll, it fires whenever its condition is met
+ 
+ effect 1  SPELLMOD_CRITICAL_CHANCE +100% on family 5 mask 0x841e9,0x840040
+           E_APPLY_AURA A_ADD_FLAT_MODIFIER base=100 sp=1 misc=7 family=5 mask=0x841e9,0x840040 target=[1,0]
+ aura      Critical Strike chance of your next non-periodic spell increased by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=1323392
