@@ -1,0 +1,92 @@
+# druid
+--- 1262636 Reagent Economy
++++ 1262636 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262636 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=7 mask=0x10040000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262636
+# mage
+--- 1262638 Reagent Economy
++++ 1262638 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262638 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=3 mask=0x400,0x0,0x0,0x18000000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262638
+# paladin
+--- 1262647 Reagent Economy
++++ 1262647 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262647 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=10 mask=0x11010192,0x0,0x410000,0x200040 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262647
+# priest
+--- 1262650 Reagent Economy
++++ 1262650 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262650 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=6 mask=0x108,0x400000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262650
+# rogue
+--- 1262662 Reagent Economy
++++ 1262662 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262662 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+-          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=8 mask=0x0,0x0,0x10 target=[1,0]
++          E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=8 mask=0x800,0x0,0x10 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262662
+# shaman
+--- 1262643 Reagent Economy
++++ 1262643 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262643 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=11 mask=0x200 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262643
+# warlock
+--- 1262654 Reagent Economy
++++ 1262654 Reagent Economy
+@@ -1,8 +1,8 @@
+ 1262654 Reagent Economy
+ school    shadow
+-duration  permanent
++attrs     passive
+ 
+ effect 1  unrecognised shape
+           E_APPLY_AURA A_NO_REAGENT_USE base=-100 sp=1 family=5 mask=0x0,0x0,0x1,0x4000000 target=[1,0]
+ 
+ https://www.wowhead.com/forever/spell=1262654
