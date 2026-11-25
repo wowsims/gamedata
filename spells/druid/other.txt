@@ -2982,8 +2982,8 @@ school    shadow
 defense   magic
 duration  120 s
 
-effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0044170,0x6041014,0x208,0x2
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xe0044170,0x6041014,0x208,0x2 target=[1,0]
+effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0044170,0x6047014,0x208,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xe0044170,0x6047014,0x208,0x2 target=[1,0]
 aura      Your helpful spells and abilities have no Mana cost. Cancelled by entering combat.
 
 https://www.wowhead.com/forever/spell=1262307

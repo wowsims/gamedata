@@ -1,0 +1,48 @@
+# druid
+--- 1262307 The Quick and the Dead
++++ 1262307 The Quick and the Dead
+@@ -1,10 +1,10 @@
+ 1262307 The Quick and the Dead
+ school    shadow
+ defense   magic
+ duration  120 s
+ 
+-effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0044170,0x6041014,0x208,0x2
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xe0044170,0x6041014,0x208,0x2 target=[1,0]
++effect 1  SPELLMOD_COST -100% on family 7 mask 0xe0044170,0x6047014,0x208,0x2
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=7 mask=0xe0044170,0x6047014,0x208,0x2 target=[1,0]
+ aura      Your helpful spells and abilities have no Mana cost. Cancelled by entering combat.
+ 
+ https://www.wowhead.com/forever/spell=1262307
+# hunter
+--- 1262309 The Quick and the Dead
++++ 1262309 The Quick and the Dead
+@@ -1,10 +1,10 @@
+ 1262309 The Quick and the Dead
+ school    shadow
+ defense   magic
+ duration  120 s
+ 
+-effect 1  SPELLMOD_COST -100% on family 9 mask 0x1f80000,0x440000,0x30
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=9 mask=0x1f80000,0x440000,0x30 target=[1,0]
++effect 1  SPELLMOD_COST -100% on family 9 mask 0x1f80000,0x640000,0x30
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=9 mask=0x1f80000,0x640000,0x30 target=[1,0]
+ aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
+ 
+ https://www.wowhead.com/forever/spell=1262309
+# priest
+--- 1262312 The Quick and the Dead
++++ 1262312 The Quick and the Dead
+@@ -1,10 +1,10 @@
+ 1262312 The Quick and the Dead
+ school    shadow
+ defense   magic
+ duration  120 s
+ 
+-effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62c10025,0x1,0x100000
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62c10025,0x1,0x100000 target=[1,0]
++effect 1  SPELLMOD_COST -100% on family 6 mask 0x194c5f6b,0x62c10825,0x1,0x100000
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-100 misc=14 family=6 mask=0x194c5f6b,0x62c10825,0x1,0x100000 target=[1,0]
+ aura      Your helpful spells have no Mana cost. Cancelled by entering combat.
+ 
+ https://www.wowhead.com/forever/spell=1262312
