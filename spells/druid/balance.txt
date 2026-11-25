@@ -481,10 +481,10 @@ school    physical
 attrs     passive
 labels    21
 
-effect 1  SPELLMOD_DOT +1% on family 7 mask 0x220252,0x4000100,0x200000,0x40000080
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x220252,0x4000100,0x200000,0x40000080 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x0,0x2
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x0,0x2 target=[1,0]
+effect 1  SPELLMOD_DOT +1% on family 7 mask 0x2202d2,0x4000100,0x200000,0x40000080
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x2202d2,0x4000100,0x200000,0x40000080 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x400000,0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x400000,0x2 target=[1,0]
 tooltip   Increases the periodic damage and healing done by your spells and abilities by $s1%.
 
 https://www.wowhead.com/forever/spell=1223081

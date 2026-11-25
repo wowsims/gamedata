@@ -1,0 +1,131 @@
+# druid
+--- 1223081 Genesis
++++ 1223081 Genesis
+@@ -1,12 +1,12 @@
+ 1223081 Genesis
+ school    physical
+ attrs     passive
+ labels    21
+ 
+-effect 1  SPELLMOD_DOT +1% on family 7 mask 0x220252,0x4000100,0x200000,0x40000080
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x220252,0x4000100,0x200000,0x40000080 target=[1,0]
+-effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x0,0x2
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x0,0x2 target=[1,0]
++effect 1  SPELLMOD_DOT +1% on family 7 mask 0x2202d2,0x4000100,0x200000,0x40000080
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 misc=22 family=7 mask=0x2202d2,0x4000100,0x200000,0x40000080 target=[1,0]
++effect 2  SPELLMOD_DAMAGE +1% on family 7 mask 0x400000,0x2
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=1 family=7 mask=0x400000,0x2 target=[1,0]
+ tooltip   Increases the periodic damage and healing done by your spells and abilities by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=1223081
+# paladin
+--- 1328548 Oath of Light
++++ 1328548 Oath of Light
+@@ -1,20 +1,20 @@
+ 1328548 Oath of Light
+ school    holy
+ defense   magic
+-duration  300 s
++duration  3600 s
+ gcd       1.5 s
+ cost      8% of base mana
+ range     40 yd
+ targets   up to 1
+ labels    26
+ 
+-effect 1  a dummy aura holding 400 every 1.5 s to the friendly target (200 ticks, at level 60)
++effect 1  a dummy aura holding 400 every 1.5 s to the friendly target (2400 ticks, at level 60)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 ppl=6.66667 period=1500ms target=[21,0]
+ effect 2  a dummy aura holding 115 to the friendly target (at level 60)
+           E_APPLY_AURA A_DUMMY base=0 ppl=1.91667 target=[21,0]
+ effect 3  a dummy aura holding 229 to the friendly target (at level 60)
+           E_APPLY_AURA A_DUMMY base=0 ppl=3.83333 target=[21,0]
+ tooltip   Swear an Oath to protect target ally for $d, increasing the healing of your Holy Light on them by up to $s1, your Flash of Light by up to $s2, and your Holy Shock by up to $s3. Only one Oath of Light may be sworn by the Paladin at any one time.
+ aura      Receives increased healing from the caster's Holy Light by up to $s1, Flash of Light by up to $s2, and Holy Shock by up to $s3.
+ 
+ https://www.wowhead.com/forever/spell=1328548
+--- 1291086 Judgement Increased Damage
++++ 1291086 Judgement Increased Damage
+@@ -1,10 +1,10 @@
+ 1291086 Judgement Increased Damage
+ school    physical
+ attrs     passive
+ labels    26
+ 
+-effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x400,0x8,0x40
+-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 family=10 mask=0x400,0x8,0x40 target=[1,0]
++effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x400,0x208,0x40
++          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 family=10 mask=0x400,0x208,0x40 target=[1,0]
+ tooltip   Increases the damage of your Judgement ability by $s1%.
+ 
+ https://www.wowhead.com/forever/spell=1291086
+--- 20425 Judgement of Command (Rank 1)
++++ 20425 Judgement of Command (Rank 1)
+@@ -1,10 +1,11 @@
+ 20425 Judgement of Command (Rank 1)
+ school    holy
+ defense   melee
+ range     100 yd
++attrs     suppresses weapon procs
+ labels    26
+ 
+ effect 1  a dummy effect holding 20467 to the enemy
+           E_DUMMY base=20467 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20425
+--- 20961 Judgement of Command (Rank 3)
++++ 20961 Judgement of Command (Rank 3)
+@@ -1,10 +1,11 @@
+ 20961 Judgement of Command (Rank 3)
+ school    holy
+ defense   melee
+ range     100 yd
++attrs     suppresses weapon procs
+ labels    26
+ 
+ effect 1  a dummy effect holding 20964 to the enemy
+           E_DUMMY base=20964 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20961
+--- 20962 Judgement of Command (Rank 2)
++++ 20962 Judgement of Command (Rank 2)
+@@ -1,10 +1,11 @@
+ 20962 Judgement of Command (Rank 2)
+ school    holy
+ defense   melee
+ range     100 yd
++attrs     suppresses weapon procs
+ labels    26
+ 
+ effect 1  a dummy effect holding 20963 to the enemy
+           E_DUMMY base=20963 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20962
+--- 20967 Judgement of Command (Rank 4)
++++ 20967 Judgement of Command (Rank 4)
+@@ -1,10 +1,11 @@
+ 20967 Judgement of Command (Rank 4)
+ school    holy
+ defense   melee
+ range     100 yd
++attrs     suppresses weapon procs
+ labels    26
+ 
+ effect 1  a dummy effect holding 20965 to the enemy
+           E_DUMMY base=20965 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20967
+--- 20968 Judgement of Command (Rank 5)
++++ 20968 Judgement of Command (Rank 5)
+@@ -1,10 +1,11 @@
+ 20968 Judgement of Command (Rank 5)
+ school    holy
+ defense   melee
+ range     100 yd
++attrs     suppresses weapon procs
+ labels    26
+ 
+ effect 1  a dummy effect holding 20966 to the enemy
+           E_DUMMY base=20966 sp=1 target=[6,0]
+ 
+ https://www.wowhead.com/forever/spell=20968
