@@ -1065,8 +1065,8 @@ school    physical
 attrs     passive
 labels    26
 
-effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x400,0x8,0x40
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 family=10 mask=0x400,0x8,0x40 target=[1,0]
+effect 1  SPELLMOD_DAMAGE +4% on family 10 mask 0x400,0x208,0x40
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=4 family=10 mask=0x400,0x208,0x40 target=[1,0]
 tooltip   Increases the damage of your Judgement ability by $s1%.
 
 https://www.wowhead.com/forever/spell=1291086

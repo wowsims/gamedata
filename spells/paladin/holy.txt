@@ -2204,14 +2204,14 @@ https://www.wowhead.com/forever/spell=1311806
 1328548 Oath of Light
 school    holy
 defense   magic
-duration  300 s
+duration  3600 s
 gcd       1.5 s
 cost      8% of base mana
 range     40 yd
 targets   up to 1
 labels    26
 
-effect 1  a dummy aura holding 400 every 1.5 s to the friendly target (200 ticks, at level 60)
+effect 1  a dummy aura holding 400 every 1.5 s to the friendly target (2400 ticks, at level 60)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 ppl=6.66667 period=1500ms target=[21,0]
 effect 2  a dummy aura holding 115 to the friendly target (at level 60)
           E_APPLY_AURA A_DUMMY base=0 ppl=1.91667 target=[21,0]
