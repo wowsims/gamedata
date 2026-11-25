@@ -571,7 +571,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41199 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
-tooltip   Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.
+tooltip   Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=16914
 =======
@@ -594,7 +594,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41198 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
-tooltip   Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.
+tooltip   Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=17401
 =======
@@ -617,7 +617,7 @@ effect 2  unrecognised shape
           E_CREATE_AREATRIGGER base=-20 misc=41170 radius=8 target=[87,16]
 effect 3  a dummy aura every 1 s (10 ticks)
           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
-tooltip   Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.
+tooltip   Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 https://www.wowhead.com/forever/spell=17402
 =======

@@ -1,0 +1,79 @@
+# druid
+--- 16914 Hurricane (Rank 1)
++++ 16914 Hurricane (Rank 1)
+@@ -1,22 +1,22 @@
+ 16914 Hurricane (Rank 1)
+ school    nature
+ defense   magic
+ duration  10 s
+ gcd       1.5 s
+ cost      880 mana
+ range     30 yd
+ stance    Moonkin
+ stance exclude Tree of Life
+ attrs     channeled
+ labels    21
+ refs      1278965 Hurricane
+ 
+ effect 1  a dummy effect holding 1 to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=-20 misc=41199 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (10 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+-tooltip   Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.
++tooltip   Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
+ 
+ https://www.wowhead.com/forever/spell=16914
+--- 17401 Hurricane (Rank 2)
++++ 17401 Hurricane (Rank 2)
+@@ -1,22 +1,22 @@
+ 17401 Hurricane (Rank 2)
+ school    nature
+ defense   magic
+ duration  10 s
+ gcd       1.5 s
+ cost      1180 mana
+ range     30 yd
+ stance    Moonkin
+ stance exclude Tree of Life
+ attrs     channeled
+ labels    21
+ refs      1278968 Hurricane
+ 
+ effect 1  a dummy effect holding 1 to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=-20 misc=41198 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (10 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+-tooltip   Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.
++tooltip   Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
+ 
+ https://www.wowhead.com/forever/spell=17401
+--- 17402 Hurricane (Rank 3)
++++ 17402 Hurricane (Rank 3)
+@@ -1,22 +1,22 @@
+ 17402 Hurricane (Rank 3)
+ school    nature
+ defense   magic
+ duration  10 s
+ gcd       1.5 s
+ cost      1495 mana
+ range     30 yd
+ stance    Moonkin
+ stance exclude Tree of Life
+ attrs     channeled
+ labels    21
+ refs      1278759 Hurricane
+ 
+ effect 1  a dummy effect to target 87 (at level 60)
+           E_DUMMY base=0 ppl=0.3 sp=0.03 radius=8 target=[87,16]
+ effect 2  unrecognised shape
+           E_CREATE_AREATRIGGER base=-20 misc=41170 radius=8 target=[87,16]
+ effect 3  a dummy aura every 1 s (10 ticks)
+           E_APPLY_AURA A_PERIODIC_DUMMY base=0 period=1000ms target=[1,0]
+-tooltip   Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.
++tooltip   Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell.
+ 
+ https://www.wowhead.com/forever/spell=17402
