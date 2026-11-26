@@ -49,11 +49,49 @@ aura      Your next damage or healing spell or offensive ability has its mana, r
 
 https://www.wowhead.com/forever/spell=16870
 =======
+408258 Dreamstate
+school    arcane
+attrs     passive
+labels    21
+
+effect 1  a dummy aura holding 100
+          E_APPLY_AURA A_DUMMY base=100 target=[1,0]
+tooltip   When you cast Innervate on a target other than yourself, you gain $s1% of the effect as well.
+
+https://www.wowhead.com/forever/spell=408258
+=======
+408261 Dreamstate
+school    physical
+duration  8 s
+labels    21
+
+effect 1  +50% mana regen while casting
+          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
+tooltip   Allows $s1% of your Mana regeneration to continue while casting.
+aura      Regenerating $w1% of your normal Mana regeneration while casting spells.
+
+https://www.wowhead.com/forever/spell=408261
+=======
+437132 Dreamstate
+school    physical
+defense   magic
+duration  12 s
+range     100 yd
+labels    3096
+
+effect 1  +20% nature damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=8 target=[6,0]
+effect 2  +20% arcane damage taken to the enemy
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=64 target=[6,0]
+aura      Increases Arcane and Nature damage taken by $s1%.
+
+https://www.wowhead.com/forever/spell=437132
+=======
 408248 Eclipse
 school    arcane
 attrs     passive
 labels    21
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says one named ability
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, one named ability
 refs      408255 Eclipse
 
 effect 1  a dummy aura holding 30
@@ -64,7 +102,9 @@ effect 3  a dummy aura holding 2
           E_APPLY_AURA A_DUMMY base=2 target=[1,0]
 effect 4  a dummy aura holding 100
           E_APPLY_AURA A_DUMMY base=100 target=[1,0]
-tooltip   Your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.
+effect 5  SPELLMOD_CRITICAL_CHANCE +20% on family 7 mask 0x1
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=20 misc=7 family=7 mask=0x1 target=[1,0]
+tooltip   Increases the critical strike chance of your Wrath spell by $s5%, and your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.
 
 https://www.wowhead.com/forever/spell=408248
 =======
@@ -698,44 +738,18 @@ tooltip   Increases the damage done by your Entangling Roots spell by $m1%, and 
 
 https://www.wowhead.com/forever/spell=16918
 =======
-16821 Improved Moonfire
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 7 mask 0x2
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=7 family=7 mask=0x2 target=[1,0]
-effect 2  SPELLMOD_DAMAGE +2% on family 7 mask 0x2
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=7 mask=0x2 target=[1,0]
-effect 3  SPELLMOD_DOT +2% on family 7 mask 0x2
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=7 mask=0x2 target=[1,0]
-tooltip   Increases the damage and critical strike chance of your Moonfire spell by $s1%.
-
-https://www.wowhead.com/forever/spell=16821
-=======
-28854 Improved Moonfire
-school    physical
-attrs     passive
-labels    21
-
-effect 1  unrecognised shape
-          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 sp=1 misc=4555 family=7 mask=0x2 target=[1,0]
-tooltip   Increases the damage of your Moonfire spell by up to $s1.
-
-https://www.wowhead.com/forever/spell=28854
-=======
 16850 Improved Starfire
 school    physical
 attrs     passive
 labels    21
-proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance, from effect 2
+proc      hears PROC_FLAG_DEAL_MELEE_ABILITY, PROC_FLAG_DEAL_RANGED_ATTACK, PROC_FLAG_DEAL_RANGED_ABILITY, PROC_FLAG_DEAL_HELPFUL_ABILITY, PROC_FLAG_DEAL_HARMFUL_ABILITY, PROC_FLAG_DEAL_HELPFUL_SPELL, PROC_FLAG_DEAL_HARMFUL_SPELL; 15% chance, from effect 2; tooltip says one named ability
 refs      16922 Starfire Stun
 
-effect 1  SPELLMOD_CASTING_TIME -0.5 s on family 7 mask 0x4
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-500 sp=1 misc=10 family=7 mask=0x4 target=[1,0]
+effect 1  a dummy aura holding -500
+          E_APPLY_AURA A_DUMMY base=-500 sp=1 target=[1,0]
 effect 2  casts 16922 Starfire Stun on its trigger
           E_APPLY_AURA A_PROC_TRIGGER_SPELL base=15 sp=1 trigger=16922 target=[1,0]
-tooltip   Reduces the cast time of Starfire by $/1000;S1 sec and Starfire has a $s2% chance to stun its target for $16922d.
+tooltip   Your Starfire spell has a $s2% chance to stun its target for $16922d.
 
 https://www.wowhead.com/forever/spell=16850
 =======
@@ -782,42 +796,6 @@ effect 1  SPELLMOD_ALL_EFFECTS +75% on family 7 mask 0x100
 tooltip   Increases damage caused by your Thorns spell by $s1%.
 
 https://www.wowhead.com/forever/spell=16840
-=======
-16814 Improved Wrath
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x1
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x1 target=[1,0]
-effect 2  SPELLMOD_COST -50% on family 7 mask 0x1
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=7 mask=0x1 target=[1,0]
-tooltip   Reduces the cast time of your Wrath spell by $/1000;S1 sec and its Mana cost by $s2%.
-
-https://www.wowhead.com/forever/spell=16814
-=======
-436287 Improved Wrath
-school    physical
-attrs     passive
-labels    21
-
-effect 1  SPELLMOD_ALL_EFFECTS +2% on family 7 mask 0x1
-          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=8 family=7 mask=0x1 target=[1,0]
-tooltip   Increases the damage of your Wrath spell by up to $s1%.
-
-https://www.wowhead.com/forever/spell=436287
-=======
-1248996 Improved Wrath
-school    physical
-attrs     passive
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 50% chance
-refs      1302521 Improved Wrath
-
-effect 1  casts 1302521 Improved Wrath on its trigger
-          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1302521 target=[1,0]
-tooltip   Causes Wrath to have a $h% chance to restore $1302521s1 Mana.
-
-https://www.wowhead.com/forever/spell=1248996
 =======
 5570 Insect Swarm (Rank 1)
 school    nature
@@ -918,6 +896,23 @@ tooltip   The enemy target is swarmed by insects, decreasing their chance to hit
 aura      Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 https://www.wowhead.com/forever/spell=24977
+=======
+16821 Moon and Stars
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CRITICAL_CHANCE +2% on family 7 mask 0x2
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=2 sp=1 misc=7 family=7 mask=0x2 target=[1,0]
+effect 2  SPELLMOD_DAMAGE +2% on family 7 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 family=7 mask=0x2 target=[1,0]
+effect 3  SPELLMOD_DOT +2% on family 7 mask 0x2
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=22 family=7 mask=0x2 target=[1,0]
+effect 4  SPELLMOD_NOT_LOSE_CASTING_TIME +100% on family 7 mask 0x4
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=9 family=7 mask=0x4 target=[1,0]
+tooltip   Increases the damage and critical strike chance of your Moonfire spell by $s1% and gives your Starfire spell a $s4% chance not to lose casting time from taking damage.
+
+https://www.wowhead.com/forever/spell=16821
 =======
 8921 Moonfire (Rank 1)
 school    arcane
@@ -1232,10 +1227,10 @@ effect 5  SPELLMOD_CHANCE_OF_SUCCESS +100% on family 7 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=100 misc=18 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
 effect 6  SPELLMOD_PROC_COOLDOWN -50% on family 7 mask 0x0,0x0,0x0,0x40000
           E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 misc=38 family=7 mask=0x0,0x0,0x0,0x40000 target=[1,0]
-tooltip   Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.
+tooltip   Shapeshift into Moonkin Form, increasing Arcane and Nature damage done by $24905s4%, Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.
 
           The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-aura      Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
+aura      Immune to Polymorph effects. Arcane and Nature damage done increased by $24905s4%. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
 
 https://www.wowhead.com/forever/spell=24858
 =======
@@ -1251,6 +1246,8 @@ effect 2  unrecognised shape
           E_APPLY_AURA A_MOD_BONUS_ARMOR_PCT base=360 target=[1,0]
 effect 3  immune to disarm
           E_APPLY_AURA A_MECHANIC_IMMUNITY base=0 misc=3 target=[1,0]
+effect 4  +10% nature+arcane damage done
+          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_DONE base=10 misc=72 target=[1,0]
 
 https://www.wowhead.com/forever/spell=24905
 =======
@@ -1857,6 +1854,19 @@ effect 1  796–1004 arcane damage to the enemy
 tooltip   Causes $s1 Arcane damage to the target.
 
 https://www.wowhead.com/forever/spell=463285
+=======
+16814 Starlight Wrath
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_CASTING_TIME -0.1 s on family 7 mask 0x5
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=-100 sp=1 misc=10 family=7 mask=0x5 target=[1,0]
+effect 2  SPELLMOD_COST -50% on family 7 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=-50 sp=1 misc=14 family=7 mask=0x1 target=[1,0]
+tooltip   Reduces the cast time of your Wrath and Starfire spells by $/1000;S1 sec and the Mana cost of your Wrath spell by $s2%.
+
+https://www.wowhead.com/forever/spell=16814
 =======
 417157 Starsurge
 school    arcane
