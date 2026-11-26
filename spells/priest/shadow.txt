@@ -1702,8 +1702,8 @@ school    physical
 attrs     passive
 labels    18
 
-effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 6 mask 0x68ba000,0x180402,0x10000,0x10000400
-          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=6 mask=0x68ba000,0x180402,0x10000,0x10000400 target=[1,0]
+effect 1  SPELLMOD_RESIST_MISS_CHANCE +5% on family 6 mask 0x68ba014,0x180402,0x10000,0x10000400
+          E_APPLY_AURA A_ADD_FLAT_MODIFIER base=5 misc=16 family=6 mask=0x68ba014,0x180402,0x10000,0x10000400 target=[1,0]
 tooltip   Improves your chance to hit with Shadow spells by $s1%.
 
 https://www.wowhead.com/forever/spell=15260

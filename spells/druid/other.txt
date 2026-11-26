@@ -536,46 +536,6 @@ aura      Causes $s1 Nature damage to attackers.
 
 https://www.wowhead.com/forever/spell=26666
 =======
-408258 Dreamstate
-school    arcane
-attrs     passive
-labels    21
-proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; no roll, it fires whenever its condition is met; tooltip says on a crit, damaging spells only
-refs      408261 Dreamstate
-
-effect 1  a dummy aura holding 50
-          E_APPLY_AURA A_DUMMY base=50 target=[1,0]
-tooltip   Your damaging non-periodic spell critical strikes grant you $m1% of your mana regeneration while casting for $408261d.
-
-https://www.wowhead.com/forever/spell=408258
-=======
-408261 Dreamstate
-school    physical
-duration  8 s
-labels    21
-
-effect 1  +50% mana regen while casting
-          E_APPLY_AURA A_MOD_MANA_REGEN_INTERRUPT base=50 target=[1,0]
-tooltip   Allows $s1% of your Mana regeneration to continue while casting.
-aura      Regenerating $w1% of your normal Mana regeneration while casting spells.
-
-https://www.wowhead.com/forever/spell=408261
-=======
-437132 Dreamstate
-school    physical
-defense   magic
-duration  12 s
-range     100 yd
-labels    3096
-
-effect 1  +20% nature damage taken to the enemy
-          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=8 target=[6,0]
-effect 2  +20% arcane damage taken to the enemy
-          E_APPLY_AURA A_MOD_DAMAGE_PERCENT_TAKEN base=20 misc=64 target=[6,0]
-aura      Increases Arcane and Nature damage taken by $s1%.
-
-https://www.wowhead.com/forever/spell=437132
-=======
 28743 Dreamwalker
 school    physical
 duration  permanent
@@ -1359,6 +1319,17 @@ tooltip   Gain the Improved Frenzied Regeneration ability:
 
 https://www.wowhead.com/forever/spell=431458
 =======
+28854 Improved Moonfire
+school    physical
+attrs     passive
+labels    21
+
+effect 1  unrecognised shape
+          E_APPLY_AURA A_OVERRIDE_CLASS_SCRIPTS base=33 sp=1 misc=4555 family=7 mask=0x2 target=[1,0]
+tooltip   Increases the damage of your Moonfire spell by up to $s1.
+
+https://www.wowhead.com/forever/spell=28854
+=======
 1293644 Improved Rebirth
 school    physical
 duration  permanent
@@ -1461,6 +1432,29 @@ effect 1  SPELLMOD_DURATION +60 s on family 7 mask 0x100
 tooltip   Increases the duration of your Thorns by $/1000;s1 sec.
 
 https://www.wowhead.com/forever/spell=21972
+=======
+436287 Improved Wrath
+school    physical
+attrs     passive
+labels    21
+
+effect 1  SPELLMOD_ALL_EFFECTS +2% on family 7 mask 0x1
+          E_APPLY_AURA A_ADD_PCT_MODIFIER base=2 sp=1 misc=8 family=7 mask=0x1 target=[1,0]
+tooltip   Increases the damage of your Wrath spell by up to $s1%.
+
+https://www.wowhead.com/forever/spell=436287
+=======
+1248996 Improved Wrath
+school    physical
+attrs     passive
+proc      hears PROC_FLAG_DEAL_HARMFUL_SPELL; 50% chance
+refs      1302521 Improved Wrath
+
+effect 1  casts 1302521 Improved Wrath on its trigger
+          E_APPLY_AURA A_PROC_TRIGGER_SPELL base=0 trigger=1302521 target=[1,0]
+tooltip   Causes Wrath to have a $h% chance to restore $1302521s1 Mana.
+
+https://www.wowhead.com/forever/spell=1248996
 =======
 1214295 Improved Wrath/Moonfire
 school    physical
